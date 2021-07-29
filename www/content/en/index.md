@@ -12,7 +12,7 @@ features:
 
 <alert type="success">
 
-TEST 1: BLABLA
+TEST 2: TRALALAAA
 
 </alert>
 
