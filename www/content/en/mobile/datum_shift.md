@@ -1,6 +1,6 @@
 ---
 category: 'Mobile Input App'
-permalink: /howto/datum_shift
+permalink: datum_shift
 title: Datum shift for projections
 ---
 
@@ -115,10 +115,10 @@ For example imagine that you digitised your point to be in the corner of the rec
 in the Input app in the field it is obviously shifted by dozens of centimetres. Or other way around, you digitise the
 point in the field, and when opened in QGIS it is misplaced.
 
-![shift of the point](../images/digitizing_shift.png)
+![shift of the point](/images/digitizing_shift.png)
 
 The likely reason is that there is correctly downloaded and used extra datum shift file in QGIS, but missing in
-Input app (more information in [this blog](/blog/2021/04/22/projections-field/))
+Input app (more information in [this blog](https://lutraconsulting.co.uk/blog/2021/04/22/projections-field/))
 
 # QGIS Transformation tab
 
@@ -129,12 +129,12 @@ transformation route from the source to the destination coordinate reference sys
 Let's say we want to setup default transformation between British National Grid (EPSG:27700) and
 World Geodetic System used in GPS (EPSG:4326) for all our future QGIS projects.
 
-![QGIS Transformation Dialog](../images/QGIS_Transformations_Dialog.png)
+![QGIS Transformation Dialog](/images/QGIS_Transformations_Dialog.png)
 
 Using the "+" button we add a new entry and select EPSG:27700 and EPSG:4326.
 Let's examine the first transformation with the accuracy of 1 meter:
 
-![QGIS Transformations British National Grid to World Geodetic System](../images/QGIS_Transformations2.png)
+![QGIS Transformations British National Grid to World Geodetic System](/images/QGIS_Transformations2.png)
 
 At the bottom there is an interesting PROJ description line with pipeline to be used by underlying PROJ library.
 You can read more about [PROJ pipeline](https://proj.org/operations/pipeline.html), but to start with

@@ -1,6 +1,6 @@
 ---
 category: 'Mobile Input App'
-permalink: /howto/search_data
+permalink: search_data
 title: Search values from attribute fields
 ---
 

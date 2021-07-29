@@ -1,6 +1,6 @@
 ---
 category: 'Mobile Input App'
-permalink: /howto/settingup_background_map_rastertile
+permalink: settingup_background_map_rastertile
 ---
 
 # Raster tiles

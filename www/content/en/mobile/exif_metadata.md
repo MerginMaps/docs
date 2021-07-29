@@ -1,6 +1,6 @@
 ---
 category: 'Mobile Input App'
-permalink: /howto/exif_metadata
+permalink: exif_metadata
 title: Exif Metadata
 ---
 

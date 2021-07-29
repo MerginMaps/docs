@@ -1,13 +1,13 @@
 ---
 category: 'Guides'
-permalink: /quick-start/share-project
+permalink: share_project
 title: Share Your Project
 ---
 
-* [Take the Tour](/quick-start/take-the-tour)
-* [Create a Project](/quick-start/create-project)
-* [Put it on Your Device](/quick-start/put-project-on-device)
-* [Sync Your Changes](/quick-start/sync-changes)
+* [Take the Tour](./take-the-tour)
+* [Create a Project](./create-project)
+* [Put it on Your Device](./put-project-on-device)
+* [Sync Your Changes](./sync-changes)
 * **Share Your Project**
 
 Now you know how to create a project, get it onto your mobile, make changes 
@@ -48,16 +48,16 @@ That's the end of the Quick Start Guide but there's loads more information
 in the <a href="/">main documentation</a> such as how to carry out a typical 
 Input workflow:
 
-* Preparing project: user loads background and survey layers, set up the forms, apply styling to the layers, set up map themes and define the layers to be used for survey purpose. See [Project preparation](howto/project_config)
+* Preparing project: user loads background and survey layers, set up the forms, apply styling to the layers, set up map themes and define the layers to be used for survey purpose. See [Project preparation](./project_config)
 
-* Data/project transfer: once the project set up, users need to transfer data to the device. This can be achieved through [Mergin](https://public.cloudmergin.com). See [Data transfer](howto/data_sync)
+* Data/project transfer: once the project set up, users need to transfer data to the device. This can be achieved through [Mergin](https://public.cloudmergin.com). See [Data transfer](./data_sync)
 
 * Working with Input: map navigation, data editing, including filling the forms, viewing existing data and uploading the changes back to Mergin. See [Using Input](using_input)
 
 * Input user interface: describes various buttons, options and configurations. See [Input user interface](input_ui)
 
-* [Take the Tour](/quick-start/take-the-tour)
-* [Create a Project](/quick-start/create-project)
-* [Put it on Your Device](/quick-start/put-project-on-device)
-* [Sync Your Changes](/quick-start/sync-changes)
+* [Take the Tour](./take-the-tour)
+* [Create a Project](./create-project)
+* [Put it on Your Device](./put-project-on-device)
+* [Sync Your Changes](./sync-changes)
 * **Share Your Project**

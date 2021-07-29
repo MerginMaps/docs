@@ -1,6 +1,6 @@
 ---
 category: 'Mobile Input App'
-permalink: /howto/settingup_forms_text
+permalink: /settingup_forms_text
 title: Text fields in forms
 ---
 

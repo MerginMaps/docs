@@ -1,6 +1,6 @@
 ---
 category: 'Mobile Input App'
-permalink: /input_ui
+permalink: input_ui
 ---
 
 

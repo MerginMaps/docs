@@ -1,13 +1,13 @@
 ---
 category: 'Mobile Input App'
-permalink: /howto/settingup_forms_valuerelation
+permalink: /settingup_forms_valuerelation
 title: Drop-down (value relation) in forms
 ---
 
-**Value Relation** widget is very similar to the [Value Map](/howto/settingup_forms_valuemap) tool, but the values for the drop-down menu come from another table (e.g. a CSV or another Geopackage table).
+**Value Relation** widget is very similar to the [Value Map](./settingup_forms_valuemap) tool, but the values for the drop-down menu come from another table (e.g. a CSV or another Geopackage table).
 
 The advantage of having this widget:
-  - Ability to edit the values in the field. For example, if you have missed a value in your list for the drop-down menu, you can edit the table in Input and add the value. See [Working with non-spatial tables](/howto/working_with_nonspatial_data) section for more information.
+  - Ability to edit the values in the field. For example, if you have missed a value in your list for the drop-down menu, you can edit the table in Input and add the value. See [Working with non-spatial tables](./working_with_nonspatial_data) section for more information.
 
   - Ability to search the values: when you have a large list of values, it will become cumbersome to find the right value. With this widget, you will be able to search for values in the list.
 
@@ -22,7 +22,7 @@ To set up a value relation widget:
   - From the layer panel, right-click on **Points** layer and select **Properties**
   - In the new window, select **Attributes form**
 
-![photos](../images/qgis_forms_valuerelation.png)
+![photos](/images/qgis_forms_valuerelation.png)
 
   - Select **valuerelation** field under the right column (**Available Widgets**)
   - Under the **Widget Display**:

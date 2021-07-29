@@ -1,6 +1,6 @@
 ---
 category: 'Mobile Input App'
-permalink: /howto/project_config
+permalink: project_config
 ---
 <!--- IMPORTANT: This permlink is referenced from InputApp -->
 

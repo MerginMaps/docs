@@ -1,6 +1,6 @@
 ---
 category: 'Mobile Input App'
-permalink: /howto/settingup_forms_checkbox
+permalink: settingup_forms_checkbox
 title: Checkbox in from
 ---
 

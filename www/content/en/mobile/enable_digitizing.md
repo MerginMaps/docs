@@ -1,6 +1,6 @@
 ---
 category: 'Mobile Input App'
-permalink: /howto/enable_digitizing
+permalink: enable_digitizing
 ---
 <!--- IMPORTANT: This permlink is referenced from InputApp -->
 

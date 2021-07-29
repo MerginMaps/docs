@@ -1,6 +1,6 @@
 ---
 category: 'Mobile Input App'
-permalink: /howto/settingup_forms_valuemap
+permalink: /settingup_forms_valuemap
 title: Drop-down (value map) in forms
 ---
 

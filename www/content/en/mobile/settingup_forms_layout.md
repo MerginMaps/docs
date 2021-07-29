@@ -1,6 +1,6 @@
 ---
 category: 'Mobile Input App'
-permalink: /howto/settingup_forms_layout
+permalink: settingup_forms_layout
 title: Form layout
 ---
 

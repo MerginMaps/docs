@@ -1,6 +1,6 @@
 ---
 category: 'Mobile Input App'
-permalink: /howto/settingup_forms_qrcode
+permalink: settingup_forms_qrcode
 title: QR & barcode reader in forms
 ---
 
@@ -18,4 +18,4 @@ To use the QR code scanner in the form from Input:
 - The camera should open, point the camera to a QR
 - The text should be populated in the field
 
-![slider](../images/input_forms_qrcode.jpg)
+![slider](/images/input_forms_qrcode.jpg)

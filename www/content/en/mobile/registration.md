@@ -1,6 +1,6 @@
 ---
 category: 'Mobile Input App'
-permalink: /howto/registration
+permalink: registration
 title: Registration
 ---
 

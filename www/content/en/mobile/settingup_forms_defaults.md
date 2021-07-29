@@ -1,6 +1,6 @@
 ---
 category: 'Mobile Input App'
-permalink: /howto/settingup_forms_defaults
+permalink: settingup_forms_defaults
 tile: Defaults and pre-defined values
 ---
 

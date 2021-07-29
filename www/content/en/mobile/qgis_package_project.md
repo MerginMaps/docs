@@ -1,7 +1,7 @@
 ---
 category: 'Mobile Input App'
 title: Package an existing project
-permalink: /howto/package_qgis_project
+permalink: package_qgis_project
 ---
 
 To work with Input, you need to create a self contained folder with all your files. If you work with several data sources spread across multiple folders/drives, it is recommended to create a self-contained folder with all the layers and data.

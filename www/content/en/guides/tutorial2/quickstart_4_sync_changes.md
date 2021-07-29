@@ -1,14 +1,14 @@
 ---
 category: 'Guides'
-permalink: /quick-start/sync-changes
+permalink: sync-changes
 title: Sync Your Changes
 ---
 
-* [Take the Tour](/quick-start/take-the-tour)
-* [Create a Project](/quick-start/create-project)
-* [Put it on Your Device](/quick-start/put-project-on-device)
+* [Take the Tour](./take-the-tour)
+* [Create a Project](./create-project)
+* [Put it on Your Device](./put-project-on-device)
 * **Sync Your Changes**
-* [Share Your Project](/quick-start/share-project)
+* [Share Your Project](./share-project)
 
 So by now you've taken some really insightful field notes and great 
 photos and want to sync these changes back to your project.
@@ -32,8 +32,8 @@ device.
 
 Let's now see how we can share our project.
 
-* [Take the Tour](/quick-start/take-the-tour)
-* [Create a Project](/quick-start/create-project)
-* [Put it on Your Device](/quick-start/put-project-on-device)
+* [Take the Tour](./take-the-tour)
+* [Create a Project](./create-project)
+* [Put it on Your Device](./put-project-on-device)
 * **Sync Your Changes**
-* [Share Your Project](/quick-start/share-project)
+* [Share Your Project](./share-project)

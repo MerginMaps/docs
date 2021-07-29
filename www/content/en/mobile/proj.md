@@ -1,6 +1,6 @@
 ---
 category: 'Mobile Input App'
-permalink: /howto/proj
+permalink: proj
 title: Custom Projection
 ---
 <!--- IMPORTANT: This permlink is referenced from InputApp -->
@@ -20,4 +20,4 @@ to Input, you have to restart Input to load your custom datu, shifts.
 We recommend to use Mergin service to transfer the project with the required
 proj resources to your mobile device.
 
-Read more to learn about [datum shift for projections](/howto/datum_shift).
+Read more to learn about [datum shift for projections](./datum_shift).

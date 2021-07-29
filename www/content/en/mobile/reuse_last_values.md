@@ -1,6 +1,6 @@
 ---
 category: 'Mobile Input App'
-permalink: /howto/reuse_entered_values
+permalink: reuse_entered_values
 ---
 
 # Reuse last entered values

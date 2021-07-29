@@ -1,6 +1,6 @@
 ---
 category: 'Mobile Input App'
-permalink: /howto/settingup_forms_slider
+permalink: /settingup_forms_slider
 title: Slider in forms
 ---
 

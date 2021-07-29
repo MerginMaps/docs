@@ -1,6 +1,6 @@
 ---
 category: 'Mobile Input App'
-permalink: /howto/enable_browsing
+permalink: enable_browsing
 ---
 <!--- IMPORTANT: This permlink is referenced from InputApp -->
 

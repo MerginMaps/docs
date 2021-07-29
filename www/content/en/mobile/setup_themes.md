@@ -1,6 +1,6 @@
 ---
 category: 'Mobile Input App'
-permalink: /howto/setup_themes
+permalink: setup_themes
 ---
 <!--- IMPORTANT: This permlink is referenced from InputApp -->
 

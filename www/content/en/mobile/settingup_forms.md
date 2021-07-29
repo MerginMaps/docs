@@ -1,6 +1,6 @@
 ---
 category: 'Mobile Input App'
-permalink: /howto/settingup_forms
+permalink: settingup_forms
 title: Setting up forms
 ---
 
@@ -20,37 +20,37 @@ In the sections below, we go through examples of setting up different widgets fo
 
 |QGIS edit widget name   | Description  |Preview in Input   |
 |---|---|---|
-|Text Edit  |[Text](/howto/settingup_forms_text)   | ![layout](../images/input_forms_text.png) |
-|QR & barcode scanner  |[Camera to scan QR and barcode](/howto/settingup_forms_qrcode)   | ![layout](../images/input_forms_qrcode1.png) |
-|Range   |[Numeric field](/howto/settingup_forms_number)   | ![layout](../images/input_forms_numbers.png)  |
-|Range   |[Slider](/howto/settingup_forms_slider)   | ![layout](../images/input_forms_slider1.png)  |
-|Date&Time   |[Calendar with time](/howto/settingup_forms_datetime)  |![layout](../images/input_forms_datetime1.png)   |
-|Attachment   |[Photos from device's camera or gallery](/howto/settingup_forms_photos) | ![layout](../images/input_forms_photo1.png)  |
-|Checkbox   |[Checkbox](/howto/settingup_forms_checkbox)   |![layout](../images/input_forms_checkbox2.png)   |
-|Value Map   |[Drop-down menu with pre-defined values](/howto/settingup_forms_valuemap) |![layout](../images/input_forms_valuemap1.png)   |
-|Value Relation   |[Drop-down menu with values from another table](/howto/settingup_forms_valuerelation) |![layout](../images/input_forms_valuerelation.png)   |
+|Text Edit  |[Text](./settingup_forms_text)   | ![layout](/images/input_forms_text.png) |
+|QR & barcode scanner  |[Camera to scan QR and barcode](./settingup_forms_qrcode)   | ![layout](/images/input_forms_qrcode1.png) |
+|Range   |[Numeric field](./settingup_forms_number)   | ![layout](/images/input_forms_numbers.png)  |
+|Range   |[Slider](./settingup_forms_slider)   | ![layout](/images/input_forms_slider1.png)  |
+|Date&Time   |[Calendar with time](./settingup_forms_datetime)  |![layout](/images/input_forms_datetime1.png)   |
+|Attachment   |[Photos from device's camera or gallery](./settingup_forms_photos) | ![layout](/images/input_forms_photo1.png)  |
+|Checkbox   |[Checkbox](./settingup_forms_checkbox)   |![layout](/images/input_forms_checkbox2.png)   |
+|Value Map   |[Drop-down menu with pre-defined values](./settingup_forms_valuemap) |![layout](/images/input_forms_valuemap1.png)   |
+|Value Relation   |[Drop-down menu with values from another table](./settingup_forms_valuerelation) |![layout](/images/input_forms_valuerelation.png)   |
 
 # Advanced form setup
 In addition to the edit widgets, extra configuration can be done to the fields and form layout to make the data collection easier and more consistent. For example: setting a default value, conditional visibility and constraint enforcemnt.
 
 ## Form layout
-To have multiple tabs with subgroups in your form (with conditional visibility) see [form layout setup](/howto/settingup_forms_layout):
+To have multiple tabs with subgroups in your form (with conditional visibility) see [form layout setup](./settingup_forms_layout):
 
-![layout](../images/input_forms_layout1.png)
+![layout](/images/input_forms_layout1.png)
 
 ## Default value
 
-To have pre-populated values within the field (e.g. name of the surveyor, date/time of the survey, latitude and longitude of the feature), see [defaults in forms](/howto/settingup_forms_defaults):
+To have pre-populated values within the field (e.g. name of the surveyor, date/time of the survey, latitude and longitude of the feature), see [defaults in forms](./settingup_forms_defaults):
 
-![layout](../images/input_forms_defaults1.png)
+![layout](/images/input_forms_defaults1.png)
 
 ## Constraints
-To enforce constraints on a field in your forms, visit [constraints setup](/howto/settingup_forms_constraints)
+To enforce constraints on a field in your forms, visit [constraints setup](./settingup_forms_constraints)
 
-![layout](../images/input_forms_slider1.png)
+![layout](/images/input_forms_slider1.png)
 
 ## Advanced value relation with drill-down forms
-To have a more advanced form with drill-down menu option, see [cascade form setup](/howto/settingup_forms_cascade)
+To have a more advanced form with drill-down menu option, see [cascade form setup](./settingup_forms_cascade)
 
 ## QR code reader
-To be able to use your camera in forms to scan QR codes and populate the text in the field, see [QR code reader](/howto/settingup_forms_qrcode)
+To be able to use your camera in forms to scan QR codes and populate the text in the field, see [QR code reader](./settingup_forms_qrcode)

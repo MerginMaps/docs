@@ -1,6 +1,6 @@
 ---
 category: 'Mobile Input App'
-permalink: /howto/settingup_forms_number
+permalink: settingup_forms_number
 title: Numeric fields in forms
 ---
 
@@ -12,7 +12,7 @@ To set a field in your form to a numeric one:
   - From the layer panel, right-click on **Points** layer and select **Properties**
   - In the new window, select **Attributes form**
 
-![photos](../images/qgis_forms_number.png)
+![photos](/images/qgis_forms_number.png)
 
   - Select **Number** field under the right column (**Available Widgets**)
   - Under the **Widget Display**:
@@ -31,7 +31,7 @@ To use the numeric widget in your form from Input:
 - The form will appear
 - Under **Group1** tab, you can type within the box under **Number** field:
 
-![slider](../images/input_forms_number1.png)
+![slider](/images/input_forms_number1.png)
 
 
-Further details about number fields and their configuration with the range widget can be found [here](/howto/settingup_forms_range_widget)).
+Further details about number fields and their configuration with the range widget can be found [here](./settingup_forms_range_widget)).

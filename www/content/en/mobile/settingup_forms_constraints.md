@@ -1,6 +1,6 @@
 ---
 category: 'Mobile Input App'
-permalink: /howto/settingup_forms_constraints
+permalink: settingup_forms_constraints
 title: Constraint enforcement in forms
 ---
 

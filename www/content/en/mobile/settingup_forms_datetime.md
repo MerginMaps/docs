@@ -1,6 +1,6 @@
 ---
 category: 'Mobile Input App'
-permalink: /howto/settingup_forms_datetime
+permalink: settingup_forms_datetime
 title: Calendar for date and time
 ---
 

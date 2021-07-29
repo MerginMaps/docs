@@ -1,6 +1,6 @@
 ---
 category: 'Mobile Input App'
-permalink: /using_input
+permalink: using_input
 ---
 
 # Working with Input

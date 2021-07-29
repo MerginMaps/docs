@@ -1,6 +1,6 @@
 ---
 category: 'Mobile Input App'
-permalink: /howto/settingup_forms_photos
+permalink: settingup_forms_photos
 title: Adding photos to form
 ---
 
@@ -14,7 +14,7 @@ To set up a photo widget:
   - From the layer panel, right-click on **survey** layer and select **Properties**
   - In the new window, select **Attributes form**
 
-![photos](../images/qgis_forms_photo.png)
+![photos](/images/qgis_forms_photo.png)
 
   - Select **photo** field under the right column (**Available Widgets**)
   - Under the **Widget Display**, from **Widget Type** section:

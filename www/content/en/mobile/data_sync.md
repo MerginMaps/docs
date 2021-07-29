@@ -1,6 +1,6 @@
 ---
 category: 'Mobile Input App'
-permalink: /howto/data_sync
+permalink: data_sync
 title: Data Synchronization
 ---
 <!--- IMPORTANT: This permlink is referenced from InputApp -->

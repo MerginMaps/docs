@@ -1,6 +1,6 @@
 ---
 category: 'Mobile Input App'
-permalink: /howto/settingup_forms_cascade
+permalink: settingup_forms_cascade
 title: Advanced forms with cascade or drill-down forms
 ---
 

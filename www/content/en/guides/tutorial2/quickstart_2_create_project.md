@@ -1,14 +1,14 @@
 ---
 category: 'Guides'
-permalink: /quick-start/create-project
+permalink: create-project
 title: Create a Project
 ---
 
-* [Take the Tour](/quick-start/take-the-tour)
+* [Take the Tour](./take-the-tour)
 * **Create a Project**
-* [Put it on Your Device](/quick-start/put-project-on-device)
-* [Sync Your Changes](/quick-start/sync-changes)
-* [Share Your Project](/quick-start/share-project)
+* [Put it on Your Device](./put-project-on-device)
+* [Sync Your Changes](./sync-changes)
+* [Share Your Project](./share-project)
 
 The easiest way to create a new project is from a template.
 
@@ -47,8 +47,8 @@ Your namespace will look different to that shown in the example above.
 The project has now been created on Mergin. The next step is to get it onto 
 our device.
 
-* [Take the Tour](/quick-start/take-the-tour)
+* [Take the Tour](./take-the-tour)
 * **Create a Project**
-* [Put it on Your Device](/quick-start/put-project-on-device)
-* [Sync Your Changes](/quick-start/sync-changes)
-* [Share Your Project](/quick-start/share-project)
+* [Put it on Your Device](./put-project-on-device)
+* [Sync Your Changes](./sync-changes)
+* [Share Your Project](./share-project)
