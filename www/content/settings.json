@@ -1,0 +1,10 @@
+{
+  "title": "Mergin'Maps",
+  "url": "https://merginmaps.com/docs",
+  "logo": {
+    "light": "/logo-light.svg",
+    "dark": "/logo-dark.svg"
+  },
+  "github": "merginmaps/docs",
+  "twitter": "merginmaps"
+}
