@@ -12,7 +12,7 @@ features:
 
 <alert type="success">
 
-Enjoy the feeling with Mergin'Maps when you make sense of your data on maps
+TEST 1: BLABLA
 
 </alert>
 
