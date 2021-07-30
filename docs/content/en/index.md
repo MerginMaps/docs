@@ -30,7 +30,7 @@ With Mergin'Maps you can:
 
 ## How to use if I am
 
-# Find my workflow
+## Find my workflow
 
 ## Explore Features
 
