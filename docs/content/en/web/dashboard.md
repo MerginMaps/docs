@@ -1,7 +1,9 @@
 ---
-category: 'MerginMaps Server & Cloud'
+category: 'Server'
 permalink: /dashboard
 title: Home page and dashboard
+menuTitle: Dashboard
+position: 302
 ---
 
 When you log in to Mergin website, you will be presented with a dashboard for quick access to your latest projects or the ones shared with you.

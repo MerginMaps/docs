@@ -1,13 +1,17 @@
 ---
 category: 'Mobile Input App'
 permalink: proj
-title: Custom Projection
+title: Custom Projections
+position: 406
+
 ---
 <!--- IMPORTANT: This permlink is referenced from InputApp -->
 
-Note: since Input 0.8.0
+<alert type="info">
+since Input 0.8.0
+</alert>
 
-# Using custom PROJ
+## Using custom PROJ
 
 When Input is launched, it searches for `<project folder>/proj`
 for custom PROJ datum shifts files in all available projects on the disk.
@@ -20,4 +24,4 @@ to Input, you have to restart Input to load your custom datu, shifts.
 We recommend to use Mergin service to transfer the project with the required
 proj resources to your mobile device.
 
-Read more to learn about [datum shift for projections](./datum_shift).
+Read more to learn about [datum shift for projections](../guides/datum_shift).

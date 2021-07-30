@@ -1,7 +1,9 @@
 ---
-category: 'MerginMaps Server & Cloud'
+category: 'Server'
 permalink: /project-details
 title: Project history and versions
+position: 308
+menuTitle: Project history
 ---
 
 In Mergin, you can see the details of the changes made to the project from different devices or users. Each time you sync the project from your mobile device or from QGIS through the plugin, a new version will be created.

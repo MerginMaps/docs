@@ -1,9 +1,10 @@
 ---
 category: 'Mobile Input App'
+title: Position Variables
 permalink: position_variables
+menuTitle: Extra Position Variables
+position: 406
 ---
-
-# Position variables
 
 Input provides the option to access GPS information using an extra position variables. Those can be used as [default 
 values in feature forms](./settingup_forms_defaults). Note that location permission have to be allowed and location service has to be enabled.

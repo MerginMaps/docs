@@ -2,10 +2,11 @@
 category: 'Mobile Input App'
 permalink: external_gps
 title: External GPS
+menuTitle: External GPS
+position: 404
 ---
-<!--- IMPORTANT: This permlink is referenced from InputApp -->
 
-# Using external GPS
+<!--- IMPORTANT: This permlink is referenced from InputApp -->
 
 It is possible to use an external GPS device with Input app. Input does not offer an interface to connect, set up or configure the external GPS device. The set up should be carried out from the device operating system (e.g. Android or iOS).
 
@@ -41,4 +42,6 @@ Now, pair your external GPS device to your mobile/tablet through Bluetooth. Then
 ## iOS
 To use your external GPS device with iPhone or iPad, you need to pair the device via Bluetooth. Once the device is paired, the signal from external GPS will be used as the primary source.
 
-**Note:** users have reported that they have to switch on Airplane mode to be able to use the external GPS device.
+<alert type="warning">
+Users have reported that they have to switch on Airplane mode to be able to use the external GPS device.
+</alert>

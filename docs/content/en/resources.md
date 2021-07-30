@@ -1,8 +1,10 @@
 ---
 category: ''
-title: Read More
-position: 7
+title: In Media
+position: 9
 ---
+
+Here is the (uncomplete) list of external media referring to Mergin Maps:
 
 # Video tutorials:
  - [Create a Groundwater Mapping App with QGIS, Input and Mergin](https://www.youtube.com/watch?v=nlOFbBO40NY) - by Hans van der Kwast, 74min (Sep 2020)
@@ -15,3 +17,11 @@ position: 7
 # Presentations from QGIS Open Day:
  - [Input and Mergin: collect data, sync and collaborate with ease](https://www.youtube.com/watch?v=UT5xcvcNQR0) - by Saber Razmjooei, 51min (March 2021)
  - [Using QGIS, Input, Mergin, and Metabase to conduct a WASH survey in the Waterberg](https://www.youtube.com/watch?v=lxgUY7zcH1Q) - by Gavin Fleming, 60min (March 2021)
+
+# Blogs 
+- [Blogs on Lutra Consulting about Mergin](https://www.lutraconsulting.co.uk/blog/categories/mergin/)
+- [Blogs on Lutra Consulting about Input App](https://www.lutraconsulting.co.uk/blog/categories/input/)
+- [Trash and Input](http://www.northrivergeographic.com/archives/trash-and-input)
+- [The Kartoza Intern's journey creating a field survey with QGIS, Mergin and Input](https://www.kartoza.com/en/blog/the-kartoza-interns-journey-creating-a-field-survey-with-qgis-mergin-and-input-a-short-guide-with-tips-and-tricks/)
+- [Byggnader är fyrkantiga (Buildings are square)](https://geosupportsystem.se/2021/04/26/byggnader-ar-fyrkantiga/)
+- [Utilização do Mergin e Input para recolha de dados (Collecting data with Mergin and Input)](https://www.youtube.com/watch?v=Vk0_qTcSuVw)

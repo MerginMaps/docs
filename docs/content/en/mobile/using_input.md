@@ -1,9 +1,10 @@
 ---
 category: 'Mobile Input App'
 permalink: using_input
+title: Working with Input
+menuTitle: Working with Input
+position: 401
 ---
-
-# Working with Input
 
 ## Accessing projects
 You can install Input from Google Play Store. Once you open the

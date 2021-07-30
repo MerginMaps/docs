@@ -1,7 +1,9 @@
 ---
-category: 'MerginMaps Server & Cloud'
+category: 'Server'
 title: Registration and signing up to the Mergin service
+menuTitle: Register
 permalink: /registration
+position: 301
 ---
 
 To start using the Mergin service, you need to sign up. You can sign up either through the [Mergin website](https://public.cloudmergin.com/) or from your mobile device using the [Input app](https://inputapp.io/en/) (version 0.7.0 or later).

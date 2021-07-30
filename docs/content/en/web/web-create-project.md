@@ -1,7 +1,9 @@
 ---
-category: 'MerginMaps Server & Cloud'
+category: 'Server'
 permalink: /web-create-project
 title: Creating projects and uploading files
+position: 305
+menuTitle: Create project
 ---
 
 There are several methods of creating a new project in Mergin:

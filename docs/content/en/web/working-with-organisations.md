@@ -1,7 +1,9 @@
 ---
-category: 'MerginMaps Server & Cloud'
+category: 'Server'
 title: Working with Organisations
 permalink: /working-with-organisations
+position: 306
+menuTitle: Organizations
 ---
 
 In Mergin, **Organisations** can be used for easier management of users and projects within your team.

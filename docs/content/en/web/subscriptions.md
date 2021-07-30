@@ -1,7 +1,8 @@
 ---
-category: 'MerginMaps Server & Cloud'
+category: 'Server'
 permalink: /subscriptions
 title: Subscriptions and invoicing
+position: 303
 ---
 <!--- IMPORTANT: This permlink is referenced from InputApp -->
 

@@ -1,10 +1,10 @@
 ---
 category: 'Mobile Input App'
+title: User Interface
 permalink: input_ui
+menuTitle: App Interface
+position: 401
 ---
-
-
-# User interface
 
 Below is a description of various items within the user interface:
 

@@ -1,14 +1,16 @@
 ---
 category: ''
-permalink: /licensing
-position: 5
+title: Licensing
+position: 4
 ---
 
 # MerginMaps documentation 
 CC-BY License
 
-# Server MerginMaps
-AGLP License
+# MerginMaps Server
+
+ - Community edition (CE) - AGLP License
+ - [SaaS/Enterprise](public.cloudmergin.com) - Copyright @ Lutra Consutling Ltr. 
 
 # QGIS and QGIS MerginMaps Plugin
 GLPv2 License

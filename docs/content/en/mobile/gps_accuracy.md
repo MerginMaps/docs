@@ -2,6 +2,8 @@
 category: 'Mobile Input App'
 permalink: gps_accuracy
 title: GPS accuracy
+menuTitle: GPS accuracy
+position: 405
 ---
 <!--- IMPORTANT: This permlink is referenced from InputApp -->
 
