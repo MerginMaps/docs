@@ -1,13 +1,16 @@
-name: Spellcheck Action
-on: push
+name: Check Spelling
+on:
+  push:
+    paths:
+    - '**.js'
+    - '**.vue'
+    - '**.txt'
+    - '**.html'
+    - '**.md'
 jobs:
-  build:
-    name: spellcheck
+  spelling:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: rojopolis/spellcheck-github-actions@0.14.0
-      name: Spellcheck
-      with:
-        source_files: README.md CHANGELOG.md notes/Notes.md
-        task_name: Markdown
+    - name: Check Spelling
+      uses: UnicornGlobal/spellcheck-github-actions@master
