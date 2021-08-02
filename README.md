@@ -46,6 +46,6 @@ rm temp-wordlist.txt
 
 # License
 
-The Mergin'Map product documentation in the `docs/content`and `docs/static` are licensed under a [CC-BY license](LICENSE).
+The Mergin Maps product documentation in the `docs/content`and `docs/static` are licensed under a [CC-BY license](LICENSE).
 
 All other code in this repository is licensed under a [MIT license](LICENSE-CODE).

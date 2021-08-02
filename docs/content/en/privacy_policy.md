@@ -5,7 +5,7 @@ permalink: privacy
 position: 8
 ---
 
-<!--- IMPORTANT: This permlink is referenced from InputApp -->
+<!--- IMPORTANT: This permalink is referenced from InputApp -->
 
 We built the Mergin Maps Input App as an Open Source app. This SERVICE is provided by at no cost and is intended for use as is.
 

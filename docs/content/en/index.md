@@ -14,7 +14,7 @@ features:
 Enjoy the feeling when you make sense of your geo-data on maps
 </alert>
 
-Mergin'Maps is open-source map tools eco-system maintained by community 
+Mergin Maps is open-source map tools eco-system maintained by community 
 and [Lutra Consulting Ltd.](https://www.lutraconsulting.co.uk), recognized
 member of [QGIS](htts://qgis.org) development community. It takes out the 
 pain of field data synchronization and transcribing paper field notes, manually 

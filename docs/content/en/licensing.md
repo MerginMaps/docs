@@ -7,13 +7,13 @@ position: 4
 # MerginMaps documentation 
 CC-BY License
 
-# MerginMaps Server
+# Mergin Maps Server
 
  - Community edition (CE) - AGLP License
- - [SaaS/Enterprise](public.cloudmergin.com) - Copyright @ Lutra Consutling Ltr. 
+ - [SaaS/Enterprise](public.cloudmergin.com) - Copyright @ Lutra Consulting Ltr. 
 
 # QGIS and QGIS MerginMaps Plugin
-GLPv2 License
+GPLv2 License
 
 # Mobile Input App
 

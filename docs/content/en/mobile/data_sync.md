@@ -19,7 +19,7 @@ See the [plugin user manual](../desktop/plugin-sync-project) for more informatio
 ![mergin-plugin](/images/mergin_plugin.png)
 
 You can also drag-and-drop your project folder (including layers, SVGs, etc)
-to Mergin project webpage.
+to Mergin project web page.
 
 ## Manual data transfer (Android)
 

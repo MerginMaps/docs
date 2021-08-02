@@ -134,7 +134,7 @@ just downloaded - if you click Yes, you are ready to use your project:
 
 ### Next steps
 
-[Take the Tour](./guides/tutorial1/qgis-new-project) to grasp the basics of the worflows and project setup in QGIS
+[Take the Tour](./guides/tutorial1/qgis-new-project) to grasp the basics of the workflows and project setup in QGIS
 
 or explore other functions:
 
