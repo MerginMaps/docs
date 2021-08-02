@@ -9,16 +9,16 @@ position: 102
 
 Download Input App from Google Play or App Store: 
 
-<a href='https://play.google.com/store/apps/details?id=uk.co.lutraconsulting'><img alt='Get it on Google Play' src='/images/google-play-store-badge.png' width="170" /></a>
-<a href='https://apps.apple.com/us/app/input/id1478603559?ls=1'><img alt='Download on the App Store' src='/images/app-store.png' width="170" /></a>
+<a href='https://play.google.com/store/apps/details?id=uk.co.lutraconsulting'><img alt='Get it on Google Play' src='images/google-play-store-badge.png' width="170" /></a>
+<a href='https://apps.apple.com/us/app/input/id1478603559?ls=1'><img alt='Download on the App Store' src='images/app-store.png' width="170" /></a>
 
 Once you have installed and opened Input you will see two tour projects:
 
-![Input's Tour Projects](/images/input-tour-projects.png)
+![Input's Tour Projects](images/input-tour-projects.png)
 
 These tours introduce the basics of Input.
 
-![Welcome to Input](/images/welcome-to-input.png)
+![Welcome to Input](images/welcome-to-input.png)
 
 When you have completed both tours, well learn how to create a new project 
 for your field data.
@@ -30,7 +30,7 @@ The easiest way to create a new project is from a template.
 The *Field Notes* template comes with simple background mapping and allows 
 you to create points, lines and areas with field notes and photos: 
 
-![Capture Georeferenced Photos and Field Notes](../images/capture-georeferenced-photos-and-field-notes.png)
+![Capture Georeferenced Photos and Field Notes](images/capture-georeferenced-photos-and-field-notes.png)
 
 
 ## Create a free Mergin account
@@ -48,12 +48,12 @@ You should now be logged-in to Mergin.
 
 * Create a new project using the button shown below:
 
-![Create a Mergin Project](../images/create-mergin-project.png)
+![Create a Mergin Project](images/create-mergin-project.png)
 
 * Set *Template project* to *Field notes*
 * Give the project a name
 
-![Create a Mergin Project from a Template](../images/create-mergin-project-from-template.png)
+![Create a Mergin Project from a Template](images/create-mergin-project-from-template.png)
 
 Your namespace will look different to that shown in the example above. 
 

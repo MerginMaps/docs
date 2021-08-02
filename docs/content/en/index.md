@@ -7,7 +7,7 @@ features:
   - NOT USED
 ---
 
-![](preview.jpeg)
+![](images/preview.jpeg)
 
 <alert type="success">
 Enjoy the feeling when you make sense of your geo-data on maps
@@ -34,8 +34,8 @@ No more transcribing paper notes taken in the field!
 
 Install the application 
 
-<a href='https://play.google.com/store/apps/details?id=uk.co.lutraconsulting'><img alt='Get it on Google Play' src='/images/google-play-store-badge.png' width="170" /></a>
-<a href='https://apps.apple.com/us/app/input/id1478603559?ls=1'><img alt='Download on the App Store' src='/images/app-store.png' width="170" /></a>
+<a href='https://play.google.com/store/apps/details?id=uk.co.lutraconsulting'><img alt='Get it on Google Play' src='images/google-play-store-badge.png' width="170" /></a>
+<a href='https://apps.apple.com/us/app/input/id1478603559?ls=1'><img alt='Download on the App Store' src='images/app-store.png' width="170" /></a>
 
 and you immediately can:
 
@@ -62,8 +62,8 @@ Mergin Maps Cloud has granular permission to geo-data. So, you can give read or 
 users to view or edit data. Changes to the geo-data from different users are tracked 
 and consolidated. Data administrators can retrieve previous versions of data and view historical changes.
 
-<a href='https://public.cloudmergin.com'><img alt='Use on the cloud' src='logo-light.svg' class="light-img" height="20" /></a>
-<a href='https://public.cloudmergin.com'><img alt='Use on the cloud' src='logo-dark.svg' class="dark-img" height="20" /></a>
+<a href='https://public.cloudmergin.com'><img alt='Use on the cloud' src='images/logo-light.svg' class="light-img" height="20" /></a>
+<a href='https://public.cloudmergin.com'><img alt='Use on the cloud' src='images/logo-dark.svg' class="dark-img" height="20" /></a>
 
 Open [https://public.cloudmergin.com] in your favourite browser, register and you can 
 
@@ -73,7 +73,7 @@ Open [https://public.cloudmergin.com] in your favourite browser, register and yo
 
 Continue reading [> Quick Start](./quick-start#web)
 
- ![](/docs/images/intro-web.jpg)
+ ![](images/intro-web.jpg)
 
 ## Office > QGIS Plugin 
 Visualize, digitize and analyze your geo-data in [QGIS](./quick-start#desktop)
@@ -82,7 +82,7 @@ Visualize, digitize and analyze your geo-data in [QGIS](./quick-start#desktop)
 Forget USB cables for your geo-data transfers!
 </alert>
 
-<a href='https://plugins.qgis.org/plugins/Mergin/'><img alt='Download for QGIS Desktop' src='QGIS.svg' height="20" /></a>
+<a href='https://plugins.qgis.org/plugins/Mergin/'><img alt='Download for QGIS Desktop' src='images/QGIS.svg' height="20" /></a>
 
 To be able to interact with your projects in QGIS, you need to install Mergin plugin from QGIS plugin repository.
 

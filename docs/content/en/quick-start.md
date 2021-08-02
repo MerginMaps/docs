@@ -34,12 +34,12 @@ Head to [lutraconsulting/Basic survey](https://public.cloudmergin.com/projects/l
 project in Mergin. This a very simple project with a background map and a point layer for notes.
 When you open the link above, the project page will come up with a list of files within the project:
 
-![Basic survey - files](/images/basic-survey-files.png)
+![Basic survey - files](images/basic-survey-files.png)
 
 You can see there is a QGIS project file (project.qgz), a GeoPackage with the survey layer (survey.gpkg)
 and a few more files. When loaded in QGIS, the project looks like this:
 
-![Basic survey](/images/basic-survey-map.png)
+![Basic survey](images/basic-survey-map.png)
 
 (The map uses online vector tiles for background mapping, all styling is configured in project.qgz file.)
 
@@ -49,7 +49,7 @@ If we wanted to do any modifications to the project, we won't be able to upload 
 because we do not have write permissions to the project. We can however create our own copy of the project:
 one of the buttons in the project page will clone the project:
 
-<p align="center"><img src="/images/project-icon-clone.png" height="70"></p>
+<p align="center"><img src="images/project-icon-clone.png" height="70"></p>
 
 Click the button, pick a project name (it can stay the same - "Basic survey"), select your user name as the namespace
 and finally click the Clone button. In a few seconds, your project is ready! Now you are owner of the project
@@ -75,32 +75,32 @@ The Input mobile app allows you to view your projects on Android devices or iPho
 easy to use user interface and it features seamless integration with Mergin service. You can find the app in the
 app store of your platform:
 
-<a href='https://play.google.com/store/apps/details?id=uk.co.lutraconsulting'><img alt='Get it on Google Play' src='/images/google-play-store-badge.png' width="170" /></a>
-<a href='https://apps.apple.com/us/app/input/id1478603559?ls=1'><img alt='Download on the App Store' src='/images/app-store.png' width="170" /></a>
+<a href='https://play.google.com/store/apps/details?id=uk.co.lutraconsulting'><img alt='Get it on Google Play' src='images/google-play-store-badge.png' width="170" /></a>
+<a href='https://apps.apple.com/us/app/input/id1478603559?ls=1'><img alt='Download on the App Store' src='images/app-store.png' width="170" /></a>
 
 ### Sign in
 
 Once installed, open the app, open **Projects**, tap **My Projects** button and log in using your Mergin username
 and password.
 
-<!-- ![Input - log in](/images/input-login.png) -->
-<p align="center"><img src="/images/input-login.png" width="250"></p>
+<!-- ![Input - log in](images/input-login.png) -->
+<p align="center"><img src="images/input-login.png" width="250"></p>
 
 
 ### Sync project 
 
 You will get your projects listed, with a button to download the project to your phone/tablet.
 
-<!-- ![Input - projects](/images/input-projects.png) -->
-<p align="center"><img src="/images/input-projects.png" width="250"></p>
+<!-- ![Input - projects](images/input-projects.png) -->
+<p align="center"><img src="images/input-projects.png" width="250"></p>
 
 ### Next steps
 
 After tapping the download icon, in few moments the project will be available and you can switch back to **Home** tab
 and open the project.
 
-<!--![Input - map](/images/input-map-basic-survey.png)-->
-<p align="center"><img src="/images/input-map-basic-survey.png" width="250"></p>
+<!--![Input - map](images/input-map-basic-survey.png)-->
+<p align="center"><img src="images/input-map-basic-survey.png" width="250"></p>
 
 [Take the Tour](./guides/tutorial2/take-the-tour) to grasp the basics of the app and see how to start capturing, sharing and visualising survey data.
 
@@ -115,22 +115,22 @@ Working with Mergin projects in QGIS is easy - you only need to install Mergin p
 ### Download project
 The plugin integrates into the Browser panel in QGIS:
 
-<!-- ![Mergin plugin in QGIS](/images/qgis-mergin-browser.png) -->
-<p align="center"><img src="/images/qgis-mergin-browser.png" width="250" alt="Mergin plugin in QGIS"></p>
+<!-- ![Mergin plugin in QGIS](images/qgis-mergin-browser.png) -->
+<p align="center"><img src="images/qgis-mergin-browser.png" width="250" alt="Mergin plugin in QGIS"></p>
 
 Note: if Browser panel is not open in your session, go to menu View > Panels > Browser to open it.
 
 Find Mergin item in the Browser, right click it and select Configure. Fill in your username and password and click OK.
 Now you can see your projects in the Browser!
 
-<!-- ![Mergin plugin - projects](/images/qgis-mergin-projects.png) -->
-<p align="center"><img src="/images/qgis-mergin-projects.png" width="250" alt="Mergin plugin - projects"></p>
+<!-- ![Mergin plugin - projects](images/qgis-mergin-projects.png) -->
+<p align="center"><img src="images/qgis-mergin-projects.png" width="250" alt="Mergin plugin - projects"></p>
 
 Next, you can right click on a project and select Download. The plugin will ask where to download the project and it will
 start downloading. After a few moments, it will ask whether to open QGIS project file inside the Mergin project you have
 just downloaded - if you click Yes, you are ready to use your project:
 
-![Mergin plugin - basic survey loaded](/images/qgis-mergin-basic-survey.png)
+![Mergin plugin - basic survey loaded](images/qgis-mergin-basic-survey.png)
 
 ### Next steps
 

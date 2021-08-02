@@ -50,9 +50,9 @@ e.g.
 ## Images 
 
  - Do not add `docs` prefix
- - Always start with `/`
+ - Do not start with `/`, use relative path from `docs/static`
 
-e.g. `![](/images/cloudmergin.png` if the image is `docs/static/images/` folder on disk
+e.g. `![](images/cloudmergin.png` if the image is `docs/static/images/` folder on disk
 
 ## Reference other markdowns 
  - use relative path to the current file
