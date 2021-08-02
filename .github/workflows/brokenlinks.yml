@@ -1,0 +1,15 @@
+name: Build test
+on: push
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Grep for broken html img tags
+      run: |
+       A=`grep -rn "src=\'images" docs/content/`
+       [ -z "$A" ] && echo "html img is OK" || echo $A; exit 1
+    - name: Grep for broken markdown img tags
+      run: |
+       B=`grep -rn "](images" docs/content/`
+       [ -z "$B" ] && echo "markdown img is OK" || echo $B; exit 1

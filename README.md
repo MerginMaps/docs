@@ -34,7 +34,7 @@ yarn generate
 
 and see the result in `dist` folder
 
-To deploy on AWS Amplify, see (amplify.yml)[amplify.yml] config file used
+To deploy on AWS Amplify, see [amplify.yml](amplify.yml) config file used
 
 ## Dark Mode / Light Mode
 
@@ -45,6 +45,18 @@ e.g.
 <a href='https://public.cloudmergin.com'><img alt='Use on the cloud' src='logo-light.svg' class="light-img" height="20" /></a>
 <a href='https://public.cloudmergin.com'><img alt='Use on the cloud' src='logo-dark.svg' class="dark-img" height="20" /></a>
 ```
+
+## Images 
+
+ - Do not add `docs` prefix
+ - Always start with `/`
+
+e.g. `![](/images/myimage.png` if the image is `docs/static/images/` folder on disk
+
+## Reference other markdowns 
+ - use relative path to the current file
+
+e.g. `[](../mobile/othermarkdown.md)
 
 # Continuous Integration
 
