@@ -1,3 +1,6 @@
+[![Build test](https://github.com/MerginMaps/docs/actions/workflows/main.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/main.yml)
+[![Check Spelling](https://github.com/MerginMaps/docs/actions/workflows/spellcheck.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/spellcheck.yml)
+
 # Mergin Maps Documentation
 
 Source code for documentation hosted on [merginmaps.com/docs](https://merginmaps.com/docs)

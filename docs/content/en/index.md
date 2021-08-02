@@ -98,49 +98,6 @@ Continue reading [> Quick Start](./quick-start#desktop)
 
  ![](/images/intro-desktop.jpg)
 
-## How to
-
-On Mergin Maps Field Input: 
-
-- [Register to the Mergin service](./mobile/registration)
-- [Package QGIS project](./mobile/package_qgis_project)
-- [Do QGIS project configuration](./mobile/project_config)
-- [Setup forms](./mobile/settingup_forms)
-- [Setup background map](./mobile/settingup_background_map)
-- [Moving data between desktop and mobile](./mobile/data_sync)
-- [Enable digitizing on the field](./mobile/enable_digitizing)
-- [Browse attribute data](./mobile/enable_browsing)
-- [Search for records](./mobile/search_data)
-- [Working with non-spatial tables](./mobile/working_with_nonspatial_data)
-- [Setup QGIS Map Themes](./mobile/setup_themes)
-- [Use external GPS ](./mobile/external_gps)
-- [Reuse last entered values during digitizing](./mobile/reuse_entered_values)
-- [Read EXIF metadata](./mobile/exif_metadata)
-- [Use position variables](./mobile/position_variables)
-
-On Mergin Maps Cloud: 
-
-- [Registration](./web/registration) - registration and signing up to the Mergin service
-- [Dashboard](./web/dashboard) - accessing to your recent projects, profile and other settings
-- [Creating projects](./web/web-create-project) - how to create new project and upload files
-- [Subscriptions](./web/subscriptions) - How to subscribe to Mergin Plans
-- [Project details](./web/project-details) - view project files, history and changelogs
-- [Sharing projects](./web/sharing-project) - share your projects with other Mergin users
-- [Advanced project settings](./web/project-advanced) - transfer projects to other users or delete projects
-- [Working with organisations](./web/working-with-organisations) - Managing organisation's projects and members
-
-On QGIS or Mergin Maps Plugin: 
-
-- [Installation and configuration](./desktop/plugin-installation)
-- [Creating a new Mergin project](./desktop/plugin-new-project)
-- [Downloading an existing project](./desktop/plugin-download-project)
-- [Synchronising project and data](./desktop/plugin-sync-project)
-- [Cloning an existing project](./desktop/plugin-clone-project)
-- [Deleting a project](./desktop/plugin-delete-project)
-- [Mergin variables in QGIS](./desktop/plugin-variables)
-- [Diagnostic logs](./desktop/plugin-logs)
-
-
 ## Explore eco-system
 
 Applications:
