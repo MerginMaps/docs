@@ -72,6 +72,10 @@ cat temp-wordlist.txt | sort -u > .wordlist.txt
 rm temp-wordlist.txt
 ```
 
+## Broken links
+
+you can manually run `./scripts/broken_links.bash` to check for any broken links
+
 # License
 
 The Mergin Maps product documentation in the `docs/content`and `docs/static` are licensed under a [CC-BY license](LICENSE).

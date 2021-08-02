@@ -5,22 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Grep for broken html img tags
+    - name: Find broken links
       run: |
-       A=`grep -rn "src=\'images" docs/content/`
-       if [ -z "$A" ] then
-         echo "html img is OK"
-       else
-         echo $A
-         exit 1
-       fi
-
-    - name: Grep for broken markdown img tags
-      run: |
-       B=`grep -rn "](images" docs/content/`
-       if [ -z "$B" ] then
-          echo "markdows img is OK"
-       else
-          echo $B
-          exit 1
-       fi
+        ./scripts/broken_links.bash

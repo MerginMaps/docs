@@ -13,8 +13,8 @@ special offer for Mergin Maps Cloud for project contributors.
 
 Write a review of the application on App Store or Android Google Play
 
-<a href='https://play.google.com/store/apps/details?id=uk.co.lutraconsulting'><img alt='Get it on Google Play' src='images/google-play-store-badge.png' width="170" /></a>
-<a href='https://apps.apple.com/us/app/input/id1478603559?ls=1'><img alt='Download on the App Store' src='images/app-store.png' width="170" /></a>
+<a href='https://play.google.com/store/apps/details?id=uk.co.lutraconsulting'><img alt='Get it on Google Play' src='/images/google-play-store-badge.png' width="170" /></a>
+<a href='https://apps.apple.com/us/app/input/id1478603559?ls=1'><img alt='Download on the App Store' src='/images/app-store.png' width="170" /></a>
 
 ## Translate
 
