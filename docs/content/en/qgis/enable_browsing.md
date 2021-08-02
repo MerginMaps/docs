@@ -5,7 +5,7 @@ title: Enable Browsing
 menuTitle: Enable Browsing
 permalink: enable_browsing
 ---
-<!--- IMPORTANT: This permlink is referenced from InputApp -->
+<!--- IMPORTANT: This permalink is referenced from Input App -->
 
 In Input app, in addition to viewing map data, you can view and search attribute forms related to your data or non-spatial tables within your project.
 

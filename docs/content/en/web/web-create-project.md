@@ -22,7 +22,7 @@ There are several methods of creating a new project in Mergin:
 
 After creating a new project, you should be directed to the project page. To add files to your project:
 
-- Click on **Drage & drop here to click and select file(s) to upload**
+- Click on **Drag & drop here to click and select file(s) to upload**
 - You can then files or folders to upload
 - Once the files and folders are selected, press **Update**
 

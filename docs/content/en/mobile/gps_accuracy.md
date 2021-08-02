@@ -5,7 +5,7 @@ title: GPS accuracy
 menuTitle: GPS accuracy
 position: 405
 ---
-<!--- IMPORTANT: This permlink is referenced from InputApp -->
+<!--- IMPORTANT: This permalink is referenced from Input App -->
 
 Your GPS accuracy depends on several parameters, such as:
 - Your device

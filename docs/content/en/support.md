@@ -9,7 +9,7 @@ position: 6
 
 If you experience any issues with syncing data, you can send the 
 logs to the developers for debugging the issues. Logs also contains
-detailed informations about application run, so there may be hints 
+detailed information about application run, so there may be hints 
 for you to troubleshoot the problem.
 
 ### QGIS Plugin 
@@ -26,14 +26,12 @@ Select **Diagnostic logs**. A new window will appear, click **OK** to confirm.
 
 ![Input Logs](/images/input-logs.png)
 
-Once you have uploaded the logs, you can contact us (info@lutraconsulting.co.uk) to look into the issues.
-
-plugin-logs
+Once you have uploaded the logs, you can contact us [info@lutraconsulting.co.uk](mailto:info@lutraconsulting.co.uk) to look into the issues.
 
 ## Community Support
 
  - See [GIS Stack Exchange](https://gis.stackexchange.com/questions/tagged/inputapp) with **inputapp** tag to ask questions and see other users' answers.
- - See [QGIS Online docs](https://www.qgis.org/en/docs/index.html) for QGIS Deskop related problem
+ - See [QGIS Online docs](https://www.qgis.org/en/docs/index.html) for QGIS Desktop related problem
  
 ## Commercial Support
 

@@ -1,9 +1,12 @@
-# Mergin'Maps Documentation
+[![Build test](https://github.com/MerginMaps/docs/actions/workflows/main.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/main.yml)
+[![Check Spelling](https://github.com/MerginMaps/docs/actions/workflows/spellcheck.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/spellcheck.yml)
+
+# Mergin Maps Documentation
 
 Source code for documentation hosted on [merginmaps.com/docs](https://merginmaps.com/docs)
 
 - Modify content in [docs/content](docs/content) folder 
-- Improve images or assests in [docs/static](docs/static) folder
+- Improve images or assets in [docs/static](docs/static) folder
 - Update or modify [nuxtjs/content-docs-theme](https://content.nuxtjs.org) for styling
 
 Use GitHub Pull Requests to propose changes, we will review queue typically next working day!
@@ -33,8 +36,19 @@ and see the result in `dist` folder
 
 To deploy on AWS Amplify, see (amplify.yml)[amplify.yml] config file used
 
+# Spelling
+
+- add false positives to `.wordlist.txt`
+- sort and lowercase it before submitting
+
+```bash
+tr '[:upper:]' '[:lower:]' < .wordlist.txt > temp-wordlist.txt
+cat temp-wordlist.txt | sort -u > .wordlist.txt
+rm temp-wordlist.txt
+```
+
 # License
 
-The Mergin'Map product documentation in the `docs/content`and `docs/static` are licensed under a [CC-BY license](LICENSE).
+The Mergin Maps product documentation in the `docs/content`and `docs/static` are licensed under a [CC-BY license](LICENSE).
 
 All other code in this repository is licensed under a [MIT license](LICENSE-CODE).

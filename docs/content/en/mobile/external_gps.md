@@ -6,7 +6,7 @@ menuTitle: External GPS
 position: 404
 ---
 
-<!--- IMPORTANT: This permlink is referenced from InputApp -->
+<!--- IMPORTANT: This permalink is referenced from Input App -->
 
 It is possible to use an external GPS device with Input app. Input does not offer an interface to connect, set up or configure the external GPS device. The set up should be carried out from the device operating system (e.g. Android or iOS).
 

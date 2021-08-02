@@ -5,7 +5,7 @@ title: Data Synchronization
 menuTitle: Synchronization
 position: 402
 ---
-<!--- IMPORTANT: This permlink is referenced from InputApp -->
+<!--- IMPORTANT: This permalink is referenced from Input App -->
 
 ## Mergin Server (Android/iOS)
 
@@ -19,7 +19,7 @@ See the [plugin user manual](../desktop/plugin-sync-project) for more informatio
 ![mergin-plugin](/images/mergin_plugin.png)
 
 You can also drag-and-drop your project folder (including layers, SVGs, etc)
-to Mergin project webpage.
+to Mergin project web page.
 
 ## Manual data transfer (Android)
 

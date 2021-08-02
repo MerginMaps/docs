@@ -6,7 +6,7 @@ title: Preparing project
 menuTitle: Prepare QGIS Project
 ---
 
-<!--- IMPORTANT: This permlink is referenced from InputApp -->
+<!--- IMPORTANT: This permalink is referenced from Input App -->
 
 Project preparation is done in QGIS. For more information about loading
 layers, styling the data and creating map themes, visit QGIS
@@ -96,8 +96,9 @@ Example of the preview panel in Input and QGIS tooltip set up can be seen below:
 This section briefly describes behaviour of some types of widgets with several configurations.  
 Make use of Value Map widget in your forms to simplify filling the forms during survey.
 
-#### Attachement (External resource) widget
-To be able to attach photos to a survey feature, you will need to have an attribute column in your survey layer. Within the form setting, ensure to set Widget type to Attachment.
+#### Attachment (External resource) widget
+To be able to attach photos to a survey feature, you will need to have an attribute column in your survey layer. 
+Within the form setting, ensure to set Widget type to Attachment.
 The widget is compatible with field of type QString. It suppose to store absolute/relative path to an image.
 
 ##### Field configuration:

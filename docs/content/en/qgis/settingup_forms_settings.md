@@ -1,7 +1,7 @@
 ---
 category: 'QGIS Project'
 position: 501
-permalink: settingup_forms_advanced
+permalink: setting_up_forms_advanced
 title: Advanced form configuration
 menuTitle: Form Layout & Settings
 ---

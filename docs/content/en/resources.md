@@ -4,7 +4,7 @@ title: In Media
 position: 9
 ---
 
-Here is the (uncomplete) list of external media referring to Mergin Maps:
+Here is the (incomplete) list of external media referring to Mergin Maps:
 
 # Video tutorials:
  - [Create a Groundwater Mapping App with QGIS, Input and Mergin](https://www.youtube.com/watch?v=nlOFbBO40NY) - by Hans van der Kwast, 74min (Sep 2020)
