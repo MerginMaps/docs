@@ -15,7 +15,7 @@ it in [Input app](https://inputapp.io/) to collect data in field.
 To start with, you will need to install the following software applications:
 - [QGIS](www.qgis.org) - for your PC/laptop: [download](https://qgis.org/en/site/forusers/download.html) and install QGIS if you have not already done so
 
-<a href='https://plugins.qgis.org/plugins/Mergin/'><img alt='Download for QGIS Desktop' src='/QGIS.svg' height="20" /></a>
+<a href='https://plugins.qgis.org/plugins/Mergin/'><img alt='Download for QGIS Desktop' src='images/QGIS.svg' height="20" /></a>
 
 
 - [Input app](https://inputapp.io/) - for your mobile table: you can download the app from [Google Play Store](https://play.google.com/store/apps/details?id=uk.co.lutraconsulting&ah=GSqwibzO2n63iMlCjHmMuBk89t4&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1) or [Apple's App Store](https://apps.apple.com/us/app/input/id1478603559?ls=1)
