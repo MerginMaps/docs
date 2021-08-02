@@ -8,8 +8,19 @@ jobs:
     - name: Grep for broken html img tags
       run: |
        A=`grep -rn "src=\'images" docs/content/`
-       [ -z "$A" ] && echo "html img is OK" || echo $A; exit 1
+       if [ -z "$A" ] then
+         echo "html img is OK"
+       else
+         echo $A
+         exit 1
+       fi
+
     - name: Grep for broken markdown img tags
       run: |
        B=`grep -rn "](images" docs/content/`
-       [ -z "$B" ] && echo "markdown img is OK" || echo $B; exit 1
+       if [ -z "$B" ] then
+          echo "markdows img is OK"
+       else
+          echo $B
+          exit 1
+       fi

@@ -1,5 +1,6 @@
 [![Build test](https://github.com/MerginMaps/docs/actions/workflows/main.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/main.yml)
 [![Check Spelling](https://github.com/MerginMaps/docs/actions/workflows/spellcheck.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/spellcheck.yml)
+[![Check Broken Links](https://github.com/MerginMaps/docs/actions/workflows/brokenlinks.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/brokenlinks.yml)
 
 # Mergin Maps Documentation
 
