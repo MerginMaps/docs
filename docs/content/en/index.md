@@ -48,7 +48,7 @@ and you immediately can:
 
  Continue reading [> Quick Start](./quick-start#mobile)
 
-![](/images/intro-input.jpg)
+![](images/intro-input.jpg)
 
 ## Cloud > Mergin Web
 
@@ -73,7 +73,7 @@ Open [https://public.cloudmergin.com] in your favourite browser, register and yo
 
 Continue reading [> Quick Start](./quick-start#web)
 
- ![](/images/intro-web.jpg)
+ ![](/docs/images/intro-web.jpg)
 
 ## Office > QGIS Plugin 
 Visualize, digitize and analyze your geo-data in [QGIS](./quick-start#desktop)
