@@ -95,7 +95,7 @@ QGIS plugin offers you the following functionality:
 
 Continue reading [> Quick Start](./quick-start#desktop)
 
- ![](/images/intro-desktop.jpg)
+ ![](images/intro-desktop.jpg)
 
 ## Explore eco-system
 

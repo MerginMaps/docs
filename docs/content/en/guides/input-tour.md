@@ -69,18 +69,18 @@ our device.
 
 * Open Input and press *My projects*
 
-![My projects in Input](../images/my-projects.png)
+![My projects in Input](images/my-projects.png)
 
 You should now see the new project we just created. If you see a Mergin 
 login prompt, enter your Mergin account details to login then go to *My projects*.
 
-![Downloading the Mergin Project into Input](../images/download-mergin-project-onto-input.png)
+![Downloading the Mergin Project into Input](images/download-mergin-project-onto-input.png)
 
 * Press the download button
 
 The project should now be shown with a check mark:
 
-![Synced Mergin Project with Check Mark](../images/project-with-check-mark.png)
+![Synced Mergin Project with Check Mark](images/project-with-check-mark.png)
 
 At this stage you can open the project from *Home* and start adding notes 
 and map features. In the next section we'll see how to push changes back 
@@ -96,13 +96,13 @@ photos and want to sync these changes back to your project.
 When sync changes are pending, your project will have two sync arrows 
 next to it:
 
-![Sync Arrows Mean Project Changes are Pending](../images/sync-arrows.png)
+![Sync Arrows Mean Project Changes are Pending](images/sync-arrows.png)
 
 * Press the sync arrows to synchronise your project
 
 When the sync completes, you'll see a check mark:
 
-![Check Mark Means All Changes Are Synced](../images/project-with-check-mark.png)
+![Check Mark Means All Changes Are Synced](images/project-with-check-mark.png)
 
 That's all there is to syncing - your changes have been saved on Mergin 
 and any changes made by your collaborators have also been synced onto your 
@@ -121,25 +121,25 @@ website</a>.
 
 * When logged-in to Mergin, locate *My projects*
 
-![My projects in Mergin](../images/my-projects-in-mergin.png)
+![My projects in Mergin](images/my-projects-in-mergin.png)
 
 * Press on the project you want to share
 
-![Open Mergin project to share](../images/open-project-to-share.png)
+![Open Mergin project to share](images/open-project-to-share.png)
 
 * Press the settings button to access sharing settings
 
-![Mergin project settings](../images/mergin-project-settings.png)
+![Mergin project settings](images/mergin-project-settings.png)
 
 * Use search tool to find the user you wish to share the project with and press *ADD* to grant access.
 
-![Find user to share project with](../images/find-user-to-share-project-with.png)
+![Find user to share project with](images/find-user-to-share-project-with.png)
 
 So far the user we just added will have read permission. From here we could 
 also grant them write permissions or owner permissions. Owner permission 
 means they will also be able to adjust sharing settings on the project.
 
-![Mergin project permissions](../images/mergin-project-permissions.png)
+![Mergin project permissions](images/mergin-project-permissions.png)
 
 From here you can also use the *MAKE PUBLIC* button to make the project 
 public. This makes the project readable by any user. If you wanted people 

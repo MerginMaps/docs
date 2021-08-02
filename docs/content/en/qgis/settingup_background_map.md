@@ -17,7 +17,7 @@ Ideal for aerial imagery and orthophoto.
 
 Raster tiles can be large in size but an ideal format for aerial imagery.
 
-![exmple rastertile](/images/example_rastertile.png)
+![exmple rastertile](images/example_rastertile.png)
 
 ### Online services
 
@@ -34,16 +34,16 @@ To add Bing aerial imagery to your QGIS:
   - For **URL** type *http://ecn.t3.tiles.virtualearth.net/tiles/a{q}.jpeg?g=1*
   - Press OK
 
-![new xyz connection](../images/qgis_xyz_connection1.png)
+![new xyz connection](images/qgis_xyz_connection1.png)
 
-![new xyz connection](../images/qgis_xyz_connection2.png)
+![new xyz connection](images/qgis_xyz_connection2.png)
 
 
 **Bing aerial imagery** should appear under your **XYZ Tiles**:
 - From the **Browser panel**, double click on **Bing aerial imagery** under **XYZ Tiles**
 - Zoom to the extent of your study area
 
-![new xyz connection](../images/qgis_xyz_online.png)
+![new xyz connection](images/qgis_xyz_online.png)
 
 ### Generating raster tiles
 
@@ -69,9 +69,9 @@ To generate an offline copy of the aerial imagery from your map view extent:
     - Click **Run**
 
 
-![new xyz connection](../images/qgis_xyz_gen_mbtiles1.png)
+![new xyz connection](images/qgis_xyz_gen_mbtiles1.png)
 
-![new xyz connection](../images/qgis_xyz_gen_mbtiles2.png)
+![new xyz connection](images/qgis_xyz_gen_mbtiles2.png)
 
 Notes:
   - Depending on the size of your study area, the output file can grow significantly
@@ -85,7 +85,7 @@ Ideal for cartography basemaps.
 
 Vector tiles are a better alternative for cartography maps as background data. It is lighter in size, flexible styling and your maps are not pixelated.
 
-![exmple vectortile](/images/example_vectortile.png)
+![exmple vectortile](images/example_vectortile.png)
 
 ### Online services
 
@@ -100,7 +100,7 @@ There are several online services. For example you can add ESRI Basemap vector t
     - Set **Max. Zoom Level** to **14**
     - For **Style URL** type: **https://basemaps.arcgis.com/b2/arcgis/rest/services/World_Basemap/VectorTileServer/resources/styles/root.json**
 
-![new xyz connection](../images/qgis_xyz_gen_vectortile.png)
+![new xyz connection](images/qgis_xyz_gen_vectortile.png)
 
 Another source of online vector tiles are Qwant maps:
 - In QGIS, from the **Browser panel** right-click on **Vector Tiles**

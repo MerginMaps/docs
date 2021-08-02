@@ -16,9 +16,9 @@ There are several methods of creating a new project in Mergin:
   - For **Project owner** select your username or your organisation
   - By default the project is private. You can choose the option to make it **Public**
 
-![history advanced](../images/web/web-create-project.png)
+![history advanced](images/web/web-create-project.png)
 
-![history advanced](../images/web/web-create-project-2.png)
+![history advanced](images/web/web-create-project-2.png)
 
 After creating a new project, you should be directed to the project page. To add files to your project:
 
@@ -26,7 +26,7 @@ After creating a new project, you should be directed to the project page. To add
 - You can then files or folders to upload
 - Once the files and folders are selected, press **Update**
 
-![Upload files](../images/web/web-project-upload.png)
+![Upload files](images/web/web-project-upload.png)
 
 ## Create a project from template
 
@@ -40,4 +40,4 @@ To clone and existing project:
 - From the top right of the panel, select **Clone**
 - In the new window, type the project name and select the owner
 
-![history advanced](../images/web/web-clone-project.png)
+![history advanced](images/web/web-clone-project.png)

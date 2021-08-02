@@ -14,7 +14,7 @@ We recommend using Geopackage to save your non-spatial table. With this format, 
 
 Ensure you have enabled editing and searching of your non-spatial table in QGIS [QGIS project](https://docs.qgis.org/3.10/en/docs/user_manual/introduction/qgis_configuration.html?highlight=properties#data-sources-properties):
 
-![browse_enable](/images/qgis_nonspatial_properties.png)
+![browse_enable](images/qgis_nonspatial_properties.png)
 
 # Browse, search and edit non-spatial data in Input
 
@@ -26,4 +26,4 @@ Similar to the vector layer attribute table, you can [search](./search_data.html
 
 Selecting an individual record, Input will open the form related to the feature.
 
-![display_name](../images/input_nonspatial_data.png)
+![display_name]images/input_nonspatial_data.png)

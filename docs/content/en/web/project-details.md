@@ -21,7 +21,7 @@ To view the project history:
   - **Size**: Size of the project
   - In the last column, you can download the version of project
 
-![history advanced](../images/web/web-history-2.png)
+![history advanced](images/web/web-history-2.png)
 
 ## Advanced changelog
 
@@ -32,8 +32,8 @@ To see more details of a specific version:
   - **User Agent** indicates device, operating system and tool used to create the version
   - If you use GeoPackage for your survey, you can see a summary of features added, deleted or updated for each table (map layer):
 
-  ![history](../images/web/web-history.png)
+  ![history](images/web/web-history.png)
 
 You can see more information about the feature details under **Show Advanced**:
 
-  ![history advanced](../images/web/web-history-advanced.png)
+  ![history advanced](images/web/web-history-advanced.png)

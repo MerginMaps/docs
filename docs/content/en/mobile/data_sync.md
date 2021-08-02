@@ -16,7 +16,7 @@ you will need to sign up to [Mergin https://public.cloudmergin.com/](https://pub
 We provide a QGIS plugin for Mergin to easily synchronise your projects and data from within QGIS. 
 See the [plugin user manual](../desktop/plugin-sync-project) for more information.
 
-![mergin-plugin](/images/mergin_plugin.png)
+![mergin-plugin](images/mergin_plugin.png)
 
 You can also drag-and-drop your project folder (including layers, SVGs, etc)
 to Mergin project web page.
@@ -34,8 +34,8 @@ only allows you to delete or copy data folder to another location. Instructions 
 * Plug iOS device to a computer
 * Open `Finder` file browser
 * Go to Locations -> `<device_name>` 
-![iTunes](/images/itunes.png)
+![iTunes](images/itunes.png)
 * Click on the tab named `files`  
 * Select `Input` app from a list to see a data folder
-![iTunes2](/images/itunes2.png)
+![iTunes2](images/itunes2.png)
 * Drag-and-drop the INPUT` folder to another location to see the content

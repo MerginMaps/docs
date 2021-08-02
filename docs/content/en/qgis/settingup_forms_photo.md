@@ -15,7 +15,7 @@ To set up a photo widget:
   - From the layer panel, right-click on **survey** layer and select **Properties**
   - In the new window, select **Attributes form**
 
-![photos](/images/qgis_forms_photo.png)
+![photos](images/qgis_forms_photo.png)
 
   - Select **photo** field under the right column (**Available Widgets**)
   - Under the **Widget Display**, from **Widget Type** section:
@@ -35,4 +35,4 @@ To use the photo widget in the form from Input:
   - Select **Take a photo** to use your camera app for taking a photos
   - Select **Add from gallery** to attach an existing photo from your device
 
-![photos](../images/input_forms_photo.png)
+![photos](images/input_forms_photo.png)

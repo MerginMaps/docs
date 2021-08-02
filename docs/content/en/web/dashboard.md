@@ -10,7 +10,7 @@ When you log in to Mergin website, you will be presented with a dashboard for qu
 
 On the left panel, you can access your profile, organisation(s) and subscription plan:
 
-![left panel - dashboard](../images/web/web-dashboard-panel.png)
+![left panel - dashboard](images/web/web-dashboard-panel.png)
 
 - To switch between your profile and your organisation profile, you can click on the drop-down menu near the profile icon on the top left
 
@@ -26,7 +26,7 @@ On the left panel, you can access your profile, organisation(s) and subscription
   - To create a new organisation, select **+ Create** in front of **Organisations**
   - To switch to your organisation profile, click on the organisation from the panel
 
-For more information about organisations, visit [working with organisations](working-with-organisations) page.
+For more information about organisations, visit [working with organisations](./working-with-organisations) page.
 
 - Under **Settings**:
   - **Profile** displays your account details, email notification settings and invitations to join organisations.

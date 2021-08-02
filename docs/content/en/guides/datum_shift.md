@@ -66,7 +66,7 @@ need some special coordinate reference systems, the required files for [PROJ7](h
 required files for your when requested. Just follow the instructions when you see the QGIS warning in the transformation
 dialog:
 
-![QGIS Transformations British National Grid to World Geodetic System](../images/QGIS_Transformations2.png)
+![QGIS Transformations British National Grid to World Geodetic System](images/QGIS_Transformations2.png)
 
 # Example Capture GPS point for Great Britain  
 
@@ -77,7 +77,7 @@ coordinate reference system. When we add point to this point layer, we store the
 GPS) as is in the data section of our layer. When we want to show the point on the QGIS map canvas, QGIS needs to first do
 datum transformation, following by map projection.
 
-![projection transformation](../images/projection_transformation.png)
+![projection transformation](images/projection_transformation.png)
 
 ## 1. Datum transformation
 
@@ -85,7 +85,7 @@ British National Grid (EPSG:27700) is based on datum OSGB 1936 which is differen
 QGIS recognizes that there is possibility to do datum transformation in multiple ways
 so user is asked to select the one from the list:
 
-![QGIS select transformation](../images/transformations_qgis.png)
+![QGIS select transformation](images/transformations_qgis.png)
 
 In this case, the recommended transform is the
 [OSTN15 transformation](https://www.ordnancesurvey.co.uk/business-government/tools-support/os-net/for-developers)
@@ -115,7 +115,7 @@ For example imagine that you digitised your point to be in the corner of the rec
 in the Input app in the field it is obviously shifted by dozens of centimetres. Or other way around, you digitise the
 point in the field, and when opened in QGIS it is misplaced.
 
-![shift of the point](/images/digitizing_shift.png)
+![shift of the point](images/digitizing_shift.png)
 
 The likely reason is that there is correctly downloaded and used extra datum shift file in QGIS, but missing in
 Input app (more information in [this blog](https://lutraconsulting.co.uk/blog/2021/04/22/projections-field/))
@@ -129,12 +129,12 @@ transformation route from the source to the destination coordinate reference sys
 Let's say we want to setup default transformation between British National Grid (EPSG:27700) and
 World Geodetic System used in GPS (EPSG:4326) for all our future QGIS projects.
 
-![QGIS Transformation Dialog](/images/QGIS_Transformations_Dialog.png)
+![QGIS Transformation Dialog](images/QGIS_Transformations_Dialog.png)
 
 Using the "+" button we add a new entry and select EPSG:27700 and EPSG:4326.
 Let's examine the first transformation with the accuracy of 1 meter:
 
-![QGIS Transformations British National Grid to World Geodetic System](/images/QGIS_Transformations2.png)
+![QGIS Transformations British National Grid to World Geodetic System](images/QGIS_Transformations2.png)
 
 At the bottom there is an interesting PROJ description line with pipeline to be used by underlying PROJ library.
 You can read more about [PROJ pipeline](https://proj.org/operations/pipeline.html), but to start with

@@ -14,9 +14,9 @@ To be able to transfer your data to your mobile/tablet device, share your projec
 - Select **Home**
 - On the top right of the screen, select the icon for profile/account
 - In the new page, select **Sign up**
-	![register](/images/input_sign_in.png)
+	![register](images/input_sign_in.png)
 - Fill in the form for registration and select **Sign up**
-	![register](/images/input_sign_up.png)
+	![register](images/input_sign_up.png)
 - You will receive an email to activate your account. You can follow the instructions in the mail to verify your account (optional)
 - You can sign in to your Mergin account
 

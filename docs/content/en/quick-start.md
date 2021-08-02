@@ -49,7 +49,7 @@ If we wanted to do any modifications to the project, we won't be able to upload 
 because we do not have write permissions to the project. We can however create our own copy of the project:
 one of the buttons in the project page will clone the project:
 
-<p align="center"><img src="images/project-icon-clone.png" height="70"></p>
+<p align="center"><img src="gimages/project-icon-clone.png" height="70"></p>
 
 Click the button, pick a project name (it can stay the same - "Basic survey"), select your user name as the namespace
 and finally click the Clone button. In a few seconds, your project is ready! Now you are owner of the project

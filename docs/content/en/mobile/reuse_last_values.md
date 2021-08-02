@@ -15,9 +15,9 @@ To allow this functionality, follow these steps:
 
  - Open any project from your home screen by clicking on its name
  - Click on three dots to open a menu and navigate to `Settings`
-![photos](/images/input_more_icon.png)
+![photos](images/input_more_icon.png)
  - Check option to `Reuse last value option`
-![photos](/images/reuse_last_value_option.png)
+![photos](images/reuse_last_value_option.png)
 
 ## Use in Input App
 
@@ -28,12 +28,12 @@ To allow this functionality, follow these steps:
 
  - In opened form you will see checkboxes next to attributes. In our example we have three editable attributes (besides `fid`). We set Input to remember values for attributes `Name` and `Value` by checking checkboxes next to each of the attributes.
 
-![photos](/images/reuse_last_values_digitize_before.png)
+![photos](images/reuse_last_values_digitize_before.png)
 
  - Now hit `Save` and create a new feature
  - In a newly opened form checked attributes will have values filled with values from last created feature on this layer.
 
-![photos](/images/reuse_last_values_digitize_after.png)
+![photos](images/reuse_last_values_digitize_after.png)
 
 You can use this feature across multiple layers, Input will remember attributes for each layer separately.
 

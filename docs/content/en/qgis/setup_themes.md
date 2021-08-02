@@ -14,13 +14,13 @@ In Input, you can use different **map themes*. This is ideal for switching betwe
 
 - Open QGIS Desktop with you QGIS Project 
 - In the Layers Panel, click on "Manage Map Themes" (eye-icon)
-![Map Themes](../images/qgis_map_themes_setup.png)
+![Map Themes](images/qgis_map_themes_setup.png)
 - Add new themes or replace existing themes.
 
 # Map Themes in Input
 To access the Map Themes in Input, select **(More)** > **Map themes**. The list of the Map Themes should appear as a pop up.
 
-![Map Themes](../images/input_map_themes_osm.png)
-![Map Themes](../images/input_map_themes_base.png)
-![Map Themes](../images/input_map_themes_switch.png)
-![Map Themes](../images/input_map_themes_alt.png)
+![Map Themes](images/input_map_themes_osm.png)
+![Map Themes](images/input_map_themes_base.png)
+![Map Themes](images/input_map_themes_switch.png)
+![Map Themes](images/input_map_themes_alt.png)

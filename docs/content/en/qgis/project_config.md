@@ -21,7 +21,7 @@ your background map. QGIS can also reads local XYZ tiles.
 
 **Note:** that for XYZ tiles, ensure to change the tile resolution to Standard in your connection settings in QGIS. This will ensure the fonts are readable on the high resolution screens (applicable to the majority of the recent phones which come with high DPI screens).
 
-![Connection settings for XYZ](../images/xyz_settings.png)
+![Connection settings for XYZ](images/xyz_settings.png)
 
 **Note:** you also need to change resampling method for WM(T)S layer to ensure the texts are readable on HiDPi screens.
 
@@ -88,9 +88,9 @@ If the map tip does not contain any special marker, it is assumed that the map t
 
 Example of the preview panel in Input and QGIS tooltip set up can be seen below:
 
-![Display setting in QGIS](../images/qgis_properties_display.png)
+![Display setting in QGIS](images/qgis_properties_display.png)
 
-![Preview panel in Input based on Display settings in QGIS](../images/input_preview_panel.png)
+![Preview panel in Input based on Display settings in QGIS](images/input_preview_panel.png)
 
 ### Forms
 This section briefly describes behaviour of some types of widgets with several configurations.  
@@ -189,7 +189,7 @@ Input does not include all the SVGs within QGIS. Therefore, if you are using SVG
 
 An example of Project Properties in QGIS for survey layers and identifiable layers can be seen below:
 
-![Preview panel in Input based on Display settings in QGIS](../images/qgis_project_properties.png)
+![Preview panel in Input based on Display settings in QGIS](images/qgis_project_properties.png)
 
 ## QGIS variables
 

@@ -8,7 +8,7 @@ position: 401
 
 Below is a description of various items within the user interface:
 
-![Input user interface](../images/input_gui.png)
+![Input user interface](images/input_gui.png)
 
 ## Projects
 
@@ -20,7 +20,7 @@ Within this screen you can see the following options:
 
 You can **Search** for projects using the search bar on the top. To access your Mergin profile information, select the icon on the top right of this screen.
 
-![Projects screen](../images/screen4.jpg)
+![Projects screen](images/screen4.jpg)
 
 ## GPS
 By default, the map centred around the project extent. Pressing
@@ -56,7 +56,7 @@ between different map themes using this option.
 ## Settings
 Input specific configuration can be accessed through settings.
 
-![Input user interface](../images/input_settings.png)
+![Input user interface](images/input_settings.png)
 
 ### Mergin
 

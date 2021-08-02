@@ -26,11 +26,11 @@ Note that **location tags have to be allowed** in a camera settings. You can fin
 
 ## Android
 Open Camera app -> Camera settings -> Location tags. 
-![photos](/images/android_geo_tags.jpg)
+![photos](images/android_geo_tags.jpg)
 
 ## iOS
 Open Settings -> Privacy -> Location Services -> Camera (app).
-![photos](/images/ios_geo_tags.PNG)
+![photos](images/ios_geo_tags.PNG)
 
 ## Use it with Photo widget
 The parameter `<ABSOLUTE_PATH_TO_IMAGE>` can be set with an expression using value of another field. 
@@ -44,4 +44,4 @@ for your camera app.
 
 For further examples you can check fields definitions of project **_lutraconsulting/test_exif_** accessible on Mergin.
 
-![photos](/images/gps_exif_metadata.png)
+![photos](images/gps_exif_metadata.png)

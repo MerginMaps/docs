@@ -22,15 +22,15 @@ In the sections below, we go through examples of setting up different widgets fo
 
 |QGIS edit widget name   | Description  |Preview in Input   |
 |---|---|---|
-|Text Edit  |[Text](#text-widget)   | ![layout](/images/input_forms_text.png) |
-|QR & barcode scanner  |[Camera to scan QR and barcode](./#qr-code-reader)   | ![layout](/images/input_forms_qrcode1.png) |
-|Range   |[Numeric field](#number)   | ![layout](/images/input_forms_numbers.png)  |
-|Range   |[Slider](#slider)   | ![layout](/images/input_forms_slider1.png)  |
-|Date&Time   |[Calendar with time](#datetime)  |![layout](/images/input_forms_datetime1.png)   |
-|Attachment   |[Photos from device's camera or gallery](./settingup_forms_photos) | ![layout](/images/input_forms_photo1.png)  |
-|Checkbox   |[Checkbox](#checkbox)   |![layout](/images/input_forms_checkbox2.png)   |
-|Value Map   |[Drop-down menu with pre-defined values](#valuemap) |![layout](/images/input_forms_valuemap1.png)   |
-|Value Relation   |[Drop-down menu with values from another table](#value-relation) |![layout](/images/input_forms_valuerelation.png)   |
+|Text Edit  |[Text](#text-widget)   | ![layout](images/input_forms_text.png) |
+|QR & barcode scanner  |[Camera to scan QR and barcode](./#qr-code-reader)   | ![layout](images/input_forms_qrcode1.png) |
+|Range   |[Numeric field](#number)   | ![layout](images/input_forms_numbers.png)  |
+|Range   |[Slider](#slider)   | ![layout](images/input_forms_slider1.png)  |
+|Date&Time   |[Calendar with time](#datetime)  |![layout](images/input_forms_datetime1.png)   |
+|Attachment   |[Photos from device's camera or gallery](./settingup_forms_photos) | ![layout](images/input_forms_photo1.png)  |
+|Checkbox   |[Checkbox](#checkbox)   |![layout](images/input_forms_checkbox2.png)   |
+|Value Map   |[Drop-down menu with pre-defined values](#valuemap) |![layout](images/input_forms_valuemap1.png)   |
+|Value Relation   |[Drop-down menu with values from another table](#value-relation) |![layout](images/input_forms_valuerelation.png)   |
 
 In addition to the edit widgets, extra configuration can be done to the fields and form layout to make the data collection easier and more consistent. For example: setting a default value, conditional visibility and constraint enforcement.
 
@@ -46,7 +46,7 @@ In QGIS, the default widget for most types of fields is the **Text Edit** widget
   - From the layer panel, right-click on **Points** layer and select **Properties**
   - In the new window, select **Attributes form**
 
-![text](../images/qgis_forms_text.png)
+![text](images/qgis_forms_text.png)
 
   - Select **text** field under the right column (**Available Widgets**)
   - Under the **Widget Display**:
@@ -66,7 +66,7 @@ To use the multiline text edit widget in the form from Input:
 - The form will appear
 - Under **Group1** tab, you can type within the box under **text** field:
 
-![slider](../images/input_forms_text1.png)
+![slider](images/input_forms_text1.png)
 
 ## Number
 
@@ -78,7 +78,7 @@ To set a field in your form to a numeric one:
   - From the layer panel, right-click on **Points** layer and select **Properties**
   - In the new window, select **Attributes form**
 
-![photos](/images/qgis_forms_number.png)
+![photos](images/qgis_forms_number.png)
 
   - Select **Number** field under the right column (**Available Widgets**)
   - Under the **Widget Display**:
@@ -97,7 +97,7 @@ To use the numeric widget in your form from Input:
 - The form will appear
 - Under **Group1** tab, you can type within the box under **Number** field:
 
-![slider](/images/input_forms_number1.png)
+![slider](images/input_forms_number1.png)
 
 Further details about number fields and their configuration with the range widget can be found [here](content/en/qgis/settingup_forms_range_widget)).
 
@@ -113,7 +113,7 @@ To set up a slider widget:
   - From the layer panel, right-click on **survey** layer and select **Properties**
   - In the new window, select **Attributes form**
 
-![photos](../images/qgis_forms_slider.png)
+![photos](images/qgis_forms_slider.png)
 
   - Select **number** field under the right column (**Available Widgets**)
   - Under the **Widget Display**:
@@ -138,7 +138,7 @@ To use the slider widget in the form from Input:
 - The form will appear
 - Under **Data** tab, you can set the **Number of plants:** by moving the slider:
 
-![slider](../images/input_forms_slider.png)
+![slider](images/input_forms_slider.png)
 
 
 ## Advanced value relation with drill-down forms
@@ -164,7 +164,7 @@ To use the QR code scanner in the form from Input:
 - The camera should open, point the camera to a QR
 - The text should be populated in the field
 
-![slider](/images/input_forms_qrcode.jpg)
+![slider](images/input_forms_qrcode.jpg)
 
 
 ## Datetime 
@@ -179,7 +179,7 @@ To set up a data and time widget:
   - From the layer panel, right-click on **survey** layer and select **Properties**
   - In the new window, select **Attributes form**
 
-![photos](../images/qgis_forms_datetime.png)
+![photos](images/qgis_forms_datetime.png)
 
   - Select **DateTime** field under the right column (**Available Widgets**)
   - Under the **Widget Display**, from **Widget Type** section:
@@ -200,7 +200,7 @@ To use the date/time widget in the form from Input:
 - Select **Record** and add a point
 - The form will appear, when selecting the field for date and time a calendar will pop up with the current time automatically set:
 
-![photos](../images/input_forms_datetime.png)
+![photos](images/input_forms_datetime.png)
 
 ## Checkbox
 
@@ -214,7 +214,7 @@ To set up a checkbox widget:
   - From the layer panel, right-click on **survey** layer and select **Properties**
   - In the new window, select **Attributes form**
 
-![photos](../images/qgis_forms_checkbox.png)
+![photos](images/qgis_forms_checkbox.png)
 
   - Select **survey** field under the right column (**Available Widgets**)
   - Under the **Widget Display**:
@@ -232,7 +232,7 @@ To use the date/time widget in the form from Input:
 - Select **Record** and add a point
 - The form will appear, you can switch the status of the **Does it need surveying?** field to true or false using the checkbox
 
-![photos](../images/input_forms_checkbox.png)
+![photos](images/input_forms_checkbox.png)
 
 ## Valuemap
 
@@ -246,7 +246,7 @@ To set up a value map widget:
   - From the layer panel, right-click on **survey** layer and select **Properties**
   - In the new window, select **Attributes form**
 
-![photos](../images/qgis_forms_valuemap.png)
+![photos](images/qgis_forms_valuemap.png)
 
   - Select **habitat** field under the right column (**Available Widgets**)
   - Under the **Widget Display**:
@@ -287,7 +287,7 @@ To set up a value relation widget:
   - From the layer panel, right-click on **Points** layer and select **Properties**
   - In the new window, select **Attributes form**
 
-![photos](/images/qgis_forms_valuerelation.png)
+![photos](images/qgis_forms_valuerelation.png)
 
   - Select **valuerelation** field under the right column (**Available Widgets**)
   - Under the **Widget Display**:
@@ -310,6 +310,6 @@ To use the drop-down widget in the form from Input:
 - Under **Group2** tab, you can select the **valuerelation** from the drop-down menu:
 
 
-![slider](../images/input_forms_valuerelation1.png)
-![slider](../images/input_forms_valuerelation2.png)
-![slider](../images/input_forms_valuerelation3.png)
+![slider](images/input_forms_valuerelation1.png)
+![slider](images/input_forms_valuerelation2.png)
+![slider](images/input_forms_valuerelation3.png)

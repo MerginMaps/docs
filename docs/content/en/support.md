@@ -17,14 +17,14 @@ for you to troubleshoot the problem.
 In QGIS Desktop to send the logs, right-click on a local project under Mergin in the Browser panel and 
 select **Diagnostic logs**. A new window will appear, click **OK** to confirm.
 
-![Plugin Logs](/images/qgis-plugin/plugin-logs.png)
+![Plugin Logs](images/qgis-plugin/plugin-logs.png)
 
 ### Input App
 
 In Input App to send the logs, go to "Settings" and click on "About".
 Select **Diagnostic logs**. A new window will appear, click **OK** to confirm.
 
-![Input Logs](/images/input-logs.png)
+![Input Logs](images/input-logs.png)
 
 Once you have uploaded the logs, you can contact us [info@lutraconsulting.co.uk](mailto:info@lutraconsulting.co.uk) to look into the issues.
 
