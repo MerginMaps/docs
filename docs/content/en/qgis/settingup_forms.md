@@ -204,7 +204,7 @@ To use the date/time widget in the form from Input:
 
 ## Checkbox
 
-Checkbox field becomes handy when you want to set up a Yes/No, True/Falss or On/Off in your field. Some file formats, such as Geopackage support **Boolean** data type. If you have a field set as **Boolean**, QGIS automatically assigns the checkbox for widget type.
+Checkbox field becomes handy when you want to set up a Yes/No, True/False or On/Off in your field. Some file formats, such as Geopackage support **Boolean** data type. If you have a field set as **Boolean**, QGIS automatically assigns the checkbox for widget type.
 
 ## QGIS
 
@@ -253,7 +253,7 @@ To set up a value map widget:
   - Under **General**, for **Alias** type **Habitat type:**
   - Under **Widget Type** section:
     - From the drop-down menu, select **Value Map**
-    - For **Value** and **Description** part type the following values: In-door, Woodland, Farmland, Grassland, Marine, Peatland and Other.
+    - For **Value** and **Description** part type the following values: In-door, Woodland, Farmland, Grassland, Marine, Peatlands and Other.
 
 Ensure to save and synchronise your project.
 

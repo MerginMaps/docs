@@ -33,6 +33,17 @@ and see the result in `dist` folder
 
 To deploy on AWS Amplify, see (amplify.yml)[amplify.yml] config file used
 
+# Spelling
+
+- add false positives to `.wordlist.txt`
+- sort and lowercase it before submitting
+
+```bash
+tr '[:upper:]' '[:lower:]' < .wordlist.txt > temp-wordlist.txt
+cat temp-wordlist.txt | sort -u > .wordlist.txt
+rm temp-wordlist.txt
+```
+
 # License
 
 The Mergin'Map product documentation in the `docs/content`and `docs/static` are licensed under a [CC-BY license](LICENSE).

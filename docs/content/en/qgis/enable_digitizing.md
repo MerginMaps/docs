@@ -12,5 +12,5 @@ menuTitle: Enable Digitizing
 ![Map Themes](../images/qgis_data_sources.png)
 - You need to have at least one layer without "Read-only" check
 - Save the project 
-- Resync the project back to your device
+- Sync the project again back to your device
 
