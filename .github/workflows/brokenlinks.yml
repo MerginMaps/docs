@@ -1,0 +1,10 @@
+name: Broken Links
+on: push
+jobs:
+  broken_img_links:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Find broken links
+      run: |
+        ./scripts/broken_links.bash

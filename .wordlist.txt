@@ -58,6 +58,7 @@ helmert
 hgridshift
 hh
 hidpi
+href
 https
 iconv
 img
@@ -150,8 +151,10 @@ shapefiles
 skoda
 spatialindex
 spatialite
+src
 subfolders
 subprojects
+svg
 svgs
 tmerc
 tooltip
