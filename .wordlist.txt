@@ -31,6 +31,7 @@ epsg
 esri
 exif
 exiv
+feets
 fid
 foss
 freexl
