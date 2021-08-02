@@ -5,7 +5,7 @@ title: Enable Digitizing
 permalink: enable_digitizing
 menuTitle: Enable Digitizing
 ---
-<!--- IMPORTANT: This permlink is referenced from InputApp -->
+<!--- IMPORTANT: This permalink is referenced from Input App -->
 
 - Open QGIS Desktop with you QGIS Project 
 - In the Menu>Project>Properties click on "Data Sources"

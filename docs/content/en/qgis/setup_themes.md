@@ -4,11 +4,11 @@ position: 503
 permalink: setup_themes
 title: Map Themes
 ---
-<!--- IMPORTANT: This permlink is referenced from InputApp -->
+<!--- IMPORTANT: This permalink is referenced from Input App -->
 
-In Input, you can use different **map themes*. This is ideal for switiching between different background maps (e.g. cartography map and aerial photography). The map themes should be first set up in QGIS.
+In Input, you can use different **map themes*. This is ideal for switching between different background maps (e.g. cartography map and aerial photography). The map themes should be first set up in QGIS.
 
-# Seting up QGIS Map Themes
+# Setting up QGIS Map Themes
 
 [To set up a new map theme in QGIS](https://docs.qgis.org/3.10/en/docs/user_manual/introduction/general_tools.html#configuring-map-themes)
 

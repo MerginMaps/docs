@@ -5,7 +5,7 @@ title: Data Synchronization
 menuTitle: Synchronization
 position: 402
 ---
-<!--- IMPORTANT: This permlink is referenced from InputApp -->
+<!--- IMPORTANT: This permalink is referenced from Input App -->
 
 ## Mergin Server (Android/iOS)
 

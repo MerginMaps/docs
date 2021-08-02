@@ -5,7 +5,7 @@ title: Custom Projections
 position: 406
 
 ---
-<!--- IMPORTANT: This permlink is referenced from InputApp -->
+<!--- IMPORTANT: This permalink is referenced from Input App -->
 
 <alert type="info">
 since Input 0.8.0
@@ -19,7 +19,7 @@ These shift files can be then used in all projects for custom PROJ datum shift.
 
 If you want to use your custom PROJ datum shifts, copy them to the folder `<project folder>/proj`
 to correctly render your QGIS project on InputApp. Note that one the project is firstly downloaded
-to Input, you have to restart Input to load your custom datu, shifts.
+to Input, you have to restart Input to load your custom datum shifts.
 
 We recommend to use Mergin service to transfer the project with the required
 proj resources to your mobile device.

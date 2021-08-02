@@ -26,7 +26,7 @@ A quick code example to download a project:
 ```python
 from mergin import MerginClient
 
-mc = MerginClient(login='john', password='topsecret')
+mc = MerginClient(login='john', password='pass')
 mc.download_project('john/project1', '/home/john/mergin/project1')
 ```
 

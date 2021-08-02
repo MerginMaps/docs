@@ -4,7 +4,7 @@ permalink: /subscriptions
 title: Subscriptions and invoicing
 position: 303
 ---
-<!--- IMPORTANT: This permlink is referenced from InputApp -->
+<!--- IMPORTANT: This permalink is referenced from Input App -->
 
 Mergin Service offers a free plan for up to 100 MB data usage. For more storage you can choose one of the
 two plans for users ("Individual" 1GB or "Professional" 10GB storage).

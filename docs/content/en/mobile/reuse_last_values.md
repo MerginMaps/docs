@@ -5,7 +5,9 @@ menuTitle: Reuse last entered values
 position: 407
 ---
 
-Input supports faster digitizing of similar features by allowing user to reuse values of repeating attributes. When attribute is marked for reuse, next created feature will have desired attributes prefilled with values from last feature.
+Input supports faster digitizing of similar features by allowing user to reuse values of repeating 
+attributes. When attribute is marked for reuse, a next created feature has it already entered 
+with value from last feature.
 
 ## Setup 
 

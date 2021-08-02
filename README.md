@@ -1,9 +1,9 @@
-# Mergin'Maps Documentation
+# Mergin Maps Documentation
 
 Source code for documentation hosted on [merginmaps.com/docs](https://merginmaps.com/docs)
 
 - Modify content in [docs/content](docs/content) folder 
-- Improve images or assests in [docs/static](docs/static) folder
+- Improve images or assets in [docs/static](docs/static) folder
 - Update or modify [nuxtjs/content-docs-theme](https://content.nuxtjs.org) for styling
 
 Use GitHub Pull Requests to propose changes, we will review queue typically next working day!
