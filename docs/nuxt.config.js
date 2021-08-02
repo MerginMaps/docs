@@ -4,6 +4,9 @@ export default theme({
   router: {
     base: '/docs/'
   },
+  generate: {
+    dir: 'dist/docs'
+  },
   docs: {
     // primaryColor: '#E24F55'
   },

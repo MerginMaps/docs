@@ -36,7 +36,19 @@ and see the result in `dist` folder
 
 To deploy on AWS Amplify, see (amplify.yml)[amplify.yml] config file used
 
-# Spelling
+## Dark Mode / Light Mode
+
+Use css classes `light-img` or `dark-img`
+
+e.g.
+```
+<a href='https://public.cloudmergin.com'><img alt='Use on the cloud' src='logo-light.svg' class="light-img" height="20" /></a>
+<a href='https://public.cloudmergin.com'><img alt='Use on the cloud' src='logo-dark.svg' class="dark-img" height="20" /></a>
+```
+
+# Continuous Integration
+
+## Spelling
 
 - add false positives to `.wordlist.txt`
 - sort and lowercase it before submitting

@@ -7,8 +7,7 @@ features:
   - NOT USED
 ---
 
-<img src="/preview.jpeg" class="light-img" width="1280" height="640" alt=""/>
-<img src="/preview.jpeg" class="dark-img" width="1280" height="640" alt=""/>
+![](preview.jpeg)
 
 <alert type="success">
 Enjoy the feeling when you make sense of your geo-data on maps
@@ -35,7 +34,7 @@ No more transcribing paper notes taken in the field!
 
 Install the application 
 
-<a href='https://play.google.com/store/apps/details?id=uk.co.lutraconsulting'><img alt='Get it on Google Play' src='images/google-play-store-badge.png' width="170" /></a>
+<a href='https://play.google.com/store/apps/details?id=uk.co.lutraconsulting'><img alt='Get it on Google Play' src='/images/google-play-store-badge.png' width="170" /></a>
 <a href='https://apps.apple.com/us/app/input/id1478603559?ls=1'><img alt='Download on the App Store' src='images/app-store.png' width="170" /></a>
 
 and you immediately can:
