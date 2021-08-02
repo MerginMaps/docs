@@ -51,7 +51,7 @@ e.g.
  - Do not add `docs` prefix
  - Always start with `/`
 
-e.g. `![](/images/myimage.png` if the image is `docs/static/images/` folder on disk
+e.g. `![](/images/cloudmergin.png` if the image is `docs/static/images/` folder on disk
 
 ## Reference other markdowns 
  - use relative path to the current file
