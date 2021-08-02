@@ -31,28 +31,7 @@ yarn generate
 
 and see the result in `dist` folder
 
-To deploy on AWS Amplify, use this build settings 
-
-```yaml
-version: 1
-applications:
-  - frontend:
-      phases:
-        preBuild:
-          commands:
-            - yarn install
-        build:
-          commands:
-            - yarn run generate
-      artifacts:
-        baseDirectory: dist
-        files:
-          - '**/*'
-      cache:
-        paths:
-          - node_modules/**/*
-    appRoot: docs
-```
+To deploy on AWS Amplify, see (amplify.yml)[amplify.yml] config file used
 
 # License
 
