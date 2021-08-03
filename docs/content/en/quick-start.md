@@ -1,6 +1,8 @@
 ---
 category: ''
-title: Quick Start
+description: 'Quick Start'
+title: 'Quick Start'
+menuTitle: 'Quick Start'
 position: 2
 ---
 
@@ -75,7 +77,7 @@ The Input mobile app allows you to view your projects on Android devices or iPho
 easy to use user interface and it features seamless integration with Mergin service. You can find the app in the
 app store of your platform:
 
-<template><AppDownload /></template>
+<AppDownload></AppDownload>
 
 ### Sign in
 
@@ -102,6 +104,8 @@ and open the project.
 <p align="center"><img src="images/input-map-basic-survey.png" width="250"></p>
 
 [Take the Tour](./guides/tutorial2/take-the-tour) to grasp the basics of the app and see how to start capturing, sharing and visualising survey data.
+
+<YouTube id="DQXrINUqiFI"></YouTube>
 
 ## Desktop
 ### Install

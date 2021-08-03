@@ -6,5 +6,6 @@
     "dark": "/docs/logo-dark.svg"
   },
   "github": "merginmaps/docs",
-  "twitter": "merginmaps"
+  "twitter": "@merginmaps",
+  "defaultBranch": "main"
 }

@@ -9,7 +9,7 @@ position: 102
 
 Download Input App from Google Play or App Store: 
 
-<template><AppDownload /></template>
+<AppDownload></AppDownload>
 
 Once you have installed and opened Input you will see two tour projects:
 

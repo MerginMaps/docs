@@ -13,7 +13,7 @@ special offer for Mergin Maps Cloud for project contributors.
 
 Write a review of the application on App Store or Android Google Play
 
-<template><AppDownload /></template>
+<AppDownload></AppDownload>
 
 ## Translate
 

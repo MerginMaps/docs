@@ -4,18 +4,18 @@ title: Licensing
 position: 4
 ---
 
-# MerginMaps documentation 
+## MerginMaps documentation 
 CC-BY License
 
-# Mergin Maps Server
+## Mergin Maps Server
 
  - Community edition (CE) - AGLP License
  - [SaaS/Enterprise](public.cloudmergin.com) - Copyright @ Lutra Consulting Ltr. 
 
-# QGIS and QGIS MerginMaps Plugin
+## QGIS and QGIS Mergin Maps Plugin
 GPLv2 License
 
-# Mobile Input App
+## Mobile Input App
 
 InputApp is licensed under [GPL-2](https://github.com/lutraconsulting/input/blob/master/LICENSE)
 

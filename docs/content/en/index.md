@@ -34,7 +34,8 @@ No more transcribing paper notes taken in the field!
 
 Install the application 
 
-<template><AppDownload /></template>
+
+<AppDownload></AppDownload>
 
 and you immediately can:
 

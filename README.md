@@ -62,6 +62,10 @@ e.g.
 
 e.g. `![](images/cloudmergin.png` if the image is `docs/static/images/` folder on disk
 
+## Embed YouTube content
+
+Use `<YouTube>` component, e.g. `<YouTube id="DQXrINUqiFI"></YouTube>`
+
 ## Reference other markdowns 
  - use relative path to the current file
 
@@ -77,7 +81,7 @@ see [i18n nuxtjs/content docs](https://content.nuxtjs.org/themes/docs#locales)
 ## Vue custom components
 
  - add your component to `docs/docs/components/MyComponent.vue`
- - use in markdown as `<template><MyComponent /></template>`
+ - use in markdown as `<MyComponent></MyComponent>`
 
 # Continuous Integration
 
