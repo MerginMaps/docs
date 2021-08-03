@@ -4,6 +4,9 @@
 
 # Mergin Maps Documentation
 
+[Staging/Dev deployment](https://dev.d1qvlu9jr497xw.amplifyapp.com/docs)
+[Production deployment](https://merginmaps.com/docs)
+
 Source code for documentation hosted on [merginmaps.com/docs](https://merginmaps.com/docs)
 
 - Modify content in [docs/content](docs/content) folder 
@@ -11,6 +14,11 @@ Source code for documentation hosted on [merginmaps.com/docs](https://merginmaps
 - Update or modify [nuxtjs/content-docs-theme](https://content.nuxtjs.org) for styling
 
 Use GitHub Pull Requests to propose changes, we will review queue typically next working day!
+
+## Development Workflow
+
+ - For new features coming in the next release create pull request to `dev` branch. 
+ - For fixed to the existing documentation, you can do pull request to `main` branch
 
 ## Dynamic server (for development)
 To change docs locally, run the server, open `http://localhost:3000/` in your browser and modify markdowns
@@ -58,6 +66,18 @@ e.g. `![](images/cloudmergin.png` if the image is `docs/static/images/` folder o
  - use relative path to the current file
 
 e.g. `[](../mobile/othermarkdown.md)
+
+## Translations (i18n)
+
+see [i18n nuxtjs/content docs](https://content.nuxtjs.org/themes/docs#locales)
+
+ - for new language, add it to `docs/docs/nuxt.config.js`
+ - add new folder in `docs/docs/content/<lang>`
+
+## Vue custom components
+
+ - add your component to `docs/docs/components/MyComponent.vue`
+ - use in markdown as `<template><MyComponent /></template>`
 
 # Continuous Integration
 

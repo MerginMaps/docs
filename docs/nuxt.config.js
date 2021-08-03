@@ -1,6 +1,7 @@
 import theme from '@nuxt/content-theme-docs'
 
 export default theme({
+  target: 'static',
   router: {
     base: '/docs/'
   },
@@ -8,7 +9,7 @@ export default theme({
     dir: 'dist/docs'
   },
   docs: {
-    // primaryColor: '#E24F55'
+    primaryColor: '#00CD81'
   },
   loading: { color: '#00CD81' },
   i18n: {
@@ -20,6 +21,10 @@ export default theme({
     }],
     defaultLocale: 'en'
   },
+
+  // Auto import components (https://go.nuxtjs.dev/config-components)
+  components: true,
+
   buildModules: [
     ['@nuxtjs/google-analytics', {
       id: 'UA-144776738-1'

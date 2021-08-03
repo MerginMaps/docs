@@ -49,7 +49,7 @@ If we wanted to do any modifications to the project, we won't be able to upload 
 because we do not have write permissions to the project. We can however create our own copy of the project:
 one of the buttons in the project page will clone the project:
 
-<p align="center"><img src="gimages/project-icon-clone.png" height="70"></p>
+<p align="center"><img src="images/project-icon-clone.png" height="70"></p>
 
 Click the button, pick a project name (it can stay the same - "Basic survey"), select your user name as the namespace
 and finally click the Clone button. In a few seconds, your project is ready! Now you are owner of the project
@@ -75,8 +75,7 @@ The Input mobile app allows you to view your projects on Android devices or iPho
 easy to use user interface and it features seamless integration with Mergin service. You can find the app in the
 app store of your platform:
 
-<a href='https://play.google.com/store/apps/details?id=uk.co.lutraconsulting'><img alt='Get it on Google Play' src='images/google-play-store-badge.png' width="170" /></a>
-<a href='https://apps.apple.com/us/app/input/id1478603559?ls=1'><img alt='Download on the App Store' src='images/app-store.png' width="170" /></a>
+<template><AppDownload /></template>
 
 ### Sign in
 

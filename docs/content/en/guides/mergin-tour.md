@@ -20,8 +20,7 @@ To start with, you will need to install the following software applications:
 
 - [Input app](https://inputapp.io/) - for your mobile table: you can download the app from [Google Play Store](https://play.google.com/store/apps/details?id=uk.co.lutraconsulting&ah=GSqwibzO2n63iMlCjHmMuBk89t4&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1) or [Apple's App Store](https://apps.apple.com/us/app/input/id1478603559?ls=1)
 
-<a href='https://play.google.com/store/apps/details?id=uk.co.lutraconsulting'><img alt='Get it on Google Play' src='images/google-play-store-badge.png' width="170" /></a>
-<a href='https://apps.apple.com/us/app/input/id1478603559?ls=1'><img alt='Download on the App Store' src='images/app-store.png' width="170" /></a>
+<template><AppDownload /></template>
 
 In addition, you will need to register with the [Mergin](https://public.cloudmergin.com/) service. The [Mergin](https://public.cloudmergin.com/) service allows you to transfer data between your PC/laptop and mobile/table via the cloud. Follow the [registration help page](https://help.cloudmergin.com/registration.html) to sign up to the service.
 
