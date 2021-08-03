@@ -24,6 +24,7 @@ datasets
 datetime
 der
 dev
+dqxrinuqifi
 ecn
 ellps
 env
@@ -66,6 +67,7 @@ inputapp
 integrations
 inv
 jpg
+js
 json
 kartoza
 kwast
@@ -92,10 +94,12 @@ metabase
 mpl
 multiline
 multipolygons
+mycomponent
 namespace
 ndk
 nonspatial
 ntv
+nuxt
 nuxtjs
 openmaptiles
 openssl
@@ -168,6 +172,7 @@ valuemap
 valuerelation
 vectortileserver
 virtualearth
+vue
 waterberg
 webhooks
 wgs

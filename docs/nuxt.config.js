@@ -1,9 +1,25 @@
 import theme from '@nuxt/content-theme-docs'
 
 export default theme({
-  target: 'static',
+  /*
+   ** Deployment target
+   ** Doc: https://nuxtjs.org/guides/features/deployment-targets
+   */
+  target: "static",
+  /*
+   ** Rendering mode
+   ** Doc: https://nuxtjs.org/guides/features/rendering-modes
+   */
+  mode: "universal",
   router: {
-    base: '/docs'
+    base: '/docs/'
+  },
+  head: {
+    title: "Mergin Maps Documentation",
+    meta: [
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" }
+    ]
   },
   generate: {
     dir: 'dist/docs'
