@@ -13,6 +13,7 @@ Here is the (incomplete) list of external media referring to Mergin Maps:
 
 # Tutorials:
  - [Field surveys using QGIS, Mergin and Input](https://ocw.un-ihe.org/mod/book/view.php?id=5497) - free course by Hans van der Kwast
+ - [GIS for fieldwork](https://courses.gisopencourseware.org/course/view.php?id=46) - free course by Hans van der Kwast
 
 # Presentations from QGIS Open Day:
  - [Input and Mergin: collect data, sync and collaborate with ease](https://www.youtube.com/watch?v=UT5xcvcNQR0) - by Saber Razmjooei, 51min (March 2021)

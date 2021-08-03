@@ -1,9 +1,9 @@
 {
-  "title": "Mergin'Maps",
+  "title": "Mergin Maps",
   "url": "https://merginmaps.com/docs",
   "logo": {
-    "light": "/logo-light.svg",
-    "dark": "/logo-dark.svg"
+    "light": "/docs/logo-light.svg",
+    "dark": "/docs/logo-dark.svg"
   },
   "github": "merginmaps/docs",
   "twitter": "merginmaps"
