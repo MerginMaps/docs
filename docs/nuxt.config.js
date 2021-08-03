@@ -19,5 +19,10 @@ export default theme({
       name: 'English'
     }],
     defaultLocale: 'en'
-  }
+  },
+  buildModules: [
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-144776738-1'
+    }]
+  ]
 })
