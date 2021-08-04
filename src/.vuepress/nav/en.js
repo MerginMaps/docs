@@ -42,20 +42,20 @@ module.exports = [
     text: 'Components',
     items: [
       {
-        text: 'Server & Cloud',
-        link: '/web/'
-      },
-      {
-        text: 'QGIS Plugin',
-        link: '/plugin/'
-      },
-      {
-        text: 'QGIS Project',
-        link: '/qgis/'
+        text: 'Server and Cloud',
+        link: '/components/web/'
       },
       {
         text: 'Mobile Input App',
-        link: '/mobile/'
+        link: '/components/mobile/'
+      },
+      {
+        text: 'QGIS Plugin',
+        link: '/components/plugin/'
+      },
+      {
+        text: 'QGIS Project',
+        link: '/components/qgis/'
       }
     ]
   },

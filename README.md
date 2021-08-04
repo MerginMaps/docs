@@ -9,11 +9,10 @@
 
 Source code for documentation hosted on [merginmaps.com/docs](https://merginmaps.com/docs)
 
-- Modify content in [docs/content](docs/content) folder 
-- Improve images or assets in [docs/static](docs/static) folder
-- Update or modify [nuxtjs/content-docs-theme](https://content.nuxtjs.org) for styling
+- Modify content in [docs/src](./content) folder
+- Check official [vuepress documentation](https://vuepress.vuejs.org/)
 
-Use GitHub Pull Requests to propose changes, we will review queue typically next working day!
+Use GitHub Pull Requests to propose changes, we will review and merge your changes!
 
 ## Development Workflow
 
@@ -21,15 +20,13 @@ Use GitHub Pull Requests to propose changes, we will review queue typically next
  - For fixed to the existing documentation, you can do pull request to `main` branch
 
 ## Dynamic server (for development)
-To change docs locally, run the server, open `http://localhost:3000/` in your browser and modify markdowns
+To change docs locally, run the server, open `http://localhost:8080/` in your browser and modify markdowns
 
 ```bash
 cd merginmaps/docs
 yarn install
 yarn dev
 ```
-
-Tip: double-click on the page in the browser and edit the markdown in `http://localhost:3000/` deployment directly
 
 ## Static generation (for deployments)
 
@@ -44,6 +41,8 @@ yarn build
 and see the result in `dist` folder
 
 To deploy on AWS Amplify, see [amplify.yml](amplify.yml) config file used
+
+## Documentation Guildlines
 
 ## Dark Mode / Light Mode
 
