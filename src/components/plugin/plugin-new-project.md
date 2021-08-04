@@ -4,7 +4,7 @@
 
 To create a new project, you can start from a blank project or alternatively open an existing project. To start with, click on **Create Mergin Project** from the toolbar:
 
-![](.mergin_plugin_project_wizard_1.png)
+![](./mergin_plugin_project_wizard_1.png)
 
 A new window will appear which should give you three options (the last two options are available only if you have an existing project open):
 
