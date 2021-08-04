@@ -24,7 +24,7 @@ Use GitHub Pull Requests to propose changes, we will review queue typically next
 To change docs locally, run the server, open `http://localhost:3000/` in your browser and modify markdowns
 
 ```bash
-cd merginmaps/docs/docs
+cd merginmaps/docs
 yarn install
 yarn dev
 ```
@@ -36,9 +36,9 @@ Tip: double-click on the page in the browser and edit the markdown in `http://lo
 To generate static HTML files, run 
 
 ```bash
-cd merginmaps/docs/docs
+cd merginmaps/docs
 yarn install
-yarn generate
+yarn build
 ```
 
 and see the result in `dist` folder
@@ -80,8 +80,8 @@ see [i18n nuxtjs/content docs](https://content.nuxtjs.org/themes/docs#locales)
 
 ## Vue custom components
 
- - add your component to `docs/docs/components/MyComponent.vue`
- - use in markdown as `<MyComponent></MyComponent>`
+ - add your component to `src/.vuepress/components/MyComponent.vue`
+ - use in markdown as `<MyComponent></MyComponent>` or `<MyComponent />`
 
 # Continuous Integration
 

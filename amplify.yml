@@ -7,7 +7,7 @@ applications:
             - yarn install
         build:
           commands:
-            - yarn run generate
+            - yarn build
       artifacts:
         baseDirectory: dist
         files:
@@ -15,4 +15,4 @@ applications:
       cache:
         paths:
           - node_modules/**/*
-    appRoot: docs
+    appRoot: ''
