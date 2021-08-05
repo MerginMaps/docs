@@ -3,8 +3,8 @@
 
 # Mergin Maps Documentation
 
-[Staging/Dev deployment](https://dev.d1qvlu9jr497xw.amplifyapp.com/docs)
-[Production deployment](https://merginmaps.com/docs)
+ - [Staging/Dev deployment](https://dev.d1qvlu9jr497xw.amplifyapp.com/docs)
+ - [Production deployment](https://merginmaps.com/docs)
 
 Source code for documentation hosted on [merginmaps.com/docs](https://merginmaps.com/docs)
 
@@ -65,13 +65,11 @@ type is one of "tip"|"warning"|"error", see [vuepress docs](https://v1.vuepress.
  - Place images next a markdown file that uses it  
  - Do not start with `/`, use relative paths
 
-e.g. `![](./cloudmergin.png` if the image is in the same folder as your mardown file
+e.g. `![](./cloudmergin.png)` if the image is in the same folder as your mardown file
 
-## Embed YouTube content
+## Links 
 
-Use `<YouTube>` component, e.g. `<YouTube id="DQXrINUqiFI"></YouTube>`
-
-## Reference other markdowns 
+### Reference other markdowns 
 
  - use relative path to the current file
  - add `.md` extension
@@ -79,17 +77,34 @@ Use `<YouTube>` component, e.g. `<YouTube id="DQXrINUqiFI"></YouTube>`
 
 e.g. `[see this](../web/otherfile.md#permissions)`
 
-e.g. `[](../mobile/othermarkdown.md)
+## Custom Components 
+
+see `src/.vuepress/components`
+
+ - add your component to `src/.vuepress/components/MyComponent.vue`
+ - use in markdown as `<MyComponent></MyComponent>` or `<MyComponent />`
+
+### Reference QGIS Help pages
+
+Use `<QGISHelp>` component, e.g. `<QGISHelp ver="3.10" link="user_docs/intro.html" text="See QGIS Help page">`
+
+### Embed YouTube content
+
+Use `<YouTube>` component, e.g. `<YouTube id="DQXrINUqiFI" />`
+
+### Reference Mergin project 
+
+Use `<MerginMapsProject>` component, e.g. `<MerginMapsProject id="lutraconsulting/test_forms" />`
+
+### Show Input App Google/Apple badges for download
+
+Use `<AppDownload>` component, e.g. `<AppDownload />`
 
 ## Translations (i18n)
 
 see [vuepress docs](https://v1.vuepress.vuejs.org/guide/i18n.html#site-level-i18n-config)
 
-
-## Vue custom components
-
- - add your component to `src/.vuepress/components/MyComponent.vue`
- - use in markdown as `<MyComponent></MyComponent>` or `<MyComponent />`
+not yet implemented
 
 # License
 

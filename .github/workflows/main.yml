@@ -10,4 +10,4 @@ jobs:
        yarn install
     - name: Generate
       run: |
-        yarn generate
+        yarn build
