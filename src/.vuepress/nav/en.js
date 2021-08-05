@@ -3,15 +3,15 @@ module.exports = [
     text: 'Guides',
     items: [
       {
-        text: 'First steps with Maps',
+        text: 'Taking Field Notes',
         link: '/guides/input-tour/'
       },
       {
-        text: 'My QGIS Project',
+        text: 'Sharing my QGIS Project',
         link: '/guides/mergin-tour/'
       },
       {
-        text: 'Projections (Advanced) ',
+        text: 'Projections',
         link: '/guides/datum-shift/'
       }
     ]
