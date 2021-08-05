@@ -7,9 +7,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Install
       run: |
-       cd docs
        yarn install
     - name: Generate
       run: |
-        cd docs
         yarn generate
