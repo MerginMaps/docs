@@ -3,7 +3,7 @@ on:
   push:
     paths:
     - '**.md'
-    
+
 jobs:
   markdown_checks:
     runs-on: ubuntu-latest

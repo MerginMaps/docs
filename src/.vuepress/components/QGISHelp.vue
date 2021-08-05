@@ -1,7 +1,7 @@
 <template>
   <span>
     <a :href="`https://docs.qgis.org/${ver}/en/docs/${link}`" target="_blank" rel="noopener noreferrer">
-      <img alt="QGIS Documentation" :src="`/QGIS.svg`" />
+      <img alt="QGIS Documentation" :src="$withBase('/QGIS.svg')" />
       <span v-html="text"></span>
       <span>
         <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound">

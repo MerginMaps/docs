@@ -21,6 +21,7 @@ div {
   width: 100%;
   padding-top: min(500px,56%);
   position: relative;
+  border: 3px solid #eaecef;
 }
 
 iframe {
@@ -29,5 +30,6 @@ iframe {
   left: 0;
   bottom: 0;
   right: 0;
+
 }
 </style>
