@@ -6,11 +6,11 @@ When surveying, you might want to take a photo from your camera or attach an exi
 
 To set up a photo widget:
 
-  - Download and open [this example project](https://public.cloudmergin.com/projects/documentation/form_setup/tree) in QGIS
+  - Download and open <MerginMapsProject id="documentation/form_setup" /> in QGIS
   - From the layer panel, right-click on **survey** layer and select **Properties**
   - In the new window, select **Attributes form**
 
-![photos](images/qgis_forms_photo.png)
+![photos](./qgis_forms_photo.png)
 
   - Select **photo** field under the right column (**Available Widgets**)
   - Under the **Widget Display**, from **Widget Type** section:
@@ -30,4 +30,4 @@ To use the photo widget in the form from Input:
   - Select **Take a photo** to use your camera app for taking a photos
   - Select **Add from gallery** to attach an existing photo from your device
 
-![photos](images/input_forms_photo.png)
+![photos](./input_forms_photo.png)

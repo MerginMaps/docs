@@ -1,8 +1,27 @@
 module.exports = {
     '/guides/': [
-        'input-tour/',
-        'mergin-tour/',
-        'datum-shift/'
+      {
+        title: 'Beginners',   // required
+        path: '/foo/',      // optional, link of the title, which should be an absolute path and must exist
+        collapsable: false, // optional, defaults to true
+        sidebarDepth: 1,    // optional, defaults to 1
+        children: [
+          'input-tour/',
+          'mergin-tour/'
+        ]
+      },
+      {
+        title: 'Advanced',
+        children: [ /* ... */ ],
+        initialOpenGroupIndex: -1 // optional, defaults to 0, defines the index of initially opened subgroup
+      },
+      {
+        title: 'Expert',
+        children: [
+            'datum-shift/'
+        ],
+        initialOpenGroupIndex: -1 // optional, defaults to 0, defines the index of initially opened subgroup
+      }
     ],
     '/components/': [
         {

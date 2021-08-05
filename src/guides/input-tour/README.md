@@ -1,4 +1,4 @@
-# First steps with Maps
+# Taking Field Notes <Badge text="Beginner" type="tip"/>
 
 ## Installation
 
@@ -32,9 +32,7 @@ you to create points, lines and areas with field notes and photos:
 You can carry out these steps from your mobile or desktop web browser - 
 either will be OK.
 
-* Go to the <a href="https://public.cloudmergin.com/" target=_blank>Mergin 
-website</a> and create a new account.
-
+* Go to the [Mergin website](https://public.cloudmergin.com) and create a new account.
 
 ## Create a project
 
@@ -110,8 +108,7 @@ Now you know how to create a project, get it onto your mobile, make changes
 and sync them back to Mergin. Let's now see how we can share our project 
 with others.
 
-These settings are made through the <a href="https://public.cloudmergin.com/" target=_blank>Mergin 
-website</a>.
+These settings are made through the [Mergin website](https://public.cloudmergin.com)
 
 * When logged-in to Mergin, locate *My projects*
 
@@ -141,7 +138,7 @@ to have write access to the project you'd still need to explicitly share
 it with them and grant them write access though.
 
 That's the end of the Quick Start Guide but there's loads more information 
-in the <a href="/">main documentation</a> such as how to carry out a typical 
+in the [main documentation](../../index.md) such as how to carry out a typical 
 Input workflow:
 
 * Preparing project: user loads background and survey layers, set up the forms, apply styling to the layers, set up map themes and define the layers to be used for survey purpose. See [Project preparation](../../qgis/project_config.md)

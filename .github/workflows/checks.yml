@@ -1,0 +1,13 @@
+name: Markdown Checks
+on:
+  push:
+    paths:
+    - '**.md'
+    -
+jobs:
+  broken_img_links:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Find markdown style errors
+      run: |
+        ./scripts/markdown_style.bash

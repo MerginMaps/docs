@@ -8,9 +8,9 @@ To be able to transfer your data to your mobile/tablet device, share your projec
 - Select **Home**
 - On the top right of the screen, select the icon for profile/account
 - In the new page, select **Sign up**
-	![register](images/input_sign_in.png)
+	![register](./input_sign_in.png)
 - Fill in the form for registration and select **Sign up**
-	![register](images/input_sign_up.png)
+	![register](./input_sign_up.png)
 - You will receive an email to activate your account. You can follow the instructions in the mail to verify your account (optional)
 - You can sign in to your Mergin account
 
@@ -20,24 +20,24 @@ application for the first time, it will take you to **Home** screen.
 This screen displays all the projects stored locally (under
 /sdcard/INPUT folder).
 
-![MY PROJECTS screen in Input](images/input_projects_home.png)
+![MY PROJECTS screen in Input](./input_projects_home.png)
 
 To access your projects or those shared with you through Mergin, select
 **My projects** or **Shared with me**  tabs respectively. You will need your log in details to sign in to
 Mergin:
 
-![Mergin sign in screen in Input](images/input_mergin_signin.png)
+![Mergin sign in screen in Input](./input_mergin_signin.png)
 
 Once logged in, you can download your project to work on it locally by
 pressing download button to the right of the project:
 
-![My projects screen in Input](images/input_projects_my_projects.png)
+![My projects screen in Input](./input_projects_my_projects.png)
 
 The project will be available for loading in Input after you download it locally.
 Select **Home** and you should be able to see your downloaded
 project:
 
-![Home screen in Input](images/input_projects_home_updated.png)
+![Home screen in Input](./input_projects_home_updated.png)
 
 Selecting a project under **Home** will open it in INPUT.
 
@@ -54,13 +54,13 @@ layers, you can edit. In Input, you have two modes to capture feature:
 
 If your survey layer is a point layer, it will show a cross-hair at your GPS location. You can confirm the location by pressing **Confirm**. Alternatively, you can move the map to another location. The point below the cross-hair will be used as the recorded location. You can move back to your location, by pressing **GPS**.
 
-![Capturing point](images/input_capture_point.png)
+![Capturing point](./input_capture_point.png)
 
 ### Capturing lines or areas
 
 If your survey layer is a line or area, the panel at the bottom changes to a figure similar to the one below:
 
-![Capturing lines](images/input_capture_line.png)
+![Capturing lines](./input_capture_line.png)
 
 You can:
 
@@ -84,7 +84,7 @@ in the form edit.
 ## Synchronisation of data/ projects
 You can upload your changes through the Mergin service, once you have network connectivity. Select Project from the lower panel and then tap on **My projects** (or **Shared with me** if you have write access to the shared project). Input should automatically flag changed projects with a synchronise icon.
 
-![My projects screen with updated local project](images/input_my_projects_upload.png)
+![My projects screen with updated local project](./input_my_projects_upload.png)
 
 Pressing sync button to the right of the project will send the updated
 data to the Mergin service. Similarly, if a project and its data has been updated

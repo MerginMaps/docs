@@ -18,7 +18,9 @@ This section describes how to create an organisation.
 
 ![](./create-organisation.png)
 
-**Note**: to be able to use organisation features, you need [subscribe to the Team plan](./subscriptions.md) first. You can create an organisation even if you are not subscribed to the Team plan, but until your subscription the storage allocation for your organisation will be 0 MB.
+::: tip
+to be able to use organisation features, you need [subscribe to the Team plan](./subscriptions.md) first. You can create an organisation even if you are not subscribed to the Team plan, but until your subscription the storage allocation for your organisation will be 0 MB.
+:::
 
 ## Organisation profile
 

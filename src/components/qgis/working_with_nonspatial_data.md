@@ -6,13 +6,13 @@ We recommend using Geopackage to save your non-spatial table. With this format, 
 
 # QGIS project configuration
 
-Ensure you have enabled editing and searching of your non-spatial table in QGIS [QGIS project](https://docs.qgis.org/3.10/en/docs/user_manual/introduction/qgis_configuration.html?highlight=properties#data-sources-properties):
+Ensure you have enabled editing and searching of your non-spatial table in QGIS <QGISHelp ver="3.10" link="user_manual/introduction/qgis_configuration.html?highlight=properties#data-sources-properties" text="QGIS project" />:
 
 ![browse_enable](./qgis_nonspatial_properties.png)
 
 # Browse, search and edit non-spatial data in Input
 
-To browse, search or edit a non-spatial table, first you need to [open the attribute table](/howto/browse_data.html).
+To browse, search or edit a non-spatial table, first you need to [open the attribute table](../mobile/enable_browsing.md).
 
 To add a new record, select **Add Feature**. This will open a form to fill. By pressing **Save**, the new record will be added and Input will take you back to the attribute of your table.
 

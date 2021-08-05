@@ -27,4 +27,4 @@ After installation, you need to configure the plugin by entering your Mergin use
 2. In the new window, type in your username (or email address used for signing up with Mergin) and password
 ![](./configure.png)
 
-You can select to store the password. For that you need to have already configured your [QGIS password manager](https://docs.qgis.org/3.16/en/docs/user_manual/auth_system/auth_overview.html?#master-password)
+You can select to store the password. For that you need to have already configured your <QGISHelp ver="3.10" link="user_manual/auth_system/auth_overview.html?#master-password" text="QGIS password manager" />

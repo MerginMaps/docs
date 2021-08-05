@@ -50,8 +50,8 @@ Click on the **Synchronize** icon from the Mergin toolbar to sync your project a
 
 You can select the status and synchronisation options by right-clicking on the Mergin project from the Browser panel too.
 
-<alert type="success">
+::: warning
 Synchronising data and project will work in both ways
-</alert>
+:::
 
 All your changes will be uploaded to the server and any pending changes from the server edition of your files will be downloaded and appended to your local files. Therefore, when synchronisation process is completed, your local files and the copy of files on the server will be identical.

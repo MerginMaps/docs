@@ -1,8 +1,8 @@
 <template>
   <span>
-    <a :href="`https://public.cloudmergin.com/projects/${id}/tree`" target="_blank" rel="noopener noreferrer">
-      <img :alt="`Mergin Maps Project ${id}`" :src="`/Mergin.svg`" />
-      <span v-html="id"></span>
+    <a :href="`https://docs.qgis.org/${ver}/en/docs/${link}`" target="_blank" rel="noopener noreferrer">
+      <img alt="QGIS Documentation" :src="`/QGIS.svg`" />
+      <span v-html="text"></span>
       <span>
         <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound">
           <path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path>
@@ -16,9 +16,11 @@
 
 <script>
 export default {
-  name: "merginmapsproject",
+  name: "qgishelp",
   props: {
-    id: String
+    ver: String,
+    link: String,
+    text: String
   }
 }
 </script>
@@ -28,5 +30,4 @@ img {
   border: none;
   height: 15px;
 }
-
 </style>

@@ -4,7 +4,7 @@ You can search for the content of your attribute data from Input. Input is also 
 
 ## QGIS project configuration
 
-To be able to search the attribute table of a layer, you need to first configure your [QGIS project](https://docs.qgis.org/3.10/en/docs/user_manual/introduction/qgis_configuration.html?highlight=properties#data-sources-properties):
+To be able to search the attribute table of a layer, you need to first configure your <QGISHelp ver="3.10" link="user_manual/introduction/qgis_configuration.html?highlight=properties#data-sources-properties" text="QGIS project" />:
 
 - Open QGIS Desktop with you QGIS Project
 - In the Menu > Project > Properties click on "Data Sources"
@@ -13,7 +13,7 @@ To be able to search the attribute table of a layer, you need to first configure
 
 ## Search attribute data in Input
 
-To search for a record, you first need to [open the attribute table](/howto/browse_data.html). You can then type in the string and Input should shortlist the matching records.
+To search for a record, you first need to [open the attribute table](../mobile/enable_browsing.md). You can then type in the string and Input should shortlist the matching records.
 
 Selecting an individual record, Input will open the form related to the feature.
 

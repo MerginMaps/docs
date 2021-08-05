@@ -2,7 +2,7 @@
 
 ## Mergin Maps Cloud
 
-It is easy to start using Mergin - let's head to <a href="https://public.cloudmergin.com/">https://public.cloudmergin.com/</a>
+It is easy to start using Mergin - let's head to [https://public.cloudmergin.com](https://public.cloudmergin.com)
 
 ### Sign up
 
@@ -12,10 +12,10 @@ First, you will need an account. Signing up is free: you just need to enter your
 Next, check your email - you will get a mail with activation link for your account.
 After you click the link to confirm your email address, you are ready to log in.
 
-<alert type="success">
+::: tip
 One can view and download public projects even without an account, but creation of projects
 and synchronization of geo-data only works when you are logged in.
-</alert>
+:::
 
 ### Explore Mergin service
 
@@ -109,7 +109,9 @@ The plugin integrates into the Browser panel in QGIS:
 
 ![Mergin plugin in QGIS](./qgis-mergin-browser.png)
 
-Note: if Browser panel is not open in your session, go to menu View > Panels > Browser to open it.
+::: tip
+if Browser panel is not open in your session, go to menu View > Panels > Browser to open it.
+:::
 
 Find Mergin item in the Browser, right click it and select Configure. Fill in your username and password and click OK.
 Now you can see your projects in the Browser!

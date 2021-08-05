@@ -11,11 +11,15 @@ of the data. Below are the key parts used by Input:
 If you have internet connectivity, you can use a WM(T)S or XYZ layer as
 your background map. QGIS can also reads local XYZ tiles.
 
-**Note:** that for XYZ tiles, ensure to change the tile resolution to Standard in your connection settings in QGIS. This will ensure the fonts are readable on the high resolution screens (applicable to the majority of the recent phones which come with high DPI screens).
+::: tip
+that for XYZ tiles, ensure to change the tile resolution to Standard in your connection settings in QGIS. This will ensure the fonts are readable on the high resolution screens (applicable to the majority of the recent phones which come with high DPI screens).
+:::
 
 ![Connection settings for XYZ](./xyz_settings.png)
 
-**Note:** you also need to change resampling method for WM(T)S layer to ensure the texts are readable on HiDPi screens.
+::: tip
+you also need to change resampling method for WM(T)S layer to ensure the texts are readable on HiDPi screens.
+:::
 
 If you are using a vector layer for background layer:
 

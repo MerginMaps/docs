@@ -10,7 +10,9 @@ From the [Mergin website](https://public.cloudmergin.com/), fill in the form wit
 
 Once you press **Sign up**, you will receive a confirmation email. To sign in and use the Mergin service, you will need to activate your account by clicking on the link in the email.
 
-**Note**: check your SPAM folder if the email does not appear in your inbox after 5 minutes.
+::: tip
+check your SPAM folder if the email does not appear in your inbox after 5 minutes.
+:::
 
 You can sign up to the Mergin service, through [Input app](../mobile/README.md).
 

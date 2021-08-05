@@ -44,7 +44,7 @@ module.exports = {
     // Optional options for generating "Edit this page" link
     docsRepo: 'merginmaps/docs',
     // if your docs are not at the root of the repo:
-    docsDir: '',
+    docsDir: 'src',
     // if your docs are in a specific branch
     docsBranch: 'main',
     // defaults to false, set to true to enable

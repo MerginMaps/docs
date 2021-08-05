@@ -37,4 +37,4 @@ for your camera app.
 
 For further examples you can check fields definitions of project **_lutraconsulting/test_exif_** accessible on Mergin.
 
-![photos](images/gps_exif_metadata.png)
+![photos](./gps_exif_metadata.png)

@@ -1,16 +1,23 @@
+---
+sidebarDepth: 1
+---
+
 # Setting up form widgets
 
-**Note**: You can follow the examples in this section by cloning the following projects:
-  - [lutraconsulting\test_forms](https://public.cloudmergin.com/projects/lutraconsulting/test_forms/tree)
-  - [documentation\form_setup](https://public.cloudmergin.com/projects/documentation/form_setup/tree)
-  - [documentation\form_cascade](https://public.cloudmergin.com/projects/documentation/form_cascade/tree)
+::: tip
+You can follow the examples in this section by cloning the following projects:
+  - <MerginMapsProject id="lutraconsulting/test_forms" />
+  - <MerginMapsProject id="documentation/form_setup" />
+  - <MerginMapsProject id="documentation/form_cascade" />
+  - <MerginMapsProject id="documentation/test_qrcode" />
+:::
 
 When capturing geo-data, it is often required to fill in a form related to the surveyed point, line or area. The forms set up can simplifying filling the data and can also ensure the correct information is populated.
 
 ## Widget Gallery
 Input supports a number of edit widget types for forms such as: drop-down options, slider, date and time, checkbox, photos.
 
-Setting up forms can be configured using [QGIS widget types](https://docs.qgis.org/3.16/en/docs/user_manual/working_with_vector/vector_properties.html#edit-widgets).
+Setting up forms can be configured using <QGISHelp ver="3.16" link="user_manual/working_with_vector/vector_properties.html#edit-widgets" text="QGIS widget types" /> .
 
 In the sections below, we go through examples of setting up different widgets for forms in QGIS and Input:
 
@@ -36,7 +43,7 @@ Adding or editing text fields are the most common method for inserting informati
 
 In QGIS, the default widget for most types of fields is the **Text Edit** widget. In addition to a single line text, you can change the widget to accept multiple lines within a single field:
 
-  - Download and open [this example project](https://public.cloudmergin.com/projects/documentation/form_setup/tree) in QGIS
+  - Download and open <MerginMapsProject id="documentation/form_setup" /> in QGIS
   - From the layer panel, right-click on **Points** layer and select **Properties**
   - In the new window, select **Attributes form**
 
@@ -54,7 +61,7 @@ Ensure to save and synchronise your project.
 
 To use the multiline text edit widget in the form from Input:
 
-- Open Input on your device and from **Projects** > **Explore** download **lutraconsulting\test_forms**
+- Open Input on your device and from **Projects** > **Explore** download **lutraconsulting/test_forms**
 - Open the project
 - Select **Record** and add a point
 - The form will appear
@@ -68,7 +75,7 @@ To set a field in your form to a numeric one:
 
 ### QGIS
 
-  - Download and open [this example project](https://public.cloudmergin.com/projects/documentation/form_setup/tree) in QGIS
+  - Download and open <MerginMapsProject id="documentation/form_setup" /> in QGIS
   - From the layer panel, right-click on **Points** layer and select **Properties**
   - In the new window, select **Attributes form**
 
@@ -85,7 +92,7 @@ Ensure to save and synchronise your project.
 
 To use the numeric widget in your form from Input:
 
-- Open Input on your device and from **Projects** > **Explore** download **lutraconsulting\test_forms**
+- Open Input on your device and from **Projects** > **Explore** download **lutraconsulting/test_forms**
 - Open the project
 - Select **Record** and add a point
 - The form will appear
@@ -101,7 +108,7 @@ For setting up a slider, ensure your field type is an integer.
 
 To set up a slider widget:
 
-  - Download and open [this example project](https://public.cloudmergin.com/projects/documentation/form_setup/tree) in QGIS
+  - Download and open <MerginMapsProject id="documentation/form_setup" /> in QGIS
   - From the layer panel, right-click on **survey** layer and select **Properties**
   - In the new window, select **Attributes form**
 
@@ -124,7 +131,7 @@ Ensure to save and synchronise your project.
 
 To use the slider widget in the form from Input:
 
-- Open Input on your device and from **Projects** > **Explore** download **documentation\form_setup**
+- Open Input on your device and from **Projects** > **Explore** download **documentation/form_setup**
 - Open the project
 - Select **Record** and add a point
 - The form will appear
@@ -141,8 +148,7 @@ To be able to use your camera in forms to scan QR codes and populate the text in
 
 ### QGIS 
 
-To be able to scan QR codes in your forms, your field or the alias for the field should 
-contain **qrcode** (the text is not case sensitive and it can be be in combination of lower or upper case letters). For an example, see the [example project](https://public.cloudmergin.com/projects/documentation/test_qrcode/).
+To be able to scan QR codes in your forms, your field or the alias for the field should contain **qrcode** (the text is not case sensitive and it can be be in combination of lower or upper case letters). For an example, see the <MerginMapsProject id="documentation/test_qrcode" /> 
 
 ### Input
 
@@ -167,7 +173,7 @@ If you want to record time and date when you capture the feature, you need to ma
 
 To set up a data and time widget:
 
-  - Download and open [this example project](https://public.cloudmergin.com/projects/documentation/form_setup/tree) in QGIS
+  - Download and open <MerginMapsProject id="documentation/form_setup" /> in QGIS
   - From the layer panel, right-click on **survey** layer and select **Properties**
   - In the new window, select **Attributes form**
 
@@ -187,7 +193,7 @@ Ensure to save and synchronise your project.
 
 To use the date/time widget in the form from Input:
 
-- Open Input on your device and from **Projects** > **Explore** download **documentation\form_setup**
+- Open Input on your device and from **Projects** > **Explore** download **documentation/form_setup**
 - Open the project
 - Select **Record** and add a point
 - The form will appear, when selecting the field for date and time a calendar will pop up with the current time automatically set:
@@ -202,7 +208,7 @@ Checkbox field becomes handy when you want to set up a Yes/No, True/False or On/
 
 To set up a checkbox widget:
 
-  - Download and open [this example project](https://public.cloudmergin.com/projects/documentation/form_setup/tree) in QGIS
+  - Download and open <MerginMapsProject id="documentation/form_setup" /> in QGIS
   - From the layer panel, right-click on **survey** layer and select **Properties**
   - In the new window, select **Attributes form**
 
@@ -219,7 +225,7 @@ Ensure to save and synchronise your project.
 
 To use the date/time widget in the form from Input:
 
-- Open Input on your device and from **Projects** > **Explore** download **documentation\form_setup**
+- Open Input on your device and from **Projects** > **Explore** download **documentation/form_setup**
 - Open the project
 - Select **Record** and add a point
 - The form will appear, you can switch the status of the **Does it need surveying?** field to true or false using the checkbox
@@ -234,7 +240,7 @@ To present the options for a field as a drop-down menu in the form, you can use 
 
 To set up a value map widget:
 
-  - Download and open [this example project](https://public.cloudmergin.com/projects/documentation/form_setup/tree) in QGIS
+  - Download and open <MerginMapsProject id="documentation/form_setup" /> in QGIS
   - From the layer panel, right-click on **survey** layer and select **Properties**
   - In the new window, select **Attributes form**
 
@@ -253,7 +259,7 @@ Ensure to save and synchronise your project.
 
 To use the drop-down widget in the form from Input:
 
-- Open Input on your device and from **Projects** > **Explore** download **documentation\form_setup**
+- Open Input on your device and from **Projects** > **Explore** download **documentation/form_setup**
 - Open the project
 - Select **Record** and add a point
 - The form will appear
@@ -274,7 +280,7 @@ The advantage of having this widget:
 
 To set up a value relation widget:
 
-  - Download and open [this example project](https://public.cloudmergin.com/projects/lutraconsulting/test_forms/tree) in QGIS
+  - Download and open <MerginMapsProject id="documentation/test_forms" /> in QGIS
   - Notice the extra table in your layer tree: **reftable**
   - From the layer panel, right-click on **Points** layer and select **Properties**
   - In the new window, select **Attributes form**

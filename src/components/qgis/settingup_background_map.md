@@ -6,9 +6,9 @@ The following sections will cover two types of background maps for online and of
 
 ## Raster Tiles 
 
-<alert type="success">
+::: tip
 Ideal for aerial imagery and orthophoto.
-</alert>
+:::
 
 Raster tiles can be large in size but an ideal format for aerial imagery.
 
@@ -16,7 +16,7 @@ Raster tiles can be large in size but an ideal format for aerial imagery.
 
 ### Online services
 
-[QGIS comes by default with the OpenStreetMap online services for XYZ tiles](https://docs.qgis.org/3.10/en/docs/user_manual/managing_data_source/opening_data.html?highlight=xyz#using-xyz-tile-services). When adding cartographic basemap, ensure you set the tile size correctly, so that the texts and labels are readable on mobile devices with high resolution display.
+QGIS comes by default with the <QGISHelp ver="3.10" link="user_manual/managing_data_source/opening_data.html?highlight=xyz#using-xyz-tile-services" text="OpenStreetMap online services for XYZ tiles" />. When adding cartographic basemap, ensure you set the tile size correctly, so that the texts and labels are readable on mobile devices with high resolution display.
 
 You can also add [other sources](https://gis.stackexchange.com/questions/20191/adding-basemaps-from-google-or-bing-in-qgis/217670#217670) of XYZ tiles to your QGIS.
 
@@ -42,7 +42,7 @@ To add Bing aerial imagery to your QGIS:
 
 ### Generating raster tiles
 
-QGIS also offers a [processing algorithm](https://docs.qgis.org/3.10/en/docs/user_manual/processing_algs/qgis/rastertools.html) to generate [your own XYZ tiles](https://ocw.un-ihe.org/mod/book/tool/print/index.php?id=5497&chapterid=491) for offline use.
+QGIS also offers a <QGISHelp ver="3.10" link="user_manual/processing_algs/qgis/rastertools.html" text="processing algorithm" /> to generate [your own XYZ tiles](https://ocw.un-ihe.org/mod/book/tool/print/index.php?id=5497&chapterid=491) for offline use.
 
 To generate a raster tile covering the aerial photography of your survey area:
 
@@ -74,9 +74,9 @@ Notes:
 
 ## Vector Tiles
 
-<alert type="success">
+::: tip
 Ideal for cartography basemaps. 
-</alert>
+:::
 
 Vector tiles are a better alternative for cartography maps as background data. It is lighter in size, flexible styling and your maps are not pixelated.
 
