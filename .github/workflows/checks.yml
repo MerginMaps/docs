@@ -3,11 +3,12 @@ on:
   push:
     paths:
     - '**.md'
-    -
+    
 jobs:
-  broken_img_links:
+  markdown_checks:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
     - name: Find markdown style errors
       run: |
         ./scripts/markdown_style.bash
