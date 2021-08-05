@@ -1,19 +1,5 @@
 # Quick Start
 
-## Intoduction
-
-Mergin Maps is open-source map tools eco-system maintained by community 
-and [Lutra Consulting Ltd.](https://www.lutraconsulting.co.uk), recognized
-member of [QGIS](htts://qgis.org) development community. It takes out the 
-pain of field data synchronization and transcribing paper field notes, manually 
-georeferencing photos and transcribing GPS coordinates.
-
- - Sync data to/from devices without cables. Automatically and safely merge data from multiple surveyors
- - Input can be used by anyone to capture field data in an uncomplicated way and without training
- - Open Input projects in QGIS for easy access to your data. 
- - Open source and extensible
-
-
 ## Mergin Maps Cloud
 
 It is easy to start using Mergin - let's head to <a href="https://public.cloudmergin.com/">https://public.cloudmergin.com/</a>

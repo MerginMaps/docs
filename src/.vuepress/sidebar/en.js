@@ -78,6 +78,7 @@ module.exports = {
     // fallback
     '/': [
         'quick-start/',
+        'concepts',
         'faq',
         'resources',
         'support'

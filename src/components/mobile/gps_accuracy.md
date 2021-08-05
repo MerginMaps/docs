@@ -1,7 +1,5 @@
 # GPS accuracy
 
-<!--- IMPORTANT: This permalink is referenced from Input App -->
-
 Your GPS accuracy depends on several parameters, such as:
 - Your device
 - View of the clear sky

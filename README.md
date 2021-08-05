@@ -42,62 +42,55 @@ and see the result in `dist` folder
 
 To deploy on AWS Amplify, see [amplify.yml](amplify.yml) config file used
 
-## Documentation Guildlines
+## Documentation Guild lines
 
-## Dark Mode / Light Mode
+## Tip/Warning/Info/Note box
 
-Use css classes `light-img` or `dark-img`
-
-e.g.
 ```
-<a href='https://public.cloudmergin.com'><img alt='Use on the cloud' src='logo-light.svg' class="light-img" height="20" /></a>
-<a href='https://public.cloudmergin.com'><img alt='Use on the cloud' src='logo-dark.svg' class="dark-img" height="20" /></a>
+::: warning 
+My warning 
+:::
 ```
+
+other options ::: tip
+
+## Labels/Badges
+
+type is one of "tip"|"warning"|"error", see [vuepress docs](https://v1.vuepress.vuejs.org/guide/using-vue.html#badge)
+
+```<Badge text="beta" type="warning"/>```
 
 ## Images 
 
- - Do not add `docs` prefix
- - Do not start with `/`, use relative path from `docs/static`
+ - Do not add `docs` prefix (base)
+ - Place images next a markdown file that uses it  
+ - Do not start with `/`, use relative paths
 
-e.g. `![](images/cloudmergin.png` if the image is `docs/static/images/` folder on disk
+e.g. `![](./cloudmergin.png` if the image is in the same folder as your mardown file
 
 ## Embed YouTube content
 
 Use `<YouTube>` component, e.g. `<YouTube id="DQXrINUqiFI"></YouTube>`
 
 ## Reference other markdowns 
+
  - use relative path to the current file
+ - add `.md` extension
+ - use `#` for anchors
+
+e.g. `[see this](../web/otherfile.md#permissions)`
 
 e.g. `[](../mobile/othermarkdown.md)
 
 ## Translations (i18n)
 
-see [i18n nuxtjs/content docs](https://content.nuxtjs.org/themes/docs#locales)
+see [vuepress docs](https://v1.vuepress.vuejs.org/guide/i18n.html#site-level-i18n-config)
 
- - for new language, add it to `docs/docs/nuxt.config.js`
- - add new folder in `docs/docs/content/<lang>`
 
 ## Vue custom components
 
  - add your component to `src/.vuepress/components/MyComponent.vue`
  - use in markdown as `<MyComponent></MyComponent>` or `<MyComponent />`
-
-# Continuous Integration
-
-## Spelling
-
-- add false positives to `.wordlist.txt`
-- sort and lowercase it before submitting
-
-```bash
-tr '[:upper:]' '[:lower:]' < .wordlist.txt > temp-wordlist.txt
-cat temp-wordlist.txt | sort -u > .wordlist.txt
-rm temp-wordlist.txt
-```
-
-## Broken links
-
-you can manually run `./scripts/broken_links.bash` to check for any broken links
 
 # License
 

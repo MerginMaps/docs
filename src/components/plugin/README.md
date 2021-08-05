@@ -9,9 +9,11 @@ To install Mergin plugin in QGIS:
 	2. Select Mergin in the filtered section and then click **Install Plugin**
 4. Once installed, you should see Mergin in your QGIS Browser panel (note that if you are using QGIS 3.12 or earlier you will need to restart your QGIS for Mergin to appear in your browser panel):
 	![](./installation.png)
-<alert type="warning">
+
+::: warning 
 if you cannot see your Browser panel, you can enable it by going to the QGIS main menu > View > Panels > Browser
-</alert>
+:::
+
 5. A new toolbar should also appear in your QGIS toolbars:
 
 ![](./plugin_toolbar.png)

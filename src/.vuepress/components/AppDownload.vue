@@ -18,6 +18,10 @@ div {
   display: flex;
 }
 
+img {
+  border: none
+}
+
 img.app_store {
   padding: 11px;
   height: 48px;
