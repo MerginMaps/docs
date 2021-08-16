@@ -53,7 +53,8 @@ module.exports = {
                 '/components/mobile/external_gps',
                 '/components/mobile/gps_accuracy',
                 '/components/mobile/position_variables',
-                '/components/mobile/reuse_last_values'
+                '/components/mobile/reuse_last_values',
+                '/components/mobile/selective_sync'
             ]
         },
         {
