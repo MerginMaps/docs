@@ -7,6 +7,8 @@ You can follow the examples in this section by cloning the following projects:
   - <MerginMapsProject id="documentation/form_cascade" />
 :::
 
+[[toc]]
+
 In addition to the edit widgets, extra configuration can be done to the fields and form layout to make the data collection easier and more consistent. For example: setting a default value, conditional visibility and constraint enforcement.
 
 ## Form layout

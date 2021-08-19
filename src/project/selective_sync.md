@@ -1,4 +1,4 @@
-# Selective synchronization
+# Selective sync
 
 <Badge text="Since Input 1.0.0" type="info"/>
 
@@ -12,7 +12,7 @@ Practical example can be seen in the picture below. Two surveyors Jim and Susan 
 Features and other data are still being downloaded and you will see them, only photos will miss.
 :::
 
-![Example](./images/selective-sync.png)
+![Example](./selective-sync.png)
 
 Another advantage is a significant reduction of synchronization time.
 

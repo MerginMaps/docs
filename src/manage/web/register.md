@@ -1,4 +1,4 @@
-#  Server & Cloud
+# Register on Cloud
 
 To start using the Mergin service, you need to sign up. You can sign up either through the [Mergin website](https://public.cloudmergin.com/) or from your mobile device using the [Input app](https://inputapp.io/en/) (version 0.7.0 or later).
 

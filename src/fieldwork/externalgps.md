@@ -1,3 +1,0 @@
-# extenal gps
-
-## bla bla

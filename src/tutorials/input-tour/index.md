@@ -1,4 +1,11 @@
-# Taking Field Notes <Badge text="Beginner" type="tip"/>
+# Getting to field
+
+::: danger TODO
+NEEDS to be RM-RFed and reworked
+this is 1-1 copy of https://help.inputapp.io/quick-start.html
+:::
+
+[[toc]]
 
 ## Installation
 
@@ -8,11 +15,11 @@ Download Input App from Google Play or App Store:
 
 Once you have installed and opened Input you will see two tour projects:
 
-![Input's Tour Projects](./input-tour-projects.png)
+![Input's Tour Projects](src/tutorials/input-tour/input-tour-projects.png)
 
 These tours introduce the basics of Input.
 
-![Welcome to Input](./welcome-to-input.png)
+![Welcome to Input](src/tutorials/input-tour/welcome-to-input.png)
 
 When you have completed both tours, well learn how to create a new project 
 for your field data.
@@ -24,7 +31,7 @@ The easiest way to create a new project is from a template.
 The *Field Notes* template comes with simple background mapping and allows 
 you to create points, lines and areas with field notes and photos: 
 
-![Capture Georeferenced Photos and Field Notes](./capture-georeferenced-photos-and-field-notes.png)
+![Capture Georeferenced Photos and Field Notes](src/tutorials/input-tour/capture-georeferenced-photos-and-field-notes.png)
 
 
 ## Create a free Mergin account
@@ -40,12 +47,12 @@ You should now be logged-in to Mergin.
 
 * Create a new project using the button shown below:
 
-![Create a Mergin Project](./create-mergin-project.png)
+![Create a Mergin Project](src/tutorials/input-tour/create-mergin-project.png)
 
 * Set *Template project* to *Field notes*
 * Give the project a name
 
-![Create a Mergin Project from a Template](./create-mergin-project-from-template.png)
+![Create a Mergin Project from a Template](src/tutorials/input-tour/create-mergin-project-from-template.png)
 
 Your namespace will look different to that shown in the example above. 
 
@@ -61,18 +68,18 @@ our device.
 
 * Open Input and press *My projects*
 
-![My projects in Input](./my-projects.png)
+![My projects in Input](src/tutorials/input-tour/my-projects.png)
 
 You should now see the new project we just created. If you see a Mergin 
 login prompt, enter your Mergin account details to login then go to *My projects*.
 
-![Downloading the Mergin Project into Input](./download-mergin-project-onto-input.png)
+![Downloading the Mergin Project into Input](src/tutorials/input-tour/download-mergin-project-onto-input.png)
 
 * Press the download button
 
 The project should now be shown with a check mark:
 
-![Synced Mergin Project with Check Mark](./project-with-check-mark.png)
+![Synced Mergin Project with Check Mark](src/tutorials/input-tour/project-with-check-mark.png)
 
 At this stage you can open the project from *Home* and start adding notes 
 and map features. In the next section we'll see how to push changes back 
@@ -88,13 +95,13 @@ photos and want to sync these changes back to your project.
 When sync changes are pending, your project will have two sync arrows 
 next to it:
 
-![Sync Arrows Mean Project Changes are Pending](./sync-arrows.png)
+![Sync Arrows Mean Project Changes are Pending](src/tutorials/input-tour/sync-arrows.png)
 
 * Press the sync arrows to synchronise your project
 
 When the sync completes, you'll see a check mark:
 
-![Check Mark Means All Changes Are Synced](./project-with-check-mark.png)
+![Check Mark Means All Changes Are Synced](src/tutorials/input-tour/project-with-check-mark.png)
 
 That's all there is to syncing - your changes have been saved on Mergin 
 and any changes made by your collaborators have also been synced onto your 
@@ -112,25 +119,25 @@ These settings are made through the [Mergin website](https://public.cloudmergin.
 
 * When logged-in to Mergin, locate *My projects*
 
-![My projects in Mergin](./my-projects-in-mergin.png)
+![My projects in Mergin](src/tutorials/input-tour/my-projects-in-mergin.png)
 
 * Press on the project you want to share
 
-![Open Mergin project to share](./open-project-to-share.png)
+![Open Mergin project to share](src/tutorials/input-tour/open-project-to-share.png)
 
 * Press the settings button to access sharing settings
 
-![Mergin project settings](./mergin-project-settings.png)
+![Mergin project settings](src/tutorials/input-tour/mergin-project-settings.png)
 
 * Use search tool to find the user you wish to share the project with and press *ADD* to grant access.
 
-![Find user to share project with](./find-user-to-share-project-with.png)
+![Find user to share project with](src/tutorials/input-tour/find-user-to-share-project-with.png)
 
 So far the user we just added will have read permission. From here we could 
 also grant them write permissions or owner permissions. Owner permission 
 means they will also be able to adjust sharing settings on the project.
 
-![Mergin project permissions](./mergin-project-permissions.png)
+![Mergin project permissions](src/tutorials/input-tour/mergin-project-permissions.png)
 
 From here you can also use the *MAKE PUBLIC* button to make the project 
 public. This makes the project readable by any user. If you wanted people 

@@ -1,7 +1,3 @@
----
-sidebarDepth: 1
----
-
 # Setting up form widgets
 
 ::: tip
@@ -11,6 +7,9 @@ You can follow the examples in this section by cloning the following projects:
   - <MerginMapsProject id="documentation/form_cascade" />
   - <MerginMapsProject id="documentation/test_qrcode" />
 :::
+
+
+[[toc]]
 
 When capturing geo-data, it is often required to fill in a form related to the surveyed point, line or area. The forms set up can simplifying filling the data and can also ensure the correct information is populated.
 
