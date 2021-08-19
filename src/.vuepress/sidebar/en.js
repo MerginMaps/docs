@@ -6,10 +6,10 @@ module.exports = {
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
-                '/tutorials/myfirststeps',
-                '/tutorials/enhanceproject',
+                '/tutorials/quick-start/',
+                '/tutorials/mergin-tour/',
                 '/tutorials/sharewithcollegues',
-                '/tutorials/fieldwork',
+                '/tutorials/input-tour/',
                 '/tutorials/analyzeresults'
             ]
         },
@@ -27,7 +27,11 @@ module.exports = {
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
+                '/concepts/components',
+                '/concepts/project',
+                '/concepts/users-and-orgs',
                 '/concepts/permissions',
+                '/concepts/synchronization',
                 '/concepts/projections/'
             ]
         },
@@ -36,8 +40,19 @@ module.exports = {
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
-                '/management/install',
-                '/management/register'
+                '/manage/web/dashboard',
+                '/manage/web/project-advanced',
+                '/manage/web/project-details',
+                '/manage/web/register',
+                '/manage/web/subscriptions',
+                '/manage/web/web-create-project',
+                '/manage/web/working-with-organisations',
+                '/manage/plugin/install',
+                '/manage/plugin/plugin-delete-project',
+                '/manage/plugin/plugin-new-project',
+                '/manage/plugin/plugin-sync-project',
+                '/manage/plugin/plugin-variables',
+                '/manage/troubleshoot'
             ]
         },
         {
@@ -45,8 +60,17 @@ module.exports = {
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
-                '/project/setupforms',
-                '/project/setupthemes'
+                '/project/features',
+                '/project/enable_browsing',
+                '/project/enable_digitizing',
+                '/project/search_data',
+                '/project/selective_sync',
+                '/project/settingup_background_map',
+                '/project/settingup_forms',
+                '/project/settingup_forms_photo',
+                '/project/settingup_forms_settings',
+                '/project/setup_themes',
+                '/project/working_with_nonspatial_data'
             ]
         },
         {
@@ -54,8 +78,15 @@ module.exports = {
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
-                '/fieldwork/externalgps',
-                '/fieldwork/reuselastvalues'
+                '/fieldwork/input_ui',
+                '/fieldwork/input_features',
+                '/fieldwork/data_sync',
+                '/fieldwork/exif_metadata',
+                '/fieldwork/external_gps',
+                '/fieldwork/gps_accuracy',
+                '/fieldwork/position_variables',
+                '/fieldwork/proj',
+                '/fieldwork/reuse_last_values'
             ]
         },
         {
@@ -65,7 +96,9 @@ module.exports = {
             children: [
                 '/admin/customapp',
                 '/admin/dbsync',
-                '/admin/mergince'
+                '/admin/mergince',
+                '/admin/integration',
+                '/admin/contribute'
             ]
         },
       ]

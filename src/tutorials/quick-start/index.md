@@ -1,4 +1,11 @@
-# Quick Start
+# First Steps
+
+::: danger TODO
+NEEDS to be RM-RFed and reworked
+this is 1-1 copy of https://help.cloudmergin.com/quick-start.html
+:::
+
+[[toc]]
 
 ## Mergin Maps Cloud
 

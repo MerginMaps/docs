@@ -1,4 +1,4 @@
-# Mergin CMD Integration
+# Integrate Mergin 
 
 Mergin is an open platform that aims to be developer friendly, 
 and it has been designed to allow easy integration with other software.

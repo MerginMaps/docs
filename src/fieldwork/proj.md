@@ -11,4 +11,4 @@ to correctly render your QGIS project on InputApp. Note that one the project is 
 
 We recommend to use Mergin service to transfer the project with the required proj resources to your mobile device.
 
-Read more to learn about [datum shift for projections](../guides/datum-shift/README.md).
+Read more to learn about [datum shift for projections](../concepts/datum-shift/README.md).

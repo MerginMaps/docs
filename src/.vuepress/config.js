@@ -38,10 +38,6 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    // Main project repository (Github namespace/<project>)
-    // This is link in the navbar!
-    repo: 'lutraconsulting',
-    repoLabel: 'GitHub',
     // logo in navbar
     logo: '/merginmaps.svg',
     // Optional options for generating "Edit this page" link
@@ -58,11 +54,10 @@ module.exports = {
     smoothScroll: false,
     displayAllHeaders: true,
     sidebarDepth: 0,
-    nav: [
-        { text: 'Mergin Cloud', link: 'https://public.cloudmergin.com' },
-        { text: 'Input App', link: 'https://inputapp.io' },
-        { text: 'Support', link: 'https://www.lutraconsulting.co.uk/support' }
-    ],
+    // Main project repository (Github namespace/<project>) !! This is link in the navbar!
+    // repo: 'lutraconsulting',
+    // repoLabel: 'GitHub',
+    nav: [],
     sidebar: require('./sidebar/en')
   },
 
