@@ -41,7 +41,7 @@ module.exports = {
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
                 '/concepts/permissions',
-                '/concepts/projections'
+                '/concepts/projections/'
             ]
         },
         {
