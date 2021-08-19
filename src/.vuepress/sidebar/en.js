@@ -1,50 +1,24 @@
 module.exports = {
-    '/guides/': [
-      {
-        title: 'Beginners',   // required
-        path: '/foo/',      // optional, link of the title, which should be an absolute path and must exist
-        collapsable: false, // optional, defaults to true
-        sidebarDepth: 1,    // optional, defaults to 1
-        children: [
-          'input-tour/',
-          'mergin-tour/'
-        ]
-      },
-      {
-        title: 'Advanced',
-        children: [ /* ... */ ],
-        initialOpenGroupIndex: -1 // optional, defaults to 0, defines the index of initially opened subgroup
-      },
-      {
-        title: 'Expert',
-        children: [
-            'datum-shift/'
-        ],
-        initialOpenGroupIndex: -1 // optional, defaults to 0, defines the index of initially opened subgroup
-      }
-    ],
-    '/components/': [
+      '/': [
+        ['', 'Home'], /* / */
         {
-            title: 'Server and Cloud',
-            path: '/components/web/',
-            collapsable: true,
-            sidebarDepth: 2,
+            title: 'Quick Start',   // required
+            collapsable: true, // optional, defaults to true
+            sidebarDepth: 0,    // optional, defaults to 1
             children: [
-                '/components/web/',
-                '/components/web/dashboard',
-                '/components/web/project-advanced',
-                '/components/web/project-details',
-                '/components/web/subscriptions',
-                '/components/web/web-create-project',
-                '/components/web/working-with-organisations'
+                '/tutorials/myfirststeps',
+                '/tutorials/enhanceproject',
+                '/tutorials/sharewithcollegues',
+                '/tutorials/fieldwork',
+                '/tutorials/analyzeresults'
             ]
         },
         {
-            title: 'Mobile Input App',
-            path: '/components/mobile/',
-            collapsable: true,
-            sidebarDepth: 2,
+            title: 'Guides',   // required
+            collapsable: true, // optional, defaults to true
+            sidebarDepth: 0,    // optional, defaults to 1
             children: [
+<<<<<<< HEAD
                 '/components/mobile/',
                 '/components/mobile/input_ui',
                 '/components/mobile/proj',
@@ -55,52 +29,57 @@ module.exports = {
                 '/components/mobile/position_variables',
                 '/components/mobile/reuse_last_values',
                 '/components/mobile/selective_sync'
+=======
+                '/guides/howtosetuporganization',
+                '/guides/multiplephotostopoint'
+>>>>>>> c90c2e5 (try new left bar)
             ]
         },
         {
-            title: 'QGIS Plugin',
-            path: '/components/plugin/',
-            collapsable: true,
-            sidebarDepth: 2,
+            title: 'Concepts',   // required
+            collapsable: true, // optional, defaults to true
+            sidebarDepth: 0,    // optional, defaults to 1
             children: [
-                '/components/plugin/',
-                '/components/plugin/plugin-delete-project',
-                '/components/plugin/plugin-new-project',
-                '/components/plugin/plugin-sync-project',
-                '/components/plugin/plugin-variables'
+                '/concepts/permissions',
+                '/concepts/projections'
             ]
         },
         {
-            title: 'Project Preparation',
-            path: '/components/qgis/',
-            collapsable: true,
-            sidebarDepth: 2,
+            title: 'Manage',   // required
+            collapsable: true, // optional, defaults to true
+            sidebarDepth: 0,    // optional, defaults to 1
             children: [
-                '/components/qgis/',
-                '/components/qgis/enable_browsing',
-                '/components/qgis/enable_digitizing',
-                '/components/qgis/search_data',
-                '/components/qgis/settingup_background_map',
-                '/components/qgis/settingup_forms',
-                '/components/qgis/settingup_forms_photo',
-                '/components/qgis/settingup_forms_settings',
-                '/components/qgis/setup_themes',
-                '/components/qgis/working_with_nonspatial_data'
+                '/management/install',
+                '/management/register'
             ]
-        }
-    ],
-    '/integrations/': [
-        'commandline',
-        'customapp',
-        'postgresql',
-        'webhooks'
-    ],
-    // fallback
-    '/': [
-        'quick-start/',
-        'concepts',
-        'faq',
-        'resources',
-        'support'
-    ]
+        },
+        {
+            title: 'Setup Project',   // required
+            collapsable: true, // optional, defaults to true
+            sidebarDepth: 0,    // optional, defaults to 1
+            children: [
+                '/project/setupforms',
+                '/project/setupthemes'
+            ]
+        },
+        {
+            title: 'Work Outside',   // required
+            collapsable: true, // optional, defaults to true
+            sidebarDepth: 0,    // optional, defaults to 1
+            children: [
+                '/fieldwork/externalgps',
+                '/fieldwork/reuselastvalues'
+            ]
+        },
+        {
+            title: 'Develop and Integrate',   // required
+            collapsable: true, // optional, defaults to true
+            sidebarDepth: 0,    // optional, defaults to 1
+            children: [
+                '/admin/customapp',
+                '/admin/dbsync',
+                '/admin/mergince'
+            ]
+        },
+      ]
 }
