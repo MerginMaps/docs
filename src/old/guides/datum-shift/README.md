@@ -1,5 +1,7 @@
 # Projections <Badge text="Expert" type="error"/>
 
+[[toc]]
+
 ## Map Projections
 
 **Map projection** is the operation defining how to show/display spatial data (your data with associated coordinate reference system) on 2D flat surface (QGIS map canvas or printed paper map). There are various types of projections that are used in cartography (planar projection, cylindrical projections, conic projections). Each type of projection could preserve some attribute of the 2d "flat" map. Some projections preserve distance, others areas, etc. For example Mercator Projection was created to display accurate compass bearings for sea travel.

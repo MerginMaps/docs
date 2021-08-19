@@ -51,7 +51,22 @@ My warning
 :::
 ```
 
-other options ::: tip
+other options: tip (green), details (gray & expandable), warning (yellow), danger (red)
+
+custom title 
+```
+::: danger STOP
+Danger zone, do not proceed
+:::
+```
+
+## Emoji
+
+[list of emoji](https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json)
+
+```
+:tada:
+```
 
 ## Labels/Badges
 
@@ -66,6 +81,10 @@ type is one of "tip"|"warning"|"error", see [vuepress docs](https://v1.vuepress.
  - Do not start with `/`, use relative paths
 
 e.g. `![](./cloudmergin.png)` if the image is in the same folder as your mardown file
+
+## Table of Contents 
+
+use `[[toc]]` in markdown 
 
 ## Links 
 

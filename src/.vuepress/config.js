@@ -6,7 +6,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Mergin Maps',
+  title: 'Mergin & Input App',
   editLinks: true,
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#base
@@ -28,8 +28,8 @@ module.exports = {
   locales: {
     '/': {
       lang: 'en-US',
-      title: 'Mergin Maps',
-      description: 'Enjoy the feeling when you make sense of your geo-data on maps'
+      title: 'Documentation',
+      // description: 'Enjoy the feeling when you make sense of your geo-data on maps'
     }
   },
   /**
@@ -39,8 +39,11 @@ module.exports = {
    */
   themeConfig: {
     // Main project repository (Github namespace/<project>)
+    // This is link in the navbar!
     repo: 'lutraconsulting',
-    repoLabel: 'Contribute!',
+    repoLabel: 'GitHub',
+    // logo in navbar
+    logo: '/merginmaps.svg',
     // Optional options for generating "Edit this page" link
     docsRepo: 'merginmaps/docs',
     // if your docs are not at the root of the repo:
@@ -52,8 +55,14 @@ module.exports = {
     // custom text for edit link. Defaults to "Edit this page"
     editLinkText: 'Help us improve this page!',
     lastUpdated: true,
-    smoothScroll: true,
-    nav: require('./nav/en'),
+    smoothScroll: false,
+    displayAllHeaders: true,
+    sidebarDepth: 0,
+    nav: [
+        { text: 'Mergin Cloud', link: 'https://public.cloudmergin.com' },
+        { text: 'Input App', link: 'https://inputapp.io' },
+        { text: 'Support', link: 'https://www.lutraconsulting.co.uk/support' }
+    ],
     sidebar: require('./sidebar/en')
   },
 
@@ -70,7 +79,6 @@ module.exports = {
       normalSuffix: pageSuffix,
       indexSuffix: pageSuffix
     }],
-
   ],
 
   markdown: {
