@@ -44,16 +44,18 @@ Example config setup to use selective sync only on files (photos) in subdirector
 }
 ```
 
-> Note: You can also use subsubdirectories (or any depth really) like `"resources/images"`. The path is relative to project's root directory.
+::: tip
+  You can also use subdirectories (or any depth really) like `"resources/images"`. The path is relative to project's root directory.
+:::
 
 ## Get started 
 
 Projects with file `mergin-config.json` are set to use selective synchronization. You can either create the file on your own and copy content from previous section to it or download prepared file and add it to your project.
 
-You can find `mergin-config.json` file <a :href="$withBase('/mergin-config.json')" download>here</a> and add it to your project via [Mergin website](https://public.cloudmergin.com/). 
+You can find `mergin-config.json` file [here](./mergin-config.json) and add it to your project via [Mergin website](https://public.cloudmergin.com/). 
 
 :::tip
-If download does not work, ZIP archive is available for download <a :href="$withBase('/mergin-config.zip')" download>here</a>, decompress it and use as mentioned in the previous step.
+If download does not work, ZIP archive is available for download [here](./mergin-config.zip), decompress it and use as mentioned in the previous step.
 :::
 
 The config file needs to be placed in the root project directory where your `*.qgz` QGIS project is. These files are by default set to consider entire project directory and needs to be edited in text editor to use specific subdirectory.
