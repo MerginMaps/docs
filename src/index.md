@@ -4,7 +4,7 @@ home: false
 
 # Mergin Cloud and Input App Documentation
 
-![](/preview.jpeg)
+![](preview.jpeg)
 
 ::: tip Vision
 Enjoy the feeling when you make sense of your geo-data on maps
