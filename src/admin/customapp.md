@@ -1,6 +1,6 @@
 # Custom Mobile App
 
-![](/input.svg)
+![](input.svg)
 
 The [Input app](https://inputapp.io/) is a great companion to Mergin as it 
 provides seamless synchronization of data between your phone/tablet and 
