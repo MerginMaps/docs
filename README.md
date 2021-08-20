@@ -81,6 +81,10 @@ type is one of "tip"|"warning"|"error", see [vuepress docs](https://v1.vuepress.
  - Do not start with `/`, use relative paths
 
 e.g. `![](./cloudmergin.png)` if the image is in the same folder as your mardown file
+ 
+ - For global pictures/assets placed in `src/.vuepress/public` do not prefix slash
+
+e.g. `![](mergin.svg)`
 
 ## Table of Contents 
 
