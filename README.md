@@ -3,7 +3,7 @@
 
 # Mergin Maps Documentation
 
- - [Staging/Dev deployment](https://dev.d1qvlu9jr497xw.amplifyapp.com/docs)
+ - [Staging/Dev deployment](https://dev.merginmaps.com/docs)
  - [Production deployment](https://merginmaps.com/docs)
 
 Source code for documentation hosted on [merginmaps.com/docs](https://merginmaps.com/docs)
