@@ -74,6 +74,9 @@ module.exports = {
       normalSuffix: pageSuffix,
       indexSuffix: pageSuffix
     }],
+    ['vuepress-plugin-export', {
+      puppeteer: { args: ['--no-sandbox'] }
+    }]
   ],
 
   markdown: {

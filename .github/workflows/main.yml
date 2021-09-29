@@ -8,6 +8,42 @@ jobs:
     - name: Install
       run: |
        yarn install
-    - name: Generate
+    - name: Generate dist
       run: |
         yarn build
+    - name: "Check dist dir consistency"
+      uses: andstor/file-existence-action@v1
+      with:
+        files: "dist/docs/index.html"
+        allow_failure: true # Makes the Action fail on missing files
+    - name: Generate PDF
+      run: |
+        yarn export
+        mv "Mergin & Input App.pdf" "merginmaps.pdf"
+    - name: Upload PDF as artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: merginmaps-pdf
+        path: merginmaps.pdf
+    - name: Deploy on S3 (if main branch)
+      uses: jakejarvis/s3-sync-action@master
+      if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+      with:
+        args: --acl public-read --follow-symlinks --delete
+      env:
+        AWS_S3_BUCKET: main-merginmaps.docs
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        AWS_REGION: 'eu-west-1'
+        SOURCE_DIR: 'dist'
+    - name: Deploy on S3 (if dev branch)
+      uses: jakejarvis/s3-sync-action@master
+      if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/dev' }}
+      with:
+        args: --acl public-read --follow-symlinks --delete
+      env:
+        AWS_S3_BUCKET: dev-merginmaps.docs
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        AWS_REGION: 'eu-west-1'
+        SOURCE_DIR: 'dist'
