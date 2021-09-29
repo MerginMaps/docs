@@ -1,4 +1,4 @@
-[![Build test](https://github.com/MerginMaps/docs/actions/workflows/main.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/main.yml)
+[![Build Dist](https://github.com/MerginMaps/docs/actions/workflows/main.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/main.yml)
 [![Markdown Checks](https://github.com/MerginMaps/docs/actions/workflows/checks.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/checks.yml)
 
 # Mergin Maps Documentation
@@ -38,8 +38,6 @@ yarn build
 ```
 
 and see the result in `dist` folder
-
-To deploy on AWS Amplify, see [amplify.yml](amplify.yml) config file used
 
 ## Documentation Guild lines
 

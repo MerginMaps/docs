@@ -73,7 +73,7 @@ module.exports = {
     [ 'clean-urls', {
       normalSuffix: pageSuffix,
       indexSuffix: pageSuffix
-    }],
+    }]
   ],
 
   markdown: {
