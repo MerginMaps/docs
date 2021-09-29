@@ -32,5 +32,5 @@ jobs:
     - name: Copy files to the https://dev.merginmaps.com/docs
       # if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/dev' }}
       run: |
-        aws s3 sync ./dist s3://dev-merginmaps.docs --acl public-read --follow-symlinks --delete
+        aws s3 sync ./dist s3://dev-merginmaps.docs --follow-symlinks --delete
 
