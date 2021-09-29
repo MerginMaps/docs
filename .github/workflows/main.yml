@@ -17,7 +17,7 @@ jobs:
         files: "dist/docs/index.html"
         allow_failure: true # Makes the Action fail on missing files
     - name: Configure AWS credentials
-      # if: ${{ github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/main') }}
+      if: ${{ github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/main') }}
       uses: aws-actions/configure-aws-credentials@v1
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
@@ -27,10 +27,10 @@ jobs:
     - name: Copy files to the https://merginmaps.com/docs
       if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
       run: |
-        aws s3 sync ./dist s3://main-merginmaps.docs --acl public-read --follow-symlinks --delete
+        aws s3 sync ./dist s3://main-merginmaps.docs --follow-symlinks --delete
 
     - name: Copy files to the https://dev.merginmaps.com/docs
-      # if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/dev' }}
+      if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/dev' }}
       run: |
         aws s3 sync ./dist s3://dev-merginmaps.docs --follow-symlinks --delete
 
