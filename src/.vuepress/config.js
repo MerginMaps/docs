@@ -75,7 +75,7 @@ module.exports = {
       indexSuffix: pageSuffix
     }],
     ['vuepress-plugin-export', {
-      puppeteer: { args: ['--no-sandbox'] }
+      puppeteer: { args: ['--no-sandbox', '--disable-setuid-sandbox'] }
     }]
   ],
 
