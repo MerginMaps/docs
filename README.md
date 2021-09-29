@@ -37,7 +37,6 @@ yarn install
 yarn build
 ```
 
-
 and see the result in `dist` folder
 
 ## Documentation Guild lines
