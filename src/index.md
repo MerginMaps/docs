@@ -25,7 +25,6 @@ Enjoy the feeling when you make sense of your geo-data on maps
 TODO add TOC
 :::
 
-
 ## Guides 
 
 ::: danger
