@@ -37,10 +37,10 @@ jobs:
     - name: Copy files to the production website with the AWS CLI
       if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
       run: |
-        aws s3 sync ./dist main-merginmaps.docs s3://my-s3-prod-website-bucket --acl public-read --follow-symlinks --delete
+        aws s3 sync ./dist s3://main-merginmaps.docs --acl public-read --follow-symlinks --delete
 
     - name: Copy files to the production website with the AWS CLI
       # if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/dev' }}
       run: |
-        aws s3 sync ./dist dev-merginmaps.docs s3://my-s3-prod-website-bucket --acl public-read --follow-symlinks --delete
+        aws s3 sync ./dist s3://dev-merginmaps.docs --acl public-read --follow-symlinks --delete
 
