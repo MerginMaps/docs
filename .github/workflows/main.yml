@@ -1,4 +1,4 @@
-name: Build test
+name: Build DIST
 on: push
 jobs:
   generate:
@@ -16,16 +16,6 @@ jobs:
       with:
         files: "dist/docs/index.html"
         allow_failure: true # Makes the Action fail on missing files
-    # - name: Generate PDF
-    #   run: |
-    #    yarn export
-    #    mv "Mergin & Input App.pdf" "merginmaps.pdf"
-    # - name: Upload PDF as artifact
-    #  uses: actions/upload-artifact@v2
-    #  with:
-    #    name: merginmaps-pdf
-    #    path: merginmaps.pdf
-
     - name: Configure AWS credentials
       # if: ${{ github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/main') }}
       uses: aws-actions/configure-aws-credentials@v1

@@ -1,0 +1,19 @@
+name: Build PDF
+on: push
+jobs:
+  pdf:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install
+      run: |
+       yarn install
+    - name: Generate PDF
+      run: |
+       yarn export
+       mv "Mergin & Input App.pdf" "merginmaps.pdf"
+    - name: Upload PDF as artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: merginmaps-pdf
+        path: merginmaps.pdf
