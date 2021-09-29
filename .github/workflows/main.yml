@@ -24,12 +24,12 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_ACCESS_PASSWORD }}
         aws-region: eu-west-1
 
-    - name: Copy files to the production website with the AWS CLI
+    - name: Copy files to the https://merginmaps.com/docs
       if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
       run: |
         aws s3 sync ./dist s3://main-merginmaps.docs --acl public-read --follow-symlinks --delete
 
-    - name: Copy files to the production website with the AWS CLI
+    - name: Copy files to the https://dev.merginmaps.com/docs
       # if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/dev' }}
       run: |
         aws s3 sync ./dist s3://dev-merginmaps.docs --acl public-read --follow-symlinks --delete

@@ -3,7 +3,7 @@
 
 # Mergin Maps Documentation
 
- - [Staging/Dev deployment](https://dev.merginmaps.com/docs)
+ - [Staging/Dev deployment](https://dev.merginmaps.com/docshttps://dev.merginmaps.com/docs)
  - [Production deployment](https://merginmaps.com/docs)
 
 Source code for documentation hosted on [merginmaps.com/docs](https://merginmaps.com/docs)
@@ -38,8 +38,6 @@ yarn build
 ```
 
 and see the result in `dist` folder
-
-To deploy on AWS Amplify, see [amplify.yml](amplify.yml) config file used
 
 ## Documentation Guild lines
 
