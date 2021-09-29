@@ -73,9 +73,6 @@ module.exports = {
     [ 'clean-urls', {
       normalSuffix: pageSuffix,
       indexSuffix: pageSuffix
-    }],
-    ['vuepress-plugin-export', {
-      puppeteer: { args: ['--no-sandbox', '--disable-setuid-sandbox'] }
     }]
   ],
 

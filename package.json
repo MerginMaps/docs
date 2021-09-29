@@ -17,7 +17,6 @@
   "devDependencies": {
     "@vuepress/plugin-google-analytics": "^1.8.2",
     "vuepress": "^1.5.3",
-    "vuepress-plugin-clean-urls": "^1.1.2",
-    "vuepress-plugin-export": "^0.2.0"
+    "vuepress-plugin-clean-urls": "^1.1.2"
   }
 }
