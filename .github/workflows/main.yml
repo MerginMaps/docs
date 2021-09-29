@@ -20,7 +20,7 @@ jobs:
         files: "dist/docs/index.html"
         allow_failure: true # Makes the Action fail on missing files
     - name: Configure AWS credentials
-      if: ${{ github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/main') }}
+      if: ${{ github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/dev') }}
       uses: aws-actions/configure-aws-credentials@v1
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
