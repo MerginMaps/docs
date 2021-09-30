@@ -1,6 +1,11 @@
 [![Build Dist](https://github.com/MerginMaps/docs/actions/workflows/main.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/main.yml)
 [![Markdown Checks](https://github.com/MerginMaps/docs/actions/workflows/checks.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/checks.yml)
 
+
+![Slack Join](./src/.vuepress/public/slack.svg)
+[Join](https://merginmaps.com/community/join) our community chat
+and [ask](https://merginmaps.com/community/join) questions!
+
 # Mergin Maps Documentation
 
  - [Staging/Dev deployment](https://dev.merginmaps.com/docs)

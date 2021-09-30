@@ -5,6 +5,8 @@ How to contribute to the project?
 We are happy to help to promote work or co-author and place on our websites or give 
 special offer for Mergin Maps Cloud for project contributors.
 
+<CommunityJoin />
+
 ## Use and Review
 
 Write a review of the application on App Store or Android Google Play
