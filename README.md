@@ -1,9 +1,6 @@
 [![Build Dist](https://github.com/MerginMaps/docs/actions/workflows/main.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/main.yml)
 [![Markdown Checks](https://github.com/MerginMaps/docs/actions/workflows/checks.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/checks.yml)
 
-
-<div><img align="left" width="45" height="45" src="https://raw.githubusercontent.com/MerginMaps/docs/main/src/.vuepress/public/slack.svg"><a href="https://merginmaps.com/community/join">Join our community chat</a><br/>and ask questions!</div>
-
 # Mergin Maps Documentation
 
  - [Staging/Dev deployment](https://dev.merginmaps.com/docs)
@@ -15,6 +12,8 @@ Source code for documentation hosted on [merginmaps.com/docs](https://merginmaps
 - Check official [vuepress documentation](https://vuepress.vuejs.org/)
 
 Use GitHub Pull Requests to propose changes, we will review and merge your changes!
+
+<div><img align="left" width="45" height="45" src="https://raw.githubusercontent.com/MerginMaps/docs/main/src/.vuepress/public/slack.svg"><a href="https://merginmaps.com/community/join">Join our community chat</a><br/>and ask questions!</div>
 
 ## Development Workflow
 
