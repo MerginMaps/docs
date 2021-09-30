@@ -1,14 +1,8 @@
 [![Build Dist](https://github.com/MerginMaps/docs/actions/workflows/main.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/main.yml)
 [![Markdown Checks](https://github.com/MerginMaps/docs/actions/workflows/checks.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/checks.yml)
 
-<div>
-<img align="left" width="70" height="70" src="https://cdn.brandfolder.io/5H442O3W/as/pl546j-7le8zk-199wkt/Slack_Mark.svg">
-<span>
-<br/>
-<a href="https://merginmaps.com/community/join"> Join our community chat
-</a> and ask questions!
-</span>
-</div>
+
+<div><img align="left" width="45" height="45" src="https://raw.githubusercontent.com/MerginMaps/docs/main/src/.vuepress/public/slack.svg">&nbsp;&nbsp;<a href="https://merginmaps.com/community/join">Join our community chat</a><br/>&nbsp;&nbsp;&nbsp;and ask questions!</div>
 
 # Mergin Maps Documentation
 
