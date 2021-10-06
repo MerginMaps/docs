@@ -329,7 +329,7 @@ In a separate table (which is non-spatial), we can record the inspections:
 
 ![Manhole locations](./input_forms_many-relations_concept3.png)
 
-In QGIS, we are using the **Manhole ID** fromt he point layer and the inspection table, to create a 1-N relationship between the two tables.
+In QGIS, we are using the **Manhole ID** from the point layer and the inspection table, to create a 1-N relationship between the two tables.
 
 Another example is when you try to capture multiple photos for a single feature.
 
