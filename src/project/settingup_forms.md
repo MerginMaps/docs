@@ -317,7 +317,7 @@ To use the drop-down widget in the form from Input:
 
 It is often the case that you have a set of spatial features and you want to record some parameters every now and then. For example, there is a GIS layer representing the manholes and the surveyors carry out regular inspections of the manholes. Instead of duplicating the manhole layer and recording each inspection, you can create a non-spatial table and store each inspection as a new line.
 
-The image below shows the location of manholes:
+The image below shows the manholes locations:
 
 ![Manhole locations](./input_forms_many-relations_concept1.png)
 
