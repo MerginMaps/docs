@@ -6,6 +6,8 @@ You can follow the examples in this section by cloning the following projects:
   - <MerginMapsProject id="documentation/form_setup" />
   - <MerginMapsProject id="documentation/form_cascade" />
   - <MerginMapsProject id="documentation/test_qrcode" />
+  - <MerginMapsProject id="documentation/forms_one-to-many-relations" />  
+  - <MerginMapsProject id="documentation/forms_multiple_photos" />
 :::
 
 
