@@ -322,8 +322,8 @@ In the sections below, you can see how this type of relations can be set up in Q
 ### Project preparation in QGIS
 
 The example projects can be found:
-- [Assigning multiple inspection to a single feature](https://public.cloudmergin.com/projects/documentation/forms_one-to-many-relations)
-- [Adding multiple photos to a single feature](https://public.cloudmergin.com/projects/documentation/forms_multiple_photos)
+- [Assigning multiple inspection to a single feature](<MerginMapsProject id="documentation/forms_one-to-many-relations" />)
+- [Adding multiple photos to a single feature](<MerginMapsProject id="documentation/forms_multiple_photos" />)
 
 To configure 1-N relations in QGIS:
 - From the main menu, select **Projects** > **Properties ...**
@@ -356,6 +356,6 @@ To set up a project in QGIS, similar to the previous example, we need a unique f
 
 The key part when linking the above to table is to avoid using **FID** field in the GeoPackage. Mergin uses the FID to consolidate changes and therefore can change the FIDs. This will result in having photos linked to the incorrect feature on the map.
 
-For that, we can create a new field and use the **uuid()** as the default value. To learn more about how this can be configured, you can see [this example](https://public.cloudmergin.com/projects/documentation/forms_multiple_photos).
+For that, we can create a new field and use the **uuid()** as the default value. To learn more about how this can be configured, you can see [this example](<MerginMapsProject id="documentation/forms_multiple_photos" />).
 
 ![Many photos to a single feature](./input_forms_many-photos.png)
