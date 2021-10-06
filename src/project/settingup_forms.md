@@ -99,7 +99,7 @@ To use the numeric widget in your form from Input:
 
 ![slider](./input_forms_number1.png)
 
-## Slider 
+## Slider
 
 For setting up a slider, ensure your field type is an integer.
 
@@ -145,9 +145,9 @@ To have a more advanced form with drill-down menu option, see [cascade form setu
 ## QR code reader
 To be able to use your camera in forms to scan QR codes and populate the text in the field
 
-### QGIS 
+### QGIS
 
-To be able to scan QR codes in your forms, your field or the alias for the field should contain **qrcode** (the text is not case sensitive and it can be be in combination of lower or upper case letters). For an example, see the <MerginMapsProject id="documentation/test_qrcode" /> 
+To be able to scan QR codes in your forms, your field or the alias for the field should contain **qrcode** (the text is not case sensitive and it can be be in combination of lower or upper case letters). For an example, see the <MerginMapsProject id="documentation/test_qrcode" />
 
 ### Input
 
@@ -164,7 +164,7 @@ To use the QR code scanner in the form from Input:
 ![slider](./input_forms_qrcode.jpg)
 
 
-## Datetime 
+## Datetime
 
 If you want to record time and date when you capture the feature, you need to make sure you have a field with **Date** or **Date and Time** type present in your survey layer. Note that all GIS data formats support these types of field. It is assumed, you use Geopackage layer, hence this field type is supported.
 
@@ -310,3 +310,52 @@ To use the drop-down widget in the form from Input:
 ![slider](./input_forms_valuerelation1.png)
 ![slider](./input_forms_valuerelation2.png)
 ![slider](./input_forms_valuerelation3.png)
+
+## 1-N relations
+
+It is often the case that you have a set of spatial features and you want to record some parameters every now and then. For example, there is a GIS layer representing the manholes and the surveyors carry out regular inspections of the manholes. Instead of duplicating the manhole layer and recording each inspection, you can create a non-spatial table and store each inspection as a new line. An example project
+
+Another example is when you try to capture multiple photos for a single feature.
+
+In the sections below, you can see how this type of relations can be set up in QGIS and utilised in the Input app.
+
+### Project preparation in QGIS
+
+The example projects can be found:
+- [Assigning multiple inspection to a single feature](<MerginMapsProject id="documentation/forms_one-to-many-relations" />)
+- [Adding multiple photos to a single feature](<MerginMapsProject id="documentation/forms_multiple_photos" />)
+
+To configure 1-N relations in QGIS:
+- From the main menu, select **Projects** > **Properties ...**
+- In the new window, select the **Relations** tab
+- Select **Add Relation** to create a new one
+- A new window will appear, where we can define the parent and child layers and the fields to link the two layers:
+  - For **Name** type **Inspection**
+  - For the **Referenced(parent)** layer, select **manhole_locations**
+  - For **Field 1** of the **Referenced(parent)** layer, select **Manhole**
+  - For the **Referencing(child)** layer, select **inspections**
+  - For **Field 1** of the **Referencing(child)** layer, select **Manhole ID**
+
+![1-N relations in QGIS](./input_forms_many-relations1.png)
+
+This should now allow you to add multiple inspections for each manhole location (**manhole_locations** point layer). The inspections records will be stored in the **inspections** table.
+
+When you open the form for an existing record in the  **manhole_locations** point layer, you should be able to see the existing inspection records and optionally add, delete or edit the records:
+
+![1-N relations in QGIS - form view](./input_forms_many-relations1.png)
+
+The same project when you open add inspection to a manhole in Input will look like the image below:
+
+![Many photos to a single feature](./input_forms_one-to-many.png)
+
+Another use-case for having multiple photos linked to a single feature is using 1-N relation.
+
+To set up a project in QGIS, similar to the previous example, we need a unique field to link the following two tables:
+- Survey layer (containing spatial information)
+- A non-spatial table containing path to the photos
+
+The key part when linking the above to table is to avoid using **FID** field in the GeoPackage. Mergin uses the FID to consolidate changes and therefore can change the FIDs. This will result in having photos linked to the incorrect feature on the map.
+
+For that, we can create a new field and use the **uuid()** as the default value. To learn more about how this can be configured, you can see [this example](<MerginMapsProject id="documentation/forms_multiple_photos" />).
+
+![Many photos to a single feature](./input_forms_many-photos.png)
