@@ -27,6 +27,8 @@ yarn install
 yarn dev
 ```
 
+If `yarn install` fails with *ERROR: [Errno 2] No such file or directory: 'install'* then [check out this page](stackoverflow.com/questions/46013544/yarn-install-command-error-no-such-file-or-directory-install).
+
 ## Static generation (for deployments)
 
 To generate static HTML files, run 
@@ -75,7 +77,7 @@ type is one of "tip"|"warning"|"error", see [vuepress docs](https://v1.vuepress.
 ## Images 
 
  - Do not add `docs` prefix (base)
- - Place images next a markdown file that uses it  
+ - Place images next to the markdown files that reference them
  - Do not start with `/`, use relative paths
 
 e.g. `![](./cloudmergin.png)` if the image is in the same folder as your mardown file
