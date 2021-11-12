@@ -7,11 +7,23 @@ module.exports = {
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
                 '/tutorials/capturing-first-data/',
+                '/tutorials/opening-surveyed-data-on-your-computer/',
+                '/tutorials/creating-a-project-in-qgis/',
                 '/tutorials/quick-start/',
                 '/tutorials/mergin-tour/',
                 '/tutorials/sharewithcollegues',
                 '/tutorials/input-tour/',
                 '/tutorials/analyzeresults'
+            ]
+        },
+        {
+            title: 'How to',   // required
+            collapsable: true, // optional, defaults to true
+            sidebarDepth: 0,    // optional, defaults to 1
+            children: [
+                '/howto/sign-up-to-mergin-maps/',
+                '/howto/install-qgis/',
+                '/howto/install-mergin-maps-plugin-for-qgis/'
             ]
         },
         {

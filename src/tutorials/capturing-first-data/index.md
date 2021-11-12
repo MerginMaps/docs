@@ -2,12 +2,12 @@
 
 In this tutorial you will learn how to:
 
-* Create a new project for viewing your location on background maps
+* See your location shown on background maps on your mobile device
 * Capture field data with their locations, photos and notes
 * Query and edit field data
 
 
-## Creating a project in Mergin Maps Mobile (Input)
+## Creating a project in <MobileAppName/>
 
 Data are stored within projects. We'll now create a new project to save our data into.
 
