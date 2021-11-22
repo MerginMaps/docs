@@ -166,3 +166,7 @@ All other code in this repository is licensed under a [MIT license](LICENSE-CODE
 * Anchors don't work
 * elements in anchors don't show
 * elements also don't work in TOC
+
+# Other things to document
+
+* Not suing mergin maps keyword in URL - it's already in domain name

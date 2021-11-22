@@ -9,11 +9,10 @@ module.exports = {
                 '/tutorials/capturing-first-data/',
                 '/tutorials/opening-surveyed-data-on-your-computer/',
                 '/tutorials/creating-a-project-in-qgis/',
-                '/tutorials/quick-start/',
-                '/tutorials/mergin-tour/',
-                '/tutorials/sharewithcollegues',
-                '/tutorials/input-tour/',
-                '/tutorials/analyzeresults'
+                '/tutorials/mobile/'
+                /* '/tutorials/quick-start/', */
+                /* '/tutorials/mergin-tour/', */
+                /* '/tutorials/input-tour/' */
             ]
         },
         {
@@ -23,16 +22,9 @@ module.exports = {
             children: [
                 '/howto/sign-up-to-mergin-maps/',
                 '/howto/install-qgis/',
-                '/howto/install-mergin-maps-plugin-for-qgis/'
-            ]
-        },
-        {
-            title: 'Guides',   // required
-            collapsable: true, // optional, defaults to true
-            sidebarDepth: 0,    // optional, defaults to 1
-            children: [
-                '/guides/howtosetuporganization',
-                '/guides/multiplephotostopoint'
+                '/howto/install-mergin-maps-plugin-for-qgis/',
+                '/howto/attach-multiple-photos-to-features/',
+                '/howto/create-an-organization/'
             ]
         },
         {
@@ -45,7 +37,8 @@ module.exports = {
                 '/concepts/users-and-orgs',
                 '/concepts/permissions',
                 '/concepts/synchronization',
-                '/concepts/projections/'
+                '/concepts/projections/',
+                '/concepts/home-page-and-dashboard/'
             ]
         },
         {
@@ -53,7 +46,6 @@ module.exports = {
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
-                '/manage/web/dashboard',
                 '/manage/web/project-advanced',
                 '/manage/web/project-details',
                 '/manage/web/register',

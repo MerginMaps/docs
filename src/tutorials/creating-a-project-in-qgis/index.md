@@ -170,3 +170,16 @@ In the next tutorial we will see how this project looks on <MobileAppName />. We
 
 	![](./qgis-project-synced.jpg)
 
+Synchronising changes between users and devices is a core primciple of <MainPlatformName />. When you sync a project, changes that have been made by other users and devices since you last synced are fetched and any changes you've made are pushed.
+
+Changes are merged safely and easily from different users, even when they edit the same feature. 
+
+<MainPlatformName /> tracks project version history so you can download a previous version of a project if you need to.
+
+
+
+
+
+
+
+
