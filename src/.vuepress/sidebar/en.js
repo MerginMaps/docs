@@ -9,7 +9,9 @@ module.exports = {
                 '/tutorials/capturing-first-data/',
                 '/tutorials/opening-surveyed-data-on-your-computer/',
                 '/tutorials/creating-a-project-in-qgis/',
-                '/tutorials/mobile/'
+                '/tutorials/mobile/',
+                '/tutorials/further-project-customisation/',
+                '/tutorials/working-collaboratively/'
                 /* '/tutorials/quick-start/', */
                 /* '/tutorials/mergin-tour/', */
                 /* '/tutorials/input-tour/' */
