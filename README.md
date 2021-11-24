@@ -170,3 +170,14 @@ All other code in this repository is licensed under a [MIT license](LICENSE-CODE
 # Other things to document
 
 * Not suing mergin maps keyword in URL - it's already in domain name
+
+# Naming things
+
+* We can use vue components references names, allowing us to change them quickly in the future
+* This doesn't work for things like url component names and anchor links
+* In these situations:
+
+	* Filenames:
+		* mergin-maps-mobile
+	* Titles
+		* Mergin Maps Input

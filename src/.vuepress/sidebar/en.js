@@ -2,7 +2,7 @@ module.exports = {
       '/': [
         ['', 'Home'], /* / */
         {
-            title: 'Quick Start',   // required
+            title: 'Get started',   // required
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
@@ -12,21 +12,6 @@ module.exports = {
                 '/tutorials/mobile/',
                 '/tutorials/further-project-customisation/',
                 '/tutorials/working-collaboratively/'
-                /* '/tutorials/quick-start/', */
-                /* '/tutorials/mergin-tour/', */
-                /* '/tutorials/input-tour/' */
-            ]
-        },
-        {
-            title: 'How to',   // required
-            collapsable: true, // optional, defaults to true
-            sidebarDepth: 0,    // optional, defaults to 1
-            children: [
-                '/howto/sign-up-to-mergin-maps/',
-                '/howto/install-qgis/',
-                '/howto/install-mergin-maps-plugin-for-qgis/',
-                '/howto/attach-multiple-photos-to-features/',
-                '/howto/create-an-organization/'
             ]
         },
         {
@@ -44,69 +29,70 @@ module.exports = {
             ]
         },
         {
-            title: 'Manage',   // required
+            title: 'How to',   // required
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
-                '/manage/web/project-advanced',
-                '/manage/web/project-details',
-                '/manage/web/register',
-                '/manage/web/subscriptions',
-                '/manage/web/web-create-project',
-                '/manage/web/working-with-organisations',
-                '/manage/plugin/install',
-                '/manage/plugin/plugin-delete-project',
-                '/manage/plugin/plugin-new-project',
-                '/manage/plugin/plugin-sync-project',
-                '/manage/plugin/plugin-variables',
-                '/manage/troubleshoot'
+                '/howto/sign-up-to-mergin-maps/',
+                '/howto/install-qgis/',
+                '/howto/install-mergin-maps-plugin-for-qgis/'
             ]
         },
         {
-            title: 'Setup Project',   // required
+            title: 'For review',   // required
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
-                '/project/features',
-                '/project/enable_browsing',
-                '/project/enable_digitizing',
-                '/project/search_data',
-                '/project/selective_sync',
-                '/project/settingup_background_map',
-                '/project/settingup_forms',
-                '/project/settingup_forms_photo',
-                '/project/settingup_forms_settings',
-                '/project/setup_themes',
-                '/project/working_with_nonspatial_data'
+                '/to-review/exif_metadata',
+                '/to-review/customapp',
+                '/to-review/manage/troubleshoot',
+                '/to-review/manage/web/dashboard',
+                '/to-review/manage/web/web-create-project',
+                '/to-review/manage/web/register',
+                '/to-review/manage/web/working-with-organisations',
+                '/to-review/manage/web/project-advanced',
+                '/to-review/manage/web/project-details',
+                '/to-review/manage/web/subscriptions',
+                '/to-review/manage/plugin/plugin-delete-project',
+                '/to-review/manage/plugin/plugin-sync-project',
+                '/to-review/manage/plugin/plugin-new-project',
+                '/to-review/manage/plugin/plugin-variables',
+                '/to-review/manage/plugin/install',
+                '/to-review/integration',
+                '/to-review/gps_accuracy',
+                '/to-review/attach-multiple-photos-to-features/',
+                '/to-review/input-tour/',
+                '/to-review/create-an-organization/',
+                '/to-review/mergin-tour/',
+                '/to-review/position_variables',
+                '/to-review/mergince',
+                '/to-review/input_ui',
+                '/to-review/external_gps',
+                '/to-review/quick-start/',
+                '/to-review/data_sync',
+                '/to-review/contribute',
+                '/to-review/proj',
+                '/to-review/reuse_last_values',
+                '/to-review/input_features',
+                '/to-review/dbsync',
+                '/to-review/project/settingup_forms_photo',
+                '/to-review/project/enable_digitizing',
+                '/to-review/project/search_data',
+                '/to-review/project/enable_browsing',
+                '/to-review/project/settingup_background_map',
+                '/to-review/project/working_with_nonspatial_data',
+                '/to-review/project/setup_themes',
+                '/to-review/project/selective_sync',
+                '/to-review/project/settingup_forms_settings',
+                '/to-review/project/features',
+                '/to-review/project/settingup_forms'
             ]
         },
         {
-            title: 'Work Outside',   // required
+            title: 'Reference',   // required
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
-            children: [
-                '/fieldwork/input_ui',
-                '/fieldwork/input_features',
-                '/fieldwork/data_sync',
-                '/fieldwork/exif_metadata',
-                '/fieldwork/external_gps',
-                '/fieldwork/gps_accuracy',
-                '/fieldwork/position_variables',
-                '/fieldwork/proj',
-                '/fieldwork/reuse_last_values'
-            ]
-        },
-        {
-            title: 'Develop and Integrate',   // required
-            collapsable: true, // optional, defaults to true
-            sidebarDepth: 0,    // optional, defaults to 1
-            children: [
-                '/admin/customapp',
-                '/admin/dbsync',
-                '/admin/mergince',
-                '/admin/integration',
-                '/admin/contribute'
-            ]
-        },
+            children: []
+        }
       ]
 }

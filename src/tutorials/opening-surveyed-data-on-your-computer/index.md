@@ -1,5 +1,7 @@
 # Opening Surveyed Data on Your Computer
 
+[[toc]]
+
 In the last tutorial you learnt how to FIXME.
 
 In this tutorial you'll learn how to:
@@ -21,7 +23,7 @@ In this tutorial you'll learn how to:
 
    ![](./mergin-maps-mobile-log-in-to-mergin.jpg)
    
-   [Signing up with <MainPlatformName />](../../howto/sign-up-with-mergin-maps/index.md) describes several methods of registering.
+   [Signing up with <MainPlatformName />](../../howto/sign-up-to-mergin-maps/index.md) describes several methods of registering.
 
 3. Initiate the upload once again
 
@@ -110,6 +112,22 @@ There are so many ways you could extract the data but here we'll just cover the 
    ![](./qgis-finding-photos.jpg)
    
 If you're new to QGIS we really recommend getting some basic familiarity with the software. It's a powerful tool with a great community that can help you achieve a lot.
+
+
+## Identify features tool
+
+You can also use QGIS to interrogate the data you surveyed in the field. You can do this by:
+
+1. ***Selecting the Survey layer*** in the layers panel
+2. Selecting the ***Identify Features*** tool:
+
+	![](./qgis-identify-features-tool.jpg)
+
+3. Clicking on your survey points
+
+	The feature's attributes should then be shown:
+
+	![](./qgis-identify-results.jpg)
 
 
 ## Summary

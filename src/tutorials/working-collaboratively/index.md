@@ -1,5 +1,7 @@
 # Working Collaboratively
 
+[[toc]]
+
 <MainPlatformName /> makes working collaboratively safe and easy.
 
 In this tutorial you'll learn a few different ways of sharing your project with your colleagues.

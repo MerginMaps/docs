@@ -1,5 +1,7 @@
 # Creating a Project in QGIS
 
+[[toc]]
+
 In earlier tutorials you created a new survey project from within <MobileAppName />. That was a very fast (albeit limited) way of creating a <MainPlatformName /> project.
 
 In this tutorial you will create a new project using QGIS, a free and open source desktop GIS package. <MobileAppName /> is based on QGIS which means it's able to visualise and edit data in the same way QGIS can. This offers us great flexibility which we'll start to see in a moment.
@@ -29,7 +31,7 @@ Please ensure you have already:
 	![](./mergin-plugin-create-new-mergin-project.jpg)
 
     ::: tip
-	FIXME best practice about that location
+	Although you can create your <MainPlatformName /> project under any folder, we recommend you store local projects under `Documents\Mergin Projects`. That convention is also used throughout this documentation.
 	:::
 
 5. Press ***Finish***
@@ -44,7 +46,7 @@ Please ensure you have already:
 You may have noticed that the <QGISPluginName /> has created a project almost identical to the one created by <MobileAppName /> in a previous tutorial: A single point layer called *Survey* and OpenStreetMap base mapping.
 
 ::: tip
-<MobileAppName /> can use any type of background mapping (offline and online). FIXME - point user to relevant HOWTOs.
+<MobileAppName /> can make use of any type of background maps (offline and online) that are supported by QGIS. TODO: Link to relavent HOWTO.
 :::
 
 We'll now add two more layers - a point layer for surveying trees and a line layer for hedges.

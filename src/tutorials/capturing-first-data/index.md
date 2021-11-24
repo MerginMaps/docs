@@ -1,5 +1,7 @@
 # Capturing Your First Field Data
 
+[[toc]]
+
 In this tutorial you will learn how to:
 
 * See your location shown on background maps on your mobile device
@@ -7,13 +9,13 @@ In this tutorial you will learn how to:
 * Query and edit field data
 
 
-## Creating a project in <MobileAppName/>
+## Creating a project in <MobileAppName />
 
 Data are stored within projects. We'll now create a new project to save our data into.
 
-Mergin Maps Mobile (Input) offers the quickest and easiest way of creating new projects. Alternative methods offering much greater flexibility are introduced in later turorials.
+<MobileAppName /> offers the quickest and easiest way of creating new projects. Alternative methods offering much greater flexibility are introduced in later turorials.
 
-1. Open Mergin Maps Mobile (Input)
+1. Open <MobileAppName /> on your mobile device
 2. Go to the *Home* tab of the *Projects* screen and press *Create project*:
 
    ![](./merginmaps-mobile-home-tab-of-projects-screen.jpg)
@@ -88,7 +90,7 @@ The background map in this simple example requires network connectivity so may n
 
 ## Summary
 
-In this tutorial you learnt how to start capturing field data with very little effort, entirely from within Mergin Maps Mobile (Input). 
+In this tutorial you learnt how to start capturing field data with very little effort, entirely from within <MobileAppName />. 
 
 You may be wondering how you can survey area features or use your own background maps or scan barcodes. These things are all possible but are just covered in later tutorials.
 

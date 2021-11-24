@@ -1,3 +1,3 @@
 <template>
-  <span>Input App</span>
+  <span>Mergin Maps Input</span>
 </template>

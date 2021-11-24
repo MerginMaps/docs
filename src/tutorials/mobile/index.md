@@ -1,4 +1,6 @@
-# Using Mergin Maps Mobile
+# Using Mergin Maps Input
+
+[[toc]]
 
 In the last tutorial we created a new <MainPlatformName /> project in QGIS with layers for surveying trees and hedges. You'll now learn how to get fixme.
 
@@ -119,7 +121,7 @@ When creating the project in QGIS, we included a layer for linear features calle
 
 1. Set ***hedges*** as the ***active layer***
 
-	Refer back to [the active layer section](#the-active-layer) FIXME if you cannot remember how to do this
+	Refer back to [the active layer section](#the-active-layer) if you cannot remember how to do this
 
 	We'll now survey a hedge feature.
 
