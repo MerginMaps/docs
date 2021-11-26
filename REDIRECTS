@@ -5,7 +5,8 @@ https://help.cloudmergin.com/	https://merginmaps.com/docs/
 https://help.cloudmergin.com/dashboard	https://merginmaps.com/docs/concepts/home-page-and-dashboard/
 https://help.cloudmergin.com/developers	https://merginmaps.com/docs/howto/integration
 https://help.cloudmergin.com/developers.html	N/A - covered by non-html version
-https://help.cloudmergin.com/faq.html	https://merginmaps.com/docs/
+https://help.cloudmergin.com/faq	https://merginmaps.com/docs/
+https://help.cloudmergin.com/faq.html	N/A - covered by non-html version
 https://help.cloudmergin.com/mergin-web	??
 https://help.cloudmergin.com/permissions	https://merginmaps.com/docs/concepts/permissions
 https://help.cloudmergin.com/plugin-clone-project	https://merginmaps.com/docs/howto/manage/plugin/plugin-new-project
@@ -18,24 +19,29 @@ https://help.cloudmergin.com/plugin-sync-project	https://merginmaps.com/docs/how
 https://help.cloudmergin.com/plugin-variables	https://merginmaps.com/docs/howto/manage/plugin/plugin-variables
 https://help.cloudmergin.com/project-advanced	https://merginmaps.com/docs/howto/manage/web/project-advanced
 https://help.cloudmergin.com/project-details	https://merginmaps.com/docs/howto/manage/web/project-details
-https://help.cloudmergin.com/quick-start.html	https://merginmaps.com/docs/tutorials/capturing-first-data/
+https://help.cloudmergin.com/quick-start	https://merginmaps.com/docs/tutorials/capturing-first-data/
+https://help.cloudmergin.com/quick-start.html	N/A - covered by non-html version
 https://help.cloudmergin.com/registration	https://merginmaps.com/docs/howto/manage/web/register
 https://help.cloudmergin.com/registration.html	N/A - covered by non-html version
 https://help.cloudmergin.com/sharing-project	https://merginmaps.com/docs/howto/manage/web/project-advanced
 https://help.cloudmergin.com/subscriptions	https://merginmaps.com/docs/howto/manage/web/subscriptions
 https://help.cloudmergin.com/support	https://merginmaps.com/docs/howto/manage/troubleshoot
-https://help.cloudmergin.com/tutorials/data-sync.html	https://merginmaps.com/docs/howto/mergin-tour/
-https://help.cloudmergin.com/tutorials/data-transfer.html	https://merginmaps.com/docs/howto/mergin-tour/
+https://help.cloudmergin.com/tutorials/data-sync	https://merginmaps.com/docs/howto/mergin-tour/
+https://help.cloudmergin.com/tutorials/data-sync.html	N/A - covered by non-html version
+https://help.cloudmergin.com/tutorials/data-transfer	https://merginmaps.com/docs/howto/mergin-tour/
+https://help.cloudmergin.com/tutorials/data-transfer.html	N/A - covered by non-html version
 https://help.cloudmergin.com/tutorials/qgis-new-project	https://merginmaps.com/docs/howto/mergin-tour/
 https://help.cloudmergin.com/tutorials/qgis-new-project.html	N/A - covered by non-html version
-https://help.cloudmergin.com/tutorials/using-input.html	https://merginmaps.com/docs/howto/mergin-tour/
+https://help.cloudmergin.com/tutorials/using-input	https://merginmaps.com/docs/howto/mergin-tour/
+https://help.cloudmergin.com/tutorials/using-input.html	N/A - covered by non-html version
 https://help.cloudmergin.com/web-create-project	https://merginmaps.com/docs/howto/manage/web/web-create-project
 https://help.cloudmergin.com/working-with-organisations	https://merginmaps.com/docs/howto/manage/web/working-with-organisations
 https://help.cloudmergin.com/working-with-qgis-plugin	??
 https://help.cloudmergin.com/working-with-qgis-plugin.html	N/A - covered by non-html version
 https://help.inputapp.io	https://merginmaps.com/docs/
 https://help.inputapp.io/	https://merginmaps.com/docs/
-https://help.inputapp.io/developers.html	https://merginmaps.com/docs/howto/customapp/
+https://help.inputapp.io/developers	https://merginmaps.com/docs/howto/customapp/
+https://help.inputapp.io/developers.html	N/A - covered by non-html version
 https://help.inputapp.io/faq	https://merginmaps.com/docs/
 https://help.inputapp.io/howto/data_sync	https://merginmaps.com/docs/howto/data_sync
 https://help.inputapp.io/howto/enable_browsing	https://merginmaps.com/docs/howto/project/enable_browsing
@@ -74,7 +80,8 @@ https://help.inputapp.io/howto/working_with_nonspatial_data	https://merginmaps.c
 https://help.inputapp.io/input_ui	https://merginmaps.com/docs/howto/input_ui
 https://help.inputapp.io/licensing	??
 https://help.inputapp.io/privacy	??
-https://help.inputapp.io/quick-start.html	https://merginmaps.com/docs/tutorials/capturing-first-data/
+https://help.inputapp.io/quick-start	https://merginmaps.com/docs/tutorials/capturing-first-data/
+https://help.inputapp.io/quick-start.html	N/A - covered by non-html version
 https://help.inputapp.io/quick-start/create-project	https://merginmaps.com/docs/tutorials/capturing-first-data/
 https://help.inputapp.io/quick-start/put-project-on-device	https://merginmaps.com/docs/tutorials/capturing-first-data/
 https://help.inputapp.io/quick-start/share-project	https://merginmaps.com/docs/tutorials/working-collaboratively/
