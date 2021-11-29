@@ -8,10 +8,6 @@ In this tutorial you will learn how to:
 * Capture field data with their locations, photos and notes
 * Query and edit field data
 
-[This](../broken/link.md) is a deliberate dead link and [this](../broken/) is another.
-
-[A broken link to an external site](https://www.lutraconsulting.co.uk/broken-link).
-
 
 ## Creating a project in <MobileAppName />
 

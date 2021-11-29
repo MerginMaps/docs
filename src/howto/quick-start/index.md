@@ -60,13 +60,13 @@ and thus you can modify it.
 
 You may want now explore other features: 
 
-- [Dashboard](../web/dashboard.md) - accessing to your recent projects, profile and other settings
-- [Creating projects](../web/web-create-project.md) - how to create new project and upload files
-- [Subscriptions](../web/subscriptions.md) - How to subscribe to Mergin Plans
-- [Project details](../web/project-details.md) - view project files, history and changelogs
-- [Sharing projects](../web/sharing-project.md) - share your projects with other Mergin users
-- [Advanced project settings](../web/project-advanced.md) - transfer projects to other users or delete projects
-- [Working with organisations](../web/working-with-organisations.md) - Managing organisation's projects and members
+- [Dashboard](../manage/web/dashboard.md) - accessing to your recent projects, profile and other settings
+- [Creating projects](../manage/web/web-create-project.md) - how to create new project and upload files
+- [Subscriptions](../manage/web/subscriptions.md) - How to subscribe to Mergin Plans
+- [Project details](../manage/web/project-details.md) - view project files, history and changelogs
+- [Sharing projects](../manage/web/sharing-project.md) - share your projects with other Mergin users
+- [Advanced project settings](../manage/web/project-advanced.md) - transfer projects to other users or delete projects
+- [Working with organisations](../manage/web/working-with-organisations.md) - Managing organisation's projects and members
 
 ## Mobile Input App
 
@@ -99,7 +99,7 @@ and open the project.
 
 ![Input - map](./input-map-basic-survey.png)
 
-[Take the Tour](./guides/input-tour/README.md) to grasp the basics of the app and see how to start capturing, sharing and visualising survey data.
+[Take the Tour](../input-tour/index.md) to grasp the basics of the app and see how to start capturing, sharing and visualising survey data.
 
 <YouTube id="DQXrINUqiFI"></YouTube>
 
@@ -133,7 +133,7 @@ just downloaded - if you click Yes, you are ready to use your project:
 
 ### Next steps
 
-[Take the Tour](./guides/mergin-tour/README.md) to grasp the basics of the workflows and project setup in QGIS
+[Take the Tour](../mergin-tour/index.md) to grasp the basics of the workflows and project setup in QGIS
 
 or explore other functions:
 

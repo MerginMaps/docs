@@ -30,6 +30,6 @@ Once you have uploaded the logs, you can contact us [info@lutraconsulting.co.uk]
 
 ## Community Support
 
- - See [GIS Stack Exchange](https://gis.stackexchange.com/questions/tagged/inputapp) with **inputapp** tag to ask questions and see other users' answers.
+ - See [GIS Stack Exchange](https://gis.stackexchange.com/questions/tagged/lutra-input-app) with **lutra-input-app** tag to ask questions and see other users' answers.
  - See [QGIS Online docs](https://www.qgis.org/en/docs/index.html) for QGIS Desktop related problem
  

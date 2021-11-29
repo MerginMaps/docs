@@ -148,11 +148,11 @@ That's the end of the Quick Start Guide but there's loads more information
 in the [main documentation](../../index.md) such as how to carry out a typical 
 Input workflow:
 
-* Preparing project: user loads background and survey layers, set up the forms, apply styling to the layers, set up map themes and define the layers to be used for survey purpose. See [Project preparation](../../qgis/project_config.md)
+* Preparing project: user loads background and survey layers, set up the forms, apply styling to the layers, set up map themes and define the layers to be used for survey purpose. See Project preparation
 
-* Data/project transfer: once the project set up, users need to transfer data to the device. This can be achieved through [Mergin](https://public.cloudmergin.com). See [Data transfer](../../mobile/data_sync.md)
+* Data/project transfer: once the project set up, users need to transfer data to the device. This can be achieved through [Mergin](https://public.cloudmergin.com). See [Data transfer](../data_sync.md)
 
-* Working with Input: map navigation, data editing, including filling the forms, viewing existing data and uploading the changes back to Mergin. See [Using Input](../../mobile/using_input.md)
+* Working with Input: map navigation, data editing, including filling the forms, viewing existing data and uploading the changes back to Mergin. See Using Input
 
-* Input user interface: describes various buttons, options and configurations. See [Input user interface](../../mobile/input_ui.md)
+* Input user interface: describes various buttons, options and configurations. See [Input user interface](../input_ui.md)
 

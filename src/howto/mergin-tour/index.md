@@ -16,7 +16,7 @@ it in [Input app](https://inputapp.io/) to collect data in field.
 
 ### Software needed
 To start with, you will need to install the following software applications:
-- [QGIS](www.qgis.org) - for your PC/laptop: [download](https://qgis.org/en/site/forusers/download.html) and install QGIS if you have not already done so
+- [QGIS](https://www.qgis.org/) - for your PC/laptop: [download](https://qgis.org/en/site/forusers/download.html) and install QGIS if you have not already done so
 - [Input app](https://inputapp.io/) - for your mobile table: you can download the app from Google Play Store or Apple's App Store
 
 <AppDownload></AppDownload>
@@ -110,7 +110,7 @@ In this section, we will transfer the project and associated data set up in the 
 
 ### Transferring data to mobile devices
 
-You have 2 options to transfer your data to the mobile through the Mergin service: through website or [through Mergin plugin in QGIS](src/old/components/plugin/README.md). In this tutorial we are going to use the Mergin plugin from within QGIS.
+You have 2 options to transfer your data to the mobile through the Mergin service: through website or through Mergin plugin in QGIS. In this tutorial we are going to use the Mergin plugin from within QGIS.
 
 In QGIS, from the main menu, select **Plugins > Manage and Install Plugins ...**. A new window will appear. From the left panel, select **All** and then in the search section (on the top) search for **Mergin**. Select the plugin from the list and click on **Install plugin**. After installation, you need to **restart your QGIS**.
 

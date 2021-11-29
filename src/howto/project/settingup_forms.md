@@ -23,11 +23,11 @@ In the sections below, we go through examples of setting up different widgets fo
 |QGIS edit widget name   | Description  |Preview in Input   |
 |---|---|---|
 |Text Edit  |[Text](#text-widget)   | ![layout](./input_forms_text.png) |
-|QR & barcode scanner  |[Camera to scan QR and barcode](./#qr-code-reader)   | ![layout](./input_forms_qrcode1.png) |
+|QR & barcode scanner  |[Camera to scan QR and barcode](#qr-code-reader)   | ![layout](./input_forms_qrcode1.png) |
 |Range   |[Numeric field](#number)   | ![layout](./input_forms_numbers.png)  |
 |Range   |[Slider](#slider)   | ![layout](./input_forms_slider1.png)  |
 |Date&Time   |[Calendar with time](#datetime)  |![layout](./input_forms_datetime1.png)   |
-|Attachment   |[Photos from device's camera or gallery](./settingup_forms_photos.md) | ![layout](./input_forms_photo1.png)  |
+|Attachment   |[Photos from device's camera or gallery](./settingup_forms_photo.md) | ![layout](./input_forms_photo1.png)  |
 |Checkbox   |[Checkbox](#checkbox)   |![layout](./input_forms_checkbox2.png)   |
 |Value Map   |[Drop-down menu with pre-defined values](#valuemap) |![layout](./input_forms_valuemap1.png)   |
 |Value Relation   |[Drop-down menu with values from another table](#value-relation) |![layout](./input_forms_valuerelation.png)   |
@@ -140,7 +140,7 @@ To use the slider widget in the form from Input:
 
 
 ## Advanced value relation with drill-down forms
-To have a more advanced form with drill-down menu option, see [cascade form setup](./settingup_forms_cascade.md)
+To have a more advanced form with drill-down menu option, see cascade form setup
 
 ## QR code reader
 To be able to use your camera in forms to scan QR codes and populate the text in the field
@@ -266,7 +266,7 @@ To use the drop-down widget in the form from Input:
 
 ## Value Relation
 
-**Value Relation** widget is very similar to the [Value Map](./settingup_forms_valuemap) tool, but the values for the drop-down menu come from another table (e.g. a CSV or another Geopackage table).
+**Value Relation** widget is very similar to the [Value Map](#valuemap) tool, but the values for the drop-down menu come from another table (e.g. a CSV or another Geopackage table).
 
 The advantage of having this widget:
   - Ability to edit the values in the field. For example, if you have missed a value in your list for the drop-down menu, you can edit the table in Input and add the value. See [Working with non-spatial tables](./working_with_nonspatial_data.md) section for more information.

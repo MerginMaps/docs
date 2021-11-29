@@ -1,7 +1,7 @@
 # Extra Position Variables
 
 Input provides the option to access GPS information using an extra position variables. Those can be used as 
-[default values in feature forms](../qgis/settingup_forms_defaults.md). Note that location permission 
+[default values in feature forms](./project/settingup_forms.md). Note that location permission 
 have to be allowed and location service has to be enabled.
 
 Following variables are supported:

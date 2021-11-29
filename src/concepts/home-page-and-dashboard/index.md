@@ -20,7 +20,7 @@ On the left panel, you can access your profile, organisation(s) and subscription
   - To create a new organisation, select **+ Create** in front of **Organisations**
   - To switch to your organisation profile, click on the organisation from the panel
 
-For more information about organisations, visit [working with organisations](./working-with-organisations.md) page.
+For more information about organisations, visit [working with organisations](../../howto/manage/web/working-with-organisations.md) page.
 
 - Under **Settings**:
   - **Profile** displays your account details, email notification settings and invitations to join organisations.

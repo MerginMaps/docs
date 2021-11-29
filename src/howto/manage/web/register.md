@@ -14,7 +14,7 @@ Once you press **Sign up**, you will receive a confirmation email. To sign in an
 check your SPAM folder if the email does not appear in your inbox after 5 minutes.
 :::
 
-You can sign up to the Mergin service, through [Input app](../mobile/README.md).
+You can sign up to the Mergin service, through Input app.
 
 ## Forgotten Password
 

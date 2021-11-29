@@ -18,7 +18,7 @@ To allow this functionality, follow these steps:
  - Now try to create a new feature
 
 ::: tip
- You can learn how to create a feature in guide [Working with Input](../../guides/input-tour/README.md).
+ You can learn how to create a feature in guide [Working with Input](./input-tour/index.md).
 :::
 
  - In opened form you will see checkboxes next to attributes. In our example we have three editable attributes (besides `fid`). We set Input to remember values for attributes `Name` and `Value` by checking checkboxes next to each of the attributes.

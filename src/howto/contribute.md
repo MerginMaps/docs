@@ -37,7 +37,7 @@ Test the application and report the bugs
  - [Mergin Maps Cloud](https://github.com/lutraconsulting/mergin/issues)
  - [Mergin Maps Cloud](https://github.com/lutraconsulting/qgis-mergin-plugin/issues)
 
-or for other [subprojects](./index#explore-eco-system)
+or for other subprojects
 
 ## Develop
 
@@ -48,7 +48,7 @@ environment and answer your questions.
  - [Mergin Maps Cloud](https://github.com/lutraconsulting/mergin)
  - [Mergin Maps Cloud](https://github.com/lutraconsulting/qgis-mergin-plugin)
 
-or for other [subprojects](./index#explore-eco-system)
+or for other subprojects
 
 ## Donate or subscribe
 

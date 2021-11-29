@@ -16,7 +16,7 @@
 
 ## From <MobileAppName />
 
-If you already have [installed <MobileAppName />](../install-mergin-maps-mobile/index.md) installed then you can sign up from there.
+If you already have [installed <MobileAppName /> (TODO: write this page)](../install-mergin-maps-mobile/index.md) installed then you can sign up from there.
 
 [Skip this section](./index.md#next-steps) if you've already signed up from <MainDomainName /> as described above.
 

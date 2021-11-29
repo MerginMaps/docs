@@ -6,7 +6,7 @@
 
 Input comes with built-in functionality to seamlessly synchronise your projects and data through Mergin. If you want to use this functionality, you will need to sign up to [Mergin https://public.cloudmergin.com/](https://public.cloudmergin.com).
 
-We provide a QGIS plugin for Mergin to easily synchronise your projects and data from within QGIS. See the [plugin user manual](../desktop/plugin-sync-project.md) for more information.
+We provide a QGIS plugin for Mergin to easily synchronise your projects and data from within QGIS. See the [plugin user manual](./manage/plugin/plugin-sync-project.md) for more information.
 
 ![mergin-plugin](./mergin_plugin.png)
 
