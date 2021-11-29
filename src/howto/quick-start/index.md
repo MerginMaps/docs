@@ -64,7 +64,7 @@ You may want now explore other features:
 - [Creating projects](../manage/web/web-create-project.md) - how to create new project and upload files
 - [Subscriptions](../manage/web/subscriptions.md) - How to subscribe to Mergin Plans
 - [Project details](../manage/web/project-details.md) - view project files, history and changelogs
-- [Sharing projects](../manage/web/sharing-project.md) - share your projects with other Mergin users
+- Sharing projects - share your projects with other Mergin users
 - [Advanced project settings](../manage/web/project-advanced.md) - transfer projects to other users or delete projects
 - [Working with organisations](../manage/web/working-with-organisations.md) - Managing organisation's projects and members
 
@@ -137,9 +137,9 @@ just downloaded - if you click Yes, you are ready to use your project:
 
 or explore other functions:
 
-- [Creating a new Mergin project](../plugin/plugin-new-project.md)
-- [Downloading an existing project](../plugin/plugin-download-project.md)
-- [Synchronising project and data](../plugin/plugin-sync-project.md)
-- [Cloning an existing project](../plugin/plugin-clone-project.md)
-- [Deleting a project](../plugin/plugin-delete-project.md)
-- [Mergin variables in QGIS](../plugin/plugin-variables.md)
+- [Creating a new Mergin project](../manage/plugin/plugin-new-project.md)
+- [Downloading an existing project](../manage/plugin/plugin-download-project.md)
+- [Synchronising project and data](../manage/plugin/plugin-sync-project.md)
+- [Cloning an existing project](../manage/plugin/plugin-clone-project.md)
+- [Deleting a project](../manage/plugin/plugin-delete-project.md)
+- [Mergin variables in QGIS](../manage/plugin/plugin-variables.md)

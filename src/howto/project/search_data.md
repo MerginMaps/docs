@@ -13,7 +13,7 @@ To be able to search the attribute table of a layer, you need to first configure
 
 ## Search attribute data in Input
 
-To search for a record, you first need to [open the attribute table](../mobile/enable_browsing.md). You can then type in the string and Input should shortlist the matching records.
+To search for a record, you first need to [open the attribute table](./enable_browsing.md). You can then type in the string and Input should shortlist the matching records.
 
 Selecting an individual record, Input will open the form related to the feature.
 
