@@ -138,8 +138,8 @@ just downloaded - if you click Yes, you are ready to use your project:
 or explore other functions:
 
 - [Creating a new Mergin project](../manage/plugin/plugin-new-project.md)
-- [Downloading an existing project](../manage/plugin/plugin-download-project.md)
+- Downloading an existing project
 - [Synchronising project and data](../manage/plugin/plugin-sync-project.md)
-- [Cloning an existing project](../manage/plugin/plugin-clone-project.md)
+- Cloning an existing project
 - [Deleting a project](../manage/plugin/plugin-delete-project.md)
 - [Mergin variables in QGIS](../manage/plugin/plugin-variables.md)
