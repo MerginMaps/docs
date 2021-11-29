@@ -85,7 +85,10 @@ module.exports = {
             title: 'Reference',   // required
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
-            children: []
+            children: [
+                '/reference/licensing',
+                '/reference/privacy'
+            ]
         }
       ]
 }

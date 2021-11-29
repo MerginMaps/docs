@@ -7,7 +7,7 @@ https://help.cloudmergin.com/developers	https://merginmaps.com/docs/howto/integr
 https://help.cloudmergin.com/developers.html	N/A - covered by non-html version
 https://help.cloudmergin.com/faq	https://merginmaps.com/docs/
 https://help.cloudmergin.com/faq.html	N/A - covered by non-html version
-https://help.cloudmergin.com/mergin-web	??
+https://help.cloudmergin.com/mergin-web	https://merginmaps.com/docs/
 https://help.cloudmergin.com/permissions	https://merginmaps.com/docs/concepts/permissions
 https://help.cloudmergin.com/plugin-clone-project	https://merginmaps.com/docs/howto/manage/plugin/plugin-new-project
 https://help.cloudmergin.com/plugin-delete-project	https://merginmaps.com/docs/howto/manage/plugin/plugin-delete-project
@@ -36,7 +36,7 @@ https://help.cloudmergin.com/tutorials/using-input	https://merginmaps.com/docs/h
 https://help.cloudmergin.com/tutorials/using-input.html	N/A - covered by non-html version
 https://help.cloudmergin.com/web-create-project	https://merginmaps.com/docs/howto/manage/web/web-create-project
 https://help.cloudmergin.com/working-with-organisations	https://merginmaps.com/docs/howto/manage/web/working-with-organisations
-https://help.cloudmergin.com/working-with-qgis-plugin	??
+https://help.cloudmergin.com/working-with-qgis-plugin	https://merginmaps.com/docs/
 https://help.cloudmergin.com/working-with-qgis-plugin.html	N/A - covered by non-html version
 https://help.inputapp.io	https://merginmaps.com/docs/
 https://help.inputapp.io/	https://merginmaps.com/docs/
@@ -78,8 +78,8 @@ https://help.inputapp.io/howto/settingup_forms_valuerelation	https://merginmaps.
 https://help.inputapp.io/howto/setup_themes	https://merginmaps.com/docs/howto/project/setup_themes
 https://help.inputapp.io/howto/working_with_nonspatial_data	https://merginmaps.com/docs/howto/project/working_with_nonspatial_data
 https://help.inputapp.io/input_ui	https://merginmaps.com/docs/howto/input_ui
-https://help.inputapp.io/licensing	??
-https://help.inputapp.io/privacy	??
+https://help.inputapp.io/licensing	https://merginmaps.com/docs/reference/licensing
+https://help.inputapp.io/privacy	https://merginmaps.com/docs/reference/privacy
 https://help.inputapp.io/quick-start	https://merginmaps.com/docs/tutorials/capturing-first-data/
 https://help.inputapp.io/quick-start.html	N/A - covered by non-html version
 https://help.inputapp.io/quick-start/create-project	https://merginmaps.com/docs/tutorials/capturing-first-data/
@@ -87,7 +87,7 @@ https://help.inputapp.io/quick-start/put-project-on-device	https://merginmaps.co
 https://help.inputapp.io/quick-start/share-project	https://merginmaps.com/docs/tutorials/working-collaboratively/
 https://help.inputapp.io/quick-start/sync-changes	https://merginmaps.com/docs/tutorials/opening-surveyed-data-on-your-computer/
 https://help.inputapp.io/quick-start/take-the-tour	https://merginmaps.com/docs/tutorials/capturing-first-data/
-https://help.inputapp.io/resources/mergin-config.json	??
-https://help.inputapp.io/resources/mergin-config.zip	??
+https://help.inputapp.io/resources/mergin-config.json	https://merginmaps.com/docs/howto/project/selective_sync/mergin-config.json
+https://help.inputapp.io/resources/mergin-config.zip	https://merginmaps.com/docs/howto/project/selective_sync/mergin-config.zip
 https://help.inputapp.io/support	https://merginmaps.com/docs/howto/manage/troubleshoot
 https://help.inputapp.io/using_input	https://merginmaps.com/docs/howto/input_features
