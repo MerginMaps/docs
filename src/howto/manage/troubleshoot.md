@@ -6,8 +6,8 @@
 
 The commercial support or consultancy for your projects is carried by Lutra Consulting Ltd.
 
-![Logo Lutra](/logo_lutra.svg)
-
+<PublicImage src="logo_lutra.svg" />
+    
 Please see the [support packages](https://www.lutraconsulting.co.uk/support/) or contact us directly on [info@lutraconsulting.co.uk](mailto:info@lutraconsulting.co.uk)
 
 ## Diagnostic Logs
