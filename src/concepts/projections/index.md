@@ -65,7 +65,7 @@ For example imagine that you digitised your point to be in the corner of the rec
 
 ![shift of the point](./digitizing_shift.png)
 
-The likely reason is that there is correctly downloaded and used extra datum shift file in QGIS, but missing in Input app (more information in [this blog](https://lutraconsulting.co.uk/blog/2021/04/22/projections-field/))
+The likely reason is that there is correctly downloaded and used extra datum shift file in QGIS, but missing in Input app (more information in [this blog](https://www.lutraconsulting.co.uk/blog/2021/04/21/projections-field/))
 
 ## QGIS Transformation tab
 

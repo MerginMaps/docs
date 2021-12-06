@@ -2,24 +2,16 @@ module.exports = {
       '/': [
         ['', 'Home'], /* / */
         {
-            title: 'Quick Start',   // required
+            title: 'Get started',   // required
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
-                '/tutorials/quick-start/',
-                '/tutorials/mergin-tour/',
-                '/tutorials/sharewithcollegues',
-                '/tutorials/input-tour/',
-                '/tutorials/analyzeresults'
-            ]
-        },
-        {
-            title: 'Guides',   // required
-            collapsable: true, // optional, defaults to true
-            sidebarDepth: 0,    // optional, defaults to 1
-            children: [
-                '/guides/howtosetuporganization',
-                '/guides/multiplephotostopoint'
+                '/tutorials/capturing-first-data/',
+                '/tutorials/opening-surveyed-data-on-your-computer/',
+                '/tutorials/creating-a-project-in-qgis/',
+                '/tutorials/mobile/',
+                '/tutorials/further-project-customisation/',
+                '/tutorials/working-collaboratively/'
             ]
         },
         {
@@ -32,74 +24,71 @@ module.exports = {
                 '/concepts/users-and-orgs',
                 '/concepts/permissions',
                 '/concepts/synchronization',
-                '/concepts/projections/'
+                '/concepts/projections/',
+                '/concepts/home-page-and-dashboard/'
             ]
         },
         {
-            title: 'Manage',   // required
+            title: 'How to',   // required
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
-                '/manage/web/dashboard',
-                '/manage/web/project-advanced',
-                '/manage/web/project-details',
-                '/manage/web/register',
-                '/manage/web/subscriptions',
-                '/manage/web/web-create-project',
-                '/manage/web/working-with-organisations',
-                '/manage/plugin/install',
-                '/manage/plugin/plugin-delete-project',
-                '/manage/plugin/plugin-new-project',
-                '/manage/plugin/plugin-sync-project',
-                '/manage/plugin/plugin-variables',
-                '/manage/troubleshoot'
+                '/howto/sign-up-to-mergin-maps/',
+                '/howto/install-qgis/',
+                '/howto/install-mergin-maps-plugin-for-qgis/',
+                '/howto/exif_metadata',
+                '/howto/customapp',
+                '/howto/manage/troubleshoot',
+                '/howto/manage/web/dashboard',
+                '/howto/manage/web/web-create-project',
+                '/howto/manage/web/register',
+                '/howto/manage/web/working-with-organisations',
+                '/howto/manage/web/project-advanced',
+                '/howto/manage/web/project-details',
+                '/howto/manage/web/subscriptions',
+                '/howto/manage/plugin/plugin-delete-project',
+                '/howto/manage/plugin/plugin-sync-project',
+                '/howto/manage/plugin/plugin-new-project',
+                '/howto/manage/plugin/plugin-variables',
+                '/howto/manage/plugin/install',
+                '/howto/integration',
+                '/howto/gps_accuracy',
+                '/howto/attach-multiple-photos-to-features/',
+                '/howto/input-tour/',
+                '/howto/create-an-organization/',
+                '/howto/mergin-tour/',
+                '/howto/position_variables',
+                '/howto/mergince',
+                '/howto/input_ui',
+                '/howto/external_gps',
+                '/howto/quick-start/',
+                '/howto/data_sync',
+                '/howto/contribute',
+                '/howto/proj',
+                '/howto/reuse_last_values',
+                '/howto/input_features',
+                '/howto/dbsync',
+                '/howto/project/settingup_forms_photo',
+                '/howto/project/enable_digitizing',
+                '/howto/project/search_data',
+                '/howto/project/enable_browsing',
+                '/howto/project/settingup_background_map',
+                '/howto/project/working_with_nonspatial_data',
+                '/howto/project/setup_themes',
+                '/howto/project/selective_sync/',
+                '/howto/project/settingup_forms_settings',
+                '/howto/project/features',
+                '/howto/project/settingup_forms'
             ]
         },
         {
-            title: 'Setup Project',   // required
+            title: 'Reference',   // required
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
-                '/project/features',
-                '/project/enable_browsing',
-                '/project/enable_digitizing',
-                '/project/search_data',
-                '/project/selective_sync',
-                '/project/settingup_background_map',
-                '/project/settingup_forms',
-                '/project/settingup_forms_photo',
-                '/project/settingup_forms_settings',
-                '/project/setup_themes',
-                '/project/working_with_nonspatial_data'
+                '/reference/licensing',
+                '/reference/privacy'
             ]
-        },
-        {
-            title: 'Work Outside',   // required
-            collapsable: true, // optional, defaults to true
-            sidebarDepth: 0,    // optional, defaults to 1
-            children: [
-                '/fieldwork/input_ui',
-                '/fieldwork/input_features',
-                '/fieldwork/data_sync',
-                '/fieldwork/exif_metadata',
-                '/fieldwork/external_gps',
-                '/fieldwork/gps_accuracy',
-                '/fieldwork/position_variables',
-                '/fieldwork/proj',
-                '/fieldwork/reuse_last_values'
-            ]
-        },
-        {
-            title: 'Develop and Integrate',   // required
-            collapsable: true, // optional, defaults to true
-            sidebarDepth: 0,    // optional, defaults to 1
-            children: [
-                '/admin/customapp',
-                '/admin/dbsync',
-                '/admin/mergince',
-                '/admin/integration',
-                '/admin/contribute'
-            ]
-        },
+        }
       ]
 }

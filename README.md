@@ -29,6 +29,8 @@ yarn install
 yarn dev
 ```
 
+If `yarn install` fails with *ERROR: [Errno 2] No such file or directory: 'install'* then [check out this page](stackoverflow.com/questions/46013544/yarn-install-command-error-no-such-file-or-directory-install).
+
 ## Static generation (for deployments)
 
 To generate static HTML files, run 
@@ -74,10 +76,34 @@ type is one of "tip"|"warning"|"error", see [vuepress docs](https://v1.vuepress.
 
 ```<Badge text="beta" type="warning"/>```
 
-## Images 
+## Images
+
+
+### Preparation
+
+* Any image prepared should have an associated .xcf file containing the original, full resoluion image
+* Screenshtos of QGIS should be taken with the window sized at 1024x768. [Sizer](http://www.brianapps.net/sizer/#:~:text=Sizer%20is%20a%20freeware%20utility,to%20an%20exact%2C%20predefined%20size.) is good for this task.
+* Consistent buttons / toolbars in QGIS
+* Windows, not linux
+* Making dialogs as small as possible without scrollbars or other bad visuals
+* Highlighting
+	* New layer, black, called Black with 66% opacity
+	* Tightly select what you want to highlight
+	* Grow selection by:
+		* Desktop: 3px
+		* Mobile: 24px
+	* Delete hole from Black layer
+	* Add a layer called Red, transparent, 100% opacity
+	* Stroke the selection with red, at width:
+		* Desktop: 3px
+		* Mobile: 12px
+	
+
+
+### Referencing
 
  - Do not add `docs` prefix (base)
- - Place images next a markdown file that uses it  
+ - Place images next to the markdown files that reference them
  - Do not start with `/`, use relative paths
 
 e.g. `![](./cloudmergin.png)` if the image is in the same folder as your mardown file
@@ -115,6 +141,8 @@ Use `<QGISHelp>` component, e.g. `<QGISHelp ver="3.10" link="user_docs/intro.htm
 
 Use `<YouTube>` component, e.g. `<YouTube id="DQXrINUqiFI" />`
 
+### FIXME: Document how search indexes all H tags
+
 ### Reference Mergin project 
 
 Use `<MerginMapsProject>` component, e.g. `<MerginMapsProject id="lutraconsulting/test_forms" />`
@@ -134,3 +162,24 @@ not yet implemented
 The Mergin Maps product documentation in the `docs/content`and `docs/static` are licensed under a [CC-BY license](LICENSE).
 
 All other code in this repository is licensed under a [MIT license](LICENSE-CODE).
+
+# PROBLEMS
+
+* Anchors don't work
+* elements in anchors don't show
+* elements also don't work in TOC
+
+# Other things to document
+
+* Not suing mergin maps keyword in URL - it's already in domain name
+
+# Naming things
+
+* We can use vue components references names, allowing us to change them quickly in the future
+* This doesn't work for things like url component names and anchor links
+* In these situations:
+
+	* Filenames:
+		* mergin-maps-mobile
+	* Titles
+		* Mergin Maps Input

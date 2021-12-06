@@ -3,13 +3,9 @@
     <img :src="$withBase('/slack.svg')" alt="Join Community">
     <span>
       <a href='https://merginmaps.com/community/join' target="_blank" rel="noopener noreferrer">
-        Join
+        Join our community chat
       </a>
-      our community chat and
-      <a href='https://merginmaps.com/community/join' target="_blank" rel="noopener noreferrer">
-        ask
-      </a>
-      questions!
+      and ask questions!
     </span>
   </div>
 </template>

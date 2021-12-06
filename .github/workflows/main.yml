@@ -1,5 +1,8 @@
 name: Build DIST
 on: push
+concurrency: 
+  group: dist-${{ github.head_ref }}
+  cancel-in-progress: true
 jobs:
   generate:
     runs-on: ubuntu-latest
