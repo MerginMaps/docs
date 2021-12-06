@@ -78,7 +78,6 @@ type is one of "tip"|"warning"|"error", see [vuepress docs](https://v1.vuepress.
 
 ## Images
 
-
 ### Preparation
 
 * Any image prepared should have an associated .xcf file containing the original, full resoluion image
