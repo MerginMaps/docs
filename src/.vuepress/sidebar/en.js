@@ -75,7 +75,7 @@ module.exports = {
                 '/howto/project/settingup_background_map',
                 '/howto/project/working_with_nonspatial_data',
                 '/howto/project/setup_themes',
-                '/howto/project/selective_sync',
+                '/howto/project/selective_sync/',
                 '/howto/project/settingup_forms_settings',
                 '/howto/project/features',
                 '/howto/project/settingup_forms'
