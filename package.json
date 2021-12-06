@@ -15,7 +15,7 @@
     "export": "vuepress export src"
   },
   "devDependencies": {
-    "@vuepress/plugin-google-analytics": "^1.8.2",
+    "vuepress-plugin-google-tag-manager": "0.0.5",
     "vuepress": "^1.5.3",
     "vuepress-plugin-clean-urls": "^1.1.2"
   }

@@ -67,8 +67,8 @@ module.exports = {
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
-    ['@vuepress/google-analytics', {
-      'ga': 'UA-144776738-1'
+    ['vuepress-plugin-google-tag-manager', {
+      'gtm': 'GTM-NW7ZGNB'
     }],
     [ 'clean-urls', {
       normalSuffix: pageSuffix,
