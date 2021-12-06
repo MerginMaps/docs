@@ -22,7 +22,7 @@ export default {
         category: 'lc_engagement',
         action: `get_input_${store}`,
         label: '',
-        value: 5000,
+        value: null,
         noninteraction: false // Optional
       })
     }
