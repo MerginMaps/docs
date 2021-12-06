@@ -3,7 +3,7 @@
 
 # Mergin Maps Documentation
 
- - [Staging/Dev deployment](https://dev.merginmaps.com/docshttps://dev.merginmaps.com/docs)
+ - [Staging/Dev deployment](https://dev.merginmaps.com/docs)
  - [Production deployment](https://merginmaps.com/docs)
 
 Source code for documentation hosted on [merginmaps.com/docs](https://merginmaps.com/docs)
@@ -12,6 +12,8 @@ Source code for documentation hosted on [merginmaps.com/docs](https://merginmaps
 - Check official [vuepress documentation](https://vuepress.vuejs.org/)
 
 Use GitHub Pull Requests to propose changes, we will review and merge your changes!
+
+<div><img align="left" width="45" height="45" src="https://raw.githubusercontent.com/MerginMaps/docs/main/src/.vuepress/public/slack.svg"><a href="https://merginmaps.com/community/join">Join our community chat</a><br/>and ask questions!</div>
 
 ## Development Workflow
 
