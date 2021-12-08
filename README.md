@@ -1,8 +1,7 @@
 [![Build and Test](https://github.com/MerginMaps/docs/actions/workflows/build.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/build.yml)
 [![Deploy DEV](https://github.com/MerginMaps/docs/actions/workflows/dist-dev.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/dist-dev.yml)
 [![Deploy PROD](https://github.com/MerginMaps/docs/actions/workflows/dist-prod.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/dist-prod.yml)
-[![Markdown Checks](https://github.com/MerginMaps/docs/actions/workflows/checks.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/checks.yml)
-[![Depedabot](https://github.com/MerginMaps/docs/actions/workflows/depedabot.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/depedabot.yml)
+[![Checks](https://github.com/MerginMaps/docs/actions/workflows/checks.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/checks.yml)
 
 # Mergin Maps Documentation
 
@@ -20,10 +19,20 @@ Use GitHub Pull Requests to propose changes, we will review and merge your chang
 
 ## Development Workflow
 
- - For new features coming in the next release create pull request to `dev` branch. 
- - For fixed to the existing documentation, you can do pull request to `main` branch
-
-## Dynamic server (for development)
+ - Create Pull Request to `main` branch
+ - If you have changed any anchors/deleted pages atc, update REDIRECTS file
+ - Core Documentation team will review the Pull Request
+ - Request will be merged to main and you can check it on [staging deployment](https://dev.merginmaps.com/docs)
+ - After repository is tagged, it is going live on [live](https://merginmaps.com/docs)
+ 
+## Release procedure
+ 
+ - Double check that [staging deployment](https://dev.merginmaps.com/docs) is what you want
+ - Create [Docs Release](https://github.com/MerginMaps/docs/releases)
+ - Ask sys-admin to manually deploy REDIRECTS to njinx
+ - Check that [live](https://merginmaps.com/docs) is what you want and announce the news on Slack
+ 
+## Dynamic server (for local development)
 To change docs locally, run the server, open `http://localhost:8080/` in your browser and modify markdowns
 
 ```bash
@@ -111,9 +120,9 @@ type is one of "tip"|"warning"|"error", see [vuepress docs](https://v1.vuepress.
 
 e.g. `![](./cloudmergin.png)` if the image is in the same folder as your mardown file
  
- - For global pictures/assets placed in `src/.vuepress/public` do not prefix slash
+ - For global pictures/assets placed in `src/.vuepress/public` use custom component PublicImage
 
-e.g. `![](mergin.svg)`
+e.g. `<PublicImage src="mergin.svg" />`
 
 ## Table of Contents 
 
@@ -160,11 +169,6 @@ see [vuepress docs](https://v1.vuepress.vuejs.org/guide/i18n.html#site-level-i18
 
 not yet implemented
 
-# License
-
-The Mergin Maps product documentation in the `docs/content`and `docs/static` are licensed under a [CC-BY license](LICENSE).
-
-All other code in this repository is licensed under a [MIT license](LICENSE-CODE).
 
 # PROBLEMS
 
@@ -186,3 +190,9 @@ All other code in this repository is licensed under a [MIT license](LICENSE-CODE
 		* mergin-maps-mobile
 	* Titles
 		* Mergin Maps Input
+
+# License
+
+The Mergin Maps product documentation in the `docs/content`and `docs/static` are licensed under a [CC-BY license](LICENSE).
+
+All other code in this repository is licensed under a [MIT license](LICENSE-CODE).
