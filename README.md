@@ -1,5 +1,6 @@
 [![Build Dist](https://github.com/MerginMaps/docs/actions/workflows/main.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/main.yml)
 [![Markdown Checks](https://github.com/MerginMaps/docs/actions/workflows/checks.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/checks.yml)
+[![Depedabot](https://github.com/MerginMaps/docs/actions/workflows/depedabot.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/depedabot.yml)
 
 # Mergin Maps Documentation
 
