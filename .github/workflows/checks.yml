@@ -3,7 +3,7 @@ name: Checks
 on: push
 
 jobs:
-  build:
+  build_and_test:
     runs-on: ubuntu-latest
 
     steps:
@@ -21,7 +21,12 @@ jobs:
       with:
         files: "dist/docs/index.html"
         allow_failure: true # Makes the Action fail on missing files
-          
+
+    - uses: rojopolis/spellcheck-github-actions@0.18.0
+      name: Spellcheck
+      with:
+        config_path: scripts/spellcheck.yaml
+        
   markdown_checks:
     runs-on: ubuntu-latest
     steps:
@@ -31,13 +36,3 @@ jobs:
       run: |
         ./scripts/markdown_style.bash
 
-  spellcheck:
-    runs-on: ubuntu-latest
-    needs: [build]
-    steps:
-    - uses: actions/checkout@v2
-
-    - uses: rojopolis/spellcheck-github-actions@0.18.0
-      name: Spellcheck
-      with:
-        config_path: scripts/spellcheck.yaml
