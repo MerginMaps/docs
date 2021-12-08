@@ -1,4 +1,4 @@
-name: Markdown Checks
+name: Checks
 on:
   push:
     paths:

@@ -1,24 +1,43 @@
-name: Build
-# Triggered when code is pushed to any branch in a repository
-on: push
+name: Deploy DEV
+
+on:
+  # Trigger the workflow on any push on main branch,
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'scripts/**'
+      - 'README.md'
+
+concurrency: 
+  group: dist-dev-${{ github.head_ref }}
+  cancel-in-progress: true
 
 jobs:
-  generate:
+  deploy_dev:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
     - name: Install
       run: |
        yarn install
-       
     - name: Generate dist
       run: |
         yarn build
-        
     - name: "Check dist dir consistency"
       uses: andstor/file-existence-action@v1
       with:
         files: "dist/docs/index.html"
         allow_failure: true # Makes the Action fail on missing files
+
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
+        aws-secret-access-key: ${{ secrets.AWS_ACCESS_PASSWORD }}
+        aws-region: eu-west-1
+
+    - name: Copy files to the https://dev.merginmaps.com/docs
+      run: |
+        aws s3 sync ./dist s3://dev-merginmaps.docs --follow-symlinks --delete
 

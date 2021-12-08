@@ -1,4 +1,4 @@
-name: Build Prod DIST
+name: Deploy PROD
 on:
   # Triggers the workflow on creation of release (not pre-release)
   # and deploys on S3 to https://merginmaps.com/docs
@@ -11,7 +11,7 @@ concurrency:
   cancel-in-progress: true
   
 jobs:
-  generate:
+  deploy_prod:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
