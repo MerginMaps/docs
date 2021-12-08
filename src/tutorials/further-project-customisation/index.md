@@ -143,7 +143,7 @@ The panel for the trees layer looks like the left-hand image below. We will conf
 	If you notice subtle differences in the name / spelling of the the field when you select it in the drop-down list, this is due to the field having been aliased.
 	:::
 
-4. Set the html map tip to:
+4. Set the HTML map tip to:
 
 		# fields
 		condition

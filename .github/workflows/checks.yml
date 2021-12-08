@@ -3,10 +3,36 @@ name: Checks
 on: push
 
 jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install
+      run: |
+        yarn install
+       
+    - name: Generate dist
+      run: |
+        yarn build
+        
+    - name: "Check dist dir consistency"
+      uses: andstor/file-existence-action@v1
+      with:
+        files: "dist/docs/index.html"
+        allow_failure: true # Makes the Action fail on missing files
+
+    - uses: rojopolis/spellcheck-github-actions@0.18.0
+      name: Spellcheck
+      with:
+        config_path: scripts/spellcheck.yaml
+        
   markdown_checks:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+
     - name: Find markdown style errors
       run: |
         ./scripts/markdown_style.bash
+
