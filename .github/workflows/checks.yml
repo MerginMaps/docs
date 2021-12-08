@@ -7,6 +7,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+
     - name: Find markdown style errors
       run: |
         ./scripts/markdown_style.bash
+
+    - uses: rojopolis/spellcheck-github-actions@0.18.0
+      name: Spellcheck
+
