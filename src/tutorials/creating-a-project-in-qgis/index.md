@@ -46,7 +46,7 @@ Please ensure you have already:
 You may have noticed that the <QGISPluginName /> has created a project almost identical to the one created by <MobileAppName /> in a previous tutorial: A single point layer called *Survey* and OpenStreetMap base mapping.
 
 ::: tip
-<MobileAppName /> can make use of any type of background maps (offline and online) that are supported by QGIS. TODO: Link to relavent HOWTO.
+<MobileAppName /> can make use of any type of background maps (offline and online) that are supported by QGIS. TODO: Link to relevant HOWTO.
 :::
 
 We'll now add two more layers - a point layer for surveying trees and a line layer for hedges.
@@ -54,7 +54,7 @@ We'll now add two more layers - a point layer for surveying trees and a line lay
 1. Select ***Layer > Create Layer > New GeoPackage Layer...***
 	![](./qgis-new-geopackage-layer.jpg)
 
-2. Using the ***Browse*** button, ensure the geopackage is saved under `Documents\Mergin Projects\trees-and-hedges\trees.gpkg` and its geometry type is ***Point***:
+2. Using the ***Browse*** button, ensure the GeoPackage is saved under `Documents\Mergin Projects\trees-and-hedges\trees.gpkg` and its geometry type is ***Point***:
 
 	![](./qgis-geopackage-filename.jpg)
 
@@ -172,7 +172,7 @@ In the next tutorial we will see how this project looks on <MobileAppName />. We
 
 	![](./qgis-project-synced.jpg)
 
-Synchronising changes between users and devices is a core primciple of <MainPlatformName />. When you sync a project, changes that have been made by other users and devices since you last synced are fetched and any changes you've made are pushed.
+Synchronising changes between users and devices is a core principle of <MainPlatformName />. When you sync a project, changes that have been made by other users and devices since you last synced are fetched and any changes you've made are pushed.
 
 Changes are merged safely and easily from different users, even when they edit the same feature. 
 

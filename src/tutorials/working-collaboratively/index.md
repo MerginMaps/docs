@@ -53,7 +53,7 @@ In this tutorial you'll learn a few different ways of sharing your project with 
 
 	![](./mergin-web-add-user.jpg)
 
-	You shoud now see them included in the list of users with access:
+	You should now see them included in the list of users with access:
 
 	![](./mergin-web-charlie-with-access.jpg)
 
