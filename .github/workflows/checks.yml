@@ -1,8 +1,6 @@
 name: Checks
-on:
-  push:
-    paths:
-    - '**.md'
+# Triggered when code is pushed to any branch in a repository
+on: push
 
 jobs:
   markdown_checks:

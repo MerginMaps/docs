@@ -1,6 +1,6 @@
-[![Build](https://github.com/MerginMaps/docs/actions/workflows/dist-dev.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/dist-dev.yml)
-[![Dist DEV https://dev.merginmaps.com/docs](https://github.com/MerginMaps/docs/actions/workflows/dist-dev.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/dist-dev.yml)
-[![Dist PROD https://merginmaps.com/docs](https://github.com/MerginMaps/docs/actions/workflows/dist-prod.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/dist-prod.yml)
+[![Build and Test](https://github.com/MerginMaps/docs/actions/workflows/build.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/build.yml)
+[![Deploy DEV](https://github.com/MerginMaps/docs/actions/workflows/dist-dev.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/dist-dev.yml)
+[![Deploy PROD](https://github.com/MerginMaps/docs/actions/workflows/dist-prod.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/dist-prod.yml)
 [![Markdown Checks](https://github.com/MerginMaps/docs/actions/workflows/checks.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/checks.yml)
 [![Depedabot](https://github.com/MerginMaps/docs/actions/workflows/depedabot.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/depedabot.yml)
 
