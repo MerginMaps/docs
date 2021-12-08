@@ -1,8 +1,15 @@
-name: Build DIST
-on: push
+name: Build Prod DIST
+on:
+  # Trigger the workflow on creation of release (not pre-release)
+  # And deploys on S3 to https://merginmaps.com/docs
+  release:
+    types:
+      - released
+      
 concurrency: 
-  group: dist-${{ github.head_ref }}
+  group: dist-prod-${{ github.head_ref }}
   cancel-in-progress: true
+  
 jobs:
   generate:
     runs-on: ubuntu-latest
@@ -19,6 +26,7 @@ jobs:
       with:
         files: "dist/docs/index.html"
         allow_failure: true # Makes the Action fail on missing files
+        
     - name: Configure AWS credentials
       if: ${{ github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/dev') }}
       uses: aws-actions/configure-aws-credentials@v1
@@ -28,12 +36,6 @@ jobs:
         aws-region: eu-west-1
 
     - name: Copy files to the https://merginmaps.com/docs
-      if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
       run: |
         aws s3 sync ./dist s3://main-merginmaps.docs --follow-symlinks --delete
-
-    - name: Copy files to the https://dev.merginmaps.com/docs
-      if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/dev' }}
-      run: |
-        aws s3 sync ./dist s3://dev-merginmaps.docs --follow-symlinks --delete
 
