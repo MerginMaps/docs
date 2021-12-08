@@ -17,7 +17,7 @@ Use GitHub Pull Requests to propose changes, we will review and merge your chang
 
 <div><img align="left" width="45" height="45" src="https://raw.githubusercontent.com/MerginMaps/docs/main/src/.vuepress/public/slack.svg"><a href="https://merginmaps.com/community/join">Join our community chat</a><br/>and ask questions!</div>
 
-## Development Workflow
+# Development
 
  - Create Pull Request to `main` branch
  - If you have changed any anchors/deleted pages atc, update REDIRECTS file
@@ -55,7 +55,7 @@ yarn build
 
 and see the result in `dist` folder
 
-## Documentation Guild lines
+# Documentation Guild lines
 
 ## Tip/Warning/Info/Note box
 
