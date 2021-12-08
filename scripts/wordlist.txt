@@ -21,13 +21,14 @@ mdal
 openssl
 PostgreSQL
 PostGIS
+GeoTIFF
 qca
 qtkeychain
 spatialindex
 spatialite
 sqlite
 zlib
-proj4
+proj
 macOS
 GDAL
 GDA
@@ -42,10 +43,14 @@ OSTN
 geoid
 reprojection
 GeoPackage
+GeoPackages
 shapefile
+shapefiles
 dataset
+datasets
 fid
 raster
+rasters
 toc
 Ok
 conf
@@ -59,3 +64,4 @@ WFS
 GPL
 LGPL
 LGPLv
+geo

@@ -16,6 +16,8 @@ home: false
 
 ## Get started 
 
+<AppDownload />
+
 - [Capturing Your First Field Data](./tutorials/capturing-first-data/index.md)
 - [Opening Surveyed Data on Your Computer](./tutorials/opening-surveyed-data-on-your-computer/index.md)
 - [Creating a Project in QGIS](./tutorials/creating-a-project-in-qgis/index.md)
