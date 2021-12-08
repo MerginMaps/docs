@@ -1,8 +1,17 @@
 name: Build DIST
-on: push
+on:
+  # Trigger the workflow on any push on main branch,
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'scripts/**'
+      - 'README.md'
+
 concurrency: 
-  group: dist-${{ github.head_ref }}
+  group: dist-dev-${{ github.head_ref }}
   cancel-in-progress: true
+
 jobs:
   generate:
     runs-on: ubuntu-latest
@@ -19,21 +28,15 @@ jobs:
       with:
         files: "dist/docs/index.html"
         allow_failure: true # Makes the Action fail on missing files
+
     - name: Configure AWS credentials
-      if: ${{ github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/dev') }}
       uses: aws-actions/configure-aws-credentials@v1
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
         aws-secret-access-key: ${{ secrets.AWS_ACCESS_PASSWORD }}
         aws-region: eu-west-1
 
-    - name: Copy files to the https://merginmaps.com/docs
-      if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
-      run: |
-        aws s3 sync ./dist s3://main-merginmaps.docs --follow-symlinks --delete
-
     - name: Copy files to the https://dev.merginmaps.com/docs
-      if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/dev' }}
       run: |
         aws s3 sync ./dist s3://dev-merginmaps.docs --follow-symlinks --delete
 

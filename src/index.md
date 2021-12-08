@@ -7,10 +7,6 @@ home: false
 
 ![](preview.jpeg)
 
-::: tip Vision
-Enjoy the feeling when you make sense of your geo-data on maps
-:::
-
 - Store and track changes to your geo-data with Mergin :cd:
 - Capture geo-info easily through your mobile or tablet with Input :iphone:
 - Setup and analyze the project on desktop with QGIS. :computer:

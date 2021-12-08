@@ -1,0 +1,24 @@
+name: Build
+# Triggered when code is pushed to any branch in a repository
+on: push
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install
+      run: |
+       yarn install
+       
+    - name: Generate dist
+      run: |
+        yarn build
+        
+    - name: "Check dist dir consistency"
+      uses: andstor/file-existence-action@v1
+      with:
+        files: "dist/docs/index.html"
+        allow_failure: true # Makes the Action fail on missing files
+
