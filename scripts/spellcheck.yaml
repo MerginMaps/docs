@@ -12,7 +12,6 @@ matrix:
       ignores:
       - code
       - pre
-      - div
   sources:
   - 'dist/docs/**/*.html'
   default_encoding: utf-8
