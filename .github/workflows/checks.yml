@@ -42,18 +42,9 @@ jobs:
       run: |
           mkdir -p www/test.merginmaps.com
           cd www/test.merginmaps.com
-          ln -s ../../dist/docs/ docs/
+          ln -s ../../dist/docs/ docs
           ls docs/
           wget -qO- https://raw.githubusercontent.com/ruzickap/action-my-broken-link-checker/v1/entrypoint.sh | bash
-
-
-    - name: Check broken links
-      uses: ruzickap/action-my-broken-link-checker@v2
-      with:
-        url: "https://test.merginmaps.com/docs" #random non-existing url
-        pages_path: ./dist/docs/
-        cmd_params: --buffer-size=8192 --max-connections=10 --color=always --skip-tls-verification
-        run_timeout: 600
 
   markdown_checks:
     runs-on: ubuntu-latest
