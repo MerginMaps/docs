@@ -44,7 +44,7 @@ jobs:
           cd www/test.merginmaps.com
           ln -s ../../dist/docs/ docs
           ls docs/
-          wget -qO- https://raw.githubusercontent.com/ruzickap/action-my-broken-link-checker/v1/entrypoint.sh | bash
+          wget -qO- https://raw.githubusercontent.com/ruzickap/action-my-broken-link-checker/v2/entrypoint.sh | bash
 
   markdown_checks:
     runs-on: ubuntu-latest
