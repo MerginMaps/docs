@@ -7,7 +7,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        url: [https://dev.merginmaps.com/docs, https://dev.merginmaps.com/docs]
+        url: ["https://dev.merginmaps.com/docs", "https://dev.merginmaps.com/docs"]
         
     runs-on: ubuntu-latest
     steps:
