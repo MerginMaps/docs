@@ -2,11 +2,11 @@ name: Status
 # Triggered when code is pushed to any branch in a repository
 on: push
 
-strategy:
-  matrix:
-    URL: ["https://dev.merginmaps.com/docs","https://dev.merginmaps.com/docs" ]
-
 jobs:
+  strategy:
+    matrix:
+      URL: ["https://dev.merginmaps.com/docs","https://dev.merginmaps.com/docs" ]
+      
   online_check:
     runs-on: ubuntu-latest
 
@@ -14,8 +14,8 @@ jobs:
       - name: Check the deployed service URL
         uses: jtalk/url-health-check-action@v2
         with:
-          # Check the following URLs one by one sequentially
-          url: ${{ matrix.URL }}
+           # Check the following URLs one by one sequentially
+           url: ${{ matrix.URL }}
            # Follow redirects, or just report success on 3xx status codes
            follow-redirect: no # Optional, defaults to "no"
            # Fail this action after this many failed attempts
