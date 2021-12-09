@@ -33,6 +33,18 @@ jobs:
       run: |
         yarn install
         yarn build
+        
+        cat > ./dist/index.html << EOF
+        <!DOCTYPE html>
+        <html>
+          <head>
+            Local deployment on https://test.merginmaps.com/docs
+          </head>
+          <body>
+            <a href="https://test.merginmaps.com/docs">https://test.merginmaps.com/docs</a>
+          </body>
+        </html>
+        EOF
  
     - name: Check broken links
       uses: ruzickap/action-my-broken-link-checker@v2
