@@ -1,0 +1,25 @@
+name: Status DEV
+
+# runs at minute 0 of the 2rd,5th,8th and 11th hour
+on:
+  schedule:
+    - cron:  '0 2,5,8,11 * * *'
+
+jobs:
+  dev_status_check:
+    runs-on: ubuntu-latest
+    env:
+      url: "https://dev.merginmaps.com/docs"
+    steps:
+      - name: Check the deployed service URL
+        uses: jtalk/url-health-check-action@v2
+        with:
+           url: ${{ env.URL }}
+
+      - name: Check broken links
+        uses: ruzickap/action-my-broken-link-checker@v2
+        with:
+          url: ${{ matrix.URL }}
+          cmd_params: --buffer-size=8192 --max-connections=10 --color=always --skip-tls-verification
+          run_timeout: 600
+
