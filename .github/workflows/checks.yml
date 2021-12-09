@@ -36,12 +36,13 @@ jobs:
  
     - name: Check broken links
       env:
-        INPUT_URL: "https://test.merginmaps.com/docs"
+        INPUT_URL: "http://test.merginmaps.com/docs"
         INPUT_PAGES_PATH: .
         INPUT_CMD_PARAMS: --buffer-size=8192 --max-connections=10 --color=always --skip-tls-verification
       run: |
           mkdir -p test.merginmaps.com
           ln -s dist/docs/ test.merginmaps.com/docs
+          ls test.merginmaps.com/docs
           wget -qO- https://raw.githubusercontent.com/ruzickap/action-my-broken-link-checker/v2/entrypoint.sh | bash
 
   markdown_checks:
