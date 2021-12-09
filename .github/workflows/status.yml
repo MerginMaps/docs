@@ -2,14 +2,14 @@ name: Status
 # Triggered when code is pushed to any branch in a repository
 on: push
 
-strategy:
-  matrix:
-    URL: ["https://dev.merginmaps.com/docs","https://dev.merginmaps.com/docs" ]
-
 jobs:      
   online_check:
+    strategy:
+      matrix:
+        fail-fast: false
+        url: [https://dev.merginmaps.com/docs, https://dev.merginmaps.com/docs]
+        
     runs-on: ubuntu-latest
-
     steps:
       - name: Check the deployed service URL
         uses: jtalk/url-health-check-action@v2
