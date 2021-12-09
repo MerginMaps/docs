@@ -33,16 +33,13 @@ jobs:
       run: |
         yarn install
         yarn build
-        mkdir -p test.merginmaps.com
-        ln -s dist/docs/ test.merginmaps.com/docs
-        ls test.merginmaps.com/docs
  
     - name: Check broken links
       uses: ruzickap/action-my-broken-link-checker@v2
       with:
-        url: test.merginmaps.com
+        url: https://test.merginmaps.com
         cmd_params: --buffer-size=8192 --max-connections=10 --color=always --skip-tls-verification --timeout=20
-        pages_path: test.merginmaps.com
+        pages_path: ./dist/
         debug: true
         run_timeout: 600
 
