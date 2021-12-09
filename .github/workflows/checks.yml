@@ -33,17 +33,17 @@ jobs:
       run: |
         yarn install
         yarn build
+        mkdir -p test.merginmaps.com
+        ln -s dist/docs/ test.merginmaps.com/docs
+        ls test.merginmaps.com/docs
  
-    - name: Check broken links
-      env:
-        INPUT_URL: "http://test.merginmaps.com/docs"
-        INPUT_PAGES_PATH: .
-        INPUT_CMD_PARAMS: --buffer-size=8192 --max-connections=10 --color=always --skip-tls-verification
-      run: |
-          mkdir -p test.merginmaps.com
-          ln -s dist/docs/ test.merginmaps.com/docs
-          ls test.merginmaps.com/docs
-          wget -qO- https://raw.githubusercontent.com/ruzickap/action-my-broken-link-checker/v2/entrypoint.sh | bash
+   - name: Check broken links
+     uses: ruzickap/action-my-broken-link-checker@v2
+     with:
+       url: http://test.merginmaps.com
+       cmd_params: --buffer-size=8192 --max-connections=10 --color=always --skip-tls-verification
+       pages_path: .
+       run_timeout: 600
 
   markdown_checks:
     runs-on: ubuntu-latest
