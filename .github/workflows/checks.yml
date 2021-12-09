@@ -41,8 +41,9 @@ jobs:
       uses: ruzickap/action-my-broken-link-checker@v2
       with:
         url: http://test.merginmaps.com
-        cmd_params: --buffer-size=8192 --max-connections=10 --color=always --skip-tls-verification
-        pages_path: .
+        cmd_params: --buffer-size=8192 --max-connections=10 --color=always --skip-tls-verification --timeout=20
+        pages_path: test.merginmaps.com
+        debug: true
         run_timeout: 600
 
   markdown_checks:
