@@ -5,8 +5,8 @@ on: push
 jobs:      
   online_check:
     strategy:
+      fail-fast: false
       matrix:
-        fail-fast: false
         url: [https://dev.merginmaps.com/docs, https://dev.merginmaps.com/docs]
         
     runs-on: ubuntu-latest
