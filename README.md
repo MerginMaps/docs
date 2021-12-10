@@ -129,6 +129,12 @@ e.g. `<PublicImage src="mergin.svg" />`
 
 use `[[toc]]` in markdown 
 
+
+## Spellcheck
+
+if you want to omit spellcheck for a word, use component
+`NoSpellcheck`, e.g. `<NoSpellcheck id="myword" />`
+
 ## Links 
 
 ### Reference other markdowns 

@@ -4,6 +4,7 @@ Original page	New page
 Please note that because of a vuepress plugin, new pages will always end 
 with a trailing slash.
 
+https://merginmaps.com/docs/concepts/synchronization/	https://merginmaps.com/docs/concepts/synchronisation/
 https://help.cloudmergin.com/	https://merginmaps.com/docs/
 https://help.cloudmergin.com/dashboard	https://merginmaps.com/docs/concepts/home-page-and-dashboard/
 https://help.cloudmergin.com/developers	https://merginmaps.com/docs/howto/integration/

@@ -3,7 +3,7 @@
 ![](input.svg)
 
 The [Input app](https://inputapp.io/) is a great companion to Mergin as it 
-provides seamless synchronization of data between your phone/tablet and 
+provides seamless synchronisation of data between your phone/tablet and 
 Mergin service. We know that sometimes people want a mobile app optimized 
 for a specific use case rather than just using a general purpose app like Input.
 

@@ -23,7 +23,7 @@ module.exports = {
                 '/concepts/project',
                 '/concepts/users-and-orgs',
                 '/concepts/permissions',
-                '/concepts/synchronization',
+                '/concepts/synchronisation',
                 '/concepts/projections/',
                 '/concepts/home-page-and-dashboard/'
             ]

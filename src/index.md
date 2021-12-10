@@ -32,7 +32,7 @@ home: false
 - [Project](./concepts/project/index.md)
 - [Users and Organizations](./concepts/users-and-orgs/index.md)
 - [Permissions](./concepts/permissions/index.md)
-- [Synchronization](./concepts/synchronization/index.md)
+- [Synchronisation](./concepts/synchronisation/index.md)
 - [Projections](./concepts/projections/index.md)
 - [Home Page and Dashboard](./concepts/home-page-and-dashboard/index.md)
 
@@ -68,7 +68,7 @@ home: false
 - [Input App Interface](./howto/input_ui)
 - [External GPS](./howto/external_gps)
 - [First Steps](./howto/quick-start/)
-- [Data Synchronization](./howto/data_sync)
+- [Data Synchronisation](./howto/data_sync)
 - [Contribute](./howto/contribute)
 - [Custom Projections](./howto/proj)
 - [Reuse last entered values](./howto/reuse_last_values)

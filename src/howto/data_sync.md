@@ -1,4 +1,4 @@
-# Data Synchronization
+# Data Synchronisation
 
 <!--- IMPORTANT: This permalink is referenced from Input App -->
 

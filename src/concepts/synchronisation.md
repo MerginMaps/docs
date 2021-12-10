@@ -1,4 +1,4 @@
-# Synchronization
+# Synchronisation
 
 ## When I synchronise my data, I get some files with 'conf' in their names
 

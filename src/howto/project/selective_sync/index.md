@@ -2,11 +2,11 @@
 
 <Badge text="Since Input 1.0.0" type="info"/>
 
-Selective sync feature adds a possibility to alter the synchronization process to not download specified files on other devices. These files are only stored on creator's device and server and can be accessed on Mergin web or QGIS desktop. Other colleagues on different devices will not receive these files during synchronization.
+Selective sync feature adds a possibility to alter the synchronisation process to not download specified files on other devices. These files are only stored on creator's device and server and can be accessed on Mergin web or QGIS desktop. Other colleagues on different devices will not receive these files during synchronisation.
 
 Selective sync is useful mainly when a project contains a lot of data (for example photos) and these data do not necessarily need to be stored on all devices. 
 
-Practical example can be seen in the picture below. Two surveyors Jim and Susan are capturing features on a field. When it comes to synchronization, Jim first hits the [arrow icon](../../data_sync.md) synchronize his changes. Features together with photos are now stored on the server. When Susan synchronizes the project, synchronization first downloads Jim's changes (including photos) and after that uploads Susan's changes to the server. However, selective sync can alter this behavior and exclude photos from being downloaded.
+Practical example can be seen in the picture below. Two surveyors Jim and Susan are capturing features on a field. When it comes to synchronisation, Jim first hits the [arrow icon](../../data_sync.md) synchronize his changes. Features together with photos are now stored on the server. When Susan synchronizes the project, synchronisation first downloads Jim's changes (including photos) and after that uploads Susan's changes to the server. However, selective sync can alter this behavior and exclude photos from being downloaded.
 
 :::tip
 Features and other data are still being downloaded and you will see them, only photos will miss.
@@ -14,7 +14,7 @@ Features and other data are still being downloaded and you will see them, only p
 
 ![Example](./selective-sync.png)
 
-Another advantage is a significant reduction of synchronization time.
+Another advantage is a significant reduction of synchronisation time.
 
 ## How to set up selective sync
 
@@ -50,7 +50,7 @@ Example config setup to use selective sync only on files (photos) in subdirector
 
 ## Get started 
 
-Projects with file `mergin-config.json` are set to use selective synchronization. You can either create the file on your own and copy content from previous section to it or download prepared file and add it to your project.
+Projects with file `mergin-config.json` are set to use selective synchronisation. You can either create the file on your own and copy content from previous section to it or download prepared file and add it to your project.
 
 You can find `mergin-config.json` file [here](./mergin-config.json) and add it to your project via [Mergin website](https://public.cloudmergin.com/). 
 
