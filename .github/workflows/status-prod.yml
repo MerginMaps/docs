@@ -9,7 +9,7 @@ jobs:
   dev_status_check:
     runs-on: ubuntu-latest
     env:
-      url: "https://merginmaps.com/docs"
+      URL: "https://merginmaps.com/docs"
     steps:
       - name: Check the deployed service URL
         uses: jtalk/url-health-check-action@v2
