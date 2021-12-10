@@ -13,6 +13,7 @@ matrix:
       ignores:
       - code
       - pre
+      - :matches(.nospellcheck)
   sources:
   - 'dist/docs/**/*.html'
   default_encoding: utf-8
