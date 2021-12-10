@@ -21,7 +21,7 @@ After you click the link to confirm your email address, you are ready to log in.
 
 ::: tip
 One can view and download public projects even without an account, but creation of projects
-and synchronization of geo-data only works when you are logged in.
+and synchronisation of geo-data only works when you are logged in.
 :::
 
 ### Explore Mergin service
