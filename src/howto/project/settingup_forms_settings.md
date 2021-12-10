@@ -166,7 +166,7 @@ Notes:
     - Car-Type
     - Car-Manufacturer
     - Car-Model
-    - Colorized
+    - Colorised
     - Wheel-Check
   - See also **Filter expressions** applied to the following fields:
     - Car-Manufacturer
