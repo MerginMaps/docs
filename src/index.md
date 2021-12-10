@@ -30,7 +30,7 @@ home: false
 
 - [Main Components](./concepts/components/index.md)
 - [Project](./concepts/project/index.md)
-- [Users and Organizations](./concepts/users-and-orgs/index.md)
+- [Users and Organisations](./concepts/users-and-orgs/index.md)
 - [Permissions](./concepts/permissions/index.md)
 - [Synchronisation](./concepts/synchronisation/index.md)
 - [Projections](./concepts/projections/index.md)
@@ -61,7 +61,6 @@ home: false
 - [GPS accuracy](./howto/gps_accuracy)
 - [Attach Multiple Photos to Features](./howto/attach-multiple-photos-to-features/)
 - [Getting to field](./howto/input-tour/)
-- [Create an Organization](./howto/create-an-organization/)
 - [Enhancing Existing Project](./howto/mergin-tour/)
 - [Extra Position Variables](./howto/position_variables)
 - [Mergin Community Edition](./howto/mergince)
