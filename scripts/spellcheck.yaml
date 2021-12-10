@@ -1,7 +1,7 @@
 matrix:
 - name: html
   aspell:
-    lang: en
+    lang: en_GB
   dictionary:
     encoding: utf-8
     wordlists:
