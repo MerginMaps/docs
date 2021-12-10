@@ -68,7 +68,7 @@ module.exports = {
                 '/howto/input_features',
                 '/howto/dbsync',
                 '/howto/project/settingup_forms_photo',
-                '/howto/project/enable_digitizing',
+                '/howto/project/enable_digitising',
                 '/howto/project/search_data',
                 '/howto/project/enable_browsing',
                 '/howto/project/settingup_background_map',
