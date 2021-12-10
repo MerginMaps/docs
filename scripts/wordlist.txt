@@ -8,6 +8,7 @@ basemap
 Basemap
 basemaps
 Basemaps
+Benz
 Bing
 changelog
 changelogs
@@ -30,6 +31,8 @@ Exif
 exif
 exiv
 fid
+FID
+FIDs
 FOSS
 freexl
 GDA
@@ -62,8 +65,10 @@ libzip
 LTR
 Lutra
 macOS
+MAN
 MBTiles
 MDAL
+Mercedes
 Mergin
 mistyped
 MPL
@@ -108,10 +113,12 @@ requester's
 resampling
 richtext
 SaaS
+Scania
 sdcard
 SDK
 shapefile
 shapefiles
+Skoda
 spatialindex
 spatialite
 sqlite
@@ -121,11 +128,14 @@ SVG
 SVGs
 toc
 toolset
+tooltip
 Transifex
 Trialing
 trialing
 Uncheck
 uncheck
+uuid
+UUID
 VectorTileServer
 WFS
 WGS
