@@ -10,7 +10,7 @@ You can read more about map projections in the <QGISHelp ver="3.16" link="gentle
 
 ## Coordinate Reference Systems
 
-All your spatial data include information about where your data is located on earth. Let's say you to store the position of a heritage tree. You may stand next to it with GPS receiver and note down latitude and longitude and altitude of the place. Two numbers in degrees and one in meters. You think the three numbers will mark exactly the heritage tree position for your children. Not that easy. What if in 50 years the GPS will be replaced by some different technology not using the latitude and longitude? Or let's say the tree is in Australia. The continent sits on the world’s fastest-moving continental tectonic plate with speed around 7 centimeters per year. And your GPS position is related to the global/world coordinates. Ok, at least we should mark down to our notes the date when we captured the coordinates and which **coordinate reference system** (CRS) we used.
+All your spatial data include information about where your data is located on earth. Let's say you to store the position of a heritage tree. You may stand next to it with GPS receiver and note down latitude and longitude and altitude of the place. Two numbers in degrees and one in meters. You think the three numbers will mark exactly the heritage tree position for your children. Not that easy. What if in 50 years the GPS will be replaced by some different technology not using the latitude and longitude? Or let's say the tree is in Australia. The continent sits on the world’s fastest-moving continental tectonic plate with speed around 7 centimetres per year. And your GPS position is related to the global/world coordinates. Ok, at least we should mark down to our notes the date when we captured the coordinates and which **coordinate reference system** (CRS) we used.
 
 Sometimes the coordinates of spatial data are in meters or feet, sometimes in degrees and therefore you need also coordinate reference system which defines how your spatial data could be transformed to the position on the Earth. Each coordinate reference system could be geographic (e.g. for whole globe, using latitude and longitude in degrees) or projected (for example the Great Britain or part of the USA, using metric units as feet). So the coordinate reference system consists of:
 
@@ -40,7 +40,7 @@ For example, imagine we have a project for the Great Britain, where we use map p
 
 ### 1. Datum transformation
 
-British National Grid (EPSG:27700) is based on datum OSGB 1936 which is different from WGS 84. QGIS recognizes that there is possibility to do datum transformation in multiple ways so user is asked to select the one from the list:
+British National Grid (EPSG:27700) is based on datum OSGB 1936 which is different from WGS 84. QGIS recognises that there is possibility to do datum transformation in multiple ways so user is asked to select the one from the list:
 
 ![QGIS select transformation](./transformations_qgis.png)
 

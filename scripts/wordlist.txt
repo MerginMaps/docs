@@ -116,11 +116,14 @@ spatialindex
 spatialite
 sqlite
 subdirectory
+subfolder
 SVG
 SVGs
 toc
 toolset
 Transifex
+Trialing
+trialing
 Uncheck
 uncheck
 VectorTileServer
