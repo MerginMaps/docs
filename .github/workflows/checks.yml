@@ -10,8 +10,6 @@ jobs:
     - uses: actions/checkout@v2
     - name: Generate dist
       run: |
-        sudo apt-get install -y aspell-en
-        aspell dicts
         yarn install
         yarn build
         
