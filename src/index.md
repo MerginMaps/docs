@@ -74,7 +74,7 @@ home: false
 - [Features](./howto/input_features)
 - [PostgreSQL DB Sync](./howto/dbsync)
 - [Capturing Photos](./howto/project/settingup_forms_photo)
-- [Enable Digitizing](./howto/project/enable_digitizing)
+- [Enable Digitising](./howto/project/enable_digitising)
 - [Search values from attribute fields](./howto/project/search_data)
 - [Enable Browsing](./howto/project/enable_browsing)
 - [Background Maps](./howto/project/settingup_background_map)

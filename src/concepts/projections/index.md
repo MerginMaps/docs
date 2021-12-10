@@ -63,7 +63,7 @@ same geodetic datum)
 
 For example imagine that you digitised your point to be in the corner of the rectangle in QGIS desktop. But when opened in the Input app in the field it is obviously shifted by dozens of centimetres. Or other way around, you digitise the point in the field, and when opened in QGIS it is misplaced.
 
-![shift of the point](./digitizing_shift.png)
+![shift of the point](./digitising_shift.png)
 
 The likely reason is that there is correctly downloaded and used extra datum shift file in QGIS, but missing in Input app (more information in [this blog](https://www.lutraconsulting.co.uk/blog/2021/04/21/projections-field/))
 

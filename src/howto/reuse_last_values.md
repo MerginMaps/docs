@@ -1,6 +1,6 @@
 # Reuse last entered values
 
-Input supports faster digitizing of similar features by allowing user to reuse values of repeating attributes. When attribute is marked for reuse, a next created feature has it already entered with value from last feature.
+Input supports faster digitising of similar features by allowing user to reuse values of repeating attributes. When attribute is marked for reuse, a next created feature has it already entered with value from last feature.
 
 ## Setup 
 

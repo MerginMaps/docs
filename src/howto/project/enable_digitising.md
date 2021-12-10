@@ -1,4 +1,4 @@
-# Enable Digitizing
+# Enable Digitising
 
 - Open QGIS Desktop with you QGIS Project 
 - In the Menu>Project>Properties click on "Data Sources"
