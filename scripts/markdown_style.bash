@@ -9,7 +9,6 @@ for i in \
   "](/" \
   "<alert" \
   "Note:" \
-  "rganization" \
   "<img" \
   "<a" \
   "docs.qgis.org" \
