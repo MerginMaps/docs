@@ -13,6 +13,7 @@ for i in \
   "<a" \
   "docs.qgis.org" \
   https://github.com/ \
+  www.github.com/ \
   "\*\*Note\*\*:"
 do
   echo "Checking for $i"

@@ -15,10 +15,10 @@ of the user interface - anything is possible with a bit of development.
 ## GitHub
 
 If you are interested in building a custom app, you can start by going to 
-[Input repository](https://github.com/lutraconsulting/input) on GitHub and 
+<GitHubRepo id="lutraconsulting/input" desc="Input App repository" /> on GitHub and 
 building it for your platform. 
-The [Input SDK repository](https://github.com/lutraconsulting/input-sdk) 
+The <GitHubRepo id="lutraconsulting/input-sdk" desc="Input SDK repository" />
 provides all the dependencies for various platforms (Android, iOS, macOS, Windows).
 
 For the Input source code and developers' documentation, you can visit 
-[GitHub](https://github.com/lutraconsulting/input).
+<GitHubRepo id="lutraconsulting/input" />.

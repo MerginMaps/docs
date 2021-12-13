@@ -35,20 +35,20 @@ Write a review of the application on App Store or Android Google Play
 
 Test the application and report the bugs
 
- - [Mergin Maps Field Input](https://github.com/lutraconsulting/input/issues) 
- - [Mergin Maps Cloud](https://github.com/lutraconsulting/mergin/issues)
- - [Mergin Maps Cloud](https://github.com/lutraconsulting/qgis-mergin-plugin/issues)
-
+ - <GitHubRepo id="lutraconsulting/input/issues" desc="Mergin Maps Input" />
+ - <GitHubRepo id="lutraconsulting/mergin/issues" desc="Mergin Maps Cloud" />
+ - <GitHubRepo id="lutraconsulting/qgis-mergin-plugin/issues" desc="Mergin Maps Plugin for QGIS" />
+ 
 or for other subprojects
 
 ## Develop
 
 Software developer? Code and prepare a pull request. We will help you with setup of the development 
 environment and answer your questions.
-
- - [Mergin Maps Field Input](https://github.com/lutraconsulting/input) 
- - [Mergin Maps Cloud](https://github.com/lutraconsulting/mergin)
- - [Mergin Maps Cloud](https://github.com/lutraconsulting/qgis-mergin-plugin)
+ 
+ - <GitHubRepo id="lutraconsulting/input" desc="Mergin Maps Input" />
+ - <GitHubRepo id="lutraconsulting/mergin" desc="Mergin Maps Cloud" />
+ - <GitHubRepo id="lutraconsulting/qgis-mergin-plugin" desc="Mergin Maps Plugin for QGIS" />
 
 or for other subprojects
 
