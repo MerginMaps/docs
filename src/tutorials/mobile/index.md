@@ -2,7 +2,11 @@
 
 [[toc]]
 
-In the last tutorial we created a new <MainPlatformName /> project in QGIS with layers for surveying trees and hedges. You'll now learn how to get fixme.
+In the last tutorial we created a new <MainPlatformName /> project in QGIS with layers for surveying trees and hedges. You'll now learn how to:
+* Open the QGIS project in <MobileAppName />
+* Set GPS accuracy thresholds
+* Switch between layers to capture new point and linear features
+* Sync and save your data in <MainPlatformName /> cloud
 
 
 ## Opening the project on your mobile device 
@@ -46,8 +50,6 @@ Let's try to capture some field data.
 	When GPS accuracy falls below a threshold, <MobileAppName /> reports this to the user using the warning above and using the GPS traffic light dot. It's highly recommended that users set this threshold to a sensible value as described below.
 	:::
 
-	FIXME: How many times will the user need to set his - just once?
-
 	<MobileAppName /> uses a traffic light system to display GPS status
 
 	* Green: OK - GPS accuracy within defined threshold
@@ -72,8 +74,6 @@ Let's try to capture some field data.
 
 
 ## The active layer
-
-FIXME: The term active layer would be better called *capture layer* or *recording layer*
 
 In a moment we'll survey a tree. Surveyed features are added to the *active layer*. The project contains three different layers so we'll now ensure the *trees* layer is set as the active layer.
 
