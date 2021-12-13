@@ -31,7 +31,7 @@ In the sections below, we go through examples of setting up different widgets fo
 |Date&Time   |[Calendar with time](#datetime)  |![layout](./input_forms_datetime1.png)   |
 |Attachment   |[Photos from device's camera or gallery](./settingup_forms_photo.md) | ![layout](./input_forms_photo1.png)  |
 |Checkbox   |[Checkbox](#checkbox)   |![layout](./input_forms_checkbox2.png)   |
-|Value Map   |[Drop-down menu with pre-defined values](#valuemap) |![layout](./input_forms_valuemap1.png)   |
+|Value Map   |[Drop-down menu with predefined values](#valuemap) |![layout](./input_forms_valuemap1.png)   |
 |Value Relation   |[Drop-down menu with values from another table](#value-relation) |![layout](./input_forms_valuerelation.png)   |
 
 In addition to the edit widgets, extra configuration can be done to the fields and form layout to make the data collection easier and more consistent. For example: setting a default value, conditional visibility and constraint enforcement.
@@ -282,17 +282,17 @@ The advantage of having this widget:
 To set up a value relation widget:
 
   - Download and open <MerginMapsProject id="documentation/test_forms" /> in QGIS
-  - Notice the extra table in your layer tree: **reftable**
+  - Notice the extra table in your layer tree: **<NoSpellcheck id="reftable" />**
   - From the layer panel, right-click on **Points** layer and select **Properties**
   - In the new window, select **Attributes form**
 
 ![photos](./qgis_forms_valuerelation.png)
 
-  - Select **valuerelation** field under the right column (**Available Widgets**)
+  - Select **<NoSpellcheck id="valuerelation" />** field under the right column (**Available Widgets**)
   - Under the **Widget Display**:
   - Under **Widget Type** section:
     - From the drop-down menu, select **Value Relation**
-    - For **Layer** select **reftable**
+    - For **Layer** select **<NoSpellcheck id="reftable" />**
     - For **Key column** and **Value column**, select **type**
     - Check the box for **Allow multiple selections**
 
@@ -302,11 +302,11 @@ Ensure to save and synchronise your project.
 
 To use the drop-down widget in the form from Input:
 
-- Open Input on your device and from **Projects** > **Explore** download **lutraconsulting/test_forms**
+- Open Input on your device and from **Projects** > **Explore** download <MerginMapsProject id="lutraconsulting/test_forms" />
 - Open the project
 - Select **Record** and add a point
 - The form will appear
-- Under **Group2** tab, you can select the **valuerelation** from the drop-down menu:
+- Under **Group2** tab, you can select the **<NoSpellcheck id="valuerelation" />** from the drop-down menu:
 
 
 ![slider](./input_forms_valuerelation1.png)

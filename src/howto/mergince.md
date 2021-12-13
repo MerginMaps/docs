@@ -13,4 +13,4 @@ it is possible to do your custom deployments.
 
 If you are interested in deploying Mergin CE, you can start by going to 
 <GitHubRepo id="lutraconsulting/mergin" /> on GitHub and 
-read instuction how to deploy it for your platform.
+read instructions how to deploy it for your platform.

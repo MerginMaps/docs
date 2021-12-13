@@ -74,6 +74,7 @@ Mercedes
 Mergin
 mistyped
 MPL
+MSI
 namespace
 NDK
 Ok
@@ -81,6 +82,7 @@ OpenMapTiles
 openmaptiles
 openssl
 OpenStreetMap
+orthophoto
 OSGB
 OSM
 osm
@@ -90,6 +92,14 @@ Peatlands
 peatlands
 pixelated
 Pixelated
+Prepopulated
+Prepopulate
+prepopulated
+prepopulate
+predefined
+predefine
+programmatically
+PyPI
 PNG
 PostGIS
 PostgreSQL
@@ -132,6 +142,8 @@ subdirectories
 subdirectory
 subfolder
 subfolders
+subproject
+subprojects
 SVG
 SVGs
 toc
@@ -142,6 +154,7 @@ Trialing
 trialing
 Uncheck
 uncheck
+undoable
 uuid
 UUID
 VectorTileServer
@@ -150,6 +163,7 @@ WGS
 WMS
 WMTS
 XYZ
+xyz
 yml
 zlib
 zoomstack

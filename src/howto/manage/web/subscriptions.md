@@ -38,7 +38,7 @@ To subscribe to the Team plan, you first need to create an organisation:
   - The address you enter must match the address registered with your payment method (e.g. credit card)
   - The address entered needs to match the VAT registered address
 
-If you'd like to purchase Team plan on annual basis and would like to make bank transfer payment, please contact us (info@lutraconsulting.co.uk) for manual invoicing.
+If you'd like to purchase Team plan on annual basis and would like to make bank transfer payment, please [contact us](mailto:info@lutraconsulting.co.uk) for manual invoicing.
 
 ## On-Premise deployment
 If you want to have On-Premise deployment or looking for other options, please contact us directly.

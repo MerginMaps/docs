@@ -9,7 +9,7 @@ home: false
 
 - Store and track changes to your geo-data with Mergin :cd:
 - Capture geo-info easily through your mobile or tablet with Input :iphone:
-- Setup and analyze the project on desktop with QGIS. :computer:
+- Setup and analyse the project on desktop with QGIS. :computer:
 - All open-source and easily integrated to your existing toolset :bulb:
 
 <CommunityJoin />

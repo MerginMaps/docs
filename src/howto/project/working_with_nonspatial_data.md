@@ -2,7 +2,7 @@
 
 Non-spatial tables are often a key part of a survey project. The tables can be used either on their own to add new data or alternatively as a link to a spatial layer (e.g. value relation).
 
-We recommend using Geopackage to save your non-spatial table. With this format, you can collaboratively edit the data and track changes.
+We recommend using GeoPackage to save your non-spatial table. With this format, you can collaboratively edit the data and track changes.
 
 # QGIS project configuration
 

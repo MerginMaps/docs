@@ -34,7 +34,7 @@ From the Mergin plugin, click on **Status** :
 
 ![](./sync-status-toolbar.png)
 
-This will help getting a list of pending changes and also see any warnings or validations of your project. The warnings are related to restructuring of a GeoPackage layer (adding/removing a field or adding/removing a layer in a Geopackage database). Validations can be linked to missing layer or availability of a layer when working offline:
+This will help getting a list of pending changes and also see any warnings or validations of your project. The warnings are related to restructuring of a GeoPackage layer (adding/removing a field or adding/removing a layer in a GeoPackage database). Validations can be linked to missing layer or availability of a layer when working offline:
 
 ![](./mergin_plugin_validation_1.png)
 
@@ -45,7 +45,7 @@ This will help getting a list of pending changes and also see any warnings or va
 
 Once you are happy with the changes to be uploaded/downloaded, you can synchronise your project and data:
 
-Click on the **Synchronize** icon from the Mergin toolbar to sync your project and data.
+Click on the **Synchronise** icon from the Mergin toolbar to sync your project and data.
 ![](./sync-toolbar.png)
 
 You can select the status and synchronisation options by right-clicking on the Mergin project from the Browser panel too.
