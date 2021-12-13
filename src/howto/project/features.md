@@ -80,7 +80,7 @@ Sample map tip content that will show render as HTML page:
 <p><strong>Notes:</strong>[% "notes" %]</p>
 ```
 
-If the map tip does not contain any special marker, it is assumed that the map tip is HTML content. Only a limited subset of HTML is supported - see [Qt richtext-html-subset](https://doc.qt.io/qt-5/richtext-html-subset.html)
+If the map tip does not contain any special marker, it is assumed that the map tip is HTML content. Only a limited subset of HTML is supported - see [Qt documentation](https://doc.qt.io/qt-5/richtext-html-subset.html)
 
 Example of the preview panel in Input and QGIS tooltip set up can be seen below:
 

@@ -26,7 +26,7 @@ To add Bing aerial imagery to your QGIS:
 - From the Browser panel, right-click on **XYZ Tiles** and select **New Connection ...**
 - A new window will appear:
   - For **Name** type **Bing aerial imagery**
-  - For **URL** type *http://ecn.t3.tiles.virtualearth.net/tiles/a{q}.jpeg?g=1*
+  - For **URL** type *<NoSpellcheck id="http://ecn.t3.tiles.virtualearth.net/tiles/a{q}.jpeg?g=1" />*
   - Press OK
 
 ![new xyz connection](./qgis_xyz_connection1.png)

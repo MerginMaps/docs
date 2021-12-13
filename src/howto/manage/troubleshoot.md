@@ -8,7 +8,7 @@ The commercial support or consultancy for your projects is carried by Lutra Cons
 
 <PublicImage src="logo_lutra.svg" />
     
-Please see the [support packages](https://www.lutraconsulting.co.uk/support/) or contact us directly on [info@lutraconsulting.co.uk](mailto:info@lutraconsulting.co.uk)
+Please see the [support packages](https://www.lutraconsulting.co.uk/support/) or [contact us](mailto:info@lutraconsulting.co.uk) directly
 
 ## Diagnostic Logs
 
@@ -26,7 +26,7 @@ In Input App to send the logs, go to "Settings" and click on "About". Select **D
 
 ![Input Logs](./input-logs.png)
 
-Once you have uploaded the logs, you can contact us [info@lutraconsulting.co.uk](mailto:info@lutraconsulting.co.uk) to look into the issues.
+Once you have uploaded the logs, you can [contact us](mailto:info@lutraconsulting.co.uk) to look into the issues.
 
 ## Community Support
 

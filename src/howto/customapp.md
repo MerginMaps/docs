@@ -4,7 +4,7 @@
 
 The [Input app](https://inputapp.io/) is a great companion to Mergin as it 
 provides seamless synchronisation of data between your phone/tablet and 
-Mergin service. We know that sometimes people want a mobile app optimized 
+Mergin service. We know that sometimes people want a mobile app optimised 
 for a specific use case rather than just using a general purpose app like Input.
 
 The good news is that Input is licensed as open source software and therefore 

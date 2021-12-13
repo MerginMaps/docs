@@ -37,4 +37,4 @@ If you already have [installed <MobileAppName /> (TODO: write this page)](../ins
 
 Welcome to <MainPlatformName />!
 
-You can get up-to-speed quicky by following our [Quick Start tutorials](../../tutorials/capturing-first-data/index.md).
+You can get up-to-speed quickly by following our [Quick Start tutorials](../../tutorials/capturing-first-data/index.md).
