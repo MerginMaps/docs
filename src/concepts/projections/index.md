@@ -28,7 +28,8 @@ More detailed information about the coordinate reference systems and projections
 
 QGIS is FOSS (free and open source) software standing on the shoulders of other FOSS libraries. Notably projection support is handled by [PROJ](https://proj.org). The version proj4 was used for decades, but in recent years it was recreated from scratch to reflect the recent modern ways for handling transformations and the increasing demand for high precision location. Different version of PROJ uses different set of resource files required to handle projections accurately. See [PROJ help](https://proj.org/resource_files.html) for details. Most importantly, the recent release of QGIS 3.16 LTR and QGIS 3.18 for all platforms is on PROJ6+ version.
 
-Your QGIS installation contains the basic set of PROJ resources required for most day-to-day work. But if you need some special coordinate reference systems, the required files for [PROJ7](https://github.com/OSGeo/PROJ-data) and for [PROJ6](https://github.com/OSGeo/proj-datumgrid) are available online. Also note that QGIS can automatically download the required files for your when requested. Just follow the instructions when you see the QGIS warning in the transformation dialog:
+Your QGIS installation contains the basic set of PROJ resources required for most day-to-day work. But if you need some special coordinate reference systems, the required files for 
+<GitHubRepo id="OSGeo/PROJ-data" desc="PROJ7" /> and for <GitHubRepo id="OSGeo/proj-datumgrid" desc="PROJ6" /> are available online. Also note that QGIS can automatically download the required files for your when requested. Just follow the instructions when you see the QGIS warning in the transformation dialog:
 
 ![QGIS Transformations British National Grid to World Geodetic System](./QGIS_Transformations2.png)
 

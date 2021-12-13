@@ -29,7 +29,7 @@ mc.download_project('john/project1', '/home/john/mergin/project1')
 You can of course also get project status, push/pull changes, create/delete projects 
 and more.
 
-The source code of the Python client is available on GitHub in [lutraconsulting/mergin-py-client](https://github.com/lutraconsulting/mergin-py-client) repository.
+The source code of the Python client is available on GitHub in <GitHubRepo id="lutraconsulting/mergin-py-client" /> repository.
 
 ### Command Line Interface
 
@@ -43,7 +43,7 @@ For example, to download a Mergin project to a local directory:
 mergin download john/project1 ~/mergin/project1
 ```
 
-Please see [lutraconsulting/mergin-py-client](https://github.com/lutraconsulting/mergin-py-client) repository for
+Please see <GitHubRepo id="lutraconsulting/mergin-py-client" /> repository for
 more information on the usage.
 
 ## C++ Standalone Client
@@ -53,7 +53,7 @@ without any dependencies.
 
 ### Installation 
 
-Just [download](https://github.com/lutraconsulting/mergin-cpp-client/releases) binary for your platform and 
+Just  <GitHubRepo id="lutraconsulting/mergin-cpp-client/releases" desc="download"/> binary for your platform and 
 use it from command line.
 
 ### Usage 
@@ -75,10 +75,10 @@ Commands:
   remove         Remove project from server.
 ```
 
-Please see [lutraconsulting/mergin-cpp-client](https://github.com/lutraconsulting/mergin-cpp-client) repository 
+Please see <GitHubRepo id="lutraconsulting/mergin-cpp-client" /> repository 
 for more information on the usage.
 
 ### C++ Mergin API Core Library 
 
-Client is based on the Qt-based [mergin api core library](https://github.com/lutraconsulting/input/tree/master/core) 
+Client is based on the Qt-based <GitHubRepo id="lutraconsulting/input/tree/master/core" desc="mergin api core library" />
 used by the [Input App](https://inputapp.io) to sync the projects in the mobile application
