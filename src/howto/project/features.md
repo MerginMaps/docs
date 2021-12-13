@@ -80,7 +80,7 @@ Sample map tip content that will show render as HTML page:
 <p><strong>Notes:</strong>[% "notes" %]</p>
 ```
 
-If the map tip does not contain any special marker, it is assumed that the map tip is HTML content. Only a limited subset of HTML is supported - see https://doc.qt.io/qt-5/richtext-html-subset.html
+If the map tip does not contain any special marker, it is assumed that the map tip is HTML content. Only a limited subset of HTML is supported - see [Qt richtext-html-subset](https://doc.qt.io/qt-5/richtext-html-subset.html)
 
 Example of the preview panel in Input and QGIS tooltip set up can be seen below:
 
@@ -132,7 +132,7 @@ Lets define project home folder as 'path/to/project', where a project file is lo
 * **Widget type** - **Date/Time** as the only option to use a date time widget
 * **Field format** - currently supported Date, DateTime, Time, Custom
 * **Widget display** - supported both Default or Custom
-* **Calendar popup** - currently ignored, Input datetime widget **always** acts like it is **checked**
+* **Calendar popup** - currently ignored, Input DateTime widget **always** acts like it is **checked**
 * **Default value** - has to return a type matching QgsField type
 
 Note that while working with QString fields with a date/time value and format function (used in a default value), 
@@ -145,14 +145,14 @@ Default values are marked as "**-**"
 
 **Type: QString**  
 
-|         field format         	|    widget display   	|               default value               	|        value       	|
-|:----------------------------:	|:-------------------:	|:-----------------------------------------:	|:-------------------:	|
-|             Date             	|          -          	|      `format_date(now(), 'yyyy-MM-dd')`     	|      `''2020-09-09'`     	|
-|      Custom (dd/MM/yyyy)     	|      dd/MM/yyyy     	|      `format_date(now(), 'dd/MM/yyyy')`     	|      `'09/09/2020'`     	|
-|             Time             	|          -          	|       `format_date(now(), 'HH:mm:ss')`      	|       `'12:34:56'`      	|
-|       Custom (HH-mm-ss)      	|       HH-mm-ss      	|       `format_date(now(), 'HH-mm-ss')`      	|       `'12-34-56'`      	|
-|           Date Time          	|          -          	| `format_date(now(), 'yyyy-MM-dd HH:mm:ss')` 	| `'2020-09-09 12:34:56'` 	|
-| Custom (dd/MM/yyyy HH-mm-ss) 	| dd/MM/yyyy HH-mm-ss 	| `format_date(now(), 'dd/MM/yyyy HH-mm-ss')` 	| `'09/09/2020 12-34-56'` 	|
+|         field format          	|    widget display   	|               default value               	|        value       	|
+|:-------------------------------:	|:-------------------:	|:-----------------------------------------:	|:-------------------:	|
+|             Date              	|          -          	|      `format_date(now(), 'yyyy-MM-dd')`     	|      `''2020-09-09'`     	|
+|      Custom (`dd/MM/yyyy`)    	|      `dd/MM/yyyy`    	|      `format_date(now(), 'dd/MM/yyyy')`     	|      `'09/09/2020'`     	|
+|             Time        ``    	|          -          	|       `format_date(now(), 'HH:mm:ss')`      	|       `'12:34:56'`      	|
+|       Custom (`HH-mm-ss`)     	|       `HH-mm-ss`     	|       `format_date(now(), 'HH-mm-ss')`      	|       `'12-34-56'`      	|
+|           Date Time           	|          -          	| `format_date(now(), 'yyyy-MM-dd HH:mm:ss')` 	| `'2020-09-09 12:34:56'` 	|
+| Custom (`dd/MM/yyyy HH-mm-ss`)	| `dd/MM/yyyy HH-mm-ss`	| `format_date(now(), 'dd/MM/yyyy HH-mm-ss')` 	| `'09/09/2020 12-34-56'` 	|
 
 
 **Type: QDate**  
@@ -161,7 +161,7 @@ Default values are marked as "**-**"
 |:------------:	|:--------------:	|:-------------:	|:----------:	|
 |     Date     	|        -       	|       -       	| `0000-00-00` 	|
 |     Date     	|        -       	|     `now()`     	| `2020-09-09` 	|
-|     Date     	|   dd/MM/yyyy   	|     `now()`     	| `09/09/2020` 	|
+|     Date     	|   `dd/MM/yyyy`   	|     `now()`     	| `09/09/2020` 	|
 
 
 **Type: QDateTime**  
@@ -170,10 +170,10 @@ Default values are marked as "**-**"
 |:------------:	|:-------------------:	|:-------------:	|:-------------------:	|
 |     Time     	|          -          	|       -       	|       `00:00:00`      	|
 |     Time     	|          -          	|     `now()`     	|       `12:34:56`      	|
-|     Time     	|       HH/mm/ss      	|     `now()`     	|       `12/34/56`      	|
+|     Time     	|      `HH/mm/ss`      	|     `now()`     	|       `12/34/56`      	|
 |   Date Time  	|          -          	|       -       	| `0000-00-00 00:00:00` 	|
 |   Date Time  	|          -          	|     `now()`     	| `2020-09-09 12:34:56` 	|
-|   Date Time  	| dd/MM/yyyy hh-mm-ss 	|     `now()`     	| `09/09/2020 12-34-56` 	|
+|   Date Time  	| `dd/MM/yyyy hh-mm-ss`	|     `now()`     	| `09/09/2020 12-34-56` 	|
 
 ## Project settings
 
@@ -189,7 +189,7 @@ An example of Project Properties in QGIS for survey layers and identifiable laye
 
 ## QGIS variables
 
-Input recognizes several variables that can be used in QGIS expressions (they are also supported by Mergin plugin for QGIS):
+Input recognises several variables that can be used in QGIS expressions (they are also supported by Mergin plugin for QGIS):
 
 | Variable name               | Sample value                     | Scope   | Description |
 |-----------------------------|----------------------------------|---------|-------------|

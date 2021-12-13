@@ -37,5 +37,5 @@ Now, pair your external GPS device to your mobile/tablet through Bluetooth. Then
 To use your external GPS device with iPhone or iPad, you need to pair the device via Bluetooth. Once the device is paired, the signal from external GPS will be used as the primary source.
 
 ::: warning
-Users have reported that they have to switch on Airplane mode to be able to use the external GPS device.
+Users have reported that they have to switch on Aeroplane mode to be able to use the external GPS device.
 :::

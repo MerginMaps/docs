@@ -24,6 +24,7 @@ DAF
 dataset
 datasets
 DateTime
+docker
 EPSG
 ESRI
 EXIF
@@ -67,6 +68,7 @@ Lutra
 macOS
 MAN
 MBTiles
+mbtiles
 MDAL
 Mercedes
 Mergin
@@ -76,10 +78,12 @@ namespace
 NDK
 Ok
 OpenMapTiles
+openmaptiles
 openssl
 OpenStreetMap
 OSGB
 OSM
+osm
 OSTN
 pbf
 Peatlands
@@ -94,6 +98,8 @@ PROJ
 proj
 qca
 QDate
+QDate
+QDateTime
 QGIS
 qgs
 QgsField
@@ -122,8 +128,10 @@ Skoda
 spatialindex
 spatialite
 sqlite
+subdirectories
 subdirectory
 subfolder
+subfolders
 SVG
 SVGs
 toc

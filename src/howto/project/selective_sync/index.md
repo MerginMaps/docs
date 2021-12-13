@@ -6,7 +6,7 @@ Selective sync feature adds a possibility to alter the synchronisation process t
 
 Selective sync is useful mainly when a project contains a lot of data (for example photos) and these data do not necessarily need to be stored on all devices. 
 
-Practical example can be seen in the picture below. Two surveyors Jim and Susan are capturing features on a field. When it comes to synchronisation, Jim first hits the [arrow icon](../../data_sync.md) synchronize his changes. Features together with photos are now stored on the server. When Susan synchronizes the project, synchronisation first downloads Jim's changes (including photos) and after that uploads Susan's changes to the server. However, selective sync can alter this behavior and exclude photos from being downloaded.
+Practical example can be seen in the picture below. Two surveyors Jim and Susan are capturing features on a field. When it comes to synchronisation, Jim first hits the [arrow icon](../../data_sync.md) synchronise his changes. Features together with photos are now stored on the server. When Susan synchronises the project, synchronisation first downloads Jim's changes (including photos) and after that uploads Susan's changes to the server. However, selective sync can alter this behaviour and exclude photos from being downloaded.
 
 :::tip
 Features and other data are still being downloaded and you will see them, only photos will miss.
@@ -18,7 +18,7 @@ Another advantage is a significant reduction of synchronisation time.
 
 ## How to set up selective sync
 
-Selective sync is not allowed by default on new projects. Project needs to contain a specific file called `mergin-config.json` that describes the behavior. If you are not interested in customizing the behavior, skip to [get started](#get-started).
+Selective sync is not allowed by default on new projects. Project needs to contain a specific file called `mergin-config.json` that describes the behaviour. If you are not interested in customising the behaviour, skip to [get started](#get-started).
 
 The config file is of type `JSON` and contains following keys:
 

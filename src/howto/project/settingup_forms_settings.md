@@ -68,7 +68,7 @@ To view the new layout in Input:
 
 ## Default value
 
-To have pre-populated values within the field (e.g. name of the surveyor, date/time of the survey, latitude and longitude of the feature):
+To have prepopulated values within the field (e.g. name of the surveyor, date/time of the survey, latitude and longitude of the feature):
 
 ![layout](./input_forms_defaults1.png)
 
@@ -105,7 +105,7 @@ To see the default values in Input:
 - Open the project
 - Select **Record** and add a point
 - The form will appear
-- Under **Location** tab, you can see the default pre-populated values :
+- Under **Location** tab, you can see the default prepopulated values :
 
 ![slider](./input_forms_defaults.png)
 
@@ -149,7 +149,7 @@ In this project <MerginMapsProject id="documentation/form_cascade" />, we have m
   - car-manufacturer
   - car-types
   - wheel-check
-  - color
+  - colour
 
 In the steps below, we will capture points representing **car** layer: the choices from the value relation will be filtered based on the previous field user picks. For example, if user selects **Trucks** as **Car type (truck/car)**, the **Car-Manufacturer** field will present user with **DAF Trucks**, **Scania** or **MAN**. Likewise, the next drop-down menu for **Car-Model** will change accordingly based on the **Car-Manufacturer** selection.
 
@@ -166,7 +166,7 @@ Notes:
     - Car-Type
     - Car-Manufacturer
     - Car-Model
-    - Colorised
+    - Colourised
     - Wheel-Check
   - See also **Filter expressions** applied to the following fields:
     - Car-Manufacturer
