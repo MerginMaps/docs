@@ -90,10 +90,10 @@ There are several online services. For example you can add ESRI Basemap vector t
 - Select **New Generic Connection**
 - A new window will appear:
     - For **Name** type: **ESRI Basemap**
-    - For **URL** type: **https://basemaps.arcgis.com/v1/arcgis/rest/services/World_Basemap/VectorTileServer/tile/{z}/{y}/{x}.pbf**
+    - For **URL** type: **<NoSpellcheck id="https://basemaps.arcgis.com/v1/arcgis/rest/services/World_Basemap/VectorTileServer/tile/{z}/{y}/{x}.pbf" />**
     - Set **Min. Zoom Level** to **0**
     - Set **Max. Zoom Level** to **14**
-    - For **Style URL** type: **https://basemaps.arcgis.com/b2/arcgis/rest/services/World_Basemap/VectorTileServer/resources/styles/root.json**
+    - For **Style URL** type: **<NoSpellcheck id="https://basemaps.arcgis.com/b2/arcgis/rest/services/World_Basemap/VectorTileServer/resources/styles/root.json" />**
 
 ![new xyz connection](./qgis_xyz_gen_vectortile.png)
 
@@ -102,10 +102,10 @@ Another source of online vector tiles are Qwant maps:
 - Select **New Generic Connection**
 - A new window will appear:
     - For **Name** type: **Qwant map**
-    - For **URL** type: **https://www.qwant.com/maps/tiles/ozbasemap/{z}/{x}/{y}.pbf**
+    - For **URL** type: **<NoSpellcheck id="https://www.qwant.com/maps/tiles/ozbasemap/{z}/{x}/{y}.pbf" />**
     - Set **Min. Zoom Level** to **0**
     - Set **Max. Zoom Level** to **14**
-    - For **Style URL** type: **https://raw.githubusercontent.com/QwantResearch/qwant-basic-gl-style/master/style.json**
+    - For **Style URL** type: **<NoSpellcheck id="https://raw.githubusercontent.com/QwantResearch/qwant-basic-gl-style/master/style.json" />**
 
 
 ### Generating vector tiles for offline use
@@ -134,6 +134,6 @@ Note that instructions below requires familiarity with terminal. In addition you
 
   - Re-run `./quickstart.sh my`
 
-  - The above process should produce an mbtiles for your clipped OSM file
+  - The above process should produce an MBTiles for your clipped OSM file
 
   - You can load the file and style it using one of the <GitHubRepo id="openmaptiles/osm-bright-gl-style" desc="OpenMapTiles styles" />
