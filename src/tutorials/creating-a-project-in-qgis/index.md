@@ -4,14 +4,13 @@
 
 In earlier tutorials you created a new survey project from within <MobileAppName />. That was a very fast (albeit limited) way of creating a <MainPlatformName /> project.
 
-In this tutorial you will create a new project using QGIS, a free and open source desktop GIS package. <MobileAppName /> is based on QGIS which means it's able to visualise and edit data in the same way QGIS can. This offers us great flexibility which we'll start to see in a moment.
-
-In this tutorial we will set up a project for surveying trees and hedges.  
+In this tutorial you will create a new project for surveying trees and hedges using QGIS.  
 
 ## Before we start
 
 Please ensure you have already:
-
+* [Installed QGIS](../../howto/install-qgis/index.md)
+* [Signed up to <MainPlatformName />](../../howto/sign-up-to-mergin-maps/index.md)
 * [Installed the <QGISPluginName />](../../howto/install-mergin-maps-plugin-for-qgis/index.md)
 
 

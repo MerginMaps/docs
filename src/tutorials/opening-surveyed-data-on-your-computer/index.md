@@ -2,11 +2,15 @@
 
 [[toc]]
 
-In the last tutorial you learnt how to FIXME.
+In the last tutorial you learnt how to capture field data using <MobileAppName />.
 
-In this tutorial you'll learn how to:
+In this tutorial you'll learn how to transfer data from mobile device to computer in seconds using QGIS, a free and open source desktop GIS package. <MobileAppName /> is based on QGIS, which means it's able to visualise and edit data in the same way QGIS can. This offers us great flexibility which we'll start to see in a moment.
 
-* Transfer data from mobile device to computer in seconds
+
+## Before we start
+
+Please ensure you have already:
+* [Installed QGIS](../../howto/install-qgis/index.md)
 
 
 ## Putting your project in the cloud
@@ -42,7 +46,10 @@ In this tutorial you'll learn how to:
 
 1. Open QGIS on your computer
 
-2. Find the Mergin entry in the QGIS browser panel:
+2. [Install the <QGISPluginName />](../../howto/install-mergin-maps-plugin-for-qgis/index.md)
+   You will use your <MainPlatformName /> credentials to configure the <QGISPluginName />.
+
+3. Find the Mergin entry in the QGIS browser panel:
 
    ![](./qgis-browser-panel.jpg)
    
@@ -50,15 +57,15 @@ In this tutorial you'll learn how to:
    If you cannot see the browser panel in QGIS, ensure it's enabled under ***View (top-level menu) > Toolbars***.
    :::
    
-3. Expand the Mergin entry and find your project under ***My projects***
+4. Expand the Mergin entry and find your project under ***My projects***
 
    ![](./qgis-find-project.jpg)
 
-4. Right-click on the project and select ***Download***
+5. Right-click on the project and select ***Download***
 
    ![](./qgis-download-project.jpg)
 
-5. Select a folder under which your project will be stored locally
+6. Select a folder under which your project will be stored locally
 
    Select a folder called ***Mergin Projects*** under ***My Documents***, creating it if it doesn't already exist.
 
@@ -70,14 +77,13 @@ In this tutorial you'll learn how to:
    
    ![](./qgis-downloading-project.jpg)
 
-6. Open the project when prompted:
+7. Open the project when prompted:
 
    ![](./qgis-open-project-file.jpg)
    
    Your first survey project is now open in QGIS:
    
    ![](./qgis-project-opened.jpg)
-
 
 
 ## Extracting data from QGIS
