@@ -1,4 +1,9 @@
 # Sign up to Mergin Maps
+[[toc]]
+
+To start using the Mergin service, you need to sign up. You can sign up either through <MainDomainNameLink /> or from your mobile device using the <MobileAppName /> (version 0.7.0 or later). 
+
+When you register with the Mergin service, you will be automatically signed up as a free tier user with 100 MB of storage. To upgrade your account, see our [Subscription plans](https://public.cloudmergin.com/pricing).
 
 
 ## From <MainDomainName />
@@ -11,12 +16,18 @@
    
 3. Complete the sign up form
 
-   You can now [skip to the last section](./index.md#next-steps).
+   Once you press *Sign up*, you will receive a confirmation email. To sign in and use the Mergin service, you will need to activate your account by clicking on the link in the email.
+
+::: tip
+check your SPAM folder if the confirmation email does not appear in your inbox after 5 minutes.
+:::
+
+   You can now [skip to the Next steps](./index.md#next-steps).
 
 
 ## From <MobileAppName />
 
-If you already have [installed <MobileAppName /> (TODO: write this page)](../install-mergin-maps-mobile/index.md) installed then you can sign up from there.
+If you already have installed <MobileAppName /> installed then you can sign up from there.
 
 [Skip this section](./index.md#next-steps) if you've already signed up from <MainDomainName /> as described above.
 
@@ -31,6 +42,17 @@ If you already have [installed <MobileAppName /> (TODO: write this page)](../ins
    ![](./merginmaps-mobile-sign-up.jpg)
    
 4. Complete the sign up form
+
+   Once you press *Sign up*, you will receive a confirmation email. To sign in and use the Mergin service, you will need to activate your account by clicking on the link in the email.
+
+::: tip
+check your SPAM folder if the confirmation email does not appear in your inbox after 5 minutes.
+:::
+
+
+## Forgotten Password
+
+If you forget your password, you can reset it through the [Mergin website](https://public.cloudmergin.com/login/reset).
 
 
 ## Next steps
