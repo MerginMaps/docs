@@ -41,7 +41,6 @@ module.exports = {
                 '/howto/manage/troubleshoot',
                 '/howto/manage/web/dashboard',
                 '/howto/manage/web/web-create-project',
-                '/howto/manage/web/register',
                 '/howto/manage/web/working-with-organisations',
                 '/howto/manage/web/project-advanced',
                 '/howto/manage/web/project-details',
