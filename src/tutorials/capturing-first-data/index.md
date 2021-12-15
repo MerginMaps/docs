@@ -8,6 +8,11 @@ In this tutorial you will learn how to:
 * Capture field data with their locations, photos and notes
 * Query and edit field data
 
+## Install <MobileAppName />
+
+Download <MobileAppName /> to your Android device, iPhone or iPad. You can find it in the app store of your platform:
+
+<AppDownload></AppDownload>
 
 ## Creating a project in <MobileAppName />
 
