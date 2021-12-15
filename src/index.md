@@ -56,7 +56,6 @@ home: false
 - [Synchronise project](./howto/manage/plugin/plugin-sync-project)
 - [Creating a new project](./howto/manage/plugin/plugin-new-project)
 - [Extra QGIS variables](./howto/manage/plugin/plugin-variables)
-- [Plugin Installation](./howto/manage/plugin/install)
 - [Integrate Mergin](./howto/integration)
 - [GPS accuracy](./howto/gps_accuracy)
 - [Attach Multiple Photos to Features](./howto/attach-multiple-photos-to-features/)

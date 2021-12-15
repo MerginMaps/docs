@@ -50,7 +50,6 @@ module.exports = {
                 '/howto/manage/plugin/plugin-sync-project',
                 '/howto/manage/plugin/plugin-new-project',
                 '/howto/manage/plugin/plugin-variables',
-                '/howto/manage/plugin/install',
                 '/howto/integration',
                 '/howto/gps_accuracy',
                 '/howto/attach-multiple-photos-to-features/',
