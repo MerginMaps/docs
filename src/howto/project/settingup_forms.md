@@ -166,9 +166,9 @@ To use the QR code scanner in the form from Input:
 ![slider](./input_forms_qrcode.jpg)
 
 
-## Datetime
+## DateTime
 
-If you want to record time and date when you capture the feature, you need to make sure you have a field with **Date** or **Date and Time** type present in your survey layer. Note that all GIS data formats support these types of field. It is assumed, you use Geopackage layer, hence this field type is supported.
+If you want to record time and date when you capture the feature, you need to make sure you have a field with **Date** or **Date and Time** type present in your survey layer. Note that all GIS data formats support these types of field. It is assumed, you use GeoPackage layer, hence this field type is supported.
 
 ### QGIS
 
@@ -203,7 +203,7 @@ To use the date/time widget in the form from Input:
 
 ## Checkbox
 
-Checkbox field becomes handy when you want to set up a Yes/No, True/False or On/Off in your field. Some file formats, such as Geopackage support **Boolean** data type. If you have a field set as **Boolean**, QGIS automatically assigns the checkbox for widget type.
+Checkbox field becomes handy when you want to set up a Yes/No, True/False or On/Off in your field. Some file formats, such as GeoPackage support **Boolean** data type. If you have a field set as **Boolean**, QGIS automatically assigns the checkbox for widget type.
 
 ## QGIS
 
@@ -268,7 +268,7 @@ To use the drop-down widget in the form from Input:
 
 ## Value Relation
 
-**Value Relation** widget is very similar to the [Value Map](#valuemap) tool, but the values for the drop-down menu come from another table (e.g. a CSV or another Geopackage table).
+**Value Relation** widget is very similar to the [Value Map](#valuemap) tool, but the values for the drop-down menu come from another table (e.g. a CSV or another GeoPackage table).
 
 The advantage of having this widget:
   - Ability to edit the values in the field. For example, if you have missed a value in your list for the drop-down menu, you can edit the table in Input and add the value. See [Working with non-spatial tables](./working_with_nonspatial_data.md) section for more information.

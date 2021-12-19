@@ -106,7 +106,7 @@ Tapping a map feature shows its preview panel.
 
 	![](./merginmaps-mobile-default-preview-panel.jpg)
 
-	Information shown in the preview panel can be customized. We'll learn how in the next tutorial.
+	Information shown in the preview panel can be customised. We'll learn how in the next tutorial.
 
 	The edit button can be used to edit the feature's attributes (e.g. species, condition) and even its location/geometry.
 

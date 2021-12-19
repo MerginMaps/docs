@@ -27,7 +27,7 @@ In addition, you will need to register with the [Mergin](https://public.cloudmer
 
 To be able to survey data, we need to set up a project in QGIS. Usually, you will need some data for your background layer (so that you can locate yourself!). In addition, you need to set up a table (or layer), to store your survey information.
 
-For background data, we are going to use Open Street Map. For survey table, we need to decide on a form structure and the type of feature you want to survey (e.g. point of interest, tracks or parcel of land). In this case, we want to survey potholes. Also, it would be good to attach some notes for each pothole, take a photo of it and add a date for survey. The GIS format best suited to store spatial information, is Geopackage.
+For background data, we are going to use Open Street Map. For survey table, we need to decide on a form structure and the type of feature you want to survey (e.g. point of interest, tracks or parcel of land). In this case, we want to survey potholes. Also, it would be good to attach some notes for each pothole, take a photo of it and add a date for survey. The GIS format best suited to store spatial information, is GeoPackage.
 
 Let's start by opening QGIS and add the above layers to our project. To simplify things, we can create a folder on Desktop (referred to in this tutorial as **data collection** folder) and store everything there.
 
@@ -42,7 +42,7 @@ You should see the OSM layer:
 
 Save your project as **pothole survey** in the **data collection** folder.
 
-To create a survey layer, in QGIS, from the main menu select **Layer > Create Layer > New Geopackage Layer ...**. Note that Geopackage is a file based database where you can store multiple tables (spatial or non-spatial). A new window will appear:
+To create a survey layer, in QGIS, from the main menu select **Layer > Create Layer > New GeoPackage Layer ...**. Note that GeoPackage is a file based database where you can store multiple tables (spatial or non-spatial). A new window will appear:
 
 ![Creating a geodatabase](./input_basic_gpkg-1.png)
 
@@ -136,7 +136,7 @@ Right click on the **Mergin** and select **Create new project**. A new window wi
 
 For **Project name** type **Potholes survey**
 
-Select **Initialize from local drive**
+Select **Initialise from local drive**
 
 Click on ... and and select **data collection** folder
 

@@ -65,6 +65,7 @@ libtiff
 libzip
 LTR
 Lutra
+lutraconsulting
 macOS
 MAN
 MBTiles
@@ -75,6 +76,8 @@ Mergin
 mistyped
 MPL
 MSI
+multiline
+Multiline
 namespace
 NDK
 Ok
