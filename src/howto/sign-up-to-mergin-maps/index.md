@@ -6,7 +6,7 @@ To start using the Mergin service, you need to sign up. You can sign up either t
 When you register with the Mergin service, you will be automatically signed up as a free tier user with 100 MB of storage. To upgrade your account, see our [Subscription plans](https://public.cloudmergin.com/pricing).
 
 
-## From <MainDomainName />
+## From cloudmergin.com
 
 1. Navigate to <MainDomainNameLink />
 
@@ -25,11 +25,15 @@ check your SPAM folder if the confirmation email does not appear in your inbox a
    You can now [skip to the Next steps](./index.md#next-steps).
 
 
-## From <MobileAppName />
+## From Mergin Maps Input
 
-If you already have installed <MobileAppName /> installed then you can sign up from there.
+<!-- If you already have installed <MobileAppName /> then you can sign up from there. -->
 
 [Skip this section](./index.md#next-steps) if you've already signed up from <MainDomainName /> as described above.
+
+1. Download <MobileAppName /> to your Android device, iPhone or iPad. You can find it in the app store of your platform:
+
+   <AppDownload></AppDownload>
 
 1. Open <MobileAppName /> on your mobile device
 
