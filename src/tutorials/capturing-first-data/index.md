@@ -8,13 +8,13 @@ In this tutorial you will learn how to:
 * Capture field data with their locations, photos and notes
 * Query and edit field data
 
-## Install <MobileAppName />
+## Install Mergin Maps Input
 
 Download <MobileAppName /> to your Android device, iPhone or iPad. You can find it in the app store of your platform:
 
 <AppDownload></AppDownload>
 
-## Creating a project in <MobileAppName />
+## Creating a project in Mergin Maps Input
 
 Data are stored within projects. We'll now create a new project to save our data into.
 

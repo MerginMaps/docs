@@ -28,7 +28,7 @@ Please ensure you have already:
 
 ## Configuring the plugin
 
-With the plguin installed, we'll now configure it with your <MainPlatformName /> credentials.
+With the plugin installed, we'll now configure it with your <MainPlatformName /> credentials.
 
 1. Click the ***Configure Mergin Plugin*** icon on the ***Mergin Toolbar***:
 

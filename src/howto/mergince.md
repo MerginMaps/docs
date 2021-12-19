@@ -1,6 +1,6 @@
 # Mergin Community Edition
 
-![](mergin.svg)
+<PublicImage src="Mergin.svg" />
 
 The [Mergin](https://public.cloudmergin.com) is a great companion to Input as it 
 provides seamless synchronisation of data between your phone/tablet, 

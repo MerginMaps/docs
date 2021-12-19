@@ -157,6 +157,7 @@ uncheck
 undoable
 uuid
 UUID
+Valuemap
 VectorTileServer
 WFS
 WGS
