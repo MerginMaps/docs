@@ -7,7 +7,7 @@
 In this tutorial you'll learn a few different ways of sharing your project with your colleagues.
 
 
-## Share a project with a specific <MainPlatformName /> user
+## Share a project with a specific Mergin Maps user
 
 1. Navigate to <MainDomainNameLink />
 
@@ -43,9 +43,9 @@ In this tutorial you'll learn a few different ways of sharing your project with 
 	We recommend that you always ask your collaborators to confirm their <MainPlatformName /> username rather than just guessing it and risking sharing your project with the wrong person.
 	:::
 
-	::: tip
+<!--	::: tip
 	If you enter your first and last name in your <MainPlatformName /> profile, these are displayed when ... FIXME complete and also update image above to demonstrate this for Charlie's account.
-	:::
+	::: -->
 
 	
 

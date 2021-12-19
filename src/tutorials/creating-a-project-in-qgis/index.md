@@ -45,7 +45,8 @@ Please ensure you have already:
 You may have noticed that the <QGISPluginName /> has created a project almost identical to the one created by <MobileAppName /> in a previous tutorial: A single point layer called *Survey* and OpenStreetMap base mapping.
 
 ::: tip
-<MobileAppName /> can make use of any type of background maps (offline and online) that are supported by QGIS. TODO: Link to relevant HOWTO.
+<MobileAppName /> can make use of any type of background maps (offline and online) that are supported by QGIS. 
+You can learn how to add raster and vector background maps [here](../../howto/project/settingup_background_map.md).
 :::
 
 We'll now add two more layers - a point layer for surveying trees and a line layer for hedges.
@@ -84,11 +85,11 @@ We'll now add two more layers - a point layer for surveying trees and a line lay
 
 	![](./qgis-new-layer-trees-and-hedges.jpg)
 
-::: warning 
+<!-- ::: warning 
 FIXME columns / table structure cannot be changed after being set. 
-:::
+::: 
 
-FIXME: Summarise best practice on how to manage layers and layer structure
+FIXME: Summarise best practice on how to manage layers and layer structure -->
 
 
 ## Configure attributes forms
@@ -154,7 +155,7 @@ Our hedges layer as an attribute called *photo*. The attribute itself is stored 
 5. Click ***OK*** to close the layer properties dialog.
 
 
-## Saving changes to <MainPlatformName />
+## Saving changes to Mergin Maps
 
 In the next tutorial we will see how this project looks on <MobileAppName />. We'll now save the changes we've made here and sync the project back to the cloud.
 
