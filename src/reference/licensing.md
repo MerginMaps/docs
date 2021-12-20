@@ -26,7 +26,7 @@ As for the libraries that it uses:
 | qca          | yes    |    yes   |  LGPL-2.1                 | <GitHubRepo id="KDE/qca" />                               |
 | QGIS         | yes    |    yes   |  GPL-2                    | <GitHubRepo id="qgis/QGIS" />                             |
 | qtkeychain   | yes    |    yes   |  BSD-2-Clause             | <GitHubRepo id="frankosterfeld/qtkeychain" />             |
-| sqlite3      | yes\** |    yes   |  Public Domain            | [sqlite3](https://sqlite.org/index.html)                  |
+| sqlite3      | yes\** |    yes   |  Public Domain            | [sqlite3](https://sqlite.org)                             |
 | zlib         | no     |    yes   |  GNU license              | [zlib](https://www.zlib.net)                              |
 
 \* indirectly through Qt

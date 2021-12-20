@@ -47,7 +47,6 @@ home: false
 - [Troubleshoot](./howto/manage/troubleshoot)
 - [Home page and dashboard](./howto/manage/web/dashboard)
 - [Creating projects and uploading files](./howto/manage/web/web-create-project)
-- [Register on Cloud](./howto/manage/web/register)
 - [Working with Organisations](./howto/manage/web/working-with-organisations)
 - [Transfer or delete a project](./howto/manage/web/project-advanced)
 - [Project history and versions](./howto/manage/web/project-details)

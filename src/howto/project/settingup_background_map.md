@@ -120,7 +120,7 @@ Note that instructions below requires familiarity with terminal. In addition you
 
   - Download osm.pbf file for the country or region where your area falls in from [here](https://download.geofabrik.de/).
 
-  - Search for your area of interest and find the OSM relation ID (from [here](https://nominatim.openstreetmap.org/) using method described <GitHubRepo id="JamesChevalier/cities#how-to-get-the-poly-file-for-a-specific-city" desc="here" /> or alternatively download it <GitHubRepo id="JamesChevalier/" desc="from this git repository" /> if available).
+  - Search for your area of interest and find the OSM relation ID (from [here](https://nominatim.openstreetmap.org/) using method described <GitHubRepo id="JamesChevalier/cities" desc="here" /> or alternatively download it <GitHubRepo id="JamesChevalier/" desc="from this git repository" /> if available).
 
   - Clip the *osm.pbf* downloaded in step 2 using the poly downloaded in step 3:
 
