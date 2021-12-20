@@ -1,5 +1,19 @@
 <template>
-  <a href='https://www.lutraconsulting.co.uk' target="_blank" rel="noopener noreferrer">
-    Lutra Consulting Ltd.
+  <a :href="`https://www.lutraconsulting.co.uk/${id}`" target="_blank" class="nospellcheck">
+    <span v-if="desc" v-html="desc"></span>
+    <span v-else class="nospellcheck">Lutra Consulting Ltd.</span>
   </a>
 </template>
+
+<script>
+export default {
+  name: "lutraconsultingweb",
+  props: {
+    id: {
+      type: String,
+      default: ''
+    },
+    desc: String
+  }
+}
+</script>
