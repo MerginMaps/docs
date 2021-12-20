@@ -9,7 +9,7 @@ this is 1-1 copy of https://help.cloudmergin.com/quick-start.html
 
 ## Mergin Maps Cloud
 
-It is easy to start using Mergin - let's head to [https://public.cloudmergin.com](https://public.cloudmergin.com)
+It is easy to start using Mergin - let's head to  <MainDomainNameLink />
 
 ### Sign up
 

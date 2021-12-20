@@ -62,7 +62,7 @@ Ensure to save and synchronise your project.
 
 To use the multiline text edit widget in the form from Input:
 
-- Open Input on your device and from **Projects** > **Explore** download **lutraconsulting/test_forms**
+- Open Input on your device and from **Projects** > **Explore** download <MerginMapsProject id="lutraconsulting/test_forms" />
 - Open the project
 - Select **Record** and add a point
 - The form will appear
@@ -93,7 +93,7 @@ Ensure to save and synchronise your project.
 
 To use the numeric widget in your form from Input:
 
-- Open Input on your device and from **Projects** > **Explore** download **lutraconsulting/test_forms**
+- Open Input on your device and from **Projects** > **Explore** download <MerginMapsProject id="lutraconsulting/test_forms" />
 - Open the project
 - Select **Record** and add a point
 - The form will appear

@@ -35,6 +35,6 @@ You can use both `Take a photo` or `From gallery` actions of the attachment widg
 GPS EXIF data are added to the photo metadata. Make sure that location permissions are allowed in Input and also 
 for your camera app.
 
-For further examples you can check fields definitions of project **_lutraconsulting/test_exif_** accessible on Mergin.
+For further examples you can check fields definitions of project <MerginMapsProject id="lutraconsulting/test_exif" /> accessible on Mergin.
 
 ![photos](./gps_exif_metadata.png)
