@@ -4,7 +4,7 @@
 
 ## Commercial Support
 
-The commercial support or consultancy for your projects is carried by Lutra Consulting Ltd.
+The commercial support or consultancy for your projects is carried by <LutraConsultingWeb />
 
 <PublicImage src="logo_lutra.svg" />
     
@@ -31,6 +31,6 @@ Once you have uploaded the logs, you can [contact us](mailto:info@lutraconsultin
 ## Community Support
 
  - Join our [community chat on Slack](https://merginmaps.com/community/join) and ask questions!
- - See [GIS Stack Exchange](https://gis.stackexchange.com/questions/tagged/lutra-input-app) with **lutra-input-app** tag to ask questions and see other users' answers.
+ - See [GIS Stack Exchange](https://gis.stackexchange.com/questions/tagged/lutra-input-app) with "<NoSpellCheck id="lutra-input-app" />" tag to ask questions and see other users' answers.
  - See [QGIS Online docs](https://www.qgis.org/en/docs/index.html) for QGIS Desktop related problem
  

@@ -1,12 +1,12 @@
 # Sign up to Mergin Maps
 [[toc]]
 
-To start using the Mergin service, you need to sign up. You can sign up either through <MainDomainNameLink /> or from your mobile device using the <MobileAppName /> (version 0.7.0 or later). 
+To start using the Mergin service, you need to sign up. You can sign up either through <MainDomainNameLink /> or from your mobile device using the <MobileAppName />.
 
 When you register with the Mergin service, you will be automatically signed up as a free tier user with 100 MB of storage. To upgrade your account, see our [Subscription plans](https://public.cloudmergin.com/pricing).
 
 
-## From cloudmergin.com
+## From Web
 
 1. Navigate to <MainDomainNameLink />
 
@@ -26,6 +26,8 @@ check your SPAM folder if the confirmation email does not appear in your inbox a
 
 
 ## From Mergin Maps Input
+
+<Badge text="Since Input 0.7.0" type="info"/>
 
 <!-- If you already have installed <MobileAppName /> then you can sign up from there. -->
 

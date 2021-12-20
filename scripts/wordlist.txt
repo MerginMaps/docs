@@ -65,7 +65,6 @@ libtiff
 libzip
 LTR
 Lutra
-lutraconsulting
 macOS
 MAN
 MBTiles
