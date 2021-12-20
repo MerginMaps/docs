@@ -9,7 +9,10 @@
 export default {
   name: "lutraconsultingweb",
   props: {
-    id: String,
+    id: {
+      type: String,
+      default: ''
+    },
     desc: String
   }
 }
