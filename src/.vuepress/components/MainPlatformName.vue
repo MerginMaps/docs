@@ -1,3 +1,3 @@
 <template>
-  <span>Mergin Maps</span>
+  <span class="nospellcheck">Mergin Maps</span>
 </template>

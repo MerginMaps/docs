@@ -1,3 +1,3 @@
 <template>
-  <span>cloudmergin.com</span>
+  <span class="nospellcheck">cloudmergin.com</span>
 </template>

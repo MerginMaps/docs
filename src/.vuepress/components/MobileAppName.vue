@@ -1,3 +1,3 @@
 <template>
-  <span>Mergin Maps Input</span>
+  <span class="nospellcheck">Mergin Maps Input</span>
 </template>
