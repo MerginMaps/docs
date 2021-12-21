@@ -44,7 +44,7 @@ done
 ERRORS=$((NOT_USED_PICS + NOT_USED_XCF))
 
 echo "number of used pictures: $USED_PICS"
-echo "number of not used XCF files: $USED_XCF"
+echo "number of used XCF files: $USED_XCF"
 echo "number of not used pictures: $NOT_USED_PICS"
 echo "number of not used XCF: $NOT_USED_XCF"
 
