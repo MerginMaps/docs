@@ -64,3 +64,6 @@ jobs:
       run: |
         ./scripts/markdown_style.bash
 
+    - name: Find unreferenced images
+      run: |
+        ./scripts/unreferenced_images.bash
