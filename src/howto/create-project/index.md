@@ -112,10 +112,3 @@ You can also make a copy of an existing project or a project that is shared with
 2. From the top right of the panel, select **Clone**
    ![](./web-clone-project.png)
 3. In the new window, you can change the project name and select the owner
-<!-- add screenshot? -->
-
-
-
-
-
-

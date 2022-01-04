@@ -61,7 +61,7 @@ and thus you can modify it.
 You may want now explore other features: 
 
 - [Dashboard](../manage/web/dashboard.md) - accessing to your recent projects, profile and other settings
-- [Creating projects](../manage/web/web-create-project.md) - how to create new project and upload files
+- [Creating projects](../create-project/) - how to create new project and upload files
 - [Subscriptions](../manage/web/subscriptions.md) - How to subscribe to Mergin Plans
 - [Project details](../manage/web/project-details.md) - view project files, history and changelogs
 - Sharing projects - share your projects with other Mergin users
@@ -137,7 +137,7 @@ just downloaded - if you click Yes, you are ready to use your project:
 
 or explore other functions:
 
-- [Creating a new Mergin project](../manage/plugin/plugin-new-project.md)
+- [Creating a new Mergin project](../create-project/)
 - Downloading an existing project
 - [Synchronising project and data](../manage/plugin/plugin-sync-project.md)
 - Cloning an existing project
