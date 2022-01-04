@@ -1,35 +1,34 @@
 # Reuse last entered values
 
-Input supports faster digitising of similar features by allowing user to reuse values of repeating attributes. When attribute is marked for reuse, a next created feature has it already entered with value from last feature.
+<MobileAppName /> supports faster digitising of similar features by allowing users to reuse last entered values of selected attributes. When attributes are marked for reuse, the values from the last feature are already entered when a new feature is created.
+
+::: tip
+ You can learn how to work with <MobileAppName />  by following our [Get started tutorials](../tutorials/capturing-first-data/).
+:::
 
 ## Setup 
 
 To allow this functionality, follow these steps:
 
- - Open any project from your home screen by clicking on its name
+ - Open your project from the home screen
  - Click on three dots to open a menu and navigate to `Settings`
 ![photos](./input_more_icon.png)
- - Check option to `Reuse last value option`
+ - Toggle on `Reuse last value option`
 ![photos](./reuse_last_value_option.png)
 
 ## Use in Input App
 
- - Go back to map and click `Record`
- - Now try to create a new feature
-
-::: tip
- You can learn how to create a feature in guide [Working with Input](./input-tour/index.md).
-:::
-
- - In opened form you will see checkboxes next to attributes. In our example we have three editable attributes (besides `fid`). We set Input to remember values for attributes `Name` and `Value` by checking checkboxes next to each of the attributes.
+ - Go back to map
+ - Click `Record` and create a new feature
+ - In the form you will see checkboxes next to attributes. Here, we have three editable attributes (besides `fid`). We set Input to remember values for attributes `Name` and `Value` by checking the checkboxes next to these attributes.
 
 ![photos](./reuse_last_values_digitize_before.png)
 
- - Now hit `Save` and create a new feature
- - In a newly opened form checked attributes will have values filled with values from last created feature on this layer.
+ - `Save` the feature
+ - When creating another feature, the checked attributes in the form will contain last entered values from the previous feature.
 
 ![photos](./reuse_last_values_digitize_after.png)
 
-You can use this feature across multiple layers, Input will remember attributes for each layer separately.
+You can use the `Reuse last value option` across multiple layers. Input will remember attributes for each layer separately.
 
 This feature was inspired by QGIS functionality called _Reuse last entered attribute values_.
