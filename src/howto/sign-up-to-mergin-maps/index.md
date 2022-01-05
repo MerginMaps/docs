@@ -5,6 +5,9 @@ To start using the Mergin service, you need to sign up. You can sign up either t
 
 When you register with the Mergin service, you will be automatically signed up as a free tier user with 100 MB of storage. To upgrade your account, see our <MainDomainNameLink id="pricing" desc="Subscription plans" />.
 
+::: tip
+One can view and download public projects even without an account, but creation of projects and synchronisation of geo-data only works when you are logged in.
+:::
 
 ## From Web
 
