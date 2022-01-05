@@ -15,6 +15,7 @@ changelogs
 CharlieColleague
 checkbox
 checkboxes
+cloudmergin
 conf
 conf
 config
