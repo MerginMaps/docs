@@ -83,6 +83,11 @@ Danger zone, do not proceed
 :tada:
 ```
 
+## Users & Organisations
+
+- To store all projects referenced in the documentation use Mergin Maps organisation `documentation`
+- For users that are referenced in the documentation (e.g. screenshots or in texts), use "fake" Mergin Maps users `jack`, `jill` and `sarah`
+
 ## Labels/Badges
 
 type is one of "tip"|"warning"|"error", see [vuepress docs](https://v1.vuepress.vuejs.org/guide/using-vue.html#badge)
