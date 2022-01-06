@@ -10,11 +10,11 @@ The commercial support or consultancy for your projects is carried by <LutraCons
 
 <PublicImage src="logo_lutra.svg" />
     
-Please see the <LutraConsultingWeb id="support/" desc="support packages" /> available. SLA support offers you the contracted response time, dedicated hotline as well as email support on [support@lutraconsulting.co.uk](mailto:support@lutraconsulting.co.uk). To setup new SLA contract, contact us on [info@lutraconsulting.co.uk](mailto:info@lutraconsulting.co.uk)
+Please see the <LutraConsultingWeb id="support/" desc="support packages" /> available. SLA support offers you the contracted response time, dedicated hotline as well as premium email support.
 
 ### Subscribed Client Support
 
-If you have active subscribtion on <MainDomainNameLink />, we also offer free standard support on [support@merginmaps.com](mailto:support@merginmaps.com)
+If you have active subscribtion on <MainDomainNameLink />, we also offer free standard support on <MerginMapsEmail id="support" />
 
 ### Community Support
 
@@ -38,4 +38,4 @@ In Input App to send the logs, go to "Settings" and click on "About". Select **D
 
 ![Input Logs](./input-logs.png)
 
-Once you have uploaded the logs, you can contact us on [support@merginmaps.com](mailto:support@merginmaps.com) to look into the issues.
+Once you have uploaded the logs, you can contact us on <MerginMapsEmail id="support" /> to look into the issues.

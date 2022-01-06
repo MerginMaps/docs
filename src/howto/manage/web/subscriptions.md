@@ -2,7 +2,7 @@
 
 Mergin Service offers a free plan for up to 100 MB data usage. Free plan can be used to host projects for commercial use only *for first month*. Non-commercial use is considered for personal (hobby) use, or in academia (teachers, students).
 
-We offer discounts for non-profit or charity organizations, please [contact us](mailto:sales@merginmaps.com)
+We offer discounts for non-profit or charity organisations, please <MerginMapsEmail id="sales" desc="contact us" />
 
 For more storage you can choose one of the two plans for users ("Individual" 1GB or "Professional" 10GB storage) or a plan for an organisation ("Team" 50GB storage).
 
@@ -39,10 +39,10 @@ To subscribe to the Team plan, you first need to create an organisation:
   - The address you enter must match the address registered with your payment method (e.g. credit card)
   - The address entered needs to match the VAT registered address
 
-If you'd like to purchase Team plan on annual basis and would like to make bank transfer payment, please [contact us](mailto:sales@merginmaps.com) for manual invoicing.
+If you'd like to purchase Team plan on annual basis and would like to make bank transfer payment, please <MerginMapsEmail id="sales" desc="contact us" /> for manual invoicing.
 
 ## On-Premise deployment
-If you want to have On-Premise deployment or looking for other options, please [contact us](mailto:sales@merginmaps.com) directly.
+If you want to have On-Premise deployment or looking for other options, please <MerginMapsEmail id="sales" desc="contact us" /> directly.
 
 ## Accessing invoices and payment history
 
