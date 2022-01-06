@@ -2,13 +2,25 @@
 
 [[toc]]
 
-## Commercial Support
+## Support
+
+### Commercial SLA Support
 
 The commercial support or consultancy for your projects is carried by <LutraConsultingWeb />
 
 <PublicImage src="logo_lutra.svg" />
     
-Please see the [support packages](https://www.lutraconsulting.co.uk/support/) or [contact us](mailto:info@lutraconsulting.co.uk) directly
+Please see the <LutraConsultingWeb id="support/" desc="support packages" /> available. SLA support offers you the contracted response time, dedicated hotline as well as premium email support.
+
+### Subscribed Client Support
+
+If you have active subscription on <MainDomainNameLink />, we also offer free standard support on <MerginMapsEmail id="support" />
+
+### Community Support
+
+ - Join our [community chat on Slack](https://merginmaps.com/community/join) and ask questions!
+ - See [GIS Stack Exchange](https://gis.stackexchange.com/questions/tagged/lutra-input-app) with "<NoSpellCheck id="lutra-input-app" />" tag to ask questions and see other users' answers.
+ - See [QGIS Online docs](https://www.qgis.org/en/docs/index.html) for QGIS Desktop related problem
 
 ## Diagnostic Logs
 
@@ -26,11 +38,4 @@ In Input App to send the logs, go to "Settings" and click on "About". Select **D
 
 ![Input Logs](./input-logs.png)
 
-Once you have uploaded the logs, you can [contact us](mailto:info@lutraconsulting.co.uk) to look into the issues.
-
-## Community Support
-
- - Join our [community chat on Slack](https://merginmaps.com/community/join) and ask questions!
- - See [GIS Stack Exchange](https://gis.stackexchange.com/questions/tagged/lutra-input-app) with "<NoSpellCheck id="lutra-input-app" />" tag to ask questions and see other users' answers.
- - See [QGIS Online docs](https://www.qgis.org/en/docs/index.html) for QGIS Desktop related problem
- 
+Once you have uploaded the logs, you can contact us on <MerginMapsEmail id="support" /> to look into the issues.

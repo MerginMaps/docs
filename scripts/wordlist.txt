@@ -50,6 +50,7 @@ gpkg
 GPL
 Helmert
 HiDPi
+hotline
 HTML
 iconv
 iOS
@@ -147,6 +148,7 @@ subfolder
 subfolders
 subproject
 subprojects
+SLA
 SVG
 SVGs
 toc
