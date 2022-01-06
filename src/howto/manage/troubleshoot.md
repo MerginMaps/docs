@@ -14,7 +14,7 @@ Please see the <LutraConsultingWeb id="support/" desc="support packages" /> avai
 
 ### Subscribed Client Support
 
-If you have active subscribtion on <MainDomainNameLink />, we also offer free standard support on <MerginMapsEmail id="support" />
+If you have active subscription on <MainDomainNameLink />, we also offer free standard support on <MerginMapsEmail id="support" />
 
 ### Community Support
 

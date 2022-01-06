@@ -50,6 +50,7 @@ gpkg
 GPL
 Helmert
 HiDPi
+hotline
 HTML
 iconv
 iOS
