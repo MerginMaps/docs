@@ -51,7 +51,6 @@ module.exports = {
                 '/howto/integration',
                 '/howto/gps_accuracy',
                 '/howto/attach-multiple-photos-to-features/',
-                '/howto/mergin-tour/',
                 '/howto/position_variables',
                 '/howto/mergince',
                 '/howto/input_ui',

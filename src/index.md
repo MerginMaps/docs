@@ -57,7 +57,6 @@ home: false
 - [Integrate Mergin](./howto/integration)
 - [GPS accuracy](./howto/gps_accuracy)
 - [Attach Multiple Photos to Features](./howto/attach-multiple-photos-to-features/)
-- [Enhancing Existing Project](./howto/mergin-tour/)
 - [Extra Position Variables](./howto/position_variables)
 - [Mergin Community Edition](./howto/mergince)
 - [Input App Interface](./howto/input_ui)
