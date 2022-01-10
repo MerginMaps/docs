@@ -33,10 +33,8 @@ The search:
 - looks up for a match in all searchable attributes values.
 - is not case sensitive
 
-In Layer properties (left click on layer on the Layers panel -> Properties -> "Fields"), you can define which attributes 
-(fields) are searchable and which are not. By default, all attributes are searchable.
+In Layer properties (left click on layer on the Layers panel -> Properties -> "Fields"), you can define which attributes (fields) are searchable and which are not. By default, all attributes are searchable.
 
 ![display_name](./not_searchable.png)
 
-If a field is marked in a field configuration as **Not searchable**, the search will omit field values in the compare function. So if you 
-search for specific existing value of such field, you should expect no results.
+If a field is marked in a field configuration as **Not searchable**, the search will omit field values in the compare function. So if you search for specific existing value of such field, you should expect no results.
