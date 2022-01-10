@@ -24,8 +24,7 @@ module.exports = {
                 '/concepts/users-and-orgs',
                 '/concepts/permissions',
                 '/concepts/synchronisation',
-                '/concepts/projections/',
-                '/concepts/home-page-and-dashboard/'
+                '/concepts/projections/'
             ]
         },
         {
