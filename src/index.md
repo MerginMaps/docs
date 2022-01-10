@@ -34,7 +34,6 @@ home: false
 - [Permissions](./concepts/permissions/index.md)
 - [Synchronisation](./concepts/synchronisation/index.md)
 - [Projections](./concepts/projections/index.md)
-- [Home Page and Dashboard](./concepts/home-page-and-dashboard/index.md)
 
 
 ## How to
