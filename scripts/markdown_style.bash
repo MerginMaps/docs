@@ -12,6 +12,8 @@ for i in \
   "<img" \
   "<a" \
   "docs.qgis.org" \
+  "help.cloudmergin.com" \
+  "help.inputapp.io" \
   https://github.com/ \
   www.github.com/ \
   "\*\*Note\*\*:"
