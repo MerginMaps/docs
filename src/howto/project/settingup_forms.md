@@ -205,7 +205,7 @@ To use the date/time widget in the form from Input:
 
 Checkbox field becomes handy when you want to set up a Yes/No, True/False or On/Off in your field. Some file formats, such as GeoPackage support **Boolean** data type. If you have a field set as **Boolean**, QGIS automatically assigns the checkbox for widget type.
 
-## QGIS
+### QGIS
 
 To set up a checkbox widget:
 
@@ -222,7 +222,7 @@ To set up a checkbox widget:
 
 Ensure to save and synchronise your project.
 
-## Input
+### Input
 
 To use the date/time widget in the form from Input:
 

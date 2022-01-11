@@ -2,8 +2,7 @@
 
 How to contribute to the project? 
 
-We are happy to help to promote work or co-author and place on our websites or give 
-special offer for Mergin Maps Cloud for project contributors.
+We are happy to help to promote work or co-author and place on our websites or give special offer for Mergin Maps Cloud for project contributors.
 
 <CommunityJoin />
 
@@ -43,8 +42,7 @@ or for other subprojects
 
 ## Develop
 
-Software developer? Code and prepare a pull request. We will help you with setup of the development 
-environment and answer your questions.
+Software developer? Code and prepare a pull request. We will help you with setup of the development environment and answer your questions.
  
  - <GitHubRepo id="lutraconsulting/input" desc="Mergin Maps Input" />
  - <GitHubRepo id="lutraconsulting/mergin" desc="Mergin Maps Cloud" />

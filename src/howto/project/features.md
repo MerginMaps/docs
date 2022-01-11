@@ -1,15 +1,11 @@
 # QGIS Project Preparation
+[[toc]]
 
-Project preparation is done in QGIS. For more information about loading
-layers, styling the data and creating map themes, visit QGIS
-documentation page. In addition, Input uses some of the features within
-the project to help with visualisation, data capturing and interrogation
-of the data. Below are the key parts used by Input:
+Project preparation is done in QGIS. For more information about loading layers, styling the data and creating map themes, visit QGIS documentation page. In addition, Input uses some of the features within the project to help with visualisation, data capturing and interrogation of the data. Below are the key parts used by Input:
 
 ## Background layers
 
-If you have internet connectivity, you can use a WM(T)S or XYZ layer as
-your background map. QGIS can also reads local XYZ tiles.
+If you have internet connectivity, you can use a WM(T)S or XYZ layer as your background map. QGIS can also reads local XYZ tiles.
 
 ::: tip
 that for XYZ tiles, ensure to change the tile resolution to Standard in your connection settings in QGIS. This will ensure the fonts are readable on the high resolution screens (applicable to the majority of the recent phones which come with high DPI screens).
@@ -34,15 +30,17 @@ To set the project extent: from **Project** > **Properties**, select **QGIS Serv
 
 ## Survey layer
 
-Vector layers can be used as survey layer
-in Input. You can apply style and set up the forms according to the QGIS
-documentation.
+Vector layers can be used as survey layer in Input. You can apply style and set up the forms according to the QGIS documentation.
 
 ## Layer properties
 The following properties of a layer in QGIS project will be additionally used in Input:
 
 ### Settings for Input preview panel
-Similar to Google map, when a feature is identified on the map a preview panel will appear. To enable a layer being identified, the option should be enabled in QGIS desktop, under **Project properties**. For setting the preview panel, you need to open **Layer Properties** and select **Display** tab.
+Similar to Google map, when a feature is identified on the map a preview panel will appear. 
+
+To enable a layer being identified, the option should be enabled in QGIS desktop, under **Project properties**.
+
+For setting the preview panel, you need to open **Layer Properties** and select **Display** tab.
 
 - title - this will use **Display Name** (in layer properties > Display tab) which can be a field name or an expression.
 
@@ -58,8 +56,7 @@ description
 time
 ```
 
-If the map tip content has `# fields` marker on the first line, the following lines will be understood as field names that should be listed in the preview.
-At most three fields will be shown. Expressions are not allowed.
+If the map tip content has `# fields` marker on the first line, the following lines will be understood as field names that should be listed in the preview. At most three fields will be shown. Expressions are not allowed.
 
 #### Image
 
@@ -89,13 +86,10 @@ Example of the preview panel in Input and QGIS tooltip set up can be seen below:
 ![Preview panel in Input based on Display settings in QGIS](./input_preview_panel.png)
 
 ### Forms
-This section briefly describes behaviour of some types of widgets with several configurations.  
-Make use of Value Map widget in your forms to simplify filling the forms during survey.
+This section briefly describes behaviour of some types of widgets with several configurations. Make use of Value Map widget in your forms to simplify filling the forms during survey.
 
 #### Attachment (External resource) widget
-To be able to attach photos to a survey feature, you will need to have an attribute column in your survey layer. 
-Within the form setting, ensure to set Widget type to Attachment.
-The widget is compatible with field of type QString. It suppose to store absolute/relative path to an image.
+To be able to attach photos to a survey feature, you will need to have an attribute column in your survey layer. Within the form setting, ensure to set Widget type to Attachment. The widget is compatible with field of type QString. It suppose to store absolute/relative path to an image.
 
 ##### Field configuration:
 * **Widget type** - **Attachment** as the only option to work with images
@@ -135,10 +129,9 @@ Lets define project home folder as 'path/to/project', where a project file is lo
 * **Calendar popup** - currently ignored, Input DateTime widget **always** acts like it is **checked**
 * **Default value** - has to return a type matching QgsField type
 
-Note that while working with QString fields with a date/time value and format function (used in a default value), 
-it is important to match field format with a given format there.
+Note that while working with QString fields with a date/time value and format function (used in a default value), it is important to match field format with a given format there.
 
-###QgsField type
+### QgsField type
 How the result value is saved depends on how a QgsField is defined. Following types are supported:
 
 Default values are marked as "**-**"  
