@@ -2,7 +2,7 @@
 
 ## Registration from Input
 
-To be able to transfer your data to your mobile/tablet device, share your project and track changes, you will need to register to the [Mergin website](https://help.cloudmergin.com). You can sign up to the service from the [Mergin website](https://help.cloudmergin.com/registration.html) or alternatively from within the app.
+To be able to transfer your data to your mobile/tablet device, share your project and track changes, you will need to register to the <MainDomainNameLink /> . You can sign up to the service from the <MainDomainNameLink id="register" desc="web" /> or alternatively from within the app.
 
 - Launch the Input app from your mobile/tablet device
 - Select **Home**
