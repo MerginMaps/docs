@@ -46,7 +46,7 @@ You may have noticed that the <QGISPluginName /> has created a project almost id
 
 ::: tip
 <MobileAppName /> can make use of any type of background maps (offline and online) that are supported by QGIS. 
-You can learn how to add raster and vector background maps [here](../../howto/project/settingup_background_map.md).
+You can learn how to add raster and vector background maps [here](../../manage/settingup_background_map.md).
 :::
 
 We'll now add two more layers - a point layer for surveying trees and a line layer for hedges.
