@@ -50,7 +50,7 @@ jobs:
       uses: ruzickap/action-my-broken-link-checker@v2
       with:
         url: https://test.merginmaps.com
-        cmd_params: --buffer-size=8192 --max-connections=10 --color=always --skip-tls-verification --timeout=20 --exclude=.*openstreetmap.org.* --exclude=.*sqlite.org.* --exclude=.*gnu.org.* # openstreetmap gives 403 for some reason?; mime duplicate parameter name for sqlite.org; TCP address timed out for GNU.org
+        cmd_params: --buffer-size=8192 --max-connections=10 --color=always --skip-tls-verification --timeout=20 --exclude=.*openstreetmap.org.* --exclude=.*sqlite.org.* --exclude=.*gnu.org.* --exclude=.*github.com/merginmaps/docs/edit/.* # openstreetmap gives 403 for some reason?; mime duplicate parameter name for sqlite.org; TCP address timed out for GNU.org
         pages_path: ./dist/
         debug: true
         run_timeout: 600
