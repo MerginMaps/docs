@@ -41,7 +41,7 @@ Your new project should now be visible on the *Home* tab of the *Projects* scree
    [Creating a Project in QGIS](../../tutorials/creating-a-project-in-qgis/index.md) tutorial will show you how to create a new project in QGIS, add layers, configure attributes forms and save changes to <MainPlatformName />. 
    :::
 
-To work with <MainPlatformName /> projects in QGIS, you will need to [install the <QGISPluginName />](../../howto/install-mergin-maps-plugin-for-qgis/index.md).
+To work with <MainPlatformName /> projects in QGIS, you will need to [install the <QGISPluginName />](../../manage/install-mergin-maps-plugin-for-qgis/index.md).
 
 1. Open a blank or an existing project in QGIS.
 

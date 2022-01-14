@@ -9,9 +9,9 @@ In this tutorial you will create a new project for surveying trees and hedges us
 ## Before we start
 
 Please ensure you have already:
-* [Installed QGIS](../../howto/install-qgis/index.md)
-* [Signed up to <MainPlatformName />](../../howto/sign-up-to-mergin-maps/index.md)
-* [Installed the <QGISPluginName />](../../howto/install-mergin-maps-plugin-for-qgis/index.md)
+* [Installed QGIS](../../manage/install-qgis/index.md)
+* [Signed up to <MainPlatformName />](../../manage/sign-up-to-mergin-maps/index.md)
+* [Installed the <QGISPluginName />](../../manage/install-mergin-maps-plugin-for-qgis/index.md)
 
 
 ## Create a minimal project
