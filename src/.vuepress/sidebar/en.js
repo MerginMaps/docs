@@ -14,8 +14,77 @@ module.exports = {
                 '/tutorials/working-collaboratively/'
             ]
         },
+        
+        /*
         {
-            title: 'Concepts',   // required
+            title: 'Guides',   // required
+            collapsable: true, // optional, defaults to true
+            sidebarDepth: 0,    // optional, defaults to 1
+            children: [
+
+            ]
+        },
+        */
+        
+        {
+            title: 'Project Management',   // required
+            collapsable: true, // optional, defaults to true
+            sidebarDepth: 0,    // optional, defaults to 1
+            children: [
+                '/manage/sign-up-to-mergin-maps/',
+                '/manage/install-qgis/',
+                '/manage/install-mergin-maps-plugin-for-qgis/',
+                '/manage/create-project/',
+                '/manage/dashboard',
+                '/manage/working-with-organisations',
+                '/manage/project-advanced',
+                '/manage/project-details',
+                '/manage/subscriptions',
+                '/manage/plugin-delete-project',
+                '/manage/plugin-sync-project',
+                '/manage/selective_sync/',
+            ]
+        }, 
+        
+        {
+            title: 'Configure GIS Project',   // required
+            collapsable: true, // optional, defaults to true
+            sidebarDepth: 0,    // optional, defaults to 1
+            children: [
+                '/project/gps_accuracy',
+                '/project/input_ui',
+                '/project/external_gps',
+                '/project/data_sync',
+                '/project/proj',
+                '/project/input_features',
+                '/project/enable_digitising',
+                '/project/search_data',
+                '/project/enable_browsing',
+                '/project/settingup_background_map',
+                '/project/setup_themes',
+                '/project/features',
+                '/project/plugin-variables',
+            ]
+        }, 
+                
+        {
+            title: 'Survey Forms Setup',   // required
+            collapsable: true, // optional, defaults to true
+            sidebarDepth: 0,    // optional, defaults to 1
+            children: [
+                '/forms/settingup_forms'
+                '/forms/settingup_forms_settings',
+                '/forms/exif_metadata',
+                '/forms/working_with_nonspatial_data',
+                '/forms/settingup_forms_photo',
+                '/forms/reuse_last_values',
+                '/forms/attach-multiple-photos-to-features/',
+                '/forms/position_variables/',
+            ]
+        }, 
+        
+        {
+            title: 'Mergin Maps Concepts',   // required
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
@@ -27,59 +96,28 @@ module.exports = {
                 '/concepts/projections/'
             ]
         },
+        
         {
-            title: 'How to',   // required
+            title: 'For Developers',   // required
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
-                '/howto/sign-up-to-mergin-maps/',
-                '/howto/install-qgis/',
-                '/howto/install-mergin-maps-plugin-for-qgis/',
-		'/howto/create-project/',
-                '/howto/exif_metadata',
-                '/howto/customapp',
-                '/howto/manage/troubleshoot',
-                '/howto/manage/web/dashboard',
-                '/howto/manage/web/working-with-organisations',
-                '/howto/manage/web/project-advanced',
-                '/howto/manage/web/project-details',
-                '/howto/manage/web/subscriptions',
-                '/howto/manage/plugin/plugin-delete-project',
-                '/howto/manage/plugin/plugin-sync-project',
-                '/howto/manage/plugin/plugin-variables',
-                '/howto/integration',
-                '/howto/gps_accuracy',
-                '/howto/attach-multiple-photos-to-features/',
-                '/howto/position_variables',
-                '/howto/mergince',
-                '/howto/input_ui',
-                '/howto/external_gps',
-                '/howto/data_sync',
-                '/howto/contribute',
-                '/howto/proj',
-                '/howto/reuse_last_values',
-                '/howto/input_features',
-                '/howto/dbsync',
-                '/howto/project/settingup_forms_photo',
-                '/howto/project/enable_digitising',
-                '/howto/project/search_data',
-                '/howto/project/enable_browsing',
-                '/howto/project/settingup_background_map',
-                '/howto/project/working_with_nonspatial_data',
-                '/howto/project/setup_themes',
-                '/howto/project/selective_sync/',
-                '/howto/project/settingup_forms_settings',
-                '/howto/project/features',
-                '/howto/project/settingup_forms'
+                '/dev/customapp',
+                '/dev/dbsync',
+                '/dev/mergince',
+                '/dev/integration',
             ]
         },
+        
         {
-            title: 'Reference',   // required
+            title: 'Support & Legal',   // required
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
-                '/reference/licensing',
-                '/reference/privacy'
+                '/misc/licensing',
+                '/misc/privacy'
+                '/misc/troubleshoot',
+                '/misc/contribute',
             ]
         }
       ]
