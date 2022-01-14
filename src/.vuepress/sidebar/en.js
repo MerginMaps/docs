@@ -1,6 +1,5 @@
 module.exports = {
       '/': [
-        ['', 'Home'], /* / */
         {
             title: 'Get started',   // required
             collapsable: true, // optional, defaults to true
@@ -36,53 +35,50 @@ module.exports = {
                 '/manage/install-mergin-maps-plugin-for-qgis/',
                 '/manage/create-project/',
                 '/manage/dashboard',
-                '/manage/working-with-organisations',
                 '/manage/project-advanced',
                 '/manage/project-details',
-                '/manage/subscriptions',
                 '/manage/plugin-delete-project',
                 '/manage/plugin-sync-project',
                 '/manage/selective_sync/',
+                '/manage/data_sync',
+                '/manage/subscriptions',
+                '/manage/working-with-organisations',
             ]
         }, 
-        
         {
-            title: 'Configure GIS Project',   // required
+            title: 'Work with GIS Project',   // required
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
-                '/project/gps_accuracy',
-                '/project/input_ui',
-                '/project/external_gps',
-                '/project/data_sync',
-                '/project/proj',
+                '/project/features',
                 '/project/input_features',
-                '/project/enable_digitising',
+                '/project/input_ui',
                 '/project/search_data',
-                '/project/enable_browsing',
                 '/project/settingup_background_map',
                 '/project/setup_themes',
-                '/project/features',
-                '/project/plugin-variables',
+                '/project/gps_accuracy',
+                '/project/external_gps',
+                '/project/enable_digitising',
+                '/project/enable_browsing',
+                '/project/proj',
             ]
         }, 
-                
         {
-            title: 'Survey Forms Setup',   // required
+            title: 'Setup Survey Forms',   // required
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
-                '/forms/settingup_forms'
+                '/forms/settingup_forms',
                 '/forms/settingup_forms_settings',
                 '/forms/exif_metadata',
                 '/forms/working_with_nonspatial_data',
                 '/forms/settingup_forms_photo',
                 '/forms/reuse_last_values',
                 '/forms/attach-multiple-photos-to-features/',
-                '/forms/position_variables/',
+                '/forms/position_variables',
+                '/forms/plugin-variables'
             ]
         }, 
-        
         {
             title: 'Mergin Maps Concepts',   // required
             collapsable: true, // optional, defaults to true
@@ -96,7 +92,6 @@ module.exports = {
                 '/concepts/projections/'
             ]
         },
-        
         {
             title: 'For Developers',   // required
             collapsable: true, // optional, defaults to true
@@ -105,19 +100,18 @@ module.exports = {
                 '/dev/customapp',
                 '/dev/dbsync',
                 '/dev/mergince',
-                '/dev/integration',
+                '/dev/integration'
             ]
         },
-        
         {
             title: 'Support & Legal',   // required
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
                 '/misc/licensing',
-                '/misc/privacy'
+                '/misc/privacy',
                 '/misc/troubleshoot',
-                '/misc/contribute',
+                '/misc/contribute'
             ]
         }
       ]
