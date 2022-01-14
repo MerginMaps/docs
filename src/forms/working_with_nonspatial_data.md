@@ -16,7 +16,7 @@ To browse, search or edit a non-spatial table, first you need to [open the attri
 
 To add a new record, select **Add Feature**. This will open a form to fill. By pressing **Save**, the new record will be added and Input will take you back to the attribute of your table.
 
-Similar to the vector layer attribute table, you can [search](./project/search_data.md) your data.
+Similar to the vector layer attribute table, you can [search](../project/search_data.md) your data.
 
 Selecting an individual record, Input will open the form related to the feature.
 
