@@ -22,7 +22,7 @@ module.exports = {
                 '/setup/sign-up-to-mergin-maps/',
                 '/setup/install-qgis/',
                 '/setup/install-mergin-maps-plugin-for-qgis/',
-                '/setup/working-with-organizations/',
+                '/setup/working-with-organisations/',
                 '/setup/subscriptions/'
             ]
         },

@@ -16,7 +16,7 @@ There are three levels of permissions when you share a project with other Mergin
 
 ## Organisation permissions
 
-Similar to project permissions, you can assign permissions to the members of your organisation. By default, all members will be assigned **Read** access. You can change their global permissions under [members' settings](../setup/working-with-organisations/index.md) or the project level (see above section).
+Similar to project permissions, you can assign permissions to the members of your organisation. By default, all members will be assigned **Read** access. You can change their global permissions under [members' settings](../setup/working-with-organizations/index.md) or the project level (see above section).
 
 For members in an organisation, you have 4 levels of permissions:
 
