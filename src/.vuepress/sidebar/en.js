@@ -76,7 +76,7 @@ module.exports = {
         }, 
         
         {
-            title: 'Field Work Tips',   // required
+            title: 'Fieldwork Tips',   // required
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [

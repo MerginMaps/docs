@@ -1,4 +1,4 @@
-# Sign up to Mergin Maps
+# How to sign up to Mergin Maps
 [[toc]]
 
 To start using the Mergin service, you need to sign up. You can sign up either through <MainDomainNameLink /> or from your mobile device using the <MobileAppName />.

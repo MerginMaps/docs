@@ -1,4 +1,4 @@
-# Install the Mergin Maps plugin for QGIS
+# How to install the Mergin Maps plugin for QGIS
 
 Please ensure you have already:
 
