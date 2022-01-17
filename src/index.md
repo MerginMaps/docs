@@ -14,6 +14,12 @@ home: false
 
 <CommunityJoin />
 
+The ecosystem consist of various components:
+ - [QGIS](https://qgis.org/) > Powerful GIS Desktop application 
+ - [QGIS Mergin Plugin](https://plugins.qgis.org/plugins/Mergin/) > QGIS Plugin for Mergin Maps
+ - [Mergin Cloud](https://public.cloudmergin.com) > SaaS Cloud Service (available also as Mergin CE)
+ - [Input app](https://inputapp.io) > the Input App for iOS and Android
+ 
 ## Get started 
 
 <AppDownload />

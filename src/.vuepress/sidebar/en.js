@@ -14,25 +14,25 @@ module.exports = {
             ]
         },
         
-        /*
         {
-            title: 'Guides',   // required
+            title: 'Install & Sign Up',   // required
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
-
+                '/install/sign-up-to-mergin-maps/',
+                '/install/install-qgis/',
+                '/install/install-mergin-maps-plugin-for-qgis/',
+                '/install/working-with-organizations/'
             ]
         },
-        */
         
         {
-            title: 'Project Management',   // required
+            title: 'Manage Account & Project',   // required
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
-                '/manage/sign-up-to-mergin-maps/',
-                '/manage/install-qgis/',
-                '/manage/install-mergin-maps-plugin-for-qgis/',
+                '/manage/permissions',
+                '/manage/synchronisation',
                 '/manage/create-project/',
                 '/manage/dashboard',
                 '/manage/project-advanced',
@@ -42,56 +42,51 @@ module.exports = {
                 '/manage/selective_sync/',
                 '/manage/data_sync',
                 '/manage/subscriptions',
-                '/manage/working-with-organisations',
             ]
         }, 
         {
-            title: 'Work with GIS Project',   // required
+            title: 'Setup GIS Project',   // required
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
-                '/project/features',
-                '/project/input_features',
-                '/project/input_ui',
-                '/project/search_data',
-                '/project/settingup_background_map',
-                '/project/setup_themes',
-                '/project/gps_accuracy',
-                '/project/external_gps',
-                '/project/enable_digitising',
-                '/project/enable_browsing',
-                '/project/proj',
+                '/gis/features',
+                '/gis/search_data',
+                '/gis/settingup_background_map',
+                '/gis/setup_themes',
+                '/gis/enable_digitising',
+                '/gis/enable_browsing',
+                '/gis/proj'
             ]
         }, 
         {
-            title: 'Setup Survey Forms',   // required
+            title: 'Configure Survey Layer',   // required
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
-                '/forms/settingup_forms',
-                '/forms/settingup_forms_settings',
-                '/forms/exif_metadata',
-                '/forms/working_with_nonspatial_data',
-                '/forms/settingup_forms_photo',
-                '/forms/reuse_last_values',
-                '/forms/attach-multiple-photos-to-features/',
-                '/forms/position_variables',
-                '/forms/plugin-variables'
+                '/layer/settingup_forms',
+                '/layer/settingup_forms_settings',
+                '/layer/exif_metadata',
+                '/layer/settingup_forms_photo',
+                '/layer/reuse_last_values',
+                '/layer/attach-multiple-photos-to-features/',
+                '/layer/position_variables',
+                '/layer/plugin-variables',
+                '/layer/working_with_nonspatial_data'
             ]
         }, 
+        
         {
-            title: 'Mergin Maps Concepts',   // required
+            title: 'Field Work Tips',   // required
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
-                '/concepts/components',
-                '/concepts/project',
-                '/concepts/users-and-orgs',
-                '/concepts/permissions',
-                '/concepts/synchronisation',
-                '/concepts/projections/'
+                '/field/gps_accuracy',
+                '/field/external_gps',
+                '/field/input_features',
+                '/field/input_ui',
+                '/layer/working_with_nonspatial_data',
             ]
-        },
+        }, 
         {
             title: 'For Developers',   // required
             collapsable: true, // optional, defaults to true
