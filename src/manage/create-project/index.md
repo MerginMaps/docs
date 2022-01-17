@@ -1,4 +1,4 @@
-# Create a new project
+# How to create a new project
 [[toc]]
 
 There are several methods of creating a new <MainPlatformName /> project:

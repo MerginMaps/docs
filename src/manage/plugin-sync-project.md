@@ -1,4 +1,4 @@
-# Synchronise project
+# How to synchronise a project
 
 ## Initial Download 
 
