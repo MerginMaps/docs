@@ -19,10 +19,11 @@ module.exports = {
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
-                '/install/sign-up-to-mergin-maps/',
-                '/install/install-qgis/',
-                '/install/install-mergin-maps-plugin-for-qgis/',
-                '/install/working-with-organizations/'
+                '/setup/sign-up-to-mergin-maps/',
+                '/setup/install-qgis/',
+                '/setup/install-mergin-maps-plugin-for-qgis/',
+                '/setup/working-with-organizations/',
+                '/setup/subscriptions/'
             ]
         },
         
@@ -40,8 +41,7 @@ module.exports = {
                 '/manage/plugin-delete-project',
                 '/manage/plugin-sync-project',
                 '/manage/selective_sync/',
-                '/manage/data_sync',
-                '/manage/subscriptions',
+                '/manage/data_sync'
             ]
         }, 
         {

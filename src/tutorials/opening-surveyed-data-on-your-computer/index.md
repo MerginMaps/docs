@@ -10,7 +10,7 @@ In this tutorial you'll learn how to transfer data from mobile device to compute
 ## Before we start
 
 Please ensure you have already:
-* [Installed QGIS](../../manage/install-qgis/index.md)
+* [Installed QGIS](../../install/install-qgis/index.md)
 
 
 ## Putting your project in the cloud
@@ -27,7 +27,7 @@ Please ensure you have already:
 
    ![](./mergin-maps-mobile-log-in-to-mergin.jpg)
    
-   [Signing up with <MainPlatformName />](../../manage/sign-up-to-mergin-maps/index.md) describes several methods of registering.
+   [Signing up with <MainPlatformName />](../../install/sign-up-to-mergin-maps/index.md) describes several methods of registering.
 
 3. Initiate the upload once again
 
@@ -46,7 +46,7 @@ Please ensure you have already:
 
 1. Open QGIS on your computer
 
-2. [Install the <QGISPluginName />](../../manage/install-mergin-maps-plugin-for-qgis/index.md)
+2. [Install the <QGISPluginName />](../../install/install-mergin-maps-plugin-for-qgis/index.md)
    You will use your <MainPlatformName /> credentials to configure the <QGISPluginName />.
 
 3. Find the Mergin entry in the QGIS browser panel:

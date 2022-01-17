@@ -9,9 +9,9 @@ In this tutorial you will create a new project for surveying trees and hedges us
 ## Before we start
 
 Please ensure you have already:
-* [Installed QGIS](../../manage/install-qgis/index.md)
-* [Signed up to <MainPlatformName />](../../manage/sign-up-to-mergin-maps/index.md)
-* [Installed the <QGISPluginName />](../../manage/install-mergin-maps-plugin-for-qgis/index.md)
+* [Installed QGIS](../../install/install-qgis/index.md)
+* [Signed up to <MainPlatformName />](../../install/sign-up-to-mergin-maps/index.md)
+* [Installed the <QGISPluginName />](../../install/install-mergin-maps-plugin-for-qgis/index.md)
 
 
 ## Create a minimal project
@@ -46,7 +46,7 @@ You may have noticed that the <QGISPluginName /> has created a project almost id
 
 ::: tip
 <MobileAppName /> can make use of any type of background maps (offline and online) that are supported by QGIS. 
-You can learn how to add raster and vector background maps [here](../../project/settingup_background_map.md).
+You can learn how to add raster and vector background maps [here](../../gis/settingup_background_map.md).
 :::
 
 We'll now add two more layers - a point layer for surveying trees and a line layer for hedges.
