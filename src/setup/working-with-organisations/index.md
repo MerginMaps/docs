@@ -19,7 +19,7 @@ This section describes how to create an organisation.
 ![](./create-organisation.png)
 
 ::: tip
-to be able to use organisation features, you need [subscribe to the Team plan](./subscriptions.md) first. You can create an organisation even if you are not subscribed to the Team plan, but until your subscription the storage allocation for your organisation will be 0 MB.
+to be able to use organisation features, you need [subscribe to the Team plan](../subscriptions/index.md) first. You can create an organisation even if you are not subscribed to the Team plan, but until your subscription the storage allocation for your organisation will be 0 MB.
 :::
 
 ## Organisation profile
@@ -46,4 +46,4 @@ To invite Mergin users to your new organisation:
 
 After the users accept the invitation, they should appear as members. Note that the invitation will expire after certain number of days. If user does not accept the invitation within this period, you will need to resend a new invitation.
 
-By default, the new members will be assigned **Read** access to all projects within the organisation. You can change the permission level here or at the project level. See [permissions in Mergin](../../../concepts/permissions.md) for more details.
+By default, the new members will be assigned **Read** access to all projects within the organisation. You can change the permission level here or at the project level. See [permissions in Mergin](../../manage/permissions.md) for more details.

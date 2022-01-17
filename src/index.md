@@ -14,6 +14,12 @@ home: false
 
 <CommunityJoin />
 
+The ecosystem consist of various components:
+ - [QGIS](https://qgis.org/) > Powerful GIS Desktop application 
+ - [QGIS Mergin Plugin](https://plugins.qgis.org/plugins/Mergin/) > QGIS Plugin for Mergin Maps
+ - [Mergin Cloud](https://public.cloudmergin.com) > SaaS Cloud Service (available also as Mergin CE)
+ - [Input app](https://inputapp.io) > the Input App for iOS and Android
+ 
 ## Get started 
 
 <AppDownload />
@@ -25,55 +31,3 @@ home: false
 - [Further Project Customisation](./tutorials/further-project-customisation/index.md)
 - [Working Collaboratively](./tutorials/working-collaboratively/index.md)
 
-
-## Concepts
-
-- [Main Components](./concepts/components/index.md)
-- [Project](./concepts/project/index.md)
-- [Users and Organisations](./concepts/users-and-orgs/index.md)
-- [Permissions](./concepts/permissions/index.md)
-- [Synchronisation](./concepts/synchronisation/index.md)
-- [Projections](./concepts/projections/index.md)
-
-
-## How to
-
-- [Sign up to Mergin Maps](./howto/sign-up-to-mergin-maps/)
-- [Install QGIS](./howto/install-qgis/)
-- [Install the Mergin Maps plugin for QGIS](./howto/install-mergin-maps-plugin-for-qgis/)
-- [Create a new project](./howto/create-project/)
-- [Exif Metadata](./howto/exif_metadata)
-- [Custom Mobile App](./howto/customapp)
-- [Troubleshoot](./howto/manage/troubleshoot)
-- [Home page and dashboard](./howto/manage/web/dashboard)
-- [Working with Organisations](./howto/manage/web/working-with-organisations)
-- [Transfer or delete a project](./howto/manage/web/project-advanced)
-- [Project history and versions](./howto/manage/web/project-details)
-- [Subscriptions and invoicing](./howto/manage/web/subscriptions)
-- [Deleting a project](./howto/manage/plugin/plugin-delete-project)
-- [Synchronise project](./howto/manage/plugin/plugin-sync-project)
-- [Extra QGIS variables](./howto/manage/plugin/plugin-variables)
-- [Integrate Mergin](./howto/integration)
-- [GPS accuracy](./howto/gps_accuracy)
-- [Attach Multiple Photos to Features](./howto/attach-multiple-photos-to-features/)
-- [Extra Position Variables](./howto/position_variables)
-- [Mergin Community Edition](./howto/mergince)
-- [Input App Interface](./howto/input_ui)
-- [External GPS](./howto/external_gps)
-- [Data Synchronisation](./howto/data_sync)
-- [Contribute](./howto/contribute)
-- [Custom Projections](./howto/proj)
-- [Reuse last entered values](./howto/reuse_last_values)
-- [Features](./howto/input_features)
-- [PostgreSQL DB Sync](./howto/dbsync)
-- [Capturing Photos](./howto/project/settingup_forms_photo)
-- [Enable Digitising](./howto/project/enable_digitising)
-- [Search values from attribute fields](./howto/project/search_data)
-- [Enable Browsing](./howto/project/enable_browsing)
-- [Background Maps](./howto/project/settingup_background_map)
-- [Working with non-spatial tables](./howto/project/working_with_nonspatial_data)
-- [Map Themes](./howto/project/setup_themes)
-- [Selective sync](./howto/project/selective_sync/)
-- [Advanced form configuration](./howto/project/settingup_forms_settings)
-- [QGIS Project Preparation](./howto/project/features)
-- [Setting up form widgets](./howto/project/settingup_forms)
