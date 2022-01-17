@@ -31,11 +31,3 @@ The ecosystem consist of various components:
 - [Further Project Customisation](./tutorials/further-project-customisation/index.md)
 - [Working Collaboratively](./tutorials/working-collaboratively/index.md)
 
-## Concepts
-
-- [Main Components](./concepts/components/index.md)
-- [Project](./concepts/project/index.md)
-- [Users and Organisations](./concepts/users-and-orgs/index.md)
-- [Permissions](./concepts/permissions/index.md)
-- [Synchronisation](./concepts/synchronisation/index.md)
-- [Projections](./concepts/projections/index.md)
