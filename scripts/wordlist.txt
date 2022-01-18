@@ -13,6 +13,7 @@ Bing
 changelog
 changelogs
 CharlieColleague
+cheatsheet
 checkbox
 checkboxes
 cloudmergin
@@ -163,6 +164,8 @@ undoable
 uuid
 UUID
 Valuemap
+VuePress
+Vue
 VectorTileServer
 WFS
 WGS

@@ -1,6 +1,6 @@
 # Write Documentation
 
-Thank you for your interest in helping out with writing [Mergin Maps Documentation](www.merginmaps.com/docs). The documentation framework is based on [vuepress](https://vuepress.vuejs.org/) and we welcome any contributions as <GitHubRepo id="MerginMaps/docs/pulls" desc="GitHub Pull Requests" />. If you are unsure how to contribute of what tasks are best to start with, join us on our [community chat](merginmaps.com/community/join) and ask in the `#dev` channel. We are happy to get you up to speed!
+Thank you for your interest in helping out with writing [Mergin Maps Documentation](www.merginmaps.com/docs). The documentation framework is based on [VuePress](https://vuepress.vuejs.org/) and we welcome any contributions as <GitHubRepo id="MerginMaps/docs/pulls" desc="GitHub Pull Requests" />. If you are unsure how to contribute of what tasks are best to start with, join us on our [community chat](www.merginmaps.com/community/join) and ask in the `#dev` channel. We are happy to get you up to speed!
 
 The version of the documentation you see on [www.merginmaps.com/docs](www.merginmaps.com/docs) is the <GitHubRepo id="MerginMaps/docs/tags" desc="latest tagged release" /> on main branch. The latest commit on main branch can be seen on staging server [dev.merginmaps.com/docs](dev.merginmaps.com/docs).
 
@@ -8,13 +8,13 @@ The version of the documentation you see on [www.merginmaps.com/docs](www.mergin
 
 ## Quick Start
 
-If you are about to do only *a tiny change* in the documentation, you can skip this section and fast track to section [for doing small modifications](h#fix-typo-in-the-documentation). 
+If you are about to do only *a tiny change* in the documentation, you can skip this section and fast track to section [for doing small modifications](./index.md#fix-typo-in-the-documentation). 
 
 If you are a (web) *developer*, you can skip all and just look at <GitHubRepo id="MerginMaps/docs" desc="Mergin Maps README" />.
 
 Otherwise, it is better to run the local development on your machine. The similar steps as described can be done on (almost) any operation system with slight modifications (e.g. using brew or apt on macOS or Linux for installation)
 
-If you are not part of the Mergin Maps core documenation team, you will need to work with [fork](#when-fork-is-needed). Follow the instructions in the section instead. We are happy to include more people into the team, so if you consider writing more documentation, let us know on our [community chat](merginmaps.com/community/join)
+If you are not part of the Mergin Maps core documentation team, you will need to work with [fork](#when-fork-is-needed). Follow the instructions in the section instead. We are happy to include more people into the team, so if you consider writing more documentation, let us know on our [community chat](www.merginmaps.com/community/join)
 
 ### Prepare Local Repository
 
@@ -39,7 +39,7 @@ yarn install
 yarn dev
 ```
 
-If `yarn install` fails with *ERROR: [Errno 2] No such file or directory: 'install'* then [check out this page](stackoverflow.com/questions/46013544/yarn-install-command-error-no-such-file-or-directory-install).
+If `yarn install` fails with `*ERROR: [Errno 2] No such file or directory: 'install'*` then [check out this page](www.stackoverflow.com/questions/46013544/yarn-install-command-error-no-such-file-or-directory-install).
 
 
 Now you can open `http://localhost:8080/` in your browser and see the live version.
@@ -75,14 +75,14 @@ Now go to <GitHubRepo id="MerginMaps/docs" desc="GitHub" /> and create pull requ
 
 Check the automatic tests in the pull requests for spellcheck or broken link and fix the issues in your code.
 
-To ensure your pull request will be merged, it is nice to ping the Mergin Maps docs team on the [community chat](merginmaps.com/community/join) in the `#dev` channel.
+To ensure your pull request will be merged, it is nice to ping the Mergin Maps docs team on the [community chat](www.merginmaps.com/community/join) in the `#dev` channel.
 
 ### When Fork Is Needed
 ::: warning 
 You can skip this step, in case you are member of the Mergin Maps docs team and you have write permissions to the repository. 
 :::
 
-To fork <GitHubRepo id="MerginMaps/docs" /> repository with the source code of documentatino, follow the steps as described in [GitHub docs](https://docs.github.com/en/get-started/quickstart/fork-a-repo). 
+To fork <GitHubRepo id="MerginMaps/docs" /> repository with the source code of documentation, follow the steps as described in [GitHub docs](https://docs.github.com/en/get-started/quickstart/fork-a-repo). 
 
 You will end up with the fork of <GitHubRepo id="MerginMaps/docs" /> in your namespace. 
 
@@ -105,7 +105,7 @@ git push origin main
 
 ## The Documentation System
 
-Each markdown should written as one of the 4 basic types of documenation:
+Each markdown should written as one of the 4 basic types of documentation:
 tutorials, how-to guides, technical reference and explanation. 
 
 It is best to read about this [documentation system](https://documentation.divio.com/).
@@ -122,7 +122,7 @@ In each section in the menu (except Getting Started and Guides)
 
 ### Naming things
 
-* We can use vue components references names, allowing us to change them quickly in the future
+* We can use Vue components references names, allowing us to change them quickly in the future
 * This doesn't work for things like url component names and anchor links
 * In these situations:
 
@@ -259,7 +259,7 @@ You can use any of supported [emoji](https://github.com/markdown-it/markdown-it-
 * Any image prepared should have an associated .xcf file containing the original, full resoluion image
 * Screenshtos of QGIS should be taken with the window sized at 1024x768. [Sizer](http://www.brianapps.net/sizer/#:~:text=Sizer%20is%20a%20freeware%20utility,to%20an%20exact%2C%20predefined%20size.) is good for this task.
 * Consistent buttons / toolbars in QGIS
-* Windows, not linux
+* Windows/macOS, not Linux
 * Making dialogs as small as possible without scrollbars or other bad visuals
 * Highlighting
 	* New layer, black, called Black with 66% opacity
@@ -281,7 +281,7 @@ You can use any of supported [emoji](https://github.com/markdown-it/markdown-it-
  - Place images next to the markdown files that reference them
  - Do not start with `/`, use relative paths
 
-e.g. `![](./cloudmergin.png)` if the image is in the same folder as your mardown file
+e.g. `![](./cloudmergin.png)` if the image is in the same folder as your markdown file
  
  - For global pictures/assets placed in `src/.vuepress/public` use custom component PublicImage
 
@@ -320,9 +320,9 @@ If you are adding new component:
 
 #### Reference QGIS Help pages
 
-Use `<QGISHelp />` component, e.g. `<QGISHelp ver="3.10" link="user_docs/intro.html" text="See QGIS Help page" />` transforms to
+Use `<QGISHelp />` component, e.g. `<QGISHelp ver="3.10" link="user_manual/index.html" text="See QGIS Help page" />` transforms to
 
-<QGISHelp ver="3.10" link="user_docs/intro.html" text="See QGIS Help page" />
+<QGISHelp ver="3.10" link="user_manual/index.html" text="See QGIS Help page" />
     
 #### Embed YouTube content
 
