@@ -106,7 +106,8 @@ module.exports = {
                 '/misc/licensing',
                 '/misc/privacy',
                 '/misc/troubleshoot',
-                '/misc/contribute'
+                '/misc/contribute',
+                '/misc/write-docs/'
             ]
         }
       ]
