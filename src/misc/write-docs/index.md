@@ -134,7 +134,7 @@ In each section in the menu (except Getting Started and Guides)
    
 ## Questions 
      
-## How To Fix Typo in the Documentation
+### How To Fix Typo in the Documentation
 
 If you see the typo or other issue on a page, you can scroll to the very bottom of the page to see a footer similar to this
 
@@ -142,13 +142,12 @@ If you see the typo or other issue on a page, you can scroll to the very bottom 
 
 If you click on the link, you will get the the markdown source of the page that you can edit. If you are not in the Mergin Maps core documentation team, you would also need to work on [fork](#when-fork-is-needed) to be able to proceed.
 
-## Why the Markdown Has Different Content as the Public Docs
+### Why the Markdown Has Different Content as the Public Docs
 
 Occasionally, it can happen that the link in the footer is broken or the content in markdown does not match the content on [Mergin Maps Documentation](https://merginmaps.com/docs). 
 This is due to the fact that the released version is the <GitHubRepo id="MerginMaps/docs/tags" desc="latest tagged release" />. The latest commit on main branch can be seen on staging server [Mergin Maps Staging Documentation](https://dev.merginmaps.com/docs).
 
-
-## How Search Works
+### How Search Works
 
 We do not use the full search, but rather limited. The search at the documentation page only indexes the titles and headers in all articles. Another reason to make sure your headers are meaningful :)
 

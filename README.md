@@ -15,7 +15,7 @@ Use GitHub Pull Requests to propose changes, we will review and merge your chang
 
 - Modify content in [docs/src](./content) folder
 - Check official [vuepress documentation](https://vuepress.vuejs.org/)
-- Check the [Mergin Maps Documentation Guildlines](https://merginmaps.com/docs/misc/write-docs/)
+- Check the [Mergin Maps Documentation Guidelines](https://merginmaps.com/docs/misc/write-docs/)
 
 <div><img align="left" width="45" height="45" src="https://raw.githubusercontent.com/MerginMaps/docs/main/src/.vuepress/public/slack.svg"><a href="https://merginmaps.com/community/join">Join our community chat</a><br/>and ask questions!</div>
 
