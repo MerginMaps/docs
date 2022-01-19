@@ -1,8 +1,8 @@
 # Write Documentation
 
-Thank you for your interest in helping out with writing [Mergin Maps Documentation](https://www.merginmaps.com/docs). The documentation framework is based on [VuePress](https://vuepress.vuejs.org/) and we welcome any contributions as <GitHubRepo id="MerginMaps/docs/pulls" desc="GitHub Pull Requests" />. If you are unsure how to contribute of what tasks are best to start with, join us on our [community chat](https://merginmaps.com/community/join) and ask in the `#dev` channel. We are happy to get you up to speed!
+Thank you for your interest in helping out with writing [Mergin Maps Documentation](https://merginmaps.com/docs). The documentation framework is based on [VuePress](https://vuepress.vuejs.org/) and we welcome any contributions as <GitHubRepo id="MerginMaps/docs/pulls" desc="GitHub Pull Requests" />. If you are unsure how to contribute of what tasks are best to start with, join us on our [community chat](https://merginmaps.com/community/join) and ask in the `#dev` channel. We are happy to get you up to speed!
 
-The version of the documentation you see on [Mergin Maps Documentation](https://www.merginmaps.com/docs) is the <GitHubRepo id="MerginMaps/docs/tags" desc="latest tagged release" /> on main branch. The latest commit on main branch can be seen on [Mergin Maps Staging Documentation](https://dev.merginmaps.com/docs).
+The version of the documentation you see on [Mergin Maps Documentation](https://merginmaps.com/docs) is the <GitHubRepo id="MerginMaps/docs/tags" desc="latest tagged release" /> on main branch. The latest commit on main branch can be seen on [Mergin Maps Staging Documentation](https://dev.merginmaps.com/docs).
 
 [[toc]]
 
@@ -144,7 +144,7 @@ If you click on the link, you will get the the markdown source of the page that 
 
 ## Why the Markdown Has Different Content as the Public Docs
 
-Occasionally, it can happen that the link in the footer is broken or the content in markdown does not match the content on [Mergin Maps Documentation](https://www.merginmaps.com/docs). 
+Occasionally, it can happen that the link in the footer is broken or the content in markdown does not match the content on [Mergin Maps Documentation](https://merginmaps.com/docs). 
 This is due to the fact that the released version is the <GitHubRepo id="MerginMaps/docs/tags" desc="latest tagged release" />. The latest commit on main branch can be seen on staging server [Mergin Maps Staging Documentation](https://dev.merginmaps.com/docs).
 
 
@@ -257,7 +257,7 @@ You can use any of supported <GitHubRepo id="markdown-it/markdown-it-emoji/blob/
 #### Preparation
 
 * Any image prepared should have an associated Gimp `.xcf` file containing the original, full resolution image
-* Screenshots of QGIS should be taken with the window sized at 1024x768. [Sizer](http://www.brianapps.net/sizer/#:~:text=Sizer%20is%20a%20freeware%20utility,to%20an%20exact%2C%20predefined%20size.) is good for this task.
+* Screenshots of QGIS should be taken with the window sized at 1024x768. [Sizer](http://www.brianapps.net/sizer) is good for this task.
 * Consistent buttons / toolbars in QGIS
 * Windows/macOS, not Linux
 * Making dialogs as small as possible without scrollbars or other bad visuals
@@ -285,9 +285,9 @@ e.g. `![](./cloudmergin.png)` if the image is in the same folder as your markdow
  
  - For global pictures/assets placed in `src/.vuepress/public` use custom component `<PublicImage />`
 
-e.g. `<PublicImage src="mergin.svg" />`
+e.g. `<PublicImage src="Mergin.svg" />`
 
-<PublicImage src="mergin.svg" />
+<PublicImage src="Mergin.svg" />
 
 ### Table of Contents 
 
