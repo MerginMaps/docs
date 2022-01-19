@@ -29,7 +29,7 @@ git clone git@github.com:MerginMaps/docs.git
 
 ### Start Local Server
 
-To be able to see your changes interactively, you should start local VuePress server, and as pre-requirement, you need to [install  yarn](https://yarnpkg.com/getting-started/install).
+To be able to see your changes interactively, you should start local VuePress server, and as requirement, you need to [install  yarn](https://yarnpkg.com/getting-started/install).
 
 Once installed you can proceed by first installation of all dependent packages and following by start of the server:
 
@@ -127,7 +127,7 @@ In each section in the menu (except Getting Started and Guides)
 * In these situations:
 
 	* Filenames:
-		* mergin-maps-mobile
+		* <NoSpellcheck id="mergin-maps-mobile" />
 	* Titles
 		* Mergin Maps Input
    

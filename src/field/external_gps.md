@@ -18,7 +18,7 @@ To use an external GPS with your Android mobile/tablet:
 - Ensure you are using Android 6 or later (Input does not support earlier Android!)
 - Your external GPS can be paired with your mobile/tablet through Bluetooth
 
-Next step is to install an app to provide mock location to Input. For that, we recommend using [Bluetooth GPS](https://play.google.com/store/apps/details?id=googoo.android.btgps) from the Google Play Store.
+Next step is to install an app to provide mock location to Input. For that, we recommend using [Bluetooth GPS](https://play.google.com/store/apps/details?id=de.pilablu.gpsconnector) from the Google Play Store.
 
 Android offers **Allow mock locations** to use the GPS apps (e.g. Bluetooth GPS app) as your source of GPS signal. The option is an advanced setting under **Developers options**. To enable **Allow mock locations**:
 - In Android device, enable **Developer options**. This is by default a hidden option under your system settings. To be able to see the options:
