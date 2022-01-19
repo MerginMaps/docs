@@ -88,4 +88,5 @@ The ecosystem consist of various components:
 - [Mergin Maps Input Privacy Policy](./misc/privacy/)
 - [Troubleshoot](./misc/troubleshoot/)
 - [Contribute](./misc/contribute/)
+- [Write Documentation](./misc/write-docs/index.md)
 
