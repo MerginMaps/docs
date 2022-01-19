@@ -1,8 +1,8 @@
 # Write Documentation
 
-Thank you for your interest in helping out with writing [Mergin Maps Documentation](https://www.merginmaps.com/docs). The documentation framework is based on [VuePress](https://vuepress.vuejs.org/) and we welcome any contributions as <GitHubRepo id="MerginMaps/docs/pulls" desc="GitHub Pull Requests" />. If you are unsure how to contribute of what tasks are best to start with, join us on our [community chat](https://www.merginmaps.com/community/join) and ask in the `#dev` channel. We are happy to get you up to speed!
+Thank you for your interest in helping out with writing [Mergin Maps Documentation](https://www.merginmaps.com/docs). The documentation framework is based on [VuePress](https://vuepress.vuejs.org/) and we welcome any contributions as <GitHubRepo id="MerginMaps/docs/pulls" desc="GitHub Pull Requests" />. If you are unsure how to contribute of what tasks are best to start with, join us on our [community chat](https://merginmaps.com/community/join) and ask in the `#dev` channel. We are happy to get you up to speed!
 
-The version of the documentation you see on [www.merginmaps.com/docs](https://www.merginmaps.com/docs) is the <GitHubRepo id="MerginMaps/docs/tags" desc="latest tagged release" /> on main branch. The latest commit on main branch can be seen on staging server [https://dev.merginmaps.com/docs](https://dev.merginmaps.com/docs).
+The version of the documentation you see on [Mergin Maps Documentation](https://www.merginmaps.com/docs) is the <GitHubRepo id="MerginMaps/docs/tags" desc="latest tagged release" /> on main branch. The latest commit on main branch can be seen on [Mergin Maps Staging Documentation](https://dev.merginmaps.com/docs).
 
 [[toc]]
 
@@ -14,13 +14,13 @@ If you are a (web) *developer*, you can skip all and just look at <GitHubRepo id
 
 Otherwise, it is better to run the local development on your machine. The similar steps as described can be done on (almost) any operation system with slight modifications (e.g. using brew or apt on macOS or Linux for installation)
 
-If you are not part of the Mergin Maps core documentation team, you will need to work with [fork](#when-fork-is-needed). Follow the instructions in the section instead. We are happy to include more people into the team, so if you consider writing more documentation, let us know on our [community chat](https://www.merginmaps.com/community/join)
+If you are not part of the Mergin Maps core documentation team, you will need to work with [fork](#when-fork-is-needed). Follow the instructions in the section instead. We are happy to include more people into the team, so if you consider writing more documentation, let us know on our [community chat](https://merginmaps.com/community/join)
 
 ### Prepare Local Repository
 
 As requirement, you need to <GitHubRepo id="git-guides/install-git" desc="install git" />
 
-Once installed, open command line/terminal and clone the repository locally (you can use HTTPS or SSH)
+Once installed, open command line/terminal and clone the repository locally (you can use http or SSH)
 
 ```
 cd MyProjects
@@ -75,7 +75,7 @@ Now go to <GitHubRepo id="MerginMaps/docs" desc="GitHub" /> and create pull requ
 
 Check the automatic tests in the pull requests for spellcheck or broken link and fix the issues in your code.
 
-To ensure your pull request will be merged, it is nice to ping the Mergin Maps docs team on the [community chat](www.merginmaps.com/community/join) in the `#dev` channel.
+To ensure your pull request will be merged, it is nice to ping the Mergin Maps docs team on the [community chat](https://merginmaps.com/community/join) in the `#dev` channel.
 
 ### When Fork Is Needed
 ::: warning 
@@ -144,8 +144,8 @@ If you click on the link, you will get the the markdown source of the page that 
 
 ## Why the Markdown Has Different Content as the Public Docs
 
-Occasionally, it can happen that the link in the footer is broken or the content in markdown does not match the content on [www.merginmaps.com/docs](www.merginmaps.com/docs). 
-This is due to the fact that the released version is the <GitHubRepo id="MerginMaps/docs/tags" desc="latest tagged release" />. The latest commit on main branch can be seen on staging server [dev.merginmaps.com/docs](dev.merginmaps.com/docs).
+Occasionally, it can happen that the link in the footer is broken or the content in markdown does not match the content on [Mergin Maps Documentation](https://www.merginmaps.com/docs). 
+This is due to the fact that the released version is the <GitHubRepo id="MerginMaps/docs/tags" desc="latest tagged release" />. The latest commit on main branch can be seen on staging server [Mergin Maps Staging Documentation](https://dev.merginmaps.com/docs).
 
 
 ## How Search Works
@@ -283,9 +283,11 @@ You can use any of supported <GitHubRepo id="markdown-it/markdown-it-emoji/blob/
 
 e.g. `![](./cloudmergin.png)` if the image is in the same folder as your markdown file
  
- - For global pictures/assets placed in `src/.vuepress/public` use custom component PublicImage
+ - For global pictures/assets placed in `src/.vuepress/public` use custom component `<PublicImage />`
 
 e.g. `<PublicImage src="mergin.svg" />`
+
+<PublicImage src="mergin.svg" />
 
 ### Table of Contents 
 
