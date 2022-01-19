@@ -1,37 +1,37 @@
 # Write Documentation
 
-Thank you for your interest in helping out with writing [Mergin Maps Documentation](www.merginmaps.com/docs). The documentation framework is based on [VuePress](https://vuepress.vuejs.org/) and we welcome any contributions as <GitHubRepo id="MerginMaps/docs/pulls" desc="GitHub Pull Requests" />. If you are unsure how to contribute of what tasks are best to start with, join us on our [community chat](www.merginmaps.com/community/join) and ask in the `#dev` channel. We are happy to get you up to speed!
+Thank you for your interest in helping out with writing [Mergin Maps Documentation](https://www.merginmaps.com/docs). The documentation framework is based on [VuePress](https://vuepress.vuejs.org/) and we welcome any contributions as <GitHubRepo id="MerginMaps/docs/pulls" desc="GitHub Pull Requests" />. If you are unsure how to contribute of what tasks are best to start with, join us on our [community chat](https://www.merginmaps.com/community/join) and ask in the `#dev` channel. We are happy to get you up to speed!
 
-The version of the documentation you see on [www.merginmaps.com/docs](www.merginmaps.com/docs) is the <GitHubRepo id="MerginMaps/docs/tags" desc="latest tagged release" /> on main branch. The latest commit on main branch can be seen on staging server [dev.merginmaps.com/docs](dev.merginmaps.com/docs).
+The version of the documentation you see on [www.merginmaps.com/docs](https://www.merginmaps.com/docs) is the <GitHubRepo id="MerginMaps/docs/tags" desc="latest tagged release" /> on main branch. The latest commit on main branch can be seen on staging server [https://dev.merginmaps.com/docs](https://dev.merginmaps.com/docs).
 
 [[toc]]
 
 ## Quick Start
 
-If you are about to do only *a tiny change* in the documentation, you can skip this section and fast track to section [for doing small modifications](./index.md#fix-typo-in-the-documentation). 
+If you are about to do only *a tiny change* in the documentation, you can skip this section and fast track to section [for doing small modifications](./index.md#how-to-fix-typo-in-the-documentation). 
 
 If you are a (web) *developer*, you can skip all and just look at <GitHubRepo id="MerginMaps/docs" desc="Mergin Maps README" />.
 
 Otherwise, it is better to run the local development on your machine. The similar steps as described can be done on (almost) any operation system with slight modifications (e.g. using brew or apt on macOS or Linux for installation)
 
-If you are not part of the Mergin Maps core documentation team, you will need to work with [fork](#when-fork-is-needed). Follow the instructions in the section instead. We are happy to include more people into the team, so if you consider writing more documentation, let us know on our [community chat](www.merginmaps.com/community/join)
+If you are not part of the Mergin Maps core documentation team, you will need to work with [fork](#when-fork-is-needed). Follow the instructions in the section instead. We are happy to include more people into the team, so if you consider writing more documentation, let us know on our [community chat](https://www.merginmaps.com/community/join)
 
 ### Prepare Local Repository
 
-As requirement, you need to [install git](https://github.com/git-guides/install-git).
+As requirement, you need to <GitHubRepo id="git-guides/install-git" desc="install git" />
 
-Once installed, open command line/terminal and clone the repository locally.
+Once installed, open command line/terminal and clone the repository locally (you can use HTTPS or SSH)
 
 ```
 cd MyProjects
-git clone https://github.com/MerginMaps/docs.git
+git clone git@github.com:MerginMaps/docs.git
 ```
 
 ### Start Local Server
 
 To be able to see your changes interactively, you should start local VuePress server, and as pre-requirement, you need to [install  yarn](https://yarnpkg.com/getting-started/install).
 
-Once installed you can proceed by first installation of all dependend packages and following by start of the server:
+Once installed you can proceed by first installation of all dependent packages and following by start of the server:
 
 ```
 cd MerginMaps/docs
@@ -39,7 +39,7 @@ yarn install
 yarn dev
 ```
 
-If `yarn install` fails with `*ERROR: [Errno 2] No such file or directory: 'install'*` then [check out this page](www.stackoverflow.com/questions/46013544/yarn-install-command-error-no-such-file-or-directory-install).
+If `yarn install` fails with `*ERROR: [Errno 2] No such file or directory: 'install'*` then [check out this page](https://www.stackoverflow.com/questions/46013544/yarn-install-command-error-no-such-file-or-directory-install).
 
 
 Now you can open `http://localhost:8080/` in your browser and see the live version.
@@ -57,7 +57,7 @@ git pull origin main
 Next is to create your branch where you work. Best to create some descriptive branch name.
 
 ```
-git checkout -b my_docs_fix
+git checkout -b my_docs_fix_branchname
 ```
 
 Now, *modify the markdowns* in your favourite text editor.
@@ -68,7 +68,7 @@ When done, commit your changes and push your branch to GitHub
 git status
 git add .
 git commit -m "Improved documentation of XXX"
-git push 
+git push origin my_docs_fix_branchname
 ```
 
 Now go to <GitHubRepo id="MerginMaps/docs" desc="GitHub" /> and create pull request (either from web or use the link from the terminal).
@@ -82,7 +82,7 @@ To ensure your pull request will be merged, it is nice to ping the Mergin Maps d
 You can skip this step, in case you are member of the Mergin Maps docs team and you have write permissions to the repository. 
 :::
 
-To fork <GitHubRepo id="MerginMaps/docs" /> repository with the source code of documentation, follow the steps as described in [GitHub docs](https://docs.github.com/en/get-started/quickstart/fork-a-repo). 
+To fork <GitHubRepo id="MerginMaps/docs" /> repository with the source code of documentation, follow the steps as described in <GitHubRepo id="git-guides/install-git" desc="GitHub docs" /> [](https://docs.github.com/en/get-started/quickstart/fork-a-repo). 
 
 You will end up with the fork of <GitHubRepo id="MerginMaps/docs" /> in your namespace. 
 
@@ -90,8 +90,8 @@ If you use fork, you need to add both fork and upstream to your local namespace:
 
 ```
 mkdir MerginMaps; cd MerginMaps
-git clone https://github.com/<my_fork_of_MerginMaps/docs>.git
-git remote add upstream https://github.com/MerginMaps/docs.git
+git clone git@github.com:<my_fork_of_MerginMaps/docs>.git
+git remote add upstream git@github.com:MerginMaps/docs.git
 ``` 
 
 you need to update your remote fork before starting the work:
@@ -218,7 +218,7 @@ Custom title example
 
 ### Emoji
 
-You can use any of supported [emoji](https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json) by markdown-it project.
+You can use any of supported <GitHubRepo id="markdown-it/markdown-it-emoji/blob/master/lib/data/full.json" desc="supported emoji" /> by markdown-it project.
 
 
 :tada: :grinning: :rofl: :scream: :heart: :pray:
@@ -256,8 +256,8 @@ You can use any of supported [emoji](https://github.com/markdown-it/markdown-it-
 
 #### Preparation
 
-* Any image prepared should have an associated .xcf file containing the original, full resoluion image
-* Screenshtos of QGIS should be taken with the window sized at 1024x768. [Sizer](http://www.brianapps.net/sizer/#:~:text=Sizer%20is%20a%20freeware%20utility,to%20an%20exact%2C%20predefined%20size.) is good for this task.
+* Any image prepared should have an associated Gimp `.xcf` file containing the original, full resolution image
+* Screenshots of QGIS should be taken with the window sized at 1024x768. [Sizer](http://www.brianapps.net/sizer/#:~:text=Sizer%20is%20a%20freeware%20utility,to%20an%20exact%2C%20predefined%20size.) is good for this task.
 * Consistent buttons / toolbars in QGIS
 * Windows/macOS, not Linux
 * Making dialogs as small as possible without scrollbars or other bad visuals

@@ -27,6 +27,7 @@ dataset
 datasets
 DateTime
 docker
+dialogs
 EPSG
 ESRI
 EXIF
@@ -47,6 +48,7 @@ GeoPackages
 GEOS
 GeoTIFF
 GIS
+Gimp
 gpkg
 GPL
 Helmert
@@ -57,6 +59,7 @@ iconv
 iOS
 iPhone
 jpeg
+js
 JPG
 json
 LGPL
@@ -104,6 +107,7 @@ prepopulate
 predefined
 predefine
 programmatically
+px
 PyPI
 PNG
 PostGIS
@@ -135,6 +139,7 @@ resampling
 richtext
 SaaS
 Scania
+scrollbars
 sdcard
 SDK
 shapefile
@@ -161,6 +166,7 @@ trialing
 Uncheck
 uncheck
 undoable
+url
 uuid
 UUID
 Valuemap
@@ -173,6 +179,7 @@ WMS
 WMTS
 XYZ
 xyz
+xcf
 yml
 zlib
 zoomstack
