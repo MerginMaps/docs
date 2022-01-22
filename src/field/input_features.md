@@ -24,7 +24,7 @@ Surveyed features are added to the active layer, which is shown just above the b
 ![](../tutorials/mobile/merginmaps-mobile-active-layer.jpg)
 
 ### Capture points
-The crosshair you will see on your map will be used as the recorded location. You can change the position of your point by pinching and dragging the background map. If you want to recentre the map to your current position, tap the **GPS** button. 
+The cross hairs you will see on your map will be used as the recorded location. You can change the position of your point by pinching and dragging the background map. If you want to recentre the map to your current position, tap the **GPS** button. 
 
 To capture your point, press **Add Point**.
 
