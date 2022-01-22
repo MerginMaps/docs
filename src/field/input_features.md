@@ -1,74 +1,58 @@
-# Features
+# How to add, edit, delete features
 
-## Registration from Input
+[[toc]]
 
-To be able to transfer your data to your mobile/tablet device, share your project and track changes, you will need to register to the <MainDomainNameLink /> . You can sign up to the service from the <MainDomainNameLink id="register" desc="web" /> or alternatively from within the app.
+::: tip
+If you are new to <MobileAppName />, follow our [tutorials](../tutorials/capturing-first-data/) to get familiar with the app.
+:::
 
-- Launch the Input app from your mobile/tablet device
-- Select **Home**
-- On the top right of the screen, select the icon for profile/account
-- In the new page, select **Sign up**
-	![register](./input_sign_in.png)
-- Fill in the form for registration and select **Sign up**
-	![register](./input_sign_up.png)
-- You will receive an email to activate your account. You can follow the instructions in the mail to verify your account (optional)
-- You can sign in to your Mergin account
+Open a project you want to work with in <MobileAppName />. This can be a project you own or a project that is shared with you, in which case you need to have [write permission](../manage/permissions/#project-permissions) to add or edit features.
 
-## Accessing projects
-You can install Input from Google Play Store. Once you open the application for the first time, it will take you to **Home** screen. This screen displays all the projects stored locally (under /sdcard/INPUT folder).
+::: tip
+To be able to transfer your data to your mobile/tablet device, share your project and track changes, you will need to [sign up to Mergin Maps](../setup/sign-up-to-mergin-maps/).
+:::
 
-![MY PROJECTS screen in Input](./input_projects_home.png)
+## Add features
+To add a feature, tap the **Record** button from the bottom panel. 
 
-To access your projects or those shared with you through Mergin, select **My projects** or **Shared with me**  tabs respectively. You will need your log in details to sign in to Mergin:
+::: warning
+A warning will appear when [GPS accuracy](./gps_accuracy/) falls below a threshold. Accuracy thresholds can be changed in **Settings**.
+:::
 
-![Mergin sign in screen in Input](./input_mergin_signin.png)
+Surveyed features are added to the active layer, which is shown just above the bottom panel. You can change the active layer by tapping on it and selecting one from the list of editable layers in the project.
 
-Once logged in, you can download your project to work on it locally by pressing download button to the right of the project:
+![](../tutorials/mobile/merginmaps-mobile-active-layer.jpg)
 
-![My projects screen in Input](./input_projects_my_projects.png)
+### Capture points
+- press **Add Point** to capture a point
 
-The project will be available for loading in Input after you download it locally. Select **Home** and you should be able to see your downloaded project:
+![Capturing point](../tutorials/capturing-first-data/merginmaps-mobile-default-point-position.jpg)
 
-![Home screen in Input](./input_projects_home_updated.png)
+You can change the position of the point by pinching and dragging the background map. If you want to recentre the map to your current position, press the **GPS** button.
 
-Selecting a project under **Home** will open it in INPUT.
+### Capture lines or areas
+There are two methods of capturing lines and areas:
+  - using **Add point** to capture vertices of your line or area
+  - pressing **GPS** to capture vertices based on your location. You can set how often you want to capture a vertex in **Line rec. interval** in [**Settings**](./input_ui/#gps-2).
 
-## Adding/editing features
+Once you are finished, press **Done**. If your feature is an area, the last and the first vertex will be used to close the shape.
 
-To add a feature, select the record button from the lower panel. When you tap on the record button, it will list all the layers, you can edit. In Input, you have two modes to capture feature:
+![Capturing lines](./input-capture-line.png)
 
-  - GPS location or streaming (if you are capturing lines/areas)
-  - Free hand: by adding points or nodes to lines or areas
+## Edit or delete features
+Tap on a feature and press the edit button.
+![Edit button](../tutorials/mobile/merginmaps-mobile-edit-button.jpg)
 
-### Capturing points
+Now you can change the attributes in the form and modify the shape of the feature using **Edit geometry**. Adjust the location by panning the map or use **GPS** in the same manner as when adding new features. When you are happy with your changes, press **Save**.
 
-If your survey layer is a point layer, it will show a cross-hair at your GPS location. You can confirm the location by pressing **Confirm**. Alternatively, you can move the map to another location. The point below the cross-hair will be used as the recorded location. You can move back to your location, by pressing **GPS**.
+If you want to delete the feature, press the **Delete** button.
 
-![Capturing point](./input_capture_point.png)
+![Edit and delete](./input-edit-delete.png)
 
-### Capturing lines or areas
+## Synchronise changes
+Don't forget to upload your changes to Mergin Maps!
 
-If your survey layer is a line or area, the panel at the bottom changes to a figure similar to the one below:
+Select **Projects** in the bottom panel, open the **Home** tab and press the sync button to send the updated data to the cloud.
 
-![Capturing lines](./input_capture_line.png)
+![Sync](../tutorials/mobile/merginmaps-mobile-sync-project.jpg)
 
-You can:
-
-- Use **Add point** to define the shape of your line or area manually by navigating through the map
-- If you want to **stream** the GPS to shape your line or area, press and hold **GPS** button on the bottom left corner.
-
-Once finished, press **Done**. If your feature is an area, it will join the last point to the first point to close the shape.
-
-## Viewing/deleting existing data
-You can view the existing data by tapping on them on the map. It will open a preview panel (according to Display settings in QGIS - see project preparation section). To edit the form related to an existing feature, you can press the pencil within the preview panel.
-
-For point layers, you can also change the location (geometry) of your layer, by pressing **Edit geometry**. Similar to capturing a new point, a map will appear with a cross-hair at your GPS location. You can adjust the location of the cross-hair by panning the map and press **Confirm**.
-
-If you want to delete the item, you can press the recycle bin from the lower panel in the form edit.
-
-## Synchronisation of data/ projects
-You can upload your changes through the Mergin service, once you have network connectivity. Select Project from the lower panel and then tap on **My projects** (or **Shared with me** if you have write access to the shared project). Input should automatically flag changed projects with a synchronise icon.
-
-![My projects screen with updated local project](./input_my_projects_upload.png)
-
-Pressing sync button to the right of the project will send the updated data to the Mergin service. Similarly, if a project and its data has been updated through the Mergin service, you will be notified to synchronise the changes to your local copy.

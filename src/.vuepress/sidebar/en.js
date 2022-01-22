@@ -67,7 +67,6 @@ module.exports = {
                 '/layer/settingup_forms_settings',
                 '/layer/exif_metadata',
                 '/layer/settingup_forms_photo',
-                '/layer/reuse_last_values',
                 '/layer/attach-multiple-photos-to-features/',
                 '/layer/position_variables',
                 '/layer/plugin-variables',
@@ -83,6 +82,7 @@ module.exports = {
                 '/field/gps_accuracy',
                 '/field/external_gps',
                 '/field/input_features',
+                '/field/reuse-last-values/',
                 '/field/input_ui',
                 '/layer/working_with_nonspatial_data',
             ]

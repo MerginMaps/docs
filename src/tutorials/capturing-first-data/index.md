@@ -80,7 +80,7 @@ The background map in this simple example requires network connectivity so may n
 
 4. Press ***Add Point***:
 
-   ![](./merginmaps-mobile-default-point-poition.jpg)
+   ![](./merginmaps-mobile-default-point-position.jpg)
 
 5. Enter some notes and attach a photo using your camera:
 
