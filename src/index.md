@@ -73,7 +73,7 @@ The ecosystem consist of various components:
 - [GPS accuracy](./field/gps_accuracy/)
 - [External GPS](./field/external_gps/)
 - [How to add, edit, delete features](./field/input_features/)
-- [How to reuse last entered values](./layer/reuse_last_values/)
+- [How to reuse last entered values](./field/reuse-last-values/)
 - [Input App Interface](./field/input_ui/)
 - [Working with non-spatial tables](./layer/working_with_nonspatial_data/)
 
