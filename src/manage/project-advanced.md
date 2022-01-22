@@ -39,7 +39,8 @@ Once the user requests access, you (or another project owner) can open the proje
 ### Making your project public/private
 Your projects are private by default. If you make it [public](./permissions/#public-and-private-projects), everyone can see your data and project history. However, they cannot contribute to your public project unless you grant them the write permission.
 
-To make your project public, go to **Settings** and click on **Make public**. 
+1. Choose the project you want to make public
+2. Go to **Settings** and click on **Make public**
 
 If you change your mind, you can similarly make your project private by clicking **Make private**.
 
@@ -49,9 +50,9 @@ If you change your mind, you can similarly make your project private by clicking
 
 There is an option to transfer the ownership of a project to another user or organisation. 
 
-1. log in <MainDomainNameLink /> and choose the project you want to transfer
-2. go to **Settings** and click on **Transfer project**. 
-3. enter the name of a user/organisation and **Request transfer**
+1. Log in <MainDomainNameLink /> and choose the project you want to transfer
+2. Go to **Settings** and click on **Transfer project**
+3. Enter the name of a user/organisation and **Request transfer**
 4. The user/organisation will be notified to accept or reject the transfer request. The request is valid for 6 days. After that period, if user or organisation does not accept the request, you will remain the owner of the project.
 
 ![transfer project](./project-transfer.png)
@@ -61,8 +62,8 @@ If you want to delete a project, you can do so through <MainDomainNameLink /> or
 
 ### Delete a project through cloudmergin.com
 
-1. log in <MainDomainNameLink /> and choose the project you want to delete
-2. go to **Settings** and click on **Delete project**
+1. Log in <MainDomainNameLink /> and choose the project you want to delete
+2. Go to **Settings** and click on **Delete project**
 
 ![delete project](./project-delete.png)
 
@@ -73,9 +74,9 @@ This operation cannot be undone and the project data are permanently deleted.
 ### Delete a project using the Mergin Maps plugin 
 Using the <QGISPluginName />, you can delete a Mergin project either locally on your PC or on the Mergin server. To be able to delete the project on the Mergin server, you need to first delete the files locally.
 
-1. in QGIS, go to the Mergin entry in the Browser panel
-2. right-click on the project name and select **Remove locally**. This will remove the project from your PC, but the project will be still available on the Mergin server. You will be able to download the project again.
-3. right-click on the project name again name and select **Remove from server** option. This will remove the Mergin project completely. 
+1. In QGIS, go to the Mergin entry in the Browser panel
+2. Right-click on the project name and select **Remove locally**. This will remove the project from your PC, but the project will be still available on the Mergin server. You will be able to download the project again.
+3. Right-click on the project name again name and select **Remove from server** option. This will remove the Mergin project completely. 
 
 ::: warning
 This operation cannot be undone and the project data are permanently deleted.
