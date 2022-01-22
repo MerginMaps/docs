@@ -43,7 +43,7 @@ The ecosystem consist of various components:
 - [Synchronisation](./manage/synchronisation/)
 - [How to create a new project](./manage/create-project/)
 - [Home page and dashboard](./manage/dashboard/)
-- [Transfer or delete a project](./manage/project-advanced/)
+- [How to share, transfer or delete a project](./manage/project-advanced/)
 - [Project history and versions](./manage/project-details/)
 - [Deleting a project](./manage/plugin-delete-project/)
 - [How to synchronise project](./manage/plugin-sync-project/)

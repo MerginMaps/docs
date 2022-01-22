@@ -1,18 +1,33 @@
-# Transfer or delete a project
+# How to share, transfer or delete a project
+[[toc]]
 
-## Sharing
+## Share a project
 
-With the Mergin service, you can share your project with other Mergin users to view or contribute to it. There are two methods of sharing projects:
+Through <MainDomainNameLink />, you can share your project with other Mergin users to view or contribute to it. There are two methods of sharing projects: adding users manually or sending them a link.
 
-The first method is to go to the project setting and add user(s) with the type of permissions you'd like to assign to them. There are three types of permissions:
+::: tip
+You can follow our [Working collaboratively](../tutorials/working-collaboratively/) tutorial to see detailed instructions on how to share your project.
+:::
 
-- Owner: can read, write, delete the whole project. Owner can also further share the project
-- Write: can read and write the project data
-- Read: can only view the project and data (including project history)
+### Adding users to the project
 
-![Mergin sharing setting](./project_sharing_setting_manual.png)
+1. Choose the project you want to share and go the **Settings**. 
+2. In **Invite collaborators** section, enter the Mergin Maps usernames of user(s) you want to invite to collaborate and click **Add**.
+3. Assign them permissions according to their role in **Manage Access** section. There are three types of permissions:
+   - *Owner* can read, write, delete the whole project and also share it further.
+   - *Writer* can read and write; they can see the project and data and also make edits.
+   - *Reader* can only see the project and data (including project history).
 
-Another method which is more suitable for sharing with a large number of users is to send them a link (e.g. <MerginMapsProject id="saber/zoomstack" />) to your private project. If a user does not have access to the project, there will be a button to request access. Note that user has to be logged into the Mergin to be able to see the request button:
+![Mergin sharing setting](./project-share-add-users.png)
+
+### Sending a link to your project
+
+Another method which is more suitable for sharing with a large number of users is to send them a link (e.g. <MerginMapsProject id="sarah/Basic survey/tree" />) to your private project. 
+
+1. Choose the project you want to share 
+If a user does not have access to the project, there will be a button to request access. 
+
+Note that user has to be logged into the Mergin to be able to see the request button:
 
 ![Mergin sharing setting](./project_sharing_send_request.png)
 
@@ -20,7 +35,7 @@ Once the user requests access, the project owner(s) can open the project setting
 
 ![Mergin sharing setting](./project_sharing_requests.png)
 
-## Transfer or Delete
+## Transfer or delete a project
 
 To access the advanced project settings:
 
