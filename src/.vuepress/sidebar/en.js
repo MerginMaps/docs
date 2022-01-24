@@ -38,7 +38,6 @@ module.exports = {
                 '/manage/dashboard',
                 '/manage/project-advanced',
                 '/manage/project-details',
-                '/manage/plugin-delete-project',
                 '/manage/plugin-sync-project',
                 '/manage/selective_sync/',
                 '/manage/data_sync'
