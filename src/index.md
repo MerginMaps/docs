@@ -64,7 +64,6 @@ The ecosystem consist of various components:
 - [Advanced form configuration](./layer/settingup_forms_settings/)
 - [Exif Metadata](./layer/exif_metadata/)
 - [Capturing Photos](./layer/settingup_forms_photo/)
-- [Reuse last entered values](./layer/reuse_last_values/)
 - [Attach Multiple Photos to Features](./layer/attach-multiple-photos-to-features/)
 - [Extra Position Variables](./layer/position_variables/)
 - [Extra QGIS variables](./layer/plugin-variables/)
@@ -73,7 +72,8 @@ The ecosystem consist of various components:
 ## Fieldwork Tips
 - [GPS accuracy](./field/gps_accuracy/)
 - [External GPS](./field/external_gps/)
-- [Features](./field/input_features/)
+- [How to add, edit, delete features](./field/input_features/)
+- [How to reuse last entered values](./field/reuse-last-values/)
 - [Input App Interface](./field/input_ui/)
 - [Working with non-spatial tables](./layer/working_with_nonspatial_data/)
 
