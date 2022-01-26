@@ -37,6 +37,7 @@ module.exports = {
                 '/manage/create-project/',
                 '/manage/dashboard',
                 '/manage/project-advanced',
+                '/manage/plugin-multi-server-use/',
                 '/manage/project-details',
                 '/manage/plugin-sync-project',
                 '/manage/selective_sync/',
