@@ -122,7 +122,7 @@ In each section in the menu (except Getting Started and Guides)
 
 ### Naming things
 
-* We can use Vue components references names, allowing us to change them quickly in the future
+* We can use Vue [custom components](./index.md#naming-mergin-maps-components) references names, allowing us to change them quickly in the future.
 * This doesn't work for things like url component names and anchor links
 * In these situations:
 
@@ -309,8 +309,7 @@ Reference other markdowns
 
 e.g. `[see this](../web/otherfile.md#permissions)`
 
-
-### Custom Components 
+## Custom Vue Components for Markdown
 
 see `src/.vuepress/components` for list of all components
 
@@ -319,36 +318,46 @@ If you are adding new component:
  - add your component to `src/.vuepress/components/MyComponent.vue`
  - use in markdown as `<MyComponent></MyComponent>` or `<MyComponent />`
 
-#### Reference QGIS Help pages
+### Reference QGIS Help pages
 
 Use `<QGISHelp />` component, e.g. `<QGISHelp ver="3.10" link="user_manual/index.html" text="See QGIS Help page" />` transforms to
 
 <QGISHelp ver="3.10" link="user_manual/index.html" text="See QGIS Help page" />
     
-#### Embed YouTube content
+### Embed YouTube content
 
 Use `<YouTube />` component, e.g. `<YouTube id="DQXrINUqiFI" />` transforms to
 
 <YouTube id="DQXrINUqiFI" />
 
-#### Reference Mergin project 
+### Reference Mergin project 
 
 Use `<MerginMapsProject />` component, e.g. `<MerginMapsProject id="lutraconsulting/test_forms" />` transforms to
 
 <MerginMapsProject id="lutraconsulting/test_forms" />
 
-#### Show Input App Google/Apple badges for download
+### Show Input App Google/Apple badges for download
 
 Use `<AppDownload />` component
     
 <AppDownload />
 
+### Naming Mergin Maps Components
 
-### Translations
+Use `<MainDomainName />` component, transforms to <MainDomainName />
+
+Use `<MainPlatformName />` component, transforms to <MainPlatformName />
+
+Use `<MobileAppName />` component, transforms to <MobileAppName />
+
+Use `<QGISPluginName />` component, transforms to <QGISPluginName />
+
+
+## Translations
 
 Translations are not yet supported/implemented. 
 
-### Known Limitations
+## Known Limitations
 
 * Anchors don't work
 * elements in anchors don't show
