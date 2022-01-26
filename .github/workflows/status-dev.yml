@@ -20,6 +20,6 @@ jobs:
         uses: ruzickap/action-my-broken-link-checker@v2
         with:
           url: ${{ env.URL }}
-          cmd_params: --buffer-size=8192 --max-connections=10 --color=always --skip-tls-verification --timeout=40 --exclude=.*openstreetmap.org.* --exclude=.*sqlite.org.* --exclude=.*gnu.org.* # openstreetmap gives 403 for some reason?; mime duplicate parameter name for sqlite.org; TCP address timed out for GNU.org
+          cmd_params: --buffer-size=8192 --max-connections=10 --color=always --skip-tls-verification --timeout=40 --exclude=.*openstreetmap.org.* --exclude=.*sqlite.org.* --exclude=.*gnu.org.* --exclude=.*libtiff.org.* # openstreetmap gives 403 for some reason?; mime duplicate parameter name for sqlite.org; TCP address timed out for GNU.org
           run_timeout: 600
 
