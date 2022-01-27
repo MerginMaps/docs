@@ -129,11 +129,11 @@ In each section in the menu (except Getting Started and Guides)
 		* <NoSpellcheck id="mergin-maps-mobile" />
 	* Titles/Sidebar
 		* Mergin Maps Input
-    * For titles (`#`)/sidebar capitalize the first letter in *all* words
+    * For titles (`#`)/sidebar capitalise the first letter in *all* words
         * Correct: "Opening Surveyed Data on Your Computer"
         * Wrong: ~~"Opening surveyed data on your computer"~~
         * Never shorten the names of components (e.g. Mergin Maps Input)
-    * For headers (`##`, `###`, `####` )  capitalize only the first letter in *first* word
+    * For headers (`##`, `###`, `####` )  capitalise only the first letter in *first* word
         * Correct: "Putting your project in the cloud"
         * Wrong: ~~"Putting Your Project in the Cloud"~~
         * Never shorten the names of components (e.g. Mergin Maps Input)
