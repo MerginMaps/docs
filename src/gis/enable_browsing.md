@@ -15,7 +15,7 @@ Input app, only displays a summary of the table for all the data. By default, it
 
 ![display_name](./qgis_properties_display.png)
 
-## Browse data forms in Input
+## Browse data forms in Mergin Maps Input
 You can now open the attribute table in Input, by:
 
 - Open a project in Input

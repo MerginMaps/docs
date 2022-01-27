@@ -2,7 +2,7 @@
 
 <!--- IMPORTANT: This permalink is referenced from Input App -->
 
-## Mergin Server (Android/iOS)
+## Mergin Maps Cloud (Android/iOS)
 
 Input comes with built-in functionality to seamlessly synchronise your projects and data through Mergin. If you want to use this functionality, you will need to sign up to [Mergin](https://public.cloudmergin.com).
 

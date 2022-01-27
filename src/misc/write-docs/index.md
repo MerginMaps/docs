@@ -123,15 +123,21 @@ In each section in the menu (except Getting Started and Guides)
 ### Naming things
 
 * We can use Vue [custom components](./index.md#naming-mergin-maps-components) references names, allowing us to change them quickly in the future.
-* This doesn't work for things like url component names and anchor links
+* This doesn't work for things like url component names, anchor links, titles or pages, sidebar
 * In these situations:
-
 	* Filenames:
 		* <NoSpellcheck id="mergin-maps-mobile" />
-	* Titles
+	* Titles/Sidebar
 		* Mergin Maps Input
-   
-   
+    * For titles (`#`)/sidebar capitalise the first letter in *all* words
+        * Correct: "Opening Surveyed Data on Your Computer"
+        * Wrong: ~~"Opening surveyed data on your computer"~~
+        * Never shorten the names of components (e.g. Mergin Maps Input)
+    * For headers (`##`, `###`, `####` )  capitalise only the first letter in *first* word
+        * Correct: "Putting your project in the cloud"
+        * Wrong: ~~"Putting Your Project in the Cloud"~~
+        * Never shorten the names of components (e.g. Mergin Maps Input)
+
 ## Questions 
      
 ### How To Fix Typo in the Documentation
@@ -150,6 +156,11 @@ This is due to the fact that the released version is the <GitHubRepo id="MerginM
 ### How Search Works
 
 We do not use the full search, but rather limited. The search at the documentation page only indexes the titles and headers in all articles. Another reason to make sure your headers are meaningful :)
+
+### How to Add New Page to Menu
+
+1. Add the page in `src/.vuepress/sidebar/en.js`, the order of articles in the menu is always "concepts - how to - reference".
+2. Add the page in `src/index.md`
 
 ## Using Markdown
 

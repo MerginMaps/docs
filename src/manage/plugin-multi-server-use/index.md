@@ -1,4 +1,4 @@
-# How to Use <QGISPluginName /> with Multiple Servers
+# How to Use QGIS Plugin with Multiple Servers
 
 There is a default server <MainDomainNameLink /> which is configured in <QGISPluginName />. But there might be some cases you will want to use some custom server (e.g. you host it yourself). We will cover two typical use cases
 
@@ -13,7 +13,7 @@ Let's start with setting of custom <MainPlatformName /> server. It can be done i
 
 What happens is that server URL is saved in current QGIS profile settings. So whenever you open QGIS with that profile, the <MainPlatformName /> server is associated. 
 
-## Migration between <MainPlatformName /> servers
+## Migration between Mergin Maps servers
 
 You might have started working on one server (e.g. staging server, official cloud) and then you decided to migrate to different <MainPlatformName />  server. If you change a server URL as in the config above, you will be connected to different server and this option will hold in subsequent QGIS sessions until you change it again. This way you can switch between servers for a single QGIS profile. All projects for all your servers that you downloaded to your computer are still remembered. 
 

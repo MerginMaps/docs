@@ -1,4 +1,4 @@
-# How to add, edit, delete features
+# How to Add, Edit, Delete Features
 
 [[toc]]
 

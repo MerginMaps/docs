@@ -27,7 +27,7 @@ Open Camera app -> Camera settings -> Location tags.
 Open Settings -> Privacy -> Location Services -> Camera (app).
 ![photos](./ios_geo_tags.png)
 
-## Use it with Photo widget
+## Use it with photo widget
 The parameter `<ABSOLUTE_PATH_TO_IMAGE>` can be set with an expression using value of another field. Therefore you can use a value from a text field of an attachment type as a parameter for Input's EXIF functions as following:
 
 `read_exif(@project_home + '/' + "photo", 'GPSImgDirection')`

@@ -1,4 +1,4 @@
-# How to install QGIS
+# How to Install QGIS
 
 1. Navigate to the [QGIS download page](https://qgis.org/en/site/forusers/download.html)
 

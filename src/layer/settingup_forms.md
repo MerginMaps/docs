@@ -1,4 +1,4 @@
-# Setting up form widgets
+# Setting Up Form Widgets
 
 ::: tip
 You can follow the examples in this section by cloning the following projects:
@@ -15,7 +15,7 @@ You can follow the examples in this section by cloning the following projects:
 
 When capturing geo-data, it is often required to fill in a form related to the surveyed point, line or area. The forms set up can simplifying filling the data and can also ensure the correct information is populated.
 
-## Widget Gallery
+## Widget gallery
 Input supports a number of edit widget types for forms such as: drop-down options, slider, date and time, checkbox, photos.
 
 Setting up forms can be configured using <QGISHelp ver="3.16" link="user_manual/working_with_vector/vector_properties.html#edit-widgets" text="QGIS widget types" /> .
@@ -36,7 +36,7 @@ In the sections below, we go through examples of setting up different widgets fo
 
 In addition to the edit widgets, extra configuration can be done to the fields and form layout to make the data collection easier and more consistent. For example: setting a default value, conditional visibility and constraint enforcement.
 
-## Text Widget
+## Text widget
 
 Adding or editing text fields are the most common method for inserting information within the forms.
 
@@ -58,7 +58,7 @@ In QGIS, the default widget for most types of fields is the **Text Edit** widget
 
 Ensure to save and synchronise your project.
 
-### Input
+### Mergin Maps Input
 
 To use the multiline text edit widget in the form from Input:
 
@@ -89,7 +89,7 @@ To set a field in your form to a numeric one:
 
 Ensure to save and synchronise your project.
 
-### Input
+### Mergin Maps Input
 
 To use the numeric widget in your form from Input:
 
@@ -128,7 +128,7 @@ To set up a slider widget:
 
 Ensure to save and synchronise your project.
 
-### Input
+### Mergin Maps Input
 
 To use the slider widget in the form from Input:
 
@@ -151,7 +151,7 @@ To be able to use your camera in forms to scan QR codes and populate the text in
 
 To be able to scan QR codes in your forms, your field or the alias for the field should contain **qrcode** (the text is not case sensitive and it can be be in combination of lower or upper case letters). For an example, see the <MerginMapsProject id="documentation/test_qrcode" />
 
-### Input
+### Mergin Maps Input
 
 To use the QR code scanner in the form from Input:
 
@@ -190,7 +190,7 @@ By setting the default value to **now()**, it will assign the date and time when
 
 Ensure to save and synchronise your project.
 
-### Input
+### Mergin Maps Input
 
 To use the date/time widget in the form from Input:
 
@@ -222,7 +222,7 @@ To set up a checkbox widget:
 
 Ensure to save and synchronise your project.
 
-### Input
+### Mergin Maps Input
 
 To use the date/time widget in the form from Input:
 
@@ -256,7 +256,7 @@ To set up a value map widget:
 
 Ensure to save and synchronise your project.
 
-### Input
+### Mergin Maps Input
 
 To use the drop-down widget in the form from Input:
 
@@ -266,7 +266,7 @@ To use the drop-down widget in the form from Input:
 - The form will appear
 - Under **Data** tab, you can select the **Habitat type:** from the drop-down menu:
 
-## Value Relation
+## Value relation
 
 **Value Relation** widget is very similar to the [Value Map](#valuemap) tool, but the values for the drop-down menu come from another table (e.g. a CSV or another GeoPackage table).
 
@@ -298,7 +298,7 @@ To set up a value relation widget:
 
 Ensure to save and synchronise your project.
 
-### Input
+### Mergin Maps Input
 
 To use the drop-down widget in the form from Input:
 

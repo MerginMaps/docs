@@ -1,4 +1,4 @@
-# Home page and dashboard
+# Home Page and Dashboard
 
 When you log in to Mergin website, you will be presented with a dashboard for quick access to your latest projects or the ones shared with you.
 

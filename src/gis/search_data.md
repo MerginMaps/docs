@@ -1,4 +1,4 @@
-# Search values from attribute fields
+# Search Values from Attribute Fields
 
 You can search for the content of your attribute data from Input. Input is also capable of **split search**: searching values from multiple fields.
 
@@ -11,7 +11,7 @@ To be able to search the attribute table of a layer, you need to first configure
 ![browse_enable](./qgis_data_sources.png)
 - Under **Searchable** column, select the layers you'd like to search
 
-## Search attribute data in Input
+## Search attribute data in Mergin Maps Input
 
 To search for a record, you first need to [open the attribute table](./enable_browsing.md). You can then type in the string and Input should shortlist the matching records.
 

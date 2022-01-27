@@ -1,4 +1,4 @@
-# Extra QGIS variables
+# Extra QGIS Variables
 
 The plugin adds several variables that can be used in QGIS expressions:
 

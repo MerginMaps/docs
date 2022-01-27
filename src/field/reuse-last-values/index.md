@@ -1,4 +1,4 @@
-# How to reuse last entered values
+# How to Reuse Last Entered Values
 
 <MobileAppName /> supports faster digitising of similar features by allowing users to reuse last entered values of selected attributes. When attributes are marked for reuse, the values from the last feature are already entered when a new feature is created.
 

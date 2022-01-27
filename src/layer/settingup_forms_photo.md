@@ -19,7 +19,7 @@ To set up a photo widget:
 
 Ensure to save and synchronise your project.
 
-### Input
+### Mergin Maps Input
 
 To use the photo widget in the form from Input:
 

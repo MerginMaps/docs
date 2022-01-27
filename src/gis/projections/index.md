@@ -2,13 +2,13 @@
 
 [[toc]]
 
-## Map Projections
+## Map projections
 
 **Map projection** is the operation defining how to show/display spatial data (your data with associated coordinate reference system) on 2D flat surface (QGIS map canvas or printed paper map). There are various types of projections that are used in cartography (planar projection, cylindrical projections, conic projections). Each type of projection could preserve some attribute of the 2d "flat" map. Some projections preserve distance, others areas, etc. For example Mercator Projection was created to display accurate compass bearings for sea travel.
 
 You can read more about map projections in the <QGISHelp ver="3.16" link="gentle_gis_introduction/coordinate_reference_systems.html#map-projection-in-detail" text="QGIS docs" /> or [Wikipedia](https://en.wikipedia.org/wiki/Map_projection).
 
-## Coordinate Reference Systems
+## Coordinate reference systems
 
 All your spatial data include information about where your data is located on earth. Let's say you to store the position of a heritage tree. You may stand next to it with GPS receiver and note down latitude and longitude and altitude of the place. Two numbers in degrees and one in meters. You think the three numbers will mark exactly the heritage tree position for your children. Not that easy. What if in 50 years the GPS will be replaced by some different technology not using the latitude and longitude? Or let's say the tree is in Australia. The continent sits on the world’s fastest-moving continental tectonic plate with speed around 7 centimetres per year. And your GPS position is related to the global/world coordinates. Ok, at least we should mark down to our notes the date when we captured the coordinates and which **coordinate reference system** (CRS) we used.
 
@@ -33,7 +33,7 @@ Your QGIS installation contains the basic set of PROJ resources required for mos
 
 ![QGIS Transformations British National Grid to World Geodetic System](./QGIS_Transformations2.png)
 
-## Example Capture GPS point for Great Britain  
+## Example capture GPS point for Great Britain  
 
 For example, imagine we have a project for the Great Britain, where we use map projection British National Grid (EPSG:27700) to display map. We have background map in the same coordinate reference system, so there is no datum transformation required to show it. However we want to capture point by GPS receiver in the field by [Input app](https://inputapp.io), and we add a point layer in WGS 84 coordinate reference system. When we add point to this point layer, we store the coordinate values (latitude and longitude received from GPS) as is in the data section of our layer. When we want to show the point on the QGIS map canvas, QGIS needs to first do datum transformation, following by map projection.
 
@@ -68,7 +68,7 @@ For example imagine that you digitised your point to be in the corner of the rec
 
 The likely reason is that there is correctly downloaded and used extra datum shift file in QGIS, but missing in Input app (more information in <LutraConsultingWeb id="blog/2021/04/21/projections-field/" desc="this blog" />)
 
-## QGIS Transformation tab
+## QGIS transformation tab
 
 QGIS exposes a nice interface for coordinate reference systems through the Transformation tab in Settings. It is powered by [PROJ](https://proj.org/index.html), which tries to find the [best available](https://proj.org/operations/operations_computation.html)transformation route from the source to the destination coordinate reference system.
 

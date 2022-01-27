@@ -4,7 +4,7 @@ When surveying in the field, it is essential to have appropriate background maps
 
 The following sections will cover two types of background maps for online and offline use in Input:
 
-## Raster Tiles 
+## Raster tiles 
 
 ::: tip
 Ideal for aerial imagery and orthophoto.
@@ -72,7 +72,7 @@ Notes:
   - Depending on the size of your study area, the output file can grow significantly
   - Choosing higher zoom level (in the example above, **15** was selected) can result in a very large file
 
-## Vector Tiles
+## Vector tiles
 
 ::: tip
 Ideal for cartography basemaps. 
