@@ -47,7 +47,7 @@ The ecosystem consist of various components:
 - [How to Use Mergin Maps Plugin for QGIS with Multiple Servers](./manage/plugin-multi-server-use/)
 - [How to Synchronise Project](./manage/plugin-sync-project/)
 - [Project History and Versions](./manage/project-details/)
-- [Selective Synchronization](./manage/selective_sync/)
+- [Selective Synchronisation](./manage/selective_sync/)
 - [Data Synchronisation and Conflicts](./manage/data_sync/)
 
 ## Setup GIS Project
