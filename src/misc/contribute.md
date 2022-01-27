@@ -6,7 +6,7 @@ We are happy to help to promote work or co-author and place on our websites or g
 
 <CommunityJoin />
 
-## Use and Review
+## Use and review
 
 Write a review of the application on App Store or Android Google Play
 

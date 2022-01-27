@@ -1,4 +1,4 @@
-# Input App Interface
+# Mergin Maps Input Interface
 
 Below is a description of various items within the user interface:
 

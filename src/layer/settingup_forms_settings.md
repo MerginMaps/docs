@@ -1,4 +1,4 @@
-# Advanced form configuration
+# Advanced Form Configuration
 
 ::: tip
 You can follow the examples in this section by cloning the following projects:
@@ -53,7 +53,7 @@ To set the visibility of **Location** depending on the value of **survey**:
 
 ![photos](./qgis_forms_layout_visibility.png)
 
-### Input
+### Mergin Maps Input
 
 To view the new layout in Input:
 
@@ -97,7 +97,7 @@ Repeat the same for **y** field and set the default value to *y( transform( $geo
 
 Ensure to save and synchronise your project.
 
-### Input
+### Mergin Maps Input
 
 To see the default values in Input:
 
@@ -129,7 +129,7 @@ To set up the default value for **x** field:
     - For **Expression** type *"number" >= 1*
     - Select **Enforce expression constraint**
     
-### Input
+### Mergin Maps Input
 
 - Open Input on your device and from **Projects** > **Explore** download **documentation/form_setup**
 - Open the project
@@ -178,7 +178,7 @@ Notes:
     - **type** field from **car-manufacturer** table
     - **car-type** field from **wheel-check** table
 
-## Input
+## Mergin Maps Input
 
 To use the cascade form in Input:
 

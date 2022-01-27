@@ -1,4 +1,4 @@
-# Selective sync
+# Selective Synchronization
 
 <Badge text="Since Input 1.0.0" type="info"/>
 

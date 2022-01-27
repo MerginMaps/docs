@@ -1,4 +1,4 @@
-# Working with non-spatial tables
+# Working with Non-spatial Tables
 
 Non-spatial tables are often a key part of a survey project. The tables can be used either on their own to add new data or alternatively as a link to a spatial layer (e.g. value relation).
 
@@ -10,7 +10,7 @@ Ensure you have enabled editing and searching of your non-spatial table in QGIS 
 
 ![browse_enable](./qgis_nonspatial_properties.png)
 
-# Browse, search and edit non-spatial data in Input
+# Browse, search and edit non-spatial data in Mergin Maps Input
 
 To browse, search or edit a non-spatial table, first you need to [open the attribute table](../gis/enable_browsing.md).
 

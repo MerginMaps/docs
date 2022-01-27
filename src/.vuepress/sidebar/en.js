@@ -38,8 +38,8 @@ module.exports = {
                 '/manage/dashboard',
                 '/manage/project-advanced',
                 '/manage/plugin-multi-server-use/',
-                '/manage/project-details',
                 '/manage/plugin-sync-project',
+                '/manage/project-details',
                 '/manage/selective_sync/',
                 '/manage/data_sync'
             ]

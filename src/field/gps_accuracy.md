@@ -1,4 +1,4 @@
-# GPS accuracy
+# GPS Accuracy
 
 Your GPS accuracy depends on several parameters, such as:
 - Your device

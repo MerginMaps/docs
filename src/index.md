@@ -32,28 +32,27 @@ The ecosystem consist of various components:
 - [Working Collaboratively](./tutorials/working-collaboratively/index.md)
 
 ## Install & Sign Up
-- [How to sign up to Mergin Maps](./setup/sign-up-to-mergin-maps/)
-- [How to install QGIS](./setup/install-qgis/)
-- [How to install the Mergin Maps plugin for QGIS](./setup/install-mergin-maps-plugin-for-qgis/)
+- [How to Sign Up to Mergin Maps](./setup/sign-up-to-mergin-maps/)
+- [How to Install QGIS](./setup/install-qgis/)
+- [How to Install the Mergin Maps plugin for QGIS](./setup/install-mergin-maps-plugin-for-qgis/)
 - [Working with Organisations](./setup/working-with-organisations/)
-- [Subscriptions and invoicing](./setup/subscriptions/)
+- [Subscriptions and Invoicing](./setup/subscriptions/)
 
 ## Manage Account & Project
 - [Permissions](./manage/permissions/)
 - [Synchronisation](./manage/synchronisation/)
-- [How to create a new project](./manage/create-project/)
-- [Home page and dashboard](./manage/dashboard/)
-- [How to share, transfer or delete a project](./manage/project-advanced/)
-- [How to Use Mergin Maps plugin with multiple servers](./manage/plugin-multi-server-use/)
-- [Project history and versions](./manage/project-details/)
-- [How to synchronise project](./manage/plugin-sync-project/)
-- [Selective sync](./manage/selective_sync/)
-- [Data Synchronisation](./manage/data_sync/)
-
+- [How to Create a New Project](./manage/create-project/)
+- [Home Page and Dashboard](./manage/dashboard/)
+- [How to Share, Transfer or Delete a Project](./manage/project-advanced/)
+- [How to Use Mergin Maps Plugin for QGIS with Multiple Servers](./manage/plugin-multi-server-use/)
+- [How to Synchronise Project](./manage/plugin-sync-project/)
+- [Project History and Versions](./manage/project-details/)
+- [Selective Synchronization](./manage/selective_sync/)
+- [Data Synchronisation and Conflicts](./manage/data_sync/)
 
 ## Setup GIS Project
 - [QGIS Project Preparation](./gis/features/)
-- [Search values from attribute fields](./gis/search_data/)
+- [Search Values from Attribute Fields](./gis/search_data/)
 - [Background Maps](./gis/settingup_background_map/)
 - [Map Themes](./gis/setup_themes/)
 - [Enable Digitising](./gis/enable_digitising/)
@@ -61,31 +60,31 @@ The ecosystem consist of various components:
 - [Custom Projections](./gis/proj/)
 
 ## Configure Survey Layer
-- [Setting up form widgets](./layer/settingup_forms/)
-- [Advanced form configuration](./layer/settingup_forms_settings/)
+- [Setting Up Form Widgets](./layer/settingup_forms/)
+- [Advanced Form Configuration](./layer/settingup_forms_settings/)
 - [Exif Metadata](./layer/exif_metadata/)
 - [Capturing Photos](./layer/settingup_forms_photo/)
 - [Attach Multiple Photos to Features](./layer/attach-multiple-photos-to-features/)
 - [Extra Position Variables](./layer/position_variables/)
-- [Extra QGIS variables](./layer/plugin-variables/)
-- [Working with non-spatial tables](./layer/working_with_nonspatial_data/)
+- [Extra QGIS Variables](./layer/plugin-variables/)
+- [Working with Non-spatial Tables](./layer/working_with_nonspatial_data/)
 
 ## Fieldwork Tips
-- [GPS accuracy](./field/gps_accuracy/)
+- [GPS Accuracy](./field/gps_accuracy/)
 - [External GPS](./field/external_gps/)
-- [How to add, edit, delete features](./field/input_features/)
-- [How to reuse last entered values](./field/reuse-last-values/)
+- [How to Add, Edit, Delete Features](./field/input_features/)
+- [How to Reuse Last Entered Values](./field/reuse-last-values/)
 - [Input App Interface](./field/input_ui/)
-- [Working with non-spatial tables](./layer/working_with_nonspatial_data/)
+- [Working With Non-spatial Tables](./layer/working_with_nonspatial_data/)
 
 ## For Developers
 - [Custom Mobile App](./dev/customapp/)
 - [PostgreSQL DB Sync](./dev/dbsync/)
-- [Mergin Community Edition](./dev/mergince/)
+- [Mergin Community Edition (CE)](./dev/mergince/)
 - [Integrate Mergin](./dev/integration/)
 
 ## Support & Legal
-- [ Licensing](./misc/licensing/)
+- [Licensing](./misc/licensing/)
 - [Mergin Maps Input Privacy Policy](./misc/privacy/)
 - [Troubleshoot](./misc/troubleshoot/)
 - [Contribute](./misc/contribute/)

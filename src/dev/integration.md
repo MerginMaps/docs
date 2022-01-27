@@ -2,7 +2,7 @@
 
 Mergin is an open platform that aims to be developer friendly, and it has been designed to allow easy integration with other software.
 
-## Python Client
+## Python client
 
 ### Installation 
 
@@ -27,7 +27,7 @@ You can of course also get project status, push/pull changes, create/delete proj
 
 The source code of the Python client is available on GitHub in <GitHubRepo id="lutraconsulting/mergin-py-client" /> repository.
 
-### Command Line Interface
+### Command line interface
 
 For those who prefer using terminal, there is `mergin` command line tool shipped with the Python client. With several built-in commands, it is possible to download Mergin projects, push/pull changes, create or delete projects and more.
 
@@ -38,7 +38,7 @@ mergin download john/project1 ~/mergin/project1
 
 Please see <GitHubRepo id="lutraconsulting/mergin-py-client" /> repository for more information on the usage.
 
-## C++ Standalone Client
+## C++ standalone client
 
 C++ Client has advantage over Python that is is completely without any dependencies. 
 
@@ -67,6 +67,6 @@ Commands:
 
 Please see <GitHubRepo id="lutraconsulting/mergin-cpp-client" /> repository for more information on the usage.
 
-### C++ Mergin API Core Library 
+### C++ Mergin API core library 
 
 Client is based on the Qt-based <GitHubRepo id="lutraconsulting/input/tree/master/core" desc="mergin api core library" /> used by the [Input App](https://inputapp.io) to sync the projects in the mobile application.

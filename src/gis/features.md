@@ -35,7 +35,7 @@ Vector layers can be used as survey layer in Input. You can apply style and set 
 ## Layer properties
 The following properties of a layer in QGIS project will be additionally used in Input:
 
-### Settings for Input preview panel
+### Settings for Mergin Maps Input preview panel
 Similar to Google map, when a feature is identified on the map a preview panel will appear. 
 
 To enable a layer being identified, the option should be enabled in QGIS desktop, under **Project properties**.
@@ -88,7 +88,7 @@ Example of the preview panel in Input and QGIS tooltip set up can be seen below:
 ### Forms
 This section briefly describes behaviour of some types of widgets with several configurations. Make use of Value Map widget in your forms to simplify filling the forms during survey.
 
-#### Attachment (External resource) widget
+#### Attachment (external resource) widget
 To be able to attach photos to a survey feature, you will need to have an attribute column in your survey layer. Within the form setting, ensure to set Widget type to Attachment. The widget is compatible with field of type QString. It suppose to store absolute/relative path to an image.
 
 ##### Field configuration:

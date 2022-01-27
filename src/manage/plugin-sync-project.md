@@ -1,6 +1,6 @@
-# How to synchronise a project
+# How to Synchronise Project
 
-## Initial Download 
+## Initial download 
 
 Once you have configured the plugin with your Mergin credentials, you should be able to see the following sections under the Mergin in your QGIS Browser panel:
 

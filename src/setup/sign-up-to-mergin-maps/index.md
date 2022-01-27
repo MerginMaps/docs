@@ -1,4 +1,4 @@
-# How to sign up to Mergin Maps
+# How to Sign Up to Mergin Maps
 [[toc]]
 
 To start using the Mergin service, you need to sign up. You can sign up either through <MainDomainNameLink /> or from your mobile device using the <MobileAppName />.
@@ -9,7 +9,7 @@ When you register with the Mergin service, you will be automatically signed up a
 One can view and download public projects even without an account, but creation of projects and synchronisation of geo-data only works when you are logged in.
 :::
 
-## From Web
+## From web
 
 1. Navigate to <MainDomainNameLink />
 
@@ -59,7 +59,7 @@ check your SPAM folder if the confirmation email does not appear in your inbox a
 :::
 
 
-## Forgotten Password
+## Forgotten password
 
 If you forget your password, you can reset it through the <MainDomainNameLink id="login/reset" desc="Mergin website" />.
 

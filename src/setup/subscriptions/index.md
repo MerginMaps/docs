@@ -1,4 +1,4 @@
-# Subscriptions and invoicing
+# Subscriptions and Invoicing
 
 Mergin Service offers a free plan for up to 100 MB data usage. Free plan can be used to host projects for commercial use only *for first month*. Non-commercial use is considered for personal (hobby) use, or in academia (teachers, students).
 
