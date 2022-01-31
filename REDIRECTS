@@ -1,9 +1,20 @@
-Original page	New page
-=============	========
+# Original page	New page
+# =============	========
+#
+# Please note that because of a vuepress plugin, new pages will always end 
+# with a trailing slash.
+# Comments allowed using #
+#
+# Please ensure:
+#   - URLs are tab separated (not spaces)
+#   - Destination URLs end with a trailing /
+#   - Destination URLs start with:
+#         https://merginmaps.com/docs/ or 
+#         N/A (these lines are ignored)
 
-Please note that because of a vuepress plugin, new pages will always end 
-with a trailing slash.
-
+https://merginmaps.com/docs/concepts/users-and-orgs/	https://merginmaps.com/docs/setup/working-with-organisations/
+https://merginmaps.com/docs/concepts/project/	https://merginmaps.com/docs/
+https://merginmaps.com/docs/concepts/components/	https://merginmaps.com/docs/
 https://merginmaps.com/docs/concepts/permissions/	https://merginmaps.com/docs/manage/permissions/
 https://merginmaps.com/docs/concepts/synchronisation/	https://merginmaps.com/docs/manage/synchronisation/
 https://merginmaps.com/docs/concepts/projections/	https://merginmaps.com/docs/gis/projections/
@@ -48,42 +59,42 @@ https://merginmaps.com/docs/howto/project/features/	https://merginmaps.com/docs/
 https://merginmaps.com/docs/howto/project/settingup_forms/	https://merginmaps.com/docs/layer/settingup_forms/
 https://merginmaps.com/docs/reference/licensing/	https://merginmaps.com/docs/misc/licensing/
 https://merginmaps.com/docs/reference/privacy/	https://merginmaps.com/docs/misc/privacy/
-https://merginmaps.com/docs/concepts/synchronization/	https://merginmaps.com/docs/concepts/synchronisation/
-https://merginmaps.com/docs/howto/create-an-organization/	https://merginmaps.com/docs/howto/manage/web/working-with-organisations/
-https://merginmaps.com/docs/howto/project/enable_digitizing/	https://merginmaps.com/docs/howto/project/enable_digitising/
-https://merginmaps.com/docs/howto/manage/plugin/install/	https://merginmaps.com/docs/howto/install-mergin-maps-plugin-for-qgis/
-https://merginmaps.com/docs/howto/manage/web/register/	https://merginmaps.com/docs/howto/sign-up-to-mergin-maps/
-https://merginmaps.com/docs/howto/manage/web/web-create-project/	https://merginmaps.com/docs/howto/create-project/
-https://merginmaps.com/docs/howto/manage/plugin/plugin-new-project/	https://merginmaps.com/docs/howto/create-project/
+https://merginmaps.com/docs/concepts/synchronization/	https://merginmaps.com/docs/manage/synchronisation/
+https://merginmaps.com/docs/howto/create-an-organization/	https://merginmaps.com/docs/setup/working-with-organisations/
+https://merginmaps.com/docs/howto/project/enable_digitizing/	https://merginmaps.com/docs/gis/enable_digitising/
+https://merginmaps.com/docs/howto/manage/plugin/install/	https://merginmaps.com/docs/setup/install-mergin-maps-plugin-for-qgis/
+https://merginmaps.com/docs/howto/manage/web/register/	https://merginmaps.com/docs/setup/sign-up-to-mergin-maps/
+https://merginmaps.com/docs/howto/manage/web/web-create-project/	https://merginmaps.com/docs/manage/create-project/
+https://merginmaps.com/docs/howto/manage/plugin/plugin-new-project/	https://merginmaps.com/docs/manage/create-project/
 https://merginmaps.com/docs/howto/input-tour/	https://merginmaps.com/docs/tutorials/capturing-first-data/
 https://merginmaps.com/docs/howto/quick-start/	https://merginmaps.com/docs/tutorials/capturing-first-data/
 https://merginmaps.com/docs/howto/mergin-tour/	https://merginmaps.com/docs/tutorials/creating-a-project-in-qgis/
-https://merginmaps.com/docs/concepts/home-page-and-dashboard/	https://merginmaps.com/docs/howto/manage/web/dashboard/
+https://merginmaps.com/docs/concepts/home-page-and-dashboard/	https://merginmaps.com/docs/manage/dashboard/
 https://help.cloudmergin.com/	https://merginmaps.com/docs/
-https://help.cloudmergin.com/dashboard	https://merginmaps.com/docs/howto/manage/web/dashboard/
-https://help.cloudmergin.com/developers	https://merginmaps.com/docs/howto/integration/
+https://help.cloudmergin.com/dashboard	https://merginmaps.com/docs/manage/dashboard/
+https://help.cloudmergin.com/developers	https://merginmaps.com/docs/dev/integration/
 https://help.cloudmergin.com/developers.html	N/A - covered by non-html version
 https://help.cloudmergin.com/faq	https://merginmaps.com/docs/
 https://help.cloudmergin.com/faq.html	N/A - covered by non-html version
 https://help.cloudmergin.com/mergin-web	https://merginmaps.com/docs/
-https://help.cloudmergin.com/permissions	https://merginmaps.com/docs/concepts/permissions/
-https://help.cloudmergin.com/plugin-clone-project	https://merginmaps.com/docs/howto/create-project/
-https://help.cloudmergin.com/plugin-delete-project	https://merginmaps.com/docs/howto/manage/plugin/plugin-delete-project/
-https://help.cloudmergin.com/plugin-download-project	https://merginmaps.com/docs/howto/manage/plugin/plugin-sync-project/
-https://help.cloudmergin.com/plugin-installation	https://merginmaps.com/docs/howto/install-mergin-maps-plugin-for-qgis/
-https://help.cloudmergin.com/plugin-logs	https://merginmaps.com/docs/howto/manage/troubleshoot/
-https://help.cloudmergin.com/plugin-new-project	https://merginmaps.com/docs/howto/create-project/
-https://help.cloudmergin.com/plugin-sync-project	https://merginmaps.com/docs/howto/manage/plugin/plugin-sync-project/
-https://help.cloudmergin.com/plugin-variables	https://merginmaps.com/docs/howto/manage/plugin/plugin-variables/
-https://help.cloudmergin.com/project-advanced	https://merginmaps.com/docs/howto/manage/web/project-advanced/
-https://help.cloudmergin.com/project-details	https://merginmaps.com/docs/howto/manage/web/project-details/
+https://help.cloudmergin.com/permissions	https://merginmaps.com/docs/manage/permissions/
+https://help.cloudmergin.com/plugin-clone-project	https://merginmaps.com/docs/manage/create-project/
+https://help.cloudmergin.com/plugin-delete-project	https://merginmaps.com/docs/manage/project-advanced/
+https://help.cloudmergin.com/plugin-download-project	https://merginmaps.com/docs/manage/plugin-sync-project/
+https://help.cloudmergin.com/plugin-installation	https://merginmaps.com/docs/setup/install-mergin-maps-plugin-for-qgis/
+https://help.cloudmergin.com/plugin-logs	https://merginmaps.com/docs/misc/troubleshoot/
+https://help.cloudmergin.com/plugin-new-project	https://merginmaps.com/docs/manage/create-project/
+https://help.cloudmergin.com/plugin-sync-project	https://merginmaps.com/docs/manage/plugin-sync-project/
+https://help.cloudmergin.com/plugin-variables	https://merginmaps.com/docs/layer/plugin-variables/
+https://help.cloudmergin.com/project-advanced	https://merginmaps.com/docs/manage/project-advanced/
+https://help.cloudmergin.com/project-details	https://merginmaps.com/docs/manage/project-details/
 https://help.cloudmergin.com/quick-start	https://merginmaps.com/docs/tutorials/capturing-first-data/
 https://help.cloudmergin.com/quick-start.html	N/A - covered by non-html version
-https://help.cloudmergin.com/registration	https://merginmaps.com/docs/howto/sign-up-to-mergin-maps/
+https://help.cloudmergin.com/registration	https://merginmaps.com/docs/setup/sign-up-to-mergin-maps/
 https://help.cloudmergin.com/registration.html	N/A - covered by non-html version
-https://help.cloudmergin.com/sharing-project	https://merginmaps.com/docs/howto/manage/web/project-advanced/
-https://help.cloudmergin.com/subscriptions	https://merginmaps.com/docs/howto/manage/web/subscriptions/
-https://help.cloudmergin.com/support	https://merginmaps.com/docs/howto/manage/troubleshoot/
+https://help.cloudmergin.com/sharing-project	https://merginmaps.com/docs/manage/project-advanced/
+https://help.cloudmergin.com/subscriptions	https://merginmaps.com/docs/setup/subscriptions/
+https://help.cloudmergin.com/support	https://merginmaps.com/docs/misc/troubleshoot/
 https://help.cloudmergin.com/tutorials/data-sync	https://merginmaps.com/docs/tutorials/creating-a-project-in-qgis/
 https://help.cloudmergin.com/tutorials/data-sync.html	N/A - covered by non-html version
 https://help.cloudmergin.com/tutorials/data-transfer	https://merginmaps.com/docs/tutorials/creating-a-project-in-qgis/
@@ -92,55 +103,55 @@ https://help.cloudmergin.com/tutorials/qgis-new-project	https://merginmaps.com/d
 https://help.cloudmergin.com/tutorials/qgis-new-project.html	N/A - covered by non-html version
 https://help.cloudmergin.com/tutorials/using-input	https://merginmaps.com/docs/tutorials/creating-a-project-in-qgis/
 https://help.cloudmergin.com/tutorials/using-input.html	N/A - covered by non-html version
-https://help.cloudmergin.com/web-create-project	https://merginmaps.com/docs/howto/create-project/
-https://help.cloudmergin.com/working-with-organisations	https://merginmaps.com/docs/howto/manage/web/working-with-organisations/
+https://help.cloudmergin.com/web-create-project	https://merginmaps.com/docs/manage/create-project/
+https://help.cloudmergin.com/working-with-organisations	https://merginmaps.com/docs/setup/working-with-organisations/
 https://help.cloudmergin.com/working-with-qgis-plugin	https://merginmaps.com/docs/
 https://help.cloudmergin.com/working-with-qgis-plugin.html	N/A - covered by non-html version
 https://help.inputapp.io	https://merginmaps.com/docs/
 https://help.inputapp.io/	https://merginmaps.com/docs/
-https://help.inputapp.io/developers	https://merginmaps.com/docs/howto/customapp/
+https://help.inputapp.io/developers	https://merginmaps.com/docs/dev/customapp/
 https://help.inputapp.io/developers.html	N/A - covered by non-html version
 https://help.inputapp.io/faq	https://merginmaps.com/docs/
-https://help.inputapp.io/howto/data_sync	https://merginmaps.com/docs/howto/data_sync/
-https://help.inputapp.io/howto/datum_shift	https://merginmaps.com/docs/concepts/projections
-https://help.inputapp.io/howto/enable_browsing	https://merginmaps.com/docs/howto/project/enable_browsing/
-https://help.inputapp.io/howto/enable_digitizing	https://merginmaps.com/docs/howto/project/enable_digitising/
-https://help.inputapp.io/howto/exif_metadata	https://merginmaps.com/docs/howto/exif_metadata/
-https://help.inputapp.io/howto/external_gps	https://merginmaps.com/docs/howto/external_gps/
-https://help.inputapp.io/howto/gps_accuracy	https://merginmaps.com/docs/howto/gps_accuracy/
-https://help.inputapp.io/howto/package_qgis_project	https://merginmaps.com/docs/howto/create-project/
-https://help.inputapp.io/howto/position_variables	https://merginmaps.com/docs/howto/position_variables/
-https://help.inputapp.io/howto/proj	https://merginmaps.com/docs/howto/proj/
-https://help.inputapp.io/howto/project_config	https://merginmaps.com/docs/howto/project/features/
-https://help.inputapp.io/howto/registration	https://merginmaps.com/docs/howto/input_features/
-https://help.inputapp.io/howto/reuse_entered_values	https://merginmaps.com/docs/howto/reuse_last_values/
-https://help.inputapp.io/howto/search_data	https://merginmaps.com/docs/howto/project/search_data/
+https://help.inputapp.io/howto/data_sync	https://merginmaps.com/docs/manage/data_sync/
+https://help.inputapp.io/howto/datum_shift	https://merginmaps.com/docs/gis/projections/
+https://help.inputapp.io/howto/enable_browsing	https://merginmaps.com/docs/gis/enable_browsing/
+https://help.inputapp.io/howto/enable_digitizing	https://merginmaps.com/docs/gis/enable_digitising/
+https://help.inputapp.io/howto/exif_metadata	https://merginmaps.com/docs/layer/exif_metadata/
+https://help.inputapp.io/howto/external_gps	https://merginmaps.com/docs/field/external_gps/
+https://help.inputapp.io/howto/gps_accuracy	https://merginmaps.com/docs/field/gps_accuracy/
+https://help.inputapp.io/howto/package_qgis_project	https://merginmaps.com/docs/manage/create-project/
+https://help.inputapp.io/howto/position_variables	https://merginmaps.com/docs/layer/position_variables/
+https://help.inputapp.io/howto/proj	https://merginmaps.com/docs/gis/proj/
+https://help.inputapp.io/howto/project_config	https://merginmaps.com/docs/gis/features/
+https://help.inputapp.io/howto/registration	https://merginmaps.com/docs/setup/sign-up-to-mergin-maps/
+https://help.inputapp.io/howto/reuse_entered_values	https://merginmaps.com/docs/field/reuse-last-values/
+https://help.inputapp.io/howto/search_data	https://merginmaps.com/docs/gis/search_data/
 https://help.inputapp.io/howto/search_data.html	N/A - covered by non-html version
-https://help.inputapp.io/howto/selective_sync	https://merginmaps.com/docs/howto/project/selective_sync/
+https://help.inputapp.io/howto/selective_sync	https://merginmaps.com/docs/manage/selective_sync/
 https://help.inputapp.io/howto/selective_sync#get-started	N/A See redirect for URL without #
-https://help.inputapp.io/howto/settingup_background_map	https://merginmaps.com/docs/howto/project/settingup_background_map/
-https://help.inputapp.io/howto/settingup_background_map_rastertile	https://merginmaps.com/docs/howto/project/settingup_background_map/
-https://help.inputapp.io/howto/settingup_background_map_vectortile	https://merginmaps.com/docs/howto/project/settingup_background_map/
-https://help.inputapp.io/howto/settingup_forms	https://merginmaps.com/docs/howto/project/settingup_forms/
-https://help.inputapp.io/howto/settingup_forms_cascade	https://merginmaps.com/docs/howto/project/settingup_forms/
-https://help.inputapp.io/howto/settingup_forms_checkbox	https://merginmaps.com/docs/howto/project/settingup_forms/
-https://help.inputapp.io/howto/settingup_forms_constraints	https://merginmaps.com/docs/howto/project/settingup_forms/
-https://help.inputapp.io/howto/settingup_forms_datetime	https://merginmaps.com/docs/howto/project/settingup_forms/
-https://help.inputapp.io/howto/settingup_forms_defaults	https://merginmaps.com/docs/howto/project/settingup_forms/
-https://help.inputapp.io/howto/settingup_forms_layout	https://merginmaps.com/docs/howto/project/settingup_forms/
-https://help.inputapp.io/howto/settingup_forms_number	https://merginmaps.com/docs/howto/project/settingup_forms/
-https://help.inputapp.io/howto/settingup_forms_one-to-many	https://merginmaps.com/docs/howto/project/settingup_forms/
-https://help.inputapp.io/howto/settingup_forms_photos	https://merginmaps.com/docs/howto/project/settingup_forms/
-https://help.inputapp.io/howto/settingup_forms_qrcode	https://merginmaps.com/docs/howto/project/settingup_forms/
-https://help.inputapp.io/howto/settingup_forms_slider	https://merginmaps.com/docs/howto/project/settingup_forms/
-https://help.inputapp.io/howto/settingup_forms_text	https://merginmaps.com/docs/howto/project/settingup_forms/
-https://help.inputapp.io/howto/settingup_forms_valuemap	https://merginmaps.com/docs/howto/project/settingup_forms/
-https://help.inputapp.io/howto/settingup_forms_valuerelation	https://merginmaps.com/docs/howto/project/settingup_forms/
-https://help.inputapp.io/howto/setup_themes	https://merginmaps.com/docs/howto/project/setup_themes/
-https://help.inputapp.io/howto/working_with_nonspatial_data	https://merginmaps.com/docs/howto/project/working_with_nonspatial_data/
-https://help.inputapp.io/input_ui	https://merginmaps.com/docs/howto/input_ui/
-https://help.inputapp.io/licensing	https://merginmaps.com/docs/reference/licensing/
-https://help.inputapp.io/privacy	https://merginmaps.com/docs/reference/privacy/
+https://help.inputapp.io/howto/settingup_background_map	https://merginmaps.com/docs/gis/settingup_background_map/
+https://help.inputapp.io/howto/settingup_background_map_rastertile	https://merginmaps.com/docs/gis/settingup_background_map/
+https://help.inputapp.io/howto/settingup_background_map_vectortile	https://merginmaps.com/docs/gis/settingup_background_map/
+https://help.inputapp.io/howto/settingup_forms	https://merginmaps.com/docs/layer/settingup_forms/
+https://help.inputapp.io/howto/settingup_forms_cascade	https://merginmaps.com/docs/layer/settingup_forms/
+https://help.inputapp.io/howto/settingup_forms_checkbox	https://merginmaps.com/docs/layer/settingup_forms/
+https://help.inputapp.io/howto/settingup_forms_constraints	https://merginmaps.com/docs/layer/settingup_forms/
+https://help.inputapp.io/howto/settingup_forms_datetime	https://merginmaps.com/docs/layer/settingup_forms/
+https://help.inputapp.io/howto/settingup_forms_defaults	https://merginmaps.com/docs/layer/settingup_forms/
+https://help.inputapp.io/howto/settingup_forms_layout	https://merginmaps.com/docs/layer/settingup_forms/
+https://help.inputapp.io/howto/settingup_forms_number	https://merginmaps.com/docs/layer/settingup_forms/
+https://help.inputapp.io/howto/settingup_forms_one-to-many	https://merginmaps.com/docs/layer/settingup_forms/
+https://help.inputapp.io/howto/settingup_forms_photos	https://merginmaps.com/docs/layer/settingup_forms/
+https://help.inputapp.io/howto/settingup_forms_qrcode	https://merginmaps.com/docs/layer/settingup_forms/
+https://help.inputapp.io/howto/settingup_forms_slider	https://merginmaps.com/docs/layer/settingup_forms/
+https://help.inputapp.io/howto/settingup_forms_text	https://merginmaps.com/docs/layer/settingup_forms/
+https://help.inputapp.io/howto/settingup_forms_valuemap	https://merginmaps.com/docs/layer/settingup_forms/
+https://help.inputapp.io/howto/settingup_forms_valuerelation	https://merginmaps.com/docs/layer/settingup_forms/
+https://help.inputapp.io/howto/setup_themes	https://merginmaps.com/docs/gis/setup_themes/
+https://help.inputapp.io/howto/working_with_nonspatial_data	https://merginmaps.com/docs/layer/working_with_nonspatial_data/
+https://help.inputapp.io/input_ui	https://merginmaps.com/docs/field/input_ui/
+https://help.inputapp.io/licensing	https://merginmaps.com/docs/misc/licensing/
+https://help.inputapp.io/privacy	https://merginmaps.com/docs/misc/privacy/
 https://help.inputapp.io/quick-start	https://merginmaps.com/docs/tutorials/capturing-first-data/
 https://help.inputapp.io/quick-start.html	N/A - covered by non-html version
 https://help.inputapp.io/quick-start/create-project	https://merginmaps.com/docs/tutorials/capturing-first-data/
@@ -150,5 +161,5 @@ https://help.inputapp.io/quick-start/sync-changes	https://merginmaps.com/docs/tu
 https://help.inputapp.io/quick-start/take-the-tour	https://merginmaps.com/docs/tutorials/capturing-first-data/
 https://help.inputapp.io/resources/mergin-config.json	https://merginmaps.com/docs/mergin-config.json
 https://help.inputapp.io/resources/mergin-config.zip	https://merginmaps.com/docs/mergin-config.zip
-https://help.inputapp.io/support	https://merginmaps.com/docs/howto/manage/troubleshoot/
-https://help.inputapp.io/using_input	https://merginmaps.com/docs/howto/input_features/
+https://help.inputapp.io/support	https://merginmaps.com/docs/misc/troubleshoot/
+https://help.inputapp.io/using_input	https://merginmaps.com/docs/field/input_features/
