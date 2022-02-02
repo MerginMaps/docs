@@ -373,7 +373,7 @@ Translations are not yet supported/implemented.
 
 As documentation matures, content gets moved, renamed or deleted. As 3rd party sites may link to content, it's important to maintain information on how requests for now non-existent content should be redirected usefully.
 
-This information is captured in the [_REDIRECTS_](https://github.com/MerginMaps/docs/blob/main/REDIRECTS) file.
+This information is captured in the <GitHubRepo desc="REDIRECTS" id="MerginMaps/docs/blob/main/REDIRECTS" /> file.
 
 
 ### Seeing what's changed
@@ -382,7 +382,7 @@ When all authors have committed their changes to the _main_ branch and are ready
 
 We can do this by comparing the current state of the _main_ branch with the last released version of the docs site. Do this by:
 
-1. [Comparing changes](https://github.com/MerginMaps/docs/compare)
+1. <GitHubRepo desc="Comparing changes" id="MerginMaps/docs/compare" />
     * Use the latest tag on the left
     * Use _main_ on the right
     
