@@ -366,7 +366,59 @@ Use `<QGISPluginName />` component, transforms to <QGISPluginName />
 
 ## Translations
 
-Translations are not yet supported/implemented. 
+Translations are not yet supported/implemented.
+
+
+## Redirects
+
+As documentation matures, content gets moved, renamed or deleted. As 3rd party sites may link to content, it's important to maintain information on how requests for now non-existent content should be redirected usefully.
+
+This information is captured in the <GitHubRepo desc="REDIRECTS" id="MerginMaps/docs/blob/main/REDIRECTS" /> file.
+
+
+### Seeing what's changed
+
+When all authors have committed their changes to the _main_ branch and are ready for the site to be released we can easily generate a clear picture of what's changed.
+
+We can do this by comparing the current state of the _main_ branch with the last released version of the docs site. Do this by:
+
+1. <GitHubRepo desc="Comparing changes" id="MerginMaps/docs/compare" />
+    * Use the latest tag on the left
+    * Use _main_ on the right
+    
+    ![](./comparing-changes-1.png)
+
+2. Scroll down a little and click where it says _**224 changed files**_ or similar
+
+    You should now see a nice summary below of files which have been added, renamed or deleted
+    
+    ![](./comparing-changes-2.png)
+
+You can now see which content has been changed.
+
+
+### Updating the REDIRECTS file
+
+The REDIRECTS file is a tab-separated list of old/new URL pairs. It describes how requests for old content should be redirected.
+
+With a clear picture of how the structure of content will change in a given release (see above), update the REDIRECTS as follows:
+
+* **Renamed pages** (`.md`) **or data files** (e.g. `.json`, `.zip`):
+    * Add a new line to the REDIRECTS file to reflect this
+    * Check if existing lines in the REDIRECTS file point to the page/data file that is being renamed
+        * If so, update those targets to point to the renamed page/data file's new path
+* **Deleted pages** (`.md`):
+    * Add a new line to the REDIRECTS file to point requests somewhere sensible
+    * Check if existing lines in the REDIRECTS file point to the deleted page
+        * If so, update those targets to point somewhere sensible
+* **Renamed images** (e.g. `.png`, `.jpg`) **and deleted data files** (e.g. `.json`, `.zip`):
+    * We ignore these for the time being
+* **General checks**
+    * Ensure source and destination URLs are separated by a single tab, not spaces
+    * Ensure all target URLs end with a trailing `/` for example:
+        * `https://merginmaps.com/docs/howto/input_ui` (bad)
+        * `https://merginmaps.com/docs/howto/input_ui` (good)
+
 
 ## Known Limitations
 
