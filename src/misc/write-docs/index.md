@@ -417,7 +417,7 @@ With a clear picture of how the structure of content will change in a given rele
     * Ensure source and destination URLs are separated by a single tab, not spaces
     * Ensure all target URLs end with a trailing `/` for example:
         * `https://merginmaps.com/docs/howto/input_ui` (bad)
-        * `https://merginmaps.com/docs/howto/input_ui` (good)
+        * `https://merginmaps.com/docs/howto/input_ui/` (good)
 
 
 ## Known Limitations
