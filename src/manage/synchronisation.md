@@ -24,13 +24,13 @@ TODO: illustration of edits - diamond shape - base, Jack, Jill, result
 
 If Jack is the first one to sync his changes and then Jill syncs her changes, at the time of Jill's sync Mergin knows they have a conflict in edits for that one bench. The editor who syncs last "wins", so in this case Jill's changes would be kept and Jack's changes would be overwritten (of course, all his non-conflicting edits to other benches would be kept). Mergin keeps a record about this, in case a project admin would want to investigate the edit conflict: if the survey is stored e.g. in data.gpkg, then a JSON file named data (edit conflict, jack v123).json would be created, containing list of conflicts. For each conflicting attribute value, the file lists the original value and the two different modified versions.
 
-TODO: input wasn't creating edit conflicts at all - fixed in 1.3 release - lutraconsulting/input#1738
+<!--TODO: input wasn't creating edit conflicts at all - fixed in 1.3 release - lutraconsulting/input#1738
 
-TODO: plugin not doing this naming yet - lutraconsulting/mergin-py-client#62
+TODO: plugin not doing this naming yet - lutraconsulting/mergin-py-client#62 -->
 
 ## Conflicted copy
 Input does not support changing of the data schema. So, if you delete or add columns to your survey layer, Input cannot detect the change. Therefore, it is always recommended to stick with the same attribute table structure once you have set up your survey layer.
 
 If you need to change the data schema, [](./modify-attribute-table/index.md)
  
-TODO: example when that happens (change of database schema)
+<!-- TODO: example when that happens (change of database schema) -->
