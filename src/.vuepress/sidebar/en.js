@@ -35,10 +35,12 @@ module.exports = {
                 '/manage/permissions',
                 '/manage/synchronisation',
                 '/manage/create-project/',
-                '/manage/dashboard',
                 '/manage/project-advanced',
+                '/manage/modify-attribute-table/',
+                '/manage/avoid-conflict-files/',
                 '/manage/plugin-multi-server-use/',
                 '/manage/plugin-sync-project',
+                '/manage/dashboard',
                 '/manage/project-details',
                 '/manage/selective_sync/',
                 '/manage/data_sync'

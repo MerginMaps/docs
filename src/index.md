@@ -45,7 +45,7 @@ The ecosystem consist of various components:
 - [Home Page and Dashboard](./manage/dashboard/)
 - [How to Share, Transfer or Delete a Project](./manage/project-advanced/)
 - [How to Use Mergin Maps Plugin for QGIS with Multiple Servers](./manage/plugin-multi-server-use/)
-- [How to Synchronise Project](./manage/plugin-sync-project/)
+- [Working with QGIS Plugin](./manage/plugin-sync-project/)
 - [Project History and Versions](./manage/project-details/)
 - [Selective Synchronisation](./manage/selective_sync/)
 - [Data Synchronisation and Conflicts](./manage/data_sync/)

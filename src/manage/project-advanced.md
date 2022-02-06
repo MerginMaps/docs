@@ -1,4 +1,4 @@
-# How to Share, Transfer or Delete a Project
+# How to Share, Transfer or Delete Project
 [[toc]]
 
 ## Share a project

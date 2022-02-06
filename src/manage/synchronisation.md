@@ -1,16 +1,36 @@
 # Synchronisation and Conflicts
+<!-- concept / reference -->
 
-## When I synchronise my data, I get some files with 'conf' in their names
+[[toc]]
 
-Input supports collaborative editing, if you use GeoPackage file format for your survey layer. If you use for example ESRI shapefile for your survey layer, Input is not able to detect changes from other users and overwrites them. It will keep a copy of the overwritten files with 'conf' in the name. So, in summary, **always use GeoPackage for your survey layer**.
 
-## I use GeoPackage for my survey layer, but I still see 'conf' files
+Sometimes Mergin users may see conflict files appearing in their projects. This page explains when conflicts can happen, how to deal with them and how to prevent them.
 
- Input does not support changing of the data schema. So, if you delete or add columns to your survey layer, Input cannot detect the change. Therefore, it is always recommended to stick with the same attribute table structure once you have set up your survey layer.
+Conflicts can happen when two users edit some files in a shared project at once. The technology behind Mergin service makes effort to merge changes from individual users automatically and therefore conflicts do not happen normally, even if multiple people edit a single data source (e.g. a GeoPackage). However, there are still some occasions when Mergin is unable to automatically resolve conflicts and it will create conflict files in projects.
 
- Another reason you might be seeing conf files is due to <GitHubRepo id="lutraconsulting/geodiff/issues/91" desc="storing raster data in GeoPackage" /> for your survey layer. We recommend using GeoTIFF or at least a separate GeoPackage database for all your raster files. 
+There are two types of conflicts:
+- edit conflicts
+- conflicted copies
 
-## I cannot synchronise changes from the Mergin server
+::: tip
+Make your work easier and avoid unnecessary conflict files by following [**these recommendations**](avoid-conflict-files/#how-to-avoid-conflict-files/index.md).
+:::
 
- - Make sure you have data connectivity.
- - Ensure you have not exceeded or reached your storage allowance
+## Edit conflicts
+
+Let's think of a survey of benches in a park conducted by Jack and Jill. They start with a vector layer of points with benches and they need to asses conditions of the benches by filling in a couple of attributes. They split the work into two halves and do the survey. By mistake, Jack also surveys a bench assigned to Jill - they both end up editing attributes of the same point, with slightly different values. How will Mergin handle that?
+
+TODO: illustration of edits - diamond shape - base, Jack, Jill, result
+
+If Jack is the first one to sync his changes and then Jill syncs her changes, at the time of Jill's sync Mergin knows they have a conflict in edits for that one bench. The editor who syncs last "wins", so in this case Jill's changes would be kept and Jack's changes would be overwritten (of course, all his non-conflicting edits to other benches would be kept). Mergin keeps a record about this, in case a project admin would want to investigate the edit conflict: if the survey is stored e.g. in data.gpkg, then a JSON file named data (edit conflict, jack v123).json would be created, containing list of conflicts. For each conflicting attribute value, the file lists the original value and the two different modified versions.
+
+TODO: input wasn't creating edit conflicts at all - fixed in 1.3 release - lutraconsulting/input#1738
+
+TODO: plugin not doing this naming yet - lutraconsulting/mergin-py-client#62
+
+## Conflicted copy
+Input does not support changing of the data schema. So, if you delete or add columns to your survey layer, Input cannot detect the change. Therefore, it is always recommended to stick with the same attribute table structure once you have set up your survey layer.
+
+If you need to change the data schema, [](./modify-attribute-table/index.md)
+ 
+TODO: example when that happens (change of database schema)

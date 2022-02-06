@@ -2,6 +2,12 @@
 
 <!--- IMPORTANT: This permalink is referenced from Input App -->
 
+[[toc]]
+
+::: warning
+If you cannot synchronise changes, make sure you are connected to the internet and that you have not exceeded your storage limit.
+:::
+
 ## Mergin Maps Cloud (Android/iOS)
 
 Input comes with built-in functionality to seamlessly synchronise your projects and data through Mergin. If you want to use this functionality, you will need to sign up to [Mergin](https://public.cloudmergin.com).
