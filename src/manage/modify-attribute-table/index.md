@@ -12,7 +12,7 @@ What you need to do it that you migrate **ALL** the surveyors at the same time t
 Other option is to clone your survey project, update the schema and then push it to Mergin as new project. Then you ask surveyors to **use new project** next day (you can also downgrade the rights to read-only to the old project to force it).
 
 ::: warning
-If one of your surveyors does not comply and forget to get the project with the modified schema, you will end up with the conflict files (since geodiff is unable to merge sqlite databases with different schemata).
+If one of your surveyors does not comply and forget to get the project with the modified schema, you will end up with the conflict files (since `geodiff` is unable to merge sqlite databases with different schemata).
 :::
 
 If you have some hidden variables in form and you just add them to the form as visible, this should not cause any issues. However, you cannot change the data type or do any change in the sqlite (GeoPackage) file.

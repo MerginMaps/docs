@@ -20,7 +20,7 @@ Make your work easier and avoid unnecessary conflict files by following [**these
 
 Let's think of a survey of benches in a park conducted by Jack and Jill. They start with a vector layer of points with benches and they need to asses conditions of the benches by filling in a couple of attributes. They split the work into two halves and do the survey. By mistake, Jack also surveys a bench assigned to Jill - they both end up editing attributes of the same point, with slightly different values. How will Mergin handle that?
 
-TODO: illustration of edits - diamond shape - base, Jack, Jill, result
+<!-- TODO: illustration of edits - diamond shape - base, Jack, Jill, result -->
 
 If Jack is the first one to sync his changes and then Jill syncs her changes, at the time of Jill's sync Mergin knows they have a conflict in edits for that one bench. The editor who syncs last "wins", so in this case Jill's changes would be kept and Jack's changes would be overwritten (of course, all his non-conflicting edits to other benches would be kept). Mergin keeps a record about this, in case a project admin would want to investigate the edit conflict: if the survey is stored e.g. in data.gpkg, then a JSON file named data (edit conflict, jack v123).json would be created, containing list of conflicts. For each conflicting attribute value, the file lists the original value and the two different modified versions.
 
