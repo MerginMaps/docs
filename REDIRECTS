@@ -70,18 +70,6 @@ https://merginmaps.com/docs/howto/reuse_last_values/	https://merginmaps.com/docs
 https://merginmaps.com/docs/howto/sign-up-to-mergin-maps/	https://merginmaps.com/docs/setup/sign-up-to-mergin-maps/
 https://merginmaps.com/docs/reference/licensing/	https://merginmaps.com/docs/misc/licensing/
 https://merginmaps.com/docs/reference/privacy/	https://merginmaps.com/docs/misc/privacy/
-
-# Redirects similar to above but without trailing slash to match links hardcoded in Input that did not use the canonical URL
-https://merginmaps.com/docs/fieldwork/gps_accuracy/	https://merginmaps.com/docs/field/gps_accuracy/
-https://merginmaps.com/docs/howto/data_sync	https://merginmaps.com/docs/manage/data_sync/
-https://merginmaps.com/docs/howto/manage/web/subscriptions	https://merginmaps.com/docs/setup/subscriptions/
-https://merginmaps.com/docs/howto/proj	https://merginmaps.com/docs/gis/proj/
-https://merginmaps.com/docs/howto/project/enable_browsing	https://merginmaps.com/docs/gis/enable_browsing/
-https://merginmaps.com/docs/howto/project/enable_digitising	https://merginmaps.com/docs/gis/enable_digitising/
-https://merginmaps.com/docs/howto/project/features	https://merginmaps.com/docs/gis/features/
-https://merginmaps.com/docs/howto/project/setup_themes	https://merginmaps.com/docs/gis/setup_themes/
-https://merginmaps.com/docs/reference/privacy	https://merginmaps.com/docs/misc/privacy/
-
 https://help.cloudmergin.com/	https://merginmaps.com/docs/
 https://help.cloudmergin.com/dashboard	https://merginmaps.com/docs/manage/dashboard/
 https://help.cloudmergin.com/developers	https://merginmaps.com/docs/dev/integration/
@@ -119,7 +107,6 @@ https://help.cloudmergin.com/web-create-project	https://merginmaps.com/docs/mana
 https://help.cloudmergin.com/working-with-organisations	https://merginmaps.com/docs/setup/working-with-organisations/
 https://help.cloudmergin.com/working-with-qgis-plugin	https://merginmaps.com/docs/
 https://help.cloudmergin.com/working-with-qgis-plugin.html	N/A - covered by non-html version
-
 https://help.inputapp.io	https://merginmaps.com/docs/
 https://help.inputapp.io/	https://merginmaps.com/docs/
 https://help.inputapp.io/developers	https://merginmaps.com/docs/dev/customapp/
