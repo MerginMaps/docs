@@ -5,7 +5,7 @@ import sys
 import re
 from urllib.parse import urlparse
 
-input_file = r'C:\Users\Pete\Documents\GitHub\MerginMaps-docs\test.txt'  # Generate with git diff --name-status 2022.1.1 > test.txt
+input_file = r'C:\Users\Pete\Documents\GitHub\MerginMaps-docs\git-output.txt'  # Generate with git diff --name-status 2022.1.1 > git-output.txt
 redirect_file=r'C:\Users\Pete\Documents\GitHub\MerginMaps-docs\REDIRECTS'
 
 """
@@ -20,6 +20,26 @@ def full_url_from_file(file):
         file = re.sub('.md$', '/', file)
     file = re.sub('^src/', '', file)
     return 'https://merginmaps.com/docs/' + file
+
+def slashify(url):
+    # If this line looks like it was for a page, ensure it will be matched regardless of whether it is accessed
+    # with a trailing slash
+    # First work out if it was for a page or a file of some kind
+    is_file = False
+    url_parts = urlparse(url)
+    assert urlparse(url).query == ''
+    if len(url_parts.path) > 0 and '.' in url_parts.path.split('/')[-1]:
+        is_file = True
+    if is_file:
+        return url
+    # So it's a page
+    if url_parts.path.endswith('/'):
+        path = url_parts.path + '?'  # The ? is a regex ?, not a query ?
+    else:
+        path = url_parts.path + '/?'
+    if url_parts.scheme != '':
+        path = url_parts.scheme + '://' + url_parts.netloc + path
+    return path
 
 page_extension = '.md'
 iamge_extensions = ['.jpg', '.png', '.gif', '.xcf']
@@ -76,11 +96,13 @@ for l, s, d in url_redirection_config:
         execpected_proto_or_hosts.append(l)
 
 # There should be no duplicate sources
-all_sources = []
+all_sources_no_trailing_slash = []
 duplicate_sources = []
 for l, s, d in url_redirection_config:
-    if s not in all_sources:
-        all_sources.append(s)
+    if s.endswith('/'):
+        s = s[:-1]
+    if s not in all_sources_no_trailing_slash:
+        all_sources_no_trailing_slash.append(s)
     elif s not in duplicate_sources:
         duplicate_sources.append(s)
 
@@ -134,8 +156,8 @@ if len(execpected_proto_or_hosts) > 0:
                      execpected_proto_or_hosts)
     errors_found = True
 
-if len(duplicate_sources) > 0:
-    duplicate_sources.sort()
+if len(execpected_proto_or_hosts) > 0:
+    execpected_proto_or_hosts.sort()
     sys.stderr.write('Host or protocol of following lines of REDIRECT file looked odd: %s\n' %
                      execpected_proto_or_hosts)
     errors_found = True
@@ -185,8 +207,8 @@ for server in nginx_redirect_configs.keys():
     prod_file = open('prod-%s-snippet.txt' % server, 'w')
     for src in srcs:
         dst = nginx_redirect_configs[server][src]
-        dev_file.write('            rewrite ^%s$ https://dev.merginmaps.com%s permanent;\n' % (src,dst))
-        prod_file.write('            rewrite ^%s$ https://merginmaps.com%s permanent;\n' % (src,dst))
+        dev_file.write('            rewrite ^%s$ https://dev.merginmaps.com%s permanent;\n' % (slashify(src),dst))
+        prod_file.write('            rewrite ^%s$ https://merginmaps.com%s permanent;\n' % (slashify(src),dst))
         redirect_test_file.write('https://%s%s\n' % (server,src))
 
 if errors_found:
