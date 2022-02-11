@@ -11,6 +11,7 @@
 #   - Destination URLs start with:
 #         https://merginmaps.com/docs/ or 
 #         N/A (these lines are ignored)
+#   - There are no duplicate sources (trailing slashes on source pages are ignored when this check is performed)
 
 https://help.cloudmergin.com/	https://merginmaps.com/docs/
 https://help.cloudmergin.com/dashboard	https://merginmaps.com/docs/manage/dashboard/
