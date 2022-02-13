@@ -1,4 +1,4 @@
-# Working with QGIS Plugin
+# Download and Synchronise projects with QGIS Plugin
 [[toc]]
 
 <QGISPluginName /> allows you work with your Mergin Maps projects in QGIS, whether it's downloading the project to your computer, making changes in the project, seeing the project's status or synchronising changes to the cloud. 

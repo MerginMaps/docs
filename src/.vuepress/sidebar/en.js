@@ -36,8 +36,8 @@ module.exports = {
                 '/manage/synchronisation',
                 '/manage/create-project/',
                 '/manage/project-advanced',
-                '/manage/modify-attribute-table/',
-                '/manage/avoid-conflict-files/',
+                '/manage/deploy-new-project/',
+                '/manage/missing-data/',
                 '/manage/plugin-multi-server-use/',
                 '/manage/plugin-sync-project',
                 '/manage/dashboard',
@@ -66,8 +66,9 @@ module.exports = {
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
+                '/layer/best-practice/', 
                 '/layer/settingup_forms',
-                '/layer/settingup_forms_settings',
+                '/layer/settingup_forms_settings',           
                 '/layer/exif_metadata',
                 '/layer/settingup_forms_photo',
                 '/layer/attach-multiple-photos-to-features/',
