@@ -3,7 +3,7 @@
 [[toc]]{ includeLevel: [2, 4] }
 
 Let's say you synchronise surveyed data from multiple devices (individual surveyors) and when you examine them, you find out there is something missing - new features that were captured in the field or changes made by one or more of your team members. 
-The reasons why you didn't get all the data can vary. For instance, the data could not be synchronised correctly because of multiple surveyors editing the same feature or synchronisation of projects with different data schema. You can read more about this topic in [Synchronisation and Conflicts](./synchronisation.md).
+The reasons why you didn't get all the data can vary. For instance, the data could not be synchronised correctly because of multiple surveyors editing the same feature or synchronisation of projects with different data schema. You can read more about this topic in [Synchronisation and Conflicts](../synchronisation.md).
 
 Here we will try to guide you through common techniques that can help you to retrieve your data.
 

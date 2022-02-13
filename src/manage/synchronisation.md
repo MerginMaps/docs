@@ -44,6 +44,6 @@ TODO: plugin not doing this naming yet - lutraconsulting/mergin-py-client#62 -->
 ### Conflicted copy
 Input does not support changing of the data schema. So, if you delete or add columns to your survey layer or change the data type of a field, Input cannot detect the change. Therefore, it is always recommended to stick with the same attribute table structure once you have set up your survey layer.
 
-If you need to change the data schema, [](./modify-attribute-table/index.md)
+If you need to change the data schema, [see how to deploy a revised project properly](./deploy-new-project/).
  
 <!-- TODO: example when that happens (change of database schema) -->
