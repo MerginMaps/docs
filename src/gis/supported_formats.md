@@ -16,7 +16,7 @@
 | WFS            | :thumbsup:                        | :thumbsup:                    | Requires internet connection                                          |
 
 ::: tip
-Read [more](./synchronisation.md) how the synchronization in Mergin Maps works.
+Read [more](../manage/synchronisation.md) how the synchronisation in Mergin Maps works.
 :::
 
 
@@ -32,8 +32,8 @@ Read [more](./synchronisation.md) how the synchronization in Mergin Maps works.
 | MBTiles        | :thumbsup:                        | :thumbsup:                    |  local vector tiles                 |
 | WM(T)S         | :thumbsup:                        | :thumbsup:                    |                                     |
 | XYZ tiles      | :thumbsup:                        | :thumbsup:                    | OpenStreetMap, Google Aerial, Bing. |
-| ECW            | :no_entry_sign:                   | :thumbsup:                    | Propriatory license                 |
-| MrSID          | :no_entry_sign:                   | :thumbsup:                    | Propriatory license                 |
+| ECW            | :no_entry_sign:                   | :thumbsup:                    | Proprietary license                 |
+| MrSID          | :no_entry_sign:                   | :thumbsup:                    | Proprietary license                 |
 | COG (online)   | :no_entry_sign:                   | :thumbsup:                    |                                     |
 
 ::: tip
@@ -50,7 +50,7 @@ See [our guide](./settingup_background_map.md) for setting up background layers.
 
 ## Full list of supported QGIS providers
 
-<MobileAppName /> is based on the <GitHubRepo id="lutraconsulting/input-sdk" /> with custom QGIS core library build. The currrently supported QGIS providers are
+<MobileAppName /> is based on the <GitHubRepo id="lutraconsulting/input-sdk" /> with custom QGIS core library build. The currently supported QGIS providers are
     
 ```
 OGC API - Features data provider
@@ -72,7 +72,7 @@ OGC Web Map Service version 1.3 data provider
 
 ## Full list of supported GDAL drivers
 
-<MobileAppName /> is based on the <GitHubRepo id="lutraconsulting/input-sdk" /> with custom GDAL build. The currrently supported formats are
+<MobileAppName /> is based on the <GitHubRepo id="lutraconsulting/input-sdk" /> with custom GDAL build. The currently supported formats are
 
 ```
    gdalinfo --formats
@@ -205,13 +205,13 @@ OGC Web Map Service version 1.3 data provider
 
 ## How to convert between GDAL formats
 
-To convert between various GDAL formats, you can use [gdal_translate](https://gdal.org/programs/gdal_translate.html) command-line utility. Altenatively, you can use QGIS processing tools algorithms.
+To convert between various GDAL formats, you can use [gdal_translate](https://gdal.org/programs/gdal_translate.html) command-line utility.
 
 ## Support for new formats
 
 If you find out that the <MobileAppName /> doesn't support your format, please open issue at <GitHubRepo id="lutraconsulting/input-sdk" />.
 
-If QGIS on deskop does not support, open issue at <GitHubRepo id="qgis/QGIS-Mac-Packager" /> for macOS, or <GitHubRepo id="qgis/QGIS" /> for other platforms.
+If QGIS on desktop does not support, open issue at <GitHubRepo id="qgis/QGIS-Mac-Packager" /> for macOS, or <GitHubRepo id="qgis/QGIS" /> for other platforms.
 
 For support of collaborative editing and versioning of vector data formats, please open issue at <GitHubRepo id="lutraconsulting/geodiff" />.
 
