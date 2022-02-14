@@ -10,6 +10,7 @@ CSV
 CharlieColleague
 DAF
 DateTime
+ECW
 EPSG
 ESRI
 EXIF
@@ -18,6 +19,7 @@ FID
 FIDs
 FOSS
 GDA
+gdal
 GDAL
 GEOS
 GIS
@@ -29,6 +31,7 @@ Gimp
 HTML
 Helmert
 HiDPi
+jpg
 JPG
 LGPL
 LGPLv
@@ -38,6 +41,7 @@ MAN
 MBTiles
 MDAL
 MPL
+MrSID
 MSI
 Mercedes
 Mergin
@@ -49,6 +53,7 @@ OSTN
 Ok
 OpenMapTiles
 OpenStreetMap
+png
 PNG
 PR
 PROJ
@@ -183,5 +188,6 @@ uuid
 xcf
 xyz
 yml
+webp
 zlib
 zoomstack
