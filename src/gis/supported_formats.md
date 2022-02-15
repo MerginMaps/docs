@@ -26,7 +26,7 @@ Read [more](../manage/synchronisation.md) how the synchronisation in Mergin Maps
 
 ## Raster data on <MobileAppName />
 
-| Format         | Android/i.OS      | Note                                                                       |   
+| Format         | Android/iOS      | Note                                                                       |   
 |----------------|-------------------|----------------------------------------------------------------------------|
 | GeoTIFF        | :thumbsup:        | png, jpg and webp compression                                              |
 | JPEG           | :thumbsup:        |                                                                            |
@@ -35,10 +35,10 @@ Read [more](../manage/synchronisation.md) how the synchronisation in Mergin Maps
 | MBTiles        | :thumbsup:        | png, jpg compression                                                       |
 | WM(T)S         | :thumbsup:        |                                                                            |
 | XYZ tiles      | :thumbsup:        | OpenStreetMap, Google Aerial, ...                                          |
+| GeoPDF         | :thumbsup:        |                                                                            |
 | ECW            | :no_entry_sign:   | proprietary license                                                        |
 | MrSID          | :no_entry_sign:   | proprietary license                                                        |
 | COG (online)   | :no_entry_sign:   | <GitHubRepo id="lutraconsulting/input-sdk/issues/46" desc="open ticket" /> |
-| GeoPDF         | :no_entry_sign:   | <GitHubRepo id="lutraconsulting/input-sdk/issues/48" desc="open ticket" /> |
 
 There are plenty of other raster formats we support through GDAL/OGR, please see [the full list](#full-list-of-supported-gdal-drivers)
 
