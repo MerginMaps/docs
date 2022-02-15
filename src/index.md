@@ -58,6 +58,7 @@ The ecosystem consist of various components:
 - [Enable Digitising](./gis/enable_digitising/)
 - [Enable Browsing](./gis/enable_browsing/)
 - [Custom Projections](./gis/proj/)
+- [Supported Formats](./gis/supported_formats/)
 
 ## Configure Survey Layer
 - [Setting Up Form Widgets](./layer/settingup_forms/)

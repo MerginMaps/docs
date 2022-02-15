@@ -55,7 +55,8 @@ module.exports = {
                 '/gis/setup_themes',
                 '/gis/enable_digitising',
                 '/gis/enable_browsing',
-                '/gis/proj'
+                '/gis/proj',
+                '/gis/supported_formats'
             ]
         }, 
         {
