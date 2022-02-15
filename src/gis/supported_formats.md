@@ -7,6 +7,7 @@ When working with <MobileAppName />, you can keep using standard data formats yo
 
 ## Vector data on <MobileAppName />
 
+For survey layers used on the field, we strongly recommend GeoPackage, to be able to work fully offline, benefit from automatic merging of data (collaborative editing) and versioning.
 
 | Format         |  Android/iOS  | Note                                                                                                |
 |----------------|---------------|-----------------------------------------------------------------------------------------------------|
@@ -26,19 +27,19 @@ Read [more](../manage/synchronisation.md) how the synchronisation in Mergin Maps
 
 ## Raster data on <MobileAppName />
 
-| Format         | Android/iOS      | Note                                                                        |   
-|----------------|-------------------|----------------------------------------------------------------------------|
-| GeoTIFF        | :thumbsup:        | png, jpg and webp compression                                              |
-| JPEG           | :thumbsup:        |                                                                            |
-| PNG            | :thumbsup:        |                                                                            |
-| COG (local)    | :thumbsup:        |                                                                            |
-| MBTiles        | :thumbsup:        | png, jpg compression                                                       |
-| WM(T)S         | :thumbsup:        |                                                                            |
-| XYZ tiles      | :thumbsup:        | OpenStreetMap, Google Aerial, ...                                          |
-| GeoPDF         | :thumbsup:        |                                                                            |
-| ECW            | :no_entry_sign:   | proprietary license                                                        |
-| MrSID          | :no_entry_sign:   | proprietary license                                                        |
-| COG (online)   | :no_entry_sign:   | <GitHubRepo id="lutraconsulting/input-sdk/issues/46" desc="open ticket" /> |
+| Format         | Android/iOS      | Note                                                                                                       |   
+|----------------|-------------------|-----------------------------------------------------------------------------------------------------------|
+| GeoTIFF        | :thumbsup:        | png, jpg and webp compression                                                                             |
+| JPEG           | :thumbsup:        |                                                                                                           |
+| PNG            | :thumbsup:        |                                                                                                           |
+| COG (local)    | :thumbsup:        |                                                                                                           |
+| MBTiles        | :thumbsup:        | png, jpg compression                                                                                      |
+| GeoPDF         | :thumbsup:        |                                                                                                           |
+| WM(T)S         | :thumbsup:        | requires internet connection                                                                              |
+| XYZ tiles      | :thumbsup:        | requires internet connection (e.g. OpenStreetMap)                                                         |
+| COG (online)   | :no_entry_sign:   | requires internet connection (<GitHubRepo id="lutraconsulting/input-sdk/issues/46" desc="open ticket" />) |
+| ECW            | :no_entry_sign:   | proprietary license                                                                                       |
+| MrSID          | :no_entry_sign:   | proprietary license                                                                                       |
 
 There are plenty of other raster formats we support through GDAL/OGR, please see [the full list](#full-list-of-supported-gdal-drivers)
 
