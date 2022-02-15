@@ -27,6 +27,7 @@ GPL
 GeoPackage
 GeoPackages
 GeoTIFF
+GeoPDF
 Gimp
 HTML
 Helmert
@@ -38,6 +39,7 @@ LGPLv
 LTR
 Lutra
 MAN
+Mapbox
 MBTiles
 MDAL
 MPL
@@ -51,6 +53,7 @@ NDK
 OSGB
 OSM
 OSTN
+OGR
 Ok
 OpenMapTiles
 OpenStreetMap

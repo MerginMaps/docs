@@ -8,14 +8,14 @@ When working with <MobileAppName />, you can keep using standard data formats yo
 ## Vector data on <MobileAppName />
 
 
-| Format         |  Android/iOS  | Note                                                                  |
-|----------------|---------------|-----------------------------------------------------------------------|
-| GeoPackage     | :heart_eyes:  | Collaborative editing and versioning by <GitHubRepo id="lutraconsulting/geodiff" desc="geodiff" />  |
-| Shapefile      | :warning:     | Collaborative editing not supported           |
-| Delimited text | :warning:     | Collaborative editing not supported  | 
-| Virtual layer  | :warning:     | Collaborative editing not supported            |                 
-| PostGIS        | :thumbsup:    | Requires internet connection                                          |
-| WFS            | :thumbsup:    | Requires internet connection                                          |
+| Format         |  Android/iOS  | Note                                                                                                |
+|----------------|---------------|-----------------------------------------------------------------------------------------------------|
+| GeoPackage     | :heart_eyes:  | collaborative editing and versioning by <GitHubRepo id="lutraconsulting/geodiff" desc="geodiff" />  |
+| Shapefile      | :warning:     | collaborative editing not supported                                                                 |
+| Delimited text | :warning:     | collaborative editing not supported                                                                 | 
+| Virtual layer  | :warning:     | collaborative editing not supported                                                                 |                 
+| PostGIS        | :thumbsup:    | requires internet connection                                                                        |
+| WFS            | :thumbsup:    | requires internet connection                                                                        |
 
 There are more formats supported, please see full list of supported [QGIS providers](#full-list-of-supported-qgis-providers) and [OGR drivers](#full-list-of-supported-ogr-drivers)
 
@@ -26,7 +26,7 @@ Read [more](../manage/synchronisation.md) how the synchronisation in Mergin Maps
 
 ## Raster data on <MobileAppName />
 
-| Format         | Android/iOS      | Note                                                                       |   
+| Format         | Android/iOS      | Note                                                                        |   
 |----------------|-------------------|----------------------------------------------------------------------------|
 | GeoTIFF        | :thumbsup:        | png, jpg and webp compression                                              |
 | JPEG           | :thumbsup:        |                                                                            |
