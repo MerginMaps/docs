@@ -5,7 +5,7 @@ When working with <MobileAppName />, you can keep using standard data formats yo
 
 [[toc]]
 
-## Vector data on <MobileAppName />
+## Vector data on Mergin Maps Input
 
 For survey layers used on the field, we strongly recommend GeoPackage, to be able to work fully offline, benefit from automatic merging of data (collaborative editing) and versioning.
 
@@ -25,7 +25,7 @@ Read [more](../manage/synchronisation.md) how the synchronisation in Mergin Maps
 :::
 
 
-## Raster data on <MobileAppName />
+## Raster data on Mergin Maps Input
 
 | Format         | Android/iOS      | Note                                                                                                       |   
 |----------------|-------------------|-----------------------------------------------------------------------------------------------------------|
@@ -47,7 +47,7 @@ There are plenty of other raster formats we support through GDAL/OGR, please see
 See [our guide](./settingup_background_map.md) for setting up background layers.
 :::
 
-## Vector tiles on <MobileAppName />
+## Vector tiles on Mergin Maps Input
 
 We support vector tiles just like QGIS does - in Mapbox Vector Tiles (MVT) format - and stored either in a MBTiles file (for offline use) or through a template URL (for online service) such as `http://example.com/{z}/{x}/{y}.pbf`.
 
