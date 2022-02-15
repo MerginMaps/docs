@@ -28,8 +28,8 @@ Read [more](../manage/synchronisation.md) how the synchronisation in Mergin Maps
 ## Raster data on Mergin Maps Input
 
 | Format         | Android/iOS      | Note                                                                                                       |   
-|----------------|-------------------|-----------------------------------------------------------------------------------------------------------|
-| GeoTIFF        | :thumbsup:        | png, jpg and webp compression                                                                             |
+|----------------|------------------|------------------------------------------------------------------------------------------------------------|
+| GeoTIFF        | :thumbsup:        | jpg and webp compression                                                                                  |
 | JPEG           | :thumbsup:        |                                                                                                           |
 | PNG            | :thumbsup:        |                                                                                                           |
 | COG (local)    | :thumbsup:        |                                                                                                           |
