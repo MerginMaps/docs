@@ -43,6 +43,7 @@ MDAL
 MPL
 MrSID
 MSI
+MVT
 Mercedes
 Mergin
 Multiline

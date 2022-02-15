@@ -1,48 +1,54 @@
 # Supported Formats
 <!-- reference -->
-  
+
+When working with <MobileAppName />, you can keep using standard data formats you are used to in QGIS. In general, most of the data formats that QGIS can load, can be also used in <MobileAppName />. There are however some minor differences worth highlighting.
+
 [[toc]]
 
-## Vector data 
+## Vector data on <MobileAppName />
 
 
-| Format         | <MobileAppName /> (Android, iOS)  | QGIS (Windows, macOS, Linux)  | Note                                                                  |
-|----------------|-----------------------------------|-------------------------------|-----------------------------------------------------------------------|
-| GeoPackage     | :heart_eyes:                      | :heart_eyes:                  | Collaborative editing via <GitHubRepo id="lutraconsulting/geodiff" /> |
-| Shapefile      | :warning:                         | :warning:                     | Not supported by <GitHubRepo id="lutraconsulting/geodiff" />          |
-| Delimited text | :warning:                         | :warning:                     | Not supported by <GitHubRepo id="lutraconsulting/geodiff" />          | 
-| Virtual layer  | :warning:                         | :warning:                     | Not supported by <GitHubRepo id="lutraconsulting/geodiff" />          |                 
-| PostGIS        | :thumbsup:                        | :thumbsup:                    | Requires internet connection                                          |
-| WFS            | :thumbsup:                        | :thumbsup:                    | Requires internet connection                                          |
+| Format         |  Android/iOS  | Note                                                                  |
+|----------------|---------------|-----------------------------------------------------------------------|
+| GeoPackage     | :heart_eyes:  | Collaborative editing and versioning by <GitHubRepo id="lutraconsulting/geodiff" desc="geodiff" />  |
+| Shapefile      | :warning:     | Collaborative editing not supported           |
+| Delimited text | :warning:     | Collaborative editing not supported  | 
+| Virtual layer  | :warning:     | Collaborative editing not supported            |                 
+| PostGIS        | :thumbsup:    | Requires internet connection                                          |
+| WFS            | :thumbsup:    | Requires internet connection                                          |
+
+There are more formats supported, please see full list of supported [QGIS providers](#full-list-of-supported-qgis-providers) and [OGR drivers](#full-list-of-supported-ogr-drivers)
 
 ::: tip
 Read [more](../manage/synchronisation.md) how the synchronisation in Mergin Maps works.
 :::
 
 
-## Raster data 
+## Raster data on <MobileAppName />
 
-| Format         | <MobileAppName /> (Android, iOS)  | QGIS (Windows, macOS, Linux)  | Note                                |   
-|----------------|-----------------------------------|-------------------------------|-------------------------------------|
-| GeoTIFF        | :thumbsup:                        | :thumbsup:                    | png, jpg and webp compression       |
-| JPEG           | :thumbsup:                        | :thumbsup:                    |                                     |
-| PNG            | :thumbsup:                        | :thumbsup:                    |                                     |
-| COG (local)    | :thumbsup:                        | :thumbsup:                    |                                     |
-| MBTiles        | :thumbsup:                        | :thumbsup:                    |  png, jpg compression               |
-| MBTiles        | :thumbsup:                        | :thumbsup:                    |  local vector tiles                 |
-| WM(T)S         | :thumbsup:                        | :thumbsup:                    |                                     |
-| XYZ tiles      | :thumbsup:                        | :thumbsup:                    | OpenStreetMap, Google Aerial, Bing. |
-| ECW            | :no_entry_sign:                   | :thumbsup:                    | Proprietary license                 |
-| MrSID          | :no_entry_sign:                   | :thumbsup:                    | Proprietary license                 |
-| COG (online)   | :no_entry_sign:                   | :thumbsup:                    |                                     |
+| Format         | Android/i.OS      | Note                                                                       |   
+|----------------|-------------------|----------------------------------------------------------------------------|
+| GeoTIFF        | :thumbsup:        | png, jpg and webp compression                                              |
+| JPEG           | :thumbsup:        |                                                                            |
+| PNG            | :thumbsup:        |                                                                            |
+| COG (local)    | :thumbsup:        |                                                                            |
+| MBTiles        | :thumbsup:        | png, jpg compression                                                       |
+| WM(T)S         | :thumbsup:        |                                                                            |
+| XYZ tiles      | :thumbsup:        | OpenStreetMap, Google Aerial, ...                                          |
+| ECW            | :no_entry_sign:   | proprietary license                                                        |
+| MrSID          | :no_entry_sign:   | proprietary license                                                        |
+| COG (online)   | :no_entry_sign:   | <GitHubRepo id="lutraconsulting/input-sdk/issues/46" desc="open ticket" /> |
+| GeoPDF         | :no_entry_sign:   | <GitHubRepo id="lutraconsulting/input-sdk/issues/48" desc="open ticket" /> |
+
+There are plenty of other raster formats we support through GDAL/OGR, please see [the full list](#full-list-of-supported-gdal-drivers)
 
 ::: tip
 See [our guide](./settingup_background_map.md) for setting up background layers.
 :::
 
-## Vector Tiles
+## Vector tiles on <MobileAppName />
 
-We support vector tiles in MBTiles container (local usage) or as online service. 
+We support vector tiles just like QGIS does - in Mapbox Vector Tiles (MVT) format - and stored either in a MBTiles file (for offline use) or through a template URL (for online service) such as `http://example.com/{z}/{x}/{y}.pbf`.
 
 ::: tip 
 See [our guide](./settingup_background_map.md) for setting up background layers.
@@ -75,9 +81,8 @@ OGC Web Map Service version 1.3 data provider
 <MobileAppName /> is based on the <GitHubRepo id="lutraconsulting/input-sdk" /> with custom GDAL build. The currently supported formats are
 
 ```
-   gdalinfo --formats
-  
-   Supported Formats:
+./gdalinfo --formats
+Supported Formats:
   
     VRT -raster,multidimensional raster- (rw+v): Virtual Raster
     DERIVED -raster- (ro): Derived datasets using VRT pixel functions
@@ -203,7 +208,79 @@ OGC Web Map Service version 1.3 data provider
     ISCE -raster- (rw+v): ISCE raster
 ```
 
-## How to convert between GDAL formats
+## Full list of supported OGR drivers
+
+<MobileAppName /> is based on the <GitHubRepo id="lutraconsulting/input-sdk" /> with custom OGR build. The currently supported formats are
+
+```
+./ogrinfo --formats
+Supported Formats:
+
+  PCIDSK -raster,vector- (rw+v): PCIDSK Database File
+  PDS4 -raster,vector- (rw+vs): NASA Planetary Data System 4
+  VICAR -raster,vector- (rw+v): MIPL VICAR file
+  PDF -raster,vector- (w+): Geospatial PDF
+  MBTiles -raster,vector- (rw+v): MBTiles
+  ESRI Shapefile -vector- (rw+v): ESRI Shapefile
+  MapInfo File -vector- (rw+v): MapInfo File
+  UK .NTF -vector- (rov): UK .NTF
+  OGR_SDTS -vector- (rov): SDTS
+  S57 -vector- (rw+v): IHO S-57 (ENC)
+  DGN -vector- (rw+v): Microstation DGN
+  OGR_VRT -vector- (rov): VRT - Virtual Datasource
+  REC -vector- (ro): EPIInfo .REC 
+  Memory -vector- (rw+): Memory
+  BNA -vector- (rw+v): Atlas BNA
+  CSV -vector- (rw+v): Comma Separated Value (.csv)
+  GML -vector- (rw+v): Geography Markup Language (GML)
+  GPX -vector- (rw+v): GPX
+  KML -vector- (rw+v): Keyhole Markup Language (KML)
+  GeoJSON -vector- (rw+v): GeoJSON
+  GeoJSONSeq -vector- (rw+v): GeoJSON Sequence
+  ESRIJSON -vector- (rov): ESRIJSON
+  TopoJSON -vector- (rov): TopoJSON
+  OGR_GMT -vector- (rw+v): GMT ASCII Vectors (.gmt)
+  GPKG -raster,vector- (rw+vs): GeoPackage
+  SQLite -vector- (rw+v): SQLite / Spatialite
+  WAsP -vector- (rw+v): WAsP .map format
+  OpenFileGDB -vector- (rov): ESRI FileGDB
+  XPlane -vector- (rov): X-Plane/Flightgear aeronautical data
+  DXF -vector- (rw+v): AutoCAD DXF
+  CAD -raster,vector- (rovs): AutoCAD Driver
+  FlatGeobuf -vector- (rw+v): FlatGeobuf
+  Geoconcept -vector- (rw+v): Geoconcept
+  GeoRSS -vector- (rw+v): GeoRSS
+  GPSTrackMaker -vector- (rw+v): GPSTrackMaker
+  VFK -vector- (ro): Czech Cadastral Exchange Data Format
+  PGDUMP -vector- (w+v): PostgreSQL SQL dump
+  OSM -vector- (rov): OpenStreetMap XML and PBF
+  GPSBabel -vector- (rw+): GPSBabel
+  SUA -vector- (rov): Tim Newport-Peace's Special Use Airspace Format
+  OpenAir -vector- (rov): OpenAir
+  OGR_PDS -vector- (rov): Planetary Data Systems TABLE
+  HTF -vector- (rov): Hydrographic Transfer Vector
+  AeronavFAA -vector- (rov): Aeronav FAA
+  EDIGEO -vector- (rov): French EDIGEO exchange format
+  SVG -vector- (rov): Scalable Vector Graphics
+  Idrisi -vector- (rov): Idrisi Vector (.vct)
+  ARCGEN -vector- (rov): Arc/Info Generate
+  SEGUKOOA -vector- (rov): SEG-P1 / UKOOA P1/90
+  SEGY -vector- (rov): SEG-Y
+  XLS -vector- (ro): MS Excel format
+  ODS -vector- (rw+v): Open Document/ LibreOffice / OpenOffice Spreadsheet 
+  XLSX -vector- (rw+v): MS Office Open XML spreadsheet
+  SXF -vector- (rov): Storage and eXchange Format
+  Selafin -vector- (rw+v): Selafin
+  JML -vector- (rw+v): OpenJUMP JML
+  VDV -vector- (rw+v): VDV-451/VDV-452/INTREST Data Format
+  MVT -vector- (rov): Mapbox Vector Tiles
+  MapML -vector- (rw+v): MapML
+  TIGER -vector- (rw+v): U.S. Census TIGER/Line
+  AVCBin -vector- (rov): Arc/Info Binary Coverage
+  AVCE00 -vector- (rov): Arc/Info E00 (ASCII) Coverage
+```
+
+## How to convert between GDAL/OGR formats
 
 To convert between various GDAL formats, you can use [gdal_translate](https://gdal.org/programs/gdal_translate.html) command-line utility.
 
@@ -211,7 +288,7 @@ To convert between various GDAL formats, you can use [gdal_translate](https://gd
 
 If you find out that the <MobileAppName /> doesn't support your format, please open issue at <GitHubRepo id="lutraconsulting/input-sdk" />.
 
-If QGIS on desktop does not support, open issue at <GitHubRepo id="qgis/QGIS-Mac-Packager" /> for macOS, or <GitHubRepo id="qgis/QGIS" /> for other platforms.
+If QGIS on desktop does not support the format of your choice, open issue at <GitHubRepo id="qgis/QGIS-Mac-Packager" /> for macOS, or <GitHubRepo id="qgis/QGIS" /> for other platforms.
 
 For support of collaborative editing and versioning of vector data formats, please open issue at <GitHubRepo id="lutraconsulting/geodiff" />.
 
