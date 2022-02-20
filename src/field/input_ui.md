@@ -1,5 +1,9 @@
 # Mergin Maps Input Interface
 
+::: danger
+This page will be updated soon to include changes in **Mergin Maps Input 1.3.0**.
+:::
+
 Below is a description of various items within the user interface:
 
 ![Input user interface](./input_gui.png)
