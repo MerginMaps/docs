@@ -1,12 +1,11 @@
-# Download and Synchronise projects with QGIS Plugin
+# Synchronisation in Mergin Plugin for QGIS
 [[toc]]
 
-<QGISPluginName /> allows you work with your Mergin Maps projects in QGIS, whether it's downloading the project to your computer, making changes in the project, seeing the project's status or synchronising changes to the cloud. 
+<QGISPluginName /> allows you to work with your Mergin Maps projects in QGIS, whether it's downloading the project to your computer, making changes in the project, seeing the project's status or synchronising changes to the cloud. 
 
 To get started, you will need to [install and configure the plugin](../setup/install-mergin-maps-plugin-for-qgis/index.md).
 
 ## Downloading a project in QGIS
-
 Once you have configured the plugin with your Mergin credentials, you should be able to see the following sections under the Mergin in your QGIS Browser panel:
 
 - **My projects** lists all projects you have created

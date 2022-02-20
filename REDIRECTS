@@ -54,7 +54,7 @@ https://help.inputapp.io	https://merginmaps.com/docs/
 https://help.inputapp.io/developers	https://merginmaps.com/docs/dev/customapp/
 https://help.inputapp.io/developers.html	N/A - covered by non-html version
 https://help.inputapp.io/faq	https://merginmaps.com/docs/
-https://help.inputapp.io/howto/data_sync	https://merginmaps.com/docs/manage/data_sync/
+https://help.inputapp.io/howto/data_sync	https://merginmaps.com/docs/manage/plugin-sync-project/
 https://help.inputapp.io/howto/datum_shift	https://merginmaps.com/docs/gis/projections/
 https://help.inputapp.io/howto/enable_browsing	https://merginmaps.com/docs/gis/enable_browsing/
 https://help.inputapp.io/howto/enable_digitizing	https://merginmaps.com/docs/gis/enable_digitising/
@@ -162,5 +162,6 @@ https://merginmaps.com/docs/howto/project/working_with_nonspatial_data/	https://
 https://merginmaps.com/docs/howto/quick-start/	https://merginmaps.com/docs/tutorials/capturing-first-data/
 https://merginmaps.com/docs/howto/reuse_last_values/	https://merginmaps.com/docs/field/reuse-last-values/
 https://merginmaps.com/docs/howto/sign-up-to-mergin-maps/	https://merginmaps.com/docs/setup/sign-up-to-mergin-maps/
+https://merginmaps.com/docs/manage/data_sync/	https://merginmaps.com/docs/manage/plugin-sync-project/
 https://merginmaps.com/docs/reference/licensing/	https://merginmaps.com/docs/misc/licensing/
 https://merginmaps.com/docs/reference/privacy/	https://merginmaps.com/docs/misc/privacy/

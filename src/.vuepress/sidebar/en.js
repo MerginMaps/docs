@@ -42,8 +42,7 @@ module.exports = {
                 '/manage/plugin-sync-project',
                 '/manage/dashboard',
                 '/manage/project-details',
-                '/manage/selective_sync/',
-                '/manage/data_sync'
+                '/manage/selective_sync/'
             ]
         }, 
         {
