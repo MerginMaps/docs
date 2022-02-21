@@ -1,6 +1,8 @@
 # Selective Synchronisation
 
-<Badge text="Since Input 1.0.0" type="info"/>
+::: danger
+This page needs update, we have already added option to Mergin Plugin for QGIS to easily [setup the selective synchronisation](https://github.com/lutraconsulting/qgis-mergin-plugin/pull/323).
+:::
 
 Selective sync feature adds a possibility to alter the synchronisation process to not download specified files on other devices. These files are only stored on creator's device and server and can be accessed on Mergin web or QGIS desktop. Other colleagues on different devices will not receive these files during synchronisation.
 
