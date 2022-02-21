@@ -234,4 +234,4 @@ This is not very useful so we will learn how to specify the extent that this but
 
 The aim of this tutorial was to introduce you to the main concepts of customising <MainPlatformName /> projects in QGIS and to cover common customisation workflows in a basic way.
 
-<!-- Although <MobileAppName /> looks very simple, there are many things ... FIXME tell the user where to look next to get a full picture of the different things they can customise with the project. ->>
+<!-- Although <MobileAppName /> looks very simple, there are many things ... FIXME tell the user where to look next to get a full picture of the different things they can customise with the project. -->
