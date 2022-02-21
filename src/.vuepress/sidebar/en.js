@@ -67,7 +67,7 @@ module.exports = {
             children: [
                 '/layer/best-practice/', 
                 '/layer/settingup_forms',
-                '/layer/settingup_forms_settings',           
+                '/layer/settingup_forms_settings',
                 '/layer/exif_metadata',
                 '/layer/settingup_forms_photo',
                 '/layer/attach-multiple-photos-to-features/',
