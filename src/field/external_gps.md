@@ -1,6 +1,9 @@
 # External GPS
 
 <!--- IMPORTANT: This permalink is referenced from Input App -->
+::: danger
+This page will be updated soon to include changes in **Mergin Maps Input 1.3.0**.
+:::
 
 It is possible to use an external GPS device with Input app. Input does not offer an interface to connect, set up or configure the external GPS device. The set up should be carried out from the device operating system (e.g. Android or iOS).
 
