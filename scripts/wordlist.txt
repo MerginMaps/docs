@@ -21,6 +21,7 @@ FOSS
 GDA
 gdal
 GDAL
+Geodiff
 GEOS
 GIS
 GPL

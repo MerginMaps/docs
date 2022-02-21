@@ -35,13 +35,14 @@ module.exports = {
                 '/manage/permissions',
                 '/manage/synchronisation',
                 '/manage/create-project/',
-                '/manage/dashboard',
                 '/manage/project-advanced',
+                '/manage/deploy-new-project/',
+                '/manage/missing-data/',
                 '/manage/plugin-multi-server-use/',
                 '/manage/plugin-sync-project',
+                '/manage/dashboard',
                 '/manage/project-details',
-                '/manage/selective_sync/',
-                '/manage/data_sync'
+                '/manage/selective_sync/'
             ]
         }, 
         {
@@ -64,6 +65,7 @@ module.exports = {
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
+                '/layer/best-practice/', 
                 '/layer/settingup_forms',
                 '/layer/settingup_forms_settings',
                 '/layer/exif_metadata',

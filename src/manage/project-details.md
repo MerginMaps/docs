@@ -2,7 +2,7 @@
 
 In Mergin, you can see the details of the changes made to the project from different devices or users. Each time you sync the project from your mobile device or from QGIS through the plugin, a new version will be created.
 
-On the Mergin website, you can view what files have been added or removed. If you use GeoPackage for your survey, you can also see the list the features which have been added, deleted or updated.
+On <MainDomainNameLink />, you can view what files have been added or removed. If you use GeoPackage for your survey, you can also see the list the features which have been added, deleted or updated.
 
 To view the project history:
 

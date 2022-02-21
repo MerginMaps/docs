@@ -40,15 +40,16 @@ The ecosystem consist of various components:
 
 ## Manage Account & Project
 - [Permissions](./manage/permissions/)
-- [Synchronisation](./manage/synchronisation/)
+- [Behind Data Synchronisation](./manage/synchronisation/)
 - [How to Create a New Project](./manage/create-project/)
-- [Home Page and Dashboard](./manage/dashboard/)
 - [How to Share, Transfer or Delete a Project](./manage/project-advanced/)
+- [How to Deploy Revised Projects](./manage/deploy-new-project/)
+- [How to Recover Missing Data](./manage/missing-data/)
 - [How to Use Mergin Maps Plugin for QGIS with Multiple Servers](./manage/plugin-multi-server-use/)
-- [How to Synchronise Project](./manage/plugin-sync-project/)
+- [Synchronisation in Mergin Plugin for QGIS](./manage/plugin-sync-project/)
+- [Home Page and Dashboard](./manage/dashboard/)
 - [Project History and Versions](./manage/project-details/)
 - [Selective Synchronisation](./manage/selective_sync/)
-- [Data Synchronisation and Conflicts](./manage/data_sync/)
 
 ## Setup GIS Project
 - [QGIS Project Preparation](./gis/features/)
@@ -61,6 +62,7 @@ The ecosystem consist of various components:
 - [Supported Formats](./gis/supported_formats/)
 
 ## Configure Survey Layer
+- [Best Practice Tips for Layers and Forms](./layer/best-practice/)
 - [Setting Up Form Widgets](./layer/settingup_forms/)
 - [Advanced Form Configuration](./layer/settingup_forms_settings/)
 - [Exif Metadata](./layer/exif_metadata/)
