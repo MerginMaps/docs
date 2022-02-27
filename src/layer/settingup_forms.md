@@ -281,7 +281,7 @@ The advantage of having this widget:
 
 To set up a value relation widget:
 
-  - Download and open <MerginMapsProject id="documentation/test_forms" /> in QGIS
+  - Download and open <MerginMapsProject id="lutraconsulting/test_forms" /> in QGIS
   - Notice the extra table in your layer tree: **<NoSpellcheck id="reftable" />**
   - From the layer panel, right-click on **Points** layer and select **Properties**
   - In the new window, select **Attributes form**
