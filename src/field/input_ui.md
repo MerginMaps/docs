@@ -28,7 +28,7 @@ Tapping the GPS button recenters the map to your current position.
 
 Pressing and holding GPS icon turns on / turns off the GPS auto-centre mode.
 
-GPS signal colour on the map denotes the accuracy threshold set by user within the Input in [GPS settings](#gps-settings). GPS accuracy is displayed at the bottom of the map. Tapping it opens the GPS info.
+GPS signal colour on the map denotes the accuracy threshold set by user within the Input in [GPS settings](#gps-settings). GPS accuracy is displayed at the bottom of the map. Tapping the GPS accuracy tab opens the GPS info.
 
 ![GPS](./input-gps.png) 
 
