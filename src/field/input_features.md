@@ -24,20 +24,18 @@ Surveyed features are added to the active layer, which is shown just above the b
 ![](../tutorials/mobile/merginmaps-mobile-active-layer.jpg)
 
 ### Capture points
-The cross hairs you will see on your map will be used as the recorded location. You can change the position of your point by pinching and dragging the background map. If you want to recentre the map to your current position, tap the **GPS** button. 
+The cross hairs you will see on your map will be used as the recorded location. You can change the position of your point by pinching and dragging the background map. If you want to recenter the map to your current position, tap the **GPS** button. 
 
-To capture your point, press **Add Point**.
+To capture your point, press **Add Point**. A form will open where you can fill in the attributes.
 
 ![Capturing point](../tutorials/capturing-first-data/merginmaps-mobile-default-point-position.jpg)
-
-
 
 ### Capture lines or areas
 There are two methods of capturing lines and areas:
   - using **Add point** to capture vertices of your line or area
   - pressing **GPS** to capture vertices based on your location. You can set how often you want to capture a vertex in **Line rec. interval** in [**Settings**](./input_ui/#gps-2).
 
-Once you are finished, press **Done**. If your feature is an area, the shape will be automatically closed by connecting the last and the first vertex.
+Once you are finished, press **Done**. If your feature is an area, the shape will be automatically closed by connecting the last and the first vertex. 
 
 ![Capturing lines](./input-capture-line.png)
 
