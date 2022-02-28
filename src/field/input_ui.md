@@ -28,9 +28,19 @@ Tapping the GPS button recenters the map to your current position.
 
 Pressing and holding GPS icon turns on / turns off the GPS auto-centre mode.
 
-GPS signal colour on the map denotes the accuracy threshold set by user within the Input in [GPS settings](#gps-settings). GPS accuracy is displayed at the bottom of the map. Tapping the GPS accuracy tab opens the GPS info.
+GPS signal colour on the map denotes the accuracy threshold set by user within the Input in [GPS settings](#gps-settings). GPS accuracy is displayed at the bottom of the map. 
 
 ![GPS](./input-gps.png) 
+
+Tapping the GPS accuracy tab opens the GPS info panel:
+- **Source**: internal GPS of the mobile device or external GPS receiver connected via Bluetooth
+- **Longitude, Latitude**: current position
+- **X, Y**: current position in project's coordinate reference system
+- **Horizontal** and **Vertical accuracy** of the GPS position
+- **Altitude**
+- **Satellites (in use/view)**: number of satellites 
+- **Speed**
+- **Last fix**: time of the last received GPS position
 
 ![GPS info](./input-gps-info.png) 
 
@@ -42,7 +52,6 @@ The active layer currently used for survey is displayed above the bottom navigat
 ![Record](./input-record.png) 
 
 ![Active layer](./input-active-layer.png) 
-
 
 ## Zoom to project, Browse features, Map themes, Settings
 **More** tab contains a list of additional options, such as:
@@ -56,7 +65,7 @@ The active layer currently used for survey is displayed above the bottom navigat
 ### GPS settings
 - **Follow GPS with map**: if toggled on, the map will pan so the GPS point can be seen on the map
 - **GPS accuracy**: shows the current GPS accuracy based on the *Accuracy threshold* using traffic light system. Green stands for GPS accuracy within the threshold, orange for GPS accuracy outside the threshold and red for no GPS position fix available.
-- **Accuracy threshold**: a value that is used to display GPS accuracy colours
+- **Accuracy threshold**: value used to display GPS accuracy colours
 - **Select GPS receiver**: option to switch between internal GPS and external GPS receiver connected via Bluetooth. See [External GPS](./external_gps/) for detailed steps.
 
 ![Settings](./input-settings2.png)
