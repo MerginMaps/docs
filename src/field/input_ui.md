@@ -3,7 +3,7 @@
 
 Below is a description of various items within the user interface. 
 
-The map can be moved by dragging around and zoomed in/out by pinching open/close. Tapping the GPS button centers the map to your current position.
+The map can be moved by dragging around and zoomed in/out by pinching open/close. Tapping the GPS button recentres the map to your current position.
 
 There are four tabs available in the bottom navigation panel: [Projects](#projects), [GPS](#gps), [Record](#record) and [More](#zoom-to-project-browse-features-map-themes-settings).
 
@@ -24,7 +24,7 @@ To sign in to Mergin or to access your Mergin profile information, select the ic
 ![Sign in](./input-account.png)
 
 ## GPS
-Tapping the GPS button recenters the map to your current position. 
+Tapping the GPS button recentres the map to your current position. 
 
 Pressing and holding GPS icon turns on / turns off the GPS auto-centre mode.
 
