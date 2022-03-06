@@ -32,7 +32,7 @@ External GPS can be connected and configured in Android to provide mock location
 Android offers **Allow mock locations**, where you can use GPS apps (e.g. [Bluetooth GPS](https://play.google.com/store/apps/details?id=de.pilablu.gpsconnector) or apps from specific GPS manufacturers) as your source of GPS signal.
 
 :::tip
-GPS manufacturer's apps often provide a setup for a NTRIP client, through which you are able to receive GNSS corrections and achieve centimetre level accuracy.
+GPS manufacturer's apps often provide a setup for a NTRIP client, through which you are able to receive GPS corrections and achieve centimetre level accuracy.
 :::
 
 To enable **Allow mock locations**:
@@ -59,7 +59,7 @@ If you encounter issues with external GPS in Input, make sure that:
 ## List of known supported GPS devices
 External GPS functionality depends on the manufacturer and on the specific model of your GPS device. These devices are currently known to work well:
 
-- **Emlid Reach RS+** - directly via bluetooth connection. Android only. It can connect to phone's hotspot and it has internal NTRIP client to receive corrections.
+- **Emlid Reach RS+** - directly via Bluetooth connection, has an internal NTRIP client to receive corrections. Android only.
 - **Leica FLX100** - through [Leica Zeno Connect app](https://play.google.com/store/apps/details?id=com.leica.zenoconnect&hl=en&gl=US) which also acts as a NTRIP client and sends the corrections to the device. The app will set mock location in Android. It is also possible to connect directly via Bluetooth (even multiple phones can be connected at once), but if no phone has Zeno app running, there will be no corrections available. Android only (even though Zeno app is on iOS too, it's not supported, at least this device).
 - **Trimble R2** - through [Trimble Mobile Manager app](https://play.google.com/store/apps/details?id=com.trimble.trimblemobilemanager) which also acts as a NTRIP client and sends the corrections to the device. The app will set mock location in Android.
 

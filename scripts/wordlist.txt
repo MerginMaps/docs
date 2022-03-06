@@ -11,12 +11,14 @@ CharlieColleague
 DAF
 DateTime
 ECW
+Emlid
 EPSG
 ESRI
 EXIF
 Exif
 FID
 FIDs
+FLX
 FOSS
 GDA
 gdal
@@ -35,6 +37,7 @@ Helmert
 HiDPi
 jpg
 JPG
+Leica
 LGPL
 LGPLv
 LTR
@@ -51,6 +54,7 @@ Mercedes
 Mergin
 Multiline
 NDK
+NTRIP
 OSGB
 OSM
 OSTN
@@ -89,6 +93,7 @@ Scania
 Skoda
 Transifex
 Trialing
+Trimble
 UUID
 Uncheck
 Valuemap
