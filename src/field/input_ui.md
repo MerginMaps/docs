@@ -26,9 +26,9 @@ To sign in to Mergin or to access your Mergin profile information, select the ic
 ## GPS
 Tapping the GPS button centres the map to your current position. 
 
-Pressing and holding GPS icon turns on / turns off the GPS auto-centre mode.
+Pressing and holding the GPS icon turns on / turns off the GPS auto-centre mode.
 
-GPS signal colour on the map denotes the accuracy threshold set by user within the Input in [GPS settings](#gps-settings). GPS accuracy is displayed at the bottom of the map. 
+GPS signal colour on the map denotes the accuracy threshold set by the user within the Input in [GPS settings](#gps-settings). GPS accuracy is displayed at the bottom of the map. 
 
 ![GPS](./input-gps.png) 
 
@@ -37,8 +37,8 @@ Tapping the GPS accuracy tab opens the GPS info panel:
 - **Longitude, Latitude**: current position
 - **X, Y**: current position in project's coordinate reference system
 - **Horizontal** and **Vertical accuracy** of the GPS position
-- **Altitude**
-- **Satellites (in use/view)**: number of satellites 
+- **Altitude**: ellipsoidal height
+- **Satellites (in use/view)**: number of satellites
 - **Speed**
 - **Last fix**: time of the last received GPS position
 
