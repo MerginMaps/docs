@@ -3,6 +3,7 @@ Android
 ArcGIS
 Basemap
 Basemaps
+BeiDou
 Benz
 Bing
 CRS

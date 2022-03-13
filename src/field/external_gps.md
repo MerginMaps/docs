@@ -81,4 +81,5 @@ External GPS functionality depends on the manufacturer and on the specific model
 - **Leica FLX100** - through [*Leica Zeno Connect* app](https://play.google.com/store/apps/details?id=com.leica.zenoconnect&hl=en&gl=US) which also acts as a NTRIP client and sends the corrections to the device. The app will set a mock location in Android. It is also possible to connect directly via Bluetooth (even multiple phones can be connected at once), but if no phone has Zeno app running, there will be no corrections available. Android only (even though Zeno app is on iOS too, it's not supported, at least this device).
 - **Trimble R2** - through [*Trimble Mobile Manager* app](https://play.google.com/store/apps/details?id=com.trimble.trimblemobilemanager) which also acts as a NTRIP client and sends the corrections to the device. The app will set a mock location in Android.
 
-Did you use a GPS that is not in this list? [Share your experiences with us!](https://github.com/MerginMaps/docs/issues/124)
+**Did you use a GPS that is not in this list?** <GitHubRepo id="MerginMaps/docs/issues/124" desc="Share your experiences with us!" />
+
