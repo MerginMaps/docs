@@ -21,6 +21,6 @@ Accurate stake out in short navigation mode may require an [external GPS receive
 3. Once you are closer to the point (less than 1 m), the stake out panel will switch to short navigation mode.
 ![short range](./stake-out-short.png)
 
-4. Precise stake out of the point (less than 10 cm) is highlighted by green:
+4. Precise stake out of the point (distance less than 10 cm) is highlighted by green:
 ![short range](./stake-out-short-done.png)
 
