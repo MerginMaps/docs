@@ -5,6 +5,10 @@
 
 To get started, you will need to [install and configure the plugin](../setup/install-mergin-maps-plugin-for-qgis/index.md).
 
+:::danger
+Do not use shared network drives or cloud storage (such as OneDrive or Google Drive) to store your Mergin Maps projects. It is not supported and can cause errors.
+:::
+
 ## Downloading a project in QGIS
 Once you have configured the plugin with your Mergin credentials, you should be able to see the following sections under the Mergin in your QGIS Browser panel:
 
