@@ -62,7 +62,7 @@ To work with <MainPlatformName /> projects in QGIS, you will need to [install th
 
    - **Use current QGIS project as is**. This is for cases when you have already a stand-alone folder with your project packaged.
 
-4. Name the project and select a path where your project folder and associated files will be generated:
+4. Name the project and select a path where your project folder and associated files will be generated. Your project should be saved on a local drive. Using shared network drives and cloud storage (such as OneDrive or Google Drive) is not supported.
 
    ![](./mergin_plugin_project_wizard_4.png)
 
