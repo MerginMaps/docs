@@ -60,7 +60,7 @@ If the map tip content has `# fields` marker on the first line, the following li
 
 #### Image
 
-Sample map tip content that will cause an image to be show specified by file path in field "image_1" (containing path relative to the project directory):
+Sample map tip content that will cause an image to be show specified by file path in field "image_1" (containing path relative to the project folder):
 
 ```
 # image

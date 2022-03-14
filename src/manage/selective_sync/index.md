@@ -27,7 +27,7 @@ The config file is of type `JSON` and contains following keys:
 
  - `input-selective-sync` specifies if selective sync should be allowed for this project. Keep this one as `true` in order to have selective sync enabled
 
- - `input-selective-sync-dir` specifies a subfolder that should be considered for selective sync. Only files that are located inside this directory (or any of its subdirectories) will be considered. To use selective sync on all project files, leave this value as an empty _string_ `""`
+ - `input-selective-sync-dir` specifies a subfolder that should be considered for selective sync. Only files that are located inside this folder (or any of its subfolders) will be considered. To use selective sync on all project files, leave this value as an empty _string_ `""`
 
 
 Example config setup to use selective sync on all project files:
@@ -39,7 +39,7 @@ Example config setup to use selective sync on all project files:
 }
 ```
 
-Example config setup to use selective sync only on files (photos) in subdirectory `images`:
+Example config setup to use selective sync only on files (photos) in subfolder `images`:
 ```json
 {
   "input-selective-sync": true,
@@ -48,7 +48,7 @@ Example config setup to use selective sync only on files (photos) in subdirector
 ```
 
 ::: tip
-  You can also use subdirectories (or any depth really) like `"resources/images"`. The path is relative to project's root directory.
+  You can also use subfolders (or any depth really) like `"resources/images"`. The path is relative to project's root folder.
 :::
 
 ## Get started 
@@ -61,7 +61,7 @@ You can find <PublicAsset src="mergin-config.json" /> file and add it to your pr
 If download does not work, ZIP archive is available for download <PublicAsset src="mergin-config.zip" />, decompress it and use as mentioned in the previous step.
 :::
 
-The config file needs to be placed in the root project directory where your `*.qgz` QGIS project is. These files are by default set to consider entire project directory and needs to be edited in text editor to use specific subdirectory.
+The config file needs to be placed in the root project folder where your `*.qgz` QGIS project is. These files are by default set to consider entire project folder and needs to be edited in text editor to use specific subfolder.
 
 ---
 
