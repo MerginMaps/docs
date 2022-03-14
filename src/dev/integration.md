@@ -31,7 +31,7 @@ The source code of the Python client is available on GitHub in <GitHubRepo id="l
 
 For those who prefer using terminal, there is `mergin` command line tool shipped with the Python client. With several built-in commands, it is possible to download Mergin projects, push/pull changes, create or delete projects and more.
 
-For example, to download a Mergin project to a local directory:
+For example, to download a Mergin project to a local folder:
 ```
 mergin download john/project1 ~/mergin/project1
 ```
