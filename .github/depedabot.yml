@@ -7,6 +7,14 @@ updates:
     directory: "/"
     # Check for updates once a week
     schedule:
-      interval: "weekly"
-      day: "sunday"
+      interval: "daily"
+    reviewers: "peter.petrik"
+    
+  # Enable version updates for yarn
+  - package-ecosystem: "yarn"
+    # Look for `package.json` in the `root` directory
+    directory: "/"
+    # Check for updates once a week
+    schedule:
+      interval: "daily"
     reviewers: "peter.petrik"
