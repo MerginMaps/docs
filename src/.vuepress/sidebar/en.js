@@ -86,6 +86,7 @@ module.exports = {
                 '/field/external_gps',
                 '/field/input_features',
                 '/field/reuse-last-values/',
+                '/field/stake-out/',
                 '/field/input_ui',
                 '/layer/working_with_nonspatial_data',
             ]
