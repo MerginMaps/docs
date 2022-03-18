@@ -71,15 +71,15 @@ External GPS functionality depends on the manufacturer and on the specific model
 | Manufacturer | Model | Android | iOS |
 |---|---|---|---|
 | Emlid | Emlid Reach RS+ | yes | no |
-| Garmin | GLO 2 | yes | unknown |
+| Emlid | Emlid Reach M+ | yes | no |
+| Garmin | GLO 2 | yes | yes |
 | Juniper Systems | Geode GNS3 | yes | yes |
 | Leica | Leica FLX100| yes | no |
-| Trimble | Trimble R2 | yes | unknown |
+| Trimble | Trimble R2 | mock only | unknown |
 
-- **Emlid Reach RS+** - directly via Bluetooth connection, has an internal NTRIP client to receive corrections. Android only.
+- **Emlid Reach RS+**, **Emlid Reach M+** - directly via Bluetooth connection, has an internal NTRIP client to receive corrections. Possible to set a mock location and connect the receiver via Bluetooth using [GPS Connector](https://play.google.com/store/apps/details?id=de.pilablu.gpsconnector) or WiFi using [Lebefure NTRIP Client](https://play.google.com/store/apps/details?id=com.lefebure.ntripclient). Android only.
 - **Geode GNS3** - through *Geode Connect* app on [Android](https://play.google.com/store/apps/details?id=com.juniper.geode2a&hl=en_NZ&gl=US) or [iOS](https://apps.apple.com/us/app/geode-connect/id1446098695), which also acts as an NTRIP client and sends corrections to the device.
 - **Leica FLX100** - through [*Leica Zeno Connect* app](https://play.google.com/store/apps/details?id=com.leica.zenoconnect&hl=en&gl=US) which also acts as a NTRIP client and sends the corrections to the device. The app will set a mock location in Android. It is also possible to connect directly via Bluetooth (even multiple phones can be connected at once), but if no phone has Zeno app running, there will be no corrections available. Android only (even though Zeno app is on iOS too, it's not supported, at least this device).
 - **Trimble R2** - through [*Trimble Mobile Manager* app](https://play.google.com/store/apps/details?id=com.trimble.trimblemobilemanager) which also acts as a NTRIP client and sends the corrections to the device. The app will set a mock location in Android.
 
 **Did you use a GPS that is not in this list?** <GitHubRepo id="MerginMaps/docs/issues/124" desc="Share your experiences with us!" />
-
