@@ -33,6 +33,7 @@ GeoTIFF
 GeoPDF
 Gimp
 GIS
+GG
 GLO
 GLONASS
 GNS
@@ -44,6 +45,7 @@ Helmert
 HiDPi
 jpg
 JPG
+Lebefure
 Leica
 LGPL
 LGPLv
