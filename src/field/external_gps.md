@@ -75,6 +75,7 @@ External GPS functionality depends on the manufacturer and on the specific model
 | Garmin | GLO 2 | yes | yes |
 | Juniper Systems | Geode GNS3 | yes | yes |
 | Leica | Leica FLX100| yes | no |
+| Leica | Leica Zeno GG04plus| yes | no |
 | Trimble | Trimble R2 | mock only | unknown |
 
 - **Emlid Reach RS+**, **Emlid Reach M+** - directly via Bluetooth connection, has an internal NTRIP client to receive corrections. Possible to set a mock location and connect the receiver via Bluetooth using [GPS Connector](https://play.google.com/store/apps/details?id=de.pilablu.gpsconnector) or WiFi using [Lebefure NTRIP Client](https://play.google.com/store/apps/details?id=com.lefebure.ntripclient). Android only.
