@@ -14,49 +14,14 @@ Features and other data are still being downloaded and both Jim and Susan will s
 
 ## How to set up selective sync
 
-Selective sync is not allowed by default on new projects. Project needs to contain a specific file called `mergin-config.json` that describes the behaviour. If you are not interested in customising the behaviour, skip to [get started](#get-started).
+Selective sync can be set using <QGISPluginName />.
 
-The config file is of type `JSON` and contains following keys:
+1. Open your project in QGIS and go to **Project** > **Properties**
+2. In **Mergin** tab check the **Enable selective sync for Input**
+3. Optionally, you can fill out **Only apply for folder**, if you want to use selective sync on a subfolder
 
- - `input-selective-sync` specifies if selective sync should be allowed for this project. Keep this one as `true` in order to have selective sync enabled
-
- - `input-selective-sync-dir` specifies a subfolder that should be considered for selective sync. Only files that are located inside this folder (or any of its subfolders) will be considered. To use selective sync on all project files, leave this value as an empty _string_ `""`
-
-
-Example config setup to use selective sync on all project files:
-
-```json
-{
-  "input-selective-sync": true,
-  "input-selective-sync-dir": "" 
-}
-```
-
-Example config setup to use selective sync only on files (photos) in subfolder `images`:
-```json
-{
-  "input-selective-sync": true,
-  "input-selective-sync-dir": "images" 
-}
-```
-
-::: tip
-  You can also use subfolders (or any depth really) like `"resources/images"`. The path is relative to project's root folder.
-:::
-
-## Get started 
-
-Projects with file `mergin-config.json` are set to use selective synchronisation. You can either create the file on your own and copy content from previous section to it or download prepared file and add it to your project.
-
-You can find <PublicAsset src="mergin-config.json" /> file and add it to your project via [Mergin website](https://public.cloudmergin.com/). 
+![selective sync plugin](./selective-sync-plugin.png)
 
 :::tip
-If download does not work, ZIP archive is available for download <PublicAsset src="mergin-config.zip" />, decompress it and use as mentioned in the previous step.
+If the **Mergin** tab is inactive in project properties, make sure you are working with a Mergin Maps project.
 :::
-
-The config file needs to be placed in the root project folder where your `*.qgz` QGIS project is. These files are by default set to consider entire project folder and needs to be edited in text editor to use specific subfolder.
-
----
-
-In the future, we plan to add an option to set up selective sync conveniently in Mergin QGIS plugin.
-
