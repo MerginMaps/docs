@@ -1,23 +1,16 @@
 # Selective Synchronisation
 
-::: danger
-This page needs update, we have already added option to Mergin Plugin for QGIS to easily
-<GitHubRepo id="lutraconsulting/qgis-mergin-plugin/pull/323" desc="setup the selective synchronisation" />
-:::
+Selective sync feature adds a possibility to not download specified files on other devices in the synchronisation process. These files are only stored on the creator's device and server and can be accessed on Mergin web or QGIS desktop. Other collaborators on different devices will not receive these files during synchronisation.
 
-Selective sync feature adds a possibility to alter the synchronisation process to not download specified files on other devices. These files are only stored on creator's device and server and can be accessed on Mergin web or QGIS desktop. Other colleagues on different devices will not receive these files during synchronisation.
+Selective sync is useful mainly when a project contains a lot of data (for example photos) and these data do not necessarily need to be stored on all devices. Another advantage is a significant reduction of synchronisation time.
 
-Selective sync is useful mainly when a project contains a lot of data (for example photos) and these data do not necessarily need to be stored on all devices. 
-
-Practical example can be seen in the picture below. Two surveyors Jim and Susan are capturing features on a field. When it comes to synchronisation, Jim first hits the [arrow icon](../plugin-sync-project/) synchronise his changes. Features together with photos are now stored on the server. When Susan synchronises the project, synchronisation first downloads Jim's changes (including photos) and after that uploads Susan's changes to the server. However, selective sync can alter this behaviour and exclude photos from being downloaded.
-
-:::tip
-Features and other data are still being downloaded and you will see them, only photos will miss.
-:::
+See the example in the picture below. Two surveyors Jim and Susan are capturing features in the field. When it comes to synchronisation, Jim hits the [arrow icon](../plugin-sync-project/) to synchronise his changes. Features together with photos are now stored on the server. When Susan synchronises the project, synchronisation first downloads Jim's changes (including photos) and after that uploads Susan's changes to the server. However, selective sync can exclude photos from being downloaded.
 
 ![Example](./selective-sync.png)
 
-Another advantage is a significant reduction of synchronisation time.
+:::tip
+Features and other data are still being downloaded and both Jim and Susan will see them, only photos will be missing.
+:::
 
 ## How to set up selective sync
 
