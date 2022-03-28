@@ -30,10 +30,7 @@ To set the project extent, navigate to **Project** > **Properties**. Select **Vi
 
 ![qgis project extent](./qgis-project-extent.png)
 
-If the project extent is not set, <MobileAppName /> will use **Advertised extent** of WMS. You can find this option in **QGIS server** tab in the project properties.
-![qgis WMS extent](./qgis-project-advertised-wms-extent.png)
-
-If none of these options is set, <MobileAppName /> zooms to all visible layers. This is not particularly convenient when you have a layer with a large/global extent (e.g. Open Street Map).
+If not set, <MobileAppName /> zooms to all visible layers. This is not particularly convenient when you have a layer with a large/global extent (e.g. Open Street Map).
 
 ## Survey layer
 
