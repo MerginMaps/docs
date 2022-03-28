@@ -196,7 +196,7 @@ In a moment you'll define the following map themes:
 	![](./merginmaps-mobile-map-themes-button.jpg)
 
 
-## Project extent
+## Zoom to project extent
 
 If you experimented with the ***Zoom to project*** button in <MobileAppName /> you'll have seen that by default, it zooms to the extent of the somewhat large background map:
 
@@ -213,14 +213,14 @@ This is not very useful so we will learn how to specify the extent that this but
 	![](./qgis-project-properties.jpg)
 
 
-3. Select the ***QGIS Server tab*** and scroll down to ***WMS capabilities***:
+3. Select the ***View Settings tab***
 
-	![](./qgis-project-properties-wms-capabilities.jpg)
+	![](./qgis-project-properties-project-extent.png)
 
-4. Check ***Advertised extent***
-5. Click ***Use Current Canvas Extent***:
+4. Check ***Set Project Full Extent***
+5. Click ***Map Canvas Extent***:
 
-	![](./qgis-project-properties-wms-capabilities-set-by-canvas.jpg)
+	![](./qgis-project-properties-project-extent-set-by-canvas.png)
 
 6. Click ***OK***
 7. Test out these settings in <MobileAppName /> as described in the [Trialing changes](#trialing-changes-in-mergin-maps-input) section above
