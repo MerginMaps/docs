@@ -55,7 +55,7 @@ The active layer currently used for survey is displayed above the bottom navigat
 
 ## Zoom to project, Browse features, Map themes, Settings
 **More** tab contains a list of additional options, such as:
-- **Zoom to project**: a shortcut to zoom to the extent of all visible layers within the project
+- **Zoom to project**: a shortcut to zoom to the extent of all visible layers within the project. The project extent can be set during [project preparation QGIS](../gis/features/#project-extent).
 - **Browse features**: browse features and search in the project's layers
 - **Map themes**: a list of map themes [set up in a QGIS project](../gis/setup_themes/)
 - **Settings**: GPS and recording settings along with references to help, privacy policy, terms of service and diagnostic log
