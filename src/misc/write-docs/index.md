@@ -347,6 +347,10 @@ Use `<MerginMapsProject />` component, e.g. `<MerginMapsProject id="lutraconsult
 
 <MerginMapsProject id="lutraconsulting/test_forms" />
 
+For a short reference (e.g. in tables), use `<MerginMapsProjectShort />` component, e.g. `<MerginMapsProject id="lutraconsulting/test_forms" />` transforms to 
+
+<MerginMapsProjectShort id="lutraconsulting/test_forms" />
+
 ### Show Input App Google/Apple badges for download
 
 Use `<AppDownload />` component
