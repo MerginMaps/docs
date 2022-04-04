@@ -57,6 +57,6 @@ and see the result in `dist` folder
 
 # License
 
-The Mergin Maps product documentation in the `docs/content`and `docs/static` are licensed under a [CC-BY license](LICENSE).
+The Mergin Maps product documentation in the `src` are licensed under a [CC-BY license](LICENSE).
 
 All other code in this repository is licensed under a [MIT license](LICENSE-CODE).
