@@ -16,7 +16,7 @@ For survey layers used on the field, we strongly recommend GeoPackage, to be abl
 | Delimited text | :warning:     | collaborative editing not supported                                                                 | 
 | Virtual layer  | :warning:     | collaborative editing not supported                                                                 |                 
 | PostGIS        | :thumbsup:    | requires internet connection                                                                        |
-| WFS            | :thumbsup:    | requires internet connection                                                                        |
+| WFS            | :warning:    | requires internet connection (<GitHubRepo id="lutraconsulting/input/issues/1959" desc="open ticket" />)                                                                        |
 
 There are more formats supported, please see full list of supported [QGIS providers](#full-list-of-supported-qgis-providers) and [OGR drivers](#full-list-of-supported-ogr-drivers)
 
@@ -37,7 +37,7 @@ Read [more](../manage/synchronisation.md) how the synchronisation in Mergin Maps
 | GeoPDF         | :thumbsup:        |                                                                                                           |
 | WM(T)S         | :thumbsup:        | requires internet connection                                                                              |
 | XYZ tiles      | :thumbsup:        | requires internet connection (e.g. OpenStreetMap)                                                         |
-| COG (online)   | :no_entry_sign:   | requires internet connection (<GitHubRepo id="lutraconsulting/input-sdk/issues/46" desc="open ticket" />) |
+| COG (online)   | :thumbsup:   | requires internet connection |
 | ECW            | :no_entry_sign:   | proprietary license                                                                                       |
 | MrSID          | :no_entry_sign:   | proprietary license                                                                                       |
 
@@ -85,128 +85,138 @@ OGC Web Map Service version 1.3 data provider
 ./gdalinfo --formats
 Supported Formats:
   
-    VRT -raster,multidimensional raster- (rw+v): Virtual Raster
-    DERIVED -raster- (ro): Derived datasets using VRT pixel functions
-    GTiff -raster- (rw+vs): GeoTIFF
-    COG -raster- (wv): Cloud optimized GeoTIFF generator
-    NITF -raster- (rw+vs): National Imagery Transmission Format
-    RPFTOC -raster- (rovs): Raster Product Format TOC format
-    ECRGTOC -raster- (rovs): ECRG TOC format
-    HFA -raster- (rw+v): Erdas Imagine Images (.img)
-    SAR_CEOS -raster- (rov): CEOS SAR Image
-    CEOS -raster- (rov): CEOS Image
-    JAXAPALSAR -raster- (rov): JAXA PALSAR Product Reader (Level 1.1/1.5)
-    GFF -raster- (rov): Ground-based SAR Applications Testbed File Format (.gff)
-    ELAS -raster- (rw+v): ELAS
-    AIG -raster- (rov): Arc/Info Binary Grid
-    AAIGrid -raster- (rwv): Arc/Info ASCII Grid
-    GRASSASCIIGrid -raster- (rov): GRASS ASCII Grid
-    ISG -raster- (rov): International Service for the Geoid
-    SDTS -raster- (rov): SDTS Raster
-    DTED -raster- (rwv): DTED Elevation Raster
-    PNG -raster- (rwv): Portable Network Graphics
-    JPEG -raster- (rwv): JPEG JFIF
-    MEM -raster,multidimensional raster- (rw+): In Memory Raster
-    JDEM -raster- (rov): Japanese DEM (.mem)
-    ESAT -raster- (rov): Envisat Image Format
-    BSB -raster- (rov): Maptech BSB Nautical Charts
-    XPM -raster- (rwv): X11 PixMap Format
-    BMP -raster- (rw+v): MS Windows Device Independent Bitmap
-    DIMAP -raster- (rov): SPOT DIMAP
-    AirSAR -raster- (rov): AirSAR Polarimetric Image
-    RS2 -raster- (rovs): RadarSat 2 XML Product
-    SAFE -raster- (rov): Sentinel-1 SAR SAFE Product
-    PCIDSK -raster,vector- (rw+v): PCIDSK Database File
-    PCRaster -raster- (rw+): PCRaster Raster File
-    ILWIS -raster- (rw+v): ILWIS Raster Map
-    SGI -raster- (rw+v): SGI Image File Format 1.0
-    SRTMHGT -raster- (rwv): SRTMHGT File Format
-    Leveller -raster- (rw+v): Leveller heightfield
-    Terragen -raster- (rw+v): Terragen heightfield
-    ISIS3 -raster- (rw+v): USGS Astrogeology ISIS cube (Version 3)
-    ISIS2 -raster- (rw+v): USGS Astrogeology ISIS cube (Version 2)
-    PDS -raster- (rov): NASA Planetary Data System
-    PDS4 -raster,vector- (rw+vs): NASA Planetary Data System 4
-    VICAR -raster,vector- (rw+v): MIPL VICAR file
-    TIL -raster- (rov): EarthWatch .TIL
-    ERS -raster- (rw+v): ERMapper .ers Labelled
-    L1B -raster- (rovs): NOAA Polar Orbiter Level 1b Data Set
-    FIT -raster- (rwv): FIT Image
-    GRIB -raster,multidimensional raster- (rwv): GRIdded Binary (.grb, .grb2)
-    RMF -raster- (rw+v): Raster Matrix Format
-    MSGN -raster- (rov): EUMETSAT Archive native (.nat)
-    RST -raster- (rw+v): Idrisi Raster A.1
-    INGR -raster- (rw+v): Intergraph Raster
-    GSAG -raster- (rwv): Golden Software ASCII Grid (.grd)
-    GSBG -raster- (rw+v): Golden Software Binary Grid (.grd)
-    GS7BG -raster- (rw+v): Golden Software 7 Binary Grid (.grd)
-    COSAR -raster- (rov): COSAR Annotated Binary Matrix (TerraSAR-X)
-    TSX -raster- (rov): TerraSAR-X Product
-    COASP -raster- (ro): DRDC COASP SAR Processor Raster
-    R -raster- (rwv): R Object Data Store
-    MAP -raster- (rov): OziExplorer .MAP
-    KMLSUPEROVERLAY -raster- (rwv): Kml Super Overlay
-    WEBP -raster- (rwv): WEBP
-    PDF -raster,vector- (w+): Geospatial PDF
-    Rasterlite -raster- (rwvs): Rasterlite
-    MBTiles -raster,vector- (rw+v): MBTiles
-    CALS -raster- (rwv): CALS (Type 1)
-    SENTINEL2 -raster- (rovs): Sentinel 2
-    PNM -raster- (rw+v): Portable Pixmap Format (netpbm)
-    DOQ1 -raster- (rov): USGS DOQ (Old Style)
-    DOQ2 -raster- (rov): USGS DOQ (New Style)
-    PAux -raster- (rw+v): PCI .aux Labelled
-    MFF -raster- (rw+v): Vexcel MFF Raster
-    MFF2 -raster- (rw+): Vexcel MFF2 (HKV) Raster
-    FujiBAS -raster- (rov): Fuji BAS Scanner Image
-    GSC -raster- (rov): GSC Geogrid
-    FAST -raster- (rov): EOSAT FAST Format
-    BT -raster- (rw+v): VTP .bt (Binary Terrain) 1.3 Format
-    LAN -raster- (rw+v): Erdas .LAN/.GIS
-    CPG -raster- (rov): Convair PolGASP
-    IDA -raster- (rw+v): Image Data and Analysis
-    NDF -raster- (rov): NLAPS Data Format
-    EIR -raster- (rov): Erdas Imagine Raw
-    DIPEx -raster- (rov): DIPEx
-    LCP -raster- (rwv): FARSITE v.4 Landscape File (.lcp)
-    GTX -raster- (rw+v): NOAA Vertical Datum .GTX
-    LOSLAS -raster- (rov): NADCON .los/.las Datum Grid Shift
-    NTv1 -raster- (rov): NTv1 Datum Grid Shift
-    NTv2 -raster- (rw+vs): NTv2 Datum Grid Shift
-    CTable2 -raster- (rw+v): CTable2 Datum Grid Shift
-    ACE2 -raster- (rov): ACE2
-    SNODAS -raster- (rov): Snow Data Assimilation System
-    KRO -raster- (rw+v): KOLOR Raw
-    ROI_PAC -raster- (rw+v): ROI_PAC raster
-    RRASTER -raster- (rw+v): R Raster
-    BYN -raster- (rw+v): Natural Resources Canada's Geoid
-    ARG -raster- (rwv): Azavea Raster Grid format
-    RIK -raster- (rov): Swedish Grid RIK (.rik)
-    USGSDEM -raster- (rwv): USGS Optional ASCII DEM (and CDED)
-    GXF -raster- (rov): GeoSoft Grid Exchange Format
-    NWT_GRD -raster- (rw+v): Northwood Numeric Grid Format .grd/.tab
-    NWT_GRC -raster- (rov): Northwood Classified Grid Format .grc/.tab
-    ADRG -raster- (rw+vs): ARC Digitized Raster Graphics
-    SRP -raster- (rovs): Standard Raster Product (ASRP/USRP)
-    BLX -raster- (rwv): Magellan topo (.blx)
-    SAGA -raster- (rw+v): SAGA GIS Binary Grid (.sdat, .sg-grd-z)
-    IGNFHeightASCIIGrid -raster- (rov): IGN France height correction ASCII Grid
-    XYZ -raster- (rwv): ASCII Gridded XYZ
-    HF2 -raster- (rwv): HF2/HFZ heightfield raster
-    OZI -raster- (rov): OziExplorer Image File
-    CTG -raster- (rov): USGS LULC Composite Theme Grid
-    E00GRID -raster- (rov): Arc/Info Export E00 GRID
-    ZMap -raster- (rwv): ZMap Plus Grid
-    NGSGEOID -raster- (rov): NOAA NGS Geoid Height Grids
-    IRIS -raster- (rov): IRIS data (.PPI, .CAPPi etc)
-    PRF -raster- (rov): Racurs PHOTOMOD PRF
-    SIGDEM -raster- (rwv): Scaled Integer Gridded DEM .sigdem
-    GPKG -raster,vector- (rw+vs): GeoPackage
-    CAD -raster,vector- (rovs): AutoCAD Driver
-    GenBin -raster- (rov): Generic Binary (.hdr Labelled)
-    ENVI -raster- (rw+v): ENVI .hdr Labelled
-    EHdr -raster- (rw+v): ESRI .hdr Labelled
-    ISCE -raster- (rw+v): ISCE raster
+  VRT -raster,multidimensional raster- (rw+v): Virtual Raster
+  DERIVED -raster- (ro): Derived datasets using VRT pixel functions
+  GTiff -raster- (rw+vs): GeoTIFF
+  COG -raster- (wv): Cloud optimized GeoTIFF generator
+  NITF -raster- (rw+vs): National Imagery Transmission Format
+  RPFTOC -raster- (rovs): Raster Product Format TOC format
+  ECRGTOC -raster- (rovs): ECRG TOC format
+  HFA -raster- (rw+v): Erdas Imagine Images (.img)
+  SAR_CEOS -raster- (rov): CEOS SAR Image
+  CEOS -raster- (rov): CEOS Image
+  JAXAPALSAR -raster- (rov): JAXA PALSAR Product Reader (Level 1.1/1.5)
+  GFF -raster- (rov): Ground-based SAR Applications Testbed File Format (.gff)
+  ELAS -raster- (rw+v): ELAS
+  AIG -raster- (rov): Arc/Info Binary Grid
+  AAIGrid -raster- (rwv): Arc/Info ASCII Grid
+  GRASSASCIIGrid -raster- (rov): GRASS ASCII Grid
+  ISG -raster- (rov): International Service for the Geoid
+  SDTS -raster- (rov): SDTS Raster
+  DTED -raster- (rwv): DTED Elevation Raster
+  PNG -raster- (rwv): Portable Network Graphics
+  JPEG -raster- (rwv): JPEG JFIF
+  MEM -raster,multidimensional raster- (rw+): In Memory Raster
+  JDEM -raster- (rov): Japanese DEM (.mem)
+  ESAT -raster- (rov): Envisat Image Format
+  BSB -raster- (rov): Maptech BSB Nautical Charts
+  XPM -raster- (rwv): X11 PixMap Format
+  BMP -raster- (rw+v): MS Windows Device Independent Bitmap
+  DIMAP -raster- (rov): SPOT DIMAP
+  AirSAR -raster- (rov): AirSAR Polarimetric Image
+  RS2 -raster- (rovs): RadarSat 2 XML Product
+  SAFE -raster- (rov): Sentinel-1 SAR SAFE Product
+  PCIDSK -raster,vector- (rw+v): PCIDSK Database File
+  PCRaster -raster- (rw+): PCRaster Raster File
+  ILWIS -raster- (rw+v): ILWIS Raster Map
+  SGI -raster- (rw+v): SGI Image File Format 1.0
+  SRTMHGT -raster- (rwv): SRTMHGT File Format
+  Leveller -raster- (rw+v): Leveller heightfield
+  Terragen -raster- (rw+v): Terragen heightfield
+  ISIS3 -raster- (rw+v): USGS Astrogeology ISIS cube (Version 3)
+  ISIS2 -raster- (rw+v): USGS Astrogeology ISIS cube (Version 2)
+  PDS -raster- (rov): NASA Planetary Data System
+  PDS4 -raster,vector- (rw+vs): NASA Planetary Data System 4
+  VICAR -raster,vector- (rw+v): MIPL VICAR file
+  TIL -raster- (rov): EarthWatch .TIL
+  ERS -raster- (rw+v): ERMapper .ers Labelled
+  L1B -raster- (rovs): NOAA Polar Orbiter Level 1b Data Set
+  FIT -raster- (rwv): FIT Image
+  GRIB -raster,multidimensional raster- (rwv): GRIdded Binary (.grb, .grb2)
+  RMF -raster- (rw+v): Raster Matrix Format
+  WCS -raster- (rovs): OGC Web Coverage Service
+  WMS -raster- (rwvs): OGC Web Map Service
+  MSGN -raster- (rov): EUMETSAT Archive native (.nat)
+  RST -raster- (rw+v): Idrisi Raster A.1
+  INGR -raster- (rw+v): Intergraph Raster
+  GSAG -raster- (rwv): Golden Software ASCII Grid (.grd)
+  GSBG -raster- (rw+v): Golden Software Binary Grid (.grd)
+  GS7BG -raster- (rw+v): Golden Software 7 Binary Grid (.grd)
+  COSAR -raster- (rov): COSAR Annotated Binary Matrix (TerraSAR-X)
+  TSX -raster- (rov): TerraSAR-X Product
+  COASP -raster- (ro): DRDC COASP SAR Processor Raster
+  R -raster- (rwv): R Object Data Store
+  MAP -raster- (rov): OziExplorer .MAP
+  KMLSUPEROVERLAY -raster- (rwv): Kml Super Overlay
+  WEBP -raster- (rwv): WEBP
+  PDF -raster,vector- (w+): Geospatial PDF
+  Rasterlite -raster- (rwvs): Rasterlite
+  MBTiles -raster,vector- (rw+v): MBTiles
+  PLMOSAIC -raster- (ro): Planet Labs Mosaics API
+  CALS -raster- (rwv): CALS (Type 1)
+  WMTS -raster- (rwv): OGC Web Map Tile Service
+  SENTINEL2 -raster- (rovs): Sentinel 2
+  PNM -raster- (rw+v): Portable Pixmap Format (netpbm)
+  DOQ1 -raster- (rov): USGS DOQ (Old Style)
+  DOQ2 -raster- (rov): USGS DOQ (New Style)
+  PAux -raster- (rw+v): PCI .aux Labelled
+  MFF -raster- (rw+v): Vexcel MFF Raster
+  MFF2 -raster- (rw+): Vexcel MFF2 (HKV) Raster
+  FujiBAS -raster- (rov): Fuji BAS Scanner Image
+  GSC -raster- (rov): GSC Geogrid
+  FAST -raster- (rov): EOSAT FAST Format
+  BT -raster- (rw+v): VTP .bt (Binary Terrain) 1.3 Format
+  LAN -raster- (rw+v): Erdas .LAN/.GIS
+  CPG -raster- (rov): Convair PolGASP
+  IDA -raster- (rw+v): Image Data and Analysis
+  NDF -raster- (rov): NLAPS Data Format
+  EIR -raster- (rov): Erdas Imagine Raw
+  DIPEx -raster- (rov): DIPEx
+  LCP -raster- (rwv): FARSITE v.4 Landscape File (.lcp)
+  GTX -raster- (rw+v): NOAA Vertical Datum .GTX
+  LOSLAS -raster- (rov): NADCON .los/.las Datum Grid Shift
+  NTv1 -raster- (rov): NTv1 Datum Grid Shift
+  NTv2 -raster- (rw+vs): NTv2 Datum Grid Shift
+  CTable2 -raster- (rw+v): CTable2 Datum Grid Shift
+  ACE2 -raster- (rov): ACE2
+  SNODAS -raster- (rov): Snow Data Assimilation System
+  KRO -raster- (rw+v): KOLOR Raw
+  ROI_PAC -raster- (rw+v): ROI_PAC raster
+  RRASTER -raster- (rw+v): R Raster
+  BYN -raster- (rw+v): Natural Resources Canada's Geoid
+  ARG -raster- (rwv): Azavea Raster Grid format
+  RIK -raster- (rov): Swedish Grid RIK (.rik)
+  USGSDEM -raster- (rwv): USGS Optional ASCII DEM (and CDED)
+  GXF -raster- (rov): GeoSoft Grid Exchange Format
+  NWT_GRD -raster- (rw+v): Northwood Numeric Grid Format .grd/.tab
+  NWT_GRC -raster- (rov): Northwood Classified Grid Format .grc/.tab
+  ADRG -raster- (rw+vs): ARC Digitized Raster Graphics
+  SRP -raster- (rovs): Standard Raster Product (ASRP/USRP)
+  BLX -raster- (rwv): Magellan topo (.blx)
+  SAGA -raster- (rw+v): SAGA GIS Binary Grid (.sdat, .sg-grd-z)
+  IGNFHeightASCIIGrid -raster- (rov): IGN France height correction ASCII Grid
+  XYZ -raster- (rwv): ASCII Gridded XYZ
+  HF2 -raster- (rwv): HF2/HFZ heightfield raster
+  OZI -raster- (rov): OziExplorer Image File
+  CTG -raster- (rov): USGS LULC Composite Theme Grid
+  E00GRID -raster- (rov): Arc/Info Export E00 GRID
+  ZMap -raster- (rwv): ZMap Plus Grid
+  NGSGEOID -raster- (rov): NOAA NGS Geoid Height Grids
+  IRIS -raster- (rov): IRIS data (.PPI, .CAPPi etc)
+  PRF -raster- (rov): Racurs PHOTOMOD PRF
+  RDA -raster- (ro): DigitalGlobe Raster Data Access driver
+  EEDAI -raster- (ros): Earth Engine Data API Image
+  DAAS -raster- (ro): Airbus DS Intelligence Data As A Service driver
+  SIGDEM -raster- (rwv): Scaled Integer Gridded DEM .sigdem
+  GPKG -raster,vector- (rw+vs): GeoPackage
+  CAD -raster,vector- (rovs): AutoCAD Driver
+  PLSCENES -raster,vector- (ro): Planet Labs Scenes API
+  NGW -raster,vector- (rw+s): NextGIS Web
+  GenBin -raster- (rov): Generic Binary (.hdr Labelled)
+  ENVI -raster- (rw+v): ENVI .hdr Labelled
+  EHdr -raster- (rw+v): ESRI .hdr Labelled
+  ISCE -raster- (rw+v): ISCE raster
+  HTTP -raster,vector- (ro): HTTP Fetching Wrapper
 ```
 
 ## Full list of supported OGR drivers
@@ -222,6 +232,7 @@ Supported Formats:
   VICAR -raster,vector- (rw+v): MIPL VICAR file
   PDF -raster,vector- (w+): Geospatial PDF
   MBTiles -raster,vector- (rw+v): MBTiles
+  EEDA -vector- (ro): Earth Engine Data API
   ESRI Shapefile -vector- (rw+v): ESRI Shapefile
   MapInfo File -vector- (rw+v): MapInfo File
   UK .NTF -vector- (rov): UK .NTF
@@ -259,10 +270,14 @@ Supported Formats:
   SUA -vector- (rov): Tim Newport-Peace's Special Use Airspace Format
   OpenAir -vector- (rov): OpenAir
   OGR_PDS -vector- (rov): Planetary Data Systems TABLE
+  WFS -vector- (rov): OGC WFS (Web Feature Service)
+  OAPIF -vector- (ro): OGC API - Features
   HTF -vector- (rov): Hydrographic Transfer Vector
   AeronavFAA -vector- (rov): Aeronav FAA
   EDIGEO -vector- (rov): French EDIGEO exchange format
   SVG -vector- (rov): Scalable Vector Graphics
+  CouchDB -vector- (rw+): CouchDB / GeoCouch
+  Cloudant -vector- (rw+): Cloudant / CouchDB
   Idrisi -vector- (rov): Idrisi Vector (.vct)
   ARCGEN -vector- (rov): Arc/Info Generate
   SEGUKOOA -vector- (rov): SEG-P1 / UKOOA P1/90
@@ -270,15 +285,22 @@ Supported Formats:
   XLS -vector- (ro): MS Excel format
   ODS -vector- (rw+v): Open Document/ LibreOffice / OpenOffice Spreadsheet 
   XLSX -vector- (rw+v): MS Office Open XML spreadsheet
+  Elasticsearch -vector- (rw+): Elastic Search
+  Carto -vector- (rw+): Carto
+  AmigoCloud -vector- (rw+): AmigoCloud
   SXF -vector- (rov): Storage and eXchange Format
   Selafin -vector- (rw+v): Selafin
   JML -vector- (rw+v): OpenJUMP JML
+  PLSCENES -raster,vector- (ro): Planet Labs Scenes API
+  CSW -vector- (ro): OGC CSW (Catalog  Service for the Web)
   VDV -vector- (rw+v): VDV-451/VDV-452/INTREST Data Format
-  MVT -vector- (rov): Mapbox Vector Tiles
+  MVT -vector- (rw+v): Mapbox Vector Tiles
+  NGW -raster,vector- (rw+s): NextGIS Web
   MapML -vector- (rw+v): MapML
   TIGER -vector- (rw+v): U.S. Census TIGER/Line
   AVCBin -vector- (rov): Arc/Info Binary Coverage
   AVCE00 -vector- (rov): Arc/Info E00 (ASCII) Coverage
+  HTTP -raster,vector- (ro): HTTP Fetching Wrapper
 ```
 
 ## How to convert between GDAL/OGR formats
