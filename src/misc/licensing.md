@@ -8,7 +8,7 @@
 * Mergin EE (Enterprise Edition), on-premise Mergin service, has proprietary license held by Lutra Consulting Ltd.
 * <GitHubRepo id="lutraconsulting/mergin" desc="Mergin CE (Community Edition)" />, on-premise Mergin service, is licensed under AGPL-3.0.
 
-The application uses many open-source libraries, please <GitHubRepo id="lutraconsulting/mergin/blob/master/server/Pipfile" desc="see this list" /> for versions and licenses of projects used in backend and <GitHubRepo id="lutraconsulting/mergin/blob/master/web-app/package.json" desc="see this list" /> for versions and licenses of projects used in frontend.
+The application uses many open-source libraries, please see <GitHubRepo id="lutraconsulting/mergin/blob/master/server/Pipfile" desc="this" /> and <GitHubRepo id="lutraconsulting/mergin/blob/master/web-app/package.json" desc="this" /> list for versions and licenses of projects used.
 
 ## Mergin Maps Input
 <br />

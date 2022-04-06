@@ -1,3 +1,4 @@
+AGPL
 API
 Android
 ArcGIS
@@ -12,6 +13,7 @@ CharlieColleague
 DAF
 DateTime
 ECW
+EE
 Emlid
 EPSG
 ESRI
@@ -43,6 +45,10 @@ HDOP
 HTML
 Helmert
 HiDPi
+integration
+integrations
+Integration
+Integrations
 jpg
 JPG
 Lebefure
