@@ -2,7 +2,7 @@
 
 ::: tip
 You can follow the examples in this section by cloning the following projects:
-  - <MerginMapsProject id="lutraconsulting/test_forms" />
+  - <MerginMapsProject id="documentation/test_forms" />
   - <MerginMapsProject id="documentation/form_setup" />
   - <MerginMapsProject id="documentation/form_cascade" />
 :::
