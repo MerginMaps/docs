@@ -174,7 +174,7 @@ Now you can select the value from a drop-down menu in <MobileAppName />!
 Clone <MerginMapsProject id="documentation/test_forms" /> to follow this example!
 :::
 
-The **Value Relation** widget is similar to the [Value Map](#valuemap) tool, but the values for the drop-down menu come from another table (e.g. a CSV or another GeoPackage table).
+The **Value Relation** widget is similar to the [Value Map](#value-map) tool, but the values for the drop-down menu come from another table (e.g. a CSV or another GeoPackage table).
 
 The advantage of having this widget:
   - Editing the values in the field: for example, if you have missed a value in your list for the drop-down menu, you can edit the table in Input and add the value. See [Working with non-spatial tables](./working_with_nonspatial_data.md) section for more information.
