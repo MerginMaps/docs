@@ -22,17 +22,8 @@ Forms can be configured using <QGISHelp ver="3.22" link="user_manual/working_wit
 |Value Map   |[Drop-down menu with predefined values](#value-map) |![layout](./input_forms_valuemap1.png)   |<MerginMapsProjectShort id="documentation/form_setup" /> |
 |Value Relation   |[Drop-down menu with values from another table](#value-relation) |![layout](./input_forms_valuerelation.png)   | <MerginMapsProjectShort id="documentation/test_forms" /> |
 
-::: tip
-You can follow the examples in this section by cloning the following projects:
-  - <MerginMapsProject id="documentation/test_forms" />
-  - <MerginMapsProject id="documentation/form_setup" />
-  - <MerginMapsProject id="documentation/form_cascade" />
-  - <MerginMapsProject id="documentation/test_qrcode" />
-  - <MerginMapsProject id="documentation/forms_one-to-many-relations" />  
-  - <MerginMapsProject id="documentation/forms_multiple_photos" />
-:::
-
 In addition to the edit widgets, extra configuration can be done to the fields and form layout to make the data collection easier and more consistent. For example: setting a default value, conditional visibility and constraint enforcement.
+
 
 ## Multiline text
 
@@ -57,6 +48,7 @@ In <MobileAppName />, the **multiline text edit widget** will look like this:
 
 
 ## QR code
+
 :::tip
 Clone <MerginMapsProject id="documentation/test_qrcode" /> to follow this example!
 :::
@@ -93,7 +85,6 @@ In <MobileAppName />, the **editable range widget** will look like the `number` 
 ![number](./input_forms_number1.png)
 
 ### Slider
-
 When setting up a slider, ensure your field type is integer.
 
 1. Right-click on a layer, select **Properties** and go to the **Attributes form** tab.
@@ -152,6 +143,7 @@ Checkbox field becomes handy when you want to set up a Yes/No, True/False or On/
 In <MobileAppName />, the status of the checkbox field can be easily toggled on/off.
 
 ![checkbox](./input_forms_checkbox.png)
+
 
 ## Select value from a drop-down menu
 
@@ -212,6 +204,7 @@ When you open the field with **Value Relation** in <MobileAppName />, you will b
 
 
 ## Attachments, cascade form, 1-N relations,...
+
 There is much more you can do to set up your forms efficiently, such as:
 - capture [photos](./settingup_forms_photo/) as attachments
 - create advanced forms with drill-down menu by setting up a [cascade form](./settingup_forms_settings/#advanced-value-relation-with-drill-down-forms)
