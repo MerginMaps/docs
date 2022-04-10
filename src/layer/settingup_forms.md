@@ -13,13 +13,13 @@ Forms can be configured using <QGISHelp ver="3.22" link="user_manual/working_wit
 |QGIS widget  | Description  |<div style="width:300px">Preview in <MobileAppName /> </div> |Example project   |
 |:---:|:---:|:---:|:---:|
 |Text Edit  |[Text](#multiline-text)   | ![layout](./input_forms_text.png) | <MerginMapsProjectShort id="documentation/test_forms" />|
-|QR & barcode scanner  |[Camera to scan QR and barcode](#qr-code-reader)   | ![layout](./input_forms_qrcode1.png) | <MerginMapsProjectShort id="documentation/test_qrcode" /> |
-|Range   |[Numeric field](#number)   | ![layout](./input_forms_numbers.png)  | <MerginMapsProjectShort id="documentation/form_setup" /> |
+|QR & barcode scanner  |[Camera to scan QR and barcode](#qr-code)   | ![layout](./input_forms_qrcode1.png) | <MerginMapsProjectShort id="documentation/test_qrcode" /> |
+|Range   |[Numeric field](#numbers)   | ![layout](./input_forms_numbers.png)  | <MerginMapsProjectShort id="documentation/form_setup" /> |
 |Range   |[Slider](#slider)   | ![layout](./input_forms_slider1.png)  | <MerginMapsProjectShort id="documentation/form_setup" /> |
-|Date&Time   |[Calendar with time](#datetime)  |![layout](./input_forms_datetime1.png)   | <MerginMapsProjectShort id="documentation/form_setup" /> |
+|Date&Time   |[Calendar with time](#date-and-time)  |![layout](./input_forms_datetime1.png)   | <MerginMapsProjectShort id="documentation/form_setup" /> |
 |Attachment   |[Photos from device's camera or gallery](./settingup_forms_photo.md) | ![layout](./input_forms_photo1.png)  |<MerginMapsProjectShort id="documentation/form_setup" /> |
 |Checkbox   |[Checkbox](#checkbox)   |![layout](./input_forms_checkbox2.png)   |<MerginMapsProjectShort id="documentation/form_setup" /> |
-|Value Map   |[Drop-down menu with predefined values](#valuemap) |![layout](./input_forms_valuemap1.png)   |<MerginMapsProjectShort id="documentation/form_setup" /> |
+|Value Map   |[Drop-down menu with predefined values](#value-map) |![layout](./input_forms_valuemap1.png)   |<MerginMapsProjectShort id="documentation/form_setup" /> |
 |Value Relation   |[Drop-down menu with values from another table](#value-relation) |![layout](./input_forms_valuerelation.png)   | <MerginMapsProjectShort id="documentation/test_forms" /> |
 
 ::: tip
@@ -68,7 +68,7 @@ In <MobileAppName />, there will be a QR code icon next to the field. Click on t
 ![qrcode](./input_forms_qrcode.jpg)
 
 
-## Numeric fields
+## Numbers
 
 :::tip
 Clone <MerginMapsProject id="documentation/form_setup" /> to follow this example!
@@ -149,7 +149,7 @@ Checkbox field becomes handy when you want to set up a Yes/No, True/False or On/
 
 ![checkbox](./qgis_forms_checkbox.png)
 
-In <MobileAppName />, the status of the checkbox field can be easilly toggled on/off.
+In <MobileAppName />, the status of the checkbox field can be easily toggled on/off.
 
 ![checkbox](./input_forms_checkbox.png)
 
