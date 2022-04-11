@@ -1,33 +1,29 @@
 # Licensing
 
-<MobileAppName /> is licensed under <GitHubRepo id="lutraconsulting/input/blob/master/LICENSE" desc="GPL-v2" />
+[[toc]]
 
-As for the libraries that it uses:
+## Mergin Service
 
-| Library      |  iOS   |  android | license                   | link                                                      |
-|--------------|:------:|:--------:|:-------------------------:|-----------------------------------------------------------|
-| Input        | yes    |    yes   |  GPL-2                    | <GitHubRepo id="lutraconsulting/input" />.                |
-| Qt           | yes    |    yes   |  GPL/LGPLv3               | [Qt](https://www.qt.io/licensing/)                        |
-| exiv2        | no     |    yes   |  GPL-2                    | <GitHubRepo id="Exiv2/exiv2" />                           |
-| expat        | yes    |    yes   |  MIT                      | <GitHubRepo id="libexpat/libexpat" />                     |
-| freexl       | yes    |    yes   |  MPL-1.1/GPL-2+/LGPL-2.1+ | [freexl](https://www.gaia-gis.it/fossil/freexl)           |
-| GDAL         | yes    |    yes   |  X/MIT                    | <GitHubRepo id="OSGeo/gdal" />                            |
-| GEOS         | yes    |    yes   |  LGPL-2.1                 | <GitHubRepo id="libgeos/geos" />                          |
-| iconv        | yes    |    yes   |  GPL/LGPL                 | [iconv](https://www.gnu.org/software/libiconv/)           |
-| spatialindex | yes    |    yes   |  MIT                      | [libspatialindex](https://libspatialindex.org)            |
-| spatialite   | yes    |    yes   |  MPL-1.1/GPL-2+/LGPL-2.1+ | [spatialite](https://www.gaia-gis.it/fossil/libspatialite)|
-| libtasn1     | yes    |    no    |  GPL-2.1+                 | [libtasn1](https://www.gnu.org/software/libtasn1/)        |
-| libtiff      | yes    |    yes   |  libtiff license          | [libtiff](http://libtiff.org)                             |
-| libzip       | yes    |    yes   |  libzip license           | [libzip](https://libzip.org)                              |
-| openssl      | yes\*  |    yes   |  Apache-2.0               | [openssl](https://www.openssl.org)                        |
-| MDAL         | yes    |    yes   |  MIT                      | <GitHubRepo id="lutraconsulting/MDAL" />                  |
-| PostgreSQL   | yes    |    yes   |  PostgreSQL (~MIT)        | [PostgreSQL](https://www.postgresql.org/about/licence/)   |
-| proj         | yes    |    yes   |  MIT                      | <GitHubRepo id="OSGeo/proj" />.                           |
-| qca          | yes    |    yes   |  LGPL-2.1                 | <GitHubRepo id="KDE/qca" />                               |
-| QGIS         | yes    |    yes   |  GPL-2                    | <GitHubRepo id="qgis/QGIS" />                             |
-| qtkeychain   | yes    |    yes   |  BSD-2-Clause             | <GitHubRepo id="frankosterfeld/qtkeychain" />             |
-| sqlite3      | yes\** |    yes   |  Public Domain            | [sqlite3](https://sqlite.org)                             |
-| zlib         | no     |    yes   |  GNU license              | [zlib](https://www.zlib.net)                              |
+* <MainDomainNameLink desc="Mergin Cloud" />, SaaS Mergin service,  has proprietary license held by Lutra Consulting Ltd.
+* Mergin EE (Enterprise Edition), on-premise Mergin service, has proprietary license held by Lutra Consulting Ltd.
+* <GitHubRepo id="lutraconsulting/mergin" desc="Mergin CE (Community Edition)" />, on-premise Mergin service, is licensed under AGPL-3.0.
 
-\* indirectly through Qt
-\** indirectly through NDK
+The application uses many open-source libraries, please see <GitHubRepo id="lutraconsulting/mergin/blob/master/server/Pipfile" desc="this" /> and <GitHubRepo id="lutraconsulting/mergin/blob/master/web-app/package.json" desc="this" /> list for versions and licenses of projects used.
+
+## Mergin Maps Input
+<br />
+<GitHubRepo id="lutraconsulting/input" desc="Mergin Maps Input" /> is licensed under GPL-v2. 
+
+The application uses many open-source libraries, please <GitHubRepo id="lutraconsulting/input-sdk/blob/master/versions.conf" desc="see this list" /> for versions and licenses of projects.
+
+## QGIS Plugin for Mergin Maps
+<br />
+<GitHubRepo id="lutraconsulting/qgis-mergin-plugin" desc="QGIS Plugin for Mergin Maps" /> is licensed under GPL-v3.
+
+## Integrations
+
+* <GitHubRepo id="lutraconsulting/mergin-py-client" desc="Mergin Python Client/Module" /> is licensed under MIT. 
+* <GitHubRepo id="lutraconsulting/mergin-cpp-client" desc="Mergin C++ Client/Module" /> is licensed under MIT.  
+* <GitHubRepo id="lutraconsulting/mergin-media-sync" desc="Mergin Media Synchronisation" /> is licensed under MIT. 
+* <GitHubRepo id="lutraconsulting/mergin-work-packages" desc="Mergin Work Packages" /> are licensed under MIT. 
+* <GitHubRepo id="lutraconsulting/mergin-db-sync" desc="Mergin Database Synchronisation" /> is licensed under MIT. 
