@@ -343,13 +343,13 @@ Use `<YouTube />` component, e.g. `<YouTube id="DQXrINUqiFI" />` transforms to
 
 ### Reference Mergin project 
 
-Use `<MerginMapsProject />` component, e.g. `<MerginMapsProject id="lutraconsulting/test_forms" />` transforms to
+Use `<MerginMapsProject />` component, e.g. `<MerginMapsProject id="documentation/test_forms" />` transforms to
 
-<MerginMapsProject id="lutraconsulting/test_forms" />
+<MerginMapsProject id="documentation/test_forms" />
 
-For a short reference (e.g. in tables), use `<MerginMapsProjectShort />` component, e.g. `<MerginMapsProject id="lutraconsulting/test_forms" />` transforms to 
+For a short reference (e.g. in tables), use `<MerginMapsProjectShort />` component, e.g. `<MerginMapsProject id="documentation/test_forms" />` transforms to 
 
-<MerginMapsProjectShort id="lutraconsulting/test_forms" />
+<MerginMapsProjectShort id="documentation/test_forms" />
 
 ### Show Input App Google/Apple badges for download
 

@@ -71,6 +71,7 @@ module.exports = {
                 '/layer/exif_metadata',
                 '/layer/settingup_forms_photo',
                 '/layer/attach-multiple-photos-to-features/',
+                '/layer/one-to-n-relations/',
                 '/layer/position_variables',
                 '/layer/plugin-variables',
                 '/layer/working_with_nonspatial_data'

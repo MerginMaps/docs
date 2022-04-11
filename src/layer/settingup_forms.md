@@ -1,382 +1,215 @@
 # Setting Up Form Widgets
 
-::: tip
-You can follow the examples in this section by cloning the following projects:
-  - <MerginMapsProject id="lutraconsulting/test_forms" />
-  - <MerginMapsProject id="documentation/form_setup" />
-  - <MerginMapsProject id="documentation/form_cascade" />
-  - <MerginMapsProject id="documentation/test_qrcode" />
-  - <MerginMapsProject id="documentation/forms_one-to-many-relations" />  
-  - <MerginMapsProject id="documentation/forms_multiple_photos" />
-:::
-
-
 [[toc]]
 
-When capturing geo-data, it is often required to fill in a form related to the surveyed point, line or area. The forms set up can simplifying filling the data and can also ensure the correct information is populated.
+Capturing field data often requires filling some attributes in the form to record the properties of surveyed points, lines or polygons. Forms can simplify the data entry and even ensure to some extent that the correct information is filled in.
 
 ## Widget gallery
-Input supports a number of edit widget types for forms such as: drop-down options, slider, date and time, checkbox, photos.
 
-Setting up forms can be configured using <QGISHelp ver="3.16" link="user_manual/working_with_vector/vector_properties.html#edit-widgets" text="QGIS widget types" /> .
+<MobileAppName /> supports a number of edit widget types for forms such as drop-down options, slider, date and time, checkbox, or photos. 
 
-In the sections below, we go through examples of setting up different widgets for forms in QGIS and Input:
+Forms can be configured using <QGISHelp ver="3.22" link="user_manual/working_with_vector/vector_properties.html#edit-widgets" text="QGIS widget types" /> .
 
-|QGIS edit widget name   | Description  |Preview in Input   |
-|---|---|---|
-|Text Edit  |[Text](#text-widget)   | ![layout](./input_forms_text.png) |
-|QR & barcode scanner  |[Camera to scan QR and barcode](#qr-code-reader)   | ![layout](./input_forms_qrcode1.png) |
-|Range   |[Numeric field](#number)   | ![layout](./input_forms_numbers.png)  |
-|Range   |[Slider](#slider)   | ![layout](./input_forms_slider1.png)  |
-|Date&Time   |[Calendar with time](#datetime)  |![layout](./input_forms_datetime1.png)   |
-|Attachment   |[Photos from device's camera or gallery](./settingup_forms_photo.md) | ![layout](./input_forms_photo1.png)  |
-|Checkbox   |[Checkbox](#checkbox)   |![layout](./input_forms_checkbox2.png)   |
-|Value Map   |[Drop-down menu with predefined values](#valuemap) |![layout](./input_forms_valuemap1.png)   |
-|Value Relation   |[Drop-down menu with values from another table](#value-relation) |![layout](./input_forms_valuerelation.png)   |
+|QGIS widget  | Description  |<div style="width:300px">Preview in <MobileAppName /> </div> |Example project   |
+|:---:|:---:|:---:|:---:|
+|Text Edit  |[Text](#multiline-text)   | ![layout](./input_forms_text.png) | <MerginMapsProjectShort id="documentation/test_forms" />|
+|QR & barcode scanner  |[Camera to scan QR and barcode](#qr-code)   | ![layout](./input_forms_qrcode1.png) | <MerginMapsProjectShort id="documentation/test_qrcode" /> |
+|Range   |[Numeric field](#numbers)   | ![layout](./input_forms_numbers.png)  | <MerginMapsProjectShort id="documentation/form_setup" /> |
+|Range   |[Slider](#slider)   | ![layout](./input_forms_slider1.png)  | <MerginMapsProjectShort id="documentation/form_setup" /> |
+|Date&Time   |[Calendar with time](#date-and-time)  |![layout](./input_forms_datetime1.png)   | <MerginMapsProjectShort id="documentation/form_setup" /> |
+|Attachment   |[Photos from device's camera or gallery](./settingup_forms_photo.md) | ![layout](./input_forms_photo1.png)  |<MerginMapsProjectShort id="documentation/form_setup" /> |
+|Checkbox   |[Checkbox](#checkbox)   |![layout](./input_forms_checkbox2.png)   |<MerginMapsProjectShort id="documentation/form_setup" /> |
+|Value Map   |[Drop-down menu with predefined values](#value-map) |![layout](./input_forms_valuemap1.png)   |<MerginMapsProjectShort id="documentation/form_setup" /> |
+|Value Relation   |[Drop-down menu with values from another table](#value-relation) |![layout](./input_forms_valuerelation.png)   | <MerginMapsProjectShort id="documentation/test_forms" /> |
 
 In addition to the edit widgets, extra configuration can be done to the fields and form layout to make the data collection easier and more consistent. For example: setting a default value, conditional visibility and constraint enforcement.
 
-## Text widget
 
-Adding or editing text fields are the most common method for inserting information within the forms.
+## Multiline text
 
-### QGIS
+:::tip
+Clone <MerginMapsProject id="documentation/test_forms" /> to follow this example!
+:::
 
-In QGIS, the default widget for most types of fields is the **Text Edit** widget. In addition to a single line text, you can change the widget to accept multiple lines within a single field:
+Adding or editing text is the most common method for inserting information within the forms.
 
-  - Download and open <MerginMapsProject id="documentation/form_setup" /> in QGIS
-  - From the layer panel, right-click on **Points** layer and select **Properties**
-  - In the new window, select **Attributes form**
+In QGIS, the default widget for most types of fields is the **Text Edit**. In addition to a single line text, you can change the widget to accept multiple lines within a single field.
+1. Right-click on a layer, select **Properties** and go to the **Attributes form** tab.
+2. In the list of **Available Widgets** select the field you want to work with. 
+3. In the **Widget Display** tab:
+   - Ensure that **Text Edit** is selected
+   - Check the **Multiline** option
+4. **Apply** the changes. Don't forget to save and sync your project!
 
 ![text](./qgis_forms_text.png)
 
-  - Select **text** field under the right column (**Available Widgets**)
-  - Under the **Widget Display**:
-  - Under **Widget Type** section:
-    - Ensure **Text Edit** is selected
-    - Select **Multiline**
-
-Ensure to save and synchronise your project.
-
-### Mergin Maps Input
-
-To use the multiline text edit widget in the form from Input:
-
-- Open Input on your device and from **Projects** > **Explore** download <MerginMapsProject id="lutraconsulting/test_forms" />
-- Open the project
-- Select **Record** and add a point
-- The form will appear
-- Under **Group1** tab, you can type within the box under **text** field:
-
-![slider](./input_forms_text1.png)
-
-## Number
-
-To set a field in your form to a numeric one:
-
-### QGIS
-
-  - Download and open <MerginMapsProject id="documentation/form_setup" /> in QGIS
-  - From the layer panel, right-click on **Points** layer and select **Properties**
-  - In the new window, select **Attributes form**
-
-![photos](./qgis_forms_number.png)
-
-  - Select **Number** field under the right column (**Available Widgets**)
-  - Under the **Widget Display**:
-  - Under **Widget Type** section:
-    - Select **Range** for widget type
-
-Ensure to save and synchronise your project.
-
-### Mergin Maps Input
-
-To use the numeric widget in your form from Input:
-
-- Open Input on your device and from **Projects** > **Explore** download <MerginMapsProject id="lutraconsulting/test_forms" />
-- Open the project
-- Select **Record** and add a point
-- The form will appear
-- Under **Group1** tab, you can type within the box under **Number** field:
-
-![slider](./input_forms_number1.png)
-
-## Slider
-
-For setting up a slider, ensure your field type is an integer.
-
-### QGIS
-
-To set up a slider widget:
-
-  - Download and open <MerginMapsProject id="documentation/form_setup" /> in QGIS
-  - From the layer panel, right-click on **survey** layer and select **Properties**
-  - In the new window, select **Attributes form**
-
-![photos](./qgis_forms_slider.png)
-
-  - Select **number** field under the right column (**Available Widgets**)
-  - Under the **Widget Display**:
-  - Under **General**, for **Alias** type **Number of plants**
-  - Under **Widget Type** section:
-    - From the drop-down menu, select **Range**
-    - Set the edit widget to **Slider**
-    - Set the **Minimum** to **0**
-    - Set the **Maximum** to **10**
-    - Set the **Step** to **1**
+In <MobileAppName />, the **multiline text edit widget** will look like this:
+![text](./input_forms_text1.png)
 
 
-Ensure to save and synchronise your project.
+## QR code
 
-### Mergin Maps Input
+:::tip
+Clone <MerginMapsProject id="documentation/test_qrcode" /> to follow this example!
+:::
 
-To use the slider widget in the form from Input:
+To be able to scan QR codes using your camera, the field name or the field alias has to contain the word **qrcode** (the text is not case sensitive and it can be in combination of lower or upper case letters). 
 
-- Open Input on your device and from **Projects** > **Explore** download **documentation/form_setup**
-- Open the project
-- Select **Record** and add a point
-- The form will appear
-- Under **Data** tab, you can set the **Number of plants:** by moving the slider:
+In <MobileAppName />, there will be a QR code icon next to the field. Click on the QR code icon to read the QR code using your camera - the text (e.g. a link) will be filled in automatically.
+
+![qrcode](./input_forms_qrcode.jpg)
+
+
+## Numbers
+
+:::tip
+Clone <MerginMapsProject id="documentation/form_setup" /> to follow this example!
+:::
+
+Numeric fields can be handled by the **Range** widget, which allows two options:
+- **Editable** to enter a number manually
+- **Slider**
+
+### Range
+To set up the **editable range widget**:
+
+1. Right-click on a layer, select **Properties** and go to the **Attributes form** tab.
+2. In the list of **Available Widgets** select the numeric field you want to work with. 
+3. In the **Widget Display** tab select **Range** from the drop-down menu.
+4. **Apply** the changes. Don't forget to save and sync your project!
+
+![number](./qgis_forms_number.png)
+
+In <MobileAppName />, the **editable range widget** will look like the `number` field here:
+
+![number](./input_forms_number1.png)
+
+### Slider
+When setting up a slider, ensure your field type is integer.
+
+1. Right-click on a layer, select **Properties** and go to the **Attributes form** tab.
+2. In the list of **Available Widgets** select the numeric field you want to work with.
+3. In the **Widget Display** tab:
+   - select **Range** from the drop-down menu
+   - set the edit widget to **Slider**
+   - set the **Minimum**, **Maximum** and **Step** values of the slider
+4. **Apply** the changes. Don't forget to save and sync your project!
+
+![slider](./qgis_forms_slider.png)
+
+In <MobileAppName />, the **slider** will look like the `Number of plants` field. It can be filled in by moving the slider:
 
 ![slider](./input_forms_slider.png)
 
 
-## Advanced value relation with drill-down forms
-To have a more advanced form with drill-down menu option, see cascade form setup
+## Date and time
 
-## QR code reader
-To be able to use your camera in forms to scan QR codes and populate the text in the field
+:::tip
+Clone <MerginMapsProject id="documentation/form_setup" /> to follow this example!
+:::
 
-### QGIS
+If you want to record time and date when you capture the feature, you need to make sure you have a field with **Date** or **Date and Time** type present in your survey layer.
 
-To be able to scan QR codes in your forms, your field or the alias for the field should contain **qrcode** (the text is not case sensitive and it can be be in combination of lower or upper case letters). For an example, see the <MerginMapsProject id="documentation/test_qrcode" />
+1. Right-click on a layer, select **Properties** and go to the **Attributes form** tab.
+2. In the list of **Available Widgets** select the date field you want to work with.
+3. In the **Widget Display** tab:
+   - select **Date/Time** from the drop-down menu
+   - in **Widget Display** tab, check the **Calendar popup** option
+4. If you want to automatically insert the date (or date and time) when the feature is created, type **now()** as a default value in the **Defaults** tab.
+5. **Apply** the changes. Don't forget to save and sync your project!
 
-### Mergin Maps Input
+![datetime](./qgis_forms_datetime.png)
 
-To use the QR code scanner in the form from Input:
+In <MobileAppName />, the date can be edited using a calendar pop up. If you use **now()** as the default value, the current date and time will be automatically filled in.
 
-- Open Input on your device and from **Projects** > **Explore** download **documentation/test_qrcode**
-- Open the project
-- Select **Record** and add a point
-- The form will appear
-- Click on one of the QR code signs from the field
-- The camera should open, point the camera to a QR
-- The text should be populated in the field
+![datetime](./input_forms_datetime.png)
 
-![slider](./input_forms_qrcode.jpg)
-
-
-## DateTime
-
-If you want to record time and date when you capture the feature, you need to make sure you have a field with **Date** or **Date and Time** type present in your survey layer. Note that all GIS data formats support these types of field. It is assumed, you use GeoPackage layer, hence this field type is supported.
-
-### QGIS
-
-To set up a data and time widget:
-
-  - Download and open <MerginMapsProject id="documentation/form_setup" /> in QGIS
-  - From the layer panel, right-click on **survey** layer and select **Properties**
-  - In the new window, select **Attributes form**
-
-![photos](./qgis_forms_datetime.png)
-
-  - Select **DateTime** field under the right column (**Available Widgets**)
-  - Under the **Widget Display**, from **Widget Type** section:
-    - From the drop-down menu, select **Date/Time**
-    - Under **Widget Display**, select **Calendar popup**
-  - Under **Defaults**, type **now()**
-
-By setting the default value to **now()**, it will assign the date and time when the feature is captured.
-
-Ensure to save and synchronise your project.
-
-### Mergin Maps Input
-
-To use the date/time widget in the form from Input:
-
-- Open Input on your device and from **Projects** > **Explore** download **documentation/form_setup**
-- Open the project
-- Select **Record** and add a point
-- The form will appear, when selecting the field for date and time a calendar will pop up with the current time automatically set:
-
-![photos](./input_forms_datetime.png)
 
 ## Checkbox
 
+:::tip
+Clone <MerginMapsProject id="documentation/form_setup" /> to follow this example!
+:::
+
 Checkbox field becomes handy when you want to set up a Yes/No, True/False or On/Off in your field. Some file formats, such as GeoPackage support **Boolean** data type. If you have a field set as **Boolean**, QGIS automatically assigns the checkbox for widget type.
 
-### QGIS
+1. Right-click on a layer, select **Properties** and go to the **Attributes form** tab.
+2. In the list of **Available Widgets** select the field you want to work with.
+3. In the **Widget Display** tab, select **Checkbox** from the drop-down menu.
+4. **Apply** the changes. Don't forget to save and sync your project!
 
-To set up a checkbox widget:
+![checkbox](./qgis_forms_checkbox.png)
 
-  - Download and open <MerginMapsProject id="documentation/form_setup" /> in QGIS
-  - From the layer panel, right-click on **survey** layer and select **Properties**
-  - In the new window, select **Attributes form**
+In <MobileAppName />, the status of the checkbox field can be easily toggled on/off.
 
-![photos](./qgis_forms_checkbox.png)
+![checkbox](./input_forms_checkbox.png)
 
-  - Select **survey** field under the right column (**Available Widgets**)
-  - Under the **Widget Display**:
-  - Under **General**, for **Alias** type **Does it need surveying?**
-  - Under **Widget Type** section, from the drop-down menu, select **Checkbox**
 
-Ensure to save and synchronise your project.
+## Select value from a drop-down menu
 
-### Mergin Maps Input
+To present the options as a drop-down menu in the form, you can use the **Value Map** or **Value Relation** widget in QGIS.
 
-To use the date/time widget in the form from Input:
+### Value Map
 
-- Open Input on your device and from **Projects** > **Explore** download **documentation/form_setup**
-- Open the project
-- Select **Record** and add a point
-- The form will appear, you can switch the status of the **Does it need surveying?** field to true or false using the checkbox
+:::tip
+Clone <MerginMapsProject id="documentation/form_setup" /> to follow this example!
+:::
 
-![photos](./input_forms_checkbox.png)
+1. Right-click on a layer, select **Properties** and go to the **Attributes form** tab.
+2. In the list of **Available Widgets** select the field you want to work with.
+3. In the **Widget Display** tab:
+   - select **Value Map** from the drop-down menu
+   - for **Value** and **Description** type what you want to include in the drop-down menu (here we use: In-door, Woodland, Farmland, Grassland, Marine, Peatlands and Other).
+4. **Apply** the changes. Don't forget to save and sync your project!
 
-## Valuemap
+![valuemap](./qgis_forms_valuemap.png)
 
-To present the options for a field as a drop-down menu in the form, you can use **Value Map** widget in QGIS.
+Now you can select the value from a drop-down menu in <MobileAppName />!
 
-### QGIS
+<!--add screenshot -->
 
-To set up a value map widget:
+### Value relation
 
-  - Download and open <MerginMapsProject id="documentation/form_setup" /> in QGIS
-  - From the layer panel, right-click on **survey** layer and select **Properties**
-  - In the new window, select **Attributes form**
+:::tip
+Clone <MerginMapsProject id="documentation/test_forms" /> to follow this example!
+:::
 
-![photos](./qgis_forms_valuemap.png)
-
-  - Select **habitat** field under the right column (**Available Widgets**)
-  - Under the **Widget Display**:
-  - Under **General**, for **Alias** type **Habitat type:**
-  - Under **Widget Type** section:
-    - From the drop-down menu, select **Value Map**
-    - For **Value** and **Description** part type the following values: In-door, Woodland, Farmland, Grassland, Marine, Peatlands and Other.
-
-Ensure to save and synchronise your project.
-
-### Mergin Maps Input
-
-To use the drop-down widget in the form from Input:
-
-- Open Input on your device and from **Projects** > **Explore** download **documentation/form_setup**
-- Open the project
-- Select **Record** and add a point
-- The form will appear
-- Under **Data** tab, you can select the **Habitat type:** from the drop-down menu:
-
-## Value relation
-
-**Value Relation** widget is very similar to the [Value Map](#valuemap) tool, but the values for the drop-down menu come from another table (e.g. a CSV or another GeoPackage table).
+The **Value Relation** widget is similar to the [Value Map](#value-map) tool, but the values for the drop-down menu come from another table (e.g. a CSV or another GeoPackage table).
 
 The advantage of having this widget:
-  - Ability to edit the values in the field. For example, if you have missed a value in your list for the drop-down menu, you can edit the table in Input and add the value. See [Working with non-spatial tables](./working_with_nonspatial_data.md) section for more information.
+  - Editing the values in the field: for example, if you have missed a value in your list for the drop-down menu, you can edit the table in Input and add the value. See [Working with non-spatial tables](./working_with_nonspatial_data.md) section for more information.
+  - Searching the values: when you have a large list of values, it will become cumbersome to find the right value. With this widget, you will be able to search for values in the list.
+  - Selecting multiple values.
 
-  - Ability to search the values: when you have a large list of values, it will become cumbersome to find the right value. With this widget, you will be able to search for values in the list.
+To set up **Value Relation** in QGIS:
 
-  - Selecting multiple values
+1. Right-click on a layer, select **Properties** and go to the **Attributes form** tab.
+2. In the list of **Available Widgets** select the field you want to work with.
+3. In the **Widget Display** tab:
+   - select **Value Relation** from the drop-down menu
+   - select the **Layer** that contains the values
+   - **Key column** is the field that contains the values
+   - **Value column** is the field that contains the alias (description) of the value
+   - if you want to be able to select multiple values, check the **Allow multiple selections** option
+4. **Apply** the changes. Don't forget to save and sync your project!
 
-### QGIS
+![value relation](./qgis_forms_valuerelation.png)
 
-To set up a value relation widget:
+When you open the field with **Value Relation** in <MobileAppName />, you will be able to select values from the list.
 
-  - Download and open <MerginMapsProject id="lutraconsulting/test_forms" /> in QGIS
-  - Notice the extra table in your layer tree: **<NoSpellcheck id="reftable" />**
-  - From the layer panel, right-click on **Points** layer and select **Properties**
-  - In the new window, select **Attributes form**
-
-![photos](./qgis_forms_valuerelation.png)
-
-  - Select **<NoSpellcheck id="valuerelation" />** field under the right column (**Available Widgets**)
-  - Under the **Widget Display**:
-  - Under **Widget Type** section:
-    - From the drop-down menu, select **Value Relation**
-    - For **Layer** select **<NoSpellcheck id="reftable" />**
-    - For **Key column** and **Value column**, select **type**
-    - Check the box for **Allow multiple selections**
-
-Ensure to save and synchronise your project.
-
-### Mergin Maps Input
-
-To use the drop-down widget in the form from Input:
-
-- Open Input on your device and from **Projects** > **Explore** download <MerginMapsProject id="lutraconsulting/test_forms" />
-- Open the project
-- Select **Record** and add a point
-- The form will appear
-- Under **Group2** tab, you can select the **<NoSpellcheck id="valuerelation" />** from the drop-down menu:
+<!-- update screenshots -->
+![value relation](./input_forms_valuerelation1.png)
+![value relation](./input_forms_valuerelation2.png)
+![value relation](./input_forms_valuerelation3.png)
 
 
-![slider](./input_forms_valuerelation1.png)
-![slider](./input_forms_valuerelation2.png)
-![slider](./input_forms_valuerelation3.png)
+## Attachments, cascade form, 1-N relations,...
 
-## 1-N relations
+There is much more you can do to set up your forms efficiently, such as:
+- capture [photos](./settingup_forms_photo/) as attachments
+- create advanced forms with drill-down menu by setting up a [cascade form](./settingup_forms_settings/#advanced-value-relation-with-drill-down-forms)
+- using 1-N relations to [link multiple records to one feature](./one-to-n-relations/) or to [attach multiple photos to one feature](./attach-multiple-photos-to-features/) 
 
-It is often the case that you have a set of spatial features and you want to record some parameters every now and then. For example, there is a GIS layer representing the manholes and the surveyors carry out regular inspections of the manholes. Instead of duplicating the manhole layer and recording each inspection, you can create a non-spatial table and store each inspection as a new line.
-
-The image below shows the manholes locations:
-
-![Manhole locations](./input_forms_many-relations_concept1.png)
-
-The manhole point layer has the following attribute table:
-
-![Manhole locations](./input_forms_many-relations_concept2.png)
-
-In a separate table (which is non-spatial), we can record the inspections:
-
-![Manhole locations](./input_forms_many-relations_concept3.png)
-
-In QGIS, we are using the **Manhole ID** from the point layer and the inspection table, to create a 1-N relationship between the two tables.
-
-Another example is when you try to capture multiple photos for a single feature.
-
-In the sections below, you can see how this type of relations can be set up in QGIS and utilised in the Input app.
-
-### Project preparation in QGIS
-
-See the example projects:
-- Assigning multiple inspections to a single feature: <MerginMapsProject id="documentation/forms_one-to-many-relations" />
-- Adding multiple photos to a single feature: <MerginMapsProject id="documentation/forms_multiple_photos" />
-
-To configure 1-N relations in QGIS:
-- From the main menu, select **Projects** > **Properties ...**
-- In the new window, select the **Relations** tab
-- Select **Add Relation** to create a new one
-- A new window will appear, where we can define the parent and child layers and the fields to link the two layers:
-  - For **Name** type **Inspection**
-  - For the **Referenced(parent)** layer, select **manhole_locations**
-  - For **Field 1** of the **Referenced(parent)** layer, select **Manhole**
-  - For the **Referencing(child)** layer, select **inspections**
-  - For **Field 1** of the **Referencing(child)** layer, select **Manhole ID**
-
-![1-N relations in QGIS](./input_forms_many-relations1.png)
-
-This should now allow you to add multiple inspections for each manhole location (**manhole_locations** point layer). The inspections records will be stored in the **inspections** table.
-
-When you open the form for an existing record in the  **manhole_locations** point layer, you should be able to see the existing inspection records and optionally add, delete or edit the records:
-
-![1-N relations in QGIS - form view](./input_forms_many-relations2.png)
-
-The same project when you open add inspection to a manhole in Input will look like the image below:
-
-![Many photos to a single feature](./input_forms_one-to-many.png)
-
-### Link multiple photos to a single feature
-
-Another use-case for having multiple photos linked to a single feature is using 1-N relation.
-
-To set up a project in QGIS, similar to the previous example, we need a unique field to link the following two tables:
-- Survey layer (containing spatial information)
-- A non-spatial table containing path to the photos
-
-The key part when linking the above to table is to avoid using **FID** field in the GeoPackage. Mergin uses the FID to consolidate changes and therefore can change the FIDs. This will result in having photos linked to the incorrect feature on the map.
-
-For that, we can create a new field and use the **uuid()** as the default value. To learn more about how this can be configured, you can see <MerginMapsProject id="documentation/forms_multiple_photos" />.
-
-Input detects the type of 1-N relation is for "Attachment" widget and displays the image viewer for the relations.
-
-![Many photos to a single feature](./input_forms_many-photos.png)
-
+:::tip
+Learn more about the form layout in [Advanced Form Configuration](./settingup_forms_settings/).
+:::
