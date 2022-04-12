@@ -100,6 +100,7 @@ Qt
 Qwant
 QwantResearch
 Recentre
+rebranding
 SDK
 SLA
 SSH
