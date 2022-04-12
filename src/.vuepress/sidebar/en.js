@@ -1,5 +1,6 @@
 module.exports = {
       '/': [
+        ['https://www.lutraconsulting.co.uk/blog/2022/04/18/merginmaps/', 'We are rebranding!'],
         {
             title: 'Get started',   // required
             collapsable: true, // optional, defaults to true
