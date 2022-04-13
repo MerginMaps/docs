@@ -9,12 +9,12 @@
    - Ensure that **Text Edit** is selected
    - Check the **Multiline** and **HTML** options
 4. In the **Defaults** tab, use a string such as this as **Default value**:
-   `'<a href="https://www.lutraconsulting.co.uk/">Open link</a>'`
+   <span v-else class="nospellcheck"> `'<a href="https://www.lutraconsulting.co.uk/">Open link</a>'` </span>
    :::details
    The default value here uses HTML `<a>` tag that defines the hyperlink and how it will be displayed in the form:
-   `<a href="your link here">display text</a>`
+   <span v-else class="nospellcheck"> `<a href="your link here">display text</a>` </span>
    Individual links can be generated for each feature based on a value from another field. Let's say there is a field called **name** with a sample value *my-page*:
-   `'<a href="'||'www.webpage.com/'||"name"||'">Open link</a>''` will result in *www.webpage.com/my-page*.
+   <span v-else class="nospellcheck">`'<a href="'||'www.webpage.com/'||"name"||'">Open link</a>''`</span> will result in <span v-else class="nospellcheck">*www.webpage.com/my-page*</span>.
    :::
 5. If the link changes based on a value from a different field, check the **Apply default value on update** option.
 6. **Apply** the changes. Don't forget to save and sync your project!
@@ -38,7 +38,7 @@ Let's say you want to find your surveyed features on Google Maps. It is possible
    - Ensure that **Text Edit** is selected
    - Check the **Multiline** and **HTML** options
 4. In the **Defaults** tab, use this string as **Default value**:
-   `'<a href="'||'https://www.google.co.uk/maps/place/' || to_string( y(transform( $geometry, 'EPSG:3857', 'EPSG:4326'))) || ',' || to_string( x( transform( $geometry, 'EPSG:3857', 'EPSG:4326'))) || '">Open Google Map</a>'`
+   <span v-else class="nospellcheck"> `'<a href="'||'https://www.google.co.uk/maps/place/' || to_string( y(transform( $geometry, 'EPSG:3857', 'EPSG:4326'))) || ',' || to_string( x( transform( $geometry, 'EPSG:3857', 'EPSG:4326'))) || '">Open Google Map</a>'` </span>
 5. Check the **Apply default value on update** option
 6. **Apply** the changes. Don't forget to save and sync your project!
 
