@@ -11,7 +11,7 @@
 4. In the **Defaults** tab, use a string such as this as **Default value**:
    `'<a href="https://www.lutraconsulting.co.uk/">Open link</a>'`
    :::details
-   The default value here uses HTML `<a>` tag that defines the hyperlink and how it will be displayed in the form:
+   The default value defines the hyperlink and how it will be displayed in the form using HTML:
    `<a href="your link here">display text</a>`
    Individual links can be generated for each feature based on a value from another field. Let's say there is a field called **name** with a sample value *my-page*:
    `'<a href="'||'www.web-page.com/'||"name"||'">Open link</a>''` will result in *www.web-page.com/my-page*.
