@@ -26,7 +26,7 @@ To sign in to Mergin or to access your Mergin profile information, select the ic
 ## GPS
 Tapping the GPS button centres the map to your current position. 
 
-Pressing and holding the GPS icon turns on / turns off the GPS auto-centre mode.
+Pressing and holding the GPS button turns on / turns off the GPS auto-centre mode.
 
 GPS signal colour on the map denotes the accuracy threshold set by the user within the Input in [GPS settings](#gps-settings). GPS accuracy is displayed at the bottom of the map. 
 
@@ -56,14 +56,19 @@ The active layer currently used for survey is displayed above the bottom navigat
 
 
 ## Synchronisation
-The sync button can be used to synchronise changes. If automatic synchronisation of changes is allowed in the project, this button will indicate that synchronisation is in progress.
+The sync button can be used to synchronise changes. If automatic synchronisation of changes is allowed, this button will indicate that synchronisation is in progress.
 
 ![Sync button](./input-autosync.png)
+
+Pressing and holding the sync button opens the Project status window.
+
+![Project changes](./input-project-status.png)
 
 
 ## Zoom to project, Browse features, Map themes, Settings
 **More** tab contains a list of additional options, such as:
 - **Zoom to project**: a shortcut to zoom to the extent of all visible layers within the project. The project extent can be set during [project preparation QGIS](../gis/features/#project-extent).
+- **Local changes**: see changes yet to be synchronised 
 - **Browse features**: browse features and search in the project's layers
 - **Map themes**: a list of map themes [set up in a QGIS project](../gis/setup_themes/)
 - **Settings**: GPS and recording settings along with references to help, privacy policy, terms of service and diagnostic log
