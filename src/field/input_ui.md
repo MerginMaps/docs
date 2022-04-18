@@ -44,6 +44,7 @@ Tapping the GPS accuracy tab opens the GPS info panel:
 
 ![GPS info](./input-gps-info.png) 
 
+
 ## Record
 **Record tab** is where you can [survey new features](./input_features/).
 
@@ -51,7 +52,14 @@ The active layer currently used for survey is displayed above the bottom navigat
 
 ![Record](./input-record.png) 
 
-![Active layer](./input-active-layer.png) 
+![Active layer](./input-active-layer.png)
+
+
+## Synchronisation
+The sync button can be used to synchronise changes. If automatic synchronisation of changes is allowed in the project, this button will indicate that synchronisation is in progress.
+
+![Sync button](./input-autosync.png)
+
 
 ## Zoom to project, Browse features, Map themes, Settings
 **More** tab contains a list of additional options, such as:
@@ -68,8 +76,12 @@ The active layer currently used for survey is displayed above the bottom navigat
 - **Accuracy threshold**: value used to display GPS accuracy colours
 - **Select GPS receiver**: option to switch between internal GPS and external GPS receiver connected via Bluetooth. See [External GPS](./external_gps/) for detailed steps.
 
-![Settings](./input-settings2.png)
+![GPS Settings](./input-settings2.png)
 
 ### Recording settings
 - **Line rec. interval** the interval at which the GPS location is used as vertices when streaming GPS position for capturing lines
 - **Reuse last value option** if used, last entered values of selected attributes will be automatically filled in when creating a new feature.
+- **Automatically sync changes** if used, local changes will be synchronised automatically.
+
+![Recording Settings](./input-settings3.png)
+

@@ -74,8 +74,9 @@ The ecosystem consist of various components:
 - [Working with Non-spatial Tables](./layer/working_with_nonspatial_data/)
 
 ## Fieldwork Tips
-- [GPS Accuracy](./field/gps_accuracy/)
+- [Automatic Synchronisation](./field/autosync/)
 - [External GPS](./field/external_gps/)
+- [GPS Accuracy](./field/gps_accuracy/)
 - [How to Add, Edit, Delete Features](./field/input_features/)
 - [How to Reuse Last Entered Values](./field/reuse-last-values/)
 - [How to Stake Out Points](./field/stake-out/)

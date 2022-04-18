@@ -83,8 +83,9 @@ module.exports = {
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
-                '/field/gps_accuracy',
+                '/field/autosync/',
                 '/field/external_gps',
+                '/field/gps_accuracy',
                 '/field/input_features',
                 '/field/reuse-last-values/',
                 '/field/stake-out/',
