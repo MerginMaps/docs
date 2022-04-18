@@ -12,7 +12,6 @@ for i in \
   "<alert" \
   "Note:" \
   "<img" \
-  "<a" \
   "docs.qgis.org" \
   "help.cloudmergin.com" \
   "help.inputapp.io" \
