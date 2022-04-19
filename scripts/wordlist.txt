@@ -121,6 +121,7 @@ WFS
 WGS
 WMS
 WMTS
+www
 XYZ
 api
 barcode

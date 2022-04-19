@@ -69,6 +69,7 @@ The ecosystem consist of various components:
 - [Capturing Photos](./layer/settingup_forms_photo/)
 - [How to Attach Multiple Photos to Features](./layer/attach-multiple-photos-to-features/)
 - [How to Link Multiple Records to One Feature (1-N Relations)](./layer/one-to-n-relations/)
+- [How to Use Hyperlinks](./layer/external-link/)
 - [Extra Position Variables](./layer/position_variables/)
 - [Extra QGIS Variables](./layer/plugin-variables/)
 - [Working with Non-spatial Tables](./layer/working_with_nonspatial_data/)
