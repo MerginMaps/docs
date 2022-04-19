@@ -26,7 +26,7 @@ To sign in to Mergin or to access your Mergin profile information, select the ic
 ## GPS
 Tapping the GPS button centres the map to your current position. 
 
-Pressing and holding the GPS icon turns on / turns off the GPS auto-centre mode.
+Pressing and holding the GPS button turns on / turns off the GPS auto-centre mode.
 
 GPS signal colour on the map denotes the accuracy threshold set by the user within the Input in [GPS settings](#gps-settings). GPS accuracy is displayed at the bottom of the map. 
 
@@ -44,6 +44,7 @@ Tapping the GPS accuracy tab opens the GPS info panel:
 
 ![GPS info](./input-gps-info.png) 
 
+
 ## Record
 **Record tab** is where you can [survey new features](./input_features/).
 
@@ -51,11 +52,23 @@ The active layer currently used for survey is displayed above the bottom navigat
 
 ![Record](./input-record.png) 
 
-![Active layer](./input-active-layer.png) 
+![Active layer](./input-active-layer.png)
+
+
+## Synchronisation
+The sync button can be used to synchronise changes. If automatic synchronisation of changes is allowed, this button will indicate that synchronisation is in progress.
+
+![Sync button](./input-autosync.png)
+
+Pressing and holding the sync button opens the Project status window.
+
+![Project changes](./input-project-status.png)
+
 
 ## Zoom to project, Browse features, Map themes, Settings
 **More** tab contains a list of additional options, such as:
 - **Zoom to project**: a shortcut to zoom to the extent of all visible layers within the project. The project extent can be set during [project preparation QGIS](../gis/features/#project-extent).
+- **Local changes**: see changes yet to be synchronised 
 - **Browse features**: browse features and search in the project's layers
 - **Map themes**: a list of map themes [set up in a QGIS project](../gis/setup_themes/)
 - **Settings**: GPS and recording settings along with references to help, privacy policy, terms of service and diagnostic log
@@ -68,8 +81,12 @@ The active layer currently used for survey is displayed above the bottom navigat
 - **Accuracy threshold**: value used to display GPS accuracy colours
 - **Select GPS receiver**: option to switch between internal GPS and external GPS receiver connected via Bluetooth. See [External GPS](./external_gps/) for detailed steps.
 
-![Settings](./input-settings2.png)
+![GPS Settings](./input-settings2.png)
 
 ### Recording settings
 - **Line rec. interval** the interval at which the GPS location is used as vertices when streaming GPS position for capturing lines
 - **Reuse last value option** if used, last entered values of selected attributes will be automatically filled in when creating a new feature.
+- **Automatically sync changes** if used, local changes will be synchronised automatically.
+
+![Recording Settings](./input-settings3.png)
+
