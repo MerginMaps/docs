@@ -1,5 +1,5 @@
 # Synchronisation in Input
-<Badge text="since Input 1.3.0" type="tip"/>
+<Badge text="since Input 1.4.0" type="tip"/>
 [[toc]]
 
 Changes in your project can be synchronised during the survey manually by using the sync button or automatically by allowing the automatic synchronisation in <MobileAppName />. 
