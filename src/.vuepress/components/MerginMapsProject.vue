@@ -1,7 +1,7 @@
 <template>
   <span>
     <a :href="`https://public.cloudmergin.com/projects/${id}/tree`" target="_blank" rel="noopener noreferrer">
-      <img :alt="`Mergin Maps Project ${id}`" :src="$withBase('/Mergin.svg')" />
+      <img :alt="`Mergin Maps Project ${id}`" :src="$withBase('/MM_logo_HORIZ_color.svg')" />
       <span v-html="id" class="nospellcheck"></span>
       <span>
         <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound">

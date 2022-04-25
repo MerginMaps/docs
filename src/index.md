@@ -5,8 +5,6 @@ home: false
 
 # Mergin Maps Documentation
 
-![](preview.jpeg)
-
 - Store and track changes to your geo-data with <MainPlatformName /> :cd:
 - Capture geo-info easily through your mobile or tablet with <MobileAppName /> :iphone:
 - Setup and analyse the project on desktop with QGIS :computer:

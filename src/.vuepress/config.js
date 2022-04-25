@@ -39,7 +39,7 @@ module.exports = {
    */
   themeConfig: {
     // logo in navbar
-    logo: '/merginmaps.svg',
+    logo: '/MM_logo_HORIZ_color.svg',
     // Optional options for generating "Edit this page" link
     docsRepo: 'merginmaps/docs',
     // if your docs are not at the root of the repo:
