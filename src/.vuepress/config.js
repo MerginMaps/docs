@@ -1,12 +1,12 @@
 const { description } = require('../../package')
-
+var path = require('path')
 const pageSuffix = '/'
 
 module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Mergin & Input App',
+  title: 'Mergin Maps Documentation',
   editLinks: true,
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#base
@@ -59,6 +59,10 @@ module.exports = {
     // repoLabel: 'GitHub',
     nav: [],
     sidebar: require('./sidebar/en')
+  },
+  
+  alias: {
+      '@fonts': path.resolve(__dirname, './public/fonts')
   },
 
   /**
