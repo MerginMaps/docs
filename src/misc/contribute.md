@@ -10,11 +10,11 @@ We are happy to help to promote work or co-author and place on our websites or g
 
 Write a review of the application on App Store or Android Google Play
 
-<AppDownload></AppDownload>
+<AppDownload />
 
 ## Translate
 
- To help with translations, join [Input App Transifex Team](https://www.transifex.com/lutra-consulting/input)
+ To help with translations, join [Mergin Maps Transifex team](https://www.transifex.com/lutra-consulting/input)
 
 ## Write or talk about us 
  
@@ -53,5 +53,5 @@ or for other subprojects
 ## Donate or subscribe
 
  - Donate
- - [Subscribe](https://public.cloudmergin.com) to the Mergin cloud service
+ - [Subscribe](https://public.cloudmergin.com) to the Mergin Cloud
  - Sponsor a bug-fixing sprint, or a new feature
