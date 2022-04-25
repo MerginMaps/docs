@@ -1,6 +1,6 @@
 {
   "name": "merginmaps-docs",
-  "version": "0.0.1",
+  "version": "2022.1.0",
   "description": "Mergin Maps Documentation",
   "license": "CC-BY-4.0",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "name": "Peter Petrik",
     "email": "peter.petrik@lutraconsulting.co.uk"
   },
-  "repository": "merginmaps/docs/merginmaps-docs",
+  "repository": "merginmaps/docs",
   "scripts": {
     "dev": "vuepress dev src",
     "build": "vuepress build src",
