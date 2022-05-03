@@ -1,12 +1,12 @@
 const { description } = require('../../package')
-
+var path = require('path')
 const pageSuffix = '/'
 
 module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Mergin & Input App',
+  title: 'Mergin Maps Documentation',
   editLinks: true,
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#base
@@ -20,7 +20,7 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
-    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+    ['meta', { name: 'theme-color', content: '#00a884' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
     ['link', { rel: 'icon', href: '/favicon.ico' }]
@@ -39,7 +39,7 @@ module.exports = {
    */
   themeConfig: {
     // logo in navbar
-    logo: '/merginmaps.svg',
+    logo: '/mm_logo_positive_half_padding.png',
     // Optional options for generating "Edit this page" link
     docsRepo: 'merginmaps/docs',
     // if your docs are not at the root of the repo:
@@ -59,6 +59,10 @@ module.exports = {
     // repoLabel: 'GitHub',
     nav: [],
     sidebar: require('./sidebar/en')
+  },
+  
+  alias: {
+      '@fonts': path.resolve(__dirname, './public/fonts')
   },
 
   /**

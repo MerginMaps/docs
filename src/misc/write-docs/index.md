@@ -291,13 +291,13 @@ You can use any of supported <GitHubRepo id="markdown-it/markdown-it-emoji/blob/
  - Place images next to the markdown files that reference them
  - Do not start with `/`, use relative paths
 
-e.g. `![](./cloudmergin.png)` if the image is in the same folder as your markdown file
+e.g. `![](./myimage.png)` if the image is in the same folder as your markdown file
  
  - For global pictures/assets placed in `src/.vuepress/public` use custom component `<PublicImage />`
 
-e.g. `<PublicImage src="Mergin.svg" />`
+e.g. `<PublicImage src="MM_logo_HORIZ_color.svg" />`
 
-<PublicImage src="Mergin.svg" />
+<PublicImage src="MM_logo_HORIZ_color.svg" />
 
 ### Table of Contents 
 

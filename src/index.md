@@ -3,22 +3,20 @@ home: false
 ---
 
 
-# Mergin Cloud and Input App Documentation
+# Mergin Maps Documentation
 
-![](preview.jpeg)
-
-- Store and track changes to your geo-data with Mergin :cd:
-- Capture geo-info easily through your mobile or tablet with Input :iphone:
-- Setup and analyse the project on desktop with QGIS. :computer:
+- Store and track changes to your geo-data with <MainPlatformName /> :cd:
+- Capture geo-info easily through your mobile or tablet with <MobileAppName /> :iphone:
+- Setup and analyse the project on desktop with QGIS :computer:
 - All open-source and easily integrated to your existing toolset :bulb:
 
 <CommunityJoin />
 
 The ecosystem consist of various components:
  - [QGIS](https://qgis.org/) > Powerful GIS Desktop application 
- - [QGIS Mergin Plugin](https://plugins.qgis.org/plugins/Mergin/) > QGIS Plugin for Mergin Maps
+ - [QGIS Mergin Plugin](https://plugins.qgis.org/plugins/Mergin/) > <QGISPluginName />
  - [Mergin Cloud](https://public.cloudmergin.com) > SaaS Cloud Service (available also as Mergin CE)
- - [Input app](https://inputapp.io) > the Input App for iOS and Android
+ - [Mergin Maps Input](https://inputapp.io) > the <MobileAppName /> for iOS and Android
  
 ## Get started 
 
