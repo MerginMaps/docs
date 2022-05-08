@@ -40,11 +40,11 @@ We can set the visibility of **Location** tab depending on the value of the **su
 1. Select the **Location** tab in the **Form Layout** column
 2. Check the **Control Visibility by Expression** option
 3. Type the following expression in the box below: `"survey" IS TRUE`
-4. Background colour can be set in **Style** tab.
+4. Background colour can be set in the **Style** tab.
 ![visibility](./qgis_forms_layout_visibility.png)
 
 ## Default values
-Default values can be used to automatically record, e.g, the name of the surveyor, date and time of the survey, latitude and longitude of the feature, or to have frequently used values pre-filled in a field.
+Default values can be used to automatically record, e.g, the name of the surveyor, date and time of the survey, latitude and longitude of the feature, or to have frequently used values filled in advance.
 
 :::tip
 Clone <MerginMapsProject id="documentation/form_setup" /> to follow this example!
@@ -67,13 +67,13 @@ Repeat the same steps for **y** field and setting the **Alias** to *Latitude* an
 
 Don't forget to save and synchronise your project!
 
-When you survey a new point in <MobileAppName />, you will see the pre-filled values
+When you survey a new point in <MobileAppName />, you will see the values are automatically filled in:
 
 ![default values](./input_forms_defaults1.png)
 
 
 ## Constraints
-When collecting data, you may want to apply constraints to certain field(s) to avoid mistakes when the values are filled out in the field.
+When collecting data, you may want to apply constraints to certain field(s) to avoid mistakes when the values are filled in in the field.
 
 :::tip
 Clone <MerginMapsProject id="documentation/form_setup" /> to follow this example!
