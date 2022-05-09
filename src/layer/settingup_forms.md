@@ -207,7 +207,7 @@ When you open the field with **Value Relation** in <MobileAppName />, you will b
 
 There is much more you can do to set up your forms efficiently, such as:
 - capture [photos](./settingup_forms_photo/) as attachments
-- create advanced forms with drill-down menu by setting up a [cascade form](./settingup_forms_settings/#advanced-value-relation-with-drill-down-forms)
+- create advanced forms with drill-down menu by setting up a [cascade form](./settingup_forms_settings/#drill-down-forms)
 - using 1-N relations to [link multiple records to one feature](./one-to-n-relations/) or to [attach multiple photos to one feature](./attach-multiple-photos-to-features/) 
 
 :::tip
