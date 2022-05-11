@@ -1,20 +1,41 @@
-# Search Values from Attribute Fields
+# Searching for Values in Attribute Fields
+[[toc]]
 
-You can search for the content of your attribute data from Input. Input is also capable of **split search**: searching values from multiple fields.
+In <MobileAppName />, you can search for the content of fields in spatial layers and non-spatial tables, as well as searching values from multiple fields.
 
-## QGIS project configuration
+## Setting identifiable layers in QGIS project
+To be able to browse the attributes of a layer, it needs to be set as *Identifiable* in your <QGISHelp ver="3.22" link="user_manual/introduction/qgis_configuration.html?highlight=properties#data-sources-properties" text="QGIS project" />.
 
-To be able to search the attribute table of a layer, you need to first configure your <QGISHelp ver="3.10" link="user_manual/introduction/qgis_configuration.html?highlight=properties#data-sources-properties" text="QGIS project" />:
+1. Open your QGIS project
+2. In the Menu > Project > Properties click on **Data Sources**
+3. Check and uncheck layers in the **Identifiable** column to define which layers you want to be able to browse in your project.
 
-- Open QGIS Desktop with you QGIS Project
-- In the Menu > Project > Properties click on "Data Sources"
 ![browse_enable](./qgis_data_sources.png)
-- Under **Searchable** column, select the layers you'd like to search
 
-## Search attribute data in Mergin Maps Input
+:::warning
+If you define a layer as **not identifiable**, you won't be able to tap it in <MobileAppName /> or use the **Identify tool** in QGIS to see its attribute form.
+:::
 
-To search for a record, you first need to [open the attribute table](./enable_browsing.md). You can then type in the string and Input should shortlist the matching records.
+## Exclude a field from the search
+By default, all attributes are searchable. You can exclude a field from the search in the **Layer properties**. 
+1. Navigate to the **Fields** tab
+2. Check the **Not searchable** option in the **Configuration** column
+![display_name](./not_searchable.png)
 
-Selecting an individual record, Input will open the form related to the feature.
+:::warning
+If a field is marked in a field configuration as **Not searchable**, it will be omitted from the search. There will be no search results, even if you search for a specific existing value of this field.
+:::
 
-![display_name](./input_search_data.png)
+## Searching for values in Mergin Maps Input
+Attribute data can be browsed in <MobileAppName /> by tapping **Browse features** in the **More** tab.
+![input browse](./input-browse.png)
+
+You can select a layer or a table from the list to open the attribute table and type in the string to shortlist the matching records.
+![input browse](./input_search_data.png)
+
+Selecting an individual record will open the form of the feature.
+
+:::tip
+The search looks up for a match in all searchable attributes values and is not case sensitive.
+:::
+
