@@ -51,11 +51,10 @@ The ecosystem consist of various components:
 
 ## Setup GIS Project
 - [QGIS Project Preparation](./gis/features/)
-- [Search Values from Attribute Fields](./gis/search_data/)
+- [Searching for Values in Attribute Fields](./gis/search_data/)
 - [Background Maps](./gis/settingup_background_map/)
 - [Map Themes](./gis/setup_themes/)
 - [Enable Digitising](./gis/enable_digitising/)
-- [Enable Browsing](./gis/enable_browsing/)
 - [Custom Projections](./gis/proj/)
 - [Supported Formats](./gis/supported_formats/)
 
