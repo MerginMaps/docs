@@ -16,7 +16,7 @@ To set the project extent, navigate to **Project** > **Properties**. Select **Vi
 If not set, <MobileAppName /> zooms to all visible layers. This is not particularly convenient when you have a layer with a large/global extent (e.g. Open Street Map).
 
 ## Project settings
-- [Map Themes](/setup_themes/) make possible to switch between different background maps in <MobileAppName /> (e.g. cartography maps and aerial imagery)
+- [Map Themes](./setup_themes/) make possible to switch between different background maps in <MobileAppName /> (e.g. cartography maps and aerial imagery)
 - Ensure the paths are set to *Relative* in Project Properties. All paths to the project data in <MobileAppName /> are relative to the project location.
 ![relative paths](./qgis_prj_relative_paths.png)
 - Define the <QGISHelp ver="3.22" link="user_manual/introduction/qgis_configuration.html?highlight=properties#data-sources-properties" text="layers capabilities" />. in **Data Sources** in Project Properties.
