@@ -114,6 +114,7 @@ If you want to record time and date when you capture the feature, you need to ma
 2. In the list of **Available Widgets** select the date field you want to work with.
 3. In the **Widget Display** tab:
    - select **Date/Time** from the drop-down menu
+   - select the Date Time **Field Format**
    - in **Widget Display** tab, check the **Calendar popup** option
 4. If you want to automatically insert the date (or date and time) when the feature is created, type **now()** as a default value in the **Defaults** tab.
 5. **Apply** the changes. Don't forget to save and sync your project!
@@ -124,6 +125,43 @@ In <MobileAppName />, the date can be edited using a calendar pop up. If you use
 
 ![datetime](./input_forms_datetime.png)
 
+It is also possible to use custom Field Formats and Widget Displays. 
+:::warning
+While working with QString fields with a date/time value and format function (used in a default value), it is important to match field format with a given format there.
+:::
+
+Following types are supported:
+
+**Type: QDate**  
+
+| field format 	| widget display 	| default value 	|   value   	|
+|:------------:	|:--------------:	|:-------------:	|:----------:	|
+|     Date     	|        -       	|       -       	| `0000-00-00` 	|
+|     Date     	|        -       	|     `now()`     	| `2020-09-09` 	|
+|     Date     	|   `dd/MM/yyyy`   	|     `now()`     	| `09/09/2020` 	|
+
+
+**Type: QDateTime**  
+
+| field format 	|    widget display   	| default value 	|        value       	|
+|:------------:	|:-------------------:	|:-------------:	|:-------------------:	|
+|     Time     	|          -          	|       -       	|       `00:00:00`      	|
+|     Time     	|          -          	|     `now()`     	|       `12:34:56`      	|
+|     Time     	|      `HH/mm/ss`      	|     `now()`     	|       `12/34/56`      	|
+|   Date Time  	|          -          	|       -       	| `0000-00-00 00:00:00` 	|
+|   Date Time  	|          -          	|     `now()`     	| `2020-09-09 12:34:56` 	|
+|   Date Time  	| `dd/MM/yyyy hh-mm-ss`	|     `now()`     	| `09/09/2020 12-34-56` 	|
+
+**Type: QString**  
+
+|         Field Format          	|    Widget Display   	|               Default Value               	|        Value       	|
+|:-------------------------------:	|:-------------------:	|:-----------------------------------------:	|:-------------------:	|
+|             Date              	|          -          	|      `format_date(now(), 'yyyy-MM-dd')`     	|      `''2020-09-09'`     	|
+|      Custom (`dd/MM/yyyy`)    	|      `dd/MM/yyyy`    	|      `format_date(now(), 'dd/MM/yyyy')`     	|      `'09/09/2020'`     	|
+|             Time        ``    	|          -          	|       `format_date(now(), 'HH:mm:ss')`      	|       `'12:34:56'`      	|
+|       Custom (`HH-mm-ss`)     	|       `HH-mm-ss`     	|       `format_date(now(), 'HH-mm-ss')`      	|       `'12-34-56'`      	|
+|           Date Time           	|          -          	| `format_date(now(), 'yyyy-MM-dd HH:mm:ss')` 	| `'2020-09-09 12:34:56'` 	|
+| Custom (`dd/MM/yyyy HH-mm-ss`)	| `dd/MM/yyyy HH-mm-ss`	| `format_date(now(), 'dd/MM/yyyy HH-mm-ss')` 	| `'09/09/2020 12-34-56'` 	|
 
 ## Checkbox
 

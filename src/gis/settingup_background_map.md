@@ -1,4 +1,5 @@
 # Background Maps
+[[toc]]
 
 When surveying in the field, it is essential to have appropriate background maps. There are several sources of online and offline background maps you can use in your QGIS project. Note that you need to comply with the terms of use of the background maps and their data sources. This page simply explains how to add the data to your QGIS maps and use it in Input. It will be the sole responsibility of the end user to comply with such terms and conditions.
 
@@ -40,17 +41,21 @@ To add Bing aerial imagery to your QGIS:
 
 ![new xyz connection](./qgis_xyz_online.png)
 
+::: tip
+When using XYZ tiles that contain labels, ensure to set the tile resolution to *Standard* in the connection settings. This will ensure the fonts are readable on the high resolution screens (the majority of the recent smartphones comes with high DPI screens).
+:::
+
+![Connection settings for XYZ](./xyz_settings.png)
+
 ### Generating raster tiles
 
 QGIS also offers a <QGISHelp ver="3.10" link="user_manual/processing_algs/qgis/rastertools.html" text="processing algorithm" /> to generate [your own XYZ tiles](https://ocw.un-ihe.org/mod/book/tool/print/index.php?id=5497&chapterid=491) for offline use.
 
 To generate a raster tile covering the aerial photography of your survey area:
-
   - Add the Bing aerial imagery link added above
   - Zoom to your study extent
 
 To generate an offline copy of the aerial imagery from your map view extent:
-
   - In QGIS, from the main menu, select **Processing** > **Toolbox**
   - A new panel should appear on the right side of your QGIS
   - In the search section on the top of the **Processing** panel, type **xyz**
@@ -62,7 +67,6 @@ To generate an offline copy of the aerial imagery from your map view extent:
     - For **Output file (for MBTiles)**, click on the right side drop-down menu and select **Save to file**
     - Browse the folder where you want to save **offline_aerial_photo.mbtiles**
     - Click **Run**
-
 
 ![new xyz connection](./qgis_xyz_gen_mbtiles1.png)
 
@@ -78,9 +82,9 @@ Notes:
 Ideal for cartography basemaps. 
 :::
 
-Vector tiles are a better alternative for cartography maps as background data. It is lighter in size, flexible styling and your maps are not pixelated.
+Vector tiles are a better alternative for cartography maps as background data. It is lighter in size, flexible styling and your maps are not pixelated. 
 
-![exmple vectortile](./example_vectortile.png)
+![example vectortile](./example_vectortile.png)
 
 ### Online services
 
@@ -107,33 +111,20 @@ Another source of online vector tiles are Qwant maps:
     - Set **Max. Zoom Level** to **14**
     - For **Style URL** type: **<NoSpellcheck id="https://raw.githubusercontent.com/QwantResearch/qwant-basic-gl-style/master/style.json" />**
 
-
 ### Generating vector tiles for offline use
 In QGIS (3.14+), you can generate your own vector tiles. Alternatively, you can generate vector tiles using OpenMapTiles from OpenStreetMap data.
 
 In the example below, we walk through steps to generate a vector tile using OpenMapTiles for [Limpopo](https://www.openstreetmap.org/relation/349547#map=7/-24.367/29.982).
 
 Note that instructions below requires familiarity with terminal. In addition your operating system should support **docker**.
-
-
   - Clone the OpenMapTiles repository: `git clone git@github.com:openmaptiles/openmaptiles.git`
-
   - Download osm.pbf file for the country or region where your area falls in from [here](https://download.geofabrik.de/).
-
   - Search for your area of interest and find the OSM relation ID (from [here](https://nominatim.openstreetmap.org/) using method described <GitHubRepo id="JamesChevalier/cities" desc="here" /> or alternatively download it <GitHubRepo id="JamesChevalier/" desc="from this git repository" /> if available).
-
   - Clip the *osm.pbf* downloaded in step 2 using the poly downloaded in step 3:
-
   `osmconvert south-africa.osm.pbf -B=limpopo.poly --complete-ways --complete-multipolygons -o=my.osm.pbf`
-
   - Place *my.osm.pbf* under *openmaptiles/data/*
-
   - Run `./quickstart.sh my` from *openmaptiles/* folder (where you cloned your repository): this will generate the tiles with the default settings (i.e. low zoom level of max=7)
-
   - Edit openmaptiles/data/my.dc-config.yml and change the Max_Zoom to 14
-
   - Re-run `./quickstart.sh my`
-
   - The above process should produce an MBTiles for your clipped OSM file
-
   - You can load the file and style it using one of the <GitHubRepo id="openmaptiles/osm-bright-gl-style" desc="OpenMapTiles styles" />
