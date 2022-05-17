@@ -42,6 +42,11 @@ To configure 1-N relations in QGIS:
 
 ![1-N relations in QGIS](./input_forms_many-relations1.png)
 
+5. Right-click on the survey layer, select **Properties** and go to the **Attributes** form tab.
+6. Drag and drop the **Inspections** relation to the **Form Layout**.
+
+![form](./one-to-n-dnd.png)
+
 This now allows you to add multiple inspections for each manhole location (**manhole_locations** point layer). The inspections records will be stored in the **inspections** table.
 
 When you open the form for an existing record in the **manhole_locations** point layer, you will be able to see the existing inspection records and optionally add, delete or edit the records:
