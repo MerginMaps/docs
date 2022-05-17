@@ -19,7 +19,7 @@ To set up a photo widget:
 4. **Apply** the changes. Don't forget to save and sync your project!
 ![photos](./qgis_forms_photo.png)
 
-Here is the overview of paths that will be stored in various settings of the attachment widget. 'path/to/project' represents the project home folder, where the project file is located. 
+Here is an overview of paths that will be stored in various settings of the attachment widget. `path/to/project` represents the project home folder, where the project file is located. 
 
 |        Default path       	|  Store path as 	|                Value               	|
 |:-------------------------:	|:------------:	|:----------------------------------:	|
@@ -32,6 +32,25 @@ Here is the overview of paths that will be stored in various settings of the att
 | `@project_home + '/photos'` 	| Absolute Path | `<path/to/project>/photos/image.jpg` 	|
 | `@project_home + '/photos'` 	| Relative to project path |          `/photos/image.jpg`         	|
 | `@project_home + '/photos'` 	| Relative to default path |               `image.jpg`             	|
+
+
+## How to set up a custom folder for storing photos
+It can be useful to set up a custom folder for photos, e.g. if you want to use [selective synchronisation](../manage/selective_sync/) or if you simply want to have your data organised.
+
+To set up a custom folder:
+1. Create a subfolder in the project folder (here: `photos`)
+2. Right-click on a survey layer, select Properties and go to the Attributes form tab.
+3. In the list of Available Widgets select the field, where photos are stored.
+4. In the Widget Display tab:
+   - make sure to select the **Attachment** widget type
+   - set the **Default path** as `@project_folder + '/photos'`.
+5. Apply the changes, save and sync your project. Photos will now be stored in the `photos` folder.
+
+![](./qgis_custom_folder.png)
+
+:::warning
+Empty subfolders in the project folder are currently not synchronized. If you create a new (empty) subfolder for photos, place there some small file, e.g. an empty text file to ensure the sub-folder is synchronised to <MobileAppName />.
+:::
 
 ## Photos in Mergin Maps Input
 Using the photo widget in <MobileAppName />, you will have two options:
