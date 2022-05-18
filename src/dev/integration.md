@@ -69,4 +69,4 @@ Please see <GitHubRepo id="lutraconsulting/mergin-cpp-client" /> repository for 
 
 ### C++ Mergin API core library 
 
-Client is based on the Qt-based <GitHubRepo id="lutraconsulting/input/tree/master/core" desc="mergin api core library" /> used by the [Input App](https://inputapp.io) to sync the projects in the mobile application.
+Client is based on the Qt-based <GitHubRepo id="lutraconsulting/input/tree/master/core" desc="mergin api core library" /> used by the [Mergin Maps Input](https://inputapp.io) to sync the projects in the mobile application.

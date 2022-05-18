@@ -6,7 +6,7 @@
 
 **Map projection** is the operation defining how to show/display spatial data (your data with associated coordinate reference system) on 2D flat surface (QGIS map canvas or printed paper map). There are various types of projections that are used in cartography (planar projection, cylindrical projections, conic projections). Each type of projection could preserve some attribute of the 2d "flat" map. Some projections preserve distance, others areas, etc. For example Mercator Projection was created to display accurate compass bearings for sea travel.
 
-You can read more about map projections in the <QGISHelp ver="3.16" link="gentle_gis_introduction/coordinate_reference_systems.html#map-projection-in-detail" text="QGIS docs" /> or [Wikipedia](https://en.wikipedia.org/wiki/Map_projection).
+You can read more about map projections in the <QGISHelp ver="3.22" link="gentle_gis_introduction/coordinate_reference_systems.html#map-projection-in-detail" text="QGIS docs" /> or [Wikipedia](https://en.wikipedia.org/wiki/Map_projection).
 
 ## Coordinate reference systems
 
@@ -22,7 +22,7 @@ The coordinate reference systems are not set in stone. Most of them are part of 
 
 When we want to show the data stored in one coordinate reference system on a map in other coordinate reference system (e.g. when we have multiple layers each with different coordinate system), we need to do **transformation**. When two coordinate systems do not use the same datum, there are multiple ways how to transform from system one to another. This operation is typically only approximate and multiple operations may exist for different purposes, or depending on how the data was originally collected in the first place. Therefore as spatial data users we need to make an informed choice about which operation is fit for purpose and the correct one to use for your current project.
 
-More detailed information about the coordinate reference systems and projections could be found in the <QGISHelp ver="3.16" link="gentle_gis_introduction/coordinate_reference_systems.html" text="QGIS online documentation" /> or [PROJ documentation](https://proj.org/operations/index.html).
+More detailed information about the coordinate reference systems and projections could be found in the <QGISHelp ver="3.22" link="gentle_gis_introduction/coordinate_reference_systems.html" text="QGIS online documentation" /> or [PROJ documentation](https://proj.org/operations/index.html).
 
 ## How is it used in QGIS?
 
@@ -35,7 +35,7 @@ Your QGIS installation contains the basic set of PROJ resources required for mos
 
 ## Example capture GPS point for Great Britain  
 
-For example, imagine we have a project for the Great Britain, where we use map projection British National Grid (EPSG:27700) to display map. We have background map in the same coordinate reference system, so there is no datum transformation required to show it. However we want to capture point by GPS receiver in the field by [Input app](https://inputapp.io), and we add a point layer in WGS 84 coordinate reference system. When we add point to this point layer, we store the coordinate values (latitude and longitude received from GPS) as is in the data section of our layer. When we want to show the point on the QGIS map canvas, QGIS needs to first do datum transformation, following by map projection.
+For example, imagine we have a project for the Great Britain, where we use map projection British National Grid (EPSG:27700) to display map. We have background map in the same coordinate reference system, so there is no datum transformation required to show it. However we want to capture point by GPS receiver in the field by [Mergin Maps Input](https://inputapp.io), and we add a point layer in WGS 84 coordinate reference system. When we add point to this point layer, we store the coordinate values (latitude and longitude received from GPS) as is in the data section of our layer. When we want to show the point on the QGIS map canvas, QGIS needs to first do datum transformation, following by map projection.
 
 ![projection transformation](./projection_transformation.png)
 
@@ -49,7 +49,7 @@ In this case, the recommended transform is the[OSTN15 transformation](https://ww
 
 ### 2. Map projection
 
-Once the data is in the same datum, they are projected to 2d flat space (map canvas) and rendered to the user in QGIS or [Input app](https://inputapp.io).
+Once the data is in the same datum, they are projected to 2d flat space (map canvas) and rendered to the user in QGIS or [Mergin Maps Input](https://inputapp.io).
 
 ## What could possibly go wrong?
 
@@ -62,11 +62,11 @@ Other issues are visible when:
 same geodetic datum)
 2. AND the datum transformation is not correct.
 
-For example imagine that you digitised your point to be in the corner of the rectangle in QGIS desktop. But when opened in the Input app in the field it is obviously shifted by dozens of centimetres. Or other way around, you digitise the point in the field, and when opened in QGIS it is misplaced.
+For example imagine that you digitised your point to be in the corner of the rectangle in QGIS desktop. But when opened in the <MobileAppName /> in the field it is obviously shifted by dozens of centimetres. Or other way around, you digitise the point in the field, and when opened in QGIS it is misplaced.
 
 ![shift of the point](./digitising_shift.png)
 
-The likely reason is that there is correctly downloaded and used extra datum shift file in QGIS, but missing in Input app (more information in <LutraConsultingWeb id="blog/2021/04/21/projections-field/" desc="this blog" />)
+The likely reason is that there is correctly downloaded and used extra datum shift file in QGIS, but missing in <MobileAppName /> (more information in <LutraConsultingWeb id="blog/2021/04/21/projections-field/" desc="this blog" />)
 
 ## QGIS transformation tab
 

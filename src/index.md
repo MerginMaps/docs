@@ -78,7 +78,7 @@ The ecosystem consist of various components:
 - [How to Add, Edit, Delete Features](./field/input_features/)
 - [How to Reuse Last Entered Values](./field/reuse-last-values/)
 - [How to Stake Out Points](./field/stake-out/)
-- [Input App Interface](./field/input_ui/)
+- [Mergin Maps Input Interface](./field/input_ui/)
 - [Working With Non-spatial Tables](./layer/working_with_nonspatial_data/)
 
 ## For Developers
