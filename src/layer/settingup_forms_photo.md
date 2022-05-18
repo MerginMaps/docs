@@ -49,7 +49,7 @@ To set up a custom folder:
 ![](./qgis_custom_folder.png)
 
 :::warning
-Empty subfolders in the project folder are currently not synchronized. If you create a new (empty) subfolder for photos, place there some small file, e.g. an empty text file to ensure the sub-folder is synchronised to <MobileAppName />.
+Empty subfolders in the project folder are currently not synchronised. If you create a new (empty) subfolder for photos, place there some small file, e.g. an empty text file to ensure the sub-folder is synchronised to <MobileAppName />.
 :::
 
 ## Photos in Mergin Maps Input
