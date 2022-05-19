@@ -331,9 +331,9 @@ If you are adding new component:
 
 ### Reference QGIS Help pages
 
-Use `<QGISHelp />` component, e.g. `<QGISHelp ver="3.10" link="user_manual/index.html" text="See QGIS Help page" />` transforms to
+Use `<QGISHelp />` component, e.g. `<QGISHelp ver="3.22" link="user_manual/index.html" text="See QGIS Help page" />` transforms to
 
-<QGISHelp ver="3.10" link="user_manual/index.html" text="See QGIS Help page" />
+<QGISHelp ver="3.22" link="user_manual/index.html" text="See QGIS Help page" />
     
 ### Embed YouTube content
 
@@ -351,7 +351,7 @@ For a short reference (e.g. in tables), use `<MerginMapsProjectShort />` compone
 
 <MerginMapsProjectShort id="documentation/test_forms" />
 
-### Show Input App Google/Apple badges for download
+### Show Mergin Maps Input Google/Apple badges for download
 
 Use `<AppDownload />` component
     

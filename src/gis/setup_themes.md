@@ -4,7 +4,7 @@ In Input, you can use different **map themes**. This is ideal for switching betw
 
 # Setting up QGIS map themes
 
-Read how to <QGISHelp ver="3.10" link="user_manual/introduction/general_tools.html#configuring-map-themes" text="set up a new map theme" /> in QGIS.
+Read how to <QGISHelp ver="3.22" link="user_manual/introduction/general_tools.html#configuring-map-themes" text="set up a new map theme" /> in QGIS.
 
 - Open QGIS Desktop with you QGIS Project 
 - In the Layers Panel, click on "Manage Map Themes" (eye-icon)

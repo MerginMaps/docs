@@ -6,7 +6,7 @@ We recommend using GeoPackage to save your non-spatial table. With this format, 
 
 # QGIS project configuration
 
-Ensure you have enabled editing and searching of your non-spatial table in QGIS <QGISHelp ver="3.10" link="user_manual/introduction/qgis_configuration.html?highlight=properties#data-sources-properties" text="QGIS project" />:
+Ensure you have enabled editing and searching of your non-spatial table in QGIS. For more details see <QGISHelp ver="3.22" link="user_manual/introduction/qgis_configuration.html?highlight=properties#data-sources-properties" text="QGIS documentation" />.
 
 ![browse_enable](./qgis_nonspatial_properties.png)
 

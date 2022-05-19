@@ -17,7 +17,7 @@ Raster tiles can be large in size but an ideal format for aerial imagery.
 
 ### Online services
 
-QGIS comes by default with the <QGISHelp ver="3.10" link="user_manual/managing_data_source/opening_data.html?highlight=xyz#using-xyz-tile-services" text="OpenStreetMap online services for XYZ tiles" />. When adding cartographic basemap, ensure you set the tile size correctly, so that the texts and labels are readable on mobile devices with high resolution display.
+QGIS comes by default with the <QGISHelp ver="3.22" link="user_manual/managing_data_source/opening_data.html?highlight=xyz#using-xyz-tile-services" text="OpenStreetMap online services for XYZ tiles" />. When adding cartographic basemap, ensure you set the tile size correctly, so that the texts and labels are readable on mobile devices with high resolution display.
 
 You can also add [other sources](https://gis.stackexchange.com/questions/20191/adding-basemaps-from-google-or-bing-in-qgis/217670#217670) of XYZ tiles to your QGIS.
 
@@ -49,7 +49,7 @@ When using XYZ tiles that contain labels, ensure to set the tile resolution to *
 
 ### Generating raster tiles
 
-QGIS also offers a <QGISHelp ver="3.10" link="user_manual/processing_algs/qgis/rastertools.html" text="processing algorithm" /> to generate [your own XYZ tiles](https://ocw.un-ihe.org/mod/book/tool/print/index.php?id=5497&chapterid=491) for offline use.
+QGIS also offers a <QGISHelp ver="3.22" link="user_manual/processing_algs/qgis/rastertools.html" text="processing algorithm" /> to generate [your own XYZ tiles](https://ocw.un-ihe.org/mod/book/tool/print/index.php?id=5497&chapterid=491) for offline use.
 
 To generate a raster tile covering the aerial photography of your survey area:
   - Add the Bing aerial imagery link added above

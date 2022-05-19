@@ -53,6 +53,6 @@ To download your invoices and view your payment history:
 
 ## Further information
 
-Subscription plans can be also bought from the Input app (on Apple devices via in-app purchases).
+Subscription plans can be also bought from the <MobileAppName /> (on Apple devices via in-app purchases).
 
 Your subscription will auto-renew, either annually or monthly until you unsubscribe. You can cancel or change your subscription any time, with Apple Manage Subscriptions App or through the Mergin web interface.
