@@ -2,8 +2,8 @@
 
 Please ensure you have already:
 
-* [Signed up to <MainPlatformName />](..//sign-up-to-mergin-maps/index.md)
-* [Installed QGIS](../install-qgis/index.md)
+* [Signed up to <MainPlatformName />](../sign-up-to-mergin-maps/)
+* [Installed QGIS](../install-qgis/)
 
 1. Open QGIS on your computer
 
