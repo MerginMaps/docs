@@ -1,7 +1,7 @@
 <template>
-  <a :href="`https://public.cloudmergin.com/${id}`" target="_blank" class="nospellcheck">
+  <a :href="`https://merginmaps.com/${id}`" target="_blank" class="nospellcheck">
     <span v-if="desc" v-html="desc"></span>
-    <span v-else class="nospellcheck">cloudmergin.com</span>
+    <span v-else class="nospellcheck">merginmaps.com</span>
   </a>
 </template>
 

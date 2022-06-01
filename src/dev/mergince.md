@@ -1,6 +1,6 @@
 # Mergin Community Edition
 
-The [Mergin](https://public.cloudmergin.com) is a great companion to <MobileAppName /> as it provides seamless synchronisation of data between your phone/tablet, Mergin service and QGIS Desktop.
+The [Mergin](https://merginmaps.com/) is a great companion to <MobileAppName /> as it provides seamless synchronisation of data between your phone/tablet, Mergin service and QGIS Desktop.
 
 The good news is that Mergin CE is licensed as open source software and therefore it is possible to do your custom deployments.
 

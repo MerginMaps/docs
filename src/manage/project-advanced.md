@@ -60,7 +60,7 @@ There is an option to transfer the ownership of a project to another user or org
 ## Delete a project
 If you want to delete a project, you can do so through <MainDomainNameLink /> or using the <QGISPluginName />.
 
-### Delete a project through cloudmergin.com
+### Delete a project through merginmaps.com
 
 1. Log in <MainDomainNameLink /> and choose the project you want to delete
 2. Go to **Settings** and click on **Delete project**

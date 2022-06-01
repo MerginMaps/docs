@@ -4,9 +4,9 @@
 There are several methods of creating a new <MainPlatformName /> project:
 - [<MobileAppName /> ](./index.md#create-a-project-in-mergin-maps-input) offers the quickest (albeit limited) way of creating a <MainPlatformName /> project.
 - If you want to take full advantage of <MainPlatformName />, use [QGIS](./index.md#create-a-project-in-qgis) to prepare new projects.
-- You can also use [cloudmergin.com](./index.md#create-a-project-through-cloudmergin-com), especially if your project files are already fully prepared and only need uploading.
+- You can also use [merginmaps.com](./index.md#create-a-project-through-merginmaps-com), especially if your project files are already fully prepared and only need uploading.
 
-If you want to make a copy of your projects or the ones shared with you, you can clone them in [QGIS](./index.md#clone-an-existing-project-in-qgis) or [cloudmergin.com](./index.md#clone-an-existing-project-through-cloudmergin-com).
+If you want to make a copy of your projects or the ones shared with you, you can clone them in [QGIS](./index.md#clone-an-existing-project-in-qgis) or [merginmaps.com](./index.md#clone-an-existing-project-through-merginmaps-com).
 
 ## Create a project in Mergin Maps Input
 
@@ -80,7 +80,7 @@ Using <QGISPluginName />, you can make a copy of one of your existing projects o
 
 ![](./clone.png)
 
-## Create a project through cloudmergin.com
+## Create a project through merginmaps.com
 
 1. Navigate to <MainDomainNameLink /> and sign in.
 
@@ -104,7 +104,7 @@ Using <QGISPluginName />, you can make a copy of one of your existing projects o
 
    ![Upload files](./web-project-upload.png)
 
-### Clone an existing project through cloudmergin.com
+### Clone an existing project through merginmaps.com
 
 You can also make a copy of an existing project or a project that is shared with you:
 
