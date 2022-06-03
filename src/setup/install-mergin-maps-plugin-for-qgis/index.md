@@ -1,45 +1,46 @@
 # How to Install QGIS Plugin
+[[toc]]
 
-Please ensure you have already:
-
+Before the Mergin Maps plugin installation, please ensure you have already:
 * [Signed up to <MainPlatformName />](../sign-up-to-mergin-maps/)
 * [Installed QGIS](../install-qgis/)
 
+## Plugin installation
 1. Open QGIS on your computer
-
-2. Select ***Plugins > Manage and Install Plugins...***
-
+2. Select **Manage and Install Plugins...** in the **Plugins** tab:
    ![](./qgis-plugins-manage-and-install.jpg)
 
-3. Find and install the ***Mergin*** plugin:
-
+3. Find the **Mergin** plugin and click **Install Plugin**:
    ![](./find-and-install-mergin.jpg)
 
-4. Close the Plugins dialog
-
-   The following new toolbar should have appeared in QGIS:
-   
+4. Close the Plugins dialog. The Mergin Maps plugin toolbar should appear in QGIS:
    ![](./mergin-toolbar.jpg)
    
    ::: tip
-   If you cannot see the toolbar above, ensure ***Mergin Toolbar*** is checked under ***View > Toolbars***.
+   If you cannot see the toolbar, ensure **Mergin Maps Toolbar** is checked under **View > Toolbars**.
    :::
 
-
-## Configuring the plugin
-
+## Plugin configuration
 With the plugin installed, we'll now configure it with your <MainPlatformName /> credentials.
 
-1. Click the ***Configure Mergin Plugin*** icon on the ***Mergin Toolbar***:
-
+1. Click the **Configure Mergin Maps Plugin** icon on the **Mergin Toolbar**:
    ![](./qgis-configure-mergin-plugin.jpg)
 
 2. Enter your login credentials if these are blank
 
-3. ***Test*** the connection and click ***OK***
-
+3. Click **Test Connection** to verify that everything works correctly. If so, click **OK**.
    ![](./qgis-mergin-settings.jpg)
 
-   <QGISPluginName /> is now able to load projects from the cloud in QGIS.
+<QGISPluginName /> is now able to load projects from the cloud in QGIS.
 
-   The plugin has been installed and configured.
+The plugin has been installed and configured.
+   
+## Plugin upgrade
+Upgrade the plugin periodically to ensure you can use the latest improvements.
+
+1. In QGIS, navigate to **Manage and Install Plugins...** in the **Plugins** tab
+   ![](./qgis-plugins-manage-and-install.jpg)
+   
+2. Find the **Mergin** plugin. If there is a new version available, click **Upgrade Plugin**.
+
+![upgrade plugin](./plugin-upgrade.png)
