@@ -25,6 +25,6 @@ To allow this functionality, follow these steps:
 
 ![photos](./reuse_last_values_digitize_after.png)
 
-You can use the `Reuse last value option` across multiple layers. Input will remember attributes for each layer separately.
+You can use the `Reuse last value option` across multiple layers. <MobileAppName /> will remember attributes for each layer separately.
 
 This feature was inspired by QGIS functionality called _Reuse last entered attribute values_.

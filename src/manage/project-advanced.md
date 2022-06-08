@@ -3,7 +3,7 @@
 
 ## Share a project
 
-Through <MainDomainNameLink />, you can share your project with other Mergin users. You can add your coworkers manually or send them a link and manage their permissions in your private project. You can also make your project accessible to everyone by making it public.
+Through <AppDomainNameLink />, you can share your project with other Mergin users. You can add your coworkers manually or send them a link and manage their permissions in your private project. You can also make your project accessible to everyone by making it public.
 
 ::: tip
 You can follow our [Working collaboratively](../tutorials/working-collaboratively/) tutorial to see detailed instructions on how to share your project.
@@ -28,7 +28,7 @@ Another method which is more suitable for sharing with a large number of users i
 2. Copy the link from your web browser
 3. Share the link with user(s) you want to invite to collaborate
 
-Users can use **Request access** button to request access to your project after logging into <MainDomainNameLink />.
+Users can use **Request access** button to request access to your project after logging into <AppDomainNameLink />.
 
 ![Mergin sharing setting](./project_sharing_send_request.png)
 
@@ -50,7 +50,7 @@ If you change your mind, you can similarly make your project private by clicking
 
 There is an option to transfer the ownership of a project to another user or organisation. 
 
-1. Log in <MainDomainNameLink /> and choose the project you want to transfer
+1. Log in <AppDomainNameLink /> and choose the project you want to transfer
 2. Go to **Settings** and click on **Transfer project**
 3. Enter the name of a user/organisation and **Request transfer**
 4. The user/organisation will be notified to accept or reject the transfer request. The request is valid for 6 days. After that period, if user or organisation does not accept the request, you will remain the owner of the project.
@@ -58,11 +58,11 @@ There is an option to transfer the ownership of a project to another user or org
 ![transfer project](./project-transfer.png)
 
 ## Delete a project
-If you want to delete a project, you can do so through <MainDomainNameLink /> or using the <QGISPluginName />.
+If you want to delete a project, you can do so through <AppDomainNameLink /> or using the <QGISPluginName />.
 
 ### Delete a project through merginmaps.com
 
-1. Log in <MainDomainNameLink /> and choose the project you want to delete
+1. Log in <AppDomainNameLink /> and choose the project you want to delete
 2. Go to **Settings** and click on **Delete project**
 
 ![delete project](./project-delete.png)

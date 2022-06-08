@@ -60,12 +60,9 @@ check your SPAM folder if the confirmation email does not appear in your inbox a
 
 
 ## Forgotten password
-
-If you forget your password, you can reset it through the [Mergin website](https://app.merginmaps.com/login/reset).
-
+If you forget your password, you can reset it through the <AppDomainNameLink id="login/reset" desc="Mergin website"  />. 
 
 ## Next steps
-
 Welcome to <MainPlatformName />!
 
 You can get up-to-speed quickly by following our [Quick Start tutorials](../../tutorials/capturing-first-data/index.md).

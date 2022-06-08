@@ -82,7 +82,7 @@ Using <QGISPluginName />, you can make a copy of one of your existing projects o
 
 ## Create a project through merginmaps.com
 
-1. Navigate to <MainDomainNameLink /> and sign in.
+1. Navigate to <AppDomainNameLink /> and sign in.
 
 2. To create a new project, click on **Create** in the **Projects** section:
 

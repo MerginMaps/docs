@@ -14,10 +14,10 @@ Ensure you have enabled editing and searching of your non-spatial table in QGIS.
 
 To browse, search or edit a non-spatial table, first you need to [open the attribute table](../gis/search_data/#searching-for-values-in-mergin-maps-input).
 
-To add a new record, select **Add Feature**. This will open a form to fill. By pressing **Save**, the new record will be added and Input will take you back to the attribute of your table.
+To add a new record, select **Add Feature**. This will open a form to fill. By pressing **Save**, the new record will be added and <MobileAppName /> will take you back to the attribute of your table.
 
 Similar to the vector layer attribute table, you can [search](../gis/search_data.md) your data.
 
-Selecting an individual record, Input will open the form related to the feature.
+Selecting an individual record, <MobileAppName /> will open the form related to the feature.
 
 ![display_name](./input_nonspatial_data.png)

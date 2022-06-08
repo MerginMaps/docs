@@ -14,11 +14,11 @@ Download <MobileAppName /> to your Android device, iPhone or iPad. You can find 
 
 <AppDownload></AppDownload>
 
-Once you have installed and opened Input you will see two tour projects:
+Once you have installed and opened <MobileAppName /> you will see two tour projects:
 
 ![Input's Tour Projects](./input-tour-projects.png)
 
-These tours introduce the basics of Input.
+These tours introduce the basics of <MobileAppName />.
 
 ![Welcome to Input](./welcome-to-input.png)
 

@@ -1,7 +1,7 @@
 # Exif Metadata
 [[toc]]
 
-Input comes with predefined default value expression functions which can be used to read an image EXIF metadata.
+<MobileAppName /> comes with predefined default value expression functions which can be used to read an image EXIF metadata.
 
 ## Supported functions
 
@@ -28,11 +28,11 @@ Open Settings -> Privacy -> Location Services -> Camera (app).
 ![photos](./ios_geo_tags.png)
 
 ## Use it with photo widget
-The parameter `<ABSOLUTE_PATH_TO_IMAGE>` can be set with an expression using value of another field. Therefore you can use a value from a text field of an attachment type as a parameter for Input's EXIF functions as following:
+The parameter `<ABSOLUTE_PATH_TO_IMAGE>` can be set with an expression using value of another field. Therefore you can use a value from a text field of an attachment type as a parameter for <MobileAppName />'s EXIF functions as following:
 
 `read_exif(@project_home + '/' + "photo", 'GPSImgDirection')`
 
-You can use both `Take a photo` or `From gallery` actions of the attachment widget. While capturing a photo with a camera, GPS EXIF data are added to the photo metadata. Make sure that location permissions are allowed in Input and also for your camera app.
+You can use both `Take a photo` or `From gallery` actions of the attachment widget. While capturing a photo with a camera, GPS EXIF data are added to the photo metadata. Make sure that location permissions are allowed in <MobileAppName /> and also for your camera app.
 
 For further examples you can check fields definitions of project <MerginMapsProject id="lutraconsulting/test_exif" /> accessible on Mergin.
 

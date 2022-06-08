@@ -35,7 +35,7 @@ Your QGIS installation contains the basic set of PROJ resources required for mos
 
 ## Example capture GPS point for Great Britain  
 
-For example, imagine we have a project for the Great Britain, where we use map projection British National Grid (EPSG:27700) to display map. We have background map in the same coordinate reference system, so there is no datum transformation required to show it. However we want to capture point by GPS receiver in the field by [Mergin Maps Input](https://inputapp.io), and we add a point layer in WGS 84 coordinate reference system. When we add point to this point layer, we store the coordinate values (latitude and longitude received from GPS) as is in the data section of our layer. When we want to show the point on the QGIS map canvas, QGIS needs to first do datum transformation, following by map projection.
+For example, imagine we have a project for the Great Britain, where we use map projection British National Grid (EPSG:27700) to display map. We have background map in the same coordinate reference system, so there is no datum transformation required to show it. However we want to capture point by GPS receiver in the field by <MobileAppName />, and we add a point layer in WGS 84 coordinate reference system. When we add point to this point layer, we store the coordinate values (latitude and longitude received from GPS) as is in the data section of our layer. When we want to show the point on the QGIS map canvas, QGIS needs to first do datum transformation, following by map projection.
 
 ![projection transformation](./projection_transformation.png)
 
@@ -49,7 +49,7 @@ In this case, the recommended transform is the[OSTN15 transformation](https://ww
 
 ### 2. Map projection
 
-Once the data is in the same datum, they are projected to 2d flat space (map canvas) and rendered to the user in QGIS or [Mergin Maps Input](https://inputapp.io).
+Once the data is in the same datum, they are projected to 2d flat space (map canvas) and rendered to the user in QGIS or <MobileAppName />.
 
 ## What could possibly go wrong?
 

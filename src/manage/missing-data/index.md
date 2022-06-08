@@ -39,7 +39,7 @@ Manual data transfer from an Android device can be done by connecting your devic
 On Android devices, data are stored in `Internal storage/Android/data/uk.co.lutraconsulting/files/projects` folder.
 
 ### Manual data transfer (between iOS and Mac)
-Input supports iTunes file sharing. Note that iTunes doesn't allow you to browse or edit data from the app data folder, only allows you to delete or copy the data folder to another location. 
+<MobileAppName /> supports iTunes file sharing. Note that iTunes doesn't allow you to browse or edit data from the app data folder, only allows you to delete or copy the data folder to another location. 
 
 You can access your data by following these steps:
 1. Plug iOS device to a computer
