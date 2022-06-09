@@ -53,5 +53,5 @@ or for other subprojects
 ## Donate or subscribe
 
  - Donate
- - [Subscribe](https://public.cloudmergin.com) to the Mergin Cloud
+ - <AppDomainNameLink  desc="Subscribe" /> to the <MainPlatformName />
  - Sponsor a bug-fixing sprint, or a new feature

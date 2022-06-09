@@ -359,7 +359,11 @@ Use `<AppDownload />` component
 
 ### Naming Mergin Maps Components
 
+Use `<AppDomainNameLink />` component, transforms to <AppDomainNameLink />
+
 Use `<MainDomainName />` component, transforms to <MainDomainName />
+
+Use `<MainDomainNameLink />` component, transforms to <MainDomainNameLink />
 
 Use `<MainPlatformName />` component, transforms to <MainPlatformName />
 

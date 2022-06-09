@@ -38,7 +38,7 @@ During the field survey, it is often necessary to fill out some attributes in th
 ### Settings for Mergin Maps Input preview panel
 What appears in the <MobileAppName /> preview panel can be defined in the **Display** tab in **Layer Properties**:
 - **Display Name**: a field name or an expression.
-- **HTML Map Tip**: the content of the preview panel. While QGIS always interprets the content of map tip as being HTML, <MobileAppName /> extends the syntax to allow two more modes: field values and images. If the map tip is not specified, Input will try to use the first three fields and show their attribute values.
+- **HTML Map Tip**: the content of the preview panel. While QGIS always interprets the content of map tip as being HTML, <MobileAppName /> extends the syntax to allow two more modes: field values and images. If the map tip is not specified, <MobileAppName /> will try to use the first three fields and show their attribute values.
 
 ![Display setting in QGIS](./qgis_properties_display.png)
 

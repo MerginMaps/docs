@@ -1,13 +1,13 @@
 <template>
-  <a :href="`https://merginmaps.com/${id}`" target="_blank" class="nospellcheck">
+  <a :href="`https://app.merginmaps.com/${id}`" target="_blank" class="nospellcheck">
     <span v-if="desc" v-html="desc"></span>
-    <span v-else class="nospellcheck">merginmaps.com</span>
+    <span v-else class="nospellcheck">app.merginmaps.com</span>
   </a>
 </template>
 
 <script>
 export default {
-  name: "maindomainnamelink",
+  name: "AppDomainNameLink",
   props: {
     id: {
       type: String,

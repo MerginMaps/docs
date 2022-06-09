@@ -1,6 +1,6 @@
 <template>
   <span>
-    <a :href="`https://public.cloudmergin.com/projects/${id}/tree`" target="_blank" rel="noopener noreferrer">
+    <a :href="`https://app.merginmaps.com/projects/${id}/tree`" target="_blank" rel="noopener noreferrer">
       <img :alt="`Mergin Maps Project ${id}`" :src="$withBase('/mm_logo_positive_no_padding.svg')" />
        <span>
         <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound">

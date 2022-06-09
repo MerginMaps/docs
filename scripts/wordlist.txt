@@ -67,6 +67,7 @@ MSI
 MVT
 Mercedes
 Mergin
+merginmaps
 Multiline
 NDK
 OneDrive

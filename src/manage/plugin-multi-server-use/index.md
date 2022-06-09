@@ -1,6 +1,6 @@
 # How to Use QGIS Plugin with Multiple Servers
 
-There is a default server <MainDomainNameLink /> which is configured in <QGISPluginName />. But there might be some cases you will want to use some custom server (e.g. you host it yourself). We will cover two typical use cases
+There is a default server <AppDomainNameLink /> which is configured in <QGISPluginName />. But there might be some cases you will want to use some custom server (e.g. you host it yourself). We will cover two typical use cases
 
 - migration from one server to another
 - using multiple servers simultaneously

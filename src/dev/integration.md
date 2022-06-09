@@ -56,7 +56,7 @@ Options:
   --version   Show the version information.
   --username  Mergin username (or MERGIN_USERNAME env. variable)
   --password  Mergin password (or MERGIN_PASSWORD env. variable)
-  --url       Mergin url      (defaults to public.cloudmergin.com)
+  --url       Mergin url      (defaults to app.merginmaps.com)
 
 Commands:
   create         Create a new project on Mergin server
@@ -69,4 +69,4 @@ Please see <GitHubRepo id="lutraconsulting/mergin-cpp-client" /> repository for 
 
 ### C++ Mergin API core library 
 
-Client is based on the Qt-based <GitHubRepo id="lutraconsulting/input/tree/master/core" desc="mergin api core library" /> used by the [Mergin Maps Input](https://inputapp.io) to sync the projects in the mobile application.
+Client is based on the Qt-based <GitHubRepo id="lutraconsulting/input/tree/master/core" desc="mergin api core library" /> used by the <MainDomainNameLink desc="Mergin Maps Input" /> to sync the projects in the mobile application.

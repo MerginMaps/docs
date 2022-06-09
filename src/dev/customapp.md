@@ -8,4 +8,4 @@ The good news is that <MobileAppName /> is licensed as open source software and 
 
 If you are interested in building a custom app, you can start by going to <GitHubRepo id="lutraconsulting/input" desc="Mergin Maps Input repository" /> on GitHub and building it for your platform. The <GitHubRepo id="lutraconsulting/input-sdk" desc="Input SDK repository" /> provides all the dependencies for various platforms (Android, iOS, macOS, Windows).
 
-For the Input source code and developers' documentation, you can visit <GitHubRepo id="lutraconsulting/input" />.
+For the <MobileAppName /> source code and developers' documentation, you can visit <GitHubRepo id="lutraconsulting/input" />.

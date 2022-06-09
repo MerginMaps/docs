@@ -4,7 +4,7 @@
 
 ## Mergin Service
 
-* <MainDomainNameLink desc="Mergin Cloud" />, SaaS Mergin service,  has proprietary license held by Lutra Consulting Ltd.
+* <AppDomainNameLink desc="Mergin Maps Cloud" />, SaaS Mergin service,  has proprietary license held by Lutra Consulting Ltd.
 * Mergin EE (Enterprise Edition), on-premise Mergin service, has proprietary license held by Lutra Consulting Ltd.
 * <GitHubRepo id="lutraconsulting/mergin" desc="Mergin CE (Community Edition)" />, on-premise Mergin service, is licensed under AGPL-3.0.
 

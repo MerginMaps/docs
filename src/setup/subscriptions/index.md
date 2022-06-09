@@ -2,7 +2,7 @@
 
 Mergin Service offers a free plan for up to 100 MB data usage. Free plan can be used to host projects for commercial use only *for first month*. Non-commercial use is considered for personal (hobby) use, or in academia (teachers, students).
 
-We offer discounts for non-profit or charity organisations, please <MerginMapsEmail id="sales" desc="contact us" />
+We offer discounts for non-profit or charity organisations, please <MerginMapsEmail id="sales" desc="contact us" />.
 
 For more storage you can choose one of the two plans for users ("Individual" 1GB or "Professional" 10GB storage) or a plan for an organisation ("Team" 50GB storage).
 
