@@ -53,7 +53,7 @@ Empty subfolders in the project folder are currently not synchronised. If you cr
 :::
 
 ## Resizing pictures
-Photos that are captured during the field survey or uploaded to the Mergin Maps project can be automatically resized, e.g. to save up storage space. The quality of the photos can be set up in the [Mergin Maps project properties](../gis/features/#photo-quality) using <QGISPluginName />.
+Photos that are captured during the field survey or uploaded using <MobileAppName /> can be automatically resized, e.g. to save up storage space. The quality of the photos can be set up in the [Mergin Maps project properties](../gis/features/#photo-quality) using <QGISPluginName />.
 
 ## Photos in Mergin Maps Input
 Using the photo widget in <MobileAppName />, you will have two options:
