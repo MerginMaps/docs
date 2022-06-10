@@ -3,6 +3,10 @@
 
 When surveying, you might want to take a photo from your camera or attach an existing photo from the device gallery to your survey feature.
 
+:::tip
+Photos quality can be set up in the [Mergin Maps project properties](../gis/features/#photo-quality) using <QGISPluginName />.
+:::
+
 ## Attachment widget in QGIS
 
 :::tip

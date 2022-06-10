@@ -23,5 +23,5 @@ Selective sync can be set using <QGISPluginName />.
 ![selective sync plugin](./selective-sync-plugin.png)
 
 :::tip
-If the **Mergin** tab is inactive in project properties, make sure you are working with a Mergin Maps project.
+If **Selective sync** option is inactive in project properties, make sure you are working with a Mergin Maps project.
 :::
