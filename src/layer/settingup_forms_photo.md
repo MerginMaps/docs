@@ -3,10 +3,6 @@
 
 When surveying, you might want to take a photo from your camera or attach an existing photo from the device gallery to your survey feature.
 
-:::tip
-Photos quality can be set up in the [Mergin Maps project properties](../gis/features/#photo-quality) using <QGISPluginName />.
-:::
-
 ## Attachment widget in QGIS
 
 :::tip
@@ -55,6 +51,9 @@ To set up a custom folder:
 :::warning
 Empty subfolders in the project folder are currently not synchronised. If you create a new (empty) subfolder for photos, place there some small file, e.g. an empty text file to ensure the sub-folder is synchronised to <MobileAppName />.
 :::
+
+## Resizing pictures
+Photos that are captured during the field survey or uploaded to the Mergin Maps project can be automatically resized, e.g. to save up storage space. The quality of the photos can be set up in the [Mergin Maps project properties](../gis/features/#photo-quality) using <QGISPluginName />.
 
 ## Photos in Mergin Maps Input
 Using the photo widget in <MobileAppName />, you will have two options:
