@@ -433,5 +433,5 @@ With a clear picture of how the structure of content will change in a given rele
 * Anchors don't work
 * elements in anchors don't show
 * elements also don't work in TOC
-
+* when a vuepress component is followed by a hyperlink, the hyperlink is displayed as plain text
 
