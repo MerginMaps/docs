@@ -52,6 +52,9 @@ To set up a custom folder:
 Empty subfolders in the project folder are currently not synchronised. If you create a new (empty) subfolder for photos, place there some small file, e.g. an empty text file to ensure the sub-folder is synchronised to <MobileAppName />.
 :::
 
+## Resizing pictures
+Photos that are captured during the field survey or uploaded using <MobileAppName /> can be automatically resized, e.g. to save up storage space. The quality of the photos can be set up in the [Mergin Maps project properties](../gis/features/#photo-quality) using <QGISPluginName />.
+
 ## Photos in Mergin Maps Input
 Using the photo widget in <MobileAppName />, you will have two options:
 - **Take a photo** to use your camera app for taking a photos 

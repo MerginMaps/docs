@@ -16,15 +16,27 @@ To set the project extent, navigate to **Project** > **Properties**. Select **Vi
 If not set, <MobileAppName /> zooms to all visible layers. This is not particularly convenient when you have a layer with a large/global extent (e.g. Open Street Map).
 
 ## Project settings
-- [Map Themes](./setup_themes/) make possible to switch between different background maps in <MobileAppName /> (e.g. cartography maps and aerial imagery)
-- Ensure the paths are set to *Relative* in Project Properties. All paths to the project data in <MobileAppName /> are relative to the project location.
+- Ensure the paths are set to *Relative* in the **General** tab in Project Properties. All paths to the project data in <MobileAppName /> are relative to the project location.
 ![relative paths](./qgis_prj_relative_paths.png)
-- Define the <QGISHelp ver="3.22" link="user_manual/introduction/qgis_configuration.html?highlight=properties#data-sources-properties" text="layers capabilities" />. in **Data Sources** in Project Properties.
+- Define the <QGISHelp ver="3.22" link="user_manual/introduction/qgis_configuration.html?highlight=properties#data-sources-properties" text="layers capabilities" /> in the **Data Sources** in Project Properties.
    - [Identifiable](./search_data/#setting-identifiable-layers-in-qgis-project) layers can be queried in <MobileAppName />. If you want to be able to search for attribute values in a layer, it needs to be identifiable and searchable.
    - **read-only** layers cannot be modified. If a vector layer is not intended to be used as a survey layer, set it as read-only.
    - [non-spatial](../layer/working_with_nonspatial_data/) layers need to be set as searchable to enable browsing, searching, or editing.
 
 ![Layer Capabilities](./qgis_project_properties.png)
+
+### Map themes
+[Map Themes](./setup_themes/) make possible to switch between different background maps in <MobileAppName /> (e.g. cartography maps and aerial imagery)
+
+### Photo quality
+<Badge text="since plugin 2022.3.2" type="warning"/> <Badge text="since Input 1.5.1" type="tip"/>
+The quality of photographs and pictures that are saved in the Mergin Maps project can be set up in the **Mergin Maps** tab in **Project properties**. When pictures are added using <MobileAppName /> (uploaded or taken with the camera), they will be resized accordingly.
+
+By default, the quality is set to *Original* - the original pictures are stored. If you want to resize the pictures, you can choose from *High*, *Medium*, or *Low* quality. The [EXIF metadata](../layer/exif_metadata/) of the original files are kept.
+
+Don't forget to save and sync your project!
+
+![resize pics](./project_resize_pics.png)
 
 ## Survey layers
 Vector layers can be used as survey layers in <MobileAppName />. You can apply styles and set up the forms to make your field survey easier.
