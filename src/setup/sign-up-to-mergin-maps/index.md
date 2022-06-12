@@ -48,6 +48,10 @@ You can also sign up from <MobileAppName />.
 Check your spam folder if the confirmation email does not appear in your inbox after 5 minutes.
 :::
 
+**Welcome to <MainPlatformName />!**
+
+You can get up-to-speed quickly by following our [Quick Start tutorials](../../tutorials/capturing-first-data/index.md).
+
 ## Forgotten password
 If you forget your password, you can reset it through <AppDomainNameLink id="login/reset" desc="Mergin Maps website" /> or by clicking **Forgot password?** in the login page on the web or in <MobileAppName />.
 ![forgotten password](./forgot-password.png)

@@ -41,11 +41,11 @@ Your new project should now be visible on the *Home* tab of the *Projects* scree
    [Creating a Project in QGIS](../../tutorials/creating-a-project-in-qgis/index.md) tutorial will show you how to create a new project in QGIS, add layers, configure attributes forms and save changes to <MainPlatformName />. 
    :::
 
-To work with <MainPlatformName /> projects in QGIS, you will need to [install the <QGISPluginName />](../../setup/install-mergin-maps-plugin-for-qgis/index.md).
+To work with <MainPlatformName /> projects in QGIS, you will need to [install the <QGISPluginName />](../../setup/install-mergin-maps-plugin-for-qgis/index.md) first.
 
 1. Open a blank or an existing project in QGIS.
 
-2. Click on **Create Mergin Project** from the toolbar.
+2. Click on **Create Mergin Maps Project** from the toolbar.
 
 ![](../../tutorials/creating-a-project-in-qgis/qgis-create-mergin-project.jpg)
 
@@ -60,7 +60,7 @@ To work with <MainPlatformName /> projects in QGIS, you will need to [install th
 
      ![](./mergin_plugin_project_wizard_3.png)
 
-   - **Use current QGIS project as is**. This is for cases when you have already a stand-alone folder with your project packaged.
+   - **Use current QGIS project as is**. This is for cases when you already have a stand-alone folder with your project packaged.
 
 4. Name the project and select a path where your project folder and associated files will be generated. Your project should be saved on a local drive. Using shared network drives and cloud storage (such as OneDrive or Google Drive) is not supported.
 
@@ -72,8 +72,8 @@ The new <MainPlatformName /> project will be created locally on your computer an
 
 Using <QGISPluginName />, you can make a copy of one of your existing projects or the ones shared with you. 
 
-1. Right-click on the project in the **Browser panel > Mergin** and select **Clone**.
-
+1. Navigate to **Mergin Maps** in the **Browser panel**
+2. Find the project you want to clone, right-click on it and select **Clone**
 ![](./plugin-clone.png)
 
 2. Select the **Owner** from the drop-down menu and type your new **Project Name**.
@@ -83,9 +83,7 @@ Using <QGISPluginName />, you can make a copy of one of your existing projects o
 ## Create a project through merginmaps.com
 
 1. Navigate to <AppDomainNameLink /> and sign in.
-
 2. To create a new project, click on **Create** in the **Projects** section:
-
    ![](./web-create-project.png)
 
 3. Give the project a **name**
@@ -100,15 +98,21 @@ Using <QGISPluginName />, you can make a copy of one of your existing projects o
 4. Add files to your project:
    - Click on **Drag & drop here to click and select file(s) to upload**
    - Select files or folders to upload
-   - Once the files and folders are selected, press **Update**
+   - Once the files and folders are selected, press **Update** in the **Data Sync** window.
 
    ![Upload files](./web-project-upload.png)
 
 ### Clone an existing project through merginmaps.com
 
-You can also make a copy of an existing project or a project that is shared with you:
+You can also make a copy of your own existing project, a project that is shared with you or a public project in **Explore**.
 
-1. Open the project link in your web browser
-2. From the top right of the panel, select **Clone**
-   ![](./web-clone-project.png)
-3. In the new window, you can change the project name and select the owner
+1. Find the project you want to clone and click on it. 
+   ![explore projects](./web-explore-project.png)
+   
+   If a project was shared with you via link, open the project link in your web browser.
+   
+2. Click on the **Clone** button
+   ![clone project](./web-clone-project.png)
+   
+3. In the new window, you can change the project name and set the project owner
+   ![clone project](./web-clone-project-2.png)
