@@ -12,7 +12,7 @@ The left navigation panel shows the name of the current profile. Clicking on the
 
 ![profile switch](./mergin-switch-profile.png)
 
-You can access your account details in the **Settings** section under **Profile**. Here you can change your password, verify your email or close your account. In **Edit profile**, you can also enter your name and turn on/off email notifications. 
+You can access your account details in the **Settings** section under **Profile**. Here you can change your password, verify your email or close your account. Use **Edit profile** to enter your name or turn on/off email notifications. 
 
 You will also see the list of organisations you belong to and pending invitations to join an organisation.
 
@@ -44,7 +44,7 @@ Click on a project to download it, [clone it](./create-project/#clone-an-existin
 
 ## Subscription
 **Subscription** section contains information about your subscription and billing:
-   - **DETAIL** contains details about your current subscription and data usage. Here you can also change your plan and how often is your subscription billed.
+   - **DETAIL** contains details about your current subscription and data usage. Here you can also change your plan and the frequency of your subscription billing.
    - **HISTORY** includes the list of events related to your account, such as changing the plan or the payment history.
    - **INVOICES** contains the list of your previous payments and invoices
    ![subscription](./mergin-subscription.png)
