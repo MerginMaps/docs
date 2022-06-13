@@ -8,17 +8,16 @@ Another advantage of organisations is that other users can be invited and they w
 
 ## Creating an Organisation
 
-This section describes how to create an organisation.
-
-- Log in to Mergin
-- From the left panel, select **+ Create** in front of **Organisations**
+- Log in to <AppDomainNameLink />
+- Select **+ Create** in the **Organisations** section
+  ![new organisation](./mergin-organisation-create.png)
 - Type a name for your **Organisation name**
 - Fill in the **Description**
-- Press **Save**
+- Press **Save** to create your organisation
 
 ![](./create-organisation.png)
 
-::: tip
+::: warning
 to be able to use organisation features, you need [subscribe to the Team plan](../subscriptions/index.md) first. You can create an organisation even if you are not subscribed to the Team plan, but until your subscription the storage allocation for your organisation will be 0 MB.
 :::
 

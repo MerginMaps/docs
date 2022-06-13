@@ -1,29 +1,50 @@
 # Home Page and Dashboard
+[[toc]]
 
-When you log in to Mergin website, you will be presented with a dashboard for quick access to your latest projects or the ones shared with you.
-
-On the left panel, you can access your profile, organisation(s) and subscription plan:
+When you log in to <AppDomainNameLink desc="Mergin Maps"/>, you will be presented with a dashboard for quick access to your recent active projects. Here, you can also manage your projects, organisations, profile and subscription plan.
 
 ![left panel - dashboard](./web-dashboard-panel.png)
 
-- To switch between your profile and your organisation profile, you can click on the drop-down menu near the profile icon on the top left
+**Home** takes you back to the homepage with the list of the most recent projects. 
 
-- Select **Home** to take you back to the list of most recent projects
+## User profile
+The left navigation panel shows the name of the current profile. Clicking on the name will open a drop-down menu, where you can switch between your profile and your organisation profile. 
 
-- Under **Projects**:
-  - To create a new project, select **+ Create** in front of **Projects**
-  - **My projects** lists all projects you have created
-  - **Shared with me** lists the projects of others shared you (including your organisation projects)
-  - **Explore** lists all the public projects
+![profile switch](./mergin-switch-profile.png)
 
-- Under **Organisations**:
-  - To create a new organisation, select **+ Create** in front of **Organisations**
-  - To switch to your organisation profile, click on the organisation from the panel
+You can access your account details in the **Settings** section under **Profile**. Here you can change your password, verify your email or close your account. In **Edit profile**, you can also enter your name and turn on/off email notifications. 
 
-For more information about organisations, visit [working with organisations](../setup/working-with-organisations/index.md) page.
+You will also see the list of organisations you belong to and pending invitations to join an organisation.
 
-- Under **Settings**:
-  - **Profile** displays your account details, email notification settings and invitations to join organisations.
-  - **Subscriptions**: displays your plans, payment history and invoices
+![profile](./mergin-user-profile.png) 
 
-At the bottom of the panel, you can view your current storage quota, access to help and support.
+## Organisations
+The organisation profile can be also accessed by clicking on the organisation name in the **Organisations** section.
+![organisation](./mergin-organisation.png)
+
+The organisation profile contains the list of organisation's projects. The account details can be found under **Profile** in the **Setting** sections. The **Members** tab provides the overview of users and their permissions within the team.
+![organisation profile](./mergin-organisation-profile.png)
+
+:::tip
+Visit [Working with organisations](../setup/working-with-organisations/index.md) to learn more about organisations.
+:::
+  
+## Projects
+- To create a new project, select **+ Create** in front of **Projects**
+- **My projects** lists all projects you have created
+- **Shared with me** lists the projects of others shared you (including your organisation projects)
+- **Explore** lists all the public projects
+
+Click on a project to download it, [clone it](./create-project/#clone-an-existing-project-through-merginmaps-com) and to see its details.
+- **FILES** lists files associated with the project
+- **HISTORY** contains all project versions. Here you can see what was changed by which user and download a previous version of the project to your computer.
+- in **SETTINGS** you can manage access to your project, e.g. if you want to [share it](./project-advanced/#share-a-project)
+![project](./mergin-project.png)
+
+
+## Subscription
+**Subscription** section contains information about your subscription and billing:
+   - **DETAIL** contains details about your current subscription and data usage. Here you can also change your plan and how often is your subscription billed.
+   - **HISTORY** includes the list of events related to your account, such as changing the plan or the payment history.
+   - **INVOICES** contains the list of your previous payments and invoices
+   ![subscription](./mergin-subscription.png)
