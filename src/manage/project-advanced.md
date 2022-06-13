@@ -50,10 +50,10 @@ There is an option to transfer the ownership of a project to another user or org
 
 1. Log in <AppDomainNameLink /> and choose the project you want to transfer
 2. Go to **Settings** and click on **Transfer project**
+   ![transfer project](./project-transfer.png)
 3. Enter the name of a user/organisation and **Request transfer**
+   ![transfer project](./project-transfer2.png)
 4. The user/organisation will be notified to accept or reject the transfer request. The request is valid for 6 days. After that period, if the user or organisation does not accept the request, you will remain the owner of the project.
-
-![transfer project](./project-transfer.png)
 
 ## Delete a project
 If you want to delete a project, you can do so through <AppDomainNameLink /> or using the <QGISPluginName />.
