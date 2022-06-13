@@ -11,12 +11,12 @@ You can follow our [Working collaboratively](../tutorials/working-collaborativel
 
 ### Adding users to the project
 
-1. Choose the project you want to share and go the **Settings**. 
-2. In **Invite collaborators** section, enter the Mergin Maps usernames of user(s) you want to invite to collaborate and click **Add**.
+1. Choose the project you want to share and go to the **Settings**. 
+2. In the **Invite collaborators** section, enter the Mergin Maps usernames of the user(s) you want to invite to collaborate and click **Add**.
 3. Assign them permissions according to their role in **Manage Access** section. There are three types of [permissions](./permissions/):
-   - *Owner* can read, write, delete the whole project and also share it further.
-   - *Writer* can read and write; they can see the project and data and also make edits.
-   - *Reader* can only see the project and data (including project history).
+   - **Owner** can read, write, delete the whole project and also share it further.
+   - **Writer** can read and write; they can see the project and data and also make edits.
+   - **Reader** can only see the project and data (including project history).
 
 ![Mergin sharing setting](./project-share-add-users.png)
 
@@ -28,12 +28,10 @@ Another method which is more suitable for sharing with a large number of users i
 2. Copy the link from your web browser
 3. Share the link with user(s) you want to invite to collaborate
 
-Users can use **Request access** button to request access to your project after logging into <AppDomainNameLink />.
-
+Users can use the **Request access** button to request access to your project after logging into <AppDomainNameLink />.
 ![Mergin sharing setting](./project_sharing_send_request.png)
 
 Once the user requests access, you (or another project owner) can open the project settings and grant them the appropriate [permission](./permissions/):
-
 ![Mergin sharing setting](./project_sharing_requests.png)
 
 ### Making your project public/private
@@ -53,7 +51,7 @@ There is an option to transfer the ownership of a project to another user or org
 1. Log in <AppDomainNameLink /> and choose the project you want to transfer
 2. Go to **Settings** and click on **Transfer project**
 3. Enter the name of a user/organisation and **Request transfer**
-4. The user/organisation will be notified to accept or reject the transfer request. The request is valid for 6 days. After that period, if user or organisation does not accept the request, you will remain the owner of the project.
+4. The user/organisation will be notified to accept or reject the transfer request. The request is valid for 6 days. After that period, if the user or organisation does not accept the request, you will remain the owner of the project.
 
 ![transfer project](./project-transfer.png)
 
@@ -67,17 +65,20 @@ If you want to delete a project, you can do so through <AppDomainNameLink /> or 
 
 ![delete project](./project-delete.png)
 
-::: warning
+::: danger
 This operation cannot be undone and the project data are permanently deleted.
 :::
 
 ### Delete a project using the Mergin Maps plugin 
-Using the <QGISPluginName />, you can delete a Mergin project either locally on your PC or on the Mergin server. To be able to delete the project on the Mergin server, you need to first delete the files locally.
+Using the <QGISPluginName />, you can delete a Mergin Maps project either locally on your PC or on the Mergin Maps server. To be able to delete the project on the server, you need to first delete the files locally.
 
-1. In QGIS, go to the Mergin entry in the Browser panel
-2. Right-click on the project name and select **Remove locally**. This will remove the project from your PC, but the project will be still available on the Mergin server. You will be able to download the project again.
-3. Right-click on the project name again name and select **Remove from server** option. This will remove the Mergin project completely. 
+1. In QGIS, go to the **Mergin Maps** in the Browser panel
+2. Right-click on the project name and select **Remove locally**. This will remove the project from your PC. The project will be still available on the Mergin Maps server. You will be able to download the project again.
+   ![remove project locally](./plugin-project-delete.png)
 
-::: warning
+3. Right-click on the project name again and select **Remove from server** option. This will remove the Mergin Maps project completely. 
+   ![remove project locally](./plugin-project-delete-from-server.png)
+
+::: danger
 This operation cannot be undone and the project data are permanently deleted.
 :::

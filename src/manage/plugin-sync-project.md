@@ -10,7 +10,7 @@ Do not use shared network drives or cloud storage (such as OneDrive or Google Dr
 :::
 
 ## Downloading a project in QGIS
-Once you have configured the plugin with your Mergin credentials, you should be able to see the following sections under the Mergin in your QGIS Browser panel:
+Once you have configured the plugin with your Mergin Maps credentials, you should be able to see the following sections under the Mergin Maps in your QGIS Browser panel:
 
 - **My projects** lists all projects you have created
 - **Shared with me** lists the projects that are shared with you (including your organisation projects)
@@ -19,23 +19,19 @@ Once you have configured the plugin with your Mergin credentials, you should be 
 To download a project:
 
 1. Right-click on the project and select **Download**
-
 ![](./download.png)
 
 2. Browse to the folder, where you want to save the project and click **Select folder**
-
 ![](./download-progress.png)
 
 3. Once the download is completed, you will have the option to open the project in QGIS.
-
 ![](./download-open.png)
 
 
 ## Project status in QGIS
-
 It is recommended to run the project status after changing your layers and project.
 
-To see the status of your project and data, right-click on the project in the Browser panel or click on **Status** in the Mergin plugin panel:
+To see the status of your project and data, right-click on the project in the Browser panel or click on **Synchronise Mergin Maps project** icon in the <QGISPluginName /> panel:
 
 ![](./sync-status-toolbar.png)
 
@@ -47,12 +43,20 @@ This will show a list of pending changes, warnings, and validation results of yo
 
 
 ## Synchronisation in QGIS
+Once you are happy with the changes to be uploaded/downloaded, you can synchronise your project and data. 
 
-Once you are happy with the changes to be uploaded/downloaded, you can synchronise your project and data. Right-click on the project in the Browser panel or click on the **Synchronise** icon from the Mergin toolbar to sync your project and data.
-![](./sync-toolbar.png)
+Click on the **Synchronise Mergin Maps project** icon from the <QGISPluginName /> toolbar or right-click on the project in the Browser panel and select **Synchronise** to open the **Project status** window. Here, click on the **Sync** button to synchronise your project and data.
+
+![sync icon](./sync-status-toolbar.png)
+
+![sync icon](./project-sync-2.png)
+
+![synchronisation](./project-sync.png)
 
 ::: warning
-Synchronising data and project will work in both ways
+Project and data synchronisation works in both ways.
+
+All your changes will be uploaded to the server and any pending changes from the server edition of your files will be downloaded and appended to your local files.
 :::
 
-All your changes will be uploaded to the server and any pending changes from the server edition of your files will be downloaded and appended to your local files. Therefore, when synchronisation process is completed, your local files and the copy of files on the server will be identical.
+When the synchronisation process is completed, your local files and the copy of files on the server will be identical.
