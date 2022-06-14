@@ -12,16 +12,25 @@ There are four tabs available in the bottom navigation panel: [Projects](#projec
 ## Projects
 **Projects** tab is where you can create a new project, upload it to the cloud, synchronise changes, or remove a local project from your device.
 - **Home**: a list of all downloaded projects on your device. Only downloaded projects can be opened in the app.
-- **My projects**: projects created by you and hosted on the Mergin service
-- **Shared with me**: projects on the Mergin service shared with you by other users
-- **Explore**: a full list of public projects by others on the Mergin service
+- **My projects**: projects created by you and hosted on the <MainPlatformName /> service
+- **Shared with me**: projects on the <MainPlatformName /> service shared with you by other users
+- **Explore**: a full list of public projects by others on the <MainPlatformName /> service
 
 ![Projects screen](./input-projects.png) 
 
-### Mergin account
-To sign in to Mergin or to access your Mergin profile information, select the icon on the top right of the **Projects** screen.
-
+### Mergin Maps account
+To [sign up to <MainPlatformName />](../setup/sign-up-to-mergin-maps/#from-mergin-maps-input), sign in and access your profile information, select the icon on the top right of the **Projects** screen.
 ![Sign in](./input-account.png)
+
+**My Account** contains the overview of your profile and your storage use. **Sign out** if you want to switch to a different account. 
+
+<Badge text="Since Input 1.5.2" type="tip"/> it is also possible to delete your <MainPlatformName /> account within the app.
+
+![account](./input-my-account.png)
+
+:::danger
+Be careful! If you delete your account, you will lose access to your <MainPlatformName /> projects both on the mobile device and on the server.
+:::
 
 ## GPS
 Tapping the GPS button centres the map to your current position. 
