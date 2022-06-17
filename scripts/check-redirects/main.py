@@ -5,8 +5,10 @@ import sys
 import re
 from urllib.parse import urlparse
 
-input_file = r'C:\Users\Pete\Documents\GitHub\MerginMaps-docs\git-output.txt'  # Generate with git diff --name-status 2022.1.1 > git-output.txt
-redirect_file=r'C:\Users\Pete\Documents\GitHub\MerginMaps-docs\REDIRECTS'
+this_dir = os.path.dirname(os.path.realpath(__file__))
+root_dir = os.path.join(this_dir, os.pardir, os.pardir)
+input_file = os.path.join(root_dir, 'git-output.txt')  # Generate with git diff --name-status 2022.1.1 > git-output.txt
+redirect_file = os.path.join(root_dir, 'REDIRECTS')
 
 """
 Assumptions
