@@ -14,16 +14,6 @@ Download <MobileAppName /> to your Android device, iPhone or iPad. You can find 
 
 <AppDownload></AppDownload>
 
-Once you have installed and opened <MobileAppName /> you will see two tour projects:
-
-![Input's Tour Projects](./input-tour-projects.png)
-
-These tours introduce the basics of <MobileAppName />.
-
-![Welcome to Input](./welcome-to-input.png)
-
-When you have completed both tours, we'll learn how to create a new project for your field data.
-
 ## Creating a project in Mergin Maps Input
 
 Data are stored within projects. We'll now create a new project to save our data into.

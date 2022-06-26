@@ -19,6 +19,7 @@ module.exports = {
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
+                '/setup/install-input/',
                 '/setup/sign-up-to-mergin-maps/',
                 '/setup/install-qgis/',
                 '/setup/install-mergin-maps-plugin-for-qgis/',
