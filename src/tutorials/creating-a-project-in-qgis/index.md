@@ -64,7 +64,7 @@ We'll now add two more layers - a point layer for surveying trees and a line lay
    - Geometry type: <NoSpellcheck id="LineString" />
    - Fields:
       - *both_sides_surveyed*, data type `Boolean`
-      - *num_access_gates*, data type `Whole Number (integer)`
+      - *<NoSpellcheck id="num_access_gates" />*, data type `Whole Number (integer)`
       - *photo*, data type `Text Data`
    
    ![](./qgis-geopackage-filename2.jpg)
