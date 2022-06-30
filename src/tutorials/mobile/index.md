@@ -8,6 +8,10 @@ In the last tutorial we created a new <MainPlatformName /> project in QGIS with 
 * Switch between layers to capture new point and linear features
 * Sync and save your data in <MainPlatformName /> cloud
 
+:::tip
+[<MobileAppName /> Interface](../../field/input_ui/) contains the overview of the functionality of the app's buttons and features.
+:::
+
 ## Opening the project on your mobile device 
 1. Open <MobileAppName /> on your mobile device
 2. Open the **My projects** tab of the **Projects** page
