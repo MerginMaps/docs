@@ -1,7 +1,17 @@
 # QGIS Project Preparation
 [[toc]]
 
-Project preparation is done in QGIS. For more information about loading layers, styling the data and creating map themes, visit <QGISHelp ver="3.22" link="user_manual/index.html" text="QGIS documentation page" />. In addition, <MobileAppName /> uses some of the features within the project to help visualise, capture and browse the data. Here is an overview of the project preparations steps.
+Project preparation is done in QGIS. For more information about loading layers, styling the data and creating map themes, visit <QGISHelp ver="3.22" link="user_manual/index.html" text="QGIS documentation page" />. 
+
+In addition, <MobileAppName /> uses some of the features within the project to help visualise, capture and browse the data. Here is an overview of the project preparations steps.
+
+:::tip
+Our tutorials can guide you through QGIS project preparation step by step.
+
+In [Creating a Project in QGIS](../tutorials/creating-a-project-in-qgis/) you will learn how to create a project, add new layers and configure a basic form.
+
+[Further Project Customisation](../tutorials/further-project-customisation/) will show you how to style layers, add labels, customise the preview panel, define map themes and set up the project extent.
+:::
 
 ## Background layers
 Various online and offline maps can be used as background layers for navigation during the field survey. You can find more information in [Background Maps](./settingup_background_map/).

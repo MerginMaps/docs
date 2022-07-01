@@ -77,5 +77,3 @@ In this tutorial you learnt how to start capturing field data with very little e
 
 You may be wondering how you can survey area features or use your own background maps or scan barcodes. These things are all possible but are just covered in later tutorials.
 
-
-

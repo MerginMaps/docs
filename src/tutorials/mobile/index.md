@@ -9,7 +9,7 @@ In the last tutorial we created a new <MainPlatformName /> project in QGIS with 
 * Sync and save your data in <MainPlatformName /> cloud
 
 :::tip
-[<MobileAppName /> Interface](../../field/input_ui/) contains the overview of the functionality of the app's buttons and features.
+Need help navigating <MobileAppName />? [<MobileAppName /> Interface](../../field/input_ui/) contains the overview of the functionality of the app's buttons and features.
 :::
 
 ## Opening the project on your mobile device 
@@ -25,7 +25,7 @@ In the last tutorial we created a new <MainPlatformName /> project in QGIS with 
    ![open project](./merginmaps-mobile-open-project.jpg)
 
    The project should now be shown:
-   ![opened project](./merginmaps-mobile-project-opened.jpg)
+   ![opened project](../capturing-first-data/merginmaps-mobile-location-shown-on-osm.jpg)
 
 5. Pinch the screen to zoom in on your location. If you lose sight of your location, use the **GPS button** to recentre the map on your position.
 
