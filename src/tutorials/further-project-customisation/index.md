@@ -55,8 +55,11 @@ Seeing what the project changes we make in this tutorial look like in <MobileApp
 2. Use the **Synchronise Mergin Project** tool:
    ![](./qgis-sync-mergin-project.jpg)
 
+   The **Project status** window will open with the overview of local changes. Click **Sync** to synchronise the project:
+   ![project status](../creating-a-project-in-qgis/qgis-sync-mergin-project-status.jpg)
+   
    QGIS and your project in the cloud should now be synchronised.
-   ![](./qgis-mergin-project-sync.jpg)
+   ![project synced](./qgis-mergin-project-sync.jpg)
 
 3. Open <MobileAppName /> on your mobile device
 4. Open the **Home** tab of the **Projects** page
@@ -64,12 +67,12 @@ Seeing what the project changes we make in this tutorial look like in <MobileApp
    You should see a sync icon next to the trees-and-hedges project like this:
    ![](../mobile/merginmaps-mobile-sync-project.jpg)
 
-5. **If you do not see a sync icon**, switch to the *My projects* tab and back to the *Home* tab
-   
-   This should force <MobileAppName /> to check again for project updates.
+::: tip
+If you do not see a sync icon, switch to the **My projects** tab and back to the **Home** tab. This should force <MobileAppName /> to check again for project updates.
+:::
 
-6. Sync the project by pressing the sync icon
-7. Tap the project to open it
+5. Sync the project by pressing the sync icon
+6. Tap the project to open it
 
    If you zoom in to the hedge you surveyed, you should see it drawn with the new style we made in the last section:
    ![](./merginmaps-mobile-better-line-style.jpg)
