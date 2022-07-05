@@ -44,7 +44,7 @@ It is possible to visualise local changes to see what's changed since the last s
 3. Changes can be added to the QGIS project as a new layer. Click **Add to project** and choose one of the options:
    ![add local changes](./plugin-changes-viewer-add.png)
 
-4. A temporary layer will be added to the **Layers** panel with pre-defined symbology
+4. A temporary layer will be added to the **Layers** panel with colour-coded symbology
    ![add local changes](./plugin-local-changes-added.png)
 
 ### Extract local changes (Processing toolbox)
