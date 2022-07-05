@@ -33,8 +33,8 @@ With the plugin installed, we'll now configure it with your <MainPlatformName />
 
 <QGISPluginName /> is now able to load projects from the cloud in QGIS.
 
-The plugin has been installed and configured.
-   
+The plugin has been installed and configured. You can learn more about its functionality in [<QGISPluginName /> Overview](../../manage/plugin-sync-project/).
+
 ## Plugin upgrade
 Upgrade the plugin periodically to ensure you can use the latest improvements.
 
