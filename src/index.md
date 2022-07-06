@@ -45,7 +45,7 @@ The ecosystem consist of various components:
 - [How to Deploy Revised Projects](./manage/deploy-new-project/)
 - [How to Recover Missing Data](./manage/missing-data/)
 - [How to Use Mergin Maps Plugin for QGIS with Multiple Servers](./manage/plugin-multi-server-use/)
-- [Synchronisation in Mergin Plugin for QGIS](./manage/plugin-sync-project/)
+- [Mergin Maps Plugin for QGIS Overview](./manage/plugin-sync-project/)
 - [Home Page and Dashboard](./manage/dashboard/)
 - [Project History and Versions](./manage/project-details/)
 - [Selective Synchronisation](./manage/selective_sync/)
