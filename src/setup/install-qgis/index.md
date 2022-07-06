@@ -10,3 +10,9 @@
 4. Continue the installation using the default installation options.
 
 QGIS should now be installed on your computer.
+
+:::tip
+QGIS is a powerful tool with a great community that can help you achieve a lot.
+
+<QGISHelp ver="3.22" link="user_manual/index.html" text="QGIS User Guide" /> and <QGISHelp ver="3.22" link="training_manual/index.html" text="QGIS Training Manual" /> are great resources to get familiar with QGIS and its functionality.
+:::
