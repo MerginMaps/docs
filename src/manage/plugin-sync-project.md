@@ -72,7 +72,7 @@ Once you are happy with the changes to be uploaded/downloaded, you can synchroni
    Warnings are related to restructuring of a GeoPackage layer (adding/removing a field, adding/removing a layer in a GeoPackage database). Validations can point out missing layers or availability of a layer when working offline.
 
 3. If you want to inspect the pending changes more thoroughly, you can click on the **View changes** button to see the [local changes](#local-changes).
-![view changes](./project-sync-view-changes.png)
+   ![view changes](./project-sync-view-changes.png)
 
 4. If you want to proceed, click on the **Sync** button to synchronise your project and data.
   
@@ -83,4 +83,32 @@ All your changes will be uploaded to the server and any pending changes from the
 :::
 
 When the synchronisation process is completed, your local files and the copy of files on the server will be identical.
+
+## Create report (Processing toolbox)
+**Create report** tool provides an overview of changes in your <MainPlatformName /> project for a range of project versions. The output is a <NoSpellcheck id="CSV" /> file, which can be opened in QGIS and also in common text and spreadsheets programs.
+
+1. Navigate to **Mergin Maps** tools in the **Processing toolbox**
+   ![processing toolbox](./plugin-processing-toolbox.png)
+
+2. Double click the **Create report** tool. 
+   
+   Fill in the parameters in the dialog window. If you want to get the report for a specified range of [versions](./project-details/), define also the start and end version. 
+
+   Click **Run**.
+   ![create report](./plugin-create-report.png)
+
+3. The report is added to the **Layers** panel.
+   ![view changes](./plugin-report.png)
+
+## Create diff (Processing toolbox)
+**Create diff** is a tool that extracts changes made between two versions of a layer in your <MainPlatformName /> project to make it easier to revise changes.
+
+1. Navigate to **Mergin Maps** tools in the **Processing toolbox**
+   ![processing toolbox](./plugin-processing-toolbox.png)
+
+2. Double click the **Create diff** tool and fill in the parameters in the dialog window. Click **Run**.
+   ![create diff](./plugin-create-diff.png)
+
+3. The diff layer is added to the **Layers** panel. Changes are visualised on the map and also in the attribute table of the layer.
+   ![view changes](./plugin-create-diff-map.png)
 
