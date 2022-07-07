@@ -40,13 +40,27 @@ If not set, <MobileAppName /> zooms to all visible layers. This is not particula
 
 ### Photo quality
 <Badge text="since plugin 2022.3.2" type="warning"/> <Badge text="since Input 1.5.1" type="tip"/>
-The quality of photographs and pictures that are saved in the Mergin Maps project can be set up in the **Mergin Maps** tab in **Project properties**. When pictures are added using <MobileAppName /> (uploaded or taken with the camera), they will be resized accordingly.
+The quality of photographs and pictures that are saved in the <MainPlatformName /> project can be set up in the **<MainPlatformName />** tab in **Project properties**. When pictures are added using <MobileAppName /> (uploaded or taken with the camera), they will be resized accordingly.
 
 By default, the quality is set to *Original* - the original pictures are stored. If you want to resize the pictures, you can choose from *High*, *Medium*, or *Low* quality. The [EXIF metadata](../layer/exif_metadata/) of the original files are kept.
 
 Don't forget to save and sync your project!
 
 ![resize pics](./project_resize_pics.png)
+
+### Snapping
+<Badge text="since plugin 2022.5" type="warning"/><Badge text="since Input 1.6.0" type="tip"/>
+If you want to use snapping in <MobileAppName /> during the field survey, you need to set it up in the **<MainPlatformName />** tab in **Project properties**.
+![resize pics](./project_snapping.png)
+
+The snapping options are:
+- *No snapping* - snapping is not allowed (default)
+- *Basic snapping* - features are snapped to the vertices and segments of vector features in the project
+- *Follow QGIS snapping* - uses the snapping preferences defined in the **Snapping toolbar** in QGIS
+
+:::tip
+If you cannot see the **Snapping toolbar** in QGIS, ensure it's enabled under **View** (top-level menu) > **Toolbars**.
+:::
 
 ## Survey layers
 Vector layers can be used as survey layers in <MobileAppName />. You can apply styles and set up the forms to make your field survey easier.

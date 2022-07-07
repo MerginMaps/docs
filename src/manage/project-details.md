@@ -16,6 +16,12 @@ To view the project history:
 
 ![history advanced](./web-history-2.png)
 
+:::tip
+<QGISPluginName /> provides great tools to inspect the project history and compare changes between project versions:
+- use [Create report](./plugin-sync-project/#create-report-processing-toolbox) to get an overview of changes for a range of project versions.
+- use [Create diff](./plugin-sync-project/#create-diff-processing-toolbox) to extract changes made between two versions of a layer
+:::
+
 ## Advanced changelog
 To see more details of a specific version:
 - Click on the version number you'd like to view the details

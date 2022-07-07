@@ -128,7 +128,7 @@ In the next tutorial we will see how this project looks on <MobileAppName />. We
 3. Use the **Synchronise Mergin Maps Project** button:
    ![sync project](./qgis-sync-mergin-project.jpg)
    
-   The **Project status** window will open with the overview of local changes. Click **Sync** to synchronise the project:
+   The **Project status** window will open with the overview of [local changes](../../manage/plugin-sync-project/#local-changes). Click **Sync** to synchronise the project:
    ![project status](./qgis-sync-mergin-project-status.jpg)
  
    In a few moments your changes are safely stored in the cloud:
