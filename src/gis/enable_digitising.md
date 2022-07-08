@@ -1,9 +1,7 @@
-# Enable Digitising
+# How to Enable Digitising
 
-- Open QGIS Desktop with you QGIS Project 
-- In the Menu>Project>Properties click on "Data Sources"
-![Map Themes](./qgis_data_sources.png)
-- You need to have at least one layer without "Read-only" check
-- Save the project 
-- Sync the project again back to your device
-
+1. Open QGIS Desktop with your <MainPlatformName /> Project 
+2. Navigate to the **Data Sources** in the **Project Properties**
+   ![Map Themes](./qgis_digitising.png)
+   You need to have at least one layer without "Read-only" check
+3. **Apply** the changes. Don't forget to save and sync your project!

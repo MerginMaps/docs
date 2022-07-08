@@ -56,6 +56,7 @@ module.exports = {
                 '/gis/settingup_background_map',
                 '/gis/setup_themes',
                 '/gis/enable_digitising',
+                '/gis/snapping/',
                 '/gis/proj',
                 '/gis/supported_formats'
             ]

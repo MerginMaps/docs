@@ -59,7 +59,7 @@ The snapping options are:
 - *Follow QGIS snapping* - uses the snapping preferences defined in the **Snapping toolbar** in QGIS
 
 :::tip
-If you cannot see the **Snapping toolbar** in QGIS, ensure it's enabled under **View** (top-level menu) > **Toolbars**.
+[How to Set Up Snapping for <MobileAppName />](./snapping/) contains detailed steps that may help you with the snapping setup.
 :::
 
 ## Survey layers
