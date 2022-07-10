@@ -71,7 +71,7 @@ To split geometry of a feature:
 ![split geometry](./input-split-geom-done.png)
 
 ## Delete features
-If you want to delete the feature, press the **Delete** button.
+If you want to delete the feature, tap on it and press the edit button. Here you have the option to **Delete** the selected feature.
 
 ![Edit and delete](./input-delete.png)
 
