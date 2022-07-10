@@ -54,7 +54,7 @@ If you want to use snapping in <MobileAppName /> during the field survey, you ne
 ![resize pics](./project_snapping.png)
 
 The snapping options are:
-- *No snapping* - snapping is not allowed (default)
+- *No snapping* - snapping is not enabled (default)
 - *Basic snapping* - features are snapped to the vertices and segments of vector features in the project
 - *Follow QGIS snapping* - uses the snapping preferences defined in the **Snapping toolbar** in QGIS
 

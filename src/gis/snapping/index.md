@@ -3,10 +3,10 @@
 
 [[toc]]
 
-Capturing data in the field using <MobileAppName /> can be easier, if you can can snap the vertices of new features to existing geometries. Snapping can also help you avoid creating topological errors in your datasets. 
+Capturing data in the field using <MobileAppName /> can be easier, if you can snap the vertices of new features to existing geometries. Snapping can also help you avoid creating topological errors in your datasets. 
 
-<QGISPluginName /> provides three snapping options:
-- *No snapping* - snapping is not allowed (default)
+[<QGISPluginName />](../../manage/plugin-sync-project/) provides three snapping options:
+- *No snapping* - snapping is not enabled (default)
 - *Basic snapping* - features are snapped to the vertices and segments of vector features in the project
 - *Follow QGIS snapping* - uses the snapping preferences defined in the Snapping toolbar in QGIS
 
@@ -24,34 +24,40 @@ To set up basic snapping:
    
    Don't forget to synchronise the project also in <MobileAppName /> before the fieldwork.
 
-Now you can use basic snapping in **<MobileAppName />**! When capturing a new feature near to an existing one, the cross hairs will turn purple and snap to the vertex (right) or to the segment (left) of this feature.
+Now you can use basic snapping in <MobileAppName />! 
+
+When capturing a new feature, the cross hairs will turn purple and snap to the vertex (left) or to the segment (right) of a nearby feature.
 ![project properties](./input_basic_snapping.png)
 
 :::tip
 If you don't want the cross hairs to snap to a feature, try zooming in. The snapping threshold is 20 pixels, so the more you zoom in, the closer you can place the vertex to the existing geometry without snapping.
+
+If you want to change the snapping threshold, use the *[Follow QGIS snapping](#follow-qgis-snapping)* option and define the snapping tolerance in your <MainPlatformName /> project in QGIS.
 :::
 
 
 ## Follow QGIS snapping
-<QGISPluginName /> gives you the option to use the snapping preferences defined in the Snapping toolbar in QGIS:
+<QGISPluginName /> gives you the option to use the snapping preferences defined in the Snapping toolbar in QGIS. This means you can, for instance, exclude some layers from snapping, choose the snapping mode or change the snapping threshold.
+
 1. Navigate to the **<MainPlatformName />** tab in the **Project Properties** and change the snapping settings to **Follow QGIS snapping**
    ![follow qgis snapping](./plugin-qgis-snapping.png)
-2. Enable snapping in QGIS in the **Snapping toolbar**
+2. Enable snapping in the **Snapping toolbar**
    ![snapping](./qgis-snapping-enable.png)
    
    ::: tip
    If you cannot see the **Snapping toolbar** in QGIS, ensure it's enabled under **View** (top-level menu) > **Toolbars**
    :::
    
-3. To snap only to, say, vertices and not to the segments of features, change the snapping mode
-   ![snapping mode](./qgis-snapping-mode.png)
-
-4. To exclude some layers from snapping, click on **Open Snapping Options**
+3. **Open Snapping Options**
    ![snapping options](./qgis-snapping-options.png)
    
-5. In **Project Snapping Settings** Switch to **Advanced Configuration**. Vector layers in the project will be listed in the table. Snapping mode can be defined for each layer individually.
+5. Switch to **Advanced Configuration**
+   ![advanced configuration](./qgis-snapping-advanced.png)
    
-      Layers that are not checked will not be used for snapping.  
+6. Snapping settings can be defined for each layer individually:
+   - enable/disable snapping for specific layers. Layers that are not checked will not be used for snapping.
+   - in the *Type* column, you can choose if you want to snap to vertices, segments or both
+   - set the *Tolerance* (the snapping threshold). This defines how close the cross hairs need to be to an existing feature to snap to its geometry.
    
    ![snapping settings](./qgis-snapping-settings.png)
  
@@ -59,6 +65,8 @@ If you don't want the cross hairs to snap to a feature, try zooming in. The snap
 
    Don't forget to synchronise the project also in <MobileAppName /> before the fieldwork.
 
+Snapping in <MobileAppName /> will now follow the snapping settings as defined in the QGIS project.
+
 :::tip
-You can learn more about snapping properties in <QGISHelp ver="3.22" link="user_manual/working_with_vector/editing_geometry_attributes.html?highlight=snapping#snapping-and-digitizing-options" text="QGIS User Guide" />.
+You can learn more about snapping in QGIS in <QGISHelp ver="3.22" link="user_manual/working_with_vector/editing_geometry_attributes.html?highlight=snapping#snapping-and-digitizing-options" text="QGIS User Guide" />.
 :::
