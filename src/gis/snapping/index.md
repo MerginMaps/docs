@@ -8,7 +8,7 @@ Capturing data in the field using <MobileAppName /> can be easier, if you can sn
 [<QGISPluginName />](../../manage/plugin-sync-project/) provides three snapping options:
 - *No snapping* - snapping is not enabled (default)
 - *Basic snapping* - features are snapped to the vertices and segments of vector features in the project
-- *Follow QGIS snapping* - uses the snapping preferences defined in the Snapping toolbar in QGIS
+- *Follow QGIS snapping* - uses the snapping preferences defined in the QGIS project
 
 
 ## Basic snapping
@@ -37,24 +37,25 @@ If you want to change the snapping threshold, use the *[Follow QGIS snapping](#f
 
 
 ## Follow QGIS snapping
-<QGISPluginName /> gives you the option to use the snapping preferences defined in the Snapping toolbar in QGIS. This means you can, for instance, exclude some layers from snapping, choose the snapping mode or change the snapping threshold.
+<QGISPluginName /> gives you the option to use the snapping preferences defined in QGIS project. This means you can, for instance, exclude some layers from snapping, choose the snapping mode or change the snapping threshold.
 
 1. Navigate to the **<MainPlatformName />** tab in the **Project Properties** and change the snapping settings to **Follow QGIS snapping**
    ![follow qgis snapping](./plugin-qgis-snapping.png)
-2. Enable snapping in the **Snapping toolbar**
+
+2. Enable snapping in the **Snapping toolbar** and set your snapping preferences.
    ![snapping](./qgis-snapping-enable.png)
    
    ::: tip
    If you cannot see the **Snapping toolbar** in QGIS, ensure it's enabled under **View** (top-level menu) > **Toolbars**
    :::
    
-3. **Open Snapping Options**
+3. Snapping preferences can also be set through the **Snapping Options** in the **Project** menu
    ![snapping options](./qgis-snapping-options.png)
    
-5. Switch to **Advanced Configuration**
+4. Switch to **Advanced Configuration**
    ![advanced configuration](./qgis-snapping-advanced.png)
    
-6. Snapping settings can be defined for each layer individually:
+5. Here, snapping settings can be defined for each layer individually:
    - enable/disable snapping for specific layers. Layers that are not checked will not be used for snapping.
    - in the *Type* column, you can choose if you want to snap to vertices, segments or both
    - set the *Tolerance* (the snapping threshold). This defines how close the cross hairs need to be to an existing feature to snap to its geometry.
