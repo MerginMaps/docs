@@ -56,11 +56,9 @@ Tapping the GPS accuracy tab opens the GPS info panel:
 
 ## Record
 **Record tab** is where you can [survey new features](./input_features/).
-
-The active layer currently used for survey is displayed above the bottom navigation panel. Tapping on it opens a list of all editable layers in the project.
-
 ![Record](./input-record.png) 
 
+The active layer currently used for survey is displayed above the bottom navigation panel. Tapping on it opens a list of all editable layers in the project.
 ![Active layer](./input-active-layer.png)
 
 

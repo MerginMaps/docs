@@ -26,7 +26,7 @@ To set up basic snapping:
 
 Now you can use basic snapping in <MobileAppName />! 
 
-When capturing a new feature, the cross hairs will turn purple and snap to the vertex (left) or to the segment (right) of a nearby feature.
+When capturing a new feature near an existing one, the cross hairs will turn purple and snap to its vertex (left) or to its segment (right).
 ![project properties](./input_basic_snapping.png)
 
 :::tip
