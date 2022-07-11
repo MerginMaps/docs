@@ -26,11 +26,11 @@ To set up basic snapping:
 
 Now you can use basic snapping in <MobileAppName />! 
 
-When capturing a new feature near an existing one, the cross hairs will turn purple and snap to its vertex (left) or to its segment (right).
+When capturing a new feature near an existing one, the crosshair will turn purple and snap to its vertex (left) or to its segment (right).
 ![project properties](./input_basic_snapping.png)
 
 :::tip
-If you don't want the cross hairs to snap to a feature, try zooming in. The snapping threshold is 20 pixels, so the more you zoom in, the closer you can place the vertex to the existing geometry without snapping.
+If you don't want the crosshair to snap to a feature, try zooming in. The snapping threshold is 20 pixels, so the more you zoom in, the closer you can place the vertex to the existing geometry without snapping.
 
 If you want to change the snapping threshold, use the *[Follow QGIS snapping](#follow-qgis-snapping)* option and define the snapping tolerance in your <MainPlatformName /> project in QGIS.
 :::
@@ -58,7 +58,7 @@ If you want to change the snapping threshold, use the *[Follow QGIS snapping](#f
 5. Here, snapping settings can be defined for each layer individually:
    - enable/disable snapping for specific layers. Layers that are not checked will not be used for snapping.
    - in the *Type* column, you can choose if you want to snap to vertices, segments or both
-   - set the *Tolerance* (the snapping threshold). This defines how close the cross hairs need to be to an existing feature to snap to its geometry.
+   - set the *Tolerance* (the snapping threshold). This defines how close the crosshair need to be to an existing feature to snap to its geometry.
    
    ![snapping settings](./qgis-snapping-settings.png)
  

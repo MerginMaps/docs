@@ -23,7 +23,7 @@ Surveyed features are added to the active layer, which is shown just above the b
 ![active layer](./input-active-layer.png)
 
 ### Capture points
-The cross hairs you will see on your map will be used as the recorded location. You can change the position of your point by pinching and dragging the background map. If you want to recenter the map to your current position, tap the **GPS** button. 
+The crosshair you will see on your map will be used as the recorded location. You can change the position of your point by pinching and dragging the background map. If you want to recenter the map to your current position, tap the **GPS** button. 
 
 To capture your point, press **Add Point**. A form will open where you can fill in the attributes.
 
@@ -43,7 +43,7 @@ Once you are finished, press **Done**. If your feature is an area, the shape wil
 
 Snapping can be enabled in your <MainPlatformName /> project to make the field survey easier. [How to Set Up Snapping](../gis/snapping/) will guide you through the snapping options.
 
-If snapping is enabled, the cross hairs will turn purple and snap to vertices (left) or segments (right) of existing features when capturing new features.
+If snapping is enabled, the crosshair will turn purple and snap to vertices (left) or segments (right) of existing features when capturing new features.
 ![input snapping](../gis/snapping/input_basic_snapping.png)
 
 ## Edit features
@@ -55,7 +55,7 @@ Now you can change the attributes in the form and modify the shape of the featur
 
 ### Split geometry of lines or areas
 <Badge text="since Input 1.6.0" type="tip"/>
-Lines and areas can be split into two parts. Both parts will keep the same attributes. One of them will get a new `fid`.
+Lines and areas can be split into two or more new features that will keep the same attributes as the original feature.
 
 To split geometry of a feature:
 1. Tap on a feature and press the edit button.
@@ -67,7 +67,7 @@ To split geometry of a feature:
 3. Create the splitting line by adding points. When finished, tap **Done**
 ![split geometry](./input-split-geom-point.png)
 
-4. Two individual features are created!
+4. In this case, two individual features are created. Both have the same attributes, except for `Feature ID` (one feature keeps the original id, the other gets a new one).
 ![split geometry](./input-split-geom-done.png)
 
 ## Delete features
