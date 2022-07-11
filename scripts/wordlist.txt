@@ -8,6 +8,7 @@ BeiDou
 Benz
 Bing
 CRS
+crosshairs
 CSV
 CharlieColleague
 DAF
