@@ -16,4 +16,4 @@ Following variables are supported:
  - `@position_horizontal_accuracy` - The accuracy of the provided latitude-longitude value, in meters.
  - `@position_vertical_accuracy` - The accuracy of the provided altitude value, in meters.
  - `@position_from_gps` - True, if recorder/edited feature's geometry correspond with current user's position 
- (Position marker has the same location as the cross-hair marker).
+ (Position marker has the same location as the crosshairs marker).
