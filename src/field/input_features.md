@@ -23,7 +23,7 @@ Surveyed features are added to the active layer, which is shown just above the b
 ![active layer](./input-active-layer.png)
 
 ### Capture points
-The crosshair you will see on your map will be used as the recorded location. You can change the position of your point by pinching and dragging the background map. If you want to recenter the map to your current position, tap the **GPS** button. 
+The crosshairs you will see on your map will be used as the recorded location. You can change the position of your point by pinching and dragging the background map. If you want to recenter the map to your current position, tap the **GPS** button. 
 
 To capture your point, press **Add Point**. A form will open where you can fill in the attributes.
 
@@ -43,7 +43,7 @@ Once you are finished, press **Done**. If your feature is an area, the shape wil
 
 Snapping can be enabled in your <MainPlatformName /> project to make the field survey easier. [How to Set Up Snapping](../gis/snapping/) will guide you through the snapping options.
 
-If snapping is enabled, the crosshair will turn purple and snap to vertices (left) or segments (right) of existing features when capturing new features.
+If snapping is enabled, the crosshairs will turn purple and snap to vertices (left) or segments (right) of existing features when capturing new features.
 ![input snapping](../gis/snapping/input_basic_snapping.png)
 
 ## Edit features
