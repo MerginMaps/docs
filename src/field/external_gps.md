@@ -74,15 +74,17 @@ External GPS functionality depends on the manufacturer and on the specific model
 | Emlid | Emlid Reach M+ | yes | no |
 | Garmin | GLO 2 | yes | yes |
 | Juniper Systems | Geode GNS3 | yes | yes |
-| Leica | Leica FLX100| yes | no |
-| Leica | Leica Zeno GG04plus| yes | no |
-| Trimble | Trimble Catalyst | mock only | unknown |
-| Trimble | Trimble R1 | mock only | unknown |
-| Trimble | Trimble R2 | mock only | unknown |
+| Leica | Leica FLX100| yes (mock location) | no |
+| Leica | Leica FLX100 plus| yes (mock location) | yes*|
+| Leica | Leica Zeno GG04plus| yes (mock location) | yes* |
+| Trimble | Trimble Catalyst | yes (mock location) | unknown |
+| Trimble | Trimble R1 | yes (mock location) | unknown |
+| Trimble | Trimble R2 | yes (mock location) | unknown |
 
 - **Emlid Reach RS+**, **Emlid Reach M+** - directly via Bluetooth connection, has an internal NTRIP client to receive corrections. Possible to set a mock location and connect the receiver via Bluetooth using [GPS Connector](https://play.google.com/store/apps/details?id=de.pilablu.gpsconnector) or WiFi using [Lebefure NTRIP Client](https://play.google.com/store/apps/details?id=com.lefebure.ntripclient). Android only.
 - **Geode GNS3** - through *Geode Connect* app on [Android](https://play.google.com/store/apps/details?id=com.juniper.geode2a&hl=en_NZ&gl=US) or [iOS](https://apps.apple.com/us/app/geode-connect/id1446098695), which also acts as an NTRIP client and sends corrections to the device.
-- **Leica FLX100** - through [*Leica Zeno Connect* app](https://play.google.com/store/apps/details?id=com.leica.zenoconnect&hl=en&gl=US) which also acts as a NTRIP client and sends the corrections to the device. The app will set a mock location in Android. It is also possible to connect directly via Bluetooth (even multiple phones can be connected at once), but if no phone has Zeno app running, there will be no corrections available. Android only (even though Zeno app is on iOS too, it's not supported, at least this device).
+- **Leica FLX100**, **Leica FLX100 plus**, **Leica Zeno GG04plus** - through *Leica Zeno Connect* app on [Android](https://play.google.com/store/apps/details?id=com.leica.zenoconnect&hl=en&gl=US) which also acts as a NTRIP client and sends the corrections to the device. The app will set a mock location in Android. It is also possible to connect directly via Bluetooth (even multiple phones can be connected at once), but if no phone has Zeno app running, there will be no corrections available. 
+   \* *Leica Zeno Connect* is also available on [iOS](https://apps.apple.com/us/app/zeno-connect/id1310344749). It is known to support **Leica FLX100 plus** and **Leica Zeno GG04plus**.  However, on iOS, the vertical accuracy information is not transferred to <MobileAppName /> through *Leica Zeno Connect*. <MobileAppName /> will not display the correct value of the vertical accuracy.
 - **Trimble R1**, **Trimble R2**, **Trimble Catalyst** - through [*Trimble Mobile Manager* app](https://play.google.com/store/apps/details?id=com.trimble.trimblemobilemanager) which also acts as a NTRIP client and sends the corrections to the device. The app will set a mock location in Android.
 
 **Did you use a GPS that is not in this list?** <GitHubRepo id="MerginMaps/docs/issues/124" desc="Share your experiences with us!" />
