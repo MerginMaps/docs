@@ -54,4 +54,4 @@ If you need to change the data schema, [see how to deploy a revised project prop
 <!-- TODO: example when that happens (change of database schema) -->
 
 ## Geodiff library
-Mergin Maps uses a library called **Geodiff** to synchronise changes made by individual team members. You can find this library at <GitHubRepo id="lutraconsulting/geodiff" /> .
+Mergin Maps uses a library called **Geodiff** to synchronise changes made by individual team members. You can find this library at <GitHubRepo id="MerginMaps/geodiff" /> .
