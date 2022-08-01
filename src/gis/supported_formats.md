@@ -11,12 +11,12 @@ For survey layers used on the field, we strongly recommend GeoPackage, to be abl
 
 | Format         |  Android/iOS  | Note                                                                                                |
 |----------------|---------------|-----------------------------------------------------------------------------------------------------|
-| GeoPackage     | :heart_eyes:  | collaborative editing and versioning by <GitHubRepo id="lutraconsulting/geodiff" desc="geodiff" />  |
+| GeoPackage     | :heart_eyes:  | collaborative editing and versioning by <GitHubRepo id="MerginMaps/geodiff" desc="geodiff" />  |
 | Shapefile      | :warning:     | collaborative editing not supported                                                                 |
 | Delimited text | :warning:     | collaborative editing not supported                                                                 | 
 | Virtual layer  | :warning:     | collaborative editing not supported                                                                 |                 
 | PostGIS        | :thumbsup:    | requires internet connection                                                                        |
-| WFS            | :warning:    | requires internet connection (<GitHubRepo id="lutraconsulting/input/issues/1959" desc="open ticket" />)                                                                        |
+| WFS            | :warning:    | requires internet connection (<GitHubRepo id="MerginMaps/input/issues/1959" desc="open ticket" />)                                                                        |
 
 There are more formats supported, please see full list of supported [QGIS providers](#full-list-of-supported-qgis-providers) and [OGR drivers](#full-list-of-supported-ogr-drivers)
 
@@ -57,7 +57,7 @@ See [our guide](./settingup_background_map.md) for setting up background layers.
 
 ## Full list of supported QGIS providers
 
-<MobileAppName /> is based on the <GitHubRepo id="lutraconsulting/input-sdk" /> with custom QGIS core library build. The currently supported QGIS providers are
+<MobileAppName /> is based on the <GitHubRepo id="MerginMaps/input-sdk" /> with custom QGIS core library build. The currently supported QGIS providers are
     
 ```
 OGC API - Features data provider
@@ -79,7 +79,7 @@ OGC Web Map Service version 1.3 data provider
 
 ## Full list of supported GDAL drivers
 
-<MobileAppName /> is based on the <GitHubRepo id="lutraconsulting/input-sdk" /> with custom GDAL build. The currently supported formats are
+<MobileAppName /> is based on the <GitHubRepo id="MerginMaps/input-sdk" /> with custom GDAL build. The currently supported formats are
 
 ```
 ./gdalinfo --formats
@@ -221,7 +221,7 @@ Supported Formats:
 
 ## Full list of supported OGR drivers
 
-<MobileAppName /> is based on the <GitHubRepo id="lutraconsulting/input-sdk" /> with custom OGR build. The currently supported formats are
+<MobileAppName /> is based on the <GitHubRepo id="MerginMaps/input-sdk" /> with custom OGR build. The currently supported formats are
 
 ```
 ./ogrinfo --formats
@@ -309,10 +309,9 @@ To convert between various GDAL formats, you can use [gdal_translate](https://gd
 
 ## Support for new formats
 
-If you find out that the <MobileAppName /> doesn't support your format, please open issue at <GitHubRepo id="lutraconsulting/input-sdk" />.
+If you find out that the <MobileAppName /> doesn't support your format, please open issue at <GitHubRepo id="MerginMaps/input-sdk" />.
 
 If QGIS on desktop does not support the format of your choice, open issue at <GitHubRepo id="qgis/QGIS-Mac-Packager" /> for macOS, or <GitHubRepo id="qgis/QGIS" /> for other platforms.
 
-For support of collaborative editing and versioning of vector data formats, please open issue at <GitHubRepo id="lutraconsulting/geodiff" />.
-
+For support of collaborative editing and versioning of vector data formats, please open issue at <GitHubRepo id="MerginMaps/geodiff" />.
 

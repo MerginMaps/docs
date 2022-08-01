@@ -6,4 +6,4 @@ The good news is that Mergin CE is licensed as open source software and therefor
 
 ## GitHub
 
-If you are interested in deploying Mergin CE, you can start by going to <GitHubRepo id="lutraconsulting/mergin" /> on GitHub and read instructions how to deploy it for your platform.
+If you are interested in deploying Mergin CE, you can start by going to <GitHubRepo id="MerginMaps/mergin" /> on GitHub and read instructions how to deploy it for your platform.

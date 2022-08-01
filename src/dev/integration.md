@@ -25,7 +25,7 @@ mc.download_project('john/project1', '/home/john/mergin/project1')
 
 You can of course also get project status, push/pull changes, create/delete projects and more.
 
-The source code of the Python client is available on GitHub in <GitHubRepo id="lutraconsulting/mergin-py-client" /> repository.
+The source code of the Python client is available on GitHub in <GitHubRepo id="MerginMaps/mergin-py-client" /> repository.
 
 ### Command line interface
 
@@ -36,7 +36,7 @@ For example, to download a Mergin project to a local folder:
 mergin download john/project1 ~/mergin/project1
 ```
 
-Please see <GitHubRepo id="lutraconsulting/mergin-py-client" /> repository for more information on the usage.
+Please see <GitHubRepo id="MerginMaps/mergin-py-client" /> repository for more information on the usage.
 
 ## C++ standalone client
 
@@ -44,7 +44,7 @@ C++ Client has advantage over Python that is is completely without any dependenc
 
 ### Installation 
 
-Just  <GitHubRepo id="lutraconsulting/mergin-cpp-client/releases" desc="download"/> binary for your platform and use it from command line.
+Just  <GitHubRepo id="MerginMaps/mergin-cpp-client/releases" desc="download"/> binary for your platform and use it from command line.
 
 ### Usage 
 ```bash 
@@ -65,8 +65,8 @@ Commands:
   remove         Remove project from server.
 ```
 
-Please see <GitHubRepo id="lutraconsulting/mergin-cpp-client" /> repository for more information on the usage.
+Please see <GitHubRepo id="MerginMaps/mergin-cpp-client" /> repository for more information on the usage.
 
 ### C++ Mergin API core library 
 
-Client is based on the Qt-based <GitHubRepo id="lutraconsulting/input/tree/master/core" desc="mergin api core library" /> used by the <MainDomainNameLink desc="Mergin Maps Input" /> to sync the projects in the mobile application.
+Client is based on the Qt-based <GitHubRepo id="MerginMaps/input/tree/master/core" desc="mergin api core library" /> used by the <MainDomainNameLink desc="Mergin Maps Input" /> to sync the projects in the mobile application.
