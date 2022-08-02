@@ -14,7 +14,7 @@ The various changes we will make to the project will be made in [QGIS](../../set
 If you already have the ***trees-and-hedges*** project open in QGIS, skip to [Layer styles](#layer-styles).
 
 1. Open QGIS
-2. Expand the **Mergin** entry in the Browser panel to show **My projects**:
+2. Expand the **Mergin Maps** entry in the Browser panel to show **My projects**:
    ![](./qgis-mergin-my-projects.jpg)
 
 3. Expand **My projects** and locate the ***trees-and-hedges*** project
@@ -52,7 +52,7 @@ Seeing what the project changes we make in this tutorial look like in <MobileApp
 1. In QGIS, save your project:
    ![](./qgis-save-project.jpg)
 
-2. Use the **Synchronise Mergin Project** tool:
+2. Use the **Synchronise Mergin Maps Project** tool:
    ![](./qgis-sync-mergin-project.jpg)
 
    The **Project status** window will open with the overview of local changes. Click **Sync** to synchronise the project:

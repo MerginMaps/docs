@@ -15,7 +15,7 @@ Please ensure you have already:
 
 ## Create a minimal project
 1. Open QGIS
-2. Open the **Create Mergin Project** tool:
+2. Open the **Create Mergin Maps Project** tool:
    ![](./qgis-create-mergin-project.jpg)
 
 3. Select **New basic QGIS project**:

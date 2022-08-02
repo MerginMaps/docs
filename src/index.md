@@ -14,9 +14,9 @@ home: false
 
 The ecosystem consist of various components:
  - [QGIS](https://qgis.org/) > Powerful GIS Desktop application 
- - [QGIS Mergin Plugin](https://plugins.qgis.org/plugins/Mergin/) > <QGISPluginName />
+ - [<QGISPluginName />](https://plugins.qgis.org/plugins/Mergin/) > QGIS plugin
  - <MainDomainNameLink desc="Mergin Maps Cloud" /> > SaaS Cloud Service (available also as Mergin CE)
- - <MainDomainNameLink desc="Mergin Maps Input" /> > the <MobileAppName /> for iOS and Android
+ - <MainDomainNameLink desc="Mergin Maps Input" /> > iOS and Android mobile app
  
 ## Get started 
 
@@ -25,15 +25,15 @@ The ecosystem consist of various components:
 - [Capturing Your First Field Data](./tutorials/capturing-first-data/index.md)
 - [Opening Surveyed Data on Your Computer](./tutorials/opening-surveyed-data-on-your-computer/index.md)
 - [Creating a Project in QGIS](./tutorials/creating-a-project-in-qgis/index.md)
-- [Using Mergin Maps Input](./tutorials/mobile/index.md)
+- [Using <MobileAppName />](./tutorials/mobile/index.md)
 - [Further Project Customisation](./tutorials/further-project-customisation/index.md)
 - [Working Collaboratively](./tutorials/working-collaboratively/index.md)
 
 ## Install & Sign Up
-- [How to Install Mergin Maps Input](./setup/install-input/)
+- [How to Install <MobileAppName />](./setup/install-input/)
 - [How to Sign Up to Mergin Maps](./setup/sign-up-to-mergin-maps/)
 - [How to Install QGIS](./setup/install-qgis/)
-- [How to Install the Mergin Maps plugin for QGIS](./setup/install-mergin-maps-plugin-for-qgis/)
+- [How to Install QGIS Plugin](./setup/install-mergin-maps-plugin-for-qgis/)
 - [Working with Organisations](./setup/working-with-organisations/)
 - [Subscriptions and Invoicing](./setup/subscriptions/)
 
@@ -44,7 +44,7 @@ The ecosystem consist of various components:
 - [How to Share, Transfer or Delete a Project](./manage/project-advanced/)
 - [How to Deploy Revised Projects](./manage/deploy-new-project/)
 - [How to Recover Missing Data](./manage/missing-data/)
-- [How to Use Mergin Maps Plugin for QGIS with Multiple Servers](./manage/plugin-multi-server-use/)
+- [How to Use QGIS Plugin with Multiple Servers](./manage/plugin-multi-server-use/)
 - [Mergin Maps Plugin for QGIS Overview](./manage/plugin-sync-project/)
 - [Home Page and Dashboard](./manage/dashboard/)
 - [Project History and Versions](./manage/project-details/)
@@ -55,7 +55,8 @@ The ecosystem consist of various components:
 - [Searching for Values in Attribute Fields](./gis/search_data/)
 - [Background Maps](./gis/settingup_background_map/)
 - [Map Themes](./gis/setup_themes/)
-- [Enable Digitising](./gis/enable_digitising/)
+- [How to Enable Digitising](./gis/enable_digitising/)
+- [How to Set Up Snapping for <MobileAppName />](./gis/snapping/)
 - [Custom Projections](./gis/proj/)
 - [Supported Formats](./gis/supported_formats/)
 
@@ -79,7 +80,7 @@ The ecosystem consist of various components:
 - [How to Add, Edit, Delete Features](./field/input_features/)
 - [How to Reuse Last Entered Values](./field/reuse-last-values/)
 - [How to Stake Out Points](./field/stake-out/)
-- [Mergin Maps Input Interface](./field/input_ui/)
+- [<MobileAppName /> Interface](./field/input_ui/)
 - [Working With Non-spatial Tables](./layer/working_with_nonspatial_data/)
 
 ## For Developers

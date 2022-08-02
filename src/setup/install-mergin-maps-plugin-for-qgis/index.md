@@ -10,7 +10,7 @@ Before the Mergin Maps plugin installation, please ensure you have already:
 2. Select **Manage and Install Plugins...** in the **Plugins** tab:
    ![](./qgis-plugins-manage-and-install.jpg)
 
-3. Find the **Mergin** plugin and click **Install Plugin**:
+3. Find the **Mergin Maps** plugin and click **Install Plugin**:
    ![](./find-and-install-mergin.jpg)
 
 4. Close the Plugins dialog. The Mergin Maps plugin toolbar should appear in QGIS:
@@ -23,7 +23,7 @@ Before the Mergin Maps plugin installation, please ensure you have already:
 ## Plugin configuration
 With the plugin installed, we'll now configure it with your <MainPlatformName /> credentials.
 
-1. Click the **Configure Mergin Maps Plugin** icon on the **Mergin Toolbar**:
+1. Click the **Configure Mergin Maps Plugin** icon on the **Mergin Maps Toolbar**:
    ![](./qgis-configure-mergin-plugin.jpg)
 
 2. Enter your login credentials if these are blank
@@ -41,6 +41,5 @@ Upgrade the plugin periodically to ensure you can use the latest improvements.
 1. In QGIS, navigate to **Manage and Install Plugins...** in the **Plugins** tab
    ![](./qgis-plugins-manage-and-install.jpg)
    
-2. Find the **Mergin** plugin. If there is a new version available, click **Upgrade Plugin**.
-
-![upgrade plugin](./plugin-upgrade.png)
+2. Find the **Mergin Maps** plugin. If there is a new version available, click **Upgrade Plugin**.
+   ![upgrade plugin](./plugin-upgrade.png)

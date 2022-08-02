@@ -7,11 +7,11 @@ Synchronisation is a key process that makes effective collaboration possible: yo
 
 Let's look at a typical workflow in Mergin Maps:
 1. At first, you [create](./create-project/#create-a-project-in-qgis) and [prepare](../gis/features/) a Mergin Maps project in QGIS. This includes loading background and survey layers, setting up the forms, styling layers, setting up map themes and defining the layers to be used in a survey. The Mergin Maps project consists of the project file (*.qgz) and data referenced in the project, such as GeoPackage layers, shapefiles, rasters or attachments. At this point, they are all saved in a project folder in your computer.
-2. The Mergin Maps project is [uploaded to Mergin Cloud using <QGISPluginName />](./plugin-sync-project/). The project and data are now stored in the cloud.
+2. The Mergin Maps project is [uploaded to Mergin Maps Cloud using <QGISPluginName />](./plugin-sync-project/). The project and data are now stored in the cloud.
 3. Now you can work collaboratively! The project and data can be downloaded to a mobile device to do [the fieldwork using <MobileAppName /> ](../tutorials/mobile/) or to another computer with QGIS. Every collaborator works with their own local version of the project.
-4. After finishing their work, the individual contributors synchronise their changes [to Mergin Cloud](../tutorials/mobile/#saving-data-to-the-cloud), where they are put together.
+4. After finishing their work, the individual contributors synchronise their changes [to Mergin Maps Cloud](../tutorials/mobile/#saving-data-to-the-cloud), where they are put together.
 
-As you can see, Mergin Cloud acts as a link between individual contributors and also between PCs and mobile devices, synchronising the changes. When you make changes and upload them to the cloud, Mergin will compare the content of GeoPackage layers and merge them, while copying attachments (such as photos), rasters and shapefiles as they are. That is why we recommend using GeoPackage format for your survey layer.
+As you can see, Mergin Maps Cloud acts as a link between individual contributors and also between PCs and mobile devices, synchronising the changes. When you make changes and upload them to the cloud, Mergin will compare the content of GeoPackage layers and merge them, while copying attachments (such as photos), rasters and shapefiles as they are. That is why we recommend using GeoPackage format for your survey layer.
 
 ::: warning
 Synchronising data and project works in both ways.
