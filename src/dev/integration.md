@@ -1,19 +1,20 @@
-# Integrate Mergin 
+# Integrate Mergin Maps
+[[toc]]
 
-Mergin is an open platform that aims to be developer friendly, and it has been designed to allow easy integration with other software.
+<MainPlatformName /> is an open platform that aims to be developer friendly and it has been designed to allow easy integration with other software.
 
-## Python client
+## Python client module
+The Python client module is the easiest way to programmatically use <MainPlatformName />. You can use Python API or a command-line tool to easily work with <MainPlatformName /> projects.
 
-### Installation 
+The source code of the Python client module is available on GitHub in <GitHubRepo id="MerginMaps/mergin-py-client" /> repository.
 
-The easiest way to use Mergin programmatically is to use the Python client module. It is available in the PyPI repository and so it can be installed with `pip`:
+Python client is available in the PyPI repository and so it can be installed with `pip`:
 
 ```
 pip3 install mergin-client
 ```
 
 ### Python module 
-
 A quick code example to download a project:
 
 ```python
@@ -25,7 +26,6 @@ mc.download_project('john/project1', '/home/john/mergin/project1')
 
 You can of course also get project status, push/pull changes, create/delete projects and more.
 
-The source code of the Python client is available on GitHub in <GitHubRepo id="MerginMaps/mergin-py-client" /> repository.
 
 ### Command line interface
 
