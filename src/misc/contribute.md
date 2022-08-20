@@ -14,7 +14,7 @@ Write a review of the application on App Store or Android Google Play
 
 ## Translate
 
- To help with translations, join [Mergin Maps Transifex team](https://www.transifex.com/lutra-consulting/input)
+ To help with translations, join [Mergin Maps Transifex team](https://www.transifex.com/join/?o=lutra-consulting&p=mergin-maps-input)
 
 ## Write or talk about us 
  
