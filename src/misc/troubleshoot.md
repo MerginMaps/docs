@@ -18,7 +18,7 @@ If you have an active subscription on <AppDomainNameLink />, we also offer free 
 
 ### Community support
 - Join our [community chat on Slack](https://merginmaps.com/community/join) and ask questions!
-- See [GIS Stack Exchange](https://gis.stackexchange.com/questions/tagged/lutra-input-app) with "<NoSpellcheck id=" lutra-input-app" />" tag to ask questions and see other users' answers.
+- See [GIS Stack Exchange](https://gis.stackexchange.com/questions/tagged/mergin-maps) with "<NoSpellcheck id="mergin-maps" />" tag to ask questions and see other users' answers.
 - See <QGISHelp ver="3.22" link="user_manual/index.html" text="QGIS documentation" /> for QGIS Desktop related problems.
 
 
