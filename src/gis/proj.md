@@ -10,7 +10,7 @@ QGIS contains the basic set of projections and transformations, which are handle
 ![](./proj_transformation_installation.png)
 
 :::tip
-Grid shift files are usually provided by national geodetic authorities. Common formats are *Geodetic TIFF grids* (.tiff) and *National Transformation version 2* (.gsb) files. 
+Grid shift files are usually provided by national geodetic authorities. Common formats are *Geodetic TIFF grids* (.tiff) and *National Transformation version 2* (<NoSpellcheck id=".gsb" />) files. 
 <GitHubRepo id="OSGeo/PROJ-data" desc="PROJ data" /> gathers *Geodetic TIFF grids* from various sources, so you might be able to download your grid shift file from there. 
 :::
 
@@ -30,8 +30,8 @@ Projections issues are one of the common causes of misplacement of your field da
 ## Custom projections in Mergin Maps Input
 If you had to install grid shift files in QGIS in order to display your layers correctly, it is also necessary to provide the same grid shift files to <MobileAppName />.
 
-<MobileAppName /> can use grid shift files formats:
-- *National Transformation version 2* (.gsb) <Badge text="Since Input 0.8.0" type="info"/>
+<MobileAppName /> supports grid shift files formats:
+- *National Transformation version 2* (<NoSpellcheck id=".gsb" />) <Badge text="Since Input 0.8.0" type="info"/>
 - *Geodetic TIFF grids* (.tiff) <Badge text="Since Input 1.7.0" type="info"/>
 
 When the app starts, it searches for `proj` folders in all available projects on the disk. The grid shift files found in these folders can be then used in all projects.
