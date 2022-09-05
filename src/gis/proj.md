@@ -5,7 +5,7 @@
 ## Custom projections in QGIS
 It is common to have multiple layers with different coordinate reference systems in one QGIS project. To display these layers accurately, it is necessary to define the transformation between the coordinate reference systems. 
 
-QGIS on Windows and macOS comes with pre-installed projections and transformations that are handled by [PROJ](https://proj.org), including a whole lot of grid shift files for accurate horizontal and vertical coordinate transformations. However, some specific projections that are not included in <GitHubRepo id="OSGeo/PROJ-data" desc="PROJ data" />  may require you to install additional grid shift files manually. If this is the case, QGIS will show you a warning and will allow you to install the grid shift file from a folder.
+QGIS on Windows and macOS comes with preinstalled projections and transformations that are handled by [PROJ](https://proj.org), including a whole lot of grid shift files for accurate horizontal and vertical coordinate transformations. However, some specific projections that are not included in <GitHubRepo id="OSGeo/PROJ-data" desc="PROJ data" />  may require you to install additional grid shift files manually. If this is the case, QGIS will show you a warning and will allow you to install the grid shift file from a folder.
 
 ![](./proj_transformation_installation.png)
 
