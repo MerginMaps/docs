@@ -14,7 +14,7 @@ To set up a photo widget:
 2. In the list of **Available Widgets** select the text field you want to work with.
 3. In the **Widget Display** tab:
    - From the drop-down menu, select **Attachment**
-   - **Default path** defines where images will be saved. If its not defined, the project home folder will be used.
+   - **Default path** defines where images will be saved. If it is not defined, the project home folder will be used.
    - Store the path as **Relative to project path** or **Relative to default path** depending on how you want to store the paths.
 4. **Apply** the changes. Don't forget to save and sync your project!
 ![photos](./qgis_forms_photo.png)
@@ -39,16 +39,23 @@ It can be useful to set up a custom folder for photos, e.g. if you want to use [
 
 To set up a custom folder:
 1. Create a subfolder in the project folder (here: `photos`)
-2. Right-click on a survey layer, select Properties and go to the Attributes form tab.
-3. In the list of Available Widgets select the field, where photos are stored.
-4. In the Widget Display tab:
-   - make sure to select the **Attachment** widget type
-   - set the **Default path** as `@project_folder + '/photos'`.
-5. Apply the changes, save and sync your project. Photos will now be stored in the `photos` folder.
+2. Open your project in QGIS
+3. Open the **Properties** of the survey layer and navigate to the **Attributes form** tab. 
+   Select the field, where photos are stored (here: `photo`) and make sure that the widget type is set to **Attachment**:
+   ![form](./qgis_form_photo.png)
+5. Now we need to change the **Default path** to the folder we have created. Click on the *Data defined override* icon and choose **Edit...**
+   ![edit expression](./qgis_form_photo_edit_expr.png)
 
-![](./qgis_custom_folder.png)
+6. In **Expression String Builder** enter the expression `@project_folder + '/photos'` (replace `photos` by the name of your folder). Click **OK**.
+   ![folder expression](./qgis_forms_photo_expression.png)
 
-## Resizing pictures
+7. The **Default path** now refers to the custom folder.
+   ![](./qgis_custom_folder.png)
+
+8. **Apply the changes**. Don't forget to save and sync your project!
+
+
+## Resizing pictures automatically
 Photos that are captured during the field survey or uploaded using <MobileAppName /> can be automatically resized, e.g. to save up storage space. The quality of the photos can be set up in the [Mergin Maps project properties](../gis/features/#photo-quality) using <QGISPluginName />.
 
 ## Photos in Mergin Maps Input
