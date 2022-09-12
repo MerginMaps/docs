@@ -6,4 +6,4 @@ The <MainPlatformName /> Work Packages tool is designed to manage field surveys 
 
 The main <MainPlatformName /> project (*Survey*) contains all data. The admin of the main project can assign some of the data to working package projects (*Survey Team A*, *Survey Team B*). The teams can see and modify only the data that are assigned to them.
 
-**Interested in using Work Packages?** Go to <GitHubRepo id="MerginMaps/mergin-work-packages" /> repository for the source code, more details and the quick start with a simple project.
+**Interested in using Work Packages?** Go to <GitHubRepo id="MerginMaps/mergin-work-packages" /> repository for the source code, more details and a quick start with a simple project.

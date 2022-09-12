@@ -111,6 +111,7 @@ SVG
 SVGs
 SaaS
 Scania
+schemas
 Skoda
 Transifex
 Trialing
