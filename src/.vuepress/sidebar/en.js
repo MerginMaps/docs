@@ -103,7 +103,8 @@ module.exports = {
                 '/dev/customapp',
                 '/dev/dbsync',
                 '/dev/mergince',
-                '/dev/integration'
+                '/dev/integration',
+                '/dev/media-sync/'
             ]
         },
         {
