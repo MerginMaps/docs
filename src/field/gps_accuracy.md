@@ -13,3 +13,7 @@ Tapping the GPS accuracy tab opens the GPS info panel, which contains informatio
 If you'd like to have  a better accuracy, you can wait for your device to acquire a better GPS signal. Alternatively, you can connect your device to an [external GPS](./external_gps.md).
 
 To get rid of this warning, you can increase your **Accuracy threshold** in [Settings](./input_ui.md#gps-settings).
+
+:::tip
+GPS accuracy can be one of the reasons of misplaced or shifted field data. Visit our blog [Why are my survey points shifted?](https://www.lutraconsulting.co.uk/blog/2021/04/21/projections-field/) to read more about this topic.
+:::
