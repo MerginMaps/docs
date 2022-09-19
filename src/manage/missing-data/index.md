@@ -34,9 +34,9 @@ Change the schema of the table in the conflict file to match the new schema and 
 If you don't see any conflict files in your folder, try to download them manually from the mobile device. Surveyed data are stored in the device that was to collect them. So, if you have access to this device, you can download data manually and process them in your computer.
 
 ### Manual data transfer (Android)
-Manual data transfer from an Android device can be done by connecting your device to the computer and copying data files to/from the device. Once your Android phone or tablet is recognised by the operating system after connecting it using USB cable, you can use file browser to copy files. 
+Manual data transfer from an Android device can be done by connecting your device to a computer and copying data files to/from the device. Once your Android phone or tablet is recognised by the operating system after connecting it using USB cable, you can use file browser to copy files. 
 
-On Android devices, data are stored in `Internal storage/Android/data/uk.co.lutraconsulting/files/projects` folder.
+On Android devices, data are stored in the `Internal storage/Android/data/uk.co.lutraconsulting/files/projects` folder. This folder is accessible only from a computer, so you might not see it in your mobile device.
 
 ### Manual data transfer (between iOS and Mac)
 <MobileAppName /> supports iTunes file sharing. Note that iTunes doesn't allow you to browse or edit data from the app data folder, only allows you to delete or copy the data folder to another location. 
