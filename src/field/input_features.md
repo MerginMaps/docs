@@ -46,12 +46,25 @@ Snapping can be enabled in your <MainPlatformName /> project to make the field s
 If snapping is enabled, the crosshairs will turn purple and snap to vertices (left) or segments (right) of existing features when capturing new features.
 ![input snapping](../gis/snapping/input_basic_snapping.png)
 
-## Edit features
-Tap on a feature and press the edit button.
+## Edit attributes and geometry
+Tap on a feature and press the edit button. Now you can change the attributes in the form and modify the shape of the feature using **Edit geometry**.
+To edit the geometry of a point feature, simply adjust the location by panning the map or use **GPS** in the same manner as when adding new features. Once you are happy with your changes, press **Save**.
 ![Edit button](./input-edit.png)
 
-Now you can change the attributes in the form and modify the shape of the feature using **Edit geometry**. Adjust the location by panning the map or use **GPS** in the same manner as when adding new features. Once you are happy with your changes, press **Save**.
-![Edit geometry](./input-edit-geometry.png)
+### Edit geometry of lines or areas
+<Badge text="since Input 1.8.0" type="tip"/>
+Geometry of lines and areas can be edited using multiple tools. If you need to move some of the vertices, tap the **Edit geometry** button. The vertices of the feature will be highlighted and you can move them as needed.
+![Edit](./input-edit-polygon.png)
+
+There are also two advanced editing tools:
+- redraw geometry, if you need to replace the existing geometry by a new one
+- split geometry to split one feature into two or more new features
+
+### Redraw geometry of lines or areas
+<Badge text="since Input 1.8.0" type="tip"/>
+![advanced](./input-edit-advanced.png)
+Tap the **Advanced** button and select the **Redraw** option. 
+A blank canvas will open where you can draw a new geometry using the tools in the bottom panel.
 
 ### Split geometry of lines or areas
 <Badge text="since Input 1.6.0" type="tip"/>
