@@ -47,24 +47,22 @@ If snapping is enabled, the crosshairs will turn purple and snap to vertices (le
 ![input snapping](../gis/snapping/input_basic_snapping.png)
 
 ## Edit attributes and geometry
-Tap on a feature and press the edit button. Now you can change the attributes in the form and modify the shape of the feature using **Edit geometry**.
-To edit the geometry of a point feature, simply adjust the location by panning the map or use **GPS** in the same manner as when adding new features. Once you are happy with your changes, press **Save**.
+Tap on a feature and press the edit button. Now you can change the attributes in the form.
+
+To edit the geometry of a point feature, tap **Edit geometry** and simply adjust the location by panning the map or use **GPS** in the same manner as when adding new features. Once you are happy with your changes, press **Save**.
 ![Edit button](./input-edit.png)
 
-### Edit geometry of lines or areas
 <Badge text="since Input 1.8.0" type="tip"/>
-Geometry of lines and areas can be edited using multiple tools. If you need to move some of the vertices, tap the **Edit geometry** button. The vertices of the feature will be highlighted and you can move them as needed.
+Tap the **Edit geometry** button. The vertices of the feature will be highlighted and you can move them as needed.
 ![Edit](./input-edit-polygon.png)
-
-There are also two advanced editing tools:
-- redraw geometry, if you need to replace the existing geometry by a new one
-- split geometry to split one feature into two or more new features
 
 ### Redraw geometry of lines or areas
 <Badge text="since Input 1.8.0" type="tip"/>
-![advanced](./input-edit-advanced.png)
-Tap the **Advanced** button and select the **Redraw** option. 
-A blank canvas will open where you can draw a new geometry using the tools in the bottom panel.
+There is an option to redraw the geometry of lines or areas. 
+
+Tap the **Advanced** button and select the **Redraw** option. Now you can record new geometry using the tools in the bottom panel.
+
+![advanced](./input-redraw-geometry.png)
 
 ### Split geometry of lines or areas
 <Badge text="since Input 1.6.0" type="tip"/>
@@ -74,7 +72,7 @@ To split geometry of a feature:
 1. Tap on a feature and press the edit button.
 ![Edit button](./input-edit-feature.png)
 
-2. Tap **Split geometry**
+2. Tap **Advanced** and select **Split geometry**
 ![split geometry](./input-split-geometry.png)
 
 3. Create the splitting line by adding points. When finished, tap **Done**
