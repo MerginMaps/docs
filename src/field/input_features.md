@@ -58,7 +58,7 @@ If you are editing a point feature simply adjust the location by panning the map
 <Badge text="since Input 1.8.0" type="tip"/> 
 It is also possible to edit the geometry of lines and areas. 
 
-Tap on a feature and press the **Edit geometry** button. The vertices of the feature will be highlighted and you can move or remove them as needed. Once you are finished with your edits, press **Done**.
+Tap on a feature and press the **Edit geometry** button. The vertices of the feature will be highlighted and you can move or remove them as needed. Press **Done** to confirm your changes.
 ![Edit](./input-edit-polygon.png)
 
 ### Redraw geometry of lines or areas
