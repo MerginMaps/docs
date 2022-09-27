@@ -47,20 +47,25 @@ If snapping is enabled, the crosshairs will turn purple and snap to vertices (le
 ![input snapping](../gis/snapping/input_basic_snapping.png)
 
 ## Edit attributes and geometry
-Tap on a feature and press the edit button. Now you can change the attributes in the form.
-
-To edit the geometry of a point feature, tap **Edit geometry** and simply adjust the location by panning the map or use **GPS** in the same manner as when adding new features. Once you are happy with your changes, press **Save**.
+Tap on a feature and press the edit button. Now you can change the attributes in the form and modify the geometry of features.
 ![Edit button](./input-edit.png)
 
-<Badge text="since Input 1.8.0" type="tip"/>
-Tap the **Edit geometry** button. The vertices of the feature will be highlighted and you can move them as needed.
+To edit the geometry of a feature, tap **Edit geometry** in the bottom panel. 
+
+If you are editing a point feature simply adjust the location by panning the map or use **GPS** in the same manner as when adding new features. Once you are happy with your changes, press **Done**.
+
+### Edit geometry of lines or areas
+<Badge text="since Input 1.8.0" type="tip"/> 
+It is also possible to edit the geometry of lines and areas. 
+
+Tap on a feature and press the **Edit geometry** button. The vertices of the feature will be highlighted and you can move or remove them as needed. Once you are finished with your edits, press **Done**.
 ![Edit](./input-edit-polygon.png)
 
 ### Redraw geometry of lines or areas
 <Badge text="since Input 1.8.0" type="tip"/>
-There is an option to redraw the geometry of lines or areas. 
+The existing geometry of lines and areas can also be redrawn.
 
-Tap the **Advanced** button and select the **Redraw** option. Now you can record new geometry using the tools in the bottom panel.
+Tap the **Advanced** button and select the **Redraw** option. Now you can record the new geometry using the tools in the bottom panel.
 
 ![advanced](./input-redraw-geometry.png)
 
@@ -87,8 +92,14 @@ If you want to delete the feature, tap on it and press the edit button. Here you
 ![Edit and delete](./input-delete.png)
 
 ## Synchronise changes
-Don't forget to upload your changes to Mergin Maps! 
-Select **Projects** in the bottom panel, open the **Home** tab and press the **sync** button to send the updated data to the cloud.
+Don't forget to upload your changes to <MainPlatformName />!
 
-![Sync](../tutorials/mobile/merginmaps-mobile-sync-project.jpg)
+Synchronisation in <MobileAppName /> can be done automatically or manually by pressing the sync button. For more details visit [Synchronisation in Input](./autosync/).
 
+![sync button](./input-autosync.png)
+
+:::tip
+[Behind Data Synchronisation](../manage/synchronisation/) contains more information about the synchronisation process in general.
+
+If needed, some files (for example photos) can be excluded from the synchronisation. You can read more about this option in [Selective Synchronisation](../manage/selective_sync/).
+:::
