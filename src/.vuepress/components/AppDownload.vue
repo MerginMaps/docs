@@ -6,6 +6,9 @@
     <a href='https://play.google.com/store/apps/details?id=uk.co.lutraconsulting' target="_blank" rel="noopener noreferrer" @click="gtmEvent('google')" class="google-play-btn">
       <img class="google_play" :src="$withBase('/google-play-badge.png')" alt="Get it on Google Play">
     </a>
+    <a href='https://github.com/MerginMaps/input/releases/latest' target="_blank" rel="noopener noreferrer" @click="gtmEvent('windows')">
+      <img :src="$withBase('/app_download_windows.png')" alt="Available on Windows">
+    </a>
   </div>
 </template>
 
