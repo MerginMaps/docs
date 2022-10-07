@@ -1,39 +1,52 @@
 # Exif Metadata
 [[toc]]
 
-<MobileAppName /> comes with predefined default value expression functions which can be used to read an image EXIF metadata.
+<MobileAppName /> comes with predefined default value expression functions which can be used to read the EXIF metadata of an image captured by the camera of your mobile device.
 
-## Supported functions
-
-Following functions are supported:
-
+## Supported EXIF functions
+Following functions are supported in <MobileAppName />:
 - `read_exif('<ABSOLUTE_PATH_TO_IMAGE>', '<EXIF_TAG_STRING>')` 
     - returning string
 - `read_exif_img_direction('<ABSOLUTE_PATH_TO_IMAGE>')` 
     - returning number
+- `read_exif('<ABSOLUTE_PATH_TO_IMAGE>', 'GPSImgDirection')`
+    - returning string (number fraction)
 - `read_exif_latitude('<ABSOLUTE_PATH_TO_IMAGE>')` 
     - returning decimal number
+- `read_exif('<ABSOLUTE_PATH_TO_IMAGE>', 'GPSLatitude')`
+    - returning string
 - `read_exif_longitude('<ABSOLUTE_PATH_TO_IMAGE>')` 
     - returning decimal number
+- `read_exif(@project_home + '/' + "photo", 'GPSLongitude')`
+    - returning string
+- `read_exif(@project_home + '/' + "photo", 'GPSDateStamp')`
+    - returning string     
+        
+::: tip
+Explore <MerginMapsProject id="documentation/exif-metadata" /> to see the fields setup.
+:::
+    
+## How to use EXIF metadata
+To use EXIF metada, we have to set a parameter `<ABSOLUTE_PATH_TO_IMAGE>`. To get the absolute path to an image, we can use the value of the field used to store photos (here: `photo`). This is a [text field with attachment widget](./settingup_forms_photo/).
+ 
+The value from the `photo` field can be used to get as a parameter for <MobileAppName />'s EXIF functions. Here we will use it to get the direction of the image when captured (`GPSImgDirection`) as follows:
+`read_exif(@project_home + '/' + "photo", 'GPSImgDirection')`.
 
-## Allowing location tags
-Note that **location tags have to be allowed** in a camera settings. You can find the option as following:
+When taking photos with your mobile device, EXIF metadata are stored in the photo file. If you take a photo using <MobileAppName />, EXIF metadata can be used to automatically filled out fields in the form. 
 
-### Android
+![photos](./gps_exif_metadata.png)
+
+:::warning
+Make sure that <MobileAppName /> and your camera app can access the location of your device. 
+:::
+
+## Location tags
+To use this functionality, **location tags have to be allowed** in the camera settings.
+
+### Allowing location tags on Android
 Open Camera app -> Camera settings -> Location tags. 
 ![photos](./android_geo_tags.jpg)
 
-### iOS
+### Allowing location tags on iOS
 Open Settings -> Privacy -> Location Services -> Camera (app).
 ![photos](./ios_geo_tags.png)
-
-## Use it with photo widget
-The parameter `<ABSOLUTE_PATH_TO_IMAGE>` can be set with an expression using value of another field. Therefore you can use a value from a text field of an attachment type as a parameter for <MobileAppName />'s EXIF functions as following:
-
-`read_exif(@project_home + '/' + "photo", 'GPSImgDirection')`
-
-You can use both `Take a photo` or `From gallery` actions of the attachment widget. While capturing a photo with a camera, GPS EXIF data are added to the photo metadata. Make sure that location permissions are allowed in <MobileAppName /> and also for your camera app.
-
-For further examples you can check fields definitions of project <MerginMapsProject id="lutraconsulting/test_exif" /> accessible on Mergin.
-
-![photos](./gps_exif_metadata.png)
