@@ -24,6 +24,9 @@ Pressing and holding the sync button opens the Project status, where you can see
 
 ![project status](../input-project-status.png)
 
+Changes can be also synchronised from the **Projects' Home** tab by pressing the **sync** button.
+
+![Sync](../../tutorials/mobile/merginmaps-mobile-sync-project.jpg)
 
 ## Automatic synchronisation
 To allow automatic synchronisation in <MobileAppName />, navigate to **Settings** and toggle on **Automatically sync changes**. 

@@ -101,9 +101,12 @@ module.exports = {
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
                 '/dev/customapp',
-                '/dev/dbsync',
                 '/dev/mergince',
-                '/dev/integration'
+                '/dev/integration',
+                '/dev/dbsync',
+                '/dev/media-sync/',
+                '/dev/work-packages/',
+                '/dev/geodiff/'
             ]
         },
         {
