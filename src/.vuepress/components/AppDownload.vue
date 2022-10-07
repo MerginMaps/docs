@@ -7,7 +7,7 @@
       <img class="google_play" :src="$withBase('/google-play-badge.png')" alt="Get it on Google Play">
     </a>
     <a href='https://github.com/MerginMaps/input/releases/latest' target="_blank" rel="noopener noreferrer" @click="gtmEvent('windows')">
-      <img :src="$withBase('/app_download_windows.png')" alt="Available on Windows">
+      <img class="windows" :src="$withBase('/app_download_windows.png')" alt="Available on Windows">
     </a>
   </div>
 </template>
@@ -49,7 +49,13 @@ img.app_store {
 }
 
 img.google_play {
-  height: 70px;
+  padding: 11px;
+  height: 48px;
+}
+
+img.windows {
+  padding: 11px;
+  height: 48px;
 }
 
 </style>
