@@ -32,7 +32,7 @@ To capture your point, press **Add Point**. A form will open where you can fill 
 ### Capture lines or areas
 There are two methods of capturing lines and areas:
   - using **Add point** to capture vertices of your line or area
-  - pressing **GPS** to capture vertices based on your location. You can set how often you want to capture a vertex in **Line rec. interval** in [**Settings**](./input_ui/#recording-settings).
+  - pressing **GPS** to turn on tracking. Vertices will be automatically captured based on your location. You can set how often you want to capture a vertex in **Line rec. interval** in [**Settings**](./input_ui/#recording-settings).
 
 Once you are finished, press **Done**. If your feature is an area, the shape will be automatically closed by connecting the last and the first vertex. 
 
