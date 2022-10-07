@@ -1,52 +1,54 @@
-# Integrate Mergin 
+# Integrate Mergin Maps
+[[toc]]
 
-Mergin is an open platform that aims to be developer friendly, and it has been designed to allow easy integration with other software.
+<MainPlatformName /> is an open platform that aims to be developer friendly and it has been designed to allow easy integration with other software.
 
-## Python client
+## Python client module
+The Python client module is the easiest way to programmatically use <MainPlatformName />. You can use Python API or a command-line tool to easily work with <MainPlatformName /> projects, such as to get project status, push and pull changes, or to download, create and delete projects.
 
-### Installation 
+The <GitHubRepo id="MerginMaps/mergin-py-client" /> repository contains the source code of the Python client module and more information on how to use it.
 
-The easiest way to use Mergin programmatically is to use the Python client module. It is available in the PyPI repository and so it can be installed with `pip`:
+Python client is available in the PyPI repository and can be installed with `pip`:
 
 ```
 pip3 install mergin-client
 ```
 
 ### Python module 
-
-A quick code example to download a project:
+To use <MainPlatformName /> from Python, just create `MerginClient` object and then use it. Here, for instance, to download a project:
 
 ```python
-from mergin import MerginClient
+import mergin
 
-mc = MerginClient(login='john', password='pass')
-mc.download_project('john/project1', '/home/john/mergin/project1')
+client = mergin.MerginClient(login='john', password='topsecret')
+client.download_project('lutraconsulting/Basic survey', '/tmp/basic-survey')
+```
+If you have <QGISPluginName /> installed and you want to use it from the QGIS' Python console
+
+```python
+import Mergin.mergin as mergin
+client = mergin.MerginClient(login='john', password='topsecret')
 ```
 
-You can of course also get project status, push/pull changes, create/delete projects and more.
-
-The source code of the Python client is available on GitHub in <GitHubRepo id="MerginMaps/mergin-py-client" /> repository.
-
-### Command line interface
-
+### Python command line interface
 For those who prefer using terminal, there is `mergin` command line tool shipped with the Python client. With several built-in commands, it is possible to download Mergin projects, push/pull changes, create or delete projects and more.
 
 For example, to download a Mergin project to a local folder:
 ```
 mergin download john/project1 ~/mergin/project1
 ```
-
-Please see <GitHubRepo id="MerginMaps/mergin-py-client" /> repository for more information on the usage.
+For more details, visit <GitHubRepo id="MerginMaps/mergin-py-client" />.
 
 ## C++ standalone client
+C++ Client has advantage over Python that it is completely without any dependencies. 
 
-C++ Client has advantage over Python that is is completely without any dependencies. 
+To install the C++ client, just download the binary for your platform from <GitHubRepo id="MerginMaps/mergin-cpp-client/releases"/> and use it from the command line.
 
-### Installation 
+Go to <GitHubRepo id="MerginMaps/mergin-cpp-client" /> repository for more information on how to use it.
 
-Just  <GitHubRepo id="MerginMaps/mergin-cpp-client/releases" desc="download"/> binary for your platform and use it from command line.
+### C++ Command line tool
+When the client is installed, it comes with `mergin` command line tool.
 
-### Usage 
 ```bash 
 $ mergin --help
 Usage: mergin [OPTIONS] COMMAND [ARGS]...
@@ -64,8 +66,6 @@ Commands:
   sync           Pull&Push the changes
   remove         Remove project from server.
 ```
-
-Please see <GitHubRepo id="MerginMaps/mergin-cpp-client" /> repository for more information on the usage.
 
 ### C++ Mergin API core library 
 

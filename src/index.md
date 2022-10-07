@@ -85,9 +85,12 @@ The ecosystem consist of various components:
 
 ## For Developers
 - [Custom Mobile App](./dev/customapp/)
-- [PostgreSQL DB Sync](./dev/dbsync/)
-- [Mergin Community Edition (CE)](./dev/mergince/)
+- [Mergin Community Edition](./dev/mergince/)
 - [Integrate Mergin](./dev/integration/)
+- [PostgreSQL DB Sync](./dev/dbsync/)
+- [Media Sync](./dev/media-sync/)
+- [Work Packages](./dev/work-packages/)
+- [Geodiff Library](./dev/geodiff/)
 
 ## Support & Legal
 - [Licensing](./misc/licensing/)

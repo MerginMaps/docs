@@ -7,6 +7,7 @@ Basemaps
 BeiDou
 Benz
 Bing
+changesets
 CRS
 crosshairs
 CSV
@@ -110,6 +111,7 @@ SVG
 SVGs
 SaaS
 Scania
+schemas
 Skoda
 Transifex
 Trialing
