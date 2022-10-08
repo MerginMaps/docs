@@ -6,6 +6,9 @@ Download <MobileAppName /> to your Android device, iPhone or iPad. You can find 
 
 With <MobileAppName />, you can view your data and location on the map, capture points, lines, areas, photos and much more!
 
+## Mergin Maps Input on Windows
+If you want to use <MobileAppName /> on Windows, you need to download the <NoSpellcheck id=".exe" /> installer from <GitHubRepo id="MerginMaps/input/releases/latest" desc="MerginMaps/Input" /> repository and install it on your computer.
+
 ## Input's tour projects
 Once you have installed and opened <MobileAppName /> you will see two tour projects that will guide you through the basics.
 
@@ -22,3 +25,5 @@ Once you have installed and opened <MobileAppName /> you will see two tour proje
 :::tip
 Do you want to learn more? Get up-to-speed quickly by following our [Quick Start tutorials](../../tutorials/capturing-first-data/index.md)!
 :::
+
+
