@@ -5,7 +5,7 @@
 
 1. Right-click on a layer, select **Properties** and go to the **Attributes form** tab.
 2. In the list of **Available Widgets** select the field you want to work with. 
-3. In the **Widget Display** tab:
+3. In the **Widget Type** tab:
    - Ensure that **Text Edit** is selected
    - Check the **Multiline** and **HTML** options
 4. In the **Defaults** tab, use a string such as this as **Default value**:
