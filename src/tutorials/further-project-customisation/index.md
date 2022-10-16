@@ -47,7 +47,7 @@ Lines in the hedges layer should now be drawn thicker and in a more prominent co
 In the next section we'll see what these changes look like in <MobileAppName />.
 
 ## Trialing changes in Mergin Maps Input
-Seeing what the project changes we make in this tutorial look like in <MobileAppName /> is easy:
+Seeing how the changes look like in <MobileAppName /> is easy:
 
 1. In QGIS, save your project:
    ![](./qgis-save-project.jpg)
