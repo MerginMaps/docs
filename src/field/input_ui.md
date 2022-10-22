@@ -91,7 +91,7 @@ Pressing and holding the sync button opens the Project status window.
 ![GPS Settings](./input-settings2.png)
 
 ### Recording settings
-- **Line rec. interval** the interval at which the GPS location is used as vertices when tracking GPS position for capturing lines or polygons.
+- **Line rec. interval** the interval at which the GPS location is used as vertices when streaming GPS position for capturing lines
 - **Reuse last value option** if used, last entered values of selected attributes will be automatically filled in when creating a new feature.
 - **Automatically sync changes** if used, local changes will be synchronised automatically.
 
