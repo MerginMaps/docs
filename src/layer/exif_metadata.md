@@ -26,7 +26,7 @@ To store EXIF metadata values in the fields of your survey layer:
       
    ![exif form](./qgis_form_exif.png)
    
-   The preview shows a warning *Function is not known* because QGIS does not recognize `read_exif` function. **This is OK, <MobileAppName /> will know what to do with it!**
+   The preview shows a warning *Function is not known*. **This is OK, <MobileAppName /> will know what to do with it!**
 
 3. Save and sync your project. 
 
