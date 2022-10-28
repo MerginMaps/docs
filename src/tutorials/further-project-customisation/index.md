@@ -118,10 +118,10 @@ If you notice subtle differences in the name / spelling of the the field when yo
 :::
 
 4. Set the HTML map tip to:
-
-		# fields
-		condition
-
+```
+# fields
+condition
+```
    ![](./qgis-html-map-tip.jpg)
 
 5. Click **OK**
