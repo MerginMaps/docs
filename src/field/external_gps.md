@@ -77,7 +77,7 @@ External GPS functionality depends on the manufacturer and on the specific model
 | Leica | Leica FLX100| yes (mock location) | no |
 | Leica | Leica FLX100 plus| yes (mock location) | yes*|
 | Leica | Leica Zeno GG04plus| yes (mock location) | yes* |
-| marXact | UNI-GR1| yes | no |
+| <NoSpellcheck id="marXact" /> | UNI-GR1| yes | no |
 | Trimble | Trimble Catalyst | yes (mock location) | unknown |
 | Trimble | Trimble R1 | yes (mock location) | unknown |
 | Trimble | Trimble R2 | yes (mock location) | unknown |
