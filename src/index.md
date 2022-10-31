@@ -77,6 +77,7 @@ The ecosystem consist of various components:
 - [External GPS](./field/external_gps/)
 - [GPS Accuracy](./field/gps_accuracy/)
 - [Synchronisation in Input](./field/autosync/)
+- [Working With Layers](./field/layers/)
 - [How to Add, Edit, Delete Features](./field/input_features/)
 - [How to Reuse Last Entered Values](./field/reuse-last-values/)
 - [How to Stake Out Points](./field/stake-out/)

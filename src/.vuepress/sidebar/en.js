@@ -88,6 +88,7 @@ module.exports = {
                 '/field/external_gps',
                 '/field/gps_accuracy',
                 '/field/autosync/',
+                '/field/layers/',
                 '/field/input_features',
                 '/field/reuse-last-values/',
                 '/field/stake-out/',
