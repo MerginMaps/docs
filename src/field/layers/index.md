@@ -8,3 +8,10 @@ In **Layers**, it is possible to:
 - browse all (but private) layers
 
 ![layers](./input-layers.png)
+
+## Turn layers on/off in Mergin Maps Input
+
+## See the legend of a layer
+
+## Browse features
+
