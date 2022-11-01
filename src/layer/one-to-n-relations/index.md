@@ -31,19 +31,19 @@ You can follow this example by cloning <MerginMapsProject id="documentation/form
 
 To configure 1-N relations in QGIS:
 1. From the main menu, select **Projects** > **Properties ...**
-2. In the new window, select the **Relations** tab
-3. Select **Add Relation** to create a new one
-4. A new window will appear, where we can define the parent and child layers and the fields to link the two layers:
+2. In the **Relations** tab, select  **Add Relation**
+   ![relations](../attach-multiple-photos-to-features/qgis_relation_tab.png)
+3. A new window will appear, where we can define the parent and child layers and the fields to link the two layers:
    - **Name** is the name of the relation, e.g. `Inspection`
    - **Referenced (parent)** is the spatial layer `manhole_locations`
-   - **Field 1** of the **Referenced(parent)** is the field `Manhole` that contains the ID 
+   - **Field 1** of the **Referenced (parent)** is the field `Manhole` that contains the ID 
    - **Referencing (child)** is the non-spatial layer `inspections`
-   - **Field 1** of the **Referencing(child)** layer is the `Manhole ID`, which acts as a foreign key to link inspections to spatial features.
+   - **Field 1** of the **Referencing (child)** layer is the `Manhole ID`, which acts as a foreign key to link inspections to spatial features.
 
 ![1-N relations in QGIS](./input_forms_many-relations1.png)
 
-5. Right-click on the survey layer, select **Properties** and go to the **Attributes** form tab.
-6. Drag and drop the **Inspections** relation to the **Form Layout**.
+4. Right-click on the survey layer, select **Properties** and go to the **Attributes** form tab.
+5. Drag and drop the **Inspections** relation to the **Form Layout**.
 
 ![form](./one-to-n-dnd.png)
 
