@@ -74,9 +74,9 @@ module.exports = {
                 '/layer/attach-multiple-photos-to-features/',
                 '/layer/one-to-n-relations/',
                 '/layer/external-link/',
+                '/layer/working_with_nonspatial_data',
                 '/layer/position_variables',
-                '/layer/plugin-variables',
-                '/layer/working_with_nonspatial_data'
+                '/layer/plugin-variables'
             ]
         }, 
         
@@ -92,7 +92,6 @@ module.exports = {
                 '/field/reuse-last-values/',
                 '/field/stake-out/',
                 '/field/input_ui',
-                '/layer/working_with_nonspatial_data',
             ]
         }, 
         {
