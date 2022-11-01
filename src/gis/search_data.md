@@ -27,13 +27,15 @@ If a field is marked in a field configuration as **Not searchable**, it will be 
 :::
 
 ## Searching for values in Mergin Maps Input
-Attribute data can be browsed in <MobileAppName /> by tapping **Browse features** in the **More** tab.
-![input browse](./input-browse.png)
+Attribute data can be browsed in <MobileAppName /> by tapping **Layers** in the **More** tab. 
 
-You can select a layer or a table from the list to open the attribute table and type in the string to shortlist the matching records.
+![input layers](../field/layers/input-layers.png)
+
+Choose a layer or a table from the list to open the attribute table. Here, you can browse the features. The search bar can be used to shortlist matching records. 
+
+Tap on the record to zoom to the feature on the map and display its form.
+
 ![input browse](./input_search_data.png)
-
-Selecting an individual record will open the form of the feature.
 
 :::tip
 The search looks up for a match in all searchable attributes values and is not case sensitive.

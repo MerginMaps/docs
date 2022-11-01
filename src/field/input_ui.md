@@ -3,7 +3,7 @@
 
 Below is a description of various items within the user interface. 
 
-The map can be moved by dragging around and zoomed in/out by pinching open/close.
+The map can be moved by dragging around and zoomed in/out by pinching open/close. Tapping on a feature displays the attributes form.
 
 There are four tabs available in the bottom navigation panel: [Projects](#projects), [GPS](#gps), [Record](#record) and [More](#zoom-to-project-browse-features-map-themes-settings).
 
@@ -55,45 +55,52 @@ Tapping the GPS accuracy tab opens the GPS info panel:
 
 
 ## Record
-**Record tab** is where you can [survey new features](./input_features/).
+**Record tab** is where you can [survey new features](./input_features/). 
+
 ![Record](./input-record.png) 
 
 The active layer currently used for survey is displayed above the bottom navigation panel. Tapping on it opens a list of all editable layers in the project.
 ![Active layer](./input-active-layer.png)
 
+:::tip
+[How to Add, Edit, Delete Features](../input_features) will show you how to capture points, lines and polygons in <MobileAppName /> as well as how to edit their geometry and attributes.
+:::
 
 ## Synchronisation
-The sync button can be used to synchronise changes. If automatic synchronisation of changes is allowed, this button will indicate that synchronisation is in progress.
+The sync button can be used to synchronise changes. 
+
+If automatic synchronisation of changes is allowed in the [Settings](#recording-settings), this button will indicate that synchronisation is in progress.
 
 ![Sync button](./input-autosync.png)
 
-Pressing and holding the sync button opens the Project status window.
+Pressing and holding the sync button opens the **Project status** window.
 
 ![Project changes](./input-project-status.png)
 
 
 ## Zoom to project, Browse features, Map themes, Settings
 **More** tab contains a list of additional options, such as:
-- **Zoom to project**: a shortcut to zoom to the extent of all visible layers within the project. The project extent can be set during [project preparation QGIS](../gis/features/#project-extent).
-- **Local changes**: see changes yet to be synchronised 
-- **Browse features**: [browse features](../gis/search_data.md) and search in the project's layers
-- **Map themes**: a list of map themes [set up in a QGIS project](../gis/setup_themes/)
-- **Settings**: GPS and recording settings along with references to help, privacy policy, terms of service and diagnostic log
+- **Zoom to project**: a shortcut to zoom to the extent of all visible layers within the project. The project extent can be set during [project preparation in QGIS](../gis/features/#project-extent).
+- **Local changes**: see changes yet to be synchronised.
+- [**Layers**](./layers/): manage the visibility of specific layers, see layers legend, browse features in the layers
+- [**Map themes**](../gis/setup_themes/): a list of map themes set up in a <MainPlatformName /> project in QGIS
+- **Settings**: [GPS](#gps-settings) and [recording](#recording-settings) settings along with references to help, privacy policy, terms of service and [diagnostic log](../misc/troubleshoot/#diagnostic-log-on-mergin-maps-input)
 
 ![More](./input-settings.png)
 
 ### GPS settings
 - **Follow GPS with map**: if toggled on, the map will pan so the GPS point can be seen on the map
-- **GPS accuracy**: shows the current GPS accuracy based on the *Accuracy threshold* using traffic light system. Green stands for GPS accuracy within the threshold, orange for GPS accuracy outside the threshold and red for no GPS position fix available.
+- **GPS accuracy**: shows the current GPS accuracy based on the *Accuracy threshold* using traffic light system:
+   - green: GPS accuracy within the threshold
+   - orange: GPS accuracy outside the threshold
+   - red: no GPS position fix available
 - **Accuracy threshold**: value used to display GPS accuracy colours
-- **Select GPS receiver**: option to switch between internal GPS and external GPS receiver connected via Bluetooth. See [External GPS](./external_gps/) for detailed steps.
+- **Select GPS receiver**: option to switch between internal GPS and external GPS receiver connected via Bluetooth. See [External GPS](./external_gps/) for more details.
 
 ![GPS Settings](./input-settings2.png)
 
 ### Recording settings
-- **Line rec. interval** the interval at which the GPS location is used as vertices when streaming GPS position for capturing lines
-- **Reuse last value option** if used, last entered values of selected attributes will be automatically filled in when creating a new feature.
+- **Line rec. interval** the interval at which vertices are captured based on the GPS location when using [tracking](./input_features/#capture-lines-or-areas) to capture lines or polygons.
+- **Reuse last value option** if used, last entered values of selected attributes will be automatically filled in when creating a new feature. See  [How to reuse last value option](./reuse-last-values/) for more details.
 - **Automatically sync changes** if used, local changes will be synchronised automatically.
-
-![Recording Settings](./input-settings3.png)
 
