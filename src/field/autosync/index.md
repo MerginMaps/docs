@@ -1,4 +1,4 @@
-# Synchronisation in Input
+# Synchronisation in Mergin Maps Input
 <Badge text="since Input 1.4.0" type="tip"/>
 [[toc]]
 

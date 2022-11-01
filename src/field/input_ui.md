@@ -82,9 +82,9 @@ Pressing and holding the sync button opens the **Project status** window.
 **More** tab contains a list of additional options, such as:
 - **Zoom to project**: a shortcut to zoom to the extent of all visible layers within the project. The project extent can be set during [project preparation in QGIS](../gis/features/#project-extent).
 - **Local changes**: see changes yet to be synchronised.
-- **Layers**: manage the visibility of specific layers, see layers legend, [browse features](../gis/search_data.md) in the layers
-- **Map themes**: a list of [map themes](../gis/setup_themes/) set up in a <MainPlatformName /> project in QGIS
-- **Settings**: GPS and recording settings along with references to help, privacy policy, terms of service and diagnostic log
+- [**Layers**](./layers/): manage the visibility of specific layers, see layers legend, browse features in the layers
+- [**Map themes**](../gis/setup_themes/): a list of map themes set up in a <MainPlatformName /> project in QGIS
+- **Settings**: [GPS](#gps-settings) and [recording](#recording-settings) settings along with references to help, privacy policy, terms of service and [diagnostic log](../misc/troubleshoot/#diagnostic-log-on-mergin-maps-input)
 
 ![More](./input-settings.png)
 
