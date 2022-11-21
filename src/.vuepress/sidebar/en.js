@@ -92,6 +92,7 @@ module.exports = {
                 '/field/input_features',
                 '/field/reuse-last-values/',
                 '/field/stake-out/',
+                '/field/broken-project/',
                 '/field/input_ui',
             ]
         }, 
