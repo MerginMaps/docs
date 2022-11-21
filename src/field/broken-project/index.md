@@ -2,7 +2,7 @@
 <Badge text="since Input 2.0.0" type="tip"/>
 [[toc]]
 
-Do you get an error message when trying to open a project in <MobileAppName />? There can be multiple reasons what went wrong. Here we will try to guide you through some basic steps that can help you.
+Do you get an error message when trying to open a project in <MobileAppName />? There can be multiple reasons for what went wrong. Here we will try to guide you through some basic steps that can help you.
 
 ![error dialog](./error-dialog.gif)
 
@@ -16,9 +16,9 @@ To fix the project:
 4. Save and sync the project.
 
 :::details
-From a technical point of view, the issue is caused by a bug what was present in older versions of QGIS. There was a bug in parsing of Mapbox GL style for vector tile layers that caused issues when loading Qt5-based QGIS projects from older QGIS versions in Qt6-based QGIS. This bug was fixed and should not appear in QGIS versions 3.20, 3.18.3 and 3.16.7 and higher. 
+From a technical point of view, the issue is caused by a bug that was present in older versions of QGIS. There was a bug in parsing <NoSpellcheck id="Mapbox GL" /> style for vector tile layers that caused issues when loading <NoSpellcheck id="Qt5-based" /> QGIS projects from older QGIS versions in Qt6<NoSpellcheck id="Qt6-based" /> QGIS. This bug was fixed and should not appear in QGIS versions 3.20, 3.18.3 and 3.16.7 and higher. 
 
-Qt6 is used in <MobileAppName /> since version 2.0.0. Thus, if you use a QGIS project that was created in older QGIS versions, you can encounter this error.
+Qt6 has been used in <MobileAppName /> since version 2.0.0. Thus, if you use a QGIS project that was created in older QGIS versions, you can encounter this error.
 :::
 
 ::: tip
