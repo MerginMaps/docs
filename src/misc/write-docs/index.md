@@ -105,7 +105,7 @@ git push origin main
 
 ## The Documentation System
 
-Each markdown should written as one of the 4 basic types of documentation:
+Each markdown should be written as one of the 4 basic types of documentation:
 tutorials, how-to guides, technical reference and explanation. 
 
 It is best to read about this [documentation system](https://documentation.divio.com/).
@@ -146,7 +146,7 @@ If you see the typo or other issue on a page, you can scroll to the very bottom 
 
 ![](./footer-docs.png)
 
-If you click on the link, you will get the the markdown source of the page that you can edit. If you are not in the Mergin Maps core documentation team, you would also need to work on [fork](#when-fork-is-needed) to be able to proceed.
+If you click on the link, you will get the markdown source of the page that you can edit. If you are not in the Mergin Maps core documentation team, you would also need to work on [fork](#when-fork-is-needed) to be able to proceed.
 
 ### Why the Markdown Has Different Content as the Public Docs
 
