@@ -7,7 +7,7 @@ In <MobileAppName />, you can use different **map themes**. This is ideal for sw
 
 Read how to <QGISHelp ver="3.22" link="user_manual/introduction/general_tools.html#configuring-map-themes" text="set up a new map theme" /> in QGIS.
 
-- Open QGIS Desktop with you QGIS Project 
+- Open QGIS Desktop with your QGIS Project 
 - In the Layers Panel, click on "Manage Map Themes" (eye-icon)
 ![Map Themes](./qgis_map_themes_setup.png)
 - Add new themes or replace existing themes.
