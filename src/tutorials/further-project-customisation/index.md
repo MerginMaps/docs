@@ -1,8 +1,8 @@
 # Further Project Customisation
 
-[[toc]]
-
 In this tutorial you will learn how to customise your <MainPlatformName /> project further, making it even more useful. The topics covered here are:
+
+[[toc]]
 
 ::: tip
 Previous tutorials already covered the minimum concepts for data collection so feel free to skip ahead to the [Working Collaboratively](../working-collaboratively/index.md) tutorial (and come back here later on) if you're super keen on collecting data right away.
@@ -114,7 +114,7 @@ The panel for the trees layer looks like the left-hand image below. We will conf
    ![](./qgis-display-name.jpg)
 
 ::: tip
-If you notice subtle differences in the name / spelling of the the field when you select it in the drop-down list, this is due to the field having been aliased.
+If you notice subtle differences in the name / spelling of the field when you select it in the drop-down list, this is due to the field having been aliased.
 :::
 
 4. Set the HTML map tip to:
@@ -128,7 +128,7 @@ condition
 6. Test out these settings in <MobileAppName /> as described in the [Trialing changes](#trialing-changes-in-mergin-maps-input) section above.
 
 ## Controlling layer visibility
-You may have noticed that <MobileAppName /> doesn't have a layer switcher. It instead allows users to switch between map themes. A map theme defines which layers will be displayed.
+You may have noticed that older versions of <MobileAppName /> doesn't have a layer switcher. It instead allowed users to switch between map themes. A map theme defines which layers will be displayed.
 
 In a moment we'll define the following map themes:
 * ***All layers*** includes all map layers
