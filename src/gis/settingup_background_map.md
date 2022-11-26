@@ -59,7 +59,7 @@ To generate an offline copy of the aerial imagery from your map view extent:
   - In QGIS, from the main menu, select **Processing** > **Toolbox**
   - A new panel should appear on the right side of your QGIS
   - In the search section on the top of the **Processing** panel, type **xyz**
-  - Under **Raster**, double-click on **Generate XYZ tiles (MBTiles)**
+  - Under **Raster tools**, double-click on **Generate XYZ tiles (MBTiles)**
   - A new window will appear:
     - For **Extent**, click on the right-side drop-down menu and select **Use Map Canvas Extent**
     - For **Minimum zoom**, type **10**
@@ -116,7 +116,7 @@ In QGIS (3.14+), you can generate your own vector tiles. Alternatively, you can 
 
 In the example below, we walk through steps to generate a vector tile using OpenMapTiles for [Limpopo](https://www.openstreetmap.org/relation/349547#map=7/-24.367/29.982).
 
-Note that instructions below requires familiarity with terminal. In addition your operating system should support **docker**.
+Note that instructions below require familiarity with terminal. In addition your operating system should support **docker**.
   - Clone the OpenMapTiles repository: `git clone git@github.com:openmaptiles/openmaptiles.git`
   - Download osm.pbf file for the country or region where your area falls in from [here](https://download.geofabrik.de/).
   - Search for your area of interest and find the OSM relation ID (from [here](https://nominatim.openstreetmap.org/) using method described <GitHubRepo id="JamesChevalier/cities" desc="here" /> or alternatively download it <GitHubRepo id="JamesChevalier/" desc="from this git repository" /> if available).
