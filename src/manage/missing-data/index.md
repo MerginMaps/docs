@@ -18,15 +18,15 @@ If you cannot synchronise changes, make sure you are connected to the internet a
 Depending on your data format, you can get something like `survey_lines.gpkg_conflict_jill_v6`, which is a conflict file for data from a user called Jill, project version 6.
 
 ## There are conflict files in the folder
-Conflict files can appear in your project when Mergin could not synchronise changes automatically and they indicate there may be some issues that you should be fixed.
+Conflict files can appear in your project when Mergin could not synchronise changes automatically and they indicate there may be some issues that should be fixed.
 
-You can add conflict files to your QGIS project and check whether their contain the data you are missing. Then you can resolve them manually or semi-automatically, depending on the scope of your issue.
+You can add conflict files to your QGIS project and check whether they contain the data you are missing. Then you can resolve them manually or semi-automatically, depending on the scope of your issue.
 
 ### Resolving conflict files manually
 If you can identify missing features visually, e.g. by finding out where the survey took place, you can copy and paste these features to the survey layer. Make sure the values have been transferred over correctly!
 
 ### Resolving conflict files semi-automatically
-Change the schema of the table in the conflict file to match the new schema and run the *Detect dataset changes* algorithm from the *Processing toolbox*. You then need to go though the result and ensure the changes detected are the ones you expect for both attribute values and geometry.
+Change the schema of the table in the conflict file to match the new schema and run the *Detect dataset changes* algorithm from the *Processing toolbox*. You then need to go through the result and ensure the changes detected are the ones you expect for both attribute values and geometry.
 
 ![detect dataset changes](./qgis-detect-dataset-changes.png)
 
