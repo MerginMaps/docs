@@ -32,7 +32,7 @@ Visit [Working with organisations](../setup/working-with-organisations/index.md)
 ## Projects
 - To create a new project, select **+ Create** in front of **Projects**
 - **My projects** lists all projects you have created
-- **Shared with me** lists the projects of others shared you (including your organisation projects)
+- **Shared with me** lists other users' projects shared with you (including your organisation projects)
 - **Explore** lists all the public projects
 
 Click on a project to download it, [clone it](./create-project/#clone-an-existing-project-through-merginmaps-com) and to see its details.
