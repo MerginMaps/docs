@@ -43,6 +43,11 @@ yarn install
 yarn dev
 ```
 
+If you get `  opensslErrorStack: [ 'error:03000086:digital envelope routines::initialization error' ]`, run
+```bash
+export NODE_OPTIONS=--openssl-legacy-provider
+```
+
 ## Static generation (for deployments)
 
 To generate static HTML files, run 
