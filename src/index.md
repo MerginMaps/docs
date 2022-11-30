@@ -40,6 +40,7 @@ The ecosystem consist of various components:
 ## Manage Account & Project
 - [Permissions](./manage/permissions/)
 - [Behind Data Synchronisation](./manage/synchronisation/)
+- [Mergin Maps Project](./manage/project/)
 - [How to Create a New Project](./manage/create-project/)
 - [How to Share, Transfer or Delete a Project](./manage/project-advanced/)
 - [How to Deploy Revised Projects](./manage/deploy-new-project/)

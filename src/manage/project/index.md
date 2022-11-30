@@ -3,7 +3,7 @@
 
 What is a <MainPlatformName /> project? 
 
-It is basically a folder that contains data (such as vector layers, tables, rasters or photos), a [QGIS project](../../gis/features/), and some extra <MainPlatformName /> files needed to ensure the everything works.
+It is basically a folder that contains data (such as vector layers, tables, rasters or photos), a [QGIS project](../../gis/features/), and some extra <MainPlatformName /> files needed to ensure everything works.
 
 When <MainPlatformName /> project is created, it is saved to <MainPlatformName /> cloud. From the cloud, it can be downloaded to various devices, used by different team members in both QGIS and <MobileAppName />. Changes they made are tracked and synchronised back to the cloud.
 
@@ -17,7 +17,7 @@ In general, projects are prepared and managed in [QGIS](../../setup/install-qgis
 Typically, especially if your project is rather complex, you would:
 1. Create a QGIS project with all necessary datasets and settings to fit your needs
 2. Package it using <QGISPluginName /> to create a <MainPlatformName /> project that is saved to the cloud
-3. Check that everything work as expected in the mobile app. If not, fix the issues in QGIS. Don't forget to save and sync the project). Repeat this step as necessary.
+3. Check that everything works as expected in the mobile app. If not, fix the issues in QGIS. Don't forget to save and sync the project). Repeat this step as necessary.
 4. [Share the project](../project-advanced/#share-a-project) with your team members. Now you can collaborate safely and effectively.
 
 :::tip
@@ -31,19 +31,19 @@ When using <QGISPluginName /> to [create a <MainPlatformName /> project](../crea
 ![package project](./package-project.png)
 
 There are three options for handling layers:
-   - **package** - layers will be copied and saved in the new <MainPlatformName /> project folder: by default, each vector layer will be saved as a GeoPackage, rasters (if possible) will be saved as GeoTiffs and local vector and raster MBTiles will be copied to the folder.
-   - **keep as is** - the layer will be referenced "as is" in the new project. The location of the file will stay the same, it will **not** be copied to the new <MainPlatformName /> project folder. This is the default for some rasters and web services (e.g. WMS/WMTS, WFS/WFTS, online vector and XYZ tiles).
+   - **package** - layers will be copied and saved in the new <MainPlatformName /> project folder: by default, each vector layer will be saved as a GeoPackage, rasters (if possible) will be saved as GeoTIFF and local vector and raster MBTiles will be copied to the folder.
+   - **keep as is** - the layer will be referenced "as is" in the new project. The location of the file will stay the same, it will **not** be copied to the new <MainPlatformName /> project folder. This is the default for some rasters and web services (e.g. WMS/WMTS, WFS, online vector and XYZ tiles).
    - **ignore** - the layer will **not** be included in the new project.
    
    ![](../create-project/mergin_plugin_project_wizard_3.png) 
 
-After the layers for the new project are selected, you just need to enter the project's name and choose where to saved it on your computer. It will also be saved on the <MainPlatformName /> server.
+After the layers for the new project are selected, you just need to enter the project's name and choose where to save it on your computer. It will also be saved on the <MainPlatformName /> server.
    ![](../create-project/mergin_plugin_project_wizard_4.png)
 
 ### Mergin Maps project folder
 The project folder on your computer will contain the **QGIS project** and all layers that were selected to be **packaged**. These are the files that are referenced in the project - and only they will be updated when the project is synchronised! The original data can be archived as they will not be used or needed by <MainPlatformName /> project anymore.
 
-Layer that were **kept as is** are not stored in the project folder.
+Layers that were **kept as is** are not stored in the project folder.
 
 ![](./project-folder.png)
 
