@@ -42,14 +42,16 @@ To work with <MainPlatformName /> projects in QGIS, you will need to [install th
 
    - **New basic QGIS project**. If you are new to QGIS, this is a good starting point. The new basic QGIS project will contain a survey layer (a point layer) and a background map (OpenStreetMap).
 
-   - **Package current QGIS project**. This option will create a copy of your project and all the files in a single folder. There are three options for handling layers: package, keep as is (the layer will be referenced as is in the new project) or ignore (the layer will not be included in the new project). 
-     By default, <QGISPluginName /> will package all vector layers in your project to GeoPackage format (each layer to one GeoPackage database), rasters, if possible, to GeoTiff format as well as local vector and raster MBTiles. Raster that cannot be packaged and web services (e.g. WMS/WMTS, online vector and XYZ tiles) will be kept as they are.
+   - **Package current QGIS project**. This option will create a copy of your project and all the files in a single folder. There are three options for handling layers: package, keep as is (the layer will be referenced as is in the new project) or ignore (the layer will not be included in the new project). For more details, see [<MainPlatformName /> project](../project/#packaging-qgis-project).
      ![](./mergin_plugin_project_wizard_3.png)
 
    - **Use current QGIS project as is**. This is for cases when you already have a stand-alone folder with your project packaged.
 
-4. Name the project and select a path where your project folder and associated files will be generated. Your project should be saved on a local drive. Using shared network drives and cloud storage (such as OneDrive or Google Drive) is **not supported**.
+4. Name the project and select a path where your project folder and associated files will be generated. 
    ![](./mergin_plugin_project_wizard_4.png)
+   :::danger
+   Your project should be saved on a local drive. Using shared network drives and cloud storage (such as OneDrive or Google Drive) is **not supported**.
+   :::
 
 The new <MainPlatformName /> project will be created locally on your computer and also on the <MainPlatformName /> server. 
 

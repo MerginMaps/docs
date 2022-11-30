@@ -15,7 +15,9 @@ If you cannot synchronise changes, make sure you are connected to the internet a
 - Navigate to your project folder
 - See if there are any files that contain `conf` or `conflict` in their names. 
 
-Depending on your data format, you can get something like `survey_lines.gpkg_conflict_jill_v6`, which is a conflict file for data from a user called Jill, project version 6.
+![conflict file](./folder-conflict-file.png)
+
+Depending on your data format, you can get something like `survey_polygon (edit conflict, sarah v4).json`, which is a conflict file for data from a user called `sarah`, project version 4.
 
 ## There are conflict files in the folder
 Conflict files can appear in your project when Mergin could not synchronise changes automatically and they indicate there may be some issues that should be fixed.
