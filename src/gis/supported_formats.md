@@ -98,6 +98,7 @@ Supported Formats:
   JAXAPALSAR -raster- (rov): JAXA PALSAR Product Reader (Level 1.1/1.5)
   GFF -raster- (rov): Ground-based SAR Applications Testbed File Format (.gff)
   ELAS -raster- (rw+v): ELAS
+  ESRIC -raster- (rov): Esri Compact Cache
   AIG -raster- (rov): Arc/Info Binary Grid
   AAIGrid -raster- (rwv): Arc/Info ASCII Grid
   GRASSASCIIGrid -raster- (rov): GRASS ASCII Grid
@@ -112,7 +113,7 @@ Supported Formats:
   BSB -raster- (rov): Maptech BSB Nautical Charts
   XPM -raster- (rwv): X11 PixMap Format
   BMP -raster- (rw+v): MS Windows Device Independent Bitmap
-  DIMAP -raster- (rov): SPOT DIMAP
+  DIMAP -raster- (rovs): SPOT DIMAP
   AirSAR -raster- (rov): AirSAR Polarimetric Image
   RS2 -raster- (rovs): RadarSat 2 XML Product
   SAFE -raster- (rov): Sentinel-1 SAR SAFE Product
@@ -138,7 +139,6 @@ Supported Formats:
   WMS -raster- (rwvs): OGC Web Map Service
   MSGN -raster- (rov): EUMETSAT Archive native (.nat)
   RST -raster- (rw+v): Idrisi Raster A.1
-  INGR -raster- (rw+v): Intergraph Raster
   GSAG -raster- (rwv): Golden Software ASCII Grid (.grd)
   GSBG -raster- (rw+v): Golden Software Binary Grid (.grd)
   GS7BG -raster- (rw+v): Golden Software 7 Binary Grid (.grd)
@@ -162,20 +162,17 @@ Supported Formats:
   PAux -raster- (rw+v): PCI .aux Labelled
   MFF -raster- (rw+v): Vexcel MFF Raster
   MFF2 -raster- (rw+): Vexcel MFF2 (HKV) Raster
-  FujiBAS -raster- (rov): Fuji BAS Scanner Image
   GSC -raster- (rov): GSC Geogrid
   FAST -raster- (rov): EOSAT FAST Format
   BT -raster- (rw+v): VTP .bt (Binary Terrain) 1.3 Format
   LAN -raster- (rw+v): Erdas .LAN/.GIS
   CPG -raster- (rov): Convair PolGASP
-  IDA -raster- (rw+v): Image Data and Analysis
   NDF -raster- (rov): NLAPS Data Format
   EIR -raster- (rov): Erdas Imagine Raw
   DIPEx -raster- (rov): DIPEx
   LCP -raster- (rwv): FARSITE v.4 Landscape File (.lcp)
   GTX -raster- (rw+v): NOAA Vertical Datum .GTX
   LOSLAS -raster- (rov): NADCON .los/.las Datum Grid Shift
-  NTv1 -raster- (rov): NTv1 Datum Grid Shift
   NTv2 -raster- (rw+vs): NTv2 Datum Grid Shift
   CTable2 -raster- (rw+v): CTable2 Datum Grid Shift
   ACE2 -raster- (rov): ACE2
@@ -194,20 +191,21 @@ Supported Formats:
   SRP -raster- (rovs): Standard Raster Product (ASRP/USRP)
   BLX -raster- (rwv): Magellan topo (.blx)
   SAGA -raster- (rw+v): SAGA GIS Binary Grid (.sdat, .sg-grd-z)
-  IGNFHeightASCIIGrid -raster- (rov): IGN France height correction ASCII Grid
   XYZ -raster- (rwv): ASCII Gridded XYZ
   HF2 -raster- (rwv): HF2/HFZ heightfield raster
   OZI -raster- (rov): OziExplorer Image File
   CTG -raster- (rov): USGS LULC Composite Theme Grid
-  E00GRID -raster- (rov): Arc/Info Export E00 GRID
   ZMap -raster- (rwv): ZMap Plus Grid
   NGSGEOID -raster- (rov): NOAA NGS Geoid Height Grids
   IRIS -raster- (rov): IRIS data (.PPI, .CAPPi etc)
   PRF -raster- (rov): Racurs PHOTOMOD PRF
-  RDA -raster- (ro): DigitalGlobe Raster Data Access driver
   EEDAI -raster- (ros): Earth Engine Data API Image
   DAAS -raster- (ro): Airbus DS Intelligence Data As A Service driver
   SIGDEM -raster- (rwv): Scaled Integer Gridded DEM .sigdem
+  TGA -raster- (rov): TGA/TARGA Image File Format
+  OGCAPI -raster,vector- (rov): OGCAPI
+  STACTA -raster- (rovs): Spatio-Temporal Asset Catalog Tiled Assets
+  STACIT -raster- (rovs): Spatio-Temporal Asset Catalog Items
   GPKG -raster,vector- (rw+vs): GeoPackage
   CAD -raster,vector- (rovs): AutoCAD Driver
   PLSCENES -raster,vector- (ro): Planet Labs Scenes API
@@ -216,6 +214,7 @@ Supported Formats:
   ENVI -raster- (rw+v): ENVI .hdr Labelled
   EHdr -raster- (rw+v): ESRI .hdr Labelled
   ISCE -raster- (rw+v): ISCE raster
+  Zarr -raster,multidimensional raster- (rw+vs): Zarr
   HTTP -raster,vector- (ro): HTTP Fetching Wrapper
 ```
 
@@ -233,16 +232,16 @@ Supported Formats:
   PDF -raster,vector- (w+): Geospatial PDF
   MBTiles -raster,vector- (rw+v): MBTiles
   EEDA -vector- (ro): Earth Engine Data API
+  OGCAPI -raster,vector- (rov): OGCAPI
   ESRI Shapefile -vector- (rw+v): ESRI Shapefile
   MapInfo File -vector- (rw+v): MapInfo File
   UK .NTF -vector- (rov): UK .NTF
+  LVBAG -vector- (rov): Kadaster LV BAG Extract 2.0
   OGR_SDTS -vector- (rov): SDTS
   S57 -vector- (rw+v): IHO S-57 (ENC)
   DGN -vector- (rw+v): Microstation DGN
   OGR_VRT -vector- (rov): VRT - Virtual Datasource
-  REC -vector- (ro): EPIInfo .REC 
   Memory -vector- (rw+): Memory
-  BNA -vector- (rw+v): Atlas BNA
   CSV -vector- (rw+v): Comma Separated Value (.csv)
   GML -vector- (rw+v): Geography Markup Language (GML)
   GPX -vector- (rw+v): GPX
@@ -256,32 +255,21 @@ Supported Formats:
   SQLite -vector- (rw+v): SQLite / Spatialite
   WAsP -vector- (rw+v): WAsP .map format
   OpenFileGDB -vector- (rov): ESRI FileGDB
-  XPlane -vector- (rov): X-Plane/Flightgear aeronautical data
   DXF -vector- (rw+v): AutoCAD DXF
   CAD -raster,vector- (rovs): AutoCAD Driver
   FlatGeobuf -vector- (rw+v): FlatGeobuf
   Geoconcept -vector- (rw+v): Geoconcept
   GeoRSS -vector- (rw+v): GeoRSS
-  GPSTrackMaker -vector- (rw+v): GPSTrackMaker
   VFK -vector- (ro): Czech Cadastral Exchange Data Format
   PGDUMP -vector- (w+v): PostgreSQL SQL dump
   OSM -vector- (rov): OpenStreetMap XML and PBF
   GPSBabel -vector- (rw+): GPSBabel
-  SUA -vector- (rov): Tim Newport-Peace's Special Use Airspace Format
-  OpenAir -vector- (rov): OpenAir
   OGR_PDS -vector- (rov): Planetary Data Systems TABLE
   WFS -vector- (rov): OGC WFS (Web Feature Service)
   OAPIF -vector- (ro): OGC API - Features
-  HTF -vector- (rov): Hydrographic Transfer Vector
-  AeronavFAA -vector- (rov): Aeronav FAA
   EDIGEO -vector- (rov): French EDIGEO exchange format
   SVG -vector- (rov): Scalable Vector Graphics
-  CouchDB -vector- (rw+): CouchDB / GeoCouch
-  Cloudant -vector- (rw+): Cloudant / CouchDB
   Idrisi -vector- (rov): Idrisi Vector (.vct)
-  ARCGEN -vector- (rov): Arc/Info Generate
-  SEGUKOOA -vector- (rov): SEG-P1 / UKOOA P1/90
-  SEGY -vector- (rov): SEG-Y
   XLS -vector- (ro): MS Excel format
   ODS -vector- (rw+v): Open Document/ LibreOffice / OpenOffice Spreadsheet 
   XLSX -vector- (rw+v): MS Office Open XML spreadsheet
@@ -297,7 +285,7 @@ Supported Formats:
   MVT -vector- (rw+v): Mapbox Vector Tiles
   NGW -raster,vector- (rw+s): NextGIS Web
   MapML -vector- (rw+v): MapML
-  TIGER -vector- (rw+v): U.S. Census TIGER/Line
+  TIGER -vector- (rov): U.S. Census TIGER/Line
   AVCBin -vector- (rov): Arc/Info Binary Coverage
   AVCE00 -vector- (rov): Arc/Info E00 (ASCII) Coverage
   HTTP -raster,vector- (ro): HTTP Fetching Wrapper
