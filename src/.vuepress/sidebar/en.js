@@ -35,6 +35,7 @@ module.exports = {
             children: [
                 '/manage/permissions',
                 '/manage/synchronisation',
+                '/manage/project/',
                 '/manage/create-project/',
                 '/manage/project-advanced',
                 '/manage/deploy-new-project/',
