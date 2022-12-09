@@ -17,7 +17,7 @@ In general, projects are prepared and managed in [QGIS](../../setup/install-qgis
 Typically, especially if your project is rather complex, you would:
 1. Create a QGIS project with all necessary datasets and settings to fit your needs
 2. Package it using <QGISPluginName /> to create a <MainPlatformName /> project that is saved to the cloud
-3. Check that everything works as expected in the mobile app. If not, fix the issues in QGIS. Don't forget to save and sync the project). Repeat this step as necessary.
+3. Check that everything works as expected in the mobile app. If not, fix the issues in QGIS. Don't forget to save and sync the project. Repeat this step as necessary.
 4. [Share the project](../project-advanced/#share-a-project) with your team members. Now you can collaborate safely and effectively.
 
 :::tip
@@ -48,7 +48,7 @@ Layers that were **kept as is** are not stored in the project folder.
 ![](./project-folder.png)
 
 There are also some extra folders and files:
-- **`.mergin`** folder contains the `Geodiff` files that are used to keep the [project history and versions](../project-details/) and [diagnostic log](../../misc/troubleshoot/#diagnostic-logs)) in a file named `client-log.txt`
+- **`.mergin`** folder contains the `Geodiff` files that are used to keep the [project history and versions](../project-details/) and [diagnostic log](../../misc/troubleshoot/#diagnostic-logs) in a file named `client-log.txt`
 - **`proj`** folder contains, if needed, [custom projections](../../gis/proj/) files
 - [conflict files](../missing-data/#there-are-conflict-files-in-the-folder) may appear if changes could not be properly synchronised
 ![tech files](./folder-tech-files.png)
