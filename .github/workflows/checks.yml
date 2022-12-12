@@ -46,10 +46,10 @@ jobs:
         </html>
         EOF
  
-   - name: Set variables
-     run: |
-       EXCLUDE_LIST=$(cat scripts/broken-link-exceptions.txt)
-       echo "EXCLUDE_LIST=$EXCLUDE_LIST" >> $GITHUB_ENV
+    - name: Set variables
+      run: |
+        EXCLUDE_LIST=$(cat scripts/broken-link-exceptions.txt)
+        echo "EXCLUDE_LIST=$EXCLUDE_LIST" >> $GITHUB_ENV
      
     - name: Check broken links
       uses: ruzickap/action-my-broken-link-checker@v2
