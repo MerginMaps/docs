@@ -11,6 +11,7 @@ jobs:
     env:
       URL: "https://dev.merginmaps.com/docs"
     steps:
+      - uses: actions/checkout@v2
       - name: Check the deployed service URL
         uses: jtalk/url-health-check-action@v3
         with:
