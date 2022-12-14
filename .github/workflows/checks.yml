@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Generate dist
       run: |
         yarn install
@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Generate dist
       run: |
         yarn install
@@ -62,7 +62,7 @@ jobs:
   markdown_checks:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
     - name: Find markdown style errors
       run: |
