@@ -14,7 +14,7 @@
    The default value defines the hyperlink and how it will be displayed in the form using HTML:
    `<a href="your link here">display text</a>`
    Individual links can be generated for each feature based on a value from another field. Let's say there is a field called **name** with a sample value *my-page*:
-   `'<a href="'||'www.web-page.com/'||"name"||'">Open link</a>''` will result in *www.web-page.com/my-page*.
+   `'<a href="'||'www.web-page.com/'||"name"||'">Open link</a>'` will result in *www.web-page.com/my-page*.
    :::
 5. If the link changes based on a value from a different field, check the **Apply default value on update** option.
 6. **Apply** the changes. Don't forget to save and sync your project!
