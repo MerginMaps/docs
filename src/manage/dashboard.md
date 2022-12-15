@@ -36,10 +36,14 @@ Visit [Working with organisations](../setup/working-with-organisations/index.md)
 - **Explore** lists all the public projects
 
 Click on a project to download it, [clone it](./create-project/#clone-an-existing-project-through-merginmaps-com) and to see its details.
-- **FILES** lists files associated with the project
-- **HISTORY** contains all project versions. Here you can see what was changed by which user and download a previous version of the project to your computer.
-- in **SETTINGS** you can manage access to your project, e.g. if you want to [share it](./project-advanced/#share-a-project)
 ![project](./mergin-project.png)
+
+- **FILES** lists files associated with the project
+- **MAP (beta)** contains the map overview of the project. It is available if you have [professional or team subscription](https://merginmaps.com/pricing). The content is updated when the project is synchronised - if you see the message "Map config does not exist, please try to update the project", sync the project and the map overview should be generated.
+   ![map](./mergin-map.png)
+   
+- **HISTORY** contains all [project versions](./project-details/). Here you can see what was changed by which user and download a previous version of the project to your computer.
+- in **SETTINGS** you can manage access to your project, e.g. if you want to [share it](./project-advanced/#share-a-project)
 
 
 ## Subscription
