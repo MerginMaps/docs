@@ -56,3 +56,22 @@ There are also some extra folders and files:
 And this is how the same project looks in <AppDomainNameLink />
 ![project cloud](./project-server.png)
 
+## Adding a layer to the project
+If you want to add an additional layer to your existing <MainPlatformName /> project:
+- a new layer: create a new GeoPackage layer and save it to the project's folder 
+- an existing layer: copy the layer to the project's folder and **then** add it to the project
+
+Save and sync the project. When syncing, you will see in the **Project status** that a new layer was added.
+![project status](./add-new-layer.png)
+
+If you used **keep as is** option when [packaging the project](#packaging-qgis-project) or add a layer that is not stored in the project's folder, the project will reference the relative path to its location. When opening the project on another computer, QGIS will try to load the file using the relative path. If this folder doesn't exist or is located elsewhere, the project will not be able to load the layer. The same applies for <MobileAppName />. 
+
+Only the content in the project's folder is synchronised!
+
+It is best to store all survey layers and relevant datasets in the project's folder to avoid issues with synchronisation or availability of the layers.
+
+:::tip
+It is possible to use files that are stored in other folders in <MobileAppName />. However, these folders have to be [manually transferred](../missing-data/#manual-data-transfer-android).
+
+This can be useful when working with [very large datasets](../../gis/settingup_background_map/#how-to-work-with-very-large-files-android) such as large rasters or background maps.
+:::
