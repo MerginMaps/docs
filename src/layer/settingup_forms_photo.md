@@ -64,3 +64,19 @@ Using the photo widget in <MobileAppName />, you will have two options:
 - **Add from gallery** to attach an existing photo from your device.
 
 ![photos](./input_forms_photo.png)
+
+## Displaying photos in QGIS
+Photos taken using <MobileAppName /> during the survey can be displayed in the feature's form in QGIS.
+
+1. In QGIS, double click on a survey layer to open **Layer Properties**
+2. In the **Attributes Form** tab, select the field that contains the path to the photo.
+
+   Scroll to the **Integrated Document Viewer** in the panel on the right. Set the **Type** to *Image*.
+   ![integrated doc viewer](./qgis-doc-viewer.png)
+
+3. **Apply** the changes and click **OK**.
+
+Now when you click on a feature that contains a photo, it will be displayed in the form.
+
+![form photo](./qgis-form-view-photo.png)
+
