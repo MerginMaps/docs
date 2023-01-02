@@ -18,12 +18,16 @@ Features and other data are still being downloaded and both Jim and Susan will s
 
 ## How to set up selective sync
 
-Selective sync can be set using <QGISPluginName />.
+Selective sync can be set using <QGISPluginName />. 
 
 1. Open your project in QGIS and go to **Project** > **Properties**
-2. In **Mergin Maps** tab check the **Enable selective sync for Input**
-3. Optionally, you can fill out **Only apply for folder**, if you want to use selective sync on a subfolder
-
+2. In **<MainPlatformName />** tab check the **Enable selective sync for Input**
+3. Optionally, you can fill out **Only apply for folder**, if you want to use selective sync on a subfolder.
+   
+   :::tip
+   Do you want to set up a folder like this? Go to [How to set up a custom folder for storing photos](../../layer/settingup_forms_photo/#how-to-set-up-a-custom-folder-for-storing-photos).
+   :::
+   
 ![selective sync plugin](./selective-sync-plugin.png)
 
 :::tip

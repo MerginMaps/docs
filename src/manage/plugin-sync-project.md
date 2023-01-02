@@ -32,20 +32,31 @@ To ensure you can use the latest improvements, don't forget to [upgrade the plug
 
 ## Local changes
 <Badge text="since plugin 2022.4" type="warning"/>
-The changes that you make in the project can be synchronised to the cloud and shared with your coworkers. 
+The changes that you make in the project can be synchronised to the cloud and shared with your coworkers. Now these changes can also be visualised which is helpful when reviewing local changes to see what was actually modified and also to avoid unwanted edits.
 
-It is possible to visualise local changes to see what's changed since the last synchronisation:
+:::tip
+Visit our blog [View and track changes in QGIS](https://www.lutraconsulting.co.uk/blog/2022/11/08/mergin-maps-local-changes/) to read more about local changes.
+:::
+
+To see local changes:
 1. Right-click on a layer and select **Show Local Changes** 
    ![local changes](./plugin-local-changes.png)
 
 2. **Changes Viewer** opens. The colour-coded changes are listed in the table and shown in the map. Inserts are green, edits orange and deletions red.
+
+   If you want to zoom to specific changes, select them in the table and use **Zoom to Selection**.
+   
    ![local changes](./plugin-changes-viewer.png)
 
 3. Changes can be added to the QGIS project as a new layer. Click **Add to project** and choose one of the options:
    ![add local changes](./plugin-changes-viewer-add.png)
-
+   
 4. A temporary layer will be added to the **Layers** panel with colour-coded symbology
    ![add local changes](./plugin-local-changes-added.png)
+   
+:::tip
+Unless you want to use these layers in your <MainPlatformName /> project, remove them from the project before synchronisation.
+:::
 
 ### Extract local changes (Processing toolbox)
 Local changes of a specific layer can also be extracted using the **Extract local changes** tool in the **Processing toolbox**.
@@ -84,6 +95,19 @@ All your changes will be uploaded to the server and any pending changes from the
 
 When the synchronisation process is completed, your local files and the copy of files on the server will be identical.
 
+## Create diff (Processing toolbox)
+**Create diff** is a tool that extracts changes made between two versions of a layer in your <MainPlatformName /> project to make it easier to revise changes.
+
+1. Navigate to **Mergin Maps** tools in the **Processing toolbox**
+   ![processing toolbox](./plugin-processing-toolbox.png)
+
+2. Double click the **Create diff** tool and fill in the parameters in the dialog window. Click **Run**.
+   ![create diff](./plugin-create-diff.png)
+
+3. The diff layer is added to the **Layers** panel. Changes are visualised on the map and also in the attribute table of the layer.
+   ![view changes](./plugin-create-diff-map.png)
+
+
 ## Create report (Processing toolbox)
 **Create report** tool provides an overview of changes in your <MainPlatformName /> project for a range of project versions. The output is a <NoSpellcheck id="CSV" /> file, which can be opened in QGIS and also in common text and spreadsheets programs.
 
@@ -99,16 +123,4 @@ When the synchronisation process is completed, your local files and the copy of 
 
 3. The report is added to the **Layers** panel.
    ![view changes](./plugin-report.png)
-
-## Create diff (Processing toolbox)
-**Create diff** is a tool that extracts changes made between two versions of a layer in your <MainPlatformName /> project to make it easier to revise changes.
-
-1. Navigate to **Mergin Maps** tools in the **Processing toolbox**
-   ![processing toolbox](./plugin-processing-toolbox.png)
-
-2. Double click the **Create diff** tool and fill in the parameters in the dialog window. Click **Run**.
-   ![create diff](./plugin-create-diff.png)
-
-3. The diff layer is added to the **Layers** panel. Changes are visualised on the map and also in the attribute table of the layer.
-   ![view changes](./plugin-create-diff-map.png)
 
