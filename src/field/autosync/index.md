@@ -4,15 +4,17 @@
 
 Changes in your project can be synchronised during the survey manually by using the sync button or automatically by allowing the automatic synchronisation in <MobileAppName />. 
 
+To be able to synchronise a project, you need to:
+- be signed in to your Mergin account
+- be connected to the internet
+- have write [permission](../../manage/permissions/) to the project
+
 The sync button is displayed in the map window.
 
 ![sync button](../input-autosync.png)
 
 :::tip
-To be able to synchronise a project, you need to:
-- be signed in to your Mergin account
-- be connected to the internet
-- have write [permission](../../manage/permissions/) to the project
+Are you missing some data after synchronisation? [How to Recover Missing Data](../../manage/missing-data/) will show you how to deal with [conflict files](../../manage/missing-data/#there-are-conflict-files-in-the-folder) and how to [manually download](../../manage/missing-data/#there-are-no-conflict-files-in-the-folder) data from your mobile device.
 :::
 
 ## Manual synchronisation
