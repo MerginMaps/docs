@@ -38,6 +38,7 @@ module.exports = {
                 '/manage/project/',
                 '/manage/create-project/',
                 '/manage/project-advanced',
+                '/manage/delete-files/',
                 '/manage/deploy-new-project/',
                 '/manage/missing-data/',
                 '/manage/plugin-multi-server-use/',

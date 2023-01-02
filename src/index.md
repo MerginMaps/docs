@@ -43,6 +43,7 @@ The ecosystem consist of various components:
 - [Mergin Maps Project](./manage/project/)
 - [How to Create a New Project](./manage/create-project/)
 - [How to Share, Transfer or Delete a Project](./manage/project-advanced/)
+- [How to Delete Files](./manage/delete-files)
 - [How to Deploy Revised Projects](./manage/deploy-new-project/)
 - [How to Recover Missing Data](./manage/missing-data/)
 - [How to Use QGIS Plugin with Multiple Servers](./manage/plugin-multi-server-use/)
