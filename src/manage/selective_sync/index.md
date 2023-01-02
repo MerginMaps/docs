@@ -4,6 +4,10 @@ Selective sync feature adds a possibility to not download specified files on oth
 
 Selective sync is useful mainly when a project contains a lot of data (for example photos) and these data do not necessarily need to be stored on all devices. Another advantage is a significant reduction of synchronisation time.
 
+:::tip
+If you want to use large files (e.g. background maps) in your <MainPlatformName /> project without synchronisation, see [How to work with very large files](../../gis/settingup_background_map/#how-to-work-with-very-large-files-android).
+:::
+
 See the example in the picture below. Two surveyors Jim and Susan are capturing features in the field. When it comes to synchronisation, Jim hits the [arrow icon](../plugin-sync-project/) to synchronise his changes. Features together with photos are now stored on the server. When Susan synchronises the project, synchronisation first downloads Jim's changes (including photos) and after that uploads Susan's changes to the server. However, selective sync can exclude photos from being downloaded.
 
 ![Example](./selective-sync.png)
