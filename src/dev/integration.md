@@ -31,9 +31,9 @@ client = mergin.MerginClient(login='john', password='topsecret')
 ```
 
 ### Python command line interface
-For those who prefer using terminal, there is `mergin` command line tool shipped with the Python client. With several built-in commands, it is possible to download Mergin projects, push/pull changes, create or delete projects and more.
+For those who prefer using terminal, there is `mergin` command line tool shipped with the Python client. With several built-in commands, it is possible to download <MainPlatformName /> projects, push/pull changes, create or delete projects and more.
 
-For example, to download a Mergin project to a local folder:
+For example, to download a <MainPlatformName /> project to a local folder:
 ```
 mergin download john/project1 ~/mergin/project1
 ```
@@ -67,6 +67,6 @@ Commands:
   remove         Remove project from server.
 ```
 
-### C++ Mergin API core library 
+### C++ Mergin Maps API core library 
 
-Client is based on the Qt-based <GitHubRepo id="MerginMaps/input/tree/master/core" desc="mergin api core library" /> used by the <MainDomainNameLink desc="Mergin Maps Input" /> to sync the projects in the mobile application.
+Client is based on the Qt-based <GitHubRepo id="MerginMaps/input/tree/master/core" desc="mergin maps api core library" /> used by the <MainDomainNameLink desc="Mergin Maps Input" /> to sync the projects in the mobile application.

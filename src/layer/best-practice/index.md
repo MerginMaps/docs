@@ -4,7 +4,7 @@
 Here are some best practice tips to make your work easier in the long run.
 
 ## Working with layers
-- **Always use GeoPackage for survey layers**. If you use other formats, such as ESRI shapefile, Mergin is not able to detect changes from other users and overwrites them. Overwritten files are stored in a conflict file.
+- **Always use GeoPackage for survey layers**. If you use other formats, such as ESRI shapefile, it is not possible to detect changes from other users and they may be overwritten. Overwritten files are stored in a conflict file.
 - **Add some extra back-up field attributes** when creating a survey layer with different types (e.g. a couple of texts, int, real, date/time) and hide them in the form design. These can serve as a backup: if you need extra fields later in the survey, just alias these extra fields and add them to form. 
 - If you do not need a field, **remove it from the form**. You don't need to delete it from the table.
 - **Instead of renaming a field, change its alias**.

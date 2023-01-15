@@ -89,8 +89,8 @@ The ecosystem consist of various components:
 
 ## For Developers
 - [Custom Mobile App](./dev/customapp/)
-- [Mergin Community Edition](./dev/mergince/)
-- [Integrate Mergin](./dev/integration/)
+- [Mergin Maps Community Edition](./dev/mergince/)
+- [Integrate Mergin Maps](./dev/integration/)
 - [PostgreSQL DB Sync](./dev/dbsync/)
 - [Media Sync](./dev/media-sync/)
 - [Work Packages](./dev/work-packages/)
