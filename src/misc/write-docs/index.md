@@ -341,7 +341,7 @@ Use `<YouTube />` component, e.g. `<YouTube id="DQXrINUqiFI" />` transforms to
 
 <YouTube id="DQXrINUqiFI" />
 
-### Reference Mergin project 
+### Reference Mergin Maps project 
 
 Use `<MerginMapsProject />` component, e.g. `<MerginMapsProject id="documentation/test_forms" />` transforms to
 

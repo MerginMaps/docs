@@ -1,14 +1,14 @@
 # Permissions
 
-There are several levels of permissions to control access to your projects in Mergin.
+There are several levels of permissions to control access to your projects in <MainPlatformName />.
 
 ## Public and private projects
 
-A private project is a project that only you and those who you choose to share the project with will have access to the files, history and settings. A public project is a project that everyone (including those who are not registered with Mergin) can view the data and project history. They cannot contribute to your public project unless you have shared the project with them with write access (see below for permissions)
+A private project is a project that only you and those who you choose to share the project with will have access to the files, history and settings. A public project is a project that everyone (including those who are not registered with <MainPlatformName />) can view the data and project history. They cannot contribute to your public project unless you have shared the project with them with write access (see below for permissions)
 
 ## Project permissions
 
-There are three levels of permissions when you share a project with other Mergin users:
+There are three levels of permissions when you share a project with other <MainPlatformName /> users:
 
 - **Read**: users will be able to view the project data and [history](./project-details.md)
 - **Write**: in addition to the **Read** access, users can edit data (adding/removing/updating files and features). This is the most appropriate permission level you should assign to those who you want to contribute to your projects
