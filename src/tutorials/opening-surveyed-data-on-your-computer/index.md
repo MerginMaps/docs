@@ -35,7 +35,7 @@ Now that your project is in the cloud, it can easily be shared with colleagues o
 1. Open QGIS on your computer
 2. [Install the <QGISPluginName />](../../setup/install-mergin-maps-plugin-for-qgis/index.md). 
    You will use your <MainPlatformName /> credentials to configure the <QGISPluginName />.
-3. Find the Mergin entry in the QGIS **Browser** panel:
+3. Find the <MainPlatformName /> entry in the QGIS **Browser** panel:
 
    ![](./qgis-browser-panel.jpg)
    
@@ -43,7 +43,7 @@ Now that your project is in the cloud, it can easily be shared with colleagues o
    If you cannot see the Browser panel in QGIS, ensure it's enabled under **View (top-level menu) > Toolbars**.
    :::
    
-4. Expand the Mergin entry and find your project under **My projects**
+4. Expand the <MainPlatformName /> entry and find your project under **My projects**
    ![](./qgis-find-project.jpg)
 
 5. Right-click on the project and select **Download**

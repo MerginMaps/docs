@@ -2,11 +2,11 @@
 
 [[toc]]
 
-## Mergin Service
+## Mergin Maps Service
 
-* <AppDomainNameLink desc="Mergin Maps Cloud" />, SaaS Mergin service,  has proprietary license held by Lutra Consulting Ltd.
-* Mergin EE (Enterprise Edition), on-premise Mergin service, has proprietary license held by Lutra Consulting Ltd.
-* <GitHubRepo id="MerginMaps/mergin" desc="Mergin CE (Community Edition)" />, on-premise Mergin service, is licensed under AGPL-3.0.
+* <AppDomainNameLink desc="Mergin Maps Cloud" />, SaaS <MainPlatformName /> service, has proprietary license held by Lutra Consulting Ltd.
+* <MainPlatformName /> EE (Enterprise Edition), on-premise <MainPlatformName /> service, has proprietary license held by Lutra Consulting Ltd.
+* <GitHubRepo id="MerginMaps/mergin" desc="Mergin Maps CE (Community Edition)" />, on-premise <MainPlatformName /> service, is licensed under AGPL-3.0.
 
 The application uses many open-source libraries, please see <GitHubRepo id="MerginMaps/mergin/blob/master/server/Pipfile" desc="this" /> and <GitHubRepo id="MerginMaps/mergin/blob/master/web-app/package.json" desc="this" /> list for versions and licenses of projects used.
 
@@ -22,8 +22,8 @@ The application uses many open-source libraries, please <GitHubRepo id="MerginMa
 
 ## Integrations
 
-* <GitHubRepo id="MerginMaps/mergin-py-client" desc="Mergin Python Client/Module" /> is licensed under MIT. 
-* <GitHubRepo id="MerginMaps/mergin-cpp-client" desc="Mergin C++ Client/Module" /> is licensed under MIT.  
-* <GitHubRepo id="MerginMaps/mergin-media-sync" desc="Mergin Media Synchronisation" /> is licensed under MIT. 
-* <GitHubRepo id="MerginMaps/mergin-work-packages" desc="Mergin Work Packages" /> are licensed under MIT. 
-* <GitHubRepo id="MerginMaps/mergin-db-sync" desc="Mergin Database Synchronisation" /> is licensed under MIT. 
+* <GitHubRepo id="MerginMaps/mergin-py-client" desc="Mergin Maps Python Client/Module" /> is licensed under MIT. 
+* <GitHubRepo id="MerginMaps/mergin-cpp-client" desc="Mergin Maps C++ Client/Module" /> is licensed under MIT.  
+* <GitHubRepo id="MerginMaps/mergin-media-sync" desc="Mergin Maps Media Synchronisation" /> is licensed under MIT. 
+* <GitHubRepo id="MerginMaps/mergin-work-packages" desc="Mergin Maps Work Packages" /> are licensed under MIT. 
+* <GitHubRepo id="MerginMaps/mergin-db-sync" desc="Mergin Maps Database Synchronisation" /> is licensed under MIT. 

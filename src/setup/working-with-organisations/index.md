@@ -2,7 +2,7 @@
 
 In <MainPlatformName />, **Organisations** can be used for easier management of users and projects within your team.
 
-Just like ordinary user accounts, organisations can own and manage Mergin projects. All projects listed under an organisation use its  storage quota - rather than consuming storage quota of individual users that have created them.
+Just like ordinary user accounts, organisations can own and manage <MainPlatformName /> projects. All projects listed under an organisation use its  storage quota - rather than consuming storage quota of individual users that have created them.
 
 Another advantage of organisations is that other users can be invited and they will get access to organisation's projects - it is not necessary to grant or revoke permissions of a single user manually for each project.
 
@@ -45,4 +45,4 @@ To invite <MainPlatformName /> users to your new organisation:
 
 After the users accept the invitation, they should appear as members. Note that the invitation will expire after a certain number of days. If the user does not accept the invitation within this period, you will need to resend a new invitation.
 
-By default, the new members will be assigned **Read** access to all projects within the organisation. You can change the permission level here or at the project level. See [permissions in Mergin](../../manage/permissions.md) for more details.
+By default, the new members will be assigned **Read** access to all projects within the organisation. You can change the permission level here or at the project level. See [permissions](../../manage/permissions.md) for more details.
