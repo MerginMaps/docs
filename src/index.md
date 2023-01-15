@@ -38,6 +38,7 @@ The ecosystem consist of various components:
 - [Subscriptions and Invoicing](./setup/subscriptions/)
 
 ## Manage Account & Project
+- [Workspaces](./manage/workspaces/)
 - [Permissions](./manage/permissions/)
 - [Behind Data Synchronisation](./manage/synchronisation/)
 - [Mergin Maps Project](./manage/project/)

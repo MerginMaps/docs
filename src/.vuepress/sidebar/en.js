@@ -33,6 +33,7 @@ module.exports = {
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
+                '/manage/workspaces/',
                 '/manage/permissions',
                 '/manage/synchronisation',
                 '/manage/project/',

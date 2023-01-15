@@ -1,14 +1,14 @@
 # Subscriptions and Invoicing
 [[toc]]
 
-Mergin Maps Service offers a free plan for up to 100 MB data usage. Free plan can be used to host projects for commercial use only **for the first month**. Non-commercial use is considered for personal (hobby) use, or in academia (teachers, students).
+For details about different subscription plans visit the <MainDomainNameLink id="pricing" desc="pricing"/> page.
 
-We offer discounts for non-profit or charity organisations, please <MerginMapsEmail id="sales" desc="contact us" />.
 
-For more storage you can choose one of the two plans for users ("Individual" 1GB or "Professional" 10GB storage) or a plan for an organisation ("Team" 50GB storage).
+Mergin Maps Service offers a free plan for up to 100 MB data usage for academic or personal (hobby) use. The free plan can be used for commercial use only during the **28 day trial**. 
 
-For the details visit the <MainDomainNameLink id="pricing" desc="pricing"/> page.
+We offer discounts for non-profit or charity organisations. Please <MerginMapsEmail id="sales" desc="contact us" /> to learn more.
 
+If you need more storage, you can choose one of the paid plans: Individual (1 GB), Professional (10 GB) or Team (50 GB). These plans come with extra features and support.
 
 ![org profile](./subscriptions.png)
 

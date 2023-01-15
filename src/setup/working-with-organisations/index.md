@@ -1,4 +1,9 @@
 # Working with Organisations
+<Badge text="deprecated" type="error"/>
+
+:::danger
+Organisations were replaced by [**Workspaces**](../../manage/workspaces/).
+:::
 
 In <MainPlatformName />, **Organisations** can be used for easier management of users and projects within your team.
 
