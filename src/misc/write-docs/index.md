@@ -367,6 +367,8 @@ Use `<MainDomainNameLink />` component, transforms to <MainDomainNameLink />
 
 Use `<MainPlatformName />` component, transforms to <MainPlatformName />
 
+Use `<MainPlatformNameNoLink />` component, transforms to <MainPlatformNameNoLink />
+
 Use `<MobileAppName />` component, transforms to <MobileAppName />
 
 Use `<QGISPluginName />` component, transforms to <QGISPluginName />
