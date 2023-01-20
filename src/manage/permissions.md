@@ -14,7 +14,7 @@ There are three levels of permissions when you share a project with other <MainP
 - **Write**: in addition to the **Read** access, users can edit data (adding/removing/updating files and features). This is the most appropriate permission level you should assign to those who you want to contribute to your projects
 - **Owner**: in addition to the **Write** access, users with this level of access can delete the project or transfer it to another user or organisation
 
-## Organisation permissions
+## Workspace permissions
 
 Similar to project permissions, you can assign permissions to the members of your organisation. By default, all members will be assigned **Read** access. You can change their global permissions under [members' settings](../setup/working-with-organisations/index.md) or the project level (see above section).
 
