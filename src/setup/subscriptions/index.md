@@ -8,12 +8,12 @@ For details about different subscription plans visit the <MainDomainNameLink id=
 :::
 
 There are four <MainPlatformName /> subscription plans you can choose from depending on the storage size, support level and other features that you need for your work:
-/ Free plan for academic or personal (hobby) use
+- Free plan for academic or personal (hobby) use
 - Individual plan
 - Professional plan
 - Team plan
 
-We also offer a **free plan** for up to 100 MB data usage for academic or personal (hobby) use. The free plan can be used for commercial use only during the **28 day trial**. 
+The free plan can be used for commercial use only during the **28 day trial**. 
 
 It is possible to get a discount if you are a non-profit or charity organisation. Please <MerginMapsEmail id="sales" desc="contact us" /> to find out more.
 
