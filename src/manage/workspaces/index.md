@@ -33,7 +33,7 @@ Click on the account to see the list of all workspaces that are available to you
    ![create workspace](./web-create-workspace.png)
 4. Fill in the name and description of your new workspace
    ![new workspace](./web-new-workspace.png)
-5. Now you have a new workspace! Now you can [create projects](../create-project/) in the workspace and [invite](../permissions/#how-to-add-users-and-manage-workspace-permissions) other users to contribute.
+5. Now you have a new workspace! Now you can [create projects](../create-project/) in the workspace and [invite other users](../project-advanced/#add-users-to-a-workspace) to contribute.
    ![new workspace](./web-new-workspace-created.png)
 
 Currently, it is possible to have up to 3 workspaces. Note that every workspace has its own subscription. When created, the workspace has automatically a free subscription. If you want to use it commercially or need more storage, you will have to [switch to a paid subscription](../../setup/subscriptions/#changing-a-subscription-from-web). 
