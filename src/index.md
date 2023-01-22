@@ -14,8 +14,8 @@ home: false
 
 The ecosystem consist of various components:
  - [QGIS](https://qgis.org/) > Powerful GIS Desktop application 
- - [<QGISPluginName />](https://plugins.qgis.org/plugins/Mergin/) > QGIS plugin
- - <MainDomainNameLink desc="Mergin Maps Cloud" /> > SaaS Cloud Service (available also as Mergin CE)
+ - [<QGISPluginName />](https://plugins.qgis.org/plugins/Mergin/) > <QGISPluginName />
+ - <AppDomainNameLink desc="Mergin Maps Cloud" /> > SaaS Cloud Service (available also as <MainPlatformName /> CE)
  - <MainDomainNameLink desc="Mergin Maps Input" /> > iOS and Android mobile app
  
 ## Get started 
@@ -42,7 +42,7 @@ The ecosystem consist of various components:
 - [Behind Data Synchronisation](./manage/synchronisation/)
 - [Mergin Maps Project](./manage/project/)
 - [How to Create a New Project](./manage/create-project/)
-- [How to Share, Transfer or Delete a Project](./manage/project-advanced/)
+- [How to Share, Transfer or Delete Projects](./manage/project-advanced/)
 - [How to Delete Files](./manage/delete-files)
 - [How to Deploy Revised Projects](./manage/deploy-new-project/)
 - [How to Recover Missing Data](./manage/missing-data/)
