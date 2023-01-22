@@ -33,6 +33,6 @@ A **private project** is a project that only you and those who you choose to [sh
 A **public project** is a project that everyone (including those who are not registered with <MainPlatformName />) can see, including data and project history. Other users cannot contribute to your public project unless you give them writing permissions.
 
 :::tip
-You can [make your project public or private](./project-advanced/#making-your-project-public-private) in the project's settings.
+You can [make your project public or private](./project-advanced/#make-your-project-public-private) in the project's settings.
 :::
 

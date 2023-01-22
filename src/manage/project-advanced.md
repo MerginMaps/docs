@@ -2,7 +2,7 @@
 [[toc]]
 
 ## Share projects and manage user access
-You can share your <MainPlatformName /> project with others by inviting them to be [a member or a guest](./permissions/#workspace-members-and-guests) in your workspace. You can also make your <MainPlatformName /> project accessible to everyone by making it [public](#making-your-project-public-private).
+You can share your <MainPlatformName /> project with others by inviting them to be [a member or a guest](./permissions/#workspace-members-and-guests) in your workspace. You can also make your <MainPlatformName /> project accessible to everyone by making it [public](#make-your-project-public-private).
 
   
 :::warning

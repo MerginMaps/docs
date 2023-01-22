@@ -18,7 +18,7 @@ Typically, especially if your project is rather complex, you would:
 1. Create a QGIS project with all necessary datasets and settings to fit your needs
 2. Package it using <QGISPluginName /> to create a <MainPlatformName /> project that is saved to the cloud
 3. Check that everything works as expected in the mobile app. If not, fix the issues in QGIS. Don't forget to save and sync the project. Repeat this step as necessary.
-4. [Share the project](../project-advanced/#share-a-project) with your team members. Now you can collaborate safely and effectively.
+4. [Share the project](../project-advanced/) with your team members. Now you can collaborate safely and effectively.
 
 :::tip
 [QGIS Project Preparation](../../gis/features/) will guide you the project preparation steps. We also recommend following our [Best Practice Tips for Layers and Forms](../../layer/best-practice/).

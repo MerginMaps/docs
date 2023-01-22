@@ -43,7 +43,7 @@ Click on a project to download it, [clone it](./create-project/#clone-an-existin
    ![map](./mergin-map.png)
    
 - **HISTORY** contains all [project versions](./project-details/). Here you can see what was changed by which user and download a previous version of the project to your computer.
-- in **SETTINGS** you can manage access to your project, e.g. if you want to [share it](./project-advanced/#share-a-project)
+- in **SETTINGS** you can manage access to your project, e.g. if you want to [share it](./project-advanced/)
 
 
 ## Subscription
