@@ -95,7 +95,7 @@ If you want to delete the feature, tap on it and press the edit button. Here you
 ![Edit and delete](./input-delete.png)
 
 ## Synchronise changes
-Don't forget to upload your changes to <MainPlatformName />!
+Don't forget to upload your changes to <MainPlatformNameLink />!
 
 Synchronisation in <MobileAppName /> can be done automatically or manually by pressing the sync button. For more details visit [Synchronisation in Input](./autosync/).
 

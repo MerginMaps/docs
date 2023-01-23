@@ -1,6 +1,6 @@
 # Selective Synchronisation
 
-Selective sync feature adds a possibility to not download specified files on other devices in the synchronisation process. These files are only stored on the creator's device and server and can be accessed on <MainPlatformName /> web or QGIS desktop. Other collaborators on different devices will not receive these files during synchronisation.
+Selective sync feature adds a possibility to not download specified files on other devices in the synchronisation process. These files are only stored on the creator's device and server and can be accessed on <MainPlatformNameLink /> web or QGIS desktop. Other collaborators on different devices will not receive these files during synchronisation.
 
 Selective sync is useful mainly when a project contains a lot of data (for example photos) and these data do not necessarily need to be stored on all devices. Another advantage is a significant reduction of synchronisation time.
 

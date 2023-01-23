@@ -2,7 +2,7 @@
 
 [[toc]]
 
-In earlier tutorials you created a new survey project from within <MobileAppName />. That was a very fast (albeit limited) way of creating a <MainPlatformName /> project.
+In earlier tutorials you created a new survey project from within <MobileAppName />. That was a very fast (albeit limited) way of creating a <MainPlatformNameLink /> project.
 
 In this tutorial you will create a new project for surveying trees and hedges using QGIS.  
 
@@ -134,9 +134,9 @@ In the next tutorial we will see how this project looks on <MobileAppName />. We
    In a few moments your changes are safely stored in the cloud:
    ![synced](./qgis-project-synced.jpg)
 
-Synchronising changes between users and devices is a core principle of <MainPlatformName />. When you sync a project, changes that have been made by other users and devices since you last synced are fetched and any changes you've made are pushed.
+Synchronising changes between users and devices is a core principle of <MainPlatformNameLink />. When you sync a project, changes that have been made by other users and devices since you last synced are fetched and any changes you've made are pushed.
 
 Changes are merged safely and easily from different users, even when they edit the same feature. 
 
-<MainPlatformName /> tracks project version history so you can download a previous version of a project if you need to.
+<MainPlatformNameLink /> tracks project version history so you can download a previous version of a project if you need to.
 

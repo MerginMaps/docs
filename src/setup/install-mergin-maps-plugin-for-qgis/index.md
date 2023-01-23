@@ -21,7 +21,7 @@ Before the <QGISPluginName /> installation, please ensure you have already:
    :::
 
 ## Plugin configuration
-With the plugin installed, we'll now configure it with your <MainPlatformName /> credentials.
+With the plugin installed, we'll now configure it with your <MainPlatformNameLink /> credentials.
 
 1. Click the **Configure <MainPlatformNameNoLink /> Plugin** icon on the **<MainPlatformNameNoLink /> Toolbar**:
    ![](./qgis-configure-mergin-plugin.jpg)

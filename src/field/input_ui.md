@@ -12,7 +12,7 @@ There are four tabs available in the bottom navigation panel: [Projects](#projec
 ## Projects
 **Projects** tab is where you can create a new project, upload it to the cloud, synchronise changes, or remove a local project from your device.
 - **Home**: a list of all downloaded projects on your device. Only downloaded projects can be opened in the app.
-- **My projects**: projects created by you and hosted on the <MainPlatformName /> service
+- **My projects**: projects created by you and hosted on the <MainPlatformNameLink /> service
 - **Shared with me**: projects on the <MainPlatformName /> service shared with you by other users
 - **Explore**: a full list of public projects by others on the <MainPlatformName /> service
 

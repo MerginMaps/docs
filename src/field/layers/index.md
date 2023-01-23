@@ -2,7 +2,7 @@
 <Badge text="since Input 1.9.0" type="tip"/>
 [[toc]]
 
-**Layers** panel provides an overview of layers and features in your <MainPlatformName /> project in <MobileAppName />, as well as the option to turn the visibility of specific layers on/off or to see a layer's legend.
+**Layers** panel provides an overview of layers and features in your <MainPlatformNameLink /> project in <MobileAppName />, as well as the option to turn the visibility of specific layers on/off or to see a layer's legend.
 
 ![input layers](./input-layers.png)
 

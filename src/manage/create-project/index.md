@@ -3,7 +3,7 @@
 
 There are several methods of creating a new <MainPlatformName /> project:
 - [<MobileAppName /> ](./index.md#create-a-project-in-mergin-maps-input) offers the quickest (albeit limited) way of creating a <MainPlatformName /> project.
-- If you want to take full advantage of <MainPlatformName />, use [QGIS](./index.md#create-a-project-in-qgis) to prepare new projects.
+- If you want to take full advantage of <MainPlatformNameLink />, use [QGIS](./index.md#create-a-project-in-qgis) to prepare new projects.
 - You can also use [merginmaps.com](./index.md#create-a-project-through-merginmaps-com), especially if your project files are already fully prepared and only need uploading.
 
 If you want to make a copy of your projects or the ones shared with you, you can clone them in [QGIS](./index.md#clone-an-existing-project-in-qgis) or [merginmaps.com](./index.md#clone-an-existing-project-through-merginmaps-com).
@@ -28,7 +28,7 @@ Your new project should now be visible on the **Home** tab of the **Projects** s
 
 ## Create a project in QGIS
 ::: tip
-[Creating a Project in QGIS](../../tutorials/creating-a-project-in-qgis/index.md) tutorial will show you how to create a new project in QGIS, add layers, configure attributes forms and save changes to <MainPlatformName />. 
+[Creating a Project in QGIS](../../tutorials/creating-a-project-in-qgis/index.md) tutorial will show you how to create a new project in QGIS, add layers, configure attributes forms and save changes to <MainPlatformNameLink />. 
 :::
 
 To work with <MainPlatformName /> projects in QGIS, you will need to [install the <QGISPluginName />](../../setup/install-mergin-maps-plugin-for-qgis/index.md) first.
@@ -53,7 +53,7 @@ To work with <MainPlatformName /> projects in QGIS, you will need to [install th
    Your project should be saved on a local drive. Using shared network drives and cloud storage (such as OneDrive or Google Drive) is **not supported**.
    :::
 
-The new <MainPlatformName /> project will be created locally on your computer and also on the <MainPlatformName /> server. 
+The new <MainPlatformName /> project will be created locally on your computer and also on the <MainPlatformNameLink /> server. 
 
 ### Clone an existing project in QGIS
 Using <QGISPluginName />, you can make a copy of one of your existing projects or the ones shared with you. 

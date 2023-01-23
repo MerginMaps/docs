@@ -3,7 +3,7 @@
 
 ## Share a project
 
-Through <AppDomainNameLink />, you can share your project with other <MainPlatformName /> users. You can add your coworkers manually or send them a link and manage their permissions in your private project. You can also make your project accessible to everyone by making it public.
+Through <AppDomainNameLink />, you can share your project with other <MainPlatformNameLink /> users. You can add your coworkers manually or send them a link and manage their permissions in your private project. You can also make your project accessible to everyone by making it public.
 
 ::: tip
 You can follow our [Working collaboratively](../tutorials/working-collaboratively/) tutorial to see detailed instructions on how to share your project.

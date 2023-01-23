@@ -34,7 +34,7 @@ Now that your project is in the cloud, it can easily be shared with colleagues o
 ## Locating and opening your project
 1. Open QGIS on your computer
 2. [Install the <QGISPluginName />](../../setup/install-mergin-maps-plugin-for-qgis/index.md). 
-   You will use your <MainPlatformName /> credentials to configure the <QGISPluginName />.
+   You will use your <MainPlatformNameLink /> credentials to configure the <QGISPluginName />.
 3. Find the <MainPlatformName /> entry in the QGIS **Browser** panel:
 
    ![](./qgis-browser-panel.jpg)

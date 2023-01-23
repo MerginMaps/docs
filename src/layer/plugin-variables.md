@@ -4,7 +4,7 @@ The plugin adds several variables that can be used in QGIS expressions:
 
 | Variable name               | Sample value                     | Scope   | Description |
 |-----------------------------|----------------------------------|---------|-------------|
-| `@mergin_username`          | `martin`                         | global  | Name of the user currently logged in to <MainPlatformName /> |
+| `@mergin_username`          | `martin`                         | global  | Name of the user currently logged in to <MainPlatformNameLink /> |
 | `@mergin_url`               | `https://app.merginmaps.com` | global  | URL of the <MainPlatformName /> service |
 | `@mergin_project_name`      | `Tree survey`                    | project | Name of the active <MainPlatformName /> project  |
 | `@mergin_project_owner`     | `martin`                         | project | Name of the owner of the active project |

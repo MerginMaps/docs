@@ -367,7 +367,7 @@ Use `<MainDomainNameLink />` component, transforms to <MainDomainNameLink />
 
 Use `<MainPlatformName />` component, transforms to <MainPlatformName />
 
-Use `<MainPlatformNameNoLink />` component, transforms to <MainPlatformNameNoLink />
+Use `<MainPlatformNameLink />` component, transforms to <MainPlatformNameLink />
 
 Use `<MobileAppName />` component, transforms to <MobileAppName />
 

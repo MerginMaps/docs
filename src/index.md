@@ -5,9 +5,9 @@ home: false
 
 # Mergin Maps Documentation
 
-- Store and track changes to your geo-data with <MainPlatformName /> :cd:
+- Store and track changes to your geo-data with <MainPlatformNameLink /> :cd:
 - Capture geo-info easily through your mobile or tablet with <MobileAppName /> :iphone:
-- Setup and analyse the project on desktop with QGIS :computer:
+- Setup and analyse the project on desktop with [QGIS](https://qgis.org/) :computer:
 - All open-source and easily integrated to your existing toolset :bulb:
 
 <CommunityJoin />
@@ -15,7 +15,7 @@ home: false
 The ecosystem consist of various components:
  - [QGIS](https://qgis.org/) > Powerful GIS Desktop application 
  - [<QGISPluginName />](https://plugins.qgis.org/plugins/Mergin/) > QGIS plugin
- - <MainDomainNameLink desc="Mergin Maps Cloud" /> > SaaS Cloud Service (available also as Mergin CE)
+ - <MainDomainNameLink desc="Mergin Maps Cloud" /> > SaaS Cloud Service (available also as <MainPlatformName /> CE)
  - <MainDomainNameLink desc="Mergin Maps Input" /> > iOS and Android mobile app
  
 ## Get started 

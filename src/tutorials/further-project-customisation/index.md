@@ -1,6 +1,6 @@
 # Further Project Customisation
 
-In this tutorial you will learn how to customise your <MainPlatformName /> project further, making it even more useful. The topics covered here are:
+In this tutorial you will learn how to customise your <MainPlatformNameLink /> project further, making it even more useful. The topics covered here are:
 
 [[toc]]
 
