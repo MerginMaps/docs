@@ -1,8 +1,8 @@
 # How to Install QGIS Plugin
 [[toc]]
 
-Before the Mergin Maps plugin installation, please ensure you have already:
-* [Signed up to <MainPlatformName />](../sign-up-to-mergin-maps/)
+Before the <QGISPluginName /> installation, please ensure you have already:
+* [Signed up to <MainPlatformNameNoLink />](../sign-up-to-mergin-maps/)
 * [Installed QGIS](../install-qgis/)
 
 ## Plugin installation
@@ -13,17 +13,17 @@ Before the Mergin Maps plugin installation, please ensure you have already:
 3. Find the **Mergin Maps** plugin and click **Install Plugin**:
    ![](./find-and-install-mergin.jpg)
 
-4. Close the Plugins dialog. The Mergin Maps plugin toolbar should appear in QGIS:
+4. Close the Plugins dialog. The <MainPlatformNameNoLink /> plugin toolbar should appear in QGIS:
    ![](./mergin-toolbar.jpg)
    
    ::: tip
-   If you cannot see the toolbar, ensure **Mergin Maps Toolbar** is checked under **View > Toolbars**.
+   If you cannot see the toolbar, ensure **<MainPlatformNameNoLink /> Toolbar** is checked under **View > Toolbars**.
    :::
 
 ## Plugin configuration
-With the plugin installed, we'll now configure it with your <MainPlatformName /> credentials.
+With the plugin installed, we'll now configure it with your <MainPlatformNameLink /> credentials.
 
-1. Click the **Configure Mergin Maps Plugin** icon on the **Mergin Maps Toolbar**:
+1. Click the **Configure <MainPlatformNameNoLink /> Plugin** icon on the **<MainPlatformNameNoLink /> Toolbar**:
    ![](./qgis-configure-mergin-plugin.jpg)
 
 2. Enter your login credentials if these are blank
@@ -41,5 +41,5 @@ Upgrade the plugin periodically to ensure you can use the latest improvements.
 1. In QGIS, navigate to **Manage and Install Plugins...** in the **Plugins** tab
    ![](./qgis-plugins-manage-and-install.jpg)
    
-2. Find the **Mergin Maps** plugin. If there is a new version available, click **Upgrade Plugin**.
+2. Find the **<MainPlatformNameNoLink />** plugin. If there is a new version available, click **Upgrade Plugin**.
    ![upgrade plugin](./plugin-upgrade.png)

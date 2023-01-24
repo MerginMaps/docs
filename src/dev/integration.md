@@ -1,10 +1,10 @@
 # Integrate Mergin Maps
 [[toc]]
 
-<MainPlatformName /> is an open platform that aims to be developer friendly and it has been designed to allow easy integration with other software.
+<MainPlatformNameLink /> is an open platform that aims to be developer friendly and it has been designed to allow easy integration with other software.
 
 ## Python client module
-The Python client module is the easiest way to programmatically use <MainPlatformName />. You can use Python API or a command-line tool to easily work with <MainPlatformName /> projects, such as to get project status, push and pull changes, or to download, create and delete projects.
+The Python client module is the easiest way to programmatically use <MainPlatformNameLink />. You can use Python API or a command-line tool to easily work with <MainPlatformName /> projects, such as to get project status, push and pull changes, or to download, create and delete projects.
 
 The <GitHubRepo id="MerginMaps/mergin-py-client" /> repository contains the source code of the Python client module and more information on how to use it.
 
@@ -15,7 +15,7 @@ pip3 install mergin-client
 ```
 
 ### Python module 
-To use <MainPlatformName /> from Python, just create `MerginClient` object and then use it. Here, for instance, to download a project:
+To use <MainPlatformNameLink /> from Python, just create `MerginClient` object and then use it. Here, for instance, to download a project:
 
 ```python
 import mergin

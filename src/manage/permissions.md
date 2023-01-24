@@ -1,10 +1,10 @@
 # Permissions
 
-There are several levels of permissions to control access to your projects in <MainPlatformName />.
+There are several levels of permissions to control access to your projects in <MainPlatformNameLink />.
 
 ## Public and private projects
 
-A private project is a project that only you and those who you choose to share the project with will have access to the files, history and settings. A public project is a project that everyone (including those who are not registered with <MainPlatformName />) can view the data and project history. They cannot contribute to your public project unless you have shared the project with them with write access (see below for permissions)
+A private project is a project that only you and those who you choose to share the project with will have access to the files, history and settings. A public project is a project that everyone (including those who are not registered with <MainPlatformNameLink />) can view the data and project history. They cannot contribute to your public project unless you have shared the project with them with write access (see below for permissions)
 
 ## Project permissions
 

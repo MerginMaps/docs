@@ -6,7 +6,7 @@ In the last tutorial we created a new <MainPlatformName /> project in QGIS with 
 * Open the QGIS project in <MobileAppName />
 * Set GPS accuracy thresholds
 * Switch between layers to capture new point and linear features
-* Sync and save your data in <MainPlatformName /> cloud
+* Sync and save your data in <MainPlatformNameLink /> cloud
 
 :::tip
 Need help navigating <MobileAppName />? [<MobileAppName /> Interface](../../field/input_ui/) contains the overview of the functionality of the app's buttons and features.
@@ -121,7 +121,7 @@ When I surveyed my hedge, it was quite difficult to distinguish from the backgro
 We will learn how to change layer styles in the [next tutorial](../further-project-customisation/).
 
 ## Saving data to the cloud
-To conclude this tutorial we will push the data we just collected back to <MainPlatformName />.
+To conclude this tutorial we will push the data we just collected back to <MainPlatformNameLink />.
 1. Open the **Home** tab of the **Projects** page
 2. Press the sync button:
    ![](./merginmaps-mobile-sync-project.jpg)

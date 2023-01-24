@@ -1,9 +1,9 @@
 # How to Sign Up to Mergin Maps
 [[toc]]
 
-To start using the Mergin Maps service, you need to sign up. You can sign up either through <MainDomainNameLink /> or from your mobile device using the <MobileAppName />.
+To start using the <MainPlatformNameLink /> service, you need to sign up. You can sign up either through <MainDomainNameLink /> or from your mobile device using the <MobileAppName />.
 
-When you register with the Mergin Maps service, you will be automatically signed up as a free tier user with 100 MB of storage. To upgrade your account, see our <MainDomainNameLink id="pricing" desc="Subscription plans" />.
+When you register with <MainPlatformNameLink />, you will be automatically signed up as a free tier user with 100 MB of storage. To upgrade your account, see our <MainDomainNameLink id="pricing" desc="Subscription plans" />.
 
 ::: tip
 One can view and download public projects even without an account, but creation of projects and synchronisation of geo-data only works when you are logged in.
@@ -15,14 +15,14 @@ One can view and download public projects even without an account, but creation 
 2. Click on **Start for free**
    ![mergin maps register](./mergin-web-register.jpg)
 
-3. Create your account by filling up the form. Once you press **Sign up**, you will receive a confirmation email. To sign in and use the Mergin Maps service, you will need to activate your account by clicking on the link in the email.
+3. Create your account by filling up the form. Once you press **Sign up**, you will receive a confirmation email. To sign in and use  <MainPlatformName />, you will need to activate your account by clicking on the link in the email.
    ![sign up](./mergin-web-sign-up.png)
 
 ::: warning
 Check your spam folder if the confirmation email does not appear in your inbox after 5 minutes.
 :::
 
-**Welcome to <MainPlatformName />!**
+**Welcome to <MainPlatformNameLink />!**
 
 You can get up-to-speed quickly by following our [Quick Start tutorials](../../tutorials/capturing-first-data/index.md).
 
@@ -48,7 +48,7 @@ You can also sign up from <MobileAppName />.
 Check your spam folder if the confirmation email does not appear in your inbox after 5 minutes.
 :::
 
-**Welcome to <MainPlatformName />!**
+**Welcome to <MainPlatformNameLink />!**
 
 You can get up-to-speed quickly by following our [Quick Start tutorials](../../tutorials/capturing-first-data/index.md).
 

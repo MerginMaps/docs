@@ -5,7 +5,7 @@ What is a <MainPlatformName /> project?
 
 It is basically a folder that contains data (such as vector layers, tables, rasters or photos), a [QGIS project](../../gis/features/), and some extra <MainPlatformName /> files needed to ensure everything works.
 
-When <MainPlatformName /> project is created, it is saved to <MainPlatformName /> cloud. From the cloud, it can be downloaded to various devices, used by different team members in both QGIS and <MobileAppName />. Changes they made are tracked and synchronised back to the cloud.
+When <MainPlatformName /> project is created, it is saved to <MainPlatformNameLink /> cloud. From the cloud, it can be downloaded to various devices, used by different team members in both QGIS and <MobileAppName />. Changes they made are tracked and synchronised back to the cloud.
 
 ## Creating project
 :::tip
@@ -37,7 +37,7 @@ There are three options for handling layers:
    
    ![](../create-project/mergin_plugin_project_wizard_3.png) 
 
-After the layers for the new project are selected, you just need to enter the project's name and choose where to save it on your computer. It will also be saved on the <MainPlatformName /> server.
+After the layers for the new project are selected, you just need to enter the project's name and choose where to save it on your computer. It will also be saved on the <MainPlatformNameLink /> server.
    ![](../create-project/mergin_plugin_project_wizard_4.png)
 
 ### Mergin Maps project folder

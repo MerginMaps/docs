@@ -1,11 +1,11 @@
 # Mergin Maps Plugin for QGIS Overview
 [[toc]]
 
-<QGISPluginName /> allows you to work with your Mergin Maps projects in QGIS, whether it's downloading the project to your computer, making changes in the project, seeing the project's status or synchronising changes to the cloud. 
+Our <QGISPluginName /> allows you to work with your <MainPlatformNameLink /> projects in QGIS, whether it's downloading the project to your computer, making changes in the project, seeing the project's status or synchronising changes to the cloud. 
 
 To get started, you will need to [install and configure the plugin](../setup/install-mergin-maps-plugin-for-qgis/index.md).
 
-Once you have configured the plugin with your Mergin Maps credentials, you should be able to see the following sections under the Mergin Maps in your QGIS Browser panel:
+Once you have configured the plugin with your <MainPlatformNameLink /> credentials, you should be able to see the following sections under the **<MainPlatformName />** in your QGIS Browser panel:
 - **My projects** lists all projects you have created
 - **Shared with me** lists the projects that are shared with you (including your organisation projects)
 - **Explore** lists all the public projects

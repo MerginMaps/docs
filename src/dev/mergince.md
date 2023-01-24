@@ -1,6 +1,6 @@
 # Mergin Maps Community Edition
 
-The <MainDomainNameLink /> is a web platform for storage and synchronisation of data between mobile devices, <MainPlatformName /> service and QGIS Desktop.
+<MainPlatformNameLink /> is a web platform for storage and synchronisation of data between mobile devices, <MainPlatformNameLink /> service and QGIS Desktop.
 
 The good news is that <MainPlatformName /> Community Edition (<MainPlatformName /> CE) is licensed as open source software and therefore it is possible to do your custom deployments.
 
