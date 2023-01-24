@@ -2,7 +2,7 @@
 
 [[toc]]
 
-<MainPlatformName /> makes working collaboratively safe and easy.
+<MainPlatformNameLink /> makes working collaboratively safe and easy.
 
 In this tutorial you'll learn a few different ways of sharing your project with your colleagues.
 
@@ -11,7 +11,7 @@ In this tutorial you'll learn a few different ways of sharing your project with 
 1. Navigate to <MainDomainNameLink />.
 2. Click on **Go to my account** to sign in.
 
-   If you are new to <MainPlatformName />, click on **Start for free** and [sign up to <MainPlatformName />](../../setup/sign-up-to-mergin-maps/).
+   If you are new to <MainPlatformNameLink />, click on **Start for free** and [sign up to <MainPlatformName />](../../setup/sign-up-to-mergin-maps/).
 
    ![mergin maps register](./mergin-web-sign-in.jpg)
 
@@ -45,7 +45,7 @@ Jill should now have access to the project. This means they will be able to find
 ## Share a project with many users
 If you wish to share a project with more than a handful of users, this method may save you some time.
 
-These steps should be carried out from the <MainPlatformName /> dashboard.
+These steps should be carried out from the <AppDomainNameLink desc="Mergin Maps" /> dashboard.
 
 1. Click **My projects** then click ***trees-and-hedges***
    ![my project](./mergin-web-my-projects-trees-and-hedges.jpg)

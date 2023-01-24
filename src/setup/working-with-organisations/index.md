@@ -5,7 +5,7 @@
 Organisations were replaced by [**Workspaces**](../../manage/workspaces/).
 :::
 
-In <MainPlatformName />, **Organisations** can be used for easier management of users and projects within your team.
+In <MainPlatformNameLink />, **Organisations** can be used for easier management of users and projects within your team.
 
 Just like ordinary user accounts, organisations can own and manage <MainPlatformName /> projects. All projects listed under an organisation use its  storage quota - rather than consuming storage quota of individual users that have created them.
 
@@ -40,7 +40,7 @@ Under profile you can:
 
 ## Inviting members
 
-To invite <MainPlatformName /> users to your new organisation:
+To invite <MainPlatformNameLink /> users to your new organisation:
 
 - From the left panel, under **Organisations** select your organisation to switch to your organisation profile
 - From the left panel, under **Settings** select **Members**

@@ -1,7 +1,7 @@
 # Background Maps
 [[toc]]
 
-When surveying in the field, it is essential to have appropriate background maps. There are several sources of online and offline background maps you can use in your QGIS project. Note that you need to comply with the terms of use of the background maps and their data sources. This page simply explains how to add the data to your QGIS maps and use it in <MobileAppName />. It is the sole responsibility of the end user to comply with such terms and conditions.
+When surveying in the field, it is essential to have appropriate background maps. There are several sources of online and offline background maps you can use in your QGIS project. Note that you need to comply with the terms of use of the background maps and their data sources. This page simply explains how to add the data to your QGIS maps and use it in <MainPlatformNameLink />. It is the sole responsibility of the end user to comply with such terms and conditions.
 
 The following sections will cover two types of background maps for online and offline use in <MobileAppName />: raster and vector tiles.
 
@@ -110,7 +110,7 @@ Note that instructions below require familiarity with the terminal. In addition,
 ## How to work with very large files (Android)
 <Badge text="Android only" type="warning"/>
 
-Raster and vector tiles generated for offline use can be relatively large files, especially when using high resolution data or a large area of interest. It may be impractical to synchronise these large files through <MainPlatformName /> or to have duplicate copies if they are used in multiple projects.
+Raster and vector tiles generated for offline use can be relatively large files, especially when using high resolution data or a large area of interest. It may be impractical to synchronise these large files through <MainPlatformNameLink /> or to have duplicate copies if they are used in multiple projects.
 
 :::tip
 If you do not need to use your background maps offline, consider creating a WMS or WMTS server for online use.
@@ -133,5 +133,5 @@ Files from the folder can be loaded into multiple <MainPlatformName /> projects.
 :::
 
 :::warning
-Files located in the another folder are not synchronised. This saves your storage on <MainPlatformName /> cloud. However, if you want to update or modify these files, you have to connect the mobile device to your computer and do it manually.
+Files located in the another folder are not synchronised. This saves your storage on <MainPlatformNameLink /> cloud. However, if you want to update or modify these files, you have to connect the mobile device to your computer and do it manually.
 :::

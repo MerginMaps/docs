@@ -5,7 +5,7 @@
 Changes in your project can be synchronised during the survey manually by using the sync button or automatically by allowing the automatic synchronisation in <MobileAppName />. 
 
 To be able to synchronise a project, you need to:
-- be signed in to your <MainPlatformName /> account
+- be signed in to your <MainPlatformNameLink /> account
 - be connected to the internet
 - have write [permission](../../manage/permissions/) to the project
 

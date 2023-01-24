@@ -2,7 +2,7 @@
 
 How to contribute to the project? 
 
-We are happy to help to promote work or co-author and place on our websites or give special offer for Mergin Maps Cloud for project contributors.
+We are happy to help to promote work or co-author and place on our websites or give special offer for <MainPlatformNameLink /> Cloud for project contributors.
 
 <CommunityJoin />
 
@@ -14,7 +14,7 @@ Write a review of the application on App Store or Android Google Play
 
 ## Translate
 
-To help with translations, join [Mergin Maps Transifex team](https://www.transifex.com/lutra-consulting/mergin-maps-input/)
+To help with translations, join [<MainPlatformName /> Transifex team](https://www.transifex.com/lutra-consulting/mergin-maps-input/)
 
 ## Write or talk about us 
  
