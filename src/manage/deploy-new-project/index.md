@@ -22,10 +22,6 @@ One way how to make sure the modified project is distributed correctly is to cre
 5. Push the revised project to <MainPlatformNameLink /> as a **new project**
 6. Ask your team members to **use the new project** 
 
-::: tip
-You can change [permissions](../permissions/) for the old project to *read-only* to make sure that nobody will contribute to it by mistake.
-:::
-
 ## Using the same project after change in database schema
 If you want to use the same project after modifications of data schema, make sure to follow these steps:
 1. Synchronise **all devices** before you change the schema

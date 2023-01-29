@@ -5,24 +5,24 @@
 You can share your <MainPlatformName /> project with others by inviting them to be [a member or a guest](./permissions/#workspace-members-and-guests) in your workspace. You can also make your <MainPlatformName /> project accessible to everyone by making it [public](#make-your-project-public-private).
 
 :::warning
-When granting access to workspaces and projects, it is important to set appropriate permissions to your team members to avoid unwanted modifications of projects while making collaboration possible. Read more about this topic in [**Permissions**](./permissions/).
+When granting access to workspaces and projects, it is important to set appropriate [**permissions**](./permissions/) to your team members to avoid unwanted modifications of projects.
 :::
 
 ::: tip
-You can follow our [Working collaboratively](../tutorials/working-collaboratively/) tutorial to see detailed instructions on how to share your project.
+You can follow our [Working collaboratively](../tutorials/working-collaboratively/) tutorial to see detailed instructions on how to share your project by inviting a user to your workspace as a guest or by sharing a link to your project with your teammates.
 :::
 
 ### Add users to a workspace
-If you want to share all projects in your workspace with a group of users (say with your coworkers inside your company), you can invite them to be a **member** of a workspace. It is also possible to invite people as **guests** and share only selected projects with them.
+If you want to share all projects in your workspace with a group of users, you can invite them to be a **member** of a workspace. It is also possible to invite people as **guests** and share only selected projects with them.
 
 To add users to a workspace:
 1. Log into <AppDomainNameLink />
 2. Select **Members** from the left panel and click on **Add People**
-   ![add ](./web-workspace-add.png)
-3. Enter email addresses of people you want to invite. If they already have a <MainPlatformName /> account, you can enter their username.
+   ![add](../tutorials/working-collaboratively/web-workspace-add.png)
+3. In the invite form, enter the email addresses of people you want to invite. If they already have a <MainPlatformName /> account, you can enter their username.
    Select if you invite them as **members** or as **guests**:
-   - for members, select their [member role](./permissions/#workspace-and-project-permissions). Members have access to all projects in the workspace.
-   - for **guests**, you will need to specify projects to which they should gain access. Guests can have [*read* or *write* permissions](./permissions/#workspace-and-project-permissions) to these projects.
+   - for **members**, select their [member role](./permissions/#workspace-and-project-permissions). Members have access to all projects in the workspace.
+   - for **guests**, specify the projects to which they should have access. Guests can have [*read* or *write* permissions](./permissions/#workspace-and-project-permissions) to these projects.
   ![invite](./workspace-members-guests.png)
 
 4. Click on **Invite** to send an invitation. An email with a link will be sent to the recipients. After they accept the invitation, they will become members or guests of your workspace.
@@ -30,7 +30,8 @@ To add users to a workspace:
 To manage workspace permissions, you have to be the **admin** or **owner** of the workspace. Navigate to **Members** in the left panel in <AppDomainNameLink /> to see the list of members and guests. Here you can change their roles and permissions or remove them from the workspace.
 
 ### Add users to a project
-Access to a specific project can be also managed in the project's settings.
+Access to a specific project can be also managed in the project's settings. From here, you can also invite users to become guests in the workspace and gain access to this project.
+
 1. Log into <AppDomainNameLink />
 2. Select **Projects** from the left panel and click on the project you want to manage
    ![projects](./web-projects.png)
@@ -38,18 +39,16 @@ Access to a specific project can be also managed in the project's settings.
 3. Go to **Settings**. Here you can manage the permissions of users who have access to the project or remove them from the project.
    ![project settings](./project-settings.png)
 
-**To invite a new user to a project:**
-1. Navigate to the project's settings as described above.
-2. Click on **Share** to invite users to become a guest in your workspace and grant them access to this project.
+4. Click on **Share**
    ![share project](./project-share.png)
 
-3. Enter their <MainPlatformName /> usernames or email addresses and click **Next**.
+5. Enter the email addressess or <MainPlatformName /> usernames of the users you want to invite and click **Next**
    ![enter email](./project-share-name.png)
 
-4. Now you will see the invite form. It is possible to specify more projects to share and set the permissions. Guests can have only *read* or *write* permission. Click **Next**.
+4. In the invite form, it is possible to add more projects to share and set the permissions. Click **Next**.
    ![guest invite](./project-share-invite.png)
 
-5. Send the invite by clicking **Share**. They will receive an email with a link and after accepting the invitation, they will become a guest in your workspace.
+5. Click on **Share** to send an email with a link to the recipients. After accepting the invitation, they will become a guest in your workspace.
    ![send invite](./project-share-invite2.png)
 
 ### Send a link to your project
@@ -57,14 +56,14 @@ Another method that is suitable for sharing a project with a large number of use
 
 1. Log into <AppDomainNameLink />
 2. Go to the project you want to share
-3. Copy the link from your web browser and share it
+3. Copy the link from your web browser and share it with your colleagues
+![copy url](../tutorials/working-collaboratively/mergin-web-copy-url.png)
 
-<!-- Still valid? -->
-If you send a link to a private project, users can **request access** after logging into <AppDomainNameLink />.
-![Mergin sharing setting](./project_sharing_send_request.png)
+If you send a link to a [private](#make-your-project-public-private) project, users can **request access** after logging into <AppDomainNameLink />.
+![sharing setting](./project_sharing_send_request.png)
 
-Once the user requests access, you (or another project owner) can open the project settings and grant them the appropriate [permission](./permissions/) level:
-![Mergin sharing setting](./project_sharing_requests.png)
+Once the user requests access, you (or another project owner) can open the project settings and grant them appropriate [permissions](./permissions/) and accept their request.
+![sharing setting](./project_sharing_requests.png)
 
 ### Make your project public/private
 Your projects are private by default. If you make it [public](./permissions/#public-and-private-projects), everyone can see your data and project history. However, they cannot contribute to your public project unless you grant them the write permission.
@@ -77,17 +76,17 @@ If you change your mind, you can make your project private by clicking **Make pr
 ![make project public](./project-make-public.png)
 
 ## Transfer a project
-A <MainPlatformName /> project can be transferred to another workspace. This can be useful when there are personal changes in your team or if you have multiple workspaces and want to manage their storage.
+A <MainPlatformName /> project can be transferred to another workspace. This can be useful when there are personal changes in your team or if you have multiple workspaces and want to manage the storage between them.
 
 1. Make sure to correctly synchronise all changes from your collaborators and devices. If you fail to do that, their local changes will be lost!
-2. After the synchronisation, all collaborators have to **remove** the project from their devices
+2. After synchronisation, all collaborators have to **remove** the project from their devices
 3. Log in to <AppDomainNameLink /> and choose the project you want to transfer
 4. Go to **Settings** and click on **Transfer project**
    ![transfer project](./project-transfer.png)
 5. Enter the name of the workspace to which the project should be transferred and click on **Request transfer**
    ![transfer project](./project-transfer2.png)
    
-   The owner of the workspace will be notified and will be able to accept or deny the request through <AppDomainNameLink />.
+   The owner of the new workspace will be notified and will be able to accept or deny the request through <AppDomainNameLink />.
    ![transfer request](./project-transfer-request.png)
    
    The request is valid for 6 days. If the request is not accepted after this period, the project will remain in the original workspace.

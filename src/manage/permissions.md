@@ -10,6 +10,9 @@ People invited to a workspace can be invited as **members** or as **guests**.
 
 **Guests** have access only to projects they are invited to. If a new project is created in a workspace, they won't see it until they are granted access.
 
+:::tip
+Do you want to invite members or guests to your workspace? Visit [How to share projects and manage user access](./project-advanced/) for detailed steps.
+:::
 
 ## Workspace and project permissions
 **Members** of a workspace can be assigned these levels of permissions:
