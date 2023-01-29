@@ -2,6 +2,10 @@
 
 [[toc]]
 
+:::danger
+This tutorial may differ from what you encounter when working with <MainPlatformNameLink />. It will be updated soon to include recent changes in <MainPlatformNameLink />, <MobileAppName /> and <QGISPluginName />.
+:::
+
 In the last tutorial we created a new <MainPlatformName /> project in QGIS with layers for surveying trees and hedges. You'll now learn how to:
 * Open the QGIS project in <MobileAppName />
 * Set GPS accuracy thresholds

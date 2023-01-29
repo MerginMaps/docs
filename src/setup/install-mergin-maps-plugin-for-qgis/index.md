@@ -21,6 +21,11 @@ Before the <QGISPluginName /> installation, please ensure you have already:
    :::
 
 ## Plugin configuration
+
+:::danger
+This content may differ from what you encounter when working with <MainPlatformNameLink />. It will be updated soon to include recent changes in <MainPlatformNameLink />, <MobileAppName /> and <QGISPluginName />.
+:::
+
 With the plugin installed, we'll now configure it with your <MainPlatformNameLink /> credentials.
 
 1. Click the **Configure <MainPlatformNameNoLink /> Plugin** icon on the **<MainPlatformNameNoLink /> Toolbar**:

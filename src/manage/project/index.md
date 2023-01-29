@@ -1,6 +1,10 @@
 ﻿# Mergin Maps Project
 [[toc]]
 
+:::danger
+This content may differ from what you encounter when working with <MainPlatformNameLink />. It will be updated soon to include recent changes in <MainPlatformNameLink />, <MobileAppName /> and <QGISPluginName />.
+:::
+
 What is a <MainPlatformName /> project? 
 
 It is basically a folder that contains data (such as vector layers, tables, rasters or photos), a [QGIS project](../../gis/features/), and some extra <MainPlatformName /> files needed to ensure everything works.

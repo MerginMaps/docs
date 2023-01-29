@@ -1,6 +1,10 @@
 # Mergin Maps Input Interface
 [[toc]]
 
+:::danger
+This content may differ from what you encounter when working with <MainPlatformNameLink />. It will be updated soon to include recent changes in <MainPlatformNameLink />, <MobileAppName /> and <QGISPluginName />.
+:::
+
 Below is a description of various items within the user interface. 
 
 The map can be moved by dragging around and zoomed in/out by pinching open/close. Tapping on a feature displays the attributes form.

@@ -30,6 +30,10 @@ You can get up-to-speed quickly by following our [Quick Start tutorials](../../t
 ## From Mergin Maps Input
 <Badge text="Since Input 0.7.0" type="info"/>
 
+:::danger
+This content may differ from what you encounter when working with <MainPlatformNameLink />. It will be updated soon to include recent changes in <MainPlatformNameLink />, <MobileAppName /> and <QGISPluginName />.
+:::
+
 You can also sign up from <MobileAppName />.
 
 1. Download <MobileAppName /> to your Android device, iPhone or iPad. You can find it in the app store of your platform:

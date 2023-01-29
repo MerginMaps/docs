@@ -1,6 +1,9 @@
 # Creating a Project in QGIS
-
 [[toc]]
+
+:::danger
+This tutorial may differ from what you encounter when working with <MainPlatformNameLink />. It will be updated soon to include recent changes in <MainPlatformNameLink />, <MobileAppName /> and <QGISPluginName />.
+:::
 
 In earlier tutorials you created a new survey project from within <MobileAppName />. That was a very fast (albeit limited) way of creating a <MainPlatformNameLink /> project.
 
