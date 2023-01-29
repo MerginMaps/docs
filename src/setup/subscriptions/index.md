@@ -26,8 +26,6 @@ Subscriptions are automatically billed monthly or annually. You can cancel or ch
 ## Changing a subscription from web
 Information about the current subscription can be found in <AppDomainNameLink />. Here, you can also switch to another subscription plan and manage the billing.
 
-<!-- TODO screenshots from MM SaaS
--->
 ![org profile](./subscriptions.png)
 1. Log into <AppDomainNameLink />
 2. Navigate to **Subscriptions**
@@ -36,7 +34,6 @@ Information about the current subscription can be found in <AppDomainNameLink />
    When registering a business organisation, you can enter the VAT number (if you want to use reverse charge VAT payments).
 5. Click on **Complete Purchase**
 
-<!-- TODO-IS-THIS-STILL-TRUE? -->
 Notes:
 - At this time we are not processing reverse-charge VAT payments but will be doing so in the future.
 - If a VAT number is entered, this must be associated with the address you enter below.

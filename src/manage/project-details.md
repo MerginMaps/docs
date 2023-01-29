@@ -6,18 +6,17 @@ On <AppDomainNameLink />, you can view what files have been added or removed. If
 To view the project history:
 1. Log in <AppDomainNameLink /> and open your project
 2. Navigate to the **HISTORY** tab
-3. Here you will see:
-  - **Version**: the version of the project based on the number of synchronisations
-  - **Created**: the time when the version was created
-  - **Author**: <MainPlatformName /> username who created the version
-  - The next three columns: Number of files added, deleted and updated respectively
-  - **Size**: Size of the project
-  - In the last column, you can download the version of project
-
-![history advanced](./web-history-2.png)
+3. Here, you can find:
+  - the **version** of the project based on the number of synchronisations. Click on the version for to see the [changelog](#advanced-changelog).
+  - the time when was the version **created**
+  - the **Author** of this version (who made the changes)
+  - overview of the number of files that were **added, deleted and updated**
+  - **Size** of the project
+  - option to **download** this version of the project
+   ![history advanced](./web-history-2.png)
 
 :::tip
-<QGISPluginName /> provides great tools to inspect the project history and compare changes between project versions:
+Great tools to inspect the project history and compare changes between project versions can be found in <QGISPluginName />:
 - use [Create report](./plugin-sync-project/#create-report-processing-toolbox) to get an overview of changes for a range of project versions.
 - use [Create diff](./plugin-sync-project/#create-diff-processing-toolbox) to extract changes made between two versions of a layer
 :::
