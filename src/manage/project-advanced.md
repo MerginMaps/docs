@@ -42,7 +42,7 @@ Access to a specific project can be also managed in the project's settings. From
 4. Click on **Share**
    ![share project](./project-share.png)
 
-5. Enter the email addressess or <MainPlatformName /> usernames of the users you want to invite and click **Next**
+5. Enter the email addresses or <MainPlatformName /> usernames of the users you want to invite and click **Next**
    ![enter email](./project-share-name.png)
 
 4. In the invite form, it is possible to add more projects to share and set the permissions. Click **Next**.
