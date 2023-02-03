@@ -38,6 +38,10 @@ An email with a link will be sent to the recipients. After they accept the invit
 In this case, we invited Jack as a guest to the *trees-and-hedges* project. Since he has the *write* permission, he can now add or edit features in this project through <MainPlatformNameLink />, <MobileAppName /> and QGIS.
 
 :::tip
+Users can be invited to a <MainPlatformName /> project also from the project's settings in <AppDomainNameLink />. Detailed steps can be found in [How to add users to a project](../../manage/project-advanced/#add-users-to-a-project).
+:::
+
+:::tip
 It is possible to have access to multiple workspaces. You may need to [navigate to the appropriate workspace](../../manage/workspaces/#how-to-switch-between-workspaces) to see a project that is shared with you.
 :::
 

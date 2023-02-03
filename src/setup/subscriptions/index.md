@@ -7,11 +7,12 @@
 For details about different subscription plans visit the <MainDomainNameLink id="pricing" desc="pricing"/> page.
 :::
 
-There are four <MainPlatformName /> subscription plans you can choose from depending on the storage size, support level and other features that you need for your work:
+There are four <MainPlatformName /> subscription plans you can choose from depending on the storage size, support level and other features that you need for your [workspace](../../manage/workspaces/):
 - Free plan for academic or personal (hobby) use
 - Individual plan
 - Professional plan
 - Team plan
+
 
 The free plan can be used for commercial use only during the **28 day trial**. 
 
@@ -44,8 +45,6 @@ If you'd like to purchase the Team plan on annual basis and would like to make b
 
 ## Changing a subscription from Mergin Maps Input
 Subscriptions can be also managed from <MobileAppName /> (on Apple devices via in-app purchases).
-<!-- TODO screenshots from MM Input 2.0.0
--->
 
 ## Invoices and payment history
 To download your invoices and see your payment history:
@@ -56,6 +55,4 @@ To download your invoices and see your payment history:
    - **HISTORY** to see your payment history 
    - **INVOICES** to access your invoices
 
-<!-- TODO screenshots from MM SaaS
--->
 ![invoices and history](./invoices-history.png)

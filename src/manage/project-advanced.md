@@ -2,6 +2,7 @@
 [[toc]]
 
 ## Share projects and manage user access
+
 You can share your <MainPlatformName /> project with others by inviting them to be [a member or a guest](./permissions/#workspace-members-and-guests) in your workspace. You can also make your <MainPlatformName /> project accessible to everyone by making it [public](#make-your-project-public-private).
 
 :::warning
@@ -15,22 +16,26 @@ You can follow our [Working collaboratively](../tutorials/working-collaborativel
 ### Add users to a workspace
 If you want to share all projects in your workspace with a group of users, you can invite them to be a **member** of a workspace. It is also possible to invite people as **guests** and share only selected projects with them.
 
+You have to be the **admin** or **owner** of the workspace to manage access to the workspace. See [Member Roles and Permissions](./permissions/#workspace-member-roles) for more details.
+
 To add users to a workspace:
 1. Log into <AppDomainNameLink />
 2. Select **Members** from the left panel and click on **Add People**
    ![add](../tutorials/working-collaboratively/web-workspace-add.png)
-3. In the invite form, enter the email addresses of people you want to invite. If they already have a <MainPlatformName /> account, you can enter their username.
+3. In the invite form, enter the email addresses of people you want to invite. 
    Select if you invite them as **members** or as **guests**:
    - for **members**, select their [member role](./permissions/#workspace-and-project-permissions). Members have access to all projects in the workspace.
-   - for **guests**, specify the projects to which they should have access. Guests can have [*read* or *write* permissions](./permissions/#workspace-and-project-permissions) to these projects.
+   - for **guests**, specify the projects to which they should have access. When inviting guests, you can give them [*read* or *write* permissions](./permissions/#workspace-and-project-permissions) to these projects.
   ![invite](./workspace-members-guests.png)
 
 4. Click on **Invite** to send an invitation. An email with a link will be sent to the recipients. After they accept the invitation, they will become members or guests of your workspace.
 
-To manage workspace permissions, you have to be the **admin** or **owner** of the workspace. Navigate to **Members** in the left panel in <AppDomainNameLink /> to see the list of members and guests. Here you can change their roles and permissions or remove them from the workspace.
-
 ### Add users to a project
 Access to a specific project can be also managed in the project's settings. From here, you can also invite users to become guests in the workspace and gain access to this project.
+
+::: tip
+Similarly, you can also update the member's role for this project. For example, you may grant a *write* access to a member that has only a *Reader* role in the workspace. Go to [Member Roles and Permissions](./permissions/) to learn more about this topic.
+:::
 
 1. Log into <AppDomainNameLink />
 2. Select **Projects** from the left panel and click on the project you want to manage
@@ -41,11 +46,16 @@ Access to a specific project can be also managed in the project's settings. From
 
 4. Click on **Share**
    ![share project](./project-share.png)
-
-5. Enter the email addresses or <MainPlatformName /> usernames of the users you want to invite and click **Next**
+   
+5. Enter the email addresses of the users you want to invite as guests. Click **Next**
    ![enter email](./project-share-name.png)
-
-4. In the invite form, it is possible to add more projects to share and set the permissions. Click **Next**.
+   
+   :::tip
+   If you want to modify permissions for a workspace member, enter their <MainPlatformNameLink /> username to the **Share with** prompt. After clicking **Next**, they will be added to the **Manage Access** table in **Settings** where you can change their permissions to this project.
+   :::
+      
+4. In the invite form, it is possible to add more projects to share and set the permissions. 
+   Click **Next**.
    ![guest invite](./project-share-invite.png)
 
 5. Click on **Share** to send an email with a link to the recipients. After accepting the invitation, they will become a guest in your workspace.

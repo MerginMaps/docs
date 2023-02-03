@@ -54,5 +54,5 @@ Here you can change your password, verify your email or close your account. Use 
 In the upper right corner of the screen, you can see the current workspace and your username. Click on it to [switch between workspaces](./workspaces/#how-to-switch-between-workspaces) and to **Manage workspaces**.
 ![profile menu](./workspaces/web-switch-workspace.png)
 
-Click on **Manage workspaces** to see the overview of workspaces to which you have access as a guest, member or owner. Here you can [create a new workspace](./workspaces/#how-to-create-a-new-workspace), leave a workspace and manage invitations to workspaces of other users.
+Click on **Manage workspaces** to see the overview of workspaces to which you have access as a guest, member or owner. Here you can [create a new workspace](./workspaces/#how-to-create-a-new-workspace), leave a workspace and accept/decline invitations to other users' workspaces.
 ![manage workspaces](./web-manage-workspaces.png)
