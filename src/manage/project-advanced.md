@@ -24,8 +24,8 @@ To add users to a workspace:
    ![add](../tutorials/working-collaboratively/web-workspace-add.png)
 3. In the invite form, enter the email addresses of people you want to invite. 
    Select if you invite them as **members** or as **guests**:
-   - for **members**, select their [member role](./permissions/#workspace-and-project-permissions). Members have access to all projects in the workspace.
-   - for **guests**, specify the projects to which they should have access. When inviting guests, you can give them [*read* or *write* permissions](./permissions/#workspace-and-project-permissions) to these projects.
+   - for **members**, select their [member role](./permissions/#workspace-member-roles). Members have access to all projects in the workspace.
+   - for **guests**, specify the projects to which they should have access. When inviting guests, you can give them [*read* or *write* permissions](./permissions/#project-permissions) to these projects.
   ![invite](./workspace-members-guests.png)
 
 4. Click on **Invite** to send an invitation. An email with a link will be sent to the recipients. After they accept the invitation, they will become members or guests of your workspace.
