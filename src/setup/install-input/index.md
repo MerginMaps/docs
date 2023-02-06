@@ -10,6 +10,11 @@ With <MobileAppName />, you can view your data and location on the map, capture 
 If you want to use <MobileAppName /> on Windows, you need to download the <NoSpellcheck id=".exe" /> installer from <GitHubRepo id="MerginMaps/input/releases/latest" desc="MerginMaps/Input" /> repository and install it on your computer.
 
 ## Input's tour projects
+
+:::danger
+This content may differ from what you encounter when working with <MainPlatformNameLink />. It will be updated soon to include recent changes in <MainPlatformNameLink />, <MobileAppName /> and <QGISPluginName />.
+:::
+
 Once you have installed and opened <MobileAppName /> you will see two tour projects that will guide you through the basics.
 
 ![Input's Tour Projects](./input-tour-projects.png)

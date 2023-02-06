@@ -1,54 +1,58 @@
 # Home Page and Dashboard
 [[toc]]
 
-When you log in to <AppDomainNameLink desc="Mergin Maps"/>, you will be presented with a dashboard for quick access to your recent active projects. Here, you can also manage your projects, organisations, profile and subscription plan.
+When you log in to <AppDomainNameLink desc="Mergin Maps"/>, you will be presented with a dashboard for quick access to your recent active projects. Here, you can also manage your projects, [workspaces](./workspaces/), profile and [subscriptions](../setup/subscriptions/).
 
 ![left panel - dashboard](./web-dashboard-panel.png)
 
-**Home** takes you back to the homepage with the list of the most recent projects. 
+Current workspace and your username are displayed in the upper right corner of the screen.
+
+Click **Home** in the left panel to go back to the homepage with the list of the most recent projects. 
+
+## Projects
+**Projects** tab in the left panel displays the list overview of the projects that are available to you in this workspace.
+![projects](./web-projects-tab.png)
+
+- click on **+ Create** to [create a new project](./create-project/#create-a-project-through-merginmaps-com), 
+- use **Find Public Projects** to browse public projects
+- select a project to see its details
+
+When you open a project, there is an option to [share it](./project-advanced/), download it and [clone it](./create-project/#clone-an-existing-project-through-merginmaps-com).
+![project](./mergin-project.png)
+
+- in **FILES** you will find all files associated with the project. Click on a file to see the details, download it or delete it.
+- **MAP (beta)** contains the map overview of the project. It is available if you have [professional or team subscription](https://merginmaps.com/pricing). The content is updated when the project is synchronised - if you see the message "Map config does not exist, please try to update the project", sync the project and the map overview should be generated.
+   ![map](./mergin-map.png)
+- **HISTORY** contains all [project versions](./project-details/). Here you can see what was changed by which user and download a previous version of the project to your computer.
+- in **SETTINGS** you can manage [access](./project-advanced/) to the project 
+
+## Members
+The **Members** tab provides the overview of the [members and guests](./permissions/#workspace-members-and-guests) of the workspace. Here, you can [add users](./project-advanced/#add-users-to-a-workspace) to your workspace and manage their [permissions](./permissions/).
+![members](./web-members.png)
+
+## Subscription
+The **Subscription** tab contains information about your [subscription and invoicing](../setup/subscriptions/).
+- **DETAIL** contains details about your current data usage and subscription. Here you can also change your plan and the frequency of your subscription billing.
+- **HISTORY** includes the list of events related to your account, such as changing the plan or the payment history.
+- **INVOICES** contains the list of your previous payments and invoices
+![subscription](../setup/subscriptions/subscriptions.png)
+
+## Settings
+In the **Settings** tab, you will find information about the current workspace. 
+![settings](./web-settings.png)
+- use **Edit Workspace** to change the description of the workspace
+- use **Close Workspace** to [delete the workspace](./workspaces/#how-to-delete-a-workspace)
 
 ## User profile
-The left navigation panel shows the name of the current profile. Clicking on the name will open a drop-down menu, where you can switch between your profile and your organisation profile. 
+The **User profile** tab contains information about your current profile.
 
-![profile switch](./mergin-switch-profile.png)
-
-You can access your account details in the **Settings** section under **Profile**. Here you can change your password, verify your email or close your account. Use **Edit profile** to enter your name or turn on/off email notifications. 
-
-You will also see the list of organisations you belong to and pending invitations to join an organisation.
+Here you can change your password, verify your email or close your account. Use **Edit profile** to enter your name or turn on/off email notifications. 
 
 ![profile](./mergin-user-profile.png) 
 
-## Organisations
-The organisation profile can be also accessed by clicking on the organisation name in the **Organisations** section.
-![organisation](./mergin-organisation.png)
+## Manage workspaces
+In the upper right corner of the screen, you can see the current workspace and your username. Click on it to [switch between workspaces](./workspaces/#how-to-switch-between-workspaces) and to **Manage workspaces**.
+![profile menu](./workspaces/web-switch-workspace.png)
 
-The organisation profile contains the list of organisation's projects. The account details can be found under **Profile** in the **Setting** sections. The **Members** tab provides the overview of users and their permissions within the team.
-![organisation profile](./mergin-organisation-profile.png)
-
-:::tip
-Visit [Working with organisations](../setup/working-with-organisations/index.md) to learn more about organisations.
-:::
-  
-## Projects
-- To create a new project, select **+ Create** in front of **Projects**
-- **My projects** lists all projects you have created
-- **Shared with me** lists other users' projects shared with you (including your organisation projects)
-- **Explore** lists all the public projects
-
-Click on a project to download it, [clone it](./create-project/#clone-an-existing-project-through-merginmaps-com) and to see its details.
-![project](./mergin-project.png)
-
-- **FILES** lists files associated with the project
-- **MAP (beta)** contains the map overview of the project. It is available if you have [professional or team subscription](https://merginmaps.com/pricing). The content is updated when the project is synchronised - if you see the message "Map config does not exist, please try to update the project", sync the project and the map overview should be generated.
-   ![map](./mergin-map.png)
-   
-- **HISTORY** contains all [project versions](./project-details/). Here you can see what was changed by which user and download a previous version of the project to your computer.
-- in **SETTINGS** you can manage access to your project, e.g. if you want to [share it](./project-advanced/#share-a-project)
-
-
-## Subscription
-**Subscription** section contains information about your subscription and billing:
-   - **DETAIL** contains details about your current subscription and data usage. Here you can also change your plan and the frequency of your subscription billing.
-   - **HISTORY** includes the list of events related to your account, such as changing the plan or the payment history.
-   - **INVOICES** contains the list of your previous payments and invoices
-   ![subscription](./mergin-subscription.png)
+Click on **Manage workspaces** to see the overview of workspaces to which you have access as a guest, member or owner. Here you can [create a new workspace](./workspaces/#how-to-create-a-new-workspace), leave a workspace and accept/decline invitations to other users' workspaces.
+![manage workspaces](./web-manage-workspaces.png)

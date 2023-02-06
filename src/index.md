@@ -15,7 +15,7 @@ home: false
 The ecosystem consist of various components:
  - [QGIS](https://qgis.org/) > Powerful GIS Desktop application 
  - [<QGISPluginName />](https://plugins.qgis.org/plugins/Mergin/) > QGIS plugin
- - <MainDomainNameLink desc="Mergin Maps Cloud" /> > SaaS Cloud Service (available also as <MainPlatformName /> CE)
+ - <AppDomainNameLink desc="Mergin Maps Cloud" /> > SaaS Cloud Service (available also as <MainPlatformName /> CE)
  - <MainDomainNameLink desc="Mergin Maps Input" /> > iOS and Android mobile app
  
 ## Get started 
@@ -34,15 +34,15 @@ The ecosystem consist of various components:
 - [How to Sign Up to Mergin Maps](./setup/sign-up-to-mergin-maps/)
 - [How to Install QGIS](./setup/install-qgis/)
 - [How to Install QGIS Plugin](./setup/install-mergin-maps-plugin-for-qgis/)
-- [Working with Organisations](./setup/working-with-organisations/)
 - [Subscriptions and Invoicing](./setup/subscriptions/)
 
 ## Manage Account & Project
+- [Workspaces](./manage/workspaces/)
 - [Permissions](./manage/permissions/)
 - [Behind Data Synchronisation](./manage/synchronisation/)
 - [Mergin Maps Project](./manage/project/)
 - [How to Create a New Project](./manage/create-project/)
-- [How to Share, Transfer or Delete a Project](./manage/project-advanced/)
+- [How to Share, Transfer or Delete Projects](./manage/project-advanced/)
 - [How to Delete Files](./manage/delete-files)
 - [How to Deploy Revised Projects](./manage/deploy-new-project/)
 - [How to Recover Missing Data](./manage/missing-data/)

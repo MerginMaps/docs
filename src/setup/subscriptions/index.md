@@ -1,66 +1,58 @@
 # Subscriptions and Invoicing
 [[toc]]
 
-Mergin Maps Service offers a free plan for up to 100 MB data usage. Free plan can be used to host projects for commercial use only **for the first month**. Non-commercial use is considered for personal (hobby) use, or in academia (teachers, students).
+## Subscriptions
 
-We offer discounts for non-profit or charity organisations, please <MerginMapsEmail id="sales" desc="contact us" />.
+::: tip
+For details about different subscription plans visit the <MainDomainNameLink id="pricing" desc="pricing"/> page.
+:::
 
-For more storage you can choose one of the two plans for users ("Individual" 1GB or "Professional" 10GB storage) or a plan for an organisation ("Team" 50GB storage).
+There are four <MainPlatformName /> subscription plans you can choose from depending on the storage size, support level and other features that you need for your [workspace](../../manage/workspaces/):
+- Free plan for academic or personal (hobby) use
+- Individual plan
+- Professional plan
+- Team plan
 
-For the details visit the <MainDomainNameLink id="pricing" desc="pricing"/> page.
 
+The free plan can be used for commercial use only during the **28 day trial**. 
+
+It is possible to get a discount if you are a non-profit or charity organisation. Please <MerginMapsEmail id="sales" desc="contact us" /> to find out more.
+
+:::tip
+If you want to have On-Premise deployment or looking for other options, please <MerginMapsEmail id="sales" desc="contact us" /> directly.
+:::
+
+Subscriptions are automatically billed monthly or annually. You can cancel or change your subscription any time, with Apple Manage Subscriptions App or through <AppDomainNameLink />.
+
+## Changing a subscription from web
+Information about the current subscription can be found in <AppDomainNameLink />. Here, you can also switch to another subscription plan and manage the billing.
 
 ![org profile](./subscriptions.png)
+1. Log into <AppDomainNameLink />
+2. Navigate to **Subscriptions**
+3. Here, choose if you want to be **Billed monthly** or **Billed annually** and click on **Subscribe** under the plan of your choice.
+4. Fill in the form with your details. 
+   When registering a business organisation, you can enter the VAT number (if you want to use reverse charge VAT payments).
+5. Click on **Complete Purchase**
 
-## Individual and Professional plans
-
-To sign up to Individual or Professional plan:
-
-- Select **Subscription** from the left panel
-- In the new page, select one of the options to be **Billed monthly** or **Billed annually**
-- Select the appropriate plan by clicking on **Subscribe**
-- In the new page, fill in the form
-- Select **Complete Purchase**
-
-## Team plan
-
-As an organisation you can subscribe to the 50GB **Team** plan. Organisations are more flexible in user management and have finer control over individual project sharing. Also we support extended invoicing and support options for the organisations.
-
-To subscribe to the Team plan, you first need to create an organisation:
-
-- From the left panel, click on **+ Create** button in front of Organisations
-- Type a name for your **Organisation name**
-- Fill in the **Description**
-
-- Once the organisation is created, click on it from the left panel
-- This will switch to your organisation profile
-- From the left panel, select **Subscriptions**
-- In the new page, select one of the options to be **Billed monthly** or **Billed annually** and click on **Subscribe** button
-- In the new page, fill in the form with your details
-  - VAT number is optional and only required if you want to use reverse charge VAT payments.
-  - At this time we are not processing reverse-charge VAT payments but will be doing so in the future.
-  - If a VAT number is entered, this must be associated with the address you enter below.
-  - The address you enter must match the address registered with your payment method (e.g. credit card)
-  - The address entered needs to match the VAT registered address
+Notes:
+- At this time we are not processing reverse-charge VAT payments but will be doing so in the future.
+- If a VAT number is entered, this must be associated with the address you enter below.
+- The address you enter must match the address registered with your payment method (e.g. credit card)
+- The address entered needs to match the VAT registered address
 
 If you'd like to purchase the Team plan on annual basis and would like to make bank transfer payments, please <MerginMapsEmail id="sales" desc="contact us" /> for manual invoicing.
 
-## On-Premise deployment
-If you want to have On-Premise deployment or looking for other options, please <MerginMapsEmail id="sales" desc="contact us" /> directly.
+## Changing a subscription from Mergin Maps Input
+Subscriptions can be also managed from <MobileAppName /> (on Apple devices via in-app purchases).
 
-## Accessing invoices and payment history
-
+## Invoices and payment history
 To download your invoices and see your payment history:
 
-1. Navigate to the **Subscription** in the left panel
+1. Log into <AppDomainNameLink /> 
+2. Navigate to the **Subscription** in the left panel
 2. In the **Subscription** window, go to:
    - **HISTORY** to see your payment history 
    - **INVOICES** to access your invoices
 
 ![invoices and history](./invoices-history.png)
-
-## Further information
-
-Subscription plans can be also bought from the <MobileAppName /> (on Apple devices via in-app purchases).
-
-Your subscription will auto-renew, either annually or monthly until you unsubscribe. You can cancel or change your subscription any time, with Apple Manage Subscriptions App or through <MainDomainNameLink />.

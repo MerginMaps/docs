@@ -15,12 +15,15 @@ One can view and download public projects even without an account, but creation 
 2. Click on **Start for free**
    ![mergin maps register](./mergin-web-register.jpg)
 
-3. Create your account by filling up the form. Once you press **Sign up**, you will receive a confirmation email. To sign in and use  <MainPlatformName />, you will need to activate your account by clicking on the link in the email.
+3. Click on **Create your free account**
+   ![web create account](./mergin-web-create-account.png)
+   
+4. Create your account by filling up the form and click on **Sign Up**. You will receive a confirmation email with a link to verify your email.
    ![sign up](./mergin-web-sign-up.png)
 
-::: warning
-Check your spam folder if the confirmation email does not appear in your inbox after 5 minutes.
-:::
+   ::: warning
+   Check your spam folder if the confirmation email does not appear in your inbox after 5 minutes.
+   :::
 
 **Welcome to <MainPlatformNameLink />!**
 
@@ -29,6 +32,10 @@ You can get up-to-speed quickly by following our [Quick Start tutorials](../../t
 
 ## From Mergin Maps Input
 <Badge text="Since Input 0.7.0" type="info"/>
+
+:::danger
+This content may differ from what you encounter when working with <MainPlatformNameLink />. It will be updated soon to include recent changes in <MainPlatformNameLink />, <MobileAppName /> and <QGISPluginName />.
+:::
 
 You can also sign up from <MobileAppName />.
 
