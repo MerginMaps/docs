@@ -26,7 +26,7 @@ This layer contains only information about the manholes. `Manhole UUID` values a
 :::danger
 **Why UUIDs?** FIDs can be changed during [synchronisation](../../manage/synchronisation/#synchronisation). As a result, records can end up being linked to wrong features. 
 
-On the other hand, [UUID](https://docs.qgis.org/3.22/en/docs/user_manual/expressions/functions_list.html#uuid) (Universally Unique Identifier) is generated to be unique and will not be changed when synced. Therefore, we recommend always using UUIDs as primary keys.
+On the other hand, <QGISHelp ver="latest" link="user_manual/expressions/functions_list.html#uuid" text="UUID" /> (Universally Unique Identifier) is generated to be unique and will not be changed when synced. Therefore, we recommend always using UUIDs as primary keys.
 :::
 
 Inspections are recorded in a separate [non-spatial table](../working_with_nonspatial_data/) with attribute table such as:
