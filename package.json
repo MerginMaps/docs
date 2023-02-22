@@ -14,9 +14,9 @@
     "build": "vuepress build src",
     "export": "vuepress export src"
   },
-  "devDependencies": {
+  "devDependencies": {  
     "@vuepress/plugin-medium-zoom": "^1.9.8",
-    "vuepress": "^1.9.7",
+    "vuepress": "^1.9.8",
     "vuepress-plugin-clean-urls": "^1.1.2",
     "vuepress-plugin-fulltext-search": "^2.2.1",
     "vuepress-plugin-google-tag-manager": "0.0.5"

@@ -4,6 +4,14 @@ const pageSuffix = '/'
 
 module.exports = {
   /**
+   * fix ERR_OSSL_EVP_UNSUPPORTED for webpack4
+   * https://stackoverflow.com/a/73027407/2838364
+   */
+   configureWebpack: {
+     output: {hashFunction: 'sha256'}
+   },
+
+  /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
   title: 'Mergin Maps Documentation',
