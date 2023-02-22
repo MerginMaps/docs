@@ -72,7 +72,7 @@ module.exports = {
     ['vuepress-plugin-google-tag-manager', {
       'gtm': 'GTM-NW7ZGNB'
     }],
-	['@vuepress/medium-zoom'],
+    ['@vuepress/medium-zoom'],
     [ 'clean-urls', {
       normalSuffix: pageSuffix,
       indexSuffix: pageSuffix
