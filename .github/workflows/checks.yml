@@ -7,11 +7,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
+
+    # need Node 16 or less to get rid of ERR_OSSL_EVP_UNSUPPORTED
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16
+
     - name: Generate dist
       run: |
         yarn install
         yarn build
-        
+
     - name: "Check dist dir consistency"
       uses: andstor/file-existence-action@v1
       with:
@@ -28,14 +34,11 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Get correct Node
-      run: |
-       
     # need Node 16 or less to get rid of ERR_OSSL_EVP_UNSUPPORTED
     - uses: actions/setup-node@v3
       with:
         node-version: 16
-       
+
     - name: Generate dist
       run: |
         yarn install

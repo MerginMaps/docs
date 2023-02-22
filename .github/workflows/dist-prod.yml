@@ -14,19 +14,27 @@ jobs:
   deploy_prod:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
+
+    # need Node 16 or less to get rid of ERR_OSSL_EVP_UNSUPPORTED
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16
+
     - name: Install
       run: |
        yarn install
+
     - name: Generate dist
       run: |
         yarn build
+
     - name: "Check dist dir consistency"
       uses: andstor/file-existence-action@v1
       with:
         files: "dist/docs/index.html"
         allow_failure: true # Makes the Action fail on missing files
-        
+
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
