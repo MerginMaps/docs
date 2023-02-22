@@ -17,9 +17,9 @@ The manhole point layer has the following attribute table:
 
 | fid | Manhole | Manhole UUID |
 |:---:|:---:|:---:|
-| 1 | 1 | {70c59616-492e-4757-aa9a-ee61b207ce94} |
-| 2 | 2 | {be01b98f-3585-49d4-be74-4cf3530a2989} |
-| 3 | 3 | {03178264-0070-45c8-a981-b2474627d7e0} |
+| 1 | 1 | `{70c59616-492e-4757-aa9a-ee61b207ce94}` |
+| 2 | 2 | `{be01b98f-3585-49d4-be74-4cf3530a2989}` |
+| 3 | 3 | `{03178264-0070-45c8-a981-b2474627d7e0}` |
 
 This layer contains only information about the manholes. `Manhole UUID` values are generated using [`uuid()` function as a default value](../attach-multiple-photos-to-features/) when a feature is created. This ensures that these values are **unique** even when multiple surveyors capture new features at the same time. This field will be used to link inspections and manholes.
 
@@ -33,10 +33,10 @@ Inspections are recorded in a separate [non-spatial table](../working_with_nonsp
 
 | Inspection Date | Blocked? | Flooded? | Inspector  | Manhole UUID |
 |:---:|:---:|:---:|:---:|:---:|
-| 10/05/2022 |  | | Joe Schmoe | {70c59616-492e-4757-aa9a-ee61b207ce94} |
-| 10/05/2022 |  | :heavy_check_mark: | John Doe | {03178264-0070-45c8-a981-b2474627d7e0} |
-| 12/05/2022 | :heavy_check_mark:  |   | Fred Bloggs | {70c59616-492e-4757-aa9a-ee61b207ce94} |
-| 14/05/2022 | :heavy_check_mark: | :heavy_check_mark:  | Joe Schmoe | {be01b98f-3585-49d4-be74-4cf3530a2989} |
+| 10/05/2022 |  | | <NoSpellcheck id="Joe Schmoe" /> | `{70c59616-492e-4757-aa9a-ee61b207ce94}` |
+| 10/05/2022 |  | :heavy_check_mark: | <NoSpellcheck id="John Doe" /> | `{03178264-0070-45c8-a981-b2474627d7e0}` |
+| 12/05/2022 | :heavy_check_mark:  |   | <NoSpellcheck id="Fred Bloggs" /> | `{70c59616-492e-4757-aa9a-ee61b207ce94}` |
+| 14/05/2022 | :heavy_check_mark: | :heavy_check_mark:  | <NoSpellcheck id="Joe Schmoe" /> | `{be01b98f-3585-49d4-be74-4cf3530a2989}` |
 
 In this table, all information about the inspections are recorded. `Manhole UUID` is filled in automatically based on a 1-N relation that we will set up in QGIS.
 
