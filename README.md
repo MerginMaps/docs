@@ -42,12 +42,7 @@ cd merginmaps/docs
 yarn install
 yarn dev
 ```
-
-If you get `  opensslErrorStack: [ 'error:03000086:digital envelope routines::initialization error' ]`, run
-```bash
-export NODE_OPTIONS=--openssl-legacy-provider
-```
-
+ 
 ## Static generation (for deployments)
 
 To generate static HTML files, run 
@@ -59,6 +54,20 @@ yarn build
 ```
 
 and see the result in `dist` folder
+
+### Error for nodejs 17
+
+If you get `opensslErrorStack: [ 'error:03000086:digital envelope routines::initialization error' ]`, run
+ ```bash
+ export NODE_OPTIONS=--openssl-legacy-provider
+ ```
+ 
+ or on Windows
+ ```bash
+ set NODE_OPTIONS=--openssl-legacy-provider
+ ```
+  
+ or downgrade `nodejs` to 16 or less. More here: https://github.com/webpack/webpack/issues/14532
 
 # License
 

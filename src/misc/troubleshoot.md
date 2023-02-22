@@ -18,7 +18,7 @@ Need more help with your issue? <LutraConsultingWeb /> provides commercial suppo
 
 The commercial support or consultancy for your projects is carried by <LutraConsultingWeb />
 
-<PublicImage src="logo_lutra.svg" />
+<PublicImage src="logo_lutra.svg" title="Lutra Consulting Ltd. logo" />
     
 Please see the <LutraConsultingWeb id="support/" desc="support packages" /> available. SLA support offers you the contracted response time, dedicated hotline as well as premium email support.
 
