@@ -282,8 +282,24 @@ You can use any of supported <GitHubRepo id="markdown-it/markdown-it-emoji/blob/
 	* Stroke the selection with red, at width:
 		* Desktop: 3px
 		* Mobile: 12px
-	
 
+#### Export, title and alt
+
+Every exported image:
+
+* has `webp` (preferable) or `jpg` format
+* has around 50-150kb. Only images where zoomed detail is important could have higher size.
+* has title and alt text (exception: don't add alt text to decorative images like icons that are not part of docs)
+
+The image alt text is used to describe images to users who can't see them (they are using a screen-reader or image failed to load). The image title attribute is only visible on mouse-over and displays just the title over image.
+
+For texts:
+
+* Usually, use the same for alt and titles
+* Include text that's part of the image
+* Use keywords sparingly - describe in simple words
+* Never start with “Image of …” or “Picture of …”
+* Be specific and succinct
 
 #### Referencing
 
@@ -291,13 +307,13 @@ You can use any of supported <GitHubRepo id="markdown-it/markdown-it-emoji/blob/
  - Place images next to the markdown files that reference them
  - Do not start with `/`, use relative paths
 
-e.g. `![](./myimage.png)` if the image is in the same folder as your markdown file
+e.g. `![image alt text](./myimage.png "image title")` if the image is in the same folder as your markdown file
  
  - For global pictures/assets placed in `src/.vuepress/public` use custom component `<PublicImage />`
 
-e.g. `<PublicImage src="MM_logo_HORIZ_color.svg" />`
+e.g. `<PublicImage src="MM_logo_HORIZ_color.svg" title="Mergin Maps logo"/>`
 
-<PublicImage src="MM_logo_HORIZ_color.svg" />
+<PublicImage src="MM_logo_HORIZ_color.svg" title="Mergin Maps logo" />
 
 ### Table of Contents 
 

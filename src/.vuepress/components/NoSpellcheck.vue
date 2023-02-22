@@ -6,7 +6,9 @@
 export default {
   name: "nospellcheck",
   props: {
-    id: String
+    id: String,
+	title: String,
+	alt: String
   }
 }
 </script>
