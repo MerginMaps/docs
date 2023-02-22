@@ -99,7 +99,7 @@ Don't forget to upload your changes to <MainPlatformNameLink />!
 
 Synchronisation in <MobileAppName /> can be done automatically or manually by pressing the sync button. For more details visit [Synchronisation in Input](./autosync/).
 
-![sync button](./input-autosync.png)
+![Sync button](./input-autosync.jpg "Sync button")
 
 :::tip
 [Behind Data Synchronisation](../manage/synchronisation/) contains more information about the synchronisation process in general.
