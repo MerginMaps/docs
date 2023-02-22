@@ -1,30 +1,26 @@
 # Mergin Maps Input Interface
 [[toc]]
 
-:::danger
-This content may differ from what you encounter when working with <MainPlatformNameLink />. It will be updated soon to include recent changes in <MainPlatformNameLink />, <MobileAppName /> and <QGISPluginName />.
-:::
+Below is a description of various items within the user interface of <MobileAppName />.
 
-Below is a description of various items within the user interface. 
+![Mergin Maps Input user interface](./input-gui.jpg)
 
 The map can be moved by dragging around and zoomed in/out by pinching open/close. Tapping on a feature displays the attributes form.
 
 There are four tabs available in the bottom navigation panel: [Projects](#projects), [GPS](#gps), [Record](#record) and [More](#zoom-to-project-browse-features-map-themes-settings).
 
-![Input user interface](./input_gui.png)
 
 ## Projects
-**Projects** tab is where you can create a new project, upload it to the cloud, synchronise changes, or remove a local project from your device.
+**Projects** tab is where you can create a new project, upload it to the cloud, synchronise changes to <MainPlatformNameLink />, or remove a local project from your device.
 - **Home**: a list of all downloaded projects on your device. Only downloaded projects can be opened in the app.
-- **My projects**: projects created by you and hosted on the <MainPlatformNameLink /> service
-- **Shared with me**: projects on the <MainPlatformName /> service shared with you by other users
-- **Explore**: a full list of public projects by others on the <MainPlatformName /> service
+- **Projects**: a list of project you have access to in the current [workspace](../manage/workspaces/) 
+- **Explore**: a list of [public](../manage/permissions/#public-and-private-projects) projects that are hosted on <MainPlatformName />
 
-![Projects screen](./input-projects.png) 
+![Projects tab overview](./input-projects.jpg) 
 
 ### Mergin Maps account
-To [sign up to <MainPlatformName />](../setup/sign-up-to-mergin-maps/#from-mergin-maps-input), sign in and access your profile information, select the icon on the top right of the **Projects** screen.
-![Sign in](./input-account.png)
+Your <MainPlatformNameLink /> account can be accessed by tapping the icon on the top right of the **Projects** screen. Here you can [sign up to <MainPlatformName />](../setup/sign-up-to-mergin-maps/#from-mergin-maps-input), sign in or  access your profile information.
+![Mergin Maps account](./input-account.jpg)
 
 **My Account** contains the overview of your profile and your storage use. **Sign out** if you want to switch to a different account. 
 
