@@ -18,14 +18,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Get correct Node
-      run: |
-       # need Node 16 or less 
-       # to remove ERR_OSSL_EVP_UNSUPPORTED error
-       sudo npm install -g n
-       sudo n stable
-       node --version
-
     - name: Install
       run: |
        yarn install
