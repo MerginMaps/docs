@@ -1,12 +1,14 @@
 <template>
-  <img :src="$withBase(`/${src}`)">
+  <img :src="$withBase(`/${src}`)" :title="`${title}`" :alt="`${alt}`">
 </template>
 
 <script>
 export default {
   name: "publicimage",
   props: {
-    src: String
+    src: String,
+    title: String,
+    alt: String
   }
 }
 </script>
