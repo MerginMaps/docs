@@ -291,6 +291,8 @@ Every exported image:
 * has around 50-150kb. Only images where zoomed detail is important could have higher size.
 * has title and alt text (exception: don't add alt text to decorative images like icons that are not part of docs)
 
+e.g. `![image alt text](./myimage.png "image title")`
+
 The image alt text is used to describe images to users who can't see them (they are using a screen-reader or image failed to load). The image title attribute is only visible on mouse-over and displays just the title over image.
 
 For texts:
