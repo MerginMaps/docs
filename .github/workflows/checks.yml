@@ -5,9 +5,6 @@ on: push
 jobs:
   spellcheck:
     runs-on: ubuntu-latest
-    env:
-      NODE_OPTIONS: "--openssl-legacy-provider"
-    
     steps:
     - uses: actions/checkout@v3
     - name: Generate dist
@@ -28,9 +25,6 @@ jobs:
 
   broken_links:
     runs-on: ubuntu-latest
-    env:
-      NODE_OPTIONS: "--openssl-legacy-provider"
-    
     steps:
     - uses: actions/checkout@v3
     - name: Generate dist
