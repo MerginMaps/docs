@@ -9,15 +9,19 @@ With <MobileAppName />, you can view your data and location on the map, capture 
 ## Mergin Maps Input on Windows
 If you want to use <MobileAppName /> on Windows, you need to download the <NoSpellcheck id=".exe" /> installer from <GitHubRepo id="MerginMaps/input/releases/latest" desc="MerginMaps/Input" /> repository and install it on your computer.
 
+
 ## Input's tour projects
+Once you have installed and opened <MobileAppName /> you will see the **Login** page.
 
-:::danger
-This content may differ from what you encounter when working with <MainPlatformNameLink />. It will be updated soon to include recent changes in <MainPlatformNameLink />, <MobileAppName /> and <QGISPluginName />.
-:::
+![Mergin Maps Input login page](./input-login.jpg "Mergin Maps Input login page")
 
-Once you have installed and opened <MobileAppName /> you will see two tour projects that will guide you through the basics.
+Sign in, if you already have a <MainPlatformNameLink /> account. If not, you may create your account by clicking **Sign up for free**.
 
-![Input's Tour Projects](./input-tour-projects.png)
+ 
+
+Want try <MobileAppName /> without signing up? Click on the back arrow in the upper left corner.  two tour projects that will guide you through the basics.
+
+![Mergin Maps Input's Tour Projects](./input-tour-projects.png)
 
 **Start here!** will show you how to navigate the map, change layer themes and edit the attributes of map features.
 
