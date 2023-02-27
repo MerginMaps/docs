@@ -217,6 +217,7 @@ uncheck
 undoable
 url
 uuid
+UUIDs
 xcf
 xyz
 yml
