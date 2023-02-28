@@ -20,7 +20,7 @@ A warning will appear when [GPS accuracy](./gps_accuracy/) falls below a thresho
 :::
 
 Surveyed features are added to the active layer, which is shown just above the bottom panel. You can change the active layer by tapping on it and selecting one from the list of editable layers in the project.
-![active layer](./input-active-layer.png)
+![active layer](./input-active-layer.jpg "Active layer")
 
 ### Capture points
 The crosshairs you will see on your map will be used as the recorded location. You can change the position of your point by pinching and dragging the background map. If you want to recenter the map to your current position, tap the **GPS** button. 
@@ -99,7 +99,7 @@ Don't forget to upload your changes to <MainPlatformNameLink />!
 
 Synchronisation in <MobileAppName /> can be done automatically or manually by pressing the sync button. For more details visit [Synchronisation in Input](./autosync/).
 
-![sync button](./input-autosync.png)
+![Sync button](./input-autosync.jpg "Sync button")
 
 :::tip
 [Behind Data Synchronisation](../manage/synchronisation/) contains more information about the synchronisation process in general.
