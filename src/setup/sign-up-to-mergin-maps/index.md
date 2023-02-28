@@ -13,13 +13,13 @@ One can view and download public projects even without an account, but creation 
 
 1. Navigate to <MainDomainNameLink /> 
 2. Click on **Start for free**
-   ![mergin maps register](./mergin-web-register.jpg)
+   ![Mergin Maps start for free](./mergin-web-register.jpg "Mergin Maps start for free")
 
 3. Click on **Create your free account**
-   ![web create account](./mergin-web-create-account.png)
+   ![Mergin Maps create free account](./mergin-web-create-account.jpg "Mergin Maps create free account")
    
 4. Create your account by filling up the form and click on **Sign Up**. You will receive a confirmation email with a link to verify your email.
-   ![sign up](./mergin-web-sign-up.png)
+   ![Mergin Maps sign up form](./mergin-web-sign-up.jpg "Mergin Maps sign up form")
 
    ::: warning
    Check your spam folder if the confirmation email does not appear in your inbox after 5 minutes.
@@ -31,25 +31,22 @@ You can get up-to-speed quickly by following our [Quick Start tutorials](../../t
 
 
 ## From Mergin Maps Input
-<Badge text="Since Input 0.7.0" type="info"/>
-
-:::danger
-This content may differ from what you encounter when working with <MainPlatformNameLink />. It will be updated soon to include recent changes in <MainPlatformNameLink />, <MobileAppName /> and <QGISPluginName />.
-:::
-
 You can also sign up from <MobileAppName />.
 
 1. Download <MobileAppName /> to your Android device, iPhone or iPad. You can find it in the app store of your platform:
    <AppDownload></AppDownload>
 
-1. Open <MobileAppName />
-2. Go to the **Home** tab and tap the icon on the top right of the **Projects** screen
-   ![](./merginmaps-mobile-person-button.jpg)
+2. Open <MobileAppName />. You will see the **Login** page.
    
-3. Press the ***Sign up for free*** button:
-   ![](./merginmaps-mobile-sign-up.jpg)
+   ![Mergin Maps Input login page](../install-input/input-login.jpg "Mergin Maps Input login page")
    
-4. Create your account by filling up the form. Once you press **Sign up**, you will receive a confirmation email. To sign in and use the Mergin service, you will need to activate your account by clicking on the link in the email.
+3. Tap the **Sign up for free** button
+   ![Mergin Maps Input sign up](../install-input/input-sign-up.jpg "Mergin Maps Input sign up")
+   
+4. Create your account by filling up the form
+   ![Mergin Maps Input register](./input-register.jpg "Mergin Maps Input register")
+
+   Once you press **Sign up**, you will receive a confirmation email. To sign in and use the <MainPlatformNameLink /> service, you will need to activate your account by clicking on the link in the email.
 
 ::: warning
 Check your spam folder if the confirmation email does not appear in your inbox after 5 minutes.
@@ -57,11 +54,12 @@ Check your spam folder if the confirmation email does not appear in your inbox a
 
 **Welcome to <MainPlatformNameLink />!**
 
-You can get up-to-speed quickly by following our [Quick Start tutorials](../../tutorials/capturing-first-data/index.md).
+You can get up-to-speed quickly by following [<MobileAppName />'s tour projects](../install-input/#mergin-maps-input-s-tour-projects) and our [Quick Start tutorials](../../tutorials/capturing-first-data/index.md).
 
 ## Forgotten password
-If you forget your password, you can reset it through <AppDomainNameLink id="login/reset" desc="Mergin Maps website" /> or by clicking **Forgot password?** in the login page on the web or in <MobileAppName />.
-![forgotten password](./forgot-password.png)
+If you forget your password, you can reset it through <AppDomainNameLink id="login/reset" desc="Mergin Maps website" /> or by clicking **Forgot password?** in the login page.
+![Mergin Maps web forgot password](./forgot-password.jpg "Mergin Maps web forgot password")
 
-![input forgotten password](./merginmaps-mobile-forgot-password.jpg)
+The option to reset password is also available in <MobileAppName />
+![Mergin Maps Input forgot password](./merginmaps-mobile-forgot-password.jpg "Mergin Maps Input forgot password")
 

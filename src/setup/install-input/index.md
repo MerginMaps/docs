@@ -16,9 +16,9 @@ Once you have installed and opened <MobileAppName /> you will see the **Login** 
 
 ![Mergin Maps Input login page](./input-login.jpg "Mergin Maps Input login page")
 
-Sign in, if you already have a <MainPlatformNameLink /> account. If not, you may create your account by clicking **Sign up for free**.
+Sign in, if you already have a <MainPlatformNameLink /> account. If not, you may create your account by tapping **Sign up for free**.
 
-![Mergin Maps Input sign up](./input-sign-in.jpg "Mergin Maps Input sign up") 
+![Mergin Maps Input sign up](./input-sign-up.jpg "Mergin Maps Input sign up") 
  
 After signing up, you will see two projects that will guide you through the basics.
 
