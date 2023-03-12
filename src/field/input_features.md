@@ -47,7 +47,7 @@ Lines and areas can be also captured automatically based on your position. To tu
 
 Once you are finished, tap **Done**. If you are capturing an area, the shape will be automatically closed by connecting the last and the first vertex.
 
-You can change how often you want to capture a vertex in **Line rec. interval** in [**Settings**](./input_ui/#recording-settings). The interval can be defined as time elapsed in seconds or as distance travelled in metres.
+You can change how often you want to capture a vertex in **Line rec. interval** in [**Settings**](./input_ui/#streaming-mode-and-recording-settings). The interval can be defined as time elapsed in seconds or as distance travelled in metres.
 
 :::tip
 <Badge text="since Input 2.1.0" type="tip"/>

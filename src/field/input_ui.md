@@ -90,7 +90,7 @@ Pressing and holding the sync button opens the **Project status** window where y
 - **Local changes**: see changes yet to be synchronised
 - [**Layers**](./layers/): manage the visibility of specific layers, see layers legend, browse features in the layers
 - [**Map themes**](../gis/setup_themes/): a list of map themes set up in a <MainPlatformName /> project in QGIS
-- **Settings**: [GPS](#gps-settings) and [recording](#recording-settings) settings along with references to help, privacy policy, terms of service and [diagnostic log](../misc/troubleshoot/#diagnostic-log-on-mergin-maps-input)
+- **Settings**: [GPS](#gps-settings) and [recording](#streaming-mode-and-recording-settings) settings along with references to help, privacy policy, terms of service and [diagnostic log](../misc/troubleshoot/#diagnostic-log-on-mergin-maps-input)
    ![Mergin Maps Input Settings](./input-settings-2.jpg "Mergin Maps Input Settings")
    
 ### GPS settings
