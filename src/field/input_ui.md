@@ -73,7 +73,7 @@ The active layer currently used for survey is displayed above the bottom navigat
 ## Synchronisation
 The sync button can be used to synchronise changes. 
 
-If automatic synchronisation of changes is allowed in the [Settings](#recording-settings), this button will indicate that synchronisation is in progress.
+If automatic synchronisation of changes is allowed in the [Settings](#streaming-mode-and-recording-settings), this button will indicate that synchronisation is in progress.
 
 ![Mergin Maps Input Sync button](./input-autosync.jpg "Mergin Maps Input Sync button")
 
