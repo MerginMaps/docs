@@ -14,6 +14,7 @@ CSV
 CharlieColleague
 DAF
 DateTime
+DOP
 ECW
 EE
 Emlid
@@ -82,6 +83,7 @@ OGR
 Ok
 OpenMapTiles
 OpenStreetMap
+PDOP
 png
 PNG
 PR
@@ -103,6 +105,7 @@ Qt
 Qwant
 QwantResearch
 Recentre
+RTK
 rebranding
 SDK
 SLA
@@ -120,6 +123,7 @@ UUID
 Uncheck
 Valuemap
 VectorTileServer
+VDOP
 Vue
 VuePress
 WFS
