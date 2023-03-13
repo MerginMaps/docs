@@ -12,19 +12,13 @@ If you want to use <MobileAppName /> on Windows, you need to download the <NoSpe
 
 
 ## Mergin Maps Input's tour projects
-Once you have installed and opened <MobileAppName /> you will see the **Login** page.
-
-![Mergin Maps Input login page](./input-login.jpg "Mergin Maps Input login page")
-
-Sign in, if you already have a <MainPlatformNameLink /> account. If not, you may create your account by tapping **Sign up for free**.
-
-![Mergin Maps Input sign up](./input-sign-up.jpg "Mergin Maps Input sign up") 
- 
-After signing up, you will see two projects that will guide you through the basics.
-
-Want try <MobileAppName /> without signing up? Click on the back arrow in the upper left corner on the login page.  
+Once you have installed and opened <MobileAppName /> you will see two projects that will guide you through the basics.
 
 ![Mergin Maps Input Tour Projects](./input-tour-projects.jpg "Mergin Maps Input Tour Projects")
+
+::: tip
+It is possible to use the app without having a <MainPlatformNameLink /> account. However, if you [sign up to Mergin Maps](../sign-up-to-mergin-maps/), you will be able to transfer your projects to other devices, share them, track changes and much more! 
+:::
 
 ### Start here project
 **Start here!** project will show you how to use <MobileAppName />: how to navigate the map, change layer themes and edit the attributes of map features.
@@ -39,5 +33,4 @@ Capturing field data tour will explain how to capture new features and photos in
 :::tip
 Do you want to learn more? Get up-to-speed quickly by following our [Quick Start tutorials](../../tutorials/capturing-first-data/index.md)!
 :::
-
 
