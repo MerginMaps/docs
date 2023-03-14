@@ -35,7 +35,7 @@ To ensure you can use the latest improvements, don't forget to [upgrade the plug
    ![](./download-open.png)
 
 ## Local changes
-<Badge text="since plugin 2022.4" type="warning"/>
+<SinceBadge type="Plugin" version="2022.4" />
 The changes that you make in the project can be synchronised to the cloud and shared with your coworkers. Now these changes can also be visualised which is helpful when reviewing local changes to see what was actually modified and also to avoid unwanted edits.
 
 :::tip

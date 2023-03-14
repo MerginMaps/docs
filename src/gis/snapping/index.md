@@ -1,6 +1,5 @@
 # How to Set Up Snapping for Mergin Maps Input 
-<Badge text="since plugin 2022.5" type="warning"/><Badge text="since Input 1.6.0" type="tip"/>
-
+<SinceBadge type="Plugin" version="2022.5" /><SinceBadge type="App" version="1.6.0" />
 [[toc]]
 
 Capturing data in the field using <MobileAppName /> can be easier, if you can snap the vertices of new features to existing geometries. Snapping can also help you avoid creating topological errors in your datasets. 

@@ -39,7 +39,7 @@ If not set, <MobileAppName /> zooms to all visible layers. This is not particula
 [Map Themes](./setup_themes/) make possible to switch between different background maps in <MobileAppName /> (e.g. cartography maps and aerial imagery)
 
 ### Photo quality
-<Badge text="since plugin 2022.3.2" type="warning"/> <Badge text="since Input 1.5.1" type="tip"/>
+<SinceBadge type="Plugin" version="2022.3.2" /><SinceBadge type="App" version="1.5.1" />
 The quality of photographs and pictures that are saved in the <MainPlatformName /> project can be set up in the **<MainPlatformName />** tab in **Project properties**. When pictures are added using <MobileAppName /> (uploaded or taken with the camera), they will be resized accordingly.
 
 By default, the quality is set to *Original* - the original pictures are stored. If you want to resize the pictures, you can choose from *High*, *Medium*, or *Low* quality. The [EXIF metadata](../layer/exif_metadata/) of the original files are kept.
@@ -49,7 +49,7 @@ Don't forget to save and sync your project!
 ![resize pics](./project_resize_pics.png)
 
 ### Snapping
-<Badge text="since plugin 2022.5" type="warning"/><Badge text="since Input 1.6.0" type="tip"/>
+<SinceBadge type="Plugin" version="2022.5" /><SinceBadge type="App" version="1.6.0" />
 If you want to use snapping in <MobileAppName /> during the field survey, you need to set it up in the **<MainPlatformName />** tab in **Project properties**.
 ![resize pics](./project_snapping.png)
 

@@ -102,13 +102,13 @@ Pressing and holding the sync button opens the **Project status** window where y
 - **Accuracy threshold**: value used to display GPS accuracy colours
 - **Show accuracy warning**: if toggled on, a warning will be displayed when recording while the accuracy is lower than **Accuracy threshold**
 - **Select GPS receiver**: option to switch between internal GPS and external GPS receiver connected via Bluetooth. See [External GPS](./external_gps/) for more details.
-- **GPS antenna height** <Badge text="since Input 2.1.0" type="tip"/>:  the height of a GPS device 
+- **GPS antenna height**: <SinceBadge type="App" version="2.1.0" />  the height of a GPS device 
 
 ![GPS Settings](./input-gps-settings.jpg "GPS settings")
 
 ### Streaming mode and recording settings
 **Streaming mode** can be used when surveying lines or polygons to capture vertices based on the GPS location.
-- **Interval type** <Badge text="since Input 2.1.0" type="tip"/>: the type of interval in streaming mode, can be set to *Time elapsed* or *Distance travelled* .
+- **Interval type** <SinceBadge type="App" version="2.1.0" />: the type of interval in streaming mode, can be set to *Time elapsed* or *Distance travelled* .
 - **Line rec. interval** the interval of recording vertices in **Streaming mode**
 - **Reuse last value option** if used, last entered values of selected attributes will be automatically filled in when creating a new feature. See  [How to reuse last value option](./reuse-last-values/) for more details.
 - **Automatically sync changes** if used, local changes will be synchronised automatically.
