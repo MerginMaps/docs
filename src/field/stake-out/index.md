@@ -1,5 +1,5 @@
 # How to Stake Out Points
-<Badge text="since Input 1.3.0" type="tip"/>
+<SinceBadge type="App" version="1.3.0" />
 
 Points in your survey layers can be staked out. <MobileAppName /> will navigate you towards the selected point showing you the direction and distance.
 

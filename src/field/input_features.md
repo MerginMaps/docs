@@ -50,7 +50,7 @@ Once you are finished, tap **Done**. If you are capturing an area, the shape wil
 You can change how often you want to capture a vertex in **Line rec. interval** in [**Settings**](./input_ui/#streaming-mode-and-recording-settings). The interval can be defined as time elapsed in seconds or as distance travelled in metres.
 
 :::tip
-<Badge text="since Input 2.1.0" type="tip"/>
+<SinceBadge type="App" version="2.1.0" />
 The recording interval can be now defined also in metres as distance travelled.
 :::
 
@@ -62,7 +62,8 @@ Tap on a feature and press the edit button. Now you can change the attributes in
 To edit geometry of a point feature simply adjust the location by panning the map or use **GPS** in the same manner as when adding new features. Once you are happy with your changes, press **Done**.
 
 ### Edit geometry of lines or areas
-<Badge text="since Input 1.8.0" type="tip"/> 
+<SinceBadge type="App" version="1.8.0" />
+
 It is also possible to edit the geometry of lines and areas. Tap on a feature and press the **Edit geometry** button. 
 
 The vertices of the feature will be highlighted and you can move or remove them as needed. Press **Done** to confirm your changes.
@@ -70,7 +71,7 @@ The vertices of the feature will be highlighted and you can move or remove them 
 ![Editing polygon geometry](./input-edit-polygon.jpg "Editing polygon geometry")
 
 ### Redraw geometry of lines or areas
-<Badge text="since Input 1.8.0" type="tip"/>
+<SinceBadge type="App" version="1.8.0" />
 The existing geometry of lines and areas can also be redrawn.
 
 Tap the **Advanced** button and select the **Redraw** option. Now you can record the new geometry using the tools in the bottom panel.
@@ -78,7 +79,7 @@ Tap the **Advanced** button and select the **Redraw** option. Now you can record
 ![Advanced editing redrawing geometry of polygons](./input-redraw-geometry.jpg "Advanced editing redrawing geometry of polygons")
 
 ### Split geometry of lines or areas
-<Badge text="since Input 1.6.0" type="tip"/>
+<SinceBadge type="App" version="1.6.0" />
 Lines and areas can be split into two or more new features that will keep the same attributes as the original feature.
 
 To split geometry of a feature:
@@ -96,7 +97,7 @@ To split geometry of a feature:
 
 
 ## Snapping features
-<Badge text="since Input 1.6.0" type="tip"/>
+<SinceBadge type="App" version="1.6.0" />
 
 Snapping can be enabled in your <MainPlatformName /> project to make the field survey easier. [How to Set Up Snapping](../gis/snapping/) will guide you through the snapping options.
 

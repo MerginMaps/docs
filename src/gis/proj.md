@@ -1,5 +1,6 @@
 # Custom Projections 
-<Badge text="Since Input 0.8.0" type="info"/>
+<SinceBadge type="App" version="0.8.0" />
+
 [[toc]]
 
 ## Custom projections in QGIS
@@ -31,13 +32,13 @@ Projections issues are one of the common causes of misplacement of your field da
 If you had to install grid shift files in QGIS in order to display your layers correctly, it is also necessary to provide the same grid shift files to <MobileAppName />.
 
 <MobileAppName /> supports grid shift files formats:
-- *National Transformation version 2* (<NoSpellcheck id=".gsb" />) <Badge text="Since Input 0.8.0" type="info"/>
-- *Geodetic TIFF grids* (.tiff) <Badge text="Since Input 1.7.0" type="info"/>
+- *National Transformation version 2* (<NoSpellcheck id=".gsb" />) <SinceBadge type="App" version="0.8.0" />
+- *Geodetic TIFF grids* (.tiff) <SinceBadge type="App" version="1.7.0" />
 
 When the app starts, it searches for `proj` folders in all available projects on the disk. The grid shift files found in these folders can be then used in all projects.
 
 ### Adding grid shift files to Mergin Maps Input
-<Badge text="since plugin 2022.6" type="warning"/>
+<SinceBadge type="Plugin" version="2022.6" />
 It couldn't be easier! When [creating a new <MainPlatformName /> project](../manage/create-project/#create-a-project-in-qgis) by packaging current QGIS project or using current QGIS project as is, <QGISPluginName /> will copy all required datum shift grids to the appropriate project folder.
 
 All you need to do is:

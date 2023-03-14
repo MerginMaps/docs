@@ -31,7 +31,7 @@ You can get up-to-speed quickly by following our [Quick Start tutorials](../../t
 
 
 ## From Mergin Maps Input
-<Badge text="Since Input 0.7.0" type="info"/>
+<SinceBadge type="App" version="0.7.0" />
 
 :::danger
 This content may differ from what you encounter when working with <MainPlatformNameLink />. It will be updated soon to include recent changes in <MainPlatformNameLink />, <MobileAppName /> and <QGISPluginName />.
