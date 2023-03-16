@@ -260,6 +260,16 @@ You can use any of supported <GitHubRepo id="markdown-it/markdown-it-emoji/blob/
 
 ```<Badge text="error badge" type="error"/>```
 
+For mentioning that some feature is available from specific version, use `<SinceBadge />`
+
+```<SinceBadge type="App" version="2022.1.1" />```
+<SinceBadge version="2022.1.1" type="App" />
+
+```<SinceBadge type="Plugin" version="2023.2" />```
+<SinceBadge version="2023.2" type="Plugin" />
+
+```<SinceBadge type="Server" version="2024.3" />```
+<SinceBadge version="2024.3" type="Server" />
 
 ### Images
 
