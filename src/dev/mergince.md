@@ -1,4 +1,5 @@
 # Mergin Maps Community Edition
+[[toc]]
 
 <MainPlatformNameLink /> is a web platform for storage and synchronisation of data between mobile devices, <MainPlatformNameLink /> service and QGIS Desktop. 
 
