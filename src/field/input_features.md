@@ -13,7 +13,7 @@ To be able to transfer your data to your mobile/tablet device, share your projec
 ## Add features
 In <MobileAppName />, open a [project](./input_ui/#projects) you want to use.
 
-To survey new features, tap the **Record** button on the bottom panel. 
+To survey new features, tap the **Record** button on the bottom panel to enter the **recording mode**.
 
 ![Mergin Maps Input Record tab](./input-record.jpg "Mergin Maps Input Record tab") 
 
@@ -27,7 +27,7 @@ Surveyed features are added to the active layer, which is shown just above the b
 ![active survey layer](./input-active-layer.jpg "Active survey layer")
 
 ### Capture points
-To capture a new point feature, tap **Add** on the bottom panel. A form will open where you can fill in the attributes.
+To capture a new point feature, simply tap **Add** on the bottom panel while in the [recording mode](#add-features). A form will open where you can fill in the attributes.
 
 ![Add point in Mergin Maps Input](./input-add-point.jpg "Add point in Mergin Maps Input")
 
@@ -35,13 +35,17 @@ To capture a new point feature, tap **Add** on the bottom panel. A form will ope
 There are two methods of capturing lines and areas: adding vertices one by one or using the *streaming mode* to capture features based on your position.
 
 #### Adding points to survey vertices of lines or areas
+Lines and areas can be captured by adding vertices one by one. When you are in the [**recording**](#add-features) mode and your active layer is a line or polygon, you will see line and areas editing tools in the bottom panel.
+
 Tap **Add** to capture vertices of your line or area. If you want to change the position of the last vertex, tap **Remove**, move the vertex to the correct place and  **Release** it. **Undo** can be used to revert last changes.
 
 Once the survey of the feature is completed, tap **Done** and fill in the form.
 ![Capturing lines](./input-capture-line.jpg)
 
 ### Streaming mode to survey lines or areas
-Lines and areas can be also captured automatically based on your position. To turn on the streaming mode, long press the **GPS** button. To turn it off, long press the **GPS** button again.
+Lines and areas can be also captured automatically based on your position. Make sure you are in the [**recording**](#add-features) mode and that your active layer is a line or polygon.
+
+To turn on the streaming mode, long press the **GPS** button. To turn it off, long press the **GPS** button again.
 
 ![GPS streaming mode to survey lines](./input-streaming-line.jpg "GPS streaming mode to survey lines")
 
@@ -64,7 +68,7 @@ To edit geometry of a point feature simply adjust the location by panning the ma
 ### Edit geometry of lines or areas
 <SinceBadge type="App" version="1.8.0" />
 
-It is also possible to edit the geometry of lines and areas. Tap on a feature and press the **Edit geometry** button. 
+It is also possible to edit the geometry of lines and areas. Tap on a line or polygon feature and press the **Edit** button. Then select **Edit geometry**.
 
 The vertices of the feature will be highlighted and you can move or remove them as needed. Press **Done** to confirm your changes.
 
@@ -74,7 +78,7 @@ The vertices of the feature will be highlighted and you can move or remove them 
 <SinceBadge type="App" version="1.8.0" />
 The existing geometry of lines and areas can also be redrawn.
 
-Tap the **Advanced** button and select the **Redraw** option. Now you can record the new geometry using the tools in the bottom panel.
+In the feature's form, tap the **Advanced** button and select the **Redraw geometry** option. Now you can record the new geometry using the tools in the bottom panel.
 
 ![Advanced editing redrawing geometry of polygons](./input-redraw-geometry.jpg "Advanced editing redrawing geometry of polygons")
 
