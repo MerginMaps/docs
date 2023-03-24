@@ -34,7 +34,7 @@ When signed in, you will see the overview of your profile and storage use in **M
 - **Sign out** to switch to a different account
 - **Delete** your account within the app
 
-:::danger
+:::danger WARNING
 Be careful! If you delete your account, you will lose access to your <MainPlatformName /> projects both on the mobile device and on the server.
 :::
 

@@ -2,10 +2,6 @@
 
 [[toc]]
 
-:::warning
-This tutorial may differ from what you encounter when working with <MainPlatformNameLink />. It will be updated soon to include recent changes in <MainPlatformNameLink />, <MobileAppName /> and <QGISPluginName />.
-:::
-
 In this tutorial you will learn how to:
 * See your location shown on background maps on your mobile device
 * Capture field data with their locations, photos and notes
@@ -19,7 +15,7 @@ Download <MobileAppName /> to your Android device, iPhone or iPad. You can find 
 ## Creating a project in Mergin Maps Input
 Data are stored within projects. We'll now create a new project to save our data into.
 
-<MobileAppName /> offers the quickest and easiest way of creating new projects. Alternative methods offering much greater flexibility are introduced in later tutorials.
+Using <MobileAppName /> is the quickest and easiest way of creating new projects. Alternative methods offering much greater flexibility are introduced in later tutorials.
 
 1. Open <MobileAppName /> on your mobile device
 2. Go to the **Home** tab of the **Projects** screen and press **Create project**:

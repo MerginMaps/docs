@@ -1,7 +1,7 @@
 # Mergin Maps Plugin for QGIS Overview
 [[toc]]
 
-:::danger
+:::danger WARNING
 This content may differ from what you encounter when working with <MainPlatformNameLink />. It will be updated soon to include recent changes in <MainPlatformNameLink />, <MobileAppName /> and <QGISPluginName />.
 :::
 
@@ -27,7 +27,7 @@ To ensure you can use the latest improvements, don't forget to [upgrade the plug
 2. Browse to the folder, where you want to save the project and click **Select folder**
    ![](./download-progress.png)
 
-   :::danger
+   :::danger WARNING
    Do not use shared network drives or cloud storage (such as OneDrive or Google Drive) to store your <MainPlatformName /> projects. It is not supported and can cause errors.
    :::
 

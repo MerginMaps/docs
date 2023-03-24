@@ -43,7 +43,7 @@ There is a high chance that these settings are the culprit behind the error!
    
 5. Save and sync the project.
 
-:::danger
+:::danger WARNING
 Copying styles from problematic layers and pasting them to other layers can cause the error to occur again. Unless you know what exactly causes the issues and are able to fix that, you might need to recreate the styles.
 :::
 

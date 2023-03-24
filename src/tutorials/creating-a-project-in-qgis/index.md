@@ -1,7 +1,7 @@
 # Creating a Project in QGIS
 [[toc]]
 
-:::danger
+:::danger WARNING
 This tutorial may differ from what you encounter when working with <MainPlatformNameLink />. It will be updated soon to include recent changes in <MainPlatformNameLink />, <MobileAppName /> and <QGISPluginName />.
 :::
 

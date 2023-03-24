@@ -113,7 +113,7 @@ If you want to delete a project, you can do so through <AppDomainNameLink /> or 
 
 ![delete project](./project-delete.png)
 
-::: danger
+::: danger WARNING
 This operation cannot be undone and the project data are permanently deleted.
 :::
 
@@ -127,6 +127,6 @@ Using the <QGISPluginName />, you can delete a <MainPlatformName /> project eith
 3. Right-click on the project name again and select **Remove from server** option. This will remove the <MainPlatformName /> project completely. 
    ![remove project locally](./plugin-project-delete-from-server.png)
 
-::: danger
+::: danger WARNING
 This operation cannot be undone and the project data are permanently deleted.
 :::
