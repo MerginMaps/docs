@@ -13,7 +13,6 @@ There are four <MainPlatformName /> subscription plans you can choose from depen
 - Professional plan
 - Team plan
 
-
 The free plan can be used for commercial use only during the **28 day trial**. 
 
 It is possible to get a discount if you are a non-profit or charity organisation. Please <MerginMapsEmail id="sales" desc="contact us" /> to find out more.
@@ -27,7 +26,7 @@ Subscriptions are automatically billed monthly or annually. You can cancel or ch
 ## Changing a subscription from web
 Information about the current subscription can be found in <AppDomainNameLink />. Here, you can also switch to another subscription plan and manage the billing.
 
-![org profile](./subscriptions.png)
+![Mergin Maps Subscription details](./subscriptions.jpg "Mergin Maps Subscription details")
 1. Log into <AppDomainNameLink />
 2. Navigate to **Subscriptions**
 3. Here, choose if you want to be **Billed monthly** or **Billed annually** and click on **Subscribe** under the plan of your choice.
@@ -55,4 +54,4 @@ To download your invoices and see your payment history:
    - **HISTORY** to see your payment history 
    - **INVOICES** to access your invoices
 
-![invoices and history](./invoices-history.png)
+![Invoices and Payment History](./invoices-history.jpg "Invoices and Payment History")

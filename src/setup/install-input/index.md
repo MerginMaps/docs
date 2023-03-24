@@ -1,4 +1,5 @@
 # How to Install Mergin Maps Input
+[[toc]]
 
 Download <MobileAppName /> to your Android device, iPhone or iPad. You can find it in the app store of your platform:
 
@@ -9,26 +10,27 @@ With <MobileAppName />, you can view your data and location on the map, capture 
 ## Mergin Maps Input on Windows
 If you want to use <MobileAppName /> on Windows, you need to download the <NoSpellcheck id=".exe" /> installer from <GitHubRepo id="MerginMaps/input/releases/latest" desc="MerginMaps/Input" /> repository and install it on your computer.
 
-## Input's tour projects
 
-:::danger
-This content may differ from what you encounter when working with <MainPlatformNameLink />. It will be updated soon to include recent changes in <MainPlatformNameLink />, <MobileAppName /> and <QGISPluginName />.
+## Mergin Maps Input's tour projects
+Once you have installed and opened <MobileAppName /> you will see two projects that will guide you through the basics.
+
+![Mergin Maps Input Tour Projects](./input-tour-projects.jpg "Mergin Maps Input Tour Projects")
+
+::: tip
+It is possible to use the app without having a <MainPlatformNameLink /> account. However, if you [sign up to Mergin Maps](../sign-up-to-mergin-maps/), you will be able to transfer your projects to other devices, share them, track changes and much more! 
 :::
 
-Once you have installed and opened <MobileAppName /> you will see two tour projects that will guide you through the basics.
+### Start here project
+**Start here!** project will show you how to use <MobileAppName />: how to navigate the map, change layer themes and edit the attributes of map features.
 
-![Input's Tour Projects](./input-tour-projects.png)
+![Mergin Maps Input Start here tour](./input-start-here.jpg "Mergin Maps Input Start here tour")
 
-**Start here!** will show you how to navigate the map, change layer themes and edit the attributes of map features.
+### Capturing field data tour project
+Capturing field data tour will explain how to capture new features and photos in the field.
 
-![Start here](./welcome-to-input.png)
-
-**Capturing field data tour** will explain how to capture new features and photos in the field.
-
-![Capture data](./capture-data.png)
+![Capturing field data tour](./input-capturing-field-data.jpg "Capturing field data tour")
 
 :::tip
 Do you want to learn more? Get up-to-speed quickly by following our [Quick Start tutorials](../../tutorials/capturing-first-data/index.md)!
 :::
-
 
