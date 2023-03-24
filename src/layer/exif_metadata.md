@@ -44,6 +44,8 @@ EXIF function supported by <MobileAppName />:
    - `GPSLongitude` returns GPS Longitude as rationals, e.g. 17/1, 6/1, 244907/10000.
    - `ImageWidth` returns the image width in pixels.
 
+**Important note about <EXIF_TAG_STRING>**: beware of what exiftool can output as tag names (ie. with `exiftool -n -S <PATH_TO_IMAGE>`). As explained in [exiftool documentation](https://exiftool.org/TagNames/EXIF.html), some tag names are displayed with names that can differ from the EXIF standard: `ImageWidth` is valid, but `ImageHeight` is not, you have to use the EXIF official name (`ImageLength`). Valid names are listed in the Android developer documentation for [ExifInterface](https://developer.android.com/reference/android/media/ExifInterface).
+
 ## Allowing location tags
 **Location tags have to be allowed** in the camera settings to store GPS EXIF metadata.
 
