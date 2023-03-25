@@ -1,9 +1,13 @@
 # Mergin Maps Community Edition
 [[toc]]
 
-<MainPlatformNameLink /> is a web platform for storage and synchronisation of data between mobile devices, <MainPlatformNameLink /> service and QGIS Desktop. 
+SaaS <MainPlatformName /> service is a web platform for storage and synchronisation of data between mobile devices, <MainPlatformNameLink /> service and QGIS Desktop. 
 
 There is also <MainPlatformName /> Community Edition (<MainPlatformName /> CE) that is licensed as open source software. The source code for <MainPlatformName /> CE can be modified and used for custom deployments. You can contribute your code to <GitHubRepo id="MerginMaps/mergin" />.
+
+::: tip
+If you need more functionality than <MainPlatformName /> CE offers, explore our [subscription plans](../setup/subscriptions/).
+:::
 
 ## How to deploy Mergin Maps CE
 **Interested in deploying <MainPlatformName /> CE?** You can start by going to <GitHubRepo id="MerginMaps/mergin" /> on GitHub and read instructions on how to deploy it for your platform.
@@ -27,6 +31,6 @@ Did you get an error that the server is not properly configured?
 2. Restart the container with the `MERGIN_BASE_URL` variable
 
 ## Migrate to the latest Mergin Maps CE version
-To migrate from older <MainPlatformName /> Community Edition to the latest version, follow our [Migration Guides](./ce-migration/)
+To migrate from older <MainPlatformName /> Community Edition to the latest version, follow our [Migration Guides](./ce-migration/).
 
 
