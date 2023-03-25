@@ -18,21 +18,17 @@ Data are stored within projects. We'll now create a new project to save our data
 Using <MobileAppName /> is the quickest and easiest way of creating new projects. Alternative methods offering much greater flexibility are introduced in later tutorials.
 
 1. Open <MobileAppName /> on your mobile device
-2. Go to the **Home** tab of the **Projects** screen and press **Create project**:
-   ![](./merginmaps-mobile-home-tab-of-projects-screen.jpg)
+2. Go to the **Home** tab of the **Projects** screen and press **Create project**
+   ![Mergin Maps Input Create project](./merginmaps-mobile-home-tab-of-projects-screen.jpg "Mergin Maps Input Create project")
 
-3. Give the project a name 
-   ![](./merginmaps-mobile-naming-new-project.jpg)
+3. Give the project a **name**
+   ![Enter name of created project](./merginmaps-mobile-naming-new-project.jpg "Enter name of created project")
 
-4. Press **Create project**:
-   ![](./merginmaps-mobile-create-new-project.jpg)
+4. Minimise the on-screen keyboard to access (if needed) and press **Create project**
+   ![Confirm creating project](./merginmaps-mobile-create-new-project.jpg "Confirm creating project")
    
-   ::: tip
-   You may need to minimise the on-screen keyboard to access the **Create project** button.
-   :::
-
-Your new project should now be visible on the **Home** tab of the **Projects** screen:
-![](./merginmaps-mobile-new-project-listed.jpg)
+Your new project should now be visible on the **Home** tab of the **Projects** screen
+![Created project listed in the home tab](./merginmaps-mobile-new-project-listed.jpg "Created project listed in the home tab")
 
 
 ## Capturing field data
