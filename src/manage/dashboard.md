@@ -35,7 +35,7 @@ The **Subscription** tab contains information about your [subscription and invoi
 - **DETAIL** contains details about your current data usage and subscription. Here you can also change your plan and the frequency of your subscription billing.
 - **HISTORY** includes the list of events related to your account, such as changing the plan or the payment history.
 - **INVOICES** contains the list of your previous payments and invoices
-![subscription](../setup/subscriptions/subscriptions.png)
+![Mergin Maps Subscriptions details](../setup/subscriptions/subscriptions.jpg "Mergin Maps Subscriptions details")
 
 ## Settings
 In the **Settings** tab, you will find information about the current workspace. 
