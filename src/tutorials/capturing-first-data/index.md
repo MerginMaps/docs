@@ -39,7 +39,7 @@ Note that the **background map used in this project requires network connectivit
 1. Open the project by tapping its row in the **Projects** screen. You should see your location shown over the background map:
    ![Current location shown on OpenStreetMap](./merginmaps-mobile-location-shown-on-osm.jpg "Current location shown on OpenStreetMap")
 
-2. Pinch the map to zoom in to your current position. If needed, the map can be recentred using the **GPS** button in the bottom navigation panel.
+2. Pinch the map to zoom in to your current position. If needed, recentre the map using the **GPS** button in the bottom navigation panel.
    
 3. Tap the **Record** button
    ![Mergin Maps Input Record button](./merginmaps-mobile-record.jpg "Mergin Maps Input Record button")
