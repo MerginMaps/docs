@@ -1,7 +1,7 @@
 # How to Create a New Project
 [[toc]]
 
-:::danger
+:::warning
 This content may differ from what you encounter when working with <MainPlatformNameLink />. It will be updated soon to include recent changes in <MainPlatformNameLink />, <MobileAppName /> and <QGISPluginName />.
 :::
 
@@ -53,7 +53,8 @@ To work with <MainPlatformName /> projects in QGIS, you will need to [install th
 
 4. Name the project and select a path where your project folder and associated files will be generated. 
    ![](./mergin_plugin_project_wizard_4.png)
-   :::danger
+   
+   :::danger WARNING
    Your project should be saved on a local drive. Using shared network drives and cloud storage (such as OneDrive or Google Drive) is **not supported**.
    :::
 

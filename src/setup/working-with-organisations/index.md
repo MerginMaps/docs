@@ -1,7 +1,7 @@
 # Working with Organisations
 <Badge text="deprecated" type="error"/>
 
-:::danger
+:::danger WARNING
 Organisations were replaced by [**Workspaces**](../../manage/workspaces/).
 :::
 
