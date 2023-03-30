@@ -95,7 +95,7 @@ $ flask db stamp 2686074eff45 # ← state of 2021.6.1
 $ flask db upgrade dbd428cda965 # sync with pre-2023 releases
 $ flask db upgrade 0ab6a1fbf974
 
-$ export GLOBAL_WORKSPACE=my-company # choose global workspace here
+$ echo $GLOBAL_WORKSPACE # make sure the GLOBAL_WORKSPACE variable is set and has the desired value
 
 $ flask db upgrade 35af0c8be41e
 $ flask db upgrade 1fcbea2a0f2c
