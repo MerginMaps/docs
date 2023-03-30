@@ -33,7 +33,7 @@ $ docker-compose -f docker-compose.yml stop
 $ git pull
 ```
 
- 6. Amend environment variables (.env file). **Important** ⚠️
+ 6. Set environment variables (.prod.env file). **Important** ⚠️
 
 As mentioned earlier, CE operates with one global workspace. We will set it up now.
 Specify its name with the following environment variable:
@@ -60,7 +60,7 @@ You can specify the maximum storage for your shiny new workspace 🌟 with the f
 New users can be created from Mergin Maps administration panel, by navigating to `<your_url>/admin`.
 :::
 
- 7. Make sure projects volume mounts in `docker-compose` file still match. Switch to new server version and postgres to at least version 12 (14 recommended) by running new docker containers:
+ 7. Make sure projects volume mounts in `docker-compose` file still match (You can set up new volumes by following the [quick start guide](TODO:LINK)). Switch to new server version and postgres to at least version 12 (14 recommended) by running new docker containers:
 ```bash
 $ docker-compose -f docker-compose.yml up
 ```
