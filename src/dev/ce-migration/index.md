@@ -73,6 +73,8 @@ $ docker exec -it merginmaps-db bash
 root@merginmaps-db$ pg_restore -U postgres -Fc -d postgres < /tmp/pg_backup.dump 
 ```
 
+*You might see some warnings about using public schema, you can safely ignore those.*
+
 :::warning
 If your postgres settings were custom, you might need to follow official instructions for upgrading the postgres cluster.
 :::
