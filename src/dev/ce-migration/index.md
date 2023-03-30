@@ -54,7 +54,7 @@ Further, you need to set a default role for people in your workspace. **Pick one
 
 You can specify the maximum storage for your shiny new workspace 🌟 with the following variable:
 
- - `GLOBAL_STORAGE=1048576` - workspace storage in MB
+ - `GLOBAL_STORAGE=10737418240` - workspace storage in bytes (10 GB in the example)
 
 :::tip
 New users can be created from Mergin Maps administration panel, by navigating to `<your_url>/admin`.
