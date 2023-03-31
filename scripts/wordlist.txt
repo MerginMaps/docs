@@ -10,6 +10,7 @@ Bing
 changesets
 CRS
 crosshairs
+CSRF
 CSV
 CharlieColleague
 DAF
@@ -58,6 +59,7 @@ Lebefure
 Leica
 LGPL
 LGPLv
+lockfile
 LTR
 Lutra
 MAN
@@ -72,6 +74,7 @@ Mercedes
 Mergin
 merginmaps
 Multiline
+nginx
 NDK
 OneDrive
 NMEA
@@ -109,6 +112,8 @@ RTK
 rebranding
 SDK
 SLA
+SMTP
+SQLAlchemy
 SSH
 SVG
 SVGs
