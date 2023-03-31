@@ -180,6 +180,7 @@ mbtiles
 mistyped
 multiline
 namespace
+namespaces
 openmaptiles
 openssl
 orthophoto
@@ -189,6 +190,7 @@ peatlands
 pixelated
 predefine
 predefined
+prepended
 prepopulate
 prepopulated
 programmatically
