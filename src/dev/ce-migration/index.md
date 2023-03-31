@@ -5,17 +5,17 @@ Migration guides are here to help you migrate to the latest version of [<MainPla
 
 ## Migration guide from any previous version to 2023.2
 
-Besides various fixes, enhancements and performance improvements the most notable change recently introduced is the concept of workspaces. For Community Edition it means there is a **common shared workspace (global workspace)** for all users where all projects are stored, instead of having a personal or organizational namespace for projects.
+Besides various fixes, enhancements and performance improvements the most notable change recently introduced is the concept of workspaces. For Community Edition it means there is a **common shared workspace (global workspace)** for all users where all projects are stored, instead of having a personal or organisational namespace for projects.
 
 :::tip
-In case you do not need your previous data, we advise to start with clean deployment without the need to follow this migration guide.
+In case you do not need your previous data, we advise to start with [clean deployment](../mergince/#how-to-deploy-mergin-maps-ce) without the need to follow this migration guide.
 :::
 
 **Upgrading to 2023.2**
 
- 1. Sync all your projects. Hit synchronise on all devices that have local changes (mobiles, QGIS plugins)
+ 1. Synchronise **all your projects and devices** using <MobileAppName /> and <QGISPluginName />. Make sure there are no pending changes. 
 
- 2. Remove downloaded projects from all devices (mobiles, QGIS plugins)
+ 2. After synchronisation, all downloaded projects need to be **removed** from all devices using  <MobileAppName /> and <QGISPluginName />
 
  3. Backup your database ⚠️
 
@@ -23,7 +23,7 @@ In case you do not need your previous data, we advise to start with clean deploy
 $ docker exec mergin-db pg_dump -U postgres -Fc postgres > pg_backup.dump
 ```
 
- 4. Stop all running Mergin Maps services (from project root folder)
+ 4. Stop all running <MainPlatformName /> services (from project root folder)
 ```bash
 $ docker-compose -f docker-compose.yml stop
 ```
@@ -33,7 +33,7 @@ $ docker-compose -f docker-compose.yml stop
 $ git pull
 ```
 
- 6. Set environment variables (.prod.env file). **Important** ⚠️
+ 6. Set environment variables (<GitHubRepo desc=".prod.env" id="MerginMaps/mergin/blob/master/.prod.env" /> file). **Important** ⚠️
 
 As mentioned earlier, CE operates with one global workspace. We will set it up now.
 Specify its name with the following environment variable:
@@ -41,7 +41,7 @@ Specify its name with the following environment variable:
  - `GLOBAL_WORKSPACE=ShinyWorkspace` - name of your workspace. A good fit is a name of your company or team. This value *should not be changed* later.
 
 :::tip
-You can find all available environment variables in "TODO:add file here" together with a tutorial how to set them up.
+You can find all available environment variables [here](../mergince/#how-to-deploy-mergin-maps-ce) together with a tutorial how to set them up.
 :::
 
 Further, you need to set a default role for people in your workspace. **Pick one** of these options
@@ -57,15 +57,15 @@ You can specify the maximum storage for your shiny new workspace 🌟 with the f
  - `GLOBAL_STORAGE=10737418240` - workspace storage in bytes (10 GB in the example)
 
 :::tip
-New users can be created from Mergin Maps administration panel, by navigating to `<your_url>/admin`.
+New users can be created from <MainPlatformName /> administration panel, by navigating to `<your_url>/admin`.
 :::
 
- 7. Make sure projects volume mounts in `docker-compose` file still match (You can set up new volumes by following the [quick start guide](TODO:LINK)). Switch to new server version and postgres to at least version 12 (14 recommended) by running new docker containers:
+ 1. Make sure projects volume mounts in `docker-compose` file still match (You can set up new volumes by following the [quick start guide](../mergince/#how-to-deploy-mergin-maps-ce)). Switch to new server version and PostgreSQL to at least version 12 (14 recommended) by running new docker containers:
 ```bash
 $ docker-compose -f docker-compose.yml up
 ```
 
- 8. Restore backup from older postgres version, e.g.:
+ 1. Restore backup from older PostgreSQL version, e.g.:
 
 ```bash
 $ docker cp pg_backup.dump merginmaps-db:/tmp
@@ -76,7 +76,7 @@ root@merginmaps-db$ pg_restore -U postgres -Fc -d postgres < /tmp/pg_backup.dump
 *You might see some warnings about using public schema, you can safely ignore those.*
 
 :::warning
-If your postgres settings were custom, you might need to follow official instructions for upgrading the postgres cluster.
+If your PostgreSQL settings were custom, you might need to follow official instructions for upgrading the PostgreSQL cluster.
 :::
 
 **Database migration**
