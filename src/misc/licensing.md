@@ -5,10 +5,12 @@
 ## Mergin Maps Service
 
 * <AppDomainNameLink desc="Mergin Maps Cloud" />, SaaS <MainPlatformName /> service, has proprietary license held by Lutra Consulting Ltd.
-* <MainPlatformName /> EE (Enterprise Edition), on-premise <MainPlatformName /> service, has proprietary license held by Lutra Consulting Ltd.
-* <GitHubRepo id="MerginMaps/mergin" desc="Mergin Maps CE (Community Edition)" />, on-premise <MainPlatformName /> service, is licensed under AGPL-3.0.
+* <MainPlatformName /> EE (Enterprise Edition), on-premise <MainPlatformName /> service, has Mergin Maps Commercial Licence held by Lutra Consulting Ltd.
+* <GitHubRepo id="MerginMaps/mergin" desc="Mergin Maps CE (Community Edition)" />, on-premise <MainPlatformName /> service, is dual licensed under AGPL-3.0 and Mergin Maps Commercial Licence
 
 The application uses many open-source libraries, please see <GitHubRepo id="MerginMaps/mergin/blob/master/server/Pipfile" desc="this" /> and <GitHubRepo id="MerginMaps/mergin/blob/master/web-app/package.json" desc="this" /> list for versions and licenses of projects used.
+
+You can find official text of licenses [on this link](https://merginmaps.com/licenses)
 
 ## Mergin Maps Input
 <br />
