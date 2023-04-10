@@ -23,6 +23,7 @@ EPSG
 ESRI
 EXIF
 Exif
+ExifTool
 FID
 FIDs
 FLX
