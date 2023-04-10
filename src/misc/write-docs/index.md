@@ -105,7 +105,9 @@ and you need to update your remote fork before starting the work:
 
 ## The Documentation System
 
-Each markdown should be written as one of the 4 basic types of documentation: tutorials, how-to guides, technical reference and explanation. It is best to read about this [documentation system](https://documentation.divio.com/).
+Each markdown should be written as one of the 4 basic types of documentation: tutorials, how-to guides, technical reference and explanation. 
+
+It is best to read about this [documentation system](https://documentation.divio.com/).
 
 In each section in the menu (except Getting Started and Guides):
 - we start with concepts
@@ -134,6 +136,9 @@ In each section in the menu (except Getting Started and Guides):
         * Correct: "Putting your project in the cloud"
         * Wrong: ~~"Putting Your Project in the Cloud"~~
         * Never shorten the names of components (e.g. Mergin Maps Input)
+    * Titles and headers should contain specific keywords to return relevant search results:
+        * Correct: "Further reading about projections and transformations"
+        * Wrong: ~~"Further reading"~~  
 
 ## Questions 
      
