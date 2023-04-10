@@ -83,6 +83,8 @@ External GPS functionality depends on the manufacturer and on the specific model
 
 | Manufacturer | Model | Android | iOS |
 |---|---|---|---|
+| Carlson | Carlson Brx7 | yes (mock location) | unknown |
+| Carlson | Carlson xML2 | yes (mock location) | unknown |
 | Emlid | Emlid Reach RX | yes | no |
 | Emlid | Emlid Reach RS+ | yes | no |
 | Emlid | Emlid Reach M+ | yes | no |
@@ -96,6 +98,7 @@ External GPS functionality depends on the manufacturer and on the specific model
 | Trimble | Trimble R1 | yes (mock location) | unknown |
 | Trimble | Trimble R2 | yes (mock location) | unknown |
 
+- **Carlson Brx7**,  **Carlson xML2** - through [Carlson Layout](https://www.carlsonsw.com/product/carlson-layout) which will set a mock location in Android.
 - **Emlid Reach RX**, **Emlid Reach RS+**, **Emlid Reach M+** - directly via Bluetooth connection, has an internal NTRIP client to receive corrections. Possible to set a mock location and connect the receiver via Bluetooth using [GPS Connector](https://play.google.com/store/apps/details?id=de.pilablu.gpsconnector) or WiFi using [Lebefure NTRIP Client](https://play.google.com/store/apps/details?id=com.lefebure.ntripclient). Android only.
 - **Geode GNS3** - through *Geode Connect* app on [Android](https://play.google.com/store/apps/details?id=com.juniper.geode2a&hl=en_NZ&gl=US) or [iOS](https://apps.apple.com/us/app/geode-connect/id1446098695), which also acts as an NTRIP client and sends corrections to the device.
 - **Leica FLX100**, **Leica FLX100 plus**, **Leica Zeno GG04plus** - through *Leica Zeno Connect* app on [Android](https://play.google.com/store/apps/details?id=com.leica.zenoconnect&hl=en&gl=US) which also acts as a NTRIP client and sends the corrections to the device. The app will set a mock location in Android. It is also possible to connect directly via Bluetooth (even multiple phones can be connected at once), but if no phone has Zeno app running, there will be no corrections available. 
