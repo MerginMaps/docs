@@ -6,7 +6,9 @@ SaaS <MainPlatformName /> service is a web platform for storage and synchronisat
 There is also <MainPlatformName /> Community Edition (<MainPlatformName /> CE) that is licensed as open source software. The source code for <MainPlatformName /> CE can be modified and used for custom deployments. You can contribute your code to <GitHubRepo id="MerginMaps/mergin" />.
 
 ::: tip
-If you need more functionality than <MainPlatformName /> CE offers, explore our [subscription plans](../setup/subscriptions/).
+More information about <MainPlatformName /> CE and its features can be found on our [website](https://merginmaps.com/pricing-for-ce-and-ee) and in our blog [<MainPlatformName /> Community and Enterprise Editions](https://merginmaps.com/blog/introducing-mergin-maps-community-and-enterprise-editions). 
+
+Need more functionality than <MainPlatformName /> CE offers? Explore our [subscription plans](https://merginmaps.com/pricing).
 :::
 
 ## How to deploy Mergin Maps CE

@@ -105,6 +105,7 @@ module.exports = {
             children: [
                 '/dev/customapp',
                 '/dev/mergince',
+                '/dev/merginmaps-ee/',
                 '/dev/integration',
                 '/dev/dbsync',
                 '/dev/media-sync/',
