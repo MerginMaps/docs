@@ -1,8 +1,8 @@
 # Write Documentation
 
-Thank you for your interest in helping out with writing [Mergin Maps Documentation](https://merginmaps.com/docs). The documentation framework is based on [VuePress](https://vuepress.vuejs.org/) and we welcome any contributions as <GitHubRepo id="MerginMaps/docs/pulls" desc="GitHub Pull Requests" />. If you are unsure how to contribute of what tasks are best to start with, join us on our [community chat](https://merginmaps.com/community/join) and ask in the `#dev` channel. We are happy to get you up to speed!
+Thank you for your interest in helping out with writing [<MainPlatformName /> Documentation](https://merginmaps.com/docs). The documentation framework is based on [VuePress](https://vuepress.vuejs.org/) and we welcome any contributions as <GitHubRepo id="MerginMaps/docs/pulls" desc="GitHub Pull Requests" />. If you are unsure how to contribute of what tasks are best to start with, join us on our [community chat](https://merginmaps.com/community/join) and ask in the `#dev` channel. We are happy to get you up to speed!
 
-The version of the documentation you see on [Mergin Maps Documentation](https://merginmaps.com/docs) is the <GitHubRepo id="MerginMaps/docs/tags" desc="latest tagged release" /> on main branch. The latest commit on main branch can be seen on [Mergin Maps Staging Documentation](https://dev.merginmaps.com/docs).
+The version of the documentation you see on [<MainPlatformName /> Documentation](https://merginmaps.com/docs) is the <GitHubRepo id="MerginMaps/docs/tags" desc="latest tagged release" /> on main branch. The latest commit on main branch can be seen on [<MainPlatformName /> Staging Documentation](https://dev.merginmaps.com/docs).
 
 [[toc]]
 
@@ -14,11 +14,11 @@ If you are a (web) *developer*, you can skip all and just look at <GitHubRepo id
 
 Otherwise, it is better to run the local development on your machine. The similar steps as described can be done on (almost) any operation system with slight modifications (e.g. using brew or apt on macOS or Linux for installation)
 
-If you are not part of the Mergin Maps core documentation team, you will need to work with [fork](#when-fork-is-needed). Follow the instructions in the section instead. We are happy to include more people into the team, so if you consider writing more documentation, let us know on our [community chat](https://merginmaps.com/community/join)
+If you are not part of the <MainPlatformName /> core documentation team, you will need to work with [fork](#when-fork-is-needed). Follow the instructions in the section instead. We are happy to include more people into the team, so if you consider writing more documentation, let us know on our [community chat](https://merginmaps.com/community/join)
 
 ### Prepare Local Repository
 
-As requirement, you need to <GitHubRepo id="git-guides/install-git" desc="install git" />
+As requirement, you need to <GitHubRepo id="git-guides/install-git" desc="install git" />.
 
 Once installed, open command line/terminal and clone the repository locally (you can use http or SSH)
 
@@ -75,50 +75,47 @@ Now go to <GitHubRepo id="MerginMaps/docs" desc="GitHub" /> and create pull requ
 
 Check the automatic tests in the pull requests for spellcheck or broken link and fix the issues in your code.
 
-To ensure your pull request will be merged, it is nice to ping the Mergin Maps docs team on the [community chat](https://merginmaps.com/community/join) in the `#dev` channel.
+To ensure your pull request will be merged, it is nice to ping the <MainPlatformName /> docs team on the [community chat](https://merginmaps.com/community/join) in the `#dev` channel.
 
 ### When Fork Is Needed
 ::: warning 
-You can skip this step, in case you are member of the Mergin Maps docs team and you have write permissions to the repository. 
+You can skip this step if you are member of the <MainPlatformName /> docs team and you have write permissions to the repository. 
 :::
 
-To fork <GitHubRepo id="MerginMaps/docs" /> repository with the source code of documentation, follow the steps as described in <GitHubRepo id="git-guides/install-git" desc="GitHub docs" /> [](https://docs.github.com/en/get-started/quickstart/fork-a-repo). 
+To fork <GitHubRepo id="MerginMaps/docs" /> repository with the source code of documentation, follow the steps as described in [GitHub docs](https://docs.github.com/en/get-started/quickstart/fork-a-repo). 
 
 You will end up with the fork of <GitHubRepo id="MerginMaps/docs" /> in your namespace. 
 
 If you use fork, you need to add both fork and upstream to your local namespace:
 
-```
-mkdir MerginMaps; cd MerginMaps
-git clone git@github.com:<my_fork_of_MerginMaps/docs>.git
-git remote add upstream git@github.com:MerginMaps/docs.git
-``` 
+   ```
+   mkdir MerginMaps; cd MerginMaps
+   git clone git@github.com:<my_fork_of_MerginMaps/docs>.git
+   git remote add upstream git@github.com:MerginMaps/docs.git
+   ``` 
 
-you need to update your remote fork before starting the work:
+and you need to update your remote fork before starting the work:
 
-```
-cd MerginMaps/docs
-git checkout main
-git pull upstream main
-git push origin main
-``` 
+   ```
+   cd MerginMaps/docs
+   git checkout main
+   git pull upstream main
+   git push origin main
+   ``` 
 
 ## The Documentation System
 
-Each markdown should be written as one of the 4 basic types of documentation:
-tutorials, how-to guides, technical reference and explanation. 
+Each markdown should be written as one of the 4 basic types of documentation: tutorials, how-to guides, technical reference and explanation. It is best to read about this [documentation system](https://documentation.divio.com/).
 
-It is best to read about this [documentation system](https://documentation.divio.com/).
-
-In each section in the menu (except Getting Started and Guides) 
+In each section in the menu (except Getting Started and Guides):
 - we start with concepts
 - following with a bunch of how to articles
-- ending with reference documentation
+- ending with reference documentation pages
 
-### Users & Organisations
+### Users & Workspaces
 
-- To store all projects referenced in the documentation use Mergin Maps organisation `documentation`
-- For users that are referenced in the documentation (e.g. screenshots or in texts), use "fake" Mergin Maps users `jack`, `jill` and `sarah`
+- To store all projects referenced in the documentation use <MainPlatformName /> workspace `documentation`
+- For users that are referenced in the documentation (e.g. screenshots or in texts), use "fake" <MainPlatformName /> users `jack`, `jill` and `sarah`
 
 ### Naming things
 
@@ -146,16 +143,16 @@ If you see the typo or other issue on a page, you can scroll to the very bottom 
 
 ![](./footer-docs.png)
 
-If you click on the link, you will get the markdown source of the page that you can edit. If you are not in the Mergin Maps core documentation team, you would also need to work on [fork](#when-fork-is-needed) to be able to proceed.
+If you click on the link, you will get the markdown source of the page that you can edit. If you are not in the <MainPlatformName /> core documentation team, you would also need to work on [fork](#when-fork-is-needed) to be able to proceed.
 
 ### Why the Markdown Has Different Content as the Public Docs
 
-Occasionally, it can happen that the link in the footer is broken or the content in markdown does not match the content on [Mergin Maps Documentation](https://merginmaps.com/docs). 
-This is due to the fact that the released version is the <GitHubRepo id="MerginMaps/docs/tags" desc="latest tagged release" />. The latest commit on main branch can be seen on staging server [Mergin Maps Staging Documentation](https://dev.merginmaps.com/docs).
+Occasionally, it can happen that the link in the footer is broken or the content in markdown does not match the content on [<MainPlatformName /> Documentation](https://merginmaps.com/docs). 
+This is due to the fact that the released version is the <GitHubRepo id="MerginMaps/docs/tags" desc="latest tagged release" />. The latest commit on main branch can be seen on staging server [<MainPlatformName /> Staging Documentation](https://dev.merginmaps.com/docs).
 
 ### How Search Works
 
-We do not use the full search, but rather limited. The search at the documentation page only indexes the titles and headers in all articles. Another reason to make sure your headers are meaningful :)
+Full-text search is used in the docs thanks to the <GitHubRepo id="leo-buneev/vuepress-plugin-fulltext-search" /> plugin.
 
 ### How to Add New Page to Menu
 
@@ -233,9 +230,9 @@ You can use any of supported <GitHubRepo id="markdown-it/markdown-it-emoji/blob/
 
 :tada: :grinning: :rofl: :scream: :heart: :pray:
 
-```
-:tada: :grinning: :rofl: :scream: :heart: :pray:
-```
+   ```
+   :tada: :grinning: :rofl: :scream: :heart: :pray:
+   ```
 
 
 ### Labels/Badges
@@ -244,31 +241,31 @@ You can use any of supported <GitHubRepo id="markdown-it/markdown-it-emoji/blob/
 <Badge text="tip badge" type="tip"/>
 
 
-```<Badge text="tip badge" type="tip"/>```
+   ```<Badge text="tip badge" type="tip"/>```
 
 ---
 
 <Badge text="warning badge" type="warning"/>
 
 
-```<Badge text="warning badge" type="warning"/>```
+   ```<Badge text="warning badge" type="warning"/>```
 
 ---
 
 <Badge text="error badge" type="error"/>
 
 
-```<Badge text="error badge" type="error"/>```
+   ```<Badge text="error badge" type="error"/>```
 
 For mentioning that some feature is available from specific version, use `<SinceBadge />`
 
-```<SinceBadge type="App" version="2022.1.1" />```
+   ```<SinceBadge type="App" version="2022.1.1" />```
 <SinceBadge version="2022.1.1" type="App" />
 
-```<SinceBadge type="Plugin" version="2023.2" />```
+   ```<SinceBadge type="Plugin" version="2023.2" />```
 <SinceBadge version="2023.2" type="Plugin" />
 
-```<SinceBadge type="Server" version="2024.3" />```
+   ```<SinceBadge type="Server" version="2024.3" />```
 <SinceBadge version="2024.3" type="Server" />
 
 ### Images
@@ -348,6 +345,7 @@ Reference other markdowns
 
 e.g. `[see this](../web/otherfile.md#permissions)`
 
+
 ## Custom Vue Components for Markdown
 
 see `src/.vuepress/components` for list of all components
@@ -362,12 +360,18 @@ If you are adding new component:
 Use `<QGISHelp />` component, e.g. `<QGISHelp ver="3.22" link="user_manual/index.html" text="See QGIS Help page" />` transforms to
 
 <QGISHelp ver="3.22" link="user_manual/index.html" text="See QGIS Help page" />
-    
+
+
+### Reference GitHub content
+Use `<GitHubRepo />` component, e.g. `<GitHubRepo id="MerginMaps/docs/" desc="documentation" />` transforms to <GitHubRepo id="MerginMaps/docs/" desc="documentation" />.
+
+
 ### Embed YouTube content
 
 Use `<YouTube />` component, e.g. `<YouTube id="DQXrINUqiFI" />` transforms to
 
 <YouTube id="DQXrINUqiFI" />
+
 
 ### Reference Mergin Maps project 
 
