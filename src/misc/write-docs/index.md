@@ -406,6 +406,14 @@ Use `<MainPlatformName />` component, transforms to <MainPlatformName />
 
 Use `<MainPlatformNameLink />` component, transforms to <MainPlatformNameLink />
 
+Use `<CommunityPlatformName />` component, transforms to <CommunityPlatformName />
+
+Use `<CommunityPlatformNameLink />` component, transforms to <CommunityPlatformNameLink />
+
+Use `<EnterprisePlatformName />` component, transforms to <EnterprisePlatformName />
+
+Use `<EnterprisePlatformNameLink />` component, transforms to <EnterprisePlatformNameLink />
+
 Use `<MobileAppName />` component, transforms to <MobileAppName />
 
 Use `<QGISPluginName />` component, transforms to <QGISPluginName />
