@@ -40,7 +40,7 @@ Please ensure you have already:
 You may have noticed that the project we have just created with <QGISPluginName /> is very similar to the project created in <MobileAppName /> in the previous [tutorial](../capturing-first-data/). This basic project contains a single point layer called `Survey` and OpenStreetMap as a background map.
 
 ::: tip
-Any type of background map that is supported by QGIS can be used in <MobileAppName />. You can learn how to add offline and online background maps [here](../../gis/settingup_background_map.md).
+Various background maps can be used in <MobileAppName />, if they are supported by QGIS. You can learn how to add offline and online background maps [here](../../gis/settingup_background_map.md).
 :::
 
 We will now add two more survey layers - a point layer for surveying trees and a line layer for hedges.
@@ -48,23 +48,23 @@ We will now add two more survey layers - a point layer for surveying trees and a
 1. Select **Layer > Create Layer > New GeoPackage Layer...**
    ![QGIS Create new GeoPackage layer](./qgis-new-geopackage-layer.jpg "QGIS Create new GeoPackage layer")
 
-2. Now we will create the `trees` layer.
-
-   Using the **Browse** button, ensure the GeoPackage is saved under `Documents\MerginMaps Projects\trees-and-hedges\trees.gpkg`. 
-   
-   Set the **Geometry type** to ***Point***.
+2. Now we will create the `trees` layer:
+   - **Database**: navigate to the project's folder and save the GeoPackage as `trees.gpkg` 
+     Here: `Documents\MerginMaps Projects\trees-and-hedges\trees.gpkg`
+   - **Table name** will be set as `trees` by default   
+   - **Geometry type**: ***Point***
    
    ![New GeoPackage point layer](./qgis-geopackage-filename.jpg "New GeoPackage point layer")
 
 3. Add a **New Field** called `date` with the data type ***Date***
    ![New date field](./qgis-geopackage-date.jpg "New date field")
 
-4. Add two more new fields called `species` and `conditions` with the data type ***Text Data*** 
+4. Add two more new fields called `species` and `conditions` with the data type ***Text Data***.
 
-   The **Fields List** will look like this:
+   In the **Fields List**, you can see the overview of added attributes and their respective data types. It should look like this:
    ![Field list with created attributes](./qgis-geopackage-full-fields-list.jpg "Field list with created attributes")
 
-5. Click **OK**. A new layer called `trees` has now been added to your project:
+5. Click **OK**. A new layer called `trees` has now been added to the **Layers** panel.
    ![Point layer added to QGIS project](./qgis-new-layer-trees.jpg "Point layer added to QGIS project")
 
 6. Repeat steps 1 to 5 above to add another new layer called `hedges` with these details:
@@ -77,14 +77,14 @@ We will now add two more survey layers - a point layer for surveying trees and a
    
    ![Create GeoPackage line layer with defined attributes](./qgis-geopackage-filename2.jpg "Create GeoPackage line layer with defined attributes")
    
-There should be two new layers on the **Layers** panel: `trees` and `hedges`.
+Once you are finished, there should be two new layers on the **Layers** panel: `trees` and `hedges`.
 ![Layers panel in QGIS with created layers](./qgis-new-layer-trees-and-hedges.jpg "Layers panel in QGIS with created layers")
 
 
 ## Configure attributes forms
-Before we try out this new project in <MobileAppName /> we'll make a couple of small changes to the layers' form settings to define how users will interact with feature attributes in the field.
+Before we try out this new project in <MobileAppName /> we will make a couple of small changes to the layers' form settings. The forms define how users interact with feature attributes in the field.
 
-Notice how the tree species, *Black alder*, has been accidentally mistyped during the field survey. This can be avoided by setting up a drop-down list (right image). Attributes can also be aliased (renamed) for easier reading. 
+To illustrate how the form setup can affect the field survey, notice on the example below how the tree species, *Black alder*, has been accidentally mistyped during the field survey. This can be avoided by setting up a drop-down list (right image). Attributes can also be aliased (renamed) for easier reading.
 
 ![Mergin Maps Input attributes form drop-down list](./qgis-edit-att-forms-1.jpg "Mergin Maps Input attributes form drop-down list")
 
@@ -124,30 +124,35 @@ The `hedges` layer has an attribute called `photo`. The attribute itself is stor
 3. Set the form for the `photo` attribute as follows:
    - **Widget Type** to ***Attachment***
    - **Path** defines where the photos will be stored. Set *Store path as* **Relative to Project Path**:
-   ![photo widget](./qgis-hedge-attributes-form-1.jpg) 
+   ![QGIS Attributes form Attachment photo widget](./qgis-hedge-attributes-form-1.jpg "QGIS Attributes form Attachment photo widget") 
 
-4. Ensure ***fid*** is not editable.
-5. Click **OK** to close the layer properties dialog.
+4. `fid` should not be editable. Click on the `fid` attribute and uncheck the **Editable** option.
+5. Click **OK** to close the **Layer properties**.
+
+:::tip
+There is much more that can be done with the Attributes Form in QGIS when preparing a <MainPlatformNameLink /> project! You can learn more about forms in [Setting Up Form Widgets](../../layer/settingup_forms/), [Advanced Form Configuration](../../layer/settingup_forms_settings/) or other pages in the *Configure Survey Layer* part of this documentation.
+:::
+
 
 ## Saving changes to Mergin Maps
-In the next tutorial we will see how this project looks on <MobileAppName />. We'll now save the changes we've made here and sync the project back to the cloud.
+In the [next tutorial](../mobile/) we will see how this project looks on <MobileAppName />. We'll now make some last changes, save them and sync the project back to the <MainPlatformNameLink /> cloud.
 
-1. **Rename** the layer called ***Survey*** to ***Survey notes*** (the name is a little ambiguous).
+1. Right click on the layer called `Survey` and find the **Rename Layer** option. Rename the layer to `Survey notes` (the name `Survey` is too general in this context).
 2. **Save** the QGIS project
-   ![save qgis project](./qgis-project-save.jpg)
+   ![save QGIS project](./qgis-project-save.jpg "save QGIS project")
 
-3. Use the **Synchronise Mergin Maps Project** button:
-   ![sync project](./qgis-sync-mergin-project.jpg)
+3. Use the **Synchronise <MainPlatformName /> Project** button in the <QGISPluginName /> toolbar (it is located in the upper navigation panel)
+   ![Synchronise Mergin Maps project in QGIS](./qgis-sync-mergin-project.jpg "Synchronise Mergin Maps project in QGIS")
    
-   The **Project status** window will open with the overview of [local changes](../../manage/plugin-sync-project/#local-changes). Click **Sync** to synchronise the project:
-   ![project status](./qgis-sync-mergin-project-status.jpg)
+4. The **Project status** window will open. It contains the overview of [local changes](../../manage/plugin-sync-project/#local-changes) that were made since the last synchronisation: two layers were added to the project (`hedges.gpkg` and `trees.gpkg`) and some changes were made in the QGIS project file (`trees-and-hedges.qgz`).
+
+   Click **Sync** to synchronise the project
+   ![Mergin Maps plugin synchronisation Project status](./qgis-sync-mergin-project-status.jpg "Mergin Maps plugin synchronisation Project status")
  
-   In a few moments your changes are safely stored in the cloud:
-   ![synced](./qgis-project-synced.jpg)
+In a few moments your changes are safely stored in the <MainPlatformName />  cloud
+![Successful synchronisation of Mergin Maps project in QGIS](./qgis-project-synced.jpg "Successful synchronisation of Mergin Maps project in QGIS")
 
 Synchronising changes between users and devices is a core principle of <MainPlatformNameLink />. When you sync a project, changes that have been made by other users and devices since you last synced are fetched and any changes you've made are pushed.
 
-Changes are merged safely and easily from different users, even when they edit the same feature. 
-
-<MainPlatformNameLink /> tracks project version history so you can download a previous version of a project if you need to.
+Changes are merged safely and easily from different users, even when they edit the same feature. <MainPlatformNameLink /> tracks project version history so you can download a previous version of a project if you need to.
 
