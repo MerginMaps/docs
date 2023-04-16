@@ -106,7 +106,7 @@ Now we will set up the drop-down list for the `trees` layer:
    **Value** is how the data will be stored in the underlying dataset and **Description** is how it will be displayed in the form to the user.
    :::
 
-5. Click on the `fid` attribute. Ensure it is **not editable** by unchecking the **Editable** option.
+5. Click on the `fid` attribute. Uncheck **Editable** option so that it can not be edited during the survey. 
    ![QGIS Attributes form unchecked editable option](./qgis-tree-attributes-form-2.jpg "QGIS Attributes form unchecked editable option")
 
    ::: tip
