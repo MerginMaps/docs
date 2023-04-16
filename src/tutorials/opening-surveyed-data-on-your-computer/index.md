@@ -118,4 +118,4 @@ You can also use QGIS to explore the data you surveyed in the field.
 ## Summary
 In this tutorial you learnt how to view a survey project you created on your mobile device with <MobileAppName /> on your desktop computer using QGIS. You also learnt how to export captured data for use in spreadsheets and how to access photos you captured in the field.
 
-QGIS offers many options to create and setup more complex projects than the basic project we have created in <MobileAppName /> - as you can see in the [next tutorial](../creating-a-project-in-qgis/).
+QGIS offers many options to create and set up more complex projects than the basic project we have created in <MobileAppName /> - as you can see in the [next tutorial](../creating-a-project-in-qgis/).
