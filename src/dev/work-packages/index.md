@@ -9,7 +9,7 @@ The main <MainPlatformNameLink/> project (*Survey*) contains all data. The admin
 **Interested in using Work Packages?** Go to <GitHubRepo id="MerginMaps/mergin-work-packages" /> repository for the source code, more details and a quick start with a simple project.
 
 :::tip Usage details
-Work Packages can be used with *Team*, *Academia* and *Non-profit* <MainDomainNameLink id="pricing" desc="subscription plans"/>, as well as in [<CommunityPlatformName />](./mergince/) and [<EnterprisePlatformName />](./merginmaps-ee/).
+Work Packages can be used with *Team*, *Academia* and *Non-profit* <MainDomainNameLink id="pricing" desc="subscription plans"/>, as well as in [<CommunityPlatformName />](../mergince/) and [<EnterprisePlatformName />](../merginmaps-ee/).
 
 It is not available in *Individual* or *Professional* subscriptions.
 
