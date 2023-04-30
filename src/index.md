@@ -34,10 +34,10 @@ The ecosystem consist of various components:
 - [How to Sign Up to Mergin Maps](./setup/sign-up-to-mergin-maps/)
 - [How to Install QGIS](./setup/install-qgis/)
 - [How to Install QGIS Plugin](./setup/install-mergin-maps-plugin-for-qgis/)
-- [Subscriptions and Invoicing](./setup/subscriptions/)
 
 ## Manage Account & Project
 - [Workspaces](./manage/workspaces/)
+- [Subscriptions and Invoicing](./manage/subscriptions/)
 - [Permissions](./manage/permissions/)
 - [Behind Data Synchronisation](./manage/synchronisation/)
 - [Mergin Maps Project](./manage/project/)
