@@ -36,7 +36,7 @@ https://help.cloudmergin.com/quick-start.html	N/A - covered by non-html version
 https://help.cloudmergin.com/registration	https://merginmaps.com/docs/setup/sign-up-to-mergin-maps/
 https://help.cloudmergin.com/registration.html	N/A - covered by non-html version
 https://help.cloudmergin.com/sharing-project	https://merginmaps.com/docs/manage/project-advanced/
-https://help.cloudmergin.com/subscriptions	https://merginmaps.com/docs/setup/subscriptions/
+https://help.cloudmergin.com/subscriptions	https://merginmaps.com/docs/manage/subscriptions/
 https://help.cloudmergin.com/support	https://merginmaps.com/docs/misc/troubleshoot/
 https://help.cloudmergin.com/tutorials/data-sync	https://merginmaps.com/docs/tutorials/creating-a-project-in-qgis/
 https://help.cloudmergin.com/tutorials/data-sync.html	N/A - covered by non-html version
@@ -140,7 +140,7 @@ https://merginmaps.com/docs/howto/manage/web/dashboard/	https://merginmaps.com/d
 https://merginmaps.com/docs/howto/manage/web/project-advanced/	https://merginmaps.com/docs/manage/project-advanced/
 https://merginmaps.com/docs/howto/manage/web/project-details/	https://merginmaps.com/docs/manage/project-details/
 https://merginmaps.com/docs/howto/manage/web/register/	https://merginmaps.com/docs/setup/sign-up-to-mergin-maps/
-https://merginmaps.com/docs/howto/manage/web/subscriptions/	https://merginmaps.com/docs/setup/subscriptions/
+https://merginmaps.com/docs/howto/manage/web/subscriptions/	https://merginmaps.com/docs/manage/subscriptions/
 https://merginmaps.com/docs/howto/manage/web/web-create-project/	https://merginmaps.com/docs/manage/create-project/
 https://merginmaps.com/docs/howto/manage/web/working-with-organisations/	https://merginmaps.com/docs/setup/working-with-organisations/
 https://merginmaps.com/docs/howto/mergince/	https://merginmaps.com/docs/dev/mergince/
