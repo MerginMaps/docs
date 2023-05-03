@@ -23,7 +23,6 @@ module.exports = {
                 '/setup/sign-up-to-mergin-maps/',
                 '/setup/install-qgis/',
                 '/setup/install-mergin-maps-plugin-for-qgis/',
-                '/setup/subscriptions/'
             ]
         },
         
@@ -33,6 +32,7 @@ module.exports = {
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
                 '/manage/workspaces/',
+                '/manage/subscriptions/',
                 '/manage/permissions',
                 '/manage/synchronisation',
                 '/manage/project/',

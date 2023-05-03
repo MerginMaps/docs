@@ -19,7 +19,7 @@ Do you want to invite members or guests to your workspace? Visit [How to share p
 - **Reader**: users with **read** permission are able to see the list of projects, projects data and [history](./project-details.md)
 - **Writer**: in addition to the **Read** access, users can also do changes in the projects: [adding/removing/updating features](../field/input_features/), change [layer settings and project properties](../gis/features/). Users who are expected to actively contribute to the project need to have the **write** permission. 
 - **Admin**: in addition to the **Write** access, users with this level of access can [delete the project](./project-advanced/#delete-a-project) or [transfer](./project-advanced/#transfer-a-project) it to another workspace. Admins can also create new projects and manage workspace members.
-- **Owner**: in addition to the **Admin** permission, owners have access to [invoicing and subscription](../setup/subscriptions/) settings.
+- **Owner**: in addition to the **Admin** permission, owners have access to [invoicing and subscription](../manage/subscriptions/) settings.
 
 | | Reader  | Writer | Admin  | Owner  |
 |:---:|:---:|:---:|:---:|:---:|

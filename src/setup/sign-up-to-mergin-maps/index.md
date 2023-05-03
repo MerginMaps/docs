@@ -31,7 +31,7 @@ Public projects can be accessed and downloaded even without a <MainPlatformNameL
    ![Create workspace in Mergin Maps](./create-workspace.jpg "Create workspace in Mergin Maps")
 
    :::tip
-   Projects, collaborations and subscriptions in <MainPlatformNameLink /> are tied to [workspaces](../../manage/workspaces/). If you create your own workspace, it will be automatically signed up as a free tier workspace with 100 MB of storage. To upgrade your subscription, see our <MainDomainNameLink id="pricing" desc="Subscription plans" />.
+   Projects, collaborations and subscriptions in <MainPlatformNameLink /> are tied to [workspaces](../../manage/workspaces/). When you create your own workspace, it will automatically start with a free trial. To upgrade your subscription after the trial period, see our <MainDomainNameLink id="pricing" desc="Subscription plans" />.
    :::
 
 **Welcome to <MainPlatformNameLink />!**
