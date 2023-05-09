@@ -13,14 +13,14 @@ Accurate stake out in short navigation mode may require an [external GPS receive
 
 
 1. Select a point in your map window. From the form select the **Stake out** icon:
-![stake out](./stake-out.png)
+![Stake out feature Mergin Maps Input](./stake-out.jpg "Stake out feature in Mergin Maps Input")
 
 2. Stake out panel will appear showing the current distance and a connecting line between your position and the point.
-![long range](./stake-out-long.png)
+![Long range stake out panel](./stake-out-long.jpg "Long range stake out panel")
 
 3. Once you are closer to the point (less than 1 m), the stake out panel will switch to short navigation mode.
-![short range](./stake-out-short.png)
+![Short range stake out panel](./stake-out-short.jpg "Short range stake out panel")
 
 4. Precise stake out of the point (distance less than 10 cm) is highlighted by green:
-![short range](./stake-out-short-done.png)
+![Highlighted precise stake out](./stake-out-short-done.jpg "Highlighted precise stake out")
 

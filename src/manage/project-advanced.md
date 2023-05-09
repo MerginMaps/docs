@@ -21,7 +21,7 @@ You have to be the **admin** or **owner** of the workspace to manage access to t
 To add users to a workspace:
 1. Log into <AppDomainNameLink />
 2. Select **Members** from the left panel and click on **Add People**
-   ![add](../tutorials/working-collaboratively/web-workspace-add.png)
+   ![Add people in Members tab in Mergin Maps](../tutorials/working-collaboratively/web-workspace-add.jpg "Add people in Members tab in Mergin Maps")
 3. In the invite form, enter the email addresses of people you want to invite. 
    Select if you invite them as **members** or as **guests**:
    - for **members**, select their [member role](./permissions/#workspace-member-roles). Members have access to all projects in the workspace.

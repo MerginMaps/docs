@@ -29,7 +29,7 @@ If a field is marked in a field configuration as **Not searchable**, it will be 
 ## Searching for values in Mergin Maps Input
 Attribute data can be browsed in <MobileAppName /> by tapping **Layers** in the **More** tab. 
 
-![input layers](../field/layers/input-layers.png)
+![Mergin Maps Input Layers in More tab](../field/layers/input-layers.jpg "Mergin Maps Input Layers in More tab")
 
 Choose a layer or a table from the list to open the attribute table. Here, you can browse the features. The search bar can be used to shortlist matching records. 
 

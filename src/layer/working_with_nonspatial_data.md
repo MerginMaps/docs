@@ -12,7 +12,7 @@ Ensure you have [enabled editing and browsing](../gis/search_data/) of your non-
 
 ## Browse, search and edit non-spatial data in Mergin Maps Input
 Non-spatial tables can be browsed, searched and edited in **Layers** in the **More** tab.
-![Layers](../field/layers/input-layers.png)
+![Mergin Maps Input Layers in More tab](../field/layers/input-layers.jpg "Mergin Maps Input Layers in More tab")
 
 Choose the non-spatial layer from the list in **Layers**. Tap it to open the attributes table. Here, you can browse and [search](../gis/search_data.md) your data.
 

@@ -24,7 +24,7 @@ If current [GPS accuracy](./gps_accuracy/) falls below the accuracy threshold, y
 The crosshairs you will see on your map will be used as the recorded location. You can change the position of your point by pinching and dragging the background map. If you want to recenter the map to your current position, tap the **GPS** button.
 
 Surveyed features are added to the active layer, which is shown just above the bottom panel. You can change the active layer by tapping on it and selecting one from the list of editable layers in the project.
-![active survey layer](./input-active-layer.jpg "Active survey layer")
+![Active survey layer](./input-active-layer.jpg "Active survey layer")
 
 ### Capture points
 To capture a new point feature, simply tap **Add** on the bottom panel while in the [recording mode](#add-features). A form will open where you can fill in the attributes.
@@ -40,7 +40,7 @@ Lines and areas can be captured by adding vertices one by one. When you are in t
 Tap **Add** to capture vertices of your line or area. If you want to change the position of the last vertex, tap **Remove**, move the vertex to the correct place and  **Release** it. **Undo** can be used to revert last changes.
 
 Once the survey of the feature is completed, tap **Done** and fill in the form.
-![Capturing lines](./input-capture-line.jpg)
+![Surveying lines in Mergin Maps Input](./input-capture-line.jpg "Surveying lines in Mergin Maps Input")
 
 ### Streaming mode to survey lines or areas
 Lines and areas can be also captured automatically based on your position. Make sure you are in the [**recording**](#add-features) mode and that your active layer is a line or polygon.
