@@ -67,7 +67,7 @@ Another method that is suitable for sharing a project with a large number of use
 1. Log into <AppDomainNameLink />
 2. Go to the project you want to share
 3. Copy the link from your web browser and share it with your colleagues
-![copy url](../tutorials/working-collaboratively/mergin-web-copy-url.png)
+![Copy project URL](../tutorials/working-collaboratively/mergin-web-copy-url.jpg "Copy project URL")
 
 If you send a link to a [private](#make-your-project-public-private) project, users can **request access** after logging into <AppDomainNameLink />.
 ![sharing setting](./project_sharing_send_request.png)
