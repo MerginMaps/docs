@@ -8,7 +8,7 @@ We recommend using **GeoPackage** format to save your non-spatial table. With th
 ## QGIS project configuration
 Ensure you have [enabled editing and browsing](../gis/search_data/) of your non-spatial table in **Project Properties** in QGIS.
 
-![browse_enable](./qgis_nonspatial_properties.png)
+![QGIS project properties editing and browsing setup](./qgis_nonspatial_properties.jpg "QGIS project properties editing and browsing setup")
 
 ## Browse, search and edit non-spatial data in Mergin Maps Input
 Non-spatial tables can be browsed, searched and edited in **Layers** in the **More** tab.
@@ -18,7 +18,7 @@ Choose the non-spatial layer from the list in **Layers**. Tap it to open the att
 
 To add a new record, select **Add Feature** and fill in the form.
 
-![layers group](./input-layers-nonspatial.png)
+![Mergin Maps Input Adding non-spatial feature](./input-layers-nonspatial.jpg "Mergin Maps Input Adding non-spatial feature")
 
 Selecting an individual record will open the form related to the feature.
 

@@ -17,7 +17,7 @@ To set up a photo widget:
    - **Default path** defines where images will be saved. If it is not defined, the project home folder will be used.
    - Store the path as **Relative to project path** or **Relative to default path** depending on how you want to store the paths.
 4. **Apply** the changes. Don't forget to save and sync your project!
-![photos](./qgis_forms_photo.png)
+![QGIS photo attachment widget form](./qgis_forms_photo.jpg "QGIS photo attachment widget form")
 
 Here is an overview of paths that will be stored in various settings of the attachment widget. `path/to/project` represents the project home folder, where the project file is located. 
 
@@ -42,15 +42,15 @@ To set up a custom folder:
 2. Open your project in QGIS
 3. Open the **Properties** of the survey layer and navigate to the **Attributes form** tab. 
    Select the field, where photos are stored (here: `photo`) and make sure that the widget type is set to **Attachment**:
-   ![form](./qgis_form_photo.png)
+   ![QGIS photo attachment widget form](./qgis_form_photo.jpg "QGIS photo attachment widget form")
 5. Now we need to change the **Default path** to the folder we have created. Click on the *Data defined override* icon and choose **Edit...**
-   ![edit expression](./qgis_form_photo_edit_expr.png)
+   ![QGIS edit default path expression](./qgis_form_photo_edit_expr.jpg "QGIS edit default path expression")
 
 6. In **Expression String Builder** enter the expression `@project_folder + '/photos'` (replace `photos` by the name of your folder). Click **OK**.
-   ![folder expression](./qgis_forms_photo_expression.png)
+   ![QGIS enter default path expression](./qgis_forms_photo_expression.jpg "QGIS enter default path expression")
 
 7. The **Default path** now refers to the custom folder.
-   ![](./qgis_custom_folder.png)
+   ![QGIS default path to custom folder](./qgis_custom_folder.jpg "QGIS default path to custom folder")
 
 8. **Apply the changes**. Don't forget to save and sync your project!
 
@@ -63,7 +63,7 @@ Using the photo widget in <MobileAppName />, you will have two options:
 - **Take a photo** to use your camera app for taking a photos 
 - **Add from gallery** to attach an existing photo from your device.
 
-![photos](./input_forms_photo.png)
+![Mergin Maps Input photo widget](./input_forms_photo.jpg "Mergin Maps Input photo widget")
 
 ## Displaying photos in QGIS
 Photos taken using <MobileAppName /> during the survey can be displayed in the feature's form in QGIS.
@@ -72,11 +72,11 @@ Photos taken using <MobileAppName /> during the survey can be displayed in the f
 2. In the **Attributes Form** tab, select the field that contains the path to the photo.
 
    Scroll to the **Integrated Document Viewer** in the panel on the right. Set the **Type** to *Image*.
-   ![integrated doc viewer](./qgis-doc-viewer.png)
+   ![QGIS Integrated Document Viewer](./qgis-doc-viewer.jpg "QGIS Integrated Document Viewer")
 
 3. **Apply** the changes and click **OK**.
 
 Now when you click on a feature that contains a photo, it will be displayed in the form.
 
-![form photo](./qgis-form-view-photo.png)
+![Mergin Maps Input photo displayed in form](./qgis-form-view-photo.jpg "Mergin Maps Input photo displayed in form")
 
