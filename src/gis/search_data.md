@@ -10,7 +10,7 @@ To be able to browse the attributes of a layer, it needs to be set as *Identifia
 2. In the Menu > Project > Properties click on **Data Sources**
 3. Check and uncheck layers in the **Identifiable** column to define which layers you want to be able to browse in your project.
 
-![browse_enable](./qgis_data_sources.png)
+![QGIS identifiable data sources](./qgis_data_sources.jpg "QGIS identifiable data sources")
 
 :::warning
 If you define a layer as **not identifiable**, you won't be able to tap it in <MobileAppName /> or use the **Identify tool** in QGIS to see its attribute form.
@@ -20,7 +20,7 @@ If you define a layer as **not identifiable**, you won't be able to tap it in <M
 By default, all attributes are searchable. You can exclude a field from the search in the **Layer properties**. 
 1. Navigate to the **Fields** tab
 2. Check the **Not searchable** option in the **Configuration** column
-![display_name](./not_searchable.png)
+![QGIS Not searchable field](./not_searchable.jpg "QGIS Not searchable field")
 
 :::warning
 If a field is marked in a field configuration as **Not searchable**, it will be omitted from the search. There will be no search results, even if you search for a specific existing value of this field.
@@ -35,7 +35,7 @@ Choose a layer or a table from the list to open the attribute table. Here, you c
 
 Tap on the record to zoom to the feature on the map and display its form.
 
-![input browse](./input_search_data.png)
+![Mergin Maps Input browse data](./input_search_data.jpg "Mergin Maps Input browse data")
 
 :::tip
 The search looks up for a match in all searchable attributes values and is not case sensitive.

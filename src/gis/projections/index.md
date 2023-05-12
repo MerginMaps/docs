@@ -31,19 +31,19 @@ QGIS is FOSS (free and open source) software standing on the shoulders of other 
 Your QGIS installation contains the basic set of PROJ resources required for most day-to-day work. But if you need some special coordinate reference systems, the required files for 
 <GitHubRepo id="OSGeo/PROJ-data" desc="PROJ7" /> and for <GitHubRepo id="OSGeo/proj-datumgrid" desc="PROJ6" /> are available online. Also note that QGIS can automatically download the required files for your when requested. Just follow the instructions when you see the QGIS warning in the transformation dialog:
 
-![QGIS Transformations British National Grid to World Geodetic System](./QGIS_Transformations2.png)
+![QGIS Transformations British National Grid to World Geodetic System](./QGIS_Transformations2.jpg "QGIS Transformations British National Grid to World Geodetic System")
 
 ## Example capture GPS point for Great Britain  
 
 For example, imagine we have a project for the Great Britain, where we use map projection British National Grid (EPSG:27700) to display map. We have background map in the same coordinate reference system, so there is no datum transformation required to show it. However we want to capture point by GPS receiver in the field by <MobileAppName />, and we add a point layer in WGS 84 coordinate reference system. When we add point to this point layer, we store the coordinate values (latitude and longitude received from GPS) as is in the data section of our layer. When we want to show the point on the QGIS map canvas, QGIS needs to first do datum transformation, following by map projection.
 
-![projection transformation](./projection_transformation.png)
+![Datum transformation Map projection](./projection_transformation.jpg "Datum transformation Map projection")
 
 ### 1. Datum transformation
 
 British National Grid (EPSG:27700) is based on datum OSGB 1936 which is different from WGS 84. QGIS recognises that there is possibility to do datum transformation in multiple ways so user is asked to select the one from the list:
 
-![QGIS select transformation](./transformations_qgis.png)
+![QGIS select transformation](./transformations_qgis.jpg "QGIS select transformation")
 
 In this case, the recommended transform is the[OSTN15 transformation](https://www.ordnancesurvey.co.uk/business-government/tools-support/os-net/for-developers)which uses a grid file to transform coordinates. Other transforms are using [Helmert transformation](https://en.wikipedia.org/wiki/Helmert_transformation) method and offer lower accuracy. Grid files for transforms are usually not shipped with QGIS. But QGIS *offers to auto install* these to the correct location for you! These files are then automatically used for all your projects if required. Once this is selected and ready, QGIS calls PROJ library to do datum transformation.
 
@@ -64,7 +64,7 @@ same geodetic datum)
 
 For example imagine that you digitised your point to be in the corner of the rectangle in QGIS desktop. But when opened in the <MobileAppName /> in the field it is obviously shifted by dozens of centimetres. Or other way around, you digitise the point in the field, and when opened in QGIS it is misplaced.
 
-![shift of the point](./digitising_shift.png)
+![Shift of the point](./digitising_shift.jpg "Shift of the point")
 
 The likely reason is that there is correctly downloaded and used extra datum shift file in QGIS, but missing in <MobileAppName /> (more information in <LutraConsultingWeb id="blog/2021/04/21/projections-field/" desc="this blog" />)
 
@@ -74,11 +74,11 @@ QGIS exposes a nice interface for coordinate reference systems through the Trans
 
 Let's say we want to setup default transformation between British National Grid (EPSG:27700) and World Geodetic System used in GPS (EPSG:4326) for all our future QGIS projects.
 
-![QGIS Transformation Dialog](./QGIS_Transformations_Dialog.png)
+![QGIS Transformation Dialog](./QGIS_Transformations_Dialog.jpg "QGIS Transformation Dialog")
 
 Using the "+" button we add a new entry and select EPSG:27700 and EPSG:4326. Let's examine the first transformation with the accuracy of 1 meter:
 
-![QGIS Transformations British National Grid to World Geodetic System](./QGIS_Transformations2.png)
+![QGIS Transformations British National Grid to World Geodetic System](./QGIS_Transformations2.jpg "QGIS Transformations British National Grid to World Geodetic System")
 
 At the bottom there is an interesting PROJ description line with pipeline to be used by underlying PROJ library. You can read more about [PROJ pipeline](https://proj.org/operations/pipeline.html), but to start with it definition of several mathematical operations to be done:
 
