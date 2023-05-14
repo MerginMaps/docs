@@ -106,7 +106,7 @@ To split geometry of a feature:
 Snapping can be enabled in your <MainPlatformName /> project to make the field survey easier. [How to Set Up Snapping](../gis/snapping/) will guide you through the snapping options.
 
 If snapping is enabled, the crosshairs will turn purple and snap to vertices (left) or segments (right) of existing features when capturing new features or editing existing features.
-![Snapping Vertices and Segments in Mergin Maps Input](../gis/snapping/input_basic_snapping.png "Snapping Vertices and Segments in Mergin Maps Input")
+![Snapping Vertices and Segments in Mergin Maps Input](../gis/snapping/input_basic_snapping.jpg "Snapping Vertices and Segments in Mergin Maps Input")
 
 ## Delete features
 If you want to delete the feature, tap on it and press the edit button. Here you have the option to **Delete** the selected feature.
