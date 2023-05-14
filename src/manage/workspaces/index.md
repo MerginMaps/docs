@@ -24,37 +24,37 @@ You may participate in multiple workspaces. For instance, you can have your pers
 ### Switch workspaces in merginmaps.com
 
 When logged in to <AppDomainNameLink />, you will see the current workspace under the account name in the right corner of the screen.
-![current workspace](./web-workspace.png)
+![Mergin Maps web dashboard current workspace](./web-workspace.jpg "Current workspace in Mergin Maps web dashboard")
 
 Click on the account to see the list of all workspaces that are available to you. The active workspace is highlighted. Switch to another workspace by simply clicking on its name in the list.
-![switch workspace](./web-switch-workspace.png)
+![Mergin Maps web workspaces list](./web-switch-workspace.jpg "Mergin Maps web workspaces list")
 
 ### Switch workspaces in Mergin Maps Input
 Navigate to **My Account** in <MobileAppName />. Here you will see the name of the current workspace and workspace details.
-![](./input-switch-workspace.png)
+![Switch workspace button in Mergin Maps Input](./input-switch-workspace.jpg "Switch workspace button in Mergin Maps Input")
 
 Tap on the **Switch workspace** button. From the list of available workspaces, select the one you want to switch to:
-![](./input-select-workspace.png)
+![Select workspace in Mergin Maps Input](./input-select-workspace.jpg "Select workspace in Mergin Maps Input")
 
 ### Switch workspaces in QGIS
 Navigate to <MainPlatformName /> in the **Browser** panel. The name of the current workspace is displayed in square brackets.
 
 Right click on the plugin's name and select **Switch workspace**
-![](./plugin-switch-workspace.png)
+![Switch workspace in Mergin Maps plugin for QGIS](./plugin-switch-workspace.jpg "Switch workspace in Mergin Maps plugin for QGIS")
 
 From the list of available workspaces, select the one you want to switch to:
-![](./plugin-select-workspace.png)
+![Select workspace in Mergin Maps plugin for QGIS](./plugin-select-workspace.jpg "Select workspace in Mergin Maps plugin for QGIS")
 
 ## How to create a new workspace
 1. Log in to <AppDomainNameLink />
 2. Click on your account and navigate to **Manage workspaces**
-   ![manage workspaces](./web-manage-workspaces.png)
+   ![Manage workspaces in Mergin Maps web dashboard](./web-manage-workspaces.jpg "Manage workspaces in Mergin Maps web dashboard")
 3. Here, you can see the overview of your existing workspaces. Click on **Create workspace**
-   ![create workspace](./web-create-workspace.png)
+   ![Create workspace in Mergin Maps web dashboard](./web-create-workspace.jpg "Create workspace in Mergin Maps web dashboard")
 4. Fill in the name and description of your new workspace
-   ![new workspace](./web-new-workspace.png)
+   ![Create workspace in Mergin Maps web dashboard details](./web-new-workspace.jpg "Create workspace in Mergin Maps web dashboard details")
 5. Now you have a new workspace! You can [create projects](../create-project/) in the workspace and [invite other users](../project-advanced/#add-users-to-a-workspace) to contribute.
-   ![new workspace](./web-new-workspace-created.png)
+   ![Mergin Maps web dashboard workspaces overview](./web-new-workspace-created.jpg "Mergin Maps web dashboard workspaces overview")
 
 Currently, it is possible to have up to 3 workspaces in the trial plan (without subscription). Note that every workspace has its own subscription. When created, the workspace starts with the free trial. After the trial period, you will have to [switch to a paid subscription](../../manage/subscriptions/#changing-a-subscription-from-web). 
 
@@ -64,7 +64,7 @@ See our [pricing](https://merginmaps.com/pricing) for details about different pl
 ## How to delete a workspace
 1. Make sure you are in the workspace you want to remove
 2. Navigate to **Settings** and select **Close workspace**
-   ![](./web-delete-workspace.png)
+   ![Delete workspace in Mergin Maps web dashboard](./web-delete-workspace.jpg "Delete workspace in Mergin Maps web dashboard")
 3. Confirm the closing of a workspace by typing the workspace name and click on **Delete**
-   ![confirm delete](./web-delete-workspace-confirm.png)
+   ![Delete workspace confirmation](./web-delete-workspace-confirm.jpg "Delete workspace confirmation")
 

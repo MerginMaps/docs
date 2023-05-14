@@ -14,13 +14,13 @@ Deleting files trough <MainDomainName /> is simple. However, you can only delete
 
 1. Log in <AppDomainNameLink />
 2. Open your project. In the **Files** tab you will see the list of files that are stored in the project's folder.
-   ![project files](./project-files.png)
+   ![Mergin Maps project files photos](./project-files.jpg "Mergin Maps project files and photos")
 3. Select the file you are considering removing and review the details to make sure you want to remove it.
 
    Click **Remove File** to delete the photo.
-   ![remove file](./remove-file.png)
+   ![Mergin Maps web Remove file button](./remove-file.jpg "Mergin Maps web Remove file button")
 4. Click **Update** in the **Data Sync** window to synchronise the changes.
-   ![update](./remove-file-sync.png)
+   ![Mergin Maps web synchronise update project](./remove-file-sync.jpg "Mergin Maps web update project")
 
 ## Delete multiple files at once
 If you want to delete multiple files, the best way to do this is on your computer.
@@ -29,10 +29,10 @@ If you want to delete multiple files, the best way to do this is on your compute
 2. Navigate to the [project's folder](../project/#mergin-maps-project-folder) in your file browser and review the files inside the folder. There may be a [custom folder for photos](../../layer/settingup_forms_photo/#how-to-set-up-a-custom-folder-for-storing-photos) if it was set up before.
 
    Delete the files you do not want to keep anymore. 
-   ![folder files](./folder-files.png)
+   ![Mergin Maps project files in PC folder](./folder-files.jpg "Mergin Maps project files folder")
 3. [Synchronise the changes](../plugin-sync-project/#synchronisation-in-qgis) in QGIS using <QGISPluginName />. 
 
    **Local changes** in **Project status** will show the list of deleted files. After synchronisation, the files will be also deleted from the cloud.
 
-   ![project status](./project-status.png)
+   ![QGIS Mergin Maps project status synchronisation](./project-status.jpg "QGIS Mergin Maps project status")
    
