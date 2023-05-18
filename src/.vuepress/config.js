@@ -77,9 +77,6 @@ module.exports = {
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
   plugins: [
-    ['vuepress-plugin-google-tag-manager', {
-      'gtm': 'GTM-NW7ZGNB'
-    }],
     ['@vuepress/medium-zoom'],
     [ 'clean-urls', {
       normalSuffix: pageSuffix,
@@ -100,5 +97,9 @@ module.exports = {
   extraWatchFiles: [
       '.vuepress/nav/en.js',
       '.vuepress/sidebar/en.js'
+  ],
+
+  globalUIComponents: [
+    'CookieConsentView'
   ]
 }
