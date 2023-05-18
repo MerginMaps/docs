@@ -17,10 +17,13 @@ export default class Coookie {
    *
    * Best solution is to use window.location.hostname.
    * */
-  domainName = window.location.hostname
+  domainName = ''
 
   constructor(cookieConsentName) {
     this.cookieConsentName = cookieConsentName || this.cookieConsentName
+    if (window !== undefined) {
+      this.domainName = window.location.hostname
+    }
   }
 
   _getByName(name) {
