@@ -1,9 +1,3 @@
-<!--
-Copyright (C) Lutra Consulting Limited
-
-SPDX-License-Identifier: LicenseRef-MerginMaps-Commercial
--->
-
 <template>
   <div class="cookie-consent-preferences" @click.self="onCloseClick">
     <div class="cookie-consent-preferences__container">
@@ -27,7 +21,7 @@ SPDX-License-Identifier: LicenseRef-MerginMaps-Commercial
       <!-- Main content -->
       <div class="cookie-consent-preferences__content">
         <h2>Privacy preference center</h2>
-        <p>
+        <p class="cookie-consent-preferences__desc">
           When you visit websites, they may store or retrieve data in your
           browser. This storage is often necessary for the basic functionality
           of the website. The storage may be used for marketing, analytics, and
@@ -40,15 +34,15 @@ SPDX-License-Identifier: LicenseRef-MerginMaps-Commercial
 
         <div class="cookie-consent-preferences__item">
           <h3>Essential</h3>
-          <p><b>Active</b></p>
+          <p><b>Always Active</b></p>
         </div>
-        <p>These items are required to enable basic website functionality.</p>
+        <p class="cookie-consent-preferences__desc">These items are required to enable basic website functionality.</p>
 
         <div class="cookie-consent-preferences__item">
           <h3>Marketing</h3>
           <input type="checkbox" v-model="values.marketing" />
         </div>
-        <p>
+        <p class="cookie-consent-preferences__desc">
           These items are used to deliver advertising that is more relevant to
           you and your interests. They may also be used to limit the number of
           times you see an advertisement and measure the effectiveness of
@@ -60,7 +54,7 @@ SPDX-License-Identifier: LicenseRef-MerginMaps-Commercial
           <h3>Personalization</h3>
           <input type="checkbox" v-model="values.personalization" />
         </div>
-        <p>
+        <p class="cookie-consent-preferences__desc">
           These items allow the website to remember choices you make (such as
           your user name, language, or the region you are in) and provide
           enhanced, more personal features. For example, a website may provide
@@ -72,7 +66,7 @@ SPDX-License-Identifier: LicenseRef-MerginMaps-Commercial
           <h3>Analytics</h3>
           <input type="checkbox" v-model="values.analytics" />
         </div>
-        <p>
+        <p class="cookie-consent-preferences__desc">
           These items help the website operator understand how its website
           performs, how visitors interact with the site, and whether there may
           be technical issues. This storage type usually doesn’t collect
@@ -141,9 +135,9 @@ export default Vue.extend({
     position: relative;
     width: 80%;
     max-width: 600px;
-    height: 70svh;
+    max-height: 70svh;
     background-color: #fff;
-    border-radius: 8px;
+    border-radius: 1rem;
     display: flex;
     flex-direction: column;
   }
@@ -158,6 +152,7 @@ export default Vue.extend({
         border-bottom: none;
         margin-bottom: 0;
         padding-bottom: 0;
+        font-size: 1.5rem;
     }
   }
 
@@ -166,6 +161,7 @@ export default Vue.extend({
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
+    font-size: .75rem;
 
     input[type='checkbox'] {
       width: 1.5rem;
@@ -179,7 +175,8 @@ export default Vue.extend({
 
     h3 {
       color: #00a884;
-      margin: 0
+      margin: 0;
+      font-size: 1rem
     }
 
     // Reset some vuepress styling
@@ -187,6 +184,10 @@ export default Vue.extend({
     p {
         margin: 0;
     }
+  }
+
+  &__desc {
+    font-size: .75rem;
   }
 
   &__buttons {

@@ -8313,11 +8313,6 @@ vuepress-plugin-fulltext-search@^2.2.1:
     html-to-text "^7.0.0"
     lodash "^4.17.19"
 
-vuepress-plugin-google-tag-manager@0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/vuepress-plugin-google-tag-manager/-/vuepress-plugin-google-tag-manager-0.0.5.tgz#de463b1ebf26f35f3c512a5875d02f7b3b60dfab"
-  integrity sha512-Hm1GNDdNmc4Vs9c3OMfTtHicB/oZWNCmzMFPdlOObVN1OjizIjImdm+LZIwiVKVndT2TQ4BPhMx7HQkovmD2Lg==
-
 vuepress-plugin-smooth-scroll@^0.0.3:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/vuepress-plugin-smooth-scroll/-/vuepress-plugin-smooth-scroll-0.0.3.tgz#6eff2d4c186cca917cc9f7df2b0af7de7c8c6438"

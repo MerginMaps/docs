@@ -1,9 +1,3 @@
-<!--
-Copyright (C) Lutra Consulting Limited
-
-SPDX-License-Identifier: LicenseRef-MerginMaps-Commercial
--->
-
 <template>
   <div class="cookie-consent-banner">
     <p class="cookie-consent-banner__text">

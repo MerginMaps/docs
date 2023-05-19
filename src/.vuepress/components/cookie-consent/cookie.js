@@ -1,7 +1,3 @@
-// Copyright (C) Lutra Consulting Limited
-//
-// SPDX-License-Identifier: LicenseRef-MerginMaps-Commercial
-
 export default class Coookie {
   PATH = '/'
   cookieConsentName = 'fs-cc'
@@ -21,7 +17,7 @@ export default class Coookie {
 
   constructor(cookieConsentName) {
     this.cookieConsentName = cookieConsentName || this.cookieConsentName
-    if (window !== undefined) {
+    if (typeof window === 'object') {
       this.domainName = window.location.hostname
     }
   }
