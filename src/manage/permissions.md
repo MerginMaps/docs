@@ -36,7 +36,7 @@ Do you want to invite members or guests to your workspace? Visit [How to share p
 |access to invoicing and subscription settings| :no_entry_sign: | :no_entry_sign: | :no_entry_sign: | :white_check_mark: |
 
 Members and their roles can be managed through <AppDomainNameLink /> in the [Members](./dashboard/#members) tab:
-![member tab](./web-members.png)
+![Mergin Maps web members tab](./web-members.jpg "Mergin Maps web members tab")
 
 ## Project permissions
 Permissions to specific projects can be defined for workspace guests as well as for workspace members in addition to their member roles. There are three permission levels: **reader**, **writer** and **owner**. 
@@ -59,7 +59,7 @@ Although the roles of workspace members define the level of access to projects i
 :::
 
 Project permissions are managed in project **Settings** when logged in to <AppDomainNameLink />. From here, you can [invite a guest](./project-advanced/#add-users-to-a-project) to contribute to your project or 
-![project settings](./web-projects-settings.png)
+![Mergin Maps web project settings](./web-projects-settings.jpg "Mergin Maps web project settings")
 
 
 ## Public and private projects

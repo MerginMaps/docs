@@ -21,19 +21,19 @@ In <MobileAppName />, there is an option to [zoom to the project extent](../fiel
 
 To set the project extent, navigate to **Project** > **Properties**. Select **View Settings** and check the **Set Project Full Extent** option. Here, either enter the coordinate extent of your project bounding box or use the map canvas extent.
 
-![qgis project extent](./qgis-project-extent.png)
+![QGIS set project extent](./qgis-project-extent.jpg "QGIS set project extent")
 
 If not set, <MobileAppName /> zooms to all visible layers. This is not particularly convenient when you have a layer with a large/global extent (e.g. Open Street Map).
 
 ## Project settings
 - Ensure the paths are set to *Relative* in the **General** tab in Project Properties. All paths to the project data in <MobileAppName /> are relative to the project location.
-![relative paths](./qgis_prj_relative_paths.png)
+![QGIS set relative paths](./qgis_prj_relative_paths.jpg "QGIS set relative paths")
 - Define the <QGISHelp ver="3.22" link="user_manual/introduction/qgis_configuration.html?highlight=properties#data-sources-properties" text="layers capabilities" /> in the **Data Sources** in Project Properties.
    - [Identifiable](./search_data/#setting-identifiable-layers-in-qgis-project) layers can be queried in <MobileAppName />. If you want to be able to search for attribute values in a layer, it needs to be identifiable and searchable.
    - **read-only** layers cannot be modified. If a vector layer is not intended to be used as a survey layer, set it as read-only.
    - [non-spatial](../layer/working_with_nonspatial_data/) layers need to be set as searchable to enable browsing, searching, or editing.
 
-![Layer Capabilities](./qgis_project_properties.png)
+![QGIS Layer Capabilities](./qgis_project_properties.jpg "QGIS Layer Capabilities")
 
 ### Map themes
 [Map Themes](./setup_themes/) make possible to switch between different background maps in <MobileAppName /> (e.g. cartography maps and aerial imagery)
@@ -46,12 +46,12 @@ By default, the quality is set to *Original* - the original pictures are stored.
 
 Don't forget to save and sync your project!
 
-![resize pics](./project_resize_pics.png)
+![Mergin Maps set photo quality](./project_resize_pics.jpg "Mergin Maps set photo quality")
 
 ### Snapping
 <SinceBadge type="Plugin" version="2022.5" /><SinceBadge type="App" version="1.6.0" />
 If you want to use snapping in <MobileAppName /> during the field survey, you need to set it up in the **<MainPlatformName />** tab in **Project properties**.
-![resize pics](./project_snapping.png)
+![QGIS set snapping in Mergin Maps](./project_snapping.jpg "QGIS set snapping in Mergin Maps")
 
 The snapping options are:
 - *No snapping* - snapping is not enabled (default)
@@ -76,7 +76,7 @@ What appears in the <MobileAppName /> preview panel can be defined in the **Disp
 - **Display Name**: a field name or an expression.
 - **HTML Map Tip**: the content of the preview panel. While QGIS always interprets the content of map tip as being HTML, <MobileAppName /> extends the syntax to allow two more modes: field values and images. If the map tip is not specified, <MobileAppName /> will try to use the first three fields and show their attribute values.
 
-![Display setting in QGIS](./qgis_properties_display.png)
+![QGIS layer properties display settings](./qgis_properties_display.jpg "QGIS layer properties display settings")
 
 #### HTML
 Sample map tip content that will show render as HTML page:
@@ -108,5 +108,5 @@ file:///[%@project_folder%]/[% "image_1" %]
 
 If the map tip has `# image` marker on the first line, the following line is understood as the URL for the image. It can be a regular file on the file system, but it could be even a remote image from network. Expressions embedded in the image URL will be evaluated (enclosed in `[% 1+1 %]`).
 
-![Preview panel in Input based on Display settings in QGIS](./input_preview_panel.png)
+![Preview panel in Input based on Display settings in QGIS](./input_preview_panel.jpg "Preview panel in Input based on Display settings in QGIS")
 

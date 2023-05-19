@@ -144,6 +144,3 @@ Did you get an error that the server is not properly configured?
    
 2. Restart the container with the `MERGIN_BASE_URL` variable
 
-
-
-

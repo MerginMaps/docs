@@ -15,7 +15,7 @@ If you cannot synchronise changes, make sure you are connected to the internet a
 - Navigate to your project folder
 - See if there are any files that contain `conf` or `conflict` in their names. 
 
-![conflict file](./folder-conflict-file.png)
+![Conflict file in PC folder](./folder-conflict-file.jpg "Conflict file in PC folder")
 
 Depending on your data format, you can get something like `survey_polygon (edit conflict, sarah v4).json`, which is a conflict file for data from a user called `sarah`, project version 4.
 
@@ -30,7 +30,7 @@ If you can identify missing features visually, e.g. by finding out where the sur
 ### Resolving conflict files semi-automatically
 Change the schema of the table in the conflict file to match the new schema and run the *Detect dataset changes* algorithm from the *Processing toolbox*. You then need to go through the result and ensure the changes detected are the ones you expect for both attribute values and geometry.
 
-![detect dataset changes](./qgis-detect-dataset-changes.png)
+![QGIS Processing toolbox Detect dataset changes](./qgis-detect-dataset-changes.jpg "QGIS Processing toolbox Detect dataset changes")
 
 ## There are no conflict files in the folder
 If you don't see any conflict files in your folder, try to download them manually from the mobile device. Surveyed data are stored in the device that was to collect them. So, if you have access to this device, you can download data manually and process them in your computer.
@@ -47,10 +47,10 @@ You can access your data by following these steps:
 1. Plug iOS device to a computer
 2. Open `Finder` file browser
 3. Go to Locations and select your `<device_name>`
-![iTunes](./itunes.png)
+![Plugged iOS device Locations iTunes](./itunes.jpg "iTunes iOS device plugged to a computer")
 4. Click on the tab named `files`  
 5. Select `Input` app from a list to see a data folder
-![iTunes2](./itunes2.png)
+![Mergin Maps Input files accessed through iTunes](./itunes2.jpg "Mergin Maps Input files accessed through iTunes")
 6 Drag-and-drop the `INPUT` folder to another location to see the content
 
 ### Manual data transfer (between iOS and Windows)
@@ -60,12 +60,12 @@ Here are the steps to transfer the data from iPhone/iPad to a Windows PC.
 2. Sign into iTunes
 3. [Connect your iOS device to the PC](https://support.apple.com/en-gb/guide/iphone/iph42d9b3178/15.0/ios/15.0) and unlock the screen
 4. In iTunes, click on the phone icon in the toolbar
-![iTunes phone icon](./ios_win_itunes.png)
+![iTunes phone icon](./ios_win_itunes.jpg "iTunes phone icon")
 5. From the left panel, select **File Sharing**
 6. Select **Input** in Apps tab
 7. Under Input Documents, select **INPUT** folder
 8. Press **Save...**
-![iTunes save](./ios_win_itunes_input.png)
+![iTunes save Mergin Maps Input files](./ios_win_itunes_input.jpg "iTunes save Mergin Maps Input files")
 9. Select a path to save the folder on your computer.
 
 ## Next steps

@@ -13,7 +13,7 @@ To view the project history:
   - overview of the number of files that were **added, deleted and updated**
   - **Size** of the project
   - option to **download** this version of the project
-   ![history advanced](./web-history-2.png)
+   ![Mergin Maps project history web](./web-history-2.jpg "Mergin Maps project history")
 
 :::tip
 Great tools to inspect the project history and compare changes between project versions can be found in <QGISPluginName />:
@@ -28,4 +28,4 @@ To see more details of a specific version:
   - The exact time stamp under **Created**
   - **User Agent** indicates device, operating system and tool used to create the version
   - If you use GeoPackage for your survey, you can see a summary of features added, deleted or updated for each table (map layer). **File changes** can be expanded to include even more details.
-  ![history](./web-history.png)
+  ![Mergin Maps project history version details](./web-history.jpg "Mergin Maps project history version details")

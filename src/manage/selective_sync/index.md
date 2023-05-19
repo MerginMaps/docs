@@ -10,7 +10,7 @@ If you want to use large files (e.g. background maps) in your <MainPlatformName 
 
 See the example in the picture below. Two surveyors Jim and Susan are capturing features in the field. When it comes to synchronisation, Jim hits the [arrow icon](../plugin-sync-project/) to synchronise his changes. Features together with photos are now stored on the server. When Susan synchronises the project, synchronisation first downloads Jim's changes (including photos) and after that uploads Susan's changes to the server. However, selective sync can exclude photos from being downloaded.
 
-![Example](./selective-sync.png)
+![Selective synchronisation of multiple devices](./selective-sync.jpg "Selective synchronisation of multiple devices")
 
 :::tip
 Features and other data are still being downloaded and both Jim and Susan will see them, only photos will be missing.
@@ -28,7 +28,7 @@ Selective sync can be set using <QGISPluginName />.
    Do you want to set up a folder like this? Go to [How to set up a custom folder for storing photos](../../layer/settingup_forms_photo/#how-to-set-up-a-custom-folder-for-storing-photos).
    :::
    
-![selective sync plugin](./selective-sync-plugin.png)
+![Enable selective synchronisation in Mergin Maps plugin for QGIS](./selective-sync-plugin.jpg "Enable selective synchronisation in Mergin Maps plugin for QGIS")
 
 :::tip
 If **Selective sync** option is inactive in project properties, make sure you are working with a Mergin Maps project.
