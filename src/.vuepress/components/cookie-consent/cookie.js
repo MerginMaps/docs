@@ -11,15 +11,12 @@ export default class Coookie {
    * Finsweet merginmaps.com is not able to write cookies to .merginmaps.com, because they have own merginmaps.com cookie.
    * Prirority is .merginmaps.com, so users options are not sharing between subdomains.
    *
-   * Best solution is to use window.location.hostname.
+   * Best solution is to use window.location.hostname or no domain HostOnly=true cookies.
    * */
   domainName = ''
 
   constructor(cookieConsentName) {
     this.cookieConsentName = cookieConsentName || this.cookieConsentName
-    if (typeof window === 'object') {
-      this.domainName = window.location.hostname
-    }
   }
 
   _getByName(name) {
