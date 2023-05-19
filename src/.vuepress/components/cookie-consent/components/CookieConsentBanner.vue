@@ -63,6 +63,7 @@ export default Vue.extend({
   align-items: center;
   background-color: #fff;
   border-top: 1px #acacac solid;
+  background-color: #f9f9f9;
 
   &__text {
     margin-bottom: 0;
@@ -96,6 +97,11 @@ export default Vue.extend({
 @media screen and (max-width: 911px) {
   .cookie-consent-banner {
     flex-direction: column;
+
+    &__text {
+      margin-bottom: 2rem;
+      margin-right: 0
+    }
   }
 }
 </style>
