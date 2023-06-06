@@ -14,6 +14,8 @@ Users can be invited to a workspace as [members or guests](../permissions/). The
 Want to read more about workspaces and why they were introduced to <MainPlatformName />? Visit our blog [Introducing Workspaces: Simplified Collaboration](https://merginmaps.com/blog/introducing-workspaces-simplified-collaboration).
 :::
 
+<YouTube id="SZf93akn0tM" />
+
 :::tip
 Integrations like [PostgreSQL DB Sync](../../dev/dbsync/), [Media Sync](../../dev/media-sync/) and [Work Packages](../../dev/work-packages/) do not share the concept of *active workspace*. They simply work with one specific project from any workspace.
 :::
