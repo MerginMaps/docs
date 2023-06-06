@@ -10,6 +10,10 @@ One workspace can contain multiple projects. The only limit is the storage quota
 
 Users can be invited to a workspace as [members or guests](../permissions/). These users don't need to have their own subscription. 
 
+::: tip
+Want to read more about workspaces and why they were introduced to <MainPlatformName />? Visit our blog [Introducing Workspaces: Simplified Collaboration](https://merginmaps.com/blog/introducing-workspaces-simplified-collaboration).
+:::
+
 <YouTube id="SZf93akn0tM" />
 
 :::tip
