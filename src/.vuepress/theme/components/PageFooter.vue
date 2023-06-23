@@ -8,7 +8,7 @@
           <a href="https://merginmaps.com/start-for-free" target="__blank">Start for free</a>
         </div>
         <div class="page-footer__col">
-          <img src="/mm_logo_positive_half_padding.png" />
+          <img src="/docs/mm_logo_positive_half_padding.png" />
           <p>Copyright &copy; 2021 - {{ year }}</p>
 					<p>Lutra Consulting Limited</p>
           <p>All rights reserved.</p>
