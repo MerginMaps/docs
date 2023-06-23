@@ -1,11 +1,8 @@
 # Further Project Customisation
 
-::: warning
-This tutorial may differ from what you encounter when working with <MainPlatformNameLink />. It will be updated soon to include recent changes in <MainPlatformNameLink />, <MobileAppName /> and <QGISPluginName />.
-:::
+In this tutorial you will learn how to further customise your <MainPlatformNameLink /> project from the [previous tutorial](../creating-a-project-in-qgis/), making it even more useful. The various changes we will make to the project will be made in [QGIS](../../setup/install-qgis/) and their effect observed and tested in <MobileAppName />.
 
-In this tutorial you will learn how to customise your <MainPlatformNameLink /> project further, making it even more useful. The topics covered here are:
-
+The topics covered here are:
 [[toc]]
 
 ::: tip
@@ -13,37 +10,39 @@ Previous tutorials already covered the minimum concepts for data collection so f
 :::
 
 ## Opening the project in QGIS
-The various changes we will make to the project will be made in [QGIS](../../setup/install-qgis/) and their effect observed and tested in <MobileAppName />.
-
-If you already have the ***trees-and-hedges*** project open in QGIS, skip to [Layer styles](#layer-styles).
+If you already have the `trees-and-hedges` project open in QGIS, skip to [Layer styles](#layer-styles).
 
 1. Open QGIS
-2. Expand the **Mergin Maps** entry in the Browser panel to show **My projects**:
+2. Expand the **Mergin Maps** entry in the Browser panel to show projects in your workspace:
    ![Mergin Maps projects in QGIS Browser](./qgis-mergin-my-projects.jpg "Mergin Maps projects in QGIS Browser")
+   
+   :::tip
+   If you have access to multiple workspaces, you may need to [switch to the appropriate workspace](../../manage/workspaces/#switch-workspaces-in-qgis) in QGIS browser to open your project.
+   :::
 
-3. Expand **My projects** and locate the ***trees-and-hedges*** project
+3. Expand **My projects** and locate the `trees-and-hedges` project
 4. **Right-click** it and select **Open QGIS project**:
    ![Open Mergin Maps project in QGIS](./qgis-mergin-open-project.jpg "Open Mergin Maps project in QGIS")
 
 The project should now be loaded in QGIS. Don't worry if you cannot see the features you surveyed in the field - this is probably because you've not yet synchronised the project in QGIS.
 
+If this is the case, click on the **Synchronise** icon from the <QGISPluginName /> toolbar to synchronise the changes
+   ![Mergin Maps plugin for QGIS synchronisation icon](../../manage/sync-status-toolbar.jpg "Mergin Maps plugin for QGIS synchronisation icon")
+
 ## Layer styles
 When using <MobileAppName /> in the field in the last tutorial, we noticed hedges were difficult to see against the background maps. We'll now fix that.
 
-1. **Double-click** the **hedges** layer in QGIS:
+1. **Double-click** the **hedges** layer in QGIS to open its **Layer properties**
    ![Hedges layer in QGIS](./qgis-hedges-layer.jpg "Hedges layer in QGIS")
-   
-   Its layer properties dialog should appear.
 
-2. Select the **Symbology tab** on the left hand side
-3. Click the current colour to change it:
+2. Select the **Symbology tab** on the left and click the current colour to change it:
    ![Layer properties Layer Symbology](./qgis-symbology-colour.jpg "Layer properties Layer Symbology")
 
-4. **Pick a new colour** for hedges which stands out better
+3. **Pick a new colour** for hedges which stands out better
    ![Select colour for layer symbology](./qgis-select-colour-dialog.jpg "Select colour for layer symbology")
 
-5. Click **OK**
-6. Increase the **line width** to 0.46mm and click **OK**
+4. Click **OK**
+5. Increase the **line width** to 0.46mm and click **OK**
    ![Set line width in Layer symbology](./qgis-symbology-width.jpg "Set line width in Layer symbology")
 
 Lines in the hedges layer should now be drawn thicker and in a more prominent colour. 
@@ -82,10 +81,10 @@ If you do not see a sync icon, switch to the **My projects** tab and back to the
    ![Layer with new symbology in Mergin Maps Input](./merginmaps-mobile-better-line-style.jpg "Layer with new symbology in Mergin Maps Input")
 
 ## Labels
-Labels can be useful for showing attribute data or other information directly on the map. We'll now add labels to the ***trees*** layer so we can see tree species without having to open each tree's attributes:
+Labels can be useful for showing attribute data or other information directly on the map. We'll now add labels to the `trees` layer so we can see tree species without having to open each tree's attributes:
 ![Feature with label in QGIS](./merginmaps-mobile-labels-example.jpg "Feature with label in QGIS")
 
-1. Double-click the ***trees*** layer in QGIS:
+1. Double-click the `trees` layer in QGIS:
    ![Trees layer in QGIS Layer panel](./qgis-trees-layer.jpg "Trees layer in QGIS Layer panel")
    
    Its layer properties dialog should appear.
@@ -94,7 +93,7 @@ Labels can be useful for showing attribute data or other information directly on
 3. Set the labelling mode to **Single Labels**:
    ![QGIS Labels settings in Layer properties](./qgis-symbology-labels.jpg "QGIS Labels settings in Layer properties")
 
-4. Set the **Value** to the ***species*** attribute
+4. Set the **Value** to the `species` attribute
    ![Choose single label attribute](./qgis-symbology-labels-2.jpg "Choose single label attribute")
 
 5. Enable **Draw text buffer** under **Buffer** settings and click **OK**
@@ -114,7 +113,7 @@ The panel for the trees layer looks like the left-hand image below. We will conf
    Its layer properties dialog should appear.
 
 2. Select the **Display tab** on the left hand side
-3. Set the **Display Name** to ***species***:
+3. Set the **Display Name** to `species`:
    ![Display name attribute in Layer properties](./qgis-display-name.jpg "Display name attribute")
 
 ::: tip
@@ -136,7 +135,7 @@ You may have noticed that older versions of <MobileAppName /> doesn't have a lay
 
 In a moment we'll define the following map themes:
 * ***All layers*** includes all map layers
-* ***Hedges*** contains just the ***hedges*** layer and the background map
+* ***Hedges*** contains just the `hedges` layer and the background map
 
 1. In QGIS, click the **Manage Map Themes** button and select **Add Theme...**:
    ![QGIS Add map theme](./qgis-add-theme.jpg "QGIS Add map theme")
