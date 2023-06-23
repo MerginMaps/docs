@@ -2,16 +2,18 @@
   <footer class="page-footer">
     <div class="page-footer__container">
       <div class="page-footer__row">
-				<div class="page-footer__col">
-					<img src="/docs/mm_logo_positive_half_padding.png" />
-					<p>Copyright &copy; 2021 - {{ year }}</p>
-					<p>Lutra Consulting Limited</p>
-					<p>All rights reserved.</p>
-				</div>
+        <div class="page-footer__col">
+          <img src="/docs/mm_logo_positive_half_padding.png" />
+          <p>Copyright &copy; 2021 - {{ year }}</p>
+          <p>Lutra Consulting Limited</p>
+          <p>All rights reserved.</p>
+        </div>
         <div class="page-footer__col">
           <h4>Company</h4>
           <a href="https://merginmaps.com" target="__blank">Homepage</a>
-          <a href="https://merginmaps.com/start-for-free" target="__blank">Start for free</a>
+          <a href="https://merginmaps.com/start-for-free" target="__blank"
+            >Start for free</a
+          >
         </div>
       </div>
       <div class="page-footer__center">
@@ -21,9 +23,19 @@
           <SocialIconsLink icon="github" class="page-footer__icon" />
         </div>
         <div>
-					<a href="https://merginmaps.com/cookies" target="__blank">Cookie policy</a> &#x2022
-					<a href="https://merginmaps.com/privacy-policy" target="__blank">Privacy policy</a> &#x2022
-					<a href="https://merginmaps.com/licenses/terms-of-service" target="__blank">Terms of service</a>
+          <a href="https://merginmaps.com/cookies" target="__blank"
+            >Cookie policy</a
+          >
+          &#x2022;
+          <a href="https://merginmaps.com/privacy-policy" target="__blank"
+            >Privacy policy</a
+          >
+          &#x2022;
+          <a
+            href="https://merginmaps.com/licenses/terms-of-service"
+            target="__blank"
+            >Terms of service</a
+          >
         </div>
       </div>
     </div>
@@ -53,7 +65,7 @@ export default Vue.extend({
   font-size: 0.9rem;
 
   &__icon {
-    padding: 0 0.5rem
+    padding: 0 0.5rem;
   }
 
   &__container {
@@ -91,7 +103,7 @@ export default Vue.extend({
 
     h4 {
       margin-top: 0;
-      margin-bottom: 1rem
+      margin-bottom: 1rem;
     }
   }
 
@@ -108,7 +120,7 @@ export default Vue.extend({
 
   .page-footer__col {
     align-items: center;
-	width:100%;
+    width: 100%;
 
     img {
       align-self: center;
