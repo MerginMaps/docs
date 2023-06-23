@@ -66,7 +66,7 @@ module.exports = {
     // repo: 'lutraconsulting',
     // repoLabel: 'GitHub',
     nav: [],
-    sidebar: require('./sidebar/en')
+    sidebar: require('./sidebar/en'),
   },
   
   alias: {
