@@ -35,7 +35,7 @@ If you have an active subscription on <AppDomainNameLink />, we also offer free 
 - See [GIS Stack Exchange](https://gis.stackexchange.com/questions/tagged/mergin-maps) with "<NoSpellcheck id="mergin-maps" />" tag to ask questions and see other users' answers.
 - See <QGISHelp ver="3.22" link="user_manual/index.html" text="QGIS documentation" /> for QGIS Desktop related problems.
 
-### How to share your project with Mergin Maps support
+## How to share your project with Mergin Maps support
 
 Sometimes it is useful to share your project with our support team so that they can help you solve your issues.
 
