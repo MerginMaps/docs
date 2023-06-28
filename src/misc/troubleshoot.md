@@ -34,7 +34,7 @@ If you have an active subscription on <AppDomainNameLink />, we also offer free 
 
 ## Diagnostic logs
 
-If you experience any issues with syncing data, you can send diagnostic logs to the developers for debugging the issues. Logs contain detailed information about application run, so there may be hints for you on how to troubleshoot the problem. Once you have uploaded the logs, you can contact us on <MerginMapsEmail id="support" /> to look into the issues.
+If you experience any issues with syncing data, you can send diagnostic logs to the developers for debugging the issues. Logs contain detailed information about application run, so there may be hints for you on how to troubleshoot the problem. Once you have uploaded the logs, please contact us on <MerginMapsEmail id="support" /> with your username/workspace and problem description so we can have a look into the issues.
 
 ### Diagnostic log on Mergin Maps plugin for QGIS  
 
