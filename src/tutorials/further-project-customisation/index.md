@@ -65,7 +65,7 @@ Seeing how the changes look like in <MobileAppName /> is easy:
    ![Successful synchronisation message](./qgis-mergin-project-sync.jpg "Successful synchronisation message")
 
 3. Open <MobileAppName /> on your mobile device
-4. Go the **Home** tab and sync the `trees-and-hedges` project by pressing the sync icon. 
+4. Go to **Home** tab and sync the `trees-and-hedges` project by pressing the sync icon. 
 
    The sync icon should be displayed next to the `trees-and-hedges` project like this:
    ![Updated project in Mergin Maps Input](../mobile/merginmaps-mobile-sync-project.jpg "Updated project in Mergin Maps Input")
