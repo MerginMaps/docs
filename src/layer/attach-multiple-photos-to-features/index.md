@@ -1,7 +1,10 @@
 # How to Attach Multiple Photos to Features
 
+In some situations, it might be useful to take more than one picture of a feature during the field survey. Attaching multiple photos to one feature is a 1-N relation. You can read more about 1-N relations and how they can be used in <MainPlatformNameLink /> in [How to link multiple records to one feature](./one-to-n-relations/).
+
 :::tip
-To see this setup in practice, clone the following project: <MerginMapsProject id="documentation/forms_multiple_photos" />.
+To see this setup in practice, you can download the following project: 
+<MerginMapsProject id="documentation/forms_multiple_photos" />.
 :::
 
 To link multiple photos to a single feature, we need a **unique field** to link following tables:

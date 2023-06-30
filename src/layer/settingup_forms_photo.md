@@ -1,7 +1,13 @@
 # Capturing Photos
-[[toc]]
 
 When surveying, you might want to take a photo from your camera or attach an existing photo from the device gallery to your survey feature.
+
+Here, you will find the overview of the basic functionality related to capturing photos, such as:
+[[toc]]
+
+:::tip
+Do you need to attach multiple pictures to one feature? [How to attach multiple photos to features](./attach-multiple-photos-to-features/) will guide you through the setup.
+:::
 
 ## Attachment widget in QGIS
 

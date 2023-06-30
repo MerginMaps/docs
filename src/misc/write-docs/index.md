@@ -114,6 +114,8 @@ In each section in the menu (except Getting Started and Guides):
 - following with a bunch of how to articles
 - ending with reference documentation pages
 
+References to other articles, blog posts or resources should be linked where relevant, either as [tips](#tip-warning-info-error-note-box) or as *Further reading* sections.
+
 ### Users & Workspaces
 
 - To store all projects referenced in the documentation use <MainPlatformName /> workspace `documentation`
