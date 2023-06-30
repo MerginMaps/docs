@@ -142,7 +142,7 @@ To control the visibility of layers in <MobileAppName />:
 2. Tap the eye icon next to the layer to turn it on or off.
    ![Mergin Maps Input Layers visibility](../../field/layers/input-layers-view.jpg "Layers visibility")
 
-3. Go back the project
+3. Go back to the project
 
 ### Map themes
 While the visibility of single layers can be controlled easily in <MobileAppName />, it might be useful to set up map themes in QGIS. A map theme defines which layers will be displayed, so you can define useful combinations of layers and background maps and switch between them in <MobileAppName />.
