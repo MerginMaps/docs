@@ -1,38 +1,49 @@
 # Mergin Maps Plugin for QGIS Overview
 [[toc]]
 
-:::warning
-This content may differ from what you encounter when working with <MainPlatformNameLink />. It will be updated soon to include recent changes in <MainPlatformNameLink />, <MobileAppName /> and <QGISPluginName />.
-:::
-
 The <QGISPluginName /> allows you to work with your <MainPlatformNameLink /> projects in QGIS, whether it's downloading the project to your computer, making changes in the project, seeing the project's status or synchronising changes to the cloud. 
 
 To get started, you will need to [install and configure the plugin](../setup/install-mergin-maps-plugin-for-qgis/index.md).
 
-Once you have configured the plugin with your <MainPlatformNameLink /> credentials, you should be able to see the following sections under the **<MainPlatformName />** in your QGIS Browser panel:
-- **My projects** lists all projects you have created
-- **Shared with me** lists the projects that are shared with you (including your organisation projects)
-- **Explore** lists all the public projects
+:::tip
+To ensure you can use the latest improvements, don't forget to [upgrade the plugin](../setup/install-mergin-maps-plugin-for-qgis/#plugin-upgrade) whenever there is an update available!
+:::
+
+Once you have installed the plugin and configured it with your <MainPlatformNameLink /> credentials, you should be able to see it in your QGIS Browser panel. The name of the current [workspace](./workspaces/) is displayed in the square brackets (here: `sarah`) and available projects are listed underneath. 
 
 ![Mergin Maps plugin in QGIS browser](./plugin-browser.jpg "Mergin Maps plugin in QGIS browser")
-:::tip
-To ensure you can use the latest improvements, don't forget to [upgrade the plugin](../setup/install-mergin-maps-plugin-for-qgis/#plugin-upgrade) periodically!
-:::
 
 
 ## Downloading a project in QGIS
-1. Right-click on the project and select **Download**
-   ![Download Mergin Maps project option in QGIS browser](./download.jpg "Download Mergin Maps project option in QGIS browser")
 
-2. Browse to the folder, where you want to save the project and click **Select folder**
-   ![Downloading Mergin Maps project progress bar](./download-progress.jpg "Downloading Mergin Maps project progress bar")
+:::tip
+Detailed steps on how to download and open your <MainPlatformNameLink /> project are included in the [Opening Surveyed Data on Your Computer](../tutorials/opening-surveyed-data-on-your-computer/#locating-and-opening-your-project) tutorial.
+:::
+
+1. Right-click on the project and select **Download**
+   ![Download Mergin Maps project option in QGIS browser](../tutorials/opening-surveyed-data-on-your-computer/qgis-download-project.jpg "Download Mergin Maps project option in QGIS browser")
+
+2. Browse to the folder, where you want to save the project and click **Select folder**. The project will be downloaded here.
 
    :::danger WARNING
    Do not use shared network drives or cloud storage (such as OneDrive or Google Drive) to store your <MainPlatformName /> projects. It is not supported and can cause errors.
    :::
 
 3. Once the download is completed, you will have the option to open the project in QGIS.
-   ![Open downloaded project window](./download-open.jpg "Open downloaded project window")
+
+## Exploring public projects
+
+1. Right-click on the <MainPlatformName /> entry in the QGIS Browser and select the **Explore public projects** option
+   ![Explore public projects in QGIS Browser](./plugin-explore-public-projects.jpg "Explore public projects in QGIS Browser")
+
+2. Find the project you are interested in. Use the search bar to limit the choices.
+   ![](./plugin-explore-public-projects-list.jpg)
+
+3. Select the project and click **Open project**. Browse to the folder where you want to save the project. The project will be downloaded here.
+
+::: tip
+You can package this downloaded project using <QGISPluginName /> as described in [Create a project in QGIS](./create-project/#create-a-project-in-qgis) using the **Package current QGIS project** option and use it as your own <MainPlatformNameLink /> project.
+:::
 
 ## Local changes
 <SinceBadge type="Plugin" version="2022.4" />
