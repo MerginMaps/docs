@@ -20,7 +20,7 @@ If you already have the `trees-and-hedges` project open in QGIS, skip to [Layer 
    If you have access to multiple workspaces, you may need to [switch to the appropriate workspace](../../manage/workspaces/#switch-workspaces-in-qgis) in the QGIS browser to open your project.
    :::
 
-3. Expand **My projects** and locate the `trees-and-hedges` project
+3. Locate the `trees-and-hedges` project
 4. **Right-click** it and select **Open QGIS project**:
    ![Open Mergin Maps project in QGIS](./qgis-mergin-open-project.jpg "Open Mergin Maps project in QGIS")
 
