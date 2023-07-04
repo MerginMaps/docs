@@ -9,14 +9,13 @@ Did you encounter an issue when using <MainPlatformNameLink />? Here are some tr
 - if <MobileAppName /> cannot open your project, see [How to Fix a Broken Project](../field/broken-project/).
 - if <MobileAppName /> displays **PROJ error**, see [Custom Projections](../gis/proj/).
 
-Need more help with your issue? <LutraConsultingWeb /> provides commercial support and free standard support for active subscriptions.
+Need more help with your issue? <LutraConsultingWeb /> provides commercial support and free fair-use support for your workspaces with an active subscription on <MerginMapsEmail id="support" />. 
 
-
-If you have an active subscription on app.merginmaps.com, we also offer free standard support on support@merginmaps.com.
-#
 <CommunityJoin />
 
 ## Support
+
+You can also see all your options on our <MainPlatformNameLink id="support" desc="support" /> page.
 
 ### Commercial SLA support
 
@@ -28,7 +27,7 @@ Please see the <LutraConsultingWeb id="support/" desc="support packages" /> avai
 
 ### Subscribed client support
 
-If you have an active subscription on <AppDomainNameLink />, we also offer free standard support on <MerginMapsEmail id="support" />.
+If you have an active subscription or in trial period on <AppDomainNameLink />, we also offer free fair-use support on <MerginMapsEmail id="support" />.
 
 ### Community support
 - Join our [community chat on Slack](https://merginmaps.com/community/join) and ask questions!
