@@ -1,6 +1,7 @@
 # Troubleshoot
 [[toc]]
 
+## Troubleshooting tips
 Did you encounter an issue when using <MainPlatformNameLink />? Here are some troubleshooting tips and resources that can help:
 - Do you have enough storage? Check your [subscription and data usage](../manage/dashboard/#subscription).
 - Are you missing some data after synchronisation? [How to Recover Missing Data](../../manage/missing-data/) will show you how to deal with [**conflict files**](../../manage/missing-data/#there-are-conflict-files-in-the-folder) and how to [**manually download**](../../manage/missing-data/#there-are-no-conflict-files-in-the-folder) data from your mobile device.
@@ -8,11 +9,13 @@ Did you encounter an issue when using <MainPlatformNameLink />? Here are some tr
 - if <MobileAppName /> cannot open your project, see [How to Fix a Broken Project](../field/broken-project/).
 - if <MobileAppName /> displays **PROJ error**, see [Custom Projections](../gis/proj/).
 
-Need more help with your issue? <LutraConsultingWeb /> provides commercial support and free standard support for active subscriptions.
+Need more help with your issue? <LutraConsultingWeb /> provides commercial support and free fair-use support for your workspaces with an active subscription on <MerginMapsEmail id="support" />. 
 
 <CommunityJoin />
 
 ## Support
+
+You can also see all your options on our <MainPlatformNameLink id="support" desc="support" /> page.
 
 ### Commercial SLA support
 
@@ -24,13 +27,39 @@ Please see the <LutraConsultingWeb id="support/" desc="support packages" /> avai
 
 ### Subscribed client support
 
-If you have an active subscription on <AppDomainNameLink />, we also offer free standard support on <MerginMapsEmail id="support" />.
+If you have an active subscription or in trial period on <AppDomainNameLink />, we also offer free fair-use support on <MerginMapsEmail id="support" />.
 
 ### Community support
 - Join our [community chat on Slack](https://merginmaps.com/community/join) and ask questions!
 - See [GIS Stack Exchange](https://gis.stackexchange.com/questions/tagged/mergin-maps) with "<NoSpellcheck id="mergin-maps" />" tag to ask questions and see other users' answers.
 - See <QGISHelp ver="3.22" link="user_manual/index.html" text="QGIS documentation" /> for QGIS Desktop related problems.
 
+## How to share your project with Mergin Maps support
+
+Sometimes it is useful to share your project with our support team so that they can help you solve your issues.
+
+To share your <MainPlatformName /> project with the support:
+1. Log in to <AppDomainNameLink />
+2. In the **Project** tab in the left panel, find the project that needs to be shared with the support
+   ![List of projects in Mergin Maps](./mergin-find-project.jpg "List of projects in Mergin Maps")
+   
+   ::: tip
+   If you have access to multiple workspaces, you might need to [switch to another workspace](../manage/workspaces/#switch-workspaces-in-merginmaps-com) first.
+   :::
+
+3. Click on the **Share** button
+   ![Sharing Mergin Maps project](./mergin-share-project.jpg "Sharing Mergin Maps project")
+
+4. Enter the email <MerginMapsEmail id="support" /> and click **Next**
+   ![Sharing Mergin Maps project with the support](./mergin-share-project-with-support.jpg "Sharing Mergin Maps project with the support")
+   
+5. Check the details in the invite form. If you want to share multiple project with the support, you may add them to the invitation. Click **Next**.
+   ![Sharing Mergin Maps project with the support](./mergin-share-project-with-support-2.jpg "Sharing Mergin Maps project with the support")
+
+6. Click **Share** to send the invitation to the support.
+   ![Sharing Mergin Maps project with the support](./mergin-share-project-with-support-3.jpg "Sharing Mergin Maps project with the support")
+
+Our support team can now access your <MainPlatformNameLink /> project.
 
 ## Diagnostic logs
 
