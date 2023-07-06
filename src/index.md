@@ -76,6 +76,8 @@ The ecosystem consist of various components:
 - [Working with Non-spatial Tables](./layer/working_with_nonspatial_data/)
 
 ## Fieldwork Tips
+- [<MobileAppName /> Interface](./field/input_ui/)
+- [Offline Use of <MobileAppName />](./field/external_gps/)
 - [External GPS](./field/external_gps/)
 - [GPS Accuracy](./field/gps_accuracy/)
 - [Synchronisation in <MobileAppName />](./field/autosync/)
@@ -84,7 +86,6 @@ The ecosystem consist of various components:
 - [How to Reuse Last Entered Values](./field/reuse-last-values/)
 - [How to Stake Out Points](./field/stake-out/)
 - [How to Fix a Broken Project](./field/broken-project/)
-- [<MobileAppName /> Interface](./field/input_ui/)
 
 ## For Developers
 - [Custom Mobile App](./dev/customapp/)

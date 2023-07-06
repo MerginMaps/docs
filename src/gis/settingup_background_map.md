@@ -5,6 +5,10 @@ When surveying in the field, it is essential to have appropriate background maps
 
 The following sections will cover two types of background maps for online and offline use in <MobileAppName />: raster and vector tiles.
 
+::: warning
+Online maps need internet connection to be displayed during the field survey and can use up a lot of mobile data, especially if you are using online raster maps.
+:::
+
 ## Raster tiles 
 Raster tiles are ideal for aerial imagery or terrain visualisations. They can be large in size and can appear pixelated when zoomed in.
 
