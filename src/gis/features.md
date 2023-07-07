@@ -17,13 +17,21 @@ In [Creating a Project in QGIS](../tutorials/creating-a-project-in-qgis/) you wi
 Various online and offline maps can be used as background layers for navigation during the field survey. You can find more information in [Background Maps](./settingup_background_map/).
 
 ## Project extent
-In <MobileAppName />, there is an option to [zoom to the project extent](../field/input_ui/#zoom-to-project-browse-features-map-themes-settings).
+In <MobileAppName />, there is an option to [zoom to the project extent](../field/input_ui/#zoom-to-project-browse-features-map-themes-settings). 
 
-To set the project extent, navigate to **Project** > **Properties**. Select **View Settings** and check the **Set Project Full Extent** option. Here, either enter the coordinate extent of your project bounding box or use the map canvas extent.
+If the project extent is not set, <MobileAppName /> zooms to all visible layers. This is not particularly convenient when you have a layer with a large/global extent (e.g. Open Street Map).
 
-![QGIS set project extent](./qgis-project-extent.jpg "QGIS set project extent")
+To set the project extent:
+1. Navigate to **Project** > **Properties**. 
+   ![QGIS Project Properties](./qgis-project-properties.jpg "QGIS Project Properties")
 
-If not set, <MobileAppName /> zooms to all visible layers. This is not particularly convenient when you have a layer with a large/global extent (e.g. Open Street Map).
+2. Select **View Settings** and check the **Set Project Full Extent** option. 
+
+   Here, either enter the coordinate extent of your project bounding box or use the map canvas extent. The extent can be also calculated from a layer in your project.
+
+   ![QGIS set project extent](./qgis-project-extent.jpg "QGIS set project extent")
+
+3. Click **Apply** to save the changes
 
 ## Project settings
 - Ensure the paths are set to *Relative* in the **General** tab in Project Properties. All paths to the project data in <MobileAppName /> are relative to the project location.
