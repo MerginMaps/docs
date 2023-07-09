@@ -21,7 +21,7 @@ Ensure that the **Integrated Document Viewer** has the **Type** set to *Image*.
    Select a layer from the list and click on the **Expression builder** icon.
    ![Mergin Maps Plugin Custom photo name setup](./plugin-photo-name-available-layers.jpg "Mergin Maps Plugin Custom photo name setup")
  
-3. In the **Expression Dialog** window, enter the expression that should be use as the photo's name. Please, keep in mind [basic recommendations](#best-practice-for-photo-name-expressions) to make sure the naming works as intended.
+3. In the **Expression Dialog** window, enter the expression that should be used as the photo's name. Please, keep in mind [basic recommendations](#best-practice-for-photo-name-expressions) to make sure the naming works as intended.
 
    Here we use a combination of the layer's name, <MainPlatformName /> username and current timestamp (other examples ale listed [below](#examples-of-photo-names-expressions)): 
    ` @layer_name + '-' +  @mergin_username + '-' + format_date(now(),'yyMMddhhmmss')`
