@@ -34,7 +34,7 @@ Ensure that the **Integrated Document Viewer** has the **Type** set to *Image*.
 
 4. Set up the photo name format for other fields and layers. 
 
-   The **Preview** in **Mergin Maps** tab includes the [custom folder for photos](#how-to-set-up-a-custom-folder-for-storing-photos), if you have set it up. Otherwise you will see only the sample name of a photo.
+   The **Preview** in **Mergin Maps** tab includes the [custom folder for photos](../../layer/settingup_forms_photo/#how-to-set-up-a-custom-folder-for-storing-photos), if you have set it up. Otherwise you will see only the sample name of a photo.
   
    ![Mergin Maps Plugin photo name setup with custom folder](./plugin-photo-name-format-folder.jpg "Mergin Maps Plugin photo name setup with custom folder")  
    ![Mergin Maps Plugin Custom photo name setup without custom folder](./plugin-photo-name-format.jpg "Mergin Maps Plugin Custom photo name setup without custom folder")
