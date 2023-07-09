@@ -57,6 +57,7 @@ The ecosystem consist of various components:
 - [Searching for Values in Attribute Fields](./gis/search_data/)
 - [Background Maps](./gis/settingup_background_map/)
 - [Map Themes](./gis/setup_themes/)
+- [How to Set Photo Names Format](./photo-names/)
 - [How to Enable Digitising](./gis/enable_digitising/)
 - [How to Set Up Snapping for <MobileAppName />](./gis/snapping/)
 - [Custom Projections](./gis/proj/)

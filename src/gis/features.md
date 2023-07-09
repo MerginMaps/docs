@@ -16,7 +16,18 @@ In [Creating a Project in QGIS](../tutorials/creating-a-project-in-qgis/) you wi
 ## Background layers
 Various online and offline maps can be used as background layers for navigation during the field survey. You can find more information in [Background Maps](./settingup_background_map/).
 
-## Project extent
+
+## Project settings
+- Ensure the paths are set to *Relative* in the **General** tab in Project Properties. All paths to the project data in <MobileAppName /> are relative to the project location.
+![QGIS set relative paths](./qgis_prj_relative_paths.jpg "QGIS set relative paths")
+- Define the <QGISHelp ver="3.22" link="user_manual/introduction/qgis_configuration.html?highlight=properties#data-sources-properties" text="layers capabilities" /> in the **Data Sources** in Project Properties.
+   - [Identifiable](./search_data/#setting-identifiable-layers-in-qgis-project) layers can be queried in <MobileAppName />. If you want to be able to search for attribute values in a layer, it needs to be identifiable and searchable.
+   - **read-only** layers cannot be modified. If a vector layer is not intended to be used as a survey layer, set it as read-only.
+   - [non-spatial](../layer/working_with_nonspatial_data/) layers need to be set as searchable to enable browsing, searching, or editing.
+
+![QGIS Layer Capabilities](./qgis_project_properties.jpg "QGIS Layer Capabilities")
+
+### Project extent
 In <MobileAppName />, there is an option to [zoom to the project extent](../field/input_ui/#zoom-to-project-browse-features-map-themes-settings). 
 
 If the project extent is not set, <MobileAppName /> zooms to all visible layers. This is not particularly convenient when you have a layer with a large/global extent (e.g. Open Street Map).
@@ -33,18 +44,6 @@ To set the project extent:
 
 3. Click **Apply** to save the changes
 
-## Project settings
-- Ensure the paths are set to *Relative* in the **General** tab in Project Properties. All paths to the project data in <MobileAppName /> are relative to the project location.
-![QGIS set relative paths](./qgis_prj_relative_paths.jpg "QGIS set relative paths")
-- Define the <QGISHelp ver="3.22" link="user_manual/introduction/qgis_configuration.html?highlight=properties#data-sources-properties" text="layers capabilities" /> in the **Data Sources** in Project Properties.
-   - [Identifiable](./search_data/#setting-identifiable-layers-in-qgis-project) layers can be queried in <MobileAppName />. If you want to be able to search for attribute values in a layer, it needs to be identifiable and searchable.
-   - **read-only** layers cannot be modified. If a vector layer is not intended to be used as a survey layer, set it as read-only.
-   - [non-spatial](../layer/working_with_nonspatial_data/) layers need to be set as searchable to enable browsing, searching, or editing.
-
-![QGIS Layer Capabilities](./qgis_project_properties.jpg "QGIS Layer Capabilities")
-
-### Map themes
-[Map Themes](./setup_themes/) make possible to switch between different background maps in <MobileAppName /> (e.g. cartography maps and aerial imagery)
 
 ### Photo quality
 <SinceBadge type="Plugin" version="2022.3.2" /><SinceBadge type="App" version="1.5.1" />
@@ -55,6 +54,17 @@ By default, the quality is set to *Original* - the original pictures are stored.
 Don't forget to save and sync your project!
 
 ![Mergin Maps set photo quality](./project_resize_pics.jpg "Mergin Maps set photo quality")
+
+### Photo names
+<SinceBadge type="Plugin" version="2023.2.0" /> <SinceBadge type="App" version="v2.2.0" />
+
+Names of the photos that are captured in the field using <MobileAppName /> can be customised. The name format can be set in QGIS with <QGISPluginName />.  
+
+::: tip
+[How to Set Photo Names Format](../gis/photo-names/) will guide you through the setup and provide examples of expressions that can be used to name your photos.
+:::
+
+![Mergin Maps Plugin photo name setup with custom folder](./plugin-photo-name-settings.jpg "Mergin Maps Plugin photo name setup with custom folder")
 
 ### Snapping
 <SinceBadge type="Plugin" version="2022.5" /><SinceBadge type="App" version="1.6.0" />
@@ -69,6 +79,9 @@ The snapping options are:
 :::tip
 [How to Set Up Snapping for <MobileAppName />](./snapping/) contains detailed steps that may help you with the snapping setup.
 :::
+
+### Map themes
+[Map Themes](./setup_themes/) make possible to switch between different background maps in <MobileAppName /> (e.g. cartography maps and aerial imagery)
 
 ## Survey layers
 Vector layers can be used as survey layers in <MobileAppName />. You can apply styles and set up the forms to make your field survey easier.
