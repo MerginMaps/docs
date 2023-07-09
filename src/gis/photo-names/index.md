@@ -48,9 +48,9 @@ Therefore, we recommend using combinations of variables that will ensure that th
 
 :white_check_mark: The file extension (`.jpg`) is added automatically.
 
-:white_check_mark: When using a field value in the expression, make sure that it is a field that will be filled out during the survey, e.g. by using [constraints](../../layers/settingup_forms_settings/#constraints). If the field is empty, the expression won't work!
+:white_check_mark: When using a field value in the expression, make sure that it is a field that will be filled out during the survey, e.g. by using [constraints](../../layer/settingup_forms_settings/#constraints). If the field is empty, the expression won't work!
 
-:white_check_mark: If you want to use a [numeric field](../../layers/settingup_forms/#numbers) in your expression, you need to convert it to a string first using the `to_string()` function
+:white_check_mark: If you want to use a [numeric field](../../layer/settingup_forms/#numbers) or other non-text fields in your expression, you need to convert it to a string first using the `to_string()` function
 
 :no_entry_sign: The expression is evaluated with the **current** field values. The name of the photo will stay the same even if you change the value of the field later.
 
@@ -75,16 +75,16 @@ Here are some example expressions that can be used or modified to fit your needs
 
 - Expression: ` @layer_name + '-' +  @mergin_username + '-' + format_date(now(),'yyMMddhhmmss')`
    - Preview: `hedges-sarah-230707154052.jpg`
-   - Note: This is a combination of the name of a layer (`hedges`), <MainPlatformName /> username (`sarah`) and reformatted timestamp that starts with the year and ends with seconds.
+   - Description: This is a combination of the name of a layer (`hedges`), <MainPlatformName /> username (`sarah`) and reformatted timestamp that starts with the year and ends with seconds.
 
 - Expression: ` "species" +  format_date( now(),'-yyyyMMdd-hhmmss')`
    - Preview: `Silver birch-20230707-154052.jpg`
-   - Note: `Silver birch` is a value of the `species` field. Current timestamp is reformatted with added hyphens to separate the date and time.
+   - Description: `Silver birch` is a value of the `species` field. Current timestamp is reformatted with added hyphens to separate the date and time.
 
 - Expression: `'photo-' +  format_date( now(),'ssmmhhddMMyy')`
    - Preview: `photo-520415070723.jpg`
-   - Note: A string can be added to the photo name (here: `photo-`). The order of the timestamp is reversed (compared to the previous examples), starting from seconds.
+   - Description: A string can be added to the photo name (here: `photo-`). The order of the timestamp is reversed (compared to the previous examples), starting from seconds.
 
 - Expression: `@layer_name + ' ' + to_string("house-number") + ' at ' + format_date( now(),'ssmmhh') + ' on '+ format_date( now(),'ddMMyy')`
    - Preview: `house 41 at 520415 on 070723.jpg`
-   - Note: Here we use the name of a layer (`house`), followed by a string adding space. A numeric field (`house-number`) is converted to a string. The timestamp is divided to display the time and date separately, with added strings `at` and `on` to make the photo name more readable.
+   - Description: Here we use the name of a layer (`house`), followed by a string adding space. A numeric field (`house-number`) is converted to a string. The timestamp is divided to display the time and date separately, with added strings `at` and `on` to make the photo name more readable.
