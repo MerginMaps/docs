@@ -57,6 +57,10 @@ Tapping the GPS accuracy tab opens the GPS info panel:
 - **Speed**
 - **Last fix**: time of the last received GPS position
 
+::: tip
+External GNSS devices return orthometric heights (ellipsoid with the geoid separation applied)
+:::
+
 ![GPS info panel](./input-gps-info.jpg "GPS info panel") 
 
 ## Record
