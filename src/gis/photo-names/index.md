@@ -5,14 +5,9 @@
 
 Names of the photos that are captured in the field using <MobileAppName /> can be customised. The name format can be set in QGIS with <QGISPluginName />. 
 
-## Photo widget setup
 To use this option, make sure that the [photo widget](../../layer/settingup_forms_photo/#attachment-widget-in-qgis) of the fields you use for taking pictures is set up correctly, i.e. using the attachment widget, storing relative paths and, if needed, with a [custom folder](../../layer/settingup_forms_photo/#how-to-set-up-a-custom-folder-for-storing-photos) for storing photos. 
 
-Ensure that the **Integrated Document Viewer** has the **Type** set to *Image*.
-
-![QGIS Layer Properties Integrated Document Viewer](../../layer/qgis-doc-viewer.jpg "QGIS Layer Properties Integrated Document Viewer")
-
-## Setting up custom photo names
+To set up custom photo names:
 1. Open your <MainPlatformNameLink /> project in QGIS and navigate to **Project Properties**
    ![QGIS Project Properties](../qgis-project-properties.jpg "QGIS Project Properties")
 
