@@ -16,14 +16,6 @@ In [Creating a Project in QGIS](../tutorials/creating-a-project-in-qgis/) you wi
 ## Background layers
 Various online and offline maps can be used as background layers for navigation during the field survey. You can find more information in [Background Maps](./settingup_background_map/).
 
-## Project extent
-In <MobileAppName />, there is an option to [zoom to the project extent](../field/input_ui/#zoom-to-project-browse-features-map-themes-settings).
-
-To set the project extent, navigate to **Project** > **Properties**. Select **View Settings** and check the **Set Project Full Extent** option. Here, either enter the coordinate extent of your project bounding box or use the map canvas extent.
-
-![QGIS set project extent](./qgis-project-extent.jpg "QGIS set project extent")
-
-If not set, <MobileAppName /> zooms to all visible layers. This is not particularly convenient when you have a layer with a large/global extent (e.g. Open Street Map).
 
 ## Project settings
 - Ensure the paths are set to *Relative* in the **General** tab in Project Properties. All paths to the project data in <MobileAppName /> are relative to the project location.
@@ -35,8 +27,23 @@ If not set, <MobileAppName /> zooms to all visible layers. This is not particula
 
 ![QGIS Layer Capabilities](./qgis_project_properties.jpg "QGIS Layer Capabilities")
 
-### Map themes
-[Map Themes](./setup_themes/) make possible to switch between different background maps in <MobileAppName /> (e.g. cartography maps and aerial imagery)
+### Project extent
+In <MobileAppName />, there is an option to [zoom to the project extent](../field/input_ui/#zoom-to-project-browse-features-map-themes-settings). 
+
+If the project extent is not set, <MobileAppName /> zooms to all visible layers. This is not particularly convenient when you have a layer with a large/global extent (e.g. Open Street Map).
+
+To set the project extent:
+1. Navigate to **Project** > **Properties**. 
+   ![QGIS Project Properties](./qgis-project-properties.jpg "QGIS Project Properties")
+
+2. Select **View Settings** and check the **Set Project Full Extent** option. 
+
+   Here, either enter the coordinate extent of your project bounding box or use the map canvas extent. The extent can be also calculated from a layer in your project.
+
+   ![QGIS set project extent](./qgis-project-extent.jpg "QGIS set project extent")
+
+3. Click **Apply** to save the changes
+
 
 ### Photo quality
 <SinceBadge type="Plugin" version="2022.3.2" /><SinceBadge type="App" version="1.5.1" />
@@ -47,6 +54,17 @@ By default, the quality is set to *Original* - the original pictures are stored.
 Don't forget to save and sync your project!
 
 ![Mergin Maps set photo quality](./project_resize_pics.jpg "Mergin Maps set photo quality")
+
+### Photo names
+<SinceBadge type="Plugin" version="2023.2.0" /> <SinceBadge type="App" version="v2.2.0" />
+
+Names of the photos that are captured in the field using <MobileAppName /> can be customised. The name format can be set in QGIS with <QGISPluginName />.  
+
+::: tip
+[How to Set Photo Names Format](../gis/photo-names/) will guide you through the setup and provide examples of expressions that can be used to name your photos.
+:::
+
+![Mergin Maps Plugin photo name setup with custom folder](./plugin-photo-name-settings.jpg "Mergin Maps Plugin photo name setup with custom folder")
 
 ### Snapping
 <SinceBadge type="Plugin" version="2022.5" /><SinceBadge type="App" version="1.6.0" />
@@ -61,6 +79,9 @@ The snapping options are:
 :::tip
 [How to Set Up Snapping for <MobileAppName />](./snapping/) contains detailed steps that may help you with the snapping setup.
 :::
+
+### Map themes
+[Map Themes](./setup_themes/) make possible to switch between different background maps in <MobileAppName /> (e.g. cartography maps and aerial imagery)
 
 ## Survey layers
 Vector layers can be used as survey layers in <MobileAppName />. You can apply styles and set up the forms to make your field survey easier.

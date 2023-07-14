@@ -60,9 +60,15 @@ To set up a custom folder:
 
 8. **Apply the changes**. Don't forget to save and sync your project!
 
-
 ## Resizing pictures automatically
-Photos that are captured during the field survey or uploaded using <MobileAppName /> can be automatically resized, e.g. to save up storage space. The quality of the photos can be set up in the [Mergin Maps project properties](../gis/features/#photo-quality) using <QGISPluginName />.
+Photos that are captured during the field survey or uploaded using <MobileAppName /> can be automatically resized, e.g. to save up storage space. The quality of the photos can be set up in the [<MainPlatformName /> project properties](../gis/features/#photo-quality) using <QGISPluginName />.
+
+## Customising photo name format with expressions
+Photos taken in the field using <MobileAppName /> can be automatically renamed. This can be useful when browsing pictures in your <MainPlatformNameLink /> project and keeping them organised.
+
+::: tip
+[How to Set Photo Names Format](../gis/photo-names/) will guide you through the setup and provide examples of expressions that can be used to name your photos.
+:::
 
 ## Photos in Mergin Maps Input
 Using the photo widget in <MobileAppName />, you will have two options:
