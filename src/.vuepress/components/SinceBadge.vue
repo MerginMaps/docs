@@ -1,6 +1,6 @@
 <template>
   <span>
-  <span class="sincebadge" v-if="type === 'App'" >since Input App {{ version }}</span>
+  <span class="sincebadge" v-if="type === 'App'" >since Mobile {{ version }}</span>
   <span class="sincebadge" v-else-if="type === 'Plugin'">since Plugin {{ version }}</span>
   <span class="sincebadge" v-else-if="type === 'Server'">since Server {{ version }}</span>
   </span>
