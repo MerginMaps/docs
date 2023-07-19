@@ -78,6 +78,7 @@ Multiline
 nginx
 NDK
 OneDrive
+orthometric
 NMEA
 NTRIP
 OSGB
