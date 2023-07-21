@@ -104,7 +104,9 @@ A <MainPlatformName /> project can be transferred to another workspace. This can
 6. If the same team wants to continue contributing to the project, they need to **download the transferred project** from the new workspace.
 
 ## Delete a project
-If you want to delete a project, you can do so through <AppDomainNameLink /> or using the <QGISPluginName />.
+If you want to delete a project, you can do so through <AppDomainNameLink /> or using the <QGISPluginName />. 
+
+After you delete the project, it is possible to 
 
 ### Delete a project through merginmaps.com
 
@@ -113,9 +115,6 @@ If you want to delete a project, you can do so through <AppDomainNameLink /> or 
 
 ![Delete project button](./project-delete.jpg "Delete project button")
 
-::: danger WARNING
-This operation cannot be undone and the project data are permanently deleted.
-:::
 
 ### Delete a project using the Mergin Maps plugin 
 Using the <QGISPluginName />, you can delete a <MainPlatformName /> project either locally on your PC or on the <MainPlatformName /> server. To be able to delete the project on the server, you need to first delete the files locally.
@@ -127,6 +126,3 @@ Using the <QGISPluginName />, you can delete a <MainPlatformName /> project eith
 3. Right-click on the project name again and select **Remove from server** option. This will remove the <MainPlatformName /> project completely. 
    ![QGIS Remove Mergin Maps project from server](./plugin-project-delete-from-server.jpg "QGIS Remove Mergin Maps project from server")
 
-::: danger WARNING
-This operation cannot be undone and the project data are permanently deleted.
-:::
