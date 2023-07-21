@@ -70,3 +70,6 @@ See our [pricing](https://merginmaps.com/pricing) for details about different pl
 3. Confirm the closing of a workspace by typing the workspace name and click on **Delete**
    ![Delete workspace confirmation](./web-delete-workspace-confirm.jpg "Delete workspace confirmation")
 
+After closing a workspace, it is kept on <MainPlatformName /> servers for 5 days before it is deleted permanently. During this period, it can be restored if you contact <MerginMapsEmail id="support" />.
+
+If you want to create a new workspace with the same name, you can contact <MerginMapsEmail id="support" /> to have it closed sooner.
