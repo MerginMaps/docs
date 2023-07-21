@@ -55,6 +55,11 @@ From the list of available workspaces, select the one you want to switch to:
    ![Create workspace in Mergin Maps web dashboard](./web-create-workspace.jpg "Create workspace in Mergin Maps web dashboard")
 4. Fill in the name and description of your new workspace
    ![Create workspace in Mergin Maps web dashboard details](./web-new-workspace.jpg "Create workspace in Mergin Maps web dashboard details")
+   
+   :::warning
+   The name of a workspace cannot be changed later.
+   :::
+   
 5. Now you have a new workspace! You can [create projects](../create-project/) in the workspace and [invite other users](../project-advanced/#add-users-to-a-workspace) to contribute.
    ![Mergin Maps web dashboard workspaces overview](./web-new-workspace-created.jpg "Mergin Maps web dashboard workspaces overview")
 
