@@ -69,6 +69,7 @@ Names of the photos that are captured in the field using <MobileAppName /> can b
 ### Snapping
 <SinceBadge type="Plugin" version="2022.5" /><SinceBadge type="App" version="1.6.0" />
 If you want to use snapping in <MobileAppName /> during the field survey, you need to set it up in the **<MainPlatformName />** tab in **Project properties**.
+
 ![QGIS set snapping in Mergin Maps](./project_snapping.jpg "QGIS set snapping in Mergin Maps")
 
 The snapping options are:
@@ -79,6 +80,16 @@ The snapping options are:
 :::tip
 [How to Set Up Snapping for <MobileAppName />](./snapping/) contains detailed steps that may help you with the snapping setup.
 :::
+
+
+### Tracking
+<SinceBadge type="Plugin" version="2023.3" /><SinceBadge type="App" version="2.2.0" />
+
+Tracking your position when doing the field survey with <MobileAppName /> can be enabled in the **<MainPlatformName />** tab in **Project properties**.
+
+![Enable tracking in QGIS Mergin Maps project](./project-tracking.jpg "Enable tracking in QGIS Mergin Maps project")
+
+You can read more about this functionality in [How to Use Tracking in Mergin Maps Input](../field/tracking/).
 
 ### Map themes
 [Map Themes](./setup_themes/) make possible to switch between different background maps in <MobileAppName /> (e.g. cartography maps and aerial imagery)
