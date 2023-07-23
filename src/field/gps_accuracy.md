@@ -10,7 +10,7 @@ When doing the survey, it is essential to be aware of the limitations of your GP
 A warning will appear, if your accuracy is outside the GPS accuracy threshold. To get rid of this warning, you can increase your **Accuracy threshold** or turn off these warnings in [Settings](./input_ui.md#gps-settings).
 ![Low GPS position accuracy warning](./input-gps-warning.jpg "Low GPS position accuracy warning")
 
-Tapping the GPS accuracy tab opens the GPS info panel, which contains information about the horizontal and vertical accuracy, as well as number of satellites in use.
+Tapping the GPS accuracy tab opens the [GPS info panel](./input_ui/#gps), which contains information about the horizontal and vertical accuracy, as well as number of satellites in use.
 ![GPS info panel](./input-gps-info.jpg "GPS info panel")
 
 If you'd like to have higher accuracy, you can wait for your device to acquire a better GPS signal. For precise measurements, you may need to connect your device to an [external GPS](./external_gps.md).
