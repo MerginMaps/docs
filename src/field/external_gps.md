@@ -83,26 +83,28 @@ External GPS functionality depends on the manufacturer and on the specific model
 
 | Manufacturer | Model | Android | iOS |
 |---|---|---|---|
-| Carlson | Carlson <NoSpellcheck id="Brx7" /> | yes (mock location) | unknown |
-| Carlson | Carlson <NoSpellcheck id="xML2" /> | yes (mock location) | unknown |
-| Emlid | Emlid Reach RX | yes | no |
-| Emlid | Emlid Reach RS+ | yes | no |
-| Emlid | Emlid Reach M+ | yes | no |
+| Carlson | Carlson <NoSpellcheck id="Brx7" /><sup><a href="#link-1">1</a></sup> | yes (mock location) | unknown |
+| Carlson | Carlson <NoSpellcheck id="xML2" /> <sup><a href="#link-1">1</a></sup>| yes (mock location) | unknown |
+| Emlid | Emlid Reach RX<sup><a href="#link-2">2</a></sup> | yes | no |
+| Emlid | Emlid Reach RS+<sup><a href="#link-2">2</a></sup> | yes | no |
+| Emlid | Emlid Reach M+<sup><a href="#link-2">2</a></sup> | yes | no |
 | Garmin | GLO 2 | yes | yes |
-| Juniper Systems | Geode GNS3 | yes | yes |
-| Leica | Leica FLX100| yes (mock location) | no |
-| Leica | Leica FLX100 plus| yes (mock location) | yes*|
-| Leica | Leica Zeno GG04plus| yes (mock location) | yes* |
+| Juniper Systems | Geode GNS3<sup><a href="#link-3">3</a></sup> | yes | yes |
+| Leica | Leica FLX100<sup><a href="#link-4">4</a></sup> | yes (mock location) | no |
+| Leica | Leica FLX100 plus<sup><a href="#link-4">4</a></sup> | yes (mock location) | yes*|
+| Leica | Leica Zeno GG04plus<sup><a href="#link-4">4</a></sup> | yes (mock location) | yes* |
 | <NoSpellcheck id="marXact" /> | UNI-GR1| yes | no |
-| Trimble | Trimble Catalyst | yes (mock location) | unknown |
-| Trimble | Trimble R1 | yes (mock location) | unknown |
-| Trimble | Trimble R2 | yes (mock location) | unknown |
+| Trimble | Trimble Catalyst<sup><a href="#link-5">5</a></sup> | yes (mock location) | unknown |
+| Trimble | Trimble R1<sup><a href="#link-5">5</a></sup> | yes (mock location) | unknown |
+| Trimble | Trimble R2<sup><a href="#link-5">5</a></sup> | yes (mock location) | unknown |
+| <NoSpellcheck id="proNIVO" /> | <NoSpellcheck id="PNR21" /><sup><a href="#link-6">6</a></sup> | yes (mock location)| no |
 
-- **Carlson <NoSpellcheck id="Brx7" />**,  **Carlson <NoSpellcheck id="xML2" />** - through [Carlson Layout](https://www.carlsonsw.com/product/carlson-layout) which will set a mock location in Android.
-- **Emlid Reach RX**, **Emlid Reach RS+**, **Emlid Reach M+** - directly via Bluetooth connection, has an internal NTRIP client to receive corrections. Possible to set a mock location and connect the receiver via Bluetooth using [GPS Connector](https://play.google.com/store/apps/details?id=de.pilablu.gpsconnector) or WiFi using [Lebefure NTRIP Client](https://play.google.com/store/apps/details?id=com.lefebure.ntripclient). Android only.
-- **Geode GNS3** - through *Geode Connect* app on [Android](https://play.google.com/store/apps/details?id=com.juniper.geode2a&hl=en_NZ&gl=US) or [iOS](https://apps.apple.com/us/app/geode-connect/id1446098695), which also acts as an NTRIP client and sends corrections to the device.
-- **Leica FLX100**, **Leica FLX100 plus**, **Leica Zeno GG04plus** - through *Leica Zeno Connect* app on [Android](https://play.google.com/store/apps/details?id=com.leica.zenoconnect&hl=en&gl=US) which also acts as a NTRIP client and sends the corrections to the device. The app will set a mock location in Android. It is also possible to connect directly via Bluetooth (even multiple phones can be connected at once), but if no phone has Zeno app running, there will be no corrections available. 
+- <a name="link-1">1</a>: **Carlson <NoSpellcheck id="Brx7" />**,  **Carlson <NoSpellcheck id="xML2" />** - through [Carlson Layout](https://www.carlsonsw.com/product/carlson-layout) which will set a mock location in Android.
+- <a name="link-2">2</a>: **Emlid Reach RX**, **Emlid Reach RS+**, **Emlid Reach M+** - directly via Bluetooth connection, has an internal NTRIP client to receive corrections. Possible to set a mock location and connect the receiver via Bluetooth using [GPS Connector](https://play.google.com/store/apps/details?id=de.pilablu.gpsconnector) or WiFi using [Lebefure NTRIP Client](https://play.google.com/store/apps/details?id=com.lefebure.ntripclient). Android only.
+- <a name="link-3">3</a>: **Geode GNS3** - through *Geode Connect* app on [Android](https://play.google.com/store/apps/details?id=com.juniper.geode2a&hl=en_NZ&gl=US) or [iOS](https://apps.apple.com/us/app/geode-connect/id1446098695), which also acts as an NTRIP client and sends corrections to the device.
+- <a name="link-4">4</a>: **Leica FLX100**, **Leica FLX100 plus**, **Leica Zeno GG04plus** - through *Leica Zeno Connect* app on [Android](https://play.google.com/store/apps/details?id=com.leica.zenoconnect&hl=en&gl=US) which also acts as a NTRIP client and sends the corrections to the device. The app will set a mock location in Android. It is also possible to connect directly via Bluetooth (even multiple phones can be connected at once), but if no phone has Zeno app running, there will be no corrections available. 
    \* *Leica Zeno Connect* is also available on [iOS](https://apps.apple.com/us/app/zeno-connect/id1310344749). It is known to support **Leica FLX100 plus** and **Leica Zeno GG04plus**.  However, on iOS, the vertical accuracy information is not transferred to <MobileAppName /> through *Leica Zeno Connect*. <MobileAppName /> will not display the correct value of the vertical accuracy.
-- **Trimble R1**, **Trimble R2**, **Trimble Catalyst** - through [*Trimble Mobile Manager* app](https://play.google.com/store/apps/details?id=com.trimble.trimblemobilemanager) which also acts as a NTRIP client and sends the corrections to the device. The app will set a mock location in Android.
+- <a name="link-5">5</a>: **Trimble R1**, **Trimble R2**, **Trimble Catalyst** - through [*Trimble Mobile Manager* app](https://play.google.com/store/apps/details?id=com.trimble.trimblemobilemanager) which also acts as a NTRIP client and sends the corrections to the device. The app will set a mock location in Android.
+- <a name="link-6">6</a>: **<NoSpellcheck id="proNIVO" /> <NoSpellcheck id="PNR21" />** - through *<NoSpellcheck id="Attenberger" /> Connector* app on [Android](https://play.google.com/store/apps/details?id=eu.apglos.attenbergerapp1&hl=en&gl=US).
 
 **Did you use a GPS that is not in this list?** <GitHubRepo id="MerginMaps/docs/issues/124" desc="Share your experiences with us!" />

@@ -57,6 +57,7 @@ module.exports = {
                 '/gis/search_data',
                 '/gis/settingup_background_map',
                 '/gis/setup_themes',
+                '/gis/photo-names/',
                 '/gis/enable_digitising',
                 '/gis/snapping/',
                 '/gis/proj',

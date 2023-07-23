@@ -43,12 +43,31 @@ We support students, educators and registered non-profit organisations. If you w
 ![Mergin Maps Request Academia or Non-profit plan](./academia-non-profit-plan.jpg "Mergin Maps Request Academia or Non-profit plan")
 3. Fill in the form and **Submit** your request. We will review your application and if you meet our conditions, your workspace will get the Academia or Non-profit plan.
 
-
-## How to cancel subscription
+### How to cancel subscription
 1. Log into <AppDomainNameLink />
 2. Navigate to **Subscriptions**. If you have an active subscription, you can cancel it by clicking **Cancel subscription**.
 ![Mergin Maps Cancel Subscription](./cancel-subscription.jpg "Mergin Maps Cancel Subscription")
 
+### How to transfer ownership and billing for workspaces
+Ownership of a workspace can be transferred to another [workspace member](../permissions/#workspace-member-roles). Users with the **owner** member role have access to the subscriptions and invoicing settings and can change the billing details in the **Subscriptions** tab in <AppDomainNameLink />. Every workspace has to have at least one owner, however, there can be multiple owners of one workspace.
+
+To transfer the ownership of a workspace to a user that is not yet a member of your workspace, follow the steps in [How to add users to a workspace](../project-advanced/#add-users-to-a-workspace) and select the **Owner** as the the **member role**. The new owner has to accept the invitation.
+
+To transfer the ownership of a workspace to a user that is already a member of your workspace, you have to change their member role to **Owner**:
+1. Log in to <AppDomainNameLink />
+2. Navigate to the **Members** tab. Here, you will see the list of current workspace members and their roles. 
+   ![Changing member role of a workspace member](./transfer-ownership-member-role.jpg "Changing member role of a workspace member")
+
+3. Change the **member role** of the user who should become the new owner
+   ![Selecting owner member role from the list](./transfer-ownership-new-owner.jpg "Selecting owner member role from the list")
+   
+4. Now the member role of the original owner can be changed (if needed) or they can be removed from the workspace completely.
+
+:::warning
+Be careful when downgrading your own member role! 
+
+Only owners and admins can manage user roles so if you assign yourself the writer or reader role, you will not be able to change it back.
+:::
 
 ## Changing a subscription from Mergin Maps Input
 Subscriptions can be also managed from <MobileAppName /> (on Apple devices via in-app purchases).

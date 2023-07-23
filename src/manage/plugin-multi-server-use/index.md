@@ -7,10 +7,10 @@ There is a default server <AppDomainNameLink /> which is configured in <QGISPlug
 If you want to use a custom <MainPlatformNameLink /> server, you will need to configure it in <QGISPluginName />.
 
 1. Click on the **Configure <MainPlatformName /> plugin** icon to open the configuration dialog
-![configure icon](./configure-plugin.png)
+![Mergin Maps plugin configure icon](./configure-plugin.jpg "Mergin Maps plugin configure icon")
 
 2. Check the **Custom <MainPlatformName /> server** option and enter your custom server URL.
-![config dialog](./config_dialog.png)
+![Custom server in Mergin Maps plugin for QGIS setup](./config_dialog.jpg "Custom server in Mergin Maps plugin for QGIS setup")
 
 Now, the server URL is saved in current QGIS profile settings. So whenever you open QGIS with this profile, the <MainPlatformName /> server is associated with this URL. 
 
@@ -26,7 +26,7 @@ You might have started working on one server (e.g. staging server, official clou
 
 If you need to handle two different servers at the same time, you will first need to create two user profiles in QGIS and download <QGISPluginName /> for both.
 
-![](./new_profile.png)
+![QGIS new profile](./new_profile.jpg "Create new profile in QGIS")
 
 Then you can configure <QGISPluginName /> for each of them using different server URL. Each session for given user profile will be connected to its own <MainPlatformName /> server as specified in the plugin configuration.
 

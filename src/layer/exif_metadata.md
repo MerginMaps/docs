@@ -24,14 +24,14 @@ To store EXIF metadata values in the fields of your survey layer:
    
    `read_exif(@project_home + '/' + "photo", 'GPSImgDirection')`
       
-   ![exif form](./qgis_form_exif.png)
+   ![Read exif function as default value in Attributes form](./qgis_form_exif.jpg "Read exif function as default value in Attributes form")
    
    The preview shows a warning *Function is not known*. **This is OK, <MobileAppName /> will know what to do with it!**
 
 3. Save and sync your project. 
 
 4. Open the project in <MobileAppName />. Once you capture a photo during the field survey, the EXIF metadata values will be automatically filled in:
-   ![photos](./gps_exif_metadata.png)
+   ![Exif metadata in Mergin Maps Input form](./gps_exif_metadata.jpg "Exif metadata in Mergin Maps Input form")
 
 ## Supported EXIF functions
 EXIF function supported by <MobileAppName />:
@@ -61,7 +61,7 @@ However, keep in mind that the EXIF tag names that you get from ExifTool can dif
 **Location tags have to be allowed** in the camera settings to store GPS EXIF metadata.
 
 - **Android**: Open Camera app -> Camera settings -> Location tags. 
-   ![photos](./android_geo_tags.jpg)
+   ![Allowing location tags in Android](./android_geo_tags.jpg "Allowing location tags in Android")
 
 - **iOS**: Open Settings -> Privacy -> Location Services -> Camera (app).
-   ![photos](./ios_geo_tags.png)
+   ![Allowing location tags in iOS](./ios_geo_tags.jpg "Allowing location tags in iOS")

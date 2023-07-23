@@ -1,11 +1,8 @@
 # Further Project Customisation
 
-::: warning
-This tutorial may differ from what you encounter when working with <MainPlatformNameLink />. It will be updated soon to include recent changes in <MainPlatformNameLink />, <MobileAppName /> and <QGISPluginName />.
-:::
+In this tutorial you will learn how to further customise your <MainPlatformNameLink /> project from the [previous tutorial](../creating-a-project-in-qgis/), making it even more useful. The various changes we will make to the project will be made in [QGIS](../../setup/install-qgis/) and their effect observed and tested in <MobileAppName />.
 
-In this tutorial you will learn how to customise your <MainPlatformNameLink /> project further, making it even more useful. The topics covered here are:
-
+The topics covered here are:
 [[toc]]
 
 ::: tip
@@ -13,40 +10,42 @@ Previous tutorials already covered the minimum concepts for data collection so f
 :::
 
 ## Opening the project in QGIS
-The various changes we will make to the project will be made in [QGIS](../../setup/install-qgis/) and their effect observed and tested in <MobileAppName />.
-
-If you already have the ***trees-and-hedges*** project open in QGIS, skip to [Layer styles](#layer-styles).
+If you already have the `trees-and-hedges` project open in QGIS, skip to [Layer styles](#layer-styles).
 
 1. Open QGIS
-2. Expand the **Mergin Maps** entry in the Browser panel to show **My projects**:
-   ![](./qgis-mergin-my-projects.jpg)
+2. Expand the **Mergin Maps** entry in the Browser panel to show projects in your workspace:
+   ![Mergin Maps projects in QGIS Browser](./qgis-mergin-my-projects.jpg "Mergin Maps projects in QGIS Browser")
+   
+   :::tip
+   If you have access to multiple workspaces, you may need to [switch to the appropriate workspace](../../manage/workspaces/#switch-workspaces-in-qgis) in the QGIS browser to open your project.
+   :::
 
-3. Expand **My projects** and locate the ***trees-and-hedges*** project
+3. Locate the `trees-and-hedges` project
 4. **Right-click** it and select **Open QGIS project**:
-   ![](./qgis-mergin-open-project.jpg)
+   ![Open Mergin Maps project in QGIS](./qgis-mergin-open-project.jpg "Open Mergin Maps project in QGIS")
 
 The project should now be loaded in QGIS. Don't worry if you cannot see the features you surveyed in the field - this is probably because you've not yet synchronised the project in QGIS.
+
+If this is the case, click on the **Synchronise** icon from the <QGISPluginName /> toolbar to synchronise the changes
+   ![Mergin Maps plugin for QGIS synchronisation icon](../../manage/sync-status-toolbar.jpg "Mergin Maps plugin for QGIS synchronisation icon")
 
 ## Layer styles
 When using <MobileAppName /> in the field in the last tutorial, we noticed hedges were difficult to see against the background maps. We'll now fix that.
 
-1. **Double-click** the **hedges** layer in QGIS:
-   ![](./qgis-hedges-layer.jpg)
-   
-   Its layer properties dialog should appear.
+1. **Double-click** the `hedges` layer in QGIS to open its **Layer properties**
+   ![Hedges layer in QGIS](./qgis-hedges-layer.jpg "Hedges layer in QGIS")
 
-2. Select the **Symbology tab** on the left hand side
-3. Click the current colour to change it:
-   ![](./qgis-symbology-colour.jpg)
+2. Select the **Symbology tab** on the left and click the current colour to change it:
+   ![Layer properties Layer Symbology](./qgis-symbology-colour.jpg "Layer properties Layer Symbology")
 
-4. **Pick a new colour** for hedges which stands out better
-   ![](./qgis-select-colour-dialog.jpg)
+3. **Pick a new colour** for hedges which stands out better
+   ![Select colour for layer symbology](./qgis-select-colour-dialog.jpg "Select colour for layer symbology")
 
-5. Click **OK**
-6. Increase the **line width** to 0.46mm and click **OK**
-   ![](./qgis-symbology-width.jpg)
+4. Click **OK**
+5. Increase the **line width** to 0.46mm and click **OK**
+   ![Set line width in Layer symbology](./qgis-symbology-width.jpg "Set line width in Layer symbology")
 
-Lines in the hedges layer should now be drawn thicker and in a more prominent colour. 
+Lines in the `hedges` layer should now be drawn thicker and in a more prominent colour. 
 
 In the next section we'll see what these changes look like in <MobileAppName />.
 
@@ -54,68 +53,65 @@ In the next section we'll see what these changes look like in <MobileAppName />.
 Seeing how the changes look like in <MobileAppName /> is easy:
 
 1. In QGIS, save your project:
-   ![](./qgis-save-project.jpg)
+   ![Save QGIS project](./qgis-save-project.jpg "Save QGIS project")
 
 2. Use the **Synchronise Mergin Maps Project** tool:
-   ![](./qgis-sync-mergin-project.jpg)
+   ![Synchronise Mergin Maps Project](./qgis-sync-mergin-project.jpg "Synchronise Mergin Maps Project")
 
    The **Project status** window will open with the overview of local changes. Click **Sync** to synchronise the project:
-   ![project status](../creating-a-project-in-qgis/qgis-sync-mergin-project-status.jpg)
+   ![Project status with local changes](../creating-a-project-in-qgis/qgis-sync-mergin-project-status.jpg "Project status with local changes")
    
    QGIS and your project in the cloud should now be synchronised.
-   ![project synced](./qgis-mergin-project-sync.jpg)
+   ![Successful synchronisation message](./qgis-mergin-project-sync.jpg "Successful synchronisation message")
 
 3. Open <MobileAppName /> on your mobile device
-4. Open the **Home** tab of the **Projects** page
-   
-   You should see a sync icon next to the trees-and-hedges project like this:
-   ![](../mobile/merginmaps-mobile-sync-project.jpg)
+4. Go to **Home** tab and sync the `trees-and-hedges` project by pressing the sync icon. 
+
+   The sync icon should be displayed next to the `trees-and-hedges` project like this:
+   ![Updated project in Mergin Maps Input](../mobile/merginmaps-mobile-sync-project.jpg "Updated project in Mergin Maps Input")
 
 ::: tip
-If you do not see a sync icon, switch to the **My projects** tab and back to the **Home** tab. This should force <MobileAppName /> to check again for project updates.
+If you do not see a sync icon, switch to the **Projects** tab and back to the **Home** tab. This should force <MobileAppName /> to check again for project updates.
 :::
 
-5. Sync the project by pressing the sync icon
-6. Tap the project to open it
-
-   If you zoom in to the hedge you surveyed, you should see it drawn with the new style we made in the last section:
-   ![](./merginmaps-mobile-better-line-style.jpg)
+5. Tap the project to open it. The surveyed hedges should now be displayed in the style we set up in the last section
+   ![Layer with new symbology in Mergin Maps Input](./merginmaps-mobile-better-line-style.jpg "Layer with new symbology in Mergin Maps Input")
 
 ## Labels
-Labels can be useful for showing attribute data or other information directly on the map. We'll now add labels to the ***trees*** layer so we can see tree species without having to open each tree's attributes:
-![](./merginmaps-mobile-labels-example.jpg)
+Labels can be useful for showing attribute data or other information directly on the map. We'll now add labels to the `trees` layer so we can see tree species without having to open each tree's attributes:
+![Feature with label in QGIS](./merginmaps-mobile-labels-example.jpg "Feature with label in QGIS")
 
-1. Double-click the ***trees*** layer in QGIS:
-   ![](./qgis-trees-layer.jpg)
+1. Double-click the `trees` layer in QGIS:
+   ![Trees layer in QGIS Layer panel](./qgis-trees-layer.jpg "Trees layer in QGIS Layer panel")
    
    Its layer properties dialog should appear.
 
 2. Select the **Labels tab** on the left hand side
 3. Set the labelling mode to **Single Labels**:
-   ![](./qgis-symbology-labels.jpg)
+   ![QGIS Labels settings in Layer properties](./qgis-symbology-labels.jpg "QGIS Labels settings in Layer properties")
 
-4. Set the **Value** to the ***species*** attribute
-   ![](./qgis-symbology-labels-2.jpg)
+4. Set the **Value** to the `species` attribute
+   ![Choose single label attribute](./qgis-symbology-labels-2.jpg "Choose single label attribute")
 
 5. Enable **Draw text buffer** under **Buffer** settings and click **OK**
-   ![](./qgis-symbology-labels-3.jpg)
+   ![Enable Draw text buffer](./qgis-symbology-labels-3.jpg "Enable Draw text buffer")
 
 6. Test out these settings in <MobileAppName /> as described in the [Trialing changes](#trialing-changes-in-mergin-maps-input) section above.
 
 ## Customising the preview panel
 We will now learn how to control the content of the preview panel which is shown when you tap a feature in <MobileAppName />.
 
-The panel for the trees layer looks like the left-hand image below. We will configure it to look like the right-hand image.
-![](./merginmaps-mobile-preview-panel-changes.jpg)
+The panel for the `trees` layer looks like the left-hand image below. We will configure it to look like the right-hand image.
+![Feature preview panel in Mergin Maps Input](./merginmaps-mobile-preview-panel-changes.jpg "Feature preview panel in Mergin Maps Input")
 
 1. **Double-click** the **trees** layer in QGIS:
-   ![](./qgis-trees-layer.jpg)
+   ![Trees layer in QGIS Layer panel](./qgis-trees-layer.jpg "Trees layer in QGIS Layer panel")
    
    Its layer properties dialog should appear.
 
 2. Select the **Display tab** on the left hand side
-3. Set the **Display Name** to ***species***:
-   ![](./qgis-display-name.jpg)
+3. Set the **Display Name** to `species`:
+   ![Display name attribute in Layer properties](./qgis-display-name.jpg "Display name attribute")
 
 ::: tip
 If you notice subtle differences in the name / spelling of the field when you select it in the drop-down list, this is due to the field having been aliased.
@@ -126,66 +122,83 @@ If you notice subtle differences in the name / spelling of the field when you se
 # fields
 condition
 ```
-   ![](./qgis-html-map-tip.jpg)
+   ![HTML map tip in Layer properties](./qgis-html-map-tip.jpg "HTML map tip in Layer properties")
 
 5. Click **OK**
 6. Test out these settings in <MobileAppName /> as described in the [Trialing changes](#trialing-changes-in-mergin-maps-input) section above.
 
 ## Controlling layer visibility
-You may have noticed that older versions of <MobileAppName /> doesn't have a layer switcher. It instead allowed users to switch between map themes. A map theme defines which layers will be displayed.
+You might want to turn off some layers in <MobileAppName />, e.g. when working with overlaying layers or to change the background map.
 
-In a moment we'll define the following map themes:
-* ***All layers*** includes all map layers
-* ***Hedges*** contains just the ***hedges*** layer and the background map
+There are two ways how to change the layer visibility:
+- directly in <MobileAppName />
+- setting [map themes](../../gis/setup_themes/) in QGIS
+
+### Layers in Mergin Maps Input
+To control the visibility of layers in <MobileAppName />:
+1. Tap the **More** button and choose **Layers** to see the list of layers in the project
+   ![Mergin Maps Input Layers in More tab](../../field/layers/input-layers.jpg "Mergin Maps Input Layers in More tab")
+
+2. Tap the eye icon next to the layer to turn it on or off.
+   ![Mergin Maps Input Layers visibility](../../field/layers/input-layers-view.jpg "Layers visibility")
+
+3. Go back to the project
+
+### Map themes
+While the visibility of single layers can be controlled easily in <MobileAppName />, it might be useful to set up map themes in QGIS. A map theme defines which layers will be displayed, so you can define useful combinations of layers and background maps and switch between them in <MobileAppName />.
+
+Here we'll define the following map themes:
+- ***All layers*** includes all map layers
+- ***Hedges*** contains just the `hedges` layer and the background map
 
 1. In QGIS, click the **Manage Map Themes** button and select **Add Theme...**:
-   ![](./qgis-add-theme.png)
+   ![QGIS Add map theme](./qgis-add-theme.jpg "QGIS Add map theme")
 
 2. Call the theme **All layers** and click **OK**
-   ![](./qgis-name-theme.jpg)
+   ![Name the new theme](./qgis-name-theme.jpg "Name the new theme")
 
 3. **Uncheck** the trees and Survey notes layers:
-   ![](./qgis-toggle-layers.jpg)
+   ![Uncheck layers that should not be visible](./qgis-toggle-layers.jpg "Uncheck layers that should not be visible")
 
 4. Add another theme like in step 1, calling it **Hedges** and click **OK**:
-   ![](./qgis-name-theme-2.jpg)
+   ![Create map theme](./qgis-name-theme-2.jpg "Create map theme")
 
    Switching between the two themes in QGIS causes the layer visibility to be updated accordingly.
-   ![QGIS switch theme](./qgis-toggle-themes.png)
+   ![QGIS switching map themes](./qgis-toggle-themes.jpg "QGIS switching map themes")
 
-   The themes have now been created. Don't forget to save and sync your project!
+   The themes have now been created. **Don't forget to save and sync your project!**
 
 5. Test out these settings in <MobileAppName /> as described in the [Trialing changes](#trialing-changes-in-mergin-maps-input) section above
 
    You can access map themes in <MobileAppName /> from the **More** menu:
-   ![](./merginmaps-mobile-map-themes-button.jpg)
+   ![Map themes in Mergin Maps Input](./merginmaps-mobile-map-themes-button.jpg "Map themes in Mergin Maps Input")
 
-   ![](./merginmaps-mobile-map-themes.jpg)
+   ![Switch map themes in Mergin Maps Input](./merginmaps-mobile-map-themes.jpg "Switch map themes in Mergin Maps Input")
 
 ## Zoom to project extent
 If you experimented with the **Zoom to project** button in <MobileAppName /> you'll have seen that by default, it zooms to the extent of the somewhat large background map:
-![](../capturing-first-data/merginmaps-mobile-location-shown-on-osm.jpg)
+![Mergin Maps Input default map extent](../capturing-first-data/merginmaps-mobile-location-shown-on-osm.jpg "Mergin Maps Input default map extent")
 
 This is not very useful so we will learn how to specify the extent that this button will zoom to.
 
 1. In QGIS, zoom / pan the map to your desired default extent:
-   ![](./qgis-desired-project-extent.jpg)
+   ![Desired project extent in QGIS](./qgis-desired-project-extent.jpg "Desired project extent in QGIS")
 
 2. Select **Project > Properties...**
-   ![](./qgis-project-properties.jpg)
+   ![QGIS Project properties](./qgis-project-properties.jpg "QGIS Project properties")
 
 3. Select the **View Settings tab**
-   ![](./qgis-project-properties-project-extent.png)
+   ![View settings in Project properties](./qgis-project-properties-project-extent.jpg "View settings in Project properties")
 
 4. Check **Set Project Full Extent**
 5. Click **Map Canvas Extent**:
-   ![](./qgis-project-properties-project-extent-set-by-canvas.png)
+   ![Use map canvas extent as project full extent](./qgis-project-properties-project-extent-set-by-canvas.jpg "Use map canvas extent as project full extent")
 
 6. Click **OK**
 7. Test out these settings in <MobileAppName /> as described in the [Trialing changes](#trialing-changes-in-mergin-maps-input) section above
    
    The **Zoom to project** button can be found in <MobileAppName /> under the the **More** menu:
-   ![](./merginmaps-mobile-zoom-to-project-button.jpg)
+   ![Zoom to project in Mergin Maps Input](./merginmaps-mobile-zoom-to-project-button.jpg "Zoom to project in Mergin Maps Input")
 
 ## Learning more
 The aim of this tutorial was to introduce you to the main concepts of customising <MainPlatformName /> projects in QGIS and to cover common customisation workflows in a basic way.

@@ -20,11 +20,11 @@ Synchronising data and project works in both ways.
 ## Synchronisation
 How does it work? When you use GeoPackage, <MainPlatformNameLink /> compares two datasets with the same data schema using [Geodiff library](#geodiff-library) to create a list of entries that were inserted, updated, or deleted between the two datasets. 
 
-![geodiff](./geodiff-diff.png)
+![Scheme of detecting changes](./geodiff-diff.jpg "Scheme of detecting changes")
 
 During field surveys, individual team members can change the same row of a table or add a new row with the same `ID`. If it is possible to solve these conflicts automatically, <MainPlatformName /> will do so:
 
-![geodiff](./geodiff-rebase.png)
+![Scheme of merging changes from two users](./geodiff-rebase.jpg "Scheme of merging changes from two users")
 
 There may be conflicts that can't be resolved automatically, e.g. if the same value is modified in different copies. These rare cases are written to a conflict file that can be [resolved later](./missing-data/#there-are-conflict-files-in-the-folder).
 

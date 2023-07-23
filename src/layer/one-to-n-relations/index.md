@@ -53,7 +53,7 @@ Make sure that your survey layer has a **unique UUID** field to create the link 
 To configure 1-N relations in QGIS:
 1. From the main menu, select **Projects** > **Properties ...**
 2. In the **Relations** tab, select  **Add Relation**
-   ![Layer properties in QGIS with highlighted Relations tab and Add Relation button](../attach-multiple-photos-to-features/qgis_relation_tab.png "Layer properties in QGIS with highlighted Relations tab and Add Relation button")
+   ![Layer properties in QGIS with highlighted Relations tab and Add Relation button](../attach-multiple-photos-to-features/qgis_relation_tab.jpg "Layer properties in QGIS with highlighted Relations tab and Add Relation button")
 3. A new window will appear, where we can define the parent and child layers and the fields to link the two layers:
    - **Name** is the name of the relation, e.g. `Inspection`
    - **Referenced (parent)** is the spatial layer `manhole_locations`

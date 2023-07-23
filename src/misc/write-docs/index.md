@@ -114,6 +114,8 @@ In each section in the menu (except Getting Started and Guides):
 - following with a bunch of how to articles
 - ending with reference documentation pages
 
+References to other articles, blog posts or resources should be linked where relevant, either as [tips](#tip-warning-info-error-note-box) or as *Further reading* sections.
+
 ### Users & Workspaces
 
 - To store all projects referenced in the documentation use <MainPlatformName /> workspace `documentation`
@@ -146,7 +148,7 @@ In each section in the menu (except Getting Started and Guides):
 
 If you see the typo or other issue on a page, you can scroll to the very bottom of the page to see a footer similar to this
 
-![](./footer-docs.png)
+![Mergin Maps documentation page footer](./footer-docs.jpg "Mergin Maps documentation page footer")
 
 If you click on the link, you will get the markdown source of the page that you can edit. If you are not in the <MainPlatformName /> core documentation team, you would also need to work on [fork](#when-fork-is-needed) to be able to proceed.
 
@@ -441,13 +443,13 @@ We can do this by comparing the current state of the _main_ branch with the last
     * Use the latest tag on the left
     * Use _main_ on the right
     
-    ![](./comparing-changes-1.png)
+    ![GitHub comparing changes](./comparing-changes-1.jpg "GitHub comparing changes")
 
 2. Scroll down a little and click where it says _**224 changed files**_ or similar
 
     You should now see a nice summary below of files which have been added, renamed or deleted
     
-    ![](./comparing-changes-2.png)
+    ![GitHub summary of changes](./comparing-changes-2.jpg "GitHub summary of changes")
 
 You can now see which content has been changed.
 

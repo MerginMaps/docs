@@ -9,13 +9,13 @@ Read how to <QGISHelp ver="3.22" link="user_manual/introduction/general_tools.ht
 
 - Open QGIS Desktop with your QGIS Project 
 - In the Layers Panel, click on "Manage Map Themes" (eye-icon)
-![Map Themes](./qgis_map_themes_setup.png)
+![QGIS Map Themes setup](./qgis_map_themes_setup.jpg "QGIS Map Themes setup")
 - Add new themes or replace existing themes.
 
 ## Map themes in Mergin Maps Input
 To access the Map Themes, select **More** > **Map themes**. The list of the Map Themes should appear as a pop up.
 
-![Map Themes](./input_map_themes_osm.png)
-![Map Themes](./input_map_themes_base.png)
-![Map Themes](./input_map_themes_switch.png)
-![Map Themes](./input_map_themes_alt.png)
+![Mergin Maps Input OpenStreetMap](./input_map_themes_osm.jpg "Mergin Maps Input OpenStreetMap")
+![Mergin Maps Input Map Themes](./input_map_themes_base.jpg "Mergin Maps Input Map Themes")
+![Mergin Maps Input switch map themes](./input_map_themes_switch.jpg "Mergin Maps Input switch map themes")
+![Mergin Maps Input switched map theme](./input_map_themes_alt.jpg "Mergin Maps Input switched map theme")

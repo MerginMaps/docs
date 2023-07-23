@@ -15,3 +15,7 @@ merginmaps.pdf
 Mergin\ &\ Input App.pdf
 scripts/check-redirects/*.txt
 git-output.txt
+.node-version
+.vscode
+*-snippet.txt
+redirect_test.txt

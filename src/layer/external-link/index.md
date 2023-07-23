@@ -19,10 +19,10 @@
 5. If the link changes based on a value from a different field, check the **Apply default value on update** option.
 6. **Apply** the changes. Don't forget to save and sync your project!
 
-![qgis link](./qgis-link.png)
+![Hyperlink as default value in Attribute form](./qgis-link.jpg "Hyperlink as default value in Attribute form")
 
 When you click on a feature in <MobileAppName />, the form will contain a clickable link.
-![input google maps](./input-link.png)
+![Hyperlink in Mergin Maps Input form](./input-link.jpg "Hyperlink in Mergin Maps Input form")
 
 ## Open link to a navigation app
 
@@ -42,12 +42,12 @@ Let's say you want to find your surveyed features on Google Maps. It is possible
 5. Check the **Apply default value on update** option
 6. **Apply** the changes. Don't forget to save and sync your project!
 
-![qgis link](./qgis-google-maps.png)
+![Link to Google maps in QGIS Attributes form](./qgis-google-maps.jpg "Link to Google Maps in QGIS Attributes form")
 
 When you click on a feature in <MobileAppName />, the form will contain a clickable link **Open Google Map**.
-![input google maps](./input-google-maps.png)
+![Open Google map from Mergin Maps Input](./input-google-maps.jpg "Open Google map from Mergin Maps Input")
 
 Tapping the link opens the Google Map app, where you will see the position of your feature.
 
-![google maps](./google-maps.png)
+![Google maps opened at surveyed feature's position](./google-maps.jpg "Google maps opened at surveyed feature's position")
 
