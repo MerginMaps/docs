@@ -106,12 +106,14 @@ A <MainPlatformName /> project can be transferred to another workspace. This can
 ## Delete a project
 If you want to delete a project, you can do so through <AppDomainNameLink /> or using the <QGISPluginName />. 
 
-After deleting a project, it is kept on <MainPlatformName /> servers for 6 days before it is deleted permanently. During this period, it can be restored if you contact <MerginMapsEmail id="support" />.
+After deleting a project, it is kept on <MainPlatformNameLink /> servers for 14 days before it is deleted permanently. During this period, it can be restored if you contact <MerginMapsEmail id="support" />.
 
-If you want to create a new project with the same name, you can contact <MerginMapsEmail id="support" /> to have it deleted sooner.
+If you want to create a new project with the same name sooner, you can contact <MerginMapsEmail id="support" />.
 
 :::warning
-If you reuse the name of a deleted project, make sure to coordinate your team to follow the steps described in [How to Deploy Revised Projects](./deploy-new-project/). To avoid synchronisation issues, everyone should delete the old project from all devices and then download the new project. 
+If you reuse the name of a deleted project, make sure to coordinate your team to follow the steps described in [How to Deploy Revised Projects](./deploy-new-project/). 
+
+To avoid synchronisation issues, everyone should delete the old project from all devices and then download the new project. 
 :::
 
 ### Delete a project through merginmaps.com
