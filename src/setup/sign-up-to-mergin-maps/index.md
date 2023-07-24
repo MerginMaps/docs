@@ -71,9 +71,18 @@ You can also sign up from <MobileAppName />.
 You can get up-to-speed quickly by following [<MobileAppName />'s tour projects](../install-input/#mergin-maps-input-s-tour-projects) and our [Quick Start tutorials](../../tutorials/capturing-first-data/index.md).
 
 ## Forgotten password
-If you forget your password, you can reset it through <AppDomainNameLink /> by clicking **Forgot password?**
+If you forget your password, you can reset it through <AppDomainNameLink /> by clicking **Forgot password**. Email with password reset link will be sent to your email address.
 ![Mergin Maps web forgot password](./forgot-password.jpg "Mergin Maps web forgot password")
 
 The same can be done on the login page in <MobileAppName />
 ![Mergin Maps Input forgot password](./merginmaps-mobile-forgot-password.jpg "Mergin Maps Input forgot password")
+
+::: tip
+Check your spam folder if the email with password reset link does not appear in your inbox after a few minutes. 
+
+If that's not the case, please contact <MerginMapsEmail id="support" /> to resolve this issue.
+:::
+   
+
+
 

@@ -52,14 +52,10 @@ Tapping the GPS accuracy tab opens the GPS info panel:
 - **Longitude, Latitude**: current position
 - **X, Y**: current position in project's coordinate reference system
 - **Horizontal** and **Vertical accuracy** of the GPS position
-- **Altitude**: ellipsoidal height
+- **Altitude**: ellipsoidal height if internal GPS is used. [External GPS](./external_gps/) devices usually return orthometric heights (ellipsoid with the geoid separation applied).
 - **Satellites (in use/view)**: number of satellites
 - **Speed**
 - **Last fix**: time of the last received GPS position
-
-::: tip
-External GNSS devices return orthometric heights (ellipsoid with the geoid separation applied)
-:::
 
 ![GPS info panel](./input-gps-info.jpg "GPS info panel") 
 
