@@ -8,6 +8,8 @@ External GPS receivers can be connected to your mobile device via Bluetooth and 
 
 There are several [extra position variables](../layer/position_variables/) that can be useful to record when doing the survey with external GPS, such as the GPS antenna height, GPS device name as well as metrics like horizontal, vertical or position dilution of precision (HDOP, VDOP, PDOP).
 
+Note that external GPS devices usually return orthometric heights (ellipsoid with the geoid separation applied).
+
 **Before you start**:
 - Set up your device according to the instructions of its manufacturer. You should continue only when you are sure that the device is working and sending data.
 - Make sure that your mobile device offers the functionality to pair with an external GPS device and that it communicates through a standard interface.
