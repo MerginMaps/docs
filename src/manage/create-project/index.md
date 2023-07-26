@@ -8,6 +8,10 @@ There are several methods of creating a new <MainPlatformName /> project:
 
 If you want to make a copy of your projects or the ones shared with you, you can clone them in [QGIS](./index.md#clone-an-existing-project-in-qgis) or [merginmaps.com](./index.md#clone-an-existing-project-through-merginmaps-com).
 
+:::warning
+When creating a project, keep in mind that its name cannot be changed later.
+:::
+
 ## Create a project in Mergin Maps Input
 ::: tip
 [Capturing Your First Field Data](../../tutorials/capturing-first-data/index.md) tutorial will show you how to create a new project and capture field data in <MobileAppName />.
@@ -17,7 +21,7 @@ If you want to make a copy of your projects or the ones shared with you, you can
 2. Go to the **Home** tab of the **Projects** screen and press **Create project**
    ![Create project in Mergin Maps Input](../../tutorials/capturing-first-data/merginmaps-mobile-home-tab-of-projects-screen.jpg "Create project in Mergin Maps Input")
 
-3. Give the project a name 
+3. Give the project a name. Keep in mind that it cannot be changed later.
    ![Mergin Maps Input new project name](../../tutorials/capturing-first-data/merginmaps-mobile-naming-new-project.jpg "Mergin Maps Input new project name")
 
 4. Press **Create project**
@@ -47,7 +51,10 @@ To work with <MainPlatformName /> projects in QGIS, you will need to [install th
 
    - **Use current QGIS project as is**. This is for cases when you already have a stand-alone folder with your project packaged.
 
-4. Change the workspace (if needed), name the project and select a path where your project folder and associated files will be generated. 
+4. Change the workspace (if needed), name the project and select a path where your project folder and associated files will be generated.
+
+   Keep in mind that the project name cannot be changed later.
+   
    ![New Mergin Maps project name and folder](./mergin_plugin_project_wizard_4.jpg "New Mergin Maps project name and folder")
    
    :::danger WARNING
