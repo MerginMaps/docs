@@ -16,7 +16,7 @@ You can find official text of licenses [on this link](https://merginmaps.com/lic
 <br />
 <GitHubRepo id="MerginMaps/input" desc="Mergin Maps Input" /> is licensed under GPL-v2. 
 
-The application uses many open-source libraries, please <GitHubRepo id="MerginMaps/input-sdk/blob/master/versions.conf" desc="see this list" /> for versions and licenses of projects.
+The application uses many open-source libraries, please <GitHubRepo id="MerginMaps/input-sdk/blob/master/vcpkg.json" desc="see this list" /> for versions and licenses of projects.
 
 ## QGIS Plugin for Mergin Maps
 <br />
