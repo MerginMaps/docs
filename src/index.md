@@ -82,6 +82,7 @@ The ecosystem consist of various components:
 - [Synchronisation in <MobileAppName />](./field/autosync/)
 - [Layers in <MobileAppName />](./field/layers/)
 - [How to Add, Edit, Delete Features](./field/input_features/)
+- [How to Use Tracking](./field/tracking/)
 - [How to Reuse Last Entered Values](./field/reuse-last-values/)
 - [How to Stake Out Points](./field/stake-out/)
 - [How to Fix a Broken Project](./field/broken-project/)
