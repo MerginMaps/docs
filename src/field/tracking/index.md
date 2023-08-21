@@ -1,5 +1,5 @@
 # How to Use Tracking in Mergin Maps Input
-<SinceBadge type="App" version="2.2.0" />
+<SinceBadge type="App" version="2.3.0" />
 
 Position tracking is useful when you want to record your tracks during the field survey. This can help you know the extent of areas you have already surveyed in addition to the surveyed features.
 

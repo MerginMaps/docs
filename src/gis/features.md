@@ -83,7 +83,7 @@ The snapping options are:
 
 
 ### Tracking
-<SinceBadge type="Plugin" version="2023.3" /><SinceBadge type="App" version="2.2.0" />
+<SinceBadge type="Plugin" version="2023.3" /><SinceBadge type="App" version="2.3.0" />
 
 Tracking your position when doing the field survey with <MobileAppName /> can be enabled in the **<MainPlatformName />** tab in **Project properties**.
 
