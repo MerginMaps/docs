@@ -90,8 +90,10 @@ Another source of online vector tiles are *Qwant maps*. Use following parameters
    - **Style URL**: `https://raw.githubusercontent.com/QwantResearch/qwant-basic-gl-style/master/style.json`
 
 ### Generating vector tiles for offline use
-In QGIS (3.14+), you can generate your own vector tiles. Alternatively, you can generate vector tiles using OpenMapTiles from OpenStreetMap data.
+In QGIS (3.14+), you can generate your own vector tiles.
 
+
+::: details Generate vector tiles using OpenMapTiles and Docker (advanced)
 In the example below, we walk through steps to generate a vector tile using OpenMapTiles for [Limpopo](https://www.openstreetmap.org/relation/349547#map=7/-24.367/29.982).
 
 Note that instructions below require familiarity with the terminal. In addition, your operating system should support **docker**.
@@ -106,6 +108,7 @@ Note that instructions below require familiarity with the terminal. In addition,
   - Re-run `./quickstart.sh my`
   - The above process should produce an MBTiles for your clipped OSM file
   - You can load the file and style it using one of the <GitHubRepo id="openmaptiles/osm-bright-gl-style" desc="OpenMapTiles styles" />
+:::
 
 ## How to work with very large files (Android)
 <Badge text="Android only" type="warning"/>
