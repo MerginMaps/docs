@@ -26,6 +26,12 @@ The crosshairs you will see on your map will be used as the recorded location. Y
 Surveyed features are added to the active layer, which is shown just above the bottom panel. You can change the active layer by tapping on it and selecting one from the list of editable layers in the project.
 ![Active survey layer](./input-active-layer.jpg "Active survey layer")
 
+Once the geometry of a feature is recorded, a form will open and you will be able to record the values of attributes. 
+
+:::tip
+Attribute forms can be set up in QGIS. For more details, see [Setting Up Form Widgets](../layer/settingup_forms/) and [Advanced Form Configuration](../layer/settingup_forms_settings/).
+:::
+
 ### Capture points
 To capture a new point feature, simply tap **Add** on the bottom panel while in the [recording mode](#add-features). A form will open where you can fill in the attributes.
 
