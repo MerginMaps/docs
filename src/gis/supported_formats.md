@@ -156,6 +156,7 @@ Supported Formats:
   CALS -raster- (rwv): CALS (Type 1)
   WMTS -raster- (rwv): OGC Web Map Tile Service
   SENTINEL2 -raster- (rovs): Sentinel 2
+  MRF -raster- (rw+v): Meta Raster Format
   PNM -raster- (rw+v): Portable Pixmap Format (netpbm)
   DOQ1 -raster- (rov): USGS DOQ (Old Style)
   DOQ2 -raster- (rov): USGS DOQ (New Style)
@@ -181,6 +182,8 @@ Supported Formats:
   ROI_PAC -raster- (rw+v): ROI_PAC raster
   RRASTER -raster- (rw+v): R Raster
   BYN -raster- (rw+v): Natural Resources Canada's Geoid
+  NOAA_B -raster- (rov): NOAA GEOCON/NADCON5 .b format
+  NSIDCbin -raster- (rov): NSIDC Sea Ice Concentrations binary (.bin)
   ARG -raster- (rwv): Azavea Raster Grid format
   RIK -raster- (rov): Swedish Grid RIK (.rik)
   USGSDEM -raster- (rwv): USGS Optional ASCII DEM (and CDED)
@@ -207,7 +210,7 @@ Supported Formats:
   STACTA -raster- (rovs): Spatio-Temporal Asset Catalog Tiled Assets
   STACIT -raster- (rovs): Spatio-Temporal Asset Catalog Items
   GPKG -raster,vector- (rw+vs): GeoPackage
-  CAD -raster,vector- (rovs): AutoCAD Driver
+  OpenFileGDB -raster,vector- (rw+v): ESRI FileGDB
   PLSCENES -raster,vector- (ro): Planet Labs Scenes API
   NGW -raster,vector- (rw+s): NextGIS Web
   GenBin -raster- (rov): Generic Binary (.hdr Labelled)
@@ -254,9 +257,8 @@ Supported Formats:
   GPKG -raster,vector- (rw+vs): GeoPackage
   SQLite -vector- (rw+v): SQLite / Spatialite
   WAsP -vector- (rw+v): WAsP .map format
-  OpenFileGDB -vector- (rov): ESRI FileGDB
+  OpenFileGDB -raster,vector- (rw+v): ESRI FileGDB
   DXF -vector- (rw+v): AutoCAD DXF
-  CAD -raster,vector- (rovs): AutoCAD Driver
   FlatGeobuf -vector- (rw+v): FlatGeobuf
   Geoconcept -vector- (rw+v): Geoconcept
   GeoRSS -vector- (rw+v): GeoRSS
@@ -285,6 +287,7 @@ Supported Formats:
   MVT -vector- (rw+v): Mapbox Vector Tiles
   NGW -raster,vector- (rw+s): NextGIS Web
   MapML -vector- (rw+v): MapML
+  GTFS -vector- (rov): General Transit Feed Specification
   TIGER -vector- (rov): U.S. Census TIGER/Line
   AVCBin -vector- (rov): Arc/Info Binary Coverage
   AVCE00 -vector- (rov): Arc/Info E00 (ASCII) Coverage
