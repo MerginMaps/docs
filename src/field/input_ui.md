@@ -23,7 +23,7 @@ Your <MainPlatformNameLink /> account can be accessed by tapping the icon on the
 ![Account access in Mergin Maps Input](./input-account.jpg "Account access in Mergin Maps Input")
 
 Here, you can [sign up to <MainPlatformName />](../setup/sign-up-to-mergin-maps/#from-mergin-maps-input) or sign in if you already have a <MainPlatformNameLink /> account.
-![Mergin Maps Login](./input-sign-in.jpg "Mergin Maps Login")
+![Mergin Maps Input Login](./input-sign-in.jpg "Mergin Maps Input Login")
 
 When signed in, you will see the overview of your profile and storage use in **My Account**.
 ![Mergin Maps account details](./input-my-account.jpg "Mergin Maps account details")
