@@ -47,12 +47,13 @@ To configure a custom <MainPlatformName /> server in <MobileAppName />:
  
    ![Mergin Maps Input Login](../../field/input-sign-in.jpg "Mergin Maps Input Login")
 
-2. Tap on the edit button next to the current server URL. The default server <AppDomainNameLink />.
+2. Tap on the edit button next to the current server URL.
 
-   Now you can enter your custom server URL.
+   Now you can change the <MainPlatformName /> server. Enter the URL of your custom server and tap the check button to confirm your setup.
 
    ![Custom server in Mergin Maps Input](./custom-server-mobile-app.jpg "Custom server in Mergin Maps Input")
 
-3. Use the username and password that is associated with this custom server.
+3. Use the username and password that is associated with this custom server and **Sign in**.
+   ![Custom server in Mergin Maps Input](./custom-server-mobile-app-2.jpg "Custom server in Mergin Maps Input")
 
 Now you are all set to use <MobileAppName /> with the custom server!
