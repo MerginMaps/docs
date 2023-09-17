@@ -41,7 +41,7 @@ To capture a new point feature, simply tap **Add** on the bottom panel while in 
 There are two methods of capturing lines and areas: adding vertices one by one or using the *streaming mode* to capture features based on your position.
 
 #### Adding points to survey vertices of lines or areas
-Lines and areas can be captured by adding vertices one by one. When you are in the [**recording**](#add-features) mode and your active layer is a line or polygon, you will see line and areas editing tools in the bottom panel.
+Lines and areas can be captured by adding vertices one by one. When you are in the [**recording**](#adding-features) mode and your active layer is a line or polygon, you will see line and areas editing tools in the bottom panel.
 
 Tap **Add** to capture vertices of your line or area. If you want to change the position of the last vertex, tap **Remove**, move the vertex to the correct place and  **Release** it. **Undo** can be used to revert last changes.
 
@@ -49,7 +49,7 @@ Once the survey of the feature is completed, tap **Done** and fill in the form.
 ![Surveying lines in Mergin Maps Input](./input-capture-line.jpg "Surveying lines in Mergin Maps Input")
 
 #### Streaming mode to survey lines or areas
-Lines and areas can be also captured automatically based on your position. Make sure you are in the [**recording**](#add-features) mode and that your active layer is a line or polygon.
+Lines and areas can be also captured automatically based on your position. Make sure you are in the [**recording**](#adding-features) mode and that your active layer is a line or polygon.
 
 To turn on the streaming mode, long press the **GPS** button. To turn it off, long press the **GPS** button again.
 
