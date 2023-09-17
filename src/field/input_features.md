@@ -33,7 +33,7 @@ Attribute forms can be set up in QGIS. For more details, see [Setting Up Form Wi
 :::
 
 ### Capture points
-To capture a new point feature, simply tap **Add** on the bottom panel while in the [recording mode](#add-features). A form will open where you can fill in the attributes.
+To capture a new point feature, simply tap **Add** on the bottom panel while in the [recording mode](#adding-features). A form will open where you can fill in the attributes.
 
 ![Add point in Mergin Maps Input](./input-add-point.jpg "Add point in Mergin Maps Input")
 
