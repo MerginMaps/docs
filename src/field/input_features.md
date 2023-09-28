@@ -10,7 +10,7 @@ Adding, editing and deleting features in <MobileAppName /> is possible in <MainP
 
 To be able to transfer your data to your mobile/tablet device, share your project and track changes, you will need to [sign up to Mergin Maps](../setup/sign-up-to-mergin-maps/).
 
-## Add features
+## Adding features
 In <MobileAppName />, open a [project](./input_ui/#projects) you want to use.
 
 To survey new features, tap the **Record** button on the bottom panel to enter the **recording mode**.
@@ -33,7 +33,7 @@ Attribute forms can be set up in QGIS. For more details, see [Setting Up Form Wi
 :::
 
 ### Capture points
-To capture a new point feature, simply tap **Add** on the bottom panel while in the [recording mode](#add-features). A form will open where you can fill in the attributes.
+To capture a new point feature, simply tap **Add** on the bottom panel while in the [recording mode](#adding-features). A form will open where you can fill in the attributes.
 
 ![Add point in Mergin Maps Input](./input-add-point.jpg "Add point in Mergin Maps Input")
 
@@ -41,15 +41,15 @@ To capture a new point feature, simply tap **Add** on the bottom panel while in 
 There are two methods of capturing lines and areas: adding vertices one by one or using the *streaming mode* to capture features based on your position.
 
 #### Adding points to survey vertices of lines or areas
-Lines and areas can be captured by adding vertices one by one. When you are in the [**recording**](#add-features) mode and your active layer is a line or polygon, you will see line and areas editing tools in the bottom panel.
+Lines and areas can be captured by adding vertices one by one. When you are in the [**recording**](#adding-features) mode and your active layer is a line or polygon, you will see line and areas editing tools in the bottom panel.
 
 Tap **Add** to capture vertices of your line or area. If you want to change the position of the last vertex, tap **Remove**, move the vertex to the correct place and  **Release** it. **Undo** can be used to revert last changes.
 
 Once the survey of the feature is completed, tap **Done** and fill in the form.
 ![Surveying lines in Mergin Maps Input](./input-capture-line.jpg "Surveying lines in Mergin Maps Input")
 
-### Streaming mode to survey lines or areas
-Lines and areas can be also captured automatically based on your position. Make sure you are in the [**recording**](#add-features) mode and that your active layer is a line or polygon.
+#### Streaming mode to survey lines or areas
+Lines and areas can be also captured automatically based on your position. Make sure you are in the [**recording**](#adding-features) mode and that your active layer is a line or polygon.
 
 To turn on the streaming mode, long press the **GPS** button. To turn it off, long press the **GPS** button again.
 
@@ -64,8 +64,22 @@ You can change how often you want to capture a vertex in **Line rec. interval** 
 The recording interval can be now defined also in metres as distance travelled.
 :::
 
-## Edit attributes and geometry
-Tap on a feature and press the edit button. Now you can change the attributes in the form. To edit the geometry of a feature, tap **Edit geometry** in the bottom panel.
+### Add non-spatial features
+[Non-spatial features](../layer/working_with_nonspatial_data/) can also be added using <MobileAppName />. If you are using a non-spatial table for [value relations](../layer/settingup_forms/#value-relation) you can add and edit values in the app.
+
+1. Tap the **More** button and navigate to **Layers**
+   ![Mergin Maps Input Layers panel](./input-layers.jpg "Mergin Maps Input Layers panel")
+
+2. Choose the non-spatial layer and tap **Add feature**
+   ![](./input-add-non-spatial-feature.jpg)
+   
+3. Fill in the attributes.
+
+## Editing features
+Spatial and non-spatial features can be browsed, edited and deleted in the [Layers](./layers/) panel in <MobileAppName />. Tap on the **Layers** in the **More** tab and select a layer to see the features it contains. 
+![Mergin Maps Input Layers panel](./input-layers.jpg "Mergin Maps Input Layers panel")
+
+Spatial features can be selected also on the map. Tap on a feature and press the edit button. Now you can change the attributes in the form. To edit the geometry of a feature, tap **Edit geometry** in the bottom panel.
 
 ![Edit attributes and geometry in Mergin Maps Input](./input-edit.jpg "Edit attributes and geometry")
 
@@ -105,7 +119,6 @@ To split geometry of a feature:
 4. In this case, two individual features are created. Both have the same attributes, except for `Feature ID` (one feature keeps the original id, the other gets a new one).
 ![Geometry split successfully into two features](./input-split-geom-done.jpg "Geometry split successfully into two features")
 
-
 ## Snapping features
 <SinceBadge type="App" version="1.6.0" />
 
@@ -114,10 +127,12 @@ Snapping can be enabled in your <MainPlatformName /> project to make the field s
 If snapping is enabled, the crosshairs will turn purple and snap to vertices (left) or segments (right) of existing features when capturing new features or editing existing features.
 ![Snapping Vertices and Segments in Mergin Maps Input](../gis/snapping/input_basic_snapping.jpg "Snapping Vertices and Segments in Mergin Maps Input")
 
-## Delete features
+## Deleting features
 If you want to delete the feature, tap on it and press the edit button. Here you have the option to **Delete** the selected feature.
 
 ![Delete feature in Mergin Maps Input](./input-delete.jpg "Delete feature in Mergin Maps Input")
+
+
 
 ## Synchronise changes
 Don't forget to upload your changes to <MainPlatformNameLink />!
