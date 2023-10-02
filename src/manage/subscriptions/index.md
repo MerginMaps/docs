@@ -15,9 +15,9 @@ There are three paid plans: *Individual*, *Professional*, and *Team* plan. Stude
 If you are interested in <MainDomainNameLink id="pricing-for-ce-and-ee" desc="On-Premise deployment"/>  or looking for other options, please <MerginMapsEmail id="sales" desc="contact us" /> directly.
 :::
 
-Subscriptions are automatically billed monthly or annually. You can cancel or change your subscription any time, with Apple Manage Subscriptions App or through <AppDomainNameLink />.
+Subscriptions are automatically billed monthly or annually. You can cancel or change your subscription any time through <AppDomainNameLink />.
 
-## Changing a subscription from web
+## How to change a subscription
 Information about the current subscription can be found in <AppDomainNameLink />. Here, you can also switch to another subscription plan and manage the billing.
 
 1. Log into <AppDomainNameLink />
@@ -43,12 +43,12 @@ We support students, educators and registered non-profit organisations. If you w
 ![Mergin Maps Request Academia or Non-profit plan](./academia-non-profit-plan.jpg "Mergin Maps Request Academia or Non-profit plan")
 3. Fill in the form and **Submit** your request. We will review your application and if you meet our conditions, your workspace will get the Academia or Non-profit plan.
 
-### How to cancel subscription
+## How to cancel a subscription
 1. Log into <AppDomainNameLink />
 2. Navigate to **Subscriptions**. If you have an active subscription, you can cancel it by clicking **Cancel subscription**.
 ![Mergin Maps Cancel Subscription](./cancel-subscription.jpg "Mergin Maps Cancel Subscription")
 
-### How to transfer ownership and billing for workspaces
+## How to transfer ownership and billing for workspaces
 Ownership of a workspace can be transferred to another [workspace member](../permissions/#workspace-member-roles). Users with the **owner** member role have access to the subscriptions and invoicing settings and can change the billing details in the **Subscriptions** tab in <AppDomainNameLink />. Every workspace has to have at least one owner, however, there can be multiple owners of one workspace.
 
 To transfer the ownership of a workspace to a user that is not yet a member of your workspace, follow the steps in [How to add users to a workspace](../project-advanced/#add-users-to-a-workspace) and select the **Owner** as the the **member role**. The new owner has to accept the invitation.
@@ -68,9 +68,6 @@ Be careful when downgrading your own member role!
 
 Only owners and admins can manage user roles so if you assign yourself the writer or reader role, you will not be able to change it back.
 :::
-
-## Changing a subscription from Mergin Maps Input
-Subscriptions can be also managed from <MobileAppName /> (on Apple devices via in-app purchases).
 
 ## Invoices and payment history
 To download your invoices and see your payment history:

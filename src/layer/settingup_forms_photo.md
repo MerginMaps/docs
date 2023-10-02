@@ -9,6 +9,12 @@ Here, you will find the overview of the basic functionality related to capturing
 Do you need to attach multiple pictures to one feature? [How to attach multiple photos to features](./attach-multiple-photos-to-features/) will guide you through the setup.
 :::
 
+::: warning
+Keep in mind that synchronising photos during the field survey can use up a lot of mobile data - depending on the amount of pictures taken and their size.
+
+To reduce the data usage, you may consider using [selective synchronisation](../manage/selective_sync/), [resizing pictures automatically](#resizing-pictures-automatically) or following the [offline field survey workflow](../field/offline-use/#offline-field-survey-workflow). 
+:::
+
 ## Attachment widget in QGIS
 
 :::tip

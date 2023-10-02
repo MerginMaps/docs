@@ -6,13 +6,13 @@ Capturing field data often requires filling some attributes in the form to recor
 
 ## Widget gallery
 
-<MobileAppName /> supports a number of edit widget types for forms such as drop-down options, slider, date and time, checkbox, or photos. 
+A number of edit widget types for forms can be used in <MobileAppName />, including drop-down options, slider, date and time, checkbox, or photos. 
 
 Forms can be configured using <QGISHelp ver="latest" link="user_manual/working_with_vector/vector_properties.html#edit-widgets" text="QGIS widget types" /> .
 
 |QGIS widget  | Description  |<div style="width:300px">Preview in <MobileAppName /> </div> |Example project   |
 |:---:|:---:|:---:|:---:|
-|Text Edit  |[Text](#multiline-text)   | ![Mergin Maps Input text field form](./input_forms_text.jpg "Mergin Maps Input text field form") | <MerginMapsProjectShort id="documentation/test_forms" />|
+|Text Edit  |[Text](#text)   | ![Mergin Maps Input text field form](./input_forms_text.jpg "Mergin Maps Input text field form") | <MerginMapsProjectShort id="documentation/test_forms" />|
 |QR & barcode scanner  |[Camera to scan QR and barcode](#qr-code)   | ![Mergin Maps Input QR code field form](./input_forms_qrcode1.jpg "Mergin Maps Input QR code field form") | <MerginMapsProjectShort id="documentation/test_qrcode" /> |
 |Range   |[Numeric field](#numbers)   | ![Mergin Maps Input numeric field form](./input_forms_numbers.jpg "Mergin Maps Input numeric field form")  | <MerginMapsProjectShort id="documentation/form_setup" /> |
 |Range   |[Slider](#slider)   | ![Mergin Maps Input slider field form](./input_forms_slider1.jpg "Mergin Maps Input slider field form")  | <MerginMapsProjectShort id="documentation/form_setup" /> |
@@ -22,18 +22,25 @@ Forms can be configured using <QGISHelp ver="latest" link="user_manual/working_w
 |Value Map   |[Drop-down menu with predefined values](#value-map) |![Mergin Maps Input value map field form](./input_forms_valuemap1.jpg "Mergin Maps Input value map field form")   |<MerginMapsProjectShort id="documentation/form_setup" /> |
 |Value Relation   |[Drop-down menu with values from another table](#value-relation) |![Mergin Maps Input value relation field form](./input_forms_valuerelation.jpg "Mergin Maps Input value relation field form")   | <MerginMapsProjectShort id="documentation/test_forms" /> |
 
-In addition to the edit widgets, extra configuration can be done to the fields and form layout to make the data collection easier and more consistent. For example: setting a default value, conditional visibility and constraint enforcement.
+:::tip
+Extra configuration can be done to the form layout to make the data collection easier and more consistent, such as using default values, conditional visibility or constraint enforcement. See [Advanced Form Configuration](./settingup_forms_settings/) for more details.
+:::
 
+## Text
 
-## Multiline text
+Adding or editing text is the most common method for inserting information within the forms. In QGIS, the default widget for most types of fields is the **Text Edit**. It can be used for single line or [multiline](#multiline-text) text inputs. 
+
+In <MobileAppName /> , the text can be entered manually or using voice-to-text (if your mobile device supports this feature).
+
+![Voice to text in Mergin Maps Input form](./input-voice-to-text.jpg "Voice to text in Mergin Maps Input form")
+
+### Multiline text
 
 :::tip
 Clone <MerginMapsProject id="documentation/test_forms" /> to follow this example!
 :::
 
-Adding or editing text is the most common method for inserting information within the forms.
-
-In QGIS, the default widget for most types of fields is the **Text Edit**. In addition to a single line text, you can change the widget to accept multiple lines within a single field.
+ you can change the widget to accept multiple lines within a single field.
 1. Right-click on a layer, select **Properties** and go to the **Attributes form** tab.
 2. In the list of **Available Widgets** select the field you want to work with. 
 3. In the **Widget Display** tab:

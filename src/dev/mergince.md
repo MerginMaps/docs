@@ -5,6 +5,8 @@ SaaS <MainPlatformName /> service is a web platform for storage and synchronisat
 
 There is also <MainPlatformName /> Community Edition (<CommunityPlatformNameLink />) that is licensed as open source software. The source code for <CommunityPlatformName /> can be modified and used for custom deployments. You can contribute your code to <GitHubRepo id="MerginMaps/mergin" />.
 
+[How to Use <MainPlatformName /> with a Custom Server](../manage/plugin-multi-server-use/) will explain how to use <QGISPluginName /> and <MobileAppName /> with your <CommunityPlatformName /> server.
+
 ::: tip
 More information about <CommunityPlatformName /> and its features can be found on our [website](https://merginmaps.com/pricing-for-ce-and-ee) and in our blog [<MainPlatformName /> Community and Enterprise Editions](https://merginmaps.com/blog/introducing-mergin-maps-community-and-enterprise-editions). 
 

@@ -63,7 +63,7 @@ From the list of available workspaces, select the one you want to switch to:
 5. Now you have a new workspace! You can [create projects](../create-project/) in the workspace and [invite other users](../project-advanced/#add-users-to-a-workspace) to contribute.
    ![Mergin Maps web dashboard workspaces overview](./web-new-workspace-created.jpg "Mergin Maps web dashboard workspaces overview")
 
-Currently, it is possible to have up to 3 workspaces in the trial plan (without subscription). Note that every workspace has its own subscription. When created, the workspace starts with the free trial. After the trial period, you will have to [switch to a paid subscription](../../manage/subscriptions/#changing-a-subscription-from-web). 
+Currently, it is possible to have up to 3 workspaces in the trial plan (without subscription). Note that every workspace has its own subscription. When created, the workspace starts with the free trial. After the trial period, you will have to [switch to a paid subscription](../../manage/subscriptions/#how-to-change-a-subscription). 
 
 See our [pricing](https://merginmaps.com/pricing) for details about different plans.
 
