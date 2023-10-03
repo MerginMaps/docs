@@ -143,7 +143,7 @@ Vector tiles for offline use can be downloaded easily using <QGISPluginName />.
 2. In the **Layers** panel, right-click on the vector tile layer and choose the **Make available offline...** option
    ![QGIS vector tiles make available offline](./qgis-vector-tiles-make-available-offline.jpg "QGIS vector tiles make available offline")
 
-3. **Dowload Vector Tiles** dialog opens. Set the parameters as needed:
+3. **Download Vector Tiles** dialog opens. Set the parameters as needed:
    - **Extent** should be defined by your area of interest. You may calculate it from your survey layer, use the current map canvas extent (after zooming in), or other options that are provided.
    - **Maximum zoom level to download** defines the detail that will be visible on the offline map. For more information about zoom levels, see, for instance [OpenStreetMap wiki](https://wiki.openstreetmap.org/wiki/Zoom_levels).
    - **Tile limit** is the maximum number of tiles that you want to download.
