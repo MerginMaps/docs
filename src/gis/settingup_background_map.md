@@ -68,13 +68,15 @@ Depending on the size of your study area and the zoom level, the output file can
 :::
 
 ## Vector tiles
-Vector tiles are a better alternative for cartographic maps as background data. They are smaller in size, have flexible styling and your maps will not be pixelated even when zoomed in. 
+Vector tiles are a better alternative for cartographic maps as background data. They are smaller in size, have flexible styling and your maps will not be pixelated even when zoomed in.
+
+There are several online services you can use in your projects, some of them are mentioned below.
 
 ![Example vector tile](./example_vectortile.jpg "Example vector tile")
 
 ### Online services
 
-There are several online services. For example, we can add *ESRI Basemap* vector tile (QGIS 3.16+):
+Let's see how we can add *ESRI Basemap* vector tile (QGIS 3.16+):
 1. In QGIS, navigate to the **Vector Tiles** in the **Browser** panel
 2. Right-click on **Vector Tiles** and select **New Generic Connection**
 3. Set the parameters of the **Vector Tiles connection**:
@@ -86,18 +88,34 @@ There are several online services. For example, we can add *ESRI Basemap* vector
    Press **OK**.
    ![QGIS XYZ vector tile connection](./qgis_xyz_gen_vectortile.jpg "QGIS XYZ vector tile connection")
 
-Another source of online vector tiles are *Qwant maps*. Use following parameters to set the **Vector Tiles connection**:
+Another source of online vector tiles are *Qwant maps*. Use following 
    - **Name**: *Qwant map*
    - **URL**: `https://www.qwant.com/maps/tiles/ozbasemap/{z}/{x}/{y}.pbf`
    - **Min. Zoom Level**: 0
    - **Max. Zoom Level**: 14
    - **Style URL**: `https://raw.githubusercontent.com/QwantResearch/qwant-basic-gl-style/master/style.json`
 
+#### Mergin Maps Vector Tile Service
+When [creating a new <MainPlatformName /> project](../manage/create-project/#create-a-project-in-qgis) from scratch, the default background map uses <MainPlatformName /> vector tile service. 
+
+It can be also added to existing <MainPlatformName /> projects by using following parameters to set the **Vector Tiles connection**:
+   - **Name**: *OpenMapTiles (OSM)*
+   - **URL**: `https://tiles.merginmaps.com/data/default/{z}/{x}/{y}.pbf`
+   - **Min. Zoom Level**: 0
+   - **Max. Zoom Level**: 14
+   - **Style URL**: `https://tiles.merginmaps.com/styles/default.json`
+
+This service can be used by **<MainPlatformNameLink /> users only** . 
+
+Using the service is conditioned by the attribution: 
+`© OpenMapTiles © OpenStreetMap contributors`
+
+
 ### Generating vector tiles for offline use
-In QGIS (3.14+), you can generate your own vector tiles.
+Since QGIS 3.32, the easy-to-use **Download vector tiles** algorithm is present in the **Processing toolbox** in QGIS. With [<QGISPluginName />](#downloading-vector-tiles-using-mergin-maps-plugin-for-qgis), it can be used also in older QGIS version (3.16+) and is readily available from the **Layers** panel.
 
-
-::: details Generate vector tiles using OpenMapTiles and Docker (advanced)
+There are also other ways how to get offline vector tiles, such as using OpenMapTiles and Docker:
+::: details Generate vector tiles using OpenMapTiles and Docker (Advanced)
 In the example below, we walk through steps to generate a vector tile using OpenMapTiles for [Limpopo](https://www.openstreetmap.org/relation/349547#map=7/-24.367/29.982).
 
 Note that instructions below require familiarity with the terminal. In addition, your operating system should support **docker**.
@@ -113,6 +131,36 @@ Note that instructions below require familiarity with the terminal. In addition,
   - The above process should produce an MBTiles for your clipped OSM file
   - You can load the file and style it using one of the <GitHubRepo id="openmaptiles/osm-bright-gl-style" desc="OpenMapTiles styles" />
 :::
+
+
+#### Downloading Vector Tiles Using Mergin Maps Plugin for QGIS 
+<SinceBadge type="Plugin" version="2023.4" />
+
+Vector tiles for offline use can be downloaded easily using <QGISPluginName />.
+
+1. Open your <MainPlatformName /> project in QGIS. 
+   
+2. In the **Layers** panel, right-click on the vector tile layer and choose the **Make available offline...** option
+   ![QGIS vector tiles make available offline](./qgis-vector-tiles-make-available-offline.jpg "QGIS vector tiles make available offline")
+
+3. **Dowload Vector Tiles** dialog opens. Set the parameters as needed:
+   - **Extent** should be defined by your area of interest. You may calculate it from your survey layer, use the current map canvas extent (after zooming in), or other options that are provided.
+   - **Maximum zoom level to download** defines the detail that will be visible on the offline map. For more information about zoom levels, see, for instance [OpenStreetMap wiki](https://wiki.openstreetmap.org/wiki/Zoom_levels).
+   - **Tile limit** is the maximum number of tiles that you want to download.
+   - **Output** will be saved as a MBTiles file. Click on the right side drop-down menu, select **Save to file**, browse to the folder where you want to save the MBTiles and name the file.
+   
+   ![QGIS download vector tiles dialog](./qgis-vector-tiles-set-extent.jpg "QGIS download vector tiles dialog")
+
+   MBTiles can be stored in your [<MainPlatformName /> project folder](../manage/project/#mergin-maps-project-folder) and synchronised to <MainPlatformNameLink /> along with your project. If you find it impractical to synchronise them or if you want to use the same file in multiple projects, follow the steps on [How to work with large files](#how-to-work-with-very-large-files-android) in <MobileAppName />.
+
+4. Click **Run**. After the vector tiles are generated and downloaded successfully, the MBTiles file will be added to the **Layers** panel. You may close the algorithm dialog window.
+
+5. Save and synchronise the project. 
+
+::: tip
+Before taking your offline tiles to the field, we recommend checking in <MobileAppName /> that they have sufficient extent and zoom level.
+:::
+
 
 ## How to work with very large files (Android)
 <Badge text="Android only" type="warning"/>

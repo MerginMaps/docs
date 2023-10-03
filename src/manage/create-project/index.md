@@ -2,8 +2,8 @@
 [[toc]]
 
 There are several methods of creating a new <MainPlatformName /> project:
-- [<MobileAppName /> ](./index.md#create-a-project-in-mergin-maps-input) offers the quickest (albeit limited) way of creating a <MainPlatformName /> project.
 - If you want to take full advantage of <MainPlatformNameLink />, use [QGIS](./index.md#create-a-project-in-qgis) to prepare new projects.
+- [<MobileAppName /> ](./index.md#create-a-project-in-mergin-maps-input) offers the quickest (albeit limited) way of creating a <MainPlatformName /> project.
 - You can also use <AppDomainNameLink />, especially if your project files are already fully prepared and only need uploading.
 
 If you want to make a copy of your projects or the ones shared with you, you can clone them in [QGIS](./index.md#clone-an-existing-project-in-qgis) or [merginmaps.com](./index.md#clone-an-existing-project-through-merginmaps-com).
@@ -11,24 +11,6 @@ If you want to make a copy of your projects or the ones shared with you, you can
 :::warning
 When creating a project, keep in mind that its name cannot be changed later.
 :::
-
-## Create a project in Mergin Maps Input
-::: tip
-[Capturing Your First Field Data](../../tutorials/capturing-first-data/index.md) tutorial will show you how to create a new project and capture field data in <MobileAppName />.
-:::
-
-1. Open <MobileAppName /> on your mobile device
-2. Go to the **Home** tab of the **Projects** screen and press **Create project**
-   ![Create project in Mergin Maps Input](../../tutorials/capturing-first-data/merginmaps-mobile-home-tab-of-projects-screen.jpg "Create project in Mergin Maps Input")
-
-3. Give the project a name. Keep in mind that it cannot be changed later.
-   ![Mergin Maps Input new project name](../../tutorials/capturing-first-data/merginmaps-mobile-naming-new-project.jpg "Mergin Maps Input new project name")
-
-4. Press **Create project**
-   ![Mergin Maps Input create project](../../tutorials/capturing-first-data/merginmaps-mobile-create-new-project.jpg "Mergin Maps Input create project")
-   
-Your new project should now be visible on the **Home** tab of the **Projects** screen
-![Mergin Maps Input home projects](../../tutorials/capturing-first-data/merginmaps-mobile-new-project-listed.jpg "Mergin Maps Input home projects")
 
 ## Create a project in QGIS
 ::: tip
@@ -77,6 +59,24 @@ Using <QGISPluginName />, you can make a copy of projects you have access to.
    ![Clone Mergin Maps project in QGIS](./clone.jpg "Clone Mergin Maps project in QGIS")
 
 The project will be saved in the selected workspace.
+
+## Create a project in Mergin Maps Input
+::: tip
+[Capturing Your First Field Data](../../tutorials/capturing-first-data/index.md) tutorial will show you how to create a new project and capture field data in <MobileAppName />.
+:::
+
+1. Open <MobileAppName /> on your mobile device
+2. Go to the **Home** tab of the **Projects** screen and press **Create project**
+   ![Create project in Mergin Maps Input](../../tutorials/capturing-first-data/merginmaps-mobile-home-tab-of-projects-screen.jpg "Create project in Mergin Maps Input")
+
+3. Give the project a name. Keep in mind that it cannot be changed later.
+   ![Mergin Maps Input new project name](../../tutorials/capturing-first-data/merginmaps-mobile-naming-new-project.jpg "Mergin Maps Input new project name")
+
+4. Press **Create project**
+   ![Mergin Maps Input create project](../../tutorials/capturing-first-data/merginmaps-mobile-create-new-project.jpg "Mergin Maps Input create project")
+   
+Your new project should now be visible on the **Home** tab of the **Projects** screen
+![Mergin Maps Input home projects](../../tutorials/capturing-first-data/merginmaps-mobile-new-project-listed.jpg "Mergin Maps Input home projects")
 
 ## Create a project through merginmaps.com
 1. Navigate to <AppDomainNameLink /> and sign in.
