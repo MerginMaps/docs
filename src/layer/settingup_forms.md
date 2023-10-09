@@ -130,7 +130,7 @@ If you want to record time and date when you capture the feature, you need to ma
 
 In <MobileAppName />, the date can be edited using a calendar pop up. If you use **now()** as the default value, the current date and time will be automatically filled in.
 
-![Mergin Maps Input date time field form](./input_forms_datetime.jpg "Mergin Maps Input date time field form")
+![Mergin Maps Input calendar form](./input_forms_datetime.jpg "Mergin Maps Input calendar form")
 
 It is also possible to use custom Field Formats and Widget Displays. 
 :::warning
