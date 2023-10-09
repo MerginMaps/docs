@@ -3,7 +3,7 @@
     <div class="page-footer__container">
       <div class="page-footer__row">
         <div class="page-footer__col">
-          <img src="/docs/mm_logo_positive_half_padding.png" />
+          <img src="/docs/MM_logo_HORIZ_COLOR_TRANSPARENT_no_padding.png" />
           <p>Copyright &copy; 2021 - {{ year }}</p>
           <p>Lutra Consulting Limited</p>
           <p>All rights reserved.</p>

@@ -327,9 +327,9 @@ e.g. `![image alt text](./myimage.png "image title")` if the image is in the sam
  
  - For global pictures/assets placed in `src/.vuepress/public` use custom component `<PublicImage />`
 
-e.g. `<PublicImage src="MM_logo_HORIZ_color.svg" title="Mergin Maps logo"/>`
+e.g. `<PublicImage src="logo_lutra.svg" title="Lutra Consulting Ltd. logo" />`
 
-<PublicImage src="MM_logo_HORIZ_color.svg" title="Mergin Maps logo" />
+<PublicImage src="logo_lutra.svg" title="Lutra Consulting Ltd. logo" />
 
 ### Table of Contents 
 
