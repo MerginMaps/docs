@@ -3,6 +3,9 @@
 
 Migration guides are here to help you migrate to the latest version of [<MainPlatformName /> Community Edition](../mergince/).
 
+## 2023.2.0 -> 2023.3.0
+Since there is no db migration or new config settings needed it is enough just to use new docker image tag.
+
 ## Migration guide from any previous version to 2023.2
 
 Besides various fixes, enhancements and performance improvements the most notable change recently introduced is the concept of workspaces. For Community Edition it means there is a **common shared workspace (global workspace)** for all users where all projects are stored, instead of having a personal or organisational namespace for projects.
