@@ -28,7 +28,7 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
-    ['meta', { name: 'theme-color', content: '#00a884' }],
+    ['meta', { name: 'theme-color', content: '#004C45' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
     ['link', { rel: 'icon', href: '/favicon.ico' }]
@@ -36,7 +36,7 @@ module.exports = {
   locales: {
     '/': {
       lang: 'en-US',
-      title: 'Documentation',
+      title: ' ',
       // description: 'Enjoy the feeling when you make sense of your geo-data on maps'
     }
   },
@@ -47,7 +47,7 @@ module.exports = {
    */
   themeConfig: {
     // logo in navbar
-    logo: '/mm_logo_positive_half_padding.png',
+    logo: '/MM_logo_HORIZ_COLOR_TRANSPARENT_no_padding.png',
     // Optional options for generating "Edit this page" link
     docsRepo: 'merginmaps/docs',
     // if your docs are not at the root of the repo:
