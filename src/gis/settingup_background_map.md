@@ -1,12 +1,14 @@
 # Background Maps
 [[toc]]
 
-When surveying in the field, it is essential to have appropriate background maps. There are several sources of online and offline background maps you can use in your QGIS project. Note that you need to comply with the terms of use of the background maps and their data sources. This page simply explains how to add the data to your QGIS maps and use it in <MainPlatformNameLink />. It is the sole responsibility of the end user to comply with such terms and conditions.
+When surveying in the field, it is essential to have appropriate background maps. There are several sources of background maps you can use in your QGIS project. Here, we will cover two types of background maps for online and offline use in <MobileAppName />: raster and vector tiles.
 
-The following sections will cover two types of background maps for online and offline use in <MobileAppName />: raster and vector tiles.
-
-::: warning
 Online maps need internet connection to be displayed during the field survey and can use up a lot of mobile data, especially if you are using online raster maps.
+
+:::danger WARNING
+Keep in mind that background maps services and data sources come with their own terms of use. 
+
+Although we show how to add online and offline background maps to your projects, it is your responsibility to comply with any terms and condition of the services of your choice.
 :::
 
 ## Raster tiles 
@@ -16,6 +18,10 @@ Raster tiles are ideal for aerial imagery or terrain visualisations. They can be
 
 ### Online services
 QGIS comes by default with the <QGISHelp ver="3.22" link="user_manual/managing_data_source/opening_data.html?highlight=xyz#using-xyz-tile-services" text="OpenStreetMap online services for XYZ tiles" />. When adding a cartographic basemap, ensure you set the tile size correctly, so that the texts and labels are readable on mobile devices with high resolution display.
+
+::: warning
+Online raster maps can use up a lot of mobile data during the field survey.
+:::
 
 You can also add [other sources](https://gis.stackexchange.com/questions/20191/adding-basemaps-from-google-or-bing-in-qgis/217670#217670) of XYZ tiles to your QGIS.
 
