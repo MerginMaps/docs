@@ -5,6 +5,7 @@ module.exports = {
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
+            	'/tutorials/quickstart/',
                 '/tutorials/capturing-first-data/',
                 '/tutorials/opening-surveyed-data-on-your-computer/',
                 '/tutorials/creating-a-project-in-qgis/',

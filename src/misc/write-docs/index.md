@@ -362,12 +362,15 @@ If you are adding new component:
  - add your component to `src/.vuepress/components/MyComponent.vue`
  - use in markdown as `<MyComponent></MyComponent>` or `<MyComponent />`
 
-### Reference QGIS Help pages
+### Reference QGIS and QGIS Help pages
 
 Use `<QGISHelp />` component, e.g. `<QGISHelp ver="3.22" link="user_manual/index.html" text="See QGIS Help page" />` transforms to
 
 <QGISHelp ver="3.22" link="user_manual/index.html" text="See QGIS Help page" />
 
+Use `<QGIS />` component, e.g. `<QGIS link="en/site/forusers/download.html" text="QGIS Download page" />` transforms to
+
+<QGIS link="en/site/forusers/download.html" text="QGIS Download page" />
 
 ### Reference GitHub content
 Use `<GitHubRepo />` component, e.g. `<GitHubRepo id="MerginMaps/docs/" desc="documentation" />` transforms to <GitHubRepo id="MerginMaps/docs/" desc="documentation" />.
