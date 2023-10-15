@@ -109,7 +109,11 @@ However, we will use the project as it is right now and look into how to use it 
 3. Enter your <MainPlatformName /> username and password and **Sign in**
    ![Mergin Maps Input sign in](./input-sign-in.jpg "Mergin Maps Input sign in")
 
-4. 
+TODO
+- open the new your project
+- record some features
+- sync to the cloud
+- overview of the current state in QGIS, mobile app and cloud dashboard
 
 ## Next steps
 Do you want to learn more about the basics? We recommend going through our detailed tutorials.
