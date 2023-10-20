@@ -96,6 +96,7 @@ External GPS functionality depends on the manufacturer and on the specific model
 | Leica | Leica FLX100 plus<sup><a href="#link-4">4</a></sup> | yes (mock location) | yes<sup><a href="#link-**">**</a></sup>|
 | Leica | Leica Zeno GG04plus<sup><a href="#link-4">4</a></sup> | yes (mock location) | yes<sup><a href="#link-**">**</a></sup> |
 | <NoSpellcheck id="marXact" /> | UNI-GR1| yes | no |
+| <NoSpellcheck id="marXact" /> | UNI-GR2| yes | no |
 | Trimble | Trimble Catalyst<sup><a href="#link-5">5</a></sup> | yes (mock location) | unknown |
 | Trimble | Trimble R1<sup><a href="#link-5">5</a></sup> | yes (mock location) | unknown |
 | Trimble | Trimble R2<sup><a href="#link-5">5</a></sup> | yes (mock location) | unknown |
