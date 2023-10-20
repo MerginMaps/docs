@@ -10,20 +10,17 @@ Public projects can be accessed and downloaded even without a <MainPlatformNameL
 ## From web
 
 1. Navigate to <MainDomainNameLink /> 
-2. Click on **Start for free**
+2. Clicking on **Sign Up** or **Start for free** will take you to the registration form
    ![Mergin Maps start for free](./mergin-web-register.jpg "Mergin Maps start for free")
 
-3. Click on **Create your free account**
-   ![Mergin Maps create free account](./mergin-web-create-account.jpg "Mergin Maps create free account")
-   
-4. Create your account by filling up the form and click on **Sign Up**. You will receive a confirmation email with a link to verify your email.
+3. Create your account by filling up the form and click on **Sign Up**. You will receive a confirmation email with a link to verify your email.
    ![Mergin Maps sign up form](./mergin-web-sign-up.jpg "Mergin Maps sign up form")
 
    ::: warning
    Check your spam folder if the confirmation email does not appear in your inbox after 5 minutes.
    :::
 
-5. Now your account needs a [workspace](../../manage/workspaces/)!
+4. Now your account needs a [workspace](../../manage/workspaces/)!
 - If you were invited to an existing workspace, you can simply **join** this workspace without creating a new one
 ![Join workspace in Mergin Maps](./join-workspace.jpg "Join workspace in Mergin Maps")
 

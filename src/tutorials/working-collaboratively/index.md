@@ -11,14 +11,10 @@ Your projects are stored in your [workspace](../../manage/workspaces/). If you w
 
 Here, we will invite Jack to the *trees-and-hedges* project.
 
-1. Navigate to <MainDomainNameLink />.
-2. Click on **Go to my account** to sign in.
+1. Navigate to <AppDomainNameLink /> and **sign in** 
+   ![Sign in to Mergin Maps](./mergin-web-sign-in.jpg "Sign in to Mergin Maps")
 
-   If you are new to <MainPlatformNameLink />, click on **Start for free** and [sign up to <MainPlatformName />](../../setup/sign-up-to-mergin-maps/).
-
-   ![Sign up or sign in to Mergin Maps](./mergin-web-sign-in.jpg "Sign up to Mergin Maps")
-
-3. Sign in to <MainPlatformName />. Now, you should see the <MainPlatformName /> dashboard.
+3. Now, you should see the <MainPlatformName /> dashboard.
    ![Mergin Maps dashboard](./mergin-web-dashboard.jpg "Mergin Maps dashboard")
 
 2. Select **Members** from the left panel and click on **Add People**
