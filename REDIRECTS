@@ -171,6 +171,7 @@ https://merginmaps.com/docs/setup/subscriptions/	https://merginmaps.com/docs/man
 # Redirects for non-existing pages (404s reported by google)
 https://merginmaps.com/docs/components/mobile/	https://merginmaps.com/docs/
 https://www.merginmaps.com/docs/components/web/	https://merginmaps.com/docs/
+https://www.merginmaps.com/docs/concepts/	https://merginmaps.com/docs/
 https://www.merginmaps.com/docs/contribute/	https://merginmaps.com/docs/misc/contribute/
 https://merginmaps.com/docs/faq/	https://merginmaps.com/docs/
 https://www.merginmaps.com/docs/guides/datum-shift/	https://merginmaps.com/docs/gis/proj/
@@ -178,8 +179,10 @@ https://www.merginmaps.com/docs/guides/mergin-tour/	https://merginmaps.com/docs/
 https://merginmaps.com/docs/integrations/customapp/	https://merginmaps.com/docs/dev/customapp/
 https://merginmaps.com/docs/integrations/postgresql/	https://merginmaps.com/docs/dev/dbsync/
 https://www.merginmaps.com/docs/integrations/webhooks/	https://merginmaps.com/docs/
-https://www.merginmaps.com/docs/qgis/project_config	https://merginmaps.com/docs/gis/features/
+https://www.merginmaps.com/docs/licensing/	https://merginmaps.com/docs/misc/licensing/
 https://merginmaps.com/docs/plugin/plugin-installation	https://merginmaps.com/docs/setup/install-mergin-maps-plugin-for-qgis/
+https://www.merginmaps.com/docs/qgis/project_config	https://merginmaps.com/docs/gis/features/
+https://www.merginmaps.com/docs/quick-start/	https://merginmaps.com/docs/
 https://www.merginmaps.com/docs/support/	https://merginmaps.com/docs/misc/troubleshoot/
 https://merginmaps.com/docs/tutorials/quick-start/	https://merginmaps.com/docs/tutorials/capturing-first-data/
 https://www.merginmaps.com/docs/web/working-with-organisations/	https://merginmaps.com/docs/manage/workspaces/
