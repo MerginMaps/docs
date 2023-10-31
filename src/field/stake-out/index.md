@@ -29,7 +29,7 @@ Accurate stake out in short navigation mode may require an [external GPS receive
 Distance units displayed by <MobileAppName /> are defined in your project properties:
 1. Open your <MainPlatformNameLink /> project in QGIS
 2. Navigate to **Project Properties**
-3. In the **General** tab, you can define the **Units for distance measurement** by choosing from several options.
+3. In the **General** tab, you can define the **Units for distance measurement** by choosing from several options, such as metres, miles, yards or feet.
 
    Units defined here are then used by default when measuring distances in QGIS, as well as during stake out in the mobile app
    
