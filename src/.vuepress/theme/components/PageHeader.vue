@@ -14,9 +14,13 @@ export default Vue.extend({
   components: {},
   data: function () {
     return {
-      url: "https://merginmaps.com" + window.location.pathname,
-      showHeader: ['localhost', 'www.merginmaps.com', 'merginmaps.com'].includes(window.location.hostname)
+      url: null,
+      showHeader: false
     }
+  },
+  mounted() {
+    this.url = "https://merginmaps.com" + window.location.pathname
+    this.showHeader = ['localhost', 'www.merginmaps.com', 'merginmaps.com'].includes(window.location.hostname)
   }
 });
 </script>
