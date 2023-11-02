@@ -1,7 +1,7 @@
 <template>
   <div v-if="showHeader" class="page-header">
     <p>
-      This document is machine translated,<br />read <a :href="url">original</a> version.
+      This document is machine translated, see <a :href="url">original</a> version.
     </p>
   </div>
 </template>
