@@ -22,6 +22,7 @@ export default {
   display inline-block
   height 18px
   line-height 18px
+  white-space nowrap 
   border-radius 3px
   padding 0 6px
   color white
