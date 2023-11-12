@@ -1,47 +1,7 @@
 # Advanced Form Configuration
 [[toc]]
 
-In addition to the [edit widgets](./settingup_forms.md), extra configuration can be done to the fields and form layout to make the data collection easier and more consistent.
-
-## Form layout
-If your form contains more than a handful of fields, it becomes difficult to navigate and enter or view the data. Therefore it can be helpful to arrange fields in tabs and groups in the form. 
-
-![Mergin Maps Input tabs in form](./input_forms_layout1.jpg "Mergin Maps Input tabs in form")
-
-:::tip
-Clone <MerginMapsProject id="documentation/form_setup" /> to follow this example!
-:::
-
-### Tabs and groups
-
-To set the form layout, we are going to use the **Drag-n-Drop** designer.
-1. Right-click on **survey** layer and select **Properties**
-2. In the **Attributes form** tab, select **Drag and Drop Designer**
-3. In **Form Layout**, we can create tabs and groups to arrange fields in the form. **Fields** can be moved from the left column to form layout. Only fields that are in the **Form layout** will appear in the form.
-
-![QGIS drag and drop form designer](./qgis_forms_layout_drag_and_drop.jpg "QGIS drag and drop form designer")
-
-Here, we created two tabs, *Information* and *Data*, and a group *Location* inside the *Information* tab.
-
-![QGIS form with tabs and groups](./qgis_forms_layout.jpg "QGIS form with tabs and groups")
-
-The form with tabs and groups and conditional visibility will appear in QGIS like this:
-![QGIS form conditional visibility](./qgis_forms_layout_attribute.jpg "QGIS form conditional visibility")
-
-And this is how the same form looks like in <MobileAppName />:
-![Mergin Maps Input form with tabs and groups](./input_forms_layout2.jpg "Mergin Maps Input form with tabs and groups")
-
-
-### Show and hide fields depending on a field value
-We can set the visibility of **Location** tab depending on the value of the **survey** field:
-  - If **survey** is set to **False**, the **Location** tab will not appear in the form,
-  - If **survey** is set to **True**, the **Location** tab will show up in the form.
-
-1. Select the **Location** tab in the **Form Layout** column
-2. Check the **Control Visibility by Expression** option
-3. Type the following expression in the box below: `"survey" IS TRUE`
-4. Background colour can be set in the **Style** tab.
-![QGIS form control visibility by expression](./qgis_forms_layout_visibility.jpg "QGIS form control visibility by expression")
+In addition to the [edit widgets](./settingup_forms.md), extra configuration can be done to the fields and form layout in QGIS to make the data collection easier and more consistent.
 
 ## Default values
 Default values can be used to automatically record, e.g, the name of the surveyor, date and time of the survey, latitude and longitude of the feature, or to have frequently used values filled in advance.

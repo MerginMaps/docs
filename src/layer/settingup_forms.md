@@ -253,7 +253,4 @@ There is much more you can do to set up your forms efficiently, such as:
 - capture [photos](./settingup_forms_photo/) as attachments
 - create advanced forms with drill-down menu by setting up a [cascade form](./settingup_forms_settings/#drill-down-forms)
 - using 1-N relations to [link multiple records to one feature](./one-to-n-relations/) or to [attach multiple photos to one feature](./attach-multiple-photos-to-features/) 
-
-:::tip
-Learn more about the form layout in [Advanced Form Configuration](./settingup_forms_settings/).
-:::
+- design an appropriate [form layout](./form-layout/) with groups and tabs, conditional visibility of fields or instructions for the fieldwork
