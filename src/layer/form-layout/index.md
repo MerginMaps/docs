@@ -56,9 +56,9 @@ We can set the visibility of **Location** tab depending on the value of the **su
 ![QGIS form control visibility by expression](./qgis_forms_layout_visibility.jpg "QGIS form control visibility by expression")
 
 ## Display instructions in the form using Text and HTML widget
-Sometimes, you may want to include instructions or tips for surveyors. This can be achieved by using the Text or HTML widgets.
+Sometimes, you may want to include instructions or tips for surveyors. This can be achieved by using the Text or HTML widgets. These notes may also display [expressions and field values](#using-expressions-in-text-and-html-widgets), which can be useful.
 
-These widgets can be found in *Available Widgets* in the *Other Widgets* section when using the [Drag and Drop Designer](#qgis-drag-and-drop-designer).
+These widgets can be found in **Available Widgets** in the **Other Widgets** section when using the [Drag and Drop Designer](#qgis-drag-and-drop-designer).
 ![QGIS HTML and Text Widget](./qgis-form-html-text-widget.jpg "QGIS HTML and Text Widget")
 
 To configure the **Text** widget, enter the text you want to display in the form. On the right, you will see the preview.
@@ -67,9 +67,27 @@ To configure the **Text** widget, enter the text you want to display in the form
 If you prefer your text to be formatted, you may do so in the **HTML** widget. HTML widget supports these [HTML tags](https://doc.qt.io/qt-6/richtext-html-subset.html#supported-tags)).
 ![QGIS HTML widget configuration](./qgis-configure-html-widget.jpg "QGIS HTML widget configuration")
 
-And this is how the Text and HTML widgets look like in the form in QGIS (left) and in the mobile app (right).
+...and this is how the Text and HTML widgets look like in the form in QGIS (left) and in the mobile app (right).
 ![](./qgis-form-text-html.jpg)
 
+### Using expressions in Text and HTML widgets
+Expressions and variables can be used both in the Text and the HTML widget.
+
+![QGIS Configure Text Widget Expression Builder](./qgis-text-widget-expression.gif "QGIS Configure Text Widget Expression Builder")
+
+1. When configuring the Text or HTML widget, click on the **Expression Builder** button
+2. Enter the expression that will be used in your text and click **OK**.
+
+   Field values can be selected from the **Fields and Values** list. There are other variables and expressions that can be used.
+
+3. Click on the **+** button to add the expression to the text.
+
+   Here, we configured the widget with this text: `Make sure the number plate [% "SPZ" %] is visible in the photo.` 
+
+4. Save and synchronise your project. 
+
+... and this is how it works during the field survey. `[% "SPZ" %]` expression displays the current value of the `SPZ` field.
+![Mergin Maps mobile app text widget with variable](./mobile-text-widget-expression.jpg "Mergin Maps mobile app text widget with variable")
 
 ## Spacer widget
 <Badge text="since QGIS 3.30" type="tip"/>
