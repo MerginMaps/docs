@@ -25,7 +25,7 @@ Read [more](../manage/synchronisation.md) how the synchronisation in Mergin Maps
 :::
 
 Notes:
-<a name="link-1">1</a>: **PostgreSQL/PostGIS** - You either setup your PostgreSQL connection (e.g. username, password, host, port, ...) in QGIS PostgreSQL connection directly (in case you want to reuse the same conection for everyone) or use a Connection Service File `pg_service.conf` (in case you want to have different PostgreSQL user for each surveyor). To use Connection Service File, you need to
+<a name="link-1">1</a>: **PostgreSQL/PostGIS** - You either setup your PostgreSQL connection (e.g. username, password, host, port, ...) in QGIS PostgreSQL connection directly (in case you want to reuse the same connection for everyone) or use a Connection Service File `pg_service.conf` (in case you want to have different PostgreSQL user for each surveyor). To use Connection Service File, you need to
 - create `pg_service.conf` file and test in in QGIS Desktop as described in the <QGISHelp ver="3.22" link="user_manual/managing_data_source/opening_data.html#postgresql-service-connection-file" text="help." />
 - [manually transfer](../manage/missing-data/index.md) `pg_service.conf` to <MobileAppName /> data folder. Data folder is shown in the [Diagnostic Log](../misc/troubleshoot.md)
 - restart the application. Whether the file is found and used after restart, check the [Diagnostic Log](../misc/troubleshoot.md)
