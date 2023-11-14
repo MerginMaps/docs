@@ -63,9 +63,12 @@ module.exports = {
     displayAllHeaders: true,
     sidebarDepth: 0,
     // Main project repository (Github namespace/<project>) !! This is link in the navbar!
-    // repo: 'lutraconsulting',
-    // repoLabel: 'GitHub',
-    nav: [],
+    // repo: 'MerginMaps',
+    // repoLabel: 'Source Code',
+    nav: [
+          { text: 'Home', link: 'https://merginmaps.com/?utm_source=documentation&utm_medium=header&utm_campaign=docs' },
+          { text: 'Log In', link: 'https://app.merginmaps.com/login?utm_source=documentation&utm_medium=header&utm_campaign=docs' },
+    ],
     sidebar: require('./sidebar/en')
   },
   
