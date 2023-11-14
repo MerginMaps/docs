@@ -31,7 +31,8 @@ module.exports = {
     ['meta', { name: 'theme-color', content: '#004C45' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
-    ['link', { rel: 'icon', href: '/favicon.ico' }]
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['script', { type: 'text/javascript', src: 'https://cdn.weglot.com/weglot.min.js'}],
   ],
   locales: {
     '/': {
@@ -63,9 +64,12 @@ module.exports = {
     displayAllHeaders: true,
     sidebarDepth: 0,
     // Main project repository (Github namespace/<project>) !! This is link in the navbar!
-    // repo: 'lutraconsulting',
-    // repoLabel: 'GitHub',
-    nav: [],
+    // repo: 'MerginMaps',
+    // repoLabel: 'Source Code',
+    nav: [
+          { text: 'Home', link: 'https://merginmaps.com/?utm_source=documentation&utm_medium=header&utm_campaign=docs' },
+          { text: 'Log In', link: 'https://app.merginmaps.com/login?utm_source=documentation&utm_medium=header&utm_campaign=docs' },
+    ],
     sidebar: require('./sidebar/en')
   },
   

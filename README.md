@@ -43,6 +43,15 @@ yarn install
 yarn dev
 ```
  
+## Translations
+
+To develop translations, you can switch to different language by:
+- open JavaScript console in browser
+- execute `Weglot.switchTo('de')` 
+- now you should see banner to switch to english in sidebar and all texts translated
+
+To change translated text, you need to login to Weglot and modify it there.
+
 ## Static generation (for deployments)
 
 To generate static HTML files, run 
