@@ -1,7 +1,11 @@
 <template>
-  <div v-if="showHeader" class="page-header">
+  <div
+    :style="pageHeaderStyle"
+    class="page-header"
+  >
     <p>
-      This document is machine translated, see <a :href="url">original</a> version.
+      This document is machine translated, see
+      <a :href="'#'" @click.prevent="switchLang('en')">original</a> version.
     </p>
   </div>
 </template>
@@ -14,20 +18,58 @@ export default Vue.extend({
   components: {},
   data: function () {
     return {
-      url: null,
-      showHeader: false
-    }
+      showHeader: false,
+      currentLang: null,
+    };
   },
   mounted() {
-    this.url = "https://merginmaps.com" + window.location.pathname
-    this.showHeader = ['localhost', 'www.merginmaps.com', 'merginmaps.com'].includes(window.location.hostname)
-  }
+    Weglot.initialize({
+      api_key: this.$weglotApiKey,
+      auto_switch: false,
+      hide_switcher: true,
+    });
+
+    Weglot.on("initialized", () => {
+      this.currentLang = Weglot.getCurrentLang();
+    });
+
+    Weglot.on("languageChanged", () => {
+      this.currentLang = Weglot.getCurrentLang();
+    });
+  },
+  computed: {
+    pageHeaderStyle() {
+      if (this.showHeader) {
+        return {
+          marginBottom: 'initial',
+          visibility: "visible",
+        }
+      }
+      return {
+        marginBottom: "-6rem",
+        visibility: "hidden",
+      };
+    }
+  },
+  methods: {
+    switchLang(lang) {
+      Weglot.switchTo(lang);
+    },
+  },
+  watch: {
+    currentLang: {
+      immediate: true,
+      handler(newLang) {
+        this.showHeader = newLang && newLang !== "en";
+      },
+    },
+  },
 });
 </script>
 
 <style lang="scss" scoped>
 .page-header {
-  padding: .1rem 1.5rem;
+  padding: 0.1rem 1.5rem;
   background-color: #f3f5f7;
   font-size: 0.9rem;
   align-items: center;
