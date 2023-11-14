@@ -79,6 +79,10 @@ Your new project should now be visible on the **Home** tab of the **Projects** s
 ![Mergin Maps Input home projects](../../tutorials/capturing-first-data/merginmaps-mobile-new-project-listed.jpg "Mergin Maps Input home projects")
 
 ## Create a project through merginmaps.com
+:::warning
+The preferred way of creating a project is to use QGIS plugin or <MobileAppName />. This option is for advanced users composing their project manually.
+:::
+
 1. Navigate to <AppDomainNameLink /> and sign in.
 2. To create a new project, click on **Create** in the **Projects** tab:
    ![Create Mergin Maps project through web](./web-create-project.jpg "Create Mergin Maps project through web")
