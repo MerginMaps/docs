@@ -89,6 +89,23 @@ Expressions and variables can be used both in the Text and the HTML widget.
 ... and this is how it works during the field survey. `[% "SPZ" %]` expression displays the current value of the `SPZ` field.
 ![Mergin Maps mobile app text widget with variable](./mobile-text-widget-expression.jpg "Mergin Maps mobile app text widget with variable")
 
+### Using HTML widget to display online images and other online resources
+The **HTML widget** can be also used to display online images in the mobile app or open online resources, such as PDF files, videos or websites, in the browser of your device.
+
+Here are HTML samples you can use to [configure the HTML widget](#using-expressions-in-text-and-html-widgets). Your form should contain a field for storing the full URL link (here: `Text`).
+
+To use these samples, replace `Text` by the name of the appropriate field in your layer. 
+
+- show image in the form
+`<script>document.write(expression.evaluate("'<a href=\"'||attribute( @feature, 'Text' )||'\"><img src=\"'||attribute( @feature, 'Text' )||'\" width=300px></a>'"));</script>`
+
+- display a link (`here is your link`) that can be opened in a browser
+`<script>document.write(expression.evaluate("'<a href=\"'||attribute( @feature, 'Text' )||'\">here is your link</a>'"));</script>`
+
+:::tip
+Make sure that the HTML widget works as intended - it works both in QGIS and in the mobile app!
+:::
+
 ## Spacer widget
 <Badge text="since QGIS 3.30" type="tip"/>
 The Spacer widget can be useful if you want to have some space between the fields in your form or add a horizontal line. 
