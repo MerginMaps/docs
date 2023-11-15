@@ -4,7 +4,7 @@
 
 In the last tutorial you learnt how to capture field data using <MobileAppName />.
 
-In this tutorial you'll learn how to transfer your project and data from mobile device to computer in seconds using the powerful QGIS and <MainPlatformNameLink /> combination. QGIS is a free and open source desktop GIS package. <MobileAppName /> is based on QGIS, which means it's able to visualise and edit data in the same way QGIS can. This offers us great flexibility which we'll start to see in a moment.
+In this tutorial you'll learn how to transfer your project and data from mobile device to computer in seconds using the powerful QGIS and <MainPlatformNameLink /> combination. QGIS is a free and open source desktop GIS package. The <MobileAppNameShort /> is based on QGIS, which means it's able to visualise and edit data in the same way QGIS can. This offers us great flexibility which we'll start to see in a moment.
 
 
 ## Before we start
@@ -18,11 +18,11 @@ To open the project and field data on the computer, we will need to do some setu
    
    If you are logged in, the project will be uploaded to <MainPlatformName /> cloud and you can continue to the next step [opening your project in QGIS](#locating-and-opening-your-project).
    
-   ![Mergin Maps Input upload project to cloud](./mergin-maps-mobile-upload-project.jpg "Mergin Maps Input upload project to cloud")
+   ![Mergin Maps mobile app upload project to cloud](./mergin-maps-mobile-upload-project.jpg "Mergin Maps mobile app upload project to cloud")
    
    
 2. If you are not logged in, you will be asked to. Enter your <MainPlatformName /> credentials and **Sign In**
-   ![Mergin Maps Input Login page](./mergin-maps-mobile-log-in-to-mergin.jpg "Mergin Maps Input Login page")
+   ![Mergin Maps mobile app Login page](./mergin-maps-mobile-log-in-to-mergin.jpg "Mergin Maps mobile app Login page")
    
    :::tip
    If you don't have an account yet, create one! Tap **Sign up for free** and [sign up to <MainPlatformName />](../../setup/sign-up-to-mergin-maps/#from-mergin-maps-input).
@@ -33,7 +33,7 @@ To open the project and field data on the computer, we will need to do some setu
 
    Notice that the name of your [workspace](../../manage/workspaces/) is displayed along with the project's name (here, the workspace is called `sarah`)
 
-   ![Mergin Maps Input uploaded project](./mergin-maps-mobile-uploaded-project.jpg "Mergin Maps Input uploaded project")
+   ![Mergin Maps mobile app uploaded project](./mergin-maps-mobile-uploaded-project.jpg "Mergin Maps mobile app uploaded project")
    
 Now that your project is in the cloud, it can easily be shared with colleagues or downloaded to your computer.
 
@@ -118,4 +118,4 @@ You can also use QGIS to explore the data you surveyed in the field.
 ## Summary
 In this tutorial you learnt how to view a survey project you created on your mobile device with <MobileAppName /> on your desktop computer using QGIS. You also learnt how to export captured data for use in spreadsheets and how to access photos you captured in the field.
 
-QGIS offers many options to create and set up more complex projects than the basic project we have created in <MobileAppName /> - as you can see in the [next tutorial](../creating-a-project-in-qgis/).
+QGIS offers many options to create and set up more complex projects than the basic project we have created in the <MobileAppNameShort /> - as you can see in the [next tutorial](../creating-a-project-in-qgis/).

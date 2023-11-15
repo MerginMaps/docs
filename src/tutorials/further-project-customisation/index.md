@@ -49,8 +49,8 @@ Lines in the `hedges` layer should now be drawn thicker and in a more prominent 
 
 In the next section we'll see what these changes look like in <MobileAppName />.
 
-## Trialing changes in Mergin Maps Input
-Seeing how the changes look like in <MobileAppName /> is easy:
+## Trialing changes in Mergin Maps mobile app
+Seeing how the changes look like in the <MobileAppNameShort /> is easy:
 
 1. In QGIS, save your project:
    ![Save QGIS project](./qgis-save-project.jpg "Save QGIS project")
@@ -68,14 +68,14 @@ Seeing how the changes look like in <MobileAppName /> is easy:
 4. Go to **Home** tab and sync the `trees-and-hedges` project by pressing the sync icon. 
 
    The sync icon should be displayed next to the `trees-and-hedges` project like this:
-   ![Updated project in Mergin Maps Input](../mobile/merginmaps-mobile-sync-project.jpg "Updated project in Mergin Maps Input")
+   ![Updated project in Mergin Maps mobile app](../mobile/merginmaps-mobile-sync-project.jpg "Updated project in Mergin Maps mobile app")
 
 ::: tip
 If you do not see a sync icon, switch to the **Projects** tab and back to the **Home** tab. This should force <MobileAppName /> to check again for project updates.
 :::
 
 5. Tap the project to open it. The surveyed hedges should now be displayed in the style we set up in the last section
-   ![Layer with new symbology in Mergin Maps Input](./merginmaps-mobile-better-line-style.jpg "Layer with new symbology in Mergin Maps Input")
+   ![Layer with new symbology in Mergin Maps mobile app](./merginmaps-mobile-better-line-style.jpg "Layer with new symbology in Mergin Maps mobile app")
 
 ## Labels
 Labels can be useful for showing attribute data or other information directly on the map. We'll now add labels to the `trees` layer so we can see tree species without having to open each tree's attributes:
@@ -102,7 +102,7 @@ Labels can be useful for showing attribute data or other information directly on
 We will now learn how to control the content of the preview panel which is shown when you tap a feature in <MobileAppName />.
 
 The panel for the `trees` layer looks like the left-hand image below. We will configure it to look like the right-hand image.
-![Feature preview panel in Mergin Maps Input](./merginmaps-mobile-preview-panel-changes.jpg "Feature preview panel in Mergin Maps Input")
+![Feature preview panel in Mergin Maps mobile app](./merginmaps-mobile-preview-panel-changes.jpg "Feature preview panel in Mergin Maps mobile app")
 
 1. **Double-click** the **trees** layer in QGIS:
    ![Trees layer in QGIS Layer panel](./qgis-trees-layer.jpg "Trees layer in QGIS Layer panel")
@@ -134,13 +134,13 @@ There are two ways how to change the layer visibility:
 - directly in <MobileAppName />
 - setting [map themes](../../gis/setup_themes/) in QGIS
 
-### Layers in Mergin Maps Input
+### Layers in Mergin Maps mobile app
 To control the visibility of layers in <MobileAppName />:
 1. Tap the **More** button and choose **Layers** to see the list of layers in the project
-   ![Mergin Maps Input Layers in More tab](../../field/layers/input-layers.jpg "Mergin Maps Input Layers in More tab")
+   ![Mergin Maps mobile app Layers in More tab](../../field/layers/input-layers.jpg "Mergin Maps mobile app Layers in More tab")
 
 2. Tap the eye icon next to the layer to turn it on or off.
-   ![Mergin Maps Input Layers visibility](../../field/layers/input-layers-view.jpg "Layers visibility")
+   ![Mergin Maps mobile app Layers visibility](../../field/layers/input-layers-view.jpg "Layers visibility")
 
 3. Go back to the project
 
@@ -171,13 +171,13 @@ Here we'll define the following map themes:
 5. Test out these settings in <MobileAppName /> as described in the [Trialing changes](#trialing-changes-in-mergin-maps-input) section above
 
    You can access map themes in <MobileAppName /> from the **More** menu:
-   ![Map themes in Mergin Maps Input](./merginmaps-mobile-map-themes-button.jpg "Map themes in Mergin Maps Input")
+   ![Map themes in Mergin Maps mobile app](./merginmaps-mobile-map-themes-button.jpg "Map themes in Mergin Maps mobile app")
 
-   ![Switch map themes in Mergin Maps Input](./merginmaps-mobile-map-themes.jpg "Switch map themes in Mergin Maps Input")
+   ![Switch map themes in Mergin Maps mobile app](./merginmaps-mobile-map-themes.jpg "Switch map themes in Mergin Maps mobile app")
 
 ## Zoom to project extent
 If you experimented with the **Zoom to project** button in <MobileAppName /> you'll have seen that by default, it zooms to the extent of the somewhat large background map:
-![Mergin Maps Input default map extent](../capturing-first-data/merginmaps-mobile-location-shown-on-osm.jpg "Mergin Maps Input default map extent")
+![Mergin Maps mobile app default map extent](../capturing-first-data/merginmaps-mobile-location-shown-on-osm.jpg "Mergin Maps mobile app default map extent")
 
 This is not very useful so we will learn how to specify the extent that this button will zoom to.
 
@@ -198,7 +198,7 @@ This is not very useful so we will learn how to specify the extent that this but
 7. Test out these settings in <MobileAppName /> as described in the [Trialing changes](#trialing-changes-in-mergin-maps-input) section above
    
    The **Zoom to project** button can be found in <MobileAppName /> under the the **More** menu:
-   ![Zoom to project in Mergin Maps Input](./merginmaps-mobile-zoom-to-project-button.jpg "Zoom to project in Mergin Maps Input")
+   ![Zoom to project in Mergin Maps mobile app](./merginmaps-mobile-zoom-to-project-button.jpg "Zoom to project in Mergin Maps mobile app")
 
 ## Learning more
 The aim of this tutorial was to introduce you to the main concepts of customising <MainPlatformName /> projects in QGIS and to cover common customisation workflows in a basic way.
