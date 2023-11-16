@@ -1,4 +1,4 @@
-# How to Use Tracking in Mergin Maps Input
+# How to Use Tracking in Mergin Maps Mobile App
 <SinceBadge type="App" version="2.3.0" />
 
 Position tracking is useful when you want to record your tracks during the field survey. This can help you know the extent of areas you have already surveyed in addition to the surveyed features.
@@ -31,15 +31,15 @@ Enabled tracking means that a new line layer for tracking will be created in you
 
 You can add new fields as needed, however, they should be set up with automatically generated [default values](../../layer/settingup_forms_settings/#default-values) as <MobileAppName /> will not open the form for manual inputs. You may use some of the QGIS functions, [extra position variables](../../layer/position_variables/) or [extra QGIS variables](../../layer/plugin-variables/).
 
-## Using tracking in Mergin Maps Input
+## Using tracking in Mergin Maps mobile app
 
-To use tracking in <MobileAppName />, make sure that you enabled tracking in the QGIS project's settings. 
+To use tracking in the <MobileAppNameShort />, make sure that you enabled tracking in the QGIS project's settings. 
 
 1. Tap **More** and select the **Position tracking** option.
-   ![Mergin Maps Input Position tracking](./input-position-tracking.jpg "Mergin Maps Input Position tracking")
+   ![Mergin Maps mobile app Position tracking](./input-position-tracking.jpg "Mergin Maps mobile app Position tracking")
 
 2. Tap **Start tracking**. You can capture and edit features in the usual way even during the tracking.
-   ![Start tracking in Mergin Maps Input](./input-start-tracking.jpg "Start tracking in Mergin Maps Input")
+   ![Start tracking in Mergin Maps mobile app](./input-start-tracking.jpg "Start tracking in Mergin Maps mobile app")
    
 3. To stop tracking, go to **Position tracking** option and tap **Stop tracking**
-   ![Stop tracking in Mergin Maps Input](./input-stop-tracking.jpg "Stop tracking in Mergin Maps Input")  
+   ![Stop tracking in Mergin Maps mobile app](./input-stop-tracking.jpg "Stop tracking in Mergin Maps mobile app")  

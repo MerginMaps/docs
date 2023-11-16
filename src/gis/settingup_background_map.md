@@ -118,7 +118,7 @@ Using the service is conditioned by the attribution:
 
 
 ### Generating vector tiles for offline use
-Since QGIS 3.32, the easy-to-use **Download vector tiles** algorithm is present in the **Processing toolbox** in QGIS. With [<QGISPluginName />](#downloading-vector-tiles-using-mergin-maps-plugin-for-qgis), it can be used also in older QGIS version (3.16+) and is readily available from the **Layers** panel.
+Since QGIS 3.32, the easy-to-use **Download vector tiles** algorithm is present in the **Processing toolbox** in QGIS. With [<QGISPluginName />](#downloading-vector-tiles-using-mergin-maps-qgis-plugin), it can be used also in older QGIS version (3.16+) and is readily available from the **Layers** panel.
 
 There are also other ways how to get offline vector tiles, such as using OpenMapTiles and Docker:
 ::: details Generate vector tiles using OpenMapTiles and Docker (Advanced)
@@ -139,7 +139,7 @@ Note that instructions below require familiarity with the terminal. In addition,
 :::
 
 
-#### Downloading Vector Tiles Using Mergin Maps Plugin for QGIS 
+#### Downloading Vector Tiles Using Mergin Maps QGIS Plugin
 <SinceBadge type="Plugin" version="2023.4" />
 
 Vector tiles for offline use can be downloaded easily using <QGISPluginName />.

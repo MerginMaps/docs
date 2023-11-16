@@ -4,7 +4,7 @@
 
 <YouTube id="4mWcaKs9jkw" />
 
-**Interested in using DB Sync?** Go to <GitHubRepo id="MerginMaps/mergin-db-sync" /> repository for the source code and more details. Here, you will also find the Quick start guide that will show you how to set up one way synchronisation between your PostGIS database and a new <MainPlatformName /> project.
+**Interested in using DB Sync?** Go to <GitHubRepo id="MerginMaps/db-sync" /> repository for the source code and more details. Here, you will also find the Quick start guide that will show you how to set up one way synchronisation between your PostGIS database and a new <MainPlatformName /> project.
 
 :::tip Usage details
 DB Sync can be used with *Team*, *Academia* and *Non-profit* <MainDomainNameLink id="pricing" desc="subscription plans"/>, as well as in [<CommunityPlatformName />](./mergince/) and [<EnterprisePlatformName />](./merginmaps-ee/).

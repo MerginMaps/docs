@@ -7,19 +7,19 @@ In this tutorial you will learn how to:
 * Capture field data with their locations, photos and notes
 * Query and edit field data
 
-## Install Mergin Maps Input
+## Install Mergin Maps mobile app
 Download <MobileAppName /> to your Android device, iPhone or iPad. You can find it in the app store of your platform:
 
 <AppDownload></AppDownload>
 
-## Creating a project in Mergin Maps Input
+## Creating a project in Mergin Maps mobile app
 Data are stored within projects. We'll now create a new project to save our data into.
 
 Using <MobileAppName /> is the quickest and easiest way of creating new projects. Alternative methods offering much greater flexibility are introduced in later tutorials.
 
 1. Open <MobileAppName /> on your mobile device
 2. Go to the **Home** tab of the **Projects** screen and press **Create project**
-   ![Mergin Maps Input Home tab Create project](./merginmaps-mobile-home-tab-of-projects-screen.jpg "Mergin Maps Input Create project")
+   ![Mergin Maps mobile app Home tab Create project](./merginmaps-mobile-home-tab-of-projects-screen.jpg "Mergin Maps mobile app Create project")
 
 3. Enter the **name** of your project
    ![Entering project's name](./merginmaps-mobile-naming-new-project.jpg "Entering project's name")
@@ -42,10 +42,10 @@ Note that the **background map used in this project requires network connectivit
 2. Pinch the map to zoom in to your current position. If needed, recentre the map using the **GPS** button in the bottom navigation panel.
    
 3. Tap the **Record** button
-   ![Mergin Maps Input Record button](./merginmaps-mobile-record.jpg "Mergin Maps Input Record button")
+   ![Mergin Maps mobile app Record button](./merginmaps-mobile-record.jpg "Mergin Maps mobile app Record button")
 
 4. Press **Add** to capture a point
-   ![Capturing point in Mergin Maps Input](./merginmaps-mobile-default-point-position.jpg "Capturing point in Mergin Maps Input")
+   ![Capturing point in Mergin Maps mobile app](./merginmaps-mobile-default-point-position.jpg "Capturing point in Mergin Maps mobile app")
 
    ::: tip
    You can override the position of the point being captured at this stage by pinching and dragging the background map.

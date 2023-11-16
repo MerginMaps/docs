@@ -15,8 +15,8 @@ home: false
 The ecosystem consist of various components:
  - [QGIS](https://qgis.org/) > Powerful GIS Desktop application 
  - [<QGISPluginName />](https://plugins.qgis.org/plugins/Mergin/) > QGIS plugin
- - <AppDomainNameLink desc="Mergin Maps Cloud" /> > SaaS Cloud Service (available also as <MainPlatformName /> CE)
- - <MainDomainNameLink desc="Mergin Maps Input" /> > iOS and Android mobile app
+ - <AppDomainNameLink desc="Mergin Maps Server" /> > SaaS Cloud Service (available also as <MainPlatformName /> CE)
+ - <MainDomainNameLink desc="Mergin Maps mobile app" /> > iOS and Android mobile app
  
 ## Get started 
 
@@ -31,14 +31,14 @@ The ecosystem consist of various components:
 
 ## Install & Sign Up
 - [How to Install <MobileAppName />](./setup/install-input/)
-- [How to Sign Up to Mergin Maps](./setup/sign-up-to-mergin-maps/)
+- [How to Sign Up to <MainPlatformName />](./setup/sign-up-to-mergin-maps/)
 - [How to Install QGIS](./setup/install-qgis/)
-- [How to Install QGIS Plugin](./setup/install-mergin-maps-plugin-for-qgis/)
+- [How to Install <QGISPluginName /> ](./setup/install-mergin-maps-plugin-for-qgis/)
 
 ## Manage Account & Project
 - [Workspaces](./manage/workspaces/)
 - [Subscriptions and Invoicing](./manage/subscriptions/)
-- [Permissions](./manage/permissions/)
+- [Member Roles and Permissions](./manage/permissions/)
 - [Behind Data Synchronisation](./manage/synchronisation/)
 - [Mergin Maps Project](./manage/project/)
 - [How to Create a New Project](./manage/create-project/)
@@ -46,8 +46,8 @@ The ecosystem consist of various components:
 - [How to Delete Files](./manage/delete-files)
 - [How to Deploy Revised Projects](./manage/deploy-new-project/)
 - [How to Recover Missing Data](./manage/missing-data/)
-- [How to Use QGIS Plugin with Multiple Servers](./manage/plugin-multi-server-use/)
-- [Mergin Maps Plugin for QGIS Overview](./manage/plugin-sync-project/)
+- [How to <MainPlatformName /> with a Custom Server](./manage/plugin-multi-server-use/)
+- [<QGISPluginName /> Overview](./manage/plugin-sync-project/)
 - [Home Page and Dashboard](./manage/dashboard/)
 - [Project History and Versions](./manage/project-details/)
 - [Selective Synchronisation](./manage/selective_sync/)
@@ -101,7 +101,7 @@ The ecosystem consist of various components:
 
 ## Support & Legal
 - [Licensing](./misc/licensing/)
-- [Mergin Maps Input Privacy Policy](./misc/privacy/)
+- [Privacy Policy](./misc/privacy/)
 - [Troubleshoot](./misc/troubleshoot/)
 - [Contribute](./misc/contribute/)
 - [Write Documentation](./misc/write-docs/index.md)
