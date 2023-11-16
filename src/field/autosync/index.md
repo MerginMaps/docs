@@ -1,5 +1,4 @@
 # Synchronisation in Mergin Maps Input
-<SinceBadge type="App" version="1.4.0" />
 [[toc]]
 
 Changes in your project can be synchronised during the survey manually by using the sync button or automatically by allowing the automatic synchronisation in <MobileAppName />. 
