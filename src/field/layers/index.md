@@ -14,7 +14,7 @@ The visibility of layers on the map can be easily turned on and off by tapping t
 ![Mergin Maps Input Layers visibility](./input-layers-view.jpg "Layers visibility")
 
 ## Layers legend and features
-Select a layer in the **Layers** panel to browse features and [search for attributes values](../../gis/search_data/#searching-for-values-in-mergin-maps-input). Tap on the record to zoom to the feature on the map and display its form.
+Select a layer in the **Layers** panel to browse features and [search for attributes values](../../gis/search_data/#searching-for-values-in-mergin-maps-mobile-app). Tap on the record to zoom to the feature on the map and display its form.
 
 Swipe right or tap **Layer info** to see the layer's legend and to toggle on/off its visibility on the map.
 

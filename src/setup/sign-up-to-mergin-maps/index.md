@@ -65,7 +65,7 @@ You can also sign up from <MobileAppName />.
 
 **Welcome to <MainPlatformNameLink />!**
 
-You can get up-to-speed quickly by following the [tour projects](../install-input/#mergin-maps-input-s-tour-projects) in the <MobileAppNameShort /> and our [Quick Start tutorials](../../tutorials/capturing-first-data/index.md).
+You can get up-to-speed quickly by following the [tour projects](../install-input/#mergin-maps-mobile-app-s-tour-projects) in the <MobileAppNameShort /> and our [Quick Start tutorials](../../tutorials/capturing-first-data/index.md).
 
 ## Forgotten password
 If you forget your password, you can reset it through <AppDomainNameLink /> by clicking **Forgot password**. Email with password reset link will be sent to your email address.

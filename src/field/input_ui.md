@@ -22,7 +22,7 @@ There are four tabs available in the bottom navigation panel: [Projects](#projec
 Your <MainPlatformNameLink /> account can be accessed by tapping the icon on the top right of the **Projects** screen.
 ![Account access in Mergin Maps mobile app](./input-account.jpg "Account access in Mergin Maps mobile app")
 
-Here, you can [sign up to <MainPlatformName />](../setup/sign-up-to-mergin-maps/#from-mergin-maps-input) or sign in if you already have a <MainPlatformNameLink /> account.
+Here, you can [sign up to <MainPlatformName />](../setup/sign-up-to-mergin-maps/#from-mergin-maps-mobile-app) or sign in if you already have a <MainPlatformNameLink /> account.
 ![Mergin Maps mobile app Login](./input-sign-in.jpg "Mergin Maps mobile app Login")
 
 When signed in, you will see the overview of your profile and storage use in **My Account**.
@@ -90,7 +90,7 @@ Pressing and holding the sync button opens the **Project status** window where y
 - **Local changes**: see changes yet to be synchronised
 - [**Layers**](./layers/): manage the visibility of specific layers, see layers legend, browse features in the layers
 - [**Map themes**](../gis/setup_themes/): a list of map themes set up in a <MainPlatformName /> project in QGIS
-- **Settings**: [GPS](#gps-settings) and [recording](#streaming-mode-and-recording-settings) settings along with references to help, privacy policy, terms of service and [diagnostic log](../misc/troubleshoot/#diagnostic-log-on-mergin-maps-input)
+- **Settings**: [GPS](#gps-settings) and [recording](#streaming-mode-and-recording-settings) settings along with references to help, privacy policy, terms of service and [diagnostic log](../misc/troubleshoot/#diagnostic-log-on-mergin-maps-mobile-app)
    ![Mergin Maps mobile app Settings](./input-settings-2.jpg "Mergin Maps mobile app Settings")
    
 ### GPS settings

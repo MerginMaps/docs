@@ -363,7 +363,7 @@ If you are adding new component:
  - use in markdown as `<MyComponent></MyComponent>` or `<MyComponent />`
 
 ### Reference QGIS and QGIS Help pages
-To reference QGIS webpage, use `<QGIS />` component, e.g. `<QGIS link="en/site/forusers/download.html" text="QGIS Download page" />` transforms to
+To reference QGIS website, use `<QGIS />` component, e.g. `<QGIS link="en/site/forusers/download.html" text="QGIS Download page" />` transforms to
 
 <QGIS link="en/site/forusers/download.html" text="QGIS Download page" />
 

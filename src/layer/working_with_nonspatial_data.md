@@ -14,5 +14,5 @@ Ensure you have [enabled editing and browsing](../gis/search_data/) of your non-
 Non-spatial tables can be browsed, searched and edited in [**Layers**](../field/layers/) in the **More** tab.
 ![Mergin Maps mobile app Layers in More tab](../field/layers/input-layers.jpg "Mergin Maps mobile app Layers in More tab")
 
-Choose the non-spatial layer from the list in **Layers**. Tap it to open the attributes table. Here, you can browse and [search](../gis/search_data/#searching-for-values-in-mergin-maps-input). It also possible to [add and edit](../field/input_features/#add-non-spatial-features) features.
+Choose the non-spatial layer from the list in **Layers**. Tap it to open the attributes table. Here, you can browse and [search](../gis/search_data/#searching-for-values-in-mergin-maps-mobile-app). It also possible to [add and edit](../field/input_features/#add-non-spatial-features) features.
 

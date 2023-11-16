@@ -96,7 +96,7 @@ Labels can be useful for showing attribute data or other information directly on
 5. Enable **Draw text buffer** under **Buffer** settings and click **OK**
    ![Enable Draw text buffer](./qgis-symbology-labels-3.jpg "Enable Draw text buffer")
 
-6. Test out these settings in <MobileAppName /> as described in the [Trialing changes](#trialing-changes-in-mergin-maps-input) section above.
+6. Test out these settings in <MobileAppName /> as described in the [Trialing changes](#trialing-changes-in-mergin-maps-mobile-app) section above.
 
 ## Customising the preview panel
 We will now learn how to control the content of the preview panel which is shown when you tap a feature in <MobileAppName />.
@@ -125,7 +125,7 @@ condition
    ![HTML map tip in Layer properties](./qgis-html-map-tip.jpg "HTML map tip in Layer properties")
 
 5. Click **OK**
-6. Test out these settings in <MobileAppName /> as described in the [Trialing changes](#trialing-changes-in-mergin-maps-input) section above.
+6. Test out these settings in <MobileAppName /> as described in the [Trialing changes](#trialing-changes-in-mergin-maps-mobile-app) section above.
 
 ## Controlling layer visibility
 You might want to turn off some layers in <MobileAppName />, e.g. when working with overlaying layers or to change the background map.
@@ -168,7 +168,7 @@ Here we'll define the following map themes:
 
    The themes have now been created. **Don't forget to save and sync your project!**
 
-5. Test out these settings in <MobileAppName /> as described in the [Trialing changes](#trialing-changes-in-mergin-maps-input) section above
+5. Test out these settings in <MobileAppName /> as described in the [Trialing changes](#trialing-changes-in-mergin-maps-mobile-app) section above
 
    You can access map themes in <MobileAppName /> from the **More** menu:
    ![Map themes in Mergin Maps mobile app](./merginmaps-mobile-map-themes-button.jpg "Map themes in Mergin Maps mobile app")
@@ -195,7 +195,7 @@ This is not very useful so we will learn how to specify the extent that this but
    ![Use map canvas extent as project full extent](./qgis-project-properties-project-extent-set-by-canvas.jpg "Use map canvas extent as project full extent")
 
 6. Click **OK**
-7. Test out these settings in <MobileAppName /> as described in the [Trialing changes](#trialing-changes-in-mergin-maps-input) section above
+7. Test out these settings in <MobileAppName /> as described in the [Trialing changes](#trialing-changes-in-mergin-maps-mobile-app) section above
    
    The **Zoom to project** button can be found in <MobileAppName /> under the the **More** menu:
    ![Zoom to project in Mergin Maps mobile app](./merginmaps-mobile-zoom-to-project-button.jpg "Zoom to project in Mergin Maps mobile app")
