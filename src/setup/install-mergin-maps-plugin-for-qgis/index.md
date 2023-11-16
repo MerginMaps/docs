@@ -1,4 +1,4 @@
-# How to Install QGIS Plugin
+# How to Install Mergin Maps QGIS Plugin
 [[toc]]
 
 Before the installation of <QGISPluginName />, please ensure you have already:

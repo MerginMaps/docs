@@ -1,5 +1,4 @@
 # How to Fix a Broken Project
-<SinceBadge type="App" version="2.0.0" />
 [[toc]]
 
 Do you get an error message when trying to open a project in <MobileAppName />? There can be multiple reasons for what went wrong. Here we will try to guide you through some basic steps that can help you.

@@ -129,15 +129,15 @@ References to other articles, blog posts or resources should be linked where rel
 	* Filenames:
 		* <NoSpellcheck id="mergin-maps-mobile" />
 	* Titles/Sidebar
-		* Mergin Maps Input
+		* Mergin Maps Mobile App
     * For titles (`#`)/sidebar capitalise the first letter in *all* words
         * Correct: "Opening Surveyed Data on Your Computer"
         * Wrong: ~~"Opening surveyed data on your computer"~~
-        * Never shorten the names of components (e.g. Mergin Maps Input)
+        * Never shorten the names of components (e.g. Mergin Maps Mobile App)
     * For headers (`##`, `###`, `####` )  capitalise only the first letter in *first* word
         * Correct: "Putting your project in the cloud"
         * Wrong: ~~"Putting Your Project in the Cloud"~~
-        * Never shorten the names of components (e.g. Mergin Maps Input)
+        * Never shorten the names of components (e.g. <MobileAppName />)
     * Titles and headers should contain specific keywords to return relevant search results:
         * Correct: "Further reading about projections and transformations"
         * Wrong: ~~"Further reading"~~  
@@ -362,12 +362,14 @@ If you are adding new component:
  - add your component to `src/.vuepress/components/MyComponent.vue`
  - use in markdown as `<MyComponent></MyComponent>` or `<MyComponent />`
 
-### Reference QGIS Help pages
+### Reference QGIS and QGIS Help pages
+To reference QGIS webpage, use `<QGIS />` component, e.g. `<QGIS link="en/site/forusers/download.html" text="QGIS Download page" />` transforms to
 
-Use `<QGISHelp />` component, e.g. `<QGISHelp ver="3.22" link="user_manual/index.html" text="See QGIS Help page" />` transforms to
+<QGIS link="en/site/forusers/download.html" text="QGIS Download page" />
+
+To reference QGIS documentation, use `<QGISHelp />` component, e.g. `<QGISHelp ver="3.22" link="user_manual/index.html" text="See QGIS Help page" />` transforms to
 
 <QGISHelp ver="3.22" link="user_manual/index.html" text="See QGIS Help page" />
-
 
 ### Reference GitHub content
 Use `<GitHubRepo />` component, e.g. `<GitHubRepo id="MerginMaps/docs/" desc="documentation" />` transforms to <GitHubRepo id="MerginMaps/docs/" desc="documentation" />.
@@ -390,7 +392,7 @@ For a short reference (e.g. in tables), use `<MerginMapsProjectShort />` compone
 
 <MerginMapsProjectShort id="documentation/test_forms" />
 
-### Show Mergin Maps Input Google/Apple badges for download
+### Show Mergin Maps Mobile App Google/Apple badges for download
 
 Use `<AppDownload />` component
     
@@ -418,8 +420,11 @@ Use `<EnterprisePlatformNameLink />` component, transforms to <EnterprisePlatfor
 
 Use `<MobileAppName />` component, transforms to <MobileAppName />
 
+Use `<MobileAppNameShort />` component, transforms to <MobileAppNameShort />
+
 Use `<QGISPluginName />` component, transforms to <QGISPluginName />
 
+Use `<QGISPluginNameShort />` component, transforms to <QGISPluginNameShort />
 
 ## Translations
 

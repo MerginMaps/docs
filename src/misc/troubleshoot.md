@@ -79,12 +79,12 @@ To send the diagnostic log to the developers:
 
 ![Submit diagnostic logs message](./plugin-logs.jpg "Submit diagnostic logs message")
 
-### Diagnostic log on Mergin Maps Input
-To access the diagnostic log in <MobileAppName />:
+### Diagnostic log on Mergin Maps mobile app
+To access the diagnostic log in the <MobileAppNameShort />:
 1. Tap **More** and open **Settings** 
 2. Select **Diagnostic log** to display the log
-![Access diagnostic log in Mergin Maps Input](./input-logs.jpg "Diagnostic log in Mergin Maps Input")
+![Access diagnostic log in Mergin Maps mobile app](./input-logs.jpg "Diagnostic log in Mergin Maps mobile app")
 
 3. If you want to send the log to the developers, tap the **Send to Developers** button.
-![Send diagnostic log to developers](./input-logs2.jpg "Diagnostic log content in Mergin Maps Input")
+![Send diagnostic log to developers](./input-logs2.jpg "Diagnostic log content in Mergin Maps mobile app")
 

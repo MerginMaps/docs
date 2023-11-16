@@ -1,10 +1,9 @@
-# Layers in Mergin Maps Input
-<SinceBadge type="App" version="1.9.0" />
+# Layers in Mergin Maps Mobile App
 [[toc]]
 
 **Layers** panel provides an overview of layers and features in your <MainPlatformNameLink /> project in <MobileAppName />, as well as the option to turn the visibility of specific layers on/off or to see a layer's legend.
 
-![Mergin Maps Input Layers in More tab](./input-layers.jpg "Mergin Maps Input Layers in More tab")
+![Mergin Maps mobile app Layers in More tab](./input-layers.jpg "Mergin Maps mobile app Layers in More tab")
 
 ## Layers visibility
 
@@ -19,4 +18,4 @@ Select a layer in the **Layers** panel to browse features and [search for attrib
 
 Swipe right or tap **Layer info** to see the layer's legend and to toggle on/off its visibility on the map.
 
-![Mergin Maps Input Layers legend and features](./input-features-legend.jpg "Layers legend and features")
+![Mergin Maps mobile app Layers legend and features](./input-features-legend.jpg "Layers legend and features")

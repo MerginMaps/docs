@@ -4,7 +4,7 @@
 
 In the last tutorial you learnt how to capture field data using <MobileAppName />.
 
-In this tutorial you'll learn how to transfer your project and data from mobile device to computer in seconds using the powerful QGIS and <MainPlatformNameLink /> combination. QGIS is a free and open source desktop GIS package. The <MobileAppNameShort /> is based on QGIS, which means it's able to visualise and edit data in the same way QGIS can. This offers us great flexibility which we'll start to see in a moment.
+In this tutorial you'll learn how to transfer your project and data from mobile device to computer in seconds using the powerful QGIS and <MainPlatformNameLink /> combination. <QGIS link="" text="QGIS" /> is a free and open source desktop GIS package. The <MobileAppNameShort /> is based on QGIS, which means it's able to visualise and edit data in the same way QGIS can. This offers us great flexibility which we'll start to see in a moment.
 
 
 ## Before we start

@@ -14,7 +14,7 @@ To set up custom photo names:
 2. In the **Mergin Maps** tab, you can see the list of layers and their fields with correctly configured photo attachment widgets.
 
    Select a layer from the list and click on the **Expression builder** icon.
-   ![Mergin Maps Plugin Custom photo name setup](./plugin-photo-name-available-layers.jpg "Mergin Maps Plugin Custom photo name setup")
+   ![Mergin Maps QGIS Plugin Custom photo name setup](./plugin-photo-name-available-layers.jpg "Mergin Maps QGIS Plugin Custom photo name setup")
  
 3. In the **Expression Dialog** window, enter the expression that should be used as the photo's name. Please, keep in mind [basic recommendations](#best-practice-for-photo-name-expressions) to make sure the naming works as intended.
 
@@ -31,8 +31,8 @@ To set up custom photo names:
 
    The **Preview** in **Mergin Maps** tab includes the [custom folder for photos](../../layer/settingup_forms_photo/#how-to-set-up-a-custom-folder-for-storing-photos), if you have set it up. Otherwise you will see only the sample name of a photo.
   
-   ![Mergin Maps Plugin photo name setup with custom folder](./plugin-photo-name-format-folder.jpg "Mergin Maps Plugin photo name setup with custom folder")  
-   ![Mergin Maps Plugin Custom photo name setup without custom folder](./plugin-photo-name-format.jpg "Mergin Maps Plugin Custom photo name setup without custom folder")
+   ![Mergin Maps QGIS Plugin photo name setup with custom folder](./plugin-photo-name-format-folder.jpg "Mergin Maps QGIS Plugin photo name setup with custom folder")  
+   ![Mergin Maps QGIS Plugin Custom photo name setup without custom folder](./plugin-photo-name-format.jpg "Mergin Maps QGIS Plugin Custom photo name setup without custom folder")
 
 ### Best practice for photo name expressions
 There are some tips to keep in mind when creating the expression for your photo name:

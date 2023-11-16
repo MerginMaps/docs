@@ -26,16 +26,16 @@ By default, all attributes are searchable. You can exclude a field from the sear
 If a field is marked in a field configuration as **Not searchable**, it will be omitted from the search. There will be no search results, even if you search for a specific existing value of this field.
 :::
 
-## Searching for values in Mergin Maps Input
+## Searching for values in Mergin Maps mobile app
 Attribute data can be browsed in <MobileAppName /> by tapping **Layers** in the **More** tab. 
 
-![Mergin Maps Input Layers in More tab](../field/layers/input-layers.jpg "Mergin Maps Input Layers in More tab")
+![Mergin Maps mobile app Layers in More tab](../field/layers/input-layers.jpg "Mergin Maps mobile app Layers in More tab")
 
 Choose a layer or a table from the list to open the attribute table. Here, you can browse the features. The search bar can be used to shortlist matching records. 
 
 Tap on the record to zoom to the feature on the map and display its form.
 
-![Mergin Maps Input browse data](./input_search_data.jpg "Mergin Maps Input browse data")
+![Mergin Maps mobile app browse data](./input_search_data.jpg "Mergin Maps mobile app browse data")
 
 :::tip
 The search looks up for a match in all searchable attributes values and is not case sensitive.

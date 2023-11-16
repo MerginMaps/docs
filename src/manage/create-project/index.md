@@ -60,23 +60,23 @@ Using <QGISPluginName />, you can make a copy of projects you have access to.
 
 The project will be saved in the selected workspace.
 
-## Create a project in Mergin Maps Input
+## Create a project in Mergin Maps mobile app
 ::: tip
 [Capturing Your First Field Data](../../tutorials/capturing-first-data/index.md) tutorial will show you how to create a new project and capture field data in <MobileAppName />.
 :::
 
 1. Open <MobileAppName /> on your mobile device
 2. Go to the **Home** tab of the **Projects** screen and press **Create project**
-   ![Create project in Mergin Maps Input](../../tutorials/capturing-first-data/merginmaps-mobile-home-tab-of-projects-screen.jpg "Create project in Mergin Maps Input")
+   ![Create project in Mergin Maps mobile app](../../tutorials/capturing-first-data/merginmaps-mobile-home-tab-of-projects-screen.jpg "Create project in Mergin Maps mobile app")
 
 3. Give the project a name. Keep in mind that it cannot be changed later.
-   ![Mergin Maps Input new project name](../../tutorials/capturing-first-data/merginmaps-mobile-naming-new-project.jpg "Mergin Maps Input new project name")
+   ![Mergin Maps mobile app new project name](../../tutorials/capturing-first-data/merginmaps-mobile-naming-new-project.jpg "Mergin Maps mobile app new project name")
 
 4. Press **Create project**
-   ![Mergin Maps Input create project](../../tutorials/capturing-first-data/merginmaps-mobile-create-new-project.jpg "Mergin Maps Input create project")
+   ![Mergin Maps mobile app create project](../../tutorials/capturing-first-data/merginmaps-mobile-create-new-project.jpg "Mergin Maps mobile app create project")
    
 Your new project should now be visible on the **Home** tab of the **Projects** screen
-![Mergin Maps Input home projects](../../tutorials/capturing-first-data/merginmaps-mobile-new-project-listed.jpg "Mergin Maps Input home projects")
+![Mergin Maps mobile app home projects](../../tutorials/capturing-first-data/merginmaps-mobile-new-project-listed.jpg "Mergin Maps mobile app home projects")
 
 ## Create a project through merginmaps.com
 :::warning

@@ -64,7 +64,7 @@ Names of the photos that are captured in the field using <MobileAppName /> can b
 [How to Set Photo Names Format](../gis/photo-names/) will guide you through the setup and provide examples of expressions that can be used to name your photos.
 :::
 
-![Mergin Maps Plugin photo name setup with custom folder](./plugin-photo-name-settings.jpg "Mergin Maps Plugin photo name setup with custom folder")
+![Mergin Maps QGIS Plugin photo name setup with custom folder](./plugin-photo-name-settings.jpg "Mergin Maps QGIS Plugin photo name setup with custom folder")
 
 ### Snapping
 <SinceBadge type="Plugin" version="2022.5" /><SinceBadge type="App" version="1.6.0" />
@@ -89,7 +89,7 @@ Tracking your position when doing the field survey with <MobileAppName /> can be
 
 ![Enable tracking in QGIS Mergin Maps project](./project-tracking.jpg "Enable tracking in QGIS Mergin Maps project")
 
-You can read more about this functionality in [How to Use Tracking in Mergin Maps Input](../field/tracking/).
+You can read more about this functionality in [How to Use Tracking in Mergin Maps mobile app](../field/tracking/).
 
 ### Map themes
 [Map Themes](./setup_themes/) make possible to switch between different background maps in <MobileAppName /> (e.g. cartography maps and aerial imagery)
@@ -103,7 +103,7 @@ The same symbology as defined in the QGIS project will be used in <MobileAppName
 ### Forms
 During the field survey, it is often necessary to fill out some attributes in the form to record the properties of surveyed features. Forms can make the survey easier, consistent and more effective. Detailed description of form widgets and form configuration can be found in [Setting Up Form Widgets](../layer/settingup_forms/) and [Advanced Form Configuration](../layer/settingup_forms_settings/)
 
-### Settings for Mergin Maps Input preview panel
+### Settings for Mergin Maps mobile app preview panel
 What appears in the <MobileAppName /> preview panel can be defined in the **Display** tab in **Layer Properties**:
 - **Display Name**: a field name or an expression.
 - **HTML Map Tip**: the content of the preview panel. While QGIS always interprets the content of map tip as being HTML, <MobileAppName /> extends the syntax to allow two more modes: field values and images. If the map tip is not specified, <MobileAppName /> will try to use the first three fields and show their attribute values.

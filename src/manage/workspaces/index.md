@@ -31,12 +31,12 @@ When logged in to <AppDomainNameLink />, you will see the current workspace unde
 Click on the account to see the list of all workspaces that are available to you. The active workspace is highlighted. Switch to another workspace by simply clicking on its name in the list.
 ![Mergin Maps web workspaces list](./web-switch-workspace.jpg "Mergin Maps web workspaces list")
 
-### Switch workspaces in Mergin Maps Input
+### Switch workspaces in Mergin Maps mobile app
 Navigate to **My Account** in <MobileAppName />. Here you will see the name of the current workspace and workspace details.
-![Switch workspace button in Mergin Maps Input](./input-switch-workspace.jpg "Switch workspace button in Mergin Maps Input")
+![Switch workspace button in Mergin Maps mobile app](./input-switch-workspace.jpg "Switch workspace button in Mergin Maps mobile app")
 
 Tap on the **Switch workspace** button. From the list of available workspaces, select the one you want to switch to:
-![Select workspace in Mergin Maps Input](./input-select-workspace.jpg "Select workspace in Mergin Maps Input")
+![Select workspace in Mergin Maps mobile app](./input-select-workspace.jpg "Select workspace in Mergin Maps mobile app")
 
 ### Switch workspaces in QGIS
 Navigate to <MainPlatformName /> in the **Browser** panel. The name of the current workspace is displayed in square brackets.

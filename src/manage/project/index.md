@@ -5,7 +5,7 @@ What is a <MainPlatformName /> project?
 
 It is basically a folder that contains data (such as vector layers, tables, rasters or photos), a [QGIS project](../../gis/features/), and some extra <MainPlatformName /> files needed to ensure everything works.
 
-When <MainPlatformName /> project is created, it is saved to <MainPlatformNameLink /> cloud. From the cloud, it can be downloaded to various devices, used by different team members in both QGIS and <MobileAppName />. Changes they made are tracked and synchronised back to the cloud.
+When <MainPlatformName /> project is created, it is saved to <MainPlatformNameLink /> cloud. From the cloud, it can be downloaded to various devices, used by different team members in both QGIS and the <MobileAppNameShort />. Changes they made are tracked and synchronised back to the cloud.
 
 ## Creating project
 :::tip
@@ -17,7 +17,7 @@ In general, projects are prepared and managed in [QGIS](../../setup/install-qgis
 Typically, especially if your project is rather complex, you would:
 1. Create a QGIS project with all necessary datasets and settings to fit your needs
 2. Package it using <QGISPluginName /> to create a <MainPlatformName /> project that is saved to the cloud
-3. Check that everything works as expected in the mobile app. If not, fix the issues in QGIS. Don't forget to save and sync the project. Repeat this step as necessary.
+3. Check that everything works as expected in the <MobileAppNameShort />. If not, fix the issues in QGIS. Don't forget to save and sync the project. Repeat this step as necessary.
 4. [Share the project](../project-advanced/) with your team members. Now you can collaborate safely and effectively.
 
 :::tip
@@ -27,7 +27,7 @@ If you need to make changes in the data schema of survey layers, please follow [
 :::
 
 ## Packaging QGIS project
-When using <QGISPluginName /> to [create a <MainPlatformName /> project](../create-project/#create-a-project-in-qgis), there is an option to **Package current project**. This is what you will choose if you want to transform your QGIS project into <MainPlatformName /> project.
+When using the <QGISPluginNameShort /> to [create a <MainPlatformName /> project](../create-project/#create-a-project-in-qgis), there is an option to **Package current project**. This is what you will choose if you want to transform your QGIS project into <MainPlatformName /> project.
 ![Mergin Maps plugin for QGIS package current project](./package-project.jpg "Mergin Maps plugin for QGIS package current project")
 
 There are three options for handling layers:
