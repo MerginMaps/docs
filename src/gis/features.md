@@ -140,5 +140,5 @@ file:///[%@project_folder%]/[% "image_1" %]
 
 If the map tip has `# image` marker on the first line, the following line is understood as the URL for the image. It can be a regular file on the file system, but it could be even a remote image from network. Expressions embedded in the image URL will be evaluated (enclosed in `[% 1+1 %]`).
 
-![Preview panel in Input based on Display settings in QGIS](./input_preview_panel.jpg "Preview panel in Input based on Display settings in QGIS")
+![Preview panel in the mobile app based on Display settings in QGIS](./input_preview_panel.jpg "Preview panel in the mobile app based on Display settings in QGIS")
 

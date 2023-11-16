@@ -11,7 +11,7 @@ Tap **Layers** in the **More** tab to open a list of layers in the project.
 
 The visibility of layers on the map can be easily turned on and off by tapping the eye icon next to the layer's name.
 
-![Mergin Maps Input Layers visibility](./input-layers-view.jpg "Layers visibility")
+![Mergin Maps mobile app Layers visibility](./input-layers-view.jpg "Layers visibility")
 
 ## Layers legend and features
 Select a layer in the **Layers** panel to browse features and [search for attributes values](../../gis/search_data/#searching-for-values-in-mergin-maps-mobile-app). Tap on the record to zoom to the feature on the map and display its form.

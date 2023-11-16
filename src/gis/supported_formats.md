@@ -25,7 +25,7 @@ Read [more](../manage/synchronisation.md) how the synchronisation in Mergin Maps
 :::
 
 
-## Raster data on Mergin Maps Input
+## Raster data on Mergin Maps mobile app
 
 | Format         | Android/iOS      | Note                                                                                                       |   
 |----------------|------------------|------------------------------------------------------------------------------------------------------------|
