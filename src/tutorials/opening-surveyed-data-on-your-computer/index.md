@@ -25,7 +25,7 @@ To open the project and field data on the computer, we will need to do some setu
    ![Mergin Maps mobile app Login page](./mergin-maps-mobile-log-in-to-mergin.jpg "Mergin Maps mobile app Login page")
    
    :::tip
-   If you don't have an account yet, create one! Tap **Sign up for free** and [sign up to <MainPlatformName />](../../setup/sign-up-to-mergin-maps/#from-mergin-maps-input).
+   If you don't have an account yet, create one! Tap **Sign up for free** and [sign up to <MainPlatformName />](../../setup/sign-up-to-mergin-maps/#from-mergin-maps-mobile-app).
    :::
       
    
