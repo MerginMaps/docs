@@ -18,7 +18,7 @@ To configure a custom <MainPlatformName /> server in the <QGISPluginNameShort />
 ![Mergin Maps plugin configure icon](./configure-plugin.jpg "Mergin Maps plugin configure icon")
 
 2. Check the **Custom <MainPlatformName /> server** option and enter your custom server URL.
-![Custom server in Mergin Maps plugin for QGIS setup](./config_dialog.jpg "Custom server in Mergin Maps plugin for QGIS setup")
+![Custom server in Mergin Maps QGIS plugin setup](./config_dialog.jpg "Custom server in Mergin Maps QGIS plugin setup")
 
 Now, the server URL is saved in current QGIS profile settings. So whenever you open QGIS with this profile, the <MainPlatformName /> server is associated with this URL. 
 

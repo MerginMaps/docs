@@ -21,7 +21,7 @@ To work with <MainPlatformName /> projects in QGIS, you will need to [install th
 
 1. Open a blank or an existing project in QGIS.
 2. Click on **Create Mergin Maps Project** from the toolbar.
-   ![Create project icon in Mergin Maps plugin for QGIS](../../tutorials/creating-a-project-in-qgis/qgis-create-mergin-project.jpg "Create project icon in Mergin Maps plugin for QGIS")
+   ![Create project icon in Mergin Maps QGIS plugin](../../tutorials/creating-a-project-in-qgis/qgis-create-mergin-project.jpg "Create project icon in Mergin Maps QGIS plugin")
 
 3. There are three options available (the last two options are available only if you have an existing project open):
    ![Create Mergin Maps project options](./mergin_plugin_project_wizard_2.jpg "Create Mergin Maps project options")

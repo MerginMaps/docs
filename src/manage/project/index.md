@@ -28,7 +28,7 @@ If you need to make changes in the data schema of survey layers, please follow [
 
 ## Packaging QGIS project
 When using the <QGISPluginNameShort /> to [create a <MainPlatformName /> project](../create-project/#create-a-project-in-qgis), there is an option to **Package current project**. This is what you will choose if you want to transform your QGIS project into <MainPlatformName /> project.
-![Mergin Maps plugin for QGIS package current project](./package-project.jpg "Mergin Maps plugin for QGIS package current project")
+![Mergin Maps QGIS plugin package current project](./package-project.jpg "Mergin Maps QGIS plugin package current project")
 
 There are three options for handling layers:
    - **package** - layers will be copied and saved in the new <MainPlatformName /> project folder: by default, each vector layer will be saved as a GeoPackage, rasters (if possible) will be saved as GeoTIFF and local vector and raster MBTiles will be copied to the folder.

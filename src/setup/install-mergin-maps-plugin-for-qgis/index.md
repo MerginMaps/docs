@@ -43,4 +43,4 @@ Upgrade the plugin periodically to ensure you can use the latest improvements.
    ![QGIS Manage and Install Plugins](./qgis-plugins-manage-and-install.jpg "QGIS Manage and Install Plugins")
    
 2. Find the **<MainPlatformName />** plugin. If there is a new version available, click **Upgrade Plugin**.
-   ![Upgrade Mergin Maps plugin for QGIS](./plugin-upgrade.jpg "Upgrade Mergin Maps plugin for QGIS")
+   ![Upgrade Mergin Maps QGIS plugin](./plugin-upgrade.jpg "Upgrade Mergin Maps QGIS plugin")

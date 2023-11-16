@@ -42,10 +42,10 @@ Tap on the **Switch workspace** button. From the list of available workspaces, s
 Navigate to <MainPlatformName /> in the **Browser** panel. The name of the current workspace is displayed in square brackets.
 
 Right click on the plugin's name and select **Switch workspace**
-![Switch workspace in Mergin Maps plugin for QGIS](./plugin-switch-workspace.jpg "Switch workspace in Mergin Maps plugin for QGIS")
+![Switch workspace in Mergin Maps QGIS plugin](./plugin-switch-workspace.jpg "Switch workspace in Mergin Maps QGIS plugin")
 
 From the list of available workspaces, select the one you want to switch to:
-![Select workspace in Mergin Maps plugin for QGIS](./plugin-select-workspace.jpg "Select workspace in Mergin Maps plugin for QGIS")
+![Select workspace in Mergin Maps QGIS plugin](./plugin-select-workspace.jpg "Select workspace in Mergin Maps QGIS plugin")
 
 ## How to create a new workspace
 1. Log in to <AppDomainNameLink />
