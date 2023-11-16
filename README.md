@@ -34,6 +34,7 @@ Use GitHub Pull Requests to propose changes, we will review and merge your chang
  - Ask sys-admin to manually deploy REDIRECTS to njinx
  - Check that [live](https://merginmaps.com/docs) is what you want and announce the news on Slack
  
+
 ## Dynamic server (for local development)
 To change docs locally, run the server, open `http://localhost:8080/` in your browser and modify markdowns
 
@@ -42,6 +43,15 @@ cd merginmaps/docs
 yarn install
 yarn dev
 ```
+
+## Translations
+
+To develop translations, you can switch to different language by:
+- open JavaScript console in browser
+- execute `Weglot.switchTo('de')` 
+- now you should see banner to switch to english in sidebar and all texts translated
+
+To change translated text, you need to login to Weglot and modify it there.
 
 ## Static generation (for deployments)
 
