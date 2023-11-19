@@ -12,23 +12,27 @@ For survey layers used on the field, we strongly recommend GeoPackage, to be abl
 | Format         |  Android/iOS  | Note                                                                                                |
 |----------------|---------------|-----------------------------------------------------------------------------------------------------|
 | GeoPackage     | :heart_eyes:  | collaborative editing and versioning by <GitHubRepo id="MerginMaps/geodiff" desc="geodiff" />  |
-| Shapefile      | :warning:     | collaborative editing not supported                                                                 |
-| Delimited text | :warning:     | collaborative editing not supported                                                                 | 
-| Virtual layer  | :warning:     | collaborative editing not supported                                                                 |                 
-| PostGIS        | :thumbsup:    | requires internet connection <sup><a href="#link-1">1</a></sup>                                                                        |
-| WFS            | :warning:    | requires internet connection (<GitHubRepo id="MerginMaps/input/issues/1959" desc="open ticket" />)                                      |
+| Shapefile      | :warning:     | collaborative editing not supported                                                              |
+| Delimited text | :warning:     | collaborative editing not supported                                                              | 
+| Virtual layer  | :warning:     | collaborative editing not supported                                                              |                 
+| [PostGIS](#postgresql-postgis)        | :thumbsup:    | requires internet connection              |
+| WFS            | :warning:    | requires internet connection (<GitHubRepo id="MerginMaps/input/issues/1959" desc="open ticket" />)                                                                        |
 
 There are more formats supported, please see full list of supported [QGIS providers](#full-list-of-supported-qgis-providers) and [OGR drivers](#full-list-of-supported-ogr-drivers)
 
 ::: tip
-Read [more](../manage/synchronisation.md) how the synchronisation in Mergin Maps works.
+Go to [Behind Data Synchronisation](../manage/synchronisation.md) to read more about how synchronisation works in <MainPlatformNameLink />.
 :::
 
-Notes:
-<a name="link-1">1</a>: **PostgreSQL/PostGIS** - You either setup your PostgreSQL connection (e.g. username, password, host, port, ...) in QGIS PostgreSQL connection directly (in case you want to reuse the same connection for everyone) or use a Connection Service File `pg_service.conf` (in case you want to have different PostgreSQL user for each surveyor). To use Connection Service File, you need to
-- create `pg_service.conf` file and test in in QGIS Desktop as described in the <QGISHelp ver="3.22" link="user_manual/managing_data_source/opening_data.html#postgresql-service-connection-file" text="help." />
-- [manually transfer](../manage/missing-data/index.md) `pg_service.conf` to <MobileAppName /> data folder. Data folder is shown in the [Diagnostic Log](../misc/troubleshoot.md)
-- restart the application. Whether the file is found and used after restart, check the [Diagnostic Log](../misc/troubleshoot.md)
+### PostgreSQL/PostGIS
+PostgreSQL connection (username, password, host, port, etc.) can be set up:
+- directly in QGIS PostgreSQL connection, if you want to reuse the same connection for everyone
+- use a *Connection Service File* `pg_service.conf`, if you want to have different PostgreSQL user for each surveyor
+
+To use a *Connection Service File*, you have to:
+- create a `pg_service.conf` file as described in <QGISHelp ver="latest" link="user_manual/managing_data_source/opening_data.html#postgresql-service-connection-file" text="QGIS User Manual" /> and test it in QGIS Desktop
+- [manually transfer](../manage/missing-data/index.md) the `pg_service.conf` file to <MobileAppName /> data folder. The data folder is shown in the [Diagnostic Log](../misc/troubleshoot/#diagnostic-log-on-mergin-maps-mobile-app)
+- restart the <MobileAppNameShort />. Check the [Diagnostic Log](../misc/troubleshoot/#diagnostic-log-on-mergin-maps-mobile-app) to see if the file is found and used after restart.
 
 ## Raster data on Mergin Maps mobile app
 
