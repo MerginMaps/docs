@@ -6,16 +6,16 @@
 If you are new to <MobileAppName />, follow our [tutorials](../tutorials/capturing-first-data/) to get familiar with the app.
 :::
 
-Adding, editing and deleting features in <MobileAppName /> is possible in <MainPlatformNameLink /> projects where you have [write permission](../manage/permissions/).
+Adding, editing and deleting features in the <MobileAppName /> is possible in <MainPlatformNameLink /> projects where you have [write permission](../manage/permissions/).
 
 To be able to transfer your data to your mobile/tablet device, share your project and track changes, you will need to [sign up to Mergin Maps](../setup/sign-up-to-mergin-maps/).
 
 ## Adding features
-In <MobileAppName />, open a [project](./input_ui/#projects) you want to use.
+In the <MobileAppNameShort />, open a [project](./input_ui/#projects) you want to use.
 
 To survey new features, tap the **Record** button on the bottom panel to enter the **recording mode**.
 
-![Mergin Maps Input Record tab](./input-record.jpg "Mergin Maps Input Record tab") 
+![Mergin Maps mobile app Record tab](./input-record.jpg "Mergin Maps mobile app Record tab") 
 
 ::: warning
 If current [GPS accuracy](./gps_accuracy/) falls below the accuracy threshold, you will get a warning about low position accuracy. Accuracy thresholds can be changed in [Settings](./input_ui/#gps-settings).
@@ -35,7 +35,7 @@ Attribute forms can be set up in QGIS. For more details, see [Setting Up Form Wi
 ### Capture points
 To capture a new point feature, simply tap **Add** on the bottom panel while in the [recording mode](#adding-features). A form will open where you can fill in the attributes.
 
-![Add point in Mergin Maps Input](./input-add-point.jpg "Add point in Mergin Maps Input")
+![Add point in Mergin Maps mobile app](./input-add-point.jpg "Add point in Mergin Maps mobile app")
 
 ### Capture lines or areas
 There are two methods of capturing lines and areas: adding vertices one by one or using the *streaming mode* to capture features based on your position.
@@ -46,7 +46,7 @@ Lines and areas can be captured by adding vertices one by one. When you are in t
 Tap **Add** to capture vertices of your line or area. If you want to change the position of the last vertex, tap **Remove**, move the vertex to the correct place and  **Release** it. **Undo** can be used to revert last changes.
 
 Once the survey of the feature is completed, tap **Done** and fill in the form.
-![Surveying lines in Mergin Maps Input](./input-capture-line.jpg "Surveying lines in Mergin Maps Input")
+![Surveying lines in Mergin Maps mobile app](./input-capture-line.jpg "Surveying lines in Mergin Maps mobile app")
 
 #### Streaming mode to survey lines or areas
 Lines and areas can be also captured automatically based on your position. Make sure you are in the [**recording**](#adding-features) mode and that your active layer is a line or polygon.
@@ -60,15 +60,14 @@ Once you are finished, tap **Done**. If you are capturing an area, the shape wil
 You can change how often you want to capture a vertex in **Line rec. interval** in [**Settings**](./input_ui/#streaming-mode-and-recording-settings). The interval can be defined as time elapsed in seconds or as distance travelled in metres.
 
 :::tip
-<SinceBadge type="App" version="2.1.0" />
-The recording interval can be now defined also in metres as distance travelled.
+The recording interval can be defined also in metres as distance travelled.
 :::
 
 ### Add non-spatial features
 [Non-spatial features](../layer/working_with_nonspatial_data/) can also be added using <MobileAppName />. If you are using a non-spatial table for [value relations](../layer/settingup_forms/#value-relation) you can add and edit values in the app.
 
 1. Tap the **More** button and navigate to **Layers**
-   ![Mergin Maps Input Layers panel](./input-layers.jpg "Mergin Maps Input Layers panel")
+   ![Mergin Maps mobile app Layers panel](./input-layers.jpg "Mergin Maps mobile app Layers panel")
 
 2. Choose the non-spatial layer and tap **Add feature**
    ![](./input-add-non-spatial-feature.jpg)
@@ -77,16 +76,15 @@ The recording interval can be now defined also in metres as distance travelled.
 
 ## Editing features
 Spatial and non-spatial features can be browsed, edited and deleted in the [Layers](./layers/) panel in <MobileAppName />. Tap on the **Layers** in the **More** tab and select a layer to see the features it contains. 
-![Mergin Maps Input Layers panel](./input-layers.jpg "Mergin Maps Input Layers panel")
+![Mergin Maps mobile app Layers panel](./input-layers.jpg "Mergin Maps mobile app Layers panel")
 
 Spatial features can be selected also on the map. Tap on a feature and press the edit button. Now you can change the attributes in the form. To edit the geometry of a feature, tap **Edit geometry** in the bottom panel.
 
-![Edit attributes and geometry in Mergin Maps Input](./input-edit.jpg "Edit attributes and geometry")
+![Edit attributes and geometry in Mergin Maps mobile app](./input-edit.jpg "Edit attributes and geometry")
 
 To edit geometry of a point feature simply adjust the location by panning the map or use **GPS** in the same manner as when adding new features. Once you are happy with your changes, press **Done**.
 
 ### Edit geometry of lines or areas
-<SinceBadge type="App" version="1.8.0" />
 
 It is also possible to edit the geometry of lines and areas. Tap on a line or polygon feature and press the **Edit** button. Then select **Edit geometry**.
 
@@ -95,7 +93,6 @@ The vertices of the feature will be highlighted and you can move or remove them 
 ![Editing polygon geometry](./input-edit-polygon.jpg "Editing polygon geometry")
 
 ### Redraw geometry of lines or areas
-<SinceBadge type="App" version="1.8.0" />
 The existing geometry of lines and areas can also be redrawn.
 
 In the feature's form, tap the **Advanced** button and select the **Redraw geometry** option. Now you can record the new geometry using the tools in the bottom panel.
@@ -103,12 +100,11 @@ In the feature's form, tap the **Advanced** button and select the **Redraw geome
 ![Advanced editing redrawing geometry of polygons](./input-redraw-geometry.jpg "Advanced editing redrawing geometry of polygons")
 
 ### Split geometry of lines or areas
-<SinceBadge type="App" version="1.6.0" />
 Lines and areas can be split into two or more new features that will keep the same attributes as the original feature.
 
 To split geometry of a feature:
 1. Tap on a feature and press the edit button.
-![Edit button in Mergin Maps Input](./input-edit-feature.jpg "Edit button in Mergin Maps Input")
+![Edit button in Mergin Maps mobile app](./input-edit-feature.jpg "Edit button in Mergin Maps mobile app")
 
 2. Tap **Advanced** and select **Split geometry**
 ![Advanced editing split geometry](./input-split-geometry.jpg "Advanced editing split geometry")
@@ -120,19 +116,16 @@ To split geometry of a feature:
 ![Geometry split successfully into two features](./input-split-geom-done.jpg "Geometry split successfully into two features")
 
 ## Snapping features
-<SinceBadge type="App" version="1.6.0" />
 
 Snapping can be enabled in your <MainPlatformName /> project to make the field survey easier. [How to Set Up Snapping](../gis/snapping/) will guide you through the snapping options.
 
 If snapping is enabled, the crosshairs will turn purple and snap to vertices (left) or segments (right) of existing features when capturing new features or editing existing features.
-![Snapping Vertices and Segments in Mergin Maps Input](../gis/snapping/input_basic_snapping.jpg "Snapping Vertices and Segments in Mergin Maps Input")
+![Snapping Vertices and Segments in Mergin Maps mobile app](../gis/snapping/input_basic_snapping.jpg "Snapping Vertices and Segments in Mergin Maps mobile app")
 
 ## Deleting features
 If you want to delete the feature, tap on it and press the edit button. Here you have the option to **Delete** the selected feature.
 
-![Delete feature in Mergin Maps Input](./input-delete.jpg "Delete feature in Mergin Maps Input")
-
-
+![Delete feature in Mergin Maps mobile app](./input-delete.jpg "Delete feature in Mergin Maps mobile app")
 
 ## Synchronise changes
 Don't forget to upload your changes to <MainPlatformNameLink />!

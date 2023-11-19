@@ -50,7 +50,7 @@ You can access your data by following these steps:
 ![Plugged iOS device Locations iTunes](./itunes.jpg "iTunes iOS device plugged to a computer")
 4. Click on the tab named `files`  
 5. Select `Input` app from a list to see a data folder
-![Mergin Maps Input files accessed through iTunes](./itunes2.jpg "Mergin Maps Input files accessed through iTunes")
+![Mergin Maps mobile app files accessed through iTunes](./itunes2.jpg "Mergin Maps mobile app files accessed through iTunes")
 6 Drag-and-drop the `INPUT` folder to another location to see the content
 
 ### Manual data transfer (between iOS and Windows)
@@ -65,7 +65,7 @@ Here are the steps to transfer the data from iPhone/iPad to a Windows PC.
 6. Select **Input** in Apps tab
 7. Under Input Documents, select **INPUT** folder
 8. Press **Save...**
-![iTunes save Mergin Maps Input files](./ios_win_itunes_input.jpg "iTunes save Mergin Maps Input files")
+![iTunes save Mergin Maps mobile app files](./ios_win_itunes_input.jpg "iTunes save Mergin Maps mobile app files")
 9. Select a path to save the folder on your computer.
 
 ## Next steps

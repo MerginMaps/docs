@@ -1,6 +1,4 @@
 # Custom Projections 
-<SinceBadge type="App" version="0.8.0" />
-
 [[toc]]
 
 ## Custom projections in QGIS
@@ -28,32 +26,32 @@ If you want to learn more about this topic, we recommend to go through the <QGIS
 
 Projections issues are one of the common causes of misplacement of your field data as mentioned in our blog [Why are my survey points shifted?](https://www.lutraconsulting.co.uk/blog/2021/04/21/projections-field/).
 
-## Custom projections in Mergin Maps Input
+## Custom projections in Mergin Maps mobile app
 If you had to install grid shift files in QGIS in order to display your layers correctly, it is also necessary to provide the same grid shift files to <MobileAppName />.
 
 <MobileAppName /> supports grid shift files formats:
-- *National Transformation version 2* (<NoSpellcheck id=".gsb" />) <SinceBadge type="App" version="0.8.0" />
-- *Geodetic TIFF grids* (.tiff) <SinceBadge type="App" version="1.7.0" />
+- *National Transformation version 2* (<NoSpellcheck id=".gsb" />)
+- *Geodetic TIFF grids* (.tiff)
 
 When the app starts, it searches for `proj` folders in all available projects on the disk. The grid shift files found in these folders can be then used in all projects.
 
-### Adding grid shift files to Mergin Maps Input
+### Adding grid shift files to Mergin Maps mobile app
 <SinceBadge type="Plugin" version="2022.6" />
 It couldn't be easier! When [creating a new <MainPlatformName /> project](../manage/create-project/#create-a-project-in-qgis) by packaging current QGIS project or using current QGIS project as is, <QGISPluginName /> will copy all required datum shift grids to the appropriate project folder.
 
 All you need to do is:
 1. Define the coordinate systems, projections and transformations in your <MainPlatformName /> project in QGIS as you need.
 
-2. Synchronise the project using <QGISPluginName />. 
+2. Synchronise the project using the <QGISPluginNameShort />. 
    If a shift grid file is missing, you will get a warning containing a link to **fix the issue**.
 <!--add warning screenshot -->
 
 3. Download the project with the grid shift files to <MobileAppName />. 
    When the project is downloaded to the app for the first time, you will get a **PROJ Error** that will prompt you to **restart the app** to load the grid shift files. The error message should not appear after the restart of the app.
-![Mergin Maps Input transformation shift grid error](./input-custom-prj.jpg "Mergin Maps Input transformation shift grid error")
+![Mergin Maps mobile app transformation shift grid error](./input-custom-prj.jpg "Mergin Maps mobile app transformation shift grid error")
 
 ### Adding grid shift files manually
-If you want to add grid shift files to <MobileAppName /> manually:
+If you want to add grid shift files to the <MobileAppNameShort /> manually:
 1. Create a folder called `proj` in your project folder
    ![proj folder in project folder](./proj-folder.jpg "proj folder in project folder")
 2. Copy the grid shift file to the `proj` folder
@@ -66,7 +64,7 @@ If you want to add grid shift files to <MobileAppName /> manually:
    - Linux users: `~/.local/share/QGIS/QGIS3/profiles/default/proj`
    :::
    
-3. Synchronise the project using <QGISPluginName />
+3. Synchronise the project using the <QGISPluginNameShort />
 4. Download the project with the grid shift files to <MobileAppName />. 
    When the project is downloaded to the app for the first time, you will get a **PROJ Error** that will prompt you to **restart the app** to load the grid shift files. The error message should not appear after the restart of the app.
-![Mergin Maps Input transformation shift grid error](./input-custom-prj.jpg "Mergin Maps Input transformation shift grid error")
+![Mergin Maps mobile app transformation shift grid error](./input-custom-prj.jpg "Mergin Maps mobile app transformation shift grid error")

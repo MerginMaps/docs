@@ -6,7 +6,7 @@ Each time someone synchronises the project from a mobile device or from QGIS thr
 On <AppDomainNameLink />, you can view what files have been added or removed. If you use GeoPackage for your survey, you can also see the list of the features which have been added, deleted or updated.
 
 :::tip
-Great tools to inspect the project history and compare changes between project versions can be found in <QGISPluginName />:
+Great tools to inspect the project history and compare changes between project versions can be found in the <QGISPluginNameShort />:
 - use [Create report](./plugin-sync-project/#create-report-processing-toolbox) to get an overview of changes for a range of project versions.
 - use [Create diff](./plugin-sync-project/#create-diff-processing-toolbox) to extract changes made between two versions of a layer
 :::

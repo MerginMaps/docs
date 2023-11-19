@@ -1,4 +1,4 @@
-# Mergin Maps Plugin for QGIS Overview
+# Mergin Maps QGIS Plugin Overview
 [[toc]]
 
 The <QGISPluginName /> allows you to work with your <MainPlatformNameLink /> projects in QGIS, whether it's downloading the project to your computer, making changes in the project, seeing the project's status or synchronising changes to the cloud. 
@@ -9,9 +9,9 @@ To get started, you will need to [install and configure the plugin](../setup/ins
 To ensure you can use the latest improvements, don't forget to [upgrade the plugin](../setup/install-mergin-maps-plugin-for-qgis/#plugin-upgrade) whenever there is an update available!
 :::
 
-Once you have installed the plugin and configured it with your <MainPlatformNameLink /> credentials, you should be able to see it in your QGIS Browser panel. The name of the current [workspace](./workspaces/) is displayed in the square brackets (here: `sarah`) and available projects are listed underneath. 
+Once you have installed the <QGISPluginNameShort /> and configured it with your <MainPlatformNameLink /> credentials, you should be able to see it in your QGIS Browser panel. The name of the current [workspace](./workspaces/) is displayed in the square brackets (here: `sarah`) and available projects are listed underneath. 
 
-![Mergin Maps plugin in QGIS browser](./plugin-browser.jpg "Mergin Maps plugin in QGIS browser")
+![Mergin Maps QGIS plugin in QGIS browser](./plugin-browser.jpg "Mergin Maps QGIS plugin in QGIS browser")
 
 
 ## Downloading a project in QGIS
@@ -61,7 +61,7 @@ To see local changes:
 
    If you want to zoom to specific changes, select them in the table and use **Zoom to Selection**.
    
-   ![Mergin Maps plugin for QGIS changes viewer](./plugin-changes-viewer.jpg "Mergin Maps plugin for QGIS changes viewer")
+   ![Mergin Maps QGIS plugin changes viewer](./plugin-changes-viewer.jpg "Mergin Maps QGIS plugin changes viewer")
 
 3. Changes can be added to the QGIS project as a new layer. Click **Add to project** and choose one of the options:
    ![Add local changes to QGIS project](./plugin-changes-viewer-add.jpg "Add local changes to QGIS project")
@@ -89,7 +89,7 @@ Local changes of a specific layer can also be extracted using the **Extract loca
 Once you are happy with the changes to be uploaded/downloaded, you can synchronise your project and data. 
 
 1. Click on the **Synchronise Mergin Maps project** icon from the <QGISPluginName /> toolbar or right-click on the project in the Browser panel and select **Synchronise**
-   ![Mergin Maps plugin for QGIS synchronisation icon](./sync-status-toolbar.jpg "Mergin Maps plugin for QGIS synchronisation icon")
+   ![Mergin Maps QGIS plugin synchronisation icon](./sync-status-toolbar.jpg "Mergin Maps QGIS plugin synchronisation icon")
    ![QGIS browser synchronize Mergin Maps project option](./project-sync-2.jpg "QGIS browser synchronize Mergin Maps project option")
 
 2. This will show the project status: a list of pending changes, warnings, and validation results of your project.

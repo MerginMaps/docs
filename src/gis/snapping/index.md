@@ -1,5 +1,5 @@
-# How to Set Up Snapping for Mergin Maps Input 
-<SinceBadge type="Plugin" version="2022.5" /><SinceBadge type="App" version="1.6.0" />
+# How to Set Up Snapping for Mergin Maps Mobile App 
+<SinceBadge type="Plugin" version="2022.5" />
 [[toc]]
 
 Capturing data in the field using <MobileAppName /> can be easier, if you can snap the vertices of new features to existing geometries. Snapping can also help you avoid creating topological errors in your datasets. 
@@ -26,7 +26,7 @@ To set up basic snapping:
 Now you can use basic snapping in <MobileAppName />! 
 
 When capturing a new feature near an existing one, the crosshairs will turn purple and snap to its vertex (left) or to its segment (right).
-![Mergin Maps Input crosshairs when snapping](./input_basic_snapping.jpg "Mergin Maps Input crosshairs when snapping")
+![Mergin Maps mobile app crosshairs when snapping](./input_basic_snapping.jpg "Mergin Maps mobile app crosshairs when snapping")
 
 :::tip
 If you don't want the crosshairs to snap to a feature, try zooming in. The snapping threshold is 20 pixels, so the more you zoom in, the closer you can place the vertex to the existing geometry without snapping.
@@ -63,7 +63,7 @@ If you want to change the snapping threshold, use the *[Follow QGIS snapping](#f
  
 4. Save and sync your project.
 
-   Don't forget to synchronise the project also in <MobileAppName /> before the fieldwork.
+   Don't forget to synchronise the project also in the <MobileAppNameShort /> before the fieldwork.
 
 Snapping in <MobileAppName /> will now follow the snapping settings as defined in the QGIS project.
 

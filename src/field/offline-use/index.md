@@ -1,4 +1,4 @@
-# Offline Use of Mergin Maps Input
+# Offline Use of Mergin Maps Mobile App
 [[toc]]
 
 The <MobileAppName /> app can be used without internet connection, which is useful if you need to do the field survey in areas with poor cell phone signal or limited mobile internet. Collecting data in the field and synchronising them in the office using WiFi can be also more effective when working with large files. 
@@ -9,7 +9,7 @@ However, there are some actions that require internet connection and cannot be d
 ## Offline field survey workflow
 Here is a typical workflow of offline data collection. 
 
-We assume that the field surveyors have already [installed <MobileAppName />](../../setup/install-input/) and are signed in, as well as that the project used for field survey follows recommendations described in [How to set up an offline <MainPlatformName /> project](#how-to-set-up-an-offline-mergin-maps-project).
+We assume that the field surveyors have already [installed the <MobileAppNameShort />](../../setup/install-input/) and are signed in, as well as that the project used for field survey follows recommendations described in [How to set up an offline <MainPlatformName /> project](#how-to-set-up-an-offline-mergin-maps-project).
 
 1. Make sure that your <MainPlatformName /> project is [synchronised](../../manage/plugin-sync-project/#synchronisation-in-qgis) to the <MainPlatformNameLink /> cloud
 2. While being online, field surveyors [download the project](../../tutorials/mobile) to their mobile device using <MobileAppName />

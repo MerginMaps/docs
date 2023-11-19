@@ -76,12 +76,12 @@ Photos taken in the field using <MobileAppName /> can be automatically renamed. 
 [How to Set Photo Names Format](../gis/photo-names/) will guide you through the setup and provide examples of expressions that can be used to name your photos.
 :::
 
-## Photos in Mergin Maps Input
+## Photos in Mergin Maps mobile app
 Using the photo widget in <MobileAppName />, you will have two options:
 - **Take a photo** to use your camera app for taking a photos 
 - **Add from gallery** to attach an existing photo from your device.
 
-![Mergin Maps Input photo widget](./input_forms_photo.jpg "Mergin Maps Input photo widget")
+![Mergin Maps mobile app photo widget](./input_forms_photo.jpg "Mergin Maps mobile app photo widget")
 
 ## Displaying photos in QGIS
 Photos taken using <MobileAppName /> during the survey can be displayed in the feature's form in QGIS.
@@ -96,5 +96,5 @@ Photos taken using <MobileAppName /> during the survey can be displayed in the f
 
 Now when you click on a feature that contains a photo, it will be displayed in the form.
 
-![Mergin Maps Input photo displayed in form](./qgis-form-view-photo.jpg "Mergin Maps Input photo displayed in form")
+![Mergin Maps mobile app photo displayed in form](./qgis-form-view-photo.jpg "Mergin Maps mobile app photo displayed in form")
 

@@ -14,7 +14,7 @@ You can try these tools for free during the trial period.
 ## Python client module
 The Python client module is the easiest way to programmatically use <MainPlatformNameLink />. You can use Python API or a command-line tool to easily work with <MainPlatformName /> projects, such as to get project status, push and pull changes, or to download, create and delete projects.
 
-The <GitHubRepo id="MerginMaps/mergin-py-client" /> repository contains the source code of the Python client module and more information on how to use it.
+The <GitHubRepo id="MerginMaps/python-api-client" /> repository contains the source code of the Python client module and more information on how to use it.
 
 Python client is available in the PyPI repository and can be installed with `pip`:
 
@@ -45,14 +45,14 @@ For example, to download a <MainPlatformName /> project to a local folder:
 ```
 mergin download john/project1 ~/mergin/project1
 ```
-For more details, visit <GitHubRepo id="MerginMaps/mergin-py-client" />.
+For more details, visit <GitHubRepo id="MerginMaps/python-api-client" />.
 
 ## C++ standalone client
 C++ Client has advantage over Python that it is completely without any dependencies. 
 
-To install the C++ client, just download the binary for your platform from <GitHubRepo id="MerginMaps/mergin-cpp-client/releases"/> and use it from the command line.
+To install the C++ client, just download the binary for your platform from <GitHubRepo id="MerginMaps/cpp-api-client/releases"/> and use it from the command line.
 
-Go to <GitHubRepo id="MerginMaps/mergin-cpp-client" /> repository for more information on how to use it.
+Go to <GitHubRepo id="MerginMaps/cpp-api-client" /> repository for more information on how to use it.
 
 ### C++ Command line tool
 When the client is installed, it comes with `mergin` command line tool.
@@ -77,4 +77,4 @@ Commands:
 
 ### C++ Mergin Maps API core library 
 
-Client is based on the Qt-based <GitHubRepo id="MerginMaps/input/tree/master/core" desc="mergin maps api core library" /> used by the <MainDomainNameLink desc="Mergin Maps Input" /> to sync the projects in the mobile application.
+Client is based on the Qt-based <GitHubRepo id="MerginMaps/mobile/tree/master/core" desc="Mergin Maps API core library" /> used by the <MainDomainNameLink desc="Mergin Maps mobile app" /> to sync the projects in the mobile application.

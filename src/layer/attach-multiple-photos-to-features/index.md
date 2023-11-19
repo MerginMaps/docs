@@ -39,4 +39,4 @@ Now we need to configure a [1-N relation](../one-to-n-relations/):
    ![Relation Reference widget in Attributes form](./qgis_relation_form.jpg "Relation Reference widget in Attributes form")
 
 <MobileAppName /> detects the type of 1-N relation and displays the image viewer for the relations. 
-![Many photos to a single feature in Mergin Maps Input](./input_forms_many-photos.jpg "Many photos to a single feature in Mergin Maps Input")
+![Many photos to a single feature in Mergin Maps mobile app](./input_forms_many-photos.jpg "Many photos to a single feature in Mergin Maps mobile app")
