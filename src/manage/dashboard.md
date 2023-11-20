@@ -37,11 +37,16 @@ The **Members** tab provides the overview of the [members and guests](./permissi
 ![Mergin Maps web workspace members](./web-members.jpg "Mergin Maps web workspace members")
 
 ## Subscription
-The **Subscription** tab contains information about your [subscription and invoicing](../manage/subscriptions/).
-- **DETAIL** contains details about your current data usage and subscription. Here you can also change your plan and the frequency of your subscription billing.
-- **HISTORY** includes the list of events related to your account, such as changing the plan or the payment history.
-- **INVOICES** contains the list of your previous payments and invoices
+The **Subscription** tab contains information about your [subscription plan](../manage/subscriptions/).
+
+Here, you can find the current usage of storage, number of projects and number of users (members and guests) in your workspace.
+
+<!-- placeholder image -->
 ![Mergin Maps Subscriptions details](../manage/subscriptions/subscriptions.jpg "Mergin Maps Subscriptions details")
+
+::: tip
+For details about different subscription plans visit the <MainDomainNameLink id="pricing" desc="pricing page"/>.
+:::
 
 ## Settings
 In the **Settings** tab, you will find information about the current workspace. 
