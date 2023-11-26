@@ -41,7 +41,10 @@ The **Subscription** tab contains information about your [subscription plan](../
 
 Here, you can find the current usage of storage, number of projects and number of users (members and guests) in your workspace.
 
-![Mergin Maps Subscriptions details](../manage/subscriptions/subscriptions.jpg "Mergin Maps Subscriptions details")
+![Mergin Maps Subscriptions details](./subscriptions/subscriptions.jpg "Mergin Maps Subscriptions details")
+
+Click on **Manage subscription** to visit the subscription management portal where you can update the subscription plan, billing information, see invoices and upcoming payments
+![Mergin Maps subscription management portal](./subscriptions/stripe-merginmaps-subcription.jpg "Mergin Maps subscription management portal")
 
 ::: tip
 For details about different subscription plans visit our <MainDomainNameLink id="pricing" desc="pricing page"/>.

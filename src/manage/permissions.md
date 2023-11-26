@@ -39,7 +39,13 @@ Members and their roles can be managed through <AppDomainNameLink /> in the [Mem
 ![Mergin Maps web members tab](./web-members.jpg "Mergin Maps web members tab")
 
 ### How to transfer ownership of a workspace
-Ownership of a workspace can be transferred to another [workspace member](..#workspace-member-roles). Users with the **owner** member role have access to the **Subscriptions** in <AppDomainNameLink />. Every workspace has to have at least one owner, however, there can be multiple owners of one workspace.
+Ownership of a workspace can be transferred to another [workspace member](..#workspace-member-roles). 
+
+Users with the **owner** member role have access to the **Subscriptions** in <AppDomainNameLink />. Every workspace has to have at least one owner, however, there can be multiple owners of one workspace.
+
+::: warning
+When transferring ownership of a workspace, you might also need to [update billing information](./subscriptions/#billing-information-and-payment-method).
+:::
 
 To transfer the ownership of a workspace to a user that is not yet a member of your workspace, follow the steps in [How to add users to a workspace](./project-advanced/#add-users-to-a-workspace) and select the **Owner** as the the **member role**. The new owner has to accept the invitation.
 
@@ -53,7 +59,7 @@ To transfer the ownership of a workspace to a user that is already a member of y
    
 4. Now the member role of the original owner can be changed (if needed) or they can be removed from the workspace completely.
 
-:::warning
+   :::warning
 Be careful when downgrading your own member role! 
 
 Only owners and admins can manage user roles so if you assign yourself the writer or reader role, you will not be able to change it back.
