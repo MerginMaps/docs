@@ -402,6 +402,8 @@ Use `<AppDownload />` component
 
 Use `<AppDomainNameLink />` component, transforms to <AppDomainNameLink />
 
+Use `<DashboardLink />` component, transforms to  <DashboardLink />
+
 Use `<MainDomainName />` component, transforms to <MainDomainName />
 
 Use `<MainDomainNameLink />` component, transforms to <MainDomainNameLink />

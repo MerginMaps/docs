@@ -38,6 +38,27 @@ Do you want to invite members or guests to your workspace? Visit [How to share p
 Members and their roles can be managed through <AppDomainNameLink /> in the [Members](./dashboard/#members) tab:
 ![Mergin Maps web members tab](./web-members.jpg "Mergin Maps web members tab")
 
+### How to transfer ownership of a workspace
+Ownership of a workspace can be transferred to another [workspace member](..#workspace-member-roles). Users with the **owner** member role have access to the **Subscriptions** in <AppDomainNameLink />. Every workspace has to have at least one owner, however, there can be multiple owners of one workspace.
+
+To transfer the ownership of a workspace to a user that is not yet a member of your workspace, follow the steps in [How to add users to a workspace](./project-advanced/#add-users-to-a-workspace) and select the **Owner** as the the **member role**. The new owner has to accept the invitation.
+
+To transfer the ownership of a workspace to a user that is already a member of your workspace, you have to change their member role to **Owner**:
+1. Log in to <AppDomainNameLink />
+2. Navigate to the **Members** tab. Here, you will see the list of current workspace members and their roles. 
+   ![Changing member role of a workspace member](./transfer-ownership-member-role.jpg "Changing member role of a workspace member")
+
+3. Change the **member role** of the user who should become the new owner
+   ![Selecting owner member role from the list](./transfer-ownership-new-owner.jpg "Selecting owner member role from the list")
+   
+4. Now the member role of the original owner can be changed (if needed) or they can be removed from the workspace completely.
+
+:::warning
+Be careful when downgrading your own member role! 
+
+Only owners and admins can manage user roles so if you assign yourself the writer or reader role, you will not be able to change it back.
+:::
+
 ## Project permissions
 Permissions to specific projects can be defined for workspace guests as well as for workspace members in addition to their member roles. There are three permission levels: **reader**, **writer** and **owner**. 
 
