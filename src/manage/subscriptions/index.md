@@ -12,7 +12,7 @@ If you are interested in <MainDomainNameLink id="pricing-for-ce-and-ee" desc="On
 :::
 
 ## Subscriptions management
-The **Subscription** tab in <DashboardLink /> contains the overview of your current subscription plan and usage of storage, number of projects and number of users in your workspace. It is available only to the [owners](./permissions/#workspace-member-roles) of a workspace.
+The **Subscription** tab in <DashboardLink /> contains the overview of your current subscription plan and usage of storage, number of projects and number of users in your workspace. It is available only to the [owners](../permissions/#workspace-member-roles) of a workspace.
 
 ![Mergin Maps Dashboard Subscription tab](./subscriptions.jpg "Mergin Maps Dashboard Subscription tab")
 
@@ -92,7 +92,7 @@ Billing information will be displayed in invoices or receipts, so make sure they
 :::
 
 ### Updating billing information
-The billing details associated with your subscription can be changed through the subscription management platform. You might need to do this e.g. when [transferring ownership of a workspace](./permissions/#how-to-transfer-ownership-of-a-workspace).
+The billing details associated with your subscription can be changed through the subscription management platform. You might need to do this e.g. when [transferring ownership of a workspace](../permissions/#how-to-transfer-ownership-of-a-workspace).
 
 1. Log into <AppDomainNameLink /> and navigate to the **Subscription** tab
 2. Click on the **Manage Subscription** button to get to the subscription management portal 
@@ -112,7 +112,7 @@ Billing information will be displayed in invoices or receipts, so make sure they
 ### Adding and removing a payment method
 When purchasing a subscription plan, you were asked to fill out your card information. 
 
-You might want to change it later, e.g. to use a different card or when [transferring the ownership of a workspace](./permissions/#how-to-transfer-ownership-of-a-workspace). To add or remove a payment method associated with your <MainPlatformNameLink /> subscription:
+You might want to change it later, e.g. to use a different card or when [transferring the ownership of a workspace](../permissions/#how-to-transfer-ownership-of-a-workspace). To add or remove a payment method associated with your <MainPlatformNameLink /> subscription:
 
 1. Log into <AppDomainNameLink /> and navigate to the **Subscription** tab
 2. Click on the **Manage Subscription** button to get to the subscription management portal 
