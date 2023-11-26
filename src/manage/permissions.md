@@ -19,7 +19,7 @@ Do you want to invite members or guests to your workspace? Visit [How to share p
 - **Reader**: users with **read** permission are able to see the list of projects, projects data and [history](./project-details.md)
 - **Writer**: in addition to the **Read** access, users can also do changes in the projects: [adding/removing/updating features](../field/input_features/), change [layer settings and project properties](../gis/features/). Users who are expected to actively contribute to the project need to have the **write** permission. 
 - **Admin**: in addition to the **Write** access, users with this level of access can [delete the project](./project-advanced/#delete-a-project) or [transfer](./project-advanced/#transfer-a-project) it to another workspace. Admins can also create new projects and manage workspace members.
-- **Owner**: in addition to the **Admin** permission, owners have access to [invoicing and subscription](../manage/subscriptions/) settings.
+- **Owner**: in addition to the **Admin** permission, owners have access to [invoicing and subscription](./subscriptions/) settings.
 
 | | Reader  | Writer | Admin  | Owner  |
 |:---:|:---:|:---:|:---:|:---:|
@@ -39,7 +39,7 @@ Members and their roles can be managed through <AppDomainNameLink /> in the [Mem
 ![Mergin Maps web members tab](./web-members.jpg "Mergin Maps web members tab")
 
 ### How to transfer ownership of a workspace
-Ownership of a workspace can be transferred to another [workspace member](..#workspace-member-roles). 
+Ownership of a workspace can be transferred to another [workspace member](#workspace-member-roles). 
 
 Users with the **owner** member role have access to the **Subscriptions** in <AppDomainNameLink />. Every workspace has to have at least one owner, however, there can be multiple owners of one workspace.
 
@@ -59,7 +59,7 @@ To transfer the ownership of a workspace to a user that is already a member of y
    
 4. Now the member role of the original owner can be changed (if needed) or they can be removed from the workspace completely.
 
-   :::warning
+:::warning
 Be careful when downgrading your own member role! 
 
 Only owners and admins can manage user roles so if you assign yourself the writer or reader role, you will not be able to change it back.

@@ -12,7 +12,7 @@ If you are interested in <MainDomainNameLink id="pricing-for-ce-and-ee" desc="On
 :::
 
 ## Subscriptions management
-The **Subscription** tab in <DashboardLink /> contains the overview of your current subscription plan and usage of storage, number of projects and number of users in your workspace.
+The **Subscription** tab in <DashboardLink /> contains the overview of your current subscription plan and usage of storage, number of projects and number of users in your workspace. It is available only to the [owners](./permissions/#workspace-member-roles) of a workspace.
 
 ![Mergin Maps Dashboard Subscription tab](./subscriptions.jpg "Mergin Maps Dashboard Subscription tab")
 
@@ -85,12 +85,14 @@ Click on the **Sign Up Now** button and fill out the form. We will review your a
 
    ![Payment method and billing information](./stripe-billing-info-payment-method.jpg "Payment method and billing information")
 
+:::warning
 All billing-related information such as invoices or failed payments notifications will be sent to the email that is entered in the billing information.
 
 Billing information will be displayed in invoices or receipts, so make sure they are entered correctly.
+:::
 
 ### Updating billing information
-The billing details associated with your subscription can be changed through the subscription management platform. You might need to do this e.g. when [transferring ownership of a workspace](,/permissions/#how-to-transfer-ownership-of-a-workspace).
+The billing details associated with your subscription can be changed through the subscription management platform. You might need to do this e.g. when [transferring ownership of a workspace](./permissions/#how-to-transfer-ownership-of-a-workspace).
 
 1. Log into <AppDomainNameLink /> and navigate to the **Subscription** tab
 2. Click on the **Manage Subscription** button to get to the subscription management portal 
@@ -101,11 +103,16 @@ The billing details associated with your subscription can be changed through the
    Click on **Update information** to change it.
    ![Subscription management portal Update billing information](./stripe-update-billing-info.jpg "Subscription management - Update billing information")
 
+:::warning
+All billing-related information such as invoices or failed payments notifications will be sent to the email that is entered in the billing information.
 
-### Adding and removing the payment method
+Billing information will be displayed in invoices or receipts, so make sure they are entered correctly.
+:::
+
+### Adding and removing a payment method
 When purchasing a subscription plan, you were asked to fill out your card information. 
 
-You might want to change it later, e.g. to use a different card or when [transferring the ownership of a workspace](,/permissions/#how-to-transfer-ownership-of-a-workspace). To add or remove a payment method associated with your <MainPlatformNameLink /> subscription:
+You might want to change it later, e.g. to use a different card or when [transferring the ownership of a workspace](./permissions/#how-to-transfer-ownership-of-a-workspace). To add or remove a payment method associated with your <MainPlatformNameLink /> subscription:
 
 1. Log into <AppDomainNameLink /> and navigate to the **Subscription** tab
 2. Click on the **Manage Subscription** button to get to the subscription management portal 
