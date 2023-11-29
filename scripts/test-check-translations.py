@@ -1,3 +1,7 @@
+# Checking translated subpages for migration banner is visible
+# Before run, install playwright python package for e2e testing and html page parsing:
+# https://playwright.dev/python/docs/intro
+
 import os
 import sys
 from playwright.sync_api import sync_playwright
