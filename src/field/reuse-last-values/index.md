@@ -9,7 +9,7 @@ To allow this functionality, follow these steps:
  - Open your project from the home screen
  - Click on three dots to open a menu and navigate to **Settings**
 
-![Mergin Maps Input More button](./input_more_icon.jpg "Mergin Maps Input More button")
+![Mergin Maps mobile app More button](./input_more_icon.jpg "Mergin Maps mobile app More button")
 
  - Toggle on `Reuse last value option`
 
@@ -25,6 +25,6 @@ To allow this functionality, follow these steps:
 
 ![Reused values in feature's form](./reuse_last_values_digitize_after.jpg "Reused values in feature's form")
 
-You can use the `Reuse last value option` across multiple layers. <MobileAppName /> will remember attributes for each layer separately.
+You can use the `Reuse last value option` across multiple layers. The <MobileAppNameShort /> will remember attributes for each layer separately.
 
 This feature was inspired by QGIS functionality called *Reuse last entered attribute values*.

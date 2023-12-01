@@ -29,7 +29,7 @@ Don't forget to save and synchronise your project!
 
 When you survey a new point in <MobileAppName />, you will see the values are automatically filled in:
 
-![Mergin Maps Input attributes form default value](./input_forms_defaults1.jpg "Mergin Maps Input attributes form default value")
+![Mergin Maps mobile app attributes form default value](./input_forms_defaults1.jpg "Mergin Maps mobile app attributes form default value")
 
 
 ## Constraints
@@ -50,7 +50,7 @@ Here, we will set up a constraint to the **number** field that represents the nu
 ![QGIS constraints in attributes form](./qgis_forms_constraints.jpg "QGIS constraints in attributes form")
 
 When surveying new features in <MobileAppName />, this field will have to be filled in using a value higher than or equal to 1. Otherwise, you will get a warning.
-![Mergin Maps Input constraints in attributes form](./input_forms_constraint.jpg "Mergin Maps Input constraints in attributes form")
+![Mergin Maps mobile app constraints in attributes form](./input_forms_constraint.jpg "Mergin Maps mobile app constraints in attributes form")
 
 ## Drill-down forms
 Cascade or drill-down forms enable to list values in a field depending on a value selected in another field.
@@ -74,7 +74,7 @@ To set the drill-down form:
 ![QGIS car-typ table](./qgis_forms_cascade6.jpg "QGIS car-typ table")
 
    When entering data into this field, the user can choose from these four `name` values. 
-![Mergin Maps Input drill-down form](./qgis_forms_cascade7.jpg "Mergin Maps Input drill-down form")
+![Mergin Maps mobile app drill-down form](./qgis_forms_cascade7.jpg "Mergin Maps mobile app drill-down form")
 
 4. The **Car-manufacturer** field refers to the **car-manufacturer** table. This table contains the fields `fid`, `name`, and `type`.
    ![QGIS car-manufacturer table](./qgis_forms_cascade9.jpg "QGIS car-manufacturer table")
@@ -98,4 +98,4 @@ To set the drill-down form:
 
 When doing the survey <MobileAppName />, you will see that after selecting **Car-type: Car**, the **Manufacturer** field will only offer **Mercedes-Benz**, **Skoda** and **Audi**. After selecting **Audi**, the **Car-Model** field will only offer the appropriate car models.
 
-![Mergin Maps Input drill-down form](./input_forms_cascade.gif "Mergin Maps Input drill-down form")
+![Mergin Maps mobile app drill-down form](./input_forms_cascade.gif "Mergin Maps mobile app drill-down form")

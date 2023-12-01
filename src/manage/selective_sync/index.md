@@ -28,7 +28,7 @@ Selective sync can be set using <QGISPluginName />.
    Do you want to set up a folder like this? Go to [How to set up a custom folder for storing photos](../../layer/settingup_forms_photo/#how-to-set-up-a-custom-folder-for-storing-photos).
    :::
    
-![Enable selective synchronisation in Mergin Maps plugin for QGIS](./selective-sync-plugin.jpg "Enable selective synchronisation in Mergin Maps plugin for QGIS")
+![Enable selective synchronisation in Mergin Maps QGIS plugin](./selective-sync-plugin.jpg "Enable selective synchronisation in Mergin Maps QGIS plugin")
 
 :::tip
 If **Selective sync** option is inactive in project properties, make sure you are working with a Mergin Maps project.

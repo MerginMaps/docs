@@ -1,6 +1,6 @@
 # External GPS
 
-<!--- IMPORTANT: This permalink is referenced from Mergin Maps Input -->
+<!--- IMPORTANT: This permalink is referenced from Mergin Maps mobile app -->
 
 [[toc]]
 
@@ -37,7 +37,7 @@ In Android, there are two ways how to use an external GPS device in <MobileAppNa
 
 It is strongly recommended to use the direct connection in <MobileAppName />. It is easier, quicker, provides more data, such as HDOP and fix quality. The app will report which device is used and take care of reconnecting in case of lost connection. Using mock location should be used only when it is not possible to connect the GPS receiver directly via <MobileAppName />.
 
-### How to connect external GPS receiver in Android via Mergin Maps Input (recommended)
+### How to connect external GPS receiver in Android via Mergin Maps mobile app (recommended)
 1. Connect the GPS receiver to your mobile device via Bluetooth.
 2. Open <MobileAppName /> and navigate **Select GPS receiver** in Settings:
 ![Select GPS receiver](./input-external-gps.jpg "Select GPS receiver")

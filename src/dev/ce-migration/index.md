@@ -36,7 +36,7 @@ $ docker-compose -f docker-compose.yml stop
 $ git pull
 ```
 
- 6. Set environment variables (<GitHubRepo desc=".prod.env" id="MerginMaps/mergin/blob/master/.prod.env" /> file). **Important** ⚠️
+ 6. Set environment variables (<GitHubRepo desc=".prod.env" id="MerginMaps/server/blob/master/.prod.env" /> file). **Important** ⚠️
 
 As mentioned earlier, CE operates with one global workspace. We will set it up now.
 Specify its name with the following environment variable:

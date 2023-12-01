@@ -67,24 +67,24 @@ If you experience any issues with syncing data, you can send diagnostic logs to 
 
 Once you have uploaded the logs, please contact us on <MerginMapsEmail id="support" /> with your username/workspace and problem description so we can have a look into the issues.
 
-### Diagnostic log on Mergin Maps plugin for QGIS  
+### Diagnostic log on Mergin Maps QGIS plugin 
 
 The diagnostic log `client-log.txt` can be found in the `.mergin` folder located in the project folder on your computer.
 
 To send the diagnostic log to the developers:
 1. Navigate to your local project in Browser panel under <QGISPluginName />
 2. Right-click on the project and select **Diagnostic log**
-![Diagnostic log in Mergin Maps plugin for QGIS](./qgis-logs.jpg "Diagnostic log in Mergin Maps plugin for QGIS")
+![Diagnostic log in Mergin Maps QGIS plugin](./qgis-logs.jpg "Diagnostic log in Mergin Maps QGIS plugin")
 3. Click **OK** to proceed
 
 ![Submit diagnostic logs message](./plugin-logs.jpg "Submit diagnostic logs message")
 
-### Diagnostic log on Mergin Maps Input
-To access the diagnostic log in <MobileAppName />:
+### Diagnostic log on Mergin Maps mobile app
+To access the diagnostic log in the <MobileAppNameShort />:
 1. Tap **More** and open **Settings** 
 2. Select **Diagnostic log** to display the log
-![Access diagnostic log in Mergin Maps Input](./input-logs.jpg "Diagnostic log in Mergin Maps Input")
+![Access diagnostic log in Mergin Maps mobile app](./input-logs.jpg "Diagnostic log in Mergin Maps mobile app")
 
 3. If you want to send the log to the developers, tap the **Send to Developers** button.
-![Send diagnostic log to developers](./input-logs2.jpg "Diagnostic log content in Mergin Maps Input")
+![Send diagnostic log to developers](./input-logs2.jpg "Diagnostic log content in Mergin Maps mobile app")
 

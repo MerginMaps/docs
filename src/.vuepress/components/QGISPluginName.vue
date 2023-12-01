@@ -1,3 +1,3 @@
 <template>
-  <span>Mergin Maps plugin for QGIS</span>
+  <span>Mergin Maps QGIS plugin</span>
 </template>

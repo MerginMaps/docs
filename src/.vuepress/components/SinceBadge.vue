@@ -1,7 +1,7 @@
 <template>
   <span>
-  <span class="sincebadge" v-if="type === 'App'" >since Mobile {{ version }}</span>
-  <span class="sincebadge" v-else-if="type === 'Plugin'">since Plugin {{ version }}</span>
+  <span class="sincebadge" v-if="type === 'App'" >since Mobile app {{ version }}</span>
+  <span class="sincebadge" v-else-if="type === 'Plugin'">since QGIS plugin {{ version }}</span>
   <span class="sincebadge" v-else-if="type === 'Server'">since Server {{ version }}</span>
   </span>
 </template>

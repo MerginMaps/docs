@@ -7,7 +7,7 @@ Media Sync has two sync modes: in copy mode, media files are only copied the ext
 
 <YouTube id="jAElsCZRBdc" />
 
-**Interested in using Media Sync?** Go to <GitHubRepo id="MerginMaps/mergin-media-sync" /> repository for the source code and more details. Here, you will also find the Quick start guide that will show you how to set up one way synchronisation between a new <MainPlatformName /> project and your existing bucket (<NoSpellcheck id="MinIO" /> or S3).
+**Interested in using Media Sync?** Go to <GitHubRepo id="MerginMaps/media-sync" /> repository for the source code and more details. Here, you will also find the Quick start guide that will show you how to set up one way synchronisation between a new <MainPlatformName /> project and your existing bucket (<NoSpellcheck id="MinIO" /> or S3).
 
 :::tip Usage details
 Media Sync can be used with *Team*, *Academia* and *Non-profit* <MainDomainNameLink id="pricing" desc="subscription plans"/>, as well as in [<CommunityPlatformName />](../mergince/) and [<EnterprisePlatformName />](../merginmaps-ee/).

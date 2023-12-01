@@ -34,6 +34,7 @@ Use GitHub Pull Requests to propose changes, we will review and merge your chang
  - Ask sys-admin to manually deploy REDIRECTS to njinx
  - Check that [live](https://merginmaps.com/docs) is what you want and announce the news on Slack
  
+
 ## Dynamic server (for local development)
 To change docs locally, run the server, open `http://localhost:8080/` in your browser and modify markdowns
 
@@ -42,7 +43,7 @@ cd merginmaps/docs
 yarn install
 yarn dev
 ```
- 
+
 ## Translations
 
 To develop translations, you can switch to different language by:

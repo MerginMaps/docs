@@ -3,7 +3,7 @@
 
 SaaS <MainPlatformName /> service is a web platform for storage and synchronisation of data between mobile devices, <MainPlatformNameLink /> service and QGIS Desktop. 
 
-There is also <MainPlatformName /> Community Edition (<CommunityPlatformNameLink />) that is licensed as open source software. The source code for <CommunityPlatformName /> can be modified and used for custom deployments. You can contribute your code to <GitHubRepo id="MerginMaps/mergin" />.
+There is also <MainPlatformName /> Community Edition (<CommunityPlatformNameLink />) that is licensed as open source software. The source code for <CommunityPlatformName /> can be modified and used for custom deployments. You can contribute your code to <GitHubRepo id="MerginMaps/server" />.
 
 [How to Use <MainPlatformName /> with a Custom Server](../manage/plugin-multi-server-use/) will explain how to use <QGISPluginName /> and <MobileAppName /> with your <CommunityPlatformName /> server.
 
@@ -14,14 +14,14 @@ Need more functionality than <CommunityPlatformNameLink /> offers? Explore our [
 :::
 
 ## How to deploy Mergin Maps CE
-**Interested in deploying <CommunityPlatformName />?** You can start by going to <GitHubRepo id="MerginMaps/mergin" /> on GitHub and read instructions on how to deploy it for your platform.
+**Interested in deploying <CommunityPlatformName />?** You can start by going to <GitHubRepo id="MerginMaps/server" /> on GitHub and read instructions on how to deploy it for your platform.
 
 :::tip
 Follow our [Migration Guides](./ce-migration/) to migrate from older versions to the latest version of <CommunityPlatformName />.
 :::
 ​
 ### Start docker containers
-Provided that `docker` and `docker-compose` are installed on your host, running Mergin Maps stack should be as simple as running `docker-compose`. However, before doing that you would need to [configure](#configure) your server setup via environment variables in <GitHubRepo desc=".prod.env" id="MerginMaps/mergin/blob/master/.prod.env" /> file. 
+Provided that `docker` and `docker-compose` are installed on your host, running Mergin Maps stack should be as simple as running `docker-compose`. However, before doing that you would need to [configure](#configure) your server setup via environment variables in <GitHubRepo desc=".prod.env" id="MerginMaps/server/blob/master/.prod.env" /> file. 
 
 Once configured, you can run:
 ```shell
@@ -39,7 +39,7 @@ $ docker exec merginmaps-server flask user create <username> <password> --is-adm
 ```
 ​
 ### Configure
-There are several application settings which can be changed via <GitHubRepo desc="config variables" id="MerginMaps/mergin/blob/master/.prod.env" />. Some of them have defaults and some of them needs to be modified, particularly those with `fixme` placeholder (marked with asterisks below).
+There are several application settings which can be changed via <GitHubRepo desc="config variables" id="MerginMaps/server/blob/master/.prod.env" />. Some of them have defaults and some of them needs to be modified, particularly those with `fixme` placeholder (marked with asterisks below).
 ​
 #### Server basics
 Settings about your deployment. Variables marked with star ⭐️ need to be modified.

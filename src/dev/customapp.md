@@ -4,6 +4,6 @@ Our mobile app <MobileAppName /> provides seamless synchronisation of field data
 
 The good news is that <MobileAppName /> is licensed as open source software, which means that anything is possible with a bit of development!
 
-If you are interested in building a custom app, you can start by going to <GitHubRepo id="MerginMaps/input"/> repository on GitHub and building it for your platform.
+If you are interested in building a custom app, you can start by going to <GitHubRepo id="MerginMaps/mobile"/> repository on GitHub and building it for your platform.
 
-The <GitHubRepo id="MerginMaps/input-sdk" desc="Input SDK repository" /> provides all the dependencies for various platforms (Android, iOS, macOS, Windows).
+The <GitHubRepo id="MerginMaps/mobile-sdk" desc="mobile app SDK repository" /> provides all the dependencies for various platforms (Android, iOS, macOS, Windows).
