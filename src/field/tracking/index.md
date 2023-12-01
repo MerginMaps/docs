@@ -2,7 +2,10 @@
 
 Position tracking is useful when you want to record your tracks during the field survey. This can help you know the extent of areas you have already surveyed in addition to the surveyed features.
 
-## Setting up position tracking in QGIS project
+<YouTube id="64HXEb25D0Q" />
+
+## Set up position tracking in QGIS project
+
 Tracking needs to be enabled in QGIS when [preparing your <MainPlatformName /> project](../../gis/features/#tracking).
 
 1. Open your <MainPlatformName /> project in QGIS
