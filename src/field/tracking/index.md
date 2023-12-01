@@ -1,11 +1,11 @@
-# How to Use Tracking in Mergin Maps Mobile App
-<SinceBadge type="App" version="2.3.0" />
+# Position Tracking
 
 Position tracking is useful when you want to record your tracks during the field survey. This can help you know the extent of areas you have already surveyed in addition to the surveyed features.
 
 <YouTube id="64HXEb25D0Q" />
 
-## Set up tracking in QGIS project
+## Set up position tracking in QGIS project
+
 Tracking needs to be enabled in QGIS when [preparing your <MainPlatformName /> project](../../gis/features/#tracking).
 
 1. Open your <MainPlatformName /> project in QGIS
@@ -33,7 +33,7 @@ Enabled tracking means that a new line layer for tracking will be created in you
 
 You can add new fields as needed, however, they should be set up with automatically generated [default values](../../layer/settingup_forms_settings/#default-values) as <MobileAppName /> will not open the form for manual inputs. You may use some of the QGIS functions, [extra position variables](../../layer/position_variables/) or [extra QGIS variables](../../layer/plugin-variables/).
 
-## Using tracking in Mergin Maps mobile app
+## Using position tracking in Mergin Maps mobile app
 
 To use tracking in the <MobileAppNameShort />, make sure that you enabled tracking in the QGIS project's settings. 
 
