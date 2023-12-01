@@ -404,6 +404,8 @@ Use `<AppDomainNameLink />` component, transforms to <AppDomainNameLink />
 
 Use `<DashboardLink />` component, transforms to  <DashboardLink />
 
+Use `<DashboardShortLink />` component, transforms to  <DashboardShortLink />
+
 Use `<MainDomainName />` component, transforms to <MainDomainName />
 
 Use `<MainDomainNameLink />` component, transforms to <MainDomainNameLink />

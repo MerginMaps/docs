@@ -41,7 +41,9 @@ Members and their roles can be managed through <AppDomainNameLink /> in the [Mem
 ### How to transfer ownership of a workspace
 Ownership of a workspace can be transferred to another [workspace member](#workspace-member-roles). 
 
-Users with the **owner** member role have access to the **Subscriptions** in <AppDomainNameLink />. Every workspace has to have at least one owner, however, there can be multiple owners of one workspace.
+Users with the **owner** member role have access to the **Subscriptions** page in the <DashboardShortLink />.
+
+Every workspace has to have at least one owner, however, there can be multiple owners of one workspace.
 
 ::: warning
 When transferring ownership of a workspace, you might also need to [update billing information](./subscriptions/#billing-information-and-payment-method).
