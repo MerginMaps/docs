@@ -37,7 +37,7 @@ module.exports = {
   locales: {
     '/': {
       lang: 'en-US',
-      title: ' ',
+      title: 'Mergin Maps',
       // description: 'Enjoy the feeling when you make sense of your geo-data on maps'
     }
   },
