@@ -30,7 +30,9 @@ Using QGIS Drag and Drop designer, fields can be arranged into groups and tabs.
    
 3. Drag and drop fields that should be in the tab or the group
 
+:::tip
 To see an example of tabs and groups, you can clone <MerginMapsProject id="documentation/form_setup" />. 
+:::
 
 In this project, we created two tabs, *Information* and *Data* and a group *Location* placed in the *Information* tab:
 ![QGIS form with tabs and groups](./qgis_forms_layout.jpg "QGIS form with tabs and groups")
@@ -75,6 +77,10 @@ Expressions and variables can be used both in the Text and the HTML widget.
 
 ![QGIS Configure Text Widget Expression Builder](./qgis-text-widget-expression.gif "QGIS Configure Text Widget Expression Builder")
 
+:::tip
+Clone <MerginMapsProject id="documentation/form_cascade" /> to follow this example.
+:::
+
 1. When configuring the Text or HTML widget, click on the **Expression Builder** button
 2. Enter the expression that will be used in your text and click **OK**.
 
@@ -82,11 +88,14 @@ Expressions and variables can be used both in the Text and the HTML widget.
 
 3. Click on the **+** button to add the expression to the text.
 
-   Here, we configured the widget with this text: `Make sure the number plate [% "SPZ" %] is visible in the photo.` 
+   Here, we configured the widget with this text:
+   `Make sure the number plate [% "VRP" %] is visible in the photo.`
+   
+   In this case, `VRP` is the name of a field aliased as `Vehicle Registration Plate` in the form.
 
 4. Save and synchronise your project. 
 
-... and this is how it works during the field survey. `[% "SPZ" %]` expression displays the current value of the `SPZ` field.
+... and this is how it works during the field survey. `[% "VRP" %]` expression displays the current value of the `Vehicle Registration Plate` field.
 ![Mergin Maps mobile app text widget with variable](./mobile-text-widget-expression.jpg "Mergin Maps mobile app text widget with variable")
 
 ### Using HTML widget to display online images and other online resources
@@ -102,7 +111,7 @@ To use these samples, replace `link` by the name of the appropriate field in you
 <script>document.write(expression.evaluate("'<a href=\"'||attribute( @feature, 'link' )||'\"><img src=\"'||attribute( @feature, 'link' )||'\" width=300></a>'"));</script>
 ```
 
-- display a link (`here is your link`) that can be opened in a browser
+- display a text (`here is your link`) with a link that can be opened in a browser
 ```html
 <script>document.write(expression.evaluate("'<a href=\"'||attribute( @feature, 'link' )||'\">here is your link</a>'"));</script>
 ```
