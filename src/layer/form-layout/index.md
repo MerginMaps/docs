@@ -56,7 +56,7 @@ We can set the visibility of **Location** tab depending on the value of the **su
 ![QGIS form control visibility by expression](./qgis_forms_layout_visibility.jpg "QGIS form control visibility by expression")
 
 ## Display instructions in the form using Text and HTML widget
-Sometimes, you may want to include instructions or tips for surveyors. This can be achieved by using the Text or HTML widgets. These notes may also display [expressions and field values](#using-expressions-in-text-and-html-widgets), which can be useful.
+Sometimes, you may want to include instructions or tips for surveyors in your forms. <QGIS text="QGIS" /> offers Text and HTML widgets that can be used for this purpose. Your text instructions can include [expressions and field values](#using-expressions-in-text-and-html-widgets) as well. The HTML widget supports various [HTML tags](https://doc.qt.io/qt-6/richtext-html-subset.html#supported-tags), so it can be also used, for instance, to display [online images](#using-html-widget-to-display-online-images-and-other-online-resources).
 
 These widgets can be found in **Available Widgets** in the **Other Widgets** section when using the [Drag and Drop Designer](#qgis-drag-and-drop-designer).
 ![QGIS HTML and Text Widget](./qgis-form-html-text-widget.jpg "QGIS HTML and Text Widget")
@@ -64,7 +64,7 @@ These widgets can be found in **Available Widgets** in the **Other Widgets** sec
 To configure the **Text** widget, enter the text you want to display in the form. On the right, you will see the preview.
 ![QGIS Text widget configuration](./qgis-configure-text-widget.jpg "QGIS Text widget configuration")
 
-If you prefer your text to be formatted, you may do so in the **HTML** widget. HTML widget supports these [HTML tags](https://doc.qt.io/qt-6/richtext-html-subset.html#supported-tags)).
+If you prefer your text to be formatted, you may do so in the **HTML** widget. HTML widget supports these [HTML tags](https://doc.qt.io/qt-6/richtext-html-subset.html#supported-tags).
 ![QGIS HTML widget configuration](./qgis-configure-html-widget.jpg "QGIS HTML widget configuration")
 
 ...and this is how the Text and HTML widgets look like in the form in QGIS (left) and in the mobile app (right).
@@ -92,19 +92,20 @@ Expressions and variables can be used both in the Text and the HTML widget.
 ### Using HTML widget to display online images and other online resources
 The **HTML widget** can be also used to display online images in the mobile app or open online resources, such as PDF files, videos or websites, in the browser of your device.
 
-Here are HTML samples you can use to [configure the HTML widget](#using-expressions-in-text-and-html-widgets). Your form should contain a field for storing the full URL link (here: `Text`).
+Here are HTML samples you can use to [configure the HTML widget](#using-expressions-in-text-and-html-widgets). Your form should contain a text field for storing the full URL link (here: `link`).
 
-To use these samples, replace `Text` by the name of the appropriate field in your layer. 
+To use these samples, replace `link` by the name of the appropriate field in your layer. 
 
 - show image in the form
-`<script>document.write(expression.evaluate("'<a href=\"'||attribute( @feature, 'Text' )||'\"><img src=\"'||attribute( @feature, 'Text' )||'\" width=300px></a>'"));</script>`
+`<script>document.write(expression.evaluate("'<a href=\"'||attribute( @feature, 'link' )||'\"><img src=\"'||attribute( @feature, 'link' )||'\" width=300></a>'"));</script>`
 
 - display a link (`here is your link`) that can be opened in a browser
-`<script>document.write(expression.evaluate("'<a href=\"'||attribute( @feature, 'Text' )||'\">here is your link</a>'"));</script>`
+`<script>document.write(expression.evaluate("'<a href=\"'||attribute( @feature, 'link' )||'\">here is your link</a>'"));</script>`
 
-:::tip
-Make sure that the HTML widget works as intended - it works both in QGIS and in the mobile app!
-:::
+Make sure that the HTML widget works as intended before taking it to the field - try it out in QGIS and in the <MobileAppNameShort />. It should look something like this:
+
+![HTML widget in QGIS and in Mergin Maps mobile app](./qgis-mobile-html-form.jpg "HTML widget in QGIS and in Mergin Maps mobile app")
+
 
 ## Spacer widget
 <Badge text="since QGIS 3.30" type="tip"/>
