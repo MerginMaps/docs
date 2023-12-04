@@ -38,10 +38,12 @@ If you don't see any conflict files in your folder, try to download them manuall
 ### Manual data transfer (Android)
 Manual data transfer from an Android device can be done by connecting your device to a computer and copying data files to/from the device. Once your Android phone or tablet is recognised by the operating system after connecting it using USB cable, you can use file browser to copy files. 
 
-On Android devices, data are stored in the `Internal storage/Android/data/uk.co.lutraconsulting/files/projects` folder. This folder is accessible only from a computer, so you might not see it in your mobile device.
+You can find the path to your <MainPlatformName /> project folder in the [Diagnostic Log](../../misc/troubleshoot/#diagnostic-log-on-mergin-maps-mobile-app). On Android devices, the path is something like `/Android/data/uk.co.lutraconsulting/files/projects`.
+
+This folder is accessible only from a computer, so you might not see it in your mobile device.
 
 ### Manual data transfer (between iOS and Mac)
-<MobileAppName /> supports iTunes file sharing. Note that iTunes doesn't allow you to browse or edit data from the app data folder, only allows you to delete or copy the data folder to another location. 
+The <MobileAppNameShort /> supports iTunes file sharing. Note that iTunes doesn't allow you to browse or edit data from the app data folder, only allows you to delete or copy the data folder to another location. 
 
 You can access your data by following these steps:
 1. Plug iOS device to a computer
