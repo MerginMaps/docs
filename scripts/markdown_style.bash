@@ -22,7 +22,7 @@ for i in \
   "\*\*Note\*\*:"
 do
   echo "Checking for $i"
-  A1=`grep --line-number -r "$i" $SCRIPT_DIR/../src/ --include \*.md --exclude=*/layer/form-layout/index.md`
+  A1=`grep --line-number -r "$i" $SCRIPT_DIR/../src/ --include \*.md --exclude \*/layer/form-layout/index.md`
   if [ ! -z "$A1" ]
   then
    echo $A1
