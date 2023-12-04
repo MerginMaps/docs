@@ -22,7 +22,8 @@ for i in \
   "\*\*Note\*\*:"
 do
   echo "Checking for $i"
-  A1=`grep --line-number -r "$i" $SCRIPT_DIR/../src/ --include \*.md --exclude \*/layer/form-layout/index.md`
+  # exclude HTML tags inside QGIS expressions in documentation
+  A1=`grep --line-number -r -e "$i"  $SCRIPT_DIR/../src/ --include \*.md | grep -v 'expression.evaluate'`
   if [ ! -z "$A1" ]
   then
    echo $A1
