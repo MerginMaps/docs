@@ -5,7 +5,7 @@ The <QGISPluginName /> adds several variables that can be used in QGIS expressio
 | Variable name               | Sample value                  | Scope   | Description |
 |-----------------------------|-------------------------------|---------|-------------|
 | `@mergin_username`          | `martin`                      | global  | Name of the user currently logged in to <MainPlatformNameLink /> |
-| `@mergin_user_email`        | `martin@example.com`<SinceBadge type="Plugin" version="2023.5" />          | global  | Email of the user currently logged in to <MainPlatformName />|
+| `@mergin_user_email`        | `martin@example.com`<SinceBadge type="App" version="2.5.0" /> | global  | Email of the user currently logged in to <MainPlatformName />|
 | `@mergin_url`               | `https://app.merginmaps.com`  | global  | URL of the <MainPlatformName /> service |
 | `@mergin_project_name`      | `Tree survey`                 | project | Name of the active <MainPlatformName /> project  |
 | `@mergin_project_owner`     | `martin`                      | project | Name of the owner of the active project |
