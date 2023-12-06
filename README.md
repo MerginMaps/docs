@@ -46,12 +46,7 @@ yarn dev
 
 ## Translations
 
-To develop translations, you can switch to different language by:
-- open JavaScript console in browser
-- execute `Weglot.switchTo('de')` 
-- now you should see banner to switch to english in sidebar and all texts translated
-
-To change translated text, you need to login to Weglot and modify it there.
+At the moment we do not support translations, see https://github.com/MerginMaps/docs/issues/133
 
 ## Static generation (for deployments)
 
