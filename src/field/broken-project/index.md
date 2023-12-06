@@ -28,7 +28,7 @@ connected with the diagnostics log error *Failed to commit changes ... wrong dat
 **To fix the project**:
 1. Open your <MainPlatformName /> project in QGIS.
 2. Open problematic vector layer's properties in the project. 
-3. Find the boolean fields that use Default values that uses `'false'` or `'true'`.
+3. Find boolean fields that use Default values `'false'` or `'true'`.
 ![Usage of default boolen value represented by string](./bad_default_val.png  "Usage of default boolen value represented by string")
 4. Replace string representation `'false'` or `'true'` by literal `false` or `true`.
 5. Save and sync the project.
