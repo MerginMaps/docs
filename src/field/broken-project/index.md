@@ -1,7 +1,40 @@
 # How to Fix a Broken Project
 [[toc]]
 
-Do you get an error message when trying to open a project in <MobileAppName />? There can be multiple reasons for what went wrong. Here we will try to guide you through some basic steps that can help you.
+Do you get an error message when trying to open a project or a form in <MobileAppName />? There can be multiple reasons for what went wrong. Here we will try to guide you through some basic steps that can help you.
+
+:::tip
+Need more help with your issue? <CommunityJoin />
+:::
+
+## Saving of feature failed (vector layer)
+
+<SinceBadge type="App" version="2.5.0" />
+
+The error is caused by a change of behaviour in QGIS versions 3.34.0 and higher as well as <MobileAppName /> 2.5.0 and higher. 
+
+:::details
+You can see the detailed upstream issue report <GitHubRepo id="qgis/QGIS/issues/55517" desc="on this link" />. 
+::: 
+
+The error can be identified by notification *Failed to save changes* in the <MobileAppName /> when a feature is added or modified. 
+![Failed to save changes error](./saving_failed_bug.png "Failed to save changes error")
+In the diagnostic log, you may find errors such as Failed to commit changes, or ... wrong data type for attribute ....
+
+```
+2023-12-05 09:04:25.058221+0100 Input[2593:32260] "2023-12-05T08:04:25.058Z CommitChanges: Failed to commit changes:\nERROR: 1 feature(s) not added.\n\n  Provider errors:\n    wrong data type for attribute 12 of feature -2: 10\n"
+```
+
+**To fix the project**:
+1. Open your <MainPlatformName /> project in QGIS.
+2. Open problematic vector layer's properties in the project. 
+3. Find boolean fields that use Default values `'false'` or `'true'`.
+![Usage of default boolean value represented by string](./bad_default_val.png  "Usage of default boolean value represented by string")
+4. Replace string representation `'false'` or `'true'` by literal `false` or `true` (remove single quotation marks).
+5. Save and sync the project.
+
+
+## Failed to read project issue (vector tiles)
 
 ![Failed to read project issue gif](./error-dialog.gif "Failed to read project issue gif")
 
@@ -44,9 +77,5 @@ There is a high chance that these settings are the culprit behind the error!
 
 :::danger WARNING
 Copying styles from problematic layers and pasting them to other layers can cause the error to occur again. Unless you know what exactly causes the issues and are able to fix that, you might need to recreate the styles.
-:::
-
-:::tip
-Need more help with your issue? <CommunityJoin />
 :::
 
