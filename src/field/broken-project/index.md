@@ -1,7 +1,7 @@
 # How to Fix a Broken Project
 [[toc]]
 
-Do you get an error message when trying to open a project or form in <MobileAppName />? There can be multiple reasons for what went wrong. Here we will try to guide you through some basic steps that can help you.
+Do you get an error message when trying to open a project or a form in <MobileAppName />? There can be multiple reasons for what went wrong. Here we will try to guide you through some basic steps that can help you.
 
 :::tip
 Need more help with your issue? <CommunityJoin />
