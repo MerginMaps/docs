@@ -27,6 +27,4 @@ export default ({
     },
     router
   )
-  /** Customized api key for weglot */
-  Vue.prototype.$weglotApiKey = "wg_30067291c88213842d0e79e66af4ff9e2"
 }

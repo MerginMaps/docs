@@ -232,7 +232,7 @@ Custom title example
 
 ### Emoji
 
-You can use any of supported <GitHubRepo id="markdown-it/markdown-it-emoji/blob/master/lib/data/full.json" desc="supported emoji" /> by markdown-it project.
+You can use any of supported <GitHubRepo id="markdown-it/markdown-it-emoji/blob/master/lib/data/full.js" desc="supported emoji" /> by markdown-it project.
 
 
 :tada: :grinning: :rofl: :scream: :heart: :pray:
