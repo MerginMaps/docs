@@ -19,7 +19,7 @@ You can see the detailed upstream issue report <GitHubRepo id="qgis/QGIS/issues/
 
 The error can be identified by notification *Failed to save changes* in the <MobileAppName /> when a feature is added or modified. 
 ![Failed to save changes error](./saving_failed_bug.png "Failed to save changes error")
-connected with the diagnostics log error *Failed to commit changes ... wrong data type for attribute ...*, e.g.
+In the diagnostic log, you may find errors such as Failed to commit changes, or ... wrong data type for attribute ....
 
 ```
 2023-12-05 09:04:25.058221+0100 Input[2593:32260] "2023-12-05T08:04:25.058Z CommitChanges: Failed to commit changes:\nERROR: 1 feature(s) not added.\n\n  Provider errors:\n    wrong data type for attribute 12 of feature -2: 10\n"
@@ -29,7 +29,7 @@ connected with the diagnostics log error *Failed to commit changes ... wrong dat
 1. Open your <MainPlatformName /> project in QGIS.
 2. Open problematic vector layer's properties in the project. 
 3. Find boolean fields that use Default values `'false'` or `'true'`.
-![Usage of default boolen value represented by string](./bad_default_val.png  "Usage of default boolen value represented by string")
+![Usage of default boolean value represented by string](./bad_default_val.png  "Usage of default boolean value represented by string")
 4. Replace string representation `'false'` or `'true'` by literal `false` or `true` (remove single quotation marks).
 5. Save and sync the project.
 
