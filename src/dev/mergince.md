@@ -14,12 +14,8 @@ Need more functionality than <CommunityPlatformNameLink /> offers? Explore our [
 :::
 
 ## How to deploy Mergin Maps CE
-**Interested in deploying <CommunityPlatformName />?** You can start by going to <GitHubRepo id="MerginMaps/server" /> on GitHub and read instructions on how to deploy it for your platform.
+Follow these steps to run local <MainPlatformName /> instance.
 
-:::tip
-Follow our [Migration Guides](./ce-migration/) to migrate from older versions to the latest version of <CommunityPlatformName />.
-:::
-​
 ### Start docker containers
 Provided that `docker` and `docker-compose` are installed on your host, running Mergin Maps stack should be as simple as running `docker-compose`. However, before doing that you would need to [configure](#configure) your server setup via environment variables in <GitHubRepo desc=".prod.env" id="MerginMaps/server/blob/master/.prod.env" /> file. 
 
@@ -134,6 +130,11 @@ If you do not want to provide these data, you can opt-out any time by setting th
 ```
 COLLECT_STATISTICS=false
 ```
+
+## Server migration guides
+
+Follow our [**Migration Guides**](./ce-migration/) to migrate from older versions to the latest version of <CommunityPlatformName />.
+
 
 ## Mergin Maps CE troubleshooting
 
