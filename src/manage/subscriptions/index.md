@@ -1,81 +1,142 @@
 # Subscriptions and Invoicing
 [[toc]]
 
-## Subscriptions
+After signing up to <MainPlatformNameLink />, you can use your workspace for free during the **28 day trial**. After the trial, you can choose from our <MainDomainNameLink id="pricing" desc="subscription plans"/> depending on the storage size, size of your team, support level and other features that you need for your [workspace](../../manage/workspaces/). 
+
+There are three paid plans: *Individual*, *Professional*, and *Team* plan. Students and educators can use our free *Academia* plan and there is also a *Non-profit* plan available to charities and non-profit organisations. Subscriptions are billed monthly or annually.
 
 ::: tip
-For details about different subscription plans visit the <MainDomainNameLink id="pricing" desc="pricing"/> page.
-:::
+For details about different subscription plans visit our <MainDomainNameLink id="pricing" desc="pricing page"/>.
 
-After signing up, you can use your workspace for free during the **28 day trial**. After the trial, you can choose from our <MainDomainNameLink id="pricing" desc="subscription plans"/> depending on the storage size, size of your team, support level and other features that you need for your [workspace](../../manage/workspaces/). 
-
-There are three paid plans: *Individual*, *Professional*, and *Team* plan. Students and educators can use our free *Academia* plan and there is also a *Non-profit* plan available to charities and non-profit organisations.
-
-:::tip
 If you are interested in <MainDomainNameLink id="pricing-for-ce-and-ee" desc="On-Premise deployment"/>  or looking for other options, please <MerginMapsEmail id="sales" desc="contact us" /> directly.
 :::
 
-Subscriptions are automatically billed monthly or annually. You can cancel or change your subscription any time through <AppDomainNameLink />.
+## Subscriptions management
+The **Subscription** tab in <DashboardLink /> contains the overview of your current subscription plan and usage of storage, number of projects and number of users in your workspace. It is available only to the [owners](../permissions/#workspace-member-roles) of a workspace.
 
-## How to change a subscription
-Information about the current subscription can be found in <AppDomainNameLink />. Here, you can also switch to another subscription plan and manage the billing.
+![Mergin Maps Dashboard Subscription tab](./subscriptions.jpg "Mergin Maps Dashboard Subscription tab")
 
+The **Manage Subscription** button will redirect you to our subscription management portal. Here, you can [update](#how-to-change-a-subscription) or [cancel](#how-to-cancel-a-subscription) your subscription, see upcoming charges, review your [billing and payment information](#billing-information-and-payment-method) and access [payment history and invoices](#invoices-and-payment-history).
+
+![Mergin Maps subscription plan overview](./stripe-merginmaps-subcription.jpg "Mergin Maps subscription plan overview")
+   
+   
+## How to upgrade a subscription from the trial plan
 1. Log into <AppDomainNameLink />
-2. Navigate to **Subscriptions**
-   ![Mergin Maps Subscription details](./subscriptions.jpg "Mergin Maps Subscription details")
+2. Navigate to the **Subscription** tab. The overview of available plans is listed in the **Change subscription** section. 
+   
+   Specify if you want to pay yearly or monthly and click on the **Upgrade** button under the plan of your choice.
+   ![Mergin Maps Subscription details](./subscriptions-upgrade.jpg "Mergin Maps Subscription details")
 
-3. Here, choose if you want to **Pay monthly** or **Pay Yearly**. Click on **Upgrade** under the plan of your choice.
-4. Fill in the form with your details. 
-   When registering a business organisation, you can enter the VAT number (if you want to use reverse charge VAT payments).
-5. Click on **Complete Purchase**
+3. You will be redirected to a checkout page. Here, fill out the billing information.
 
-Notes:
-- If a VAT number is entered, this must be associated with the address you enter below.
-- The address you enter must match the address registered with your payment method (e.g. credit card)
-- The address entered needs to match the VAT registered address
+   The email you enter here will receive all billing-related information such as invoices or failed payments notifications.
 
-If you'd like to purchase the *Team* plan on annual basis and would like to make bank transfer payments, please <MerginMapsEmail id="sales" desc="contact us" /> for manual invoicing.
+   If you are a business, check the **I'm purchasing as a business** option and fill out your business name and VAT number.
+   - the VAT number has to be associated with the entered (VAT registered) address
+   - the address you enter has to match the address registered with your payment method
+   
+   ![Subscription checkout](./stripe-checkout.jpg "Subscription checkout")
+  
+4. Click on **Pay and subscribe**
+   
+After the payment goes through, you will be redirected back to <DashboardLink /> where you can review the details of your new subscription
 
 ### How to request Academia or Non-profit plan
-We support students, educators and registered non-profit organisations. If you want to request free *Academia* plan or *Non-profit* plan:
-1. Log into <AppDomainNameLink />
-2. In the **Subscriptions** tab, you will find more information about these plan. If you fit one of these categories, click on the **Request** button. 
+We support students, educators and registered non-profit organisations.
+
+Visit <MainDomainNameLink id="pricing" desc="Mergin Maps pricing page"/>, where you can request free *Academia* plan or *Non-profit* plan.
+
 ![Mergin Maps Request Academia or Non-profit plan](./academia-non-profit-plan.jpg "Mergin Maps Request Academia or Non-profit plan")
-3. Fill in the form and **Submit** your request. We will review your application and if you meet our conditions, your workspace will get the Academia or Non-profit plan.
 
-## How to cancel a subscription
-1. Log into <AppDomainNameLink />
-2. Navigate to **Subscriptions**. If you have an active subscription, you can cancel it by clicking **Cancel subscription**.
-![Mergin Maps Cancel Subscription](./cancel-subscription.jpg "Mergin Maps Cancel Subscription")
+Click on the **Sign Up Now** button and fill out the form. We will review your application and if you meet our conditions, your workspace will get the Academia or Non-profit plan.
 
-## How to transfer ownership and billing for workspaces
-Ownership of a workspace can be transferred to another [workspace member](../permissions/#workspace-member-roles). Users with the **owner** member role have access to the subscriptions and invoicing settings and can change the billing details in the **Subscriptions** tab in <AppDomainNameLink />. Every workspace has to have at least one owner, however, there can be multiple owners of one workspace.
+## How to change a subscription
+1. Log into <AppDomainNameLink /> and navigate to the **Subscription** tab
+2. Click on the **Manage Subscription** button to get to the subscription management portal
+   ![Mergin Maps Dashboard manage subscription](./subscriptions-update.jpg "Mergin Maps Dashboard manage subscription")
 
-To transfer the ownership of a workspace to a user that is not yet a member of your workspace, follow the steps in [How to add users to a workspace](../project-advanced/#add-users-to-a-workspace) and select the **Owner** as the the **member role**. The new owner has to accept the invitation.
-
-To transfer the ownership of a workspace to a user that is already a member of your workspace, you have to change their member role to **Owner**:
-1. Log in to <AppDomainNameLink />
-2. Navigate to the **Members** tab. Here, you will see the list of current workspace members and their roles. 
-   ![Changing member role of a workspace member](./transfer-ownership-member-role.jpg "Changing member role of a workspace member")
-
-3. Change the **member role** of the user who should become the new owner
-   ![Selecting owner member role from the list](./transfer-ownership-new-owner.jpg "Selecting owner member role from the list")
+3. In the *Current plan* section, click on the **Update plan** button
+   ![Update Mergin Maps subscription plan](./stripe-update-subscription.jpg "Update Mergin Maps subscription plan")
    
-4. Now the member role of the original owner can be changed (if needed) or they can be removed from the workspace completely.
+4. Choose *Monthly* or *Yearly* payment, **Select** your new plan and **Continue**
+   ![Changing Mergin Maps subscription plan](./stripe-update-your-plan.jpg "Changing Mergin Maps subscription plan")
+   
+5. Review the details of your updates and **Confirm** the subscription update
+   ![Confirm Mergin Maps subscription plan update](./stripe-update-plan-confirmation.jpg "Confirm Mergin Maps subscription plan update")
+
+### How to cancel a subscription
+1. Log into <AppDomainNameLink /> and navigate to the **Subscription** tab
+2. Click on the **Manage Subscription** button to get to the subscription management portal
+   ![Mergin Maps Dashboard manage subscription](./subscriptions-update.jpg "Mergin Maps Dashboard manage subscription")
+
+3. In the *Current plan* section, click on **Cancel plan**
+   ![Cancel Mergin Maps Subscription](./stripe-cancel-subscription.jpg "Cancel Mergin Maps Subscription")
+   
+4. Review the details of your subscription plan and confirm that you want to cancel the plan by clicking **Cancel plan** again
+   ![Cancel Mergin Maps Subscription](./stripe-cancel-subscription-confirm.jpg "Cancel Mergin Maps Subscription")
+
+## Billing information and payment method
+1. Log into <AppDomainNameLink /> and navigate to the **Subscription** tab
+2. Click on the **Manage Subscription** button
+   ![Mergin Maps Dashboard manage subscription](./subscriptions-update.jpg "Mergin Maps Dashboard manage subscription")
+
+3. You will be redirected to the subscription management portal where you can see current billing information and payment method.
+
+   ![Payment method and billing information](./stripe-billing-info-payment-method.jpg "Payment method and billing information")
 
 :::warning
-Be careful when downgrading your own member role! 
+All billing-related information such as invoices or failed payments notifications will be sent to the email that is entered in the billing information.
 
-Only owners and admins can manage user roles so if you assign yourself the writer or reader role, you will not be able to change it back.
+Billing information will be displayed in invoices or receipts, so make sure they are entered correctly.
+:::
+
+### Updating billing information
+The billing details associated with your subscription can be changed through the subscription management platform. You might need to do this e.g. when [transferring ownership of a workspace](../permissions/#how-to-transfer-ownership-of-a-workspace).
+
+1. Log into <AppDomainNameLink /> and navigate to the **Subscription** tab
+2. Click on the **Manage Subscription** button to get to the subscription management portal 
+   ![Mergin Maps Dashboard manage subscription](./subscriptions-update.jpg "Mergin Maps Dashboard manage subscription")
+
+3. Here, you can see your current billing details. 
+   
+   Click on **Update information** to change it.
+   ![Subscription management portal Update billing information](./stripe-update-billing-info.jpg "Subscription management - Update billing information")
+
+:::warning
+All billing-related information such as invoices or failed payments notifications will be sent to the email that is entered in the billing information.
+
+Billing information will be displayed in invoices or receipts, so make sure they are entered correctly.
+:::
+
+### Adding and removing a payment method
+When purchasing a subscription plan, you were asked to fill out your card information. 
+
+You might want to change it later, e.g. to use a different card or when [transferring the ownership of a workspace](../permissions/#how-to-transfer-ownership-of-a-workspace). To add or remove a payment method associated with your <MainPlatformNameLink /> subscription:
+
+1. Log into <AppDomainNameLink /> and navigate to the **Subscription** tab
+2. Click on the **Manage Subscription** button to get to the subscription management portal 
+   ![Mergin Maps Dashboard manage subscription](./subscriptions-update.jpg "Mergin Maps Dashboard manage subscription")
+
+3. Here, you can see your current [payment methods](#billing-information-and-payment-method). 
+   - to add a new card, click on **Add payment method** and fill out the details
+   - to remove a card from your profile, click on the button next to the card and click **Delete**
+   ![Add payment method](./stripe-add-payment-method.jpg "Add payment method")
+
+:::warning
+Any active subscription requires a payment method. 
+
+A card can be deleted only if there is another payment methods available. To replace a card, you have to add a new card before removing the old one.
 :::
 
 ## Invoices and payment history
-To download your invoices and see your payment history:
+1. Log into <AppDomainNameLink /> and navigate to the **Subscription** tab
+2. Click on the **Manage Subscription** button to visit the subscription management portal
+   ![Mergin Maps Dashboard manage subscription](./subscriptions-update.jpg "Mergin Maps Dashboard manage subscription")
 
-1. Log into <AppDomainNameLink /> 
-2. Navigate to the **Subscription** in the left panel
-2. In the **Subscription** window, go to:
-   - **HISTORY** to see your payment history
-   - **INVOICES** to access your invoices
+3. The subscription management portal provides the overview of payment history and invoices at the bottom of the page
+   ![Invoices and Payment History](./invoices-history.jpg "Invoices and Payment History")
 
-![Invoices and Payment History](./invoices-history.jpg "Invoices and Payment History")
+4. Click on a payment to download your invoice or receipt.
+   ![Mergin Maps Invoice](./invoice-receipt.jpg "Mergin Maps Invoice")
+
