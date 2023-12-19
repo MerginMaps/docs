@@ -16,7 +16,7 @@ Make sure to always back up your database data before doing a migration.
 
 -----
 
-Get the latest [docker-compose file](https://github.com/MerginMaps/server/blob/master/docker-compose.yml) or update docker images manually to version `2023.6.1`.
+Get the latest <GitHubRepo id="MerginMaps/server/blob/master/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2023.6.1`.
 Perform the migration:
 
 1. Start up your docker containers
@@ -47,7 +47,7 @@ Perform the migration:
 Besides various fixes, enhancements and performance improvements the most notable change recently introduced is the concept of workspaces. For Community Edition it means there is a **common shared workspace (global workspace)** for all users where all projects are stored, instead of having a personal or organisational namespace for projects.
 
 :::tip
-In case you do not need your previous data, we advise to start with [clean deployment](../mergince/#how-to-deploy-mergin-maps-ce) without the need to follow this migration guide.
+In case you do not need your previous data, we advise to start with [clean deployment](../mergince/#deployment) without the need to follow this migration guide.
 :::
 
 **Upgrading to 2023.2**
@@ -80,7 +80,7 @@ Specify its name with the following environment variable:
  - `GLOBAL_WORKSPACE=ShinyWorkspace` - name of your workspace. A good fit is a name of your company or team. This value *should not be changed* later.
 
 :::tip
-You can find all available environment variables [here](../mergince/#how-to-deploy-mergin-maps-ce) together with a tutorial how to set them up.
+You can find all available environment variables [here](../mergince/#deployment) together with a tutorial how to set them up.
 :::
 
 Further, you need to set a default role for people in your workspace. **Pick one** of these options
@@ -99,7 +99,7 @@ You can specify the maximum storage for your shiny new workspace 🌟 with the f
 New users can be created from <MainPlatformName /> administration panel, by navigating to `<your_url>/admin`.
 :::
 
- 1. Make sure projects volume mounts in `docker-compose` file still match (You can set up new volumes by following the [quick start guide](../mergince/#how-to-deploy-mergin-maps-ce)). Switch to new server version and PostgreSQL to at least version 12 (14 recommended) by running new docker containers:
+ 1. Make sure projects volume mounts in `docker-compose` file still match (You can set up new volumes by following the [quick start guide](../mergince/#deployment)). Switch to new server version and PostgreSQL to at least version 12 (14 recommended) by running new docker containers:
 ```bash
 $ docker-compose -f docker-compose.yml up
 ```

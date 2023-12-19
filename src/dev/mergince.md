@@ -17,7 +17,7 @@ Need more functionality than <CommunityPlatformNameLink /> offers? Explore our [
 Follow these steps to run local <MainPlatformName /> instance.
 
 ### Start docker containers
-Provided that `docker` and `docker-compose` are installed on your host, running Mergin Maps stack should be as simple as running `docker-compose`. However, before doing that you would need to [configure](#configure) your server setup via environment variables in <GitHubRepo desc=".prod.env" id="MerginMaps/server/blob/master/.prod.env" /> file. 
+Provided that `docker` and `docker-compose` are installed on your host, running <MainPlatformName /> stack should be as simple as running `docker-compose`. However, before doing that you would need to [configure](#configure-environment) your server setup via environment variables in <GitHubRepo desc=".prod.env" id="MerginMaps/server/blob/master/.prod.env" /> file. 
 
 Once configured, you can run:
 ```shell
@@ -104,7 +104,7 @@ Other settings related to data management.
 | Variable name             | Type    | Default     | Description |
 |---------------------------|---------|-------------|---------------------------|
 | `GLOBAL_WORKSPACE`      | string  | `mergin`    | Namespace (part of URL) for all projects. All projects belong to this single workspace with certain permissions (see below).  |
-| `GLOBAL_STORAGE`        | integer |`10737418240`| Storage limit Mergin Maps can use to store projects (last version) in bytes (default is 10 GB). Should be reasonably large.  |
+| `GLOBAL_STORAGE`        | integer |`10737418240`| Storage limit <MainPlatformName /> can use to store projects (last version) in bytes (default is 10 GB). Should be reasonably large.  |
 | `LOCAL_PROJECTS`          | string  |`/data/live` | Directory to store projects on container. Please refer to volume mapping in docker-compose file.     |
 | `TEMP_DIR`                | string  | `/data/tmp` | Trash directory for temp files being cleaned regularly. Please refer to volume mapping in docker-compose file.    |
 | `MAINTENANCE_FILE`        | string  |`/data/MAINTENANCE`| File to indicate server is in maintenance - read only mode. Please refer to volume mapping in docker-compose file.     |
