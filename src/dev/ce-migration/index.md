@@ -3,6 +3,23 @@
 
 Migration guides are here to help you migrate to the latest version of [<MainPlatformName /> Community Edition](../mergince/).
 
+## 2023.3.0 -> 2023.6.1
+After updating to new docker image you need to run db migration. First check you are on correct version (b6cb0a98ce20)
+```bash
+$ docker exec merginmaps-server flask db current
+INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+INFO  [alembic.runtime.migration] Will assume transactional DDL.
+b6cb0a98ce20
+```
+If blank and you started at 2023.2.0+ then just stamp it
+```bash
+$ docker exec merginmaps-server flask db stamp b6cb0a98ce20
+```
+else you need to follow migration guides for earlier versions. Finally, run db migration
+```bash
+$ docker exec merginmaps-server flask db upgrade 3a77058a2fd7
+```
+
 ## 2023.2.0 -> 2023.3.0
 Since there is no db migration or new config settings needed it is enough just to use new docker image tag.
 
