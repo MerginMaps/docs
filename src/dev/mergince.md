@@ -38,23 +38,23 @@ $ docker exec merginmaps-server flask user create <username> <password> --is-adm
 There are several application settings which can be changed via <GitHubRepo desc="config variables" id="MerginMaps/server/blob/master/.prod.env" />. Some of them have defaults and some of them needs to be modified, particularly those with `fixme` placeholder (marked with asterisks below).
 ​
 #### Server basics
-Variables marked with star ⭐️ need to be modified.
+Variables marked with star ⭐️ need to be modified for production use.
 
 | Variable name            | Type      | Default   | Description |
 |--------------------------|-----------|-----------|-------------|
 | `CONTACT_EMAIL`⭐️         | string    |           | Email contact for application administrator. |
-| `MERGIN_BASE_URL`⭐️       | string    |           | Deployment URL where <MainPlatformName /> is hosted. |
 | `COLLECT_STATISTICS`     | Boolean   | `true`    | Whether to send usage statistics for application improvements. |
+| `MERGIN_BASE_URL`⭐️       | string    |           | Deployment URL where <MainPlatformName /> is hosted. |
 | `SERVICE_ID`             | string    |           | Deployment UUID. Auto-generated on first run. |
 ​
-#### Security settings 🛡️
+#### Security settings (important for production use)🛡️
 Security settings are important for production use.
 
 | Variable name            | Type      | Default   | Description |
 |--------------------------|-----------|-----------|-------------|
-| `SECRET_KEY`            | string    |           | Secret key for authorisation, should be generated strong string. |
-| `SECURITY_PASSWORD_SALT`| string    |           | Password salt for hashing, should be generated strong string. |
 | `BEARER_TOKEN_EXPIRATION`| integer   |  `43200`  | Lifetime of authorisation bearer token in seconds. When expired, user needs to log in again. |
+| `SECRET_KEY`⭐️            | string    |           | Secret key for authorisation, should be generated strong string. |
+| `SECURITY_PASSWORD_SALT`⭐️| string    |           | Password salt for hashing, should be generated strong string. |
 | `WTF_CSRF_ENABLED`       | Boolean   |  `true`   | Enable CSRF protection. It is strongly recommended to have this on. |
 | `WTF_CSRF_TIME_LIMIT`    | integer   |  `86400`  | Lifetime of CSRF token in seconds. When expired, user needs to refresh it. |
 ​
@@ -63,24 +63,24 @@ Mergin Maps uses PostgreSQL database to store its data.
 ​
 | Variable name             | Type      | Default   | Description |
 |---------------------------|-----------|-----------|-------------|
+| `DB_APPLICATION_NAME`     | string    | `mergin`  | Comment in database connection string to better identify connection source.  |
 | `DB_DATABASE`             | string    |`postgres` | Database to store <MainPlatformName /> tables.  |
 | `DB_HOST`                 | string    | `db`      | Database host. Mapped to docker-compose service name.  |
-| `DB_PORT`                 | integer   | `5432`    | Database port. If non-default should match port exposed in docker-compose file.  |
-| `DB_USER`                | string    |`postgres` | PostgreSQL user to connect to <MainPlatformName /> database.  |
 | `DB_PASSWORD`            | string    |`postgres` | PostgreSQL user password.  |
-| `DB_APPLICATION_NAME`     | string    | `mergin`  | Comment in database connection string to better identify connection source.  |
+| `DB_PORT`                 | integer   | `5432`    | Database port. If non-default should match port exposed in docker-compose file.  |
 | `DB_POOL_MAX_OVERFLOW=10` | integer   | `10`      | Database `max_overflow` limit for [SQLAlchemy](https://docs.sqlalchemy.org/en/14/core/engines.html).  |
 | `DB_POOL_SIZE`            | integer   | `2`       | Database pool size for SQLAlchemy. With overflow determines maximum of concurrent connections to database. |
 | `DB_POOL_TIMEOUT`         | integer   | `300`     | Database pool timeout for SQLAlchemy. |
+| `DB_USER`                | string    |`postgres` | PostgreSQL user to connect to <MainPlatformName /> database.  |
 ​
 #### Permission management 
 To ease the process of permission (user) management, you can set the following global variables that apply to all registered users.
 
 | Variable name             | Type    | Default     | Description |
 |---------------------------|---------|-------------|---------------------------|
+| `GLOBAL_ADMIN`            | Boolean | `false`     | All registered users can create/delete projects.  |
 | `GLOBAL_READ`             | Boolean | `false`      | All registered users have read access to all projects. If false, application admin would need to grant project access to users manually.  |
 | `GLOBAL_WRITE`            | Boolean | `false`     | All registered users have write access (can sync) to all projects.  |
-| `GLOBAL_ADMIN`            | Boolean | `false`     | All registered users can create/delete projects.  |
 
 
 #### Sending Emails
@@ -88,7 +88,7 @@ To ease the process of permission (user) management, you can set the following g
 ​
 | Variable name             | Type      | Default   | Description |
 |---------------------------|-----------|-----------|-------------|
-| `MAIL_SUPPRESS_SEND`     | Boolean   | `true`    | Whether to suppress email sending.  |
+| `MAIL_SUPPRESS_SEND`     | Boolean   | `true`    | Whether to suppress email sending. If set to true, you should define the following variables. |
 | `MAIL_BCC`              | string    |           | Email address to send copies of all emails sent. Should be system/application administrator.  |
 | `MAIL_DEFAULT_SENDER`   | string    |           | Sender of <MainPlatformName /> emails. Best to have some no-reply address.  |
 | `MAIL_USERNAME`         | string    |           | Connection to SMTP server.  |
