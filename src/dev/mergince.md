@@ -105,8 +105,8 @@ Other settings related to data management.
 |---------------------------|---------|-------------|---------------------------|
 | `GLOBAL_WORKSPACE`      | string  | `mergin`    | Namespace (part of URL) for all projects. All projects belong to this single workspace with certain permissions (see below).  |
 | `GLOBAL_STORAGE`        | integer |`10737418240`| Storage limit <MainPlatformName /> can use to store projects (last version) in bytes (default is 10 GB). Should be reasonably large.  |
-| `LOCAL_PROJECTS`          | string  |`/data/live` | Directory to store projects on container. Please refer to volume mapping in docker-compose file.     |
-| `TEMP_DIR`                | string  | `/data/tmp` | Trash directory for temp files being cleaned regularly. Please refer to volume mapping in docker-compose file.    |
+| `LOCAL_PROJECTS`          | string  | `./projects` | Directory to store projects on container. Please refer to volume mapping in docker-compose file.     |
+| `TEMP_DIR`                | string  | Result of `gettempdir()` call | Trash directory for temp files being cleaned regularly. Please refer to volume mapping in docker-compose file.    |
 | `MAINTENANCE_FILE`        | string  |`/data/MAINTENANCE`| File to indicate server is in maintenance - read only mode. Please refer to volume mapping in docker-compose file.     |
 | `BLACKLIST`               | string  | `.mergin/`, `.DS_Store`, `.directory`  | Pattern to ignore when syncing files.     |
 | `FILE_EXPIRATION`         | integer | `172800`    | When GeoPackage file was updated with "<NoSpellcheck id="diffable" />" change, original data are being removed (as they can be reconstructed on demand) to save disk space. File lifetime in seconds.    |
