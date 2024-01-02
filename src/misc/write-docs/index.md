@@ -281,7 +281,7 @@ For mentioning that some feature is available from specific version, use `<Since
 #### Preparation
 
 * Any image prepared should have an associated Gimp `.xcf` file containing the original, full resolution image
-* Screenshots of QGIS should be taken with the window sized at 1024x768. [Sizer](http://www.brianapps.net/sizer) is good for this task.
+* Screenshots of QGIS should be taken with the window sized at 1024x768
 * Consistent buttons / toolbars in QGIS
 * Windows/macOS, not Linux
 * Making dialogs as small as possible without scrollbars or other bad visuals
