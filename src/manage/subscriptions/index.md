@@ -37,10 +37,10 @@ You will be redirected to the subscription management portal.
 ### Accessing subscription management portal directly (without Mergin Maps account)
 The subscription management portal can also accessed directly, without the need to go through the <DashboardShortLink /> or having a <MainPlatformName /> account. This option may be useful if the person taking care of the payments does not need access to the projects and data, such as someone from the accounting department of your organisation. 
 
-Note that the owner of the workspace needs to set up the appropriate email in the [billing information](#billing-information-and-payment-method). This email can be then used to access the portal.
+Note that the owner of the workspace needs to set up the appropriate email in the [billing information](#billing-information-and-payment-method). This email can then be used to access the portal.
 
 To access the subscription management portal:
-1. Navigate to to [**https://payments.merginmaps.com/p/login/test_4gw4je1pg7uEaU8dQQ**](https://payments.merginmaps.com/p/login/test_4gw4je1pg7uEaU8dQQ)
+1. Navigate to [<NoSpellcheck id="https://payments.merginmaps.com/p/login/test_4gw4je1pg7uEaU8dQQ" />](https://payments.merginmaps.com/p/login/test_4gw4je1pg7uEaU8dQQ)
 2. Enter the email that is used in your [billing information](#billing-information-and-payment-method) and click on **Send**
    ![Logging in to stripe with an email](./stripe-sign-in.jpg "Logging in to stripe with an email")
 
