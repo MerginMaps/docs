@@ -43,7 +43,7 @@ Here, you can find the current usage of storage, number of projects and number o
 
 ![Mergin Maps Subscriptions details](./subscriptions/subscriptions.jpg "Mergin Maps Subscriptions details")
 
-Click on **Manage subscription** to visit the subscription management portal where you can update the subscription plan, billing information, see invoices and upcoming payments
+Click on **Manage subscription** to visit the subscription management portal where you can update the subscription plan, billing information, see invoices and upcoming payments. The subscription management portal can also be [accessed using a link](./subscriptions/#accessing-subscription-management-portal-directly-without-mergin-maps-account).
 ![Mergin Maps subscription management portal](./subscriptions/stripe-merginmaps-subcription.jpg "Mergin Maps subscription management portal")
 
 ::: tip
