@@ -65,7 +65,7 @@ Click on the **Sign Up Now** button and fill out the form. We will review your a
 5. Review the details of your updates and **Confirm** the subscription update
    ![Confirm Mergin Maps subscription plan update](./stripe-update-plan-confirmation.jpg "Confirm Mergin Maps subscription plan update")
 
-### How to cancel a subscription
+## How to cancel a subscription
 1. Log into <AppDomainNameLink /> and navigate to the **Subscription** tab
 2. Click on the **Manage Subscription** button to get to the subscription management portal
    ![Mergin Maps Dashboard manage subscription](./subscriptions-update.jpg "Mergin Maps Dashboard manage subscription")

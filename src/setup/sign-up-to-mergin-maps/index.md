@@ -14,11 +14,10 @@ Public projects can be accessed and downloaded even without a <MainPlatformNameL
    ![Mergin Maps start for free](./mergin-web-register.jpg "Mergin Maps start for free")
 
 3. Create your account by filling up the form and click on **Sign Up**. You will receive a confirmation email with a link to verify your email.
-   ![Mergin Maps sign up form](./mergin-web-sign-up.jpg "Mergin Maps sign up form")
 
-   ::: warning
    Check your spam folder if the confirmation email does not appear in your inbox after 5 minutes.
-   :::
+
+   ![Mergin Maps sign up form](./mergin-web-sign-up.jpg "Mergin Maps sign up form")
 
 4. Now your account needs a [workspace](../../manage/workspaces/)!
 - If you were invited to an existing workspace, you can simply **join** this workspace without creating a new one
@@ -50,11 +49,10 @@ You can also sign up from <MobileAppName />.
    ![Mergin Maps mobile app sign up](./input-sign-up.jpg "Mergin Maps mobile app sign up")
    
 4. Create your account by filling up the form. You will receive a confirmation email with a link to verify your email.
-   ![Mergin Maps mobile app register](./input-register.jpg "Mergin Maps mobile app register")
 
-   ::: warning
    Check your spam folder if the confirmation email does not appear in your inbox after 5 minutes.
-   :::
+   
+   ![Mergin Maps mobile app register](./input-register.jpg "Mergin Maps mobile app register")
    
 5. Now your account needs a [workspace](../../manage/workspaces/)! Choose an appropriate name for your workspace and **Create workspace**
    ![Create workspace in Mergin Maps mobile app](./input-create-workspace.jpg "Create workspace in Mergin Maps mobile app")
@@ -66,6 +64,18 @@ You can also sign up from <MobileAppName />.
 **Welcome to <MainPlatformNameLink />!**
 
 You can get up-to-speed quickly by following the [tour projects](../install-input/#mergin-maps-mobile-app-s-tour-projects) in the <MobileAppNameShort /> and our [Quick Start tutorials](../../tutorials/capturing-first-data/index.md).
+
+## Deleting Mergin Maps account
+If you want to delete your account, you can do so in the <DashboardLink /> in the **User profile** tab.
+
+1. Before closing the account, make sure to [close your workspaces](../../manage/workspaces/#how-to-delete-a-workspace).
+
+2. Navigate to the **User profile** tab and click on **Close My Account**
+   ![Closing Mergin Maps account](./mergin-close-account.jpg "Closing Mergin Maps account")
+
+You will be prompted to confirm the closing of your account by typing the account name. 
+
+After you close the account, it is kept on <MainPlatformNameLink /> servers for 5 days before it is deleted permanently. During this period, it can be restored if you contact <MerginMapsEmail id="support" />.
 
 ## Forgotten password
 If you forget your password, you can reset it through <AppDomainNameLink /> by clicking **Forgot password**. Email with password reset link will be sent to your email address.
