@@ -209,8 +209,8 @@ for server in nginx_redirect_configs.keys():
     prod_file = open('prod-%s-snippet.txt' % server, 'w')
     for src in srcs:
         dst = nginx_redirect_configs[server][src]
-        dev_file.write('            rewrite ^%s$ https://dev.merginmaps.com%s permanent;\n' % (slashify(src),dst))
-        prod_file.write('            rewrite ^%s$ https://merginmaps.com%s permanent;\n' % (slashify(src),dst))
+        dev_file.write( '        rewrite ^%s$ https://dev.merginmaps.com%s permanent;\n' % (slashify(src),dst))
+        prod_file.write('        rewrite ^%s$ https://merginmaps.com%s permanent;\n' % (slashify(src),dst))
         redirect_test_file.write('https://%s%s\n' % (server,src))
 
 if errors_found:
