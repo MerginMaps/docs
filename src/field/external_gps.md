@@ -102,6 +102,11 @@ External GPS functionality depends on the manufacturer and on the specific model
 | Trimble | Trimble R2<sup><a href="#link-5">5</a></sup> | yes (mock location) | unknown |
 | <NoSpellcheck id="proNIVO" /> | <NoSpellcheck id="PNR21" /><sup><a href="#link-6">6</a></sup> | yes (mock location)| no |
 | <NoSpellcheck id="SingularXYZ" /> | <NoSpellcheck id="P1" /><sup><a href="#link-7">7</a></sup> | yes | unknown |
+| Bad Elf | GPS Pro | yes | yes |
+| Bad Elf | GPS Pro+ | yes | yes |
+| Bad Elf | GNSS Surveyor | yes | yes |
+| Bad Elf | Flex Mini (standard or extreme) | yes | yes |
+| Bad Elf | Flex (standard or extreme) | yes | yes |
 
 - <a name="link-1">1</a>: **Carlson <NoSpellcheck id="Brx7" />**,  **Carlson <NoSpellcheck id="xML2" />** - through [Carlson Layout](https://www.carlsonsw.com/product/carlson-layout) which will set a mock location in Android.
 - <a name="link-2">2</a>: **Emlid Reach RX**, **Emlid Reach RS+**, **Emlid Reach M+** - directly via Bluetooth connection, has an internal NTRIP client to receive corrections. Possible to set a mock location and connect the receiver via Bluetooth using [GPS Connector](https://play.google.com/store/apps/details?id=de.pilablu.gpsconnector) or WiFi using [Lebefure NTRIP Client](https://play.google.com/store/apps/details?id=com.lefebure.ntripclient). Android only.
