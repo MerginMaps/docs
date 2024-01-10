@@ -64,14 +64,14 @@ Mergin Maps uses PostgreSQL database to store its data.
 | Variable name             | Type      | Default   | Description |
 |---------------------------|-----------|-----------|-------------|
 | `DB_APPLICATION_NAME`     | string    | `mergin`  | Comment in database connection string to better identify connection source.  |
-| `DB_DATABASE`             | string    |`postgres` | Database to store <MainPlatformName /> tables.  |
+| `DB_DATABASE` ⭐️          | string    |`postgres` | Database to store <MainPlatformName /> tables.  |
 | `DB_HOST`                 | string    | `db`      | Database host. Mapped to docker-compose service name.  |
-| `DB_PASSWORD`            | string    |`postgres` | PostgreSQL user password.  |
+| `DB_PASSWORD` ⭐️          | string    |`postgres` | PostgreSQL user password.  |
 | `DB_PORT`                 | integer   | `5432`    | Database port. If non-default should match port exposed in docker-compose file.  |
 | `DB_POOL_MAX_OVERFLOW=10` | integer   | `10`      | Database `max_overflow` limit for [SQLAlchemy](https://docs.sqlalchemy.org/en/14/core/engines.html).  |
 | `DB_POOL_SIZE`            | integer   | `2`       | Database pool size for SQLAlchemy. With overflow determines maximum of concurrent connections to database. |
 | `DB_POOL_TIMEOUT`         | integer   | `300`     | Database pool timeout for SQLAlchemy. |
-| `DB_USER`                | string    |`postgres` | PostgreSQL user to connect to <MainPlatformName /> database.  |
+| `DB_USER` ⭐️              | string    |`postgres` | PostgreSQL user to connect to <MainPlatformName /> database.  |
 ​
 #### Permission management 
 To ease the process of permission (user) management, you can set the following global variables that apply to all registered users.
@@ -101,23 +101,23 @@ To ease the process of permission (user) management, you can set the following g
 #### Data synchronisation and management
 Other settings related to data management.
 
-| Variable name             | Type    | Default     | Description |
-|---------------------------|---------|-------------|---------------------------|
-| `GLOBAL_WORKSPACE`      | string  | `mergin`    | Namespace (part of URL) for all projects. All projects belong to this single workspace with certain permissions (see below).  |
-| `GLOBAL_STORAGE`        | integer |`10737418240`| Storage limit <MainPlatformName /> can use to store projects (last version) in bytes (default is 10 GB). Should be reasonably large.  |
-| `LOCAL_PROJECTS`          | string  | `./projects` | Directory to store projects on container. Please refer to volume mapping in docker-compose file.     |
-| `TEMP_DIR`                | string  | Result of `gettempdir()` call | Trash directory for temp files being cleaned regularly. Please refer to volume mapping in docker-compose file.    |
-| `MAINTENANCE_FILE`        | string  |`/data/MAINTENANCE`| File to indicate server is in maintenance - read only mode. Please refer to volume mapping in docker-compose file.     |
-| `BLACKLIST`               | string  | `.mergin/`, `.DS_Store`, `.directory`  | Pattern to ignore when syncing files.     |
-| `FILE_EXPIRATION`         | integer | `172800`    | When GeoPackage file was updated with "<NoSpellcheck id="diffable" />" change, original data are being removed (as they can be reconstructed on demand) to save disk space. File lifetime in seconds.    |
-| `LOCKFILE_EXPIRATION`     | integer | `300`       | Time in seconds for project being locked while updated. If no change happens to project in such time, lockfile is removed.    |
-| `MAX_CHUNK_SIZE`          | integer | `10485760`  | Maximum size of file chunk to be uploaded (and received by server) in bytes. |
-|`MAX_DOWNLOAD_ARCHIVE_SIZE`| integer | `1073741824`| Maximum size of project zip archive in bytes for direct download. Too large projects may take too long to download or never complete in one request. |
-| `USE_X_ACCEL`            | Boolean | `false`     | Whether to use nginx do serve files. Should be enabled if used with nginx proxy for performance reasons. Read more [here](https://www.nginx.com/resources/wiki/start/topics/examples/x-accel/). |
-|`CLOSED_ACCOUNT_EXPIRATION`| integer | `1`         | Time in days after user closed his account to all projects and files are permanently deleted. Please note than until user is removed username/email is occupied. |
-| `DELETED_PROJECT_EXPIRATION`| integer| `7`        | Lifetime in days for deleted project. Expired projects are removed permanently without possibility to restore afterwards. |
-| `PROJECT_ACCESS_REQUEST` | integer | `604800`    | Lifetime of active project access request in seconds. |
-| `TEMP_EXPIRATION`        | integer | `7`         | Time in days after files in temporary folder are permanently deleted. |
+| Variable name                | Type    | Default     | Description |
+|------------------------------|---------|-------------|---------------------------|
+| `GLOBAL_WORKSPACE` ⭐️        | string  | `mergin`    | Namespace (part of URL) for all projects. All projects belong to this single workspace with certain permissions (see below).  |
+| `GLOBAL_STORAGE` ⭐️          | integer |`10737418240`| Storage limit <MainPlatformName /> can use to store projects (last version) in bytes (default is 10 GB). Should be reasonably large.  |
+| `LOCAL_PROJECTS`             | string  | `./projects` | Directory to store projects on container. Please refer to volume mapping in docker-compose file.     |
+| `TEMP_DIR`                   | string  | Result of `gettempdir()` call | Trash directory for temp files being cleaned regularly. Please refer to volume mapping in docker-compose file.    |
+| `MAINTENANCE_FILE`           | string  |`/data/MAINTENANCE`| File to indicate server is in maintenance - read only mode. Please refer to volume mapping in docker-compose file.     |
+| `BLACKLIST`                  | string  | `.mergin/`, `.DS_Store`, `.directory`  | Pattern to ignore when syncing files.     |
+| `FILE_EXPIRATION`            | integer | `172800`    | When GeoPackage file was updated with "<NoSpellcheck id="diffable" />" change, original data are being removed (as they can be reconstructed on demand) to save disk space. File lifetime in seconds.    |
+| `LOCKFILE_EXPIRATION`        | integer | `300`       | Time in seconds for project being locked while updated. If no change happens to project in such time, lockfile is removed.    |
+| `MAX_CHUNK_SIZE`             | integer | `10485760`  | Maximum size of file chunk to be uploaded (and received by server) in bytes. |
+| `MAX_DOWNLOAD_ARCHIVE_SIZE`  | integer | `1073741824`| Maximum size of project zip archive in bytes for direct download. Too large projects may take too long to download or never complete in one request. |
+| `USE_X_ACCEL` ⭐️             | Boolean | `false`     | Whether to use nginx do serve files. Should be enabled if used with nginx proxy for performance reasons. Read more [here](https://www.nginx.com/resources/wiki/start/topics/examples/x-accel/). |
+| `CLOSED_ACCOUNT_EXPIRATION`  | integer | `1`         | Time in days after user closed his account to all projects and files are permanently deleted. Please note than until user is removed username/email is occupied. |
+| `DELETED_PROJECT_EXPIRATION` | integer| `7`        | Lifetime in days for deleted project. Expired projects are removed permanently without possibility to restore afterwards. |
+| `PROJECT_ACCESS_REQUEST`     | integer | `604800`    | Lifetime of active project access request in seconds. |
+| `TEMP_EXPIRATION`            | integer | `7`         | Time in days after files in temporary folder are permanently deleted. |
 ​
 
 #### Celery asynchronous tasks
