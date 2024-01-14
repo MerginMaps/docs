@@ -19,6 +19,10 @@ Public projects can be accessed and downloaded even without a <MainPlatformNameL
 
    ![Mergin Maps sign up form](./mergin-web-sign-up.jpg "Mergin Maps sign up form")
 
+   :::tip
+   While signing up, you can subscribe to <MainPlatformName /> newsletter. You can unsubscribe anytime by clicking the **Unsubscribe** link at the bottom of the email.
+   :::
+
 4. Now your account needs a [workspace](../../manage/workspaces/)!
 - If you were invited to an existing workspace, you can simply **join** this workspace without creating a new one
 ![Join workspace in Mergin Maps](./join-workspace.jpg "Join workspace in Mergin Maps")
