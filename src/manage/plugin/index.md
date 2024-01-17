@@ -55,7 +55,7 @@ Once you have installed the <QGISPluginNameShort /> and configured it with your 
 Detailed steps on how to download and open your <MainPlatformNameLink /> project are included in the [Opening Surveyed Data on Your Computer](../../tutorials/opening-surveyed-data-on-your-computer/#locating-and-opening-your-project) tutorial.
 :::
 
-1. In the Browser panel, navigate to the <MainPlatformName /> entry. The name of the current [workspace](./workspaces/) is displayed in the square brackets (here: `sarah`) and available projects are listed underneath. 
+1. In the Browser panel, navigate to the <MainPlatformName /> entry. The name of the current [workspace](../workspaces/) is displayed in the square brackets (here: `sarah`) and available projects are listed underneath. 
 2. Right-click on the project and select **Download**
    ![Download Mergin Maps project option in QGIS browser](../../tutorials/opening-surveyed-data-on-your-computer/qgis-download-project.jpg "Download Mergin Maps project option in QGIS browser")
 
