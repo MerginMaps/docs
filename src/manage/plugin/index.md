@@ -5,7 +5,7 @@ The <QGISPluginName /> allows you to work with your <MainPlatformNameLink /> pro
 
 To get started, you will need to [install and configure the plugin](../../setup/install-mergin-maps-plugin-for-qgis/index.md). 
 
-Once installed, plugin's entries will be added to the QGIS toolbar panel, Browser panel and to the Processing toolbox.
+Once installed, plugin's entries will be added to the QGIS toolbar panel, Browser panel, Project properties and to the Processing toolbox.
 
 :::tip
 To ensure you can use the latest improvements, don't forget to [upgrade the plugin](../../setup/install-mergin-maps-plugin-for-qgis/#plugin-upgrade) whenever there is an update available!
@@ -18,7 +18,7 @@ The plugin's toolbar contains three active buttons to configure the plugin, crea
 
 If you don't see <MainPlatformName /> plugin in QGIS toolbar, make sure it is enabled in
 
-### Synchronisation in QGIS
+## Synchronisation in QGIS
 Once you are happy with the changes to be uploaded/downloaded, you can synchronise your project and data. 
 
 1. Click on the **Synchronise Mergin Maps project** icon from the <QGISPluginName /> toolbar or right-click on the project in the Browser panel and select **Synchronise**
@@ -42,8 +42,8 @@ All your changes will be uploaded to the server and any pending changes from the
 :::
 
 When the synchronisation process is completed, your local files and the copy of files on the server will be identical.
-=======
-Once you have installed the <QGISPluginNameShort /> and configured it with your <MainPlatformNameLink /> credentials, you should be able to see it in your QGIS Browser panel. The name of the current [workspace](./workspaces/) is displayed in the square brackets (here: `sarah`) and available projects are listed underneath. 
+
+Once you have installed the <QGISPluginNameShort /> and configured it with your <MainPlatformNameLink /> credentials, you should be able to see it in your QGIS Browser panel. The name of the current [workspace](../workspaces/) is displayed in the square brackets (here: `sarah`) and available projects are listed underneath. 
 
 ![Mergin Maps QGIS plugin in QGIS browser](./plugin-browser.jpg "Mergin Maps QGIS plugin in QGIS browser")
 
@@ -52,7 +52,7 @@ Once you have installed the <QGISPluginNameShort /> and configured it with your 
 ### Downloading a project in QGIS
 
 :::tip
-Detailed steps on how to download and open your <MainPlatformNameLink /> project are included in the [Opening Surveyed Data on Your Computer](../tutorials/opening-surveyed-data-on-your-computer/#locating-and-opening-your-project) tutorial.
+Detailed steps on how to download and open your <MainPlatformNameLink /> project are included in the [Opening Surveyed Data on Your Computer](../../tutorials/opening-surveyed-data-on-your-computer/#locating-and-opening-your-project) tutorial.
 :::
 
 1. In the Browser panel, navigate to the <MainPlatformName /> entry. The name of the current [workspace](./workspaces/) is displayed in the square brackets (here: `sarah`) and available projects are listed underneath. 
@@ -78,7 +78,7 @@ Detailed steps on how to download and open your <MainPlatformNameLink /> project
 3. Select the project and click **Open project**. Browse to the folder where you want to save the project. The project will be downloaded here.
 
 ::: tip
-You can package this downloaded project using <QGISPluginName /> as described in [Create a project in QGIS](./create-project/#create-a-project-in-qgis) using the **Package current QGIS project** option and use it as your own <MainPlatformNameLink /> project.
+You can package this downloaded project using <QGISPluginName /> as described in [Create a project in QGIS](../create-project/#create-a-project-in-qgis) using the **Package current QGIS project** option and use it as your own <MainPlatformNameLink /> project.
 :::
 
 ### Local changes
@@ -144,7 +144,7 @@ Local changes of a specific layer can also be extracted using the **Extract loca
 
 2. Double click the **Create report** tool. 
    
-   Fill in the parameters in the dialog window. If you want to get the report for a specified range of [versions](./project-details/), define also the start and end version. 
+   Fill in the parameters in the dialog window. If you want to get the report for a specified range of [versions](../project-details/), define also the start and end version. 
 
    Click **Run**.
    ![Create report tool dialog](./plugin-create-report.jpg "Create report tool dialog")

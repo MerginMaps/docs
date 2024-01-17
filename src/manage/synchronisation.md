@@ -7,7 +7,7 @@ Synchronisation is a key process that makes effective collaboration possible: yo
 
 Let's look at a typical workflow in <MainPlatformNameLink />:
 1. First, you [create](./create-project/#create-a-project-in-qgis) and [prepare](../gis/features/) a <MainPlatformName /> project in QGIS. This includes loading background and survey layers, setting up the forms, styling layers, setting up map themes and defining the layers to be used in a survey. The <MainPlatformName /> project consists of the project file (*.qgz) and data referenced in the project, such as GeoPackage layers, shapefiles, rasters or attachments. At this point, they are all saved in a project folder in your computer.
-2. The <MainPlatformName /> project is uploaded to <MainPlatformNameLink /> Cloud using [<QGISPluginName />](./plugin-sync-project/). The project and data are now stored in the cloud.
+2. The <MainPlatformName /> project is uploaded to <MainPlatformNameLink /> Cloud using [<QGISPluginName />](./plugin/). The project and data are now stored in the cloud.
 3. Now you can work collaboratively! The project and data can be downloaded to a mobile device to do [the fieldwork using <MobileAppName /> ](../tutorials/mobile/) or to another computer with QGIS. Every collaborator works with their own local version of the project.
 4. After finishing their work, the individual contributors synchronise their changes [to <MainPlatformName /> Cloud](../tutorials/mobile/#saving-data-to-the-cloud), where they are put together.
 

@@ -144,7 +144,7 @@ In the [next tutorial](../mobile/) we will see how this project looks on <Mobile
 3. Use the **Synchronise <MainPlatformName /> Project** button in the <QGISPluginName /> toolbar (it is located in the upper navigation panel)
    ![Synchronise Mergin Maps project in QGIS](./qgis-sync-mergin-project.jpg "Synchronise Mergin Maps project in QGIS")
    
-4. The **Project status** window will open. It contains the overview of [local changes](../../manage/plugin-sync-project/#local-changes) that were made since the last synchronisation: two layers were added to the project (`hedges.gpkg` and `trees.gpkg`) and some changes were made in the QGIS project file (`trees-and-hedges.qgz`).
+4. The **Project status** window will open. It contains the overview of [local changes](../../manage/plugin/#local-changes) that were made since the last synchronisation: two layers were added to the project (`hedges.gpkg` and `trees.gpkg`) and some changes were made in the QGIS project file (`trees-and-hedges.qgz`).
 
    Click **Sync** to synchronise the project
    ![Mergin Maps plugin synchronisation Project status](./qgis-sync-mergin-project-status.jpg "Mergin Maps plugin synchronisation Project status")
