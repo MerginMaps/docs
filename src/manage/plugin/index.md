@@ -3,18 +3,18 @@
 
 The <QGISPluginName /> allows you to work with your <MainPlatformNameLink /> projects in QGIS, whether it's downloading the project to your computer, making changes in the project, seeing the project's status or synchronising changes to the cloud. 
 
-To get started, you will need to [install and configure the plugin](../setup/install-mergin-maps-plugin-for-qgis/index.md). 
+To get started, you will need to [install and configure the plugin](../../setup/install-mergin-maps-plugin-for-qgis/index.md). 
 
 Once installed, plugin's entries will be added to the QGIS toolbar panel, Browser panel and to the Processing toolbox.
 
 :::tip
-To ensure you can use the latest improvements, don't forget to [upgrade the plugin](../setup/install-mergin-maps-plugin-for-qgis/#plugin-upgrade) whenever there is an update available!
+To ensure you can use the latest improvements, don't forget to [upgrade the plugin](../../setup/install-mergin-maps-plugin-for-qgis/#plugin-upgrade) whenever there is an update available!
 :::
 
 ## Mergin Maps Plugin Toolbar
 The plugin's toolbar contains three active buttons to configure the plugin, create a new project and synchronise changes in the current project.
 
-![Mergin Maps Plugin Toolbar in QGIS](../setup/install-mergin-maps-plugin-for-qgis/mergin-toolbar.jpg "Mergin Maps Plugin Toolbar in QGIS")
+![Mergin Maps Plugin Toolbar in QGIS](../../setup/install-mergin-maps-plugin-for-qgis/mergin-toolbar.jpg "Mergin Maps Plugin Toolbar in QGIS")
 
 If you don't see <MainPlatformName /> plugin in QGIS toolbar, make sure it is enabled in
 
@@ -57,7 +57,7 @@ Detailed steps on how to download and open your <MainPlatformNameLink /> project
 
 1. In the Browser panel, navigate to the <MainPlatformName /> entry. The name of the current [workspace](./workspaces/) is displayed in the square brackets (here: `sarah`) and available projects are listed underneath. 
 2. Right-click on the project and select **Download**
-   ![Download Mergin Maps project option in QGIS browser](../tutorials/opening-surveyed-data-on-your-computer/qgis-download-project.jpg "Download Mergin Maps project option in QGIS browser")
+   ![Download Mergin Maps project option in QGIS browser](../../tutorials/opening-surveyed-data-on-your-computer/qgis-download-project.jpg "Download Mergin Maps project option in QGIS browser")
 
 3. Browse to the folder, where you want to save the project and click **Select folder**. The project will be downloaded here.
 
@@ -73,7 +73,7 @@ Detailed steps on how to download and open your <MainPlatformNameLink /> project
    ![Explore public projects in QGIS Browser](./plugin-explore-public-projects.jpg "Explore public projects in QGIS Browser")
 
 2. Find the project you are interested in. Use the search bar to limit the choices.
-   ![](./plugin-explore-public-projects-list.jpg)
+   ![List of public projects in QGIS Browser](./plugin-explore-public-projects-list.jpg "List of public projects in QGIS Browser")
 
 3. Select the project and click **Open project**. Browse to the folder where you want to save the project. The project will be downloaded here.
 

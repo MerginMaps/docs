@@ -42,7 +42,7 @@ module.exports = {
                 '/manage/deploy-new-project/',
                 '/manage/missing-data/',
                 '/manage/plugin-multi-server-use/',
-                '/manage/plugin-sync-project',
+                '/manage/plugin/',
                 '/manage/dashboard',
                 '/manage/project-details',
                 '/manage/selective_sync/'

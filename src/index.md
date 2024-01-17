@@ -47,7 +47,7 @@ The ecosystem consist of various components:
 - [How to Deploy Revised Projects](./manage/deploy-new-project/)
 - [How to Recover Missing Data](./manage/missing-data/)
 - [How to <MainPlatformName /> with a Custom Server](./manage/plugin-multi-server-use/)
-- [<QGISPluginName /> Overview](./manage/plugin-sync-project/)
+- [<QGISPluginName /> Overview](./manage/plugin/)
 - [Home Page and Dashboard](./manage/dashboard/)
 - [Project History and Versions](./manage/project-details/)
 - [Selective Synchronisation](./manage/selective_sync/)
