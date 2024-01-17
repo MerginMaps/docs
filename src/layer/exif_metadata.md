@@ -4,7 +4,7 @@ EXIF is a file format for storing metadata in image files, such as the camera se
 
 <MobileAppName /> supports some default value expression functions that can be used to read EXIF metadata and store their values in the fields of your survey layer.
 
-To store GPS EXIF metadata, both <MobileAppName /> and your camera app have [location permissions](#allowing-location-tags) allowed on your mobile device.
+To store GPS EXIF metadata, both the <MobileAppNameShort /> and your camera app have [location permissions](#allowing-location-tags) allowed on your mobile device.
 
 ::: tip
 Clone <MerginMapsProject id="documentation/exif-metadata" /> to see how it works!
@@ -31,7 +31,7 @@ To store EXIF metadata values in the fields of your survey layer:
 3. Save and sync your project. 
 
 4. Open the project in <MobileAppName />. Once you capture a photo during the field survey, the EXIF metadata values will be automatically filled in:
-   ![Exif metadata in Mergin Maps Input form](./gps_exif_metadata.jpg "Exif metadata in Mergin Maps Input form")
+   ![Exif metadata in Mergin Maps mobile app form](./gps_exif_metadata.jpg "Exif metadata in Mergin Maps mobile app form")
 
 ## Supported EXIF functions
 EXIF function supported by <MobileAppName />:

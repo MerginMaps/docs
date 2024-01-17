@@ -7,6 +7,8 @@ Basemaps
 BeiDou
 Benz
 Bing
+boolean
+Boolean
 changesets
 CRS
 crosshairs

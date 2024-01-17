@@ -18,9 +18,9 @@ Deleting files trough <MainDomainName /> is simple. However, you can only delete
 3. Select the file you are considering removing and review the details to make sure you want to remove it.
 
    Click **Remove File** to delete the photo.
-   ![Mergin Maps web Remove file button](./remove-file.jpg "Mergin Maps web Remove file button")
+   ![Mergin Maps dashboard Remove file button](./remove-file.jpg "Mergin Maps dashboard Remove file button")
 4. Click **Update** in the **Data Sync** window to synchronise the changes.
-   ![Mergin Maps web synchronise update project](./remove-file-sync.jpg "Mergin Maps web update project")
+   ![Mergin Maps dashboard synchronise update project](./remove-file-sync.jpg "Mergin Maps dashboard update project")
 
 ## Delete multiple files at once
 If you want to delete multiple files, the best way to do this is on your computer.

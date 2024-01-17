@@ -1,6 +1,6 @@
 # External GPS
 
-<!--- IMPORTANT: This permalink is referenced from Mergin Maps Input -->
+<!--- IMPORTANT: This permalink is referenced from Mergin Maps mobile app -->
 
 [[toc]]
 
@@ -37,7 +37,7 @@ In Android, there are two ways how to use an external GPS device in <MobileAppNa
 
 It is strongly recommended to use the direct connection in <MobileAppName />. It is easier, quicker, provides more data, such as HDOP and fix quality. The app will report which device is used and take care of reconnecting in case of lost connection. Using mock location should be used only when it is not possible to connect the GPS receiver directly via <MobileAppName />.
 
-### How to connect external GPS receiver in Android via Mergin Maps Input (recommended)
+### How to connect external GPS receiver in Android via Mergin Maps mobile app (recommended)
 1. Connect the GPS receiver to your mobile device via Bluetooth.
 2. Open <MobileAppName /> and navigate **Select GPS receiver** in Settings:
 ![Select GPS receiver](./input-external-gps.jpg "Select GPS receiver")
@@ -102,6 +102,11 @@ External GPS functionality depends on the manufacturer and on the specific model
 | Trimble | Trimble R2<sup><a href="#link-5">5</a></sup> | yes (mock location) | unknown |
 | <NoSpellcheck id="proNIVO" /> | <NoSpellcheck id="PNR21" /><sup><a href="#link-6">6</a></sup> | yes (mock location)| no |
 | <NoSpellcheck id="SingularXYZ" /> | <NoSpellcheck id="P1" /><sup><a href="#link-7">7</a></sup> | yes | unknown |
+| Bad Elf | GPS Pro | yes | yes |
+| Bad Elf | GPS Pro+ | yes | yes |
+| Bad Elf | GNSS Surveyor | yes | yes |
+| Bad Elf | Flex Mini (standard or extreme) | yes | yes |
+| Bad Elf | Flex (standard or extreme) | yes | yes |
 
 - <a name="link-1">1</a>: **Carlson <NoSpellcheck id="Brx7" />**,  **Carlson <NoSpellcheck id="xML2" />** - through [Carlson Layout](https://www.carlsonsw.com/product/carlson-layout) which will set a mock location in Android.
 - <a name="link-2">2</a>: **Emlid Reach RX**, **Emlid Reach RS+**, **Emlid Reach M+** - directly via Bluetooth connection, has an internal NTRIP client to receive corrections. Possible to set a mock location and connect the receiver via Bluetooth using [GPS Connector](https://play.google.com/store/apps/details?id=de.pilablu.gpsconnector) or WiFi using [Lebefure NTRIP Client](https://play.google.com/store/apps/details?id=com.lefebure.ntripclient). Android only.

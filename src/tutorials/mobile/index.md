@@ -1,4 +1,4 @@
-# Using Mergin Maps Input
+# Using Mergin Maps Mobile App
 
 [[toc]]
 
@@ -25,7 +25,7 @@ Need help navigating <MobileAppName />? [<MobileAppName /> Interface](../../fiel
    ![Open downloaded project from Home tab](./merginmaps-mobile-open-project.jpg "Open downloaded project from Home tab")
 
    The project should now be shown:
-   ![Project opened in Mergin Maps Input](../capturing-first-data/merginmaps-mobile-location-shown-on-osm.jpg "Project opened in Mergin Maps Input")
+   ![Project opened in Mergin Maps mobile app](../capturing-first-data/merginmaps-mobile-location-shown-on-osm.jpg "Project opened in Mergin Maps mobile app")
 
 5. Pinch the screen to zoom in on your location. If you lose sight of your location, use the **GPS button** to recentre the map on your position.
 
@@ -33,24 +33,24 @@ Need help navigating <MobileAppName />? [<MobileAppName /> Interface](../../fiel
 Current GPS accuracy affects the quality of field data that you capture in the field. 
 
 Let's see what can happen when capturing field data. Press the **Record** button:
-![Entering recording mode in Mergin Maps Input](../capturing-first-data/merginmaps-mobile-record.jpg "Entering recording mode in Mergin Maps Input")
+![Entering recording mode in Mergin Maps mobile app](../capturing-first-data/merginmaps-mobile-record.jpg "Entering recording mode in Mergin Maps mobile app")
    
 You may now see a warning about GPS accuracy:
 ![Low GPS accuracy warning](./merginmaps-mobile-gps-accuracy-warning.jpg "Low GPS accuracy warning")
 
 What does it mean? When GPS accuracy falls below a threshold, <MobileAppName /> reports this to the user using this warning. This threshold can be changed and it is highly recommended to set it to a sensible value as described below.
    
-<MobileAppName /> uses a traffic light system to display GPS status:
+The <MobileAppNameShort /> uses a traffic light system to display GPS status:
 * Green: OK - GPS accuracy within defined threshold
 * Orange: Warning - GPS accuracy outside of defined threshold
 * Red: No GPS - there's no GPS signal or the GPS is unavailable
 
 The current value of GPS accuracy, traffic light dot and accuracy bubble is displayed here:
-   ![GPS accuracy info in Mergin Maps Input](./merginmaps-mobile-accuracy-spot-and-bubble.jpg "GPS accuracy info in Mergin Maps Input")
+   ![GPS accuracy info in Mergin Maps mobile app](./merginmaps-mobile-accuracy-spot-and-bubble.jpg "GPS accuracy info in Mergin Maps mobile app")
 
 ### How to change the GPS accuracy threshold
 1. Cancel recording and open **Settings**:
-   ![Open settings in Mergin Maps Input](./merginmaps-mobile-open-settings.jpg "Open settings in Mergin Maps Input")
+   ![Open settings in Mergin Maps mobile app](./merginmaps-mobile-open-settings.jpg "Open settings in Mergin Maps mobile app")
 
 3. **Set Accuracy** threshold to a sensible value
    Typical values could range between 2m and 25m and typically depend on the accuracy of your mobile device and your use case. Higher accuracy can be achieved by using [external GPS antenna](../../field/external_gps/).
@@ -62,10 +62,10 @@ The current value of GPS accuracy, traffic light dot and accuracy bubble is disp
 In a moment we'll survey a tree. Surveyed features are added to the **active layer**. The project contains three different layers so we'll now ensure the ***trees*** layer is set as the active layer.
 
 1. Press the **Record** button:
-   ![Entering the recording mode in Mergin Maps Input](../capturing-first-data/merginmaps-mobile-record.jpg "Entering the recording mode in Mergin Maps Input")
+   ![Entering the recording mode in Mergin Maps mobile app](../capturing-first-data/merginmaps-mobile-record.jpg "Entering the recording mode in Mergin Maps mobile app")
 
    The active layer is shown just above the button bar:
-   ![Active layer highlighted in Mergin Maps Input](./merginmaps-mobile-active-layer.jpg "Active layer highlighted in Mergin Maps Input")
+   ![Active layer highlighted in Mergin Maps mobile app](./merginmaps-mobile-active-layer.jpg "Active layer highlighted in Mergin Maps mobile app")
 
 2. Tap the active layer and set it to ***trees***:
    ![List of editable layers](./merginmaps-mobile-active-layer-set-to-trees.jpg "List of editable layers")
@@ -73,7 +73,7 @@ In a moment we'll survey a tree. Surveyed features are added to the **active lay
 3. Press the **Add Point** button to survey a new tree.
 
    Notice how the form (e.g. species drop-down list) reflects how we configured the project in QGIS:
-   ![Drop down form in Mergin Maps Input](./merginmaps-mobile-forms-with-drop-down.jpg "Drop down form in Mergin Maps Input")
+   ![Drop down form in Mergin Maps mobile app](./merginmaps-mobile-forms-with-drop-down.jpg "Drop down form in Mergin Maps mobile app")
 
 4. Enter some values and **Save** the new point
 
@@ -92,7 +92,7 @@ Tapping a map feature shows its preview panel.
 
 ## Survey linear features
 
-When creating the project in QGIS, we included a layer for linear features called ***hedges***. We'll now learn how to survey lines in <MobileAppName />.
+When creating the project in QGIS, we included a layer for linear features called ***hedges***. We'll now learn how to survey lines in the <MobileAppNameShort />.
 
 ::: tip
 Areas can be captured in a similar way to lines if the project has editable area/polygon layers.
@@ -105,14 +105,14 @@ Areas can be captured in a similar way to lines if the project has editable area
    We'll now survey a hedge feature.
 
 2. Use tools in the bottom panel to survey the line: use **Add Point** to add points along the line and tab **Done** when finished
-   ![Surveying line feature in Mergin Maps Input](./merginmaps-mobile-digitising-line.jpg "Surveying line feature in Mergin Maps Input")
+   ![Surveying line feature in Mergin Maps mobile app](./merginmaps-mobile-digitising-line.jpg "Surveying line feature in Mergin Maps mobile app")
 
 ::: tip
 Drag the map to position points manually or press **GPS** to recentre the map on your location.
 :::
 
 3. Enter some **attributes** and a **photo** for the hedge:
-   ![Feature form in Mergin Maps Input](./merginmaps-mobile-hedge-attributes-and-photo.jpg "Feature form in Mergin Maps Input")
+   ![Feature form in Mergin Maps mobile app](./merginmaps-mobile-hedge-attributes-and-photo.jpg "Feature form in Mergin Maps mobile app")
 
 When I surveyed my hedge, it was quite difficult to distinguish from the background map - it was a thin, light green line: 
 ![Poor symbology of feature on the map](./merginmaps-mobile-poor-symbology.jpg "Poor symbology of feature on the map")

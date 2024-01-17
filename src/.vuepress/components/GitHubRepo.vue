@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  name: "gitthubrepo",
+  name: "githubrepo",
   props: {
     id: String,
     desc: String

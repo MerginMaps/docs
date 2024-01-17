@@ -5,7 +5,7 @@ Your GPS accuracy depends on several parameters, such as:
 - View of the clear sky that affects the number of satellites visible from your position 
 
 When doing the survey, it is essential to be aware of the limitations of your GPS accuracy at the time of recording. Current GPS accuracy is displayed above the bottom navigation panel in <MobileAppName />. Also, there is a circle with the size of the accuracy value around the position marker.
-![GPS accuracy displayed in Mergin Maps Input](./input-gps2.jpg "GPS accuracy displayed in Mergin Maps Input")
+![GPS accuracy displayed in Mergin Maps mobile app](./input-gps2.jpg "GPS accuracy displayed in Mergin Maps mobile app")
 
 A warning will appear, if your accuracy is outside the GPS accuracy threshold. To get rid of this warning, you can increase your **Accuracy threshold** or turn off these warnings in [Settings](./input_ui.md#gps-settings).
 ![Low GPS position accuracy warning](./input-gps-warning.jpg "Low GPS position accuracy warning")

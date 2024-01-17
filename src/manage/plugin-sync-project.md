@@ -1,4 +1,4 @@
-# Mergin Maps Plugin for QGIS Overview
+# Mergin Maps QGIS Plugin Overview
 [[toc]]
 
 The <QGISPluginName /> allows you to work with your <MainPlatformNameLink /> projects in QGIS, whether it's downloading the project to your computer, making changes in the project, seeing the project's status or synchronising changes to the cloud. 
@@ -42,6 +42,10 @@ All your changes will be uploaded to the server and any pending changes from the
 :::
 
 When the synchronisation process is completed, your local files and the copy of files on the server will be identical.
+=======
+Once you have installed the <QGISPluginNameShort /> and configured it with your <MainPlatformNameLink /> credentials, you should be able to see it in your QGIS Browser panel. The name of the current [workspace](./workspaces/) is displayed in the square brackets (here: `sarah`) and available projects are listed underneath. 
+
+![Mergin Maps QGIS plugin in QGIS browser](./plugin-browser.jpg "Mergin Maps QGIS plugin in QGIS browser")
 
 ## Mergin Maps Plugin in QGIS Browser
 
@@ -93,7 +97,7 @@ To see local changes:
 
    If you want to zoom to specific changes, select them in the table and use **Zoom to Selection**.
    
-   ![Mergin Maps plugin for QGIS changes viewer](./plugin-changes-viewer.jpg "Mergin Maps plugin for QGIS changes viewer")
+   ![Mergin Maps QGIS plugin changes viewer](./plugin-changes-viewer.jpg "Mergin Maps QGIS plugin changes viewer")
 
 3. Changes can be added to the QGIS project as a new layer. Click **Add to project** and choose one of the options:
    ![Add local changes to QGIS project](./plugin-changes-viewer-add.jpg "Add local changes to QGIS project")

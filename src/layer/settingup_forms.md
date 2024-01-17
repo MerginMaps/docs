@@ -12,15 +12,15 @@ Forms can be configured using <QGISHelp ver="latest" link="user_manual/working_w
 
 |QGIS widget  | Description  |<div style="width:300px">Preview in <MobileAppName /> </div> |Example project   |
 |:---:|:---:|:---:|:---:|
-|Text Edit  |[Text](#text)   | ![Mergin Maps Input text field form](./input_forms_text.jpg "Mergin Maps Input text field form") | <MerginMapsProjectShort id="documentation/test_forms" />|
-|QR & barcode scanner  |[Camera to scan QR and barcode](#qr-code)   | ![Mergin Maps Input QR code field form](./input_forms_qrcode1.jpg "Mergin Maps Input QR code field form") | <MerginMapsProjectShort id="documentation/test_qrcode" /> |
-|Range   |[Numeric field](#numbers)   | ![Mergin Maps Input numeric field form](./input_forms_numbers.jpg "Mergin Maps Input numeric field form")  | <MerginMapsProjectShort id="documentation/form_setup" /> |
-|Range   |[Slider](#slider)   | ![Mergin Maps Input slider field form](./input_forms_slider1.jpg "Mergin Maps Input slider field form")  | <MerginMapsProjectShort id="documentation/form_setup" /> |
-|Date&Time   |[Calendar with time](#date-and-time)  |![Mergin Maps Input date time field form](./input_forms_datetime1.jpg "Mergin Maps Input date time field form")   | <MerginMapsProjectShort id="documentation/form_setup" /> |
-|Attachment   |[Photos from device's camera or gallery](./settingup_forms_photo.md) | ![Mergin Maps Input attachment field form](./input_forms_photo1.jpg "Mergin Maps Input attachment field form")  |<MerginMapsProjectShort id="documentation/form_setup" /> |
-|Checkbox   |[Checkbox](#checkbox)   |![Mergin Maps Input checkbox field form](./input_forms_checkbox2.jpg "Mergin Maps Input checkbox field form")   |<MerginMapsProjectShort id="documentation/form_setup" /> |
-|Value Map   |[Drop-down menu with predefined values](#value-map) |![Mergin Maps Input value map field form](./input_forms_valuemap1.jpg "Mergin Maps Input value map field form")   |<MerginMapsProjectShort id="documentation/form_setup" /> |
-|Value Relation   |[Drop-down menu with values from another table](#value-relation) |![Mergin Maps Input value relation field form](./input_forms_valuerelation.jpg "Mergin Maps Input value relation field form")   | <MerginMapsProjectShort id="documentation/test_forms" /> |
+|Text Edit  |[Text](#text)   | ![Mergin Maps mobile app text field form](./input_forms_text.jpg "Mergin Maps mobile app text field form") | <MerginMapsProjectShort id="documentation/test_forms" />|
+|QR & barcode scanner  |[Camera to scan QR and barcode](#qr-code)   | ![Mergin Maps mobile app QR code field form](./input_forms_qrcode1.jpg "Mergin Maps mobile app QR code field form") | <MerginMapsProjectShort id="documentation/test_qrcode" /> |
+|Range   |[Numeric field](#numbers)   | ![Mergin Maps mobile app numeric field form](./input_forms_numbers.jpg "Mergin Maps mobile app numeric field form")  | <MerginMapsProjectShort id="documentation/form_setup" /> |
+|Range   |[Slider](#slider)   | ![Mergin Maps mobile app slider field form](./input_forms_slider1.jpg "Mergin Maps mobile app slider field form")  | <MerginMapsProjectShort id="documentation/form_setup" /> |
+|Date&Time   |[Calendar with time](#date-and-time)  |![Mergin Maps mobile app date time field form](./input_forms_datetime1.jpg "Mergin Maps mobile app date time field form")   | <MerginMapsProjectShort id="documentation/form_setup" /> |
+|Attachment   |[Photos from device's camera or gallery](./settingup_forms_photo.md) | ![Mergin Maps mobile app attachment field form](./input_forms_photo1.jpg "Mergin Maps mobile app attachment field form")  |<MerginMapsProjectShort id="documentation/form_setup" /> |
+|Checkbox   |[Checkbox](#checkbox)   |![Mergin Maps mobile app checkbox field form](./input_forms_checkbox2.jpg "Mergin Maps mobile app checkbox field form")   |<MerginMapsProjectShort id="documentation/form_setup" /> |
+|Value Map   |[Drop-down menu with predefined values](#value-map) |![Mergin Maps mobile app value map field form](./input_forms_valuemap1.jpg "Mergin Maps mobile app value map field form")   |<MerginMapsProjectShort id="documentation/form_setup" /> |
+|Value Relation   |[Drop-down menu with values from another table](#value-relation) |![Mergin Maps mobile app value relation field form](./input_forms_valuerelation.jpg "Mergin Maps mobile app value relation field form")   | <MerginMapsProjectShort id="documentation/test_forms" /> |
 
 :::tip
 Extra configuration can be done to the form layout to make the data collection easier and more consistent, such as using default values, conditional visibility or constraint enforcement. See [Advanced Form Configuration](./settingup_forms_settings/) for more details.
@@ -32,7 +32,7 @@ Adding or editing text is the most common method for inserting information withi
 
 In <MobileAppName /> , the text can be entered manually or using voice-to-text (if your mobile device supports this feature).
 
-![Voice to text in Mergin Maps Input form](./input-voice-to-text.jpg "Voice to text in Mergin Maps Input form")
+![Voice to text in Mergin Maps mobile app form](./input-voice-to-text.jpg "Voice to text in Mergin Maps mobile app form")
 
 ### Multiline text
 
@@ -51,7 +51,7 @@ Clone <MerginMapsProject id="documentation/test_forms" /> to follow this example
 ![QGIS multiline text field form](./qgis_forms_text.jpg "QGIS multiline text field form")
 
 In <MobileAppName />, the **multiline text edit widget** will look like this:
-![Mergin Maps Input multiline text field form](./input_forms_text1.jpg "Mergin Maps Input multiline text field form")
+![Mergin Maps mobile app multiline text field form](./input_forms_text1.jpg "Mergin Maps mobile app multiline text field form")
 
 
 ## QR code
@@ -64,7 +64,7 @@ To be able to scan QR codes using your camera, the field name or the field alias
 
 In <MobileAppName />, there will be a QR code icon next to the field. Click on the QR code icon to read the QR code using your camera - the text (e.g. a link) will be filled in automatically.
 
-![Mergin Maps Input QR code field form](./input_forms_qrcode.jpg "Mergin Maps Input QR code field form")
+![Mergin Maps mobile app QR code field form](./input_forms_qrcode.jpg "Mergin Maps mobile app QR code field form")
 
 
 ## Numbers
@@ -89,7 +89,7 @@ To set up the **editable range widget**:
 
 In <MobileAppName />, the **editable range widget** will look like the `number` field here:
 
-![Mergin Maps Input number range field form](./input_forms_number1.jpg "Mergin Maps Input number range field form")
+![Mergin Maps mobile app number range field form](./input_forms_number1.jpg "Mergin Maps mobile app number range field form")
 
 ### Slider
 When setting up a slider, ensure your field type is integer.
@@ -106,7 +106,7 @@ When setting up a slider, ensure your field type is integer.
 
 In <MobileAppName />, the **slider** will look like the `Number of plants` field. It can be filled in by moving the slider:
 
-![Mergin Maps Input number range field form](./input_forms_slider.jpg "Mergin Maps Input number range field form")
+![Mergin Maps mobile app number range field form](./input_forms_slider.jpg "Mergin Maps mobile app number range field form")
 
 
 ## Date and time
@@ -130,7 +130,7 @@ If you want to record time and date when you capture the feature, you need to ma
 
 In <MobileAppName />, the date can be edited using a calendar pop up. If you use **now()** as the default value, the current date and time will be automatically filled in.
 
-![Mergin Maps Input calendar form](./input_forms_datetime.jpg "Mergin Maps Input calendar form")
+![Mergin Maps mobile app calendar form](./input_forms_datetime.jpg "Mergin Maps mobile app calendar form")
 
 It is also possible to use custom Field Formats and Widget Displays. 
 :::warning
@@ -187,7 +187,7 @@ Checkbox field becomes handy when you want to set up a Yes/No, True/False or On/
 
 In <MobileAppName />, the status of the checkbox field can be easily toggled on/off.
 
-![Mergin Maps Input checkbox field form](./input_forms_checkbox.jpg "Mergin Maps Input checkbox field form")
+![Mergin Maps mobile app checkbox field form](./input_forms_checkbox.jpg "Mergin Maps mobile app checkbox field form")
 
 
 ## Select value from a drop-down menu
@@ -240,11 +240,11 @@ To set up **Value Relation** in QGIS:
 
 ![QGIS value relation field form](./qgis_forms_valuerelation.jpg "QGIS value relation field form")
 
-When you open the field with **Value Relation** in <MobileAppName />, you will be able to select values from the list.
+When you open the field with **Value Relation** in the <MobileAppNameShort />, you will be able to select values from the list.
 
-![Mergin Maps Input value relation field form](./input_forms_valuerelation1.jpg "Mergin Maps Input value relation field form")
-![Mergin Maps Input value relation options](./input_forms_valuerelation2.jpg "Mergin Maps Input value relation options")
-![Mergin Maps Input value relation filled](./input_forms_valuerelation3.jpg "Mergin Maps Input value relation filled")
+![Mergin Maps mobile app value relation field form](./input_forms_valuerelation1.jpg "Mergin Maps mobile app value relation field form")
+![Mergin Maps mobile app value relation options](./input_forms_valuerelation2.jpg "Mergin Maps mobile app value relation options")
+![Mergin Maps mobile app value relation filled](./input_forms_valuerelation3.jpg "Mergin Maps mobile app value relation filled")
 
 
 ## Attachments, cascade form, 1-N relations,...
@@ -253,7 +253,4 @@ There is much more you can do to set up your forms efficiently, such as:
 - capture [photos](./settingup_forms_photo/) as attachments
 - create advanced forms with drill-down menu by setting up a [cascade form](./settingup_forms_settings/#drill-down-forms)
 - using 1-N relations to [link multiple records to one feature](./one-to-n-relations/) or to [attach multiple photos to one feature](./attach-multiple-photos-to-features/) 
-
-:::tip
-Learn more about the form layout in [Advanced Form Configuration](./settingup_forms_settings/).
-:::
+- design an appropriate [form layout](./form-layout/) with groups and tabs, conditional visibility of fields or instructions for the fieldwork

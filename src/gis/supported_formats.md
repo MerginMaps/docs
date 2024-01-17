@@ -1,31 +1,41 @@
 # Supported Formats
 <!-- reference -->
 
-When working with <MobileAppName />, you can keep using standard data formats you are used to in QGIS. In general, most of the data formats that QGIS can load, can be also used in <MobileAppName />. There are however some minor differences worth highlighting.
+When working with <MobileAppName />, you can keep using standard data formats you are used to in QGIS. In general, most of the data formats that QGIS can load, can be also used in the <MobileAppNameShort />. There are however some minor differences worth highlighting.
 
 [[toc]]
 
-## Vector data on Mergin Maps Input
+## Vector data on Mergin Maps mobile app
 
 For survey layers used on the field, we strongly recommend GeoPackage, to be able to work fully offline, benefit from automatic merging of data (collaborative editing) and versioning.
 
 | Format         |  Android/iOS  | Note                                                                                                |
 |----------------|---------------|-----------------------------------------------------------------------------------------------------|
 | GeoPackage     | :heart_eyes:  | collaborative editing and versioning by <GitHubRepo id="MerginMaps/geodiff" desc="geodiff" />  |
-| Shapefile      | :warning:     | collaborative editing not supported                                                                 |
-| Delimited text | :warning:     | collaborative editing not supported                                                                 | 
-| Virtual layer  | :warning:     | collaborative editing not supported                                                                 |                 
-| PostGIS        | :thumbsup:    | requires internet connection                                                                        |
+| Shapefile      | :warning:     | collaborative editing not supported                                                              |
+| Delimited text | :warning:     | collaborative editing not supported                                                              | 
+| Virtual layer  | :warning:     | collaborative editing not supported                                                              |                 
+| [PostGIS](#postgresql-postgis)        | :thumbsup:    | requires internet connection              |
 | WFS            | :warning:    | requires internet connection (<GitHubRepo id="MerginMaps/input/issues/1959" desc="open ticket" />)                                                                        |
 
 There are more formats supported, please see full list of supported [QGIS providers](#full-list-of-supported-qgis-providers) and [OGR drivers](#full-list-of-supported-ogr-drivers)
 
 ::: tip
-Read [more](../manage/synchronisation.md) how the synchronisation in Mergin Maps works.
+Go to [Behind Data Synchronisation](../manage/synchronisation.md) to read more about how synchronisation works in <MainPlatformNameLink />.
 :::
 
+### PostgreSQL/PostGIS
+PostgreSQL connection (username, password, host, port, etc.) can be set up:
+- directly in QGIS PostgreSQL connection, if you want to reuse the same connection for everyone
+- use a *Connection Service File* `pg_service.conf`, if you want to have different PostgreSQL user for each surveyor
 
-## Raster data on Mergin Maps Input
+To use a *Connection Service File*, you have to:
+<SinceBadge type="App" version="2.5.0" />
+- create a `pg_service.conf` file as described in <QGISHelp ver="latest" link="user_manual/managing_data_source/opening_data.html#postgresql-service-connection-file" text="QGIS User Manual" /> and test it in QGIS Desktop
+- [manually transfer](../manage/missing-data/index.md) the `pg_service.conf` file to <MobileAppName /> data folder. The data folder is shown in the [Diagnostic Log](../misc/troubleshoot/#diagnostic-log-on-mergin-maps-mobile-app)
+- restart the <MobileAppNameShort />. Check the [Diagnostic Log](../misc/troubleshoot/#diagnostic-log-on-mergin-maps-mobile-app) to see if the file is found and used after restart.
+
+## Raster data on Mergin Maps mobile app
 
 | Format         | Android/iOS      | Note                                                                                                       |   
 |----------------|------------------|------------------------------------------------------------------------------------------------------------|
@@ -47,7 +57,7 @@ There are plenty of other raster formats we support through GDAL/OGR, please see
 See [our guide](./settingup_background_map.md) for setting up background layers.
 :::
 
-## Vector tiles on Mergin Maps Input
+## Vector tiles on Mergin Maps mobile app
 
 We support vector tiles just like QGIS does - in Mapbox Vector Tiles (MVT) format - and stored either in a MBTiles file (for offline use) or through a template URL (for online service) such as `http://example.com/{z}/{x}/{y}.pbf`.
 
@@ -57,7 +67,7 @@ See [our guide](./settingup_background_map.md) for setting up background layers.
 
 ## Full list of supported QGIS providers
 
-<MobileAppName /> is based on the <GitHubRepo id="MerginMaps/input-sdk" /> with custom QGIS core library build. The currently supported QGIS providers are
+The <MobileAppNameShort /> is based on the <GitHubRepo id="MerginMaps/mobile-sdk" /> with custom QGIS core library build. The currently supported QGIS providers are
     
 ```
 OGC API - Features data provider
@@ -79,7 +89,7 @@ OGC Web Map Service version 1.3 data provider
 
 ## Full list of supported GDAL drivers
 
-<MobileAppName /> is based on the <GitHubRepo id="MerginMaps/input-sdk" /> with custom GDAL build. The currently supported formats are
+The <MobileAppNameShort /> is based on the <GitHubRepo id="MerginMaps/mobile-sdk" /> with custom GDAL build. The currently supported formats are
 
 ```
 ./gdalinfo --formats
@@ -223,7 +233,7 @@ Supported Formats:
 
 ## Full list of supported OGR drivers
 
-<MobileAppName /> is based on the <GitHubRepo id="MerginMaps/input-sdk" /> with custom OGR build. The currently supported formats are
+The <MobileAppNameShort /> is based on the <GitHubRepo id="MerginMaps/mobile-sdk" /> with custom OGR build. The currently supported formats are
 
 ```
 ./ogrinfo --formats
@@ -300,7 +310,7 @@ To convert between various GDAL formats, you can use [gdal_translate](https://gd
 
 ## Support for new formats
 
-If you find out that the <MobileAppName /> doesn't support your format, please open issue at <GitHubRepo id="MerginMaps/input-sdk" />.
+If you find out that the <MobileAppName /> doesn't support your format, please open issue at <GitHubRepo id="MerginMaps/mobile-sdk" />.
 
 If QGIS on desktop does not support the format of your choice, open issue at <GitHubRepo id="qgis/QGIS-Mac-Packager" /> for macOS, or <GitHubRepo id="qgis/QGIS" /> for other platforms.
 

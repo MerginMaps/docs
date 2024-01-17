@@ -1,8 +1,8 @@
 <template>
   <div>
-    <ParentLayout
-      ><template #page-bottom><PageFooter /></template></ParentLayout
-    >
+    <ParentLayout>
+       <template #page-bottom><PageFooter /></template>
+    </ParentLayout>
   </div>
 </template>
 

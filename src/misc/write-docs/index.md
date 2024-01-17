@@ -129,15 +129,15 @@ References to other articles, blog posts or resources should be linked where rel
 	* Filenames:
 		* <NoSpellcheck id="mergin-maps-mobile" />
 	* Titles/Sidebar
-		* Mergin Maps Input
+		* Mergin Maps Mobile App
     * For titles (`#`)/sidebar capitalise the first letter in *all* words
         * Correct: "Opening Surveyed Data on Your Computer"
         * Wrong: ~~"Opening surveyed data on your computer"~~
-        * Never shorten the names of components (e.g. Mergin Maps Input)
+        * Never shorten the names of components (e.g. Mergin Maps Mobile App)
     * For headers (`##`, `###`, `####` )  capitalise only the first letter in *first* word
         * Correct: "Putting your project in the cloud"
         * Wrong: ~~"Putting Your Project in the Cloud"~~
-        * Never shorten the names of components (e.g. Mergin Maps Input)
+        * Never shorten the names of components (e.g. <MobileAppName />)
     * Titles and headers should contain specific keywords to return relevant search results:
         * Correct: "Further reading about projections and transformations"
         * Wrong: ~~"Further reading"~~  
@@ -232,7 +232,7 @@ Custom title example
 
 ### Emoji
 
-You can use any of supported <GitHubRepo id="markdown-it/markdown-it-emoji/blob/master/lib/data/full.json" desc="supported emoji" /> by markdown-it project.
+You can use any of supported <GitHubRepo id="markdown-it/markdown-it-emoji/blob/master/lib/data/full.mjs" desc="supported emoji" /> by markdown-it project.
 
 
 :tada: :grinning: :rofl: :scream: :heart: :pray:
@@ -281,7 +281,7 @@ For mentioning that some feature is available from specific version, use `<Since
 #### Preparation
 
 * Any image prepared should have an associated Gimp `.xcf` file containing the original, full resolution image
-* Screenshots of QGIS should be taken with the window sized at 1024x768. [Sizer](http://www.brianapps.net/sizer) is good for this task.
+* Screenshots of QGIS should be taken with the window sized at 1024x768
 * Consistent buttons / toolbars in QGIS
 * Windows/macOS, not Linux
 * Making dialogs as small as possible without scrollbars or other bad visuals
@@ -362,12 +362,14 @@ If you are adding new component:
  - add your component to `src/.vuepress/components/MyComponent.vue`
  - use in markdown as `<MyComponent></MyComponent>` or `<MyComponent />`
 
-### Reference QGIS Help pages
+### Reference QGIS and QGIS Help pages
+To reference QGIS website, use `<QGIS />` component, e.g. `<QGIS link="en/site/forusers/download.html" text="QGIS Download page" />` transforms to
 
-Use `<QGISHelp />` component, e.g. `<QGISHelp ver="3.22" link="user_manual/index.html" text="See QGIS Help page" />` transforms to
+<QGIS link="en/site/forusers/download.html" text="QGIS Download page" />
+
+To reference QGIS documentation, use `<QGISHelp />` component, e.g. `<QGISHelp ver="3.22" link="user_manual/index.html" text="See QGIS Help page" />` transforms to
 
 <QGISHelp ver="3.22" link="user_manual/index.html" text="See QGIS Help page" />
-
 
 ### Reference GitHub content
 Use `<GitHubRepo />` component, e.g. `<GitHubRepo id="MerginMaps/docs/" desc="documentation" />` transforms to <GitHubRepo id="MerginMaps/docs/" desc="documentation" />.
@@ -390,7 +392,7 @@ For a short reference (e.g. in tables), use `<MerginMapsProjectShort />` compone
 
 <MerginMapsProjectShort id="documentation/test_forms" />
 
-### Show Mergin Maps Input Google/Apple badges for download
+### Show Mergin Maps Mobile App Google/Apple badges for download
 
 Use `<AppDownload />` component
     
@@ -399,6 +401,10 @@ Use `<AppDownload />` component
 ### Naming Mergin Maps Components
 
 Use `<AppDomainNameLink />` component, transforms to <AppDomainNameLink />
+
+Use `<DashboardLink />` component, transforms to  <DashboardLink />
+
+Use `<DashboardShortLink />` component, transforms to  <DashboardShortLink />
 
 Use `<MainDomainName />` component, transforms to <MainDomainName />
 
@@ -418,8 +424,11 @@ Use `<EnterprisePlatformNameLink />` component, transforms to <EnterprisePlatfor
 
 Use `<MobileAppName />` component, transforms to <MobileAppName />
 
+Use `<MobileAppNameShort />` component, transforms to <MobileAppNameShort />
+
 Use `<QGISPluginName />` component, transforms to <QGISPluginName />
 
+Use `<QGISPluginNameShort />` component, transforms to <QGISPluginNameShort />
 
 ## Translations
 

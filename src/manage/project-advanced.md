@@ -124,7 +124,7 @@ To avoid synchronisation issues, everyone should delete the old project from all
 ![Delete project button](./project-delete.jpg "Delete project button")
 
 
-### Delete a project using the Mergin Maps plugin 
+### Delete a project using the Mergin Maps QGIS plugin 
 Using the <QGISPluginName />, you can delete a <MainPlatformName /> project either locally on your PC or on the <MainPlatformName /> server. To be able to delete the project on the server, you need to first delete the files locally.
 
 1. In QGIS, go to the **<MainPlatformName />** in the Browser panel

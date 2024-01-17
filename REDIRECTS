@@ -47,7 +47,7 @@ https://help.cloudmergin.com/tutorials/qgis-new-project.html	N/A - covered by no
 https://help.cloudmergin.com/tutorials/using-input	https://merginmaps.com/docs/tutorials/creating-a-project-in-qgis/
 https://help.cloudmergin.com/tutorials/using-input.html	N/A - covered by non-html version
 https://help.cloudmergin.com/web-create-project	https://merginmaps.com/docs/manage/create-project/
-https://help.cloudmergin.com/working-with-organisations	https://merginmaps.com/docs/setup/working-with-organisations/
+https://help.cloudmergin.com/working-with-organisations	https://merginmaps.com/docs/manage/workspaces/
 https://help.cloudmergin.com/working-with-qgis-plugin	https://merginmaps.com/docs/
 https://help.cloudmergin.com/working-with-qgis-plugin.html	N/A - covered by non-html version
 https://help.inputapp.io	https://merginmaps.com/docs/
@@ -112,12 +112,12 @@ https://merginmaps.com/docs/concepts/project/	https://merginmaps.com/docs/
 https://merginmaps.com/docs/concepts/projections/	https://merginmaps.com/docs/gis/projections/
 https://merginmaps.com/docs/concepts/synchronisation/	https://merginmaps.com/docs/manage/synchronisation/
 https://merginmaps.com/docs/concepts/synchronization/	https://merginmaps.com/docs/manage/synchronisation/
-https://merginmaps.com/docs/concepts/users-and-orgs/	https://merginmaps.com/docs/setup/working-with-organisations/
+https://merginmaps.com/docs/concepts/users-and-orgs/	https://merginmaps.com/docs/manage/workspaces/
 https://merginmaps.com/docs/fieldwork/gps_accuracy/	https://merginmaps.com/docs/field/gps_accuracy/
 https://merginmaps.com/docs/gis/enable_browsing/	https://merginmaps.com/docs/gis/search_data/
 https://merginmaps.com/docs/howto/attach-multiple-photos-to-features/	https://merginmaps.com/docs/layer/attach-multiple-photos-to-features/
 https://merginmaps.com/docs/howto/contribute/	https://merginmaps.com/docs/misc/contribute/
-https://merginmaps.com/docs/howto/create-an-organization/	https://merginmaps.com/docs/setup/working-with-organisations/
+https://merginmaps.com/docs/howto/create-an-organization/	https://merginmaps.com/docs/manage/workspaces/
 https://merginmaps.com/docs/howto/create-project/	https://merginmaps.com/docs/manage/create-project/
 https://merginmaps.com/docs/howto/customapp/	https://merginmaps.com/docs/dev/customapp/
 https://merginmaps.com/docs/howto/data_sync/	https://merginmaps.com/docs/manage/plugin-sync-project/
@@ -143,7 +143,7 @@ https://merginmaps.com/docs/howto/manage/web/project-details/	https://merginmaps
 https://merginmaps.com/docs/howto/manage/web/register/	https://merginmaps.com/docs/setup/sign-up-to-mergin-maps/
 https://merginmaps.com/docs/howto/manage/web/subscriptions/	https://merginmaps.com/docs/manage/subscriptions/
 https://merginmaps.com/docs/howto/manage/web/web-create-project/	https://merginmaps.com/docs/manage/create-project/
-https://merginmaps.com/docs/howto/manage/web/working-with-organisations/	https://merginmaps.com/docs/setup/working-with-organisations/
+https://merginmaps.com/docs/howto/manage/web/working-with-organisations/	https://merginmaps.com/docs/manage/workspaces/
 https://merginmaps.com/docs/howto/mergince/	https://merginmaps.com/docs/dev/mergince/
 https://merginmaps.com/docs/howto/mergin-tour/	https://merginmaps.com/docs/tutorials/creating-a-project-in-qgis/
 https://merginmaps.com/docs/howto/position_variables/	https://merginmaps.com/docs/layer/position_variables/
@@ -167,10 +167,12 @@ https://merginmaps.com/docs/manage/data_sync/	https://merginmaps.com/docs/manage
 https://merginmaps.com/docs/reference/licensing/	https://merginmaps.com/docs/misc/licensing/
 https://merginmaps.com/docs/reference/privacy/	https://merginmaps.com/docs/misc/privacy/
 https://merginmaps.com/docs/setup/subscriptions/	https://merginmaps.com/docs/manage/subscriptions/
+https://merginmaps.com/docs/setup/working-with-organisations/	https://merginmaps.com/docs/manage/workspaces/
 
 # Redirects for non-existing pages (404s reported by google)
 https://merginmaps.com/docs/components/mobile/	https://merginmaps.com/docs/
 https://www.merginmaps.com/docs/components/web/	https://merginmaps.com/docs/
+https://www.merginmaps.com/docs/concepts/	https://merginmaps.com/docs/
 https://www.merginmaps.com/docs/contribute/	https://merginmaps.com/docs/misc/contribute/
 https://merginmaps.com/docs/faq/	https://merginmaps.com/docs/
 https://www.merginmaps.com/docs/guides/datum-shift/	https://merginmaps.com/docs/gis/proj/
@@ -178,8 +180,10 @@ https://www.merginmaps.com/docs/guides/mergin-tour/	https://merginmaps.com/docs/
 https://merginmaps.com/docs/integrations/customapp/	https://merginmaps.com/docs/dev/customapp/
 https://merginmaps.com/docs/integrations/postgresql/	https://merginmaps.com/docs/dev/dbsync/
 https://www.merginmaps.com/docs/integrations/webhooks/	https://merginmaps.com/docs/
-https://www.merginmaps.com/docs/qgis/project_config	https://merginmaps.com/docs/gis/features/
+https://www.merginmaps.com/docs/licensing/	https://merginmaps.com/docs/misc/licensing/
 https://merginmaps.com/docs/plugin/plugin-installation	https://merginmaps.com/docs/setup/install-mergin-maps-plugin-for-qgis/
+https://www.merginmaps.com/docs/qgis/project_config	https://merginmaps.com/docs/gis/features/
+https://www.merginmaps.com/docs/quick-start/	https://merginmaps.com/docs/
 https://www.merginmaps.com/docs/support/	https://merginmaps.com/docs/misc/troubleshoot/
 https://merginmaps.com/docs/tutorials/quick-start/	https://merginmaps.com/docs/tutorials/capturing-first-data/
 https://www.merginmaps.com/docs/web/working-with-organisations/	https://merginmaps.com/docs/manage/workspaces/
