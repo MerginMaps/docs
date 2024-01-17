@@ -11,14 +11,14 @@ Once installed, plugin's entries will be added to the QGIS toolbar panel, Browse
 To ensure you can use the latest improvements, don't forget to [upgrade the plugin](../../setup/install-mergin-maps-plugin-for-qgis/#plugin-upgrade) whenever there is an update available!
 :::
 
-## Mergin Maps Plugin Toolbar
+## Mergin Maps toolbar in QGIS
 The plugin's toolbar contains three active buttons to configure the plugin, create a new project and synchronise changes in the current project.
 
 ![Mergin Maps Plugin Toolbar in QGIS](../../setup/install-mergin-maps-plugin-for-qgis/mergin-toolbar.jpg "Mergin Maps Plugin Toolbar in QGIS")
 
 If you don't see <MainPlatformName /> plugin in QGIS toolbar, make sure it is enabled in
 
-## Synchronisation in QGIS
+### Synchronisation in QGIS
 Once you are happy with the changes to be uploaded/downloaded, you can synchronise your project and data. 
 
 1. Click on the **Synchronise Mergin Maps project** icon from the <QGISPluginName /> toolbar or right-click on the project in the Browser panel and select **Synchronise**
@@ -47,7 +47,7 @@ Once you have installed the <QGISPluginNameShort /> and configured it with your 
 
 ![Mergin Maps QGIS plugin in QGIS browser](./plugin-browser.jpg "Mergin Maps QGIS plugin in QGIS browser")
 
-## Mergin Maps Plugin in QGIS Browser
+## Mergin Maps plugin in QGIS Browser
 
 ### Downloading a project in QGIS
 
@@ -109,25 +109,18 @@ To see local changes:
 Unless you want to use these layers in your <MainPlatformName /> project, remove them from the project before synchronisation.
 :::
 
-## Mergin Maps Plugin Tools in Processing Toolbox
+## Mergin Maps Project Properties
 
-### Extract local changes (Processing toolbox)
-Local changes of a specific layer can also be extracted using the **Extract local changes** tool in the **Processing toolbox**.
+## Mergin Maps Tools in QGIS Processing Toolbox
+Processing is a core plugin of QGIS. By installing <QGISPluginName />, <MainPlatformName /> tools are added to the  <QGISHelp ver="latest" link="user_manual//processing/intro.html" text="Processing Toolbox" />.
 
-1. Navigate to **Mergin Maps** tools in the **Processing toolbox**
-   ![Mergin Maps tools in QGIS processing toolbox](./plugin-processing.jpg "Mergin Maps tools in QGIS processing toolbox")
-
-2. Double click the **Extract local changes** tool. In the dialog window, enter your project directory and select the input layer. The output local changes layer can be saved as a file or as a temporary file. Click **Run**.
-   ![QGIS extract local changes tool](./plugin-extract-local-changes.jpg "QGIS extract local changes tool")
-
-3. The local changes layer is added to the **Layers** panel
-   ![Local changes added to QGIS project](./plugin-extract-local-changes-layer.jpg "Local changes added to QGIS project")
+Use the **Toolbox** icon in the toolbar panel to display **Processing Toolbox** in QGIS.
+![Mergin Maps tools in QGIS processing toolbox](./plugin-processing.jpg "Mergin Maps tools in QGIS processing toolbox")
 
 ### Create diff (Processing toolbox)
 **Create diff** is a tool that extracts changes made between two versions of a layer in your <MainPlatformName /> project to make it easier to revise changes.
 
-1. Navigate to **Mergin Maps** tools in the **Processing toolbox**
-   ![Mergin Maps tools in QGIS processing toolbox](./plugin-processing-toolbox.jpg "Mergin Maps tools in QGIS processing toolbox")
+1. Navigate to **Mergin Maps** tools in the **Processing toolbox** in QGIS
 
 2. Double click the **Create diff** tool and fill in the parameters in the dialog window. Click **Run**.
    ![Create diff tool dialog](./plugin-create-diff.jpg "Create diff tool dialog")
@@ -139,8 +132,7 @@ Local changes of a specific layer can also be extracted using the **Extract loca
 ### Create report (Processing toolbox)
 **Create report** tool provides an overview of changes in your <MainPlatformName /> project for a range of project versions. The output is a <NoSpellcheck id="CSV" /> file, which can be opened in QGIS and also in common text and spreadsheets programs.
 
-1. Navigate to **Mergin Maps** tools in the **Processing toolbox**
-   ![Mergin Maps tools in QGIS processing toolbox](./plugin-processing-toolbox.jpg "Mergin Maps tools in QGIS processing toolbox")
+1. Navigate to **Mergin Maps** tools in the **Processing toolbox** in QGIS
 
 2. Double click the **Create report** tool. 
    
@@ -152,3 +144,24 @@ Local changes of a specific layer can also be extracted using the **Extract loca
 3. The report is added to the **Layers** panel.
    ![Create report tool result](./plugin-report.jpg "Create report tool result")
 
+### Download vector tiles (Processing toolbox)
+This tool can be used to easily download vector tiles for offline use. Its usage is described in detail in [Downloading vector tiles using <QGISPluginName />](../../gis/settingup_background_map/#downloading-vector-tiles-using-mergin-maps-qgis-plugin).
+
+### Extract local changes (Processing toolbox)
+Local changes of a specific layer can also be extracted using the **Extract local changes** tool in the **Processing toolbox**.
+
+1. Navigate to **Mergin Maps** tools in the **Processing toolbox** in QGIS
+
+2. Double click the **Extract local changes** tool. In the dialog window, enter your project directory and select the input layer. The output local changes layer can be saved as a file or as a temporary file. Click **Run**.
+   ![QGIS extract local changes tool](./plugin-extract-local-changes.jpg "QGIS extract local changes tool")
+
+3. The local changes layer is added to the **Layers** panel
+   ![Local changes added to QGIS project](./plugin-extract-local-changes-layer.jpg "Local changes added to QGIS project")
+
+   
+## Mergin Maps in QGIS Plugins menu bar
+**Plugins** menu bar in QGIS contains also <MainPlatformName /> options:
+- **<MainPlatformName />** is a shortcut to <AppDomainNameLink />
+- **Configure <MainPlatformName /> plugin** can be used to [set up plugin](../../setup/install-mergin-maps-plugin-for-qgis/#plugin-configuration) or [a custom server](../plugin-multi-server-use/)
+- **Configure DB sync** can help you generate a initial configuration file for [DB sync](../../dev/dbsync/)
+![Mergin Maps in QGIS Plugins menu bar](./plugins-menu-bar.jpg "Mergin Maps in QGIS Plugins menu bar")

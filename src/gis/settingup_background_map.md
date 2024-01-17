@@ -101,7 +101,7 @@ Another source of online vector tiles are *Qwant maps*. Use following
    - **Max. Zoom Level**: 14
    - **Style URL**: `https://raw.githubusercontent.com/QwantResearch/qwant-basic-gl-style/master/style.json`
 
-#### Mergin Maps Vector Tile Service
+#### Mergin Maps vector tile service
 When [creating a new <MainPlatformName /> project](../manage/create-project/#create-a-project-in-qgis) from scratch, the default background map uses <MainPlatformName /> vector tile service. 
 
 It can be also added to existing <MainPlatformName /> projects by using following parameters to set the **Vector Tiles connection**:
@@ -139,7 +139,7 @@ Note that instructions below require familiarity with the terminal. In addition,
 :::
 
 
-#### Downloading Vector Tiles Using Mergin Maps QGIS Plugin
+#### Downloading vector tiles using Mergin Maps QGIS Plugin
 <SinceBadge type="Plugin" version="2023.4" />
 
 Vector tiles for offline use can be downloaded easily using <QGISPluginName />.
