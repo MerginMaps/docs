@@ -30,7 +30,7 @@ If you want to delete multiple files, the best way to do this is on your compute
 
    Delete the files you do not want to keep anymore. 
    ![Mergin Maps project files in PC folder](./folder-files.jpg "Mergin Maps project files folder")
-3. [Synchronise the changes](../plugin/#synchronisation-in-qgis) in QGIS using <QGISPluginName />. 
+3. [Synchronise the changes](../synchronisation/#synchronising-changes-in-qgis) in QGIS using <QGISPluginName />. 
 
    **Local changes** in **Project status** will show the list of deleted files. After synchronisation, the files will be also deleted from the cloud.
 

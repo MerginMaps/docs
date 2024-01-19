@@ -39,7 +39,7 @@ The ecosystem consist of various components:
 - [Workspaces](./manage/workspaces/)
 - [Subscriptions and Invoicing](./manage/subscriptions/)
 - [Member Roles and Permissions](./manage/permissions/)
-- [Behind Data Synchronisation](./manage/synchronisation/)
+- [Synchronisation](./manage/synchronisation/)
 - [Mergin Maps Project](./manage/project/)
 - [How to Create a New Project](./manage/create-project/)
 - [How to Share, Transfer or Delete Projects](./manage/project-advanced/)
