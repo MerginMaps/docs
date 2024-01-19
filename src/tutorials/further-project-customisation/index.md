@@ -27,7 +27,7 @@ If you already have the `trees-and-hedges` project open in QGIS, skip to [Layer 
 The project should now be loaded in QGIS. Don't worry if you cannot see the features you surveyed in the field - this is probably because you've not yet synchronised the project in QGIS.
 
 If this is the case, click on the **Synchronise** icon from the <QGISPluginName /> toolbar to synchronise the changes
-   ![Mergin Maps QGIS plugin synchronisation icon](../../manage/plugin/sync-status-toolbar.jpg "Mergin Maps QGIS plugin synchronisation icon")
+   ![Mergin Maps QGIS plugin synchronisation icon](../../manage/sync-status-toolbar.jpg "Mergin Maps QGIS plugin synchronisation icon")
 
 ## Layer styles
 When using <MobileAppName /> in the field in the last tutorial, we noticed hedges were difficult to see against the background maps. We'll now fix that.
