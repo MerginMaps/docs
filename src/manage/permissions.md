@@ -35,6 +35,10 @@ Do you want to invite members or guests to your workspace? Visit [How to share p
 |manage workspace members| :no_entry_sign: | :no_entry_sign: | :white_check_mark: | :white_check_mark: |
 |access to invoicing and subscription settings| :no_entry_sign: | :no_entry_sign: | :no_entry_sign: | :white_check_mark: |
 
+:::tip
+Invoices can be made accessible also to a person that is not a workspace member, such as someone from your accounting department. They can [access the subscription management portal using a link](./subscriptions/#accessing-subscription-management-portal-directly-without-mergin-maps-account).
+:::
+
 Members and their roles can be managed through <AppDomainNameLink /> in the [Members](./dashboard/#members) tab:
 ![Mergin Maps web members tab](./web-members.jpg "Mergin Maps web members tab")
 

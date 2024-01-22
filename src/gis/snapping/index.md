@@ -4,7 +4,7 @@
 
 Capturing data in the field using <MobileAppName /> can be easier, if you can snap the vertices of new features to existing geometries. Snapping can also help you avoid creating topological errors in your datasets. 
 
-[<QGISPluginName />](../../manage/plugin-sync-project/) provides three snapping options:
+[<QGISPluginName />](../../manage/plugin/) provides three snapping options:
 - *No snapping* - snapping is not enabled (default)
 - *Basic snapping* - features are snapped to the vertices and segments of vector features in the project
 - *Follow QGIS snapping* - uses the snapping preferences defined in the QGIS project
