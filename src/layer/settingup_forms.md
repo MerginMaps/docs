@@ -4,6 +4,8 @@
 
 Capturing field data often requires filling some attributes in the form to record the properties of surveyed points, lines or polygons. Forms can simplify the data entry and even ensure to some extent that the correct information is filled in.
 
+<YouTube id="jc4p1PpXj3k" />
+
 ## Widget gallery
 
 A number of edit widget types for forms can be used in <MobileAppName />, including drop-down options, slider, date and time, checkbox, or photos. 

@@ -3,6 +3,8 @@
 
 In addition to setting up [edit widgets](./settingup_forms.md) and designing [form layout](./form-layout/), extra configuration can be done to the fields in QGIS to make the data collection easier and more consistent.
 
+<YouTube id="jc4p1PpXj3k" />
+
 ## Default values
 Default values can be used to automatically record, e.g, the name of the surveyor, date and time of the survey, latitude and longitude of the feature, or to have frequently used values filled in advance.
 
