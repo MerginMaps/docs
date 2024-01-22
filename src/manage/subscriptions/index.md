@@ -129,7 +129,7 @@ Billing information will be displayed in invoices or receipts, so make sure they
 ### Adding and removing a payment method
 When purchasing a subscription plan, you were asked to fill out your card information. 
 
-You might want to change it later, e.g. to use a different card or when [transferring the ownership of a workspace](../permissions/#how-to-transfer-ownership-of-a-workspace). To add or remove a payment method associated with your <PlatformNameLink /> subscription:
+You might want to change it later, e.g. to use a different card or when [transferring the ownership of a workspace](../permissions/#how-to-transfer-ownership-of-a-workspace). To add or remove a payment method associated with your <MainPlatformNameLink /> subscription:
 
 1. Navigate to the [subscription management portal](#subscriptions-management-portal)
 
