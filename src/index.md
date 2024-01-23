@@ -101,7 +101,7 @@ The ecosystem consist of various components:
 - [Geodiff Library](./dev/geodiff/)
 
 ## Migrate
-- [From QField](./migrate/qfield/)
+- [From QField and QFieldCloud](./migrate/qfield/)
 
 ## Support & Legal
 - [Licensing](./misc/licensing/)
