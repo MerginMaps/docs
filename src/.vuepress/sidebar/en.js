@@ -117,6 +117,14 @@ module.exports = {
                 '/dev/work-packages/',
                 '/dev/geodiff/'
             ]
+        }, 
+        {
+            title: 'Migrate',   // required
+            collapsable: true, // optional, defaults to true
+            sidebarDepth: 0,    // optional, defaults to 1
+            children: [
+                '/migrate/qfield/'
+            ]
         },
         {
             title: 'Support & Legal',   // required

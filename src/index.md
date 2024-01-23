@@ -100,6 +100,9 @@ The ecosystem consist of various components:
 - [Work Packages](./dev/work-packages/)
 - [Geodiff Library](./dev/geodiff/)
 
+## Migrate
+- [From QField](./migrate/qfield/)
+
 ## Support & Legal
 - [Licensing](./misc/licensing/)
 - [Privacy Policy](./misc/privacy/)
