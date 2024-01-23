@@ -10,6 +10,7 @@ Bing
 boolean
 Boolean
 changesets
+CLI
 CRS
 crosshairs
 CSRF
@@ -52,6 +53,7 @@ HDOP
 HTML
 Helmert
 HiDPi
+interoperable
 integration
 integrations
 Integration
@@ -105,6 +107,9 @@ PyPI
 QDate
 QDate
 QDateTime
+QField
+QFieldCloud
+QFieldSync
 QGIS
 QString
 QgsField
