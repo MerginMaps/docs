@@ -6,15 +6,15 @@ This guide is intended for current QField and QFieldCloud users considering swit
  
 We'll cover everything from preparing for the migration to troubleshooting common issues so that you can make the transition as smooth as possible. By the end of this guide, you'll have all the information you need to successfully migrate your data from QField to <MainPlatformName /> and start taking advantage of all the features and benefits that <MainPlatformName /> has to offer.
 
-## QField  and Mergin Maps ecosystems comparison
+## QField  and <MainPlatformName /> ecosystems comparison
 
 Both QField and <MainPlatformName /> are open-source projects with their community and weakly bound to QGIS ecosystem. 
 
-<MainPlatformName /> is the closest alternative to QField Ecosystem consisting of QField (mobile application), QFieldCloud (geo data collaboration server) and QFieldSync (QGIS plugin). They are both listed as the offically recommended touch device application for QGIS projects. The mobile applications are powered by QGIS and rest of open-source GIS libraries and as such their mobile projects are almost fully interoperable.
+<MainPlatformName /> is the closest alternative to QField Ecosystem consisting of QField (mobile application), QFieldCloud (geo data collaboration server) and QFieldSync (QGIS plugin). They are both listed as the officially recommended touch device application for QGIS projects. The mobile applications are powered by QGIS and rest of open-source GIS libraries and as such their mobile projects are almost fully interoperable.
 
 To mention the key differences, <MobileAppName /> is fully devoted to provide no-training mobile application, operated even for surveyors without any prior GIS knowledge. QField is more focused on advanced GIS users and its interface more resemples full GIS applications like QGIS. Therefore <MobileAppName /> is more intuitive for non-technical user who are familiar for common mobile map applications like car navigations. 
 
-For synchonisation part, <MainPlatformName /> is conceptually based on ideas from Git - [geodiff](TODO) creates difference files from GeoPackages that are send over network and applied. While QFieldCloud synchronisation uses concept of storage of differences made in SQL format and this difference log is then transmitted and applied. <MainPlatformName /> synchronisation is inevitable part of the platform and cannot be omitted from the process. As such it is already setup for end-user in smart way and not extra steps are needed for mobile users. 
+For synchonisation part, <MainPlatformName /> is conceptually based on ideas from Git - <GitHubRepo id="MerginMaps/geodiff" desc="Geodiff" /> - creates difference files from GeoPackages that are send over network and applied. While QFieldCloud synchronisation uses concept of storage of differences made in SQL format and this difference log is then transmitted and applied. <MainPlatformName /> synchronisation is inevitable part of the platform and cannot be omitted from the process. As such it is already setup for end-user in smart way and not extra steps are needed for mobile users. 
 
 
 | QField Ecosystem | <MainPlatformName /> Ecosystem | Note |
@@ -31,15 +31,17 @@ Before start of migration, you need to have your workspace prepared so you can s
 
 * Register <MainPlatformName /> user and create new workspace as described [here](../../setup/sign-up-to-mergin-maps/index.md)
 * Install QGIS as described [here](../../setup/install-qgis/index.md) and <QGISPluginName /> as described [here](../../setup/install-mergin-maps-plugin-for-qgis/index.md)
-* It is recommeded to go through [Get Started tutorial](../../tutorials/capturing-first-data/)
+* It is recommended to go through [Get Started tutorial](../../tutorials/capturing-first-data/)
 
 ## Migrate QField Project 
 
-Both platforms are rendering and using QGIS Projects (`.qgz` files) and associated online or offline geo-data sources. Therefore the basic concept of migration is 
+Both platforms are rendering and using QGIS Projects (`.qgz` files) and associated online or offline geo-data sources. Therefore the basic concept of migration is to get plain QGIS project on desktop and upload it to <MainPlatformName />.
 
-1. to transfer project from QField to your deskop computer (either via USB cable or QFieldCloud)
+### Download to desktop and upload to <MainPlatformName />
+
+1. transfer project from QField to your desktop computer (either via USB cable or QFieldCloud)
 - e.g. use "Send compressed folder to" action in QField to get compressed. Consult "QField Storage Access" documentation
-2. contert QField project to a regular QGIS project (if QFieldCloud is used)
+2. convert QField project to a regular QGIS project (if QFieldCloud is used)
 - Remove offline editing from the layers and export layers to be local geopackages and not stored on QFieldCloud PostGIS servers.
 3. use <QGISPluginName /> to package and upload project to <MainPlatformName />
 4. setup specific <MainPlatformName /> features for your project, such as selective sync, photo quality in <MainPlatformName /> plugin
@@ -70,7 +72,7 @@ For smooth transition, best is to read about [management of workspaces](../../tu
 
 In <MainPlatformName /> each workspace has subscription associated. Read more about <MainPlatformName /> subscription [here](../../manage/subscriptions/index.md)
 
-* If you own Organization plan in QFieldCloud, you will likely need <MainPlatformName /> Professional or Team subscription.
+* If you own Organisation plan in QFieldCloud, you will likely need <MainPlatformName /> Professional or Team subscription.
 * If you own Pro plan in QFieldCloud, you will likely need <MainPlatformName /> Individual or Professional subscription.
 * If you are Community plan in QFieldCloud, you will likely need <MainPlatformName /> Individual subscription or deploy your own <MainPlatformName /> Community Edition (<CommunityPlatformNameLink />)
 
@@ -78,7 +80,7 @@ In <MainPlatformName /> each workspace has subscription associated. Read more ab
 
 ### Known Differences
 
-1. Organization teams in QFieldCloud do not have any equivalent concept in <MainPlatformName />.
+1. Organisation teams in QFieldCloud do not have any equivalent concept in <MainPlatformName />.
 2. There is no concept of secrets in <MainPlatformName />. For `pg_service` configuration, you need to transfer it manually as described [here](../../gis/supported_formats/index.md)
 3. There is no concept of managing ongoing jobs or triggers in <MainPlatformName /> accessible for users. Users are presented result when jobs are finished (e.g. map rendering)
 
