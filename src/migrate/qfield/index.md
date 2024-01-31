@@ -48,7 +48,7 @@ Both platforms are rendering and using QGIS Projects (`.qgz` files) and associat
 
 1. QField is built around modes. There is not such concept in <MainPlatformName />
 2. Both platforms support almost the same set of supported formats via QGIS data providers and GDAL. Read all formats supported by <MainPlatformName /> [here](../../gis/supported_formats/index.md)
-3. <MobileAppName /> offers preview panel - read [here](../../tutorials/further-project-customisation/index.md) how to use it
+3. You can use preview panel in <MobileAppName />,see [how to setup it](../../tutorials/further-project-customisation/index.md) how to use it
 
 If you cannot find some feature in the <MobileAppName />, check our <WishListLink />
 
@@ -79,7 +79,7 @@ In <MainPlatformName /> each workspace has subscription associated. Read more ab
 ### Known Differences
 
 1. Organization teams in QFieldCloud do not have any equivalent concept in <MainPlatformName />.
-2. <MainPlatformName /> does not have concept of secrets. For `pg_service` configuration, you need to transfer it manually as described [here](../../gis/supported_formats/index.md)
-3. <MainPlatformName /> does not allow users to manage ongoing jobs on their projects or workspaces. Users are presented result when jobs are finished (e.g. map rendering)
+2. There is no concept of secrets in <MainPlatformName />. For `pg_service` configuration, you need to transfer it manually as described [here](../../gis/supported_formats/index.md)
+3. There is no concept of managing ongoing jobs or triggers in <MainPlatformName /> accessible for users. Users are presented result when jobs are finished (e.g. map rendering)
 
 If you cannot find some feature in the <MobileAppName />, check our <WishListLink />

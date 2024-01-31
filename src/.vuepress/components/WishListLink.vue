@@ -1,7 +1,7 @@
 <template>
   <a :href="`https://wishlist.merginmaps.com/${id}`" target="_blank" class="nospellcheck">
     <span v-if="desc" v-html="desc"></span>
-    <span v-else class="nospellcheck">wishlist.merginmaps.com</span>
+    <span v-else class="nospellcheck">wishlist</span>
   </a>
 </template>
 
@@ -12,7 +12,7 @@ export default {
     id: {
       type: String,
       default: ''
-    }
+    },
     desc: String
   }
 }
