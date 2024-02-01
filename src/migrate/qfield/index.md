@@ -2,20 +2,13 @@
 
 [[toc]]
 
-This guide is intended for current QField and QFieldCloud users considering switching to <MainPlatformName /> and new <MainPlatformName /> users looking to transfer their data from QField ecosystem.
- 
-We'll cover everything from preparing for the migration to troubleshooting common issues so that you can make the transition as smooth as possible. By the end of this guide, you'll have all the information you need to successfully migrate your data from QField to <MainPlatformName /> and start taking advantage of all the features and benefits that <MainPlatformName /> has to offer.
+This guide is intended for current QField and QFieldCloud users considering switching to <MainPlatformName /> and <MainPlatformName /> users looking to transfer their data from QField ecosystem. This guide cover preparing for the migration and troubleshooting common issues so that you can make the transition as smooth as possible. 
 
-## QField  and <MainPlatformName /> ecosystems comparison
+<MainPlatformName /> is the closest alternative to QField Ecosystem. Both QField and <MainPlatformName /> are open-source projects powered by QGIS. Their mobile apps are ones of officially recommended touch device applications for QGIS projects by <QGIS link="en/site/forusers/download.html" text="QGIS.org" />. Moreover, the mobile apps are based on same open-source GIS stack and same technology, and as such their projects are almost fully interoperable. 
 
-Both QField and <MainPlatformName /> are open-source projects with their community and weakly bound to QGIS ecosystem. 
+## QField  and <MainPlatformName /> ecosystems
 
-<MainPlatformName /> is the closest alternative to QField Ecosystem consisting of QField (mobile application), QFieldCloud (geo data collaboration server) and QFieldSync (QGIS plugin). They are both listed as the officially recommended touch device application for QGIS projects. The mobile applications are powered by QGIS and rest of open-source GIS libraries and as such their mobile projects are almost fully interoperable.
-
-To mention the key differences, <MobileAppName /> is fully devoted to provide no-training mobile application, operated even for surveyors without any prior GIS knowledge. QField is more focused on advanced GIS users and its interface more resemples full GIS applications like QGIS. Therefore <MobileAppName /> is more intuitive for non-technical user who are familiar for common mobile map applications like car navigations. 
-
-For synchonisation part, <MainPlatformName /> is conceptually based on ideas from Git - <GitHubRepo id="MerginMaps/geodiff" desc="Geodiff" /> - creates difference files from GeoPackages that are send over network and applied. While QFieldCloud synchronisation uses concept of storage of differences made in SQL format and this difference log is then transmitted and applied. <MainPlatformName /> synchronisation is inevitable part of the platform and cannot be omitted from the process. As such it is already setup for end-user in smart way and not extra steps are needed for mobile users. 
-
+QField ecosystem consists of QField (mobile application), QFieldCloud (geo data collaboration server),  QFieldSync (QGIS plugin) and FieldCloud SDK (Python API client). Let's see the tools from <MainPlatformName /> that are counterparts:
 
 | QField Ecosystem | <MainPlatformName /> Ecosystem | Note |
 |---|---|---|
@@ -23,7 +16,16 @@ For synchonisation part, <MainPlatformName /> is conceptually based on ideas fro
 | QFieldCloud | <MainPlatformName />  | Server for sharing geo-data |
 | QFieldSync | <QGISPluginName />  | QGIS Plugin for sync and manipulation of projects |
 | QFieldCloud SDK and CLI | <GitHubRepo id="MerginMaps/python-api-client" desc="Python client" /> | Interaction with REST API via Python or console |
-| QFieldCloud PostGIS | <GitHubRepo id="MerginMaps/db-sync" desc="db-sync" /> | Connection to PostGIS database |
+
+QFieldCloud is based on PostgreSQL and PostGIS database and there might be direct connection to these. Unlikely <MainPlatformName /> is fully based on file-based system, so there is no central <MainPlatformName /> user accesible PostGIS database to connect to. Instead you can setup custom script <GitHubRepo id="MerginMaps/db-sync" desc="db-sync" /> to map your <MainPlatformName /> to PostGIS database schema.
+
+On top of <GitHubRepo id="MerginMaps/python-api-client" desc="Python client" />, <MainPlatformName /> offers other developer tools  manage projects for larger teams:
+- [Media Sync](../../dev/media-sync/)
+- [Work Packages](../../dev/work-packages/)
+
+You can also [customize](../../dev/customapp/) <MobileAppName /> and deploy own servers:
+- [Mergin Maps Community Edition](./dev/mergince/)
+- [Mergin Maps Enterprise Edition](./dev/merginmaps-ee/)
 
 ## Before we start
 
@@ -37,22 +39,35 @@ Before start of migration, you need to have your workspace prepared so you can s
 
 Both platforms are rendering and using QGIS Projects (`.qgz` files) and associated online or offline geo-data sources. Therefore the basic concept of migration is to get plain QGIS project on desktop and upload it to <MainPlatformName />.
 
-### Download to desktop and upload to <MainPlatformName />
+### Transfer QField project to desktop 
 
-1. transfer project from QField to your desktop computer (either via USB cable or QFieldCloud)
-- e.g. use "Send compressed folder to" action in QField to get compressed. Consult "QField Storage Access" documentation
-2. convert QField project to a regular QGIS project (if QFieldCloud is used)
-- Remove offline editing from the layers and export layers to be local geopackages and not stored on QFieldCloud PostGIS servers.
-3. use <QGISPluginName /> to package and upload project to <MainPlatformName />
-4. setup specific <MainPlatformName /> features for your project, such as selective sync, photo quality in <MainPlatformName /> plugin
+If you use USB cable for synchronisation of your data, use your common workflow to transfer project to your desktop, e.g. use "Send compressed folder to" action in QField to get compressed project to your email.
 
-### Known Differences
+If you are QFieldCloud user, use QFieldSync to synchronize your latest changes to your desktop. 
 
-1. QField is built around modes. There is not such concept in <MainPlatformName />
-2. Both platforms support almost the same set of supported formats via QGIS data providers and GDAL. Read all formats supported by <MainPlatformName /> [here](../../gis/supported_formats/index.md)
-3. You can use preview panel in <MobileAppName />,see [how to setup it](../../tutorials/further-project-customisation/index.md) how to use it
+### Convert QField project to QGIS project
 
-If you cannot find some feature in the <MobileAppName />, check our <WishListLink />
+Now when you have your QField project on your computer, you need to convert it to a regular QGIS project. <MainPlatformName /> doesn't use offine editing, nor connection to QFieldCloud PostGIS databases, so we need to remove those.
+
+1. Close QGIS
+
+2. Find the folder location e.g. `C:\GIS\QField_MyProject` on your computer, and create its hard copy `C:\GIS\MyProject`. The folder should include single QGIS project file (`.qgz` or `.qgs`), some data sources (like GeoPackages `.GPKG` or base maps) or sometimes other files (e.g. photos `.jpg` or `.png`). Alternatively, you can create new folder `C:\GIS\MyProject` and just copy QGIS project file (`.qgz` or `.qgs`) and other required data sources to new folder one by one.
+
+3. Open the folder `C:\GIS\MyProject` and remove all hidden files and all files that are not stricly required by regular plain QGIS project (such as QField configuration files or backups of the layers or offline synchronisation logs).  
+
+4. Open QGIS and open project from the folder `C:\GIS\MyProject`. For each layer, check its properties and verify that the sources do not point to any QFieldCloud databases. 
+
+5. Close and reopen QGIS for from the folder `C:\GIS\MyProject`. Make sure project loads correctly, and you have all data there.
+
+### Upload QGIS project to <MainPlatformName />
+
+1. Use <QGISPluginName /> to package and upload project to <MainPlatformName />. 
+2. Verify that the project is present on <DashboardLink desc="server">.  
+3. Download project on <MobileAppName /> and check you see your data and styling correctly.
+
+### Fine-tune <MainPlatformName /> project
+
+Setup specific <MainPlatformName /> features for your project, such as selective sync, photo quality in <MainPlatformName /> plugin
 
 ## Migrate QFieldCloud Settings
 
@@ -78,10 +93,31 @@ In <MainPlatformName /> each workspace has subscription associated. Read more ab
 
 <MainPlatformName /> are unlikely of QFieldCloud based on per-seat model, therefore with Team subscription you have unlimited members.
 
-### Known Differences
+## Known Differences
 
-1. Organisation teams in QFieldCloud do not have any equivalent concept in <MainPlatformName />.
-2. There is no concept of secrets in <MainPlatformName />. For `pg_service` configuration, you need to transfer it manually as described [here](../../gis/supported_formats/index.md)
-3. There is no concept of managing ongoing jobs or triggers in <MainPlatformName /> accessible for users. Users are presented result when jobs are finished (e.g. map rendering)
+To mention the key differences, <MobileAppName /> is fully devoted to provide no-training mobile application, operated even for surveyors without any prior GIS knowledge. QField is more focused on advanced GIS users and its interface more resemples full GIS applications like QGIS. Therefore <MobileAppName /> is more intuitive for non-technical user who are familiar for common mobile map applications like car navigations. 
 
-If you cannot find some feature in the <MobileAppName />, check our <WishListLink />
+For synchonisation part, <MainPlatformName /> is conceptually based on ideas from Git - <GitHubRepo id="MerginMaps/geodiff" desc="Geodiff" /> - creates difference files from GeoPackages that are send over network and applied. While QFieldCloud synchronisation uses concept of storage of differences made in SQL format and this difference log is then transmitted and applied. <MainPlatformName /> synchronisation is inevitable part of the platform and cannot be omitted from the process. As such it is already setup for end-user in smart way and not extra steps are needed for mobile users. 
+
+Here is the non-definitive list of known differences:
+
+* QField mobile app can without QFieldCloud (server) via USB transfer of the projects. This is not available in <MainPlatformName />, but you can allows [manually download](../../manage/missing-data/index.md) your data from your mobile devices if needed or 
+* Organisation teams in QFieldCloud do not have any equivalent concept in <MainPlatformName />.
+* There is no concept of secrets in <MainPlatformName />. For `pg_service` configuration, you need to transfer it manually as described [here](../../gis/supported_formats/index.md)
+* There is no concept of managing ongoing jobs or triggers in <MainPlatformName /> accessible for users. Users are presented result when jobs are finished (e.g. map rendering)
+* Use <GitHubRepo id="MerginMaps/db-sync" desc="db-sync" /> to map your <MainPlatformName /> to PostGIS database schema. <MainPlatformName /> doesn't have user accesible database.
+* QField is built around modes. There is not such concept in <MainPlatformName />
+* Both platforms support almost the same set of supported formats via QGIS data providers and GDAL. Read all formats supported by <MainPlatformName /> [here](../../gis/supported_formats/index.md)
+* You can use preview panel in <MobileAppName />,see [how to setup it](../../tutorials/further-project-customisation/index.md) how to use it
+
+If you cannot find some feature in the <MobileAppName />, check our <WishListLink /> 
+
+## Troubleshoot
+
+If you struggle to migrate your projects, we are happy to help you. Book your short video call with our <MerginMapsEmail id="sales" desc="sales team" />, for direct technical queries you can also write to our official <MerginMapsEmail id="support" desc="support team" /> our or chat with our open-source commmunity.
+
+<CommunityJoin />
+
+If you are looking for professional partner to migrate your workflow    , you can ask our <MainDomainNameLink id="partners" desc="partners"/> network or Lutra Consulting Ltd., developers of <MainPlatformName />  
+
+<PublicImage src="logo_lutra.svg" title="Lutra Consulting Ltd. logo" />
