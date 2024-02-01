@@ -59,7 +59,7 @@ Now when you have your QField project on your computer, you need to convert it t
 
 5. Close and reopen QGIS for from the folder `C:\GIS\MyProject`. Make sure project loads correctly, and you have all data there.
 
-### Upload QGIS project to <MainPlatformName />
+### Upload QGIS project to Mergin Maps
 
 1. Use <QGISPluginName /> to package and upload project to <MainPlatformName />. 
 2. Verify that the project is present on <DashboardLink desc="server">.  
