@@ -30,7 +30,7 @@ The ecosystem consist of various components:
 - [Working Collaboratively](./tutorials/working-collaboratively/index.md)
 
 ## Install & Sign Up
-- [How to Install <MobileAppName />](./setup/install-input/)
+- [How to Install <MobileAppName />](./setup/install-mobile-app/)
 - [How to Sign Up to <MainPlatformName />](./setup/sign-up-to-mergin-maps/)
 - [How to Install QGIS](./setup/install-qgis/)
 - [How to Install <QGISPluginName /> ](./setup/install-mergin-maps-plugin-for-qgis/)

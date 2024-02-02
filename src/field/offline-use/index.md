@@ -9,7 +9,7 @@ However, there are some actions that require internet connection and cannot be d
 ## Offline field survey workflow
 Here is a typical workflow of offline data collection. 
 
-We assume that the field surveyors have already [installed the <MobileAppNameShort />](../../setup/install-input/) and are signed in, as well as that the project used for field survey follows recommendations described in [How to set up an offline <MainPlatformName /> project](#how-to-set-up-an-offline-mergin-maps-project).
+We assume that the field surveyors have already [installed the <MobileAppNameShort />](../../setup/install-mobile-app/) and are signed in, as well as that the project used for field survey follows recommendations described in [How to set up an offline <MainPlatformName /> project](#how-to-set-up-an-offline-mergin-maps-project).
 
 1. Make sure that your <MainPlatformName /> project is [synchronised](../../manage/synchronisation/#how-to-synchronise-changes-in-mergin-maps) to the <MainPlatformNameLink /> cloud
 2. While being online, field surveyors [download the project](../../tutorials/mobile) to their mobile device using <MobileAppName />

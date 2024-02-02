@@ -67,7 +67,7 @@ You can also sign up from <MobileAppName />.
 
 **Welcome to <MainPlatformNameLink />!**
 
-You can get up-to-speed quickly by following the [tour projects](../install-input/#mergin-maps-mobile-app-s-tour-projects) in the <MobileAppNameShort /> and our [Quick Start tutorials](../../tutorials/capturing-first-data/index.md).
+You can get up-to-speed quickly by following the [tour projects](../install-install-mobile-app/#mergin-maps-mobile-app-s-tour-projects) in the <MobileAppNameShort /> and our [Quick Start tutorials](../../tutorials/capturing-first-data/index.md).
 
 ## Deleting Mergin Maps account
 If you want to delete your account, you can do so in the <DashboardLink /> in the **User profile** tab.
