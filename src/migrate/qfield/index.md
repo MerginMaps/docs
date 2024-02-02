@@ -122,7 +122,7 @@ Here is a non-definitive list of other known differences:
 * *Organisation teams* in QFieldCloud do not have any equivalent concept in <MainPlatformName />
 * There is no concept of *secrets* in <MainPlatformName />. For `pg_service` configuration, you need to transfer it manually as described [here](../../gis/supported_formats/).
 * There is no concept of *managing ongoing jobs* or *triggers* in <MainPlatformName /> accessible for users. Users see the results when jobs are finished (e.g. map rendering).
-* <MainPlatformName /> doesn't use user accessible databases. Use [DB Sync](../../dev/dbsync/) to map your <MainPlatformName /> to PostGIS database schema. 
+* It is not possible to connect directly to a user accessible databases in <MainPlatformName />. Use [DB Sync](../../dev/dbsync/) to map your <MainPlatformName /> to PostGIS database schema. 
 * QField is built around *modes*. There is not such concept in <MainPlatformName />
 * You can use the [*preview panel*](../../tutorials/further-project-customisation/#customising-the-preview-panel) in <MobileAppName />
 
