@@ -35,7 +35,7 @@ Before the start of migration, you need to have a <MainPlatformName /> account a
 
 * [Sign up to <MainPlatformName />](../../setup/sign-up-to-mergin-maps/index.md) to create a <MainPlatformName /> account and a workspace
 * [Install QGIS](../../setup/install-qgis/index.md) and [<QGISPluginName />](../../setup/install-mergin-maps-plugin-for-qgis/index.md)
-* [Install <MobileAppName />](../../setup/install-input/)
+* [Install <MobileAppName />](../../setup/install-mobile-app/index.md)
 
 We also recommend going through the [Get Started tutorial](../../tutorials/capturing-first-data/) to get familiar with <MainPlatformName />.
 
