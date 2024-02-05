@@ -110,7 +110,7 @@ Here are some key differences between QField and <MainPlatformName />.
    Therefore <MobileAppName /> is more intuitive for non-technical users, still keeping all tools for advanced workflows.
 
 - synchronisation in <MainPlatformName /> is conceptually based on ideas from Git. <GitHubRepo id="MerginMaps/geodiff" desc="Geodiff" /> creates difference files from GeoPackages that are sent over the network and applied. QFieldCloud synchronisation uses a concept of storage of differences made in SQL format and this difference log is then transmitted and applied. 
-   In <MainPlatformName />, synchronisation is an inherent part of the platform. As such, it is already set up for end-users in a smart way and there are no extra steps needed for mobile users. All synchonisation on mobile devices is done by hitting a single button. 
+   In <MainPlatformName />, synchronisation is an inherent part of the platform. As such, it is already set up for end-users in a smart way and there are no extra steps needed for mobile users. All synchronisation on mobile devices is done by hitting a single button. 
 
 Here is a non-definitive list of other known differences:
 
