@@ -127,9 +127,9 @@ If there is a feature missing in the <MobileAppName />, check our <WishListLink 
 ## Troubleshoot
 Struggling to migrate your projects? We are happy to help you!
 
-Book a short video call with our <MerginMapsEmail id="sales" desc="sales team" /> or write your questions to our <MerginMapsEmail id="support" desc="support team" />. You can also chat with our open-source community.
+Book a short video call with our <MerginMapsEmail id="sales" desc="sales team" /> or write your technical questions to our <MerginMapsEmail id="support" desc="support team" />. You can also chat with our open-source community.
 
 <CommunityJoin />
 
-If you are looking for a professional partner to migrate your workflow, you can ask our <MainDomainNameLink id="partners" desc="partners"/> network or Lutra Consulting Ltd., the developers of <MainPlatformName />
+If you are looking for a professional partner to migrate your workflow, you can ask our <MainDomainNameLink id="partners" desc="partners"/> network or <LutraConsultingWeb />, the developers of <MainPlatformName />
 <PublicImage src="logo_lutra.svg" title="Lutra Consulting Ltd. logo" style="width:50%" />
