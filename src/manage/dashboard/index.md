@@ -17,7 +17,7 @@ Click **Home** in the left panel to go back to the homepage with the list of the
 - use **Find Public Projects** to browse public projects
 - select a project to see its details
 
-When you open a project, there is an option to [share it](./project-advanced/), download it and [clone it](./create-project/#clone-an-existing-project-through-merginmaps-com).
+When you open a project, there is an option to [share it](../project-advanced/), download it and [clone it](../create-project/#clone-an-existing-project-through-merginmaps-com).
 ![Mergin Maps web project details](./mergin-project.jpg "Mergin Maps web project details")
 
 - in **FILES** you will find all files associated with the project. Click on a file to see the details, download it or delete it.
@@ -37,7 +37,7 @@ The **Members** tab provides the overview of the [members and guests](../permiss
 ![Mergin Maps web workspace members](./web-members.jpg "Mergin Maps web workspace members")
 
 ## Subscription
-The **Subscription** tab contains information about your [subscription plan](../manage/subscriptions/).
+The **Subscription** tab contains information about your [subscription plan](../subscriptions/).
 
 Here, you can find the current usage of storage, number of projects and number of users (members and guests) in your workspace.
 
