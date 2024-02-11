@@ -21,18 +21,19 @@ You and your team can use various devices to collect and edit data. Once you are
 ### Synchronising changes in QGIS
 
 1. Click on the **Synchronise Mergin Maps project** icon from the <QGISPluginName /> toolbar or right-click on the project in the Browser panel and select **Synchronise**
-   ![Mergin Maps plugin for QGIS synchronisation icon](./sync-status-toolbar.jpg "Mergin Maps plugin for QGIS synchronisation icon")
-   ![QGIS browser synchronize Mergin Maps project option](./project-sync-2.jpg "QGIS browser synchronize Mergin Maps project option")
+   ![Mergin Maps plugin for QGIS synchronisation icon](../plugin/plugin-toolbar-sync.jpg "Mergin Maps plugin for QGIS synchronisation icon")
+   ![QGIS browser synchronise Mergin Maps project option](./qgis-browser-synchronise-project.jpg "QGIS browser synchronise Mergin Maps project option")
 
 2. This will show the project status: a list of pending changes, warnings, and validation results of your project.
-   ![Project status with pending changes](./project-sync.jpg "Project status with pending changes")
+
+   Here, you have the option to [**View changes**](#local-changes) to inspect the pending changes in more detail.
+   
+   You can also use **Reset changes** to revert the local changes.
+  ![Mergin Maps project status with pending changes](../plugin/plugin-project-status.jpg "Mergin Maps project status with pending changes")
 
    Warnings are related to restructuring of a GeoPackage layer (adding/removing a field, adding/removing a layer in a GeoPackage database). Validations can point out missing layers or availability of a layer when working offline.
 
-3. If you want to inspect the pending changes more thoroughly, you can click on the **View changes** button to see the [local changes](#local-changes).
-   ![Project status view changes button](./project-sync-view-changes.jpg "Project status view changes button")
-
-4. If you want to proceed, click on the **Sync** button to synchronise your project and data.
+4. If you want to proceed with the synchronisation, click on the **Sync** button to synchronise your project and data.
   
 ::: warning
 Project and data synchronisation works in both ways.

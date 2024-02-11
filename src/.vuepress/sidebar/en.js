@@ -34,7 +34,7 @@ module.exports = {
                 '/manage/workspaces/',
                 '/manage/subscriptions/',
                 '/manage/permissions',
-                '/manage/synchronisation',
+                '/manage/synchronisation/',
                 '/manage/project/',
                 '/manage/create-project/',
                 '/manage/project-advanced',
@@ -43,7 +43,7 @@ module.exports = {
                 '/manage/missing-data/',
                 '/manage/plugin-multi-server-use/',
                 '/manage/plugin/',
-                '/manage/dashboard',
+                '/manage/dashboard/',
                 '/manage/project-details',
                 '/manage/selective_sync/'
             ]

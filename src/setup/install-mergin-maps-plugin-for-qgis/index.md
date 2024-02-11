@@ -40,7 +40,7 @@ The plugin has been installed and configured. You can learn more about its funct
 Upgrade the plugin periodically to ensure you can use the latest improvements.
 
 1. In QGIS, navigate to **Manage and Install Plugins...** in the **Plugins** tab
-   ![QGIS Manage and Install Plugins](./qgis-plugins-manage-and-install.jpg "QGIS Manage and Install Plugins")
+   ![QGIS Manage and Install Plugins](./qgis-plugins-manage-and-install-upgrade.jpg "QGIS Manage and Install Plugins")
    
 2. Find the **<MainPlatformName />** plugin. If there is a new version available, click **Upgrade Plugin**.
    ![Upgrade Mergin Maps QGIS plugin](./plugin-upgrade.jpg "Upgrade Mergin Maps QGIS plugin")

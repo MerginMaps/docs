@@ -14,7 +14,7 @@ Please ensure you have already:
 
 ## Create a minimal project
 1. Open QGIS
-2. Locate the <QGISPluginName /> toolbar in the upper navigation panel in QGIS. Open the **Create <MainPlatformName /> Project** tool
+2. Locate the <QGISPluginName /> toolbar in the upper navigation panel in QGIS. Click on the **Create <MainPlatformName /> Project** button
    ![QGIS plugin Create Mergin Maps Project](./qgis-create-mergin-project.jpg "QGIS plugin Create Mergin Maps Project")
 
 3. Choose the first option: **New basic QGIS project**
@@ -142,7 +142,7 @@ In the [next tutorial](../mobile/) we will see how this project looks on <Mobile
    ![save QGIS project](./qgis-project-save.jpg "save QGIS project")
 
 3. Use the **Synchronise <MainPlatformName /> Project** button in the <QGISPluginName /> toolbar (it is located in the upper navigation panel)
-   ![Synchronise Mergin Maps project in QGIS](./qgis-sync-mergin-project.jpg "Synchronise Mergin Maps project in QGIS")
+   ![Synchronise Mergin Maps project in QGIS](../../manage/plugin/plugin-toolbar-sync.jpg "Synchronise Mergin Maps project in QGIS")
    
 4. The **Project status** window will open. It contains the overview of [local changes](../../manage/synchronisation/#local-changes) that were made since the last synchronisation: two layers were added to the project (`hedges.gpkg` and `trees.gpkg`) and some changes were made in the QGIS project file (`trees-and-hedges.qgz`).
 
