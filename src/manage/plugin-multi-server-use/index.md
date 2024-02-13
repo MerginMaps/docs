@@ -15,7 +15,7 @@ See the [overview and pricing](https://merginmaps.com/pricing-for-ce-and-ee) for
 To configure a custom <MainPlatformName /> server in the <QGISPluginNameShort />:
 
 1. Click on the **Configure <MainPlatformName /> plugin** icon to open the configuration dialog
-![Mergin Maps plugin configure icon](./configure-plugin.jpg "Mergin Maps plugin configure icon")
+![Configure Mergin Maps Plugin](../../setup/install-mergin-maps-plugin-for-qgis/qgis-configure-mergin-plugin.jpg "Configure Mergin Maps Plugin")
 
 2. Check the **Custom <MainPlatformName /> server** option and enter your custom server URL.
 ![Custom server in Mergin Maps QGIS plugin setup](./config_dialog.jpg "Custom server in Mergin Maps QGIS plugin setup")
