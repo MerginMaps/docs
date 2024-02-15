@@ -105,7 +105,6 @@ The ecosystem consist of various components:
 
 ## Support & Legal
 - [Licensing](./misc/licensing/)
-- [Privacy Policy](./misc/privacy/)
 - [Troubleshoot](./misc/troubleshoot/)
 - [Contribute](./misc/contribute/)
 - [Write Documentation](./misc/write-docs/index.md)
