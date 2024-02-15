@@ -133,3 +133,8 @@ Book a short video call with our <MerginMapsEmail id="sales" desc="sales team" /
 
 If you are looking for a professional partner to migrate your workflow, you can ask our <MainDomainNameLink id="partners" desc="partners"/> network or <LutraConsultingWeb />, the developers of <MainPlatformName />
 <PublicImage src="logo_lutra.svg" title="Lutra Consulting Ltd. logo" style="width:50%" />
+
+## Credits
+
+QField, QFieldCloud and QFieldSync are developped by OPENGIS.ch. QField is EUIPO registered trademark 2363703 owned by OPENGIS.ch. QField is released under the GNU Public License (GPL) Version 2 or above.
+
