@@ -24,6 +24,7 @@ EE
 Emlid
 EPSG
 ESRI
+EUIPO
 EXIF
 Exif
 ExifTool
