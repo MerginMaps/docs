@@ -27,7 +27,7 @@ If you already have the `trees-and-hedges` project open in QGIS, skip to [Layer 
 The project should now be loaded in QGIS. Don't worry if you cannot see the features you surveyed in the field - this is probably because you've not yet synchronised the project in QGIS.
 
 If this is the case, click on the **Synchronise** icon from the <QGISPluginName /> toolbar to synchronise the changes
-   ![Mergin Maps QGIS plugin synchronisation icon](../../manage/sync-status-toolbar.jpg "Mergin Maps QGIS plugin synchronisation icon")
+   ![Mergin Maps QGIS plugin synchronisation icon](../../manage/plugin/plugin-toolbar-sync.jpg "Mergin Maps QGIS plugin synchronisation icon")
 
 ## Layer styles
 When using <MobileAppName /> in the field in the last tutorial, we noticed hedges were difficult to see against the background maps. We'll now fix that.
@@ -55,11 +55,11 @@ Seeing how the changes look like in the <MobileAppNameShort /> is easy:
 1. In QGIS, save your project:
    ![Save QGIS project](./qgis-save-project.jpg "Save QGIS project")
 
-2. Use the **Synchronise Mergin Maps Project** tool:
-   ![Synchronise Mergin Maps Project](./qgis-sync-mergin-project.jpg "Synchronise Mergin Maps Project")
+2. Use the **Synchronise Mergin Maps Project** button:
+   ![Synchronise Mergin Maps Project](../../manage/plugin/plugin-toolbar-sync.jpg "Synchronise Mergin Maps Project")
 
    The **Project status** window will open with the overview of local changes. Click **Sync** to synchronise the project:
-   ![Project status with local changes](../creating-a-project-in-qgis/qgis-sync-mergin-project-status.jpg "Project status with local changes")
+   ![Project status with local changes](./qgis-project-status.jpg "Project status with local changes")
    
    QGIS and your project in the cloud should now be synchronised.
    ![Successful synchronisation message](./qgis-mergin-project-sync.jpg "Successful synchronisation message")

@@ -5,10 +5,10 @@
 Synchronisation is a key process that makes effective collaboration possible: you and your team members can contribute to the same project simultaneously, see each other's edits and also smoothly transfer data between mobile devices and computers.
 
 Let's look at a typical workflow in <MainPlatformNameLink />:
-1. First, you [create](./create-project/#create-a-project-in-qgis) and [prepare](../gis/features/) a <MainPlatformName /> project in QGIS. This includes loading background and survey layers, setting up the forms, styling layers, setting up map themes and defining the layers to be used in a survey. The <MainPlatformName /> project consists of the project file (*.qgz) and data referenced in the project, such as GeoPackage layers, shapefiles, rasters or attachments. At this point, they are all saved in a project folder in your computer.
-2. The <MainPlatformName /> project is uploaded to <MainPlatformNameLink /> Cloud using [<QGISPluginName />](./plugin/). The project and data are now stored in the cloud.
-3. Now you can work collaboratively! The project and data can be downloaded to a mobile device to do [the fieldwork using <MobileAppName /> ](../tutorials/mobile/) or to another computer with QGIS. Every collaborator works with their own local version of the project.
-4. After finishing their work, the individual contributors synchronise their changes [to <MainPlatformName /> Cloud](../tutorials/mobile/#saving-data-to-the-cloud), where they are put together.
+1. First, you [create](../create-project/#create-a-project-in-qgis) and [prepare](../../gis/features/) a <MainPlatformName /> project in QGIS. This includes loading background and survey layers, setting up the forms, styling layers, setting up map themes and defining the layers to be used in a survey. The <MainPlatformName /> project consists of the project file (*.qgz) and data referenced in the project, such as GeoPackage layers, shapefiles, rasters or attachments. At this point, they are all saved in a project folder in your computer.
+2. The <MainPlatformName /> project is uploaded to <MainPlatformNameLink /> Cloud using [<QGISPluginName />](../plugin/). The project and data are now stored in the cloud.
+3. Now you can work collaboratively! The project and data can be downloaded to a mobile device to do [the fieldwork using <MobileAppName /> ](../../tutorials/mobile/) or to another computer with QGIS. Every collaborator works with their own local version of the project.
+4. After finishing their work, the individual contributors synchronise their changes [to <MainPlatformName /> Cloud](../../tutorials/mobile/#saving-data-to-the-cloud), where they are put together.
 
 As you can see, <MainPlatformName /> Cloud acts as a link between individual contributors and also between PCs and mobile devices, synchronising the changes. When you make changes and upload them to the cloud, <MainPlatformNameLink /> will compare the content of GeoPackage layers and merge them, while copying attachments (such as photos), rasters and shapefiles as they are. That is why we recommend using GeoPackage format for your survey layer.
 
@@ -16,23 +16,24 @@ As you can see, <MainPlatformName /> Cloud acts as a link between individual con
 ## How to synchronise changes in Mergin Maps
 You and your team can use various devices to collect and edit data. Once you are happy with the changes to be uploaded, you can synchronise your project and data back to the cloud:
 - when using QGIS, follow the steps [below](#synchronising-changes-in-qgis) 
-- in the <MobileAppNameShort />, you can use manual or automatic synchronisation. Go to [Synchronisation in Mergin Maps Mobile App](../field/autosync/) for more details.
+- in the <MobileAppNameShort />, you can use manual or automatic synchronisation. Go to [Synchronisation in Mergin Maps Mobile App](../../field/autosync/) for more details.
 
 ### Synchronising changes in QGIS
 
 1. Click on the **Synchronise Mergin Maps project** icon from the <QGISPluginName /> toolbar or right-click on the project in the Browser panel and select **Synchronise**
-   ![Mergin Maps plugin for QGIS synchronisation icon](./sync-status-toolbar.jpg "Mergin Maps plugin for QGIS synchronisation icon")
-   ![QGIS browser synchronize Mergin Maps project option](./project-sync-2.jpg "QGIS browser synchronize Mergin Maps project option")
+   ![Mergin Maps plugin for QGIS synchronisation icon](../plugin/plugin-toolbar-sync.jpg "Mergin Maps plugin for QGIS synchronisation icon")
+   ![QGIS browser synchronise Mergin Maps project option](./qgis-browser-synchronise-project.jpg "QGIS browser synchronise Mergin Maps project option")
 
 2. This will show the project status: a list of pending changes, warnings, and validation results of your project.
-   ![Project status with pending changes](./project-sync.jpg "Project status with pending changes")
+
+   Here, you have the option to [**View changes**](#local-changes) to inspect the pending changes in more detail.
+   
+   You can also use **Reset changes** to revert the local changes.
+  ![Mergin Maps project status with pending changes](../plugin/plugin-project-status.jpg "Mergin Maps project status with pending changes")
 
    Warnings are related to restructuring of a GeoPackage layer (adding/removing a field, adding/removing a layer in a GeoPackage database). Validations can point out missing layers or availability of a layer when working offline.
 
-3. If you want to inspect the pending changes more thoroughly, you can click on the **View changes** button to see the [local changes](#local-changes).
-   ![Project status view changes button](./project-sync-view-changes.jpg "Project status view changes button")
-
-4. If you want to proceed, click on the **Sync** button to synchronise your project and data.
+4. If you want to proceed with the synchronisation, click on the **Sync** button to synchronise your project and data.
   
 ::: warning
 Project and data synchronisation works in both ways.
@@ -79,13 +80,13 @@ During field surveys, individual team members can change the same row of a table
 
 ![Scheme of merging changes from two users](./geodiff-rebase.jpg "Scheme of merging changes from two users")
 
-There may be conflicts that can't be resolved automatically, e.g. if the same value is modified in different copies. These rare cases are written to a conflict file that can be [resolved later](./missing-data/#there-are-conflict-files-in-the-folder).
+There may be conflicts that can't be resolved automatically, e.g. if the same value is modified in different copies. These rare cases are written to a conflict file that can be [resolved later](../missing-data/#there-are-conflict-files-in-the-folder).
 
 ## Conflict files
 Conflicts can happen when two users edit some files in a shared project at once. The technology behind <MainPlatformNameLink /> service makes an effort to merge changes from individual users automatically and therefore conflicts do not happen normally, even if multiple people edit a single data source (e.g. a GeoPackage). However, there are still some occasions when it is not possible to automatically resolve conflicts and <MainPlatformName /> will create conflict files in projects.
 
 ::: tip
-Make your work easier and avoid unnecessary conflict files by following [these tips](../layer/best-practice/).
+Make your work easier and avoid unnecessary conflict files by following [these tips](../../layer/best-practice/).
 :::
 
 There are two types of conflicts:
@@ -102,7 +103,7 @@ If Jack is the first one to sync his changes and then Jill syncs her changes, at
 ### Conflicted copy
 If you change the data schema, such as deleting or adding columns to your survey layer or changing the data type of a field, <MainPlatformName /> cannot detect changes. If you try to synchronise a layer with modified data schema, you will get a conflict file.
 
-If you need to change the data schema, [see how to deploy a revised project properly](./deploy-new-project/).
+If you need to change the data schema, [see how to deploy a revised project properly](../deploy-new-project/).
  
 <!-- TODO: example when that happens (change of database schema) -->
 

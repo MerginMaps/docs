@@ -67,7 +67,7 @@ Names of the photos that are captured in the field using <MobileAppName /> can b
 ![Mergin Maps QGIS Plugin photo name setup with custom folder](./plugin-photo-name-settings.jpg "Mergin Maps QGIS Plugin photo name setup with custom folder")
 
 ### Snapping
-<SinceBadge type="Plugin" version="2022.5" /><SinceBadge type="App" version="1.6.0" />
+<SinceBadge type="Plugin" version="2022.5" />
 If you want to use snapping in <MobileAppName /> during the field survey, you need to set it up in the **<MainPlatformName />** tab in **Project properties**.
 
 ![QGIS set snapping in Mergin Maps](./project_snapping.jpg "QGIS set snapping in Mergin Maps")
@@ -83,7 +83,7 @@ The snapping options are:
 
 
 ### Tracking
-<SinceBadge type="Plugin" version="2023.3" /><SinceBadge type="App" version="2.3.0" />
+<SinceBadge type="Plugin" version="2023.3" />
 
 Tracking your position when doing the field survey with <MobileAppName /> can be enabled in the **<MainPlatformName />** tab in **Project properties**.
 

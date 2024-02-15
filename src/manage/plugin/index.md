@@ -15,14 +15,24 @@ To ensure you can use the latest improvements, don't forget to [upgrade the plug
 The <MainPlatformName /> toolbar is added to the QGIS toolbars panel after installation.
 ![Mergin Maps Plugin Toolbar in QGIS](../../setup/install-mergin-maps-plugin-for-qgis/mergin-toolbar.jpg "Mergin Maps Plugin Toolbar in QGIS")
 
-It contains following buttons:
-- the <MainPlatformName />  logo is a shortcut to <AppDomainNameLink />
-- [**Configure <MainPlatformName /> plugin**](../../setup/install-mergin-maps-plugin-for-qgis/#plugin-configuration)
-- [**Create <MainPlatformName /> project**](../create-project/#create-a-project-in-qgis) 
-- [**synchronise changes**](../synchronisation/#synchronising-changes-in-qgis) made in the current project
-
 If you don't see <MainPlatformName /> toolbar, make sure it is enabled in QGIS toolbars panel
 ![Enabling Mergin Maps plugin in QGIS toolbars panel](./enable-plugin.gif "Enabling Mergin Maps plugin in QGIS toolbars panel")
+
+The toolbar contains following buttons:
+- the <MainPlatformName />  logo is a shortcut to <AppDomainNameLink />
+  ![A link to the Mergin Maps dashboard](./plugin-toolbar-logo.jpg "A link to the Mergin Maps dashboard")
+  
+- **Configure <MainPlatformName /> plugin** to [configure plugin](../../setup/install-mergin-maps-plugin-for-qgis/#plugin-configuration) to connect to <MainPlatformName /> or [a custom server](../plugin-multi-server-use/)
+  ![Configure Mergin Maps Plugin](../../setup/install-mergin-maps-plugin-for-qgis/qgis-configure-mergin-plugin.jpg "Configure Mergin Maps Plugin")
+  ![](./plugin-configure.jpg "")
+  
+- **Create <MainPlatformName /> project** to [create or package a QGIS project](../create-project/#create-a-project-in-qgis)
+  ![Create Mergin Maps project button](./plugin-toolbar-create-project.jpg "Create Mergin Maps project button")
+  ![Create Mergin Maps project options](../create-project/mergin_plugin_project_wizard_2.jpg "Create Mergin Maps project options")
+    
+- **Synchronise <MainPlatformName /> project** to inspect and [synchronise](../synchronisation/#synchronising-changes-in-qgis) or reset changes made in the current project
+  ![Synchronise changes button](./plugin-toolbar-sync.jpg "Synchronise changes button")
+  ![Mergin Maps project status with pending changes](./plugin-project-status.jpg "Mergin Maps project status with pending changes")
 
 
 ## Mergin Maps plugin in QGIS Browser
@@ -129,6 +139,6 @@ Local changes of a specific layer can also be extracted using the **Extract loca
 ## Mergin Maps in QGIS Plugins menu bar
 **Plugins** menu bar in QGIS contains also <MainPlatformName /> options:
 - **<MainPlatformName />** is a shortcut to <AppDomainNameLink />
-- **Configure <MainPlatformName /> plugin** can be used to [set up plugin](../../setup/install-mergin-maps-plugin-for-qgis/#plugin-configuration) or [a custom server](../plugin-multi-server-use/)
+- **Configure <MainPlatformName /> plugin** can be used to [configure plugin](../../setup/install-mergin-maps-plugin-for-qgis/#plugin-configuration) to connect to <MainPlatformName /> or [a custom server](../plugin-multi-server-use/)
 - **Configure DB sync** can help you generate a initial configuration file for [DB sync](../../dev/dbsync/)
 ![Mergin Maps in QGIS Plugins menu bar](./plugins-menu-bar.jpg "Mergin Maps in QGIS Plugins menu bar")
