@@ -132,7 +132,6 @@ module.exports = {
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
                 '/misc/licensing',
-                '/misc/privacy',
                 '/misc/troubleshoot',
                 '/misc/contribute',
                 '/misc/write-docs/'
