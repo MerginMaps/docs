@@ -14,7 +14,7 @@ Capturing data in the field using <MobileAppName /> can be easier, if you can sn
 To set up basic snapping:
 1. Open your <MainPlatformName /> project in QGIS
 2. Go to the **Project Properties**
-![QGIS project properties](./qgis-project-properties.jpg "QGIS project properties")
+![QGIS project properties](../qgis-project-properties.jpg "QGIS project properties")
 
 3. Navigate to the **<MainPlatformName />** tab and change the snapping settings to **Basic snapping**
 ![Mergin Maps snapping options](../project_snapping.jpg "Mergin Maps snapping options")
@@ -36,7 +36,7 @@ If you want to change the snapping threshold, use the *[Follow QGIS snapping](#f
 
 
 ## Follow QGIS snapping
-<QGISPluginName /> gives you the option to use the snapping preferences defined in QGIS project. This means you can, for instance, exclude some layers from snapping, choose the snapping mode or change the snapping threshold.
+The <QGISPluginNameShort /> gives you the option to use the snapping preferences defined in QGIS project. This means you can, for instance, exclude some layers from snapping, choose the snapping mode or change the snapping threshold.
 
 1. Navigate to the **<MainPlatformName />** tab in the **Project Properties** and change the snapping settings to **Follow QGIS snapping**
    ![Mergin Maps follow QGIS snapping](./plugin-qgis-snapping.jpg "Mergin Maps follow QGIS snapping")
