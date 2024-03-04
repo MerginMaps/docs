@@ -89,7 +89,8 @@ External GPS functionality depends on the manufacturer and on the specific model
 | Carlson | Carlson <NoSpellcheck id="xML2" /> <sup><a href="#link-1">1</a></sup>| yes (mock location) | unknown |
 | Emlid | Emlid Reach RX<sup><a href="#link-2">2</a></sup> | yes | no |
 | Emlid | Emlid Reach RS+<sup><a href="#link-2">2</a></sup> | yes | no |
-| Emlid | Emlid Reach M+<sup><a href="#link-2">2</a></sup> | yes | no |
+| Emlid | Emlid Reach RS2/RS2+<sup><a href="#link-2">2</a></sup> | yes | no |
+| Emlid | Emlid Reach RS3<sup><a href="#link-2">2</a></sup> | yes | no |
 | Garmin | GLO 2 | yes | yes |
 | Juniper Systems | Geode GNS3<sup><a href="#link-3">3</a></sup> | yes | yes |
 | Leica | Leica FLX100<sup><a href="#link-4">4</a></sup> | yes (mock location) | no |
@@ -109,7 +110,7 @@ External GPS functionality depends on the manufacturer and on the specific model
 | Bad Elf | Flex (standard or extreme) | yes | yes |
 
 - <a name="link-1">1</a>: **Carlson <NoSpellcheck id="Brx7" />**,  **Carlson <NoSpellcheck id="xML2" />** - through [Carlson Layout](https://www.carlsonsw.com/product/carlson-layout) which will set a mock location in Android.
-- <a name="link-2">2</a>: **Emlid Reach RX**, **Emlid Reach RS+**, **Emlid Reach M+** - directly via Bluetooth connection, has an internal NTRIP client to receive corrections. Possible to set a mock location and connect the receiver via Bluetooth using [GPS Connector](https://play.google.com/store/apps/details?id=de.pilablu.gpsconnector) or WiFi using [Lebefure NTRIP Client](https://play.google.com/store/apps/details?id=com.lefebure.ntripclient). Android only.
+- <a name="link-2">2</a>: **Emlid Reach RX**, **Emlid Reach RS+**, **Emlid Reach RS2/RS2+**, **Emlid Reach RS3** - directly via Bluetooth connection, has an internal NTRIP client to receive corrections. Possible to set a mock location and connect the receiver via Bluetooth using [GPS Connector](https://play.google.com/store/apps/details?id=de.pilablu.gpsconnector) or WiFi using [Lebefure NTRIP Client](https://play.google.com/store/apps/details?id=com.lefebure.ntripclient). Android only.
 - <a name="link-3">3</a>: **Geode GNS3** - through *Geode Connect* app on [Android](https://play.google.com/store/apps/details?id=com.juniper.geode2a&hl=en_NZ&gl=US) or [iOS](https://apps.apple.com/us/app/geode-connect/id1446098695), which also acts as an NTRIP client and sends corrections to the device.
 - <a name="link-4">4</a>: **Leica FLX100**, **Leica FLX100 plus**, **Leica Zeno GG04plus** - through *Leica Zeno Connect* app on [Android](https://play.google.com/store/apps/details?id=com.leica.zenoconnect&hl=en&gl=US) which also acts as a NTRIP client and sends the corrections to the device. The app will set a mock location in Android. It is also possible to connect directly via Bluetooth (even multiple phones can be connected at once), but if no phone has Zeno app running, there will be no corrections available. 
    <a name="link-**">**</a> *Leica Zeno Connect* is also available on [iOS](https://apps.apple.com/us/app/zeno-connect/id1310344749). It is known to support **Leica FLX100 plus** and **Leica Zeno GG04plus**.  However, on iOS, the vertical accuracy information is not transferred to <MobileAppName /> through *Leica Zeno Connect*. <MobileAppName /> will not display the correct value of the vertical accuracy.
