@@ -40,7 +40,7 @@ Invoices can be made accessible also to a person that is not a workspace member,
 :::
 
 Members and their roles can be managed through <AppDomainNameLink /> in the [Members](./dashboard/#members) tab:
-![Mergin Maps web members tab](./dashboard/web-members.jpg "Mergin Maps web members tab")
+![Mergin Maps web members tab](./dashboard/mergin-maps-dashboard-members.jpg "Mergin Maps web members tab")
 
 ### How to transfer ownership of a workspace
 Ownership of a workspace can be transferred to another [workspace member](#workspace-member-roles). 
