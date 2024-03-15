@@ -35,7 +35,7 @@ Click on a file to see when it was modified, its size, to download or delete it.
 
 It displays your <MainPlatformName /> project directly in the <DashboardShortLink />. Here, you can see your spatial data without the need to open QGIS or the <MobileAppNameShort />.
 
-![Mergin Maps webmap displays the project content](./web-map.jpg "Mergin Maps webmap displays the project content")
+![Mergin Maps webmap displays the project content](./mergin-maps-web-map.jpg "Mergin Maps webmap displays the project content")
 
 ### History
 **History** contains the overview of available project versions that can be also downloaded to your computer.
