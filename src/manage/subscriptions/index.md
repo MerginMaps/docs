@@ -13,7 +13,7 @@ There are three paid plans: *Individual*, *Professional*, and *Team* plan. Stude
 
 The overview of your current subscription plan and usage of storage, number of projects and number of users in your workspace can be found in the **Subscription** tab in <DashboardLink />. It is available only to the [owners](../permissions/#workspace-member-roles) of the workspace.
 
-![Mergin Maps Dashboard Subscription tab](./subscriptions.jpg "Mergin Maps Dashboard Subscription tab")
+![Mergin Maps Dashboard Subscription tab](../dashboard/mergin-maps-dashboard-subscriptions.jpg "Mergin Maps Dashboard Subscription tab")
 
 ## Subscriptions management portal
 Subscriptions, payments and billing information are managed in our subscription management portal. 
