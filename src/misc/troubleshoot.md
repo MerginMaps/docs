@@ -40,24 +40,18 @@ Sometimes it is useful to share your project with our support team so that they 
 
 To share your <MainPlatformName /> project with the support:
 1. Log in to <AppDomainNameLink />
-2. In the **Project** tab in the left panel, find the project that needs to be shared with the support
-   ![List of projects in Mergin Maps](./mergin-find-project.jpg "List of projects in Mergin Maps")
+2. In the **Project** tab in the left panel, find the project that needs to be shared with the support and click on it.
+   ![List of projects in Mergin Maps](./mergin-maps-dashboard-find-project.jpg "List of projects in Mergin Maps")
    
    ::: tip
    If you have access to multiple workspaces, you might need to [switch to another workspace](../manage/workspaces/#switch-workspaces-in-merginmaps-com) first.
    :::
 
-3. Click on the **Share** button
-   ![Sharing Mergin Maps project](./mergin-share-project.jpg "Sharing Mergin Maps project")
+3. In the **Collaborators** tab, click on the **Share** button 
+   ![Sharing Mergin Maps project](./mergin-maps-dashboard-share-project.jpg "Sharing Mergin Maps project")
 
-4. Enter the email <MerginMapsEmail id="support" /> and click **Next**
-   ![Sharing Mergin Maps project with the support](./mergin-share-project-with-support.jpg "Sharing Mergin Maps project with the support")
-   
-5. Check the details in the invite form. If you want to share multiple project with the support, you may add them to the invitation. Click **Next**.
-   ![Sharing Mergin Maps project with the support](./mergin-share-project-with-support-2.jpg "Sharing Mergin Maps project with the support")
-
-6. Click **Share** to send the invitation to the support.
-   ![Sharing Mergin Maps project with the support](./mergin-share-project-with-support-3.jpg "Sharing Mergin Maps project with the support")
+4. Use the email <MerginMapsEmail id="support" /> in the sharing form and click **Share** to send the invitation to the support.
+   ![Sharing Mergin Maps project with the support](./mergin-maps-share-project-with-support.jpg "Sharing Mergin Maps project with the support")
 
 Our support team can now access your <MainPlatformNameLink /> project.
 
