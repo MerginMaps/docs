@@ -10,17 +10,19 @@ Download and archive the data before deleting them if they may be needed in the 
 :::
 
 ## Delete files through merginmaps.com
-Deleting files trough <MainDomainName /> is simple. However, you can only delete one file at the time.
+Deleting files through <MainDomainName /> is simple. However, you can only delete one file at the time.
 
-1. Log in <AppDomainNameLink />
-2. Open your project. In the **Files** tab you will see the list of files that are stored in the project's folder.
-   ![Mergin Maps project files photos](./project-files.jpg "Mergin Maps project files and photos")
-3. Select the file you are considering removing and review the details to make sure you want to remove it.
+1. Log in <AppDomainNameLink /> and navigate to your project.
+2. In the **Files** tab you will see the list of files that are stored in the project's folder. 
 
-   Click **Remove File** to delete the photo.
-   ![Mergin Maps dashboard Remove file button](./remove-file.jpg "Mergin Maps dashboard Remove file button")
-4. Click **Update** in the **Data Sync** window to synchronise the changes.
-   ![Mergin Maps dashboard synchronise update project](./remove-file-sync.jpg "Mergin Maps dashboard update project")
+   Select the file you would like to delete.
+   ![Mergin Maps project dashboard files photos](./project-files.jpg "Mergin Maps dashboard project files and photos")
+
+3. Review the details. If this is the file you want to remove, click on the **Delete file** button.
+   ![Mergin Maps dashboard file detail](./file-detail.jpg "Mergin Maps dashboard file detail")
+   
+4. Use **Update changes** in the **Data Sync** window to synchronise the changes.
+   ![Mergin Maps dashboard sync update changes](./remove-file-update-changes.jpg "Mergin Maps dashboard sync update changes")
 
 ## Delete multiple files at once
 If you want to delete multiple files, the best way to do this is on your computer.
