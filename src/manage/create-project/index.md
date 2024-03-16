@@ -80,52 +80,57 @@ Your new project should now be visible on the **Home** tab of the **Projects** s
 
 ## Create a project through merginmaps.com
 :::warning
-The preferred way of creating a project is to use QGIS plugin or <MobileAppName />. This option is for advanced users composing their project manually.
+The preferred way of creating a project is to use the <QGISPluginNameShort />. This option is for advanced users.
 :::
 
 1. Navigate to <AppDomainNameLink /> and sign in.
-2. To create a new project, click on **Create** in the **Projects** tab:
-   ![Create Mergin Maps project through web](./web-create-project.jpg "Create Mergin Maps project through web")
+2. In the **Projects** tab, click on **Create project**
+   ![Create Mergin Maps project through dashboard](./dashboard-create-project.jpg "Create Mergin Maps project through dashboard")
 
-3. Give the project a **Name**
-   ![web Naming new Mergin Maps project](./web-create-project-2.jpg "web Naming new Mergin Maps project")
+3. Enter a **Project name** and click **Create project**
+   ![Mergin Maps dashboard create new project](./dashboard-new-project.jpg "Mergin Maps dashboard create new project")
 
-   After creating a new project, you will be directed to the project page. 
+4. Now you will be directed to the project overview.
 
-4. Add files to your project:
-   - Click on **Drag & drop here to click and select file(s) to upload**
-   - Select files or folders to upload
-   - Once the files and folders are selected, press **Update** in the **Data Sync** window.
-   ![Upload files to Mergin Maps project](./web-project-upload.jpg "Upload files to Mergin Maps project")
+   Files can be uploaded using the <QGISPluginNameShort /> or by **Drag and drop**.
+   
+   If you are uploading files manually through the <DashboardShortLink />, do not forget to synchronise the changes by clicking **Update changes** in the **Data Sync**.
+   ![Upload files to Mergin Maps project](./dashboard-upload-new-project.jpg "Upload files to Mergin Maps project")
 
 ### Clone an existing project through merginmaps.com
-You can also make a copy of projects you have access to or of a [public project](../permissions/#public-and-private-projects).
+Projects you have access to and [public projects](../permissions/#public-and-private-projects) can be cloned. By cloning a project, you will create your own copy of this project. This way, you can use public projects as templates for your own work or easily create backups.
 
 #### Clone a project from your workspace
 1. In the **Projects** tab, find the project you want to clone, open it and click on **Clone**.
 
    If needed, [switch to another workspace](../workspaces/#switch-workspaces-in-qgis) to locate the project.
    
-   ![Cloning project from your workspace](./web-clone-your-prj.jpg "Cloning project from your workspace")
+   ![Mergin Maps dashboard Cloning project from your workspace](./dashboard-clone-project.jpg "Mergin Maps dashboard - Cloning project from your workspace")
 
-2. Enter the name of the cloned project and choose the workspace in which the project should be saved. Confirm by clicking **Clone**.
-   ![Naming cloned project](./web-clone-your-prj-2.jpg "Naming cloned project")
+2. Enter the name of the cloned project. If needed, change the target workspace.
 
-The new project will be saved to the workspace you have specified.
+   The cloned project will be saved to the workspace you have specified.
+  
+   Confirm by clicking **Clone project**.
+   ![Naming cloned project](./dashboard-clone-project-name.jpg "Naming cloned project")
+
 
 #### Clone a public project
 You can also make a copy of a public project. 
 
-1. In the **Projects** tab, click on the **Find Public Projects** button
-   ![Find public Mergin Maps projects](./web-find-public-project.jpg "Find public Mergin Maps projects")
+1. In the **Projects** tab, click on the **Browse community projects** button
+   ![Mergin Maps dashboard browse community projects](./dashboard-browse-public-projects.jpg "Mergin Maps dashboard browse community projects")
    
    If a project was shared with you via link, open the project link in your web browser.
    
-2. Using the search bar, find the project you would like to clone and click on it.
-   ![Find public Mergin Maps projects](./web-find-project.jpg "Find public Mergin Maps projects")
+2. You will see a list of public projects. Use the search bar to find a project you would like to clone and click on it.
+   ![Find public Mergin Maps projects](./dashboard-find-public-project.jpg "Find public Mergin Maps projects")
 
 3. The project's page opens. Click on the **Clone** button to clone the project.
-   ![Clone Mergin Maps project through web](./web-clone-project.jpg "Clone Mergin Maps project through web")
+   ![Clone public Mergin Maps project](./dashboard-clone-public-project.jpg "Clone public Mergin Maps project")
    
-3. Now you can change the project's name and select a workspace from the list. The project will be saved to this workspace.
-   ![Clone Mergin Maps project through web](./web-clone-project-2.jpg "Clone Mergin Maps project through web")
+3. Now you can change the project's name and select the target workspace. Confirm by clicking **Clone project**.
+
+   The cloned project will be saved to the workspace you have specified.
+   ![Clone public Mergin Maps project](./dashboard-clone-public-project-name.jpg "Clone public Mergin Maps project")
+   
