@@ -21,7 +21,7 @@ Deleting files through <MainDomainName /> is simple. However, you can only delet
 3. Review the details. If this is the file you want to remove, click on the **Delete file** button.
    ![Mergin Maps dashboard file detail](./file-detail.jpg "Mergin Maps dashboard file detail")
    
-4. Use **Update changes** in the **Data Sync** window to synchronise the changes.
+4. Use **Update Changes** in the **Data Sync** window to synchronise the changes.
    ![Mergin Maps dashboard sync update changes](./remove-file-update-changes.jpg "Mergin Maps dashboard sync update changes")
 
 ## Delete multiple files at once
