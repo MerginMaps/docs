@@ -30,7 +30,7 @@ When logged into the portal, you can [update](#how-to-change-a-subscription) or 
 If you are the owner of a workspace, you can access the subscription management portal from the <DashboardShortLink />.
 
 To access the portal, navigate to the **Subscription** tab and click on **Manage Subscription**.
-![Mergin Maps Dashboard manage subscription](./subscriptions-update.jpg "Mergin Maps Dashboard manage subscription")
+![Mergin Maps Dashboard manage subscription](./dashboard-manage-subscriptions.jpg "Mergin Maps Dashboard manage subscription")
 
 You will be redirected to the subscription management portal.
 
@@ -48,7 +48,9 @@ To access the portal directly:
 
 ## How to upgrade a subscription from the trial plan
 1. Log into <AppDomainNameLink />
-2. Navigate to the **Subscription** tab. The overview of available plans is listed in the **Change subscription** section. 
+2. Navigate to the **Subscription** tab. 
+
+   The overview of available plans is listed in the **Upgrade subscription** section.
    
    Specify if you want to pay yearly or monthly and click on the **Upgrade** button under the plan of your choice.
    ![Mergin Maps Subscription details](./subscriptions-upgrade.jpg "Mergin Maps Subscription details")
