@@ -68,8 +68,8 @@ Here, you can [**invite**](../project-advanced/#add-users-to-a-workspace) users 
 
 ![Mergin Maps dashboard workspace members](./mergin-maps-dashboard-members.jpg "Mergin Maps dashboard workspace members")
 
-## Subscription
-The **Subscription** tab contains information about your [subscription plan](../subscriptions/).
+## Subscriptions
+The **Subscriptions** tab contains information about your [subscription plan](../subscriptions/).
 
 Here, you can find the current usage of storage, number of users (members and guests) and number of projects in your workspace.
 
