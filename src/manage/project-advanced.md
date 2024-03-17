@@ -14,52 +14,39 @@ You can follow our [Working collaboratively](../tutorials/working-collaborativel
 :::
 
 ### Add users to a workspace
-If you want to share all projects in your workspace with a group of users, you can invite them to be a **member** of a workspace. It is also possible to invite people as **guests** and share only selected projects with them.
+If you want to share all projects in your workspace with a group of users, you can invite them to become a **member** of a workspace.
 
 You have to be the **admin** or **owner** of the workspace to manage access to the workspace. See [Member Roles and Permissions](./permissions/#workspace-member-roles) for more details.
 
 To add users to a workspace:
 1. Log into <AppDomainNameLink />
-2. Select **Members** from the left panel and click on **Add People**
-   ![Add people in Members tab in Mergin Maps](../tutorials/working-collaboratively/web-workspace-add.jpg "Add people in Members tab in Mergin Maps")
-3. In the invite form, enter the email addresses of people you want to invite. 
-   Select if you invite them as **members** or as **guests**:
-   - for **members**, select their [member role](./permissions/#workspace-member-roles). Members have access to all projects in the workspace.
-   - for **guests**, specify the projects to which they should have access. When inviting guests, you can give them [*read* or *write* permissions](./permissions/#project-permissions) to these projects.
-  ![Invite teammates and set permissions form](./workspace-members-guests.png "Invite teammates and set permissions form")
+2. Go to the **Members** tab in the left panel and click on **Invite**
+   ![Invite people to Mergin Maps workspace](./dashboard-workspace-invite.jpg "Invite people to Mergin Maps workspace")
 
-4. Click on **Invite** to send an invitation. An email with a link will be sent to the recipients. After they accept the invitation, they will become members or guests of your workspace.
+3. In the form, enter the email addresses of people you want to invite and choose their [**workspace role**](./permissions/#workspace-member-roles) from the list
+   ![Invite people to workspace and set their role](./dashboard-workspace-invite-form.jpg "Invite people to workspace and set their role")
+
+4. Click on the **Invite** button to send an invitation. 
+
+   An email with a link will be sent to the recipients. If they already have a <MainPlatformNameLink /> account, they will also get a notification through the dashboard. 
+
+After accepting the invitation, the invited users will become members of your workspace.
 
 ### Add users to a project
-Access to a specific project can be also managed in the project's settings. From here, you can also invite users to become guests in the workspace and gain access to this project.
-
-::: tip
-Similarly, you can also update the member's role for this project. For example, you may grant a *write* access to a member that has only a *Reader* role in the workspace. Go to [Member Roles and Permissions](./permissions/) to learn more about this topic.
-:::
+Users can be invited to a specific project. Users with access to only some projects in the workspace are workspace **guests**.
 
 1. Log into <AppDomainNameLink />
-2. Select **Projects** from the left panel and click on the project you want to manage
-   ![Mergin Maps dashboard Project tab](./web-projects.jpg "Mergin Maps dashboard Project tab")
+2. In the **Projects** tab, select the project you want to manage and navigate to **Collaborators**.
 
-3. Go to **Settings**. Here you can manage the permissions of users who have access to the project or remove them from the project.
-   ![Mergin Maps project settings web](./project-settings.jpg "Mergin Maps project settings")
+   Click on the **Share** button.
+   ![Mergin Maps dashboard Project tab](./dashboard-projects-collaborators.jpg "Mergin Maps dashboard Project tab")
 
-4. Click on **Share**
-   ![Share project button](./project-share.jpg "Share project button")
-   
-5. Enter the email addresses of the users you want to invite as guests. Click **Next**
-   ![Share project with teammate via email](./project-share-name.jpg "Share project with another user")
-   
-   :::tip
-   If you want to modify permissions for a workspace member, enter their <MainPlatformNameLink /> username to the **Share with** prompt. After clicking **Next**, they will be added to the **Manage Access** table in **Settings** where you can change their permissions to this project.
-   :::
-      
-4. In the invite form, it is possible to add more projects to share and set the permissions. 
-   Click **Next**.
-   ![Invite teammates to workspace form](./project-share-invite.jpg "Invite teammates to workspace form")
+3. Enter the email addresses of the users you want to invite and select their **Project permission**.
 
-5. Click on **Share** to send an email with a link to the recipients. After accepting the invitation, they will become a guest in your workspace.
-   ![Invite teammates to workspace form](./project-share-invite2.jpg "Invite teammates to workspace form")
+   Click **Share** to send the invitation.
+   ![Share project with teammate via email](./dashboard-project-share-form.jpg "Share project with another user")
+       
+After accepting the invitation, the invited users will become guests in your workspace and will have access to this project.
 
 ### Send a link to your project
 Another method that is suitable for sharing a project with a large number of users is to send them a link to your project, such as <MerginMapsProject id="sarah/Basic survey/tree" />.
@@ -67,23 +54,24 @@ Another method that is suitable for sharing a project with a large number of use
 1. Log into <AppDomainNameLink />
 2. Go to the project you want to share
 3. Copy the link from your web browser and share it with your colleagues
-![Copy project URL](../tutorials/working-collaboratively/mergin-web-copy-url.jpg "Copy project URL")
+![Copy link to Mergin Maps project](../tutorials/working-collaboratively/dashboard-copy-url.jpg "Copy link to Mergin Maps project")
 
-If you send a link to a [private](#make-your-project-public-private) project, users can **request access** after logging into <AppDomainNameLink />.
-![Request access to private project button](./project_sharing_send_request.jpg "Request access button")
+If you send a link to a [private](#make-your-project-public-private) project, users can **request access** after logging into the <DashboardShortLink />.
+   ![Request Access to a private project](../tutorials/working-collaboratively/dashboard-request-access-to-private-project.jpg "Request Access to a private project")
 
-Once the user requests access, you (or another project owner) can open the project settings and grant them appropriate [permissions](./permissions/) and accept their request.
-![Access requests](./project_sharing_requests.jpg "Accept or cancel access requests")
+Once the user requests access, you (or another project owner) can grant them appropriate [permissions](./permissions/) and accept (or decline) their request.
+   ![Project access requests in Mergin Maps](../tutorials/working-collaboratively/dashboard-project-access-requests.jpg "Project access requests in Mergin Maps")
 
 ### Make your project public/private
 Your projects are private by default. If you make it [public](./permissions/#public-and-private-projects), everyone can see your data and project history. However, they cannot contribute to your public project unless you grant them the write permission.
 
-1. Choose the project you want to make public
-2. Go to **Settings** and click on **Make public**
+1. Log into <AppDomainNameLink />
+2. Go to the project you want to make public
+2. In the **Settings** tab, click on **Make public**
 
 If you change your mind, you can make your project private by clicking **Make private**.
 
-![Make project public button](./project-make-public.jpg "Make project public button")
+![Make project public button](./dashboard-project-make-public.jpg "Make project public button")
 
 ## Transfer a project
 A <MainPlatformName /> project can be transferred to another workspace. This can be useful when there are personal changes in your team or if you have multiple workspaces and want to manage the storage between them.
@@ -92,12 +80,12 @@ A <MainPlatformName /> project can be transferred to another workspace. This can
 2. After synchronisation, all collaborators have to **remove** the project from their devices
 3. Log in to <AppDomainNameLink /> and choose the project you want to transfer
 4. Go to **Settings** and click on **Transfer project**
-   ![Mergin Maps project settings](./project-transfer.jpg "Mergin Maps project settings")
+   ![Mergin Maps project settings](./dashboard-project-transfer.jpg "Mergin Maps project settings")
 5. Enter the name of the workspace to which the project should be transferred and click on **Request transfer**
-   ![Transfer project form](./project-transfer2.jpg "Transfer project form")
+   ![Transfer project form](./dashboard-project-transfer-form.jpg "Transfer project form")
    
-   The owner of the new workspace will be notified and will be able to accept or deny the request through <AppDomainNameLink />.
-   ![Project transfer requests](./project-transfer-request.jpg "Project transfer requests")
+   The owner of the new workspace will be notified and will be able to accept or deny the request through the <DashboardShortLink />.
+   ![Project transfer requests](./dashboard-project-transfer-request.jpg "Project transfer requests")
    
    The request is valid for 6 days. If the request is not accepted after this period, the project will remain in the original workspace.
 
@@ -118,10 +106,10 @@ To avoid synchronisation issues, everyone should delete the old project from all
 
 ### Delete a project through merginmaps.com
 
-1. Log in <AppDomainNameLink /> and choose the project you want to delete
+1. Log in <AppDomainNameLink /> and navigate to the project you want to delete
 2. Go to **Settings** and click on **Delete project**
 
-![Delete project button](./project-delete.jpg "Delete project button")
+![Mergin Maps dashboard delete project](./dashboard-project-delete.jpg "Mergin Maps dashboard delete project")
 
 
 ### Delete a project using the Mergin Maps QGIS plugin 

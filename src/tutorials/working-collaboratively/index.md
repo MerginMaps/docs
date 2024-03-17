@@ -59,7 +59,7 @@ If you wish to share a project with more than a handful of users, this method ma
    
    When they use the link, they will initially be prompted to sign in or register with <MainPlatformName />. Once logged in, they will have the option to **Request access**:
    ![Request Access to a private project](./dashboard-request-access-to-private-project.jpg "Request Access to a private project")
-
+   
 5. Project access requests will be displayed in the **Collaborators** tab of the project.
 
    Accept or deny requests as needed.
