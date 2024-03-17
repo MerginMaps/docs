@@ -16,20 +16,20 @@ Want to read more about workspaces and why they were introduced to <MainPlatform
 
 <YouTube id="SZf93akn0tM" />
 
-:::tip
+:::tip Integrations and workspaces
 Integrations like [PostgreSQL DB Sync](../../dev/dbsync/), [Media Sync](../../dev/media-sync/) and [Work Packages](../../dev/work-packages/) do not share the concept of *active workspace*. They simply work with one specific project from any workspace.
 :::
 
 ## How to switch between workspaces
-You may participate in multiple workspaces. For instance, you can have your personal workspace and be a member of the workspaces of other users.
+You may have access to multiple workspaces. For instance, you can have your personal workspace and be a member of the workspaces of other users.
 
 ### Switch workspaces in merginmaps.com
 
-When logged in to <AppDomainNameLink />, you will see the current workspace under the account name in the right corner of the screen.
-![Mergin Maps web dashboard current workspace](./web-workspace.jpg "Current workspace in Mergin Maps web dashboard")
+When logged in to <AppDomainNameLink />, you will see the current workspace under the account name in the right corner of the screen (here: `my-team`).
+![Mergin Maps web dashboard current workspace](./dashboard-current-workspace.jpg "Current workspace in Mergin Maps web dashboard")
 
 Click on the account to see the list of all workspaces that are available to you. The active workspace is highlighted. Switch to another workspace by simply clicking on its name in the list.
-![Mergin Maps web workspaces list](./web-switch-workspace.jpg "Mergin Maps web workspaces list")
+![Mergin Maps web workspaces list](./dashboard-switch-workspace.jpg "Mergin Maps web workspaces list")
 
 ### Switch workspaces in Mergin Maps mobile app
 Navigate to **My Account** in <MobileAppName />. Here you will see the name of the current workspace and workspace details.
@@ -50,32 +50,34 @@ From the list of available workspaces, select the one you want to switch to:
 ## How to create a new workspace
 1. Log in to <AppDomainNameLink />
 2. Click on your account and navigate to **Manage workspaces**
-   ![Manage workspaces in Mergin Maps web dashboard](./web-manage-workspaces.jpg "Manage workspaces in Mergin Maps web dashboard")
-3. Here, you can see the overview of your existing workspaces. Click on **Create workspace**
-   ![Create workspace in Mergin Maps web dashboard](./web-create-workspace.jpg "Create workspace in Mergin Maps web dashboard")
+   ![Manage workspaces in Mergin Maps web dashboard](./dashboard-ov-manage-workspaces.jpg "Manage workspaces in Mergin Maps web dashboard")
+3. Here, you can see the overview of your workspaces. Click on **Create workspace**
+   ![Create workspace in Mergin Maps web dashboard](./dashboard-create-workspace.jpg "Create workspace in Mergin Maps web dashboard")
 4. Fill in the name and description of your new workspace
-   ![Create workspace in Mergin Maps web dashboard details](./web-new-workspace.jpg "Create workspace in Mergin Maps web dashboard details")
+   ![Create workspace in Mergin Maps web dashboard details](./dashboard-new-workspace.jpg "Create workspace in Mergin Maps web dashboard details")
    
    :::warning
    The name of a workspace cannot be changed later.
    :::
    
 5. Now you have a new workspace! You can [create projects](../create-project/) in the workspace and [invite other users](../project-advanced/#add-users-to-a-workspace) to contribute.
-   ![Mergin Maps web dashboard workspaces overview](./web-new-workspace-created.jpg "Mergin Maps web dashboard workspaces overview")
+   ![Mergin Maps web dashboard workspaces overview](./dashboard-new-workspace-created.jpg "Mergin Maps web dashboard workspaces overview")
 
-Currently, it is possible to have up to 3 workspaces in the trial plan (without subscription). Note that every workspace has its own subscription. When created, the workspace starts with the free trial. After the trial period, you will have to [switch to a paid subscription](../../manage/subscriptions/#how-to-change-a-subscription). 
+Note that every workspace has its own subscription. When created, the workspace starts with the free trial. After the trial period, you will have to [switch to a paid subscription](../../manage/subscriptions/#how-to-change-a-subscription). Currently, it is possible to have up to 3 workspaces without subscription (using the trial) simultaneously. 
 
 See our [pricing](https://merginmaps.com/pricing) for details about different plans.
 
 
 ## How to delete a workspace
-Before deleting a workspace, we recommend going through the projects in this workspace and, if needed, downloading them to your computer or [transferring them to another workspace](../project-advanced/#transfer-a-project).
+Closing a workspace means that all projects in this workspace will be removed as well. Therefore we recommend going through the projects in the workspace and, if needed, downloading them to your computer or [transferring them to another workspace](../project-advanced/#transfer-a-project) so that you don't lose your work.
 
-1. Make sure you are in the workspace you want to remove
+1. [Switch](#how-to-switch-between-workspaces) to the workspace you want to remove
+
 2. Navigate to **Settings** and select **Close workspace**
-   ![Delete workspace in Mergin Maps web dashboard](./web-delete-workspace.jpg "Delete workspace in Mergin Maps web dashboard")
-3. Confirm the closing of a workspace by typing the workspace name and click on **Delete**
-   ![Delete workspace confirmation](./web-delete-workspace-confirm.jpg "Delete workspace confirmation")
+   ![Delete workspace in Mergin Maps web dashboard](./dashboard-close-workspace.jpg "Delete workspace in Mergin Maps web dashboard")
+   
+3. Confirm the closing of a workspace by typing the workspace name and click on **Yes**
+   ![Delete workspace confirmation](./dashboard-close-workspace-confirmation.jpg "Delete workspace confirmation")
 
 After closing a workspace, it is kept on <MainPlatformNameLink /> servers for 5 days before it is deleted permanently. During this period, it can be restored if you contact <MerginMapsEmail id="support" />.
 
