@@ -3,7 +3,7 @@
 
 ## Troubleshooting tips
 Did you encounter an issue when using <MainPlatformNameLink />? Here are some troubleshooting tips and resources that can help:
-- Do you have enough storage? Check your [subscription and data usage](../manage/dashboard/#subscription).
+- Do you have enough storage? Check your [subscription and data usage](../manage/dashboard/#subscriptions).
 - Are you missing some data after synchronisation? [How to Recover Missing Data](../../manage/missing-data/) will show you how to deal with [**conflict files**](../../manage/missing-data/#there-are-conflict-files-in-the-folder) and how to [**manually download**](../../manage/missing-data/#there-are-no-conflict-files-in-the-folder) data from your mobile device.
 - Modifying data schema of survey layers is a common source of synchronisation issues. [How to Deploy Revised Projects](..//manage/missing-data/) will instruct you how to do it correctly.
 - if <MobileAppName /> cannot open your project or form, see [How to Fix a Broken Project](../field/broken-project/).
