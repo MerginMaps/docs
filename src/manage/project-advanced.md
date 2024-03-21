@@ -14,7 +14,7 @@ You can follow our [Working collaboratively](../tutorials/working-collaborativel
 :::
 
 ### Add users to a workspace
-If you want to share all projects in your workspace with a group of users, you can invite them to become a **member** of a workspace.
+If you want to share all projects in your workspace with a group of users, you can invite them to become members or guests of a workspace.
 
 You have to be the **admin** or **owner** of the workspace to manage access to the workspace. See [Member Roles and Permissions](./permissions/#workspace-member-roles) for more details.
 
@@ -23,14 +23,17 @@ To add users to a workspace:
 2. Go to the **Members** tab in the left panel and click on **Invite**
    ![Invite people to Mergin Maps workspace](./dashboard-workspace-invite.jpg "Invite people to Mergin Maps workspace")
 
-3. In the form, enter the email addresses of people you want to invite and choose their [**workspace role**](./permissions/#workspace-member-roles) from the list
-   ![Invite people to workspace and set their role](./dashboard-workspace-invite-form.jpg "Invite people to workspace and set their role")
+3. In the form, enter the email addresses of people you want to invite and choose their [**workspace role**](./permissions/#workspace-member-roles) from the list.
+   - If you want to grant them access to all projects in the workspace, select one of the member roles (*Reader*, *Writer*, *Admin* or *Owner*).
+   - If you want to invite them only to some projects, select the *Guest* option and specify which projects should be shared with them.
+    
+   ![Invite people to workspace and set their role](./dashboard-workspace-invite-form.png "Invite people to workspace and set their role")
 
 4. Click on the **Invite** button to send an invitation. 
 
    An email with a link will be sent to the recipients. If they already have a <MainPlatformNameLink /> account, they will also get a notification through the dashboard. 
 
-After accepting the invitation, the invited users will become members of your workspace.
+After accepting the invitation, the invited users will become members or guests of your workspace.
 
 ### Add users to a project
 Users can be invited to a specific project. Users with access to only some projects in the workspace are workspace **guests**.

@@ -27,9 +27,9 @@ Here, we will share the *trees-and-hedges* project with Henry.
    To invite a new collaborator, click on the **Share** button.
    ![Mergin Maps dashboard share project with collaborators](./dashboard-share-project-invite-user.jpg "Mergin Maps dashboard share project with collaborators")
 
-5. Enter the email and specify **Project permission**.
+5. Enter the email or <MainPlatformName /> username and specify **Project permission**.
 
-   You can enter multiple emails in the **Share with** field and invite multiple people at once.
+   You can enter multiple emails or usernames in the **Share with** field and invite multiple people at once.
    
   ![Share project invitation form](./dashboard-share-project-invite-form.jpg "Share project invitation form")
 
