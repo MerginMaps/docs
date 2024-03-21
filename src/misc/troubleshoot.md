@@ -44,7 +44,7 @@ To share your <MainPlatformName /> project with the support:
    ![List of projects in Mergin Maps](./mergin-find-project.jpg "List of projects in Mergin Maps")
    
    ::: tip
-   If you have access to multiple workspaces, you might need to [switch to another workspace](../manage/workspaces/#switch-workspaces-in-merginmaps-com) first.
+   If you have access to multiple workspaces, you might need to [switch to another workspace](../manage/workspaces//#switch-workspaces-in-mergin-maps-dashboard) first.
    :::
 
 3. Click on the **Share** button

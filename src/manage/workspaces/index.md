@@ -23,9 +23,9 @@ Integrations like [PostgreSQL DB Sync](../../dev/dbsync/), [Media Sync](../../de
 ## How to switch between workspaces
 You may have access to multiple workspaces. For instance, you can have your personal workspace and be a member of the workspaces of other users.
 
-### Switch workspaces in merginmaps.com
+### Switch workspaces in Mergin Maps dashboard
 
-When logged in to <AppDomainNameLink />, you will see the current workspace under the account name in the right corner of the screen (here: `my-team`).
+When logged in to the <DashboardShortLink />, you will see the current workspace under the account name in the right corner of the screen (here: `my-team`).
 ![Mergin Maps web dashboard current workspace](./dashboard-current-workspace.jpg "Current workspace in Mergin Maps web dashboard")
 
 Click on the account to see the list of all workspaces that are available to you. The active workspace is highlighted. Switch to another workspace by simply clicking on its name in the list.
