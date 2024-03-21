@@ -1,7 +1,7 @@
 # Home Page and Dashboard
 [[toc]]
 
-When you log in to <DashboardLink />, you will be presented with a quick overview of recent active projects in your current workspace. Here, you can also manage your projects, [workspaces](../workspaces/), profile and [subscriptions](../subscriptions/).
+When you log in to <DashboardLink />, you will be presented with a quick overview of requests and recent active projects in your current workspace. Here, you can also manage your projects, [workspaces](../workspaces/), profile and [subscriptions](../subscriptions/).
 
 ![Mergin Maps dashboard](./mergin-maps-dashboard.jpg "Mergin Maps dashboard")
 
