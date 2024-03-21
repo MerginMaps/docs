@@ -4,9 +4,9 @@
 There are several methods of creating a new <MainPlatformName /> project:
 - If you want to take full advantage of <MainPlatformNameLink />, use [QGIS](#create-a-project-in-qgis) to prepare new projects.
 - [<MobileAppName /> ](#create-a-project-in-mergin-maps-mobile-app) offers the quickest (albeit limited) way of creating a <MainPlatformName /> project.
-- You can also use <AppDomainNameLink />, especially if your project files are already fully prepared and only need uploading.
+- You can also use <DashboardLink />, especially if your project files are already fully prepared and only need uploading.
 
-If you want to make a copy of your projects or the ones shared with you, you can clone them in [QGIS](./index.md#clone-an-existing-project-in-qgis) or [merginmaps.com](./index.md#clone-an-existing-project-through-merginmaps-com).
+If you want to make a copy of your projects or the ones shared with you, you can clone them in [QGIS](./index.md#clone-an-existing-project-in-qgis) or the [dashboard](#clone-an-existing-project-through-mergin-maps-dashboard).
 
 :::warning
 When creating a project, keep in mind that its name cannot be changed later.
@@ -78,7 +78,7 @@ The project will be saved in the selected workspace.
 Your new project should now be visible on the **Home** tab of the **Projects** screen
 ![Mergin Maps mobile app home projects](../../tutorials/capturing-first-data/merginmaps-mobile-new-project-listed.jpg "Mergin Maps mobile app home projects")
 
-## Create a project through merginmaps.com
+## Create a project through Mergin Maps dashboard
 :::warning
 The preferred way of creating a project is to use the <QGISPluginNameShort />. This option is for advanced users.
 :::
@@ -97,7 +97,7 @@ The preferred way of creating a project is to use the <QGISPluginNameShort />. T
    If you are uploading files manually through the <DashboardShortLink />, do not forget to synchronise the changes by clicking **Update changes** in the **Data Sync**.
    ![Upload files to Mergin Maps project](./dashboard-upload-new-project.jpg "Upload files to Mergin Maps project")
 
-### Clone an existing project through merginmaps.com
+### Clone an existing project through Mergin Maps dashboard
 Projects you have access to and [public projects](../permissions/#public-and-private-projects) can be cloned. By cloning a project, you will create your own copy of this project. This way, you can use public projects as templates for your own work or easily create backups.
 
 #### Clone a project from your workspace
