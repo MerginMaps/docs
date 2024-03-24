@@ -25,7 +25,7 @@ To add users to a workspace:
 
 3. In the form, enter the email addresses of people you want to invite and choose their [**workspace role**](./permissions/#workspace-member-roles) from the list.
    - If you want to grant them access to all projects in the workspace, select one of the member roles (*Reader*, *Writer*, *Admin* or *Owner*).
-   - If you want to invite them only to some projects, select the *Guest* option and specify which projects should be shared with them.
+   - If you only want to invite them to some projects, select the *Guest* option and specify which projects should be shared with them.
     
    ![Invite people to workspace and set their role](./dashboard-workspace-invite-form.png "Invite people to workspace and set their role")
 
@@ -109,7 +109,7 @@ To avoid synchronisation issues, everyone should delete the old project from all
 
 ### Delete a project through merginmaps.com
 
-1. Log in <AppDomainNameLink /> and navigate to the project you want to delete
+1. Log in to <AppDomainNameLink /> and navigate to the project you want to delete
 2. Go to **Settings** and click on **Delete project**
 
 ![Mergin Maps dashboard delete project](./dashboard-project-delete.jpg "Mergin Maps dashboard delete project")
