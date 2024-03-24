@@ -5,17 +5,17 @@ When you log in to <DashboardLink />, you will be presented with a quick overvie
 
 ![Mergin Maps dashboard](./mergin-maps-dashboard.jpg "Mergin Maps dashboard")
 
-Current workspace and your username are displayed in the upper right corner of the screen.
+The current workspace and your username are displayed in the upper right corner of the screen.
 
 Use **Dashboard** in the left panel to go back to the homepage
 
 ## Projects
-**Projects** tab in the left panel displays the list overview of the projects that are available to you in this workspace.
+The **Projects** tab in the left panel displays the overview of the projects that are available to you in this workspace.
 ![Mergin Maps dashboard projects tab](./mergin-maps-dashboard-projects.jpg "Mergin Maps dashboard projects tab")
 
 Here, you can:
 - use the **Create project** button to [create a new project](../create-project/#create-a-project-through-merginmaps-com)
-- search project by name
+- search for a project by name
 - **Browse community projects** to explore public projects
 - click on a project to see its details
 
@@ -31,14 +31,14 @@ Click on a file to see when it was modified, its size, to download or delete it.
 ![Detail of a file in Mergin Maps project](./mergin-maps-dashboard-file-detail.jpg "Detail of a file in Mergin Maps project")
 
 ### Webmap
-**Webmap** feature is available for [Team subscription](https://merginmaps.com/pricing). 
+The **Webmap** feature is available for [Team subscription](https://merginmaps.com/pricing). 
 
 It displays your <MainPlatformName /> project directly in the <DashboardShortLink />. Here, you can see your spatial data without the need to open QGIS or the <MobileAppNameShort />.
 
 ![Mergin Maps webmap displays the project content](./mergin-maps-web-map.jpg "Mergin Maps webmap displays the project content")
 
 ### History
-**History** contains the overview of available project versions that can be also downloaded to your computer.
+The **History** tab contains an overview of available project versions that can be also downloaded to your computer.
 ![Project history in Mergin Maps dashboard](./mergin-maps-dashboard-project-history.jpg "Project history in Mergin Maps dashboard")
 
 You can click on a specific version to see more details.
@@ -75,7 +75,7 @@ Here, you can find the current usage of storage, number of users (members and gu
 
 ![Mergin Maps Subscriptions details](./mergin-maps-dashboard-subscriptions.jpg "Mergin Maps Subscriptions details")
 
-Click on **Manage subscription** to visit the subscription management portal where you can update the subscription plan, billing information, see invoices and upcoming payments. 
+Click on **Manage subscription** to visit the subscription management portal where you can update the subscription plan, billing information, and see invoices and upcoming payments. 
 
 The subscription management portal can also be accessed [using this link](../subscriptions/#accessing-subscription-management-portal-directly-without-mergin-maps-account).
 
