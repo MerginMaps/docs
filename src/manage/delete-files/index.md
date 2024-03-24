@@ -10,9 +10,9 @@ Download and archive the data before deleting them if they may be needed in the 
 :::
 
 ## Delete files through Mergin Maps dashboard
-Deleting files through <MainDomainName /> is simple. However, you can only delete one file at the time.
+Deleting files through <MainDomainName /> is simple. However, you can only delete one file at a time.
 
-1. Log in <AppDomainNameLink /> and navigate to your project.
+1. Log in to <AppDomainNameLink /> and navigate to your project.
 2. In the **Files** tab you will see the list of files that are stored in the project's folder. 
 
    Select the file you would like to delete.
