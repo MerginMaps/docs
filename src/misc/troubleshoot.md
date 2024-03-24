@@ -38,9 +38,9 @@ If you have an active subscription or in trial period on <AppDomainNameLink />, 
 
 Sometimes it is useful to share your project with our support team so that they can help you solve your issues.
 
-To share your <MainPlatformName /> project with the support:
+To share your project with the support team:
 1. Log in to <AppDomainNameLink />
-2. In the **Project** tab in the left panel, find the project that needs to be shared with the support and click on it.
+2. In the **Project** tab on the left panel, find the project that needs to be shared with the support team and click on it.
    ![List of projects in Mergin Maps](./mergin-maps-dashboard-find-project.jpg "List of projects in Mergin Maps")
    
    ::: tip
@@ -50,8 +50,8 @@ To share your <MainPlatformName /> project with the support:
 3. In the **Collaborators** tab, click on the **Share** button 
    ![Sharing Mergin Maps project](./mergin-maps-dashboard-share-project.jpg "Sharing Mergin Maps project")
 
-4. Use the email <MerginMapsEmail id="support" /> in the sharing form and click **Share** to send the invitation to the support.
-   ![Sharing Mergin Maps project with the support](./mergin-maps-share-project-with-support.jpg "Sharing Mergin Maps project with the support")
+4. Use the email <MerginMapsEmail id="support" /> in the sharing form and click **Share** to send the invitation to the support team.
+   ![Sharing Mergin Maps project with the support team](./mergin-maps-share-project-with-support.jpg "Sharing Mergin Maps project with the support team")
 
 Our support team can now access your <MainPlatformNameLink /> project.
 
