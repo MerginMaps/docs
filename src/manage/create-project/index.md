@@ -126,10 +126,10 @@ You can also make a copy of a public project.
 2. You will see a list of public projects. Use the search bar to find a project you would like to clone and click on it.
    ![Find public Mergin Maps projects](./dashboard-find-public-project.jpg "Find public Mergin Maps projects")
 
-3. The project's page opens. Click on the **Clone** button to clone the project.
+3. When the project's page opens, click on the **Clone** button to clone the project.
    ![Clone public Mergin Maps project](./dashboard-clone-public-project.jpg "Clone public Mergin Maps project")
    
-3. Now you can change the project's name and select the target workspace. Confirm by clicking **Clone project**.
+4. Now you can change the project's name and select the target workspace. Confirm by clicking **Clone project**.
 
    The cloned project will be saved to the workspace you have specified.
    ![Clone public Mergin Maps project](./dashboard-clone-public-project-name.jpg "Clone public Mergin Maps project")
