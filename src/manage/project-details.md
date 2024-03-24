@@ -21,7 +21,7 @@ To see the project history:
    
    ![Mergin Maps project history web](./dashboard-projects-history.jpg "Mergin Maps project history")
 
-3. Click on a version to see the more details about what was changed.
+3. Click on a version to see more details about what was changed.
    
    You can inspect the list of **added**, **edited** and **removed** files.
    
@@ -33,7 +33,11 @@ To see the project history:
 
 5. Now you can see the overview of feature changes in a specific layer across all attributes.
    
-   Here, there are multiple changes in the `trees` layer. One feature (`fid: 9`) was added, one feature (`fid: 6`) was deleted. There are two modified features: `fid: 2` was moved to a new position and in `fid: 8`, the value of attribute `species` was changed.
+   Here, there are multiple changes in the `trees` layer. One feature (`fid: 9`) was added, one feature (`fid: 6`) was deleted.
+   
+   There are two modified features: 
+   - `fid: 2` was moved to a new position
+   - For `fid: 8`, the value of attribute `species` was changed
 
    ![Dashboard advanced changelog](./dashboard-history-advanced-changelog.jpg "Dashboard advanced changelog")
 
