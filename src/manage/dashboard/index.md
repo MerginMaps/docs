@@ -65,7 +65,7 @@ Here you can change your password, verify your email or close your account. Use 
 
 ## Manage workspaces
 In the upper right corner of the screen, you can see the current workspace and your username. Click on it to [switch between workspaces](../workspaces/#how-to-switch-between-workspaces) and to **Manage workspaces**.
-![Mergin Maps web profile menu](../workspaces/web-switch-workspace.jpg "Mergin Maps web profile menu")
+![Mergin Maps web profile menu](../workspaces/dashboard-switch-workspace.jpg "Mergin Maps web profile menu")
 
 Click on **Manage workspaces** to see the overview of workspaces to which you have access as a guest, member or owner. Here you can [create a new workspace](../workspaces/#how-to-create-a-new-workspace), leave a workspace and accept/decline invitations to other users' workspaces.
 ![Mergin Maps web workspaces overview](./web-manage-workspaces.jpg "Mergin Maps web workspaces overview")
