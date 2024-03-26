@@ -7,66 +7,67 @@ In this tutorial you'll learn a few different ways of sharing your project with 
 
 
 ## Share a project with a specific Mergin Maps user
-Your projects are stored in your [workspace](../../manage/workspaces/). If you want to share a project with someone else, they need to be invited to your workspace.
+Your projects are stored in your [workspace](../../manage/workspaces/). If you want to share a project with someone else, they need to be invited to your workspace. There are different levels of access to a project or to a workspace you can guarantee to other users. They are described in detail in [Member Roles and Permissions](../../manage/permissions/).
 
-Here, we will invite Jack to the *trees-and-hedges* project.
+Here, we will share the *trees-and-hedges* project with Henry.
 
-1. Navigate to <AppDomainNameLink /> and **sign in** 
-   ![Sign in to Mergin Maps](./mergin-web-sign-in.jpg "Sign in to Mergin Maps")
+1. Navigate to <AppDomainNameLink /> and **Sign in** 
+   ![Sign in to Mergin Maps dashboard](./dashboard-sign-in.jpg "Sign in to Mergin Maps dashboard")
 
-3. Now, you should see the <MainPlatformName /> dashboard.
-   ![Mergin Maps dashboard](./mergin-web-dashboard.jpg "Mergin Maps dashboard")
+2. You will see the <MainPlatformName /> dashboard with recent active projects 
+   ![Mergin Maps dashboard](./mergin-maps-dashboard.jpg "Mergin Maps dashboard")
 
-2. Select **Members** from the left panel and click on **Add People**
-   ![Add people in Members tab in Mergin Maps](./web-workspace-add.jpg "Add people in Members tab in Mergin Maps")
+3. Navigate to the **Projects** tab in the left panel to get to the projects page with the list of your projects. 
+
+   Select a project you want to share with someone from the list. Here we selected *trees-and-hedges*.
+   ![Projects tab on Mergin Maps dashboard](./dashboard-select-project.jpg "Projects tab on Mergin Maps dashboard")
    
-3. Now you will see the invite form:
-  ![Invite teammates to workspace form](./mergin-web-invite-form.jpg "Invite teammates to workspace form")
-   - Enter the emails of people you want to invite to the workspace
-   - Choose if they should be **invited as** *members* or *guests*. *Members* have access to all projects in the workspace, while *guests* may access only selected projects.
-   - Specify the projects that will be shared with the guests by selecting the project's name in **Invite to projects**
-   - Set the **Permission in projects**
+4. Now you will see project details. There is a **Collaborators** tab where you can find the list of people who have access to this specific project. 
 
-4. Click on **Invite** to send an invitation. 
+   To invite a new collaborator, click on the **Share** button.
+   ![Mergin Maps dashboard share project with collaborators](./dashboard-share-project-invite-user.jpg "Mergin Maps dashboard share project with collaborators")
 
-An email with a link will be sent to the recipients. After they accept the invitation, they will become members or guests of your workspace. 
+5. Enter the email or <MainPlatformName /> username and specify **Project permission**.
 
-In this case, we invited Jack as a guest to the *trees-and-hedges* project. Since he has the *write* permission, he can now add or edit features in this project through <MainPlatformNameLink />, <MobileAppName /> and QGIS.
+   You can enter multiple emails or usernames in the **Share with** field and invite multiple people at once.
+   
+  ![Share project invitation form](./dashboard-share-project-invite-form.jpg "Share project invitation form")
 
-:::tip
-Users can be invited to a <MainPlatformName /> project also from the project's settings in <AppDomainNameLink />. Detailed steps can be found in [How to add users to a project](../../manage/project-advanced/#add-users-to-a-project).
-:::
+6. Click on the **Share** button to send the invitation. An email with a link will be sent to the recipients.
+   
+   If they already have a account, they will be also notified through the <DashboardShortLink /> and can accept the invitation here.
+   ![Dashboard notification - invitation to a workspace](./dashboard-workspace-invitation.jpg "Dashboard notification - invitation to a workspace")
 
-:::tip
-It is possible to have access to multiple workspaces. You may need to [navigate to the appropriate workspace](../../manage/workspaces/#how-to-switch-between-workspaces) to see a project that is shared with you.
-:::
+In this case, we invited Henry as a writer to the *trees-and-hedges* project. By doing so, Henry became a *guest* in our workspace. He can now add or edit features in the *trees-and-hedges* project, but cannot access other projects.
+
+List of users who have access to your projects as well as their role can be found in the **Members** tab in the left panel of the <DashboardShortLink />.
+![Mergin Maps dashboard members tab](./dashboard-members-guest.jpg "Mergin Maps dashboard members tab")
+
 
 ## Share a project with many users
 If you wish to share a project with more than a handful of users, this method may save you some time.
 
-These steps should be carried out from the <AppDomainNameLink desc="Mergin Maps" /> dashboard.
+1. Go to <AppDomainNameLink /> and **Sign in** 
 
-1. Click **My projects** then click *trees-and-hedges*
-   ![Select a project in Projects tab](./mergin-web-my-projects-trees-and-hedges.jpg "Select a project in Projects tab")
+2. Navigate to the **Projects** tab in the left panel and select a project from the list of projects. Here we use *trees-and-hedges*.
+   ![Projects tab on Mergin Maps dashboard](./dashboard-select-project.jpg "Projects tab on Mergin Maps dashboard")
 
-2. Click in the location bar of the browser:
-   ![Mergin Maps project URL in web browser](./mergin-web-url.jpg "Mergin Maps project URL in web browser")
-
-3. Copy the location:
-   ![Copy project URL](./mergin-web-copy-url.jpg "Copy project URL")
+3. Select the URL in the browser and copy it
+   ![Copy Mergin Maps project URL in the browser](./dashboard-copy-url.jpg "Copy Mergin Maps project URL in the browser")
 
 4. Send this link to the people you wish to share the project with.
    
-   When they click the link, they will initially be prompted to sign in or register with <MainPlatformName />. Once logged in, they will have the option to **Request access**:
-   ![Request Access to a private project](./mergin-web-request-access.jpg "Request Access to a private project")
+   When they use the link, they will initially be prompted to sign in or register with <MainPlatformName />. Once logged in, they will have the option to **Request access**:
+   ![Request Access to a private project](./dashboard-request-access-to-private-project.jpg "Request Access to a private project")
+   
+5. Project access requests will be displayed in the **Collaborators** tab of the project.
 
-5. Check your dashboard for project access requests. Accept or deny requests accordingly.
-   ![Project access requests in Mergin Maps](./mergin-web-project-access-requests.jpg "Project access requests in Mergin Maps")
+   Accept or deny requests as needed.
+   ![Project access requests in Mergin Maps](./dashboard-project-access-requests.jpg "Project access requests in Mergin Maps")
 
    ::: warning
    We always recommend verifying the requester's <MainPlatformName /> username before accepting access requests.
    :::
-
 
 ## Learning more about collaboration
 This tutorial introduced basic ways of sharing your project. Whether you use <MainPlatformNameLink /> to share project with a few friends or collaborate on it with a larger group of coworkers, we recommend to get familiar with the basics about permissions, synchronisation and project management:

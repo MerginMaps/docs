@@ -108,3 +108,4 @@ Click on the user name in the upper right corner and click on **Manage workspace
 Here you can [**create a new workspace**](../workspaces/#how-to-create-a-new-workspace), leave a workspace and accept/decline invitations to other users' workspaces.
 ![Mergin Maps web workspaces overview](./mergin-maps-dashboard-workspaces.jpg "Mergin Maps web workspaces overview")
 
+

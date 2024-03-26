@@ -9,30 +9,42 @@ Public projects can be accessed and downloaded even without a <MainPlatformNameL
 
 ## From web
 
-1. Navigate to <MainDomainNameLink /> 
-2. Clicking on **Sign Up** or **Start for free** will take you to the registration form
-   ![Mergin Maps start for free](./mergin-web-register.jpg "Mergin Maps start for free")
+1. Navigate to <AppDomainNameLink />
 
-3. Create your account by filling up the form and click on **Sign Up**. You will receive a confirmation email with a link to verify your email.
-
-   Check your spam folder if the confirmation email does not appear in your inbox after 5 minutes.
-
+2. Fill in the registration form and click on **Sign Up**.
    ![Mergin Maps sign up form](./mergin-web-sign-up.jpg "Mergin Maps sign up form")
 
    :::tip
    While signing up, you can subscribe to <MainPlatformName /> newsletter. You can unsubscribe anytime by clicking the **Unsubscribe** link at the bottom of the email.
    :::
+  
+3. You will receive a confirmation email with a link to verify your email.
 
-4. Now your account needs a [workspace](../../manage/workspaces/)!
-- If you were invited to an existing workspace, you can simply **join** this workspace without creating a new one
-![Join workspace in Mergin Maps](./join-workspace.jpg "Join workspace in Mergin Maps")
+   Check your spam folder if the confirmation email does not appear in your inbox after 5 minutes.
 
-- If you want to create your own workspace, choose an appropriate name and click on **Create workspace**
+4. Now your account needs a [workspace](../../manage/workspaces/)! 
+
+   To create a workspace, choose an appropriate name and click on **Create workspace**
    ![Create workspace in Mergin Maps](./create-workspace.jpg "Create workspace in Mergin Maps")
+
 
    :::tip
    Projects, collaborations and subscriptions in <MainPlatformNameLink /> are tied to [workspaces](../../manage/workspaces/). When you create your own workspace, it will automatically start with a free trial. To upgrade your subscription after the trial period, see our <MainDomainNameLink id="pricing" desc="Subscription plans" />.
    :::
+
+**Welcome to <MainPlatformNameLink />!**
+
+You can get up-to-speed quickly by following our [Quick Start tutorials](../../tutorials/capturing-first-data/index.md).
+
+### Invitation to a workspace
+If someone invited you to join their workspace, you will get an email with the invitation link. You need to have a <MainPlatformName /> account in order to contribute to this workspace. 
+
+1. Use the link to get the registration form. Your email address will be filled in automatically, so you just need to enter a username and password. 
+
+   Click on **Sign Up** to create your account.
+
+2. Now you have the option to **join workspace** you were invited to
+   ![Join workspace in Mergin Maps](./join-workspace.jpg "Join workspace in Mergin Maps")
 
 **Welcome to <MainPlatformNameLink />!**
 
