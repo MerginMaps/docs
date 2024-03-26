@@ -14,14 +14,14 @@ The **Projects** tab in the left panel displays the overview of the projects tha
 ![Mergin Maps dashboard projects tab](./mergin-maps-dashboard-projects.jpg "Mergin Maps dashboard projects tab")
 
 Here, you can:
-- use the **Create project** button to [create a new project](../create-project/#create-a-project-through-merginmaps-com)
+- use the **Create project** button to [create a new project](../create-project/#create-a-project-through-mergin-maps-dashboard)
 - search for a project by name
 - **Browse community projects** to explore public projects
 - click on a project to see its details
 
 When you click on a project, you will see the overview of its content. Files can simply be **uploaded** to the project using drag and drop. 
 
-In the right upper corner, you will find buttons to **download** and [**clone**](../create-project/#clone-an-existing-project-through-merginmaps-com) the project.
+In the right upper corner, you will find buttons to **download** and [**clone**](../create-project/#clone-an-existing-project-through-mergin-maps-dashboard) the project.
 ![Mergin Maps dashboard project details](./mergin-maps-project-details.jpg "Mergin Maps dashboard project details")
 
 ### Project files
