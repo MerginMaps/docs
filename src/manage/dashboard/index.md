@@ -13,11 +13,11 @@ Click **Home** in the left panel to go back to the homepage with the list of the
 **Projects** tab in the left panel displays the list overview of the projects that are available to you in this workspace.
 ![Mergin Maps web dashboard project tab](./web-projects-tab.jpg "Mergin Maps web dashboard project tab")
 
-- click on **+ Create** to [create a new project](../create-project/#create-a-project-through-merginmaps-com), 
+- click on **+ Create** to [create a new project](../create-project/#create-a-project-through-mergin-maps-dashboard), 
 - use **Find Public Projects** to browse public projects
 - select a project to see its details
 
-When you open a project, there is an option to [share it](../project-advanced/), download it and [clone it](../create-project/#clone-an-existing-project-through-merginmaps-com).
+When you open a project, there is an option to [share it](../project-advanced/), download it and [clone it](../create-project/#clone-an-existing-project-through-mergin-maps-dashboard).
 ![Mergin Maps web project details](./mergin-project.jpg "Mergin Maps web project details")
 
 - in **FILES** you will find all files associated with the project. Click on a file to see the details, download it or delete it.
