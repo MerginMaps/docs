@@ -40,7 +40,7 @@ Invoices can be made accessible also to a person that is not a workspace member,
 :::
 
 Members and their roles can be managed through <AppDomainNameLink /> in the [Members](./dashboard/#members) tab:
-![Mergin Maps web members tab](./dashboard/web-members.jpg "Mergin Maps web members tab")
+![Mergin Maps dashboard members tab](./dashboard/mergin-maps-dashboard-members.jpg "Mergin Maps dashboard members tab")
 
 ### How to transfer ownership of a workspace
 Ownership of a workspace can be transferred to another [workspace member](#workspace-member-roles). 
@@ -53,14 +53,14 @@ Every workspace has to have at least one owner, however, there can be multiple o
 When transferring ownership of a workspace, you might also need to [update billing information](./subscriptions/#billing-information-and-payment-method).
 :::
 
-To transfer the ownership of a workspace to a user that is not yet a member of your workspace, follow the steps in [How to add users to a workspace](./project-advanced/#add-users-to-a-workspace) and select the **Owner** as the the **member role**. The new owner has to accept the invitation.
+To transfer the ownership of a workspace to a user that is not yet a member of your workspace, follow the steps in [How to add users to a workspace](./project-advanced/#add-users-to-a-workspace) and set the **member role** to **Owner**. The new owner has to accept the invitation.
 
 To transfer the ownership of a workspace to a user that is already a member of your workspace, you have to change their member role to **Owner**:
 1. Log in to <AppDomainNameLink />
 2. Navigate to the **Members** tab. Here, you will see the list of current workspace members and their roles. 
-   ![Changing member role of a workspace member](./transfer-ownership-member-role.jpg "Changing member role of a workspace member")
+   ![Mergin Maps dashboard members tab](./dashboard/mergin-maps-dashboard-members.jpg "Mergin Maps dashboard members tab")
 
-3. Change the **member role** of the user who should become the new owner
+3. Change the **member role** of the user who should become the new owner to **Owner**
    ![Selecting owner member role from the list](./transfer-ownership-new-owner.jpg "Selecting owner member role from the list")
    
 4. Now the member role of the original owner can be changed (if needed) or they can be removed from the workspace completely.
@@ -91,8 +91,10 @@ Although the roles of workspace members define the level of access to projects i
 [How to add users to a project](./project-advanced/#add-users-to-a-project) will guide you through inviting a guest to a project. These steps can be also followed to change workspace member's permission to a project.
 :::
 
-Project permissions are managed in project **Settings** when logged in to <AppDomainNameLink />. From here, you can [invite a guest](./project-advanced/#add-users-to-a-project) to contribute to your project or 
-![Mergin Maps web project settings](./web-projects-settings.jpg "Mergin Maps web project settings")
+Project permissions are managed in the <DashboardShortLink />. Select a project and navigate to the **Collaborators** tab to see the list of users who can access the project and their project permissions or to [invite someone](./project-advanced/#add-users-to-a-project) to contribute to your project.
+
+You can also easily change project permissions of current collaborators.
+![Changing project permissions in Mergin Maps dashboard](./dashboard-project-permissions-change.jpg "Changing project permissions in Mergin Maps dashboard")
 
 
 ## Public and private projects
@@ -101,7 +103,6 @@ A **private project** is a project that is accessible only to workspace members 
 
 A **public project** is a project that everyone (including those who are not registered with <MainPlatformName />) can see, including data and project history. Other users cannot contribute to your public project unless you give them writing permissions.
 
-:::tip
 You can [make your project public or private](./project-advanced/#make-your-project-public-private) in the project's settings.
-:::
 
+![Project settings in Mergin Maps Dashboard](./dashboard/mergin-maps-dashboard-project-settings.jpg "Project settings in Mergin Maps Dashboard")

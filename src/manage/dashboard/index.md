@@ -1,49 +1,84 @@
 # Home Page and Dashboard
 [[toc]]
 
-When you log in to <AppDomainNameLink desc="Mergin Maps"/>, you will be presented with a dashboard for quick access to your recent active projects. Here, you can also manage your projects, [workspaces](../workspaces/), profile and [subscriptions](../subscriptions/).
+When you log in to <DashboardLink />, you will be presented with a quick overview of requests and recent active projects in your current workspace. Here, you can also manage your projects, [workspaces](../workspaces/), profile and [subscriptions](../subscriptions/).
 
-![Mergin Maps web dashboard](./web-dashboard-panel.jpg "Mergin Maps web dashboard")
+![Mergin Maps dashboard](./mergin-maps-dashboard.jpg "Mergin Maps dashboard")
 
-Current workspace and your username are displayed in the upper right corner of the screen.
+The current workspace and your username are displayed in the upper right corner of the screen.
 
-Click **Home** in the left panel to go back to the homepage with the list of the most recent projects. 
+Use **Dashboard** in the left panel to go back to the homepage
 
 ## Projects
-**Projects** tab in the left panel displays the list overview of the projects that are available to you in this workspace.
-![Mergin Maps web dashboard project tab](./web-projects-tab.jpg "Mergin Maps web dashboard project tab")
+The **Projects** tab in the left panel displays the overview of the projects that are available to you in this workspace.
+![Mergin Maps dashboard projects tab](./mergin-maps-dashboard-projects.jpg "Mergin Maps dashboard projects tab")
 
-- click on **+ Create** to [create a new project](../create-project/#create-a-project-through-mergin-maps-dashboard), 
-- use **Find Public Projects** to browse public projects
-- select a project to see its details
+Here, you can:
+- use the **Create project** button to [create a new project](../create-project/#create-a-project-through-mergin-maps-dashboard)
+- search for a project by name
+- **Browse community projects** to explore public projects
+- click on a project to see its details
 
-When you open a project, there is an option to [share it](../project-advanced/), download it and [clone it](../create-project/#clone-an-existing-project-through-mergin-maps-dashboard).
-![Mergin Maps web project details](./mergin-project.jpg "Mergin Maps web project details")
+When you click on a project, you will see the overview of its content. Files can simply be **uploaded** to the project using drag and drop. 
 
-- in **FILES** you will find all files associated with the project. Click on a file to see the details, download it or delete it.
-- [MAP (beta)](#web-map) contains the map overview of the project. Available only in *Team* plan.
-- **HISTORY** contains available [project versions](../project-details/). Here you can see what was changed by which user and download a previous version of the project to your computer.
-- in **SETTINGS** you can manage [access](../project-advanced/) to the project 
+In the right upper corner, you will find buttons to **download** and [**clone**](../create-project/#clone-an-existing-project-through-mergin-maps-dashboard) the project.
+![Mergin Maps dashboard project details](./mergin-maps-project-details.jpg "Mergin Maps dashboard project details")
 
-### Web Map
-**Web Map** feature is available for [Team subscription](https://merginmaps.com/pricing). It displays your <MainPlatformName /> project directly in <AppDomainNameLink />.
+### Project files
+In **Files**, you can see the list of all files associated with the project. 
 
-The content is updated when the project is synchronised. If you see the message "Map config does not exist, please try to update the project", sync the project and the web map should be generated.
+Click on a file to see when it was modified, its size, to download or delete it.
+![Detail of a file in Mergin Maps project](./mergin-maps-dashboard-file-detail.jpg "Detail of a file in Mergin Maps project")
 
-![Mergin Maps Web Map feature](./mergin-map.jpg "Mergin Maps Web Map feature")
+### Webmap
+The **Webmap** feature is available for [Team subscription](https://merginmaps.com/pricing). 
+
+It displays your <MainPlatformName /> project directly in the <DashboardShortLink />. Here, you can see your spatial data without the need to open QGIS or the <MobileAppNameShort />.
+
+![Mergin Maps webmap displays the project content](./mergin-maps-web-map.jpg "Mergin Maps webmap displays the project content")
+
+### History
+The **History** tab contains an overview of available project versions that can be also downloaded to your computer.
+![Project history in Mergin Maps dashboard](./mergin-maps-dashboard-project-history.jpg "Project history in Mergin Maps dashboard")
+
+You can click on a specific version to see more details.
+![Project version details in Mergin Maps dashboard](./mergin-maps-dashboard-project-history-version.jpg "Project version details in Mergin Maps dashboard")
+
+You can learn more about project history and how to revert to an older version in [Project History and Versions](../project-details/).
+
+### Collaborators
+The **Collaborators** tab provides the list of users who have access to the project as well as pending invitations. You can use the **Share** button to invite more people to contribute to your project. 
+
+Here, the [**project permissions**](../permissions/#project-permissions) of current collaborators can be changed.
+
+![Mergin Maps project collaborators](./mergin-maps-dashboard-project-collaborators.jpg "Mergin Maps project collaborators")
+
+### Settings
+In **Settings**, you can:
+- make the project [public or private](../project-advanced/#make-your-project-public-private)
+- [Transfer project](../project-advanced/#transfer-a-project) to another workspace
+- [Delete project](../project-advanced/#delete-a-project) 
+
+![Project settings in Mergin Maps Dashboard](./mergin-maps-dashboard-project-settings.jpg "Project settings in Mergin Maps Dashboard")
+
 
 ## Members
-The **Members** tab provides the overview of the [members and guests](../permissions/#workspace-members-and-guests) of the workspace. Here, you can [add users](../project-advanced/#add-users-to-a-workspace) to your workspace and manage their [permissions](../permissions/).
-![Mergin Maps web workspace members](./web-members.jpg "Mergin Maps web workspace members")
+The **Members** tab provides the overview of the [members and guests](../permissions/#workspace-members-and-guests) of the workspace, as well as pending invitations. 
+Here, you can [**invite**](../project-advanced/#add-users-to-a-workspace) users to the workspace and manage the [roles](../permissions/#workspace-member-roles) of your workspace members. If needed, users can be also removed from the workspace.
 
-## Subscription
-The **Subscription** tab contains information about your [subscription plan](../subscriptions/).
+![Mergin Maps dashboard workspace members](./mergin-maps-dashboard-members.jpg "Mergin Maps dashboard workspace members")
 
-Here, you can find the current usage of storage, number of projects and number of users (members and guests) in your workspace.
+## Subscriptions
+The **Subscriptions** tab contains information about your [subscription plan](../subscriptions/).
 
-![Mergin Maps Subscriptions details](../subscriptions/subscriptions.jpg "Mergin Maps Subscriptions details")
+Here, you can find the current usage of storage, number of users (members and guests) and number of projects in your workspace.
 
-Click on **Manage subscription** to visit the subscription management portal where you can update the subscription plan, billing information, see invoices and upcoming payments. The subscription management portal can also be [accessed using a link](../subscriptions/#accessing-subscription-management-portal-directly-without-mergin-maps-account).
+![Mergin Maps Subscriptions details](./mergin-maps-dashboard-subscriptions.jpg "Mergin Maps Subscriptions details")
+
+Click on **Manage subscription** to visit the subscription management portal where you can update the subscription plan, billing information, and see invoices and upcoming payments. 
+
+The subscription management portal can also be accessed [using this link](../subscriptions/#accessing-subscription-management-portal-directly-without-mergin-maps-account).
+
 ![Mergin Maps subscription management portal](../subscriptions/stripe-merginmaps-subcription.jpg "Mergin Maps subscription management portal")
 
 ::: tip
@@ -51,21 +86,26 @@ For details about different subscription plans visit our <MainDomainNameLink id=
 :::
 
 ## Settings
-In the **Settings** tab, you will find information about the current workspace. 
-![Mergin Maps web workspace settings](./web-settings.jpg "Mergin Maps web workspace settings")
-- use **Edit Workspace** to change the description of the workspace
+In the **Settings** tab, you will find information about the current workspace.
+- use **Edit Workspace** to add or change the description of the workspace
 - use **Close Workspace** to [delete the workspace](../workspaces/#how-to-delete-a-workspace)
 
+![Mergin dashboard web workspace settings](./mergin-maps-dashboard-settings.jpg "Mergin Maps dashboard workspace settings")
+
+
 ## User profile
-The **User profile** tab contains information about your current profile.
+**Your profile** can be accessed by clicking on the user name in the upper right corner.
+![Mergin Maps dashboard user profile](./mergin-maps-dashboard-profile.jpg "Mergin Maps dashboard user profile") 
 
-Here you can change your password, verify your email or close your account. Use **Edit profile** to enter your name or turn on/off email notifications. 
+Here you can edit your account details, change password, manage notifications about workspace activity and close your account.
 
-![Mergin Maps web user profile](./mergin-user-profile.jpg "Mergin Maps web user profile") 
+![Mergin Maps dashboard account details](./mergin-maps-dashboard-profile-details.jpg "Mergin Maps dashboard account details")
 
 ## Manage workspaces
-In the upper right corner of the screen, you can see the current workspace and your username. Click on it to [switch between workspaces](../workspaces/#how-to-switch-between-workspaces) and to **Manage workspaces**.
-![Mergin Maps web profile menu](../workspaces/dashboard-switch-workspace.jpg "Mergin Maps web profile menu")
+Click on the user name in the upper right corner and click on **Manage workspaces** to see the overview of workspaces to which you have access as a guest, member or owner. 
+![Mergin Maps dashboard manage workspaces](./mergin-maps-dashboard-manage-workspaces.jpg "Mergin Maps dashboard manage workspaces")
 
-Click on **Manage workspaces** to see the overview of workspaces to which you have access as a guest, member or owner. Here you can [create a new workspace](../workspaces/#how-to-create-a-new-workspace), leave a workspace and accept/decline invitations to other users' workspaces.
-![Mergin Maps web workspaces overview](./web-manage-workspaces.jpg "Mergin Maps web workspaces overview")
+Here you can [**create a new workspace**](../workspaces/#how-to-create-a-new-workspace), leave a workspace and accept/decline invitations to other users' workspaces.
+![Mergin Maps web workspaces overview](./mergin-maps-dashboard-workspaces.jpg "Mergin Maps web workspaces overview")
+
+

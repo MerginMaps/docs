@@ -13,7 +13,7 @@ There are three paid plans: *Individual*, *Professional*, and *Team* plan. Stude
 
 The overview of your current subscription plan and usage of storage, number of projects and number of users in your workspace can be found in the **Subscription** tab in <DashboardLink />. It is available only to the [owners](../permissions/#workspace-member-roles) of the workspace.
 
-![Mergin Maps Dashboard Subscription tab](./subscriptions.jpg "Mergin Maps Dashboard Subscription tab")
+![Mergin Maps Dashboard Subscription tab](../dashboard/mergin-maps-dashboard-subscriptions.jpg "Mergin Maps Dashboard Subscription tab")
 
 ## Subscriptions management portal
 Subscriptions, payments and billing information are managed in our subscription management portal. 
@@ -30,7 +30,7 @@ When logged into the portal, you can [update](#how-to-change-a-subscription) or 
 If you are the owner of a workspace, you can access the subscription management portal from the <DashboardShortLink />.
 
 To access the portal, navigate to the **Subscription** tab and click on **Manage Subscription**.
-![Mergin Maps Dashboard manage subscription](./subscriptions-update.jpg "Mergin Maps Dashboard manage subscription")
+![Mergin Maps Dashboard manage subscription](./dashboard-manage-subscriptions.jpg "Mergin Maps Dashboard manage subscription")
 
 You will be redirected to the subscription management portal.
 
@@ -48,7 +48,9 @@ To access the portal directly:
 
 ## How to upgrade a subscription from the trial plan
 1. Log into <AppDomainNameLink />
-2. Navigate to the **Subscription** tab. The overview of available plans is listed in the **Change subscription** section. 
+2. Navigate to the **Subscription** tab. 
+
+   The overview of available plans is listed in the **Upgrade subscription** section.
    
    Specify if you want to pay yearly or monthly and click on the **Upgrade** button under the plan of your choice.
    ![Mergin Maps Subscription details](./subscriptions-upgrade.jpg "Mergin Maps Subscription details")
