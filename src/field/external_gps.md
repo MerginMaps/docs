@@ -85,6 +85,11 @@ External GPS functionality depends on the manufacturer and on the specific model
 
 | Manufacturer | Model | Android | iOS |
 |---|---|---|---|
+| Bad Elf | GPS Pro | yes | yes |
+| Bad Elf | GPS Pro+ | yes | yes |
+| Bad Elf | GNSS Surveyor | yes | yes |
+| Bad Elf | Flex Mini (standard or extreme) | yes | yes |
+| Bad Elf | Flex (standard or extreme) | yes | yes |
 | Carlson | Carlson <NoSpellcheck id="Brx7" /><sup><a href="#link-1">1</a></sup> | yes (mock location) | unknown |
 | Carlson | Carlson <NoSpellcheck id="xML2" /> <sup><a href="#link-1">1</a></sup>| yes (mock location) | unknown |
 | Emlid | Emlid Reach RX<sup><a href="#link-2">2</a></sup> | yes | no |
@@ -92,22 +97,20 @@ External GPS functionality depends on the manufacturer and on the specific model
 | Emlid | Emlid Reach RS2/RS2+<sup><a href="#link-2">2</a></sup> | yes | no |
 | Emlid | Emlid Reach RS3<sup><a href="#link-2">2</a></sup> | yes | no |
 | Garmin | GLO 2 | yes | yes |
+| Geomax | <NoSpellcheck id="Zenith06" /><sup><a href="#link-8">8</a></sup>  | yes (mock location) | unknown |
+| Geomax | <NoSpellcheck id="Zenith60" /><sup><a href="#link-8">8</a></sup>  | yes (mock location)  | unknown |
 | Juniper Systems | Geode GNS3<sup><a href="#link-3">3</a></sup> | yes | yes |
 | Leica | Leica FLX100<sup><a href="#link-4">4</a></sup> | yes (mock location) | no |
 | Leica | Leica FLX100 plus<sup><a href="#link-4">4</a></sup> | yes (mock location) | yes<sup><a href="#link-**">**</a></sup>|
 | Leica | Leica Zeno GG04plus<sup><a href="#link-4">4</a></sup> | yes (mock location) | yes<sup><a href="#link-**">**</a></sup> |
 | <NoSpellcheck id="marXact" /> | UNI-GR1| yes | no |
 | <NoSpellcheck id="marXact" /> | UNI-GR2| yes | no |
+| <NoSpellcheck id="proNIVO" /> | <NoSpellcheck id="PNR21" /><sup><a href="#link-6">6</a></sup> | yes (mock location)| no |
+| <NoSpellcheck id="SingularXYZ" /> | <NoSpellcheck id="P1" /><sup><a href="#link-7">7</a></sup> | yes | unknown |
 | Trimble | Trimble Catalyst<sup><a href="#link-5">5</a></sup> | yes (mock location) | unknown |
 | Trimble | Trimble R1<sup><a href="#link-5">5</a></sup> | yes (mock location) | unknown |
 | Trimble | Trimble R2<sup><a href="#link-5">5</a></sup> | yes (mock location) | unknown |
-| <NoSpellcheck id="proNIVO" /> | <NoSpellcheck id="PNR21" /><sup><a href="#link-6">6</a></sup> | yes (mock location)| no |
-| <NoSpellcheck id="SingularXYZ" /> | <NoSpellcheck id="P1" /><sup><a href="#link-7">7</a></sup> | yes | unknown |
-| Bad Elf | GPS Pro | yes | yes |
-| Bad Elf | GPS Pro+ | yes | yes |
-| Bad Elf | GNSS Surveyor | yes | yes |
-| Bad Elf | Flex Mini (standard or extreme) | yes | yes |
-| Bad Elf | Flex (standard or extreme) | yes | yes |
+
 
 - <a name="link-1">1</a>: **Carlson <NoSpellcheck id="Brx7" />**,  **Carlson <NoSpellcheck id="xML2" />** - through [Carlson Layout](https://www.carlsonsw.com/product/carlson-layout) which will set a mock location in Android.
 - <a name="link-2">2</a>: **Emlid Reach RX**, **Emlid Reach RS+**, **Emlid Reach RS2/RS2+**, **Emlid Reach RS3** - directly via Bluetooth connection, has an internal NTRIP client to receive corrections. Possible to set a mock location and connect the receiver via Bluetooth using [GPS Connector](https://play.google.com/store/apps/details?id=de.pilablu.gpsconnector) or WiFi using [Lebefure NTRIP Client](https://play.google.com/store/apps/details?id=com.lefebure.ntripclient). Android only.
@@ -117,5 +120,6 @@ External GPS functionality depends on the manufacturer and on the specific model
 - <a name="link-5">5</a>: **Trimble R1**, **Trimble R2**, **Trimble Catalyst** - through [*Trimble Mobile Manager* app](https://play.google.com/store/apps/details?id=com.trimble.trimblemobilemanager) which also acts as a NTRIP client and sends the corrections to the device. The app will set a mock location in Android.
 - <a name="link-6">6</a>: **<NoSpellcheck id="proNIVO" /> <NoSpellcheck id="PNR21" />** - through *<NoSpellcheck id="Attenberger" /> Connector* app on [Android](https://play.google.com/store/apps/details?id=eu.apglos.attenbergerapp1&hl=en&gl=US).
 - <a name="link-7">7</a>: **<NoSpellcheck id="SingularXYZ" /> <NoSpellcheck id="P1" />** - the device uses a SIM Card that can be configured for NTRIP. It can be connected to <MobileAppName /> via Bluetooth (without using a mock location).
+- <a name="link-8">8</a>: **Geomax Zenith06, Zenith60** through *Geomax X-PAD* app on Android, using a GNSS Mock licence from Geomax and the *Mock GNSS* option in the app.
 
 **Did you use a GPS that is not in this list?** <GitHubRepo id="MerginMaps/docs/issues/124" desc="Share your experiences with us!" />
