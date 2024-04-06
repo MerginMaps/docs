@@ -37,6 +37,7 @@ GDA
 gdal
 GDAL
 Geodiff
+Geomax
 GEOS
 GeoPackage
 GeoPackages
