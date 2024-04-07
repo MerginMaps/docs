@@ -17,6 +17,8 @@ The ecosystem consist of various components:
  - [<QGISPluginName />](https://plugins.qgis.org/plugins/Mergin/) > QGIS plugin
  - <AppDomainNameLink desc="Mergin Maps Server" /> > SaaS Cloud Service (available also as <MainPlatformName /> CE)
  - <MainDomainNameLink desc="Mergin Maps mobile app" /> > iOS and Android mobile app
+
+<YouTube id="dy-B1BW9lA0" />
  
 ## Get started 
 
