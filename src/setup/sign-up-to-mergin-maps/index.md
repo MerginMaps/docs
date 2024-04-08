@@ -82,12 +82,15 @@ You can also sign up from <MobileAppName />.
 You can get up-to-speed quickly by following the [tour projects](../install-mobile-app/#mergin-maps-mobile-app-s-tour-projects) in the <MobileAppNameShort /> and our [Quick Start tutorials](../../tutorials/capturing-first-data/index.md).
 
 ## Deleting Mergin Maps account
-If you want to delete your account, you can do so in the <DashboardLink /> in the **User profile** tab.
+Your <MainPlatformNameLink /> account can be deleted in the <DashboardShortLink />.
 
-1. Before closing the account, make sure to [close your workspaces](../../manage/workspaces/#how-to-delete-a-workspace).
+Before closing the account, **make sure to** [**close your workspaces**](../../manage/workspaces/#how-to-delete-a-workspace). 
 
-2. Navigate to the **User profile** tab and click on **Close My Account**
-   ![Closing Mergin Maps account](./mergin-close-account.jpg "Closing Mergin Maps account")
+1. Log in to <AppDomainNameLink />. In the upper right corner of the screen, click on your username and go to **Your profile**.
+   ![Mergin Maps profile](../../manage/dashboard/mergin-maps-dashboard-profile.jpg "Mergin Maps profile")
+   
+2. Click on the **Close account** button.
+   ![Closing Mergin Maps account](./dashboard-close-account.jpg "Closing Mergin Maps account")
 
 You will be prompted to confirm the closing of your account by typing the account name. 
 
@@ -95,7 +98,7 @@ After you close the account, it is kept on <MainPlatformNameLink /> servers for 
 
 ## Forgotten password
 If you forget your password, you can reset it through <AppDomainNameLink /> by clicking **Forgot password**. Email with password reset link will be sent to your email address.
-![Mergin Maps web forgot password](./forgot-password.jpg "Mergin Maps web forgot password")
+![Mergin Maps dashboard forgot password](./dashboard-forgot-password.jpg "Mergin Maps dashboard forgot password")
 
 The same can be done on the login page in <MobileAppName />
 ![Mergin Maps mobile app forgot password](./merginmaps-mobile-forgot-password.jpg "Mergin Maps mobile app forgot password")
