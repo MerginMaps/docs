@@ -1,8 +1,12 @@
 # Troubleshoot
 
-This article will help you to debug and resolve issues in your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink /> deployement. If you use the main SaaS <DashboardLink desc="Mergin Maps Server"/>, this is always up-to-date and managed by Mergin Maps team, so report your problems to the team as [described here](../../misc/trobuleshoot.md). Read more about server platforms in [overview article](../index.md)
+This article will help you to debug and resolve issues in your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink /> deployement. If you use the main SaaS <DashboardLink desc="Mergin Maps Server"/>, this is always up-to-date and managed by Mergin Maps team, so report your problems to the team as [described here](../../misc/troubleshoot/index.md). Read more about server platforms in [overview article](../index.md)
 
 [[toc]]
+
+:::tip
+Haven't found solution to your issue? Look at your other [troubleshooting options](../../misc/troubleshoot/index.md)
+:::
 
 ## Server is not properly configured
 Did you get an error that the server is not properly configured?
@@ -12,3 +16,4 @@ Did you get an error that the server is not properly configured?
    `MERGIN_BASE_URL` should contain the URL of your <CommunityPlatformName /> server.
    
 2. Restart the container with the `MERGIN_BASE_URL` variable
+

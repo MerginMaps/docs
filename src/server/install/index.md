@@ -9,12 +9,13 @@ Instalation guide will help you to install your <CommunityPlatformNameLink /> or
 
 We recommend using a dedicated host machine with 8GB of memory. The requirements for CPU and persistent storage depend largely on the frequency of project updates and the anticipated size of the data you expect to store respectively.
 
-## Get Docker Images
+## Get your Docker Images
 
 The <CommunityPlatformName /> images are stored on publicly accessible <DockerHubLink id="u/lutraconsulting" desc="Lutra Consulting's Docker" />.
 
 <EnterprisePlatformName /> images are stored on private AWS repository. To get access, you need your contract and license from <MerginMapsEmail id="sales" desc="sales team" />. 
-Afterwards, you can follow this [guide](./ee/index.md) to retreive your images.
+
+Afterwards, you can follow this [guide](./ee/index.md) to retreive your <EnterprisePlatformName /> images.
 
 ## Deployment
 

@@ -9,9 +9,9 @@ Administration guide will help you to configure and maintain your <CommunityPlat
 See list of all [environment variables](./environment.md) that you can configure can be found
 
 ## Opt out of sending statistics
-<SinceBadge type="Server" version="2023.2" />
 <ServerType type="CE" />
-<ServerType type="EE" />
+<SinceBadge type="Server" version="2023.2" />
+
 
 By default, <CommunityPlatformName /> collects anonymous usage information to make the service better. There is a variable named `COLLECT_STATISTICS` that controls if statistics are collected and sent. 
 
