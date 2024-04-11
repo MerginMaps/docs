@@ -29,15 +29,16 @@ If your organisation already uses AWS cloud services and has root user, skip thi
 Maintenance of cloud accounts and security requires deep knowledge. <LutraConsultingName /> does not take responsibility for incorrectly set up of accounts. The AWS account and its maintenance is the responsibility of your user.
 :::
 
- - Login as root user
+
+- Login as root user
 
 ![Login as root to AWS](./root_login.jpg "Login as root to AWS")
 
- - Create an IAM user by searching in the console “IAM” and creating a new user. 
+- Create an IAM user by searching in the console “IAM” and creating a new user. 
  
 ![Create IAM user](./create_IAM_user.jpg "Create IAM user") 
 
- - Assign the IAM user administrator account permissions. Look for <NoSpellCheck id="AdministratorAccess” /> permission.
+- Assign the IAM user administrator account permissions. Look for <NoSpellcheck id="AdministratorAccess" /> permission.
  
 ![Assign AWS permissions](./assign_permissions.jpg "Assign AWS permissions") 
 
@@ -45,7 +46,7 @@ Maintenance of cloud accounts and security requires deep knowledge. <LutraConsul
 
 ![Finish assigning AWS permissions](./assign_permission_2.jpg "Finish assigning AWS permissions") 
 
- - Logout from root AWS account
+- Logout from root AWS account
  
 ### Identify Account ID and IAM user name
 

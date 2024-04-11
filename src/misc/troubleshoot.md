@@ -8,7 +8,7 @@ Did you encounter an issue when using <MainPlatformNameLink />? Here are some tr
 - Modifying data schema of survey layers is a common source of synchronisation issues. [How to Deploy Revised Projects](..//manage/missing-data/) will instruct you how to do it correctly.
 - If <MobileAppName /> cannot open your project or form, see [How to Fix a Broken Project](../field/broken-project/).
 - If <MobileAppName /> displays **PROJ error**, see [Custom Projections](../gis/proj/).
-- For troubleshooting custom server deployements, look at [this dedicated page](../server/troubleshoot/).
+- For troubleshooting custom server deployments, look at [this dedicated page](../server/troubleshoot/).
 
 Need more help with your issue? <LutraConsultingWeb /> provides commercial support and free fair-use support for your workspaces with an active subscription on <MerginMapsEmail id="support" />. 
 

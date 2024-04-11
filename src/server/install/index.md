@@ -9,7 +9,8 @@ Installation guide will help you to install your <CommunityPlatformNameLink /> o
 
 We recommend using a dedicated host machine with 8GB of memory. The requirements for CPU and persistent storage depend largely on the frequency of project updates and the anticipated size of the data you expect to store respectively.
 
-## Get your Docker Images
+## Mergin Maps EE Docker Images
+<ServerType type="EE" />
 
 The <CommunityPlatformName /> images are stored on publicly accessible <DockerHubLink id="u/lutraconsulting" desc="Lutra Consulting's Docker" />.
 
@@ -23,7 +24,7 @@ Follow these steps to run local <MainPlatformName /> instance.
 
 ### Start docker containers
 
-Provided that `docker` and `docker-compose` are installed on your host, running <MainPlatformName /> stack should be as simple as running `docker-compose`. However, before doing that you would need to [configure](#configure-environment) your server setup via environment variables in <GitHubRepo desc=".prod.env" id="MerginMaps/server/blob/master/.prod.env" /> file. 
+Provided that `docker` and `docker-compose` are installed on your host, running <MainPlatformName /> stack should be as simple as running `docker-compose`. However, before doing that you would need to [configure](../administer/environment.md) your server setup via environment variables in <GitHubRepo desc=".prod.env" id="MerginMaps/server/blob/master/.prod.env" /> file. 
 
 Once configured, you can run:
 ```shell
