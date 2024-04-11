@@ -1,6 +1,6 @@
 # Troubleshoot
 
-This article will help you to debug and resolve issues in your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink /> deployement. If you use the main SaaS <DashboardLink desc="Mergin Maps Server"/>, this is always up-to-date and managed by Mergin Maps team, so report your problems to the team as [described here](../../misc/troubleshoot/index.md). Read more about server platforms in [overview article](../index.md)
+This article will help you to debug and resolve issues in your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink /> deployment. If you use the main SaaS <DashboardLink desc="Mergin Maps Server"/>, this is always up-to-date and managed by Mergin Maps team, so report your problems to the team as [described here](../../misc/troubleshoot/index.md). Read more about server platforms in [overview article](../index.md)
 
 [[toc]]
 

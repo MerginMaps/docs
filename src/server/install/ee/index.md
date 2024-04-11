@@ -10,7 +10,7 @@ To get access your docker images, you need your contract and license from <Mergi
 ### Create (root) AWS account
 
 ::: warning
-If your organization already uses AWS cloud services and has root user, skip this step. 
+If your organisation already uses AWS cloud services and has root user, skip this step. 
 
 Maintenance of cloud accounts and security requires deep knowledge. <LutraConsultingName /> does not take responsibility for incorrectly set up of accounts. The AWS account and its maintenance is the responsibility of your user.
 :::
@@ -24,7 +24,7 @@ Continue with all steps and verify your account
 ### Create IAM user 
 
 ::: warning
-If your organization already uses AWS cloud services and has root user, skip this step. 
+If your organisation already uses AWS cloud services and has root user, skip this step. 
 
 Maintenance of cloud accounts and security requires deep knowledge. <LutraConsultingName /> does not take responsibility for incorrectly set up of accounts. The AWS account and its maintenance is the responsibility of your user.
 :::

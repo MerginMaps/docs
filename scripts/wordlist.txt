@@ -2,6 +2,8 @@ AGPL
 API
 Android
 ArcGIS
+AWS
+backend
 Basemap
 Basemaps
 BeiDou
@@ -20,6 +22,7 @@ DAF
 DateTime
 DOP
 ECW
+ECR
 EE
 Emlid
 EPSG
@@ -30,6 +33,7 @@ Exif
 ExifTool
 FID
 FIDs
+frontend
 FLX
 FOSS
 Garmin
@@ -55,6 +59,7 @@ HDOP
 HTML
 Helmert
 HiDPi
+IAM
 interoperable
 integration
 integrations
@@ -160,7 +165,6 @@ cheatsheet
 checkbox
 checkboxes
 cloudmergin
-conf
 conf
 config
 dataset

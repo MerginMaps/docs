@@ -4,7 +4,7 @@
 Do you want to integrate <MainPlatformNameLink />? <MainPlatformName /> is an open platform that aims to be developer friendly and it has been designed to allow easy integration with other software.
 
 :::tip Usage details
-Python client module and C++ standalone client can be used with *Team*, *Academia* and *Non-profit* <MainDomainNameLink id="pricing" desc="subscription plans"/>, as well as in [<CommunityPlatformName />](./mergince/) and [<EnterprisePlatformName />](./merginmaps-ee/).
+Python client module and C++ standalone client can be used with *Team*, *Academia* and *Non-profit* <MainDomainNameLink id="pricing" desc="subscription plans"/>, as well as in [<CommunityPlatformName />](./server/) and [<EnterprisePlatformName />](./server/).
 
 They are not available in *Individual* or *Professional* subscriptions.
 

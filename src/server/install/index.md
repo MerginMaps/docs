@@ -1,6 +1,6 @@
 # Install
 
-Instalation guide will help you to install your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink /> to the latest server version. The main SaaS <DashboardLink desc="Mergin Maps Server"/> is always up-to-date and managed by Mergin Maps team. Read more about server platforms in [overview article](../index.md)
+Installation guide will help you to install your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink /> to the latest server version. The main SaaS <DashboardLink desc="Mergin Maps Server"/> is always up-to-date and managed by Mergin Maps team. Read more about server platforms in [overview article](../index.md)
 
 [[toc]]
 
@@ -15,7 +15,7 @@ The <CommunityPlatformName /> images are stored on publicly accessible <DockerHu
 
 <EnterprisePlatformName /> images are stored on private AWS repository. To get access, you need your contract and license from <MerginMapsEmail id="sales" desc="sales team" />. 
 
-Afterwards, you can follow this [guide](./ee/index.md) to retreive your <EnterprisePlatformName /> images.
+Afterwards, you can follow this [guide](./ee/index.md) to retrieve your <EnterprisePlatformName /> images.
 
 ## Deployment
 
@@ -42,5 +42,5 @@ $ docker exec merginmaps-server flask user create <username> <password> --is-adm
 
 ### Setup environment
 ​
-Now tweak deployemnt settings by modifying environment variables. You have to fix all variables marked as `fixme` (with asterisks) in this
+Now tweak deployment settings by modifying environment variables. You have to fix all variables marked as `fixme` (with asterisks) in this
 list [environment variables](../administer/environment.md)
