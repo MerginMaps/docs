@@ -1,40 +1,5 @@
-# Mergin Maps Community Edition
-[[toc]]
+# Configure environment
 
-SaaS <MainPlatformName /> service is a web platform for storage and synchronisation of data between mobile devices, <MainPlatformNameLink /> service and QGIS Desktop. 
-
-There is also <MainPlatformName /> Community Edition (<CommunityPlatformNameLink />) that is licensed as open source software. The source code for <CommunityPlatformName /> can be modified and used for custom deployments. You can contribute your code to <GitHubRepo id="MerginMaps/server" />.
-
-[How to Use <MainPlatformName /> with a Custom Server](../manage/plugin-multi-server-use/) will explain how to use <QGISPluginName /> and <MobileAppName /> with your <CommunityPlatformName /> server.
-
-::: tip
-More information about <CommunityPlatformName /> and its features can be found on our [website](https://merginmaps.com/pricing-for-ce-and-ee) and in our blog [<MainPlatformName /> Community and Enterprise Editions](https://merginmaps.com/blog/introducing-mergin-maps-community-and-enterprise-editions). 
-
-Need more functionality than <CommunityPlatformNameLink /> offers? Explore our [subscription plans](https://merginmaps.com/pricing).
-:::
-
-## Deployment
-Follow these steps to run local <MainPlatformName /> instance.
-
-### Start docker containers
-Provided that `docker` and `docker-compose` are installed on your host, running <MainPlatformName /> stack should be as simple as running `docker-compose`. However, before doing that you would need to [configure](#configure-environment) your server setup via environment variables in <GitHubRepo desc=".prod.env" id="MerginMaps/server/blob/master/.prod.env" /> file. 
-
-Once configured, you can run:
-```shell
-$ mkdir -p projects # or wherever you set it to be
-$ sudo chown -R  901:999 ./projects/
-$ sudo chmod g+s ./projects/
-$ docker-compose -f docker-compose.yml up
-```
-​​
-### Initialise database
-If server is started for the first time, database needs to be initialised and super-user created (set admin username, password and email):
-```shell
-$ docker exec merginmaps-server flask init-db
-$ docker exec merginmaps-server flask user create <username> <password> --is-admin --email <email>
-```
-​
-### Configure environment
 There are several application settings which can be changed via <GitHubRepo desc="config variables" id="MerginMaps/server/blob/master/.prod.env" />. Some of them have defaults and some of them needs to be modified, particularly those with `fixme` placeholder (marked with asterisks below).
 ​
 #### Server basics
@@ -128,34 +93,3 @@ Other settings related to data management.
 |`BROKER_URL`           |string|`redis://merginmaps-redis:6379/0`| Connection details to celery message broker. If non-default, it should match definition in `docker-compose` file.  |
 |`CELERY_RESULT_BACKEND`|string|`redis://merginmaps-redis:6379/0`| Connection details to celery result back-end broker. If non-default, it should match definition in `docker-compose` file.  |
 ​
-
-## Migration guides
-
-Follow our [**Migration Guides**](./ce-migration/) to migrate from older server versions to the latest version of <CommunityPlatformName />.​
-
-
-## Troubleshooting
-
-Find the common server deployment issues here.
-
-### Server is not properly configured
-Did you get an error that the server is not properly configured?
-![Mergin Maps CE server not configured error](./ce-server-not-configured.jpg "Mergin Maps CE server not configured error")
-
-1. Check if `MERGIN_BASE_URL` docker environment variable is assigned correctly.
-   `MERGIN_BASE_URL` should contain the URL of your <CommunityPlatformName /> server.
-   
-2. Restart the container with the `MERGIN_BASE_URL` variable
-
-
-## Opt out of sending statistics
-<SinceBadge type="Server" version="2023.2" />
-
-By default, <CommunityPlatformName /> collects anonymous usage information to make the service better. There is a variable named `COLLECT_STATISTICS` that controls if statistics are collected and sent. 
-
-If you do not want to provide these data, you can opt-out any time by setting this variable to *false* 
-```
-COLLECT_STATISTICS=false
-```
-
-

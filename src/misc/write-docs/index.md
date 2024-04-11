@@ -275,6 +275,14 @@ For mentioning that some feature is available from specific version, use `<Since
    ```<SinceBadge type="Server" version="2024.3" />```
 <SinceBadge version="2024.3" type="Server" />
 
+To refer to Mergin Maps Enterprise or Community edition, use `<ServerType />`
+
+```<ServerType type="CE" />```
+<ServerType type="CE" />
+
+```<ServerType type="EE" />```
+<ServerType type="EE" />
+
 ### Images
 
 

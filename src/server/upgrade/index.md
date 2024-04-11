@@ -1,6 +1,6 @@
-# Migration Guides
+# Upgrade
 
-Migration guides are here to help you migrate to the latest version of our [<MainPlatformName /> Community Edition](../mergince/).
+Migration guides are here to help you migrate your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink /> to the latest server version. The main SaaS <DashboardLink desc="Mergin Maps Server"/> is always migrated to latest version by Mergin Maps team. Read more about server platforms in [overview article](../index.md)
 
 ::: warning
 Migrations must be performed one by one and cannot be skipped.

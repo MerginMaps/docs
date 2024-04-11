@@ -94,13 +94,18 @@ The ecosystem consist of various components:
 
 ## For Developers
 - [Custom Mobile App](./dev/customapp/)
-- [Mergin Maps Community Edition](./dev/mergince/)
-- [Mergin Maps Enterprise Edition](./dev/merginmaps-ee/)
 - [Integrate Mergin Maps](./dev/integration/)
 - [PostgreSQL DB Sync](./dev/dbsync/)
 - [Media Sync](./dev/media-sync/)
 - [Work Packages](./dev/work-packages/)
 - [Geodiff Library](./dev/geodiff/)
+
+## Custom Server
+- [Overview](./server/)
+- [How to Install](./server/install/)
+- [How to Upgrade](./server/upgrade/)
+- [Administer](./server/administer/)
+- [Troubleshoot](./server/troubleshoot/)
 
 ## Migrate
 - [From QField and QFieldCloud](./migrate/qfield/)
