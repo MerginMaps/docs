@@ -2,6 +2,7 @@ AGPL
 API
 Android
 ArcGIS
+aws
 AWS
 backend
 Basemap

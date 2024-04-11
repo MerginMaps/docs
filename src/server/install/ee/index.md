@@ -1,4 +1,4 @@
-# Retreive your Mergin Maps EE images
+# Download your Mergin Maps EE images
 <ServerType type="EE" />
 
 To get access your docker images, you need your contract and license from <MerginMapsEmail id="sales" desc="sales team" />. If you do not have them, please contact our team. The repository is private and your team need to secure you the access to them before the steps will work.
@@ -37,7 +37,7 @@ Maintenance of cloud accounts and security requires deep knowledge. <LutraConsul
  
 ![Create IAM user](./create_IAM_user.jpg "Create IAM user") 
 
- - Assign the IAM user administrator account permissions. Look for “AdministratorAccess” permission.
+ - Assign the IAM user administrator account permissions. Look for <NoSpellCheck id="AdministratorAccess” /> permission.
  
 ![Assign AWS permissions](./assign_permissions.jpg "Assign AWS permissions") 
 

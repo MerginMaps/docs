@@ -10,7 +10,7 @@
 Windows users may use a Windows executable for DB sync. On Linux/Mac users are advised to use a docker container. [DB Sync configuration wizard](#db-sync-configuration-wizard) can help you with creating the configuration file.
 
 :::tip Usage details
-DB Sync can be used with *Team*, *Academia* and *Non-profit* <MainDomainNameLink id="pricing" desc="subscription plans"/>, as well as in [<CommunityPlatformName />](./server/) and [<EnterprisePlatformName />](./server/).
+DB Sync can be used with *Team*, *Academia* and *Non-profit* <MainDomainNameLink id="pricing" desc="subscription plans"/>, as well as in [<CommunityPlatformName />](../server/) and [<EnterprisePlatformName />](../server/).
 
 It is not available in *Individual* or *Professional* subscriptions.
 
