@@ -1,7 +1,7 @@
 # Download your Mergin Maps EE images
 <ServerType type="EE" />
 
-To get access your docker images, you need your contract and license from <MerginMapsEmail id="sales" desc="sales team" />. If you do not have them, please contact our team. The repository is private and your team need to secure you the access to them before the steps will work.
+To get access to your docker images, you need your contract and licence from our <MerginMapsEmail id="sales" desc="sales team" />. If you do not have them, please contact our team. The repository is private and our team needs to secure you the access to them so you are able to follow these steps.
 
 [[toc]]
 
@@ -10,9 +10,9 @@ To get access your docker images, you need your contract and license from <Mergi
 ### Create (root) AWS account
 
 ::: warning
-If your organisation already uses AWS cloud services and has root user, skip this step. 
+If your organisation already uses AWS cloud services and has a root user, skip this step. 
 
-Maintenance of cloud accounts and security requires deep knowledge. <LutraConsultingName /> does not take responsibility for incorrectly set up of accounts. The AWS account and its maintenance is the responsibility of your user.
+Maintenance of cloud accounts and security requires deep knowledge. <LutraConsultingName /> does not take responsibility for incorrectly set up accounts. The AWS account and its maintenance is the responsibility of your user.
 :::
 
 Go to [aws.amazon.com](https://aws.amazon.com/) and create new root account
@@ -24,13 +24,13 @@ Continue with all steps and verify your account
 ### Create IAM user 
 
 ::: warning
-If your organisation already uses AWS cloud services and has root user, skip this step. 
+If your organisation already uses AWS cloud services and has a root user, skip this step. 
 
-Maintenance of cloud accounts and security requires deep knowledge. <LutraConsultingName /> does not take responsibility for incorrectly set up of accounts. The AWS account and its maintenance is the responsibility of your user.
+Maintenance of cloud accounts and security requires deep knowledge. <LutraConsultingName /> does not take responsibility for incorrectly set up accounts. The AWS account and its maintenance is the responsibility of your user.
 :::
 
 
-- Login as root user
+- Login as the root user
 
 ![Login as root to AWS](./root_login.jpg "Login as root to AWS")
 
@@ -50,10 +50,10 @@ Maintenance of cloud accounts and security requires deep knowledge. <LutraConsul
  
 ### Identify Account ID and IAM user name
 
-Account ID and IAM users names are needed for assigning the permissions to docker images by <LutraConsultingName /> operations team. 
+Account ID and IAM user names are needed for assigning the permissions to docker images by <LutraConsultingName /> operations team. 
 
 ::: warning 
-<LutraConsultingName /> will never ask you to share a IAM or root login password or other access details to your accounts.
+<LutraConsultingName /> will never ask you to share an IAM or root login password or other access details to your accounts.
 :::
 
 - Login to your IAM account
@@ -69,12 +69,12 @@ Account ID and IAM users names are needed for assigning the permissions to docke
 ![Console login details](./find_name_and_id.jpg "Console login details")
 
 - Send Account ID and IAM user name to <MerginMapsEmail id="sales" desc="sales team" />
-- Wait for confirmation that we have shared ECR repository with you. This can take up to 5 working days.
+- Wait for confirmation that we have shared the ECR repository with you. This can take up to 5 working days.
 
 ## Download Docker Images
 
 ::: warning
-To be able to download the images, you need to have permission to do so for your IAM user that are granted by <LutraConsultingName />
+To be able to download the images, you need to have permission to do so for your IAM user that is granted by <LutraConsultingName />
 :::
 
  - Open command line and write (you may need to change to your IAM account region). You will be asked for your id and secret to be used.
@@ -90,7 +90,7 @@ aws ecr describe-images --repository-name mergin/mergin-ee-front --registry-id 4
 aws ecr describe-images --repository-name mergin/mergin-ee-back --registry-id 433835555346 --region eu-west-1
 ```
 
- - Select tag you want to use and download image, e.g. `2023.6.1-ee` or any other from the list of images
+ - Select the tag you want to use and download image, e.g. `2023.6.1-ee` or any other from the list of images
 
 ```
 docker pull 433835555346.dkr.ecr.eu-west-1.amazonaws.com/mergin/mergin-ee-back:2023.6.1-ee

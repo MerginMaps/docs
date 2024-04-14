@@ -16,7 +16,7 @@ The <CommunityPlatformName /> images are stored on publicly accessible <DockerHu
 
 <EnterprisePlatformName /> images are stored on a private AWS repository. To get access, you need your contract and licence from our <MerginMapsEmail id="sales" desc="sales team" />. 
 
-Afterwards, you can follow this [guide](./ee/index.md) to retrieve your <EnterprisePlatformName /> images.
+Afterwards, you can follow [this guide](./ee/index.md) to retrieve your <EnterprisePlatformName /> images.
 
 ## Deployment
 
