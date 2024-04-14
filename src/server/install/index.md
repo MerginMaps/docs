@@ -7,20 +7,20 @@ Installation guide will help you to install your <CommunityPlatformNameLink /> o
 
 ## Installation System Requirements
 
-We recommend using a dedicated host machine with 8GB of memory. The requirements for CPU and persistent storage depend largely on the frequency of project updates and the anticipated size of the data you expect to store respectively.
+We recommend using a dedicated host machine with 8 GB of memory. The requirements for CPU and persistent storage depend largely on the frequency of project updates and the anticipated size of the data you expect to store respectively.
 
 ## Mergin Maps EE Docker Images
 <ServerType type="EE" />
 
 The <CommunityPlatformName /> images are stored on publicly accessible <DockerHubLink id="u/lutraconsulting" desc="Lutra Consulting's Docker" />.
 
-<EnterprisePlatformName /> images are stored on private AWS repository. To get access, you need your contract and license from <MerginMapsEmail id="sales" desc="sales team" />. 
+<EnterprisePlatformName /> images are stored on a private AWS repository. To get access, you need your contract and licence from our <MerginMapsEmail id="sales" desc="sales team" />. 
 
 Afterwards, you can follow this [guide](./ee/index.md) to retrieve your <EnterprisePlatformName /> images.
 
 ## Deployment
 
-Follow these steps to run local <MainPlatformName /> instance.
+Follow these steps to run a local <MainPlatformName /> instance.
 
 ### Start docker containers
 
@@ -43,5 +43,4 @@ $ docker exec merginmaps-server flask user create <username> <password> --is-adm
 
 ### Setup environment
 ​
-Now tweak deployment settings by modifying environment variables. You have to fix all variables marked as `fixme` (with asterisks) in this
-list [environment variables](../administer/environment.md)
+Now tweak deployment settings by modifying environment variables. You have to fix all variables marked as `fixme` (with asterisks) in this list of [environment variables](../administer/environment.md).

@@ -77,15 +77,14 @@ $ git pull
 As mentioned earlier, CE operates with one global workspace. We will set it up now.
 Specify its name with the following environment variable:
 
- - `GLOBAL_WORKSPACE=ShinyWorkspace` - name of your workspace. A good fit is a name of your company or team. This value *should not be changed* later.
+ - `GLOBAL_WORKSPACE=ShinyWorkspace` - name of your workspace. A good fit is the name of your company or team. This value *should not be changed* later.
 
 :::tip
-You can find all available environment variables [here](../administer/environment.md) together with a tutorial how to set them up.
+You can find all available environment variables [here](../administer/environment.md) together with a tutorial on how to set them up.
 :::
 
-Further, you need to set a default role for people in your workspace. **Pick one** of these options
-(*learn more about our [permissions and roles system here](../../manage/permissions)*):
-
+Further, you need to set a default role for people in your workspace *(learn more about our [permissions and roles system here](../../manage/permissions))*. 
+**Pick one** of these options :
  - `GLOBAL_READ=0` everyone will have guest role (without access to any project unless explicitly granted)
  - `GLOBAL_READ=1` everyone will have reader role (they can read/download all projects in the workspace)
  - `GLOBAL_WRITE=1` everyone will have writer role (they can contribute to all projects in the workspace, e.g. upload files)
