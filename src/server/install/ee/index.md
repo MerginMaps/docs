@@ -15,11 +15,11 @@ If your organisation already uses AWS cloud services and has a root user, skip t
 Maintenance of cloud accounts and security requires deep knowledge. <LutraConsultingName /> does not take responsibility for incorrectly set up accounts. The AWS account and its maintenance is the responsibility of your user.
 :::
 
-Go to [aws.amazon.com](https://aws.amazon.com/) and create new root account
+- Go to [aws.amazon.com](https://aws.amazon.com/) and create new root account
 
 ![Create AWS account](./create_aws_account.jpg "Create AWS account")
 
-Continue with all steps and verify your account
+- Continue with all steps and verify your account
 
 ### Create IAM user 
 
