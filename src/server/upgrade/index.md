@@ -1,6 +1,6 @@
-# Migration Guides
+# Upgrade
 
-Migration guides are here to help you migrate to the latest version of our [<MainPlatformName /> Community Edition](../mergince/).
+Migration guides are here to help you migrate your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink /> to the latest server version. The main SaaS <DashboardLink desc="Mergin Maps Server"/> is always migrated to latest version by <MainPlatformName /> team. Read more about server platforms in [overview article](../index.md)
 
 ::: warning
 Migrations must be performed one by one and cannot be skipped.
@@ -47,7 +47,7 @@ Perform the migration:
 Besides various fixes, enhancements and performance improvements the most notable change recently introduced is the concept of workspaces. For Community Edition it means there is a **common shared workspace (global workspace)** for all users where all projects are stored, instead of having a personal or organisational namespace for projects.
 
 :::tip
-In case you do not need your previous data, we advise to start with [clean deployment](../mergince/#deployment) without the need to follow this migration guide.
+In case you do not need your previous data, we advise to start with [clean deployment](../install/) without the need to follow this migration guide.
 :::
 
 **Upgrading to 2023.2**
@@ -74,18 +74,17 @@ $ git pull
 
  6. Set environment variables (<GitHubRepo desc=".prod.env" id="MerginMaps/server/blob/master/.prod.env" /> file). **Important** ⚠️
 
-As mentioned earlier, CE operates with one global workspace. We will set it up now.
+As mentioned earlier, <CommunityPlatformName /> operates with one global workspace. We will set it up now.
 Specify its name with the following environment variable:
 
- - `GLOBAL_WORKSPACE=ShinyWorkspace` - name of your workspace. A good fit is a name of your company or team. This value *should not be changed* later.
+ - `GLOBAL_WORKSPACE=ShinyWorkspace` - name of your workspace. A good fit is the name of your company or team. This value *should not be changed* later.
 
 :::tip
-You can find all available environment variables [here](../mergince/#deployment) together with a tutorial how to set them up.
+You can find all available environment variables [here](../administer/environment.md) together with a tutorial on how to set them up.
 :::
 
-Further, you need to set a default role for people in your workspace. **Pick one** of these options
-(*learn more about our [permissions and roles system here](../../manage/permissions)*):
-
+Further, you need to set a default role for people in your workspace *(learn more about our [permissions and roles system here](../../manage/permissions))*. 
+**Pick one** of these options :
  - `GLOBAL_READ=0` everyone will have guest role (without access to any project unless explicitly granted)
  - `GLOBAL_READ=1` everyone will have reader role (they can read/download all projects in the workspace)
  - `GLOBAL_WRITE=1` everyone will have writer role (they can contribute to all projects in the workspace, e.g. upload files)
@@ -99,7 +98,7 @@ You can specify the maximum storage for your shiny new workspace 🌟 with the f
 New users can be created from <MainPlatformName /> administration panel, by navigating to `<your_url>/admin`.
 :::
 
- 1. Make sure projects volume mounts in `docker-compose` file still match (You can set up new volumes by following the [quick start guide](../mergince/#deployment)). Switch to new server version and PostgreSQL to at least version 12 (14 recommended) by running new docker containers:
+ 1. Make sure projects volume mounts in `docker-compose` file still match (You can set up new volumes by following the [quick start guide](../install/)). Switch to new server version and PostgreSQL to at least version 12 (14 recommended) by running new docker containers:
 ```bash
 $ docker-compose -f docker-compose.yml up
 ```

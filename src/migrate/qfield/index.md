@@ -20,7 +20,7 @@ QFieldCloud is based on PostgreSQL and PostGIS database and there might be direc
 
 On top of <GitHubRepo id="MerginMaps/python-api-client" desc="Python client" />, <MainPlatformName /> offers also other developer tools to manage projects for larger teams, such as [Media Sync](../../dev/media-sync/) and [Work Packages](../../dev/work-packages/).
 
-You can also [customise](../../dev/customapp/) <MobileAppName /> and deploy your own <MainPlatformName /> servers as the [Mergin Maps Community Edition](../../dev/mergince/) or [Mergin Maps Enterprise Edition](../../dev/merginmaps-ee/).
+You can also [customise](../../dev/customapp/) <MobileAppName /> and deploy your own <MainPlatformName /> servers as the [Mergin Maps Community Edition](../../server/) or [Mergin Maps Enterprise Edition](../../server/).
 
 ### Users, organisations, workspaces
 There are some similarities and differences in how QField and <MainPlatformName /> manage their users and projects:

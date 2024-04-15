@@ -275,6 +275,14 @@ For mentioning that some feature is available from specific version, use `<Since
    ```<SinceBadge type="Server" version="2024.3" />```
 <SinceBadge version="2024.3" type="Server" />
 
+To refer to Mergin Maps Enterprise or Community edition, use `<ServerType />`
+
+```<ServerType type="CE" />```
+<ServerType type="CE" />
+
+```<ServerType type="EE" />```
+<ServerType type="EE" />
+
 ### Images
 
 
@@ -402,9 +410,19 @@ Use `<AppDownload />` component
 
 Use `<AppDomainNameLink />` component, transforms to <AppDomainNameLink />
 
+Use `<CommunityPlatformName />` component, transforms to <CommunityPlatformName />
+
+Use `<CommunityPlatformNameLink />` component, transforms to <CommunityPlatformNameLink />
+
 Use `<DashboardLink />` component, transforms to  <DashboardLink />
 
 Use `<DashboardShortLink />` component, transforms to  <DashboardShortLink />
+
+Use `<DockerHubLink />` component, transforms to  <DockerHubLink />
+
+Use `<EnterprisePlatformName />` component, transforms to <EnterprisePlatformName />
+
+Use `<EnterprisePlatformNameLink />` component, transforms to <EnterprisePlatformNameLink />
 
 Use `<MainDomainName />` component, transforms to <MainDomainName />
 
@@ -414,14 +432,6 @@ Use `<MainPlatformName />` component, transforms to <MainPlatformName />
 
 Use `<MainPlatformNameLink />` component, transforms to <MainPlatformNameLink />
 
-Use `<CommunityPlatformName />` component, transforms to <CommunityPlatformName />
-
-Use `<CommunityPlatformNameLink />` component, transforms to <CommunityPlatformNameLink />
-
-Use `<EnterprisePlatformName />` component, transforms to <EnterprisePlatformName />
-
-Use `<EnterprisePlatformNameLink />` component, transforms to <EnterprisePlatformNameLink />
-
 Use `<MobileAppName />` component, transforms to <MobileAppName />
 
 Use `<MobileAppNameShort />` component, transforms to <MobileAppNameShort />
@@ -429,6 +439,10 @@ Use `<MobileAppNameShort />` component, transforms to <MobileAppNameShort />
 Use `<QGISPluginName />` component, transforms to <QGISPluginName />
 
 Use `<QGISPluginNameShort />` component, transforms to <QGISPluginNameShort />
+
+Use `<LutraConsultingName />` component, transforms to <LutraConsultingName />
+
+Use `<LutraConsultingWeb />` component, transforms to <LutraConsultingWeb />
 
 ## Translations
 

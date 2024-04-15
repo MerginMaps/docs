@@ -109,8 +109,6 @@ module.exports = {
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
                 '/dev/customapp',
-                '/dev/mergince',
-                '/dev/merginmaps-ee/',
                 '/dev/integration',
                 '/dev/dbsync',
                 '/dev/media-sync/',
@@ -118,6 +116,18 @@ module.exports = {
                 '/dev/geodiff/'
             ]
         }, 
+        {
+            title: 'Custom Server',   // required
+            collapsable: true, // optional, defaults to true
+            sidebarDepth: 0,    // optional, defaults to 1
+            children: [
+                '/server/',
+                '/server/install/',
+                '/server/upgrade/',
+                '/server/administer/',
+                '/server/troubleshoot/'
+            ]
+        },
         {
             title: 'Migrate',   // required
             collapsable: true, // optional, defaults to true
