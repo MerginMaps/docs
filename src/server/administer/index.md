@@ -6,7 +6,7 @@ Administration guide will help you to configure and maintain your <CommunityPlat
 
 ## Server environment
 
-See list of all [environment variables](./environment.md) that you can configure can be found
+See the list of all [environment variables](./environment.md) that you can configure.
 
 ## Opt out of sending statistics
 <ServerType type="CE" />
