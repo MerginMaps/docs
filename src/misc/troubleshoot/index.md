@@ -28,7 +28,7 @@ Please see the <LutraConsultingWeb id="support/" desc="support packages" /> avai
 
 ### Subscribed client support
 
-If you have an active subscription or in trial period on <AppDomainNameLink />, we also offer free fair-use support on <MerginMapsEmail id="support" />.
+If you have an active <MainPlatformNameLink /> subscription or during the trial period, we also offer free fair-use support on <MerginMapsEmail id="support" />.
 
 ### Community support
 - Join our [community chat on Slack](https://merginmaps.com/community/join) and ask questions!
@@ -74,12 +74,16 @@ To send the diagnostic log to the developers:
 
 ![Submit diagnostic logs message](./plugin-logs.jpg "Submit diagnostic logs message")
 
+4. Contact our support team (<MerginMapsEmail id="support" />) with your username/workspace and problem description so we can have a look into the issue. 
+
 ### Diagnostic log on Mergin Maps mobile app
-To access the diagnostic log in the <MobileAppNameShort />:
-1. Tap **More** and open **Settings** 
-2. Select **Diagnostic log** to display the log
-![Access diagnostic log in Mergin Maps mobile app](./input-logs.jpg "Diagnostic log in Mergin Maps mobile app")
+In the <MobileAppNameShort />:
+1. Tap on the **More** button and go to **Settings** 
+![](./mobile-app-settings.jpg)
+2. Scroll down to the **Diagnostic log** option and tap it to display the log
+![Access diagnostic log in Mergin Maps mobile app](./mobile-app-settings-diagnostic-log.jpg "Diagnostic log in Mergin Maps mobile app")
 
-3. If you want to send the log to the developers, tap the **Send to Developers** button.
-![Send diagnostic log to developers](./input-logs2.jpg "Diagnostic log content in Mergin Maps mobile app")
+3. Tap the **Send to developers** button to proceed
+![Send diagnostic log to developers](./mobile-app-send-diagnostic-log.jpg "Diagnostic log content in Mergin Maps mobile app")
 
+4. Contact our support team (<MerginMapsEmail id="support" />) with your username/workspace and problem description so we can have a look into the issue. 
