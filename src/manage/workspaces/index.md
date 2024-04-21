@@ -64,14 +64,16 @@ See our [pricing](https://merginmaps.com/pricing) for details about different pl
 
 ### Create a workspace in Mergin Maps dashboard 
 1. Log in to <AppDomainNameLink />
+
 2. Click on your account and navigate to **Manage workspaces**
    ![Manage workspaces in Mergin Maps web dashboard](./dashboard-ov-manage-workspaces.jpg "Manage workspaces in Mergin Maps web dashboard")
+
 3. Here, you can see the overview of your workspaces. Click on **Create workspace**
    ![Create workspace in Mergin Maps web dashboard](./dashboard-create-workspace.jpg "Create workspace in Mergin Maps web dashboard")
-4. Fill in the name and description of your new workspace
-   :::warning 
-   The name of a workspace cannot be changed later.
-   :::
+
+4. Fill in the name and description of your new workspace.
+
+   Note that **the name of a workspace cannot be changed later**.
    
    ![Create workspace in Mergin Maps web dashboard details](./dashboard-new-workspace.jpg "Create workspace in Mergin Maps web dashboard details")
    
@@ -79,13 +81,20 @@ See our [pricing](https://merginmaps.com/pricing) for details about different pl
    ![Mergin Maps web dashboard workspaces overview](./dashboard-new-workspace-created.jpg "Mergin Maps web dashboard workspaces overview")
 
 ### Create a workspace in Mergin Maps mobile app
- 
-4. Fill in the name and description of your new workspace
-   :::warning 
-   The name of a workspace cannot be changed later.
-   :::
 
-5. Now you have a new workspace! You can [create projects](../create-project/) in the workspace and [invite other users](../project-advanced/#add-users-to-a-workspace) to contribute.
+1. Navigate to the list of available workspaces as described [here](#switch-workspaces-in-mergin-maps-mobile-app) and click on the **+** button in the right upper corner of the screen
+   ![Create a new workspace in Mergin Maps mobile app](./mobile-app-create-workspace-button.jpg "Create a new workspace in Mergin Maps mobile app")
+ 
+2. Fill in the name of your new workspace and tap **Create workspace**.
+
+   Keep in mind that **the name of a workspace cannot be changed later**.
+   
+   ![Naming a new workspace in Mergin Maps mobile app](./mobile-app-create-workspace.jpg "Naming a new workspace in Mergin Maps mobile app")
+
+5. Now you have a new workspace! 
+   
+   You can [create projects](../create-project/) in the workspace and [invite other users](../project-advanced/#add-users-to-a-workspace) to contribute.
+   ![New workspace in Mergin Maps mobile app](./mobile-app-new-workspace.jpg "New workspace in Mergin Maps mobile app")
 
    
 ## How to delete a workspace
