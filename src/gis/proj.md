@@ -48,7 +48,7 @@ All you need to do is:
 
 3. Download the project with the grid shift files to <MobileAppName />. 
    When the project is downloaded to the app for the first time, you will get a **PROJ Error** that will prompt you to **restart the app** to load the grid shift files. The error message should not appear after the restart of the app.
-![Mergin Maps mobile app transformation shift grid error](./input-custom-prj.jpg "Mergin Maps mobile app transformation shift grid error")
+![Mergin Maps mobile app transformation shift grid error](./mobile-app-proj-error.jpg "Mergin Maps mobile app transformation shift grid error")
 
 ### Adding grid shift files manually
 If you want to add grid shift files to the <MobileAppNameShort /> manually:
@@ -67,4 +67,5 @@ If you want to add grid shift files to the <MobileAppNameShort /> manually:
 3. Synchronise the project using the <QGISPluginNameShort />
 4. Download the project with the grid shift files to <MobileAppName />. 
    When the project is downloaded to the app for the first time, you will get a **PROJ Error** that will prompt you to **restart the app** to load the grid shift files. The error message should not appear after the restart of the app.
-![Mergin Maps mobile app transformation shift grid error](./input-custom-prj.jpg "Mergin Maps mobile app transformation shift grid error")
+
+![Mergin Maps mobile app transformation shift grid error](./mobile-app-proj-error.jpg "Mergin Maps mobile app transformation shift grid error")
