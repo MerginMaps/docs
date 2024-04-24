@@ -21,22 +21,21 @@ To open the project and field data on the computer, we will need to do some setu
    ![Mergin Maps mobile app upload project to cloud](./mergin-maps-mobile-upload-project.jpg "Mergin Maps mobile app upload project to cloud")
    
    
-2. If you are not logged in, you will be asked to. Enter your <MainPlatformName /> credentials and **Sign In**
+2. If you are not logged in, you will be asked to. Enter your <MainPlatformName /> credentials and **Sign in**.
+
+   If you don't have an account yet, create one! Tap **Sign up** to [sign up to <MainPlatformName />](../../setup/sign-up-to-mergin-maps/#from-mergin-maps-mobile-app).
+   
    ![Mergin Maps mobile app Login page](./mergin-maps-mobile-log-in-to-mergin.jpg "Mergin Maps mobile app Login page")
    
-   :::tip
-   If you don't have an account yet, create one! Tap **Sign up for free** and [sign up to <MainPlatformName />](../../setup/sign-up-to-mergin-maps/#from-mergin-maps-mobile-app).
-   :::
-      
-   
-3. Once you are logged in, press the **Upload** button again to upload your project to the <MainPlatformName /> cloud. 
+  
+3. Once you are logged in, **Upload** your project to the <MainPlatformName /> cloud. 
 
-   Notice that the name of your [workspace](../../manage/workspaces/) is displayed along with the project's name (here, the workspace is called `sarah`)
+Notice that the name of your [workspace](../../manage/workspaces/) is displayed along with the project's name (here, the workspace is called `my-team`).
 
-   ![Mergin Maps mobile app uploaded project](./mergin-maps-mobile-uploaded-project.jpg "Mergin Maps mobile app uploaded project")
-   
 Now that your project is in the cloud, it can easily be shared with colleagues or downloaded to your computer.
 
+![Mergin Maps mobile app uploaded project](./mergin-maps-mobile-uploaded-project.jpg "Mergin Maps mobile app uploaded project")
+   
 
 ## Locating and opening your project
 Now that the project is stored in <MainPlatformName /> cloud, we can open it in QGIS.
