@@ -44,7 +44,7 @@ Now that the project is stored in <MainPlatformName /> cloud, we can open it in 
 
 2. Make sure you have already [installed](../../setup/install-mergin-maps-plugin-for-qgis/index.md) and [configured](../../setup/install-mergin-maps-plugin-for-qgis/#plugin-configuration) <QGISPluginName />
    
-3. Find the <MainPlatformName /> entry in the QGIS **Browser** panel. 
+3. Find the <MainPlatformName /> entry in the QGIS **Browser** panel
    ![QGIS Browser Mergin Maps projects](./qgis-browser-panel.jpg "QGIS Browser Mergin Maps projects")
 
 
