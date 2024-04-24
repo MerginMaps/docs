@@ -50,7 +50,9 @@ Note that the **background map used in this project requires network connectivit
 
 5. A survey form opens. 
 
-   Enter the *date* of your survey and *notes* about the feature. Tap **Take a photo** to attach a photo using your camera.
+   Enter the *date* of your survey and *notes* about the feature. 
+   
+   Tap **Take a picture** to attach a photo using your camera.
    ![Attributes form (left) and taking photo (right)](./merginmaps-mobile-entering-attributes.jpg "Attributes form (left) and taking photo (right)")
 
 6. Press **Save** when you're happy with the details you've entered:
