@@ -14,7 +14,7 @@ To open the project and field data on the computer, we will need to do some setu
 - [Install the <QGISPluginName />](../../setup/install-mergin-maps-plugin-for-qgis/) and use your credential to [configure the plugin](../../setup/install-mergin-maps-plugin-for-qgis/#plugin-configuration), so that QGIS knows how to communicate with <MainPlatformName /> 
 
 ## Putting your project in the cloud
-1. Open <MobileAppName /> and navigate to the **Home** tab. Tap the **Upload** button next to the project's name.
+1. Open <MobileAppName /> and navigate to the **Home** tab. Tap the button next to the project's name and select the **Upload** option.
    
    If you are logged in, the project will be uploaded to <MainPlatformName /> cloud and you can continue to the next step [opening your project in QGIS](#locating-and-opening-your-project).
    
