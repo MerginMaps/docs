@@ -16,7 +16,7 @@ To open the project and field data on the computer, we will need to do some setu
 ## Putting your project in the cloud
 1. Open <MobileAppName /> and navigate to the **Home** tab. Tap the button next to the project's name and select the **Upload** option.
    
-   If you are logged in, the project will be uploaded to <MainPlatformName /> cloud and you can continue to the next step [opening your project in QGIS](#locating-and-opening-your-project).
+   If you are logged in, the project will be uploaded to <MainPlatformName /> cloud and you can continue to the next step: [opening your project in QGIS](#locating-and-opening-your-project).
    
    ![Mergin Maps mobile app upload project to cloud](./mergin-maps-mobile-upload-project.jpg "Mergin Maps mobile app upload project to cloud")
    
@@ -48,7 +48,7 @@ Now that the project is stored in <MainPlatformName /> cloud, we can open it in 
    ![QGIS Browser Mergin Maps projects](./qgis-browser-panel.jpg "QGIS Browser Mergin Maps projects")
 
 
-   Notice that the name of the current workspace (here: `sarah`) is displayed next to <MainPlatformName /> and the projects in this workspace are listed below.
+   Notice that the name of the current workspace (here: `my-team`) is displayed next to <MainPlatformName /> and the projects in this workspace are listed below.
       
    ::: tip
    If you cannot see the **Browser** panel, ensure it's enabled under **View (top-level menu) > Toolbars**.
