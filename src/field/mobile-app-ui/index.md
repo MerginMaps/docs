@@ -29,7 +29,7 @@ When signed in, you will see the overview of your profile and storage use in **M
 ![Mergin Maps account details](./input-my-account.jpg "Mergin Maps account details")
 
  Here you can:
-- **Switch workspace** to switch between your [workspaces](../manage/workspaces/)
+- **Switch workspace** to switch between your [workspaces](../../manage/workspaces/)
 - click on **Subscriptions** to go to <AppDomainNameLink /> where you can manage your subscriptions
 - **Sign out** to switch to a different account
 - **Delete** your account within the app
@@ -52,7 +52,7 @@ Tapping the GPS accuracy tab opens the GPS info panel:
 - **Longitude, Latitude**: current position
 - **X, Y**: current position in project's coordinate reference system
 - **Horizontal** and **Vertical accuracy** of the GPS position
-- **Altitude**: ellipsoidal height if internal GPS is used. [External GPS](./external_gps/) devices usually return orthometric heights (ellipsoid with the geoid separation applied).
+- **Altitude**: ellipsoidal height if internal GPS is used. [External GPS](../external_gps/) devices usually return orthometric heights (ellipsoid with the geoid separation applied).
 - **Satellites (in use/view)**: number of satellites
 - **Speed**
 - **Last fix**: time of the last received GPS position
@@ -60,7 +60,7 @@ Tapping the GPS accuracy tab opens the GPS info panel:
 ![GPS info panel](./input-gps-info.jpg "GPS info panel") 
 
 ## Record
-**Record tab** is where you can [survey new features](./input_features/). 
+**Record tab** is where you can [survey new features](../input_features/). 
 ![Mergin Maps mobile app Record tab](./input-record.jpg "Mergin Maps mobile app Record tab") 
 
 The active layer currently used for survey is displayed above the bottom navigation panel. Tapping on it opens a list of all editable layers in the project.
@@ -88,7 +88,7 @@ Pressing and holding the sync button opens the **Project status** window where y
 
 - **Zoom to project**: a shortcut to zoom to the extent of all visible layers within the project. The project extent can be set during [project preparation in QGIS](../../gis/features/#project-extent).
 - **Local changes**: see changes yet to be synchronised
-- [**Layers**](./layers/): manage the visibility of specific layers, see layers legend, browse features in the layers
+- [**Layers**](../layers/): manage the visibility of specific layers, see layers legend, browse features in the layers
 - [**Map themes**](../../gis/setup_themes/): a list of map themes set up in a <MainPlatformName /> project in QGIS
 - **Settings**: [GPS](#gps-settings) and [recording](#streaming-mode-and-recording-settings) settings along with references to help, privacy policy, terms of service and [diagnostic log](../../misc/troubleshoot/#diagnostic-log-on-mergin-maps-mobile-app)
    ![Mergin Maps mobile app Settings](./input-settings-2.jpg "Mergin Maps mobile app Settings")
@@ -101,7 +101,7 @@ Pressing and holding the sync button opens the **Project status** window where y
    - red: no GPS position fix available
 - **Accuracy threshold**: value used to display GPS accuracy colours
 - **Show accuracy warning**: if toggled on, a warning will be displayed when recording while the accuracy is lower than **Accuracy threshold**
-- **Select GPS receiver**: option to switch between internal GPS and external GPS receiver connected via Bluetooth. See [External GPS](./external_gps/) for more details.
+- **Select GPS receiver**: option to switch between internal GPS and external GPS receiver connected via Bluetooth. See [External GPS](../external_gps/) for more details.
 - **GPS antenna height**: the height of a GPS device 
 
 ![GPS Settings](./input-gps-settings.jpg "GPS settings")
@@ -110,7 +110,7 @@ Pressing and holding the sync button opens the **Project status** window where y
 **Streaming mode** can be used when surveying lines or polygons to capture vertices based on the GPS location.
 - **Interval type**: the type of interval in streaming mode, can be set to *Time elapsed* or *Distance travelled* .
 - **Line rec. interval** the interval of recording vertices in **Streaming mode**
-- **Reuse last value option** if used, last entered values of selected attributes will be automatically filled in when creating a new feature. See  [How to reuse last value option](./reuse-last-values/) for more details.
+- **Reuse last value option** if used, last entered values of selected attributes will be automatically filled in when creating a new feature. See  [How to reuse last value option](../reuse-last-values/) for more details.
 - **Automatically sync changes** if used, local changes will be synchronised automatically.
 
 ![Recording Settings](./input-recording-settings.jpg "Recording settings")
