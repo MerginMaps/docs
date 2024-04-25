@@ -96,7 +96,7 @@ module.exports = {
                 '/field/tracking/',
                 '/field/autosync/',
                 '/field/layers/',
-                '/field/input_features',
+                '/field/mobile-features/',
                 '/field/reuse-last-values/',
                 '/field/stake-out/',
                 '/field/broken-project/',

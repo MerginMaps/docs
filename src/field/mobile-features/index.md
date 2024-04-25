@@ -3,22 +3,22 @@
 [[toc]]
 
 ::: tip
-If you are new to <MobileAppName />, follow our [tutorials](../tutorials/capturing-first-data/) to get familiar with the app.
+If you are new to <MobileAppName />, follow our [tutorials](../../tutorials/capturing-first-data/) to get familiar with the app.
 :::
 
-Adding, editing and deleting features in the <MobileAppName /> is possible in <MainPlatformNameLink /> projects where you have [write permission](../manage/permissions/).
+Adding, editing and deleting features in the <MobileAppName /> is possible in <MainPlatformNameLink /> projects where you have [write permission](../../manage/permissions/).
 
-To be able to transfer your data to your mobile/tablet device, share your project and track changes, you will need to [sign up to Mergin Maps](../setup/sign-up-to-mergin-maps/).
+To be able to transfer your data to your mobile/tablet device, share your project and track changes, you will need to [sign up to Mergin Maps](../../setup/sign-up-to-mergin-maps/).
 
 ## Adding features
-In the <MobileAppNameShort />, open a [project](./mobile-app-ui/#projects) you want to use.
+In the <MobileAppNameShort />, open a [project](../mobile-app-ui/#projects) you want to use.
 
 To survey new features, tap the **Record** button on the bottom panel to enter the **recording mode**.
 
 ![Mergin Maps mobile app Record tab](./input-record.jpg "Mergin Maps mobile app Record tab") 
 
 ::: warning
-If current [GPS accuracy](./gps_accuracy/) falls below the accuracy threshold, you will get a warning about low position accuracy. Accuracy thresholds can be changed in [Settings](./mobile-app-ui/#gps-settings).
+If current [GPS accuracy](../gps_accuracy/) falls below the accuracy threshold, you will get a warning about low position accuracy. Accuracy thresholds can be changed in [Settings](../mobile-app-ui/#gps-settings).
 :::
 
 The crosshairs you will see on your map will be used as the recorded location. You can change the position of your point by pinching and dragging the background map. If you want to recenter the map to your current position, tap the **GPS** button.
@@ -29,7 +29,7 @@ Surveyed features are added to the active layer, which is shown just above the b
 Once the geometry of a feature is recorded, a form will open and you will be able to record the values of attributes. 
 
 :::tip
-Attribute forms can be set up in QGIS. For more details, see [Setting Up Form Widgets](../layer/settingup_forms/) and [Advanced Form Configuration](../layer/settingup_forms_settings/).
+Attribute forms can be set up in QGIS. For more details, see [Setting Up Form Widgets](../../layer/settingup_forms/) and [Advanced Form Configuration](../../layer/settingup_forms_settings/).
 :::
 
 ### Capture points
@@ -57,14 +57,14 @@ To turn on the streaming mode, long press the **GPS** button. To turn it off, lo
 
 Once you are finished, tap **Done**. If you are capturing an area, the shape will be automatically closed by connecting the last and the first vertex.
 
-You can change how often you want to capture a vertex in **Line rec. interval** in [**Settings**](./mobile-app-ui/#streaming-mode-and-recording-settings). The interval can be defined as time elapsed in seconds or as distance travelled in metres.
+You can change how often you want to capture a vertex in **Line rec. interval** in [**Settings**](../mobile-app-ui/#streaming-mode-and-recording-settings). The interval can be defined as time elapsed in seconds or as distance travelled in metres.
 
 :::tip
 The recording interval can be defined also in metres as distance travelled.
 :::
 
 ### Add non-spatial features
-[Non-spatial features](../layer/working_with_nonspatial_data/) can also be added using <MobileAppName />. If you are using a non-spatial table for [value relations](../layer/settingup_forms/#value-relation) you can add and edit values in the app.
+[Non-spatial features](../../layer/working_with_nonspatial_data/) can also be added using <MobileAppName />. If you are using a non-spatial table for [value relations](../../layer/settingup_forms/#value-relation) you can add and edit values in the app.
 
 1. Tap the **More** button and navigate to **Layers**
    ![Mergin Maps mobile app Layers panel](./input-layers.jpg "Mergin Maps mobile app Layers panel")
@@ -75,7 +75,7 @@ The recording interval can be defined also in metres as distance travelled.
 3. Fill in the attributes.
 
 ## Editing features
-Spatial and non-spatial features can be browsed, edited and deleted in the [Layers](./layers/) panel in <MobileAppName />. Tap on the **Layers** in the **More** tab and select a layer to see the features it contains. 
+Spatial and non-spatial features can be browsed, edited and deleted in the [Layers](../layers/) panel in <MobileAppName />. Tap on the **Layers** in the **More** tab and select a layer to see the features it contains. 
 ![Mergin Maps mobile app Layers panel](./input-layers.jpg "Mergin Maps mobile app Layers panel")
 
 Spatial features can be selected also on the map. Tap on a feature and press the edit button. Now you can change the attributes in the form. To edit the geometry of a feature, tap **Edit geometry** in the bottom panel.
@@ -117,10 +117,10 @@ To split geometry of a feature:
 
 ## Snapping features
 
-Snapping can be enabled in your <MainPlatformName /> project to make the field survey easier. [How to Set Up Snapping](../gis/snapping/) will guide you through the snapping options.
+Snapping can be enabled in your <MainPlatformName /> project to make the field survey easier. [How to Set Up Snapping](../../gis/snapping/) will guide you through the snapping options.
 
 If snapping is enabled, the crosshairs will turn purple and snap to vertices (left) or segments (right) of existing features when capturing new features or editing existing features.
-![Snapping Vertices and Segments in Mergin Maps mobile app](../gis/snapping/input_basic_snapping.jpg "Snapping Vertices and Segments in Mergin Maps mobile app")
+![Snapping Vertices and Segments in Mergin Maps mobile app](../../gis/snapping/input_basic_snapping.jpg "Snapping Vertices and Segments in Mergin Maps mobile app")
 
 ## Deleting features
 If you want to delete the feature, tap on it and press the edit button. Here you have the option to **Delete** the selected feature.
@@ -130,12 +130,12 @@ If you want to delete the feature, tap on it and press the edit button. Here you
 ## Synchronise changes
 Don't forget to upload your changes to <MainPlatformNameLink />!
 
-Synchronisation in <MobileAppName /> can be done automatically or manually by pressing the sync button. For more details visit [Synchronisation in Input](./autosync/).
+Synchronisation in <MobileAppName /> can be done automatically or manually by pressing the sync button. For more details visit [Synchronisation in Input](../autosync/).
 
 ![Synchronise changes manually](./input-autosync.jpg "Synchronise changes manually")
 
 :::tip
-[Behind Data Synchronisation](../manage/synchronisation/) contains more information about the synchronisation process in general.
+[Behind Data Synchronisation](../../manage/synchronisation/) contains more information about the synchronisation process in general.
 
-If needed, some files (for example photos) can be excluded from the synchronisation. You can read more about this option in [Selective Synchronisation](../manage/selective_sync/).
+If needed, some files (for example photos) can be excluded from the synchronisation. You can read more about this option in [Selective Synchronisation](../../manage/selective_sync/).
 :::
