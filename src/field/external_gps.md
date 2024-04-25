@@ -22,7 +22,7 @@ If you have a device that can receive signals from other GNSS (such as BeiDou, G
 ## GPS antenna height
 External GPS antenna is often used on a surveying pole. To obtain the correct ground elevation, it is necessary to subtract the height of GPS sensor above the ground from the measured elevation.
 
-The height of the GPS antenna can be set in [<MobileAppName /> Settings](./input_ui/#gps-settings). If GPS antenna height is set to a non-zero value, it is also displayed next to the GPS accuracy.
+The height of the GPS antenna can be set in [<MobileAppName /> Settings](./mobile-app-ui/#gps-settings). If GPS antenna height is set to a non-zero value, it is also displayed next to the GPS accuracy.
 
 ![GPS antenna height setup](./input-gps-height.jpg "GPS antenna height setup")
 

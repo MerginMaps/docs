@@ -11,14 +11,14 @@ Adding, editing and deleting features in the <MobileAppName /> is possible in <M
 To be able to transfer your data to your mobile/tablet device, share your project and track changes, you will need to [sign up to Mergin Maps](../setup/sign-up-to-mergin-maps/).
 
 ## Adding features
-In the <MobileAppNameShort />, open a [project](./input_ui/#projects) you want to use.
+In the <MobileAppNameShort />, open a [project](./mobile-app-ui/#projects) you want to use.
 
 To survey new features, tap the **Record** button on the bottom panel to enter the **recording mode**.
 
 ![Mergin Maps mobile app Record tab](./input-record.jpg "Mergin Maps mobile app Record tab") 
 
 ::: warning
-If current [GPS accuracy](./gps_accuracy/) falls below the accuracy threshold, you will get a warning about low position accuracy. Accuracy thresholds can be changed in [Settings](./input_ui/#gps-settings).
+If current [GPS accuracy](./gps_accuracy/) falls below the accuracy threshold, you will get a warning about low position accuracy. Accuracy thresholds can be changed in [Settings](./mobile-app-ui/#gps-settings).
 :::
 
 The crosshairs you will see on your map will be used as the recorded location. You can change the position of your point by pinching and dragging the background map. If you want to recenter the map to your current position, tap the **GPS** button.
@@ -57,7 +57,7 @@ To turn on the streaming mode, long press the **GPS** button. To turn it off, lo
 
 Once you are finished, tap **Done**. If you are capturing an area, the shape will be automatically closed by connecting the last and the first vertex.
 
-You can change how often you want to capture a vertex in **Line rec. interval** in [**Settings**](./input_ui/#streaming-mode-and-recording-settings). The interval can be defined as time elapsed in seconds or as distance travelled in metres.
+You can change how often you want to capture a vertex in **Line rec. interval** in [**Settings**](./mobile-app-ui/#streaming-mode-and-recording-settings). The interval can be defined as time elapsed in seconds or as distance travelled in metres.
 
 :::tip
 The recording interval can be defined also in metres as distance travelled.
