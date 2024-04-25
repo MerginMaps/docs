@@ -4,9 +4,9 @@
 
 [[toc]]
 
-External GPS receivers can be connected to your mobile device via Bluetooth and used in <MobileAppName /> to achieve higher [GPS accuracy](./gps_accuracy/). 
+External GPS receivers can be connected to your mobile device via Bluetooth and used in <MobileAppName /> to achieve higher [GPS accuracy](../gps_accuracy/). 
 
-There are several [extra position variables](../layer/position_variables/) that can be useful to record when doing the survey with external GPS, such as the GPS antenna height, GPS device name as well as metrics like horizontal, vertical or position dilution of precision (HDOP, VDOP, PDOP).
+There are several [extra position variables](../../layer/position_variables/) that can be useful to record when doing the survey with external GPS, such as the GPS antenna height, GPS device name as well as metrics like horizontal, vertical or position dilution of precision (HDOP, VDOP, PDOP).
 
 Note that external GPS devices usually return orthometric heights (ellipsoid with the geoid separation applied).
 
@@ -22,12 +22,12 @@ If you have a device that can receive signals from other GNSS (such as BeiDou, G
 ## GPS antenna height
 External GPS antenna is often used on a surveying pole. To obtain the correct ground elevation, it is necessary to subtract the height of GPS sensor above the ground from the measured elevation.
 
-The height of the GPS antenna can be set in [<MobileAppName /> Settings](./mobile-app-ui/#gps-settings). If GPS antenna height is set to a non-zero value, it is also displayed next to the GPS accuracy.
+The height of the GPS antenna can be set in [<MobileAppName /> Settings](../mobile-app-ui/#gps-settings). If GPS antenna height is set to a non-zero value, it is also displayed next to the GPS accuracy.
 
-![GPS antenna height setup](./input-gps-height.jpg "GPS antenna height setup")
+![GPS antenna height setup](../mobile-app-ui/input-gps-height.jpg "GPS antenna height setup")
 
 :::tip
-GPS antenna height can be recorded during the survey by using the [extra position variable](../layer/position_variables/) `@position_gps_antenna_height` as a [default value](../layer/settingup_forms_settings/#default-values).
+GPS antenna height can be recorded during the survey by using the [extra position variable](../../layer/position_variables/) `@position_gps_antenna_height` as a [default value](../../layer/settingup_forms_settings/#default-values).
 :::
 
 ## External GPS on Android

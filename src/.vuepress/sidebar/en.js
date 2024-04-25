@@ -91,8 +91,8 @@ module.exports = {
             children: [
                 '/field/mobile-app-ui/',
                 '/field/offline-use/',
-                '/field/external_gps',
-                '/field/gps_accuracy',
+                '/field/external_gps/',
+                '/field/gps_accuracy/',
                 '/field/tracking/',
                 '/field/autosync/',
                 '/field/layers/',
