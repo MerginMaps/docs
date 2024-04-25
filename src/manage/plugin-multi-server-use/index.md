@@ -45,7 +45,7 @@ To configure a custom <MainPlatformName /> server in <MobileAppName />:
 
 1. Open <MobileAppName /> and navigate to the login page. Make sure to sign out.
  
-   ![Mergin Maps mobile app Login](../../field/input-sign-in.jpg "Mergin Maps mobile app Login")
+   ![Mergin Maps mobile app Login](../../field/mobile-app-ui/input-sign-in.jpg "Mergin Maps mobile app Login")
 
 2. Tap on the edit button next to the current server URL.
 
