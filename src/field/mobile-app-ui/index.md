@@ -60,14 +60,14 @@ Tapping the GPS accuracy tab opens the GPS info panel:
 ![GPS info panel](./input-gps-info.jpg "GPS info panel") 
 
 ## Record
-**Record tab** is where you can [survey new features](../input_features/). 
+**Record tab** is where you can [survey new features](../mobile-features/). 
 ![Mergin Maps mobile app Record tab](./input-record.jpg "Mergin Maps mobile app Record tab") 
 
 The active layer currently used for survey is displayed above the bottom navigation panel. Tapping on it opens a list of all editable layers in the project.
 ![Active survey layer](./input-active-layer.jpg "Active survey layer")
 
 :::tip
-[How to Add, Edit, Delete Features](../input_features) will show you how to capture points, lines and polygons in <MobileAppName /> as well as how to edit their geometry and attributes.
+[How to Add, Edit, Delete Features](../mobile-features) will show you how to capture points, lines and polygons in <MobileAppName /> as well as how to edit their geometry and attributes.
 :::
 
 ## Synchronisation
