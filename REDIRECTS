@@ -91,7 +91,7 @@ https://help.inputapp.io/howto/settingup_forms_valuemap	https://merginmaps.com/d
 https://help.inputapp.io/howto/settingup_forms_valuerelation	https://merginmaps.com/docs/layer/settingup_forms/
 https://help.inputapp.io/howto/setup_themes	https://merginmaps.com/docs/gis/setup_themes/
 https://help.inputapp.io/howto/working_with_nonspatial_data	https://merginmaps.com/docs/layer/working_with_nonspatial_data/
-https://help.inputapp.io/input_ui	https://merginmaps.com/docs/field/input_ui/
+https://help.inputapp.io/input_ui	https://merginmaps.com/docs/field/mobile-app-ui/
 https://help.inputapp.io/licensing	https://merginmaps.com/docs/misc/licensing/
 https://help.inputapp.io/privacy	N/A -- handled by https://merginmaps.com/privacy-policy/
 https://help.inputapp.io/quick-start	https://merginmaps.com/docs/tutorials/capturing-first-data/
@@ -116,6 +116,7 @@ https://merginmaps.com/docs/concepts/users-and-orgs/	https://merginmaps.com/docs
 https://merginmaps.com/docs/dev/mergince/	https://merginmaps.com/docs/server/
 https://merginmaps.com/docs/dev/merginmaps-ee/	https://merginmaps.com/docs/server/
 https://merginmaps.com/docs/fieldwork/gps_accuracy/	https://merginmaps.com/docs/field/gps_accuracy/
+https://merginmaps.com/docs/field/input_ui/	https://merginmaps.com/docs/field/mobile-app-ui/
 https://merginmaps.com/docs/gis/enable_browsing/	https://merginmaps.com/docs/gis/search_data/
 https://merginmaps.com/docs/howto/attach-multiple-photos-to-features/	https://merginmaps.com/docs/layer/attach-multiple-photos-to-features/
 https://merginmaps.com/docs/howto/contribute/	https://merginmaps.com/docs/misc/contribute/
@@ -128,7 +129,7 @@ https://merginmaps.com/docs/howto/exif_metadata/	https://merginmaps.com/docs/lay
 https://merginmaps.com/docs/howto/external_gps/	https://merginmaps.com/docs/field/external_gps/
 https://merginmaps.com/docs/howto/gps_accuracy/	https://merginmaps.com/docs/field/gps_accuracy/
 https://merginmaps.com/docs/howto/input_features/	https://merginmaps.com/docs/field/input_features/
-https://merginmaps.com/docs/howto/input_ui/	https://merginmaps.com/docs/field/input_ui/
+https://merginmaps.com/docs/howto/input_ui/	https://merginmaps.com/docs/field/mobile-app-ui/
 https://merginmaps.com/docs/howto/input-tour/	https://merginmaps.com/docs/tutorials/capturing-first-data/
 https://merginmaps.com/docs/howto/install-mergin-maps-plugin-for-qgis/	https://merginmaps.com/docs/setup/install-mergin-maps-plugin-for-qgis/
 https://merginmaps.com/docs/howto/install-qgis/	https://merginmaps.com/docs/setup/install-qgis/

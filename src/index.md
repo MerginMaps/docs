@@ -80,7 +80,7 @@ The ecosystem consist of various components:
 - [Working with Non-spatial Tables](./layer/working_with_nonspatial_data/)
 
 ## Fieldwork Tips
-- [<MobileAppName /> Interface](./field/input_ui/)
+- [<MobileAppName /> Interface](./field/mobile-app-ui/)
 - [Offline Use of <MobileAppName />](./field/external_gps/)
 - [External GPS](./field/external_gps/)
 - [GPS Accuracy](./field/gps_accuracy/)

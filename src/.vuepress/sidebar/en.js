@@ -89,7 +89,7 @@ module.exports = {
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
-                '/field/input_ui',
+                '/field/mobile-app-ui/',
                 '/field/offline-use/',
                 '/field/external_gps',
                 '/field/gps_accuracy',
