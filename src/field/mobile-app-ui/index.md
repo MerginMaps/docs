@@ -3,7 +3,7 @@
 
 Below is a description of various items within the user interface of <MobileAppName />.
 
-![Mergin Maps mobile app user interface](./input-gui.jpg "Mergin Maps mobile app user interface")
+![Mergin Maps mobile app user interface](./mobile-app-ui.jpg "Mergin Maps mobile app user interface")
 
 The map can be moved by dragging around and zoomed in/out by pinching open/close. Tapping on a feature displays the attributes form.
 
