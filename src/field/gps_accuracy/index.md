@@ -9,7 +9,7 @@ When doing the survey, it is essential to be aware of the limitations of your GP
 
 A warning will appear, if your accuracy is outside the GPS accuracy threshold. To get rid of this warning, you can increase your **Accuracy threshold** or turn off these warnings in [Settings](../mobile-app-ui/#gps-settings).
 
-Tapping the GPS accuracy tab opens the [GPS info panel](../mobile-app-ui/#gps), which contains information about the horizontal and vertical accuracy, as well as number of satellites in use.
+Tapping the GPS accuracy tab opens the [GPS info panel](../mobile-app-ui/#current-position-and-gps-info), which contains information about the horizontal and vertical accuracy, as well as number of satellites in use.
 ![GPS info panel](../mobile-app-ui/mobile-app-gps-info.jpg "GPS info panel")
 
 If you'd like to have higher accuracy, you can wait for your device to acquire a better GPS signal. For precise measurements, you may need to connect your device to an [external GPS](../external_gps.md).
