@@ -1,7 +1,7 @@
 module.exports = {
       '/': [
         {
-            title: 'Get started',   // required
+            title: 'Get Started',   // required
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
