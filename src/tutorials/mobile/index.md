@@ -57,7 +57,7 @@ The current value of GPS accuracy, traffic light dot and accuracy bubble is disp
    ![Open settings in Mergin Maps mobile app](./merginmaps-mobile-open-settings.jpg "Open settings in Mergin Maps mobile app")
 
 3. **Set Accuracy** threshold to a sensible value
-   Typical values could range between 2m and 25m and typically depend on the accuracy of your mobile device and your use case. Higher accuracy can be achieved by using [external GPS antenna](../../field/external_gps/).
+   Typical values could range between 2m and 25m and typically depend on the accuracy of your mobile device and your use case. Higher accuracy can be achieved by using [external GPS antenna](../../field/external-gps/).
    ![Accuracy threshold setup in Settings](./merginmaps-mobile-setting-accuracy-threshold.jpg "Accuracy threshold setup in Settings")
 
    Watch the traffic light change colour as you change the accuracy threshold.

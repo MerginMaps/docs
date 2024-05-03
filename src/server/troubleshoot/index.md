@@ -1,11 +1,11 @@
 # Troubleshoot custom servers
 
-This article will help you debug and resolve issues in your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink /> deployment. If you use the main SaaS <DashboardLink desc="Mergin Maps Server"/>, it is always up-to-date and managed by <MainPlatformName /> team, so report your problems to us as [described here](../../misc/troubleshoot/index.md). Read more about server platforms in [overview article](../index.md).
+This article will help you debug and resolve issues in your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink /> deployment. If you use the main SaaS <DashboardLink desc="Mergin Maps Server"/>, it is always up-to-date and managed by <MainPlatformName /> team, so report your problems to us as [described here](../../misc/troubleshooting/). Read more about server platforms in [overview article](../index.md).
 
 [[toc]]
 
 :::tip
-Haven't found a solution to your issue? Look at your other [troubleshooting options](../../misc/troubleshoot/index.md).
+Haven't found a solution to your issue? Look at your other [troubleshooting options](../../misc/troubleshooting/).
 :::
 
 ## Server is not properly configured

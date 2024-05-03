@@ -84,11 +84,11 @@ In the left bottom corner of the screen, there is a **GPS** button that displays
 Tapping the GPS accuracy button opens the GPS info panel:
 ![GPS info panel](./mobile-app-gps-info.jpg "GPS info panel") 
 
-- **Source**: internal GPS of the mobile device or [external](../external_gps/) GPS receiver connected via Bluetooth
+- **Source**: internal GPS of the mobile device or [external](../external-gps/) GPS receiver connected via Bluetooth
 - **Longitude, Latitude**: current position
 - **X, Y**: current position in project's coordinate reference system
 - **Horizontal** and **Vertical accuracy** of the GPS position
-- **Altitude**: ellipsoidal height if internal GPS is used. [External GPS](../external_gps/) devices usually return orthometric heights (ellipsoid with the geoid separation applied).
+- **Altitude**: ellipsoidal height if internal GPS is used. [External GPS](../external-gps/) devices usually return orthometric heights (ellipsoid with the geoid separation applied).
 - **Satellites (in use/view)**: number of satellites
 - **Speed**
 - **Last fix**: time of the last received GPS position
@@ -135,12 +135,12 @@ The **More** button opens a list of additional options
 - [**Position tracking**](../tracking/): to start tracking of your tracks during the field survey
 - **Local changes**: the overview of your local changes to be synchronised
    ![](./mobile-app-local-changes.jpg)
-- **Settings**: [GPS settings](#gps-settings), [streaming mode and recording settings](#streaming-mode-and-recording-settings), and general references to information about the <MobileAppNameShort />, changelog, help, privacy policy, terms of service and [diagnostic log](../../misc/troubleshoot/#diagnostic-log-on-mergin-maps-mobile-app)
+- **Settings**: [GPS settings](#gps-settings), [streaming mode and recording settings](#streaming-mode-and-recording-settings), and general references to information about the <MobileAppNameShort />, changelog, help, privacy policy, terms of service and [diagnostic log](../../misc/troubleshooting/#diagnostic-log-on-mergin-maps-mobile-app)
    ![Mergin Maps mobile app Settings](./mobile-app-settings.jpg "Mergin Maps mobile app Settings")
    
 #### GPS settings
 - **GPS accuracy threshold**: value used to change the colour of GPS accuracy indicator to yellow
-- **Manage GPS receivers**: option to switch between internal GPS and external GPS receiver connected via Bluetooth. See [External GPS](../external_gps/) for more details.
+- **Manage GPS receivers**: option to switch between internal GPS and external GPS receiver connected via Bluetooth. See [External GPS](../external-gps/) for more details.
 - **GPS antenna height**: option to enter the height of a GPS antenna (e.g. when a surveying pole is used)
 
 ![Mergin Maps mobile app GPS Settings](./mobile-app-gps-settings.jpg "Mergin Maps mobile app GPS settings")

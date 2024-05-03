@@ -5,7 +5,7 @@ Our mobile app was redesigned. We are in the process of updating this content to
 :::
 
 Your GPS accuracy depends on several parameters, such as:
-- Your GPS device. [External GPS](../external_gps/) may be used to achieve higher accuracy.
+- Your GPS device. [External GPS](../external-gps/) may be used to achieve higher accuracy.
 - View of the clear sky that affects the number of satellites visible from your position 
 
 When doing the survey, it is essential to be aware of the limitations of your GPS accuracy at the time of recording. Current GPS accuracy is displayed above the bottom navigation panel in <MobileAppName />. Also, there is a circle with the size of the accuracy value around the position marker.
@@ -16,7 +16,7 @@ A warning will appear, if your accuracy is outside the GPS accuracy threshold. T
 Tapping the GPS accuracy tab opens the [GPS info panel](../mobile-app-ui/#current-position-and-gps-info), which contains information about the horizontal and vertical accuracy, as well as number of satellites in use.
 ![GPS info panel](../mobile-app-ui/mobile-app-gps-info.jpg "GPS info panel")
 
-If you'd like to have higher accuracy, you can wait for your device to acquire a better GPS signal. For precise measurements, you may need to connect your device to an [external GPS](../external_gps.md).
+If you'd like to have higher accuracy, you can wait for your device to acquire a better GPS signal. For precise measurements, you may need to connect your device to an [external GPS](../external-gps/).
 
 :::tip
 When assessing the overall quality of the survey, it may be beneficial to record some [extra position variables](../../layer/position_variables/), such as type and name of the used GPS device, the horizontal and vertical accuracy or the horizontal, vertical or position dilution of precision (HDOP, VDOP, PDOP). 

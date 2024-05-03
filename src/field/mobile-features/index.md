@@ -22,7 +22,7 @@ To survey new features, tap the **Record** button on the bottom panel to enter t
 ![Mergin Maps mobile app Record tab](./input-record.jpg "Mergin Maps mobile app Record tab") 
 
 ::: warning
-If current [GPS accuracy](../gps_accuracy/) falls below the accuracy threshold, you will get a warning about low position accuracy. Accuracy thresholds can be changed in [Settings](../mobile-app-ui/#gps-settings).
+If current [GPS accuracy](../gps-accuracy/) falls below the accuracy threshold, you will get a warning about low position accuracy. Accuracy thresholds can be changed in [Settings](../mobile-app-ui/#gps-settings).
 :::
 
 The crosshairs you will see on your map will be used as the recorded location. You can change the position of your point by pinching and dragging the background map. If you want to recenter the map to your current position, tap the **GPS** button.

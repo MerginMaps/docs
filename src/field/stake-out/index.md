@@ -12,7 +12,7 @@ There are two stake out modes:
 - short navigation mode
 
 :::tip
-Accurate stake out in short navigation mode may require an [external GPS receiver](../external_gps/) with GPS corrections.
+Accurate stake out in short navigation mode may require an [external GPS receiver](../external-gps/) with GPS corrections.
 :::
 
 ## Stake out in Mergin Maps mobile app

@@ -91,8 +91,8 @@ module.exports = {
             children: [
                 '/field/mobile-app-ui/',
                 '/field/offline-use/',
-                '/field/external_gps/',
-                '/field/gps_accuracy/',
+                '/field/external-gps/',
+                '/field/gps-accuracy/',
                 '/field/tracking/',
                 '/field/autosync/',
                 '/field/layers/',
@@ -142,7 +142,7 @@ module.exports = {
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
                 '/misc/licensing',
-                '/misc/troubleshoot/',
+                '/misc/troubleshooting/',
                 '/misc/contribute',
                 '/misc/write-docs/'
             ]

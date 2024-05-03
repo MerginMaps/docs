@@ -52,7 +52,7 @@ Layers that were **kept as is** are not stored in the project folder.
 ![Mergin Maps project folder content](./project-folder.jpg "Mergin Maps project folder content")
 
 There are also some extra folders and files:
-- **`.mergin`** folder contains the `Geodiff` files that are used to keep the [project history and versions](../project-details/) and [diagnostic log](../../misc/troubleshoot/#diagnostic-logs) in a file named `client-log.txt`
+- **`.mergin`** folder contains the `Geodiff` files that are used to keep the [project history and versions](../project-details/) and [diagnostic log](../../misc/troubleshooting/#diagnostic-logs) in a file named `client-log.txt`
 - **`proj`** folder contains, if needed, [custom projections](../../gis/proj/) files
 - [conflict files](../missing-data/#there-are-conflict-files-in-the-folder) may appear if changes could not be properly synchronised
 ![Mergin Maps project folder history log projection conflict files](./folder-tech-files.jpg "Mergin Maps project folder content")

@@ -38,7 +38,7 @@ If you don't see any conflict files in your folder, try to download them manuall
 ### Manual data transfer (Android)
 Manual data transfer from an Android device can be done by connecting your device to a computer and copying data files to/from the device. Once your Android phone or tablet is recognised by the operating system after connecting it using USB cable, you can use file browser to copy files. 
 
-You can find the path to your <MainPlatformName /> project folder in the [Diagnostic Log](../../misc/troubleshoot/#diagnostic-log-on-mergin-maps-mobile-app). On Android devices, the path is something like `/Android/data/uk.co.lutraconsulting/files/projects`.
+You can find the path to your <MainPlatformName /> project folder in the [Diagnostic Log](../../misc/troubleshooting/#diagnostic-log-on-mergin-maps-mobile-app). On Android devices, the path is something like `/Android/data/uk.co.lutraconsulting/files/projects`.
 
 This folder is accessible only from a computer, so you might not see it in your mobile device.
 
@@ -71,6 +71,6 @@ Here are the steps to transfer the data from iPhone/iPad to a Windows PC.
 9. Select a path to save the folder on your computer.
 
 ## Next steps
-If you were not able to solve your problem, you can contact the [support](../../misc//troubleshoot/#support) or get [diagnostic logs](../../misc/troubleshoot/#diagnostic-logs) to inspect the issues thoroughly.
+If you were not able to solve your problem, you can contact the [support](../../misc//troubleshooting/#support) or get [diagnostic logs](../../misc/troubleshooting/#diagnostic-logs) to inspect the issues thoroughly.
 
 <CommunityJoin />

@@ -81,9 +81,9 @@ The ecosystem consist of various components:
 
 ## Fieldwork Tips
 - [<MobileAppName /> Interface](./field/mobile-app-ui/)
-- [Offline Use of <MobileAppName />](./field/external_gps/)
-- [External GPS](./field/external_gps/)
-- [GPS Accuracy](./field/gps_accuracy/)
+- [Offline Use of <MobileAppName />](./field/external-gps/)
+- [External GPS](./field/external-gps/)
+- [GPS Accuracy](./field/gps-accuracy/)
 - [Position Tracking](./field/tracking/)
 - [Synchronisation in <MobileAppName />](./field/autosync/)
 - [Layers in <MobileAppName />](./field/layers/)
@@ -112,7 +112,7 @@ The ecosystem consist of various components:
 
 ## Support & Legal
 - [Licensing](./misc/licensing/)
-- [Troubleshoot](./misc/troubleshoot/)
+- [Troubleshoot](./misc/troubleshooting/)
 - [Contribute](./misc/contribute/)
 - [Write Documentation](./misc/write-docs/index.md)
 

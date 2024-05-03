@@ -25,7 +25,7 @@ https://help.cloudmergin.com/plugin-clone-project	https://merginmaps.com/docs/ma
 https://help.cloudmergin.com/plugin-delete-project	https://merginmaps.com/docs/manage/project-advanced/
 https://help.cloudmergin.com/plugin-download-project	https://merginmaps.com/docs/manage/plugin/
 https://help.cloudmergin.com/plugin-installation	https://merginmaps.com/docs/setup/install-mergin-maps-plugin-for-qgis/
-https://help.cloudmergin.com/plugin-logs	https://merginmaps.com/docs/misc/troubleshoot/
+https://help.cloudmergin.com/plugin-logs	https://merginmaps.com/docs/misc/troubleshooting/
 https://help.cloudmergin.com/plugin-new-project	https://merginmaps.com/docs/manage/create-project/
 https://help.cloudmergin.com/plugin-sync-project	https://merginmaps.com/docs/manage/plugin/
 https://help.cloudmergin.com/plugin-variables	https://merginmaps.com/docs/layer/plugin-variables/
@@ -37,7 +37,7 @@ https://help.cloudmergin.com/registration	https://merginmaps.com/docs/setup/sign
 https://help.cloudmergin.com/registration.html	N/A - covered by non-html version
 https://help.cloudmergin.com/sharing-project	https://merginmaps.com/docs/manage/project-advanced/
 https://help.cloudmergin.com/subscriptions	https://merginmaps.com/docs/manage/subscriptions/
-https://help.cloudmergin.com/support	https://merginmaps.com/docs/misc/troubleshoot/
+https://help.cloudmergin.com/support	https://merginmaps.com/docs/misc/troubleshooting/
 https://help.cloudmergin.com/tutorials/data-sync	https://merginmaps.com/docs/tutorials/creating-a-project-in-qgis/
 https://help.cloudmergin.com/tutorials/data-sync.html	N/A - covered by non-html version
 https://help.cloudmergin.com/tutorials/data-transfer	https://merginmaps.com/docs/tutorials/creating-a-project-in-qgis/
@@ -59,8 +59,8 @@ https://help.inputapp.io/howto/datum_shift	https://merginmaps.com/docs/gis/proje
 https://help.inputapp.io/howto/enable_browsing	https://merginmaps.com/docs/gis/search_data/
 https://help.inputapp.io/howto/enable_digitizing	https://merginmaps.com/docs/gis/enable_digitising/
 https://help.inputapp.io/howto/exif_metadata	https://merginmaps.com/docs/layer/exif_metadata/
-https://help.inputapp.io/howto/external_gps	https://merginmaps.com/docs/field/external_gps/
-https://help.inputapp.io/howto/gps_accuracy	https://merginmaps.com/docs/field/gps_accuracy/
+https://help.inputapp.io/howto/external_gps	https://merginmaps.com/docs/field/external-gps/
+https://help.inputapp.io/howto/gps_accuracy	https://merginmaps.com/docs/field/gps-accuracy/
 https://help.inputapp.io/howto/package_qgis_project	https://merginmaps.com/docs/manage/create-project/
 https://help.inputapp.io/howto/position_variables	https://merginmaps.com/docs/layer/position_variables/
 https://help.inputapp.io/howto/proj	https://merginmaps.com/docs/gis/proj/
@@ -103,7 +103,7 @@ https://help.inputapp.io/quick-start/sync-changes	https://merginmaps.com/docs/tu
 https://help.inputapp.io/quick-start/take-the-tour	https://merginmaps.com/docs/tutorials/capturing-first-data/
 https://help.inputapp.io/resources/mergin-config.json	https://merginmaps.com/docs/mergin-config.json
 https://help.inputapp.io/resources/mergin-config.zip	https://merginmaps.com/docs/mergin-config.zip
-https://help.inputapp.io/support	https://merginmaps.com/docs/misc/troubleshoot/
+https://help.inputapp.io/support	https://merginmaps.com/docs/misc/troubleshooting/
 https://help.inputapp.io/using_input	https://merginmaps.com/docs/field/mobile-features/
 https://merginmaps.com/docs/concepts/components/	https://merginmaps.com/docs/
 https://merginmaps.com/docs/concepts/home-page-and-dashboard/	https://merginmaps.com/docs/manage/dashboard/
@@ -116,9 +116,11 @@ https://merginmaps.com/docs/concepts/users-and-orgs/	https://merginmaps.com/docs
 https://merginmaps.com/docs/dev/mergince/	https://merginmaps.com/docs/server/
 https://merginmaps.com/docs/dev/ce-migration/	https://merginmaps.com/docs/server/upgrade/
 https://merginmaps.com/docs/dev/merginmaps-ee/	https://merginmaps.com/docs/server/
-https://merginmaps.com/docs/fieldwork/gps_accuracy/	https://merginmaps.com/docs/field/gps_accuracy/
+https://merginmaps.com/docs/field/external_gps/	https://merginmaps.com/docs/field/external-gps/
+https://merginmaps.com/docs/field/gps_accuracy/	https://merginmaps.com/docs/field/gps-accuracy/
 https://merginmaps.com/docs/field/input_features/	https://merginmaps.com/docs/field/mobile-features/
 https://merginmaps.com/docs/field/input_ui/	https://merginmaps.com/docs/field/mobile-app-ui/
+https://merginmaps.com/docs/fieldwork/gps_accuracy/	https://merginmaps.com/docs/field/gps-accuracy/
 https://merginmaps.com/docs/gis/enable_browsing/	https://merginmaps.com/docs/gis/search_data/
 https://merginmaps.com/docs/howto/attach-multiple-photos-to-features/	https://merginmaps.com/docs/layer/attach-multiple-photos-to-features/
 https://merginmaps.com/docs/howto/contribute/	https://merginmaps.com/docs/misc/contribute/
@@ -128,8 +130,8 @@ https://merginmaps.com/docs/howto/customapp/	https://merginmaps.com/docs/dev/cus
 https://merginmaps.com/docs/howto/data_sync/	https://merginmaps.com/docs/manage/plugin/
 https://merginmaps.com/docs/howto/dbsync/	https://merginmaps.com/docs/dev/dbsync/
 https://merginmaps.com/docs/howto/exif_metadata/	https://merginmaps.com/docs/layer/exif_metadata/
-https://merginmaps.com/docs/howto/external_gps/	https://merginmaps.com/docs/field/external_gps/
-https://merginmaps.com/docs/howto/gps_accuracy/	https://merginmaps.com/docs/field/gps_accuracy/
+https://merginmaps.com/docs/howto/external_gps/	https://merginmaps.com/docs/field/external-gps/
+https://merginmaps.com/docs/howto/gps_accuracy/	https://merginmaps.com/docs/field/gps-accuracy/
 https://merginmaps.com/docs/howto/input_features/	https://merginmaps.com/docs/field/mobile-features/
 https://merginmaps.com/docs/howto/input_ui/	https://merginmaps.com/docs/field/mobile-app-ui/
 https://merginmaps.com/docs/howto/input-tour/	https://merginmaps.com/docs/tutorials/capturing-first-data/
@@ -141,7 +143,7 @@ https://merginmaps.com/docs/howto/manage/plugin/plugin-delete-project/	https://m
 https://merginmaps.com/docs/howto/manage/plugin/plugin-new-project/	https://merginmaps.com/docs/manage/create-project/
 https://merginmaps.com/docs/howto/manage/plugin/plugin-sync-project/	https://merginmaps.com/docs/manage/plugin/
 https://merginmaps.com/docs/howto/manage/plugin/plugin-variables/	https://merginmaps.com/docs/layer/plugin-variables/
-https://merginmaps.com/docs/howto/manage/troubleshoot/	https://merginmaps.com/docs/misc/troubleshoot/
+https://merginmaps.com/docs/howto/manage/troubleshoot/	https://merginmaps.com/docs/misc/troubleshooting/
 https://merginmaps.com/docs/howto/manage/web/dashboard/	https://merginmaps.com/docs/manage/dashboard/
 https://merginmaps.com/docs/howto/manage/web/project-advanced/	https://merginmaps.com/docs/manage/project-advanced/
 https://merginmaps.com/docs/howto/manage/web/project-details/	https://merginmaps.com/docs/manage/project-details/
@@ -171,6 +173,7 @@ https://merginmaps.com/docs/howto/sign-up-to-mergin-maps/	https://merginmaps.com
 https://merginmaps.com/docs/manage/data_sync/	https://merginmaps.com/docs/manage/plugin/
 https://merginmaps.com/docs/manage/plugin-sync-project/	https://merginmaps.com/docs/manage/plugin/
 https://merginmaps.com/docs/misc/privacy/	N/A -- handled by https://merginmaps.com/privacy-policy/
+https://merginmaps.com/docs/misc/troubleshoot/	https://merginmaps.com/docs/misc/troubleshooting/
 https://merginmaps.com/docs/reference/licensing/	https://merginmaps.com/docs/misc/licensing/
 https://merginmaps.com/docs/reference/privacy/	N/A -- handled by https://merginmaps.com/privacy-policy/
 https://merginmaps.com/docs/setup/install-input/	https://merginmaps.com/docs/setup/install-mobile-app/
@@ -192,6 +195,6 @@ https://www.merginmaps.com/docs/licensing/	https://merginmaps.com/docs/misc/lice
 https://merginmaps.com/docs/plugin/plugin-installation	https://merginmaps.com/docs/setup/install-mergin-maps-plugin-for-qgis/
 https://www.merginmaps.com/docs/qgis/project_config	https://merginmaps.com/docs/gis/features/
 https://www.merginmaps.com/docs/quick-start/	https://merginmaps.com/docs/
-https://www.merginmaps.com/docs/support/	https://merginmaps.com/docs/misc/troubleshoot/
+https://www.merginmaps.com/docs/support/	https://merginmaps.com/docs/misc/troubleshooting/
 https://merginmaps.com/docs/tutorials/quick-start/	https://merginmaps.com/docs/tutorials/capturing-first-data/
 https://www.merginmaps.com/docs/web/working-with-organisations/	https://merginmaps.com/docs/manage/workspaces/
