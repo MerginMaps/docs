@@ -117,6 +117,8 @@ https://merginmaps.com/docs/dev/mergince/	https://merginmaps.com/docs/server/
 https://merginmaps.com/docs/dev/ce-migration/	https://merginmaps.com/docs/server/upgrade/
 https://merginmaps.com/docs/dev/merginmaps-ee/	https://merginmaps.com/docs/server/
 https://merginmaps.com/docs/fieldwork/gps_accuracy/	https://merginmaps.com/docs/field/gps_accuracy/
+https://merginmaps.com/docs/field/gps_accuracy	https://merginmaps.com/docs/field/gps_accuracy/
+https://merginmaps.com/docs/field/external_gps	https://merginmaps.com/docs/field/external_gps/
 https://merginmaps.com/docs/field/input_features/	https://merginmaps.com/docs/field/mobile-features/
 https://merginmaps.com/docs/field/input_ui/	https://merginmaps.com/docs/field/mobile-app-ui/
 https://merginmaps.com/docs/gis/enable_browsing/	https://merginmaps.com/docs/gis/search_data/
@@ -171,6 +173,7 @@ https://merginmaps.com/docs/howto/sign-up-to-mergin-maps/	https://merginmaps.com
 https://merginmaps.com/docs/manage/data_sync/	https://merginmaps.com/docs/manage/plugin/
 https://merginmaps.com/docs/manage/plugin-sync-project/	https://merginmaps.com/docs/manage/plugin/
 https://merginmaps.com/docs/misc/privacy/	N/A -- handled by https://merginmaps.com/privacy-policy/
+https://merginmaps.com/docs/misc/troubleshoot	https://merginmaps.com/docs/misc/troubleshoot/
 https://merginmaps.com/docs/reference/licensing/	https://merginmaps.com/docs/misc/licensing/
 https://merginmaps.com/docs/reference/privacy/	N/A -- handled by https://merginmaps.com/privacy-policy/
 https://merginmaps.com/docs/setup/install-input/	https://merginmaps.com/docs/setup/install-mobile-app/
