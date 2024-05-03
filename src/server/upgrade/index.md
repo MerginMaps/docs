@@ -109,7 +109,7 @@ Perform the migration:
     $ docker-compose -f docker-compose.yml up # or similarly, based on your deployment
     ```
 
-2. Check that you are on a correct versions (`b6cb0a98ce20`, `0d867687ab64`)
+2. Check that you are on correct versions (`b6cb0a98ce20`, `0d867687ab64`)
     ```bash
     $ docker exec merginmaps-server flask db current
     INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
