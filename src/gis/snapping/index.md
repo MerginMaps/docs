@@ -26,7 +26,7 @@ To set up basic snapping:
 Now you can use basic snapping in <MobileAppName />! 
 
 When capturing a new feature near an existing one, the crosshairs will turn purple and snap to its vertex (left) or to its segment (right).
-![Mergin Maps mobile app crosshairs when snapping](./input_basic_snapping.jpg "Mergin Maps mobile app crosshairs when snapping")
+![Mergin Maps mobile app crosshairs when snapping](./mobile-app-basic-snapping.jpg "Mergin Maps mobile app crosshairs when snapping")
 
 :::tip
 If you don't want the crosshairs to snap to a feature, try zooming in. The snapping threshold is 20 pixels, so the more you zoom in, the closer you can place the vertex to the existing geometry without snapping.
