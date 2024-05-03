@@ -61,7 +61,7 @@ Here, you can [sign up to <MainPlatformName />](../../setup/sign-up-to-mergin-ma
 - **Close account** can be used to delete your account within the <MobileAppNameShort />
 
 :::danger WARNING
-Be careful! If you delete your account, you will lose access to your <MainPlatformName /> projects both on the mobile device and on the server.
+Be careful! If you delete your account, you will lose access to your <MainPlatformName /> projects both on the mobile device and on the <DashboardShortLink />.
 :::
 
 
@@ -96,9 +96,9 @@ Tapping the GPS accuracy button opens the GPS info panel:
 
 
 ### Sync
-The **Sync** button can be used to synchronise changes during the field survey.
+The **Sync** button can be used to synchronise changes during the field survey. 
 
-If automatic synchronisation of changes is allowed in the [Settings](#streaming-mode-and-recording-settings), this button will indicate that synchronisation is in progress.
+It also indicates that synchronisation is in progress.
 
 ![Mergin Maps mobile app Sync button](./mobile-app-sync.jpg "Mergin Maps mobile app Sync button")
 
@@ -133,7 +133,7 @@ The **More** button opens a list of additional options
 - [**Zoom to project**](../../gis/features/#project-extent): zoom to the extent of all visible layers within the project. The project extent can be set in [QGIS in Project Properties](../../gis/features/#project-extent).
 - [**Map themes**](../../gis/setup_themes/): a list of map themes set up in a <MainPlatformName /> project in QGIS
 - [**Position tracking**](../tracking/): to start tracking of your tracks during the field survey
-- **Local changes**: the overview of changes yet to be synchronised
+- **Local changes**: the overview of your local changes to be synchronised
    ![](./mobile-app-local-changes.jpg)
 - **Settings**: [GPS settings](#gps-settings), [streaming mode and recording settings](#streaming-mode-and-recording-settings), and general references to information about the <MobileAppNameShort />, changelog, help, privacy policy, terms of service and [diagnostic log](../../misc/troubleshoot/#diagnostic-log-on-mergin-maps-mobile-app)
    ![Mergin Maps mobile app Settings](./mobile-app-settings.jpg "Mergin Maps mobile app Settings")
