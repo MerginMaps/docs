@@ -86,7 +86,7 @@ Before we try out this new project in <MobileAppName /> we will make a couple of
 
 To illustrate how the form setup can affect the field survey, notice on the example below how the tree species, *Black alder*, has been accidentally mistyped during the field survey. This can be avoided by setting up a drop-down list (right image). Attributes can also be aliased (renamed) for easier reading.
 
-![Attributes form drop-down list in Mergin Maps mobile app](./qgis-edit-att-forms-1.jpg "Attributes form drop-down list in Mergin Maps mobile app")
+![Attributes form drop-down list in Mergin Maps mobile app](./mobile-app-text-edit-value-map.jpg "Attributes form drop-down list in Mergin Maps mobile app")
 
 Now we will set up the drop-down list for the `trees` layer:
 1. Double-click the `trees` layer in the **Layers** panel to open the **Layer properties**

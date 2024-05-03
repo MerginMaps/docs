@@ -43,17 +43,17 @@ The limitation for transferring projects between servers still holds.
 ## Custom server configuration in Mergin Maps mobile app
 To configure a custom <MainPlatformName /> server in <MobileAppName />:
 
-1. Open <MobileAppName /> and navigate to the login page. Make sure to sign out.
+1. Navigate to the **Log in** page. Make sure you are signed out.
+
+   The current server URL is displayed at the bottom of the page.
  
-   ![Mergin Maps mobile app Login](../../field/mobile-app-ui/input-sign-in.jpg "Mergin Maps mobile app Login")
+   ![Mergin Maps mobile app current server URL](./mobile-app-server.jpg "Mergin Maps mobile app current server URL")
 
-2. Tap on the edit button next to the current server URL.
+2. Tap on server URL to change the <MainPlatformName /> server. Enter the URL of your server and tap **Confirm**.
 
-   Now you can change the <MainPlatformName /> server. Enter the URL of your custom server and tap the check button to confirm your setup.
+   ![Changing server URL in Mergin Maps mobile app](./mobile-app-change-server-url.jpg "Changing server URL in Mergin Maps mobile app")
 
-   ![Custom server in Mergin Maps mobile app](./custom-server-mobile-app.jpg "Custom server in Mergin Maps mobile app")
-
-3. Use the username and password that is associated with this custom server and **Sign in**.
-   ![Custom server in Mergin Maps mobile app](./custom-server-mobile-app-2.jpg "Custom server in Mergin Maps mobile app")
+3. Use the username and password that is associated with this server and **Sign in**.
+   ![Custom server in Mergin Maps mobile app](./mobile-app-custom-server-log-in.jpg "Custom server in Mergin Maps mobile app")
 
 Now you are all set to use <MobileAppName /> with the custom server!

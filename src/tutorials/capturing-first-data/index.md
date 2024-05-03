@@ -8,7 +8,7 @@ In this tutorial you will learn how to:
 * Query and edit field data
 
 ## Install Mergin Maps mobile app
-Download <MobileAppName /> to your Android device, iPhone or iPad. You can find it in the app store of your platform:
+[Download <MobileAppName />](../../setup/install-mobile-app/) to your Android device, iPhone or iPad. You can find it in the app store of your platform:
 
 <AppDownload></AppDownload>
 
@@ -18,14 +18,11 @@ Data are stored within projects. We'll now create a new project to save our data
 Using <MobileAppName /> is the quickest and easiest way of creating new projects. Alternative methods offering much greater flexibility are introduced in later tutorials.
 
 1. Open <MobileAppName /> on your mobile device
-2. Go to the **Home** tab of the **Projects** screen and press **Create project**
+2. Tap the **Create project** button in the **Home** tab
    ![Mergin Maps mobile app Home tab Create project](./merginmaps-mobile-home-tab-of-projects-screen.jpg "Mergin Maps mobile app Create project")
 
-3. Enter the **name** of your project
-   ![Entering project's name](./merginmaps-mobile-naming-new-project.jpg "Entering project's name")
-
-4. Press **Create project**. You might need to minimise the on-screen keyboard to see this button.
-   ![Create project button](./merginmaps-mobile-create-new-project.jpg "Create project button")
+3. Enter the **name** of your project and press **Create project**. You might need to minimise the on-screen keyboard to see this button.
+   ![Create project in Mergin Maps mobile app](./merginmaps-mobile-create-new-project.jpg "Create project button in Mergin Maps mobile app")
    
 Your new project should now be visible on the **Home** tab of the **Projects** screen. It can be opened by tapping the project's name.
 ![Created project listed in the home tab](./merginmaps-mobile-new-project-listed.jpg "Created project listed in the home tab")
@@ -36,32 +33,36 @@ In the last step we created a project which will be used for our field survey. L
 
 Note that the **background map used in this project requires network connectivity**. To display it outside, you need to be connected to the internet.
 
-1. Open the project by tapping its row in the **Projects** screen. You should see your location shown over the background map:
+1. Open the project by tapping its row in the **Projects** screen. 
+
+   You should see your location shown over the background map:
    ![Current location shown on OpenStreetMap](./merginmaps-mobile-location-shown-on-osm.jpg "Current location shown on OpenStreetMap")
 
-2. Pinch the map to zoom in to your current position. If needed, recentre the map using the **GPS** button in the bottom navigation panel.
+2. Pinch the map to zoom in to your current position. If needed, recentre the map using the **GPS** button in the bottom right corner of the screen.
+   ![Mergin Maps mobile app Record button](./merginmaps-mobile-location-zoom.jpg "Mergin Maps mobile app Record button")
    
-3. Tap the **Record** button
-   ![Mergin Maps mobile app Record button](./merginmaps-mobile-record.jpg "Mergin Maps mobile app Record button")
+4. To add a new feature, press **Add**. 
 
-4. Press **Add** to capture a point
+   The position of the feature can be defined by pinching and dragging the background map or by pressing the **GPS** button to capture your current position.
+   
+   Tap **Record** to capture the point.
    ![Capturing point in Mergin Maps mobile app](./merginmaps-mobile-default-point-position.jpg "Capturing point in Mergin Maps mobile app")
 
-   ::: tip
-   You can override the position of the point being captured at this stage by pinching and dragging the background map.
-   :::
+5. A survey form opens. 
 
-5. Enter the *date* of your survey and *notes* about the feature. Tap **Take a photo** to attach a photo using your camera
+   Enter the *date* of your survey and *notes* about the feature. 
+   
+   Tap **Take a picture** to attach a photo using your camera.
    ![Attributes form (left) and taking photo (right)](./merginmaps-mobile-entering-attributes.jpg "Attributes form (left) and taking photo (right)")
 
 6. Press **Save** when you're happy with the details you've entered:
    ![Save feature with filled attributes form](./merginmaps-mobile-save-feature.jpg "Save feature with filled attributes form")
 
-   The feature you just captured should now be visible on the map:
-   ![Surveyed feature visible on the map](./merginmaps-mobile-new-feature-on-map.jpg "Surveyed feature visible on the map")
+7. The feature you just captured should now be visible on the map.
+
+   Tap on the feature to see its details. If you want to change these details, such as rewrite the notes or take a new photo, tap the **Edit** button.
    
-7. Tap on the feature to see its details. If you want to change these details, such as rewrite the notes or take a new photo, tap the **Edit** button:
-   ![Feature summary info with edit button](./merginmaps-mobile-feature-summary-info.jpg "Feature summary info with edit button")
+   ![Surveyed feature visible on the map](./merginmaps-mobile-new-feature-on-map.jpg "Surveyed feature visible on the map")
 
 
 ## Summary

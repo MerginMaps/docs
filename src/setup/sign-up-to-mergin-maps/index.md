@@ -59,19 +59,21 @@ You can also sign up from <MobileAppName />.
 
 2. Open the <MobileAppNameShort />. Tap the account icon in the upper right corner to go to the login page.
    
-   ![Mergin Maps mobile app account icon](./input-account-icon.jpg "Mergin Maps mobile app account icon")
+   ![Mergin Maps mobile app account icon](./mobile-app-account-icon.jpg "Mergin Maps mobile app account icon")
    
-3. Tap on **Sign up for free**
-   ![Mergin Maps mobile app sign up](./input-sign-up.jpg "Mergin Maps mobile app sign up")
+3. Tap on **Sign up**
+   ![Mergin Maps mobile app sign up](./mobile-app-sign-up.jpg "Mergin Maps mobile app sign up")
    
-4. Create your account by filling up the form. You will receive a confirmation email with a link to verify your email.
+4. Fill up the form and tap on **Sign up** to create your account. 
+
+   You will receive a confirmation email with a link to verify your email.
 
    Check your spam folder if the confirmation email does not appear in your inbox after 5 minutes.
    
-   ![Mergin Maps mobile app register](./input-register.jpg "Mergin Maps mobile app register")
+   ![Mergin Maps mobile app register](./mobile-app-sign-up-form.jpg "Mergin Maps mobile app register")
    
-5. Now your account needs a [workspace](../../manage/workspaces/)! Choose an appropriate name for your workspace and **Create workspace**
-   ![Create workspace in Mergin Maps mobile app](./input-create-workspace.jpg "Create workspace in Mergin Maps mobile app")
+5. Every account needs to have a [workspace](../../manage/workspaces/) for storing projects. Choose an appropriate name for your workspace and tap on the **Create workspace** button.
+   ![Create workspace in Mergin Maps mobile app](./mobile-app-create-workspace.jpg "Create workspace in Mergin Maps mobile app")
 
    :::tip
    Projects, collaborations and subscriptions in <MainPlatformNameLink /> are tied to [workspaces](../../manage/workspaces/). If you create your own workspace, you will be automatically signed up as a free tier user with 100 MB of storage. To upgrade your subscription, see our <MainDomainNameLink id="pricing" desc="Subscription plans" />.
@@ -79,7 +81,7 @@ You can also sign up from <MobileAppName />.
 
 **Welcome to <MainPlatformNameLink />!**
 
-You can get up-to-speed quickly by following the [tour projects](../install-mobile-app/#mergin-maps-mobile-app-s-tour-projects) in the <MobileAppNameShort /> and our [Quick Start tutorials](../../tutorials/capturing-first-data/index.md).
+You can get up-to-speed quickly by following our [Quick Start tutorials](../../tutorials/capturing-first-data/index.md).
 
 ## Deleting Mergin Maps account
 Your <MainPlatformNameLink /> account can be deleted in the <DashboardShortLink />.
@@ -100,8 +102,8 @@ After you close the account, it is kept on <MainPlatformNameLink /> servers for 
 If you forget your password, you can reset it through <AppDomainNameLink /> by clicking **Forgot password**. Email with password reset link will be sent to your email address.
 ![Mergin Maps dashboard forgot password](./dashboard-forgot-password.jpg "Mergin Maps dashboard forgot password")
 
-The same can be done on the login page in <MobileAppName />
-![Mergin Maps mobile app forgot password](./merginmaps-mobile-forgot-password.jpg "Mergin Maps mobile app forgot password")
+The same can be through the login page in the <MobileAppNameShort />
+![Mergin Maps mobile app forgot password](./mobile-app-forgot-password.jpg "Mergin Maps mobile app forgot password")
 
 ::: tip
 Check your spam folder if the email with password reset link does not appear in your inbox after a few minutes. 

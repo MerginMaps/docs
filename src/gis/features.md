@@ -30,7 +30,9 @@ Various online and offline maps can be used as background layers for navigation 
 ### Project extent
 In <MobileAppName />, there is an option to [zoom to the project extent](../field/mobile-app-ui/#more-options-zoom-to-project-map-themes-position-tracking-local-changes-settings). 
 
-If the project extent is not set, <MobileAppName /> zooms to all visible layers. This is not particularly convenient when you have a layer with a large/global extent (e.g. Open Street Map).
+If the project extent is not set, <MobileAppName /> zooms to all visible layers. This is not particularly convenient when you have a layer with a large/global extent (e.g. Open Street Map). Instead, you may want to set the project extent to the area of your interest.
+
+![Zoom to project option in Mergin Maps mobile app](./mobile-app-zoom-to-project.jpg "Zoom to project option in Mergin Maps mobile app")
 
 To set the project extent:
 1. Navigate to **Project** > **Properties**. 
@@ -43,6 +45,8 @@ To set the project extent:
    ![QGIS set project extent](./qgis-project-extent.jpg "QGIS set project extent")
 
 3. Click **Apply** to save the changes
+
+4. Save and synchronise the project to <MainPlatformNameLink />. Now you can use the **Zoom to project** option in the <MobileAppNameShort /> to zoom to the extent you have specified in QGIS.
 
 
 ### Photo quality
@@ -138,7 +142,7 @@ Sample map tip content that will cause an image to be show specified by file pat
 file:///[%@project_folder%]/[% "image_1" %]
 ```
 
-If the map tip has `# image` marker on the first line, the following line is understood as the URL for the image. It can be a regular file on the file system, but it could be even a remote image from network. Expressions embedded in the image URL will be evaluated (enclosed in `[% 1+1 %]`).
+If the map tip has `# image` marker on the first line, the following line is understood as the URL for the image. It can be a regular file on the file system, but it could be even a remote image from the network. Expressions embedded in the image URL will be evaluated (enclosed in `[% 1+1 %]`).
 
-![Preview panel in the mobile app based on Display settings in QGIS](./input_preview_panel.jpg "Preview panel in the mobile app based on Display settings in QGIS")
+![Preview panel in the mobile app based on Display settings in QGIS](./mobile-app-preview-panel.jpg "Preview panel in the mobile app based on Display settings in QGIS")
 

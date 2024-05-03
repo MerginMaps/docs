@@ -73,7 +73,6 @@ export default Vue.extend({
     flex-direction: column;
     width: 100%;
     max-width: 740px;
-    border-top: 1px #acacac solid;
   }
 
   &__row {
