@@ -1,5 +1,9 @@
 # How to Attach Multiple Photos to Features
 
+::: warning
+Our mobile app was redesigned. We are in the process of updating this content to reflect these changes.
+:::
+
 In some situations, it might be useful to take more than one picture of a feature during the field survey. Attaching multiple photos to one feature is a 1-N relation. You can read more about 1-N relations and how they can be used in <MainPlatformNameLink /> in [How to link multiple records to one feature](../one-to-n-relations/).
 
 <YouTube id="NCa_Nb_CYno" />

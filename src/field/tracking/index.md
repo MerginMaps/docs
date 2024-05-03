@@ -35,6 +35,10 @@ You can add new fields as needed, however, they should be set up with automatica
 
 ## Using position tracking in Mergin Maps mobile app
 
+::: warning
+Our mobile app was redesigned. We are in the process of updating this content to reflect these changes.
+:::
+
 To use tracking in the <MobileAppNameShort />, make sure that you enabled tracking in the QGIS project's settings. 
 
 1. Tap **More** and select the **Position tracking** option.

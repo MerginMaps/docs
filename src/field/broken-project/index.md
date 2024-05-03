@@ -1,6 +1,10 @@
 # How to Fix a Broken Project
 [[toc]]
 
+::: warning
+Our mobile app was redesigned. We are in the process of updating this content to reflect these changes.
+:::
+
 Do you get an error message when trying to open a project or a form in <MobileAppName />? There can be multiple reasons for what went wrong. Here we will try to guide you through some basic steps that can help you.
 
 :::tip

@@ -1,6 +1,10 @@
 # How to Link Multiple Records to One Feature (1-N Relations)
 [[toc]]
 
+::: warning
+Our mobile app was redesigned. We are in the process of updating this content to reflect these changes.
+:::
+
 :::tip
 You can clone these projects to take a closer look on 1-N relations:
    - Assigning multiple inspections to a single feature: <MerginMapsProject id="documentation/forms_one-to-many-relations" />

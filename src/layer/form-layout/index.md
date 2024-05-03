@@ -3,6 +3,10 @@
 
 Collecting and editing data in the field can be more efficient with forms that are easy to navigate. QGIS offers a lot of options for improving the layout of your forms, such as using groups and tabs to keep related fields together, displaying or hiding a group of fields based on conditional visibility, or displaying tips and instructions in the forms.
 
+::: warning
+Our mobile app was redesigned. We are in the process of updating this content to reflect these changes.
+:::
+
 ## QGIS Drag and Drop Designer
 By default, the form is automatically generated and contains all the fields in the layer. However, you might want to change the order of the fields. Also, there may be some fields that do not need to be displayed during the survey, such as fields with [default values](../settingup_forms_settings/#default-values) that are calculated from the geometry.
 

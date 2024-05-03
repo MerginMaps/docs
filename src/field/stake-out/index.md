@@ -1,6 +1,10 @@
 # How to Stake Out Points
 [[toc]]
 
+::: warning
+Our mobile app was redesigned. We are in the process of updating this content to reflect these changes.
+:::
+
 Points in your survey layers can be staked out. <MobileAppName /> will navigate you towards the selected point showing you the direction and distance.
 
 There are two stake out modes:

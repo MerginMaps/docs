@@ -1,5 +1,9 @@
 # GPS Accuracy
 
+::: warning
+Our mobile app was redesigned. We are in the process of updating this content to reflect these changes.
+:::
+
 Your GPS accuracy depends on several parameters, such as:
 - Your GPS device. [External GPS](../external_gps/) may be used to achieve higher accuracy.
 - View of the clear sky that affects the number of satellites visible from your position 
