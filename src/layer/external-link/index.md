@@ -1,6 +1,10 @@
 # How to Use Hyperlinks
 [[toc]]
 
+::: warning
+Our mobile app was redesigned. We are in the process of updating this content to reflect these changes.
+:::
+
 ## Open link in a browser
 
 1. Right-click on a layer, select **Properties** and go to the **Attributes form** tab.

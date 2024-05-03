@@ -2,6 +2,10 @@
 
 [[toc]]
 
+::: warning
+Our mobile app was redesigned. We are in the process of updating this content to reflect these changes.
+:::
+
 ::: tip
 If you are new to <MobileAppName />, follow our [tutorials](../../tutorials/capturing-first-data/) to get familiar with the app.
 :::

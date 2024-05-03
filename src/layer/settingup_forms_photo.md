@@ -77,6 +77,10 @@ Photos taken in the field using <MobileAppName /> can be automatically renamed. 
 :::
 
 ## Photos in Mergin Maps mobile app
+::: warning
+Our mobile app was redesigned. We are in the process of updating this content to reflect these changes.
+:::
+
 Using the photo widget in <MobileAppName />, you will have two options:
 - **Take a photo** to use your camera app for taking a photos 
 - **Add from gallery** to attach an existing photo from your device.

@@ -1,6 +1,10 @@
 # Advanced Form Configuration
 [[toc]]
 
+::: warning
+Our mobile app was redesigned. We are in the process of updating this content to reflect these changes.
+:::
+
 In addition to setting up [edit widgets](./settingup_forms.md) and designing [form layout](./form-layout/), extra configuration can be done to the fields in QGIS to make the data collection easier and more consistent.
 
 <YouTube id="jc4p1PpXj3k" />

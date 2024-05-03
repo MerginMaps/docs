@@ -1,6 +1,10 @@
 # Layers in Mergin Maps Mobile App
 [[toc]]
 
+::: warning
+Our mobile app was redesigned. We are in the process of updating this content to reflect these changes.
+:::
+
 **Layers** panel provides an overview of layers and features in your <MainPlatformNameLink /> project in <MobileAppName />, as well as the option to turn the visibility of specific layers on/off or to see a layer's legend.
 
 ![Mergin Maps mobile app Layers in More tab](./input-layers.jpg "Mergin Maps mobile app Layers in More tab")

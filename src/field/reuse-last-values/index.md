@@ -1,5 +1,9 @@
 # How to Reuse Last Entered Values
 
+::: warning
+Our mobile app was redesigned. We are in the process of updating this content to reflect these changes.
+:::
+
 Reusing last entered values of selected attributes can make digitising of similar features in <MobileAppName /> faster. When attributes are marked for reuse, the values from the last feature are already entered when a new feature is created.
 
 ## Reuse last value option

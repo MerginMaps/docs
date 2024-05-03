@@ -1,6 +1,10 @@
 # Synchronisation in Mergin Maps Mobile App
 [[toc]]
 
+::: warning
+Our mobile app was redesigned. We are in the process of updating this content to reflect these changes.
+:::
+
 Changes in your project can be synchronised during the survey manually by using the sync button or automatically by allowing the automatic synchronisation in <MobileAppName />. 
 
 To be able to synchronise a project, you need to:
