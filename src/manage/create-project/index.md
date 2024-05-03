@@ -65,18 +65,24 @@ The project will be saved in the selected workspace.
 [Capturing Your First Field Data](../../tutorials/capturing-first-data/index.md) tutorial will show you how to create a new project and capture field data in <MobileAppName />.
 :::
 
-1. Open <MobileAppName /> on your mobile device
-2. Go to the **Home** tab of the **Projects** screen and press **Create project**
-   ![Create project in Mergin Maps mobile app](../../tutorials/capturing-first-data/merginmaps-mobile-home-tab-of-projects-screen.jpg "Create project in Mergin Maps mobile app")
+1. Open the <MobileAppNameShort /> on your mobile device
+2. Navigate to the **Home** tab and tap **Create project**
+   ![Create project in Mergin Maps mobile app](./mobile-app-create-project.jpg "Create project in Mergin Maps mobile app")
 
-3. Give the project a name. Keep in mind that it cannot be changed later.
-   ![Mergin Maps mobile app new project name](../../tutorials/capturing-first-data/merginmaps-mobile-naming-new-project.jpg "Mergin Maps mobile app new project name")
+3. Give the project a name. Keep in mind that the name cannot be changed later.
 
-4. Press **Create project**
-   ![Mergin Maps mobile app create project](../../tutorials/capturing-first-data/merginmaps-mobile-create-new-project.jpg "Mergin Maps mobile app create project")
+   Press **Create project**.
    
-Your new project should now be visible on the **Home** tab of the **Projects** screen
-![Mergin Maps mobile app home projects](../../tutorials/capturing-first-data/merginmaps-mobile-new-project-listed.jpg "Mergin Maps mobile app home projects")
+   ![Mergin Maps mobile app new project name](./mobile-app-create-project-name-fields.jpg "Mergin Maps mobile app new project name")
+
+4. Your new project will be created locally on your mobile device
+   ![Mergin Maps mobile app home projects](./mobile-app-new-project-created.jpg "Mergin Maps mobile app home projects")
+   
+5. To save it to the <MainPlatformNameLink /> server, tap the **Upload** option
+   ![Uploading Mergin Maps project to the cloud](./mobile-app-upload-project-to-the-cloud.jpg "Uploading Mergin Maps project to the cloud")
+
+6. The project is now uploaded to your current workspace and can be shared across devices or with other users
+   ![Mobile app project uploaded to the cloud](./mobile-app-project-workspace.jpg "Mobile app project uploaded to the cloud")
 
 ## Create a project through Mergin Maps dashboard
 :::warning
