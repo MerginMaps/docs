@@ -1,7 +1,7 @@
 module.exports = {
       '/': [
         {
-            title: 'Get started',   // required
+            title: 'Get Started',   // required
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
@@ -89,14 +89,14 @@ module.exports = {
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
-                '/field/input_ui',
+                '/field/mobile-app-ui/',
                 '/field/offline-use/',
-                '/field/external_gps',
-                '/field/gps_accuracy',
+                '/field/external_gps/',
+                '/field/gps_accuracy/',
                 '/field/tracking/',
                 '/field/autosync/',
                 '/field/layers/',
-                '/field/input_features',
+                '/field/mobile-features/',
                 '/field/reuse-last-values/',
                 '/field/stake-out/',
                 '/field/broken-project/',

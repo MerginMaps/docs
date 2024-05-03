@@ -10,7 +10,7 @@ To be able to synchronise a project, you need to:
 
 The sync button is displayed in the map window.
 
-![Sync button in Mergin Maps mobile app](../input-autosync.jpg "Sync button")
+![Sync button in Mergin Maps mobile app](../mobile-app-ui/input-autosync.jpg "Sync button")
 
 :::tip
 Are you missing some data after synchronisation? [How to Recover Missing Data](../../manage/missing-data/) will show you how to deal with [conflict files](../../manage/missing-data/#there-are-conflict-files-in-the-folder) and how to [manually download](../../manage/missing-data/#there-are-no-conflict-files-in-the-folder) data from your mobile device.
@@ -23,7 +23,7 @@ You can synchronise local changes by tapping the sync button in the map window. 
 
 Pressing and holding the sync button opens the Project status, where you can see changes yet to be synchronised.
 
-![Project status with pending changes](../input-project-status.jpg "Project status with pending changes")
+![Project status with pending changes](../mobile-app-ui/input-project-status.jpg "Project status with pending changes")
 
 Changes can be also synchronised from the **Projects' Home** tab by pressing the **sync** button.
 

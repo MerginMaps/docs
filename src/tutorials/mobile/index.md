@@ -9,7 +9,7 @@ In the last tutorial we created a new <MainPlatformName /> project in QGIS with 
 * Sync and save your data in <MainPlatformNameLink /> cloud
 
 :::tip
-Need help navigating <MobileAppName />? [<MobileAppName /> Interface](../../field/input_ui/) contains the overview of the functionality of the app's buttons and features.
+Need help navigating <MobileAppName />? [<MobileAppName /> Interface](../../field/mobile-app-ui/) contains the overview of the functionality of the app's buttons and features.
 :::
 
 ## Opening the project on your mobile device 

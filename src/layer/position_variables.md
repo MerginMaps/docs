@@ -19,7 +19,7 @@ Following variables are supported:
  - `@position_satellites_visible` - Number of visible satellites.
  - `@position_satellites_used` - Number of satellites used to calculate the position.
  - `@position_gps_fix` - GPS fix, e.g. "RTK float"
- - `@position_gps_antenna_height` - Antenna height as defined in [GPS settings](../field/input_ui/#gps-settings)
+ - `@position_gps_antenna_height` - Antenna height as defined in [GPS settings](../field/mobile-app-ui/#gps-settings)
  - `@position_provider_type` - GPS device type.
    - for internal GPS, returns "internal"
    - for external GPS, returns "external"

@@ -82,7 +82,7 @@ You can package this downloaded project using <QGISPluginName /> as described in
 Some settings of your [<MainPlatformName /> project](../project/) can be done through <QGISHelp ver="latest" link="user_manual/introduction/qgis_configuration.html#project-properties" text="Project Properties" />, such as:
 - [**Selective sync**](../selective_sync/) to avoid synchronisation of unnecessary or large files
 - [**Photo quality**](../../gis/features/#photo-quality) of pictures added to the project
-- enable [**snapping**](../../field/input_features/#snapping-features) in the <MobileAppNameShort />
+- enable [**snapping**](../../field/mobile-features/#snapping-features) in the <MobileAppNameShort />
 - [**Photo name format**](../../gis/photo-names/) for photo attachments fields
 - enable [**position tracking**](../../field/tracking/) and choose its precision level
 
