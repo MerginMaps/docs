@@ -14,7 +14,9 @@ To be able to synchronise a project, you need to:
 - have write [permission](../../manage/permissions/) to the project
 
 
-:::tip
+:::tip More about synchronisation
+Want to learn more about synchronisation in <MainPlatformNameLink />? Go to [**Synchronisation**](../../manage/synchronisation/) for more details.
+
 Are you missing some data after synchronisation? [How to Recover Missing Data](../../manage/missing-data/) will show you how to deal with [conflict files](../../manage/missing-data/#there-are-conflict-files-in-the-folder) and how to [manually download](../../manage/missing-data/#there-are-no-conflict-files-in-the-folder) data from your mobile device.
 :::
 
