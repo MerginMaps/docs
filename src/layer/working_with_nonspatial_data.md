@@ -1,10 +1,6 @@
 # Working with Non-spatial Tables
 [[toc]]
 
-::: warning
-Our mobile app was redesigned. We are in the process of updating this content to reflect these changes.
-:::
-
 Non-spatial tables are often a key part of a survey project. The tables can be used either on their own to add new data or linked to a spatial layer, e.g. when linking multiple [photos](./attach-multiple-photos-to-features/) or [records](./one-to-n-relations/). They can be also used in [value relation](../layer/settingup_forms/#value-relation) widgets.
 
 We recommend using **GeoPackage** format to save your non-spatial table. With this format, you can collaboratively edit the data and track changes.
