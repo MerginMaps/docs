@@ -139,14 +139,11 @@ There are two ways how to change the layer visibility:
 - setting [map themes](../../gis/setup_themes/) in QGIS
 
 ### Layers in Mergin Maps mobile app
-To control the visibility of layers in <MobileAppName />:
-1. Tap the **More** button and choose **Layers** to see the list of layers in the project
-   ![Mergin Maps mobile app Layers in More tab](../../field/layers/input-layers.jpg "Mergin Maps mobile app Layers in More tab")
+To control the visibility of layers in <MobileAppName />, tap the **Layers** button to see the list of layers in the project.
 
-2. Tap the eye icon next to the layer to turn it on or off.
-   ![Mergin Maps mobile app Layers visibility](../../field/layers/input-layers-view.jpg "Layers visibility")
+Toggle the button next to layer's name to turn it on or off.
 
-3. Go back to the project
+![Layers in Mergin Maps mobile app](../../field/mobile-app-ui/mobile-app-layers.jpg "Layers in Mergin Maps mobile app")
 
 ### Map themes
 While the visibility of single layers can be controlled easily in <MobileAppName />, it might be useful to set up map themes in QGIS. A map theme defines which layers will be displayed, so you can define useful combinations of layers and background maps and switch between them in <MobileAppName />.
