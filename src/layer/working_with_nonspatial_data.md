@@ -15,8 +15,11 @@ Ensure you have [enabled editing and browsing](../gis/search_data/) of your non-
 ![QGIS project properties editing and browsing setup](./qgis_nonspatial_properties.jpg "QGIS project properties editing and browsing setup")
 
 ## Non-spatial layers in Mergin Maps mobile app
-Non-spatial tables can be browsed, searched and edited in [**Layers**](../field/layers/) in the **More** tab.
-![Layers in Mergin Maps mobile app](../field/mobile-app-ui/mobile-app-layers.jpg "Layers in Mergin Maps mobile app")
+Non-spatial tables can be browsed, searched and edited in the <MobileAppNameShort />.
 
-Choose the non-spatial layer from the list in **Layers**. Tap it to open the attributes table. Here, you can browse and [search](../gis/search_data/#searching-for-values-in-mergin-maps-mobile-app). It also possible to [add and edit](../field/mobile-features/#add-non-spatial-features) features.
+Tap the [**Layers**](../field/layers/) button to open the list of layers, including non-spatial tables, in the project.
+
+![Layers in Mergin Maps mobile app](./mobile-app-non-spatial-layers.jpg "Layers in Mergin Maps mobile app")
+
+Tap on a layer to open its attributes table where you can browse the data and [search for values](../gis/search_data/#searching-for-values-in-mergin-maps-mobile-app). It is also possible to [add and edit](../field/mobile-features/#add-non-spatial-features) entries in the table.
 
