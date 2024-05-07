@@ -122,6 +122,10 @@ unhandled_renames = []
 for old, new in renamed_pages_or_data_files:
     old_full = full_url_from_file(old)
     new_full = full_url_from_file(new)
+    if old_full == new_full:
+        # This occurs when we move from
+        # foo/bar.md to foo/bar/index.md or vice-versa
+        continue
     redirect_found = False
     for l, s, d in url_redirection_config:
         if s == old_full and d == new_full:
@@ -134,6 +138,9 @@ for old, new in renamed_pages_or_data_files:
 redirections_to_recently_renamed_or_deleted_content = []
 all_missing_content = deleted_pages
 for item in renamed_pages_or_data_files:
+    if full_url_from_file(item[0]) == full_url_from_file(item[1]):
+        # Ignore the case where we are going from foo/bar.md to foo/bar/index.md or vice-versa
+        continue
     all_missing_content.append(item[0])
 for missing_content in all_missing_content:
     missing_content = full_url_from_file(missing_content)
