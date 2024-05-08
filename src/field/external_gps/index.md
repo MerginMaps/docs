@@ -20,7 +20,7 @@ If you have a device that can receive signals from other GNSS (such as BeiDou, G
 :::
 
 ## GPS antenna height
-External GPS antenna is often used on a surveying pole. To obtain the correct ground elevation, it is necessary to subtract the height of GPS sensor above the ground from the measured elevation.
+External GPS antenna is often used on a surveying pole. To obtain the correct ground elevation, it is necessary to subtract the height of the GPS sensor above the ground from the measured elevation.
 
 The height of the GPS antenna can be set in the [**GPS settings**](../mobile-app-ui/#gps-settings) in the <MobileAppNameShort />. 
 
@@ -80,7 +80,7 @@ The mock location will be used by the <MobileAppNameShort /> automatically as if
 
 Direct connection via the <MobileAppNameShort /> is not possible on iOS devices. 
 
-External GPS can be connected to your iOS device via Bluetooth. Depending on the GPS manufacturer, there may be a custom app, which then provides position to your iOS device. the <MobileAppNameShort /> sees this as an internal GPS receiver automatically, without additional configuration.
+External GPS can be connected to your iOS device via Bluetooth. Depending on the GPS manufacturer, there may be a custom app, which then provides position to your iOS device. The <MobileAppNameShort /> sees this as an internal GPS receiver automatically, without additional configuration.
 
 ![iOS GPS receiver](./external-gps-ios.jpg "iOS GPS receiver")
 
