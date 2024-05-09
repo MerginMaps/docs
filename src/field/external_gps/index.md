@@ -55,7 +55,12 @@ It is strongly recommended to use the direct connection in the <MobileAppNameSho
    You might be asked to pair your device during this process.
 
    ![Connect to bluetooth GPS device](./mobile-app-connecting-external-gps.jpg "Connect to bluetooth GPS device")
+
+5. The <MobileAppNameShort /> will now use the external GPS receiver to display and record your position.
    
+   In **GPS info**, you will see additional data as reported by the external GPS.
+   
+   ![GPS info from external GPS in Mergin Maps mobile app](./mobile-app-external-gps-info.jpg "GPS info from external GPS in Mergin Maps mobile app") 
 
 ### How to connect external GPS receiver in Android via mock location
 :::warning
