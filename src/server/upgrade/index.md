@@ -10,7 +10,38 @@ Make sure to always back up your database data before doing a migration.
 
 [[toc]]
 
-## Migration guide from 2023.6.1 to 2024.2.1
+## Migration guide from 2024.2.x to 2024.3.x
+
+Get the latest <GitHubRepo id="MerginMaps/server/blob/master/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2024.3.0`.
+Perform the migration:
+
+<MigrationType type="EE" />
+1. Start up your docker containers
+    ```bash
+    $ docker-compose -f docker-compose.yml up # or similarly, based on your deployment
+    ```
+
+2. Check that you are on correct versions (`a5d4defded55`, `223e3be99e92`).
+    ```bash
+    $ docker exec merginmaps-server flask db current
+    INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+    INFO  [alembic.runtime.migration] Will assume transactional DDL.
+    a5d4defded55
+    223e3be99e92 (head)
+    ```
+
+   - If you do not see the version numbers at all, run the following commands:
+    ```bash
+    $ docker exec merginmaps-server flask db stamp a5d4defded55
+    $ docker exec merginmaps-server flask db stamp 223e3be99e92
+    ```
+
+3. Run the database migration:
+    ```bash
+    $ docker exec merginmaps-server flask db upgrade community@0e3fc92aeaaa
+    ```
+
+## Migration guide from 2023.6.1 to 2024.2.x
 
 Get the latest <GitHubRepo id="MerginMaps/server/blob/master/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2024.2.1`.
 Perform the migration:
@@ -31,7 +62,7 @@ Perform the migration:
     35af0c8be41e
     ```
 
-   - If you do not see the version numbers at all, run the following command:
+   - If you do not see the version numbers at all, run the following commands:
     ```bash
     $ docker exec merginmaps-server flask db stamp 35af0c8be41e
     $ docker exec merginmaps-server flask db stamp 3a77058a2fd7
