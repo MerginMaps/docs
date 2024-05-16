@@ -75,10 +75,10 @@ To ease the process of permission (user) management, you can set the following g
 Workspace settings.
 <ServerType type="CE" />
 
-| Variable name                | Type    | Default     | Description |
-|------------------------------|---------|-------------|---------------------------|
-| `GLOBAL_WORKSPACE` ⭐️        | string  | `mergin`    | Namespace (part of URL) for all projects. All projects belong to this single workspace with certain permissions (see below).  |
-| `GLOBAL_STORAGE` ⭐️          | integer |`10737418240`| Storage limit <MainPlatformName /> can use to store projects (last version) in bytes (default is 10 GB). Should be reasonably large.  |
+| Variable name                | Type    | Default     | Description                                                                                                                                                                                                             |
+|------------------------------|---------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `GLOBAL_WORKSPACE` ⭐️        | string  | `mergin`    | Common workspace name for all projects. All projects belong to this single workspace with certain permissions. Projects are then referenced with this name as part of URL, e.g. `/mergin/projectA`, `/mergin/projectB`. |
+| `GLOBAL_STORAGE` ⭐️          | integer |`10737418240`| Storage limit <MainPlatformName /> can use to store projects (last version) in bytes (default is 10 GB). Should be reasonably large.                                                                                    |
 
 <ServerType type="EE" />
 | Variable name                | Type    | Default     | Description |
