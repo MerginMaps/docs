@@ -7,7 +7,11 @@
         <h2 class="banner-title">{{ title }}</h2>
         <p class="banner-text">{{ text }}</p>
       </header>
-      <PrimaryLink href="https://merginmaps.com" class="banner-button">Learn more</PrimaryLink>
+      <PrimaryLink
+        :href="merginUrl"
+        class="banner-button"
+        >Learn More</PrimaryLink
+      >
     </div>
   </aside>
 </template>
@@ -28,6 +32,7 @@ export default Vue.extend({
       fullImageUrl: "/docs/banner-full.png",
       smallImageUrl: "/docs/banner-mobile.png",
       text: "Easy to use field data collection app for QGIS.",
+      merginUrl: "https://merginmaps.com?utm_source=documentation&utm_medium=footer&utm_campaign=docs"
     };
   },
 });
@@ -58,7 +63,7 @@ export default Vue.extend({
   gap: 20px;
   padding-inline: 20px;
   padding-top: 40px;
-  padding-bottom: 40px; 
+  padding-bottom: 40px;
   position: relative;
   box-sizing: border-box;
   background-color: $primaryForestColor;
@@ -120,6 +125,10 @@ h2.banner-title {
 
   .banner-image-small {
     display: block;
+  }
+
+  .banner-header {
+    width: 50%
   }
 }
 </style>
