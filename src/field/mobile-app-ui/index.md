@@ -134,7 +134,7 @@ The **More** button opens a list of additional options
 - [**Map themes**](../../gis/setup_themes/): a list of map themes set up in a <MainPlatformName /> project in QGIS
 - [**Position tracking**](../tracking/): to start tracking of your tracks during the field survey
 - **Local changes**: the overview of your local changes to be synchronised
-   ![](./mobile-app-local-changes.jpg)
+   ![Mergin maps mobile app Local changes](./mobile-app-local-changes.jpg "Mergin maps mobile app Local changes")
 - **Settings**: [GPS settings](#gps-settings), [streaming mode and recording settings](#streaming-mode-and-recording-settings), and general references to information about the <MobileAppNameShort />, changelog, help, privacy policy, terms of service and [diagnostic log](../../misc/troubleshoot/#diagnostic-log-on-mergin-maps-mobile-app)
    ![Mergin Maps mobile app Settings](./mobile-app-settings.jpg "Mergin Maps mobile app Settings")
    
