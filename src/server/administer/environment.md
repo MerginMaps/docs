@@ -33,12 +33,21 @@ Mergin Maps uses PostgreSQL database to store its data.
 | `DB_HOST`                 | string    | `db`      | Database host. Mapped to docker-compose service name.  |
 | `DB_PASSWORD` ⭐️          | string    |`postgres` | PostgreSQL user password.  |
 | `DB_PORT`                 | integer   | `5432`    | Database port. If non-default, it should match the port exposed in the docker-compose file.  |
-| `DB_POOL_MAX_OVERFLOW=10` | integer   | `10`      | Database `max_overflow` limit for [SQLAlchemy](https://docs.sqlalchemy.org/en/14/core/engines.html).  |
+| `DB_POOL_MAX_OVERFLOW` | integer   | `10`      | Database `max_overflow` limit for [SQLAlchemy](https://docs.sqlalchemy.org/en/14/core/engines.html).  |
 | `DB_POOL_SIZE`            | integer   | `2`       | Database pool size for SQLAlchemy. With overflow determines the maximum of concurrent connections to the database. |
 | `DB_POOL_TIMEOUT`         | integer   | `300`     | Database pool timeout for SQLAlchemy. |
 | `DB_USER` ⭐️              | string    |`postgres` | PostgreSQL user to connect to <MainPlatformName /> database.  |
 ​
+
+#### User management
+Settings for managing users.
+<ServerType type="EE" />
+| Variable name             | Type    | Default     | Description |
+|---------------------------|---------|-------------|---------------------------|
+| `USER_SELF_REGISTRATION`            | Boolean | `true`     | Users can register themselves. If disabled, they must be invited or registered by superuser.  |
+
 #### Permission management 
+<ServerType type="CE" />
 To ease the process of permission (user) management, you can set the following global variables that apply to all registered users.
 
 | Variable name             | Type    | Default     | Description |
@@ -62,14 +71,29 @@ To ease the process of permission (user) management, you can set the following g
 | `MAIL_SERVER`           | string    |`localhost`| SMTP mail server host.  |
 | `MERGIN_LOGO_URL`       | string    | `null`    | Link to logo in emails. |
 
+#### Workspace management
+Workspace settings.
+<ServerType type="CE" />
+
+| Variable name                | Type    | Default     | Description                                                                                                                                                                                                             |
+|------------------------------|---------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `GLOBAL_WORKSPACE` ⭐️        | string  | `mergin`    | Common workspace name for all projects. All projects belong to this single workspace with certain permissions. Projects are then referenced with this name as part of URL, e.g. `/mergin/projectA`, `/mergin/projectB`. |
+| `GLOBAL_STORAGE` ⭐️          | integer |`10737418240`| Storage limit <MainPlatformName /> can use to store projects (last version) in bytes (default is 10 GB). Should be reasonably large.                                                                                    |
+
+<ServerType type="EE" />
+| Variable name                | Type    | Default     | Description |
+|------------------------------|---------|-------------|---------------------------|
+| `WORKSPACE_STORAGE_SIZE` ⭐️  | integer |`524288000`| Storage limit workspace can use to store projects (last version) in bytes (default is 500 MB). |
+| `WORKSPACE_INVITATION_EXPIRATION`  | integer |`7`| Expiration limit for pending invitation in days. |
+| `PROJECT_TRANSFER_EXPIRATION`  | integer |`7`| Expiration limit for pending project transfer in days. |
+| `WORKSPACE_EXPIRATION`  | integer |`7`| Expiration time in days for deleted workspaces before removed completely. |
+| `USER_WORKSPACES_ALLOWED`  | Boolean |`true`| Allow users to create their own workspaces else it is available for superuser only |
 
 #### Data synchronisation and management
 Other settings related to data management.
 
 | Variable name                | Type    | Default     | Description |
 |------------------------------|---------|-------------|---------------------------|
-| `GLOBAL_WORKSPACE` ⭐️        | string  | `mergin`    | Namespace (part of URL) for all projects. All projects belong to this single workspace with certain permissions (see below).  |
-| `GLOBAL_STORAGE` ⭐️          | integer |`10737418240`| Storage limit <MainPlatformName /> can use to store projects (last version) in bytes (default is 10 GB). Should be reasonably large.  |
 | `LOCAL_PROJECTS`             | string  | `./projects` | Directory to store projects on a container. Please refer to volume mapping in docker-compose file.     |
 | `TEMP_DIR`                   | string  | Result of `gettempdir()` call | Trash directory for temp files being cleaned regularly. Please refer to volume mapping in docker-compose file.    |
 | `MAINTENANCE_FILE`           | string  |`/data/MAINTENANCE`| File to indicate server is in maintenance - read only mode. Please refer to volume mapping in docker-compose file.     |
