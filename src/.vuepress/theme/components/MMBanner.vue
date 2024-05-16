@@ -32,7 +32,7 @@ export default Vue.extend({
       fullImageUrl: "/docs/banner-full.png",
       smallImageUrl: "/docs/banner-mobile.png",
       text: "Easy to use field data collection app for QGIS.",
-      merginUrl: "https://merginmaps.com?utm_source=documentation&utm_medium=footer&utm_campaign=docs"
+      merginUrl: "https://merginmaps.com/?utm_source=documentation&utm_medium=footer&utm_campaign=docs"
     };
   },
 });
