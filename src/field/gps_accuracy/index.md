@@ -1,9 +1,5 @@
 # GPS Accuracy
 
-::: warning
-Our mobile app was redesigned. We are in the process of updating this content to reflect these changes.
-:::
-
 Your GPS accuracy depends on several parameters, such as:
 - Your GPS device. [External GPS](../external_gps/) may be used to achieve higher accuracy.
 - View of the clear sky that affects the number of satellites visible from your position 
@@ -11,6 +7,8 @@ Your GPS accuracy depends on several parameters, such as:
 When doing the survey, it is essential to be aware of the limitations of your GPS accuracy at the time of recording. 
 
 Current GPS accuracy is displayed above the bottom navigation panel in the <MobileAppNameShort />. Also, there is a circle with the estimated size of the accuracy value around the position marker. 
+
+The colour of the **GPS** button denotes the accuracy threshold that can be set in the [GPS settings](../mobile-app-ui/#gps-settings) in the <MobileAppNameShort />. By default, it is set to 10 m. The indicator is green when the accuracy threshold is met, otherwise it turns yellow.
 
 Tapping the GPS button opens the [GPS info panel](../mobile-app-ui/#current-position-and-gps-info), which contains information about the horizontal and vertical accuracy, as well as number of satellites in use.
 ![GPS accuracy and GPS info in Mergin Maps mobile app](../mobile-app-ui/mobile-app-gps-info.jpg "GPS accuracy and GPS info in Mergin Maps mobile app")
