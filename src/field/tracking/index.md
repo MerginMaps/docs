@@ -44,12 +44,12 @@ To use tracking in the <MobileAppNameShort />, make sure that you enabled tracki
 
    ![Start tracking in Mergin Maps mobile app](./mobile-app-start-tracking.jpg "Start tracking in Mergin Maps mobile app")
    
-3. The <MobileAppNameShort /> will continuously record your position in intervals defined in [**streaming mode settings**](../mobile-app-ui/#streaming-mode-and-recording-settings).
+3. The <MobileAppNameShort /> will continuously record your position.
 
    You can continue using the <MobileAppNameShort /> or other apps on your mobile device in the usual way. There will be an indicator that tracking is running in the status bar of your device.
 
    To stop tracking, go to the **Position tracking** option and tap **Stop tracking**. 
    
-   Your tracks are saved as `tracking_layer` in your project.
+   Your tracks are saved in the automatically created `tracking_layer` in your project.
    
    ![Stop tracking in Mergin Maps mobile app](./mobile-app-stop-tracking.jpg "Stop tracking in Mergin Maps mobile app")  
