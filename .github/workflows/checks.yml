@@ -81,3 +81,15 @@ jobs:
     - name: Find unreferenced images
       run: |
         ./scripts/unreferenced_images.bash
+
+  redirects_check:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+    - name: Check redirects
+      run: |
+        git diff --name-status $(git describe --tags $(git rev-list --tags --max-count=1)) > git-output.txt
+        python scripts/check-redirects/main.py
