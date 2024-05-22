@@ -35,17 +35,21 @@ You can add new fields as needed, however, they should be set up with automatica
 
 ## Using position tracking in Mergin Maps mobile app
 
-::: warning
-Our mobile app was redesigned. We are in the process of updating this content to reflect these changes.
-:::
-
 To use tracking in the <MobileAppNameShort />, make sure that you enabled tracking in the QGIS project's settings. 
 
 1. Tap **More** and select the **Position tracking** option.
-   ![Mergin Maps mobile app Position tracking](./input-position-tracking.jpg "Mergin Maps mobile app Position tracking")
+   ![Mergin Maps mobile app Position tracking](./mobile-app-position-tracking.jpg "Mergin Maps mobile app Position tracking")
 
-2. Tap **Start tracking**. You can capture and edit features in the usual way even during the tracking.
-   ![Start tracking in Mergin Maps mobile app](./input-start-tracking.jpg "Start tracking in Mergin Maps mobile app")
+2. Tap **Start tracking**.
+
+   ![Start tracking in Mergin Maps mobile app](./mobile-app-start-tracking.jpg "Start tracking in Mergin Maps mobile app")
    
-3. To stop tracking, go to **Position tracking** option and tap **Stop tracking**
-   ![Stop tracking in Mergin Maps mobile app](./input-stop-tracking.jpg "Stop tracking in Mergin Maps mobile app")  
+3. The <MobileAppNameShort /> will continuously record your position.
+
+   You can continue using the <MobileAppNameShort /> or other apps on your mobile device in the usual way. There will be an indicator that tracking is running in the status bar of your device.
+
+   To stop tracking, go to the **Position tracking** option and tap **Stop tracking**. 
+   
+   Your tracks are saved in the automatically created `tracking_layer` in your project.
+   
+   ![Stop tracking in Mergin Maps mobile app](./mobile-app-stop-tracking.jpg "Stop tracking in Mergin Maps mobile app")  
