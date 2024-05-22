@@ -1,33 +1,29 @@
 # How to Reuse Last Entered Values
 
-::: warning
-Our mobile app was redesigned. We are in the process of updating this content to reflect these changes.
-:::
-
-Reusing last entered values of selected attributes can make digitising of similar features in <MobileAppName /> faster. When attributes are marked for reuse, the values from the last feature are already entered when a new feature is created.
+Reusing last entered values of selected attributes can make digitising of similar features in the <MobileAppNameShort /> faster. When attributes are marked for reuse, the values from the last feature are already entered when a new feature is created.
 
 ## Reuse last value option
 
 To allow this functionality, follow these steps:
 
- - Open your project from the home screen
- - Click on three dots to open a menu and navigate to **Settings**
+1. Open your <MainPlatformNameLink /> project in the <MobileAppNameShort />
 
-![Mergin Maps mobile app More button](./input_more_icon.jpg "Mergin Maps mobile app More button")
+2. Click on three dots to open a menu and navigate to **Settings**
 
- - Toggle on `Reuse last value option`
+   ![Mergin Maps mobile Settings](./mobile-app-settings.jpg "Mergin Maps mobile Settings")
 
-![Settings Reuse last value option](./reuse_last_value_option.jpg "Settings Reuse last value option")
+3. Toggle on the `Reuse last entered value` option
 
- - Go back to map
- - Click **Record** and create a new feature
- - In the form you will see checkboxes next to attributes. Here, we have three editable attributes (besides `fid`). Check the attributes, which values you want to reuse in features you will create next. In our case, we checked the `Name` and `Value`. **Save** the feature.
+![Settings Reuse last entered value option](./mobile-app-settings-reuse-values.jpg "Settings Reuse last entered value option")
 
-![Check attributes to reuse last value in form](./reuse_last_values_digitize_before.jpg "Check attributes to reuse last value in form")
+4. Go back to the map. When capturing a new feature, there will be check boxes next to attributes in the form. 
 
- - When creating another feature, the checked attributes in the form will contain the values from the previous feature.
+   Select the attributes which values you want to reuse (here, we checked the `Habitat type`) and **Save** the feature.
 
-![Reused values in feature's form](./reuse_last_values_digitize_after.jpg "Reused values in feature's form")
+   When recording another feature in this survey layer, the checked attributes in the form will contain the value that was entered in the last created feature.
+
+![Value of selected attribute is reused in a new feature](./mobile-app-reuse-last-entered-values.jpg "Value of selected attribute is reused in a new feature")
+
 
 You can use the `Reuse last value option` across multiple layers. The <MobileAppNameShort /> will remember attributes for each layer separately.
 
