@@ -43,10 +43,10 @@ Perform the migration:
 
 ## Migration guide from 2023.6.1 to 2024.2.x
 
-Get the latest <GitHubRepo id="MerginMaps/server/blob/master/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2024.2.2`.
-Perform the migration:
+Get the latest <GitHubRepo id="MerginMaps/server/blob/master/docker-compose.yml" desc="docker-compose file" />  or update docker images manually.
 
 <MigrationType type="CE" />
+Update image to `2024.2.2` and perform the migration:
 
 1. Start up your docker containers
     ```bash
@@ -74,6 +74,8 @@ Perform the migration:
     ```
 
 <MigrationType type="EE" />
+Update image to `2024.2.1` and perform the migration:
+
 1. Start up your docker containers
     ```bash
     $ docker-compose -f docker-compose.yml up # or similarly, based on your deployment
