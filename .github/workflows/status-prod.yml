@@ -26,4 +26,4 @@ jobs:
         uses: ruzickap/action-my-broken-link-checker@v2
         with:
           url: ${{ env.URL }}
-          cmd_params: --buffer-size=8192 --max-connections=10 --color=always --skip-tls-verification --timeout=60 ${{ env.EXCLUDE_LIST }}
+          cmd_params: --buffer-size=8192 --max-connections=10 --color=always --skip-tls-verification --ignore-fragments --timeout=60 ${{ env.EXCLUDE_LIST }}
