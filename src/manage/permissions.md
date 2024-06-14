@@ -16,24 +16,25 @@ Do you want to invite members or guests to your workspace? Visit [How to share p
 
 ## Workspace member roles
 **Members** of a workspace have access to all projects in a workspace. The level of access to the project is defined by their member roles:
-- **Reader**: users with **read** permission are able to see the list of projects, projects data and [history](./project-details.md)
-- **Writer**: in addition to the **Read** access, users can also do changes in the projects: [adding/removing/updating features](../field/mobile-features/), change [layer settings and project properties](../gis/features/). Users who are expected to actively contribute to the project need to have the **write** permission. 
+- **Reader**: users with **Read** permission are able to see the list of projects, projects data and [history](./project-details.md)
+- **Editor**: in addition to the **Read** access, users can [add/remove/update features](../field/mobile-features/) in all projects. They cannot make changes in the project setup. Users who are expected to actively contribute to the project need to have the **Edit** permission. 
+- **Writer**: in addition to the **Editor** access, users can also change [layer settings and project properties](../gis/features/).
 - **Admin**: in addition to the **Write** access, users with this level of access can [delete the project](./project-advanced/#delete-a-project) or [transfer](./project-advanced/#transfer-a-project) it to another workspace. Admins can also create new projects and manage workspace members.
 - **Owner**: in addition to the **Admin** role, owners have access to [invoicing and subscription](./subscriptions/) settings.
 
-| | Reader  | Writer | Admin  | Owner  |
-|:---:|:---:|:---:|:---:|:---:|
-|see the list of projects in the workspace| :white_check_mark:  | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-|see project data| :white_check_mark:  | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-|see project history| :white_check_mark:  | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-|add/edit/delete features in projects| :no_entry_sign: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-|add/remove layers in projects| :no_entry_sign: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-|change layer settings and project properties in QGIS| :no_entry_sign: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-|create new projects| :no_entry_sign: | :no_entry_sign: | :white_check_mark: | :white_check_mark: |
-|delete and transfer projects| :no_entry_sign: | :no_entry_sign:  | :white_check_mark: | :white_check_mark: |
-|manage access to projects| :no_entry_sign: | :no_entry_sign:  | :white_check_mark: | :white_check_mark: |
-|manage workspace members| :no_entry_sign: | :no_entry_sign: | :white_check_mark: | :white_check_mark: |
-|access to invoicing and subscription settings| :no_entry_sign: | :no_entry_sign: | :no_entry_sign: | :white_check_mark: |
+| | Reader  | Editor | Writer  | Admin  | Owner  |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|see the list of projects in the workspace| :white_check_mark:  |:white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+|see project data| :white_check_mark:  | :white_check_mark:  | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+|see project history| :white_check_mark:  | :white_check_mark:   | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+|add/edit/delete features in projects| :no_entry_sign: | :white_check_mark:   | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+|add/remove layers in projects| :no_entry_sign: |  :no_entry_sign: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+|change layer settings and project properties in QGIS| :no_entry_sign: | :no_entry_sign: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+|create new projects| :no_entry_sign: | :no_entry_sign: | :no_entry_sign: | :white_check_mark: | :white_check_mark: |
+|delete and transfer projects| :no_entry_sign: | :no_entry_sign:  | :no_entry_sign:  | :white_check_mark: | :white_check_mark: |
+|manage access to projects| :no_entry_sign: | :no_entry_sign: | :no_entry_sign:  | :white_check_mark: | :white_check_mark: |
+|manage workspace members| :no_entry_sign: | :no_entry_sign: | :no_entry_sign: | :white_check_mark: | :white_check_mark: |
+|access to invoicing and subscription settings| :no_entry_sign: | :no_entry_sign: | :no_entry_sign: | :no_entry_sign: | :white_check_mark: |
 
 :::tip
 Invoices can be made accessible also to a person that is not a workspace member, such as someone from your accounting department. They can [access the subscription management portal using a link](./subscriptions/#accessing-subscription-management-portal-directly-without-mergin-maps-account).
@@ -72,18 +73,18 @@ Only owners and admins can manage user roles so if you assign yourself the write
 :::
 
 ## Project permissions
-Permissions to specific projects can be defined for workspace guests as well as for workspace members in addition to their member roles. There are three permission levels: **reader**, **writer** and **owner**. 
+Permissions to specific projects can be defined for workspace guests as well as for workspace members in addition to their member roles. There are four permission levels: **reader**, **editor**, **writer** and **owner**. 
 
-| | Reader  | Writer | Owner  |
-|:---:|:---:|:---:|:---:|
-|see the project in the workspace| :white_check_mark:  | :white_check_mark: | :white_check_mark: | 
-|see project data| :white_check_mark:  | :white_check_mark: | :white_check_mark: |
-|see project history| :white_check_mark:  | :white_check_mark: | :white_check_mark: | 
-|add/edit/delete features in the project| :no_entry_sign: | :white_check_mark: | :white_check_mark: | 
-|add/remove layers in the project| :no_entry_sign: | :white_check_mark: | :white_check_mark: | 
-|change layer settings and project properties in QGIS| :no_entry_sign: | :white_check_mark: | :white_check_mark: | 
-|delete and transfer projects| :no_entry_sign: | :no_entry_sign:  | :white_check_mark: | 
-|manage access to the project| :no_entry_sign: | :no_entry_sign:  | :white_check_mark: |
+| | Reader  | Editor | Writer | Owner  |
+|:---:|:---:|:---:|:---:|:---:|
+|see the project in the workspace| :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | 
+|see project data| :white_check_mark:  | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+|see project history| :white_check_mark:  | :white_check_mark: | :white_check_mark: | :white_check_mark: | 
+|add/edit/delete features in the project| :no_entry_sign: | :white_check_mark: |  :white_check_mark: | :white_check_mark: | 
+|add/remove layers in the project| :no_entry_sign: |:no_entry_sign:  | :white_check_mark: | :white_check_mark: | 
+|change layer settings and project properties in QGIS| :no_entry_sign: | :no_entry_sign: | :white_check_mark: | :white_check_mark: | 
+|delete and transfer projects| :no_entry_sign:  |:no_entry_sign: | :no_entry_sign:  | :white_check_mark: | 
+|manage access to the project| :no_entry_sign:  |:no_entry_sign: | :no_entry_sign:  | :white_check_mark: |
 
 Although the roles of workspace members define the level of access to projects in a workspace in general, it is possible to grant them *higher* permissions to specific projects. For instance, a workspace member with a *Reader* role can be a *Writer* or *Owner* of a project.
 
