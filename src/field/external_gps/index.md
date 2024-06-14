@@ -101,6 +101,9 @@ External GPS functionality depends on the manufacturer and on the specific model
 
 | Manufacturer | Model | Android | iOS |
 |---|---|---|---|
+| ArduSimple| RTK Calibrated Surveyor Kit<sup><a href="#link-9">9</a></sup> | yes | yes |
+| ArduSimple| RTK Handheld Surveyor Kit<sup><a href="#link-9">9</a></sup>  | yes | yes |
+| ArduSimple| RTK Portable Bluetooth Kit<sup><a href="#link-9">9</a></sup>  | yes | yes |
 | Bad Elf | GPS Pro | yes | yes |
 | Bad Elf | GPS Pro+ | yes | yes |
 | Bad Elf | GNSS Surveyor | yes | yes |
@@ -136,6 +139,7 @@ External GPS functionality depends on the manufacturer and on the specific model
 - <a name="link-5">5</a>: **Trimble R1**, **Trimble R2**, **Trimble Catalyst** - through [*Trimble Mobile Manager* app](https://play.google.com/store/apps/details?id=com.trimble.trimblemobilemanager) which also acts as a NTRIP client and sends the corrections to the device. The app will set a mock location in Android.
 - <a name="link-6">6</a>: **<NoSpellcheck id="proNIVO" /> <NoSpellcheck id="PNR21" />** - through *<NoSpellcheck id="Attenberger" /> Connector* app on [Android](https://play.google.com/store/apps/details?id=eu.apglos.attenbergerapp1&hl=en&gl=US).
 - <a name="link-7">7</a>: **<NoSpellcheck id="SingularXYZ" /> <NoSpellcheck id="P1" />** - the device uses a SIM Card that can be configured for NTRIP. It can be connected to the <MobileAppNameShort /> via Bluetooth (without using a mock location).
-- <a name="link-8">8</a>: **Geomax Zenith06, Zenith60** through *Geomax X-PAD* app on Android, using a GNSS Mock licence from Geomax and the *Mock GNSS* option in the app.
+- <a name="link-8">8</a>: **Geomax Zenith06, Zenith60** - through *Geomax X-PAD* app on Android, using a GNSS Mock licence from Geomax and the *Mock GNSS* option in the app.
+- <a name="link-9">9</a>: **ArduSimple kits** - through [*GNSS Master* app](https://play.google.com/store/apps/details?id=com.gnssmaster&hl=en&gl=US&pli=1) which also acts as a NTRIP client and sends the corrections to the device. Detailed steps can be found in the tutorial [How to connect ArduSimple kit to Mergin Maps for centimetre-accurate mapping](https://www.ardusimple.com/how-to-connect-ardusimple-kit-to-mergin-maps-for-centimeter-accuracte-mapping/).
 
 **Did you use a GPS that is not in this list?** <GitHubRepo id="MerginMaps/docs/issues/124" desc="Share your experiences with us!" />
