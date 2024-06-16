@@ -11,7 +11,7 @@ If you are interested in <MainDomainNameLink id="pricing-for-ce-and-ee" desc="On
 
 There are three paid plans: *Individual*, *Professional*, and *Team* plan. Students and educators can use our free *Academia* plan and there is also a *Non-profit* plan available to charities and non-profit organisations. Subscriptions are billed monthly or annually.
 
-The overview of your current subscription plan and usage of storage, number of projects and number of users in your workspace can be found in the **Subscription** tab in <DashboardLink />. It is available only to the [owners](../permissions/#workspace-member-roles) of the workspace.
+The overview of your current subscription plan and usage of storage, number of projects and number of users in your workspace can be found in the **Subscription** tab in <DashboardLink />. It is available only to the [owners](../permissions/#workspace-member-roles-and-project-permissions) of the workspace.
 
 ![Mergin Maps Dashboard Subscription tab](../dashboard/mergin-maps-dashboard-subscriptions.jpg "Mergin Maps Dashboard Subscription tab")
 

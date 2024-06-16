@@ -17,7 +17,7 @@ You can find detailed steps on how to invite users to your workspace in [How to 
 ## Workspace member roles and project permissions
 Member roles and project permissions present similar options in terms of what a user can or cannot do. The difference is whether these options are defined on a workspace or on a project level. Compare the overview of [workspace member roles](#workspace-member-roles-overview) and of [project permissions](#project-permissions-overview) for more details.
 
-- **Reader**: users with **Read** permission are able to see projects, projects data and [history](./project-details)
+- **Reader**: users with **Read** permission are able to see projects, projects data and [history](../project-details)
 - **Editor**: in addition to the **Read** access, users can [add/remove/update features](../field/mobile-features/). They *cannot* make changes in the project properties, add/remove fields in GeoPackage layers or remove GeoPackage files from the project. Editors can:
 	- *add* files such as photos, shapefiles, GeoPackage files - any file except for `*.qgs`, `*.qgz`, `mergin-config.json`
 	- *edit* files except for `*.qgs`, `*.qgz`, `mergin-config.json` and non-diff based `*.gpkg` changes
@@ -83,7 +83,7 @@ If needed, the project permissions can be changed here:
 ![Changing project permissions in Mergin Maps dashboard](./dashboard-project-permissions-change.jpg "Changing project permissions in Mergin Maps dashboard")
 
 ## How to transfer ownership of a workspace
-Ownership of a workspace can be transferred to another [workspace member](#workspace-member-roles). 
+Ownership of a workspace can be transferred to another **workspace member**. 
 
 Users with the **owner** member role have access to the **Subscriptions** page in the <DashboardShortLink />.
 

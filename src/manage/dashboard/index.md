@@ -49,7 +49,7 @@ You can learn more about project history and how to revert to an older version i
 ### Collaborators
 The **Collaborators** tab provides the list of users who have access to the project as well as pending invitations. You can use the **Share** button to invite more people to contribute to your project. 
 
-Here, the [**project permissions**](../permissions/#project-permissions) of current collaborators can be changed.
+Here, the [**project permissions**](../permissions/#workspace-member-roles-and-project-permissions) of current collaborators can be changed.
 
 ![Mergin Maps project collaborators](./mergin-maps-dashboard-project-collaborators.jpg "Mergin Maps project collaborators")
 
@@ -64,7 +64,7 @@ In **Settings**, you can:
 
 ## Members
 The **Members** tab provides the overview of the [members and guests](../permissions/#workspace-members-and-guests) of the workspace, as well as pending invitations. 
-Here, you can [**invite**](../project-advanced/#add-users-to-a-workspace) users to the workspace and manage the [roles](../permissions/#workspace-member-roles) of your workspace members. If needed, users can be also removed from the workspace.
+Here, you can [**invite**](../project-advanced/#add-users-to-a-workspace) users to the workspace and manage the [roles](../permissions/#workspace-member-roles-and-project-permissions) of your workspace members. If needed, users can be also removed from the workspace.
 
 ![Mergin Maps dashboard workspace members](./mergin-maps-dashboard-members.jpg "Mergin Maps dashboard workspace members")
 
