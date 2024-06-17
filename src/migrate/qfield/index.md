@@ -101,7 +101,7 @@ In <MainPlatformName />, each workspace has its own subscription. Read more abou
 * If you own Pro plan in QFieldCloud, you will likely need <MainPlatformName /> Individual or Professional subscription.
 * If you are Community plan in QFieldCloud, you will likely need <MainPlatformName /> Individual subscription or deploy your own <MainPlatformName /> Community Edition (<CommunityPlatformNameLink />)
 
-While QFieldCloud has a per-seat model, the <MainPlatformName /> Team subscription has unlimited number of members.
+While QFieldCloud has a per-seat model, the <MainPlatformName /> has tiers that you can choose from. Comparison of subscription models and costs can be found in our <MainDomainNameLink id="blog/qfield-vs-mergin-maps" desc="blog" /> post.
 
 ## Known differences between QField and Mergin Maps platforms
 Here are some key differences between QField and <MainPlatformName />.
