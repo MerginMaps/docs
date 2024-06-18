@@ -101,9 +101,9 @@ External GPS functionality depends on the manufacturer and on the specific model
 
 | Manufacturer | Model | Android | iOS |
 |---|---|---|---|
-| <NoSpellcheck id="ArduSimple" />| RTK Calibrated Surveyor Kit<sup><a href="#link-9">9</a></sup> | yes | yes |
-| <NoSpellcheck id="ArduSimple" />| RTK Handheld Surveyor Kit<sup><a href="#link-9">9</a></sup>  | yes | yes |
-| <NoSpellcheck id="ArduSimple" />| RTK Portable Bluetooth Kit<sup><a href="#link-9">9</a></sup>  | yes | yes |
+| <NoSpellcheck id="ArduSimple" />| RTK Calibrated Surveyor Kit<sup><a href="#link-9">9</a></sup> | yes | no |
+| <NoSpellcheck id="ArduSimple" />| RTK Handheld Surveyor Kit<sup><a href="#link-9">9</a></sup>  | yes | no |
+| <NoSpellcheck id="ArduSimple" />| RTK Portable Bluetooth Kit<sup><a href="#link-9">9</a></sup>  | yes | no |
 | Bad Elf | GPS Pro | yes | yes |
 | Bad Elf | GPS Pro+ | yes | yes |
 | Bad Elf | GNSS Surveyor | yes | yes |
