@@ -17,7 +17,7 @@ You can find detailed steps on how to invite users to your workspace in [How to 
 ## Workspace member roles and project permissions
 Member roles and project permissions present similar options in terms of what a user can or cannot do. The difference is whether these options are defined on a workspace or on a project level. Compare the overview of [workspace member roles](#workspace-member-roles-overview) and of [project permissions](#project-permissions-overview) for more details.
 
-- **Reader**: users with **Read** permission are able to see projects, projects data and [history](../project-details)
+- **Reader**: users with **Read** permission are able to see projects, projects data and [history](../project-details), but can not make any changes
 - **Editor** (available on <MainPlatformNameLink /> Cloud and <EnterprisePlatformNameLink />): in addition to the **Read** access, users can [add/remove/update features](../field/mobile-features/). They *cannot* make changes in the project properties, add/remove fields in GeoPackage layers or remove GeoPackage files from the project. Editors can:
 	- *add* files such as photos, shapefiles, GeoPackage files - any file except for `*.qgs`, `*.qgz`, `mergin-config.json`
 	- *edit* files except for `*.qgs`, `*.qgz`, `mergin-config.json` and non-diff based `*.gpkg` changes
