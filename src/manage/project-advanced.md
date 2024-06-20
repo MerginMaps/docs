@@ -16,14 +16,14 @@ You can follow our [Working collaboratively](../tutorials/working-collaborativel
 ### Add users to a workspace
 If you want to share all projects in your workspace with a group of users, you can invite them to become members or guests of a workspace.
 
-You have to be the **admin** or **owner** of the workspace to manage access to the workspace. See [Member Roles and Permissions](./permissions/#workspace-member-roles) for more details.
+You have to be the **admin** or **owner** of the workspace to manage access to the workspace. See [Member Roles and Permissions](./permissions/#workspace-member-roles-and-project-permissions) for more details.
 
 To add users to a workspace:
 1. Log into <AppDomainNameLink />
 2. Go to the **Members** tab in the left panel and click on **Invite**
    ![Invite people to Mergin Maps workspace](./dashboard-workspace-invite.jpg "Invite people to Mergin Maps workspace")
 
-3. In the form, enter the email addresses of people you want to invite and choose their [**workspace role**](./permissions/#workspace-member-roles) from the list.
+3. In the form, enter the email addresses of people you want to invite and choose their [**workspace role**](./permissions/#workspace-member-roles-and-project-permissions) from the list.
    - If you want to grant them access to all projects in the workspace, select one of the member roles (*Reader*, *Writer*, *Admin* or *Owner*).
    - If you only want to invite them to some projects, select the *Guest* option and specify which projects should be shared with them.
     
