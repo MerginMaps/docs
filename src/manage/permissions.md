@@ -17,14 +17,14 @@ You can find detailed steps on how to invite users to your workspace in [How to 
 ## Workspace member roles and project permissions
 Member roles and project permissions present similar options in terms of what a user can or cannot do. The difference is whether these options are defined on a workspace or on a project level. Compare the overview of [workspace member roles](#workspace-member-roles-overview) and of [project permissions](#project-permissions-overview) for more details.
 
-- **Reader**: users with **Read** permission are able to see projects, projects data and [history](../project-details), but can not make any changes
-- **Editor** (available on <MainPlatformNameLink /> Cloud and <EnterprisePlatformNameLink />): in addition to the **Read** access, users can [add/remove/update features](../field/mobile-features/). They *cannot* make changes in the project properties, add/remove fields in GeoPackage layers or remove GeoPackage files from the project. Editors can:
+- **Reader**: Users with **Read** permission are able to see projects, projects data and [history](../project-details), but can not make any changes.
+- **Editor** (available on <MainPlatformNameLink /> Cloud and <EnterprisePlatformNameLink />): In addition to the **Read** access, users can [add/remove/update features](../field/mobile-features/). They *cannot* make changes in the project properties, add/remove fields in GeoPackage layers or remove GeoPackage files from the project. Editors can:
 	- *add* files such as photos, shapefiles, GeoPackage files - any file except for `*.qgs`, `*.qgz`, `mergin-config.json`
 	- *edit* files except for `*.qgs`, `*.qgz`, `mergin-config.json` and non-diff based `*.gpkg` changes
 	- *remove* files except for `*.qgs`, `*.qgz`, `mergin-config.json` and `*.gpkg`
-- **Writer**: in addition to the **Editor** access, users can also change [layer settings and project properties](../gis/features/).
+- **Writer**: In addition to the **Editor** access, users can also change [layer settings and project properties](../gis/features/).
 - **Admin**: This role is only available for workspace members. In addition to the **Write** access, admins can [delete the project](./project-advanced/#delete-a-project) or [transfer](./project-advanced/#transfer-a-project) it to another workspace. They can also create new projects and manage workspace members.
-- **Owner**: In addition to the **Admin** access, owners have also access to [invoicing and subscription](./subscriptions/) settings. **Owner** has full access to the project or workspace.
+- **Owner**: In addition to the **Admin** access, owners can also access [invoicing and subscription](./subscriptions/) settings. **Owner** has full access to the project or workspace.
 
 
 :::tip
