@@ -23,8 +23,9 @@ Member roles and project permissions present similar options in terms of what a 
 	- *edit* files except for `*.qgs`, `*.qgz`, `mergin-config.json` and non-diff based `*.gpkg` changes
 	- *remove* files except for `*.qgs`, `*.qgz`, `mergin-config.json` and `*.gpkg`
 - **Writer**: in addition to the **Editor** access, users can also change [layer settings and project properties](../gis/features/).
-- **Owner**: in addition to the **Write** access, users with this level of access can [delete the project](./project-advanced/#delete-a-project) or [transfer](./project-advanced/#transfer-a-project) it to another workspace. Owners can also create new projects and manage workspace members. Owners have also access to [invoicing and subscription](./subscriptions/) settings.
-- **Admin**: This role is only available for workspace members. It is similar to **Owner**, but without access to invoicing and subscriptions.
+- **Admin**: This role is only available for workspace members. In addition to the **Write** access, admins can [delete the project](./project-advanced/#delete-a-project) or [transfer](./project-advanced/#transfer-a-project) it to another workspace. They can also create new projects and manage workspace members.
+- **Owner**: In addition to the **Admin** access, owners have also access to [invoicing and subscription](./subscriptions/) settings. **Owner** has full access to the project or workspace.
+
 
 :::tip
 Invoices can be made accessible also to a person that is not a workspace member, such as someone from your accounting department. They can [access the subscription management portal using a link](./subscriptions/#accessing-subscription-management-portal-directly-without-mergin-maps-account).
