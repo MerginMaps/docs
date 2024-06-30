@@ -3,9 +3,6 @@
 
 Collecting and editing data in the field can be more efficient with forms that are easy to navigate. QGIS offers a lot of options for improving the layout of your forms, such as using groups and tabs to keep related fields together, displaying or hiding a group of fields based on conditional visibility, or displaying tips and instructions in the forms.
 
-::: warning
-Our mobile app was redesigned. We are in the process of updating this content to reflect these changes.
-:::
 
 ## QGIS Drag and Drop Designer
 By default, the form is automatically generated and contains all the fields in the layer. However, you might want to change the order of the fields. Also, there may be some fields that do not need to be displayed during the survey, such as fields with [default values](../settingup_forms_settings/#default-values) that are calculated from the geometry.
@@ -45,21 +42,26 @@ The form with tabs and groups will appear in QGIS like this:
 ![QGIS form conditional visibility](./qgis_forms_layout_attribute.jpg "QGIS form conditional visibility")
 
 And this is how the same form looks like in <MobileAppName />:
-![Mergin Maps Input form with tabs and groups](./input_forms_layout2.jpg "Mergin Maps Input form with tabs and groups")
+![Mergin Maps Input form with tabs and groups](./mobile-forms-layout.jpg "Mergin Maps Input form with tabs and groups")
 
 
 ## Show and hide fields depending on a field value
 Conditional visibility can be applied to groups and tabs, meaning they will be displayed or hidden depending on the value of a field.
 
-We can set the visibility of **Location** tab depending on the value of the **survey** field:
-  - If **survey** is set to **False**, the **Location** tab will not appear in the form,
-  - If **survey** is set to **True**, the **Location** tab will show up in the form.
+We can set the visibility of **Location** tab depending on the value of the `survey` field:
+  - If `survey` is set to `False`, the **Location** tab will not appear in the form,
+  - If `survey` is set to `True`, the **Location** tab will show up in the form.
 
 1. Select the **Location** tab in the **Form Layout** column
 2. Check the **Control Visibility by Expression** option
 3. Type the following expression in the box below: `"survey" IS TRUE`
 4. Background colour can be set in the **Style** tab.
+
 ![QGIS form control visibility by expression](./qgis_forms_layout_visibility.jpg "QGIS form control visibility by expression")
+
+In the <MobileAppNameShort />, the tab **Location** is displayed only when the `survey` field (aliased here as *Does it need surveying*) is toggled to `true`.
+![Show fields depending on a field value in the mobile app](./mobile-forms-conditional-visibility.jpg "Show fields depending on a field value in the mobile app")
+
 
 ## Display instructions in the form using Text and HTML widget
 Sometimes, you may want to include instructions or tips for surveyors in your forms. <QGIS link="" text="QGIS" /> offers Text and HTML widgets that can be used for this purpose. Your text instructions can include [expressions and field values](#using-expressions-in-text-and-html-widgets) as well. The HTML widget supports various [HTML tags](https://doc.qt.io/qt-6/richtext-html-subset.html#supported-tags), so it can be also used, for instance, to display [online images](#using-html-widget-to-display-online-images-and-other-online-resources).
@@ -74,7 +76,7 @@ If you prefer your text to be formatted, you may do so in the **HTML** widget. H
 ![QGIS HTML widget configuration](./qgis-configure-html-widget.jpg "QGIS HTML widget configuration")
 
 ...and this is how the Text and HTML widgets look like in the form in QGIS (left) and in the mobile app (right).
-![](./qgis-form-text-html.jpg)
+![Text and HTML widgets in QGIS and in Mergin Maps mobile app](./qgis-form-text-html.jpg "Text and HTML widgets in QGIS and in Mergin Maps mobile app")
 
 ### Using expressions in Text and HTML widgets
 Expressions and variables can be used both in the Text and the HTML widget.
@@ -105,6 +107,10 @@ Clone <MerginMapsProject id="documentation/form_cascade" /> to follow this examp
 ### Using HTML widget to display online images and other online resources
 The **HTML widget** can be also used to display online images in the mobile app or open online resources, such as PDF files, videos or websites, in the browser of your device.
 
+::: tip
+Clone <MerginMapsProject id="documentation/forms-display-images-and-files" /> to how this works.
+:::
+
 Here are HTML samples you can use to [configure the HTML widget](#using-expressions-in-text-and-html-widgets). Your form should contain a text field for storing the full URL link (here: `link`).
 
 To use these samples, replace `link` by the name of the appropriate field in your layer. 
@@ -120,14 +126,22 @@ To use these samples, replace `link` by the name of the appropriate field in you
 <script>document.write(expression.evaluate("'<a href=\"'||attribute( @feature, 'link' )||'\">here is your link</a>'"));</script>
 ```
 
-Make sure that the HTML widget works as intended before taking it to the field - try it out in QGIS and in the <MobileAppNameShort />. It should look something like this:
+Make sure that the HTML widget works before taking it to the field by testing it in the <MobileAppNameShort />. It should look something like this:
 
 ![HTML widget in QGIS and in Mergin Maps mobile app](./qgis-mobile-html-form.jpg "HTML widget in QGIS and in Mergin Maps mobile app")
+
+::: warning Image preview in QGIS 3.36+
+QGIS may not display the preview of the online image if you use QGIS 3.36 or higher. Despite this behaviour, the <MobileAppNameShort /> displays it correctly. Therefore we recommend trying the setup by opening the form in the <MobileAppNameShort /> to make sure it works as intended.
+:::
+
 
 ### Using HTML widget to open local files
 The HTML widget can also be used to open local files: for instance, a locally stored PDF file can be opened from within the form during the survey.
 
-There is a public project <MerginMapsProject id="documentation/forms-display-images-and-files" /> you can download or clone to see how the setup works.
+::: tip
+Clone <MerginMapsProject id="documentation/forms-display-images-and-files" /> to how this works.
+:::
+
 - A PDF file named `my-pdf.pdf` is stored in the main [project folder](../manage/project/#mergin-maps-project-folder) as it needs to be packaged with the project.
 - The HTML Widget is added to the **Attributes Form** and configured as follows:
    ```

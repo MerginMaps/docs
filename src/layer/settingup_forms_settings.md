@@ -58,7 +58,7 @@ There are some commonly used default values that can be useful in your field sur
 Default values can also be used to open local files (e.g. a PDF file) from within the form. This file needs to be packaged with the project, so it should be stored somewhere in the [project folder](../manage/project/#mergin-maps-project-folder).
 
 There is a public project <MerginMapsProject id="documentation/forms-display-images-and-files" /> you can download or clone to see how the setup works.
-- A PDF file named `my-pdf.pdf` that is stored in the main project folder.
+- A PDF file named `my-pdf.pdf` is stored in the main project folder.
 - The survey layer has a field named `local-file-default-value` with **Text (string)** data type.
    - This field is set to *not editable* (the form will refer to the same file for all features and does not need to be changed).
    - This field uses the **Text Edit** widget with the *Multiline* and *HTML* options enabled.
@@ -71,7 +71,7 @@ There is a public project <MerginMapsProject id="documentation/forms-display-ima
 
 In the <MobileAppNameShort />, you can tap the *Open File* link to open the PDF file using the default application of your device.
 
-![QGIS attributes form open local file](./mobile-forms-open-file-default-value.jpg "QGIS attributes form open local file")
+![Open a local PDF file in Mergin Maps mobile app](./mobile-forms-open-file-default-value.jpg "Open a local PDF file in Mergin Maps mobile app")
 
 ::: tip Open local files using the HTML widget
 Local files can be displayed in the form also using [the HTML widget](./form-layout/#using-html-widget-to-open-local-files). 
