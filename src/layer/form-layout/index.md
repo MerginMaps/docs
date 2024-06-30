@@ -142,7 +142,7 @@ The HTML widget can also be used to open local files: for instance, a locally st
 Clone <MerginMapsProject id="documentation/forms-display-images-and-files" /> to how this works.
 :::
 
-- A PDF file named `my-pdf.pdf` is stored in the main [project folder](../manage/project/#mergin-maps-project-folder) as it needs to be packaged with the project.
+- A PDF file named `my-pdf.pdf` is stored in the main [project folder](../../manage/project/#mergin-maps-project-folder) as it needs to be packaged with the project.
 - The HTML Widget is added to the **Attributes Form** and configured as follows:
    ```
    <a href="project://my-pdf.pdf">Open File</a>
