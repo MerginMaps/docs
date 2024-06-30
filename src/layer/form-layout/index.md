@@ -124,6 +124,7 @@ Make sure that the HTML widget works as intended before taking it to the field -
 
 ![HTML widget in QGIS and in Mergin Maps mobile app](./qgis-mobile-html-form.jpg "HTML widget in QGIS and in Mergin Maps mobile app")
 
+### Using HTML widget to open local files
 
 ## Spacer widget
 <Badge text="since QGIS 3.30" type="tip"/>
