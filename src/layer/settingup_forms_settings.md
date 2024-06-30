@@ -37,6 +37,25 @@ When you survey a new point in <MobileAppName />, you will see the values are au
 
 ![Mergin Maps mobile app attributes form default value](./input_forms_defaults1.jpg "Mergin Maps mobile app attributes form default value")
 
+### Examples of useful default values
+There are some commonly used default values that can be useful in your field survey. As they are filled in automatically, they can be hidden from attributes form.
+
+* It is convenient to know when a feature was created and when it was last updated. Use fields with **Date** or **Date&Time** data types with the `now()` function to record these information. You can change the formatting using [Date/Time](./settingup_forms/#date-and-time) widget.
+* Similarly, the name of the <MainPlatformName /> user who created or modified the feature can be recorded using the `@mergin_username` [QGIS plugin variable](./plugin-variables/). These field should have the **Text (string)** data type.
+* The coordinates of a point feature can be recorded as well using the `$x` and `$y` function in QGIS. To record the coordinate accurately, these fields should have the **Decimal number (real)** data type.  If the coordinates are in meters, values can be rounded to, say, 2-3 decimal places. When working with geographic coordinates that use degrees, you may want to round the coordinates to 8 decimal places. Use the *apply default value on update* option so that you have correct values when the position of the point feature changes.
+
+
+| Variable name               | Sample value                  | Apply default value on update   | Description |
+|-----------------------------|-------------------------------|---------|-------------|
+| `@now`          | `2024-06-30 10:00:00`                      | **no**  | The timestamp of when the feature was created. |
+| `@now`          | `2024-06-30 10:30:00`                     | **yes**  | The timestamp of when the feature was last **updated**. |
+| `@mergin_username`          | `sarah`                      | **no**  | Name of the user who created this feature.|
+| `@mergin_username`          | `jack`                      | **yes**  | Name of the user who **updated** this feature last.|
+| `round($x,2)`          | `1898789.92`                      | **yes**  | The X coordinate of a point feature, rounded to 2 decimal places.|
+| `round($y,2)`          | `6134520.89`                      | **yes**  | The Y coordinate of a point feature, rounded to 2 decimal places.|
+
+### Open a local PDF file using default values
+
 
 ## Constraints
 When collecting data, you may want to apply constraints to certain field(s) to avoid mistakes when the values are filled in in the field.
