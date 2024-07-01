@@ -37,6 +37,47 @@ When you survey a new point in <MobileAppName />, you will see the values are au
 
 ![Mergin Maps mobile app attributes form default value](./input_forms_defaults1.jpg "Mergin Maps mobile app attributes form default value")
 
+### Examples of useful default values
+There are some commonly used default values that can be useful in your field survey. As they are filled in automatically, they can be hidden from attributes form.
+
+* It is convenient to know when a feature was created and when it was last updated. Use fields with **Date** or **Date&Time** data types with the `now()` function to record these information. You can change the formatting using [Date/Time](./settingup_forms/#date-and-time) widget.
+* Similarly, the name of the <MainPlatformName /> user who created or modified the feature can be recorded using the `@mergin_username` [QGIS plugin variable](./plugin-variables/). These field should have the **Text (string)** data type.
+* The coordinates of a point feature can be recorded as well using the `$x` and `$y` function in QGIS. To record the coordinate accurately, these fields should have the **Decimal number (real)** data type.  If the coordinates are in meters, values can be rounded to, say, 2-3 decimal places. When working with geographic coordinates that use degrees, you may want to round the coordinates to 8 decimal places. Use the *apply default value on update* option so that you have correct values when the position of the point feature changes.
+
+
+| Variable name               | Sample value                  | Apply default value on update   | Description |
+|-----------------------------|-------------------------------|---------|-------------|
+| `@now`          | `2024-06-30 10:00:00`                      | **no**  | The timestamp of when the feature was created. |
+| `@now`          | `2024-06-30 10:30:00`                     | **yes**  | The timestamp of when the feature was last **updated**. |
+| `@mergin_username`          | `sarah`                      | **no**  | Name of the user who created this feature.|
+| `@mergin_username`          | `jack`                      | **yes**  | Name of the user who **updated** this feature last.|
+| `round($x,2)`          | `1898789.92`                      | **yes**  | The X coordinate of a point feature, rounded to 2 decimal places.|
+| `round($y,2)`          | `6134520.89`                      | **yes**  | The Y coordinate of a point feature, rounded to 2 decimal places.|
+
+### Open local files using default values
+Default values can also be used to open local files (e.g. a PDF file) from within the form. This file needs to be packaged with the project, so it should be stored somewhere in the [project folder](../manage/project/#mergin-maps-project-folder).
+
+There is a public project <MerginMapsProject id="documentation/forms-display-images-and-files" /> you can download or clone to see how the setup works.
+- A PDF file named `my-pdf.pdf` is stored in the main project folder.
+- The survey layer has a field named `local-file-default-value` with **Text (string)** data type.
+   - This field is set to *not editable* (the form will refer to the same file for all features and does not need to be changed).
+   - This field uses the **Text Edit** widget with the *Multiline* and *HTML* options enabled.
+   - The **default value** is set to:
+   ```
+   '<a href="project://my-pdf.pdf">Open File</a>'
+   ```
+
+![QGIS attributes form open local file](./qgis-form-open-file-default-value.jpg "QGIS attributes form open local file")
+
+In the <MobileAppNameShort />, you can tap the *Open File* link to open the PDF file using the default application of your device.
+
+![Open a local PDF file in Mergin Maps mobile app](./mobile-forms-open-file-default-value.jpg "Open a local PDF file in Mergin Maps mobile app")
+
+::: tip Open local files using the HTML widget
+Local files can be displayed in the form also using [the HTML widget](./form-layout/#using-html-widget-to-open-local-files). 
+
+In the <MerginMapsProject id="documentation/forms-display-images-and-files" /> project, you can explore and compare both alternatives.
+:::
 
 ## Constraints
 When collecting data, you may want to apply constraints to certain field(s) to avoid mistakes when the values are filled in in the field.

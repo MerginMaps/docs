@@ -102,3 +102,6 @@ Now when you click on a feature that contains a photo, it will be displayed in t
 
 ![Mergin Maps mobile app photo displayed in form](./qgis-form-view-photo.jpg "Mergin Maps mobile app photo displayed in form")
 
+::: warning Image preview in QGIS 3.36+
+QGIS may not display the preview of the image if you use QGIS 3.36 or higher. Despite this behaviour, the <MobileAppNameShort /> displays it correctly. Therefore we recommend trying the setup by opening the form in the <MobileAppNameShort /> to make sure it works as intended.
+:::
