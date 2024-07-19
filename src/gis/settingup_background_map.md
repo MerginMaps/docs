@@ -46,9 +46,9 @@ When using XYZ tiles that contain labels, ensure to set the tile resolution to *
 ![QGIS Connection settings for XYZ](./xyz_settings.jpg "QGIS Connection settings for XYZ")
 
 
-### Generating raster tiles for offline use
+### Generating XYZ/MBTiles raster tiles for offline use
 
-QGIS also offers a <QGISHelp ver="3.22" link="user_manual/processing_algs/qgis/rastertools.html" text="processing algorithm" /> to generate [your own XYZ tiles](https://ocw.un-ihe.org/mod/book/tool/print/index.php?id=5497&chapterid=491) for offline use.
+QGIS also offers a <QGISHelp ver="latest" link="user_manual/processing_algs/qgis/rastertools.html" text="processing algorithm" /> to generate raster tiles for offline use.
 
 Make sure that you:
 - added the *Bing aerial imagery* to the QGIS project
