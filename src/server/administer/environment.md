@@ -53,7 +53,7 @@ To ease the process of permission (user) management, you can set the following g
 | Variable name             | Type    | Default     | Description |
 |---------------------------|---------|-------------|---------------------------|
 | `GLOBAL_ADMIN`            | Boolean | `false`     | All registered users can create/delete projects.  |
-| `GLOBAL_READ`             | Boolean | `false`      | All registered users have read access to all projects. If false, the application admin would need to grant project access to users manually.  |
+| `GLOBAL_READ`             | Boolean | `false`      | All registered users have read access to all projects. If `false`, the application admin would need to grant project access to users manually.  |
 | `GLOBAL_WRITE`            | Boolean | `false`     | All registered users have write access (can sync) to all projects.  |
 
 
@@ -62,7 +62,7 @@ To ease the process of permission (user) management, you can set the following g
 ​
 | Variable name             | Type      | Default   | Description |
 |---------------------------|-----------|-----------|-------------|
-| `MAIL_SUPPRESS_SEND`     | Boolean   | `true`    | Whether to suppress email sending. If set to true, you should define the following variables. |
+| `MAIL_SUPPRESS_SEND`     | Boolean   | `true`    | Whether to suppress email sending. If set to `false`, you should define the following variables. |
 | `MAIL_BCC`              | string    |           | Email address to send copies of all emails sent. Should be system/application administrator.  |
 | `MAIL_DEFAULT_SENDER`   | string    |           | Sender of <MainPlatformName /> emails. Best to have some no-reply address.  |
 | `MAIL_USERNAME`         | string    |           | Connection to SMTP server.  |
