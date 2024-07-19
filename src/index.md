@@ -18,11 +18,11 @@ The ecosystem consist of various components:
  - <AppDomainNameLink desc="Mergin Maps Server" /> > SaaS Cloud Service (available also as <MainPlatformName /> CE)
  - <MainDomainNameLink desc="Mergin Maps mobile app" /> > iOS and Android mobile app
 
+<AppDownload />
+
 <YouTube id="dy-B1BW9lA0" />
  
 ## Get started 
-
-<AppDownload />
 
 - [Capturing Your First Field Data](./tutorials/capturing-first-data/index.md)
 - [Opening Surveyed Data on Your Computer](./tutorials/opening-surveyed-data-on-your-computer/index.md)
@@ -67,17 +67,17 @@ The ecosystem consist of various components:
 
 ## Configure Survey Layer
 - [Best Practice Tips for Layers and Forms](./layer/best-practice/)
-- [Setting Up Form Widgets](./layer/settingup_forms/)
-- [Advanced Form Configuration](./layer/settingup_forms_settings/)
-- [Form Layout](./layer/settingup_forms_settings/)
+- [Setting Up Widgets in Attributes Form](./layer/settingup_forms/)
+- [Attributes Form Configuration](./layer/settingup_forms_settings/)
+- [Attributes Form Layout](./layer/settingup_forms_settings/)
 - [Exif Metadata](./layer/exif_metadata/)
 - [Capturing Photos](./layer/settingup_forms_photo/)
 - [How to Attach Multiple Photos to Features](./layer/attach-multiple-photos-to-features/)
 - [How to Link Multiple Records to One Feature (1-N Relations)](./layer/one-to-n-relations/)
 - [How to Use Hyperlinks](./layer/external-link/)
+- [Working with Non-spatial Tables](./layer/working_with_nonspatial_data/)
 - [Extra Position Variables](./layer/position_variables/)
 - [Extra QGIS Variables](./layer/plugin-variables/)
-- [Working with Non-spatial Tables](./layer/working_with_nonspatial_data/)
 
 ## Fieldwork Tips
 - [<MobileAppName /> Interface](./field/mobile-app-ui/)
@@ -102,13 +102,13 @@ The ecosystem consist of various components:
 
 ## Custom Server
 - [Overview](./server/)
-- [How to Install](./server/install/)
-- [How to Upgrade](./server/upgrade/)
+- [Install](./server/install/)
+- [Upgrade](./server/upgrade/)
 - [Administer](./server/administer/)
-- [Troubleshoot](./server/troubleshoot/)
+- [Troubleshoot Custom Servers](./server/troubleshoot/)
 
 ## Migrate
-- [From QField and QFieldCloud](./migrate/qfield/)
+- [From QField](./migrate/qfield/)
 
 ## Support & Legal
 - [Licensing](./misc/licensing/)
