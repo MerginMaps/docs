@@ -1,4 +1,4 @@
-# Setting Up Form Widgets
+# Setting Up Widgets in Attributes Form
 
 [[toc]]
 
@@ -6,15 +6,15 @@
 Our mobile app was redesigned. We are in the process of updating this content to reflect these changes.
 :::
 
-Capturing field data often requires filling some attributes in the form to record the properties of surveyed points, lines or polygons. Forms can simplify the data entry and even ensure to some extent that the correct information is filled in.
+Capturing field data often requires filling some attributes in the form to record the properties of surveyed points, lines or polygons. Attributes forms can simplify the data entry and even ensure to some extent that the correct information is filled in.
 
 <YouTube id="jc4p1PpXj3k" />
 
 ## Widget gallery
 
-A number of edit widget types for forms can be used in <MobileAppName />, including drop-down options, slider, date and time, checkbox, or photos. 
+A number of edit widget types for attributes form can be used in <MobileAppName />, including drop-down options, slider, date and time, checkbox, or photos. 
 
-Forms can be configured using <QGISHelp ver="latest" link="user_manual/working_with_vector/vector_properties.html#edit-widgets" text="QGIS widget types" /> .
+Attributes forms can be configured using <QGISHelp ver="latest" link="user_manual/working_with_vector/vector_properties.html#edit-widgets" text="QGIS widget types" /> .
 
 |QGIS widget  | Description  |<div style="width:300px">Preview in <MobileAppName /> </div> |Example project   |
 |:---:|:---:|:---:|:---:|
@@ -29,7 +29,7 @@ Forms can be configured using <QGISHelp ver="latest" link="user_manual/working_w
 |Value Relation   |[Drop-down menu with values from another table](#value-relation) |![Mergin Maps mobile app value relation field form](./input_forms_valuerelation.jpg "Mergin Maps mobile app value relation field form")   | <MerginMapsProjectShort id="documentation/test_forms" /> |
 
 :::tip
-Extra configuration can be done to the form layout to make the data collection easier and more consistent, such as using default values, conditional visibility or constraint enforcement. See [Advanced Form Configuration](./settingup_forms_settings/) for more details.
+Extra configuration can be done to make the data collection easier and more consistent, such as using default values, conditional visibility or constraint enforcement. See [Advanced Form Configuration](./settingup_forms_settings/) for more details.
 :::
 
 ## Text

@@ -1,4 +1,4 @@
-# Advanced Form Configuration
+# Attributes Form Configuration
 [[toc]]
 
 ::: warning
