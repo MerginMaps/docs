@@ -67,15 +67,15 @@ The ecosystem consist of various components:
 
 ## Configure Survey Layer
 - [Best Practice Tips for Layers and Forms](./layer/best-practice/)
-- [Setting Up Widgets in Attributes Form](./layer/settingup_forms/)
-- [Attributes Form Configuration](./layer/settingup_forms_settings/)
+- [Setting Up Widgets in Attributes Form](./layer/form-widgets/)
+- [Attributes Form Configuration](./layer/form-configuration/)
 - [Attributes Form Layout](./layer/settingup_forms_settings/)
-- [Exif Metadata](./layer/exif_metadata/)
-- [Capturing Photos](./layer/settingup_forms_photo/)
+- [Capturing Photos](./layer/photos/)
 - [How to Attach Multiple Photos to Features](./layer/attach-multiple-photos-to-features/)
 - [How to Link Multiple Records to One Feature (1-N Relations)](./layer/one-to-n-relations/)
+- [Exif Metadata](./layer/exif/)
 - [How to Use Hyperlinks](./layer/external-link/)
-- [Working with Non-spatial Tables](./layer/working_with_nonspatial_data/)
+- [Working with Non-spatial Tables](./layer/non-spatial-data/)
 - [Extra Position Variables](./layer/position_variables/)
 - [Extra QGIS Variables](./layer/plugin-variables/)
 

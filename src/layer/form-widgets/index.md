@@ -2,10 +2,6 @@
 
 [[toc]]
 
-::: warning
-Our mobile app was redesigned. We are in the process of updating this content to reflect these changes.
-:::
-
 Capturing field data often requires filling some attributes in the form to record the properties of surveyed points, lines or polygons. Attributes forms can simplify the data entry and even ensure to some extent that the correct information is filled in.
 
 <YouTube id="jc4p1PpXj3k" />
@@ -23,20 +19,20 @@ Attributes forms can be configured using <QGISHelp ver="latest" link="user_manua
 |Range   |[Numeric field](#numbers)   | ![Mergin Maps mobile app numeric field form](./input_forms_numbers.jpg "Mergin Maps mobile app numeric field form")  | <MerginMapsProjectShort id="documentation/form_setup" /> |
 |Range   |[Slider](#slider)   | ![Mergin Maps mobile app slider field form](./input_forms_slider1.jpg "Mergin Maps mobile app slider field form")  | <MerginMapsProjectShort id="documentation/form_setup" /> |
 |Date&Time   |[Calendar with time](#date-and-time)  |![Mergin Maps mobile app date time field form](./input_forms_datetime1.jpg "Mergin Maps mobile app date time field form")   | <MerginMapsProjectShort id="documentation/form_setup" /> |
-|Attachment   |[Photos from device's camera or gallery](./settingup_forms_photo.md) | ![Mergin Maps mobile app attachment field form](./input_forms_photo1.jpg "Mergin Maps mobile app attachment field form")  |<MerginMapsProjectShort id="documentation/form_setup" /> |
 |Checkbox   |[Checkbox](#checkbox)   |![Mergin Maps mobile app checkbox field form](./input_forms_checkbox2.jpg "Mergin Maps mobile app checkbox field form")   |<MerginMapsProjectShort id="documentation/form_setup" /> |
 |Value Map   |[Drop-down menu with predefined values](#value-map) |![Mergin Maps mobile app value map field form](./input_forms_valuemap1.jpg "Mergin Maps mobile app value map field form")   |<MerginMapsProjectShort id="documentation/form_setup" /> |
 |Value Relation   |[Drop-down menu with values from another table](#value-relation) |![Mergin Maps mobile app value relation field form](./input_forms_valuerelation.jpg "Mergin Maps mobile app value relation field form")   | <MerginMapsProjectShort id="documentation/test_forms" /> |
+|Attachment   |[Photos from device's camera or gallery](./settingup_forms_photo.md) | ![Mergin Maps mobile app attachment field form](./input_forms_photo1.jpg "Mergin Maps mobile app attachment field form")  |<MerginMapsProjectShort id="documentation/form_setup" /> |
 
 :::tip
-Extra configuration can be done to make the data collection easier and more consistent, such as using default values, conditional visibility or constraint enforcement. See [Advanced Form Configuration](./settingup_forms_settings/) for more details.
+Extra configuration can be done to make the data collection easier and more consistent, such as using default values, conditional visibility or constraint enforcement. See [Attributes Form Configuration](./settingup_forms_settings/) for more details.
 :::
 
 ## Text
 
 Adding or editing text is the most common method for inserting information within the forms. In QGIS, the default widget for most types of fields is the **Text Edit**. It can be used for single line or [multiline](#multiline-text) text inputs. 
 
-In <MobileAppName /> , the text can be entered manually or using voice-to-text (if your mobile device supports this feature).
+In the <MobileAppNameShort />, the text can be entered manually or using voice-to-text (if your mobile device supports this feature).
 
 ![Voice to text in Mergin Maps mobile app form](./input-voice-to-text.jpg "Voice to text in Mergin Maps mobile app form")
 
@@ -46,7 +42,7 @@ In <MobileAppName /> , the text can be entered manually or using voice-to-text (
 Clone <MerginMapsProject id="documentation/test_forms" /> to follow this example!
 :::
 
- you can change the widget to accept multiple lines within a single field.
+You can change the widget to accept multiple lines within a single field.
 1. Right-click on a layer, select **Properties** and go to the **Attributes form** tab.
 2. In the list of **Available Widgets** select the field you want to work with. 
 3. In the **Widget Display** tab:
@@ -76,7 +72,7 @@ In <MobileAppName />, there will be a QR code icon next to the field. Click on t
 ## Numbers
 
 :::tip
-Clone <MerginMapsProject id="documentation/form_setup" /> to follow this example!
+Clone <MerginMapsProject id="documentation/test_forms" /> to follow this example!
 :::
 
 Numeric fields can be handled by the **Range** widget, which allows two options:
