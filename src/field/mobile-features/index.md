@@ -33,7 +33,7 @@ Surveyed features are added to the active layer, which is shown just above the b
 Once the geometry of a feature is recorded, a form will open and you will be able to record the values of attributes. 
 
 :::tip
-Attribute forms can be set up in QGIS. For more details, see [Setting Up Form Widgets](../../layer/settingup_forms/) and [Advanced Form Configuration](../../layer/settingup_forms_settings/).
+Attribute forms can be set up in QGIS. For more details, see [Setting Up Form Widgets](../../layer/form-widgets/) and [Advanced Form Configuration](../../layer/form-configuration/).
 :::
 
 ### Capture points
@@ -68,7 +68,7 @@ The recording interval can be defined also in metres as distance travelled.
 :::
 
 ### Add non-spatial features
-[Non-spatial features](../../layer/working_with_nonspatial_data/) can also be added using <MobileAppName />. If you are using a non-spatial table for [value relations](../../layer/settingup_forms/#value-relation) you can add and edit values in the app.
+[Non-spatial features](../../layer/non-spatial-data/) can also be added using <MobileAppName />. If you are using a non-spatial table for [value relations](../../layer/form-widgets/#value-relation) you can add and edit values in the app.
 
 1. Tap the **More** button and navigate to **Layers**
    ![Mergin Maps mobile app Layers panel](./input-layers.jpg "Mergin Maps mobile app Layers panel")

@@ -2,7 +2,7 @@
 
 With <MobileAppName />, it is possible to access GPS information using extra position variables. Note that location permission has to be allowed and location service enabled.
 
-Extra position variables can be used as [default values in feature forms](./settingup_forms_settings/#default-values).
+Extra position variables can be used as [default values in feature forms](./form-configuration/#default-values).
 
 Following variables are supported:
  - `@position_coordinate` - A point with the coordinates in WGS84.

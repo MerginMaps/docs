@@ -1,11 +1,10 @@
 # How to Set Photo Names Format
-<SinceBadge type="Plugin" version="2023.2.0" /> <SinceBadge type="App" version="v2.2.0" />
-
+<SinceBadge type="Plugin" version="2023.2.0" /> 
 [[toc]]
 
 Names of the photos that are captured in the field using <MobileAppName /> can be customised. The name format can be set in QGIS with <QGISPluginName />. 
 
-To use this option, make sure that the [photo widget](../../layer/settingup_forms_photo/#attachment-widget-in-qgis) of the fields you use for taking pictures is set up correctly, i.e. using the attachment widget, storing relative paths and, if needed, with a [custom folder](../../layer/settingup_forms_photo/#how-to-set-up-a-custom-folder-for-storing-photos) for storing photos. 
+To use this option, make sure that the [photo widget](../../layer/photos/#attachment-widget-in-qgis) of the fields you use for taking pictures is set up correctly, i.e. using the attachment widget, storing relative paths and, if needed, with a [custom folder](../../layer/photos/#how-to-set-up-a-custom-folder-for-storing-photos) for storing photos. 
 
 To set up custom photo names:
 1. Open your <MainPlatformNameLink /> project in QGIS and navigate to **Project Properties**
@@ -29,7 +28,7 @@ To set up custom photo names:
 
 4. Set up the photo name format for other fields and layers. 
 
-   The **Preview** in **Mergin Maps** tab includes the [custom folder for photos](../../layer/settingup_forms_photo/#how-to-set-up-a-custom-folder-for-storing-photos), if you have set it up. Otherwise you will see only the sample name of a photo.
+   The **Preview** in **Mergin Maps** tab includes the [custom folder for photos](../../layer/photos/#how-to-set-up-a-custom-folder-for-storing-photos), if you have set it up. Otherwise you will see only the sample name of a photo.
   
    ![Mergin Maps QGIS Plugin photo name setup with custom folder](./plugin-photo-name-format-folder.jpg "Mergin Maps QGIS Plugin photo name setup with custom folder")  
    ![Mergin Maps QGIS Plugin Custom photo name setup without custom folder](./plugin-photo-name-format.jpg "Mergin Maps QGIS Plugin Custom photo name setup without custom folder")
@@ -43,9 +42,9 @@ Therefore, we recommend using combinations of variables that will ensure that th
 
 :white_check_mark: The file extension (`.jpg`) is added automatically.
 
-:white_check_mark: When using a field value in the expression, make sure that it is a field that will be filled out during the survey, e.g. by using [constraints](../../layer/settingup_forms_settings/#constraints). If the field is empty, the expression won't work!
+:white_check_mark: When using a field value in the expression, make sure that it is a field that will be filled out during the survey, e.g. by using [constraints](../../layer/form-configuration/#constraints). If the field is empty, the expression won't work!
 
-:white_check_mark: If you want to use a [numeric field](../../layer/settingup_forms/#numbers) or other non-text fields in your expression, you need to convert it to a string first using the `to_string()` function
+:white_check_mark: If you want to use a [numeric field](../../layer/form-widgets/#numbers) or other non-text fields in your expression, you need to convert it to a string first using the `to_string()` function
 
 :no_entry_sign: The expression is evaluated with the **current** field values. The name of the photo will stay the same even if you change the value of the field later.
 

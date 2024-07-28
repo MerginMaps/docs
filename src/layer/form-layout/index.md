@@ -5,7 +5,7 @@ Collecting and editing data in the field can be more efficient with forms that a
 
 
 ## QGIS Drag and Drop Designer
-By default, the form is automatically generated and contains all the fields in the layer. However, you might want to change the order of the fields. Also, there may be some fields that do not need to be displayed during the survey, such as fields with [default values](../settingup_forms_settings/#default-values) that are calculated from the geometry.
+By default, the form is automatically generated and contains all the fields in the layer. However, you might want to change the order of the fields. Also, there may be some fields that do not need to be displayed during the survey, such as fields with [default values](../form-configuration/#default-values) that are calculated from the geometry.
 
 QGIS Drag and Drop designer is an easy tool for defining the form layouts:
 1. Open your <MainPlatformNameLink /> project in QGIS
@@ -155,7 +155,7 @@ In the <MobileAppNameShort />, you can tap the *Open File* link to open the PDF 
 ![Open a local PDF file in Mergin Maps mobile app](./mobile-forms-open-file-html-widget.jpg "Open a local PDF file in Mergin Maps mobile app")
 
 ::: tip Open local files using default values
-Local files can be displayed in the form also using [default values](../settingup_forms_settings/#open-local-files-using-default-values). 
+Local files can be displayed in the form also using [default values](../form-configuration/#open-local-files-using-default-values). 
 
 In the <MerginMapsProject id="documentation/forms-display-images-and-files" /> project, you can explore and compare both alternatives.
 :::
