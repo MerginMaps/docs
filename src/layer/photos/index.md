@@ -6,13 +6,13 @@ Here, you will find the overview of the basic functionality related to capturing
 [[toc]]
 
 :::tip
-Do you need to attach multiple pictures to one feature? [How to attach multiple photos to features](./attach-multiple-photos-to-features/) will guide you through the setup.
+Do you need to attach multiple pictures to one feature? [How to attach multiple photos to features](../attach-multiple-photos-to-features/) will guide you through the setup.
 :::
 
 ::: warning
 Keep in mind that synchronising photos during the field survey can use up a lot of mobile data - depending on the amount of pictures taken and their size.
 
-To reduce the data usage, you may consider using [selective synchronisation](../manage/selective_sync/), [resizing pictures automatically](#resizing-pictures-automatically) or following the [offline field survey workflow](../field/offline-use/#offline-field-survey-workflow). 
+To reduce the data usage, you may consider using [selective synchronisation](../../manage/selective_sync/), [resizing pictures automatically](#resizing-pictures-automatically) or following the [offline field survey workflow](../../field/offline-use/#offline-field-survey-workflow). 
 :::
 
 ## Attachment widget in QGIS
@@ -47,7 +47,7 @@ Here is an overview of paths that will be stored in various settings of the atta
 
 
 ## How to set up a custom folder for storing photos
-It can be useful to set up a custom folder for photos, e.g. if you want to use [selective synchronisation](../manage/selective_sync/) or if you simply want to have your data organised.
+It can be useful to set up a custom folder for photos, e.g. if you want to use [selective synchronisation](../../manage/selective_sync/) or if you simply want to have your data organised.
 
 To set up a custom folder:
 1. Create a subfolder in the project folder (here: `photos`)
@@ -67,13 +67,13 @@ To set up a custom folder:
 8. **Apply the changes**. Don't forget to save and sync your project!
 
 ## Resizing pictures automatically
-Photos that are captured during the field survey or uploaded using <MobileAppName /> can be automatically resized, e.g. to save up storage space. The quality of the photos can be set up in the [<MainPlatformName /> project properties](../gis/features/#photo-quality) using <QGISPluginName />.
+Photos that are captured during the field survey or uploaded using <MobileAppName /> can be automatically resized, e.g. to save up storage space. The quality of the photos can be set up in the [<MainPlatformName /> project properties](../../gis/features/#photo-quality) using <QGISPluginName />.
 
 ## Customising photo name format with expressions
 Photos taken in the field using <MobileAppName /> can be automatically renamed. This can be useful when browsing pictures in your <MainPlatformNameLink /> project and keeping them organised.
 
 ::: tip
-[How to Set Photo Names Format](../gis/photo-names/) will guide you through the setup and provide examples of expressions that can be used to name your photos.
+[How to Set Photo Names Format](../../gis/photo-names/) will guide you through the setup and provide examples of expressions that can be used to name your photos.
 :::
 
 ## Photos in Mergin Maps mobile app

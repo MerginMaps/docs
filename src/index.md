@@ -69,7 +69,7 @@ The ecosystem consist of various components:
 - [Best Practice Tips for Layers and Forms](./layer/best-practice/)
 - [Setting Up Widgets in Attributes Form](./layer/form-widgets/)
 - [Attributes Form Configuration](./layer/form-configuration/)
-- [Attributes Form Layout](./layer/settingup_forms_settings/)
+- [Attributes Form Layout](./layer/form-layout/)
 - [Capturing Photos](./layer/photos/)
 - [How to Attach Multiple Photos to Features](./layer/attach-multiple-photos-to-features/)
 - [How to Link Multiple Records to One Feature (1-N Relations)](./layer/one-to-n-relations/)

@@ -5,7 +5,7 @@
 Our mobile app was redesigned. We are in the process of updating this content to reflect these changes.
 :::
 
-In addition to setting up [edit widgets](./settingup_forms.md) and designing [form layout](./form-layout/), extra configuration can be done to the fields in QGIS to make the data collection easier and more consistent.
+In addition to setting up [edit widgets](../form-widgets/) and designing [form layout](../form-layout/), extra configuration can be done to the fields in QGIS to make the data collection easier and more consistent.
 
 <YouTube id="jc4p1PpXj3k" />
 
@@ -40,8 +40,8 @@ When you survey a new point in <MobileAppName />, you will see the values are au
 ### Examples of useful default values
 There are some commonly used default values that can be useful in your field survey. As they are filled in automatically, they can be hidden from attributes form.
 
-* It is convenient to know when a feature was created and when it was last updated. Use fields with **Date** or **Date&Time** data types with the `now()` function to record these information. You can change the formatting using [Date/Time](./settingup_forms/#date-and-time) widget.
-* Similarly, the name of the <MainPlatformName /> user who created or modified the feature can be recorded using the `@mergin_username` [QGIS plugin variable](./plugin-variables/). These field should have the **Text (string)** data type.
+* It is convenient to know when a feature was created and when it was last updated. Use fields with **Date** or **Date&Time** data types with the `now()` function to record these information. You can change the formatting using [Date/Time](../form-widgets/#date-and-time) widget.
+* Similarly, the name of the <MainPlatformName /> user who created or modified the feature can be recorded using the `@mergin_username` [QGIS plugin variable](../plugin-variables/). These field should have the **Text (string)** data type.
 * The coordinates of a point feature can be recorded as well using the `$x` and `$y` function in QGIS. To record the coordinate accurately, these fields should have the **Decimal number (real)** data type.  If the coordinates are in meters, values can be rounded to, say, 2-3 decimal places. When working with geographic coordinates that use degrees, you may want to round the coordinates to 8 decimal places. Use the *apply default value on update* option so that you have correct values when the position of the point feature changes.
 
 
@@ -55,7 +55,7 @@ There are some commonly used default values that can be useful in your field sur
 | `round($y,2)`          | `6134520.89`                      | **yes**  | The Y coordinate of a point feature, rounded to 2 decimal places.|
 
 ### Open local files using default values
-Default values can also be used to open local files (e.g. a PDF file) from within the form. This file needs to be packaged with the project, so it should be stored somewhere in the [project folder](../manage/project/#mergin-maps-project-folder).
+Default values can also be used to open local files (e.g. a PDF file) from within the form. This file needs to be packaged with the project, so it should be stored somewhere in the [project folder](../../manage/project/#mergin-maps-project-folder).
 
 There is a public project <MerginMapsProject id="documentation/forms-display-images-and-files" /> you can download or clone to see how the setup works.
 - A PDF file named `my-pdf.pdf` is stored in the main project folder.
@@ -74,7 +74,7 @@ In the <MobileAppNameShort />, you can tap the *Open File* link to open the PDF 
 ![Open a local PDF file in Mergin Maps mobile app](./mobile-forms-open-file-default-value.jpg "Open a local PDF file in Mergin Maps mobile app")
 
 ::: tip Open local files using the HTML widget
-Local files can be displayed in the form also using [the HTML widget](./form-layout/#using-html-widget-to-open-local-files). 
+Local files can be displayed in the form also using [the HTML widget](../form-layout/#using-html-widget-to-open-local-files). 
 
 In the <MerginMapsProject id="documentation/forms-display-images-and-files" /> project, you can explore and compare both alternatives.
 :::
@@ -106,7 +106,7 @@ Cascade or drill-down forms enable to list values in a field depending on a valu
 Clone <MerginMapsProject id="documentation/form_cascade" /> to follow this example!
 :::
 
-In this project, we will work with the point layer named **car**. The survey tab in the form contains information about cars, such as **Car-Type**, **Car-Manufacturer**, or **Car-Model**. These attributes refer to non-spatial tables using [value relations](./settingup_forms/#value-relation). 
+In this project, we will work with the point layer named **car**. The survey tab in the form contains information about cars, such as **Car-Type**, **Car-Manufacturer**, or **Car-Model**. These attributes refer to non-spatial tables using [value relations](../form-widgets/#value-relation). 
 ![QGIS drill-down forms](./qgis_forms_cascade01.jpg "QGIS drill-down forms")
 
 To make the survey easier, we will set the drill-down form so that the values in the drop-down menus are filtered based on the previously selected values. For example, if **Car type (truck/car): Trucks** is selected, the **Car-Manufacturer** field will offer only truck manufacturers *DAF Trucks*, *Scania*, *MAN*. Likewise, the next drop-down menu for **Car-Model** will change accordingly based on the **Car-Manufacturer** selection, showing only relevant car models.

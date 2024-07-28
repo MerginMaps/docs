@@ -33,7 +33,7 @@ This layer contains only information about the manholes. `Manhole UUID` values a
 On the other hand, <QGISHelp ver="latest" link="user_manual/expressions/functions_list.html#uuid" text="UUID" /> (Universally Unique Identifier) is generated to be unique and will not be changed when synced. Therefore, we recommend always using UUID to link layers.
 :::
 
-Inspections are recorded in a separate [non-spatial table](../working_with_nonspatial_data/) with attribute table such as:
+Inspections are recorded in a separate [non-spatial table](../non-spatial-data) with attribute table such as:
 
 | Inspection Date | Blocked? | Flooded? | Inspector  | Manhole UUID |
 |:---:|:---:|:---:|:---:|:---:|

@@ -18,12 +18,12 @@ Clone <MerginMapsProject id="documentation/exif-metadata" /> to see how it works
 ## How to use EXIF metadata
 To store EXIF metadata values in the fields of your survey layer:
 1. In QGIS, open the **Properties** of your survey layer and navigate to the **Attributes Form** tab.
-2. Now we need to set the [default values](./settingup_forms_settings/#default-values) of fields that should store EXIF metadata. 
+2. Now we need to set the [default values](../form-configuration/#default-values) of fields that should store EXIF metadata. 
    
    [Supported EXIF functions](#supported-exif-functions) are listed below. In general, EXIF functions looks like this: 
    `read_exif('<ABSOLUTE_PATH_TO_IMAGE>', '<EXIF_TAG_STRING>')` 
    
-   This expression requires the **absolute path** to an image. The absolute path can be defined using the field where the image is stored (here: `photo`, this is a [text field with attachment widget](./settingup_forms_photo/)) and the `@project_home` variable that refers to the project home folder. 
+   This expression requires the **absolute path** to an image. The absolute path can be defined using the field where the image is stored (here: `photo`, this is a [text field with attachment widget](../photos/)) and the `@project_home` variable that refers to the project home folder. 
    
    For example, the default value expression for the direction of the image (EXIF tag `GPSImgDirection`) can be defined as follows:
    

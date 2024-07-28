@@ -22,10 +22,10 @@ Attributes forms can be configured using <QGISHelp ver="latest" link="user_manua
 |Checkbox   |[Checkbox](#checkbox)   |![Mergin Maps mobile app checkbox field form](./input_forms_checkbox2.jpg "Mergin Maps mobile app checkbox field form")   |<MerginMapsProjectShort id="documentation/form_setup" /> |
 |Value Map   |[Drop-down menu with predefined values](#value-map) |![Mergin Maps mobile app value map field form](./input_forms_valuemap1.jpg "Mergin Maps mobile app value map field form")   |<MerginMapsProjectShort id="documentation/form_setup" /> |
 |Value Relation   |[Drop-down menu with values from another table](#value-relation) |![Mergin Maps mobile app value relation field form](./input_forms_valuerelation.jpg "Mergin Maps mobile app value relation field form")   | <MerginMapsProjectShort id="documentation/test_forms" /> |
-|Attachment   |[Photos from device's camera or gallery](./settingup_forms_photo.md) | ![Mergin Maps mobile app attachment field form](./input_forms_photo1.jpg "Mergin Maps mobile app attachment field form")  |<MerginMapsProjectShort id="documentation/form_setup" /> |
+|Attachment   |[Photos from device's camera or gallery](./photos/) | ![Mergin Maps mobile app attachment field form](./input_forms_photo1.jpg "Mergin Maps mobile app attachment field form")  |<MerginMapsProjectShort id="documentation/form_setup" /> |
 
 :::tip
-Extra configuration can be done to make the data collection easier and more consistent, such as using default values, conditional visibility or constraint enforcement. See [Attributes Form Configuration](./settingup_forms_settings/) for more details.
+Extra configuration can be done to make the data collection easier and more consistent, such as using default values, conditional visibility or constraint enforcement. See [Attributes Form Configuration](./form-configuration/) for more details.
 :::
 
 ## Text
@@ -224,7 +224,7 @@ Clone <MerginMapsProject id="documentation/test_forms" /> to follow this example
 The **Value Relation** widget is similar to the [Value Map](#value-map) tool, but the values for the drop-down menu come from another table (e.g. a CSV or another GeoPackage table).
 
 The advantage of having this widget:
-  - Editing the values in the field: for example, if you have missed a value in your list for the drop-down menu, you can edit the table in <MobileAppName /> and add the value. See [Working with non-spatial tables](./working_with_nonspatial_data.md) section for more information.
+  - Editing the values in the field: for example, if you have missed a value in your list for the drop-down menu, you can edit the table in <MobileAppName /> and add the value. See [Working with non-spatial tables](./non-spatial-data/) section for more information.
   - Searching the values: when you have a large list of values, it will become cumbersome to find the right value. With this widget, you will be able to search for values in the list.
   - Selecting multiple values.
 
@@ -252,7 +252,7 @@ When you open the field with **Value Relation** in the <MobileAppNameShort />, y
 ## Attachments, cascade form, 1-N relations,...
 
 There is much more you can do to set up your forms efficiently, such as:
-- capture [photos](./settingup_forms_photo/) as attachments
-- create advanced forms with drill-down menu by setting up a [cascade form](./settingup_forms_settings/#drill-down-forms)
-- using 1-N relations to [link multiple records to one feature](./one-to-n-relations/) or to [attach multiple photos to one feature](./attach-multiple-photos-to-features/) 
-- design an appropriate [form layout](./form-layout/) with groups and tabs, conditional visibility of fields or instructions for the fieldwork
+- capture [photos](../photos/) as attachments
+- create advanced forms with drill-down menu by setting up a [cascade form](../form-configuration/#drill-down-forms)
+- using 1-N relations to [link multiple records to one feature](../one-to-n-relations/) or to [attach multiple photos to one feature](../attach-multiple-photos-to-features/) 
+- design an appropriate [form layout](../form-layout/) with groups and tabs, conditional visibility of fields or instructions for the fieldwork
