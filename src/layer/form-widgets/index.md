@@ -4,7 +4,7 @@
 
 Capturing field data often requires filling some attributes in the form to record the properties of surveyed points, lines or polygons. Attribute forms can simplify the data entry and even ensure to some extent that the correct information is filled in. Here, we will explore the possibilities of various QGIS widgets that can be used in <MobileAppName />. 
 
-Extra configuration of attribute forms can be done to make data collection easier and more consistent, such as using default values, conditional visibility or constraint enforcement. These topics are covered in [Attributes Form Configuration](../form-configuration/) and [Attributes Form Layout](../layer/form-layout/).
+Extra configuration of attribute forms can be done to make data collection easier and more consistent, such as using default values, conditional visibility or constraint enforcement. These topics are covered in [Attributes Form Configuration](../form-configuration/) and [Attributes Form Layout](../form-layout/).
 
 <YouTube id="jc4p1PpXj3k" />
 
@@ -203,7 +203,7 @@ In the <MobileAppNameShort />, the status of the checkbox field can be easily to
 
 ## Select value from a drop-down menu
 
-Selecting values from a drop-down menu is faster then typing them in manually and it also ensures that there are no typos or spelling variations. To present the options as a drop-down menu in the form, you can use the [Value Map](#value-map) or [Value Relation](value-relation) widgets in QGIS.
+Selecting values from a drop-down menu is faster then typing them in manually and it also ensures that there are no typos or spelling variations. To present the options as a drop-down menu in the form, you can use the [Value Map](#value-map) or [Value Relation](#value-relation) widgets in QGIS.
 
 ### Value Map
 
@@ -282,7 +282,7 @@ There are much more settings that can make taking photos and storing them much m
 ## Capturing photos, cascade forms, 1-N relations,...
 
 There is much more you can do to set up your forms efficiently, such as:
-- Capture and display pictures, store them in a custom folder, resize them automatically or customize their name. The overview of <MainPlatformName /> functionality related to photos can be found in [Capturing Photos](../photos/).
+- Capture and display pictures, store them in a custom folder, resize them automatically or customise their name. The overview of <MainPlatformName /> functionality related to photos can be found in [Capturing Photos](../photos/).
 - Create advanced forms with drill-down menu by setting up a [cascade form](../form-configuration/#drill-down-forms).
 - Use 1-N relations to [link multiple records to one feature](../one-to-n-relations/) or to [attach multiple photos to one feature](../attach-multiple-photos-to-features/).
 - Design an appropriate [form layout](../form-layout/) with groups and tabs, conditional visibility of fields or instructions for the fieldwork.
