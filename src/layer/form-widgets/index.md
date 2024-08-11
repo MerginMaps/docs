@@ -44,7 +44,7 @@ In the <MobileAppNameShort />, the text can be entered manually or using voice-t
 
 ### Multiline text
 
-:::tip Public project available
+:::tip Example project available
 Multiline text option is used in this public project: <MerginMapsProject id="documentation/form-widgets" />. Download or clone it to see this setup.
 :::
 
@@ -64,7 +64,7 @@ In the <MobileAppNameShort />, the **multiline text edit widget** will look like
 
 ## QR code
 
-:::tip Public project available
+:::tip Example project available
 A QR code field is used in this public project: <MerginMapsProject id="documentation/form-widgets" />. Download or clone it to see this setup.
 :::
 
@@ -77,7 +77,7 @@ In the <MobileAppNameShort />, there will be a QR code icon next to the field. T
 
 ## Numbers
 
-:::tip Public project available
+:::tip Example project available
 This public project: <MerginMapsProject id="documentation/form-widgets" /> uses various options for entering numerical data. Download or clone it to see this setup.
 :::
 
@@ -118,7 +118,7 @@ In the <MobileAppNameShort />, the **Slider** looks like this. The number can be
 
 ## Date and time
 
-:::tip Public project available
+:::tip Example project available
 Various options of setting up Date and Date&Time fields are included in this public project: <MerginMapsProject id="documentation/form-widgets" />. Download or clone it to explore it in more detail.
 :::
 
@@ -183,7 +183,7 @@ Following types are supported:
 
 ## Checkbox
 
-:::tip Public project available
+:::tip Example project available
 Boolean field with checkbox widget is used in this public project <MerginMapsProject id="documentation/form-widgets" />. Download or clone it to see the setup.
 :::
 
@@ -207,7 +207,7 @@ Selecting values from a drop-down menu is faster then typing them in manually an
 
 ### Value Map
 
-:::tip Public project available
+:::tip Example project available
 This public project <MerginMapsProject id="documentation/form-widgets" /> contains a Value Map field. Download or clone it to see the setup.
 :::
 
@@ -225,7 +225,7 @@ Now you can select the value from a drop-down menu in the <MobileAppNameShort />
 
 ### Value relation
 
-:::tip Public project available
+:::tip Example project available
 This public project <MerginMapsProject id="documentation/form-widgets" /> contains a Value Relation setup. Download or clone it to explore it in more detail.
 :::
 
@@ -256,7 +256,7 @@ When you open the field with **Value Relation** in the <MobileAppNameShort />, y
 
 ## Attachment
 
-:::tip Public project available
+:::tip Example project available
 Basic attachment widget is set up in the public project <MerginMapsProject id="documentation/form-widgets" />.
 :::
 
