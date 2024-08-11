@@ -10,11 +10,11 @@ In addition to setting up [edit widgets](../form-widgets/) and designing the [fo
 ## Default values
 Default values can be used to automatically record, e.g, the name of the surveyor, date and time of the survey, latitude and longitude of the feature, or to have frequently used values filled in advance.
 
-::: tip Example project available
-These examples of using default values can be explored in more detail by downloading or cloning this public project <MerginMapsProject id="documentation/form_setup" />.
-:::
-
 The default value can be a text, number or a QGIS expression. The data format of the field has to match the result of the default value expression you want to use.
+
+::: tip Example project available
+Various usage of default values can be explored in more detail by downloading or cloning this public project <MerginMapsProject id="documentation/form_setup" />.
+:::
 
 ### Recording usernames and timestamps automatically
 
@@ -24,10 +24,15 @@ Let's set up an attributes to record the <MainPlatformName /> username of the su
 3. In **Defaults** tab, define the **Default value** as `@mergin_username`. 
    Do not check the **Apply default value on update** option :white_large_square:.
 
-To save the <MainPlatformName /> username of the surveyor who *modified* this feature last, the steps are similar:
+![QGIS attributes form Mergin Maps username default value](./qgis-form-default-inserted-by.jpg "QGIS attributes form Mergin Maps username default value")
+
+To save the <MainPlatformName /> username of the surveyor who *modified* this feature, the steps are similar:
 1. In the list of **Available Widgets** select the text field you want to use (here: `updated_by`)
 2. In **Defaults** tab, define the **Default value** as `@mergin_username`. 
-   Check the **Apply default value on update** option :heavy_check_mark:.
+   Check the **Apply default value on update** option :heavy_check_mark:. The field will be updated anytime the feature is modified, saving the name of the surveyor who made the changes.
+
+![QGIS attributes form Mergin Maps username default value](./qgis-form-default-updated-by.jpg "QGIS attributes form Mergin Maps username default value")
+
 
 Follow the same steps for attributes to store the timestamps of when was the feature created and updated (here: `inserted_at`, `updated_at`), using the `now()` expression as **Default value**.
 
@@ -44,9 +49,9 @@ Here we are going to set the default values for `x` and `y` field to be longitud
    Note that the expression transforms the point from EPSG:3857 (map and layer coordinate reference system) to EPSG:4326.
 5. Check the **Apply default value on update** option :heavy_check_mark:.
 
-![QGIS attributes form default value](./qgis_forms_defaults.jpg "QGIS attributes form default value")
+![QGIS attributes form transform and record coordinates by default](./qgis-form-default-coordinates.jpg "QGIS attributes form transform and record coordinates by default")
 
-Repeat the same steps for `y*` field and setting the **Alias** to *Latitude* and the default value to
+Repeat the same steps for `y` field and setting the **Alias** to *Latitude* and the default value to
 
 ```
 y( transform( $geometry, 'EPSG:3857', 'EPSG:4326'))
@@ -56,7 +61,7 @@ Don't forget to save and synchronise your project!
 
 When you survey a new point in <MobileAppName />, you will see the values are automatically filled in:
 
-![Mergin Maps mobile app attributes form default value](./input_forms_defaults1.jpg "Mergin Maps mobile app attributes form default value")
+![Mergin Maps mobile app attributes form default values](./mobile-form-default-values.jpg "Mergin Maps mobile app attributes form default values")
 
 ### Examples of useful default values
 There are some commonly used default values that can be useful in your field survey. As they are filled in automatically, they can be hidden from attributes form.
@@ -108,24 +113,28 @@ In the <MerginMapsProject id="documentation/forms-display-images-and-files" /> p
 :::
 
 ## Constraints
-When collecting data, you may want to apply constraints to certain field(s) to avoid mistakes when the values are filled in in the field.
+When collecting data, you may want to apply constraints to avoid mistakes when the values are filled in or to highlight mandatory fields.
 
 :::tip Example project available
-Clone <MerginMapsProject id="documentation/form_setup" /> to follow this example!
+Constraints are used in this project <MerginMapsProject id="documentation/form_setup" />. Clone or download it to try it to see how it works.
 :::
 
-Here, we will set up a constraint to the **number** field that represents the number of plants.
+Here, we will set up a constraint to a field that represents the facility capacity: the value should be a number that is higher than 0.
 
-1. Right-click on **survey** layer and select **Properties**
-2. In the **Attributes form** tab, select the **number** field in the **Available Widgets** column on the left
-3. In the **Widget Display**, define the **Constraints**:
-   - check the **Not null** and **Enforce not null constraints**
-   - **Expression** type `"number" >= 1` and check the **Enforce expression constraint** option
+1. Right-click on a survey layer and select **Properties**
+2. In the **Attributes form** tab, select a numeric field in the **Available Widgets** column that you want to use (here: `number`)
+3. In the **Constraints** tab:
+   - Check the **Not null** constraint :heavy_check_mark:
+   - Use following **Expression**: `"number" >= 1` and check the **Enforce expression constraint** option :heavy_check_mark:
 
-![QGIS constraints in attributes form](./qgis_forms_constraints.jpg "QGIS constraints in attributes form")
+![QGIS constraints in attributes form](./qgis-form-constraints.jpg "QGIS constraints in attributes form")
 
-When surveying new features in <MobileAppName />, this field will have to be filled in using a value higher than or equal to 1. Otherwise, you will get a warning.
-![Mergin Maps mobile app constraints in attributes form](./input_forms_constraint.jpg "Mergin Maps mobile app constraints in attributes form")
+When there is a constraint set up in the form, a warning will be displayed next to the field. The feature can be saved even when the constraint is not met, unless it is *enforced* in the form setup.
+
+When surveying features in the <MobileAppNameShort />, there will be warnings displayed next to the fields with constraints. 
+If the constraint is **enforced** (here: `Capacity`), you will be unable to save the feature unless meeting the constraint. If the constraint is not enforced (here: `photo` should not be empty), the feature can be saved despite the unmet constraint.
+
+![Mergin Maps mobile app constraints in attributes form](./mobile-form-constaints.jpg "Mergin Maps mobile app constraints in attributes form")
 
 ## Drill-down forms
 Cascade or drill-down forms enable to list values in a field depending on a value selected in another field.
