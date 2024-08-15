@@ -2,6 +2,9 @@ name: Status PROD
 
 # runs at minute 0 of the 2rd,5th,8th and 11th hour
 on:
+  push:
+    branches:
+      - main
   schedule:
     - cron:  '0 2,5,8,11 * * *'
 
