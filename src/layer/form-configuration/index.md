@@ -26,20 +26,20 @@ Various usage of default values can be explored in more detail by downloading or
 Let's set up an attributes to record the <MainPlatformName /> username of the surveyor who *created* a feature:
 1. Right-click on a layer, select **Properties** and go to the **Attributes form** tab.
 2. In the list of **Available Widgets** select the text field you want to use (here: `inserted_by`)
-3. In **Defaults** tab, define the **Default value** as `@mergin_username`. 
+3. In the **Defaults** tab, define the **Default value** as `@mergin_username`. 
    Do not check the **Apply default value on update** option :white_large_square:.
 
 ![QGIS attributes form Mergin Maps username default value](./qgis-form-default-inserted-by.jpg "QGIS attributes form Mergin Maps username default value")
 
 To save the <MainPlatformName /> username of the surveyor who *modified* this feature, the steps are similar:
 1. In the list of **Available Widgets** select the text field you want to use (here: `updated_by`)
-2. In **Defaults** tab, define the **Default value** as `@mergin_username`. 
+2. In the **Defaults** tab, define the **Default value** as `@mergin_username`. 
    Check the **Apply default value on update** option :heavy_check_mark:. The field will be updated anytime the feature is modified, saving the name of the surveyor who made the changes.
 
 ![QGIS attributes form Mergin Maps username default value](./qgis-form-default-updated-by.jpg "QGIS attributes form Mergin Maps username default value")
 
 
-Follow the same steps for attributes to store the timestamps of when was the feature created and updated (here: `inserted_at`, `updated_at`), using the `now()` expression as **Default value**.
+Follow the same steps for attributes to store the timestamps of when the feature was created and updated (here: `inserted_at`, `updated_at`), using the `now()` expression as **Default value**.
 
 When the form is opened in the <MobileAppNameShort />, the default values are automatically filled in:
 
@@ -73,11 +73,11 @@ When adding or editing features in the <MobileAppNameShort />, the coordinates a
 ![Mergin Maps mobile app attributes form default values](./mobile-form-default-values-coordinates.jpg "Mergin Maps mobile app attributes form default values")
 
 ### Examples of useful default values
-There are some commonly used default values that can be useful in your field survey. As they are filled in automatically, they can be hidden from attributes form.
+There are some commonly used default values that can be useful in your field survey. As they are filled in automatically, they can be hidden from the attributes form.
 
-- It is convenient to know when a feature was created and when it was last updated. Use fields with **Date** or **Date&Time** data types with the `now()` function to record these information. You can change the formatting using [Date/Time](../form-widgets/#date-and-time) widget.
-- Similarly, the name of the <MainPlatformName /> user who created or modified the feature can be recorded using the `@mergin_username` [QGIS plugin variable](../plugin-variables/). These field should have the **Text (string)** data type.
-- The coordinates of a point feature can be recorded as well using the `$x` and `$y` function in QGIS. To record the coordinate accurately, these fields should have the **Decimal number (real)** data type.  If the coordinates are in meters, values can be rounded to, say, 2-3 decimal places. When working with geographic coordinates that use degrees, you may want to round the coordinates to 8 decimal places. Use the *apply default value on update* option so that you have correct values when the position of the point feature changes.
+- It is convenient to know when a feature was created and when it was last updated. Use fields with **Date** or **Date&Time** data types with the `now()` function to record this information. You can change the formatting using the [Date/Time](../form-widgets/#date-and-time) widget.
+- Similarly, the name of the <MainPlatformName /> user who created or modified the feature can be recorded using the `@mergin_username` [QGIS plugin variable](../plugin-variables/). These fields should be of the **Text (string)** data type.
+- The coordinates of a point feature can be recorded as well using the `$x` and `$y` function in QGIS. To record the coordinate accurately, these fields should have the **Decimal number (real)** data type.  If the coordinates are in metres, values can be rounded to, say, 2-3 decimal places. When working with geographic coordinates that use degrees, you may want to round the coordinates to 8 decimal places. Use the *apply default value on update* option so that you have correct values when the position of the point feature changes.
 - Parameters such as **length** of a line feature or **area** of a polygon feature can be calculated from the geometry. These fields should have the **Decimal number (real)** or **Integer** data type. Use the *apply default value on update* option to update the field in case there is a change in the feature.
 
 | Variable name               | Sample value                  | Apply default value on update   | Description |
@@ -159,60 +159,47 @@ In the <MobileAppNameShort />, you will be unable to save a feature unless the f
 Drill-down or cascade forms enable to list values in a field depending on a value selected in another field.
 
 :::tip Example project available
-Clone <MerginMapsProject id="documentation/form_setup" /> to explore examples of drill-down forms.
+Clone <MerginMapsProject id="documentation/form_setup" /> to explore drill-down forms.
 :::
 
-Here, we will work with a layer named `landuse`. It has fields such as **Land use**, **Type** or **Plant type** that refer to non-spatial tables using [value relations](../form-widgets/#value-relation), so they are filled in by selecting a value from a drop-down menu.
-
-In this case, it is beneficial to use the value that is entered as **Land use** field to filter choices in the **Type**: if we select *Vineyard* as the land use, it is not relevant to offer, e.g., *nut trees* in the following fields. Similarly, the **Type** value can limit the drop-down menu of **Plant type**, showing only applicable plant types.
+Here, we have a layer named `landuse` that has fields such as *Land use*, *Type*, *Plant type*. Values that can be filled in these fields depend on the previous choices: if we select `Farmland` as the *Land use*, the *Type* field drop-down menu offers options such as `Cereals`, `Oil plants` or `Vegetables`. Subsequently, the *Plant type* field has only options that are relevant for the selected type of land use.
 
 ![QGIS drill-down form](./qgis-drill-down-form.gif "QGIS drill-down form")
 
-At first, let us explore the structure of value tables that is used to set up drill-down forms. In the example project, **Land use** field uses `plant-habitat` value table that has following fields:
+At first, let us explore the structure of value tables that are used to set up drill-down forms. In the example project, *Land use* field uses `plant-habitat` value table that has following fields:
 
 ![QGIS category value table](./qgis-table-habitat.jpg "QGIS category value table")
 
-The following field **Type** uses `plant-type` value table. In this table, there is a field `habitat-code` that refers to a specific category from the `plant-habitat` table.
+The *Type* field refers to the `plant-type` value table. In this table, there is a field `habitat-code` that refers to a specific `code` value from the `plant-habitat` table. 
+For instance, the `FAR` habitat code (standing for *Farmland*) is used as the `habitat-code` for *Cereals, Vegetables, Oil plants* as these are applicable farmland types.
 
 ![QGIS type value table](./qgis-table-type.jpg "QGIS type value table")
 
-Similarly, the **Plant type** field uses `plant-sub-type` value table that contains a `Code` field that ties values to specific types from the `plant-type` table.
+Similarly, the *Plant type* field uses the `plant-sub-type` value table that contains a `Code` field that refers to specific types from the `plant-type` table.
+For instance, the `CER` type code is applied for *Wheat, Rye, Barley, Maize*, meaning these types of plants belong to the *Cereals* category.
 
 ![QGIS subtype value table](./qgis-table-subtype.jpg "QGIS subtype value table")
 
-Now we can set up the drill-down form:
-1. Go to the **Attributes form** tab in the **Properties** of `landuse` polygon layer
-
-2. The `habitat` field aliased as **Land use** is set up using **Value relation** widget. Values are defined in the `plant-habitat` table.
+To set up drill-down forms:
+1. Right-click on a survey layer, select **Properties** and go to the **Attributes form** tab
+2. The `habitat` field aliased as *Land use* is set up using the **Value relation** widget. Values are defined in the `plant-habitat` table:
+   - **Key column** is the field that contains the values (here: `code`)
+   - **Value column** is the field that contains the alias (description) of the value (here: `desc`)
 
    ![QGIS form value relation](./qgis-form-value-relation.jpg "QGIS form value relation")
 
-3. The `type` field (aliased as **Type**) uses **Value relation** widget with values from the `plant-type` table. However, here we use **Filter expression**: `"habitat-code"= current_value('habitat')`
-   
-   This means that the drop-down menu will only display values where the `habitat-code` value of the `plant-type` value table is the same as the current value of the `habitat` field.
-   
-   ![QGIS form value relation filter expression](./qgis-form-value-relation-expression.jpg "QGIS form value relation filter expression")
+3. The `type` field (aliased as *Type*) uses the **Value relation** widget with values from the `plant-type` table:
+   - **Key column** is the field that contains the values (here: `Code`)
+   - **Value column** is the field that contains the alias (description) of the value (here: `Description`)
+   - **Filter expression**: `"habitat-code"= current_value('habitat')` is used to limit the options in the drop-down menu to values where the `habitat-code` of the value is the same as the current value of the `habitat` field.
+    ![QGIS form value relation filter expression](./qgis-form-value-relation-expression.jpg "QGIS form value relation filter expression")
 
-4. The **Car-manufacturer** field refers to the **car-manufacturer** table. This table contains the fields `fid`, `name`, and `type`.
-   ![QGIS car-manufacturer table](./qgis_forms_cascade9.jpg "QGIS car-manufacturer table")
+4. Likewise, the `subtype` field (aliased as *Plant type*) uses the **Value relation** widget with values defined in the `plant-sub-type` table:
+   - **Key column** is the field that contains the values (here: `id`)
+   - **Value column** is the field that contains the alias (description) of the value (here: `Species`)
+   - **Filter expression**: `"Code" = current_value('type')`
+    ![QGIS form value relation filter expression](./qgis-form-value-relation-expression-subtype.jpg "QGIS form value relation filter expression")
 
-   - Set the `fid` field as the key column and `name` as the value column. 
-   - Use the `type` field to define which values will be shown in the form based on the selected **Car-type** by entering this **Filter expression**: 
-   `"type" = current_value('Car-Type')`
-
-![QGIS drill-down form setup](./qgis_forms_cascade8.jpg "QGIS drill-down form setup")
-
-   Now, the form will offer only options, where the **Type** field of the **car-manufacturer** table matches the current value of the **Car-type**. When entering data, we will get a drill-down form: since *Truck* is selected as the **Car type**, only three manufacturers are available in the **Car-Manufacturer** field.
-
-![QGIS drill-down form](./qgis_forms_cascade11.jpg "QGIS drill-down form")
-
-5. **Car-model** works similarly. It refers to the **car-model** table, limiting options based on the **Car-manufacturer** field.
-   - Set the `fid` field as the key column and `name` as the value column. 
-   - Use the `manufacturer` field to filter the values using this **Filter expression**:
-   `"manufacturer" = current_value('Car-Manufacturer')`
-
-![QGIS drill-down form setup](./qgis_forms_cascade12.jpg "QGIS drill-down form setup")
-
-When doing the survey <MobileAppName />, you will see that after selecting **Car-type: Car**, the **Manufacturer** field will only offer **Mercedes-Benz**, **Skoda** and **Audi**. After selecting **Audi**, the **Car-Model** field will only offer the appropriate car models.
+And this is how the drill-down form looks in the <MobileAppNameShort />. After selecting *Land use: Farmland*, the *Type* field only offers values `Cereals`, `Oil plants` or `Vegetables`. After selecting `Cereals`, the *Plant type* offers only relevant options such as `Wheat`, `Rye` or `Barley`.
 
 ![Mergin Maps mobile app drill-down form](./mobile-drill-down-form.gif "Mergin Maps mobile app drill-down form")
