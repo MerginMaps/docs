@@ -57,7 +57,7 @@ EXIF function supported by <MobileAppName />:
 
 The list of **EXIF tags** can be found in the Android developer documentation for [<NoSpellcheck id="ExifInterface" /> ](https://developer.android.com/reference/android/media/ExifInterface) or in [ExifTool documentation](https://exiftool.org/TagNames/EXIF.html). 
 
-Note that some of the tag names listed in [ExifTool documentation](https://exiftool.org/TagNames/EXIF.html) can differ from the EXIF specification. As an example, while `ImageWidth` tag is valid, `ImageHeight` is not and you have to use `ImageLength` tag name (defined by EXIF specification) when [recording EXIF metadata](#how-to-use-exif-metadata) in <MobileAppName />.
+Note that some of the tag names listed in [ExifTool documentation](https://exiftool.org/TagNames/EXIF.html) can differ from the EXIF specification. As an example, while `ImageWidth` tag is valid, `ImageHeight` is not and you have to use `ImageLength` tag name (defined by EXIF specification) when [recording EXIF metadata](#how-to-use-exif-metadata-in-mergin-maps-mobile-app) in <MobileAppName />.
 
 :::details
 EXIF tags that can be retrieved from your images can vary depending on how they were created (e.g. what type of device you used to capture photos). EXIF tags that are recorded in your image can be displayed, e.g., using [ExifTool](https://exiftool.org/):
