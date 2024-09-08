@@ -22,44 +22,54 @@ QGIS Drag and Drop designer is an easy tool for defining the form layouts:
 ## Tabs and groups
 Using QGIS Drag and Drop designer, fields can be arranged into groups and tabs.
 
+:::tip Example project available
+To see an example of tabs and groups, you can clone <MerginMapsProject id="documentation/form_setup" />. 
+:::
+
 1. Click on the **+** button to add new group or a tab to the form layout
    ![QGIS Drag and drop designer add new group or tab](./qgis-form-layout-add-groups-tabs.jpg "Add new group or tab button")
 2. Choose the container type, add a label, and if needed, the number of columns.
 
-   A group can be placed inside a tab or another group.
-   ![QGIS form Add group or tab](./qgis-add-group-tab.jpg "QGIS form Add group or tab")
+   A group can be placed within a tab or another group.
+   ![QGIS form Add tab](./qgis-add-group-tab.jpg "QGIS form Add tab")
+   ![QGIS form Add group](./qgis-form-add-group.jpg "QGIS form Add group")
    
-3. Drag and drop fields that should be in the tab or the group
+3. Drag and drop fields to tabs or groups as needed.
 
-:::tip
-To see an example of tabs and groups, you can clone <MerginMapsProject id="documentation/form_setup" />. 
-:::
-
-In this project, we created two tabs, *Information* and *Data* and a group *Location* placed in the *Information* tab:
+Here we have two tabs, *Data* and *Changelog*. The *Data* tab contains two groups: *roads* and *paths*.
 ![QGIS form with tabs and groups](./qgis_forms_layout.jpg "QGIS form with tabs and groups")
 
 The form with tabs and groups will appear in QGIS like this:
-![QGIS form conditional visibility](./qgis_forms_layout_attribute.jpg "QGIS form conditional visibility")
+![QGIS form layout with tabs and groups](./qgis-form-tabs-groups.jpg "QGIS form layout with tabs and groups")
 
-And this is how the same form looks like in <MobileAppName />:
-![Mergin Maps Input form with tabs and groups](./mobile-forms-layout.jpg "Mergin Maps Input form with tabs and groups")
+And this is how the same form looks like in the <MobileAppNameShort />:
+![Mergin Maps mobile form with tabs and groups](./mobile-forms-layout.jpg "Mergin Maps mobile form with tabs and groups")
 
 
-## Show and hide fields depending on a field value
+## Show and hide fields depending on a field value (conditional visibility)
 Conditional visibility can be applied to groups and tabs, meaning they will be displayed or hidden depending on the value of a field.
 
-We can set the visibility of **Location** tab depending on the value of the `survey` field:
-  - If `survey` is set to `False`, the **Location** tab will not appear in the form,
-  - If `survey` is set to `True`, the **Location** tab will show up in the form.
+:::tip Example project available
+You can explore this functionality in <MerginMapsProject id="documentation/form_setup" />. 
+:::
 
-1. Select the **Location** tab in the **Form Layout** column
-2. Check the **Control Visibility by Expression** option
-3. Type the following expression in the box below: `"survey" IS TRUE`
-4. Background colour can be set in the **Style** tab.
+Here we will use a line layer named `roads and paths`. It is designed for surveying both roads and paths and most of the fields are relevant for every type of feature in this layer. However, there are some attributes that are specific for roads (e.g. the number of lanes) or for paths (e.g. the visibility of the path). 
 
-![QGIS form control visibility by expression](./qgis_forms_layout_visibility.jpg "QGIS form control visibility by expression")
+The form uses the value of the `type` field to display the relevant set of attributes. The `type` field is set up as [value map](../form-widgets/#value-map) with defined values `road` and `path`.
 
-In the <MobileAppNameShort />, the tab **Location** is displayed only when the `survey` field (aliased here as *Does it need surveying*) is toggled to `true`.
+![QGIS form value map](./qgis-form-value-map-roads.jpg "QGIS form value map")
+
+To set the visibility of groups in the attributes form:
+1. Click on the **roads** group in the **Form Layout**
+2. Check the **Control Visibility by Expression** option :heavy_check_mark:
+3. Define the expression. Here we use: `"type" = "road"`
+
+![QGIS form control visibility by expression](./qgis-form-conditional-visibility.jpg "QGIS form control visibility by expression")
+
+4. Same steps are used for the **path** group using the expression `"type" = "path"`
+
+In the <MobileAppNameShort />, the form displays these groups only when the condition is met. So, there are different sets of attributes depending on the value that is entered in the `type` field.
+
 ![Show fields depending on a field value in the mobile app](./mobile-forms-conditional-visibility.jpg "Show fields depending on a field value in the mobile app")
 
 
