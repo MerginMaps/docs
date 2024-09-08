@@ -1,9 +1,13 @@
 # Capturing Photos
+[[toc]]
 
 When surveying, you might want to take a photo from your camera or attach an existing photo from the device gallery to your survey feature.
 
-Here, you will find the overview of the basic functionality related to capturing photos, such as:
-[[toc]]
+To capture and save photos using the <MobileAppNameShort />, the survey layer needs to have a field configured with the [attachment widget](../form-widgets/#attachment). In the <MobileAppNameShort />, this field will provide two options:
+- **Take a picture** to use your camera app for taking a photos 
+- **From gallery** to attach an existing photo from your device
+
+![Mergin Maps mobile app photo widget](../form-widgets/mobile-form-attachment-photo.jpg "Mergin Maps mobile app photo widget")
 
 :::tip
 Do you need to attach multiple pictures to one feature? [How to attach multiple photos to features](../attach-multiple-photos-to-features/) will guide you through the setup.
@@ -15,13 +19,15 @@ Keep in mind that synchronising photos during the field survey can use up a lot 
 To reduce the data usage, you may consider using [selective synchronisation](../../manage/selective_sync/), [resizing pictures automatically](#resizing-pictures-automatically) or following the [offline field survey workflow](../../field/offline-use/#offline-field-survey-workflow). 
 :::
 
-## Attachment widget in QGIS
+## Photo attachment widget in QGIS
 
-:::tip
+:::tip Example project available
 Clone <MerginMapsProject id="documentation/form_setup" /> to follow this example!
 :::
 
-To set up a photo widget:
+In QGIS, the [attachment widget](../form-widgets/#attachment) is used to set up a field to capture photos.
+
+To set up the attachment widget:
 1. Right-click on a layer, select **Properties** and go to the **Attributes form** tab.
 2. In the list of **Available Widgets** select the text field you want to work with.
 3. In the **Widget Display** tab:
@@ -75,17 +81,6 @@ Photos taken in the field using <MobileAppName /> can be automatically renamed. 
 ::: tip
 [How to Set Photo Names Format](../../gis/photo-names/) will guide you through the setup and provide examples of expressions that can be used to name your photos.
 :::
-
-## Photos in Mergin Maps mobile app
-::: warning
-Our mobile app was redesigned. We are in the process of updating this content to reflect these changes.
-:::
-
-Using the photo widget in <MobileAppName />, you will have two options:
-- **Take a photo** to use your camera app for taking a photos 
-- **Add from gallery** to attach an existing photo from your device.
-
-![Mergin Maps mobile app photo widget](./input_forms_photo.jpg "Mergin Maps mobile app photo widget")
 
 ## Displaying photos in QGIS
 Photos taken using <MobileAppName /> during the survey can be displayed in the feature's form in QGIS.
