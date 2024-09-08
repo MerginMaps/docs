@@ -1,11 +1,7 @@
 # How to Link Multiple Records to One Feature (1-N Relations)
 [[toc]]
 
-::: warning
-Our mobile app was redesigned. We are in the process of updating this content to reflect these changes.
-:::
-
-:::tip
+:::tip Example project available
 You can clone these projects to take a closer look on 1-N relations:
    - Assigning multiple inspections to a single feature: <MerginMapsProject id="documentation/forms_one-to-many-relations" />
    - Adding multiple photos to a single feature: <MerginMapsProject id="documentation/forms_multiple_photos" />
@@ -15,7 +11,7 @@ It is often the case that you have a set of spatial features and you want to rec
 
 The image below shows the manhole locations and a form with listed inspections in <MobileAppName />.
 
-![Multiple inspections linked to one point in Mergin Maps mobile app](./input-1-n.jpg "Multiple inspections linked to one point in Mergin Maps mobile app")
+![Multiple inspections linked to one point in Mergin Maps mobile app](./mobile-1-n-relation.jpg "Multiple inspections linked to one point in Mergin Maps mobile app")
 
 The manhole point layer has the following attribute table: 
 
@@ -76,7 +72,7 @@ Now you can add multiple inspections for each manhole location. The inspections 
 When you open the form for an existing record in the `manhole_locations` point layer, it will display existing inspection records and you can also add, delete or edit the records:
 ![Form view of a feature with 1-N relation in QGIS](./qgis-1-N-form.jpg "Form view of a feature with 1-N relation in QGIS")
 
-In <MobileAppName />, the form will look like this:
+In the <MobileAppNameShort />, the form will display all linked inspection records. Tapping the **+** button opens the inspection form and a new inspection record can be added.
 
-![Form view of a feature with 1-N relation in Mergin Maps mobile app](./input_forms_one-to-n.jpg "Form view of a feature with 1-N relation in Mergin Maps mobile app")
+![Form view of a feature with 1-N relation in Mergin Maps mobile app](./mobile-form-1-n-relation.jpg "Form view of a feature with 1-N relation in Mergin Maps mobile app")
 

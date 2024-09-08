@@ -1,14 +1,11 @@
 # How to Attach Multiple Photos to Features
 
-::: warning
-Our mobile app was redesigned. We are in the process of updating this content to reflect these changes.
-:::
 
 In some situations, it might be useful to take more than one picture of a feature during the field survey. Attaching multiple photos to one feature is a 1-N relation. You can read more about 1-N relations and how they can be used in <MainPlatformNameLink /> in [How to link multiple records to one feature](../one-to-n-relations/).
 
 <YouTube id="NCa_Nb_CYno" />
 
-:::tip
+:::tip Example project available
 To see this setup in practice, you can download the following project: 
 <MerginMapsProject id="documentation/forms_multiple_photos" />.
 :::
@@ -44,5 +41,5 @@ Now we need to configure a [1-N relation](../one-to-n-relations/):
 7. Navigate to the **Attributes Form** tab in the **Properties** of the `photos` layer. Set the **Widget Type** of the foreign key `external-pk` to **Relation Reference**:
    ![Relation Reference widget in Attributes form](./qgis_relation_form.jpg "Relation Reference widget in Attributes form")
 
-<MobileAppName /> detects the type of 1-N relation and displays the image viewer for the relations. 
-![Many photos to a single feature in Mergin Maps mobile app](./input_forms_many-photos.jpg "Many photos to a single feature in Mergin Maps mobile app")
+The <MobileAppNameShort /> detects the type of 1-N relation and displays the image viewer for the relations. 
+![Many photos to a single feature in Mergin Maps mobile app](./mobile-multiple-photos.jpg "Many photos to a single feature in Mergin Maps mobile app")

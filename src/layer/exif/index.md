@@ -1,21 +1,27 @@
 # Exif Metadata
 [[toc]]
 
-::: warning
-Our mobile app was redesigned. We are in the process of updating this content to reflect these changes.
-:::
-
 EXIF is a file format for storing metadata in image files, such as the camera settings, image metrics, date and time or location information (see, e.g., [Wikipedia](https://en.wikipedia.org/wiki/Exif)). 
 
-<MobileAppName /> supports some default value expression functions that can be used to read EXIF metadata and store their values in the fields of your survey layer.
+The <MobileAppNameShort /> supports some default value expression functions that can be used to read EXIF metadata and store their values in the fields of your survey layer.
 
 To store GPS EXIF metadata, both the <MobileAppNameShort /> and your camera app have [location permissions](#allowing-location-tags) allowed on your mobile device.
 
-::: tip
+## Allowing location tags
+**Location tags have to be allowed** in the camera settings to store GPS EXIF metadata in the photos.
+
+- **Android**: Open Camera app -> Camera settings -> Location tags. 
+   ![Allowing location tags in Android](./android_geo_tags.jpg "Allowing location tags in Android")
+
+- **iOS**: Open Settings -> Privacy -> Location Services -> Camera (app).
+   ![Allowing location tags in iOS](./ios_geo_tags.jpg "Allowing location tags in iOS")
+
+## How to use EXIF metadata in Mergin Maps mobile app
+
+::: tip Example project available
 Clone <MerginMapsProject id="documentation/exif-metadata" /> to see how it works!
 :::
 
-## How to use EXIF metadata
 To store EXIF metadata values in the fields of your survey layer:
 1. In QGIS, open the **Properties** of your survey layer and navigate to the **Attributes Form** tab.
 2. Now we need to set the [default values](../form-configuration/#default-values) of fields that should store EXIF metadata. 
@@ -36,7 +42,7 @@ To store EXIF metadata values in the fields of your survey layer:
 3. Save and sync your project. 
 
 4. Open the project in <MobileAppName />. Once you capture a photo during the field survey, the EXIF metadata values will be automatically filled in:
-   ![Exif metadata in Mergin Maps mobile app form](./gps_exif_metadata.jpg "Exif metadata in Mergin Maps mobile app form")
+   ![Exif metadata in Mergin Maps mobile app](./mobile-exif-metadata.jpg "Exif metadata in Mergin Maps mobile app")
 
 ## Supported EXIF functions
 EXIF function supported by <MobileAppName />:
@@ -62,11 +68,3 @@ exiftool -n -S <PATH_TO_IMAGE>
 However, keep in mind that the EXIF tag names that you get from ExifTool can differ from EXIF specification. To store EXIF metadata using <MainPlatformNameLink />, you have to use the latter.
 :::
 
-## Allowing location tags
-**Location tags have to be allowed** in the camera settings to store GPS EXIF metadata.
-
-- **Android**: Open Camera app -> Camera settings -> Location tags. 
-   ![Allowing location tags in Android](./android_geo_tags.jpg "Allowing location tags in Android")
-
-- **iOS**: Open Settings -> Privacy -> Location Services -> Camera (app).
-   ![Allowing location tags in iOS](./ios_geo_tags.jpg "Allowing location tags in iOS")
