@@ -2,22 +2,24 @@
 
 [[toc]]
 
-Capturing field data often requires filling some attributes in the form to record the properties of surveyed points, lines or polygons. Attribute forms can simplify the data entry and even ensure to some extent that the correct information is filled in. Here, we will explore the possibilities of various QGIS widgets that can be used in <MobileAppName />. 
+Capturing field data often requires filling some attributes in the form to record the properties of surveyed points, lines or polygons. Attribute forms can simplify the data entry and even ensure to some extent that the correct information is filled in. Here, we will explore the possibilities of various <QGISHelp ver="latest" link="user_manual/working_with_vector/vector_properties.html#attributes-form-properties" text="QGIS widgets" /> that can be used in <MobileAppName />. 
 
 Extra configuration of attribute forms can be done to make data collection easier and more consistent, such as using default values, conditional visibility or constraint enforcement. These topics are covered in [Attributes Form Configuration](../form-configuration/) and [Attributes Form Layout](../form-layout/).
 
+Prefer video? Check out this tutorial on how to configure QGIS widgets for survey forms.
 <YouTube id="jc4p1PpXj3k" />
 
 ## Widget gallery
 Attributes forms can be configured using <QGISHelp ver="latest" link="user_manual/working_with_vector/vector_properties.html#edit-widgets" text="QGIS widget types" /> in the **Attributes Form** tab in the **Layer Properties**.
 
-A number of QGIS widget types can be used in <MobileAppName />, such as *Text Edit*, *Range* widget for numbers, *Date/Time* widget with calendar popup, *Value Map* and *Value Relation* to select options from a drop-down menu, or the *Attachment* widget that is used to save photos. The widget has to be compatible with the data type of a field. 
+![QGIS Layer Properties Attributes Form tab](./qgis-attributes-form.gif "QGIS Layer Properties Attributes Form tab")
 
-Here is an overview of widgets commonly used both in <QGIS link="" text="QGIS" /> and the <MobileAppNameShort />.
+Here is an overview of widgets commonly used both in QGIS and the <MobileAppNameShort />. Note that the widget has to be compatible with the data type of a field. 
 
 |QGIS widget  | Description  |<div style="width:300px">Preview in <MobileAppName /> </div> |
 |:---:|:---:|:---:|
 |Text Edit  |[Text](#text)   | ![Mergin Maps mobile app text field form](./mobile-form-text-preview.jpg "Mergin Maps mobile app text field form") |
+|Text Edit  |[Multiline Text](#multiline-text)   | ![Mergin Maps mobile app text field form](./mobile-form-text-multiline-preview.jpg "Mergin Maps mobile app text field form") |
 |QR & barcode scanner  |[Camera to scan QR and barcode](#qr-code)   | ![Mergin Maps mobile app QR code field form](./mobile-form-qrcode-preview.jpg "Mergin Maps mobile app QR code field form") |
 |Range - Editable   |[Enter a number](#numbers)   | ![Mergin Maps mobile app numeric field form](./mobile-form-number-editable-preview.jpg "Mergin Maps mobile app numeric field form")  |
 |Range - Slider  |[Select a number using the slider](#slider)   | ![Mergin Maps mobile app slider field form](./mobile-form-number-slider-preview.jpg "Mergin Maps mobile app slider field form")  |
@@ -25,7 +27,12 @@ Here is an overview of widgets commonly used both in <QGIS link="" text="QGIS" /
 |Checkbox   |[Checkbox](#checkbox)   |![Mergin Maps mobile app checkbox field form](./mobile-form-checkbox-preview.jpg "Mergin Maps mobile app checkbox field form")   |
 |Value Map   |[Drop-down menu with predefined values](#value-map) |![Mergin Maps mobile app value map field form](./mobile-form-valuemap-preview.jpg "Mergin Maps mobile app value map field form")   |
 |Value Relation   |[Drop-down menu with values from another table](#value-relation) |![Mergin Maps mobile app value relation field form](./mobile-form-value-relation-preview.jpg "Mergin Maps mobile app value relation field form")   |
-|Attachment   |[Photos from device's camera or gallery](#attachment) | ![Mergin Maps mobile app attachment field form](./mobile-form-photo-preview.jpg "Mergin Maps mobile app attachment field form")  |
+|Attachment   |[Photos from device's camera or gallery](#attachment) | ![Mergin Maps mobile app attachment field form](./mobile-form-photo-preview.jpg "Mergin Maps mobile app attachment field form")  ![Mergin Maps mobile app attachment field form](./mobile-form-photo-preview2.jpg "Mergin Maps mobile app attachment field form")  |
+|Relation Reference |[Multiple photos from device's camera or gallery](../attach-multiple-photos-to-features/) | ![Mergin Maps mobile app multiple photos attributes form](./mobile-form-multiple-photo-preview.jpg "Mergin Maps mobile app multiple photos attributes form") |
+|Relations |[Multiple records linked to one feature](../one-to-n-relations/) | ![Mergin Maps mobile app 1-N relations attributes form](./mobile-form-relations-preview.jpg "Mergin Maps mobile app 1-N relations attributes form")  |
+
+
+
 
 ::: tip Public project available
 :bulb: These widgets can be explored in this project: <MerginMapsProject id="documentation/form-widgets" />.
