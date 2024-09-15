@@ -1,7 +1,7 @@
 ﻿# Map Overviews
 [[toc]]
 
-**Map overviews** can be displayed in the **Map** tab of a project on the <DashboardShortLink />.
+**Map overviews** can be displayed in the **Map** tab of a project on <DashboardLink />. You need to be logged in to see the map.
 
 ![Mergin Maps dashboard map overviews](./dashboard-webmap.gif "Mergin Maps dashboard map overviews")
 
@@ -36,5 +36,5 @@ The **Map** tab of a project on the <DashboardShortLink /> may display this erro
 
 ![Mergin Maps webmap Map config does not exist](./webmap-map-config-issue.jpg "Mergin Maps webmap Map config does not exist")
 
-This usually happens when the map overview was not initiated. All you need to do is to update the project: the map overview is refreshed after every synchronization, so your update will activate the map content.
+This usually happens when the map overview was not initiated. All you need to do is to update the project: the map overview is refreshed after every synchronisation, so your update will activate the map content.
 
