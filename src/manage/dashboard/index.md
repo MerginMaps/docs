@@ -33,7 +33,7 @@ Click on a file to see when it was modified, its size, to download or delete it.
 ### Map overviews
 The **Map overviews** feature is available for [Team subscription](https://merginmaps.com/pricing). It displays your <MainPlatformName /> project directly on the <DashboardShortLink /> without the need to open QGIS or the <MobileAppNameShort />.
 
-More details about this functionality can be found in the [Map overview](../webmap/) section.
+More details about this functionality can be found in the [Map overviews](../map-overviews/) section.
 
 ![Mergin Maps webmap displays the project content](./mergin-maps-web-map.jpg "Mergin Maps webmap displays the project content")
 
