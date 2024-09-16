@@ -6,27 +6,27 @@
 ![Mergin Maps dashboard map overviews](./dashboard-webmap.gif "Mergin Maps dashboard map overviews")
 
 :::tip Usage details
-Map Overviews can be used with *Team*, *Academia* and *Non-profit* <MainDomainNameLink id="pricing" desc="subscription plans"/>, as well as in [<CommunityPlatformName />](../../server/) and [<EnterprisePlatformName />](../../server/).
+Map Overviews can be used with *Team*, *Academia* and *Non-profit* <MainDomainNameLink id="pricing" desc="subscription plans"/>.
 
-It is not available in *Individual* or *Professional* subscriptions.
+Map Overviews are not available for *Individual* or *Professional* subscriptions, [<CommunityPlatformName />](../../server/) and [<EnterprisePlatformName />](../../server/).
 
 You can try the Map Overview feature for free during the trial period.
 :::
 
 ## Map overviews content
 
-In the map overview, you will see your survey layers or raster layers that are [packaged](../project/#packaging-qgis-project) with the project. Other layers, such as online [background maps](../../gis/settingup_background_map/#background-maps) are not displayed.
+In the map overview, you will see your survey layers or raster layers that are [packaged](../project/#packaging-qgis-project) with the project. Other layers, such as online [background maps](../../gis/settingup_background_map/#background-maps) or PostgreSQL layers are not displayed.
 
 The background map that is used for all map overviews is [<MainPlatformName /> vector tile service](../../gis/settingup_background_map/#mergin-maps-vector-tile-service).
 
-The content of the map overview as well as the **Layers** panel are refreshed after every update. This means that you should always see here your current spatial data.
+The content of the map overview as well as the **Layers** panel are refreshed after every synchronisation of the project. This means that you should always see your current spatial data here.
 
 The **Layers** panel lists all layers displayed on the map. The check button :white_check_mark: controls the visibility of layers.
 
 ![Mergin Maps dashboard map overviews](../dashboard/mergin-maps-web-map.jpg "Mergin Maps dashboard map overviews")
 
 ### Extent of map overviews
-The extent of map overviews is defined by the [extent set in the QGIS project](../../gis/features/#project-extent) and the extent of the data that are included in the current version of the project.
+The extent of map overviews is defined by the [extent set in the QGIS project](../../gis/features/#project-extent). If the project extent is not defined, 
 
 ## Map overviews troubleshooting
 
