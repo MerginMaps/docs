@@ -44,7 +44,7 @@ module.exports = {
                 '/manage/plugin-multi-server-use/',
                 '/manage/plugin/',
                 '/manage/dashboard/',
-                '/manage/map-overviews/',
+                '/manage/dashboard-maps/',
                 '/manage/project-details',
                 '/manage/selective_sync/'
             ]
