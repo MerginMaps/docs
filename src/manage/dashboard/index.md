@@ -35,7 +35,7 @@ The **Maps** feature is available for [Team subscription](https://merginmaps.com
 
 More details about this functionality can be found in the [Maps in Dashboard](../dashboard-maps/) section.
 
-![Mergin Maps webmap displays the project content](./mergin-maps-web-map.jpg "Mergin Maps webmap displays the project content")
+![Mergin Maps dashboard maps](./mergin-maps-web-map.jpg "Mergin Maps dashboard maps")
 
 ### History
 The **History** tab contains an overview of available project versions that can be also downloaded to your computer.
