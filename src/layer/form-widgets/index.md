@@ -88,7 +88,7 @@ In the <MobileAppNameShort />, there will be a QR code icon next to the field. T
 This public project: <MerginMapsProject id="documentation/form-widgets" /> uses various options for entering numerical data. Download or clone it to see this setup.
 :::
 
-Integer fields can be handled by the **Range** widget. Two options are supported by the <MobileAppNameShort />: [editable range](#range) and [slider](#slider). 
+Number fields can be handled by the **Range** widget. Two options are supported by the <MobileAppNameShort />: [editable range](#range) and [slider](#slider). 
 
 Decimal (real) numbers use the **Text Edit** widget by default and are filled in manually.
 
@@ -148,45 +148,19 @@ In the <MobileAppNameShort />, the date can be edited using a calendar pop up. I
 
 ![Mergin Maps mobile app calendar form date time fields](./mobile-form-datetime.jpg "Mergin Maps mobile app calendar form date time fields")
 
-### Custom field formats and widget displays
-It is also possible to use custom Field Formats and Widget Displays.
+### Custom date and time formats
+Date and time fields can use custom display format.
 
-:::warning
-While working with QString fields with a date/time value and format function (used in a default value), it is important to match field format with a given format there.
-:::
+Here are some examples:
 
-Following types are supported:
+|   Custom Display Format   |    Preview   |
+|:-------------------------------:|:-------------------:|
+|   `dd.MM.yyyy`   |   12.01.2024   |
+|   `MMMM d yyyy`   |   January 12 2024   |
+|   `HH:mm:ss`   |   12:34:56   |
+|   `yyyy-MM-dd HH:mm:ss`   | 2020-09-09 12:34:56   |
+|   `dd/MM/yyyy HH-mm-ss`   | 09/09/2020 12-34-56   |
 
-**Type: QDate**  
-
-| field format 	| widget display 	| default value 	|   value   	|
-|:------------:	|:--------------:	|:-------------:	|:----------:	|
-|     Date     	|        -       	|       -       	| `0000-00-00` 	|
-|     Date     	|        -       	|     `now()`     	| `2020-09-09` 	|
-|     Date     	|   `dd/MM/yyyy`   	|     `now()`     	| `09/09/2020` 	|
-
-
-**Type: QDateTime**  
-
-| field format 	|    widget display   	| default value 	|        value       	|
-|:------------:	|:-------------------:	|:-------------:	|:-------------------:	|
-|     Time     	|          -          	|       -       	|       `00:00:00`      	|
-|     Time     	|          -          	|     `now()`     	|       `12:34:56`      	|
-|     Time     	|      `HH/mm/ss`      	|     `now()`     	|       `12/34/56`      	|
-|   Date Time  	|          -          	|       -       	| `0000-00-00 00:00:00` 	|
-|   Date Time  	|          -          	|     `now()`     	| `2020-09-09 12:34:56` 	|
-|   Date Time  	| `dd/MM/yyyy hh-mm-ss`	|     `now()`     	| `09/09/2020 12-34-56` 	|
-
-**Type: QString**  
-
-|         Field Format          	|    Widget Display   	|               Default Value               	|        Value       	|
-|:-------------------------------:	|:-------------------:	|:-----------------------------------------:	|:-------------------:	|
-|             Date              	|          -          	|      `format_date(now(), 'yyyy-MM-dd')`     	|      `''2020-09-09'`     	|
-|      Custom (`dd/MM/yyyy`)    	|      `dd/MM/yyyy`    	|      `format_date(now(), 'dd/MM/yyyy')`     	|      `'09/09/2020'`     	|
-|             Time        ``    	|          -          	|       `format_date(now(), 'HH:mm:ss')`      	|       `'12:34:56'`      	|
-|       Custom (`HH-mm-ss`)     	|       `HH-mm-ss`     	|       `format_date(now(), 'HH-mm-ss')`      	|       `'12-34-56'`      	|
-|           Date Time           	|          -          	| `format_date(now(), 'yyyy-MM-dd HH:mm:ss')` 	| `'2020-09-09 12:34:56'` 	|
-| Custom (`dd/MM/yyyy HH-mm-ss`)	| `dd/MM/yyyy HH-mm-ss`	| `format_date(now(), 'dd/MM/yyyy HH-mm-ss')` 	| `'09/09/2020 12-34-56'` 	|
 
 ## Checkbox
 
@@ -222,7 +196,16 @@ In the <MobileAppNameShort />, the status of the checkbox field can be easily to
 
 Selecting values from a drop-down menu is faster then typing them in manually and it also ensures that there are no typos or spelling variations. To present the options as a drop-down menu in the form, you can use the [Value Map](#value-map) or [Value Relation](#value-relation) widgets in QGIS.
 
+There are some benefits of using the Value Relation widget, such as:
+- Option to select multiple values from the list (in this case, the field needs to be of `text` data type).
+- The layer that contains values can be edited in the field. For example, if you have missed a value in your list for the drop-down menu, you can edit the table in the <MobileAppNameShort />, add the value and use it during your survey. See [Working with non-spatial tables](../non-spatial-data/) for more details.
+- Searching the values: if you have a large list of values, it will become cumbersome to find the right value. With Value Relation widget, you have the option to search for values in the list in the <MobileAppNameShort />.
+
 ### Value Map
+
+Value map widget is used to select a value from a drop-down menu. Values are defined in the widget. They cannot be changed or added from the <MobileAppNameShort /> and only one value can be selected. 
+
+If you want to use multiple selections in a field or need to add new values during the survey, check out the [Value Relation](#value-relation) widget.
 
 :::tip Example project available
 This public project <MerginMapsProject id="documentation/form-widgets" /> contains a Value Map field. Download or clone it to see the setup.
@@ -240,19 +223,15 @@ Now you can select the value from a drop-down menu in the <MobileAppNameShort />
 ![Mergin Maps mobile app value map field form](./mobile-form-valuemap.jpg "Mergin Maps mobile app value map field form")
 
 
-### Value relation
+### Value Relation
 
 :::tip Example project available
 This public project <MerginMapsProject id="documentation/form-widgets" /> contains a Value Relation setup. Download or clone it to explore it in more detail.
 :::
 
-The **Value Relation** widget is similar to the [Value Map](#value-map) tool, but the values for the drop-down menu come from another non-spatial table.
+The **Value Relation** widget is similar to the [Value Map](#value-map) widget, but the values for the drop-down menu come from another layer (usually a non-spatial table). 
 
-There are some benefits of using the Value Relation widget, such as:
-  - Option to select multiple values from the list (in this case, the field needs to be of `text` data type).
-  - The table that contains values can be edited in the field. For example, if you have missed a value in your list for the drop-down menu, you can edit the table in the <MobileAppNameShort />, add the value and use it during your survey. See [Working with non-spatial tables](../non-spatial-data/) for more details.
-  - Searching the values: if you have a large list of values, it will become cumbersome to find the right value. With Value Relation widget, you will have to option to search for values in the list in the <MobileAppNameShort />.
-
+To have the option to safely add new values when working collaboratively, the value table should have a unique field with UUID values. This field should use the `uuid()` function as a [default value](../attach-multiple-photos-to-features/), so that every new entry has its UUID.
 
 To set up **Value Relation** in QGIS:
 
@@ -260,12 +239,18 @@ To set up **Value Relation** in QGIS:
 2. In the list of **Available Widgets** select the field you want to work with (here: `value-relation-multi-select`)
 3. In the **Widget Type** tab, select **Value Relation** from the drop-down menu and set it up as follows:
    - Select the **Layer** that contains the values (here: `value-relation-table`)
-   - **Key column** is the field that contains the values (here: `fid`)
+   - **Key column** is the field that contains the values (here: `uuid`)
    - **Value column** is the field that contains the alias (description) of the value (here: `value`)
    - Check the **Allow multiple selections** option :heavy_check_mark: if you want to have the option to select multiple values
 4. **Apply** the changes. Don't forget to save and sync your project!
 
 ![QGIS value relation field form](./qgis-form-value-relation-multiselect.jpg "QGIS value relation field form")
+
+:::danger Using UUID as key field
+**Why UUID?** FID can be changed during [synchronisation](../../manage/synchronisation/#synchronisation). If multiple surveyors add new entries to the value table, features can end up with wrong values. 
+
+On the other hand, <QGISHelp ver="latest" link="user_manual/expressions/functions_list.html#uuid" text="UUID" /> (Universally Unique Identifier) is generated to be unique and will not be changed when synced. Therefore, we recommend using UUID if you want to add new values during the survey.
+:::
 
 When you open the field with **Value Relation** in the <MobileAppNameShort />, you will be able to select values from the list.
 
@@ -292,14 +277,13 @@ In the <MobileAppNameShort />, you have the option to take a picture using the c
 ![Mergin Maps mobile photo attachment](./mobile-form-attachment-photo.jpg "Mergin Maps mobile photo attachment")
 
 :::tip More about this topic
-There are much more settings that can make taking photos and storing them much more efficient. Learn more about this topic in [Capturing Photos](../photos/).
+There are much more settings related to photos that can improve your workflow, such as storing them in a custom folder, resize them automatically or customise their name. Learn more about this topic in [Capturing Photos](../photos/).
 :::
 
 
-## Capturing photos, cascade forms, 1-N relations,...
+## Cascade forms, 1-N relations, form layout,...
 
 There is much more you can do to set up your forms efficiently, such as:
-- Capture and display pictures, store them in a custom folder, resize them automatically or customise their name. The overview of <MainPlatformName /> functionality related to photos can be found in [Capturing Photos](../photos/).
 - Create advanced forms with drill-down menu by setting up a [cascade form](../form-configuration/#drill-down-forms).
 - Use 1-N relations to [link multiple records to one feature](../one-to-n-relations/) or to [attach multiple photos to one feature](../attach-multiple-photos-to-features/).
 - Design an appropriate [form layout](../form-layout/) with groups and tabs, conditional visibility of fields or instructions for the fieldwork.

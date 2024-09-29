@@ -23,7 +23,7 @@ The manhole point layer has the following attribute table:
 
 This layer contains only information about the manholes. `Manhole UUID` values are generated using [`uuid()` function as a default value](../attach-multiple-photos-to-features/) when a feature is created. This ensures that these values are **unique** even when multiple surveyors capture new features at the same time. This field will be used to link inspections and manholes.
 
-:::danger WARNING
+:::danger Using UUID
 **Why UUID?** FID can be changed during [synchronisation](../../manage/synchronisation/#synchronisation). As a result, records can end up being linked to wrong features. 
 
 On the other hand, <QGISHelp ver="latest" link="user_manual/expressions/functions_list.html#uuid" text="UUID" /> (Universally Unique Identifier) is generated to be unique and will not be changed when synced. Therefore, we recommend always using UUID to link layers.

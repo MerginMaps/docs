@@ -3,7 +3,9 @@
 
 When surveying, you might want to take a photo from your camera or attach an existing photo from the device gallery to your survey feature.
 
-To capture and save photos using the <MobileAppNameShort />, the survey layer needs to have a field configured with the [attachment widget](../form-widgets/#attachment). In the <MobileAppNameShort />, this field will provide two options:
+To capture and save photos using the <MobileAppNameShort />, the survey layer needs to have a field configured with the [attachment widget](../form-widgets/#attachment). 
+
+In the <MobileAppNameShort />, this field will provide two options:
 - **Take a picture** to use your camera app for taking a photos 
 - **From gallery** to attach an existing photo from your device
 
@@ -41,16 +43,16 @@ Here is an overview of paths that will be stored in various settings of the atta
 
 |        Default path       	|  Store path as 	|                Value               	|
 |:-------------------------:	|:------------:	|:----------------------------------:	|
-|             -             	| Absolute Path	|     `<path/to/project>/image.jpg`    	|
 |             -             	| Relative to project path |              `image.jpg`             	|
 |             -             	| Relative to default path |              `image.jpg`             	|
-|      `@project_folder`      	| Absolute Path |     `<path/to/project>/image.jpg`    	|
 |      `@project_folder`      	| Relative to project path |              `image.jpg`             	|
 |      `@project_folder`      	| Relative to default path |              `image.jpg`             	|
-| `@project_home + '/photos'` 	| Absolute Path | `<path/to/project>/photos/image.jpg` 	|
 | `@project_home + '/photos'` 	| Relative to project path |          `/photos/image.jpg`         	|
 | `@project_home + '/photos'` 	| Relative to default path |               `image.jpg`             	|
 
+:::danger Avoid using absolute paths
+Using *absolute paths* causes issues when working with your projects on different devices or working in a team: as each device or team member can use different paths, they may be unable to display the attachments.
+:::
 
 ## How to set up a custom folder for storing photos
 It can be useful to set up a custom folder for photos, e.g. if you want to use [selective synchronisation](../../manage/selective_sync/) or if you simply want to have your data organised.
@@ -78,9 +80,7 @@ Photos that are captured during the field survey or uploaded using <MobileAppNam
 ## Customising photo name format with expressions
 Photos taken in the field using <MobileAppName /> can be automatically renamed. This can be useful when browsing pictures in your <MainPlatformNameLink /> project and keeping them organised.
 
-::: tip
-[How to Set Photo Names Format](../../gis/photo-names/) will guide you through the setup and provide examples of expressions that can be used to name your photos.
-:::
+[**How to Set Photo Names Format**](../../gis/photo-names/) will guide you through the setup and provide examples of expressions that can be used to name your photos.
 
 ## Displaying photos in QGIS
 Photos taken using <MobileAppName /> during the survey can be displayed in the feature's form in QGIS.
