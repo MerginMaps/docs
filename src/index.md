@@ -51,6 +51,7 @@ The ecosystem consist of various components:
 - [How to <MainPlatformName /> with a Custom Server](./manage/plugin-multi-server-use/)
 - [<QGISPluginName /> Overview](./manage/plugin/)
 - [Home Page and Dashboard](./manage/dashboard/)
+- [Maps in Dashboard](./manage/dashboard-maps/)
 - [Project History and Versions](./manage/project-details/)
 - [Selective Synchronisation](./manage/selective_sync/)
 

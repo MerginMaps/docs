@@ -30,12 +30,12 @@ In **Files**, you can see the list of all files associated with the project.
 Click on a file to see when it was modified, its size, to download or delete it.
 ![Detail of a file in Mergin Maps project](./mergin-maps-dashboard-file-detail.jpg "Detail of a file in Mergin Maps project")
 
-### Webmap
-The **Webmap** feature is available for [Team subscription](https://merginmaps.com/pricing). 
+### Maps
+The **Maps** feature is available for [Team subscription](https://merginmaps.com/pricing). It displays your project directly on the <DashboardShortLink /> without the need to open QGIS or the <MobileAppNameShort />.
 
-It displays your <MainPlatformName /> project directly in the <DashboardShortLink />. Here, you can see your spatial data without the need to open QGIS or the <MobileAppNameShort />.
+More details about this functionality can be found in the [Maps in Dashboard](../dashboard-maps/) section.
 
-![Mergin Maps webmap displays the project content](./mergin-maps-web-map.jpg "Mergin Maps webmap displays the project content")
+![Mergin Maps dashboard maps](./mergin-maps-web-map.jpg "Mergin Maps dashboard maps")
 
 ### History
 The **History** tab contains an overview of available project versions that can be also downloaded to your computer.
