@@ -134,7 +134,8 @@ module.exports = {
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
-                '/migrate/qfield/'
+                '/migrate/qfield/',
+                '/migrate/arcgis/'
             ]
         },
         {

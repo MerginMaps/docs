@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  name: "qgishelp",
+  name: "qgis",
   props: {
     ver: String,
     link: String,
