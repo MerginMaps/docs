@@ -71,15 +71,15 @@ module.exports = {
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
                 '/layer/best-practice/', 
-                '/layer/settingup_forms',
-                '/layer/settingup_forms_settings',
+                '/layer/form-widgets/',
+                '/layer/form-configuration/',
                 '/layer/form-layout/',
-                '/layer/exif_metadata',
-                '/layer/settingup_forms_photo',
+                '/layer/photos/',
                 '/layer/attach-multiple-photos-to-features/',
                 '/layer/one-to-n-relations/',
+                '/layer/exif/',
                 '/layer/external-link/',
-                '/layer/working_with_nonspatial_data',
+                '/layer/non-spatial-data/',
                 '/layer/position_variables',
                 '/layer/plugin-variables'
             ]

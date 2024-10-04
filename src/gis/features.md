@@ -23,7 +23,7 @@ Various online and offline maps can be used as background layers for navigation 
 - Define the <QGISHelp ver="3.22" link="user_manual/introduction/qgis_configuration.html?highlight=properties#data-sources-properties" text="layers capabilities" /> in the **Data Sources** in Project Properties.
    - [Identifiable](./search_data/#setting-identifiable-layers-in-qgis-project) layers can be queried in <MobileAppName />. If you want to be able to search for attribute values in a layer, it needs to be identifiable and searchable.
    - **read-only** layers cannot be modified. If a vector layer is not intended to be used as a survey layer, set it as read-only.
-   - [non-spatial](../layer/working_with_nonspatial_data/) layers need to be set as searchable to enable browsing, searching, or editing.
+   - [non-spatial](../layer/non-spatial-data/) layers need to be set as searchable to enable browsing, searching, or editing.
 
 ![QGIS Layer Capabilities](./qgis_project_properties.jpg "QGIS Layer Capabilities")
 
@@ -53,7 +53,7 @@ To set the project extent:
 <SinceBadge type="Plugin" version="2022.3.2" /><SinceBadge type="App" version="1.5.1" />
 The quality of photographs and pictures that are saved in the <MainPlatformName /> project can be set up in the **<MainPlatformName />** tab in **Project properties**. When pictures are added using <MobileAppName /> (uploaded or taken with the camera), they will be resized accordingly.
 
-By default, the quality is set to *Original* - the original pictures are stored. If you want to resize the pictures, you can choose from *High*, *Medium*, or *Low* quality. The [EXIF metadata](../layer/exif_metadata/) of the original files are kept.
+By default, the quality is set to *Original* - the original pictures are stored. If you want to resize the pictures, you can choose from *High*, *Medium*, or *Low* quality. The [EXIF metadata](../layer/exif/) of the original files are kept.
 
 Don't forget to save and sync your project!
 
@@ -105,7 +105,7 @@ Vector layers can be used as survey layers in <MobileAppName />. You can apply s
 The same symbology as defined in the QGIS project will be used in <MobileAppName />. However, <MobileAppName /> does not include all the SVG markers that are available within QGIS. Therefore, if you are using SVG markers for your layer styling, ensure those are copied to the project folder.
 
 ### Forms
-During the field survey, it is often necessary to fill out some attributes in the form to record the properties of surveyed features. Forms can make the survey easier, consistent and more effective. Detailed description of form widgets and form configuration can be found in [Setting Up Form Widgets](../layer/settingup_forms/) and [Advanced Form Configuration](../layer/settingup_forms_settings/)
+During the field survey, it is often necessary to fill out some attributes in the form to record the properties of surveyed features. Forms can make the survey easier, consistent and more effective. Detailed description of form widgets and form configuration can be found in [Setting Up Form Widgets](../layer/form-widgets/) and [Advanced Form Configuration](../layer/form-configuration/).
 
 ### Settings for Mergin Maps mobile app preview panel
 What appears in the <MobileAppName /> preview panel can be defined in the **Display** tab in **Layer Properties**:

@@ -1,10 +1,6 @@
 # How to Use Hyperlinks
 [[toc]]
 
-::: warning
-Our mobile app was redesigned. We are in the process of updating this content to reflect these changes.
-:::
-
 ## Open link in a browser
 
 1. Right-click on a layer, select **Properties** and go to the **Attributes form** tab.
@@ -26,7 +22,7 @@ Our mobile app was redesigned. We are in the process of updating this content to
 ![Hyperlink as default value in Attribute form](./qgis-link.jpg "Hyperlink as default value in Attribute form")
 
 When you click on a feature in <MobileAppName />, the form will contain a clickable link.
-![Hyperlink in Mergin Maps mobile app form](./input-link.jpg "Hyperlink in Mergin Maps mobile app form")
+![Hyperlink in Mergin Maps mobile app form](./mobile-form-link.jpg "Hyperlink in Mergin Maps mobile app form")
 
 ## Open link to a navigation app
 
@@ -48,10 +44,9 @@ Let's say you want to find your surveyed features on Google Maps. It is possible
 
 ![Link to Google maps in QGIS Attributes form](./qgis-google-maps.jpg "Link to Google Maps in QGIS Attributes form")
 
-When you click on a feature in <MobileAppName />, the form will contain a clickable link **Open Google Map**.
-![Open Google map from Mergin Maps mobile app](./input-google-maps.jpg "Open Google map from Mergin Maps mobile app")
+When you tap a feature in the <MobileAppNameShort />, the form will display a clickable link **Open Google Map** that opens the Google Map app at the position of the feature.
 
-Tapping the link opens the Google Map app, where you will see the position of your feature.
+![Open Google map from Mergin Maps mobile app](./mobile-form-link-to-navigation-app.jpg "Open Google map from Mergin Maps mobile app")
 
-![Google maps opened at surveyed feature's position](./google-maps.jpg "Google maps opened at surveyed feature's position")
+
 

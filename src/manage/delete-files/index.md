@@ -28,7 +28,7 @@ Deleting files through <MainDomainName /> is simple. However, you can only delet
 If you want to delete multiple files, the best way to do this is on your computer.
 
 1. [Download the project](../plugin/#downloading-a-project-in-qgis) to your computer using <QGISPluginName />.
-2. Navigate to the [project's folder](../project/#mergin-maps-project-folder) in your file browser and review the files inside the folder. There may be a [custom folder for photos](../../layer/settingup_forms_photo/#how-to-set-up-a-custom-folder-for-storing-photos) if it was set up before.
+2. Navigate to the [project's folder](../project/#mergin-maps-project-folder) in your file browser and review the files inside the folder. There may be a [custom folder for photos](../../layer/photos/#how-to-set-up-a-custom-folder-for-storing-photos) if it was set up before.
 
    Delete the files you do not want to keep anymore. 
    ![Mergin Maps project files in PC folder](./folder-files.jpg "Mergin Maps project files folder")
