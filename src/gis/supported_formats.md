@@ -16,7 +16,7 @@ For survey layers used on the field, we strongly recommend GeoPackage, to be abl
 | Delimited text | :warning:     | collaborative editing not supported                                                              | 
 | Virtual layer  | :warning:     | collaborative editing not supported                                                              |                 
 | [PostGIS](#postgresql-postgis)        | :thumbsup:    | requires internet connection              |
-| WFS            | :warning:    | requires internet connection (<GitHubRepo id="MerginMaps/input/issues/1959" desc="open ticket" />)                                                                        |
+| WFS            | :warning:    | requires internet connection                                                                        |
 
 There are more formats supported, please see full list of supported [QGIS providers](#full-list-of-supported-qgis-providers) and [OGR drivers](#full-list-of-supported-ogr-drivers)
 
