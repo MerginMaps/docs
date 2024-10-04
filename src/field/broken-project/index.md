@@ -1,14 +1,14 @@
 # How to Fix a Broken Project
 [[toc]]
 
-::: warning
-Our mobile app was redesigned. We are in the process of updating this content to reflect these changes.
-:::
+Do you get an error message when trying to open a project or a form in <MobileAppName />? There can be multiple reasons for what went wrong. Here we will try to guide you through some cases you may encounter. 
 
-Do you get an error message when trying to open a project or a form in <MobileAppName />? There can be multiple reasons for what went wrong. Here we will try to guide you through some basic steps that can help you.
+Note that these issues may be related to an older version of the <MobileAppNameShort /> or <QGIS link="" text="QGIS" /> so the content on this page may display outdated versions of <MainPlatformName /> products.
 
-:::tip
-Need more help with your issue? <CommunityJoin />
+:::tip Need more help with your issue?
+The [Troubleshoot](../../misc/troubleshoot/) page has general troubleshooting tips and describes [support options](../../misc/troubleshoot/#support) that include commercial support, support for subscribed clients or community support.
+
+<CommunityJoin />
 :::
 
 ## Saving of feature failed (vector layer)
