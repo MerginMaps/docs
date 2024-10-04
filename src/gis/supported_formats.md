@@ -30,7 +30,6 @@ PostgreSQL connection (username, password, host, port, etc.) can be set up:
 - use a *Connection Service File* `pg_service.conf`, if you want to have different PostgreSQL user for each surveyor
 
 To use a *Connection Service File*, you have to:
-<SinceBadge type="App" version="2.5.0" />
 - create a `pg_service.conf` file as described in <QGISHelp ver="latest" link="user_manual/managing_data_source/opening_data.html#postgresql-service-connection-file" text="QGIS User Manual" /> and test it in QGIS Desktop
 - [manually transfer](../manage/missing-data/index.md) the `pg_service.conf` file to <MobileAppName /> data folder. The data folder is shown in the [Diagnostic Log](../misc/troubleshoot/#diagnostic-log-on-mergin-maps-mobile-app)
 - restart the <MobileAppNameShort />. Check the [Diagnostic Log](../misc/troubleshoot/#diagnostic-log-on-mergin-maps-mobile-app) to see if the file is found and used after restart.
