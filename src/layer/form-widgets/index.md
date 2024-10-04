@@ -245,7 +245,7 @@ To set up **Value Relation** in QGIS:
 :::danger Using UUID as key field
 **Why UUID?** FID can be changed during [synchronisation](../../manage/synchronisation/#synchronisation). If multiple surveyors add new entries to the value table, features can end up with wrong values. 
 
-On the other hand, <QGISHelp ver="latest" link="user_manual/expressions/functions_list.html#uuid" text="UUID" /> (Universally Unique Identifier) is generated to be unique and will not be changed when synced. Therefore, we recommend using UUID if you want to add new values during the survey.
+On the other hand, <QGISHelp ver="latest" link="user_manual/expressions/functions_list.html#uuid" text="UUID" /> (Universally Unique Identifier) is guaranteed to be unique and will not be changed when synced. Therefore, we recommend using UUID if you want to add new values during the survey.
 :::
 
 When you open the field with **Value Relation** in the <MobileAppNameShort />, you will be able to select values from the list.
