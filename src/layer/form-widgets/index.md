@@ -28,10 +28,8 @@ Here is an overview of widgets commonly used both in QGIS and the <MobileAppName
 |Value Map   |[Drop-down menu with predefined values](#value-map) |![Mergin Maps mobile app value map field form](./mobile-form-valuemap-preview.jpg "Mergin Maps mobile app value map field form")   |
 |Value Relation   |[Drop-down menu with values from another table](#value-relation) |![Mergin Maps mobile app value relation field form](./mobile-form-value-relation-preview.jpg "Mergin Maps mobile app value relation field form")   |
 |Attachment   |[Photos from device's camera or gallery](#attachment) | ![Mergin Maps mobile app attachment field form](./mobile-form-photo-preview.jpg "Mergin Maps mobile app attachment field form")  ![Mergin Maps mobile app attachment field form](./mobile-form-photo-preview2.jpg "Mergin Maps mobile app attachment field form")  |
-|Relation Reference |[Multiple photos from device's camera or gallery](../attach-multiple-photos-to-features/) | ![Mergin Maps mobile app multiple photos attributes form](./mobile-form-multiple-photo-preview.jpg "Mergin Maps mobile app multiple photos attributes form") |
+|Relation Reference - Gallery |[Multiple photos from device's camera or gallery](../attach-multiple-photos-to-features/) | ![Mergin Maps mobile app multiple photos attributes form](./mobile-form-multiple-photo-preview.jpg "Mergin Maps mobile app multiple photos attributes form") |
 |Relations |[Multiple records linked to one feature](../one-to-n-relations/) | ![Mergin Maps mobile app 1-N relations attributes form](./mobile-form-relations-preview.jpg "Mergin Maps mobile app 1-N relations attributes form")  |
-
-
 
 
 ::: tip Public project available
@@ -77,7 +75,7 @@ A QR code field is used in this public project: <MerginMapsProject id="documenta
 
 To be able to scan QR codes using your camera, the field name or the field alias has to contain the word `qrcode` (the text is not case sensitive, it can be in combination of lower or upper case letters). 
 
-In the <MobileAppNameShort />, there will be a QR code icon next to the field. Tap on it to scan the QR code using your camera and the text (e.g. a link) will be filled in automatically to your field.
+In the <MobileAppNameShort />, there will be a QR code icon next to the field. Tap on it to scan the QR code using your camera and the content (a number, text, link, etc.) will be filled in automatically to your field.
 
 ![Mergin Maps mobile app QR code field form](./mobile-form-qrcode.jpg "Mergin Maps mobile app QR code field form")
 
@@ -89,8 +87,6 @@ This public project: <MerginMapsProject id="documentation/form-widgets" /> uses 
 :::
 
 Number fields can be handled by the **Range** widget. Two options are supported by the <MobileAppNameShort />: [editable range](#range) and [slider](#slider). 
-
-Decimal (real) numbers use the **Text Edit** widget by default and are filled in manually.
 
 ### Range
 To set up the **editable range widget**:
@@ -136,7 +132,7 @@ To set up the **Date/Time** widget:
 1. Right-click on a layer, select **Properties** and go to the **Attributes form** tab.
 2. In the list of **Available Widgets** select the Date and Time field you want to work with (here: `datetime`).
 3. In the **Widget Type** tab and select the **Date/Time** widget. 
-   - use the default or custom  **Display Format** (see [custom options](#custom-field-formats-and-widget-displays) below)
+   - use the default or custom  **Display Format**
    - check the **Calendar popup** option :heavy_check_mark:
    - use the preview to confirm that this is the format you want to use to store your timestamps
 4. If you want to automatically insert the date (or date and time) when the feature is created, use `now()` as a [default value](../form-configuration/#default-values) in the **Defaults** tab.
