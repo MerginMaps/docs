@@ -1,5 +1,6 @@
 AGPL
 API
+ArcGIS
 Android
 ArcGIS
 aws
@@ -138,6 +139,8 @@ SaaS
 Scania
 schemas
 Skoda
+SLYR
+Survey123
 Transifex
 Trialing
 Trimble
