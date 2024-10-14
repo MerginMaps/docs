@@ -7331,6 +7331,11 @@ slash@^2.0.0:
   resolved "https://registry.yarnpkg.com/slash/-/slash-2.0.0.tgz#de552851a1759df3a8f206535442f5ec4ddeab44"
   integrity sha512-ZYKh3Wh2z1PpEXWr0MpSBZ0V6mZHAQfYevttO11c51CaWjGTaadiKZ+wVt1PbMlDV5qhMFslpZCemhwOK7C89A==
 
+smartlook-client@^10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/smartlook-client/-/smartlook-client-10.0.0.tgz#8c322bfa5866f5d9c1553c22aa98382367f798bd"
+  integrity sha512-KAyy+MXxgqfQJOqsnJhlFiBP29g7rE50hmdoSB3YYq15Dl9y8WEdh1OhdUAYWnENkyDHu3v5lE39O6VuhQMgrA==
+
 smoothscroll-polyfill@^0.4.3:
   version "0.4.4"
   resolved "https://registry.yarnpkg.com/smoothscroll-polyfill/-/smoothscroll-polyfill-0.4.4.tgz#3a259131dc6930e6ca80003e1cb03b603b69abf8"

@@ -23,6 +23,7 @@
     "vuepress-plugin-fulltext-search": "^2.2.1"
   },
   "dependencies": {
-    "@gtm-support/vue2-gtm": "1.0.0"
+    "@gtm-support/vue2-gtm": "1.0.0",
+    "smartlook-client": "^10.0.0"
   }
 }

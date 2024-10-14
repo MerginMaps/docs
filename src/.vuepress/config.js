@@ -104,5 +104,9 @@ module.exports = {
 
   globalUIComponents: [
     'CookieConsentView'
-  ]
+  ],
+
+  define: {
+    __SMARTLOOK_KEY__: 'a42250fed50d7af2a9630117644ec5ac4b9c419f'
+  }
 }
