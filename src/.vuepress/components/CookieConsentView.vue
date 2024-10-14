@@ -86,7 +86,7 @@ export default Vue.extend({
         this.$gtm && this.$gtm.enable(value);
         const smartlookKey = __SMARTLOOK_KEY__
         if (value && smartlookKey && !Smartlook.initialized()) {
-          Smartlook.init(__SMARTLOOK_KEY__, {
+          Smartlook.init(smartlookKey, {
             region: 'eu'
           })
         }
