@@ -17,6 +17,7 @@
 
 <script lang="ts">
 import Vue from "vue";
+import Smartlook from "smartlook-client";
 
 import CookieConsentBanner from "./cookie-consent/components/CookieConsentBanner.vue";
 import CookieConsentPreferences from "./cookie-consent/components/CookieConsentPreferences.vue";
@@ -83,6 +84,12 @@ export default Vue.extend({
       immediate: true,
       handler: function (value) {
         this.$gtm && this.$gtm.enable(value);
+        const smartlookKey = __SMARTLOOK_KEY__
+        if (value && smartlookKey && !Smartlook.initialized()) {
+          Smartlook.init(__SMARTLOOK_KEY__, {
+            region: 'eu'
+          })
+        }
       },
     },
   },
