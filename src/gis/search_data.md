@@ -39,7 +39,7 @@ Features in this layer are sorted by the same field value as was defined in the 
 ![Mobile app sort features by value](./mobile-sort-updated-at.jpg "Mobile app sort features by value")
 
 ###  Sorting features by expression
-Similarly, an expression can be used to sort features in the Attribute table and subsequently and in the <MobileAppNameShort />.
+Similarly, an expression can be used to sort features in the Attribute table and subsequently in the <MobileAppNameShort />.
 
 1. Open your project in QGIS
 2. Right-click on a survey layer and open the **Attribute table**
