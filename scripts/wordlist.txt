@@ -1,6 +1,8 @@
 AGPL
 API
+AXL
 ArcGIS
+ArcMap
 Android
 ArcGIS
 aws
@@ -35,6 +37,7 @@ Exif
 ExifTool
 FID
 FIDs
+FieldMaps
 frontend
 FLX
 FOSS
@@ -75,11 +78,14 @@ LGPL
 LGPLv
 lockfile
 LTR
+lyr
 Lutra
 MAN
 Mapbox
 MBTiles
 MDAL
+MXD
+MXT
 MPL
 MrSID
 MSI
