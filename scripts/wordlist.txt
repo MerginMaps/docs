@@ -46,6 +46,7 @@ Garmin
 GDA
 gdal
 GDAL
+Geodatabase
 Geodiff
 GeoJSON
 Geomax
