@@ -43,7 +43,7 @@ To use a *Connection Service File*, you have to:
 | PNG            | :thumbsup:        |                                                                                                           |
 | COG (local)    | :thumbsup:        |                                                                                                           |
 | MBTiles        | :thumbsup:        | png, jpg compression                                                                                      |
-| GeoPDF         | :thumbsup:        |                                                                                                           |
+| Geospatial PDF | :thumbsup:        |                                                                                                           |
 | WM(T)S         | :thumbsup:        | requires internet connection                                                                              |
 | XYZ tiles      | :thumbsup:        | requires internet connection (e.g. OpenStreetMap)                                                         |
 | COG (online)   | :thumbsup:   | requires internet connection |
