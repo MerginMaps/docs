@@ -30,7 +30,7 @@ ECR
 EE
 Emlid
 EPSG
-ESRI
+Esri
 EUIPO
 EXIF
 Exif
