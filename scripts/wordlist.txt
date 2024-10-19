@@ -5,6 +5,7 @@ ArcGIS
 ArcMap
 Android
 ArcGIS
+ArcSDE
 aws
 AWS
 backend
@@ -46,6 +47,7 @@ GDA
 gdal
 GDAL
 Geodiff
+GeoJSON
 Geomax
 GEOS
 GeoPackage
@@ -96,10 +98,10 @@ merginmaps
 Multiline
 nginx
 NDK
-OneDrive
-orthometric
 NMEA
 NTRIP
+OneDrive
+orthometric
 OSGB
 OSM
 OSTN
@@ -129,6 +131,7 @@ QGIS
 QString
 QgsField
 Qt
+QuickCapture
 Qwant
 QwantResearch
 Recentre

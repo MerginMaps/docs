@@ -3,7 +3,7 @@
 
 This guide is intended for current ArcGIS and ArcGIS field data collection tools users who consider switching to <QGIS link="en/site/forusers/download.html" text="QGIS" /> and <MainPlatformNameLink />. It might be helpful also for <MainPlatformName /> users looking to transfer their data from the Esri ecosystem.
 
-From our experience, users highlight cost savings, interoperability and flexibility when using QGIS and <MainPlatformName /> in comparison with Esri's ArcGIS tools for field surveys such as Collector, Survey123, QuickCapture or Field Maps.
+From our experience, users highlight cost savings, interoperability and flexibility when using QGIS and <MainPlatformName /> in comparison with <NoSpellcheck id="Esri's" /> ArcGIS tools for field surveys such as Collector, Survey123, QuickCapture or Field Maps.
 
 :::tip Getting familiar with <MainPlatformName /> 
 Switching to a new platform can be challenging. This documentation is here to help with the basics as well as some more advanced or specific settings.
@@ -34,7 +34,7 @@ Here is a comparison of the main components of both ecosystems:
 
 To migrate the project, we recommend to: 
 1. Use the [**SLYR**](#slyr) plugin to transfer the ArcGIS project to QGIS project (including styling, etc.).
-2. Convert your survey (vector) layers (e.g from Shapefile or FileGDB) to GeoPackage if not done already by SLYR 
+2. Convert your survey (vector) layers (e.g from Shapefile or File Geodatabase) to GeoPackage if not done already by SLYR 
 3. Optionally, convert rest of the data sources to formats [supported](../../gis/supported_formats.md) by <MainPlatformName />
 4. Fine-tune the styling and settings of the layers and QGIS project
 
@@ -48,7 +48,7 @@ To use your QGIS project with the <MainPlatformNameLink /> platform:
 
 ### SLYR 
 
-The [SLYR tool](https://north-road.com/slyr/) tool by [North Road](https://north-road.com) facilitates the migration from ArcGIS to QGIS by enabling the conversion of various proprietary data formats, styles and project files to QGIS-compatible formats, such as the conversion of MXD (ArcMap) and AXL (ArcIMS) files to QGIS project files.
+The [SLYR tool](https://north-road.com/slyr/) by [North Road](https://north-road.com) facilitates the migration from ArcGIS to QGIS by enabling the conversion of various proprietary data formats, styles and project files to QGIS-compatible formats, such as the conversion of MXD (ArcMap) and AXL (<NoSpellcheck id="ArcIMS" />) files to QGIS project files.
 
 This tool helps users transition smoothly by preserving complex symbology, layouts, and project structure. It simplifies the shift from Esri tools to the open-source QGIS environment, reducing the time and effort needed to replicate existing workflows. 
 
@@ -64,13 +64,13 @@ Full comparison of the version can be found on North Road's [SLYR project page](
 
 ArcGIS Pro [supports GeoPackages](https://pro.arcgis.com/en/pro-app/latest/help/data/databases/work-with-sqlite-databases-in-arcgis-pro.htm), which are the primary and recommended format for your survey layer in <MainPlatformName />. Both ArcGIS and QGIS can also handle Shapefile, GeoTIFF, GeoJSON, WMS, WFS, and PostGIS layers. However, we do not recommend using [Shapefile](http://switchfromshapefile.org) in <MainPlatformName />, as we do not support collaborative use for this format.
 
-There are multiple options for data conversion. We recommend using [SLYR's](#slyr) processing algorithm to convert project data to GeoPackage (GPKG). You can also use QGIS *Convert format* or *Package layers* processing algorithms. Alternatively, export your data to [formats supported by <MainPlatformName />](../../gis/supported_formats.md) in ArcGIS Pro, if you feel more comfortable doing it there. Data conversion can be done also in the console using the `ogr2ogr` command line tool.
+There are multiple options for data conversion. We recommend using [SLYR](#slyr) processing algorithms to convert project data to GeoPackage (GPKG). You can also use QGIS *Convert format* or *Package layers* processing algorithms. Alternatively, export your data to [formats supported by <MainPlatformName />](../../gis/supported_formats.md) in ArcGIS Pro, if you feel more comfortable doing it there. Data conversion can be done also in the console using the `ogr2ogr` command line tool.
 
-## Hybrid setup: using ArcGIS and Mergin Maps
+## Hybrid setup: using Mergin Maps with ArcGIS
 
 It is possible to use ArcGIS and <MainPlatformName /> in a hybrid setup. If you store your data in PostgreSQL/PostGIS database, you can use our [DB Sync](../../dev/dbsync/) tool to synchronise project data from PostgreSQL to <MainPlatformName /> (i.e. storing data in GeoPackages on <MainPlatformName /> server). You still need to have a QGIS project to style your GeoPackage data and set up the project (see the [Migrate section](#migrate-from-arcgis-to-qgis)).
 
-This way you can work with your data directly in ArcPro and also use <MainPlatformName /> tools, such as <MobileAppName /> for data collection in the field. Field data can be synchronised to the <MainPlatformName /> server and then to the PostgreSQL database via **DB Sync** tool for ArcGIS use.
+This way you can work with your data directly in ArcGIS Pro and also use <MainPlatformName /> tools, such as <MobileAppName /> for data collection in the field. Field data can be synchronised to the <MainPlatformName /> server and then to the PostgreSQL database via **DB Sync** tool for ArcGIS use.
 
 Note that this requires using the PostGIS geometry standard (`ST_Geometry`) and not ArcSDE geometry.
 
