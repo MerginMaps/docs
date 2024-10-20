@@ -96,6 +96,7 @@ module.exports = {
                 '/field/gps_accuracy/',
                 '/field/tracking/',
                 '/field/autosync/',
+                '/field/measure/',
                 '/field/layers/',
                 '/field/mobile-features/',
                 '/field/reuse-last-values/',
