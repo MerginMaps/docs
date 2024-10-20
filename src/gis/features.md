@@ -28,7 +28,7 @@ Various online and offline maps can be used as background layers for navigation 
 ![QGIS Layer Capabilities](./qgis_project_properties.jpg "QGIS Layer Capabilities")
 
 ### Project extent
-In <MobileAppName />, there is an option to [zoom to the project extent](../field/mobile-app-ui/#more-options-zoom-to-project-map-themes-position-tracking-local-changes-settings). 
+In <MobileAppName />, there is an option to [zoom to the project extent](../field/mobile-app-ui/#more-options-zoom-to-project-map-themes-position-tracking-measure-local-changes-settings). 
 
 If the project extent is not set, <MobileAppName /> zooms to all visible layers. This is not particularly convenient when you have a layer with a large/global extent (e.g. Open Street Map). Instead, you may want to set the project extent to the area of your interest.
 
