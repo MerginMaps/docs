@@ -124,7 +124,7 @@ More details can be found in [Layers in Mergin Maps Mobile App](../layers/).
 ![Mergin Maps mobile app Layers](./mobile-app-layers.jpg "Mergin Maps mobile app Layers")
 
 
-### More options: Zoom to project, Map themes, Position tracking, Local changes, Settings
+### More options: Zoom to project, Map themes, Position tracking, Measure, Local changes, Settings
 The **More** button opens a list of additional options
 
 ![Mergin Maps mobile app More button](./mobile-app-more-options.jpg "Mergin Maps mobile app More button")
@@ -133,6 +133,7 @@ The **More** button opens a list of additional options
 - [**Zoom to project**](../../gis/features/#project-extent): zoom to the extent of all visible layers within the project. The project extent can be set in [QGIS in Project Properties](../../gis/features/#project-extent).
 - [**Map themes**](../../gis/setup_themes/): a list of map themes set up in a <MainPlatformName /> project in QGIS
 - [**Position tracking**](../tracking/): to start tracking of your tracks during the field survey
+- [**Measure**](../measure/): measure length or area on the map
 - **Local changes**: the overview of your local changes to be synchronised
    ![Mergin maps mobile app Local changes](./mobile-app-local-changes.jpg "Mergin maps mobile app Local changes")
 - **Settings**: [GPS settings](#gps-settings), [streaming mode and recording settings](#streaming-mode-and-recording-settings), and general references to information about the <MobileAppNameShort />, changelog, help, privacy policy, terms of service and [diagnostic log](../../misc/troubleshoot/#diagnostic-log-on-mergin-maps-mobile-app)
