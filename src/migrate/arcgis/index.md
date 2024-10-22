@@ -60,6 +60,11 @@ Full comparison of the version can be found on North Road's [SLYR project page](
 
 ![SLYR logo](./slyr.png "SLYR logo")
 
+
+### Domains 
+
+ArcGIS Pro [domains](https://pro.arcgis.com/en/pro-app/latest/help/data/geodatabases/overview/create-modify-and-delete-domains.htm) are used to restrict the valid values allowed in an attribute field. Convert them manually to QGIS drop-down widgets - likely [Value Relation](../../layer/form-widgets) - could be time consuming. You can export the domains to CSV to be imported and set value relation widgets, along with it's custom expression visibility to mimic cascading forms. We again recommend using [SLYR](#slyr) to facilitate the conversion of domains to QGIS.
+
 ### Data Formats
 
 ArcGIS Pro [supports GeoPackages](https://pro.arcgis.com/en/pro-app/latest/help/data/databases/work-with-sqlite-databases-in-arcgis-pro.htm), which are the primary and recommended format for your survey layer in <MainPlatformName />. Both ArcGIS and QGIS can also handle Shapefile, GeoTIFF, GeoJSON, WMS, WFS, and PostGIS layers. However, we do not recommend using [Shapefile](http://switchfromshapefile.org) in <MainPlatformName />, as we do not support collaborative use for this format.
