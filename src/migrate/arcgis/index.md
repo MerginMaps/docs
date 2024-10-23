@@ -15,7 +15,7 @@ To get familiar with <MainPlatformNameLink />, we recommend starting with the [*
 
 In general, ArcGIS is a proprietary software platform while <QGIS link="en/site/forusers/download.html" text="QGIS" /> is based on open-source philosophy. As such, it is usually not easy or straightforward to have a workflow that combines both environments. Nevertheless, there are, e.g., some common [data formats](#data-formats) that can be used in both of them. 
 
-When it comes to field data collection, there are multiple applications in the ArcGIS ecosystem and also some that can be used with QGIS. One of the QGIS-based applications is <MobileAppName />: a project is created and QGIS and this single <MobileAppNameShort /> is used to collect, update or browse data in the field. The most similar app to <MobileAppName /> is the ArcGIS Field Maps.
+When it comes to field data collection, there are multiple applications in the ArcGIS ecosystem and also some that can be used with QGIS. One of the QGIS-based applications is <MobileAppName />: a project is created within QGIS and <MobileAppNameShort /> is used to collect, update or browse data in the field. The most similar app to <MobileAppName /> is the ArcGIS Field Maps.
 
 Here is a comparison of the main components of both ecosystems:
 
@@ -35,7 +35,7 @@ Here is a comparison of the main components of both ecosystems:
 To migrate the project, we recommend to: 
 1. Use the [**SLYR**](#slyr) plugin to transfer the ArcGIS project to QGIS project (including styling, etc.).
 2. Convert your survey (vector) layers (e.g from Shapefile or File Geodatabase) to GeoPackage if not done already by SLYR 
-3. Optionally, convert rest of the data sources to formats [supported](../../gis/supported_formats.md) by <MainPlatformName />
+3. Optionally, convert the rest of the data sources to formats [supported](../../gis/supported_formats.md) by <MainPlatformName />
 4. Fine-tune the styling and settings of the layers and QGIS project
 
 Alternatively, you can convert the data files you use in the project to [supported](../../gis/supported_formats.md) formats and recreate the project and its settings in QGIS manually.
@@ -48,13 +48,13 @@ To use your QGIS project with the <MainPlatformNameLink /> platform:
 
 ### SLYR 
 
-The [SLYR tool](https://north-road.com/slyr/) by [North Road](https://north-road.com) facilitates the migration from ArcGIS to QGIS by enabling the conversion of various proprietary data formats, styles and project files to QGIS-compatible formats, such as the conversion of MXD (ArcMap) and AXL (<NoSpellcheck id="ArcIMS" />) files to QGIS project files.
+The [SLYR tool](https://north-road.com/slyr/) by [North Road](https://north-road.com) facilitates the migration from ArcGIS to QGIS by automatically converting various proprietary ESRI data formats, styles and project files to QGIS-compatible formats, such as the conversion of MXD (ArcMap) and APRX (ArcGIS Pro) files to QGIS project files.
 
 This tool helps users transition smoothly by preserving complex symbology, layouts, and project structure. It simplifies the shift from Esri tools to the open-source QGIS environment, reducing the time and effort needed to replicate existing workflows. 
 
 SLYR tool offers Community and Licensed version:
 - Community version is open-sourced on <GitHubRepo id="north-road/slyr" desc="GitHub" /> and can be freely installed via QGIS Plugin Manager to extract, parse, and convert Esri `.lyr` and `.style` files to QGIS-compatible formats. 
-- Licensed version is closed-sourced and has features such as converting `MXD/MXT` project files to `QGS` or converting various data formats to GeoPackage. 
+- Licensed version is closed-sourced and has features such as converting `MXD/MXT` project files to `QGS` or converting various data formats to GeoPackage, and support for exporting QGIS projects to APRX for use within ArcGIS Pro.
 
 Full comparison of the version can be found on North Road's [SLYR project page](https://north-road.com/slyr/). 
 
