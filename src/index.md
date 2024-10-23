@@ -110,6 +110,7 @@ The ecosystem consist of various components:
 
 ## Migrate
 - [From QField](./migrate/qfield/)
+- [From ArcGIS](./migrate/arcgis/)
 
 ## Support & Legal
 - [Licensing](./misc/licensing/)
