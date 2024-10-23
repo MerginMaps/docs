@@ -38,7 +38,7 @@ To migrate the project, we recommend to:
 3. Optionally, convert the rest of the data sources to formats [supported](../../gis/supported_formats.md) by <MainPlatformName />
 4. Fine-tune the styling and settings of the layers and QGIS project
 
-If you consider one-time convertion to open source ecosystem, we recommend to convert all data files you use in the project to formats with open standards. Read more about [**data formats**](#data-formats).
+If you consider one-time conversion to open source ecosystem, we recommend to convert all data files you use in the project to formats with open standards. Read more about [**data formats**](#data-formats).
 
 To use your QGIS project with the <MainPlatformNameLink /> platform:
 1. [Sign up to <MainPlatformName />](../../setup/sign-up-to-mergin-maps/)
@@ -71,7 +71,7 @@ We again recommend using QGIS, GDAL algorithms or [SLYR](#slyr) to facilitate th
 
 ### Data Formats
 
-**Always use GeoPackage for survey layers** in <MainPlatformName />. If you use other formats it is not possible to detect changes from other users and they may be overwritten. This is one of the [best practice](../../layer/best-practice). The downside is the GeoPackage will have limited support in Esri software, e.g. some GeoPackages just cannot be opened within ArcGIS Pro. Specifically we do not recommened to keep using [Shapefile](http://switchfromshapefile.org) format.
+**Always use GeoPackage for survey layers** in <MainPlatformName />. If you use other formats it is not possible to detect changes from other users and they may be overwritten. This is one of the [best practice](../../layer/best-practice). The downside is the GeoPackage will have limited support in Esri software, e.g. some GeoPackages just cannot be opened within ArcGIS Pro. Specifically we do not recommended to keep using [Shapefile](http://switchfromshapefile.org) format.
 
 For rest of the layers, both ArcGIS and QGIS can also handle Shapefile, GeoTIFF, GeoJSON, WMS, WFS, and PostGIS layers. See all the 
 [supported](../../gis/supported_formats.md) formats.
