@@ -34,11 +34,11 @@ Here is a comparison of the main components of both ecosystems:
 
 To migrate the project, we recommend to: 
 1. Use the [**SLYR**](#slyr) plugin to transfer the ArcGIS project to QGIS project (including styling, etc.).
-2. Convert your survey (vector) layers (e.g from Shapefile or File Geodatabase) to GeoPackage if not done already by SLYR 
+2. Convert your survey (vector) layers (e.g from Shapefile or File Geodatabase) to GeoPackage if not done already by SLYR. 
 3. Optionally, convert the rest of the data sources to formats [supported](../../gis/supported_formats.md) by <MainPlatformName />
 4. Fine-tune the styling and settings of the layers and QGIS project
 
-Alternatively, you can convert the data files you use in the project to [supported](../../gis/supported_formats.md) formats and recreate the project and its settings in QGIS manually.
+If you consider one-time convertion to open source ecosystem, we recommend to convert all data files you use in the project to formats with open standards. Read more about [**data formats**](#data-formats).
 
 To use your QGIS project with the <MainPlatformNameLink /> platform:
 1. [Sign up to <MainPlatformName />](../../setup/sign-up-to-mergin-maps/)
@@ -48,7 +48,7 @@ To use your QGIS project with the <MainPlatformNameLink /> platform:
 
 ### SLYR 
 
-The [SLYR tool](https://north-road.com/slyr/) by [North Road](https://north-road.com) facilitates the migration from ArcGIS to QGIS by automatically converting various proprietary ESRI data formats, styles and project files to QGIS-compatible formats, such as the conversion of MXD (ArcMap) and APRX (ArcGIS Pro) files to QGIS project files.
+The [SLYR tool](https://north-road.com/slyr/) by [North Road](https://north-road.com) facilitates the migration from ArcGIS to QGIS by automatically converting various proprietary Esri data formats, styles and project files to QGIS-compatible formats, such as the conversion of MXD (ArcMap) and APRX (ArcGIS Pro) files to QGIS project files.
 
 This tool helps users transition smoothly by preserving complex symbology, layouts, and project structure. It simplifies the shift from Esri tools to the open-source QGIS environment, reducing the time and effort needed to replicate existing workflows. 
 
@@ -63,11 +63,18 @@ Full comparison of the version can be found on North Road's [SLYR project page](
 
 ### Domains 
 
-ArcGIS Pro [domains](https://pro.arcgis.com/en/pro-app/latest/help/data/geodatabases/overview/create-modify-and-delete-domains.htm) are used to restrict the valid values allowed in an attribute field. Convert them manually to QGIS drop-down widgets - likely [Value Relation](../../layer/form-widgets) - could be time consuming. You can export the domains to CSV to be imported and set value relation widgets, along with it's custom expression visibility to mimic cascading forms. We again recommend using [SLYR](#slyr) to facilitate the conversion of domains to QGIS.
+ArcGIS Pro [domains](https://pro.arcgis.com/en/pro-app/latest/help/data/geodatabases/overview/create-modify-and-delete-domains.htm) are used to restrict the valid values allowed in an attribute field. 
+
+Convert them manually to QGIS drop-down widgets - likely [Value Relation](../../layer/form-widgets) - could be time consuming. You can export the domains to CSV to be imported and set value relation widgets, along with it's custom expression visibility to mimic cascading forms. 
+
+We again recommend using QGIS, GDAL algorithms or [SLYR](#slyr) to facilitate the conversion of domains without unnecessary manual work.
 
 ### Data Formats
 
-ArcGIS Pro [supports GeoPackages](https://pro.arcgis.com/en/pro-app/latest/help/data/databases/work-with-sqlite-databases-in-arcgis-pro.htm), which are the primary and recommended format for your survey layer in <MainPlatformName />. Both ArcGIS and QGIS can also handle Shapefile, GeoTIFF, GeoJSON, WMS, WFS, and PostGIS layers. However, we do not recommend using [Shapefile](http://switchfromshapefile.org) in <MainPlatformName />, as we do not support collaborative use for this format.
+**Always use GeoPackage for survey layers** in <MainPlatformName />. If you use other formats it is not possible to detect changes from other users and they may be overwritten. This is one of the [best practice](../../layer/best-practice). The downside is the GeoPackage will have limited support in Esri software, e.g. some GeoPackages just cannot be opened within ArcGIS Pro. Specifically we do not recommened to keep using [Shapefile](http://switchfromshapefile.org) format.
+
+For rest of the layers, both ArcGIS and QGIS can also handle Shapefile, GeoTIFF, GeoJSON, WMS, WFS, and PostGIS layers. See all the 
+[supported](../../gis/supported_formats.md) formats.
 
 There are multiple options for data conversion. We recommend using [SLYR](#slyr) processing algorithms to convert project data to GeoPackage (GPKG). You can also use QGIS *Convert format* or *Package layers* processing algorithms. Alternatively, export your data to [formats supported by <MainPlatformName />](../../gis/supported_formats.md) in ArcGIS Pro, if you feel more comfortable doing it there. Data conversion can be done also in the console using the `ogr2ogr` command line tool.
 
@@ -78,7 +85,6 @@ It is possible to use ArcGIS and <MainPlatformName /> in a hybrid setup. If you 
 This way you can work with your data directly in ArcGIS Pro and also use <MainPlatformName /> tools, such as <MobileAppName /> for data collection in the field. Field data can be synchronised to the <MainPlatformName /> server and then to the PostgreSQL database via **DB Sync** tool for ArcGIS use.
 
 Note that this requires using the PostGIS geometry standard (`ST_Geometry`) and not ArcSDE geometry.
-
 
 ## Troubleshoot
 Struggling to migrate your projects? We are happy to help you!
