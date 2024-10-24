@@ -87,6 +87,7 @@ The ecosystem consist of various components:
 - [GPS Accuracy](./field/gps_accuracy/)
 - [Position Tracking](./field/tracking/)
 - [Synchronisation in <MobileAppName />](./field/autosync/)
+- [Measurement Tools](./field/measure/)
 - [Layers in <MobileAppName />](./field/layers/)
 - [How to Add, Edit, Delete Features](./field/mobile-features/)
 - [How to Reuse Last Entered Values](./field/reuse-last-values/)
