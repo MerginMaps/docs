@@ -28,7 +28,7 @@ Here is an overview of widgets commonly used both in QGIS and the <MobileAppName
 |Value Map   |[Drop-down menu with predefined values](#value-map) |![Mergin Maps mobile app value map field form](./mobile-form-valuemap-preview.jpg "Mergin Maps mobile app value map field form")   |
 |Value Relation   |[Drop-down menu with values from another table](#value-relation) |![Mergin Maps mobile app value relation field form](./mobile-form-value-relation-preview.jpg "Mergin Maps mobile app value relation field form")   |
 |Attachment   |[Photos from device's camera or gallery](#attachment) | ![Mergin Maps mobile app attachment field form](./mobile-form-photo-preview.jpg "Mergin Maps mobile app attachment field form")  ![Mergin Maps mobile app attachment field form](./mobile-form-photo-preview2.jpg "Mergin Maps mobile app attachment field form")  |
-|Relation Reference - Gallery |[Multiple photos from device's camera or gallery](../attach-multiple-photos-to-features/) | ![Mergin Maps mobile app multiple photos attributes form](./mobile-form-multiple-photo-preview.jpg "Mergin Maps mobile app multiple photos attributes form") |
+|Relations - Gallery |[Multiple photos from device's camera or gallery](../attach-multiple-photos-to-features/) | ![Mergin Maps mobile app multiple photos attributes form](./mobile-form-multiple-photo-preview.jpg "Mergin Maps mobile app multiple photos attributes form") |
 |Relations |[Multiple records linked to one feature](../one-to-n-relations/) | ![Mergin Maps mobile app 1-N relations attributes form](./mobile-form-relations-preview.jpg "Mergin Maps mobile app 1-N relations attributes form")  |
 
 
