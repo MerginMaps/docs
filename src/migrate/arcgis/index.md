@@ -1,21 +1,23 @@
 # Migrate from ArcGIS
 [[toc]]
 
-This guide is intended for current ArcGIS and ArcGIS field data collection tools users who consider switching to <QGIS link="en/site/forusers/download.html" text="QGIS" /> and <MainPlatformNameLink />. It might be helpful also for <MainPlatformName /> users looking to transfer their data from the Esri ecosystem.
+This guide is intended for current ArcGIS and ArcGIS field data collection tools users who consider switching to <QGIS link="en/site/forusers/download.html" text="QGIS" /> and <MainPlatformNameLink />. It might be helpful also to <MainPlatformName /> users looking to transfer their data from the Esri ecosystem.
 
 From our experience, users highlight cost savings, interoperability and flexibility when using QGIS and <MainPlatformName /> in comparison with <NoSpellcheck id="Esri's" /> ArcGIS tools for field surveys such as Collector, Survey123, QuickCapture or Field Maps.
 
-:::tip Getting familiar with <MainPlatformName /> 
+:::tip Getting familiar with <MainPlatformName /> and QGIS
 Switching to a new platform can be challenging. This documentation is here to help with the basics as well as some more advanced or specific settings.
 
 To get familiar with <MainPlatformNameLink />, we recommend starting with the [**tutorials**](../../tutorials/capturing-first-data/). If there are specific topics that are crucial for your workflows, feel free to explore the documentation or contact our <MerginMapsEmail id="sales" desc="sales team" /> or our <MerginMapsEmail id="support" desc="support team" /> to get more details.
+
+QGIS is a powerful tool that comes with great community and resources. We recommend using <QGISHelp ver="latest" link="user_manual/index.html" text="QGIS User Guide" /> and <QGISHelp ver="latest" link="training_manual/index.html" text="QGIS Training Manual" /> to explore its functionality.
 :::
 
 ## ArcGIS vs QGIS ecosystems
 
 In general, ArcGIS is a proprietary software platform while <QGIS link="en/site/forusers/download.html" text="QGIS" /> is based on open-source philosophy. As such, it is usually not easy or straightforward to have a workflow that combines both environments. Nevertheless, there are, e.g., some common [data formats](#data-formats) that can be used in both of them. 
 
-When it comes to field data collection, there are multiple applications in the ArcGIS ecosystem and also some that can be used with QGIS. One of the QGIS-based applications is <MobileAppName />: a project is created within QGIS and <MobileAppNameShort /> is used to collect, update or browse data in the field. The most similar app to <MobileAppName /> is the ArcGIS Field Maps.
+When it comes to field data collection, there are multiple applications in the ArcGIS ecosystem and also some that can be used with QGIS. One of the QGIS-based applications is <MobileAppName />. In this case, QGIS is used to create and set up a project and the <MobileAppNameShort /> uses this project to collect, update or browse data in the field. The most similar app to <MobileAppName /> is the ArcGIS Field Maps.
 
 Here is a comparison of the main components of both ecosystems:
 
@@ -38,13 +40,13 @@ To migrate the project, we recommend to:
 3. Optionally, convert the rest of the data sources to formats [supported](../../gis/supported_formats.md) by <MainPlatformName />
 4. Fine-tune the styling and settings of the layers and QGIS project
 
-If you consider one-time conversion to open source ecosystem, we recommend to convert all data files you use in the project to formats with open standards. Read more about [**data formats**](#data-formats).
+If you consider one-time conversion to the open-source ecosystem, we recommend converting all data files you use in the project to formats with open standards. Read more about [**data formats**](#data-formats).
 
 To use your QGIS project with the <MainPlatformNameLink /> platform:
 1. [Sign up to <MainPlatformName />](../../setup/sign-up-to-mergin-maps/)
 2. [Install the <QGISPluginName />](../../setup/install-mergin-maps-plugin-for-qgis/)
 3. [Install the <MobileAppName />](../../setup/install-mobile-app/)
-4. Sync the QGIS project to <MobileAppName /> using the <QGISPluginNameShort />. See how the settings done in QGIS translate to the <MobileAppNameShort />.
+4. [Synchronise the QGIS project to the <MobileAppNameShort />](../../manage/synchronisation/) using the <QGISPluginNameShort />. See how the settings done in QGIS translate to the <MobileAppNameShort />.
 
 ### SLYR 
 
@@ -65,16 +67,15 @@ Full comparison of the version can be found on North Road's [SLYR project page](
 
 ArcGIS Pro [domains](https://pro.arcgis.com/en/pro-app/latest/help/data/geodatabases/overview/create-modify-and-delete-domains.htm) are used to restrict the valid values allowed in an attribute field. 
 
-Convert them manually to QGIS drop-down widgets - likely [Value Relation](../../layer/form-widgets) - could be time consuming. You can export the domains to CSV to be imported and set value relation widgets, along with it's custom expression visibility to mimic cascading forms. 
+Convert them manually to QGIS drop-down widgets - likely [Value Relation](../../layer/form-widgets) - could be time consuming. You can export the domains to CSV to be imported and set value relation widgets, along with its custom expression visibility to mimic cascading forms. 
 
-We again recommend using QGIS, GDAL algorithms or [SLYR](#slyr) to facilitate the conversion of domains without unnecessary manual work.
+We recommend using QGIS, GDAL algorithms or [SLYR](#slyr) to facilitate the conversion of domains without unnecessary manual work.
 
 ### Data Formats
 
 **Always use GeoPackage for survey layers** in <MainPlatformName />. If you use other formats it is not possible to detect changes from other users and they may be overwritten. This is one of the [best practice](../../layer/best-practice). The downside is the GeoPackage will have limited support in Esri software, e.g. some GeoPackages just cannot be opened within ArcGIS Pro. Specifically we do not recommended to keep using [Shapefile](http://switchfromshapefile.org) format.
 
-For rest of the layers, both ArcGIS and QGIS can also handle Shapefile, GeoTIFF, GeoJSON, WMS, WFS, and PostGIS layers. See all the 
-[supported](../../gis/supported_formats.md) formats.
+For rest of the layers, both ArcGIS and QGIS can also handle Shapefile, GeoTIFF, GeoJSON, WMS, WFS, and PostGIS layers. See all [supported formats](../../gis/supported_formats/).
 
 There are multiple options for data conversion. We recommend using [SLYR](#slyr) processing algorithms to convert project data to GeoPackage (GPKG). You can also use QGIS *Convert format* or *Package layers* processing algorithms. Alternatively, export your data to [formats supported by <MainPlatformName />](../../gis/supported_formats.md) in ArcGIS Pro, if you feel more comfortable doing it there. Data conversion can be done also in the console using the `ogr2ogr` command line tool.
 
