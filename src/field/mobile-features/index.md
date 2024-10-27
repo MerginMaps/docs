@@ -12,19 +12,21 @@ If you are new to the <MobileAppNameShort />, it might be useful to get familiar
 
 ## Adding features
 1. In the <MobileAppNameShort />, open a [project](../mobile-app-ui/#projects) you want to use
-2. Tap the **Add** button on the bottom navigation panel to enter the **recording mode**.
+2. Tap the **Add** button on the bottom navigation panel to enter the **recording mode**
 
 ![Mergin Maps mobile app Record tab](./mobile-recording-mode-add.jpg "Mergin Maps mobile app Record tab") 
 
-The crosshairs you will see on your map will be used as the recorded location. You can change the position of your point by pinching and dragging the background map. If you want to recenter the map to your current position, tap the **GPS** icon.
+The crosshairs you will see on your map are used as the recorded location. You can change the position of your point by pinching and dragging the background map. If you want to recenter the map to your current position, tap the **GPS** icon.
 
-The **Active layer** is displayed on the top of the map window. This layer is used for surveying new features. To switch to a different (editable) layer, tap on the active layer and select one from the list.
+The *active layer* is displayed on the top of the map window. This layer is used for surveying new features. To switch to a different (editable) layer, tap on the active layer and select another one from the list.
 ![Active survey layer](./mobile-active-layer.jpg "Active survey layer")
 
-The **Record button** is used to survey new features. Below, we describe recording of [points](#capture-points), [lines and areas](#capture-lines-or-areas). It is also possible to record [non-spatial](#add-or-edit-non-spatial-features) features (e.g. adding a new entry to a table). Once the geometry of a feature is recorded, a form will open and you will be able to fill in the values. 
+In the recording mode, the bottom panel contains tools to capture geometry. Once the geometry is recorded, you can fill in the attributes form and save the feature.
 
-:::tip Attributes form make survey easier!
-Attributes forms can be set up in QGIS to make the recording of attributes more efficient. For more details, see [Setting Up Widgets](../../layer/form-widgets/),  [Attributes Form Configuration](../../layer/form-configuration/) or [Attributes Form Layout](../../layer/form-layout/).
+Below, we describe capturing [point features](#capture-points), [lines and areas](#capture-lines-or-areas) as well as [non-spatial](#add-or-edit-non-spatial-features) records (e.g. adding a new entry to a table).
+
+:::tip Attributes form make surveys easier!
+Attributes forms can be set up in QGIS to make collecting data more efficient. For more details, see [Setting Up Widgets](../../layer/form-widgets/),  [Attributes Form Configuration](../../layer/form-configuration/) or [Attributes Form Layout](../../layer/form-layout/).
 :::
 
 ### Capture points
@@ -35,7 +37,7 @@ Fill in the form as needed and tap the **Save** :heavy_check_mark: button. A poi
 ![Add a point in Mergin Maps mobile app](./mobile-capture-point.jpg "Add a point in Mergin Maps mobile app")
 
 ### Capture lines or areas
-There are two methods of capturing lines and areas: adding vertices one by one or using the *streaming mode* to capture features based on your position.
+There are two methods of capturing lines and areas: [adding vertices](#adding-points-to-survey-vertices-of-lines-or-areas) one by one or using the [*streaming mode*](#streaming-mode-to-survey-lines-or-areas) to capture features based on your position.
 
 #### Adding points to survey vertices of lines or areas
 Lines and areas can be captured by adding vertices one by one. When you are in the [**recording**](#adding-features) mode and your active layer is a line or polygon, you will see line and areas editing tools in the bottom panel.
@@ -52,11 +54,13 @@ Tap the **streaming** button and then **Start streaming mode**.
 
 ![Mergin Maps mobile app start streaming mode](./mobile-streaming-mode-start.jpg "Mergin Maps mobile app start streaming mode")
 
-The vertices will be added automatically as you walk along the feature. To stop the streaming mode, tap the **streaming** button and then **Stop streaming mode**. You can combine streaming and adding vertices manually as needed.
+The vertices will be added automatically as you walk along the feature. 
+
+To stop the streaming mode, tap the **streaming** button and then **Stop streaming mode**.
 
 ![Mergin Maps mobile app stop streaming mode](./mobile-streaming-mode-stop.jpg "Mergin Maps mobile app stop streaming mode")
 
-Once you finished surveying the feature, tap the **Record** button. If you are capturing an area, the shape will be automatically closed by connecting the last and the first vertex.
+Once you finish surveying the feature, tap the **Record** button. If you are capturing an area, the shape will be automatically closed by connecting the last and the first vertex.
 
 :::tip Threshold intervals for streaming mode
 It is possible to set the **Threshold interval**, i.e. how often you want to capture a vertex when streaming, in [**Settings**](../mobile-app-ui/#streaming-mode-and-recording-settings) of the <MobileAppNameShort />. The interval can be defined as *time elapsed* in seconds or as *distance travelled* in metres.
@@ -69,7 +73,7 @@ Tap the **Layers** button in the bottom navigation panel and select a layer to s
 
 ![Layers in Mergin Maps mobile app](./mobile-layers-browse-features.jpg "Layers in Mergin Maps mobile app")
 
-To edit the attributes or geometry of a feature, select it from the list in the **Layers** panel or select the feature on the map. 
+To edit the attributes or geometry of a feature, select it from the list in the **Layers** panel. It is also possible to simply tap a feature on the map.
 
 Use the **Edit** button to open the attributes form. Here you can change the values of attributes as needed. To edit the geometry of a feature, tap the **Edit geometry** button.
 
@@ -77,16 +81,16 @@ Use the **Edit** button to open the attributes form. Here you can change the val
 
 To edit geometry of a point feature simply adjust the location in the same manner as when [adding new features](#capture-points). 
 
-Once you are finished with your changes, **Save** :heavy_check_mark: them.
+Once you are finished with your changes, tap the **Save** :heavy_check_mark: button.
 
 ### Edit geometry of lines or areas
-Tap a line or polygon feature, press the **Edit** button and then use **Edit geometry**.
+There are multiple options when it comes to editing the geometry of lines and polygons: editing the vertices, [redrawing](#redraw-geometry-of-lines-or-areas) or [splitting](#split-geometry-of-lines-or-areas) features.
 
-The vertices of the feature will be highlighted. You can move, release or remove them as needed. Tap the **Record** button to save the modified geometry.
+Tap a line or polygon feature, press the **Edit** button and then use **Edit geometry**. The vertices of the feature will be highlighted. You can move, release or remove them as needed. Tap the **Record** button to save the modified geometry.
 
 ![Editing line geometry in Mergin Maps mobile app](./mobile-edit-lines.jpg "Editing line geometry in Mergin Maps mobile app")
 
-The [streaming mode](#streaming-mode-to-survey-lines-or-areas) can be also used to edit the lines or areas. Tap the **More option** button and use the **Streaming mode**. 
+The [streaming mode](#streaming-mode-to-survey-lines-or-areas) can be also used while editing lines or areas. Tap the **More option** button and use the **Streaming mode**. 
 
 ![Editing line geometry streaming](./mobile-edit-streaming.jpg "Editing line geometry streaming")
 
@@ -95,14 +99,14 @@ The existing geometry of lines and areas can also be redrawn completely.
 
 Tap the **More option** button and select the **Redraw geometry** option. 
 
-Capture the new geometry of the feature using the editing tools and use the **Record** button to save your changes.
+Capture the new geometry of the feature using the editing tools or streaming and use the **Record** button to save your changes.
 
 ![Redrawing geometry of a line feature](./mobile-redraw-features.jpg "Redrawing geometry of a line feature")
 
 ### Split geometry of lines or areas
 Lines and areas can be split into two or more new features that will keep the same attributes as the original feature.
 
-Tap the **More option** button and select the **Split geometry** option. Create the splitting line by adding points. 
+Tap the **More option** button and select the **Split geometry** option. Create the splitting line by using the **Add point** button. 
 
 When finished, tap **Done**.
 ![Edit button in Mergin Maps mobile app](./mobile-split-features.jpg "Edit button in Mergin Maps mobile app")
