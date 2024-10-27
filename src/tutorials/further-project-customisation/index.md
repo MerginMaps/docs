@@ -9,10 +9,6 @@ The topics covered here are:
 Previous tutorials already covered the minimum concepts for data collection so feel free to skip ahead to the [Working Collaboratively](../working-collaboratively/index.md) tutorial (and come back here later on) if you're super keen on collecting data right away.
 :::
 
-::: warning
-Our mobile app was redesigned. We are in the process of updating this content to reflect these changes.
-:::
-
 ## Opening the project in QGIS
 If you already have the `trees-and-hedges` project open in QGIS, skip to [Layer styles](#layer-styles).
 
