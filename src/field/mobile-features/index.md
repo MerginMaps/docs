@@ -21,7 +21,7 @@ The crosshairs you will see on your map will be used as the recorded location. Y
 The **Active layer** is displayed on the top of the map window. This layer is used for surveying new features. To switch to a different (editable) layer, tap on the active layer and select one from the list.
 ![Active survey layer](./mobile-active-layer.jpg "Active survey layer")
 
-The **Record button** is used to survey new features. Below, we describe recording of [points](#capture-points), [lines and areas](#capture-lines-or-areas). It is also possible to record [non-spatial](#add-non-spatial-features) features (e.g. adding a new entry to a table). Once the geometry of a feature is recorded, a form will open and you will be able to fill in the values. 
+The **Record button** is used to survey new features. Below, we describe recording of [points](#capture-points), [lines and areas](#capture-lines-or-areas). It is also possible to record [non-spatial](#add-or-edit-non-spatial-features) features (e.g. adding a new entry to a table). Once the geometry of a feature is recorded, a form will open and you will be able to fill in the values. 
 
 :::tip Attributes form make survey easier!
 Attributes forms can be set up in QGIS to make the recording of attributes more efficient. For more details, see [Setting Up Widgets](../../layer/form-widgets/),  [Attributes Form Configuration](../../layer/form-configuration/) or [Attributes Form Layout](../../layer/form-layout/).
@@ -130,7 +130,7 @@ If snapping is enabled, the crosshairs will turn purple and snap to vertices (le
 
 ## Deleting features
 
-1. Tap on a feature on the map or find it through [**Layers**](../../layers/)
+1. Tap on a feature on the map or find it through [**Layers**](../../field/layers/)
 2. Use the **Edit** button to open the attributes form
 3. Tap the **Delete** button and confirm the deletion
 
