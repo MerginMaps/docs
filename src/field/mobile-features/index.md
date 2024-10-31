@@ -67,7 +67,7 @@ It is possible to set the **Threshold interval**, i.e. how often you want to cap
 :::
 
 ## Editing features
-Features can be browsed, edited and deleted through the [Layers](../layers/) panel in <MobileAppName />.
+Features can be browsed, edited and deleted through the [Layers](../layers/) panel in the <MobileAppNameShort />. Note that layers that are set as [read-only](../../gis/enable_digitising/) in the project properties cannot be edited.
 
 Tap the **Layers** button in the bottom navigation panel and select a layer to see the list of features it contains. 
 
