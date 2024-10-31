@@ -2,10 +2,6 @@
 
 [[toc]]
 
-::: warning
-Our mobile app was redesigned. We are in the process of updating this content to reflect these changes.
-:::
-
 In the last tutorial we created a new <MainPlatformName /> project in QGIS with layers for surveying trees and hedges. You'll now learn how to:
 * Open the QGIS project in <MobileAppName />
 * Set GPS accuracy thresholds
