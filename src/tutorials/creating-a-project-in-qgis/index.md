@@ -156,3 +156,7 @@ Synchronising changes between users and devices is a core principle of <MainPlat
 
 Changes are merged safely and easily from different users, even when they edit the same feature. <MainPlatformNameLink /> tracks project version history so you can download a previous version of a project if you need to.
 
+:::tip Public project available
+The project created in this tutorial <MerginMapsProject id="documentation/t3-trees-and-hedges" /> is public. If needed, you can download it and compare it with your results.
+:::
+
