@@ -77,7 +77,7 @@ To see your current position and GPS info, you have to enable location services 
 
 Tapping the **location button** in the right bottom corner of the screen centres the map to your current position and keeps it centred while you are moving. If you move the map manually, the auto-centre mode turns off automatically.
 
-![Mergin Maps mobile app GPS accuracy](./mobile-app-center-to-current-position.jpg "Mergin Maps mobile app GPS accuracy") 
+![Mergin Maps mobile app centre to current position](./mobile-app-center-to-current-position.jpg "Mergin Maps mobile app centre to current position") 
 
 In the left bottom corner of the screen, there is a **GPS** button that displays the GPS accuracy as reported by your mobile device. The colour of the button denotes the accuracy threshold set in [GPS settings](#gps-settings) in the <MobileAppNameShort />.
 
