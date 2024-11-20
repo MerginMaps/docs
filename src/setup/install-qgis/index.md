@@ -1,8 +1,17 @@
 # How to Install QGIS
 
-1. Navigate to the <QGIS link="en/site/forusers/download.html" text="QGIS Download page" />
-2. Find the appropriate installer for your operating system. For Windows users, we recommend to download a standalone **MSI** installer for the **long-term** release:
-	![QGIS standalone installer download](./qgis-download.jpg "QGIS standalone installer download")
+1. Navigate to the <QGIS link="download/" text="QGIS Download page" />
+2. Find the appropriate installer for your operating system. 
+
+   For Windows users, we recommend downloading a standalone MSI installer for the long term release.
+  
+  ![QGIS standalone installer download](./qgis-download.jpg "QGIS standalone installer download")
+
+   :::tip Choosing QGIS installer and version
+   The <QGIS link="resources/installation-guide/" text="Installation Guide" /> contains more details about installation options for different platforms.
+   
+   The download page offers two QGIS versions: *long term* and *latest*. The *long term release* (LTR) is more stable, while the *latest* version can have more functionality.
+   :::
 
 3. Run the installer when it has finished downloading:
 	![QGIS installer Setup Wizard](./qgis-installer.jpg "QGIS installer Setup Wizard")
