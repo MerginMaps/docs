@@ -112,6 +112,7 @@ The ecosystem consist of various components:
 ## Migrate
 - [From QField](./migrate/qfield/)
 - [From ArcGIS](./migrate/arcgis/)
+- [From Fulcrum](./migrate/fulcrumapp/)
 
 ## Support & Legal
 - [Licensing](./misc/licensing/)
