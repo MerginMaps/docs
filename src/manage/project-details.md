@@ -12,7 +12,10 @@ Great tools to inspect the project history and compare changes between project v
 - use [Create diff](./plugin/#create-diff-processing-toolbox) to extract changes made between two versions of a layer
 :::
 
-## Project history and advanced changelog
+## Project history in QGIS
+
+
+## Project history and advanced changelog on the dashboard
 To see the project history:
 1. Log in <AppDomainNameLink /> and go to your project
 2. Navigate to the **History** tab. 
