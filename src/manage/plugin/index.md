@@ -34,6 +34,8 @@ The toolbar contains following buttons:
   ![Synchronise changes button](./plugin-toolbar-sync.jpg "Synchronise changes button")
   ![Mergin Maps project status with pending changes](./plugin-project-status.jpg "Mergin Maps project status with pending changes")
 
+- **Project history** to inspect [project history and versions](../project-details/)
+  ![Project history button](./plugin-toolbar-project-history.jpg "Project history button")
 
 ## Mergin Maps plugin in QGIS Browser
 

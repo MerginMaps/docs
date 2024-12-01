@@ -3,7 +3,7 @@
 
 Each time someone synchronises the project from a mobile device or from QGIS through <QGISPluginName />, a new project version will be created. Thus, it is possible to see the details of the changes made in <MainPlatformNameLink /> project by different users or devices. 
 
-On <AppDomainNameLink />, you can view what files have been added or removed. If you use GeoPackage for your survey, you can also see the list of the features which have been added, deleted or updated.
+Using the <QGISPluginNameShort /> or the <AppDomainNameLink />, you can view what files have been added or removed. If you use GeoPackage for your survey, you can also see the list of the features which have been added, deleted or updated.
 
 
 :::tip
@@ -13,6 +13,16 @@ Great tools to inspect the project history and compare changes between project v
 :::
 
 ## Project history in QGIS
+Project history and version can be inspected using the <QGISPluginName />.
+
+1. Click on the **Project history** button of the toolbar
+![Project history button](./plugin/plugin-toolbar-project-history.jpg "Project history button")
+
+2. **Changes Viewer** opens. Here, you can see the list of all available project versions in the left panel. 
+
+3. Select a version to see the changes between this and previous version:
+   - Changes are displayed on the map along with a colour-coded attributes table (green for insert, yellow for update, red for delete) and they can be added to the QGIS project as layers.
+   - On the right, you can see the changes overview (such as project size and date and time of the change). There are two tabs, *Layers* and *Files*.
 
 
 ## Project history and advanced changelog on the dashboard
