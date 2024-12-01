@@ -68,9 +68,16 @@ Be careful! If you delete your account, you will lose access to your <MainPlatfo
 ## Working with a project
 A project is opened by tapping its name in the [Home](#home) or in the [Projects](#projects) tab. You have to download the project in order to be able to work with it.
 
-When a project is opened, you will see the map window. The map can be moved by dragging around and zoomed in/out by pinching open/close. Tapping on a feature displays the attributes form. 
+When a project is opened, you will see the map window. The map can be moved by dragging around and zoomed in/out by pinching open/close.
 
 ![A project opened in Mergin Maps mobile app](./mobile-app-project-opened.jpg "A project opened in Mergin Maps mobile app")
+
+### Exploring features on a map
+Tapping on a feature on the map displays the attributes form.
+
+For overlaying features, tap and hold to get a list of features. Select one from the list to open its attributes form.
+
+![Mergin Maps mobile app multi-feature selection](./mobile-app-multiselect.jpg "Mergin Maps mobile app multi-feature selection")
 
 ### Current position and GPS info
 To see your current position and GPS info, you have to enable location services in your mobile device.
