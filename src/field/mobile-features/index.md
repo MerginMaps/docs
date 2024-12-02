@@ -73,7 +73,7 @@ Tap the **Layers** button in the bottom navigation panel and select a layer to s
 
 ![Layers in Mergin Maps mobile app](./mobile-layers-browse-features.jpg "Layers in Mergin Maps mobile app")
 
-To edit the attributes or geometry of a feature, select it from the list in the **Layers** panel. It is also possible to simply tap a feature on the map.
+To edit the attributes or geometry of a feature, select it from the list in the **Layers** panel. It is also possible to simply tap a feature on the map or *tap and hold* to select one from multiple overlaying features.
 
 Use the **Edit** button to open the attributes form. Here you can change the values of attributes as needed. To edit the geometry of a feature, tap the **Edit geometry** button.
 
