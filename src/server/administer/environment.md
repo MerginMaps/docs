@@ -1,15 +1,15 @@
 # Configure environment
 
-There are several application settings which can be changed via <GitHubRepo desc="config variables" id="MerginMaps/server/blob/master/.prod.env" />. Some of them have defaults and some of them need to be modified, particularly those with `fixme` placeholders (marked with asterisks below).
+There are several application settings which can be changed via <GitHubRepo desc="config variables" id="MerginMaps/server/blob/master/.prod.env" />. Some of them have defaults and some of them need to be modified, particularly those with required placeholders (marked with asterisks below).
 ​
 #### Server basics
 Variables marked with star ⭐️ need to be modified for production use.
 
 | Variable name            | Type      | Default   | Description |
 |--------------------------|-----------|-----------|-------------|
-| `CONTACT_EMAIL`⭐️         | string    |           | Email contact for application administrator. |
+| `MERGIN_BASE_URL`⭐️       | string    |        | Deployment URL where <MainPlatformName /> is hosted. |
 | `COLLECT_STATISTICS`     | Boolean   | `true`    | Whether to send usage statistics for application improvements. |
-| `MERGIN_BASE_URL`⭐️       | string    |           | Deployment URL where <MainPlatformName /> is hosted. |
+| `CONTACT_EMAIL`         | string    |     ``      | Email contact for application administrator. |
 | `SERVICE_ID`             | string    |           | Deployment UUID. Auto-generated on the first run. |
 ​
 #### Security settings (important for production use)🛡️
@@ -62,14 +62,18 @@ To ease the process of permission (user) management, you can set the following g
 ​
 | Variable name             | Type      | Default   | Description |
 |---------------------------|-----------|-----------|-------------|
-| `MAIL_SUPPRESS_SEND`     | Boolean   | `true`    | Whether to suppress email sending. If set to `false`, you should define the following variables. |
-| `MAIL_BCC`              | string    |           | Email address to send copies of all emails sent. Should be system/application administrator.  |
-| `MAIL_DEFAULT_SENDER`   | string    |           | Sender of <MainPlatformName /> emails. Best to have some no-reply address.  |
-| `MAIL_USERNAME`         | string    |           | Connection to SMTP server.  |
-| `MAIL_PASSWORD`         | string    |           | Password for user connecting to SMTP server.  |
-| `MAIL_PORT`             | integer   | `587`     | SMTP mail server port.  |
-| `MAIL_SERVER`           | string    |`localhost`| SMTP mail server host.  |
-| `MERGIN_LOGO_URL`       | string    | `null`    | Link to logo in emails. |
+| `MAIL_SUPPRESS_SEND`     | Boolean   | `false`    | Whether to suppress email sending. If set to `false`, you should define the following variables. |
+| `MAIL_DEFAULT_SENDER`⭐️   | string    |           | Sender of <MainPlatformName /> emails. Best to have some no-reply address.  |
+| `MAIL_SERVER`⭐️           | string    |`localhost`| SMTP mail server host.  |
+| `MAIL_PORT`⭐️             | integer   | `587`     | SMTP mail server port.  |
+| `MAIL_USERNAME`         | string    |   `None`   | Username of user connecting to SMTP server.  |
+| `MAIL_PASSWORD`         | string    |   `None`        | Password for user connecting to SMTP server.  |
+| `MAIL_USE_TLS`🛡️        | Boolean    |   `true`        | Use TLS encryption when connecting to SMTP server.  |
+| `MAIL_USE_SSL`🛡️        | Boolean    |   `false`        | Whater to use SSL encryption when connecting to SMTP server.  |
+| `MAIL_BCC`              | string    |   `None`   | Email address to send copies of all emails.  sent. Should be system/application administrator. Mandatory in versions until 2024.4.0  |
+| `MERGIN_LOGO_URL`       | string    | ``    | Link to logo in emails. |
+
+If you have issues with sending emails, follow [troubleshooting](../troubleshoot/index.md) page.
 
 #### Workspace management
 Workspace settings.
