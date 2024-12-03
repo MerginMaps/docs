@@ -19,14 +19,7 @@ Did you get an error that the server is not properly configured?
 
 ## Emails are not sent
 
-Mergin Maps server is sending emails to users in following cases:
-
-* Email verification
-* Password reset
-* Incoming access request
-* Invitation to workspace (only for <EnterprisePlatformName />)
-
-Definition of variables   If you are not receiving emails, check that the following environment variables are set correctly:
+If you are not receiving emails, check that the following environment variables are set correctly:
 
 * `MAIL_DEFAULT_SENDER` is mandatory and should be a valid email address
 * `MAIL_SERVER` should be a valid url to SMTP server
