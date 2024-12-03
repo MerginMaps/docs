@@ -69,7 +69,7 @@ To ease the process of permission (user) management, you can set the following g
 | `MAIL_USERNAME`         | string    |   `None`   | Username of user connecting to SMTP server.  |
 | `MAIL_PASSWORD`         | string    |   `None`        | Password for user connecting to SMTP server.  |
 | `MAIL_USE_TLS`🛡️        | Boolean    |   `true`        | Use TLS encryption when connecting to SMTP server.  |
-| `MAIL_USE_SSL`🛡️        | Boolean    |   `false`        | Whater to use SSL encryption when connecting to SMTP server.  |
+| `MAIL_USE_SSL`🛡️        | Boolean    |   `false`        | Wheater to use SSL encryption when connecting to SMTP server.  |
 | `MAIL_BCC`              | string    |   `None`   | Email address to send copies of all emails.  sent. Should be system/application administrator. Mandatory in versions until 2024.4.0  |
 | `MERGIN_LOGO_URL`       | string    | ``    | Link to logo in emails. |
 
