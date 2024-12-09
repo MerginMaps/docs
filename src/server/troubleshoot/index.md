@@ -24,7 +24,7 @@ Did you get an error that the server is not properly configured?
 If you are not receiving emails, check that the following [environment variables](../administer/environment/) are set correctly:
 
 * `MAIL_DEFAULT_SENDER` is mandatory and should be a valid email address
-* `MAIL_SERVER` should be a valid url to SMTP server
+* `MAIL_SERVER` should be a valid URL to SMTP server
 * `MAIL_PORT` if you have different port than 587, configure it with this variable
 * `MAIL_SUPPRESS_SEND` should be set to `false`
 
