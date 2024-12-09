@@ -36,3 +36,9 @@ Server is sending emails with a celery worker. If you are not receiving emails, 
 ```shell
 $ docker logs celery-worker
 ```
+
+Logs should contain information about sending emails with task `mergin.celery.send_email_async` with success status:
+
+```shell
+[2024-12-09 10:37:16,265: INFO/ForkPoolWorker-2] Task mergin.celery.send_email_async[3e50df69-90c1-49be-b31c-78f1fb417500] succeeded in 0.11469305199989321s: None
+```
