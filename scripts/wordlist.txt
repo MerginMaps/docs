@@ -268,3 +268,5 @@ Workspaces
 workspaces
 zlib
 zoomstack
+SSL
+TLS
