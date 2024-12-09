@@ -26,7 +26,7 @@ If you are not receiving emails, check that the following [environment variables
 * `MAIL_DEFAULT_SENDER` is mandatory and should be a valid email address
 * `MAIL_SERVER` should be a valid url to SMTP server
 * `MAIL_PORT` if you have different port than 587, configure it with this variable
-* `MAIL_SUPPRESS_SEND` check if you set it to `False`
+* `MAIL_SUPPRESS_SEND` should be set to `false`
 
 In some deployments are SMTP servers that are not supporting authentication and TLS. In this case, you can disable authentication by not defining variable `MAIL_USERNAME` and `MAIL_PASSWORD` (which are by default `None`). If your SMTP server does not support TLS or SSL you can disable encryption by setting `MAIL_USE_TLS` and `MAIL_USE_SSL` to `false`. It's recommended to use authentication and TLS encryption.
 
