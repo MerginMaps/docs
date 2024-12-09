@@ -1,6 +1,6 @@
 # Configure environment
 
-There are several application settings which can be changed via <GitHubRepo desc="config variables" id="MerginMaps/server/blob/master/.prod.env" />. Some of them have defaults and some of them need to be modified, particularly those with required placeholders (marked with asterisks below).
+There are several application settings which can be changed via <GitHubRepo desc="config variables" id="MerginMaps/server/blob/master/.prod.env" />. Some of them have defaults and some of them need to be modified, particularly those with required placeholders (marked with ⭐️ below).
 ​
 #### Server basics
 Variables marked with star ⭐️ need to be modified for production use.
