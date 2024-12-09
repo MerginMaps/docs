@@ -28,7 +28,9 @@ If you are not receiving emails, check that the following [environment variables
 * `MAIL_PORT` if you have different port than 587, configure it with this variable
 * `MAIL_SUPPRESS_SEND` should be set to `false`
 
-In some deployments are SMTP servers that are not supporting authentication and TLS. In this case, you can disable authentication by not defining variable `MAIL_USERNAME` and `MAIL_PASSWORD` (which are by default `None`). If your SMTP server does not support TLS or SSL you can disable encryption by setting `MAIL_USE_TLS` and `MAIL_USE_SSL` to `false`. It's recommended to use authentication and TLS encryption.
+In some deployments, there may be SMTP servers that do not support authentication and TLS. In that case, you can disable authentication by not defining variables `MAIL_USERNAME` and `MAIL_PASSWORD` (which are set to `None` by default). 
+
+If your SMTP server does not support TLS or SSL, you can disable encryption by setting `MAIL_USE_TLS` and `MAIL_USE_SSL` to `false`. However, it is recommended to use authentication and TLS encryption.
 
 Server is sending emails with a celery worker. If you are not receiving emails, check if celery worker is running. Check logs for sending emails in the `celery-worker` container:
 ```shell
