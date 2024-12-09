@@ -28,7 +28,7 @@ If you are not receiving emails, check that the following [environment variables
 
 In some deployments are SMTP servers that are not supporting authentication and TLS. In this case, you can disable authentication by not defining variable `MAIL_USERNAME` and `MAIL_PASSWORD` (which are by default `None`). If your SMTP server does not support TLS or SSL you can disable encryption by setting `MAIL_USE_TLS` and `MAIL_USE_SSL` to `false`. It's recommended to use authentication and TLS encryption.
 
-Server is sending emails with celery worker. If you are not receiving emails, check if celery worker is running. You can check logs for sending emails in `celery-worker` container:
+Server is sending emails with a celery worker. If you are not receiving emails, check if celery worker is running. Check logs for sending emails in the `celery-worker` container:
 ```shell
 $ docker logs celery-worker
 ```
