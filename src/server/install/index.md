@@ -44,4 +44,4 @@ $ docker exec merginmaps-server flask user create <username> <password> --is-adm
 
 ### Setup environment
 ​
-Now tweak deployment settings by modifying environment variables. You have to fix all variables marked as required (with asterisks) in this list of [environment variables](../administer/environment.md). In [troubleshoot](../troubleshoot/index.md) section are listed some of the most common issues with custom deployments.
+Now tweak deployment settings by modifying environment variables. You have to fix all variables marked as required in this list of [environment variables](../administer/environment.md). In [troubleshoot](../troubleshoot/index.md) section are listed some of the most common issues with custom deployments.
