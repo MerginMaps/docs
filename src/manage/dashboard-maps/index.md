@@ -29,13 +29,13 @@ The **Layers** panel lists all layers displayed on the map. The check button :wh
 
 The extent of maps is defined in QGIS in the **Project Properties**. 
 
-When displaying maps in <DashboardShortLink />, <MainPlatformName /> uses primarily the *Advertised extent* defined in **QGIS Server** tab. 
-
-![Maps in dashboard extent set in QGIS project](./qgis-project-properties-qgis-server-extent.jpg "Maps in dashboard extent set in QGIS project")
-
-If this parameter is not defined, the maps extent will be set as the [project full extent](../../gis/features/#project-extent) from the **View Settings** tab. 
+When displaying maps in <DashboardShortLink />, <MainPlatformName /> uses primarily the [project full extent](../../gis/features/#project-extent) defined in the **View Settings** tab.
 
 ![QGIS set project extent](../../gis/qgis-project-extent.jpg "QGIS set project extent")
+
+If this parameter is not defined, the maps extent will be set as the *Advertised extent* from the **QGIS Server** tab. 
+
+![Maps in dashboard extent set in QGIS project](./qgis-project-properties-qgis-server-extent.jpg "Maps in dashboard extent set in QGIS project")
 
 If there are no extent settings in the QGIS project, <MainPlatformName /> will calculate the extent from layers in the project.
 
