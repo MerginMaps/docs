@@ -1,6 +1,6 @@
 # Install
 
-Installation guide will help you to install your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink /> to the latest server version. The main SaaS <DashboardLink desc="Mergin Maps Server"/> is always up-to-date and managed by <MainPlatformName /> team. Read more about server platforms in [overview article](../index.md)
+Installation guide will help you to install your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink /> to the latest server version. The main Cloud <DashboardLink desc="Mergin Maps Server"/> is always up-to-date and managed by <MainPlatformName /> team. Read more about server platforms in [overview article](../index.md)
 
 [[toc]]
 
@@ -29,6 +29,7 @@ Provided that `docker` and `docker-compose` are installed on your host, running 
 Once configured, you can run:
 ```shell
 $ mkdir -p projects # or wherever you set it to be
+$ mkdir -p mergin_db # or wherever you set it to be
 $ sudo chown -R  901:999 ./projects/
 $ sudo chmod g+s ./projects/
 $ docker-compose -f docker-compose.yml up
@@ -43,4 +44,4 @@ $ docker exec merginmaps-server flask user create <username> <password> --is-adm
 
 ### Setup environment
 ​
-Now tweak deployment settings by modifying environment variables. You have to fix all variables marked as `fixme` (with asterisks) in this list of [environment variables](../administer/environment.md).
+Now tweak deployment settings by modifying environment variables. You have to fix all variables marked as required in this list of [environment variables](../administer/environment.md). Some of the most common issues with custom deployments are listed in the [troubleshoot](../troubleshoot/index.md) section.

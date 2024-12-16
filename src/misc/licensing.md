@@ -4,7 +4,7 @@
 
 ## Mergin Maps Service
 
-* <AppDomainNameLink desc="Mergin Maps Cloud" />, SaaS <MainPlatformName /> service, has proprietary license held by Lutra Consulting Ltd.
+* <AppDomainNameLink desc="Mergin Maps Cloud" />, Cloud <MainPlatformName /> service, has proprietary license held by Lutra Consulting Ltd.
 * <MainPlatformName /> EE (Enterprise Edition), on-premise <MainPlatformName /> service, has Mergin Maps Commercial Licence held by Lutra Consulting Ltd.
 * <GitHubRepo id="MerginMaps/server" desc="Mergin Maps CE (Community Edition)" />, on-premise <MainPlatformName /> service, is dual licensed under AGPL-3.0 and Mergin Maps Commercial Licence
 
