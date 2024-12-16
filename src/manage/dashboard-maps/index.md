@@ -25,6 +25,20 @@ The **Layers** panel lists all layers displayed on the map. The check button :wh
 
 ![Mergin Maps dashboard maps](../dashboard/mergin-maps-web-map.jpg "Mergin Maps dashboard maps")
 
+## Maps extent
+
+The extent of maps is defined in QGIS in the **Project Properties**. 
+
+When displaying maps on the <DashboardShortLink />, <MainPlatformName /> uses primarily the [project full extent](../../gis/features/#project-extent) defined in the **View Settings** tab.
+
+![QGIS set project extent](../../gis/qgis-project-extent.jpg "QGIS set project extent")
+
+If this parameter is not defined, the map extent will be set as the *Advertised extent* from the **QGIS Server** tab. 
+
+![Maps in dashboard extent set in QGIS project](./qgis-project-properties-qgis-server-extent.jpg "Maps in dashboard extent set in QGIS project")
+
+If there are no extent settings in the QGIS project, <MainPlatformName /> will calculate the extent from layers in the project.
+
 ## Troubleshooting
 
 ### Map config does not exist
