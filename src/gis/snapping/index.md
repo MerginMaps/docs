@@ -9,6 +9,9 @@ Capturing data in the field using <MobileAppName /> can be easier, if you can sn
 - *Basic snapping* - features are snapped to the vertices and segments of vector features in the project
 - *Follow QGIS snapping* - uses the snapping preferences defined in the QGIS project
 
+**Prefer video?** Here is a [video tutorial](https://youtu.be/aFG0iDuZZuI?si=3lBMlGV2Oqw7A3gg) on how to use snapping options in <MainPlatformName />:
+
+<YouTube id="aFG0iDuZZuI" />
 
 ## Basic snapping
 To set up basic snapping:
