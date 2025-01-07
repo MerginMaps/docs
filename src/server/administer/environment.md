@@ -88,7 +88,7 @@ Workspace settings.
 | Variable name                | Type    | Default     | Description |
 |------------------------------|---------|-------------|---------------------------|
 | `WORKSPACE_STORAGE_SIZE` ⭐️  | integer |`524288000`| Storage limit workspace can use to store projects (last version) in bytes (default is 500 MB). |
-| `WORKSPACE_INVITATION_EXPIRATION`  | integer |`7`| Expiration limit for pending invitation in days. |
+| `WORKSPACE_INVITATION_EXPIRATION`  | integer |`14`| Expiration limit for pending invitation in days. |
 | `PROJECT_TRANSFER_EXPIRATION`  | integer |`7`| Expiration limit for pending project transfer in days. |
 | `WORKSPACE_EXPIRATION`  | integer |`7`| Expiration time in days for deleted workspaces before removed completely. |
 | `USER_WORKSPACES_ALLOWED`  | Boolean |`true`| Allow users to create their own workspaces else it is available for superuser only |
