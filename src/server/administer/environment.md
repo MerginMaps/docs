@@ -45,7 +45,7 @@ Settings for managing users.
 | Variable name             | Type    | Default     | Description |
 |---------------------------|---------|-------------|---------------------------|
 | `USER_SELF_REGISTRATION`            | Boolean | `true`     | Users can register themselves. If disabled, they must be invited or registered by superuser.  |
-| `ENABLE_SUPERADMIN_ASSIGNMENT` | Boolean | `true`     | If set to false, you will not be able to assign superadmin role to user from admin panel. |
+| `ENABLE_SUPERADMIN_ASSIGNMENT` | Boolean | `true`     | If set to false, you will not be able to assign super admin role to user from admin panel. |
 
 #### Permission management 
 <ServerType type="CE" />
