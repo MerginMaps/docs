@@ -9,8 +9,8 @@ Using the <QGISPluginNameShort /> or the <DashboardShortLink />, you can view wh
 :::tip Project history in QGIS
 Great tools to inspect the project history and compare changes between project versions can be found in the <QGISPluginNameShort />:
 - use [Project history](#project-history-in-qgis) to explore changes in the **Changes Viewer**
-- use [Create report](./plugin/#create-report-processing-toolbox) to get an overview of changes for a range of project versions.
-- use [Create diff](./plugin/#create-diff-processing-toolbox) to extract changes made between two versions of a layer
+- use [Create report](../plugin/#create-report-processing-toolbox) to get an overview of changes for a range of project versions.
+- use [Create diff](../plugin/#create-diff-processing-toolbox) to extract changes made between two versions of a layer
 :::
 
 ## Project history in QGIS
@@ -63,22 +63,22 @@ To see the project history:
 ### How to revert to an older version
 You may find yourself in a situation where you want to revert to an older version of the project.
 
-Local changes made in QGIS (changes that were not synchronised yet) can be reverted by using the **Reset changes** option in [Project status](./synchronisation/#synchronising-changes-in-qgis).
+Local changes made in QGIS (changes that were not synchronised yet) can be reverted by using the **Reset changes** option in [Project status](../synchronisation/#synchronising-changes-in-qgis).
 
 To revert to an older version of a project (already synchronised to the cloud), follow these steps:
 1. Log in <AppDomainNameLink /> and go to your project
-2. Navigate to the [**project history**](#project-history-and-advanced-changelog) and find the version you want to use
+2. Navigate to the [**project history**](#project-history-and-advanced-changelog-on-the-dashboard) and find the version you want to use
 3. **Download** the project version to your computer. Open the project in QGIS to make sure it is the version you want to restore.
    :::tip
    Our blog [Downloading a previous version of your project](https://merginmaps.com/blog/support-tip-downloading-a-previous-version-of-your-project) contains detailed steps on how to download projects that are too large to be downloaded from the <DashboardShortLink />.
    :::
 
 Now you have multiple options:
-- [Package the downloaded project version](./project/#packaging-qgis-project) as a new <MainPlatformName /> project. You can keep both projects if needed or [delete](./project-advanced/#delete-a-project) the one you don't need anymore.
+- [Package the downloaded project version](../project/#packaging-qgis-project) as a new <MainPlatformName /> project. You can keep both projects if needed or [delete](../project-advanced/#delete-a-project) the one you don't need anymore.
 
 - Replace the specific files in your <MainPlatformName /> project folder:
    1. Close QGIS
-   2. Copy the QGIS project (`.qgz`), the data (`.gpkg`) or both from the downloaded older version and paste them to your current [<MainPlatformName /> project folder](./project/#mergin-maps-project-folder). 
+   2. Copy the QGIS project (`.qgz`), the data (`.gpkg`) or both from the downloaded older version and paste them to your current [<MainPlatformName /> project folder](../project/#mergin-maps-project-folder). 
    
    
       :::warning Be careful when doing this! 
