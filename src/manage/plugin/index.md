@@ -34,8 +34,9 @@ The toolbar contains following buttons:
   ![Synchronise changes button](./plugin-toolbar-sync.jpg "Synchronise changes button")
   ![Mergin Maps project status with pending changes](./plugin-project-status.jpg "Mergin Maps project status with pending changes")
 
-- **Project history** to inspect [project history and versions](../project-details/)
+- **Project history** to inspect [project history and versions](../project-history/)
   ![Project history button](./plugin-toolbar-project-history.jpg "Project history button")
+  ![Project history changes viewer](./plugin-history-viewer.jpg "Project history changes viewer")
 
 ## Mergin Maps plugin in QGIS Browser
 
@@ -115,7 +116,7 @@ Use the **Toolbox** icon in the toolbar panel to display **Processing Toolbox** 
 
 2. Double click the **Create report** tool. 
    
-   Fill in the parameters in the dialog window. If you want to get the report for a specified range of [versions](../project-details/), define also the start and end version. 
+   Fill in the parameters in the dialog window. If you want to get the report for a specified range of [versions](../project-history/), define also the start and end version. 
 
    Click **Run**.
    ![Create report tool dialog](./plugin-create-report.jpg "Create report tool dialog")

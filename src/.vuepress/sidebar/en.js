@@ -45,7 +45,7 @@ module.exports = {
                 '/manage/plugin/',
                 '/manage/dashboard/',
                 '/manage/dashboard-maps/',
-                '/manage/project-details',
+                '/manage/project-history/',
                 '/manage/selective_sync/'
             ]
         }, 
