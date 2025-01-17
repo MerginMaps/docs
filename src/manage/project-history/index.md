@@ -17,7 +17,7 @@ Great tools to inspect the project history and compare changes between project v
 Project history and version can be inspected using the <QGISPluginName /> by clicking the **Project history** button of the toolbar.
 ![Project history button](../plugin/plugin-toolbar-project-history.jpg "Project history button")
 
-The button opens the **Changes Viewer** window. Here, all available project versions are listed in the left panel. 
+The button opens the **Changes Viewer** window. Here, all available project versions are listed in the left panel. By selecting a version you can inspect the *changes* between this and the previous project version (not the state of the project at that version). Note that older versions of your project can be [downloaded through the <DashboardShortLink />](../dashboard/#history).
 
 On the right, you can see some information about the currently selection version: the project size, date of creation and <MainPlatformName /> component that was used to create it. You can switch between the *Changed layers* and *Changed files* tabs.
 
