@@ -2,7 +2,7 @@
 [[toc]]
 
 ::: tip Pricing and features
-Subscription details and pricing are summarized on our <MainDomainNameLink id="pricing" desc="pricing page"/>. 
+Subscription details and pricing are summarised on our <MainDomainNameLink id="pricing" desc="pricing page"/>. 
 
 The current *Premium* subscription system is explained in more detail in our blog <MainDomainNameLink id="blog/unlocking-premium-features-of-mergin-maps-for-all" desc="Unlocking premium features of Mergin Maps for all"/>.
 :::

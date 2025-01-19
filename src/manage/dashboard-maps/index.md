@@ -6,9 +6,7 @@ The spatial data of your project can be displayed in the **Map** tab of the proj
 ![Mergin Maps dashboard map](./dashboard-webmap.gif "Mergin Maps dashboard map")
 
 :::tip Usage details
-Maps can be used with *Premium*, *Team*, *Academia* and *Non-profit* <MainDomainNameLink id="pricing" desc="subscription plans"/> as well as during the trial period.
-
-They are not available for *Individual* or *Professional* subscriptions, <CommunityPlatformName /> and <EnterprisePlatformName />.
+Webmaps are not available for <CommunityPlatformNameLink /> and on-premises <EnterprisePlatformNameLink />.
 :::
 
 ## Webmaps content
