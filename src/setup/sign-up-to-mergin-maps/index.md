@@ -29,7 +29,9 @@ Public projects can be accessed and downloaded even without a <MainPlatformNameL
 
 
    :::tip
-   Projects, collaborations and subscriptions in <MainPlatformNameLink /> are tied to [workspaces](../../manage/workspaces/). When you create your own workspace, it will automatically start with a free trial. To upgrade your subscription after the trial period, see our <MainDomainNameLink id="pricing" desc="Subscription plans" />.
+   Projects, collaborations and subscriptions in <MainPlatformNameLink /> are tied to [workspaces](../../manage/workspaces/). When you create your own workspace, it will automatically start with a free trial. After the trial, you can [upgrade your subscription](../../subscriptions/#how-to-upgrade-a-subscription-from-the-trial-plan). 
+   
+   See our <MainDomainNameLink id="pricing" desc="pricing page" /> for more information about subscriptions.
    :::
 
 **Welcome to <MainPlatformNameLink />!**

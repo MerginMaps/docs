@@ -1,4 +1,4 @@
-﻿# Maps in Dashboard
+﻿# Webmaps
 [[toc]]
 
 The spatial data of your project can be displayed in the **Map** tab of the project on the <DashboardShortLink />. You need to be logged in to see the maps.
@@ -6,18 +6,16 @@ The spatial data of your project can be displayed in the **Map** tab of the proj
 ![Mergin Maps dashboard map](./dashboard-webmap.gif "Mergin Maps dashboard map")
 
 :::tip Usage details
-Maps can be used with *Team*, *Academia* and *Non-profit* <MainDomainNameLink id="pricing" desc="subscription plans"/>.
+Maps can be used with *Premium*, *Team*, *Academia* and *Non-profit* <MainDomainNameLink id="pricing" desc="subscription plans"/> as well as during the trial period.
 
 They are not available for *Individual* or *Professional* subscriptions, <CommunityPlatformName /> and <EnterprisePlatformName />.
-
-You can try this feature for free during the trial period.
 :::
 
-## Maps content
+## Webmaps content
 
-In the maps, you will see your survey layers or raster layers that are [packaged](../project/#packaging-qgis-project) with the project. Other layers, such as online [background maps](../../gis/settingup_background_map/#background-maps) or PostgreSQL layers are not displayed. The extent of maps is defined by the [extent set in the QGIS project](../../gis/features/#project-extent).
+On the webmaps, you will see your survey layers or raster layers that are [packaged](../project/#packaging-qgis-project) with the project. Other layers, such as online [background maps](../../gis/settingup_background_map/#background-maps) or PostgreSQL layers are not displayed. The extent of maps is defined by the [extent set in the QGIS project](../../gis/features/#project-extent).
 
-All maps in the <DashboardShortLink /> use [<MainPlatformName /> vector tile service](../../gis/settingup_background_map/#mergin-maps-vector-tile-service) as a background map.
+All maps on the <DashboardShortLink /> use [<MainPlatformName /> vector tile service](../../gis/settingup_background_map/#mergin-maps-vector-tile-service) as a background map.
 
 The content of the maps and of the **Layers** panel is refreshed after every synchronisation of the project. This means you should always see your current spatial data here.
 
@@ -25,9 +23,9 @@ The **Layers** panel lists all layers displayed on the map. The check button :wh
 
 ![Mergin Maps dashboard maps](../dashboard/mergin-maps-web-map.jpg "Mergin Maps dashboard maps")
 
-## Maps extent
+## Webmaps extent
 
-The extent of maps is defined in QGIS in the **Project Properties**. 
+The extent of webmaps is defined in QGIS in the **Project Properties**. 
 
 When displaying maps on the <DashboardShortLink />, <MainPlatformName /> uses primarily the [project full extent](../../gis/features/#project-extent) defined in the **View Settings** tab.
 

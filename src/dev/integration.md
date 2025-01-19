@@ -3,13 +3,6 @@
 
 Do you want to integrate <MainPlatformNameLink />? <MainPlatformName /> is an open platform that aims to be developer friendly and it has been designed to allow easy integration with other software.
 
-:::tip Usage details
-Python client module and C++ standalone client can be used with *Team*, *Academia* and *Non-profit* <MainDomainNameLink id="pricing" desc="subscription plans"/>, as well as in [<CommunityPlatformName />](../server/) and [<EnterprisePlatformName />](../server/).
-
-They are not available in *Individual* or *Professional* subscriptions.
-
-You can try these tools for free during the trial period.
-:::
 
 ## Python client module
 The Python client module is the easiest way to programmatically use <MainPlatformNameLink />. You can use Python API or a command-line tool to easily work with <MainPlatformName /> projects, such as to get project status, push and pull changes, or to download, create and delete projects.

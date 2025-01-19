@@ -2,9 +2,7 @@
 [[toc]]
 
 ## Workspaces in Mergin Maps
-Workspaces are used to efficiently manage projects, users and subscriptions. 
-
-Every workspace is tied to a [subscription](https://merginmaps.com/pricing). The subscription plan defines the amount of data storage for the workspace as well as other features, such as commercial use or the level of [support](../../misc/troubleshoot/#support).
+Workspaces are used to efficiently manage projects, users and subscriptions. Every workspace is tied to a [subscription](../subscriptions/). The subscription plan defines the number of contributors and the amount of data storage for the workspace.
 
 One workspace can contain multiple projects. The only limit is the storage quota (as defined by the subscription). If needed, projects can be transferred to another workspace.
 
@@ -58,9 +56,9 @@ From the list of available workspaces, select the one you want to switch to:
 ## How to create a new workspace 
 A new workspace can be created through the <DashboardShortLink /> or through the <MobileAppNameShort />. Note that the name of a workspace cannot be changed later.
 
-Every workspace has its own subscription. When created, the workspace starts with a free trial. After the trial period, you will have to [switch to a paid subscription](../../manage/subscriptions/#how-to-change-a-subscription). Currently, it is possible to have up to 3 workspaces without a subscription (using the trial) simultaneously. 
+Every workspace has its own subscription. When created, the workspace starts with a free trial. After the trial period, you will have to [switch to a paid subscription](../../manage/subscriptions/#how-to-change-a-subscription). See our [pricing](https://merginmaps.com/pricing) for more details.
 
-See our [pricing](https://merginmaps.com/pricing) for details about different plans.
+Currently, it is possible to have up to 3 workspaces without a subscription (using the trial) simultaneously. 
 
 ### Create a workspace in Mergin Maps dashboard 
 1. Log in to <AppDomainNameLink />
