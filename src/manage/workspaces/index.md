@@ -56,9 +56,7 @@ From the list of available workspaces, select the one you want to switch to:
 ## How to create a new workspace 
 A new workspace can be created through the <DashboardShortLink /> or through the <MobileAppNameShort />. Note that the name of a workspace cannot be changed later.
 
-Every workspace has its own subscription. When created, the workspace starts with a free trial. After the trial period, you will have to [switch to a paid subscription](../../manage/subscriptions/#how-to-change-a-subscription). See our [pricing](https://merginmaps.com/pricing) for more details.
-
-Currently, it is possible to have up to 3 workspaces without a subscription (using the trial) simultaneously. 
+Every workspace has its own [subscription](../subscriptions/). With your first workspace, you can use a free trial to try out <MainPlatformName /> features. After the trial period, you will have to [switch to a paid subscription](../../manage/subscriptions/#how-to-change-a-subscription). See our [pricing](https://merginmaps.com/pricing) for more details.
 
 ### Create a workspace in Mergin Maps dashboard 
 1. Log in to <AppDomainNameLink />

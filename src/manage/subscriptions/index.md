@@ -7,7 +7,9 @@ Subscription details and pricing are summarised on our <MainDomainNameLink id="p
 The current *Premium* subscription system is explained in more detail in our blog <MainDomainNameLink id="blog/unlocking-premium-features-of-mergin-maps-for-all" desc="Unlocking premium features of Mergin Maps for all"/>.
 :::
 
-Subscriptions are based on the number of contributors on the workspace. *Contributors* are workspace members or guests who have Writer, Editor, Admin or Owner [access rights](../permissions/). The number of read-only users is unlimited: they do not count towards your workspace contributors.
+Subscriptions are based on the number of *contributors* on the workspace. Per each contributor seat, you get 1 GB of storage. Storage is shared across the whole workspace. 
+
+*Contributors* are workspace members or guests who have Writer, Editor, Admin or Owner [access rights](../permissions/).  The number of read-only users is unlimited: they do not count towards your workspace contributors. 
 
 The overview of your current subscription plan, such as storage usage, number of projects and number of contributors in your workspace can be found in the **Subscription** tab on <DashboardLink />. It is available only to the [owners](../permissions/#workspace-member-roles-and-project-permissions) of the workspace.
 
@@ -18,9 +20,9 @@ After signing up to <MainPlatformNameLink />, you can use your workspace for fre
 :::
 
 ::: details Legacy subscription plans: Individual, Professional and Team plan
-The subscription plans of <MainPlatformName /> may change over time as the platforms evolves. However, your subscription remains the same until you decide to switch to a new plan.
+The subscription plans of <MainPlatformName /> may change over time as the platform evolves. You can decide to switch to a new plan anytime in the subscription management page.
 
-This also applies to available features. For instance, previously-used *Individual* or *Professional* subscriptions did not include features such as [webmaps](../dashboard-maps/) or developer tools ([Python and C++ integrations](../../dev/integration/), [DB Sync](../../dev/dbsync/), [Media Sync](../../dev/media-sync/), [Work Packages](../../dev/work-packages/)). To use these features, you will have to switch to a *Premium* subscription.
+Even if you still use a plan that is no longer offered, features included in this plan stay unaltered. For instance, previously-used *Individual* or *Professional* subscriptions did not include features such as [webmaps](../dashboard-maps/) or developer tools ([Python and C++ integrations](../../dev/integration/), [DB Sync](../../dev/dbsync/), [Media Sync](../../dev/media-sync/), [Work Packages](../../dev/work-packages/)). To use these features, you will have to switch to a *Premium* subscription.
 :::
 
 ## Subscriptions management portal
