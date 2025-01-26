@@ -6,7 +6,7 @@ To make full use of the <MainPlatformNameLink /> service, you need to sign up. Y
 Public projects can be accessed and downloaded even without a <MainPlatformNameLink /> account, but projects can be managed, shared and synchronised only when you are logged in.
 
 ::: tip Manage your account
-Do you want to delete your account or change your details? Go to [**User Account**](/manage/account/) for detailed steps.
+Do you want to delete your account or change your details? Go to [**User Account**](../../manage/account/) for detailed steps.
 :::
 
 ## From web
