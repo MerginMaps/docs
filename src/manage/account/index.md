@@ -5,24 +5,28 @@ When [signing up to <MainPlatformName />](../../setup/sign-up-to-mergin-maps/), 
 
 The [email](#changing-email-and-account-details) and [password](#changing-password) can be changed anytime through the <DashboardShortLink />.
 
-It is not possible to change the username. If you wish to use a different username, you will have to follow [these steps](#changing-mergin-maps-username).
+It is not possible to change the username. If you wish to use a different username, follow [these steps](#changing-mergin-maps-username).
 
 ## Changing email and account details
 
-1. Log in to <AppDomainNameLink />. In the upper right corner of the screen, click on your username and go to **Your profile**.
+1. Log in to <AppDomainNameLink />. 
+
+   In the upper right corner of the screen, click on your username and go to **Your profile**.
+   
    ![Mergin Maps profile](../dashboard/mergin-maps-dashboard-profile.jpg "Mergin Maps profile")
    
 2. Click on the **Edit account** button.
    ![Editing Mergin Maps account](./dashboard-edit-account.jpg "Editing Mergin Maps account")
 
-3. Here you can change your email. 
-
-   Also, you can enter or change your first name and last name. 
+3. Here you can change your email and add or change your first name and last name. 
    ![Mergin Maps dashboard edit name and e-mail](./dashboard-edit-email.jpg "Mergin Maps dashboard edit name and e-mail")
 
 ### Changing password
 
-1. Log in to <AppDomainNameLink />. In the upper right corner of the screen, click on your username and go to **Your profile**.
+1. Log in to <AppDomainNameLink />. 
+
+   In the upper right corner of the screen, click on your username and go to **Your profile**.
+   
    ![Mergin Maps profile](../dashboard/mergin-maps-dashboard-profile.jpg "Mergin Maps profile")
    
 2. Click on the **Change password** button and set a new password.
