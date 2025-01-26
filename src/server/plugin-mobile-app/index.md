@@ -1,15 +1,10 @@
-# How to Use Mergin Maps with a Custom Server
+# Using Mergin Maps Mobile App and QGIS Plugin with a Custom Server
 [[toc]]
 
-There is a default server <AppDomainNameLink /> which is configured in <QGISPluginName /> and in the <MobileAppNameShort />. However, you might want to use some custom server, e.g. when using [<MainPlatformName /> Community Edition](../../server/) or [<MainPlatformName /> Enterprise Edition](../../server/).
+There is a default server <AppDomainNameLink /> which is configured in <QGISPluginName /> and in the <MobileAppNameShort />. However, you might want to use some custom server, e.g. when using [<MainPlatformName /> Community Edition](../server/) or [<MainPlatformName /> Enterprise Edition](../server/).
 
 To do this, we need to set up the custom server in the [plugin](#custom-server-configuration-in-mergin-maps-qgis-plugin) as well as in the [mobile app](#custom-server-configuration-in-mergin-maps-mobile-app).
 
-:::tip
-The <MainPlatformName /> Community and Enterprise editions are private hosting solutions for those who would like to run their own deployment of <MainPlatformNameLink />. 
-
-See the [overview and pricing](https://merginmaps.com/pricing-for-ce-and-ee) for more details.
-:::
 
 ## Custom server configuration in Mergin Maps QGIS plugin
 To configure a custom <MainPlatformName /> server in the <QGISPluginNameShort />:
@@ -32,7 +27,7 @@ You might have started working on one server (e.g. staging server, official clou
 
 ### Using multiple servers simultaneously
 
-If you need to handle two different servers at the same time, you will first need to create two user profiles in QGIS and download <QGISPluginName /> for both.
+If you need to handle two different servers at the same time, you will first need to create two user profiles in QGIS and download the <QGISPluginNameShort /> for both.
 
 ![QGIS new profile](./new_profile.jpg "Create new profile in QGIS")
 
@@ -56,4 +51,4 @@ To configure a custom <MainPlatformName /> server in <MobileAppName />:
 3. Use the username and password that is associated with this server and **Sign in**.
    ![Custom server in Mergin Maps mobile app](./mobile-app-custom-server-log-in.jpg "Custom server in Mergin Maps mobile app")
 
-Now you are all set to use <MobileAppName /> with the custom server!
+Now you are all set to use the <MobileAppNameShort /> with the custom server!

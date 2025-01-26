@@ -48,7 +48,6 @@ The ecosystem consist of various components:
 - [How to Delete Files](./manage/delete-files)
 - [How to Deploy Revised Projects](./manage/deploy-new-project/)
 - [How to Recover Missing Data](./manage/missing-data/)
-- [How to <MainPlatformName /> with a Custom Server](./manage/plugin-multi-server-use/)
 - [<QGISPluginName /> Overview](./manage/plugin/)
 - [Home Page and Dashboard](./manage/dashboard/)
 - [Maps in Dashboard](./manage/dashboard-maps/)
@@ -108,6 +107,7 @@ The ecosystem consist of various components:
 - [Upgrade](./server/upgrade/)
 - [Administer](./server/administer/)
 - [Troubleshoot Custom Servers](./server/troubleshoot/)
+- [Using Mergin Maps Mobile App and QGIS Plugin with a Custom Server](./server/plugin-mobile-app/)
 
 ## Migrate
 - [From QField](./migrate/qfield/)
