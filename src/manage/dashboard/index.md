@@ -97,7 +97,7 @@ In the **Settings** tab, you will find information about the current workspace.
 **Your profile** can be accessed by clicking on the user name in the upper right corner.
 ![Mergin Maps dashboard user profile](./mergin-maps-dashboard-profile.jpg "Mergin Maps dashboard user profile") 
 
-Here you can edit your account details, change password, manage notifications about workspace activity and close your account.
+Here you can edit your account details (such as name or e-mail address), change password, manage notifications about workspace activity and close your account.
 
 ![Mergin Maps dashboard account details](./mergin-maps-dashboard-profile-details.jpg "Mergin Maps dashboard account details")
 
