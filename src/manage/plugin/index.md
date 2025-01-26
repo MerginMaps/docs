@@ -22,7 +22,7 @@ The toolbar contains following buttons:
 - the <MainPlatformName />  logo is a shortcut to <AppDomainNameLink />
   ![A link to the Mergin Maps dashboard](./plugin-toolbar-logo.jpg "A link to the Mergin Maps dashboard")
   
-- **Configure <MainPlatformName /> plugin** to [configure plugin](../../setup/install-mergin-maps-plugin-for-qgis/#plugin-configuration) to connect to <MainPlatformName /> or [a custom server](../plugin-multi-server-use/)
+- **Configure <MainPlatformName /> plugin** to [configure plugin](../../setup/install-mergin-maps-plugin-for-qgis/#plugin-configuration) to connect to <MainPlatformName /> or [a custom server](../../server/plugin-mobile-app/)
   ![Configure Mergin Maps Plugin](../../setup/install-mergin-maps-plugin-for-qgis/qgis-configure-mergin-plugin.jpg "Configure Mergin Maps Plugin")
   ![](./plugin-configure.jpg "")
   
@@ -139,6 +139,6 @@ Local changes of a specific layer can also be extracted using the **Extract loca
 ## Mergin Maps in QGIS Plugins menu bar
 **Plugins** menu bar in QGIS contains also <MainPlatformName /> options:
 - **<MainPlatformName />** is a shortcut to <AppDomainNameLink />
-- **Configure <MainPlatformName /> plugin** can be used to [configure plugin](../../setup/install-mergin-maps-plugin-for-qgis/#plugin-configuration) to connect to <MainPlatformName /> or [a custom server](../plugin-multi-server-use/)
+- **Configure <MainPlatformName /> plugin** can be used to [configure plugin](../../setup/install-mergin-maps-plugin-for-qgis/#plugin-configuration) to connect to <MainPlatformName /> or [a custom server](../../server/plugin-mobile-app/)
 - **Configure DB sync** can help you generate a initial configuration file for [DB sync](../../dev/dbsync/)
 ![Mergin Maps in QGIS Plugins menu bar](./plugins-menu-bar.jpg "Mergin Maps in QGIS Plugins menu bar")
