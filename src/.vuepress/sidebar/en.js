@@ -31,6 +31,7 @@ module.exports = {
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
+                '/manage/account/',
                 '/manage/workspaces/',
                 '/manage/subscriptions/',
                 '/manage/permissions',

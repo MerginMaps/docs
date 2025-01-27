@@ -38,6 +38,7 @@ The ecosystem consist of various components:
 - [How to Install <QGISPluginName /> ](./setup/install-mergin-maps-plugin-for-qgis/)
 
 ## Manage Account & Project
+- [User Account](./manage/account/)
 - [Workspaces](./manage/workspaces/)
 - [Subscriptions and Invoicing](./manage/subscriptions/)
 - [Member Roles and Permissions](./manage/permissions/)
