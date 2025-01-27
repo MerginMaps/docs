@@ -41,7 +41,6 @@ module.exports = {
                 '/manage/delete-files/',
                 '/manage/deploy-new-project/',
                 '/manage/missing-data/',
-                '/manage/plugin-multi-server-use/',
                 '/manage/plugin/',
                 '/manage/dashboard/',
                 '/manage/dashboard-maps/',
@@ -127,7 +126,8 @@ module.exports = {
                 '/server/install/',
                 '/server/upgrade/',
                 '/server/administer/',
-                '/server/troubleshoot/'
+                '/server/troubleshoot/',
+                '/server/plugin-mobile-app/'
             ]
         },
         {
