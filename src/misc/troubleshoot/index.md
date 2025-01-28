@@ -24,7 +24,7 @@ The commercial support or consultancy for your projects is carried by <LutraCons
 
 <PublicImage src="logo_lutra.svg" title="Lutra Consulting Ltd. logo" style="width:50%" />
     
-Please see the <LutraConsultingWeb id="support/" desc="support packages" /> available. SLA support offers you the contracted response time, dedicated hotline as well as premium email support.
+Please see the <MainDomainNameLink id="support" desc="support packages"/> available. SLA support offers you the contracted response time, dedicated hotline as well as premium email support.
 
 ### Subscribed client support
 

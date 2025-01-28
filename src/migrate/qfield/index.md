@@ -1,9 +1,10 @@
 # Migrate from QField
 [[toc]]
 
-This guide is intended for current QField and QFieldCloud users considering switching to <MainPlatformName /> as well as for <MainPlatformName /> users looking to transfer their data from QField ecosystem.
+This guide is intended for current QField and QFieldCloud users considering switching to <MainPlatformName /> as well as for <MainPlatformName /> users looking to transfer their data from the QField ecosystem.
 
 Mergin Maps is the closest alternative to QField Ecosystem. Both QField and <MainPlatformName /> are open-source projects powered by QGIS. Their respective mobile apps are both officially recommended for QGIS projects by <QGIS link="en/site/forusers/download.html" text="QGIS.org" />. Both platforms support almost the same set of [supported formats](../../gis/supported_formats/) via QGIS data providers and GDAL. Moreover, the mobile apps are based on the same open-source GIS stack and technology. As such their projects are almost fully interoperable.
+
 
 ## QField and Mergin Maps ecosystems
 The QField ecosystem consists of QField (mobile application), QFieldCloud (geo data collaboration server), QFieldSync (QGIS plugin) and QFieldCloud SDK (Python API client). Let's see the tools from <MainPlatformName /> that are counterparts:
@@ -94,14 +95,10 @@ Therefore, you will have to manually set up workspaces (if needed) and assign ap
 For a smooth transition, it is best to read about [working collaboratively](../../tutorials/working-collaboratively/index.md) in <MainPlatformName />.
 
 ### Billing, subscriptions and plans 
+Both QFieldCloud and <MainPlatformName /> have per-seat models you can choose from to fit your needs. In <MainPlatformName />, each [workspace](../../manage/workspaces/) has its own [subscription](../../manage/subscriptions/).
 
-In <MainPlatformName />, each workspace has its own subscription. Read more about <MainPlatformName /> subscription [here](../../manage/subscriptions/).
-
-* If you own Organisation plan in QFieldCloud, you will likely need <MainPlatformName /> Professional or Team subscription.
-* If you own Pro plan in QFieldCloud, you will likely need <MainPlatformName /> Individual or Professional subscription.
-* If you are Community plan in QFieldCloud, you will likely need <MainPlatformName /> Individual subscription or deploy your own <MainPlatformName /> Community Edition (<CommunityPlatformNameLink />)
-
-While QFieldCloud has a per-seat model, the <MainPlatformName /> has tiers that you can choose from. Comparison of subscription models and costs can be found in our <MainDomainNameLink id="blog/qfield-vs-mergin-maps" desc="blog" /> post.
+* If you own Organisation or Pro plan in QFieldCloud, you will likely need a <MainPlatformName /> Premium subscription.
+* If you are Community plan in QFieldCloud, you will likely need a <MainPlatformName /> Premium subscription or deploy your own <MainPlatformName /> Community Edition (<CommunityPlatformNameLink />)
 
 ## Known differences between QField and Mergin Maps platforms
 Here are some key differences between QField and <MainPlatformName />.
@@ -111,6 +108,10 @@ Here are some key differences between QField and <MainPlatformName />.
 
 - synchronisation in <MainPlatformName /> is conceptually based on ideas from Git. <GitHubRepo id="MerginMaps/geodiff" desc="Geodiff" /> creates difference files from GeoPackages that are sent over the network and applied. QFieldCloud synchronisation uses a concept of storage of differences made in SQL format and this difference log is then transmitted and applied. 
    In <MainPlatformName />, synchronisation is an inherent part of the platform. As such, it is already set up for end-users in a smart way and there are no extra steps needed for mobile users. All synchronisation on mobile devices is done by hitting a single button. 
+   
+:::tip QField vs. Mergin Maps - blog post
+In our blog <MainDomainNameLink id="blog/qfield-vs-mergin-maps" desc="QField vs. Mergin Maps - App Comparison" />, we compared QField and <MainPlatformName /> in terms of the respective mobile apps, cloud sync options, pricing and customer support.
+:::
 
 Here is a non-definitive list of other known differences:
 
@@ -131,7 +132,8 @@ Book a short video call with our <MerginMapsEmail id="sales" desc="sales team" /
 
 <CommunityJoin />
 
-If you are looking for a professional partner to migrate your workflow, you can ask our <MainDomainNameLink id="partners" desc="partners"/> network or <LutraConsultingWeb />, the developers of <MainPlatformName />
+If you are looking for a professional partner to migrate your workflow, you can ask our <MainDomainNameLink id="partners" desc="partners"/> network or <LutraConsultingWeb />, the developers of <MainPlatformName />.
+
 <PublicImage src="logo_lutra.svg" title="Lutra Consulting Ltd. logo" style="width:50%" />
 
 ## Credits

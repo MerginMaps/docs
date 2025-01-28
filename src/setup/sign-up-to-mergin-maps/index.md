@@ -31,7 +31,9 @@ Do you want to delete your account or change your details? Go to [**User Account
    ![Create workspace in Mergin Maps](./create-workspace.jpg "Create workspace in Mergin Maps")
 
    :::tip
-   Projects, collaborations and subscriptions in <MainPlatformNameLink /> are tied to [workspaces](../../manage/workspaces/). When you create your own workspace, it will automatically start with a free trial. To upgrade your subscription after the trial period, see our <MainDomainNameLink id="pricing" desc="Subscription plans" />.
+   Projects, collaborations and subscriptions in <MainPlatformNameLink /> are tied to [workspaces](../../manage/workspaces/). When you create your own workspace, it will automatically start with a free trial. After the trial, you can [upgrade your subscription](../../manage/subscriptions/#how-to-upgrade-a-subscription-from-the-trial-plan). 
+   
+   See our <MainDomainNameLink id="pricing" desc="pricing page" /> for more information about subscriptions.
    :::
 
 **Welcome to <MainPlatformNameLink />!**
