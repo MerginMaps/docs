@@ -1,4 +1,4 @@
-# Home Page and Dashboard
+# Mergin Maps Dashboard
 [[toc]]
 
 When you log in to <DashboardLink />, you will be presented with a quick overview of requests and recent active projects in your current workspace. Here, you can also manage your projects, [workspaces](../workspaces/), profile and [subscriptions](../subscriptions/).
@@ -30,12 +30,12 @@ In **Files**, you can see the list of all files associated with the project.
 Click on a file to see when it was modified, its size, to download or delete it.
 ![Detail of a file in Mergin Maps project](./mergin-maps-dashboard-file-detail.jpg "Detail of a file in Mergin Maps project")
 
-### Maps
-The **Maps** feature is available for [Team subscription](https://merginmaps.com/pricing). It displays your project directly on the <DashboardShortLink /> without the need to open QGIS or the <MobileAppNameShort />.
+### Webmaps
+On the **Map** tab, your project is displayed directly on the <DashboardShortLink /> without the need to open QGIS or the <MobileAppNameShort />.
 
-More details about this functionality can be found in the [Maps in Dashboard](../dashboard-maps/) section.
+More details about this functionality can be found in the [Webmaps](../dashboard-maps/) section.
 
-![Mergin Maps dashboard maps](./mergin-maps-web-map.jpg "Mergin Maps dashboard maps")
+![Mergin Maps dashboard webmaps](./mergin-maps-web-map.jpg "Mergin Maps dashboard webmaps")
 
 ### History
 The **History** tab contains an overview of available project versions that can be also downloaded to your computer.
