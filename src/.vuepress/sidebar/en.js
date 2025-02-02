@@ -128,6 +128,7 @@ module.exports = {
                 '/server/upgrade/',
                 '/server/administer/',
                 '/server/troubleshoot/',
+                '/server/dashboard/',
                 '/server/plugin-mobile-app/'
             ]
         },
