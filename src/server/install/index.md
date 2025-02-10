@@ -36,12 +36,19 @@ $ docker-compose -f docker-compose.yml up
 ```
 ​​
 ### Initialise database
-If server is started for the first time, database needs to be initialised and super-user created. Use the `init` command which will perform it automatically (check the command outputs to get the password):
+If server is started for the first time, database needs to be initialised and super-user created. Use the `init` command which will perform it automatically (the command generates password for the admin account):
 ```shell
 $ docker exec merginmaps-server flask init
 ```
 
-If you don't have `CONTACT_EMAIL` variabe set, you will be asked to provide a super user email using the `-e`/`--email` option. The `init` will also check your server setup (celery jobs, emails, etc.) and print out a list of missing variables. If you see any errors in the console output, you can run the command again as the database and super user will not be re-initialized.
+If you don't have `CONTACT_EMAIL` variable set, you will be asked to provide a super user email using the `-e`/`--email` option. The `init` will also check your server setup (celery jobs, emails, etc.) and print out a list of missing variables. If you see any errors in the console output, you can run the command again as the database and super user will not be re-initialised.
+
+:::tip
+If you want to create another users manually, you can use the following command:
+```shell
+$ docker exec merginmaps-server flask user create <username> <password> --is-admin --email <email>
+```
+:::
 
 ### Setup environment
 ​
