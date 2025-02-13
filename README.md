@@ -43,6 +43,11 @@ cd merginmaps/docs
 yarn install
 yarn dev
 ```
+You can also spin-up a node Docker container using the provided compose file
+
+```bash
+docker compose up mm-docs
+```
 
 ## Translations
 
