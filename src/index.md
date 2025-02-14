@@ -38,6 +38,7 @@ The ecosystem consist of various components:
 - [How to Install <QGISPluginName /> ](./setup/install-mergin-maps-plugin-for-qgis/)
 
 ## Manage Account & Project
+- [User Account](./manage/account/)
 - [Workspaces](./manage/workspaces/)
 - [Subscriptions and Invoicing](./manage/subscriptions/)
 - [Member Roles and Permissions](./manage/permissions/)
@@ -48,11 +49,10 @@ The ecosystem consist of various components:
 - [How to Delete Files](./manage/delete-files)
 - [How to Deploy Revised Projects](./manage/deploy-new-project/)
 - [How to Recover Missing Data](./manage/missing-data/)
-- [How to <MainPlatformName /> with a Custom Server](./manage/plugin-multi-server-use/)
 - [<QGISPluginName /> Overview](./manage/plugin/)
-- [Home Page and Dashboard](./manage/dashboard/)
-- [Maps in Dashboard](./manage/dashboard-maps/)
-- [Project History and Versions](./manage/project-history/)
+- [Mergin Maps Dashboard](./manage/dashboard/)
+- [Webmaps](./manage/dashboard-maps/)
+- [Project History and Versions](./manage/project-details/)
 - [Selective Synchronisation](./manage/selective_sync/)
 
 ## Setup GIS Project
@@ -108,6 +108,7 @@ The ecosystem consist of various components:
 - [Upgrade](./server/upgrade/)
 - [Administer](./server/administer/)
 - [Troubleshoot Custom Servers](./server/troubleshoot/)
+- [Using Mergin Maps Mobile App and QGIS Plugin with a Custom Server](./server/plugin-mobile-app/)
 
 ## Migrate
 - [From QField](./migrate/qfield/)

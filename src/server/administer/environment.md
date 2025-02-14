@@ -19,6 +19,8 @@ Security settings are important for production use.
 |--------------------------|-----------|-----------|-------------|
 | `BEARER_TOKEN_EXPIRATION`| integer   |  `43200`  | Lifetime of authorisation bearer token in seconds. When expired, users need to log in again. |
 | `SECRET_KEY`⭐️            | string    |           | Secret key for authorisation, should be a generated strong string. |
+| `SECURITY_EMAIL_SALT`⭐️| string    |           | Token salt for sending verification email, should be a generated strong string. |
+| `SECURITY_BEARER_SALT`⭐️| string    |           | Bearer token salt for decode web token, should be a generated strong string.|
 | `SECURITY_PASSWORD_SALT`⭐️| string    |           | Password salt for hashing, should be a generated strong string. |
 | `WTF_CSRF_ENABLED`       | Boolean   |  `true`   | Enable CSRF protection. It is strongly recommended to have this on. |
 | `WTF_CSRF_TIME_LIMIT`    | integer   |  `86400`  | Lifetime of CSRF token in seconds. When expired, users need to refresh it. |
@@ -45,6 +47,7 @@ Settings for managing users.
 | Variable name             | Type    | Default     | Description |
 |---------------------------|---------|-------------|---------------------------|
 | `USER_SELF_REGISTRATION`            | Boolean | `true`     | Users can register themselves. If disabled, they must be invited or registered by superuser.  |
+| `ENABLE_SUPERADMIN_ASSIGNMENT` | Boolean | `true`     | If set to false, you will not be able to assign super admin role to user from admin panel. |
 
 #### Permission management 
 <ServerType type="CE" />
@@ -88,7 +91,7 @@ Workspace settings.
 | Variable name                | Type    | Default     | Description |
 |------------------------------|---------|-------------|---------------------------|
 | `WORKSPACE_STORAGE_SIZE` ⭐️  | integer |`524288000`| Storage limit workspace can use to store projects (last version) in bytes (default is 500 MB). |
-| `WORKSPACE_INVITATION_EXPIRATION`  | integer |`7`| Expiration limit for pending invitation in days. |
+| `WORKSPACE_INVITATION_EXPIRATION`  | integer |`14`| Expiration limit for pending invitation in days. |
 | `PROJECT_TRANSFER_EXPIRATION`  | integer |`7`| Expiration limit for pending project transfer in days. |
 | `WORKSPACE_EXPIRATION`  | integer |`7`| Expiration time in days for deleted workspaces before removed completely. |
 | `USER_WORKSPACES_ALLOWED`  | Boolean |`true`| Allow users to create their own workspaces else it is available for superuser only |
@@ -106,7 +109,7 @@ Other settings related to data management.
 | `LOCKFILE_EXPIRATION`        | integer | `300`       | Time in seconds for a project being locked while updated. If no change happens to the project in such time, the lockfile is removed.    |
 | `MAX_CHUNK_SIZE`             | integer | `10485760`  | Maximum size of file chunk to be uploaded (and received by server) in bytes. |
 | `MAX_DOWNLOAD_ARCHIVE_SIZE`  | integer | `1073741824`| Maximum size of project zip archive in bytes for direct download. Too large projects may take too long to download or never complete in one request. |
-| `USE_X_ACCEL` ⭐️             | Boolean | `false`     | Whether to use nginx to serve files. Should be enabled if used with nginx proxy for performance reasons. Read more [here](https://www.nginx.com/resources/wiki/start/topics/examples/x-accel/). |
+| `USE_X_ACCEL` ⭐️             | Boolean | `true`     | Whether to use nginx to serve files. Should be enabled if used with nginx proxy for performance reasons. Read more [here](https://www.nginx.com/resources/wiki/start/topics/examples/x-accel/). |
 | `CLOSED_ACCOUNT_EXPIRATION`  | integer | `1`         | Time in days after a user closed their account to all projects and files are permanently deleted. Please note that until the user is removed, the username/email is occupied. |
 | `DELETED_PROJECT_EXPIRATION` | integer| `7`        | Lifetime in days for deleted projects. Expired projects are removed permanently without possibility to restore afterwards. |
 | `PROJECT_ACCESS_REQUEST`     | integer | `604800`    | Lifetime of active project access request in seconds. |

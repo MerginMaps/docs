@@ -1,19 +1,29 @@
 # Subscriptions and Invoicing
 [[toc]]
 
-After signing up to <MainPlatformNameLink />, you can use your workspace for free during the **28 day trial**. After the trial, you can choose from our <MainDomainNameLink id="pricing" desc="subscription plans"/> depending on the storage size, size of your team, support level and other features that you need for your [workspace](../../manage/workspaces/). 
+::: tip Pricing and features
+Subscription details and pricing are summarised on our <MainDomainNameLink id="pricing" desc="pricing page"/>. 
 
-::: tip
-For details about different subscription plans visit our <MainDomainNameLink id="pricing" desc="pricing page"/>.
-
-If you are interested in <MainDomainNameLink id="pricing-for-ce-and-ee" desc="On-Premise deployment"/>  or looking for other options, please <MerginMapsEmail id="sales" desc="contact us" /> directly.
+The current *Premium* subscription system is explained in more detail in our blog <MainDomainNameLink id="blog/unlocking-premium-features-of-mergin-maps-for-all" desc="Unlocking premium features of Mergin Maps for all"/>.
 :::
 
-There are three paid plans: *Individual*, *Professional*, and *Team* plan. Students and educators can use our free *Academia* plan and there is also a *Non-profit* plan available to charities and non-profit organisations. Subscriptions are billed monthly or annually.
+Subscriptions are based on the number of *contributors* on the workspace. Per each contributor seat, you get 1 GB of storage. Storage is shared across the whole workspace. 
 
-The overview of your current subscription plan and usage of storage, number of projects and number of users in your workspace can be found in the **Subscription** tab in <DashboardLink />. It is available only to the [owners](../permissions/#workspace-member-roles-and-project-permissions) of the workspace.
+*Contributors* are workspace members or guests who have Writer, Editor, Admin or Owner [access rights](../permissions/).  The number of read-only users is unlimited: they do not count towards your workspace contributors. 
+
+The overview of your current subscription plan, such as storage usage, number of projects and number of contributors in your workspace can be found in the **Subscription** tab on <DashboardLink />. It is available only to the [owners](../permissions/#workspace-member-roles-and-project-permissions) of the workspace.
 
 ![Mergin Maps Dashboard Subscription tab](../dashboard/mergin-maps-dashboard-subscriptions.jpg "Mergin Maps Dashboard Subscription tab")
+
+::: tip Trial period
+After signing up to <MainPlatformNameLink />, you can use your workspace for free during the **28 day trial**. After the trial, you can [choose a premium plan](#how-to-upgrade-a-subscription-from-the-trial-plan).
+:::
+
+::: details Legacy subscription plans: Individual, Professional and Team plan
+The subscription plans of <MainPlatformName /> may change over time as the platform evolves. You can decide to switch to a new plan anytime in the subscription management page.
+
+Even if you still use a plan that is no longer offered, features included in this plan stay unaltered. For instance, previously-used *Individual* or *Professional* subscriptions did not include features such as [webmaps](../dashboard-maps/) or developer tools ([Python and C++ integrations](../../dev/integration/), [DB Sync](../../dev/dbsync/), [Media Sync](../../dev/media-sync/), [Work Packages](../../dev/work-packages/)). To use these features, you will have to switch to a *Premium* subscription.
+:::
 
 ## Subscriptions management portal
 Subscriptions, payments and billing information are managed in our subscription management portal. 
@@ -50,16 +60,16 @@ To access the portal directly:
 1. Log into <AppDomainNameLink />
 2. Navigate to the **Subscription** tab. 
 
-   The overview of available plans is listed in the **Upgrade subscription** section.
+   Choose your *Premium* plan by using the slider. You can also specify if you want to be billed yearly or monthly.
    
-   Specify if you want to pay yearly or monthly and click on the **Upgrade** button under the plan of your choice.
+   Click on the **Sign up now** button to confirm your new plan.
    ![Mergin Maps Subscription details](./subscriptions-upgrade.jpg "Mergin Maps Subscription details")
 
 3. You will be redirected to a checkout page. Here, fill out the billing information.
 
    The email you enter here will receive all billing-related information such as invoices or failed payments notifications.
 
-   If you are a business, check the **I'm purchasing as a business** option and fill out your business name and VAT number.
+   If you are a business, check the **I'm purchasing as a business** :heavy_check_mark: option and fill out your business name and VAT number.
    - the VAT number has to be associated with the entered (VAT registered) address
    - the address you enter has to match the address registered with your payment method
    
@@ -81,23 +91,23 @@ Click on the **Sign Up Now** button and fill out the form. We will review your a
 ## How to change a subscription
 1. Navigate to the [subscription management portal](#subscriptions-management-portal)
 
-2. In the *Current plan* section, click on the **Update plan** button
+2. In the *Current subscription* section, click on the **Update subscription** button
    ![Update Mergin Maps subscription plan](./stripe-update-subscription.jpg "Update Mergin Maps subscription plan")
    
-3. Choose *Monthly* or *Yearly* payment, **Select** your new plan and **Continue**
+3. Choose a *Monthly* or *Yearly* billing, **Select** your new plan and **Continue**
    ![Changing Mergin Maps subscription plan](./stripe-update-your-plan.jpg "Changing Mergin Maps subscription plan")
    
-4. Review the details of your updates and **Confirm** the subscription update
-   ![Confirm Mergin Maps subscription plan update](./stripe-update-plan-confirmation.jpg "Confirm Mergin Maps subscription plan update")
+4. Confirm your updates and proceed by clicking on the **Subscribe and pay** button
 
 ## How to cancel a subscription
 1. Navigate to the [subscription management portal](#subscriptions-management-portal)
 
-2. In the *Current plan* section, click on **Cancel plan**
+2. In the *Current subscription* section, click on **Cancel subscription**
    ![Cancel Mergin Maps Subscription](./stripe-cancel-subscription.jpg "Cancel Mergin Maps Subscription")
    
-3. Review the details of your subscription plan and confirm that you want to cancel the plan by clicking **Cancel plan** again
-   ![Cancel Mergin Maps Subscription](./stripe-cancel-subscription-confirm.jpg "Cancel Mergin Maps Subscription")
+3. Review the details and confirm that you want to cancel the plan by clicking **Cancel subscription**.
+
+   Your subscription will be available to the end of your billing period.
 
 ## Billing information and payment method
 1. Navigate to the [subscription management portal](#subscriptions-management-portal)

@@ -163,6 +163,8 @@ VDOP
 Vue
 VuePress
 Webmap
+Webmaps
+webmaps
 WFS
 WGS
 WMS

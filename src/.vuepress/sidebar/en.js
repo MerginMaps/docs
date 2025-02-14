@@ -31,6 +31,7 @@ module.exports = {
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
+                '/manage/account/',
                 '/manage/workspaces/',
                 '/manage/subscriptions/',
                 '/manage/permissions',
@@ -41,7 +42,6 @@ module.exports = {
                 '/manage/delete-files/',
                 '/manage/deploy-new-project/',
                 '/manage/missing-data/',
-                '/manage/plugin-multi-server-use/',
                 '/manage/plugin/',
                 '/manage/dashboard/',
                 '/manage/dashboard-maps/',
@@ -127,7 +127,8 @@ module.exports = {
                 '/server/install/',
                 '/server/upgrade/',
                 '/server/administer/',
-                '/server/troubleshoot/'
+                '/server/troubleshoot/',
+                '/server/plugin-mobile-app/'
             ]
         },
         {
