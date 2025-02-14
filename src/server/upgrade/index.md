@@ -16,12 +16,19 @@ Get the latest <GitHubRepo id="MerginMaps/server/blob/master/docker-compose.yml"
 Perform the migration:
 
 <MigrationType type="EE" />
-1. Start up your docker containers
-    ```bash
-    $ docker-compose -f docker-compose.yml up # or similarly, based on your deployment
-    ```
 
-2. Check that you are on correct versions (`07f2185e2428`, `df5b4efdae7b`).
+1. Add new mandatory environment variables
+   ```bash
+       SECURITY_EMAIL_SALT=''
+       SECURITY_BEARER_SALT=''
+   ```
+
+2. Start up your docker containers
+   ```bash
+       $ docker-compose -f docker-compose.yml up # or similarly, based on your deployment
+   ```
+
+3. Check that you are on correct versions (`07f2185e2428`, `df5b4efdae7b`).
     ```bash
     $ docker exec merginmaps-server flask db current
     INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
@@ -36,7 +43,7 @@ Perform the migration:
     $ docker exec merginmaps-server flask db stamp df5b4efdae7b
     ```
 
-3. Run the database migration:
+4. Run the database migration:
     ```bash
     $ docker exec merginmaps-server flask db upgrade community@ba5051218de4
     $ docker exec merginmaps-server flask db upgrade enterprise@ba5ae5972c4a
