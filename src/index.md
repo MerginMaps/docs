@@ -52,7 +52,7 @@ The ecosystem consist of various components:
 - [<QGISPluginName /> Overview](./manage/plugin/)
 - [Mergin Maps Dashboard](./manage/dashboard/)
 - [Webmaps](./manage/dashboard-maps/)
-- [Project History and Versions](./manage/project-details/)
+- [Project History and Versions](./manage/project-history/)
 - [Selective Synchronisation](./manage/selective_sync/)
 
 ## Setup GIS Project
