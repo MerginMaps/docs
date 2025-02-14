@@ -17,10 +17,11 @@ Perform the migration:
 
 <MigrationType type="EE" />
 
-1. Add new mandatory environment variables
+1. Add/modify environment variables in [.prod.env]([prod.env](https://github.com/MerginMaps/server/blob/master/.prod.env#L57))
+   
    ```bash
-       SECURITY_EMAIL_SALT=''
-       SECURITY_BEARER_SALT=''
+       SECURITY_EMAIL_SALT='b1UHe3sa3kc6r8ieTt8U'
+       SECURITY_BEARER_SALT='k1Cv9X7sMIxUa7bScMhH'
    ```
 
 2. Start up your docker containers
