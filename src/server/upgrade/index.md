@@ -17,7 +17,7 @@ Perform the migration:
 
 <MigrationType type="EE" />
 
-1. Add/modify environment variables in [.prod.env](https://github.com/MerginMaps/server/blob/master/.prod.env#L57)
+1. Double check if below environment variables are available and filled in `.prod.env` environment file. If not, add them.
    
    ```bash
        SECURITY_EMAIL_SALT='<YOUR STRONG HASH>'
