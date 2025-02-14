@@ -19,6 +19,8 @@ Security settings are important for production use.
 |--------------------------|-----------|-----------|-------------|
 | `BEARER_TOKEN_EXPIRATION`| integer   |  `43200`  | Lifetime of authorisation bearer token in seconds. When expired, users need to log in again. |
 | `SECRET_KEY`⭐️            | string    |           | Secret key for authorisation, should be a generated strong string. |
+| `SECURITY_EMAIL_SALT`⭐️| string    |           | Token salt for sending verification email, should be a generated strong string. |
+| `SECURITY_BEARER_SALT`⭐️| string    |           | Bearer token salt for decode web token, should be a generated strong string.|
 | `SECURITY_PASSWORD_SALT`⭐️| string    |           | Password salt for hashing, should be a generated strong string. |
 | `WTF_CSRF_ENABLED`       | Boolean   |  `true`   | Enable CSRF protection. It is strongly recommended to have this on. |
 | `WTF_CSRF_TIME_LIMIT`    | integer   |  `86400`  | Lifetime of CSRF token in seconds. When expired, users need to refresh it. |
