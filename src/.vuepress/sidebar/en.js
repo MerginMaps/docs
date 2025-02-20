@@ -125,6 +125,7 @@ module.exports = {
             children: [
                 '/server/',
                 '/server/install/',
+                '/server/security/',
                 '/server/upgrade/',
                 '/server/administer/',
                 '/server/troubleshoot/',
