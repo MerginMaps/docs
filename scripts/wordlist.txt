@@ -19,6 +19,8 @@ boolean
 Boolean
 changesets
 CLI
+CPU
+CPUs
 CRS
 crosshairs
 CSRF
@@ -120,6 +122,7 @@ Peatlands
 Pixelated
 PostGIS
 PostgreSQL
+prefetch
 Prepopulate
 Prepopulated
 PyPI
