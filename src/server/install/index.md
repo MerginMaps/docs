@@ -53,3 +53,25 @@ $ docker exec merginmaps-server flask user create <username> <password> --is-adm
 ### Setup environment
 ​
 Now tweak deployment settings by modifying environment variables. You have to fix all variables marked as required in this list of [environment variables](../administer/environment.md). Some of the most common issues with custom deployments are listed in the [troubleshoot](../troubleshoot/index.md) section.
+
+### Test deployment
+
+In order to test your deployment there is a utility command to perform basic checks on:
+* server
+* database
+* celery
+* email
+
+```shell
+$ docker exec merginmaps-server flask server check --email your@email.com
+```
+
+Output will be similar to the next snippet. The utility will try to provide some background information if some needed environment variable is missing or wrongly set (ex: `MERGIN_BASE_URL`)
+
+```shell
+  You are running server version 2025.2.0
+  No base URL set. Please set MERGIN_BASE_URL environment variable
+  Database initialized properly
+  Celery running properly
+  Sending email to specified email address your@email.com. Check your inbox.
+```
