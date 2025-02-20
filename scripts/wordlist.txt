@@ -17,6 +17,7 @@ Benz
 Bing
 boolean
 Boolean
+CertBot
 changesets
 CLI
 CRS
@@ -66,6 +67,7 @@ GNSS
 GPL
 HDOP
 HTML
+HTTPS
 Helmert
 HiDPi
 IAM
@@ -249,6 +251,7 @@ shapefiles
 spatialindex
 spatialite
 sqlite
+ssl
 subfolder
 subfolders
 subproject
