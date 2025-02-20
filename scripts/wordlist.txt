@@ -25,6 +25,7 @@ crosshairs
 CSRF
 CSV
 CharlieColleague
+cybersecurity
 DAF
 DateTime
 DOP
@@ -99,6 +100,7 @@ MVT
 Mercedes
 Mergin
 merginmaps
+minimalistic
 Multiline
 nginx
 NDK
