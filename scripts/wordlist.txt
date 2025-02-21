@@ -19,6 +19,7 @@ boolean
 Boolean
 changesets
 CLI
+Consulting's
 CRS
 crosshairs
 CSRF
