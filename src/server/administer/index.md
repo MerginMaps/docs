@@ -20,6 +20,9 @@ If you do not want to provide these data, you can opt-out any time by setting th
 COLLECT_STATISTICS=false
 ```
 
+<ServerType type="EE" />
 ::: warning
-It is legally required by <EnterprisePlatformName /> servers to send usage information to monitor the usage of the License. 
+It is legally required by <EnterprisePlatformName /> servers to send usage information (`call-home` service) to monitor the usage of the License. 
+
+This service runs on background via `TCP` port `443`, hence it needs to be enabled on firewall side in order to comply with <EnterprisePlatformName /> terms.
 :::

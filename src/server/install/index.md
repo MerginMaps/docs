@@ -18,6 +18,8 @@ The <CommunityPlatformName /> images are stored on publicly accessible <DockerHu
 
 Afterwards, you can follow [this guide](./ee/index.md) to retrieve your <EnterprisePlatformName /> images.
 
+Make sure you follow deployment guidelines, namely enabling [`call-home`](../administer/index.md#opt-out-of-sending-statistics) functionality.
+
 ## Deployment
 
 Follow these steps to run a local <MainPlatformName /> instance.
