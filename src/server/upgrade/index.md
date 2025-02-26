@@ -16,22 +16,34 @@ Get the latest <GitHubRepo id="MerginMaps/server/blob/master/docker-compose.yml"
 Perform the migration:
 
 <MigrationType type="EE" />
+::: tip Before you upgrade!
+Release 2025.2.0 brings significant changes on <MainPlatformName /> docker compose orchestration infrastructure.
 
-1. Double check if below environment variables are available and filled in `.prod.env` environment file. If not, add them.
+Previous individual `server` container is replaced by 3 service dedicated containers that split the core components of <MainPlatformName />, `server-gunicorn` the app, `celery-beat` Celery task scheduler and `celery-worker` a dedicated worker container for Celery tasks.
+:::
+
+1. Stop your running docker containers and build the new images
+   ```bash
+       $ docker compose -f docker-compose.yml down # or similarly, based on your deployment
+       # INFO: After shutdown update the docker-compose.yml file to latest release
+       $ docker compose -f docker-compose build # or similarly, based on your deployment
+   ```
+
+2. Double check if below environment variables are available and filled in `.prod.env` environment file. If not, add them.
    
    ```bash
        SECURITY_EMAIL_SALT='<YOUR STRONG HASH>'
        SECURITY_BEARER_SALT='<YOUR STRONG HASH>'
    ```
 
-2. Start up your docker containers
+3. Start up your docker containers
    ```bash
-       $ docker-compose -f docker-compose.yml up # or similarly, based on your deployment
+       $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
    ```
 
-3. Check that you are on correct versions (`07f2185e2428`, `df5b4efdae7b`).
+4. Check that you are on correct versions (`07f2185e2428`, `df5b4efdae7b`).
     ```bash
-    $ docker exec merginmaps-server flask db current
+    $ docker compose exec server flask db current
     INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
     INFO  [alembic.runtime.migration] Will assume transactional DDL.
     07f2185e2428 (head)
@@ -40,14 +52,14 @@ Perform the migration:
 
    - If you do not see the version numbers at all, run the following commands:
     ```bash
-    $ docker exec merginmaps-server flask db stamp 07f2185e2428
-    $ docker exec merginmaps-server flask db stamp df5b4efdae7b
+    $ docker compose exec server flask db stamp 07f2185e2428
+    $ docker compose exec server flask db stamp df5b4efdae7b
     ```
 
-4. Run the database migration:
+5. Run the database migration:
     ```bash
-    $ docker exec merginmaps-server flask db upgrade community@ba5051218de4
-    $ docker exec merginmaps-server flask db upgrade enterprise@ba5ae5972c4a
+    $ docker compose exec server flask db upgrade community@ba5051218de4
+    $ docker compose exec server flask db upgrade enterprise@ba5ae5972c4a
     ```
 
 
