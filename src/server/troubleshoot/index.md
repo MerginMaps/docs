@@ -42,3 +42,12 @@ Logs should contain information about sending emails with task `mergin.celery.se
 ```shell
 [2024-12-09 10:37:16,265: INFO/ForkPoolWorker-2] Task mergin.celery.send_email_async[3e50df69-90c1-49be-b31c-78f1fb417500] succeeded in 0.11469305199989321s: None
 ```
+
+## Celery settings
+
+The following section provides some background to Celery setting via available environment variables. All these variables start with `CELERY_`
+
+* `CELERY_RESULT_BACKEND` - Where Celery sends the tasks results (to Redis backend by default on Mergin Maps)
+* `CELERY_ACKS_LATE` - If `True`, means tasks will be transmitted as execute, AFTER they are finished, not 'right before'. Default: `False`
+* `CELERYD_CONCURRENCY` - Number of child processes. As rule of thumb do not use all available CPUs. If not set, defaults to all available CPUs, which may lead to system instability if many users trigger Celery tasks in parallel.
+* `CELERYD_PREFETCH_MULTIPLIER` - The number of messages to prefetch at a time multiplied by the number of concurrent processes. Default is `4`. If you want to disable this feature set it to `1`.
