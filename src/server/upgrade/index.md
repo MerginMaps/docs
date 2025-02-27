@@ -26,7 +26,6 @@ Previous individual `server` container is replaced by 3 service dedicated contai
    ```bash
        $ docker compose -f docker-compose.yml down # or similarly, based on your deployment
        # INFO: After shutdown update the docker-compose.yml file to latest release
-       $ docker compose -f docker-compose build # or similarly, based on your deployment
    ```
 
 2. Double check if below environment variables are available and filled in `.prod.env` environment file. If not, add them.
@@ -43,7 +42,7 @@ Previous individual `server` container is replaced by 3 service dedicated contai
 
 4. Check that you are on correct versions (`07f2185e2428`, `df5b4efdae7b`).
     ```bash
-    $ docker compose exec server flask db current
+    $ docker exec merginmaps-server flask db current
     INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
     INFO  [alembic.runtime.migration] Will assume transactional DDL.
     07f2185e2428 (head)
@@ -52,14 +51,14 @@ Previous individual `server` container is replaced by 3 service dedicated contai
 
    - If you do not see the version numbers at all, run the following commands:
     ```bash
-    $ docker compose exec server flask db stamp 07f2185e2428
-    $ docker compose exec server flask db stamp df5b4efdae7b
+    $ docker exec merginmaps-server flask db stamp 07f2185e2428
+    $ docker exec merginmaps-server flask db stamp df5b4efdae7b
     ```
 
 5. Run the database migration:
     ```bash
-    $ docker compose exec server flask db upgrade community@ba5051218de4
-    $ docker compose exec server flask db upgrade enterprise@ba5ae5972c4a
+    $ docker exec merginmaps-server flask db upgrade community@ba5051218de4
+    $ docker exec merginmaps-server flask db upgrade enterprise@ba5ae5972c4a
     ```
 
 
