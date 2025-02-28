@@ -19,7 +19,8 @@ The <MainPlatformName /> telemetry service (`call-home`) requires https access t
 ::: warning
 It is legally required by <EnterprisePlatformName /> servers to send usage information to monitor the usage of the License.
 
-Double check your deployment. Make sure if `COLLECT_STATISTICS` environment variable is enabled, <b>it must not be set to `False`</b>.
+Double check your deployment. Make sure if `COLLECT_STATISTICS` environment variable is present, <b>it is set to `True`</b>.
+
 :::
 
 ```
