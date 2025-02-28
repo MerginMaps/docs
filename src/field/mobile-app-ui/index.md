@@ -5,7 +5,7 @@ Below is a description of various items within the user interface of <MobileAppN
 
 ![Mergin Maps mobile app user interface](./mobile-app-ui.jpg "Mergin Maps mobile app user interface")
 
-:::tip
+:::tip Mobile app tutorials available
 To get familiar with the <MobileAppNameShort />, we recommend going through our [Get Started tutorials](../../tutorials/capturing-first-data/).
 :::
 
@@ -67,6 +67,10 @@ Be careful! If you delete your account, you will lose access to your <MainPlatfo
 
 ## Working with a project
 A project is opened by tapping its name in the [Home](#home) or in the [Projects](#projects) tab. You have to download the project in order to be able to work with it.
+
+::: tip Working with a project as a reader
+This section describes the interface for users who can add or edit features based on their [permissions](../../manage/permissions/). The reader's interface is described [below](#working-with-a-project-as-a-reader) as they do not see buttons related to editing.
+:::
 
 When a project is opened, you will see the map window. The map can be moved by dragging around and zoomed in/out by pinching open/close.
 
@@ -136,7 +140,7 @@ The **More** button opens a list of additional options
 
 ![Mergin Maps mobile app More button](./mobile-app-more-options.jpg "Mergin Maps mobile app More button")
 
-- **Projects**: a short cut to the main page of the <MobileAppNameShort />
+- **Projects**: a shortcut to the main page of the <MobileAppNameShort />
 - [**Zoom to project**](../../gis/features/#project-extent): zoom to the extent of all visible layers within the project. The project extent can be set in [QGIS in Project Properties](../../gis/features/#project-extent).
 - [**Map themes**](../../gis/setup_themes/): a list of map themes set up in a <MainPlatformName /> project in QGIS
 - [**Position tracking**](../tracking/): to start tracking of your tracks during the field survey
@@ -163,3 +167,10 @@ The **More** button opens a list of additional options
 - **Automatically sync changes** if used, local changes will be synchronised automatically.
 
 ![Mergin Maps mobile app Streaming mode and recording settings](./mobile-app-streaming-recording-settings.jpg "Mergin Maps mobile app Streaming mode and recording settings")
+
+## Working with a project as a reader
+Users who have read [permission](../../manage/permissions/) to a project do not see some of the editing options that were described in the [Working with a project](#working-with-a-project). Readers can open projects in the <MobileAppNameShort />, [explore](#exploring-features-on-a-map) features on the map, work with [layers](#layers) and use most of the tools in the same manner as users with editing permission.
+
+However, the bottom toolbar contains the **Projects** button that serves as a shortcut to the main page of the <MobileAppNameShort />. For users with editing permission, this button is located in [More options](#more-options-zoom-to-project-map-themes-position-tracking-measure-local-changes-settings).
+
+![A project opened in Mergin Maps mobile app - reader user role](./mobile-app-project-reader.jpg "A project opened in Mergin Maps mobile app - reader user role")
