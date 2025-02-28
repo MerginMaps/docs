@@ -56,22 +56,40 @@ Now tweak deployment settings by modifying environment variables. You have to fi
 
 ### Test deployment
 
-In order to test your deployment there is a utility command to perform basic checks on:
-* server
-* database
-* celery
-* email
+In order to test your deployment there are some utility commands to perform basic checks.
+
+Overall basic check on server configuration:
 
 ```shell
-$ docker exec merginmaps-server flask server check --email your@email.com
+$ docker exec merginmaps-server flask server check
 ```
 
 Output will be similar to the next snippet. The utility will try to provide some background information if some needed environment variable is missing or wrongly set (ex: `MERGIN_BASE_URL`)
 
 ```shell
-  You are running server version 2025.2.0
-  No base URL set. Please set MERGIN_BASE_URL environment variable
+  # Server health check
+
+  Mergin Maps edition: Enterprise Edition
+  Mergin Maps version: 2025.2.0  
+  Error: No base URL set. Please set MERGIN_BASE_URL environment variable
+  Error: No contact email set. Please set CONTACT_EMAIL environment variable
   Database initialized properly
-  Celery running properly
-  Sending email to specified email address your@email.com. Check your inbox.
+  Celery running properly  
 ```
+
+To test email configuration:
+
+```shell
+$ docker exec merginmaps-server flask send-check-email --email me@myorg.com
+```
+
+By default, email notifications are disabled, so output will be similar to this:
+
+```shell
+    # Sending check email to specified email address me@myorg.com.
+
+  Error: Sending emails is disabled. Please set MAIL_SUPPRESS_SEND=False to enable sending emails.
+
+```
+
+To enabel them, set variable `MAIL_SUPPRESS_SEND` in accordance to above and fill all `MAIL_*` related variables with your company SMTP server configuration.
