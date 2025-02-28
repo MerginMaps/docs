@@ -57,7 +57,7 @@ The ecosystem consist of various components:
 
 ## Setup GIS Project
 - [QGIS Project Preparation](./gis/features/)
-- [Searching for Values in Attribute Fields](./gis/search_data/)
+- [Sorting and Search Setup](./gis/search_data/)
 - [Background Maps](./gis/settingup_background_map/)
 - [Map Themes](./gis/setup_themes/)
 - [How to Set Photo Names Format](./gis/photo-names/)
@@ -108,6 +108,7 @@ The ecosystem consist of various components:
 - [Upgrade](./server/upgrade/)
 - [Administer](./server/administer/)
 - [Troubleshoot Custom Servers](./server/troubleshoot/)
+- [Administration Panel](./server/dashboard/)
 - [Using Mergin Maps Mobile App and QGIS Plugin with a Custom Server](./server/plugin-mobile-app/)
 
 ## Migrate
