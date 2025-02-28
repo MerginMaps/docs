@@ -11,7 +11,7 @@ Do you want to delete your account or change your details? Go to [**User Account
 
 ## From web
 
-1. Navigate to [https://app.merginmaps.com/register](https://app.merginmaps.com/register)
+1. Navigate to <AppDomainNameLink id=register text="https://app.merginmaps.com/register" />
 
 2. Fill in the registration form and click on **Sign Up**. 
 
