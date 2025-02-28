@@ -92,4 +92,4 @@ By default, email notifications are disabled, so output will be similar to this:
 
 ```
 
-To enabel them, set variable `MAIL_SUPPRESS_SEND` in accordance to above and fill all `MAIL_*` related variables with your company SMTP server configuration.
+To enable them, set variable `MAIL_SUPPRESS_SEND` in accordance to above and fill all `MAIL_*` related variables with your company SMTP server configuration.
