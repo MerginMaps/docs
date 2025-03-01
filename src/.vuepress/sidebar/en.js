@@ -70,7 +70,12 @@ module.exports = {
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
-                '/layer/best-practice/',         
+                '/layer/best-practice/',
+                {
+            title: 'Form Widgets',   // required
+            collapsable: false, // optional, defaults to true
+            sidebarDepth: 0,    // optional, defaults to 1
+            children: [       
                 '/layer/form-widgets/',
                 '/layer/field-text/',
                 '/layer/field-numbers/',
@@ -78,6 +83,8 @@ module.exports = {
 		'/layer/field-qrcode/',
 		'/layer/field-checkbox/',
 		'/layer/field-dropdown/',
+            ]
+        },        
 		'/layer/photos/',
 		'/layer/external-link/',
 		'/layer/default-values/',
