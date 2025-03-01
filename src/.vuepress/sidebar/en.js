@@ -70,18 +70,21 @@ module.exports = {
             collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
-                '/layer/best-practice/', 
+                '/layer/best-practice/',         
                 '/layer/form-widgets/',
-                '/layer/form-configuration/',
-                '/layer/form-layout/',
-                '/layer/photos/',
-                '/layer/attach-multiple-photos-to-features/',
+                '/layer/field-text/',
+                '/layer/field-numbers/',
+		'/layer/field-datetime/',
+		'/layer/field-qrcode/',
+		'/layer/field-checkbox/',
+		'/layer/field-dropdown/',
+		'/layer/photos/',
+		'/layer/external-link/',
+		'/layer/default-values/',
+		'/layer/constraints/',
+		'/layer/form-layout/',
                 '/layer/one-to-n-relations/',
-                '/layer/exif/',
-                '/layer/external-link/',
-                '/layer/non-spatial-data/',
-                '/layer/position_variables',
-                '/layer/plugin-variables'
+                '/layer/non-spatial-data/'
             ]
         }, 
         

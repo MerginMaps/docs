@@ -1,4 +1,4 @@
-# How to Use Hyperlinks
+# External links
 [[toc]]
 
 ## Open link in a browser
