@@ -105,6 +105,7 @@ The ecosystem consist of various components:
 ## Custom Server
 - [Overview](./server/)
 - [Install](./server/install/)
+- [Security](./server/security/)
 - [Upgrade](./server/upgrade/)
 - [Administer](./server/administer/)
 - [Troubleshoot Custom Servers](./server/troubleshoot/)
