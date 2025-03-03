@@ -254,6 +254,7 @@ spatialindex
 spatialite
 sqlite
 ssl
+SSL
 subfolder
 subfolders
 subproject
