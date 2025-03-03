@@ -11,13 +11,13 @@ Do you want to delete your account or change your details? Go to [**User Account
 
 ## From web
 
-1. Navigate to <AppDomainNameLink />
+1. Navigate to <AppDomainNameLink id=register />
 
 2. Fill in the registration form and click on **Sign Up**. 
 
    ![Mergin Maps sign up form](./mergin-web-sign-up.jpg "Mergin Maps sign up form")
 
-   While signing up, you can subscribe to <MainPlatformName /> newsletter. You can unsubscribe anytime by clicking the **Unsubscribe** link at the bottom of the email.
+   While signing up, you can choose to receive information about updates and new features. You can unsubscribe from the <MainPlatformName /> newsletter anytime by clicking the **Unsubscribe** link at the bottom of the email.
   
 3. You will receive a confirmation email with a link to verify your email.
 
