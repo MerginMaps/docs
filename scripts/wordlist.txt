@@ -20,6 +20,7 @@ Boolean
 changesets
 CLI
 Consulting's
+CPU
 CRS
 crosshairs
 CSRF
@@ -264,6 +265,7 @@ undoable
 url
 uuid
 UUIDs
+vCPUS
 xcf
 xyz
 yml
