@@ -9,19 +9,23 @@ Installation guide will help you to install your <CommunityPlatformNameLink /> o
 
 We recommend using a dedicated host machine with 8 GB of memory. The requirements for CPU and persistent storage depend largely on the frequency of project updates and the anticipated size of the data you expect to store respectively.
 
-## Mergin Maps EE Docker Images
-<ServerType type="EE" />
+## Mergin Maps CE Docker Images
+<ServerType type="CE" />
 
 The <CommunityPlatformName /> images are stored on publicly accessible <DockerHubLink id="u/lutraconsulting" desc="Lutra Consulting's Docker" />.
 
-<EnterprisePlatformName /> images are stored on a private AWS repository. To get access, you need your contract and licence from our <MerginMapsEmail id="sales" desc="sales team" />. 
+Follow the deployment guidelines to install and configure it.
+
+## Mergin Maps EE Docker Images
+<ServerType type="EE" />
+
+
+The <EnterprisePlatformName /> enhanced features are only available on specific Docker images stored on Lutra Consulting's private AWS repository. To get access, you need your contract and licence from our <MerginMapsEmail id="sales" desc="sales team" />. 
 
 Afterwards, you can follow [this guide](./ee/index.md) to retrieve your <EnterprisePlatformName /> images.
 
 ::: warning Enable <MainPlatformName /> Telemetry
 Make sure you follow deployment guidelines to <b>ensure any firewalls in your infrastructure are configured to allow the [`call-home`](../administer/index.md#telemetry-service) functionality to send usage data</b>.
-
-:::
 
 ## Deployment
 
