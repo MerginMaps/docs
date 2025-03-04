@@ -45,9 +45,26 @@ Logs should contain information about sending emails with task `mergin.celery.se
 
 ## Celery settings
 
-The following section provides some background to Celery setting via available environment variables. All these variables start with `CELERY_`
+Celery plays an important role on <MainPlatformName /> hence the need to quickly diagnose it's functionality.
 
-* `CELERY_RESULT_BACKEND` - Where Celery sends the tasks results (to Redis backend by default on Mergin Maps)
-* `CELERY_ACKS_LATE` - If `True`, means tasks will be transmitted as execute, AFTER they are finished, not 'right before'. Default: `False`
-* `CELERYD_CONCURRENCY` - Number of child processes. As rule of thumb do not use all available CPUs. If not set, defaults to all available CPUs, which may lead to system instability if many users trigger Celery tasks in parallel.
-* `CELERYD_PREFETCH_MULTIPLIER` - The number of messages to prefetch at a time multiplied by the number of concurrent processes. Default is `4`. If you want to disable this feature set it to `1`.
+* Make sure `BROKER_URL` is correct!
+* Make sure `celery-beat` and `celery-worker` containers are up and running
+
+If you perform a `docker compose  logs -tf celery-worker` you should see on logs output a line like this:
+
+```shell
+  celery-worker  | 2025-03-04T10:40:16.718182375Z [2025-03-04 10:40:16,718: INFO/MainProcess] Connected to redis://merginmaps-redis:6379/0
+```
+
+This means `celery-worker` is up and communicating with `redis`
+
+* Make sure `redis` is up and receiving `celery-worker` tasks
+
+If you perform a `docker compose exec redis redis-cli monitor` you should see on the output information regarding `tasks` and `heartbeat` of the `celery-worker`node.
+
+```shell
+  1741085464.139904 [0 172.18.0.8:38054] "BRPOP" "celery" "celery\x06\x163" "celery\x06\x166" "celery\x06\x169" "1"
+  1741085464.578928 [0 172.18.0.8:38124] "PUBLISH" "/0.celeryev/worker.heartbeat" "{\"body\": \"eyJob3N0bmFtZSI6ICJjZWxlcnlAMmE2NTRiMzNiMzBjIiwgInV0Y29mZnNldCI6IDAsICJwaWQiOiA3LCAiY2xvY2siOiA2NDYsICJmcmVxIjogMi4wLCAiYWN0aXZlIjogMCwgInByb2Nlc3NlZCI6IDAsICJsb2FkYXZnIjogWzAuNzYsIDAuNzEsIDAuNzddLCAic3dfaWRlbnQiOiAicHktY2VsZXJ5IiwgInN3X3ZlciI6ICI1LjQuMCIsICJzd19zeXMiOiAiTGludXgiLCAidGltZXN0YW1wIjogMTc0MTA4NTQ2NC41NzgxMTUyLCAidHlwZSI6ICJ3b3JrZXItaGVhcnRiZWF0In0=\", \"content-encoding\": \"utf-8\", \"content-type\": \"application/json\", \"headers\": {\"hostname\": \"celery@2a654b33b30c\"}, \"properties\": {\"delivery_mode\": 1, \"delivery_info\": {\"exchange\": \"celeryev\", \"routing_key\": \"worker.heartbeat\"}, \"priority\": 0, \"body_encoding\": \"base64\", \"delivery_tag\": \"78d09f4f-5d84-498b-8b91-8823106df572\"}}"
+  1741085465.148149 [0 172.18.0.8:38054] "BRPOP" "celery" "celery\x06\x163" "celery\x06\x166" "celery\x06\x169" "1"
+  1741085466.158419 [0 172.18.0.8:38054] "BRPOP" "celery" "celery\x06\x163" "celery\x06\x166" "celery\x06\x169" "1"
+```
