@@ -21,6 +21,7 @@ changesets
 CLI
 CPU
 CPUs
+Consulting's
 CRS
 crosshairs
 CSRF

@@ -96,7 +96,7 @@ Book a short video call with our <MerginMapsEmail id="sales" desc="sales team" /
 
 If you are looking for a professional partner to migrate your workflow, ask our <MainDomainNameLink id="partners" desc="partners network"/>  or <LutraConsultingWeb />, the developers of <MainPlatformName />.
 
-<PublicImage src="logo_lutra.svg" title="Lutra Consulting Ltd. logo" style="width:50%" />
+<PublicImage src="lutra-logo.png" title="Lutra Consulting Ltd. logo" style="width:50%" />
 
 ## Credits
 

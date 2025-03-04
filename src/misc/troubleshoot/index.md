@@ -22,7 +22,7 @@ You can also see all your options on our <MainPlatformNameLink id="support" desc
 
 The commercial support or consultancy for your projects is carried by <LutraConsultingWeb />
 
-<PublicImage src="logo_lutra.svg" title="Lutra Consulting Ltd. logo" style="width:50%" />
+<PublicImage src="lutra-logo.png" title="Lutra Consulting Ltd. logo" style="width:50%" />
     
 Please see the <MainDomainNameLink id="support" desc="support packages"/> available. SLA support offers you the contracted response time, dedicated hotline as well as premium email support.
 
