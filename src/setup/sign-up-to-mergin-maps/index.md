@@ -11,15 +11,13 @@ Do you want to delete your account or change your details? Go to [**User Account
 
 ## From web
 
-1. Navigate to <AppDomainNameLink />
+1. Navigate to <AppDomainNameLink id=register />
 
 2. Fill in the registration form and click on **Sign Up**. 
 
    ![Mergin Maps sign up form](./mergin-web-sign-up.jpg "Mergin Maps sign up form")
 
-   :::tip
-   While signing up, you can subscribe to <MainPlatformName /> newsletter. You can unsubscribe anytime by clicking the **Unsubscribe** link at the bottom of the email.
-   :::
+   While signing up, you can choose to receive information about updates and new features. You can unsubscribe from the <MainPlatformName /> newsletter anytime by clicking the **Unsubscribe** link at the bottom of the email.
   
 3. You will receive a confirmation email with a link to verify your email.
 
@@ -30,15 +28,17 @@ Do you want to delete your account or change your details? Go to [**User Account
    To create a workspace, choose an appropriate name and click on **Create workspace**
    ![Create workspace in Mergin Maps](./create-workspace.jpg "Create workspace in Mergin Maps")
 
-   :::tip
-   Projects, collaborations and subscriptions in <MainPlatformNameLink /> are tied to [workspaces](../../manage/workspaces/). When you create your own workspace, it will automatically start with a free trial. After the trial, you can [upgrade your subscription](../../manage/subscriptions/#how-to-upgrade-a-subscription-from-the-trial-plan). 
-   
-   See our <MainDomainNameLink id="pricing" desc="pricing page" /> for more information about subscriptions.
-   :::
-
 **Welcome to <MainPlatformNameLink />!**
 
 You can get up-to-speed quickly by following our [Quick Start tutorials](../../tutorials/capturing-first-data/index.md).
+
+   ::: tip Workspaces and subscriptions
+   Projects, collaborations and subscriptions in <MainPlatformNameLink /> are tied to [workspaces](../../manage/workspaces/). You can use your first  workspace for free during the 28 day trial. After the trial, you can [upgrade to a premium plan](../../manage/subscriptions/#how-to-upgrade-a-subscription-from-the-trial-plan).
+   
+   [Subscriptions](../../manage/subscriptions) are based on the number of contributors on the workspace. Per each contributor seat, you get 1 GB of storage. Storage is shared across the whole workspace.
+   
+   See our <MainDomainNameLink id="pricing" desc="pricing page"/> for more details.
+   :::
 
 ### Invitation to a workspace
 If someone invited you to join their workspace, you will get an email with the invitation link. You need to have a <MainPlatformName /> account in order to contribute to this workspace. 
@@ -79,11 +79,15 @@ You can also sign up from <MobileAppName />.
 5. Every account needs to have a [workspace](../../manage/workspaces/) for storing projects. Choose an appropriate name for your workspace and tap on the **Create workspace** button.
    ![Create workspace in Mergin Maps mobile app](./mobile-app-create-workspace.jpg "Create workspace in Mergin Maps mobile app")
 
-   :::tip
-   Projects, collaborations and subscriptions in <MainPlatformNameLink /> are tied to [workspaces](../../manage/workspaces/). If you create your own workspace, you will be automatically signed up as a free tier user with 100 MB of storage. To upgrade your subscription, see our <MainDomainNameLink id="pricing" desc="Subscription plans" />.
-   :::
-
 **Welcome to <MainPlatformNameLink />!**
 
 You can get up-to-speed quickly by following our [Quick Start tutorials](../../tutorials/capturing-first-data/index.md).
+
+   ::: tip Workspaces and subscriptions
+   Projects, collaborations and subscriptions in <MainPlatformNameLink /> are tied to [workspaces](../../manage/workspaces/). You can use your first  workspace for free during the 28 day trial. After the trial, you can [upgrade to a premium plan](../../manage/subscriptions/#how-to-upgrade-a-subscription-from-the-trial-plan).
+   
+   [Subscriptions](../../manage/subscriptions) are based on the number of contributors on the workspace. Per each contributor seat, you get 1 GB of storage. Storage is shared across the whole workspace.
+   
+   See our <MainDomainNameLink id="pricing" desc="pricing page"/> for more details.
+   :::
 
