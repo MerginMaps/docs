@@ -20,6 +20,7 @@ Boolean
 changesets
 CLI
 Consulting's
+CPU
 CRS
 crosshairs
 CSRF
@@ -255,6 +256,7 @@ subfolder
 subfolders
 subproject
 subprojects
+synchronization
 toc
 toolset
 tooltip
@@ -264,6 +266,7 @@ undoable
 url
 uuid
 UUIDs
+vCPUS
 xcf
 xyz
 yml
