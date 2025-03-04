@@ -198,6 +198,7 @@ geoid
 gpkg
 hotline
 http
+https
 iOS
 iPhone
 iconv
