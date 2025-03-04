@@ -9,6 +9,12 @@ Installation guide will help you to install your <CommunityPlatformNameLink /> o
 
 We recommend using a dedicated host machine with 8 GB of memory. The requirements for CPU and persistent storage depend largely on the frequency of project updates and the anticipated size of the data you expect to store respectively.
 
+For a typical <MainPlatformName /> enterprise level deployment for a small team (<20 users), we provide a shortlist of Azure, AWS and GCP capable instances.
+
+* [Azure](https://cloudprice.net/?_numberOfCores_min=4&_numberOfCores_max=6&_memoryInMB_min=6&_memoryInMB_max=8&timeoption=month)
+* [AWS](https://cloudprice.net/aws/ec2?timeoption=month&_ProcessorVCPUCount_min=4&_ProcessorVCPUCount_max=6&_MemorySizeInMB_min=6&_MemorySizeInMB_max=8)
+* [GCP](https://cloudprice.net/gcp/compute?timeoption=month&_ProcessorVCPUCount_max=6&_ProcessorVCPUCount_min=4&_MemorySizeInMB_min=6&_MemorySizeInMB_max=8)
+
 ## Mergin Maps CE Docker Images
 <ServerType type="CE" />
 
