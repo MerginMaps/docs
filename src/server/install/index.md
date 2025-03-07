@@ -7,15 +7,11 @@ Installation guide will help you to install your <CommunityPlatformNameLink /> o
 
 ## Installation System Requirements
 
-We recommend using a dedicated host machine with 8 GB of memory. The requirements for CPU and persistent storage depend largely on the frequency of project updates and the anticipated size of the data you expect to store respectively.
+For testing or personal usage a 4Gb memory machine is enough to run <MainPlatformName />. For small teams we recommend using a dedicated host machine with 8 GB of memory.
 
-For a typical <MainPlatformName /> enterprise level deployment for a small team (<20 users), the following specs are sufficient:
+The requirements for CPU and persistent storage depend largely on the frequency of project updates and the anticipated size of the data you expect to store respectively.
 
-* **vCPUS**: Between `4` to `6`
-* **Memory**: Between `6Gb` to `8Gb`
-
-More users means more processing power needed for <MainPlatformName />, specially if synchronization of projects happens simultaneously with many users at once.
-Please review your target instance requirements in accordance to these remarks.
+For large teams and/or HA, please contact our <MerginMapsEmail id="sales" desc="sales team" />. 
 
 ## Mergin Maps CE Docker Images
 <ServerType type="CE" />
