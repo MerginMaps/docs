@@ -73,7 +73,7 @@ module.exports = {
                 '/layer/best-practice/',
                 {
             title: 'Form Widgets',   // required
-            collapsable: false, // optional, defaults to true
+            collapsable: true, // optional, defaults to true
             sidebarDepth: 0,    // optional, defaults to 1
             children: [       
                 '/layer/form-widgets/',
