@@ -7,11 +7,12 @@ Installation guide will help you to install your <CommunityPlatformNameLink /> o
 
 ## Installation System Requirements
 
-For testing or personal usage a 4Gb memory machine is enough to run <MainPlatformName />. For small teams we recommend using a dedicated host machine with 8 GB of memory.
+For testing or personal usage a 4GB memory machine is enough to run <MainPlatformName />. For small teams we recommend using a dedicated host machine with 8 GB of memory.
+
+For large teams and/or HA, please contact our <MerginMapsEmail id="sales" desc="sales team" />.
 
 The requirements for CPU and persistent storage depend largely on the frequency of project updates and the anticipated size of the data you expect to store respectively.
-
-For large teams and/or HA, please contact our <MerginMapsEmail id="sales" desc="sales team" />. 
+We advise you to install a monitoring solution alongside <MainPlatformName /> in order to get some metrics for your use case. 
 
 ## Mergin Maps CE Docker Images
 <ServerType type="CE" />
