@@ -19,6 +19,8 @@ boolean
 Boolean
 changesets
 CLI
+CPU
+CPUs
 Consulting's
 CRS
 crosshairs
@@ -121,6 +123,7 @@ Peatlands
 Pixelated
 PostGIS
 PostgreSQL
+prefetch
 Prepopulate
 Prepopulated
 PyPI
