@@ -10,6 +10,64 @@ Make sure to always back up your database data before doing a migration.
 
 [[toc]]
 
+## Migration guide from 2024.2.x to 2025.2.x
+
+Get the latest <GitHubRepo id="MerginMaps/server/blob/master/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2025.2.2`.
+Perform the migration:
+
+<MigrationType type="CE" />
+::: tip Before you upgrade!
+Release 2025.2.2 brings significant changes on <MainPlatformName /> docker compose orchestration infrastructure.
+
+Previous individual `server` container is replaced by 3 service dedicated containers that split the core components of <MainPlatformName />, `server-gunicorn` the app, `celery-beat` Celery task scheduler and `celery-worker` a dedicated worker container for Celery tasks.
+:::
+
+1. Stop your running docker containers
+   ```bash
+       $ docker compose -f docker-compose.yml down # or similarly, based on your deployment
+       # INFO: After shutdown update the docker-compose.yml file to latest release
+   ```
+
+2. Double check if below environment variables are available and filled in `.prod.env` environment file. If not, add them.
+   
+   ```bash
+       SECURITY_EMAIL_SALT='<YOUR STRONG HASH>'
+       SECURITY_BEARER_SALT='<YOUR STRONG HASH>'
+   ```
+
+3. Start up your docker containers   
+   
+   - If you stopped the containers during step `1` with new version compose file, you need to manually stop containers.
+   ```bash
+       $ docker stop merginmaps-db merginmaps-proxy merginmaps-redis merginmaps-server merginmaps-web
+   ```
+
+   - After this you can start the new containers
+   ```bash
+       $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
+   ```
+
+4. Check that you are on correct versions (`35af0c8be41e`, `a5d4defded55`).
+    ```bash
+    $ docker exec merginmaps-server flask db current
+    INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+    INFO  [alembic.runtime.migration] Will assume transactional DDL.
+    35af0c8be41e (head)
+    a5d4defded55 
+    ```
+
+   - If you do not see the version numbers at all, run the following commands:
+    ```bash
+    $ docker exec merginmaps-server flask db stamp 35af0c8be41e
+    $ docker exec merginmaps-server flask db stamp a5d4defded55
+    ```
+
+5. Run the database migration:
+    ```bash
+    $ docker exec merginmaps-server flask db upgrade heads    
+    ```
+
+
 ## Migration guide from 2024.4.x to 2025.2.x
 
 Get the latest <GitHubRepo id="MerginMaps/server/blob/master/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2025.2.0`.
