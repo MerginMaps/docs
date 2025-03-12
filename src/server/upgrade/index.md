@@ -37,7 +37,7 @@ Perform the migration:
    ```
 
 3. Start up your docker containers
-   - If you stopped the containers during step `1` with new version compose file, you need to manually stop amd remove containers.
+   - If you stopped the containers during step `1` with new version compose file, you need to manually stop and remove containers.
    ```bash
        $ docker stop merginmaps-db merginmaps-proxy merginmaps-redis merginmaps-server merginmaps-web
        $ docker rm merginmaps-db merginmaps-proxy merginmaps-redis merginmaps-server merginmaps-web
@@ -87,7 +87,7 @@ Perform the migration:
    ```
 
 3. Start up your docker containers
-   - If you stopped the containers during step `1` with new version compose file, you need to manually stop amd remove containers.
+   - If you stopped the containers during step `1` with new version compose file, you need to manually stop and remove containers.
    ```bash
        $ docker stop merginmaps-db merginmaps-proxy merginmaps-redis merginmaps-server merginmaps-web
        $ docker rm merginmaps-db merginmaps-proxy merginmaps-redis merginmaps-server merginmaps-web
