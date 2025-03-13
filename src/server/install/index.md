@@ -82,6 +82,7 @@ Output will be similar to the next snippet. The utility will try to provide some
   Error: No base URL set. Please set MERGIN_BASE_URL environment variable
   Error: No contact email set. Please set CONTACT_EMAIL environment variable
   Database initialized properly
+  Permissions granted for /data folder
   Celery running properly  
 ```
 
