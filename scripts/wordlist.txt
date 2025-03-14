@@ -17,6 +17,7 @@ Benz
 Bing
 boolean
 Boolean
+CertBot
 changesets
 CLI
 Consulting's
@@ -25,6 +26,7 @@ crosshairs
 CSRF
 CSV
 CharlieColleague
+cybersecurity
 DAF
 DateTime
 DOP
@@ -67,6 +69,7 @@ GNSS
 GPL
 HDOP
 HTML
+HTTPS
 Helmert
 HiDPi
 IAM
@@ -98,6 +101,7 @@ MVT
 Mercedes
 Mergin
 merginmaps
+minimalistic
 Multiline
 nginx
 NDK
@@ -250,6 +254,8 @@ shapefiles
 spatialindex
 spatialite
 sqlite
+ssl
+SSL
 subfolder
 subfolders
 subproject
