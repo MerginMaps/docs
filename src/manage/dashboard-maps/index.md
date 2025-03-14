@@ -6,7 +6,9 @@ The spatial data of your project can be displayed in the **Map** tab of the proj
 ![Mergin Maps dashboard map](./dashboard-webmap.gif "Mergin Maps dashboard map")
 
 :::tip Usage details
-Webmaps are not available for <CommunityPlatformNameLink /> and on-premises <EnterprisePlatformNameLink />.
+Webmaps are available for <MainPlatformNameLink /> cloud and <EnterprisePlatformNameLink /> users.
+
+Webmaps are **not** available for <CommunityPlatformNameLink />.
 :::
 
 ## Webmaps content
