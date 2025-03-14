@@ -1,4 +1,4 @@
-# Setting Up Widgets in Attributes Form
+# Overview of form widgets and functionalities
 
 [[toc]]
 
