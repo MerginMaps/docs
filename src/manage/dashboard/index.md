@@ -44,7 +44,7 @@ The **History** tab contains an overview of available project versions that can 
 You can click on a specific version to see more details.
 ![Project version details in Mergin Maps dashboard](./mergin-maps-dashboard-project-history-version.jpg "Project version details in Mergin Maps dashboard")
 
-You can learn more about project history and how to revert to an older version in [Project History and Versions](../project-details/).
+You can learn more about project history and how to revert to an older version in [Project History and Versions](../project-history/).
 
 ### Collaborators
 The **Collaborators** tab provides the list of users who have access to the project as well as pending invitations. You can use the **Share** button to invite more people to contribute to your project. 
