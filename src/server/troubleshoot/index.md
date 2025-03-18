@@ -45,7 +45,20 @@ Logs should contain information about sending emails with task `mergin.celery.se
 
 ## Permissions
 
-If you get `PermissionError` related errors, please redo the following steps on your <MainPlatformName /> installation:
+You can check for `PermissionError` related errors using a built-in command line provided by <MainPlatformName />.
+Just log to the main `server` container and run the following:
+
+```shell
+   docker exec merginmaps-server flask server permissions
+```
+
+The command line also accepts a specific path provided by the user (defaults to `/data`):
+
+```shell
+   docker exec merginmaps-server flask server permissions --path /my/path
+```
+
+If you have `PermissionError` related errors, please redo the following steps on your <MainPlatformName /> installation:
 
 <MigrationType type="CE" />
 ```shell
