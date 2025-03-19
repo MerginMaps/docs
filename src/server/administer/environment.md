@@ -5,12 +5,12 @@ There are several application settings which can be changed via <GitHubRepo desc
 #### Server basics
 Variables marked with star ⭐️ need to be modified for production use.
 
-| Variable name            | Type      | Default   | Description |
-|--------------------------|-----------|-----------|-------------|
-| `MERGIN_BASE_URL`⭐️       | string    |        | Deployment URL where <MainPlatformName /> is hosted. |
-| `COLLECT_STATISTICS`     | Boolean   | `true`    | Whether to send usage statistics for application improvements. |
-| `CONTACT_EMAIL`         | string    |     ``      | Email contact for application administrator. |
-| `SERVICE_ID`             | string    |           | Deployment UUID. Auto-generated on the first run. |
+| Variable name            | Type      | Default   | Description                                                                                                                                 |
+|--------------------------|-----------|-----------|---------------------------------------------------------------------------------------------------------------------------------------------|
+| `MERGIN_BASE_URL`⭐️       | string    |        | Deployment URL where <MainPlatformName /> is hosted.                                                                                        |
+| `COLLECT_STATISTICS`     | Boolean   | `true`    | Whether to send usage statistics for application improvements. For more information check this [page section](./index.md#telemetry-service) |
+| `CONTACT_EMAIL`         | string    |     ``      | Email contact for application administrator.                                                                                                |
+| `SERVICE_ID`             | string    |           | Deployment UUID. Auto-generated on the first run.                                                                                           |
 ​
 #### Security settings (important for production use)🛡️
 Security settings are important for production use.
