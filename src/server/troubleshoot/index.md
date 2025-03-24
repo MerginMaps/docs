@@ -70,7 +70,7 @@ If you have `PermissionError` related errors, please redo the following steps on
   sudo chown -R 901:999 $MERGIN_DIR
 ```
 
-For <EnterprisePlatformNameLink /> a complementary step needs to be made for the `overviews` mounted folder that enables Maps on the platform.
+For <EnterprisePlatformNameLink /> a complementary step needs to be made for the `overviews` mounted folder that enables [Webmaps](https://merginmaps.com/docs/manage/dashboard-maps/) on the platform.
 <MigrationType type="EE" />
 ```shell
   export MERGIN_DIR=/path/to/your/overviews
