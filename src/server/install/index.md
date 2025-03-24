@@ -11,7 +11,7 @@ For testing or personal usage a 4GB memory machine is enough to run <MainPlatfor
 
 For large teams and/or HA, please contact our <MerginMapsEmail id="sales" desc="sales team" />.
 
-The requirements for CPU and persistent storage depend largely on the frequency of project updates and the anticipated size of the data you expect to store respectively.
+The requirements for CPU and persistent storage depend largely on the frequency of project updates and the anticipated size of stored data.
 We advise you to install a monitoring solution alongside <MainPlatformName /> in order to get some metrics for your use case. 
 
 ## Mergin Maps CE Docker Images

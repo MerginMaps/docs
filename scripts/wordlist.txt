@@ -256,7 +256,6 @@ subfolder
 subfolders
 subproject
 subprojects
-synchronization
 toc
 toolset
 tooltip
