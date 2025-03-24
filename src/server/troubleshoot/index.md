@@ -45,7 +45,7 @@ Logs should contain information about sending emails with task `mergin.celery.se
 
 ## Celery settings
 
-Celery plays an important role on <MainPlatformName /> hence the need to quickly diagnose it's functionality.
+Celery plays an important role on <MainPlatformName /> hence the need to quickly diagnose its functionality.
 
 * Make sure `BROKER_URL` is correct!
 * Make sure `celery-beat` and `celery-worker` containers are up and running
@@ -60,7 +60,7 @@ This means `celery-worker` is up and communicating with `redis`
 
 * Make sure `redis` is up and receiving `celery-worker` tasks
 
-If you perform a `docker compose exec redis redis-cli monitor` you should see on the output information regarding `tasks` and `heartbeat` of the `celery-worker`node.
+If you perform a `docker compose exec redis redis-cli monitor` you should see the output information regarding `tasks` and `heartbeat` of the `celery-worker`node.
 
 ```shell
   1741085464.139904 [0 172.18.0.8:38054] "BRPOP" "celery" "celery\x06\x163" "celery\x06\x166" "celery\x06\x169" "1"
