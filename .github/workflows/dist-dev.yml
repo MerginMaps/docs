@@ -8,6 +8,7 @@ on:
     paths-ignore:
       - 'scripts/**'
       - 'README.md'
+  workflow_dispatch:
 
 concurrency: 
   group: dist-dev-${{ github.head_ref }}
