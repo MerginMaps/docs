@@ -7,11 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-
-    # need Node 16 or less to get rid of ERR_OSSL_EVP_UNSUPPORTED
     - uses: actions/setup-node@v3
       with:
-        node-version: 16
+        node-version: 20
 
     - name: Generate dist
       run: |
@@ -33,11 +31,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-
-    # need Node 16 or less to get rid of ERR_OSSL_EVP_UNSUPPORTED
     - uses: actions/setup-node@v3
       with:
-        node-version: 16
+        node-version: 20
 
     - name: Generate dist
       run: |
