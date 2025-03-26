@@ -8,6 +8,7 @@ export default defineConfig({
   base: "/docs",
   head: [["link", { rel: "icon", href: "/docs/favicon.ico" }]],
   ignoreDeadLinks: true,
+  outDir: "../dist/docs",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     search: {
