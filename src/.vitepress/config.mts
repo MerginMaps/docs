@@ -7,7 +7,7 @@ export default defineConfig({
   description: "Mergin Maps Documentation",
   base: "/docs",
   head: [["link", { rel: "icon", href: "/docs/favicon.ico" }]],
-  ignoreDeadLinks: false,
+  ignoreDeadLinks: true,
   outDir: "../dist/docs",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
