@@ -64,7 +64,7 @@ with open(input_file, 'r') as inp:
                 deleted_pages.append(line_parts[1].strip())
         elif status[0] == 'R':
             old_filename, file_extension = os.path.splitext(line_parts[1])
-            if file_extension.strip() not in iamge_extensions + vue_extensions:
+            if file_extension.strip() not in iamge_extensions + vue_extensions + data_extensions:
                 renamed_pages_or_data_files.append( (line_parts[1].strip(),line_parts[2].strip()) )
                 if file_extension not in captured_exts:
                     captured_exts.append(file_extension)
