@@ -44,5 +44,5 @@ jobs:
 
     - name: Copy files to the https://merginmaps.com/docs
       run: |
-        aws s3 sync ./dist s3://main-merginmaps.docs --follow-symlinks --delete
+        aws s3 sync ./src/.vitepress/dist s3://main-merginmaps.docs --follow-symlinks --delete
 
