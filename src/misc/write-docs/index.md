@@ -35,8 +35,8 @@ Once installed you can proceed by first installation of all dependent packages a
 
 ```
 cd MerginMaps/docs
-npm install 
-npm run dev
+yarn install 
+yarn dev
 ```
 
 Now you can open `http://localhost:5173/` in your browser and see the live version.

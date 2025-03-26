@@ -11,7 +11,7 @@ Changes in your project can be synchronised by using **Synchronise project** opt
 To be able to synchronise a project, you need to:
 - be signed in to your <MainPlatformNameLink /> account
 - be connected to the internet
-- have write [permission](../../manage/permissions/) to the project
+- have write [permission](../../manage/permissions.md) to the project
 
 
 :::tip More about synchronisation
