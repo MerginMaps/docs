@@ -44,9 +44,9 @@ def slashify(url):
     return path
 
 page_extension = '.md'
-iamge_extensions = ['.jpg', '.png', '.gif', '.xcf']
+iamge_extensions = ['.jpg', '.png', '.gif', '.xcf', '.svg', '.ico']
 data_extensions = ['.json', '.zip']
-vue_extensions = ['.vue']
+vue_extensions = ['.vue', '.js', '.ts']
 
 deleted_pages = []
 renamed_pages_or_data_files = []
