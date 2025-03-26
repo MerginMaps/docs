@@ -46,6 +46,7 @@ def slashify(url):
 page_extension = '.md'
 iamge_extensions = ['.jpg', '.png', '.gif', '.xcf']
 data_extensions = ['.json', '.zip']
+vue_extensions = ['.vue']
 
 deleted_pages = []
 renamed_pages_or_data_files = []
@@ -63,7 +64,7 @@ with open(input_file, 'r') as inp:
                 deleted_pages.append(line_parts[1].strip())
         elif status[0] == 'R':
             old_filename, file_extension = os.path.splitext(line_parts[1])
-            if file_extension.strip() not in iamge_extensions:
+            if file_extension.strip() not in iamge_extensions + vue_extensions:
                 renamed_pages_or_data_files.append( (line_parts[1].strip(),line_parts[2].strip()) )
                 if file_extension not in captured_exts:
                     captured_exts.append(file_extension)

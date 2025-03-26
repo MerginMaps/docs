@@ -80,7 +80,7 @@ export default {
         { text: 'External GPS', link: '/field/external_gps/' },
         { text: 'GPS Accuracy', link: '/field/gps_accuracy/' },
         { text: 'Position Tracking', link: '/field/tracking/' },
-        { text: 'Autosync', link: '/field/autosync/' },
+        { text: 'Synchronisation in Mergin Maps Mobile App', link: '/field/autosync/' },
         { text: 'Measure', link: '/field/measure/' },
         { text: 'Layers', link: '/field/layers/' },
         { text: 'Mobile Features', link: '/field/mobile-features/' },
@@ -97,7 +97,7 @@ export default {
         { text: 'DB Sync', link: '/dev/dbsync' },
         { text: 'Media Sync', link: '/dev/media-sync/' },
         { text: 'Work Packages', link: '/dev/work-packages/' },
-        { text: 'GeoDiff', link: '/dev/geodiff/' }
+        { text: 'Geodiff Library', link: '/dev/geodiff/' }
       ]
     },
     {
