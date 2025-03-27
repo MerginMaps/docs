@@ -11,6 +11,45 @@ Make sure to always back up your database data before doing a migration.
 [[toc]]
 
 
+## Migration guide from 2025.2.x to 2025.3.x
+
+<MigrationType type="EE" />
+
+Get the latest <GitHubRepo id="MerginMaps/server/blob/master/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2025.3.0`.
+Perform the migration:
+
+1. Stop your running docker containers and build the new images
+   ```bash
+       $ docker compose -f docker-compose.yml down # or similarly, based on your deployment
+       # INFO: After shutdown update the docker-compose.yml file to latest release
+   ```
+
+2. Start up your docker containers   
+   ```bash
+       $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
+   ```
+
+3. Check that you are on correct versions (`ba5051218de4`, `ba5ae5972c4a`).
+    ```bash
+    $ docker exec merginmaps-server flask db current
+    INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+    INFO  [alembic.runtime.migration] Will assume transactional DDL.
+    ba5051218de4 (head)
+    ba5ae5972c4a (head)
+    ```
+
+   - If you do not see the version numbers at all, run the following commands:
+    ```bash
+    $ docker exec merginmaps-server flask db stamp ba5051218de4
+    $ docker exec merginmaps-server flask db stamp ba5ae5972c4a
+    ```
+
+4. Run the database migration:
+    ```bash
+    $ docker exec merginmaps-server flask db upgrade community@5ad13be6f7ef
+    $ docker exec merginmaps-server flask db upgrade enterprise@819e6b20ee93
+    ```
+
 ## Migration guide from 2024.2.x to 2025.2.x (CE)
 
 ::: tip Before you upgrade!
