@@ -114,13 +114,24 @@ Other settings related to data management.
 | `DELETED_PROJECT_EXPIRATION` | integer| `7`        | Lifetime in days for deleted projects. Expired projects are removed permanently without possibility to restore afterwards. |
 | `PROJECT_ACCESS_REQUEST`     | integer | `604800`    | Lifetime of active project access request in seconds. |
 | `TEMP_EXPIRATION`            | integer | `7`         | Time in days after files in a temporary folder are permanently deleted. |
-​
+
 
 #### Celery asynchronous tasks
-​Mergin Maps is using Celery and Redis to perform asynchronous tasks or doing regular jobs.
-​​
+Mergin Maps is using Celery and Redis to perform asynchronous tasks or doing regular jobs.
+
 | Variable name         | Type | Default                         | Description |
 |-----------------------|------|---------------------------------|-------------|
 |`BROKER_URL`           |string|`redis://merginmaps-redis:6379/0`| Connection details to celery message broker. If non-default, it should match definition in `docker-compose` file.  |
 |`CELERY_RESULT_BACKEND`|string|`redis://merginmaps-redis:6379/0`| Connection details to celery result back-end broker. If non-default, it should match definition in `docker-compose` file.  |
-​
+
+#### WebMaps 
+<ServerType type="EE" />
+
+| Variable name      | Type    | Default | Description                       |
+|--------------------|---------|---------|-----------------------------------|
+| `MAPS_ENABLED`     | boolean | `true`  | Flag to enable webmaps            |
+| `OVERVIEW_DATA`    | string  | `/tmp`  | Folder to store overviews data    |
+| `WMTS_SERVER_URL`  | string  | `http://mergin-qgis-nginx:80` | URL for custom WMTS server        |
+| `QGIS_EXTRACTOR_API_URL` | string | `http://mergin-qgis-extractor:8000` | URL for QGIS Extractor service    |
+| `VECTOR_TILES_URL` | string | `https://tiles.merginmaps.com` | URL to custom tile service/server |
+| `VECTOR_TILES_STYLE_URL` | string |  | URL to custom tile style JSON     |
