@@ -42,3 +42,41 @@ Logs should contain information about sending emails with task `mergin.celery.se
 ```shell
 [2024-12-09 10:37:16,265: INFO/ForkPoolWorker-2] Task mergin.celery.send_email_async[3e50df69-90c1-49be-b31c-78f1fb417500] succeeded in 0.11469305199989321s: None
 ```
+
+## Permissions
+
+You can check for `PermissionError` related errors using a built-in command line provided by <MainPlatformName />.
+Just log to the main `server` container and run the following:
+
+```shell
+   docker exec merginmaps-server flask server permissions
+```
+
+The command line also accepts a specific path provided by the user (defaults to `/data`):
+
+```shell
+   docker exec merginmaps-server flask server permissions --path /my/path
+```
+
+If you have `PermissionError` related errors, please redo the following steps on your <MainPlatformName /> installation:
+
+<MigrationType type="CE" />
+```shell
+  export MERGIN_DIR=/path/to/your/projects
+  sudo mkdir -p $MERGIN_DIR
+  sudo find $MERGIN_DIR -type f -exec sudo chmod 640 {} \;
+  sudo find $MERGIN_DIR -type d -exec sudo chmod 750 {} \;
+  sudo find $MERGIN_DIR -type d -exec sudo chmod g+s {} \;
+  sudo chown -R 901:999 $MERGIN_DIR
+```
+
+For <EnterprisePlatformNameLink /> a complementary step needs to be made for the `overviews` mounted folder that enables [Webmaps](https://merginmaps.com/docs/manage/dashboard-maps/) on the platform.
+<MigrationType type="EE" />
+```shell
+  export MERGIN_DIR=/path/to/your/overviews
+  sudo mkdir -p $MERGIN_DIR
+  sudo find $MERGIN_DIR -type f -exec sudo chmod 640 {} \;
+  sudo find $MERGIN_DIR -type d -exec sudo chmod 750 {} \;
+  sudo find $MERGIN_DIR -type d -exec sudo chmod g+s {} \;
+  sudo chown -R 901:999 $MERGIN_DIR
+```
