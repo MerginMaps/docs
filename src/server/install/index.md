@@ -24,7 +24,8 @@ The <EnterprisePlatformName /> enhanced features are only available on specific 
 
 Afterwards, you can follow [this guide](./ee/index.md) to retrieve your <EnterprisePlatformName /> images.
 
-Once you have the images on your side, follow the deployment guidelines and have <EnterprisePlatformName /> running on a target instance in your infrastructure. 
+::: warning Enable <MainPlatformName /> Telemetry
+Make sure you follow deployment guidelines to <b>ensure any firewalls in your infrastructure are configured to allow the [`call-home`](../administer/index.md#telemetry-service) functionality to send usage data</b>.
 
 ## Deployment
 

@@ -17,14 +17,18 @@ Benz
 Bing
 boolean
 Boolean
+CertBot
 changesets
 CLI
+CPU
+CPUs
 Consulting's
 CRS
 crosshairs
 CSRF
 CSV
 CharlieColleague
+cybersecurity
 DAF
 DateTime
 DOP
@@ -67,6 +71,7 @@ GNSS
 GPL
 HDOP
 HTML
+HTTPS
 Helmert
 HiDPi
 IAM
@@ -98,6 +103,7 @@ MVT
 Mercedes
 Mergin
 merginmaps
+minimalistic
 Multiline
 nginx
 NDK
@@ -121,6 +127,7 @@ Peatlands
 Pixelated
 PostGIS
 PostgreSQL
+prefetch
 Prepopulate
 Prepopulated
 PyPI
@@ -198,6 +205,7 @@ geoid
 gpkg
 hotline
 http
+https
 iOS
 iPhone
 iconv
@@ -250,6 +258,8 @@ shapefiles
 spatialindex
 spatialite
 sqlite
+ssl
+SSL
 subfolder
 subfolders
 subproject
