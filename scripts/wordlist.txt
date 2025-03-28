@@ -23,6 +23,7 @@ CLI
 CPU
 CPUs
 Consulting's
+CPU
 CRS
 crosshairs
 CSRF
@@ -49,6 +50,7 @@ frontend
 FLX
 FOSS
 Garmin
+GCP
 GDA
 gdal
 GDAL
@@ -273,6 +275,7 @@ undoable
 url
 uuid
 UUIDs
+vCPUS
 xcf
 xyz
 yml
