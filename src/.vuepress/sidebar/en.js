@@ -139,7 +139,8 @@ module.exports = {
             sidebarDepth: 0,    // optional, defaults to 1
             children: [
                 '/migrate/qfield/',
-                '/migrate/arcgis/'
+                '/migrate/arcgis/',
+                '/migrate/fulcrumapp/'
             ]
         },
         {
