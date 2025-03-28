@@ -10,7 +10,7 @@ In this tutorial you'll learn how to transfer your project and data from mobile 
 ## Before we start
 To open the project and field data on the computer, we will need to do some setup. Before going to the next steps, please:
 - [Sign up to <MainPlatformName />](../../setup/sign-up-to-mergin-maps/#from-mergin-maps-mobile-app), as we will use <MainPlatformName /> platform to transfer the data between the mobile app and QGIS
-- [Install QGIS](../../setup/install-qgis/index.md) on your computer
+- [Install QGIS](../../setup/install-qgis/) on your computer
 - [Install the <QGISPluginName />](../../setup/install-mergin-maps-plugin-for-qgis/) and use your credential to [configure the plugin](../../setup/install-mergin-maps-plugin-for-qgis/#plugin-configuration), so that QGIS knows how to communicate with <MainPlatformName /> 
 
 ## Putting your project in the cloud
@@ -42,7 +42,7 @@ Now that the project is stored in <MainPlatformName /> cloud, we can open it in 
 
 1. Open QGIS on your computer
 
-2. Make sure you have already [installed](../../setup/install-mergin-maps-plugin-for-qgis/index.md) and [configured](../../setup/install-mergin-maps-plugin-for-qgis/#plugin-configuration) <QGISPluginName />
+2. Make sure you have already [installed](../../setup/install-mergin-maps-plugin-for-qgis/) and [configured](../../setup/install-mergin-maps-plugin-for-qgis/#plugin-configuration) <QGISPluginName />
    
 3. Find the <MainPlatformName /> entry in the QGIS **Browser** panel
    ![QGIS Browser Mergin Maps projects](./qgis-browser-panel.jpg "QGIS Browser Mergin Maps projects")

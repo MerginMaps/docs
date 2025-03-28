@@ -28,8 +28,8 @@ export default defineConfig({
 
     sidebar: en,
     logo: {
-      dark: "/MM_logo_no gap_HORIZ_COLOR_POLAR.svg",
-      light: "/MM_logo_HORIZ_COLOR_VECTOR_no_padding.svg",
+      dark: "/MM_symbol_COLOR_INVERSE_no_padding.svg",
+      light: "/MM_symbol_COLOR_no_padding.svg",
     },
 
     socialLinks: [{ icon: "github", link: "https://github.com/MerginMaps" }],

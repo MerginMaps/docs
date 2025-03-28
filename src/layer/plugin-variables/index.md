@@ -12,4 +12,4 @@ The <QGISPluginName /> adds several variables that can be used in QGIS expressio
 | `@mergin_project_full_name` | `martin/Tree survey`          | project | Owner and project name joined with a forward slash |
 | `@mergin_project_version`   | `42`                          | project | Current version of the active project |
 
-A common use case is to use `@mergin_username` as the [default value](./form-configuration/#default-values) for one of the fields in a survey layer to automatically track who has added (and/or modified) a particular record.
+A common use case is to use `@mergin_username` as the [default value](../form-configuration/#default-values) for one of the fields in a survey layer to automatically track who has added (and/or modified) a particular record.

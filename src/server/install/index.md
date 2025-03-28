@@ -1,6 +1,6 @@
 # Install
 
-Installation guide will help you to install your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink /> to the latest server version. The main Cloud <DashboardLink desc="Mergin Maps Server"/> is always up-to-date and managed by <MainPlatformName /> team. Read more about server platforms in [overview article](../index.md)
+Installation guide will help you to install your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink /> to the latest server version. The main Cloud <DashboardLink desc="Mergin Maps Server"/> is always up-to-date and managed by <MainPlatformName /> team. Read more about server platforms in [overview article](../)
 
 [[toc]]
 
@@ -22,10 +22,10 @@ Follow the deployment guidelines to install and configure it.
 
 The <EnterprisePlatformName /> enhanced features are only available on specific Docker images stored on Lutra Consulting's private AWS repository. To get access, you need your contract and licence from our <MerginMapsEmail id="sales" desc="sales team" />. 
 
-Afterwards, you can follow [this guide](./ee/index.md) to retrieve your <EnterprisePlatformName /> images.
+Afterwards, you can follow [this guide](./ee/) to retrieve your <EnterprisePlatformName /> images.
 
 ::: warning Enable <MainPlatformName /> Telemetry
-Make sure you follow deployment guidelines to <b>ensure any firewalls in your infrastructure are configured to allow the [`call-home`](../administer/index.md#telemetry-service) functionality to send usage data</b>.
+Make sure you follow deployment guidelines to <b>ensure any firewalls in your infrastructure are configured to allow the [`call-home`](../administer/#telemetry-service) functionality to send usage data</b>.
 
 ## Deployment
 
@@ -33,7 +33,7 @@ Follow these steps to run a local <MainPlatformName /> instance.
 
 ### Start docker containers
 
-Provided that `docker` and `docker-compose` are installed on your host, running <MainPlatformName /> stack should be as simple as running `docker-compose`. However, before doing that you would need to [configure](../administer/environment.md) your server setup via environment variables in <GitHubRepo desc=".prod.env" id="MerginMaps/server/blob/master/.prod.env" /> file. 
+Provided that `docker` and `docker-compose` are installed on your host, running <MainPlatformName /> stack should be as simple as running `docker-compose`. However, before doing that you would need to [configure](../administer/environment/) your server setup via environment variables in <GitHubRepo desc=".prod.env" id="MerginMaps/server/blob/master/.prod.env" /> file. 
 
 Once configured, you can run:
 ```shell
@@ -61,7 +61,7 @@ $ docker exec merginmaps-server flask user create <username> <password> --is-adm
 
 ### Setup environment
 ​
-Now tweak deployment settings by modifying environment variables. You have to fix all variables marked as required in this list of [environment variables](../administer/environment.md). Some of the most common issues with custom deployments are listed in the [troubleshoot](../troubleshoot/index.md) section.
+Now tweak deployment settings by modifying environment variables. You have to fix all variables marked as required in this list of [environment variables](../administer/environment/). Some of the most common issues with custom deployments are listed in the [troubleshoot](../troubleshoot/) section.
 
 ### Test deployment
 

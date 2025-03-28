@@ -3,7 +3,7 @@
 [[toc]]
 
 Let's say you synchronise surveyed data from multiple devices (individual surveyors) and when you examine them, you find out there is something missing - new features that were captured in the field or changes made by one or more of your team members. 
-The reasons why you didn't get all the data can vary. For instance, the data could not be synchronised correctly because of multiple surveyors editing the same feature or synchronisation of projects with different data schema. You can read more about this topic in [Behind Data Synchronisation](../synchronisation.md).
+The reasons why you didn't get all the data can vary. For instance, the data could not be synchronised correctly because of multiple surveyors editing the same feature or synchronisation of projects with different data schema. You can read more about this topic in [Behind Data Synchronisation](../synchronisation/).
 
 Here we will try to guide you through common techniques that can help you to retrieve your data.
 
@@ -71,6 +71,6 @@ Here are the steps to transfer the data from iPhone/iPad to a Windows PC.
 9. Select a path to save the folder on your computer.
 
 ## Next steps
-If you were not able to solve your problem, you can contact the [support](../../misc//troubleshoot/#support) or get [diagnostic logs](../../misc/troubleshoot/#diagnostic-logs) to inspect the issues thoroughly.
+If you were not able to solve your problem, you can contact the [support](../../misc/troubleshoot/#support) or get [diagnostic logs](../../misc/troubleshoot/#diagnostic-logs) to inspect the issues thoroughly.
 
 <CommunityJoin />

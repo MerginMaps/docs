@@ -2,7 +2,7 @@
 
 1. Open your <MainPlatformName /> Project in QGIS
 2. Navigate to **Project Properties**
-   ![QGIS Project Properties](./qgis-project-properties.jpg "QGIS Project Properties")
+   ![QGIS Project Properties](../qgis-project-properties.jpg "QGIS Project Properties")
    
 3. Inspect **Layers Capabilities** in the **Data Sources** tab.
 

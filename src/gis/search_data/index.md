@@ -3,14 +3,14 @@
 
 There are some settings related to sorting, searching and browsing features in <MobileAppName />  that can be done in the QGIS project, such as define the order of features and values or include/exclude layers and fields from the search.
 
-Working with layers in the <MobileAppNameShort />, including browsing features and values, is described in [Layers in <MobileAppName />](../field/layers/).
+Working with layers in the <MobileAppNameShort />, including browsing features and values, is described in [Layers in <MobileAppName />](../../field/layers/).
 
 
 ## Sorting features and value list
 The <MobileAppNameShort /> follows the sorting of features in the attribute table and of values in the value relation widget as set in the QGIS project.
 
 ###  Order value list by value
-The [Value relation](../layer/form-widgets/#value-relation) widget has the option *Order by value*. When checked, values in the drop-down list will be listed in alphabetical or numerical order. 
+The [Value relation](../../layer/form-widgets/#value-relation) widget has the option *Order by value*. When checked, values in the drop-down list will be listed in alphabetical or numerical order. 
 
 ![QGIS Value relation order by value](./qgis-order-by-value-value-relation.jpg "QGIS Value relation order by value")
 

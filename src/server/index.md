@@ -5,7 +5,7 @@ SaaS <MainPlatformName /> service is a web platform for storage and synchronisat
 There is also <MainPlatformName /> Community Edition (<CommunityPlatformNameLink />) that is licensed as open source software. The source code for <CommunityPlatformName /> can be modified and used for custom deployments. You can contribute your code to <GitHubRepo id="MerginMaps/server" />.
 
 Mergin Maps Enterprise Edition (<EnterprisePlatformNameLink />) provides an enterprise environment with additional features such as multiple workspaces. There are three types of <EnterprisePlatformNameLink />:
-- *Cloud* that uses <AppDomainNameLink /> (the same server as is used by other <MainPlatformName /> users) and includes [webmaps](../../manage/dashboard-maps/)
+- *Cloud* that uses <AppDomainNameLink /> (the same server as is used by other <MainPlatformName /> users) and includes [webmaps](../manage/dashboard-maps/)
 - *Private-Cloud* where <MainPlatformName /> is run on a different server hosted by us (includes [webmaps](../manage/dashboard-maps/))
 - *On-Premises* is a self-hosting option where you host your own server (does not include [webmaps](../manage/dashboard-maps/)). 
 
