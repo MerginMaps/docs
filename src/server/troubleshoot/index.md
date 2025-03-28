@@ -42,3 +42,29 @@ Logs should contain information about sending emails with task `mergin.celery.se
 ```shell
 [2024-12-09 10:37:16,265: INFO/ForkPoolWorker-2] Task mergin.celery.send_email_async[3e50df69-90c1-49be-b31c-78f1fb417500] succeeded in 0.11469305199989321s: None
 ```
+
+## Celery settings
+
+Celery plays an important role on <MainPlatformName /> hence the need to quickly diagnose its functionality.
+
+* Make sure `BROKER_URL` is correct!
+* Make sure `celery-beat` and `celery-worker` containers are up and running
+
+If you perform a `docker compose  logs -tf celery-worker` you should see on logs output a line like this:
+
+```shell
+  celery-worker  | 2025-03-04T10:40:16.718182375Z [2025-03-04 10:40:16,718: INFO/MainProcess] Connected to redis://merginmaps-redis:6379/0
+```
+
+This means `celery-worker` is up and communicating with `redis`
+
+* Make sure `redis` is up and receiving `celery-worker` tasks
+
+If you perform a `docker compose exec redis redis-cli monitor` you should see the output information regarding `tasks` and `heartbeat` of the `celery-worker`node.
+
+```shell
+  1741085464.139904 [0 172.18.0.8:38054] "BRPOP" "celery" "celery\x06\x163" "celery\x06\x166" "celery\x06\x169" "1"
+  1741085464.578928 [0 172.18.0.8:38124] "PUBLISH" "/0.celeryev/worker.heartbeat" "{\"body\": \"eyJob3N0bmFtZSI6ICJjZWxlcnlAMmE2NTRiMzNiMzBjIiwgInV0Y29mZnNldCI6IDAsICJwaWQiOiA3LCAiY2xvY2siOiA2NDYsICJmcmVxIjogMi4wLCAiYWN0aXZlIjogMCwgInByb2Nlc3NlZCI6IDAsICJsb2FkYXZnIjogWzAuNzYsIDAuNzEsIDAuNzddLCAic3dfaWRlbnQiOiAicHktY2VsZXJ5IiwgInN3X3ZlciI6ICI1LjQuMCIsICJzd19zeXMiOiAiTGludXgiLCAidGltZXN0YW1wIjogMTc0MTA4NTQ2NC41NzgxMTUyLCAidHlwZSI6ICJ3b3JrZXItaGVhcnRiZWF0In0=\", \"content-encoding\": \"utf-8\", \"content-type\": \"application/json\", \"headers\": {\"hostname\": \"celery@2a654b33b30c\"}, \"properties\": {\"delivery_mode\": 1, \"delivery_info\": {\"exchange\": \"celeryev\", \"routing_key\": \"worker.heartbeat\"}, \"priority\": 0, \"body_encoding\": \"base64\", \"delivery_tag\": \"78d09f4f-5d84-498b-8b91-8823106df572\"}}"
+  1741085465.148149 [0 172.18.0.8:38054] "BRPOP" "celery" "celery\x06\x163" "celery\x06\x166" "celery\x06\x169" "1"
+  1741085466.158419 [0 172.18.0.8:38054] "BRPOP" "celery" "celery\x06\x163" "celery\x06\x166" "celery\x06\x169" "1"
+```
