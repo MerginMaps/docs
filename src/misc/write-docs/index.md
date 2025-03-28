@@ -39,10 +39,7 @@ yarn install
 yarn dev
 ```
 
-If `yarn install` fails with `*ERROR: [Errno 2] No such file or directory: 'install'*` then [check out this page](https://www.stackoverflow.com/questions/46013544/yarn-install-command-error-no-such-file-or-directory-install).
-
-
-Now you can open `http://localhost:8080/` in your browser and see the live version.
+Now you can open `http://localhost:5173/` in your browser and see the live version.
 
 ### Prepare Pull Requests
 
@@ -259,10 +256,10 @@ You can use any of supported <GitHubRepo id="markdown-it/markdown-it-emoji/blob/
 
 ---
 
-<Badge text="error badge" type="error"/>
+<Badge text="error badge" type="danger"/>
 
 
-   ```<Badge text="error badge" type="error"/>```
+   ```<Badge text="error badge" type="danger"/>```
 
 For mentioning that some feature is available from specific version, use `<SinceBadge />`
 

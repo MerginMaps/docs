@@ -25,28 +25,28 @@ Get the latest <GitHubRepo id="MerginMaps/server/blob/master/docker-compose.yml"
 Perform the migration:
 
 1. Stop your running docker containers
-   ```bash
-       $ docker compose -f docker-compose.yml down # or similarly, based on your deployment
-       # INFO: After shutdown update the docker-compose.yml file to latest release
-   ```
+    ```bash
+    $ docker compose -f docker-compose.yml down # or similarly, based on your deployment
+    # INFO: After shutdown update the docker-compose.yml file to latest release
+    ```
 
 2. Double check if below environment variables are available and filled in `.prod.env` environment file. If not, add them.   
-   ```bash
-       SECURITY_EMAIL_SALT='<YOUR STRONG HASH>'
-       SECURITY_BEARER_SALT='<YOUR STRONG HASH>'
-   ```
+    ```bash
+    SECURITY_EMAIL_SALT='<YOUR STRONG HASH>'
+    SECURITY_BEARER_SALT='<YOUR STRONG HASH>'
+    ```
 
 3. Start up your docker containers
    - If you stopped the containers during step `1` with new version compose file, you need to manually stop and remove containers.
-   ```bash
-       $ docker stop merginmaps-db merginmaps-proxy merginmaps-redis merginmaps-server merginmaps-web
-       $ docker rm merginmaps-db merginmaps-proxy merginmaps-redis merginmaps-server merginmaps-web
-   ```
+    ```bash
+    $ docker stop merginmaps-db merginmaps-proxy merginmaps-redis merginmaps-server merginmaps-web
+    $ docker rm merginmaps-db merginmaps-proxy merginmaps-redis merginmaps-server merginmaps-web
+    ```
 
    - After this you can start the new containers
-   ```bash
-       $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
-   ```
+    ```bash
+    $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
+    ```
 
 4. Check that you are on correct versions (`35af0c8be41e`, `a5d4defded55`).
     ```bash
@@ -84,28 +84,28 @@ Get the latest <GitHubRepo id="MerginMaps/server/blob/master/docker-compose.yml"
 Perform the migration:
 
 1. Stop your running docker containers and build the new images
-   ```bash
-       $ docker compose -f docker-compose.yml down # or similarly, based on your deployment
-       # INFO: After shutdown update the docker-compose.yml file to latest release
-   ```
+    ```bash
+    $ docker compose -f docker-compose.yml down # or similarly, based on your deployment
+    # INFO: After shutdown update the docker-compose.yml file to latest release
+    ```
 
 2. Double check if below environment variables are available and filled in `.prod.env` environment file. If not, add them.   
-   ```bash
-       SECURITY_EMAIL_SALT='<YOUR STRONG HASH>'
-       SECURITY_BEARER_SALT='<YOUR STRONG HASH>'
-   ```
+    ```bash
+    SECURITY_EMAIL_SALT='<YOUR STRONG HASH>'
+    SECURITY_BEARER_SALT='<YOUR STRONG HASH>'
+    ```
 
 3. Start up your docker containers
    - If you stopped the containers during step `1` with new version compose file, you need to manually stop and remove containers.
-   ```bash
-       $ docker stop merginmaps-db merginmaps-proxy merginmaps-redis merginmaps-server merginmaps-web
-       $ docker rm merginmaps-db merginmaps-proxy merginmaps-redis merginmaps-server merginmaps-web
-   ```
+    ```bash
+    $ docker stop merginmaps-db merginmaps-proxy merginmaps-redis merginmaps-server merginmaps-web
+    $ docker rm merginmaps-db merginmaps-proxy merginmaps-redis merginmaps-server merginmaps-web
+    ```
 
    - After this you can start the new containers
-   ```bash
-       $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
-   ```
+    ```bash
+    $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
+    ```
 
 4. Check that you are on correct versions (`07f2185e2428`, `df5b4efdae7b`).
     ```bash
