@@ -89,7 +89,7 @@ export default {
         { text: 'Synchronisation in Mergin Maps Mobile App', link: '/field/autosync/' },
         { text: 'Measurement Tools', link: '/field/measure/' },
         { text: 'Layers in Mergin Maps Mobile App', link: '/field/layers/' },
-        { text: 'How to Add, Edit, Delete Featuress', link: '/field/mobile-features/' },
+        { text: 'How to Add, Edit, Delete Features', link: '/field/mobile-features/' },
         { text: 'How to Reuse Last Entered Values', link: '/field/reuse-last-values/' },
         { text: 'How to Stake Out Points', link: '/field/stake-out/' },
         { text: 'How to Fix a Broken Project', link: '/field/broken-project/' }
