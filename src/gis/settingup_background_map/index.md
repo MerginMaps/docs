@@ -102,7 +102,7 @@ Another source of online vector tiles are *Qwant maps*. Use following
    - **Style URL**: `https://raw.githubusercontent.com/QwantResearch/qwant-basic-gl-style/master/style.json`
 
 #### Mergin Maps vector tile service
-When [creating a new <MainPlatformName /> project](../manage/create-project/#create-a-project-in-qgis) from scratch, the default background map uses <MainPlatformName /> vector tile service. 
+When [creating a new <MainPlatformName /> project](../../manage/create-project/#create-a-project-in-qgis) from scratch, the default background map uses <MainPlatformName /> vector tile service. 
 
 It can be also added to existing <MainPlatformName /> projects by using following parameters to set the **Vector Tiles connection**:
    - **Name**: *OpenMapTiles (OSM)*
@@ -157,7 +157,7 @@ Vector tiles for offline use can be downloaded easily using <QGISPluginName />.
    
    ![QGIS download vector tiles dialog](./qgis-vector-tiles-set-extent.jpg "QGIS download vector tiles dialog")
 
-   MBTiles can be stored in your [<MainPlatformName /> project folder](../manage/project/#mergin-maps-project-folder) and synchronised to <MainPlatformNameLink /> along with your project. If you find it impractical to synchronise them or if you want to use the same file in multiple projects, follow the steps on [How to work with large files](#how-to-work-with-very-large-files-android) in <MobileAppName />.
+   MBTiles can be stored in your [<MainPlatformName /> project folder](../../manage/project/#mergin-maps-project-folder) and synchronised to <MainPlatformNameLink /> along with your project. If you find it impractical to synchronise them or if you want to use the same file in multiple projects, follow the steps on [How to work with large files](#how-to-work-with-very-large-files-android) in <MobileAppName />.
 
 4. Click **Run**. After the vector tiles are generated and downloaded successfully, the MBTiles file will be added to the **Layers** panel. You may close the algorithm dialog window.
 
@@ -185,7 +185,7 @@ QGIS uses relative paths to load the data. If your <MainPlatformName /> project 
 
 3. Connect your mobile device to the computer and copy the `_rasters` folder to the app's project folder `Internal storage/Android/data/uk.co.lutraconsulting/files/projects`. 
 
-   See [Manual data transfer (Android)](../manage/missing-data/#manual-data-transfer-android) for detailed steps.
+   See [Manual data transfer (Android)](../../manage/missing-data/#manual-data-transfer-android) for detailed steps.
    
 4. Use the project in <MobileAppName /> as usual. 
 

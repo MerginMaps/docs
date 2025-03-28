@@ -1,12 +1,12 @@
 # Administer
  
-Administration guide will help you to configure and maintain your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink />. The main Cloud <DashboardLink desc="Mergin Maps Server"/> is maintained for you by <MainPlatformName /> team. Read more about server platforms in the [overview article](../index.md).
+Administration guide will help you to configure and maintain your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink />. The main Cloud <DashboardLink desc="Mergin Maps Server"/> is maintained for you by <MainPlatformName /> team. Read more about server platforms in the [overview article](../).
  
 [[toc]]
 
 ## Server environment
 
-See the list of all [environment variables](./environment.md) that you can configure.
+See the list of all [environment variables](./environment/) that you can configure.
 
 ## Telemetry Service
 

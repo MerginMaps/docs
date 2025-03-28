@@ -8,7 +8,7 @@ Variables marked with star ⭐️ need to be modified for production use.
 | Variable name            | Type      | Default   | Description                                                                                                                                 |
 |--------------------------|-----------|-----------|---------------------------------------------------------------------------------------------------------------------------------------------|
 | `MERGIN_BASE_URL`⭐️       | string    |        | Deployment URL where <MainPlatformName /> is hosted.                                                                                        |
-| `COLLECT_STATISTICS`     | Boolean   | `true`    | Whether to send usage statistics for application improvements. For more information check this [page section](./index.md#telemetry-service) |
+| `COLLECT_STATISTICS`     | Boolean   | `true`    | Whether to send usage statistics for application improvements. For more information check this [page section](../#telemetry-service) |
 | `CONTACT_EMAIL`         | string    |     ``      | Email contact for application administrator.                                                                                                |
 | `SERVICE_ID`             | string    |           | Deployment UUID. Auto-generated on the first run.                                                                                           |
 ​
@@ -77,7 +77,7 @@ To ease the process of permission (user) management, you can set the following g
 | `MAIL_BCC`              | string  |   `None`   | Email address to send copies of all sent emails. Should be system/application administrator. Mandatory in versions until 2024.4.0.  |
 | `MERGIN_LOGO_URL`       | string  | ``    | Link to logo in emails. |
 
-If you have issues with sending emails, follow [troubleshooting](../troubleshoot/index.md) page.
+If you have issues with sending emails, follow [troubleshooting](../../troubleshoot/) page.
 
 #### Workspace management
 Workspace settings.

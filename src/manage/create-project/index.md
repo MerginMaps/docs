@@ -6,7 +6,7 @@ There are several methods of creating a new <MainPlatformName /> project:
 - [<MobileAppName /> ](#create-a-project-in-mergin-maps-mobile-app) offers the quickest (albeit limited) way of creating a <MainPlatformName /> project.
 - You can also use <DashboardLink />, especially if your project files are already fully prepared and only need uploading.
 
-If you want to make a copy of your projects or the ones shared with you, you can clone them in [QGIS](./index.md#clone-an-existing-project-in-qgis) or the [dashboard](#clone-an-existing-project-through-mergin-maps-dashboard).
+If you want to make a copy of your projects or the ones shared with you, you can clone them in [QGIS](#clone-an-existing-project-in-qgis) or the [dashboard](#clone-an-existing-project-through-mergin-maps-dashboard).
 
 :::warning
 When creating a project, keep in mind that its name cannot be changed later.
@@ -14,10 +14,10 @@ When creating a project, keep in mind that its name cannot be changed later.
 
 ## Create a project in QGIS
 ::: tip
-[Creating a Project in QGIS](../../tutorials/creating-a-project-in-qgis/index.md) tutorial will show you how to create a new project in QGIS, add layers, configure attributes forms and save changes to <MainPlatformNameLink />. 
+[Creating a Project in QGIS](../../tutorials/creating-a-project-in-qgis/) tutorial will show you how to create a new project in QGIS, add layers, configure attributes forms and save changes to <MainPlatformNameLink />. 
 :::
 
-To work with <MainPlatformName /> projects in QGIS, you will need to [install the <QGISPluginName />](../../setup/install-mergin-maps-plugin-for-qgis/index.md) first.
+To work with <MainPlatformName /> projects in QGIS, you will need to [install the <QGISPluginName />](../../setup/install-mergin-maps-plugin-for-qgis/) first.
 
 1. Open a blank or an existing project in QGIS.
 2. Click on **Create Mergin Maps Project** from the toolbar.
@@ -62,7 +62,7 @@ The project will be saved in the selected workspace.
 
 ## Create a project in Mergin Maps mobile app
 ::: tip
-[Capturing Your First Field Data](../../tutorials/capturing-first-data/index.md) tutorial will show you how to create a new project and capture field data in <MobileAppName />.
+[Capturing Your First Field Data](../../tutorials/capturing-first-data/) tutorial will show you how to create a new project and capture field data in <MobileAppName />.
 :::
 
 1. Open the <MobileAppNameShort /> on your mobile device

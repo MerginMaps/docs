@@ -6,7 +6,7 @@ The topics covered here are:
 [[toc]]
 
 ::: tip
-Previous tutorials already covered the minimum concepts for data collection so feel free to skip ahead to the [Working Collaboratively](../working-collaboratively/index.md) tutorial (and come back here later on) if you're super keen on collecting data right away.
+Previous tutorials already covered the minimum concepts for data collection so feel free to skip ahead to the [Working Collaboratively](../working-collaboratively/) tutorial (and come back here later on) if you're super keen on collecting data right away.
 :::
 
 ## Opening the project in QGIS

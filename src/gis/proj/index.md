@@ -20,7 +20,7 @@ If you want to share your project with someone else, they also need to install t
 :::
 
 ### Further reading about projections and transformations
-This [extended article](./projections/index.md) contains more information about map projections, coordinate reference systems and transformations. 
+This [extended article](../projections/) contains more information about map projections, coordinate reference systems and transformations. 
 
 If you want to learn more about this topic, we recommend to go through the <QGISHelp ver="3.22" link="gentle_gis_introduction/coordinate_reference_systems.html" text="QGIS online documentation" /> or [PROJ documentation](https://proj.org/operations/index.html).
 
@@ -37,7 +37,7 @@ When the app starts, it searches for `proj` folders in all available projects on
 
 ### Adding grid shift files to Mergin Maps mobile app
 <SinceBadge type="Plugin" version="2022.6" />
-It couldn't be easier! When [creating a new <MainPlatformName /> project](../manage/create-project/#create-a-project-in-qgis) by packaging current QGIS project or using current QGIS project as is, <QGISPluginName /> will copy all required datum shift grids to the appropriate project folder.
+It couldn't be easier! When [creating a new <MainPlatformName /> project](../../manage/create-project/#create-a-project-in-qgis) by packaging current QGIS project or using current QGIS project as is, <QGISPluginName /> will copy all required datum shift grids to the appropriate project folder.
 
 All you need to do is:
 1. Define the coordinate systems, projections and transformations in your <MainPlatformName /> project in QGIS as you need.

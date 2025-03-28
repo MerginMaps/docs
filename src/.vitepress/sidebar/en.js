@@ -26,11 +26,11 @@ export default {
         { text: 'Account', link: '/manage/account/' },
         { text: 'Workspaces', link: '/manage/workspaces/' },
         { text: 'Subscriptions', link: '/manage/subscriptions/' },
-        { text: 'Permissions', link: '/manage/permissions' },
+        { text: 'Permissions', link: '/manage/permissions/' },
         { text: 'Synchronisation', link: '/manage/synchronisation/' },
         { text: 'Project', link: '/manage/project/' },
         { text: 'Create Project', link: '/manage/create-project/' },
-        { text: 'Project Advanced', link: '/manage/project-advanced' },
+        { text: 'Project Advanced', link: '/manage/project-advanced/' },
         { text: 'Delete Files', link: '/manage/delete-files/' },
         { text: 'Deploy New Project', link: '/manage/deploy-new-project/' },
         { text: 'Missing Data', link: '/manage/missing-data/' },
@@ -44,15 +44,15 @@ export default {
     {
       text: 'Setup GIS Project',   // required
       items: [
-        { text: 'Features', link: '/gis/features' },
-        { text: 'Search Data', link: '/gis/search_data' },
-        { text: 'Setting Up Background Map', link: '/gis/settingup_background_map' },
-        { text: 'Setup Themes', link: '/gis/setup_themes' },
+        { text: 'Features', link: '/gis/features/' },
+        { text: 'Search Data', link: '/gis/search_data/' },
+        { text: 'Setting Up Background Map', link: '/gis/settingup_background_map/' },
+        { text: 'Setup Themes', link: '/gis/setup_themes/' },
         { text: 'Photo Names', link: '/gis/photo-names/' },
-        { text: 'Enable Digitising', link: '/gis/enable_digitising' },
+        { text: 'Enable Digitising', link: '/gis/enable_digitising/' },
         { text: 'Snapping', link: '/gis/snapping/' },
-        { text: 'Proj', link: '/gis/proj' },
-        { text: 'Supported Formats', link: '/gis/supported_formats' }
+        { text: 'Proj', link: '/gis/proj/' },
+        { text: 'Supported Formats', link: '/gis/supported_formats/' }
       ]
     },
     {
@@ -68,8 +68,8 @@ export default {
         { text: 'EXIF', link: '/layer/exif/' },
         { text: 'External Link', link: '/layer/external-link/' },
         { text: 'Non-Spatial Data', link: '/layer/non-spatial-data/' },
-        { text: 'Position Variables', link: '/layer/position_variables' },
-        { text: 'Plugin Variables', link: '/layer/plugin-variables' }
+        { text: 'Position Variables', link: '/layer/position_variables/' },
+        { text: 'Plugin Variables', link: '/layer/plugin-variables/' }
       ]
     },
     {
@@ -92,9 +92,9 @@ export default {
     {
       text: 'For Developers',   // required
       items: [
-        { text: 'Custom App', link: '/dev/customapp' },
-        { text: 'Integration', link: '/dev/integration' },
-        { text: 'DB Sync', link: '/dev/dbsync' },
+        { text: 'Custom App', link: '/dev/customapp/' },
+        { text: 'Integration', link: '/dev/integration/' },
+        { text: 'DB Sync', link: '/dev/dbsync/' },
         { text: 'Media Sync', link: '/dev/media-sync/' },
         { text: 'Work Packages', link: '/dev/work-packages/' },
         { text: 'Geodiff Library', link: '/dev/geodiff/' }
@@ -123,9 +123,9 @@ export default {
     {
       text: 'Support & Legal',   // required
       items: [
-        { text: 'Licensing', link: '/misc/licensing' },
+        { text: 'Licensing', link: '/misc/licensing/' },
         { text: 'Troubleshoot', link: '/misc/troubleshoot/' },
-        { text: 'Contribute', link: '/misc/contribute' },
+        { text: 'Contribute', link: '/misc/contribute/' },
         { text: 'Write Docs', link: '/misc/write-docs/' }
       ]
     }

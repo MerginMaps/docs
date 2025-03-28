@@ -30,7 +30,7 @@ Do you want to delete your account or change your details? Go to [**User Account
 
 **Welcome to <MainPlatformNameLink />!**
 
-You can get up-to-speed quickly by following our [Quick Start tutorials](../../tutorials/capturing-first-data/index.md).
+You can get up-to-speed quickly by following our [Quick Start tutorials](../../tutorials/capturing-first-data/).
 
    ::: tip Workspaces and subscriptions
    Projects, collaborations and subscriptions in <MainPlatformNameLink /> are tied to [workspaces](../../manage/workspaces/). You can use your first  workspace for free during the 28 day trial. After the trial, you can [upgrade to a premium plan](../../manage/subscriptions/#how-to-upgrade-a-subscription-from-the-trial-plan).
@@ -52,7 +52,7 @@ If someone invited you to join their workspace, you will get an email with the i
 
 **Welcome to <MainPlatformNameLink />!**
 
-You can get up-to-speed quickly by following our [Quick Start tutorials](../../tutorials/capturing-first-data/index.md).
+You can get up-to-speed quickly by following our [Quick Start tutorials](../../tutorials/capturing-first-data/).
 
 
 ## From Mergin Maps mobile app
@@ -81,7 +81,7 @@ You can also sign up from <MobileAppName />.
 
 **Welcome to <MainPlatformNameLink />!**
 
-You can get up-to-speed quickly by following our [Quick Start tutorials](../../tutorials/capturing-first-data/index.md).
+You can get up-to-speed quickly by following our [Quick Start tutorials](../../tutorials/capturing-first-data/).
 
    ::: tip Workspaces and subscriptions
    Projects, collaborations and subscriptions in <MainPlatformNameLink /> are tied to [workspaces](../../manage/workspaces/). You can use your first  workspace for free during the 28 day trial. After the trial, you can [upgrade to a premium plan](../../manage/subscriptions/#how-to-upgrade-a-subscription-from-the-trial-plan).

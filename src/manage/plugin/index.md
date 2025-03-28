@@ -3,7 +3,7 @@
 
 The <QGISPluginName /> allows you to work with your <MainPlatformNameLink /> projects in QGIS, whether it's downloading the project to your computer, making changes in the project, seeing the project's status or synchronising changes to the cloud. 
 
-To get started, you will need to [install and configure the plugin](../../setup/install-mergin-maps-plugin-for-qgis/index.md). 
+To get started, you will need to [install and configure the plugin](../../setup/install-mergin-maps-plugin-for-qgis/). 
 
 Once installed, plugin's entries will be added to the QGIS toolbar panel, Browser panel, Project properties and to the Processing toolbox.
 

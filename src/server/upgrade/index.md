@@ -1,6 +1,6 @@
 # Upgrade
 
-Migration guides are here to help you migrate your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink /> to the latest server version. The main Cloud <DashboardLink desc="Mergin Maps Server"/> is always migrated to latest version by <MainPlatformName /> team. Read more about server platforms in [overview article](../index.md).
+Migration guides are here to help you migrate your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink /> to the latest server version. The main Cloud <DashboardLink desc="Mergin Maps Server"/> is always migrated to latest version by <MainPlatformName /> team. Read more about server platforms in [overview article](../).
 
 ::: warning
 Migrations must be performed one by one and cannot be skipped.
@@ -353,10 +353,10 @@ Specify its name with the following environment variable:
  - `GLOBAL_WORKSPACE=ShinyWorkspace` - name of your workspace. A good fit is the name of your company or team. This value *should not be changed* later.
 
 :::tip
-You can find all available environment variables [here](../administer/environment.md) together with a tutorial on how to set them up.
+You can find all available environment variables [here](../administer/environment/) together with a tutorial on how to set them up.
 :::
 
-Further, you need to set a default role for people in your workspace *(learn more about our [permissions and roles system here](../../manage/permissions))*. 
+Further, you need to set a default role for people in your workspace *(learn more about our [permissions and roles system here](../../manage/permissions/))*. 
 **Pick one** of these options :
  - `GLOBAL_READ=0` everyone will have guest role (without access to any project unless explicitly granted)
  - `GLOBAL_READ=1` everyone will have reader role (they can read/download all projects in the workspace)

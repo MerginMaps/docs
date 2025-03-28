@@ -34,9 +34,9 @@ There are some similarities and differences in how QField and <MainPlatformName 
 ## Before we start
 Before the start of migration, you need to have a <MainPlatformName /> account and a workspace to manage your projects. If you are already registered, feel free to skip these steps.
 
-* [Sign up to <MainPlatformName />](../../setup/sign-up-to-mergin-maps/index.md) to create a <MainPlatformName /> account and a workspace
-* [Install QGIS](../../setup/install-qgis/index.md) and [<QGISPluginName />](../../setup/install-mergin-maps-plugin-for-qgis/index.md)
-* [Install <MobileAppName />](../../setup/install-mobile-app/index.md)
+* [Sign up to <MainPlatformName />](../../setup/sign-up-to-mergin-maps/) to create a <MainPlatformName /> account and a workspace
+* [Install QGIS](../../setup/install-qgis/) and [<QGISPluginName />](../../setup/install-mergin-maps-plugin-for-qgis/)
+* [Install <MobileAppName />](../../setup/install-mobile-app/)
 
 We also recommend going through the [Get Started tutorial](../../tutorials/capturing-first-data/) to get familiar with <MainPlatformName />.
 
@@ -92,7 +92,7 @@ There is no automatic tool to extract your QFieldCloud organisations and users a
 
 Therefore, you will have to manually set up workspaces (if needed) and assign appropriate [permissions](../../manage/permissions/) to your team members in <MainPlatformName />.
 
-For a smooth transition, it is best to read about [working collaboratively](../../tutorials/working-collaboratively/index.md) in <MainPlatformName />.
+For a smooth transition, it is best to read about [working collaboratively](../../tutorials/working-collaboratively/) in <MainPlatformName />.
 
 ### Billing, subscriptions and plans 
 Both QFieldCloud and <MainPlatformName /> have per-seat models you can choose from to fit your needs. In <MainPlatformName />, each [workspace](../../manage/workspaces/) has its own [subscription](../../manage/subscriptions/).

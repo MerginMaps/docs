@@ -24,12 +24,12 @@ The ecosystem consist of various components:
  
 ## Get started 
 
-- [Capturing Your First Field Data](./tutorials/capturing-first-data/index.md)
-- [Opening Surveyed Data on Your Computer](./tutorials/opening-surveyed-data-on-your-computer/index.md)
-- [Creating a Project in QGIS](./tutorials/creating-a-project-in-qgis/index.md)
-- [Using <MobileAppName />](./tutorials/mobile/index.md)
-- [Further Project Customisation](./tutorials/further-project-customisation/index.md)
-- [Working Collaboratively](./tutorials/working-collaboratively/index.md)
+- [Capturing Your First Field Data](./tutorials/capturing-first-data/)
+- [Opening Surveyed Data on Your Computer](./tutorials/opening-surveyed-data-on-your-computer/)
+- [Creating a Project in QGIS](./tutorials/creating-a-project-in-qgis/)
+- [Using <MobileAppName />](./tutorials/mobile/)
+- [Further Project Customisation](./tutorials/further-project-customisation/)
+- [Working Collaboratively](./tutorials/working-collaboratively/)
 
 ## Install & Sign Up
 - [How to Install <MobileAppName />](./setup/install-mobile-app/)
@@ -120,5 +120,5 @@ The ecosystem consist of various components:
 - [Licensing](./misc/licensing/)
 - [Troubleshoot](./misc/troubleshoot/)
 - [Contribute](./misc/contribute/)
-- [Write Documentation](./misc/write-docs/index.md)
+- [Write Documentation](./misc/write-docs/)
 

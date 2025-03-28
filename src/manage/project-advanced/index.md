@@ -3,27 +3,27 @@
 
 ## Share projects and manage user access
 
-You can share your <MainPlatformName /> project with others by inviting them to be [a member or a guest](./permissions/#workspace-members-and-guests) in your workspace. You can also make your <MainPlatformName /> project accessible to everyone by making it [public](#make-your-project-public-private).
+You can share your <MainPlatformName /> project with others by inviting them to be [a member or a guest](../permissions/#workspace-members-and-guests) in your workspace. You can also make your <MainPlatformName /> project accessible to everyone by making it [public](#make-your-project-public-private).
 
 :::warning
-When granting access to workspaces and projects, it is important to set appropriate [**permissions**](./permissions/) to your team members to avoid unwanted modifications of projects.
+When granting access to workspaces and projects, it is important to set appropriate [**permissions**](../permissions/) to your team members to avoid unwanted modifications of projects.
 :::
 
 ::: tip
-You can follow our [Working collaboratively](../tutorials/working-collaboratively/) tutorial to see detailed instructions on how to share your project by inviting a user to your workspace as a guest or by sharing a link to your project with your teammates.
+You can follow our [Working collaboratively](../../tutorials/working-collaboratively/) tutorial to see detailed instructions on how to share your project by inviting a user to your workspace as a guest or by sharing a link to your project with your teammates.
 :::
 
 ### Add users to a workspace
 If you want to share all projects in your workspace with a group of users, you can invite them to become members or guests of a workspace.
 
-You have to be the **admin** or **owner** of the workspace to manage access to the workspace. See [Member Roles and Permissions](./permissions/#workspace-member-roles-and-project-permissions) for more details.
+You have to be the **admin** or **owner** of the workspace to manage access to the workspace. See [Member Roles and Permissions](../permissions/#workspace-member-roles-and-project-permissions) for more details.
 
 To add users to a workspace:
 1. Log into <AppDomainNameLink />
 2. Go to the **Members** tab in the left panel and click on **Invite**
    ![Invite people to Mergin Maps workspace](./dashboard-workspace-invite.jpg "Invite people to Mergin Maps workspace")
 
-3. In the form, enter the email addresses of people you want to invite and choose their [**workspace role**](./permissions/#workspace-member-roles-and-project-permissions) from the list.
+3. In the form, enter the email addresses of people you want to invite and choose their [**workspace role**](../permissions/#workspace-member-roles-and-project-permissions) from the list.
    - If you want to grant them access to all projects in the workspace, select one of the member roles (*Reader*, *Writer*, *Admin* or *Owner*).
    - If you only want to invite them to some projects, select the *Guest* option and specify which projects should be shared with them.
     
@@ -57,16 +57,16 @@ Another method that is suitable for sharing a project with a large number of use
 1. Log into <AppDomainNameLink />
 2. Go to the project you want to share
 3. Copy the link from your web browser and share it with your colleagues
-![Copy link to Mergin Maps project](../tutorials/working-collaboratively/dashboard-copy-url.jpg "Copy link to Mergin Maps project")
+![Copy link to Mergin Maps project](../../tutorials/working-collaboratively/dashboard-copy-url.jpg "Copy link to Mergin Maps project")
 
 If you send a link to a [private](#make-your-project-public-private) project, users can **request access** after logging into the <DashboardShortLink />.
-   ![Request Access to a private project](../tutorials/working-collaboratively/dashboard-request-access-to-private-project.jpg "Request Access to a private project")
+   ![Request Access to a private project](../../tutorials/working-collaboratively/dashboard-request-access-to-private-project.jpg "Request Access to a private project")
 
-Once the user requests access, you (or another project owner) can grant them appropriate [permissions](./permissions/) and accept (or decline) their request.
-   ![Project access requests in Mergin Maps](../tutorials/working-collaboratively/dashboard-project-access-requests.jpg "Project access requests in Mergin Maps")
+Once the user requests access, you (or another project owner) can grant them appropriate [permissions](../permissions/) and accept (or decline) their request.
+   ![Project access requests in Mergin Maps](../../tutorials/working-collaboratively/dashboard-project-access-requests.jpg "Project access requests in Mergin Maps")
 
 ### Make your project public/private
-Your projects are private by default. If you make it [public](./permissions/#public-and-private-projects), everyone can see your data and project history. However, they cannot contribute to your public project unless you grant them the write permission.
+Your projects are private by default. If you make it [public](../permissions/#public-and-private-projects), everyone can see your data and project history. However, they cannot contribute to your public project unless you grant them the write permission.
 
 1. Log into <AppDomainNameLink />
 2. Go to the project you want to make public
@@ -102,7 +102,7 @@ After deleting a project, it is kept on <MainPlatformNameLink /> servers for 14 
 If you want to create a new project with the same name sooner, you can contact <MerginMapsEmail id="support" />.
 
 :::warning
-If you reuse the name of a deleted project, make sure to coordinate your team to follow the steps described in [How to Deploy Revised Projects](./deploy-new-project/). 
+If you reuse the name of a deleted project, make sure to coordinate your team to follow the steps described in [How to Deploy Revised Projects](../deploy-new-project/). 
 
 To avoid synchronisation issues, everyone should delete the old project from all devices and then download the new project. 
 :::

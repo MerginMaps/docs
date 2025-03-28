@@ -8,7 +8,7 @@ The version of the documentation you see on [<MainPlatformName /> Documentation]
 
 ## Quick Start
 
-If you are about to do only *a tiny change* in the documentation, you can skip this section and fast track to section [for doing small modifications](./index.md#how-to-fix-typo-in-the-documentation). 
+If you are about to do only *a tiny change* in the documentation, you can skip this section and fast track to section [for doing small modifications](#how-to-fix-typo-in-the-documentation). 
 
 If you are a (web) *developer*, you can skip all and just look at <GitHubRepo id="MerginMaps/docs" desc="Mergin Maps README" />.
 
@@ -120,7 +120,7 @@ References to other articles, blog posts or resources should be linked where rel
 
 ### Naming things
 
-* We can use Vue [custom components](./index.md#naming-mergin-maps-components) references names, allowing us to change them quickly in the future.
+* We can use Vue [custom components](#naming-mergin-maps-components) references names, allowing us to change them quickly in the future.
 * This doesn't work for things like url component names, anchor links, titles or pages, sidebar
 * In these situations:
 	* Filenames:

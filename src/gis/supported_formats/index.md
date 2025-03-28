@@ -21,7 +21,7 @@ For survey layers used on the field, we strongly recommend GeoPackage, to be abl
 There are more formats supported, please see full list of supported [QGIS providers](#full-list-of-supported-qgis-providers) and [OGR drivers](#full-list-of-supported-ogr-drivers)
 
 ::: tip
-Go to [Behind Data Synchronisation](../manage/synchronisation.md) to read more about how synchronisation works in <MainPlatformNameLink />.
+Go to [Behind Data Synchronisation](../manage/synchronisation/) to read more about how synchronisation works in <MainPlatformNameLink />.
 :::
 
 ### PostgreSQL/PostGIS
@@ -31,7 +31,7 @@ PostgreSQL connection (username, password, host, port, etc.) can be set up:
 
 To use a *Connection Service File*, you have to:
 - create a `pg_service.conf` file as described in <QGISHelp ver="latest" link="user_manual/managing_data_source/opening_data.html#postgresql-service-connection-file" text="QGIS User Manual" /> and test it in QGIS Desktop
-- [manually transfer](../manage/missing-data/index.md) the `pg_service.conf` file to <MobileAppName /> data folder. The data folder is shown in the [Diagnostic Log](../misc/troubleshoot/#diagnostic-log-on-mergin-maps-mobile-app)
+- [manually transfer](../manage/missing-data/) the `pg_service.conf` file to <MobileAppName /> data folder. The data folder is shown in the [Diagnostic Log](../misc/troubleshoot/#diagnostic-log-on-mergin-maps-mobile-app)
 - restart the <MobileAppNameShort />. Check the [Diagnostic Log](../misc/troubleshoot/#diagnostic-log-on-mergin-maps-mobile-app) to see if the file is found and used after restart.
 
 ## Raster data on Mergin Maps mobile app
@@ -53,7 +53,7 @@ To use a *Connection Service File*, you have to:
 There are plenty of other raster formats we support through GDAL/OGR, please see [the full list](#full-list-of-supported-gdal-drivers)
 
 ::: tip
-See [our guide](./settingup_background_map.md) for setting up background layers.
+See [our guide](./settingup_background_map/) for setting up background layers.
 :::
 
 ## Vector tiles on Mergin Maps mobile app
@@ -61,7 +61,7 @@ See [our guide](./settingup_background_map.md) for setting up background layers.
 We support vector tiles just like QGIS does - in Mapbox Vector Tiles (MVT) format - and stored either in a MBTiles file (for offline use) or through a template URL (for online service) such as `http://example.com/{z}/{x}/{y}.pbf`.
 
 ::: tip 
-See [our guide](./settingup_background_map.md) for setting up background layers.
+See [our guide](./settingup_background_map/) for setting up background layers.
 :::
 
 ## Full list of supported QGIS providers

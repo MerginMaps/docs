@@ -25,4 +25,4 @@ Here, we switched from `OSM` to `Aerial photos`.
 
 ![Mergin Maps mobile app switching map themes](./mobile-app-map-themes-switch.jpg "Mergin Maps mobile app switching map themes")
 
-It may be useful to define a *default* map theme for your project. Then, If you change the visibility of layers through the [**Layers**](../field/layers/) option in the <MobileAppNameShort /> during the survey, you can use this map theme to get back to the default setup.
+It may be useful to define a *default* map theme for your project. Then, If you change the visibility of layers through the [**Layers**](../../field/layers/) option in the <MobileAppNameShort /> during the survey, you can use this map theme to get back to the default setup.

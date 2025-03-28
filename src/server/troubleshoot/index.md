@@ -1,13 +1,13 @@
 # Troubleshoot Custom Servers
 
-This article will help you debug and resolve issues in your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink /> deployment. If you use the main Cloud <DashboardLink desc="Mergin Maps Server"/>, it is always up-to-date and managed by <MainPlatformName /> team, so report your problems to us as [described here](../../misc/troubleshoot/index.md). Read more about server platforms in [overview article](../index.md). 
+This article will help you debug and resolve issues in your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink /> deployment. If you use the main Cloud <DashboardLink desc="Mergin Maps Server"/>, it is always up-to-date and managed by <MainPlatformName /> team, so report your problems to us as [described here](../../misc/troubleshoot/). Read more about server platforms in [overview article](../). 
 
-To install your own server, follow our [installation guide](../install/index.md). Documentation of environment variables and other configuration options can be found in [Configure environment](../administer/environment.md).
+To install your own server, follow our [installation guide](../install/). Documentation of environment variables and other configuration options can be found in [Configure environment](../administer/environment/).
 
 [[toc]]
 
 :::tip
-Haven't found a solution to your issue? Look at your other [troubleshooting options](../../misc/troubleshoot/index.md).
+Haven't found a solution to your issue? Look at your other [troubleshooting options](../../misc/troubleshoot/).
 :::
 
 ## Server is not properly configured
