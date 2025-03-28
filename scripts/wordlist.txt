@@ -71,6 +71,7 @@ GNSS
 GPL
 HDOP
 HTML
+html
 HTTPS
 Helmert
 HiDPi

@@ -71,6 +71,6 @@ Here are the steps to transfer the data from iPhone/iPad to a Windows PC.
 9. Select a path to save the folder on your computer.
 
 ## Next steps
-If you were not able to solve your problem, you can contact the [support](../../misc//troubleshoot/#support) or get [diagnostic logs](../../misc/troubleshoot/#diagnostic-logs) to inspect the issues thoroughly.
+If you were not able to solve your problem, you can contact the [support](../../misc/troubleshoot/#support) or get [diagnostic logs](../../misc/troubleshoot/#diagnostic-logs) to inspect the issues thoroughly.
 
 <CommunityJoin />
