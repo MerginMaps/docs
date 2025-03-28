@@ -105,8 +105,10 @@ export default {
       items: [
         { text: 'Overview', link: '/server/' },
         { text: 'Install', link: '/server/install/' },
+        { text: 'Secure Mergin Maps installation', link: '/server/security/' },
         { text: 'Upgrade', link: '/server/upgrade/' },
         { text: 'Administer', link: '/server/administer/' },
+        { text: 'Administration Panel', link: '/server/dashboard/' },
         { text: 'Troubleshoot', link: '/server/troubleshoot/' },
         { text: 'Plugin Mobile App', link: '/server/plugin-mobile-app/' }
       ]
