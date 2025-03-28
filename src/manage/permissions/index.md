@@ -82,7 +82,7 @@ Here, you can also manage the member roles:
 Project permissions can be reviewed in the details of a project in the **Collaborators** tab where you can find the list of users who can access the project and their project permissions. 
 
 If needed, the project permissions can be changed here:
-![Changing project permissions in Mergin Maps dashboard](../dashboard-project-permissions-change.jpg "Changing project permissions in Mergin Maps dashboard")
+![Changing project permissions in Mergin Maps dashboard](./dashboard-project-permissions-change.jpg "Changing project permissions in Mergin Maps dashboard")
 
 ## How to transfer ownership of a workspace
 Ownership of a workspace can be transferred to another **workspace member**. 
