@@ -36,7 +36,7 @@ If the project extent is not set, <MobileAppName /> zooms to all visible layers.
 
 To set the project extent:
 1. Navigate to **Project** > **Properties**. 
-   ![QGIS Project Properties](./qgis-project-properties.jpg "QGIS Project Properties")
+   ![QGIS Project Properties](../qgis-project-properties.jpg "QGIS Project Properties")
 
 2. Select **View Settings** and check the **Set Project Full Extent** option. 
 
