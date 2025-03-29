@@ -39,7 +39,7 @@ Once configured, you can run:
 ```shell
 $ mkdir -p projects # or wherever you set it to be
 $ mkdir -p mergin_db # or wherever you set it to be
-$ sudo chown -R  901:999 ./projects/
+$ sudo chown -R  901:999 ./projects/ # the number for the user (e.g. 901:999) should match that defined in the docker-compose.yml file (proxy.user)  
 $ sudo chmod g+s ./projects/
 $ docker-compose -f docker-compose.yml up
 ```
