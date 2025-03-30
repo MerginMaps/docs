@@ -130,7 +130,7 @@ References to other articles, blog posts or resources should be linked where rel
 
 ### Titles, headers, sidebar names
 
-Use [custom components](#naming-mergin-maps-components) to reference names, allowing us to change them quickly if needed. Note that custom components do not work for things like URL component names, anchor links, titles or pages, sidebar.
+Use [custom components](#mergin-maps-components) to reference names, allowing us to change them quickly if needed. Note that custom components do not work for things like URL component names, anchor links, titles or pages, sidebar.
 
 In these situations:
 - Filenames: <NoSpellcheck id="mergin-maps-mobile" />
