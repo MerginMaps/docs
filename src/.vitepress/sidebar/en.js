@@ -126,7 +126,8 @@ export default {
       collapsed: false,
       items: [
         { text: 'Migrate from QField', link: '/migrate/qfield/' },
-        { text: 'Migrate from ArcGIS', link: '/migrate/arcgis/' }
+        { text: 'Migrate from ArcGIS', link: '/migrate/arcgis/' },
+        { text: 'Migrate from FulcrumApp', link: '/migrate/fulcrumapp/' },
       ]
     },
     {
