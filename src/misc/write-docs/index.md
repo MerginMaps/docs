@@ -1,37 +1,37 @@
 # Write Documentation
 
-Thank you for your interest in helping out with writing [<MainPlatformName /> Documentation](https://merginmaps.com/docs). The documentation framework is based on [VuePress](https://vuepress.vuejs.org/) and we welcome any contributions as <GitHubRepo id="MerginMaps/docs/pulls" desc="GitHub Pull Requests" />. If you are unsure how to contribute of what tasks are best to start with, join us on our [community chat](https://merginmaps.com/community/join) and ask in the `#dev` channel. We are happy to get you up to speed!
+Thank you for your interest in helping out with writing [<MainPlatformName /> Documentation](https://merginmaps.com/docs). The documentation framework is based on [VitePress](https://vitepress.dev/). We welcome any contributions as <GitHubRepo id="MerginMaps/docs/pulls" desc="GitHub Pull Requests" />. If you are unsure how to contribute or what tasks are best to start with, join us on our [community chat](https://merginmaps.com/community/join) and ask in the `#dev` channel. We are happy to get you up to speed!
 
-The version of the documentation you see on [<MainPlatformName /> Documentation](https://merginmaps.com/docs) is the <GitHubRepo id="MerginMaps/docs/tags" desc="latest tagged release" /> on main branch. The latest commit on main branch can be seen on [<MainPlatformName /> Staging Documentation](https://dev.merginmaps.com/docs).
+The version of the documentation you see on [<MainPlatformName /> Documentation](https://merginmaps.com/docs) is the <GitHubRepo id="MerginMaps/docs/tags" desc="latest tagged release" /> on the main branch. The latest commit on the main branch can be seen on [<MainPlatformName /> Staging Documentation](https://dev.merginmaps.com/docs).
 
 [[toc]]
 
-## Quick Start
+## Quick start
 
-If you are about to do only *a tiny change* in the documentation, you can skip this section and fast track to section [for doing small modifications](#how-to-fix-typo-in-the-documentation). 
+If you are about to do only *a tiny change* in the documentation, you can skip this section and fast track to the instructions for [fixing a typo or doing small modifications](#how-to-fix-typo-in-the-documentation) in the docs.
 
 If you are a (web) *developer*, you can skip all and just look at <GitHubRepo id="MerginMaps/docs" desc="Mergin Maps README" />.
 
-Otherwise, it is better to run the local development on your machine. The similar steps as described can be done on (almost) any operation system with slight modifications (e.g. using brew or apt on macOS or Linux for installation)
+Otherwise, it is best to run the local development on your machine. The similar steps as described can be done on (almost) any operation system with slight modifications (e.g. using `brew` or `apt` on macOS or Linux for installation).
 
-If you are not part of the <MainPlatformName /> core documentation team, you will need to work with [fork](#when-fork-is-needed). Follow the instructions in the section instead. We are happy to include more people into the team, so if you consider writing more documentation, let us know on our [community chat](https://merginmaps.com/community/join)
+If you are not a part of the <MainPlatformName /> core documentation team, you will need to work with a [fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo). Follow the instructions in the section [When fork is needed](#when-fork-is-needed). We are happy to include more people into the team, so if you consider writing more documentation, let us know on our [community chat](https://merginmaps.com/community/join).
 
-### Prepare Local Repository
+### Prepare local repository
 
-As requirement, you need to <GitHubRepo id="git-guides/install-git" desc="install git" />.
+As a requirement, you need to <GitHubRepo id="git-guides/install-git" desc="install git" />.
 
-Once installed, open command line/terminal and clone the repository locally (you can use http or SSH)
+Once installed, open command line/terminal and clone the repository locally (you can use HTTP or SSH)
 
 ```
 cd MyProjects
 git clone git@github.com:MerginMaps/docs.git
 ```
 
-### Start Local Server
+### Start local server
 
-To be able to see your changes interactively, you should start local VuePress server, and as requirement, you need to [install  yarn](https://yarnpkg.com/getting-started/install).
+To be able to see your changes interactively, you have to run a local VitePress server. Also, you need to [install yarn](https://yarnpkg.com/getting-started/install).
 
-Once installed you can proceed by first installation of all dependent packages and following by start of the server:
+Once installed, you can proceed by installing all dependent packages and starting the server:
 
 ```
 cd MerginMaps/docs
@@ -39,11 +39,13 @@ yarn install
 yarn dev
 ```
 
-Now you can open `http://localhost:5173/` in your browser and see the live version.
+Now you can open `http://localhost:5173/docs/` in your browser and see the live version of the docs.
 
-### Prepare Pull Requests
+### Prepare pull requests
 
-To commit your changes to the official documentation, you need to prepare pull request. To start, update your repository to the latest version
+To commit your changes to the official documentation, you need to prepare a pull request. 
+
+Always begin with updating your repository to the latest version:
 
 ```
 cd MerginMaps/docs
@@ -51,15 +53,15 @@ git checkout main
 git pull origin main
 ```
 
-Next is to create your branch where you work. Best to create some descriptive branch name.
+The next step is to create a new branch for your work. Best to use a descriptive branch name:
 
 ```
 git checkout -b my_docs_fix_branchname
 ```
 
-Now, *modify the markdowns* in your favourite text editor.
+Now you can modify the Markdowns in your favourite text editor. We recommend inspecting the changes as you go in the locally run version of the docs `http://localhost:5173/docs/`.
 
-When done, commit your changes and push your branch to GitHub 
+When done, commit your changes and push your branch to GitHub:
 
 ```
 git status
@@ -68,22 +70,22 @@ git commit -m "Improved documentation of XXX"
 git push origin my_docs_fix_branchname
 ```
 
-Now go to <GitHubRepo id="MerginMaps/docs" desc="GitHub" /> and create pull request (either from web or use the link from the terminal).
+Now go to <GitHubRepo id="MerginMaps/docs" desc="GitHub" /> and create a pull request (from web or by using the link from the terminal).
 
-Check the automatic tests in the pull requests for spellcheck or broken link and fix the issues in your code.
+Check the automatic tests in the pull requests for [spellcheck](#spellcheck), [Markdown](#using-markdown), broken links or [redirects](#redirects) and, if needed, fix the issues in your code.
 
-To ensure your pull request will be merged, it is nice to ping the <MainPlatformName /> docs team on the [community chat](https://merginmaps.com/community/join) in the `#dev` channel.
+To ensure your pull request will be reviewed and merged, it is nice to ping the <MainPlatformName /> docs team on the [community chat](https://merginmaps.com/community/join) in the `#dev` channel.
 
-### When Fork Is Needed
-::: warning 
-You can skip this step if you are member of the <MainPlatformName /> docs team and you have write permissions to the repository. 
+### When fork is needed
+::: warning
+You can skip this step if you are a member of the <MainPlatformName /> docs team and you have write permissions to the repository. 
 :::
 
-To fork <GitHubRepo id="MerginMaps/docs" /> repository with the source code of documentation, follow the steps as described in [GitHub docs](https://docs.github.com/en/get-started/quickstart/fork-a-repo). 
+To fork <GitHubRepo id="MerginMaps/docs" /> repository with the source code of documentation, follow the steps described in [GitHub docs](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
 
 You will end up with the fork of <GitHubRepo id="MerginMaps/docs" /> in your namespace. 
 
-If you use fork, you need to add both fork and upstream to your local namespace:
+If you use fork, you have to add both fork and upstream to your local namespace:
 
    ```
    mkdir MerginMaps; cd MerginMaps
@@ -91,7 +93,7 @@ If you use fork, you need to add both fork and upstream to your local namespace:
    git remote add upstream git@github.com:MerginMaps/docs.git
    ``` 
 
-and you need to update your remote fork before starting the work:
+You also have to update your remote fork before starting the work:
 
    ```
    cd MerginMaps/docs
@@ -99,98 +101,192 @@ and you need to update your remote fork before starting the work:
    git pull upstream main
    git push origin main
    ``` 
+### How to fix typo in the documentation
 
-## The Documentation System
-
-Each markdown should be written as one of the 4 basic types of documentation: tutorials, how-to guides, technical reference and explanation. 
-
-It is best to read about this [documentation system](https://documentation.divio.com/).
-
-In each section in the menu (except Getting Started and Guides):
-- we start with concepts
-- following with a bunch of how to articles
-- ending with reference documentation pages
-
-References to other articles, blog posts or resources should be linked where relevant, either as [tips](#tip-warning-info-error-note-box) or as *Further reading* sections.
-
-### Users & Workspaces
-
-- To store all projects referenced in the documentation use <MainPlatformName /> workspace `documentation`
-- For users that are referenced in the documentation (e.g. screenshots or in texts), use "fake" <MainPlatformName /> users `jack`, `jill` and `sarah`
-
-### Naming things
-
-* We can use Vue [custom components](#naming-mergin-maps-components) references names, allowing us to change them quickly in the future.
-* This doesn't work for things like url component names, anchor links, titles or pages, sidebar
-* In these situations:
-	* Filenames:
-		* <NoSpellcheck id="mergin-maps-mobile" />
-	* Titles/Sidebar
-		* Mergin Maps Mobile App
-    * For titles (`#`)/sidebar capitalise the first letter in *all* words
-        * Correct: "Opening Surveyed Data on Your Computer"
-        * Wrong: ~~"Opening surveyed data on your computer"~~
-        * Never shorten the names of components (e.g. Mergin Maps Mobile App)
-    * For headers (`##`, `###`, `####` )  capitalise only the first letter in *first* word
-        * Correct: "Putting your project in the cloud"
-        * Wrong: ~~"Putting Your Project in the Cloud"~~
-        * Never shorten the names of components (e.g. <MobileAppName />)
-    * Titles and headers should contain specific keywords to return relevant search results:
-        * Correct: "Further reading about projections and transformations"
-        * Wrong: ~~"Further reading"~~  
-
-## Questions 
-     
-### How To Fix Typo in the Documentation
-
-If you see the typo or other issue on a page, you can scroll to the very bottom of the page to see a footer similar to this
+If you see a typo or other issue on a page that can be easily fixed, you can scroll to the bottom of the page to see a footer similar to this
 
 ![Mergin Maps documentation page footer](./footer-docs.jpg "Mergin Maps documentation page footer")
 
-If you click on the link, you will get the markdown source of the page that you can edit. If you are not in the <MainPlatformName /> core documentation team, you would also need to work on [fork](#when-fork-is-needed) to be able to proceed.
+Use the **Help us improve this page** link to go to the editable Markdown source of the page. If you are not in the <MainPlatformName /> core documentation team, you will also need to work on [fork](#when-fork-is-needed) to be able to proceed.
 
-### Why the Markdown Has Different Content as the Public Docs
+### Why the Markdown has different content as the public docs
 
-Occasionally, it can happen that the link in the footer is broken or the content in markdown does not match the content on [<MainPlatformName /> Documentation](https://merginmaps.com/docs). 
-This is due to the fact that the released version is the <GitHubRepo id="MerginMaps/docs/tags" desc="latest tagged release" />. The latest commit on main branch can be seen on staging server [<MainPlatformName /> Staging Documentation](https://dev.merginmaps.com/docs).
+Occasionally, it can happen that the link in the footer is broken or the content in Markdown does not match the content on [<MainPlatformName /> Documentation](https://merginmaps.com/docs).
 
-### How Search Works
+This is due to the fact that the released version is the <GitHubRepo id="MerginMaps/docs/tags" desc="latest tagged release" />. The latest commit on the main branch can be seen on the staging server [<MainPlatformName /> Staging Documentation](https://dev.merginmaps.com/docs).
 
-Full-text search is used in the docs thanks to the <GitHubRepo id="leo-buneev/vuepress-plugin-fulltext-search" /> plugin.
+## The documentation system
 
-### How to Add New Page to Menu
+Our documentation is inspired by this [documentation system](https://documentation.divio.com/). Each page should be written as one of the 4 basic types of documentation: tutorials, how-to guides, technical reference and concepts (explanation). 
 
-1. Add the page in `src/.vuepress/sidebar/en.js`, the order of articles in the menu is always "concepts - how to - reference".
-2. Add the page in `src/index.md`
+In general, *tutorials* are located in the **Get Started** section. 
+
+The rest of the sections follow this logic:
+- explain *concepts* at the beginning of the section/subsection
+- following with a bunch of *how to guides* and use cases
+- *technical reference* is included at the end of the section/subsection
+
+References to other articles, blog posts or resources should be linked where relevant, either as [tips](#tip-warning-info-error-note-box) or as *Further reading* headers.
+
+### Titles, headers, sidebar names
+
+Use [custom components](#naming-mergin-maps-components) to reference names, allowing us to change them quickly if needed. Note that custom components do not work for things like URL component names, anchor links, titles or pages, sidebar.
+
+In these situations:
+- Filenames: <NoSpellcheck id="mergin-maps-mobile" />
+- Titles/Sidebar: Mergin Maps Mobile App
+
+For **titles (`#`) and sidebar** capitalise the first letter in *all* words and *never shorten the names of components* (e.g. Mergin Maps Mobile App)
+- Correct: "Opening Surveyed Data on Your Computer"
+- Wrong: ~~"Opening surveyed data on your computer"~~
+
+For **headers (`##`, `###`, `####` )**  capitalise only the first letter in *first* word and never shorten the names of components (e.g. <MobileAppName />)
+- Correct: "Putting your project in the cloud"
+- Wrong: ~~"Putting Your Project in the Cloud"~~
+
+Titles and headers should contain specific keywords to return relevant search results:
+- Correct: "Further reading about projections and transformations"
+- Wrong: ~~"Further reading"~~  
+
+### Sample projects, users and workspaces
+All projects referenced in the documentation use <MainPlatformName /> workspace `documentation`. Make sure these projects are [public](../../manage/project-advanced/#make-your-project-public-private).
+
+For users that are referenced in the documentation (e.g. screenshots or in texts), it is best to use generic <MainPlatformName /> users `jack`, `jill`, `sarah`, etc. and generic workspaces.
+
+### Documentation folder structure
+Every section of the docs (e.g. Get Started, Install & Sign Up, Manage Account & Project, ...) has its folder.
+
+In the same manner, all pages have their subfolder within the sections. All Markdowns are stored as `index.md` files in the pages' subfolders.
+
+::: warning
+Every folder in the docs can contain only one Markdown file. This file needs to be named `index.md`. Please avoid creating Markdowns with other names (e.g. `page.md`).
+:::
+
+### Adding a new page
+To add a new page, create a folder in the relevant section. This folder should contain relevant files, such as `index.md` and images.
+
+This page should be then:
+- added to the sidebar `src/.vitepress/sidebar/en.js` (note that the order of articles in the menu is always "concepts - how to - reference")
+- added to the landing page `src/index.md`
+
+If the page contains multiple headers, include the [Table of contents](#table-of-contents) at the beginning using `[[toc]]`.
+
+### Images
+Images should be located in the same folder as the Markdown `index.md` file that references them.
+
+Every image used in the docs should have an associated Gimp `.xcf` file containing the original, full resolution image.
+
+Images should be exported to `webp` (preferable) or `jpg` format. Their size should not exceed 150kb. Only images where zoomed detail is important can have bigger size.
+
+Screenshots of **QGIS** should:
+- be taken with the window sized at 1024x768
+- have consistent buttons / toolbars in QGIS
+- Windows/macOS, not Linux
+- have dialogs as small as possible without scrollbars or other bad visuals
+
+Screenshots of the **<MobileAppNameShort />** should:
+- be taken without unnecessary empty spaces (say in a split screen mode) for the best readability
+- be scaled down by 1.5 (depending on the resolution of the screen of the mobile device) before exporting to reduce the image size
+
+#### Highlighting
+Relevant parts of images should be highlighted as follows:
+- add a new layer called `Black` with 66% opacity, fill it using black colour
+- add a new layer called `Red` with 100% opacity
+- tightly select what you want to highlight and **Grow selection** by:
+	- Desktop: 3px
+	- Mobile: 24px
+- delete the selection from `Black` layer
+- stroke the selection with red colour in the `Red` layer, at width:
+	- Desktop: 3px
+	- Mobile: 12px
+
+#### Title and alt texts
+
+Every image used in the docs should have a title and alt text (except for decorative images like icons that are not part of docs):
+
+`![image alt text](./myimage.png "image title")`
+
+The image *title* attribute is visible on mouse-over. It displays the title over the image.
+
+The *image alt text* is used to describe images to users who can't see them. It is used when using a screen-reader or if the image fails to load. 
+
+For texts:
+- in general, use the same for alt and titles
+- be specific and succinct, it is best to use about 5-7 words and under 125 characters
+- use keywords sparingly, describe it in simple words
+- include text that is a part of the image
+- never start with “Image of …” or “Picture of …”
+
 
 ## Using Markdown
 
-If you are not familiar with markdown, best to take some tutorial or use [cheatsheet](https://www.markdownguide.org/cheat-sheet/). On top of regular markdown. you can use HTML tags as well as some extra Vue.js/custom components described in this section
+If you are not familiar with Markdown, best to take some tutorial or use a [cheatsheet](https://www.markdownguide.org/cheat-sheet/). 
+
+On top of regular Markdown. you can use HTML tags as well as some extra components described in this section.
+
+### Table of Contents
+
+Use `[[toc]]` to generate the table of contents.
+
+### Links 
+
+Reference other Markdowns by a using relative path to the current file. 
+
+Reference the **folder**, not the `index.md` file itself.
+
+To reference a page, the reference should end with a forward slash `/`, e.g.:
+
+`[see this](../misc/write-docs/)`
+
+To reference a header/anchor, use `#`, e.g.:
+
+`[see this](../misc/write-docs/#links)`
+
+### Referencing images
+Images are referenced using relative paths, e.g.:
+
+- `![image alt text](./myimage.jpg "image title")` if the image is in the same folder as the Markdown file
+- `![image alt text](../../section/myimage.jpg "image title")` if the image is in a different folder then the Markdown file
+
+For global pictures/assets placed in `/src/public/` use custom component `<PublicImage />`, e.g. `<PublicImage src="lutra-logo.png" title="Lutra Consulting Ltd. logo" />`:
+
+<PublicImage src="lutra-logo.png" title="Lutra Consulting Ltd. logo" />
 
 ### Tip/Warning/Info/Error/Note box
+Use tip, warning, error or details note box when relevant. It is recommended to use a [custom title](#custom-titles-for-info-boxes).
 
-::: warning 
-warning example
+::: tip 
+tip example
 :::
 
 ```
-::: warning 
-warning example
+::: tip 
+tip example
 :::
 ```
 
 ---
 
-::: tip 
-tip example
+::: warning 
+warning example
 :::
 
 ```
-::: tip 
-tip example
+::: warning 
+warning example
 :::
 ```
+---
 
+::: danger 
+danger example 
+:::
+
+```
+::: danger 
+danger example 
+:::
+```
 ---
 
 ::: details 
@@ -202,22 +298,11 @@ details example
 details example 
 :::
 ```
-
 ---
 
-::: danger 
-danger example 
-:::
+#### Custom titles for info boxes
+The info boxes can have custom titles:
 
-```
-::: danger 
-danger example 
-:::
-```
-
----
-
-You can also change title to a custom one
 ::: danger Custom title
 Custom title example
 :::
@@ -229,18 +314,18 @@ Custom title example
 
 ### Emoji
 
-You can use any of supported <GitHubRepo id="markdown-it/markdown-it-emoji/blob/master/lib/data/full.mjs" desc="supported emoji" /> by markdown-it project.
+You can use any of supported <GitHubRepo id="markdown-it/markdown-it-emoji/blob/master/lib/data/full.mjs" desc="supported emoji" /> by markdown-it project, e.g.:
 
 
-:tada: :grinning: :rofl: :scream: :heart: :pray:
+:tada: :grinning: :rofl: :scream: :heart: :pray: :white_check_mark: :no_entry_sign:
 
    ```
-   :tada: :grinning: :rofl: :scream: :heart: :pray:
+   :tada: :grinning: :rofl: :scream: :heart: :pray: :white_check_mark: :no_entry_sign:
    ```
 
 
-### Labels/Badges
-
+### Labels/badges
+Markdown supports using badges, such as:
 
 <Badge text="tip badge" type="tip"/>
 
@@ -272,138 +357,46 @@ For mentioning that some feature is available from specific version, use `<Since
    ```<SinceBadge type="Server" version="2024.3" />```
 <SinceBadge version="2024.3" type="Server" />
 
-To refer to Mergin Maps Enterprise or Community edition, use `<ServerType />`
+To refer to <EnterprisePlatformName /> or <CommunityPlatformName /> edition, use `<ServerType />`
 
-```<ServerType type="CE" />```
+   ```<ServerType type="CE" />```
 <ServerType type="CE" />
 
-```<ServerType type="EE" />```
+   ```<ServerType type="EE" />```
 <ServerType type="EE" />
 
-### Images
 
+## Custom components for Markdown
 
-#### Preparation
-
-* Any image prepared should have an associated Gimp `.xcf` file containing the original, full resolution image
-* Screenshots of QGIS should be taken with the window sized at 1024x768
-* Consistent buttons / toolbars in QGIS
-* Windows/macOS, not Linux
-* Making dialogs as small as possible without scrollbars or other bad visuals
-* Highlighting
-	* New layer, black, called Black with 66% opacity
-	* Tightly select what you want to highlight
-	* Grow selection by:
-		* Desktop: 3px
-		* Mobile: 24px
-	* Delete hole from Black layer
-	* Add a layer called Red, transparent, 100% opacity
-	* Stroke the selection with red, at width:
-		* Desktop: 3px
-		* Mobile: 12px
-
-#### Export, title and alt
-
-Every exported image:
-
-* has `webp` (preferable) or `jpg` format
-* has around 50-150kb. Only images where zoomed detail is important could have higher size.
-* has title and alt text (exception: don't add alt text to decorative images like icons that are not part of docs)
-
-e.g. `![image alt text](./myimage.png "image title")`
-
-The image alt text is used to describe images to users who can't see them (they are using a screen-reader or image failed to load). The image title attribute is only visible on mouse-over and displays just the title over image.
-
-For texts:
-
-* Usually, use the same for alt and titles
-* Include text that's part of the image
-* Use keywords sparingly - describe in simple words
-* Never start with “Image of …” or “Picture of …”
-* Be specific and succinct
-
-#### Referencing
-
- - Do not add `docs` prefix (base)
- - Place images next to the markdown files that reference them
- - Do not start with `/`, use relative paths
-
-e.g. `![image alt text](./myimage.png "image title")` if the image is in the same folder as your markdown file
- 
- - For global pictures/assets placed in `src/.vuepress/public` use custom component `<PublicImage />`
-
-e.g. `<PublicImage src="lutra-logo.png" title="Lutra Consulting Ltd. logo" />`
-
-<PublicImage src="lutra-logo.png" title="Lutra Consulting Ltd. logo" />
-
-### Table of Contents 
-
-use `[[toc]]` in markdown 
-
-
-### Spellcheck
-
-if you want to omit spellcheck for a word, use component
-`NoSpellcheck`, e.g. `<NoSpellcheck id="myword" />`
-
-
-### Links 
-
-Reference other markdowns 
-
- - use relative path to the current file
- - add `.md` extension
- - use `#` for anchors
-
-e.g. `[see this](../web/otherfile.md#permissions)`
-
-
-## Custom Vue Components for Markdown
-
-see `src/.vuepress/components` for list of all components
+see `src/.vitepress/components/` for list of all components
 
 If you are adding new component: 
 
- - add your component to `src/.vuepress/components/MyComponent.vue`
- - use in markdown as `<MyComponent></MyComponent>` or `<MyComponent />`
+- add your component to `src/.vitepress/components/MyComponent.vue`
+- use in Markdown as `<MyComponent></MyComponent>` or `<MyComponent />`
+- include it on this page in the relevant section (e.g. [<MainPlatformName /> components](#mergin-maps-components))
 
 ### Reference QGIS and QGIS Help pages
-To reference QGIS website, use `<QGIS />` component, e.g. `<QGIS link="en/site/forusers/download.html" text="QGIS Download page" />` transforms to
+To reference QGIS website, use `<QGIS />` component, e.g. 
+
+`<QGIS link="en/site/forusers/download.html" text="QGIS Download page" />`
+
+ transforms to
 
 <QGIS link="en/site/forusers/download.html" text="QGIS Download page" />
 
-To reference QGIS documentation, use `<QGISHelp />` component, e.g. `<QGISHelp ver="3.22" link="user_manual/index.html" text="See QGIS Help page" />` transforms to
+To reference QGIS documentation, use `<QGISHelp />` component, e.g. 
+
+`<QGISHelp ver="3.22" link="user_manual/index.html" text="See QGIS Help page" />`
+
+transforms to
 
 <QGISHelp ver="3.22" link="user_manual/index.html" text="See QGIS Help page" />
 
 ### Reference GitHub content
 Use `<GitHubRepo />` component, e.g. `<GitHubRepo id="MerginMaps/docs/" desc="documentation" />` transforms to <GitHubRepo id="MerginMaps/docs/" desc="documentation" />.
 
-
-### Embed YouTube content
-
-Use `<YouTube />` component, e.g. `<YouTube id="DQXrINUqiFI" />` transforms to
-
-<YouTube id="DQXrINUqiFI" />
-
-
-### Reference Mergin Maps project 
-
-Use `<MerginMapsProject />` component, e.g. `<MerginMapsProject id="documentation/test_forms" />` transforms to
-
-<MerginMapsProject id="documentation/test_forms" />
-
-For a short reference (e.g. in tables), use `<MerginMapsProjectShort />` component, e.g. `<MerginMapsProject id="documentation/test_forms" />` transforms to 
-
-<MerginMapsProjectShort id="documentation/test_forms" />
-
-### Show Mergin Maps Mobile App Google/Apple badges for download
-
-Use `<AppDownload />` component
-    
-<AppDownload />
-
-### Naming Mergin Maps Components
+### Mergin Maps components
 
 Use `<AppDomainNameLink />` component, transforms to <AppDomainNameLink />
 
@@ -441,19 +434,73 @@ Use `<LutraConsultingName />` component, transforms to <LutraConsultingName />
 
 Use `<LutraConsultingWeb />` component, transforms to <LutraConsultingWeb />
 
+### Embed YouTube content
+
+Use `<YouTube />` component, e.g. `<YouTube id="DQXrINUqiFI" />` transforms to
+
+<YouTube id="DQXrINUqiFI" />
+
+
+### Reference Mergin Maps project 
+
+Use `<MerginMapsProject />` component, e.g. `<MerginMapsProject id="documentation/test_forms" />` transforms to <MerginMapsProject id="documentation/test_forms" /> .
+
+For a short reference (e.g. in tables), use `<MerginMapsProjectShort />` component, e.g. `<MerginMapsProject id="documentation/test_forms" />` transforms to <MerginMapsProjectShort id="documentation/test_forms" /> .
+
+### Show Mergin Maps Mobile App Google/Apple badges for download
+
+Use `<AppDownload />` component to display
+    
+<AppDownload />
+
+
+## Spellcheck
+It might happen that you need to use a word/string that does not pass the spellcheck.
+
+To omit spellcheck for a single word that is not expected to use more than a few times, use the following component:
+
+`NoSpellcheck`, e.g. `<NoSpellcheck id="myword" />`
+
+Words that will be used multiple times can be added to the `/scripts/wordlist.txt` to be omitted from the spellcheck permanently.
+
+## Search in the docs
+
+Full-text search is used in the docs thanks to the <GitHubRepo id="leo-buneev/vuepress-plugin-fulltext-search" /> plugin.
+
 ## Translations
 
 Translations are not yet supported/implemented.
 
-
 ## Redirects
 
-As documentation matures, content gets moved, renamed or deleted. As 3rd party sites may link to content, it's important to maintain information on how requests for now non-existent content should be redirected usefully.
+As documentation matures, pages get moved, renamed or deleted. As 3rd party sites may link the pages, it is important to maintain information on how to redirect the non-existent links to something useful.
 
 This information is captured in the <GitHubRepo desc="REDIRECTS" id="MerginMaps/docs/blob/main/REDIRECTS" /> file.
 
 
-### Seeing what's changed
+### Updating the REDIRECTS file
+
+The REDIRECTS file is a tab-separated list of old/new URL pairs. It describes how requests for old content should be redirected.
+
+With a clear picture of how the structure of content will change in a given release (see above), update the REDIRECTS as follows:
+
+- **Renamed pages** (`.md`) **or data files** (e.g. `.json`, `.zip`):
+    - Add a new line to the REDIRECTS file to reflect this
+    - Check if existing lines in the REDIRECTS file point to the page/data file that is being renamed
+        - If so, update those targets to point to the renamed page/data file's new path
+- **Deleted pages** (`.md`):
+    - Add a new line to the REDIRECTS file to point requests somewhere sensible
+    - Check if existing lines in the REDIRECTS file point to the deleted page
+        - If so, update those targets to point somewhere sensible
+- **Renamed images** (e.g. `.png`, `.jpg`) **and deleted data files** (e.g. `.json`, `.zip`):
+    - We ignore these for the time being
+- **General checks**
+    - Ensure source and destination URLs are separated by a single tab, not spaces
+    - Ensure all target URLs end with a trailing `/` for example:
+        - `https://merginmaps.com/docs/howto/input_ui/` :white_check_mark:
+        - `https://merginmaps.com/docs/howto/input_ui` :no_entry_sign:
+
+## Seeing what's changed
 
 When all authors have committed their changes to the _main_ branch and are ready for the site to be released we can easily generate a clear picture of what's changed.
 
@@ -472,35 +519,3 @@ We can do this by comparing the current state of the _main_ branch with the last
     ![GitHub summary of changes](./comparing-changes-2.jpg "GitHub summary of changes")
 
 You can now see which content has been changed.
-
-
-### Updating the REDIRECTS file
-
-The REDIRECTS file is a tab-separated list of old/new URL pairs. It describes how requests for old content should be redirected.
-
-With a clear picture of how the structure of content will change in a given release (see above), update the REDIRECTS as follows:
-
-* **Renamed pages** (`.md`) **or data files** (e.g. `.json`, `.zip`):
-    * Add a new line to the REDIRECTS file to reflect this
-    * Check if existing lines in the REDIRECTS file point to the page/data file that is being renamed
-        * If so, update those targets to point to the renamed page/data file's new path
-* **Deleted pages** (`.md`):
-    * Add a new line to the REDIRECTS file to point requests somewhere sensible
-    * Check if existing lines in the REDIRECTS file point to the deleted page
-        * If so, update those targets to point somewhere sensible
-* **Renamed images** (e.g. `.png`, `.jpg`) **and deleted data files** (e.g. `.json`, `.zip`):
-    * We ignore these for the time being
-* **General checks**
-    * Ensure source and destination URLs are separated by a single tab, not spaces
-    * Ensure all target URLs end with a trailing `/` for example:
-        * `https://merginmaps.com/docs/howto/input_ui` (bad)
-        * `https://merginmaps.com/docs/howto/input_ui/` (good)
-
-
-## Known Limitations
-
-* Anchors don't work
-* elements in anchors don't show
-* elements also don't work in TOC
-* when a component is followed by a hyperlink, the hyperlink is displayed as plain text
-
