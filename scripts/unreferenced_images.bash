@@ -13,7 +13,7 @@ stringarray=($PICS)
 for i in "${stringarray[@]}"
 do 
   bi="$(basename -- $i)"    
-  A1=`grep -rn "$bi" $SRC_DIR --include \*.md --include \*.vue --include \*.styl --include="config.js"`
+  A1=`grep -rn "$bi" $SRC_DIR --include \*.md --include \*.vue --include \*.styl --include="config.mts"`
   if [ ! -z "$A1" ]
   then
    USED_PICS=$((USED_PICS + 1))
@@ -31,7 +31,7 @@ do
   bi="$(basename -- $i)"
   biwe=${bi%xcf} # Remove file extension
   
-  A2=`grep -rn "$biwe" $SRC_DIR --include \*.md --include \*.vue --include \*.mts`
+  A2=`grep -rn "$biwe" $SRC_DIR --include \*.md --include \*.vue`
   if [ ! -z "$A2" ]
   then
    USED_XCF=$((USED_XCF + 1))
