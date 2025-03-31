@@ -35,7 +35,7 @@ export default defineConfig({
     socialLinks: [{ icon: "github", link: "https://github.com/MerginMaps" }],
 
     editLink: {
-      pattern: "https://github.com/MerginMaps/docs/edit/main/src/:path",
+      pattern: "https://github.com/merginmaps/docs/edit/main/src/:path",
       text: "Help us improve this page!",
     },
   },

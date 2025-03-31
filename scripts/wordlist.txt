@@ -169,6 +169,7 @@ Uncheck
 Valuemap
 VectorTileServer
 VDOP
+VitePress
 Vue
 VuePress
 Webmap
