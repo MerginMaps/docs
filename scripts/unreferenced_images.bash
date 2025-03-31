@@ -31,7 +31,7 @@ do
   bi="$(basename -- $i)"
   biwe=${bi%xcf} # Remove file extension
   
-  A2=`grep -rn "$biwe" $SRC_DIR --include \*.md --include \*.vue`
+  A2=`grep -rn "$biwe" $SRC_DIR --include \*.md --include \*.vue --include \*.mts`
   if [ ! -z "$A2" ]
   then
    USED_XCF=$((USED_XCF + 1))
