@@ -38,7 +38,7 @@ Data from Fulcrum can be exported to multiple formats that can be imported direc
 To migrate your data:
 1. Export Data from Fulcrum as GeoJSON file (or other QGIS-supported format)
 2. Open the GeoJSON file in QGIS. See <QGISHelp ver="latest" link="user_manual/managing_data_source/opening_data.html" text="QGIS User guide" /> for help. 
-3. Save the GeoJSON data as GeoPackage. GeoPackage is a great data format to use to visualize, edit and manage data in QGIS. It is the recommended data format for survey layers in <MainPlatformName />.
+3. Save the GeoJSON data as GeoPackage. GeoPackage is a great data format to use to visualise, edit and manage data in QGIS. It is the recommended data format for survey layers in <MainPlatformName />.
 4. Now you can use your data to create a QGIS project: set the symbology for your layers, define their attributes forms using various widgets or add background maps as needed.
 
 To use this QGIS project within the <MainPlatformNameLink /> platform:
