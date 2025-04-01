@@ -20,6 +20,7 @@ FulcrumApp features a drag-and-drop form builder. Users can start with a blank f
 Key differences between the platforms include:
 
 - **Layers, datasets, forms and widgets**
+   
    <MainPlatformName /> follows the logic of a QGIS project: you can have multiple layers with their own attributes form set up with QGIS [widgets](../../layer/form-widgets/) within a single project. All survey layers in a project can be edited in the <MobileAppNameShort /> in one session. 
    
    Fulcrum usually works best at *one app per layer*: having separate apps for different datasets and switching between the apps during the field survey. 

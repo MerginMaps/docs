@@ -13,8 +13,7 @@ Do you want to delete your account or change your details? Go to [**User Account
 
 1. Navigate to <AppDomainNameLink id=register />
 
-2. Fill in the registration form and click on **Sign Up**. 
-
+2. Fill in the registration form and click on **Sign Up**.
    ![Mergin Maps sign up form](./mergin-web-sign-up.jpg "Mergin Maps sign up form")
 
    While signing up, you can choose to receive information about updates and new features. You can unsubscribe from the <MainPlatformName /> newsletter anytime by clicking the **Unsubscribe** link at the bottom of the email.
@@ -61,8 +60,7 @@ You can also sign up from <MobileAppName />.
 1. Download the <MobileAppNameShort /> to your Android device, iPhone or iPad. You can find it in the app store of your platform:
    <AppDownload></AppDownload>
 
-2. Open the <MobileAppNameShort />. Tap the account icon in the upper right corner to go to the login page.
-   
+2. Open the <MobileAppNameShort />. Tap the account icon in the upper right corner to go to the login page. 
    ![Mergin Maps mobile app account icon](./mobile-app-account-icon.jpg "Mergin Maps mobile app account icon")
    
 3. Tap on **Sign up**
@@ -72,8 +70,7 @@ You can also sign up from <MobileAppName />.
    
    You will receive a confirmation email with a link to verify your email.
 
-   Check your spam folder if the confirmation email does not appear in your inbox after 5 minutes.
-   
+   Check your spam folder if the confirmation email does not appear in your inbox after 5 minutes.   
    ![Mergin Maps mobile app register](./mobile-app-sign-up-form.jpg "Mergin Maps mobile app register")
    
 5. Every account needs to have a [workspace](../../manage/workspaces/) for storing projects. Choose an appropriate name for your workspace and tap on the **Create workspace** button.

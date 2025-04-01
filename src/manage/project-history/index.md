@@ -5,7 +5,6 @@ Each time someone synchronises the project from a mobile device or from QGIS thr
 
 Using the <QGISPluginNameShort /> or the <DashboardShortLink />, you can view what files have been added or removed. If you use GeoPackage for your survey, you can also see the list of the features which have been added, deleted or updated.
 
-
 :::tip Project history in QGIS
 Great tools to inspect the project history and compare changes between project versions can be found in the <QGISPluginNameShort />:
 - use [Project history](#project-history-in-qgis) to explore changes in the **Changes Viewer**
@@ -15,6 +14,7 @@ Great tools to inspect the project history and compare changes between project v
 
 ## Project history in QGIS
 Project history and version can be inspected using the <QGISPluginName /> by clicking the **Project history** button of the toolbar.
+
 ![Project history button](../plugin/plugin-toolbar-project-history.jpg "Project history button")
 
 The button opens the **Changes Viewer** window. Here, all available project versions are listed in the left panel. By selecting a version you can inspect the *changes* between this and the previous project version (not the state of the project at that version). Note that older versions of your project can be [downloaded through the <DashboardShortLink />](../dashboard/#history).
@@ -36,17 +36,14 @@ To see the project history:
 2. Navigate to the **History** tab. 
 
    Here you can find all available versions of the project. These versions can be downloaded to your computer which can be helpful if you need to create a backup or [restore previous version](#how-to-revert-to-an-older-version) of the project.
-   
    ![Mergin Maps project history web](./dashboard-projects-history.jpg "Mergin Maps project history")
 
 3. Click on a version to see more details about what was changed.
    
    You can inspect the list of **added**, **edited** and **removed** files.
-   
    ![Overview of changes made in a project in the dashboard](./dashboard-history-details.jpg "Overview of changes made in a project in the dashboard")
 
 4. For GeoPackage layers, there is an option to see even more. Click on **Show advanced** 
-
    ![Show advanced changelog of a layer](./dashboard-history-show-advanced-changelog.jpg "Show advanced changelog of a layer")
 
 5. Now you can see the overview of feature changes in a specific layer across all attributes.
@@ -56,7 +53,7 @@ To see the project history:
    There are two modified features: 
    - `fid: 2` was moved to a new position
    - For `fid: 8`, the value of attribute `species` was changed
-
+   
    ![Dashboard advanced changelog](./dashboard-history-advanced-changelog.jpg "Dashboard advanced changelog")
 
 
@@ -74,19 +71,16 @@ To revert to an older version of a project (already synchronised to the cloud), 
    :::
 
 Now you have multiple options:
-- [Package the downloaded project version](../project/#packaging-qgis-project) as a new <MainPlatformName /> project. You can keep both projects if needed or [delete](../project-advanced/#delete-a-project) the one you don't need anymore.
+- **[Package the downloaded project version](../project/#packaging-qgis-project)** as a new <MainPlatformName /> project. You can keep both projects if needed or [delete](../project-advanced/#delete-a-project) the one you don't need anymore.
 
-- Replace the specific files in your <MainPlatformName /> project folder:
+- or **Replace the specific files in your <MainPlatformName /> project folder**:
    1. Close QGIS
    2. Copy the QGIS project (`.qgz`), the data (`.gpkg`) or both from the downloaded older version and paste them to your current [<MainPlatformName /> project folder](../project/#mergin-maps-project-folder). 
-   
    
       :::warning Be careful when doing this! 
       If you changed the data schema between your versions, this might be a bit tricky. By replacing the QGIS project file, you will revert the project settings, such as symbology, forms settings, relations, etc. By replacing the data files, you will get the content that was saved in the downloaded version of the project.
       :::
    
-   3. Open the project in QGIS and check if you restored your project successfully. If needed, modify the project settings so that everything works as intended.
-   
+   3. Open the project in QGIS and check if you restored your project successfully. If needed, modify the project settings so that everything works as intended.  
    4. If you are happy with the result, synchronise the changes. The restored version is now the current version of your project.
-   
    

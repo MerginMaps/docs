@@ -27,7 +27,6 @@ Editors can:
 - **Admin**: This role is only available for workspace members. In addition to the **Write** access, admins can [delete the project](../project-advanced/#delete-a-project) or [transfer](../project-advanced/#transfer-a-project) it to another workspace. They can also create new projects and manage workspace members.
 - **Owner**: In addition to the **Admin** access, owners can also access [invoicing and subscription](../subscriptions/) settings. **Owner** has full access to the project or workspace.
 
-
 :::tip
 Invoices can be made accessible also to a person that is not a workspace member, such as someone from your accounting department. They can [access the subscription management portal using a link](../subscriptions/#accessing-subscription-management-portal-directly-without-mergin-maps-account).
 :::
@@ -77,11 +76,13 @@ Although the roles of workspace members define the level of access to projects i
 Users can be [added to a workspace](../project-advanced/#add-users-to-a-workspace) as guests and members through the [Members](../dashboard/#members) tab on the <DashboardShortLink />.
 
 Here, you can also manage the member roles:
+
 ![Mergin Maps dashboard members tab](../dashboard/mergin-maps-dashboard-members.jpg "Mergin Maps dashboard members tab")
 
 Project permissions can be reviewed in the details of a project in the **Collaborators** tab where you can find the list of users who can access the project and their project permissions. 
 
 If needed, the project permissions can be changed here:
+
 ![Changing project permissions in Mergin Maps dashboard](./dashboard-project-permissions-change.jpg "Changing project permissions in Mergin Maps dashboard")
 
 ## How to transfer ownership of a workspace
@@ -98,7 +99,9 @@ When transferring ownership of a workspace, you might also need to [update billi
 To transfer the ownership of a workspace to a user that is not yet a member of your workspace, follow the steps in [How to add users to a workspace](../project-advanced/#add-users-to-a-workspace) and set the **member role** to **Owner**. The new owner has to accept the invitation.
 
 To transfer the ownership of a workspace to a user that is already a member of your workspace, you have to change their member role to **Owner**:
+
 1. Log in to <AppDomainNameLink />
+
 2. Navigate to the **Members** tab. Here, you will see the list of current workspace members and their roles. 
    ![Mergin Maps dashboard members tab](../dashboard/mergin-maps-dashboard-members.jpg "Mergin Maps dashboard members tab")
 

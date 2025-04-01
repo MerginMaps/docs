@@ -40,6 +40,7 @@ When logged into the portal, you can [update](#how-to-change-a-subscription) or 
 If you are the owner of a workspace, you can access the subscription management portal from the <DashboardShortLink />.
 
 To access the portal, navigate to the **Subscription** tab and click on **Manage Subscription**.
+
 ![Mergin Maps Dashboard manage subscription](./dashboard-manage-subscriptions.jpg "Mergin Maps Dashboard manage subscription")
 
 You will be redirected to the subscription management portal.
@@ -51,6 +52,7 @@ Note that the owner of the workspace needs to set up the appropriate email in th
 
 To access the portal directly:
 1. Navigate to the [**subscription management portal**](https://payments.merginmaps.com/p/login/14keYH711d32dz2144)
+
 2. Enter the **email** that is used in your [billing information](#billing-information-and-payment-method) and click on **Send**
    ![Logging in to stripe with an email](./stripe-sign-in.jpg "Logging in to stripe with an email")
 
@@ -58,6 +60,7 @@ To access the portal directly:
 
 ## How to upgrade a subscription from the trial plan
 1. Log into <AppDomainNameLink />
+
 2. Navigate to the **Subscription** tab. 
 
    Choose your *Premium* plan by using the slider. You can also specify if you want to be billed yearly or monthly.
@@ -113,7 +116,6 @@ Click on the **Sign Up Now** button and fill out the form. We will review your a
 1. Navigate to the [subscription management portal](#subscriptions-management-portal)
 
 2. Here, you can see current billing information and payment method
-
    ![Payment method and billing information](./stripe-billing-info-payment-method.jpg "Payment method and billing information")
 
 :::warning
