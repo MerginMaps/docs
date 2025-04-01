@@ -42,7 +42,7 @@ $ sudo chown -R  901:999 ./projects/
 $ sudo chmod g+s ./projects/
 $ docker-compose -f docker-compose.yml up
 ```
-​​
+
 ### Initialise database
 If server is started for the first time, database needs to be initialised and super-user created. Use the `init` command which will perform it automatically (the command generates password for the admin account):
 ```shell
@@ -59,8 +59,15 @@ $ docker exec merginmaps-server flask user create <username> <password> --is-adm
 :::
 
 ### Setup environment
-​
+
 Now tweak deployment settings by modifying environment variables. You have to fix all variables marked as required in this list of [environment variables](../administer/environment.md). Some of the most common issues with custom deployments are listed in the [troubleshoot](../troubleshoot/index.md) section.
+
+### Start WebMaps Stack
+
+If you want to enable WebMaps stack for your <MainPlatformName /> deployment, make sure related environment variable are set and run:
+```shell
+$ docker-compose --profile maps -f docker-compose.yml -d up
+```
 
 ### Test deployment
 

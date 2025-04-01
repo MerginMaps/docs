@@ -127,11 +127,11 @@ Mergin Maps is using Celery and Redis to perform asynchronous tasks or doing reg
 #### WebMaps 
 <ServerType type="EE" />
 
-| Variable name      | Type    | Default | Description                       |
-|--------------------|---------|---------|-----------------------------------|
-| `MAPS_ENABLED`     | boolean | `true`  | Flag to enable webmaps            |
-| `OVERVIEW_DATA`    | string  | `/tmp`  | Folder to store overviews data    |
-| `WMTS_SERVER_URL`  | string  | `http://mergin-qgis-nginx:80` | URL for custom WMTS server        |
+| Variable name      | Type    | Default                             | Description                       |
+|--------------------|---------|-------------------------------------|-----------------------------------|
+| `MAPS_ENABLED`     | boolean | `false`                             | Flag to enable webmaps            |
+| `OVERVIEW_DATA`    | string  | `/data/overviews`                   | Folder to store overviews data    |
+| `WMTS_SERVER_URL`  | string  | `http://mergin-qgis-nginx:80`       | URL for custom WMTS server        |
 | `QGIS_EXTRACTOR_API_URL` | string | `http://mergin-qgis-extractor:8000` | URL for QGIS Extractor service    |
-| `VECTOR_TILES_URL` | string | `https://tiles.merginmaps.com` | URL to custom tile service/server |
-| `VECTOR_TILES_STYLE_URL` | string |  | URL to custom tile style JSON     |
+| `VECTOR_TILES_URL` | string | `https://tiles.merginmaps.com`      | URL to custom tile service/server |
+| `VECTOR_TILES_STYLE_URL` | string |                                     | URL to custom tile style JSON     |
