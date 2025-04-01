@@ -267,6 +267,7 @@ xcf
 xyz
 yml
 webp
+WebMaps
 Workspaces
 workspaces
 zlib
