@@ -2,7 +2,7 @@
 
 This article will help you debug and resolve issues in your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink /> deployment. If you use the main Cloud <DashboardLink desc="Mergin Maps Server"/>, it is always up-to-date and managed by <MainPlatformName /> team, so report your problems to us as [described here](../../misc/troubleshoot/). Read more about server platforms in [overview article](../). 
 
-To install your own server, follow our [installation guide](../install/). Documentation of environment variables and other configuration options can be found in [Configure environment](../administer/environment/).
+To install your own server, follow our [installation guide](../install/). Documentation of environment variables and other configuration options can be found in [Configure environment](../environment/).
 
 [[toc]]
 
@@ -21,7 +21,7 @@ Did you get an error that the server is not properly configured?
 
 ## Emails are not sent
 
-If you are not receiving emails, check that the following [environment variables](../administer/environment/) are set correctly:
+If you are not receiving emails, check that the following [environment variables](../environment/) are set correctly:
 
 * `MAIL_DEFAULT_SENDER` needs to be a valid email address
 * `MAIL_SERVER` should be a valid URL to SMTP server

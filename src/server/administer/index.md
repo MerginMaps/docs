@@ -6,7 +6,7 @@ Administration guide will help you to configure and maintain your <CommunityPlat
 
 ## Server environment
 
-See the list of all [environment variables](./environment/) that you can configure.
+See the list of all [environment variables](../environment/) that you can configure.
 
 ## Telemetry Service
 
