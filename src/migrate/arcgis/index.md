@@ -13,7 +13,7 @@ To get familiar with <MainPlatformNameLink />, we recommend starting with the [*
 QGIS is a powerful tool that comes with great community and resources. We recommend using <QGISHelp ver="latest" link="user_manual/index.html" text="QGIS User Guide" /> and <QGISHelp ver="latest" link="training_manual/index.html" text="QGIS Training Manual" /> to explore its functionality.
 :::
 
-## ArcGIS vs QGIS ecosystems
+## ArcGIS and QGIS ecosystems
 
 In general, ArcGIS is a proprietary software platform while <QGIS link="en/site/forusers/download.html" text="QGIS" /> is based on open-source philosophy. As such, it is usually not easy or straightforward to have a workflow that combines both environments. Nevertheless, there are, e.g., some common [data formats](#data-formats) that can be used in both of them. 
 
