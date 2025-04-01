@@ -13,33 +13,33 @@ QGIS is a powerful tool that comes with great community and resources. We recomm
 
 ## FulcrumApp and Mergin Maps Ecosystems
 
-<MainPlatformNameLink /> is a platform that seamlessly integrates <QGIS link="" text="QGIS" /> projects, providing a familiar workflow for GIS professionals. This strong connection ensures that <MainPlatformName /> users can benefit from the extensive styling options, attributes form design, and data management capabilities provided by QGIS.
+<MainPlatformNameLink /> is a platform that seamlessly integrates <QGIS link="" text="QGIS" /> projects, providing a familiar workflow for GIS professionals. This strong connection ensures that <MainPlatformName /> users can benefit from the styling options, attributes form design, and data management capabilities provided by QGIS.
 
 FulcrumApp features a drag-and-drop form builder. Users can start with a blank form or import data in CSV or Shapefile format to build their data collection forms. Field data collection then follows within the Fulcrum environment.
 
 Key differences between the platforms include:
 
-- **Layers and datasets**: While Fulcrum often requires separate *apps* for different datasets (e.g., Trees, Fire Hydrants, and Light Poles), in <MainPlatformName /> you can have multiple layers within a single project without the need to switch apps during fieldwork.
+- **Layers, datasets, forms and widgets**
+   <MainPlatformName /> follows the logic of a QGIS project: you can have multiple layers with their own attributes form set up with QGIS [widgets](../../layer/form-widgets/) within a single project. All survey layers in a project can be edited in the <MobileAppNameShort /> in one session. 
+   
+   Fulcrum usually works best at *one app per layer*: having separate apps for different datasets and switching between the apps during the field survey. 
 
-- **Forms and Widgets**: <MainPlatformName /> uses QGIS extensive form and widget options, allowing for customised and powerful data entry interfaces for each layer in the project. Fulcrum offers a set of widgets, including a signature capture tool, which is currently unavailable in <MainPlatformName />.
+- **Supported formats of background maps**
 
-- **Background Maps** are an essential part of field data collection. Compared to <MainPlatformName />, Fulcrum supports fewer formats, such as XYZ Tiles, MBTiles, WMS, GeoJSON, and ArcGIS Feature Services. All of these and some more are supported by <MainPlatformName />, including raster formats such as GeoTIFF (for more details, see the [list of supported formats](../../gis/supported_formats/)).
+   Fulcrum supports a selection of common formats, such as XYZ Tiles, MBTiles, WMS, GeoJSON, and ArcGIS Feature Services. 
+   
+   All of these and some more are supported by <MainPlatformName />, including raster formats such as GeoTIFF (for more details, see the [list of supported formats](../../gis/supported_formats/)).
 
 
 ## Migrating from Fulcrum to Mergin Maps
 
-Fulcrum allows users to export data as GeoJSON, which can be imported directly into QGIS. This enables users to display Fulcrum data in QGIS. However, it requires additional steps to make them editable both in QGIS and <MainPlatformName />.
+Data from Fulcrum can be exported to multiple formats that can be imported directly into QGIS, such as GeoJSON, KML or Shapefile. This enables users to display Fulcrum data in QGIS.
 
 To migrate your data:
-1. Export Data from Fulcrum as GeoJSON file
-
+1. Export Data from Fulcrum as GeoJSON file (or other QGIS-supported format)
 2. Open the GeoJSON file in QGIS. See <QGISHelp ver="latest" link="user_manual/managing_data_source/opening_data.html" text="QGIS User guide" /> for help. 
-   
-3. Save the GeoJSON data as a GeoPackage
-
-   GeoPackage is the recommended data format to use in <MainPlatformName />.
-
-4. Now you can use your data to create a QGIS project and set the symbology for your layers, define their attributes forms using various widgets or add background maps as needed.
+3. Save the GeoJSON data as GeoPackage. GeoPackage is a great data format to use to visualize, edit and manage data in QGIS. It is the recommended data format for survey layers in <MainPlatformName />.
+4. Now you can use your data to create a QGIS project: set the symbology for your layers, define their attributes forms using various widgets or add background maps as needed.
 
 To use this QGIS project within the <MainPlatformNameLink /> platform:
 1. [Sign up to <MainPlatformName />](../../setup/sign-up-to-mergin-maps/)
