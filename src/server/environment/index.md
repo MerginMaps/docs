@@ -8,7 +8,7 @@ Variables marked with star ⭐️ need to be modified for production use.
 | Variable name            | Type      | Default   | Description                                                                                                                                 |
 |--------------------------|-----------|-----------|---------------------------------------------------------------------------------------------------------------------------------------------|
 | `MERGIN_BASE_URL`⭐️       | string    |        | Deployment URL where <MainPlatformName /> is hosted.                                                                                        |
-| `COLLECT_STATISTICS`     | Boolean   | `true`    | Whether to send usage statistics for application improvements. For more information check this [page section](../#telemetry-service) |
+| `COLLECT_STATISTICS`     | Boolean   | `true`    | Whether to send usage statistics for application improvements. For more information check this [page section](../administer#telemetry-service). |
 | `CONTACT_EMAIL`         | string    |     ``      | Email contact for application administrator.                                                                                                |
 | `SERVICE_ID`             | string    |           | Deployment UUID. Auto-generated on the first run.                                                                                           |
 ​
