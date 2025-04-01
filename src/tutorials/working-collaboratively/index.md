@@ -1,6 +1,6 @@
 # Working Collaboratively
 
-<MainPlatformNameLink /> makes working collaboratively safe and easy. 
+The <MainPlatformNameLink /> platform makes working collaboratively safe and easy.
 
 In this tutorial you'll learn a few different ways of sharing your project with your colleagues:
 [[toc]]

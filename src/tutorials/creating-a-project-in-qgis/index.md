@@ -14,6 +14,7 @@ Please ensure you have already:
 
 ## Create a minimal project
 1. Open QGIS
+
 2. Locate the <QGISPluginName /> toolbar in the upper navigation panel in QGIS. Click on the **Create <MainPlatformName /> Project** button
    ![QGIS plugin Create Mergin Maps Project](./qgis-create-mergin-project.jpg "QGIS plugin Create Mergin Maps Project")
 
@@ -26,13 +27,11 @@ Please ensure you have already:
    - The folder where the project should be created. Here, we use `Documents\MerginMaps Projects`
    
    Press **Finish** to create the project.
-   
    ![Create new Mergin Maps project in QGIS](./mergin-plugin-create-new-mergin-project.jpg "Create new Mergin Maps project in QGIS")
 
 5. Your new project should now be created and uploaded to <MainPlatformNameLink /> cloud. 
 
    **Close** the dialog window to continue working with this project in QGIS.
-   
    ![Mergin Maps project created and uploaded successfully](./mergin-plugin-basic-project-opened.jpg "Mergin Maps project created and uploaded successfully")
 
 
@@ -53,7 +52,6 @@ We will now add two more survey layers - a point layer for surveying trees and a
      Here: `Documents\MerginMaps Projects\trees-and-hedges\trees.gpkg`
    - **Table name** will be set as `trees` by default   
    - **Geometry type**: ***Point***
-   
    ![New GeoPackage point layer](./qgis-geopackage-filename.jpg "New GeoPackage point layer")
 
 3. Add a **New Field** called `date` with the data type ***Date***
@@ -73,8 +71,7 @@ We will now add two more survey layers - a point layer for surveying trees and a
    - **Fields**:
       - `both_sides_surveyed`, data type ***Boolean***
       - `num_access_gates`, data type ***Whole Number (integer)***
-      - `photo`, data type ***Text Data***
-   
+      - `photo`, data type ***Text Data*** 
    ![Create GeoPackage line layer with defined attributes](./qgis-geopackage-filename2.jpg "Create GeoPackage line layer with defined attributes")
    
 Once you are finished, there should be two new layers on the **Layers** panel: `trees` and `hedges`.
@@ -99,7 +96,6 @@ Now we will set up the drop-down list for the `trees` layer:
    - Enter the **Alias** that defines how the attribute's name is displayed in the form.
    - Change the **Widget Type** to ***Value Map***
    - Enter **Values** and **Descriptions** similar to these (both are set the same in this example):
-   
    ![QGIS Attributes form Value Map](./qgis-tree-value-map.jpg "QGIS Attributes form Value Map")
 
    ::: tip
