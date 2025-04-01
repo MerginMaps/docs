@@ -77,7 +77,7 @@ To ease the process of permission (user) management, you can set the following g
 | `MAIL_BCC`              | string  |   `None`   | Email address to send copies of all sent emails. Should be system/application administrator. Mandatory in versions until 2024.4.0.  |
 | `MERGIN_LOGO_URL`       | string  | ``    | Link to logo in emails. |
 
-If you have issues with sending emails, follow [troubleshooting](../../troubleshoot/) page.
+If you have issues with sending emails, follow [troubleshooting](../troubleshoot/) page.
 
 #### Workspace management
 Workspace settings.
