@@ -53,17 +53,17 @@ img {
 
 img.app_store {
   padding: 11px;
-  height: 48px;
+  height: 60px;
 }
 
 img.google_play {
   padding: 11px;
-  height: 48px;
+  height: 60px;
 }
 
 img.windows {
   padding: 11px;
-  height: 48px;
+  height: 60px;
 }
 
 </style>

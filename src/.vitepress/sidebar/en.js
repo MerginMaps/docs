@@ -2,7 +2,7 @@ export default {
   '/': [
     {
       text: 'Get Started',   // required
-      collapsed: false,
+      collapsed: true,
       items: [
         { text: 'Capturing Your First Field Data', link: '/tutorials/capturing-first-data/' },
         { text: 'Opening Surveyed Data on Your Computer', link: '/tutorials/opening-surveyed-data-on-your-computer/' },
@@ -14,7 +14,7 @@ export default {
     },
     {
       text: 'Install & Sign Up',   // required
-      collapsed: false,
+      collapsed: true,
       items: [
         { text: 'How to Install Mergin Maps Mobile App', link: '/setup/install-mobile-app/' },
         { text: 'How to Sign Up to Mergin Maps', link: '/setup/sign-up-to-mergin-maps/' },
@@ -24,7 +24,7 @@ export default {
     },
     {
       text: 'Manage Account & Project',   // required
-      collapsed: false,
+      collapsed: true,
       items: [
         { text: 'User Account', link: '/manage/account/' },
         { text: 'Workspaces', link: '/manage/workspaces/' },
@@ -46,7 +46,7 @@ export default {
     },
     {
       text: 'Setup GIS Project',   // required
-      collapsed: false,
+      collapsed: true,
       items: [
         { text: 'QGIS Project Preparation', link: '/gis/features/' },
         { text: 'Sorting and Search Setup', link: '/gis/search_data/' },
@@ -61,7 +61,7 @@ export default {
     },
     {
       text: 'Configure Survey Layer',   // required
-      collapsed: false,
+      collapsed: true,
       items: [
         { text: 'Best Practice Tips for Layers and Forms', link: '/layer/best-practice/' },
         { text: 'Setting Up Widgets in Attributes Form', link: '/layer/form-widgets/' },
@@ -79,7 +79,7 @@ export default {
     },
     {
       text: 'Fieldwork Tips',   // required
-      collapsed: false,
+      collapsed: true,
       items: [
         { text: 'Mergin Maps Mobile App Interface', link: '/field/mobile-app-ui/' },
         { text: 'Offline Use of Mergin Maps Mobile App', link: '/field/offline-use/' },
@@ -97,7 +97,7 @@ export default {
     },
     {
       text: 'For Developers',   // required
-      collapsed: false,
+      collapsed: true,
       items: [
         { text: 'Custom Mobile App', link: '/dev/customapp/' },
         { text: 'Integrate Mergin Maps', link: '/dev/integration/' },
@@ -109,7 +109,7 @@ export default {
     },
     {
       text: 'Custom Server',   // required
-      collapsed: false,
+      collapsed: true,
       items: [
         { text: 'Overview', link: '/server/' },
         { text: 'Install', link: '/server/install/' },
@@ -123,7 +123,7 @@ export default {
     },
     {
       text: 'Migrate',   // required
-      collapsed: false,
+      collapsed: true,
       items: [
         { text: 'Migrate from QField', link: '/migrate/qfield/' },
         { text: 'Migrate from ArcGIS', link: '/migrate/arcgis/' },
@@ -132,7 +132,7 @@ export default {
     },
     {
       text: 'Support & Legal',   // required
-      collapsed: false,
+      collapsed: true,
       items: [
         { text: 'Licensing', link: '/misc/licensing/' },
         { text: 'Troubleshoot', link: '/misc/troubleshoot/' },
