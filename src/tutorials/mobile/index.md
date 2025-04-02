@@ -3,9 +3,9 @@
 [[toc]]
 
 In the last tutorial we created a new <MainPlatformName /> project in QGIS with layers for surveying trees and hedges. You'll now learn how to:
-* Open the QGIS project in <MobileAppName />
-* Switch between layers to capture new point and linear features
-* Sync and save your data to <MainPlatformNameLink /> cloud
+- Open the QGIS project in <MobileAppName />
+- Switch between layers to capture new point and linear features
+- Sync and save your data to <MainPlatformNameLink /> cloud
 
 :::tip Need help navigating the mobile app?
 [<MobileAppName /> interface](../../field/mobile-app-ui/) contains the overview of the features and functionality of the <MobileAppNameShort />.
@@ -13,12 +13,17 @@ In the last tutorial we created a new <MainPlatformName /> project in QGIS with 
 
 ## Opening the project on your mobile device 
 1. Open <MobileAppName /> on your mobile device
+
 2. Go to the **Projects** tab. Here, you can see a list of projects in your workspace.
+
 3. **Download** the ***trees-and-hedges*** project.
    ![Downloading project from Projects tab](./merginmaps-mobile-download-my-project.jpg "Downloading project from Projects tab")
-4. Projects that are downloaded to your mobile device are listed in the **Home** tab. 
+   
+4. Projects that are downloaded to your mobile device are listed in the **Home** tab.
+ 
    Tap the ***trees-and-hedges project*** to open it in the <MobileAppNameShort />.
    ![Open downloaded project from Home tab](./merginmaps-mobile-open-project.jpg "Open downloaded project from Home tab")
+   
 5. Pinch the screen to zoom in on your location. If you lose sight of your location, use the **GPS button** in the right corner of the map window to recentre the map on your position.
    ![Recentring position of the map](./merginmaps-mobile-centre-gps.jpg "Recentring position of the map")
 
@@ -39,7 +44,6 @@ The <MobileAppNameShort /> uses colours to report whether the GPS accuracy falls
 ::: tip Understanding GPS accuracy
 [GPS accuracy](../../field/gps_accuracy/) provides more detail about this topic.
 :::
-
 
 
 ## The active layer
@@ -95,7 +99,8 @@ When creating the project in QGIS, we included a layer for linear features calle
 3. Enter some **attributes** and a **photo** for the hedge:
    ![Feature form in Mergin Maps mobile app](./merginmaps-mobile-hedge-attributes-and-photo.jpg "Feature form in Mergin Maps mobile app")
 
-It may happen that the surveyed hedge can be quite difficult to distinguish from the background map. For instance here, the line is too thin and does not have the best colour. 
+It may happen that the surveyed hedge can be quite difficult to distinguish from the background map. For instance here, the line is too thin and does not have the best colour.
+
 ![Poor symbology of feature on the map](./merginmaps-mobile-poor-symbology.jpg "Poor symbology of feature on the map")
 
 We will learn how to change layer styles in the [next tutorial](../further-project-customisation/).
@@ -104,6 +109,7 @@ We will learn how to change layer styles in the [next tutorial](../further-proje
 To conclude this tutorial we will save the data we just collected back to <MainPlatformNameLink />.
 
 Tap the **Sync** button in the bottom navigation panel and wait for notification about successful synchronisation.
+
 ![Synchronising changes to Mergin Maps cloud](./merginmaps-mobile-sync-project.jpg "Synchronising changes to Mergin Maps cloud")
 
 When the sync process has completed your data has been stored safely in the cloud.
