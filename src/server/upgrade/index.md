@@ -353,7 +353,7 @@ Specify its name with the following environment variable:
  - `GLOBAL_WORKSPACE=ShinyWorkspace` - name of your workspace. A good fit is the name of your company or team. This value *should not be changed* later.
 
 :::tip
-You can find all available environment variables [here](../administer/environment/) together with a tutorial on how to set them up.
+You can find all available environment variables [here](../environment/) together with a tutorial on how to set them up.
 :::
 
 Further, you need to set a default role for people in your workspace *(learn more about our [permissions and roles system here](../../manage/permissions/))*. 

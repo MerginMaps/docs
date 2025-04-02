@@ -33,7 +33,7 @@ Follow these steps to run a local <MainPlatformName /> instance.
 
 ### Start docker containers
 
-Provided that `docker` and `docker-compose` are installed on your host, running <MainPlatformName /> stack should be as simple as running `docker-compose`. However, before doing that you would need to [configure](../administer/environment/) your server setup via environment variables in <GitHubRepo desc=".prod.env" id="MerginMaps/server/blob/master/.prod.env" /> file. 
+Provided that `docker` and `docker-compose` are installed on your host, running <MainPlatformName /> stack should be as simple as running `docker-compose`. However, before doing that you would need to [configure](../environment/) your server setup via environment variables in <GitHubRepo desc=".prod.env" id="MerginMaps/server/blob/master/.prod.env" /> file. 
 
 Once configured, you can run:
 ```shell
@@ -61,7 +61,7 @@ $ docker exec merginmaps-server flask user create <username> <password> --is-adm
 
 ### Setup environment
 ​
-Now tweak deployment settings by modifying environment variables. You have to fix all variables marked as required in this list of [environment variables](../administer/environment/). Some of the most common issues with custom deployments are listed in the [troubleshoot](../troubleshoot/) section.
+Now tweak deployment settings by modifying environment variables. You have to fix all variables marked as required in this list of [environment variables](../environment/). Some of the most common issues with custom deployments are listed in the [troubleshoot](../troubleshoot/) section.
 
 ### Test deployment
 
