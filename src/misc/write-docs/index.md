@@ -319,9 +319,9 @@ You can use any of supported <GitHubRepo id="markdown-it/markdown-it-emoji/blob/
 
 :tada: :grinning: :rofl: :scream: :heart: :pray: :white_check_mark: :no_entry_sign:
 
-   ```
-   :tada: :grinning: :rofl: :scream: :heart: :pray: :white_check_mark: :no_entry_sign:
-   ```
+```
+:tada: :grinning: :rofl: :scream: :heart: :pray: :white_check_mark: :no_entry_sign:
+```
 
 
 ### Labels/badges
@@ -330,39 +330,55 @@ Markdown supports using badges, such as:
 <Badge text="tip badge" type="tip"/>
 
 
-   ```<Badge text="tip badge" type="tip"/>```
+```markdown
+<Badge text="tip badge" type="tip"/>
+```
 
 ---
 
 <Badge text="warning badge" type="warning"/>
 
 
-   ```<Badge text="warning badge" type="warning"/>```
+```markdown
+<Badge text="warning badge" type="warning"/>
+```
 
 ---
 
 <Badge text="error badge" type="danger"/>
 
 
-   ```<Badge text="error badge" type="danger"/>```
+```markdown
+<Badge text="error badge" type="danger"/>
+```
 
 For mentioning that some feature is available from specific version, use `<SinceBadge />`
 
-   ```<SinceBadge type="App" version="2022.1.1" />```
+```markdown
+<SinceBadge type="App" version="2022.1.1" />
+```
 <SinceBadge version="2022.1.1" type="App" />
 
-   ```<SinceBadge type="Plugin" version="2023.2" />```
+```markdown
+<SinceBadge type="Plugin" version="2023.2" />
+```
 <SinceBadge version="2023.2" type="Plugin" />
 
-   ```<SinceBadge type="Server" version="2024.3" />```
+```markdown
+<SinceBadge type="Server" version="2024.3" />
+```
 <SinceBadge version="2024.3" type="Server" />
 
 To refer to <EnterprisePlatformName /> or <CommunityPlatformName /> edition, use `<ServerType />`
 
-   ```<ServerType type="CE" />```
+```markdown
+<ServerType type="CE" />
+```
 <ServerType type="CE" />
 
-   ```<ServerType type="EE" />```
+```markdown
+<ServerType type="EE" />
+```
 <ServerType type="EE" />
 
 

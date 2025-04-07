@@ -1,12 +1,13 @@
 <template>
-  <div>
-    <div class="type-badge ce" v-if="type === 'CE'" >Community Edition</div>
-    <div class="type-badge ee" v-else-if="type === 'EE'">Enterprise Edition</div>
-  </div>
+  <span>
+    <VPBadge v-if="type === 'CE'" text="Community Edition" type="warning"/>
+    <VPBadge v-else-if="type === 'EE'" text="Enterprise Edition" type="warning"/>
+  </span>
 </template>
 
-
 <script>
+import { VPBadge } from "vitepress/theme";
+
 export default {
   name: "migration-type",
   props: {
@@ -17,23 +18,4 @@ export default {
 
 <style scoped>
 
-.type-badge {
-  display: inline-block;
-  height: 18px;
-  line-height: 18px;
-  white-space: nowrap;
-  border-radius: 3px;
-  padding: 0 6px;
-  color: white;
-}
-
-.ce {
-  background-color: var(--mm-badge-ce-bg);;
-}
-
-.ee {
-  background-color: var(--mm-badge-ee-bg);;
-}
-
 </style>
-

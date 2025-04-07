@@ -157,15 +157,3 @@ img {
   align-items: center;
   gap: 0.25em;
 }
-
-/** Component: ServerType */
-:root {
-  --mm-badge-ee-bg: #FFA6A6;
-  --mm-badge-ce-bg: #FFB673;
-}
-
-/** Component: Since badge */
-:root {
-  --mm-badge-since-bg: var(--vp-c-indigo-soft);
-  --mm-badge-since-text-color: var(--vp-c-text-1);
-}

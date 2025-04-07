@@ -1,13 +1,15 @@
 <template>
   <span>
-  <span class="sincebadge" v-if="type === 'App'" >since Mobile app {{ version }}</span>
-  <span class="sincebadge" v-else-if="type === 'Plugin'">since QGIS plugin {{ version }}</span>
-  <span class="sincebadge" v-else-if="type === 'Server'">since Server {{ version }}</span>
+    <VPBadge v-if="type === 'App'" :text="`Since Mobile app ${version}`" type="tip"/>
+    <VPBadge v-else-if="type === 'Plugin'" :text="`Since QGIS plugin ${version}`" type="tip"/>
+    <VPBadge v-else-if="type === 'Server'" :text="`Since Server ${version}`" type="tip"/>
   </span>
 </template>
 
 
 <script>
+import { VPBadge } from "vitepress/theme";
+
 export default {
   name: "sincebadge",
   props: {
@@ -18,15 +20,5 @@ export default {
 </script>
 
 <style scoped>
-.sincebadge {
-  display: inline-block;
-  line-height: 1;
-  white-space: nowrap; 
-  border-radius: 6px;
-  padding: 0.25em 1em;
-  color: var(--mm-badge-since-text-color);
-  background-color: var(--mm-badge-since-bg);
-  margin-left: 5px;
-}
-</style>
 
+</style>
