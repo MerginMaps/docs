@@ -5,7 +5,8 @@ services:
     restart: on-failure
     volumes:
       - .:/docs
+      - .src/.vitepress:/docs/src/.vitepress
     working_dir: "/docs"
     command: /bin/sh -c 'yarn install && yarn dev'
     ports:
-      - 8081:8080
+      - 5173:5173

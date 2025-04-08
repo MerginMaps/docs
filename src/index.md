@@ -30,6 +30,7 @@ The ecosystem consist of various components:
 - [Using <MobileAppName />](./tutorials/mobile/)
 - [Further Project Customisation](./tutorials/further-project-customisation/)
 - [Working Collaboratively](./tutorials/working-collaboratively/)
+- [FAQs](./tutorials/faq/)
 
 ## Install & Sign Up
 - [How to Install <MobileAppName />](./setup/install-mobile-app/)
