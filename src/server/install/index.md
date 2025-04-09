@@ -65,9 +65,14 @@ Now tweak deployment settings by modifying environment variables. You have to fi
 
 ### Start WebMaps Stack
 
-If you want to enable WebMaps stack for your <MainPlatformName /> deployment, make sure related environment variable are set and run:
+WebMaps consists of three more services (`mergin-qgis`, `mergin-qgis-extractor` and `mergin-qgis-nginx`) that you can run alongside <MainPlatformName /> main stack or independently in a new machine. 
+Just make sure related `MAPS_*` [environment variables](../environment/#WebMaps) are set, namely `MAPS_ENABLED` (`True` by default).
+For convenience this stack is provided on a separate docker compose file, `docker-compose.maps.yml`.
+
+To run the webmaps, simply run this command line:
 ```shell
 $ docker-compose -f docker-compose.maps.yml -d up
+```
 
 ### Test deployment
 
