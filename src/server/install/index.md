@@ -63,6 +63,17 @@ $ docker exec merginmaps-server flask user create <username> <password> --is-adm
 ​
 Now tweak deployment settings by modifying environment variables. You have to fix all variables marked as required in this list of [environment variables](../environment/). Some of the most common issues with custom deployments are listed in the [troubleshoot](../troubleshoot/) section.
 
+### Start WebMaps Stack
+
+WebMaps consists of three more services (`mergin-qgis`, `mergin-qgis-extractor` and `mergin-qgis-nginx`) that you can run alongside <MainPlatformName /> main stack or independently in a new machine. 
+Just make sure related `MAPS_*` [environment variables](../environment/#WebMaps) are set, namely `MAPS_ENABLED` (`True` by default).
+For convenience this stack is provided on a separate docker compose file, `docker-compose.maps.yml`.
+
+To run the webmaps, simply run this command line:
+```shell
+$ docker-compose -f docker-compose.maps.yml -d up
+```
+
 ### Test deployment
 
 In order to test your deployment there are some utility commands to perform basic checks.

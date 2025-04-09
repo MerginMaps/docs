@@ -121,10 +121,19 @@ Other settings related to data management.
 #### Celery asynchronous tasks
 Mergin Maps is using Celery and Redis to perform asynchronous tasks or doing regular jobs.
 
-| Variable name                 | Type    | Default                           | Description |
-|-------------------------------|---------|-----------------------------------|-------------|
-| `BROKER_URL` ⭐️               | string  | `redis://merginmaps-redis:6379/0` | Connection details to celery message broker. If non-default, it should match definition in `docker-compose` file.  |
-| `CELERY_RESULT_BACKEND`       | string  | `redis://merginmaps-redis:6379/0` | Connection details to celery result back-end broker. If non-default, it should match definition in `docker-compose` file.  |
-| `CELERYD_CONCURRENCY`         | integer | All CPU                           | Number of child processes. As rule of thumb do not use all available CPUs. |
-| `CELERYD_PREFETCH_MULTIPLIER` | integer | 4                                 | The number of messages to prefetch at a time multiplied by the number of concurrent processes. Default is `4`. If you want to disable this feature set it to `1`. |
-| `CELERY_ACKS_LATE`            | boolean | False                             | If `True`, means tasks will be transmitted as execute, AFTER they are finished, not 'right before'. |
+| Variable name         | Type | Default                         | Description |
+|-----------------------|------|---------------------------------|-------------|
+|`BROKER_URL`           |string|`redis://merginmaps-redis:6379/0`| Connection details to celery message broker. If non-default, it should match definition in `docker-compose` file.  |
+|`CELERY_RESULT_BACKEND`|string|`redis://merginmaps-redis:6379/0`| Connection details to celery result back-end broker. If non-default, it should match definition in `docker-compose` file.  |
+
+#### WebMaps 
+<ServerType type="EE" />
+
+| Variable name            | Type     | Default                                                 | Description                    |
+|--------------------------|----------|---------------------------------------------------------|--------------------------------|
+| `MAPS_ENABLED`           | boolean  | `false`                                                 | Flag to enable webmaps         |
+| `OVERVIEW_DATA`          | string   | `/data/overviews`                                       | Folder to store overviews data |
+| `WMTS_SERVER_URL`        | string   | `http://mergin-qgis-nginx:80`                           | URL to qgis-server WMTS server |
+| `QGIS_EXTRACTOR_API_URL` | string   | `http://mergin-qgis-extractor:8000`                     | URL for QGIS Extractor service |
+| `VECTOR_TILES_URL`       | string   | `https://tiles.merginmaps.com`                          | URL to custom tile service     |
+| `VECTOR_TILES_STYLE_URL` | string   | `https://tiles.dev.merginmaps.com/styles/default.json`  | URL to custom tile style JSON  |

@@ -283,6 +283,7 @@ xcf
 xyz
 yml
 webmaps
+WebMaps
 webp
 workspaces
 www
