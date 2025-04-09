@@ -6,7 +6,7 @@ There are several methods of creating a new <MainPlatformName /> project:
 - [<MobileAppName /> ](#create-a-project-in-mergin-maps-mobile-app) offers the quickest (albeit limited) way of creating a <MainPlatformName /> project.
 - You can also use <DashboardLink />, especially if your project files are already fully prepared and only need uploading.
 
-If you want to make a copy of your projects or the ones shared with you, you can clone them in [QGIS](./index.md#clone-an-existing-project-in-qgis) or the [dashboard](#clone-an-existing-project-through-mergin-maps-dashboard).
+If you want to make a copy of your projects or the ones shared with you, you can clone them in [QGIS](#clone-an-existing-project-in-qgis) or the [dashboard](#clone-an-existing-project-through-mergin-maps-dashboard).
 
 :::warning
 When creating a project, keep in mind that its name cannot be changed later.
@@ -14,12 +14,13 @@ When creating a project, keep in mind that its name cannot be changed later.
 
 ## Create a project in QGIS
 ::: tip
-[Creating a Project in QGIS](../../tutorials/creating-a-project-in-qgis/index.md) tutorial will show you how to create a new project in QGIS, add layers, configure attributes forms and save changes to <MainPlatformNameLink />. 
+[Creating a Project in QGIS](../../tutorials/creating-a-project-in-qgis/) tutorial will show you how to create a new project in QGIS, add layers, configure attributes forms and save changes to <MainPlatformNameLink />. 
 :::
 
-To work with <MainPlatformName /> projects in QGIS, you will need to [install the <QGISPluginName />](../../setup/install-mergin-maps-plugin-for-qgis/index.md) first.
+To work with <MainPlatformName /> projects in QGIS, you will need to [install the <QGISPluginName />](../../setup/install-mergin-maps-plugin-for-qgis/) first.
 
 1. Open a blank or an existing project in QGIS.
+
 2. Click on **Create Mergin Maps Project** from the toolbar.
    ![Create project icon in Mergin Maps QGIS plugin](../../tutorials/creating-a-project-in-qgis/qgis-create-mergin-project.jpg "Create project icon in Mergin Maps QGIS plugin")
 
@@ -36,7 +37,6 @@ To work with <MainPlatformName /> projects in QGIS, you will need to [install th
 4. Change the workspace (if needed), name the project and select a path where your project folder and associated files will be generated.
 
    Keep in mind that the project name cannot be changed later.
-   
    ![New Mergin Maps project name and folder](./mergin_plugin_project_wizard_4.jpg "New Mergin Maps project name and folder")
    
    :::danger WARNING
@@ -49,10 +49,10 @@ The new <MainPlatformName /> project will be created locally on your computer an
 Using <QGISPluginName />, you can make a copy of projects you have access to.
 
 1. Navigate to **Mergin Maps** in the **Browser panel**.
+
 2. Find the project you want to clone. Right-click on it and select **Clone**.
 
    You might need to [switch to another workspace](../workspaces/#switch-workspaces-in-qgis) to locate the project.
- 
    ![Clone Mergin Maps project in QGIS](./plugin-clone.jpg "Clone Mergin Maps project in QGIS")
 
 3. Select the **workspace** from the drop-down menu and enter your new **Project Name**. Click **OK**.
@@ -62,17 +62,17 @@ The project will be saved in the selected workspace.
 
 ## Create a project in Mergin Maps mobile app
 ::: tip
-[Capturing Your First Field Data](../../tutorials/capturing-first-data/index.md) tutorial will show you how to create a new project and capture field data in <MobileAppName />.
+[Capturing Your First Field Data](../../tutorials/capturing-first-data/) tutorial will show you how to create a new project and capture field data in <MobileAppName />.
 :::
 
 1. Open the <MobileAppNameShort /> on your mobile device
+
 2. Navigate to the **Home** tab and tap **Create project**
    ![Create project in Mergin Maps mobile app](./mobile-app-create-project.jpg "Create project in Mergin Maps mobile app")
 
 3. Give the project a name. Keep in mind that the name cannot be changed later.
 
    Press **Create project**.
-   
    ![Mergin Maps mobile app new project name](./mobile-app-create-project-name-fields.jpg "Mergin Maps mobile app new project name")
 
 4. Your new project will be created locally on your mobile device
@@ -90,6 +90,7 @@ The preferred way of creating a project is to use the <QGISPluginNameShort />. T
 :::
 
 1. Navigate to <AppDomainNameLink /> and sign in.
+
 2. In the **Projects** tab, click on **Create project**
    ![Create Mergin Maps project through dashboard](./dashboard-create-project.jpg "Create Mergin Maps project through dashboard")
 
@@ -110,7 +111,6 @@ Projects you have access to and [public projects](../permissions/#public-and-pri
 1. In the **Projects** tab, find the project you want to clone, open it and click on **Clone**.
 
    If needed, [switch to another workspace](../workspaces/#switch-workspaces-in-qgis) to locate the project.
-   
    ![Mergin Maps dashboard Cloning project from your workspace](./dashboard-clone-project.jpg "Mergin Maps dashboard - Cloning project from your workspace")
 
 2. Enter the name of the cloned project. If needed, change the target workspace.

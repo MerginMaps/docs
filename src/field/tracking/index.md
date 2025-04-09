@@ -14,7 +14,7 @@ Tracking needs to be enabled in QGIS when [preparing your <MainPlatformName /> p
    ![QGIS Project Properties](../../gis/qgis-project-properties.jpg "QGIS Project Properties")
 
 3. In the <MainPlatformName /> tab, check the **Enable tracking** option.
-   ![Enable tracking in QGIS Mergin Maps project](../../gis/project-tracking.jpg "Enable tracking in QGIS Mergin Maps project")
+   ![Enable tracking in QGIS Mergin Maps project](../../gis/features/project-tracking.jpg "Enable tracking in QGIS Mergin Maps project")
 
    You can also choose how often the position should be recorded. 
    

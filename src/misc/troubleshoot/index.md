@@ -68,22 +68,24 @@ The diagnostic log `client-log.txt` can be found in the `.mergin` folder located
 
 To send the diagnostic log to the developers:
 1. Navigate to your local project in Browser panel under <QGISPluginName />
-2. Right-click on the project and select **Diagnostic log**
-![Diagnostic log in Mergin Maps QGIS plugin](./qgis-logs.jpg "Diagnostic log in Mergin Maps QGIS plugin")
-3. Click **OK** to proceed
 
-![Submit diagnostic logs message](./plugin-logs.jpg "Submit diagnostic logs message")
+2. Right-click on the project and select **Diagnostic log**
+   ![Diagnostic log in Mergin Maps QGIS plugin](./qgis-logs.jpg "Diagnostic log in Mergin Maps QGIS plugin")
+
+3. Click **OK** to proceed
+   ![Submit diagnostic logs message](./plugin-logs.jpg "Submit diagnostic logs message")
 
 4. Contact our support team (<MerginMapsEmail id="support" />) with your username/workspace and problem description so we can have a look into the issue. 
 
 ### Diagnostic log on Mergin Maps mobile app
 In the <MobileAppNameShort />:
 1. Tap on the **More** button and go to **Settings** 
-![](./mobile-app-settings.jpg)
+   ![Settings in Mergin Maps mobile app](./mobile-app-settings.jpg "Settings in Mergin Maps mobile app")
+
 2. Scroll down to the **Diagnostic log** option and tap it to display the log
-![Access diagnostic log in Mergin Maps mobile app](./mobile-app-settings-diagnostic-log.jpg "Diagnostic log in Mergin Maps mobile app")
+   ![Access diagnostic log in Mergin Maps mobile app](./mobile-app-settings-diagnostic-log.jpg "Diagnostic log in Mergin Maps mobile app")
 
 3. Tap the **Send to developers** button to proceed
-![Send diagnostic log to developers](./mobile-app-send-diagnostic-log.jpg "Diagnostic log content in Mergin Maps mobile app")
+   ![Send diagnostic log to developers](./mobile-app-send-diagnostic-log.jpg "Diagnostic log content in Mergin Maps mobile app")
 
 4. Contact our support team (<MerginMapsEmail id="support" />) with your username/workspace and problem description so we can have a look into the issue. 

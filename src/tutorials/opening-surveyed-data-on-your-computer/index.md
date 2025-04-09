@@ -10,23 +10,19 @@ In this tutorial you'll learn how to transfer your project and data from mobile 
 ## Before we start
 To open the project and field data on the computer, we will need to do some setup. Before going to the next steps, please:
 - [Sign up to <MainPlatformName />](../../setup/sign-up-to-mergin-maps/#from-mergin-maps-mobile-app), as we will use <MainPlatformName /> platform to transfer the data between the mobile app and QGIS
-- [Install QGIS](../../setup/install-qgis/index.md) on your computer
+- [Install QGIS](../../setup/install-qgis/) on your computer
 - [Install the <QGISPluginName />](../../setup/install-mergin-maps-plugin-for-qgis/) and use your credential to [configure the plugin](../../setup/install-mergin-maps-plugin-for-qgis/#plugin-configuration), so that QGIS knows how to communicate with <MainPlatformName /> 
 
 ## Putting your project in the cloud
 1. Open <MobileAppName /> and navigate to the **Home** tab. Tap the button next to the project's name and select the **Upload** option.
    
    If you are logged in, the project will be uploaded to <MainPlatformName /> cloud and you can continue to the next step: [opening your project in QGIS](#locating-and-opening-your-project).
-   
-   ![Mergin Maps mobile app upload project to cloud](./mergin-maps-mobile-upload-project.jpg "Mergin Maps mobile app upload project to cloud")
-   
+   ![Mergin Maps mobile app upload project to cloud](./mergin-maps-mobile-upload-project.jpg "Mergin Maps mobile app upload project to cloud") 
    
 2. If you are not logged in, you will be asked to. Enter your <MainPlatformName /> credentials and **Sign in**.
 
-   If you don't have an account yet, create one! Tap **Sign up** to [sign up to <MainPlatformName />](../../setup/sign-up-to-mergin-maps/#from-mergin-maps-mobile-app).
-   
+   If you don't have an account yet, create one! Tap **Sign up** to [sign up to <MainPlatformName />](../../setup/sign-up-to-mergin-maps/#from-mergin-maps-mobile-app).   
    ![Mergin Maps mobile app Login page](./mergin-maps-mobile-log-in-to-mergin.jpg "Mergin Maps mobile app Login page")
-   
   
 3. Once you are logged in, **Upload** your project to the <MainPlatformName /> cloud. 
 
@@ -42,11 +38,10 @@ Now that the project is stored in <MainPlatformName /> cloud, we can open it in 
 
 1. Open QGIS on your computer
 
-2. Make sure you have already [installed](../../setup/install-mergin-maps-plugin-for-qgis/index.md) and [configured](../../setup/install-mergin-maps-plugin-for-qgis/#plugin-configuration) <QGISPluginName />
+2. Make sure you have already [installed](../../setup/install-mergin-maps-plugin-for-qgis/) and [configured](../../setup/install-mergin-maps-plugin-for-qgis/#plugin-configuration) <QGISPluginName />
    
 3. Find the <MainPlatformName /> entry in the QGIS **Browser** panel
    ![QGIS Browser Mergin Maps projects](./qgis-browser-panel.jpg "QGIS Browser Mergin Maps projects")
-
 
    Notice that the name of the current workspace (here: `my-team`) is displayed next to <MainPlatformName /> and the projects in this workspace are listed below.
       
@@ -70,6 +65,7 @@ Now that the project is stored in <MainPlatformName /> cloud, we can open it in 
    ![QGIS prompt Do you want to open project?](./qgis-open-project-file.jpg "QGIS prompt Do you want to open project?")
    
 Your survey project is now open in QGIS and you can see the data you captured in the field.
+
 ![Mergin Maps project opened in QGIS](./qgis-project-opened.jpg "Mergin Maps project opened in QGIS")
 
 :::tip
@@ -90,29 +86,31 @@ There are many ways how you can extract the data. Here we'll just cover the basi
    ![QGIS Export Save features as](./qgis-save-features-as.jpg "QGIS Export Save features as")
 
 3. **Save Vector Layers as...** dialog opens. Here you can define the export parameters:
-   * Set **Format** to ***Comma Separated Value [CSV]***
-   * Specify an output **File name**
-   * Uncheck **Add saved file to map**
+   - Set **Format** to ***Comma Separated Value [CSV]***
+   - Specify an output **File name**
+   - Uncheck **Add saved file to map**
    
-   Click **OK** to export the file. The resulting CSV file can be opened in various applications such as MS Excel or even in a common text editor.
-   
+   Click **OK** to export the file. The resulting CSV file can be opened in various applications such as MS Excel or even in a common text editor. 
    ![QGIS Export Save layer as CSV](./qgis-save-as-csv-options.jpg "QGIS Export Save layer as CSV")
+
 
 ## Locating captured photos
 **Photos** that you took as a part of your field survey are located in the <MainPlatformName /> project folder. In this case, we saved our project in `Documents\MerginMaps Projects` so the photos can be found here.
 
 ![Photos located in Mergin Maps project folder](./qgis-finding-photos.jpg "Photos located in Mergin Maps project folder")
-   
-
+ 
+  
 ## Identify features tool
 You can also use QGIS to explore the data you surveyed in the field.
+
 1. Select the Survey layer in the **Layers** panel. The layer should be highlighted.
+
 2. Select the **Identify Features** tool:
    ![QGIS Identify features in selected layer](./qgis-identify-features-tool.jpg "QGIS Identify features in selected layer")
 
 3. Click on a survey point. A form with feature's attribute should open:
    ![Attributes form in QGIS](./qgis-identify-results.jpg "Attributes form in QGIS")
-
+   
 
 ## Summary
 In this tutorial you learnt how to view a survey project you created on your mobile device with <MobileAppName /> on your desktop computer using QGIS. You also learnt how to export captured data for use in spreadsheets and how to access photos you captured in the field.

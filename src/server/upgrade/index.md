@@ -1,6 +1,6 @@
-# Upgrade
+git# Upgrade
 
-Migration guides are here to help you migrate your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink /> to the latest server version. The main Cloud <DashboardLink desc="Mergin Maps Server"/> is always migrated to latest version by <MainPlatformName /> team. Read more about server platforms in [overview article](../index.md).
+Migration guides are here to help you migrate your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink /> to the latest server version. The main Cloud <DashboardLink desc="Mergin Maps Server"/> is always migrated to latest version by <MainPlatformName /> team. Read more about server platforms in [overview article](../).
 
 ::: warning
 Migrations must be performed one by one and cannot be skipped.
@@ -20,14 +20,14 @@ Perform the migration:
 
 1. Stop your running docker containers and build the new images
    ```bash
-       $ docker compose -f docker-compose.yml down # or similarly, based on your deployment
-       # INFO: After shutdown update the docker-compose.yml file to latest release
+    $ docker compose -f docker-compose.yml down # or similarly, based on your deployment
+    # INFO: After shutdown update the docker-compose.yml file to latest release
    ```
 
 2. Start up your docker containers   
    ```bash
-       $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
-       $ docker compose --profile maps -f docker-compose.yml -d up # If you want to deploy maps stack
+    $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
+    $ docker compose --profile maps -f docker-compose.yml -d up # If you want to deploy maps stack
    ```
 
 3. Check that you are on correct versions (`ba5051218de4`, `ba5ae5972c4a`).
@@ -65,28 +65,28 @@ Get the latest <GitHubRepo id="MerginMaps/server/blob/master/docker-compose.yml"
 Perform the migration:
 
 1. Stop your running docker containers
-   ```bash
-       $ docker compose -f docker-compose.yml down # or similarly, based on your deployment
-       # INFO: After shutdown update the docker-compose.yml file to latest release
-   ```
+    ```bash
+    $ docker compose -f docker-compose.yml down # or similarly, based on your deployment
+    # INFO: After shutdown update the docker-compose.yml file to latest release
+    ```
 
 2. Double check if below environment variables are available and filled in `.prod.env` environment file. If not, add them.   
-   ```bash
-       SECURITY_EMAIL_SALT='<YOUR STRONG HASH>'
-       SECURITY_BEARER_SALT='<YOUR STRONG HASH>'
-   ```
+    ```bash
+    SECURITY_EMAIL_SALT='<YOUR STRONG HASH>'
+    SECURITY_BEARER_SALT='<YOUR STRONG HASH>'
+    ```
 
 3. Start up your docker containers
    - If you stopped the containers during step `1` with new version compose file, you need to manually stop and remove containers.
-   ```bash
-       $ docker stop merginmaps-db merginmaps-proxy merginmaps-redis merginmaps-server merginmaps-web
-       $ docker rm merginmaps-db merginmaps-proxy merginmaps-redis merginmaps-server merginmaps-web
-   ```
+    ```bash
+    $ docker stop merginmaps-db merginmaps-proxy merginmaps-redis merginmaps-server merginmaps-web
+    $ docker rm merginmaps-db merginmaps-proxy merginmaps-redis merginmaps-server merginmaps-web
+    ```
 
    - After this you can start the new containers
-   ```bash
-       $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
-   ```
+    ```bash
+    $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
+    ```
 
 4. Check that you are on correct versions (`35af0c8be41e`, `a5d4defded55`).
     ```bash
@@ -124,28 +124,28 @@ Get the latest <GitHubRepo id="MerginMaps/server/blob/master/docker-compose.yml"
 Perform the migration:
 
 1. Stop your running docker containers and build the new images
-   ```bash
-       $ docker compose -f docker-compose.yml down # or similarly, based on your deployment
-       # INFO: After shutdown update the docker-compose.yml file to latest release
-   ```
+    ```bash
+    $ docker compose -f docker-compose.yml down # or similarly, based on your deployment
+    # INFO: After shutdown update the docker-compose.yml file to latest release
+    ```
 
 2. Double check if below environment variables are available and filled in `.prod.env` environment file. If not, add them.   
-   ```bash
-       SECURITY_EMAIL_SALT='<YOUR STRONG HASH>'
-       SECURITY_BEARER_SALT='<YOUR STRONG HASH>'
-   ```
+    ```bash
+    SECURITY_EMAIL_SALT='<YOUR STRONG HASH>'
+    SECURITY_BEARER_SALT='<YOUR STRONG HASH>'
+    ```
 
 3. Start up your docker containers
    - If you stopped the containers during step `1` with new version compose file, you need to manually stop and remove containers.
-   ```bash
-       $ docker stop merginmaps-db merginmaps-proxy merginmaps-redis merginmaps-server merginmaps-web
-       $ docker rm merginmaps-db merginmaps-proxy merginmaps-redis merginmaps-server merginmaps-web
-   ```
+    ```bash
+    $ docker stop merginmaps-db merginmaps-proxy merginmaps-redis merginmaps-server merginmaps-web
+    $ docker rm merginmaps-db merginmaps-proxy merginmaps-redis merginmaps-server merginmaps-web
+    ```
 
    - After this you can start the new containers
-   ```bash
-       $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
-   ```
+    ```bash
+    $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
+    ```
 
 4. Check that you are on correct versions (`07f2185e2428`, `df5b4efdae7b`).
     ```bash
@@ -393,10 +393,10 @@ Specify its name with the following environment variable:
  - `GLOBAL_WORKSPACE=ShinyWorkspace` - name of your workspace. A good fit is the name of your company or team. This value *should not be changed* later.
 
 :::tip
-You can find all available environment variables [here](../administer/environment.md) together with a tutorial on how to set them up.
+You can find all available environment variables [here](../environment/) together with a tutorial on how to set them up.
 :::
 
-Further, you need to set a default role for people in your workspace *(learn more about our [permissions and roles system here](../../manage/permissions))*. 
+Further, you need to set a default role for people in your workspace *(learn more about our [permissions and roles system here](../../manage/permissions/))*. 
 **Pick one** of these options :
  - `GLOBAL_READ=0` everyone will have guest role (without access to any project unless explicitly granted)
  - `GLOBAL_READ=1` everyone will have reader role (they can read/download all projects in the workspace)

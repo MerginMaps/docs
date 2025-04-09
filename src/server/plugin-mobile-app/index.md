@@ -1,7 +1,7 @@
 # Using Mergin Maps Mobile App and QGIS Plugin with a Custom Server
 [[toc]]
 
-There is a default server <AppDomainNameLink /> which is configured in <QGISPluginName /> and in the <MobileAppNameShort />. However, you might want to use some custom server, e.g. when using [<MainPlatformName /> Community Edition](../index.md) or [<MainPlatformName /> Enterprise Edition](../index.md).
+There is a default server <AppDomainNameLink /> which is configured in <QGISPluginName /> and in the <MobileAppNameShort />. However, you might want to use some custom server, e.g. when using [<MainPlatformName /> Community Edition](../) or [<MainPlatformName /> Enterprise Edition](../).
 
 To do this, we need to set up the custom server in the [plugin](#custom-server-configuration-in-mergin-maps-qgis-plugin) as well as in the [mobile app](#custom-server-configuration-in-mergin-maps-mobile-app).
 

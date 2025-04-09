@@ -15,7 +15,7 @@ To link multiple photos to a single feature, we need a **unique field** to link 
 - A non-spatial table containing path to the photos (see [how to setup simple photo forms](../photos/))
 
 :::danger WARNING
-**Do not use the FID field to link these tables**. FIDs can be changed during synchronisation, which can result in having photos linked to the incorrect feature. You can learn more about synchronisation in [Behind Data Synchronisation](../../manage/synchronisation/#synchronisation). 
+**Do not use the FID field to link these tables**. FIDs can be changed during synchronisation, which can result in having photos linked to the incorrect feature. You can learn more about synchronisation in [Behind Data Synchronisation](../../manage/synchronisation/). 
 :::
 
 To set 1:N relation between these tables correctly:

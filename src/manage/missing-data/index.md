@@ -1,9 +1,9 @@
 # How to Recover Missing Data
 
-[[toc]]{ includeLevel: [2, 4] }
+[[toc]]
 
 Let's say you synchronise surveyed data from multiple devices (individual surveyors) and when you examine them, you find out there is something missing - new features that were captured in the field or changes made by one or more of your team members. 
-The reasons why you didn't get all the data can vary. For instance, the data could not be synchronised correctly because of multiple surveyors editing the same feature or synchronisation of projects with different data schema. You can read more about this topic in [Behind Data Synchronisation](../synchronisation.md).
+The reasons why you didn't get all the data can vary. For instance, the data could not be synchronised correctly because of multiple surveyors editing the same feature or synchronisation of projects with different data schema. You can read more about this topic in [Behind Data Synchronisation](../synchronisation/).
 
 Here we will try to guide you through common techniques that can help you to retrieve your data.
 
@@ -46,31 +46,45 @@ This folder is accessible only from a computer, so you might not see it in your 
 The <MobileAppNameShort /> supports iTunes file sharing. Note that iTunes doesn't allow you to browse or edit data from the app data folder, only allows you to delete or copy the data folder to another location. 
 
 You can access your data by following these steps:
+
 1. Plug iOS device to a computer
+
 2. Open `Finder` file browser
+
 3. Go to Locations and select your `<device_name>`
-![Plugged iOS device Locations iTunes](./itunes.jpg "iTunes iOS device plugged to a computer")
+   ![Plugged iOS device Locations iTunes](./itunes.jpg "iTunes iOS device plugged to a computer")
+
 4. Click on the tab named `files`  
+
 5. Select `Input` app from a list to see a data folder
-![Mergin Maps mobile app files accessed through iTunes](./itunes2.jpg "Mergin Maps mobile app files accessed through iTunes")
-6 Drag-and-drop the `INPUT` folder to another location to see the content
+   ![Mergin Maps mobile app files accessed through iTunes](./itunes2.jpg "Mergin Maps mobile app files accessed through iTunes")
+
+6. Drag-and-drop the `INPUT` folder to another location to see the content
 
 ### Manual data transfer (between iOS and Windows)
 Here are the steps to transfer the data from iPhone/iPad to a Windows PC.
 
 1. Make sure you have installed [iTunes](https://support.apple.com/en-us/HT210384)
+
 2. Sign into iTunes
+
 3. [Connect your iOS device to the PC](https://support.apple.com/en-gb/guide/iphone/iph42d9b3178/15.0/ios/15.0) and unlock the screen
+
 4. In iTunes, click on the phone icon in the toolbar
-![iTunes phone icon](./ios_win_itunes.jpg "iTunes phone icon")
+   ![iTunes phone icon](./ios_win_itunes.jpg "iTunes phone icon")
+
 5. From the left panel, select **File Sharing**
+
 6. Select **Input** in Apps tab
+
 7. Under Input Documents, select **INPUT** folder
+
 8. Press **Save...**
-![iTunes save Mergin Maps mobile app files](./ios_win_itunes_input.jpg "iTunes save Mergin Maps mobile app files")
+   ![iTunes save Mergin Maps mobile app files](./ios_win_itunes_input.jpg "iTunes save Mergin Maps mobile app files")
+
 9. Select a path to save the folder on your computer.
 
 ## Next steps
-If you were not able to solve your problem, you can contact the [support](../../misc//troubleshoot/#support) or get [diagnostic logs](../../misc/troubleshoot/#diagnostic-logs) to inspect the issues thoroughly.
+If you were not able to solve your problem, you can contact the [support](../../misc/troubleshoot/#support) or get [diagnostic logs](../../misc/troubleshoot/#diagnostic-logs) to inspect the issues thoroughly.
 
 <CommunityJoin />

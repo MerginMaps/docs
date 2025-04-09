@@ -11,8 +11,7 @@ It is not possible to change the username. If you wish to use a different userna
 
 1. Log in to <AppDomainNameLink />. 
 
-   In the upper right corner of the screen, click on your username and go to **Your profile**.
-   
+   In the upper right corner of the screen, click on your username and go to **Your profile**.  
    ![Mergin Maps profile](../dashboard/mergin-maps-dashboard-profile.jpg "Mergin Maps profile")
    
 2. Click on the **Edit account** button.
@@ -25,8 +24,7 @@ It is not possible to change the username. If you wish to use a different userna
 
 1. Log in to <AppDomainNameLink />. 
 
-   In the upper right corner of the screen, click on your username and go to **Your profile**.
-   
+   In the upper right corner of the screen, click on your username and go to **Your profile**.   
    ![Mergin Maps profile](../dashboard/mergin-maps-dashboard-profile.jpg "Mergin Maps profile")
    
 2. Click on the **Change password** button and set a new password.

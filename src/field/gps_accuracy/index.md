@@ -13,7 +13,7 @@ The colour of the **GPS** button denotes the accuracy threshold that can be set 
 Tapping the GPS button opens the [GPS info panel](../mobile-app-ui/#current-position-and-gps-info), which contains information about the horizontal and vertical accuracy, as well as number of satellites in use.
 ![GPS accuracy and GPS info in Mergin Maps mobile app](../mobile-app-ui/mobile-app-gps-info.jpg "GPS accuracy and GPS info in Mergin Maps mobile app")
 
-If you'd like to have higher accuracy, you can wait for your device to acquire a better GPS signal. For precise measurements, you may need to connect your device to an [external GPS](../external_gps.md).
+If you'd like to have higher accuracy, you can wait for your device to acquire a better GPS signal. For precise measurements, you may need to connect your device to an [external GPS](../external_gps/).
 
 When assessing the overall quality of the survey, it may be beneficial to record some [extra position variables](../../layer/position_variables/), such as type and name of the used GPS device, the horizontal and vertical accuracy or the horizontal, vertical or position dilution of precision (HDOP, VDOP, PDOP). 
 

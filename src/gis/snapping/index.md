@@ -20,7 +20,7 @@ To set up basic snapping:
 ![QGIS project properties](../qgis-project-properties.jpg "QGIS project properties")
 
 3. Navigate to the **<MainPlatformName />** tab and change the snapping settings to **Basic snapping**
-![Mergin Maps snapping options](../project_snapping.jpg "Mergin Maps snapping options")
+![Mergin Maps snapping options](../features/project_snapping.jpg "Mergin Maps snapping options")
 
 4. Apply the changes, save and sync your project. 
    

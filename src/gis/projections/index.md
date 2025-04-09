@@ -1,4 +1,4 @@
-# Projections <Badge text="Expert" type="error"/>
+# Projections <Badge text="Expert" type="danger"/>
 
 [[toc]]
 

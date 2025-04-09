@@ -6,7 +6,7 @@ The topics covered here are:
 [[toc]]
 
 ::: tip
-Previous tutorials already covered the minimum concepts for data collection so feel free to skip ahead to the [Working Collaboratively](../working-collaboratively/index.md) tutorial (and come back here later on) if you're super keen on collecting data right away.
+Previous tutorials already covered the minimum concepts for data collection so feel free to skip ahead to the [Working Collaboratively](../working-collaboratively/) tutorial (and come back here later on) if you're super keen on collecting data right away.
 :::
 
 ## Opening the project in QGIS
@@ -65,10 +65,10 @@ Seeing how the changes look like in the <MobileAppNameShort /> is easy:
    ![Successful synchronisation message](./qgis-mergin-project-sync.jpg "Successful synchronisation message")
 
 3. Open the <MobileAppNameShort /> on your mobile device
+
 4. On the **Home** tab, you should see that the `trees-and-hedges` project has *Pending changes to synchronise*.
 
    Tap on the button next to the name of the project and **Synchronise project**.
-
    ![Updated project in Mergin Maps mobile app](./merginmaps-mobile-project-with-pending-changes.jpg "Updated project in Mergin Maps mobile app")
 
 ::: tip
@@ -90,6 +90,7 @@ Labels can be useful for showing attribute data or other information directly on
    Its layer properties dialog should appear.
 
 2. Select the **Labels tab** on the left hand side
+
 3. Set the labelling mode to **Single Labels**:
    ![QGIS Labels settings in Layer properties](./qgis-symbology-labels.jpg "QGIS Labels settings in Layer properties")
 
@@ -114,6 +115,7 @@ The panel for the `trees` layer looks like the left-hand image below. We will co
    Its layer properties dialog should appear.
 
 2. Select the **Display tab** on the left hand side
+
 3. Set the **Display Name** to `species`:
    ![Display name attribute in Layer properties](./qgis-display-name.jpg "Display name attribute")
 
@@ -122,13 +124,14 @@ If you notice subtle differences in the name / spelling of the field when you se
 :::
 
 4. Set the HTML map tip to:
-```
-# fields
-condition
-```
+   ```
+   # fields
+   condition
+   ```
    ![HTML map tip in Layer properties](./qgis-html-map-tip.jpg "HTML map tip in Layer properties")
 
 5. Click **OK**
+
 6. Test out these settings in the <MobileAppNameShort /> as described in the [Trialling changes](#trialling-changes-in-mergin-maps-mobile-app) section above.
 
 ## Controlling layer visibility
@@ -179,6 +182,7 @@ Here we'll define the following map themes:
 
 ## Zoom to project extent
 If you experimented with the **Zoom to project** button in the <MobileAppNameShort /> you'll have seen that by default, it zooms to the extent of the somewhat large background map:
+
 ![Mergin Maps mobile app default map extent](../capturing-first-data/merginmaps-mobile-location-shown-on-osm.jpg "Mergin Maps mobile app default map extent")
 
 This is not very useful so we will learn how to specify the extent that this button will zoom to.
