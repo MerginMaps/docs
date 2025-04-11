@@ -1,7 +1,7 @@
 # Media Sync
 [[toc]]
 
-**Media Sync** enables to synchronise media files from <MainPlatformNameLink /> project to other storage back-ends, such as Amazon S3 or <NoSpellcheck id="MinIO" />. 
+**Media Sync** enables to synchronise media files from <MainPlatformNameLink /> project to other storage back-ends, such as Google Drive, Amazon S3 or <NoSpellcheck id="MinIO" />. 
 
 Media Sync has two sync modes: in copy mode, media files are only copied the external drive, while in the move mode, the files are copied and subsequently removed from <MainPlatformName /> project.
 
