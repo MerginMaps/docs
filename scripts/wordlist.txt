@@ -121,6 +121,7 @@ QField
 QFieldCloud
 QFieldSync
 QGIS
+qgis
 QString
 QgsField
 Qt

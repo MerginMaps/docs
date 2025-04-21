@@ -27,7 +27,7 @@ Perform the migration:
 2. Start up your docker containers   
    ```bash
     $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
-    $ docker compose --profile maps -f docker-compose.yml -d up # If you want to deploy maps stack
+    $ docker compose -f docker-compose.maps.yml -d up # If you want to deploy maps stack
    ```
 
 3. Check that you are on correct versions (`ba5051218de4`, `ba5ae5972c4a`).
