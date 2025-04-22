@@ -31,16 +31,33 @@ Make sure you follow deployment guidelines to <b>ensure any firewalls in your in
 
 Follow these steps to run a local <MainPlatformName /> instance.
 
+Locate yourself on the proper <MainPlatformName /> edition.
+```shell
+# For community edition
+cd deployment/community
+
+# For enterprise edition
+cd deployment/enterprise
+```
+
 ### Start docker containers
 
 Provided that `docker` and `docker-compose` are installed on your host, running <MainPlatformName /> stack should be as simple as running `docker-compose`. However, before doing that you would need to [configure](../environment/) your server setup via environment variables in <GitHubRepo desc=".prod.env" id="MerginMaps/server/blob/master/.prod.env" /> file. 
 
 Once configured, you can run:
 ```shell
+# For community edition
 $ mkdir -p projects # or wherever you set it to be
 $ mkdir -p mergin_db # or wherever you set it to be
-$ sudo chown -R  901:999 ./projects/
-$ sudo chmod g+s ./projects/
+$ sh ../common/set_permissions.sh projects
+$ docker-compose -f docker-compose.yml up
+
+# For enterprise edition
+$ mkdir -p data # or wherever you set it to be
+$ mkdir -p overviews # or wherever you set it to be
+$ mkdir -p mergin-db-enterprise # or wherever you set it to be
+$ sh ../common/set_permissions.sh projects
+$ sh ../common/set_permissions.sh overviews
 $ docker-compose -f docker-compose.yml up
 ```
 ​​
