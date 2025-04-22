@@ -42,7 +42,12 @@ cd deployment/enterprise
 
 ### Start docker containers
 
-Provided that `docker` and `docker-compose` are installed on your host, running <MainPlatformName /> stack should be as simple as running `docker-compose`. However, before doing that you would need to [configure](../environment/) your server setup via environment variables in <GitHubRepo desc=".prod.env" id="MerginMaps/server/blob/master/.prod.env" /> file. 
+Provided that `docker` and `docker-compose` are installed on your host, running <MainPlatformName /> stack should be as simple as running `docker-compose`. However, before doing that you would need to [configure](../environment/) your server setup via environment variables in `.prod.env` file.
+If you have not created this file yet, please do so from the provided `.env.template` file provided.
+
+```shell
+cp .env.template .prod.env
+```
 
 Once configured, you can run:
 ```shell
