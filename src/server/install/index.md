@@ -26,6 +26,7 @@ Afterwards, you can follow [this guide](./ee/) to retrieve your <EnterprisePlatf
 
 ::: warning Enable <MainPlatformName /> Telemetry
 Make sure you follow deployment guidelines to <b>ensure any firewalls in your infrastructure are configured to allow the [`call-home`](../administer/#telemetry-service) functionality to send usage data</b>.
+:::
 
 ## Deployment
 
