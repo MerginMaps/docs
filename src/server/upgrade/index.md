@@ -74,6 +74,7 @@ Perform the migration:
     ```bash
     SECURITY_EMAIL_SALT='<YOUR STRONG HASH>'
     SECURITY_BEARER_SALT='<YOUR STRONG HASH>'
+    PORT=5000
     ```
 
 3. Start up your docker containers
@@ -133,6 +134,7 @@ Perform the migration:
     ```bash
     SECURITY_EMAIL_SALT='<YOUR STRONG HASH>'
     SECURITY_BEARER_SALT='<YOUR STRONG HASH>'
+    PORT=5000
     ```
 
 3. Start up your docker containers
@@ -383,7 +385,7 @@ $ docker-compose -f docker-compose.yml stop
 $ git pull
 ```
 
- 6. Set environment variables (<GitHubRepo desc=".prod.env" id="MerginMaps/server/blob/master/.prod.env" /> file). **Important** ⚠️
+ 6. Set environment variables `.prod.env`. **Important** ⚠️
 
 <MigrationType type="CE" />
 
