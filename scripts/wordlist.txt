@@ -195,6 +195,7 @@ frontend
 gdal
 geo
 geoid
+github
 gpkg
 hotline
 html
