@@ -89,10 +89,10 @@ Now tweak deployment settings by modifying environment variables. You have to fi
 <ServerType type="EE" />
 
 WebMaps consists of three more services (`mergin-qgis`, `mergin-qgis-extractor` and `mergin-qgis-nginx`) that you can run alongside <MainPlatformName /> main stack or independently in a new machine. 
-Just make sure related `MAPS_*` [environment variables](../environment/#WebMaps) are set, namely `MAPS_ENABLED` (`True` by default).
+Just make sure `MAPS_ENABLED` [environment variable](../environment/) is set to `True` (`False` by default) and `VECTOR_TILES_URL` as well `VECTOR_TILES_STYLE_URL` are set correctly to your target tile service.
 For convenience this stack is provided on a separate docker compose file, `docker-compose.maps.yml`.
 
-To run the webmaps, simply run this command line:
+To run the webmaps stack, simply run this command line:
 ```shell
 $ docker-compose -f docker-compose.maps.yml -d up
 ```

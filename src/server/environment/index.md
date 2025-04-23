@@ -116,7 +116,7 @@ Other settings related to data management.
 | `DELETED_PROJECT_EXPIRATION` | integer  | `7`                                   | Lifetime in days for deleted projects. Expired projects are removed permanently without possibility to restore afterwards.                                                                                |
 | `PROJECT_ACCESS_REQUEST`     | integer  | `604800`                              | Lifetime of active project access request in seconds.                                                                                                                                                     |
 | `TEMP_EXPIRATION`            | integer  | `7`                                   | Time in days after files in a temporary folder are permanently deleted.                                                                                                                                   |
-​
+
 
 #### Celery asynchronous tasks
 Mergin Maps is using Celery and Redis to perform asynchronous tasks or doing regular jobs.
@@ -129,11 +129,8 @@ Mergin Maps is using Celery and Redis to perform asynchronous tasks or doing reg
 #### WebMaps 
 <ServerType type="EE" />
 
-| Variable name            | Type     | Default                                                 | Description                    |
-|--------------------------|----------|---------------------------------------------------------|--------------------------------|
-| `MAPS_ENABLED`           | boolean  | `false`                                                 | Flag to enable webmaps         |
-| `OVERVIEW_DATA`          | string   | `/data/overviews`                                       | Folder to store overviews data |
-| `WMTS_SERVER_URL`        | string   | `http://mergin-qgis-nginx:80`                           | URL to qgis-server WMTS server |
-| `QGIS_EXTRACTOR_API_URL` | string   | `http://mergin-qgis-extractor:8000`                     | URL for QGIS Extractor service |
-| `VECTOR_TILES_URL`       | string   | `https://tiles.merginmaps.com`                          | URL to custom tile service     |
-| `VECTOR_TILES_STYLE_URL` | string   | `https://tiles.dev.merginmaps.com/styles/default.json`  | URL to custom tile style JSON  |
+| Variable name            | Type     | Default                       | Description                    |
+|--------------------------|----------|-------------------------------|--------------------------------|
+| `MAPS_ENABLED`           | boolean  | `false`                       | Flag to enable webmaps         |
+| `VECTOR_TILES_URL`       | string   | ``                            | URL to custom tile service     |
+| `VECTOR_TILES_STYLE_URL` | string   | ``                            | URL to custom tile style JSON  |
