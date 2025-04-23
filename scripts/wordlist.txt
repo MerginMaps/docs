@@ -121,6 +121,7 @@ QField
 QFieldCloud
 QFieldSync
 QGIS
+qgis
 QString
 QgsField
 Qt
@@ -194,6 +195,7 @@ frontend
 gdal
 geo
 geoid
+github
 gpkg
 hotline
 html
@@ -283,6 +285,7 @@ xcf
 xyz
 yml
 webmaps
+WebMaps
 webp
 workspaces
 www

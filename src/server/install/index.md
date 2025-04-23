@@ -26,22 +26,48 @@ Afterwards, you can follow [this guide](./ee/) to retrieve your <EnterprisePlatf
 
 ::: warning Enable <MainPlatformName /> Telemetry
 Make sure you follow deployment guidelines to <b>ensure any firewalls in your infrastructure are configured to allow the [`call-home`](../administer/#telemetry-service) functionality to send usage data</b>.
+:::
 
 ## Deployment
 
 Follow these steps to run a local <MainPlatformName /> instance.
 
+Clone the <MainPlatformName /> github repository locally or download <GitHubRepo id="MerginMaps/server/blob/master/deployment/" desc="deployment folder" />.
+```bash
+$ git clone git@github.com:MerginMaps/server.git
+```
+
+Locate yourself on the proper <MainPlatformName /> edition.
+```shell
+# For community edition
+cd deployment/community
+
+# For enterprise edition
+cd deployment/enterprise
+```
+
 ### Start docker containers
 
-Provided that `docker` and `docker-compose` are installed on your host, running <MainPlatformName /> stack should be as simple as running `docker-compose`. However, before doing that you would need to [configure](../environment/) your server setup via environment variables in <GitHubRepo desc=".prod.env" id="MerginMaps/server/blob/master/.prod.env" /> file. 
+Provided that `docker` and `docker-compose` are installed on your host, running <MainPlatformName /> stack should be as simple as running `docker-compose`. However, before doing that you would need to [configure](../environment/) your server setup via environment variables in `.prod.env` file.
+If you have not created this file yet, please do so from the provided `.env.template` file provided.
+
+```shell
+cp .env.template .prod.env
+```
 
 Once configured, you can run:
 ```shell
-$ mkdir -p projects # or wherever you set it to be
+# For community edition
 $ mkdir -p mergin_db # or wherever you set it to be
-$ sudo chown -R  901:999 ./projects/
-$ sudo chmod g+s ./projects/
-$ docker-compose -f docker-compose.yml up
+$ sh ../common/set_permissions.sh projects
+$ docker-compose -f docker-compose.yml up -d
+
+# For enterprise edition
+$ mkdir -p mergin-db-enterprise # or wherever you set it to be
+$ sh ../common/set_permissions.sh data
+$ sh ../common/set_permissions.sh map_data
+$ docker-compose -f docker-compose.yml up -d
+$ docker-compose -f docker-compose.maps.yml up -d # Run maps stack separately
 ```
 ​​
 ### Initialise database

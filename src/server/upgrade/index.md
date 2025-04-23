@@ -11,6 +11,56 @@ Make sure to always back up your database data before doing a migration.
 [[toc]]
 
 
+## Migration guide from 2025.2.x to 2025.3.x
+
+<MigrationType type="EE" />
+
+::: tip Changes on deployment behaviour
+Release 2025.3.x brings some changes on <MainPlatformName /> docker compose orchestration deployment procedure.
+:::
+
+Get the latest <GitHubRepo id="MerginMaps/server/blob/master/deployment/enterprise/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2025.3.0`.
+Perform the migration:
+
+1. Stop your running docker containers
+   ```bash
+    $ docker compose -f docker-compose.yml down # or similarly, based on your previous deployment
+    # INFO: After shutdown update the docker-compose.yml file to latest release
+   ```
+2. Please clone the <GitHubRepo id="MerginMaps/server/blob/master/" desc="server repository" /> or download <GitHubRepo id="MerginMaps/server/blob/master/deployment/" desc="deployment folder" />
+   ```bash    
+    $ cd server/deployment/enterprise
+   ```
+3. If you plan to use the new webmaps stacks, adapt your existing `.prod.env` and `docker-compose.yml` files. Move/copy them to the `enterprise` deployment folder  
+   ```bash
+    $ cp /some/path/.prod.env . # assuming you are located in `server/deployment/enterprise`
+    $ cp /some/path/docker-compose.yml . # assuming you are located in `server/deployment/enterprise`
+   ```
+4. Start up your docker containers
+   ```bash
+    $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
+    $ docker compose -f docker-compose.maps.yml -d up # If you want to deploy webmaps stack
+   ```
+5. Check that you are on correct versions (`ba5051218de4`, `ba5ae5972c4a`).
+    ```bash
+    $ docker exec merginmaps-server flask db current
+    INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+    INFO  [alembic.runtime.migration] Will assume transactional DDL.
+    ba5051218de4 (head)
+    ba5ae5972c4a (head)
+    ```
+
+   - If you do not see the version numbers at all, run the following commands:
+    ```bash
+    $ docker exec merginmaps-server flask db stamp ba5051218de4
+    $ docker exec merginmaps-server flask db stamp ba5ae5972c4a
+    ```
+6. Run the database migration:
+    ```bash
+    $ docker exec merginmaps-server flask db upgrade community@5ad13be6f7ef
+    $ docker exec merginmaps-server flask db upgrade enterprise@819e6b20ee93
+    ```
+
 ## Migration guide from 2024.2.x to 2025.2.x (CE)
 
 ::: tip Before you upgrade!
@@ -21,7 +71,7 @@ Previous individual `server` container is replaced by 3 service dedicated contai
 
 <MigrationType type="CE" />
 
-Get the latest <GitHubRepo id="MerginMaps/server/blob/master/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2025.2.2`.
+Get the latest <GitHubRepo id="MerginMaps/server/blob/master/deployment/community/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2025.2.2`.
 Perform the migration:
 
 1. Stop your running docker containers
@@ -34,6 +84,7 @@ Perform the migration:
     ```bash
     SECURITY_EMAIL_SALT='<YOUR STRONG HASH>'
     SECURITY_BEARER_SALT='<YOUR STRONG HASH>'
+    PORT=5000
     ```
 
 3. Start up your docker containers
@@ -80,7 +131,7 @@ Previous individual `server` container is replaced by 3 service dedicated contai
 
 <MigrationType type="EE" />
 
-Get the latest <GitHubRepo id="MerginMaps/server/blob/master/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2025.2.0`.
+Get the latest <GitHubRepo id="MerginMaps/server/blob/master/deployment/enterprise/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2025.2.0`.
 Perform the migration:
 
 1. Stop your running docker containers and build the new images
@@ -93,6 +144,7 @@ Perform the migration:
     ```bash
     SECURITY_EMAIL_SALT='<YOUR STRONG HASH>'
     SECURITY_BEARER_SALT='<YOUR STRONG HASH>'
+    PORT=5000
     ```
 
 3. Start up your docker containers
@@ -131,7 +183,7 @@ Perform the migration:
 
 ## Migration guide from 2024.3.x to 2024.4.x
 
-Get the latest <GitHubRepo id="MerginMaps/server/blob/master/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2024.4.0`.
+Get the latest <GitHubRepo id="MerginMaps/server/blob/master/deployment/enterprise/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2024.4.0`.
 Perform the migration:
 
 <MigrationType type="EE" />
@@ -163,7 +215,7 @@ Perform the migration:
 
 ## Migration guide from 2024.2.x to 2024.3.x
 
-Get the latest <GitHubRepo id="MerginMaps/server/blob/master/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2024.3.0`.
+Get the latest <GitHubRepo id="MerginMaps/server/blob/master/deployment/enterprise/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2024.3.0`.
 Perform the migration:
 
 <MigrationType type="EE" />
@@ -194,7 +246,7 @@ Perform the migration:
 
 ## Migration guide from 2023.6.1 to 2024.2.x (CE)
 
-Get the latest <GitHubRepo id="MerginMaps/server/blob/master/docker-compose.yml" desc="docker-compose file" />  or update docker images manually.
+Get the latest <GitHubRepo id="MerginMaps/server/blob/master/deployment/community/docker-compose.yml" desc="docker-compose file" />  or update docker images manually.
 
 <MigrationType type="CE" />
 Update image to `2024.2.2` and perform the migration:
@@ -259,7 +311,7 @@ Update image to `2024.2.1` and perform the migration:
 
 -----
 
-Get the latest <GitHubRepo id="MerginMaps/server/blob/master/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2023.6.1`.
+Get the latest <GitHubRepo id="MerginMaps/server/blob/master/deployment/community/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2023.6.1`.
 Perform the migration:
 
 <MigrationType type="CE" />
@@ -343,7 +395,7 @@ $ docker-compose -f docker-compose.yml stop
 $ git pull
 ```
 
- 6. Set environment variables (<GitHubRepo desc=".prod.env" id="MerginMaps/server/blob/master/.prod.env" /> file). **Important** ⚠️
+ 6. Set environment variables `.prod.env`. **Important** ⚠️
 
 <MigrationType type="CE" />
 

@@ -8,7 +8,7 @@ Further security enhancements should be implemented by experts in accordance to 
 :::
 For security and privacy reasons <MainPlatformName /> deployments should enable HTTPS secured connection via certificate file.
 
-We provide a template configuration file <GitHubRepo id="MerginMaps/server/blob/master/ssl-proxy.conf" desc="ssl-proxy.conf" />as base for your configuration.
+We provide a template configuration file <GitHubRepo id="MerginMaps/server/blob/master/deployment/common/ssl-proxy.conf" desc="ssl-proxy.conf" />as base for your configuration.
 
 Let's have a quick look at the main sections:
 
