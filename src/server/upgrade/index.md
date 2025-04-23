@@ -28,9 +28,8 @@ Perform the migration:
     $ docker compose -f docker-compose.yml down # or similarly, based on your previous deployment
     # INFO: After shutdown update the docker-compose.yml file to latest release
    ```
-2. If you didn't clone the <MainPlatformName /> github repository, do it now and locate yourself under `deployment/enterprise` folder
-   ```bash
-    $ git clone git@github.com:MerginMaps/server.git # If you haven't cloned the repo yet
+2. Please clone the <GitHubRepo id="MerginMaps/server/blob/master/" desc="server repository" /> or download <GitHubRepo id="MerginMaps/server/blob/master/deployment/" desc="deployment folder" />
+   ```bash    
     $ cd server/deployment/enterprise
    ```
 3. If you plan to use the new webmaps stacks, adapt your existing `.prod.env` and `docker-compose.yml` files. Move/copy them to the `enterprise` deployment folder  

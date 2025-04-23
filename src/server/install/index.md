@@ -31,7 +31,7 @@ Make sure you follow deployment guidelines to <b>ensure any firewalls in your in
 
 Follow these steps to run a local <MainPlatformName /> instance.
 
-Clone the <MainPlatformName /> github repo locally
+Clone the <MainPlatformName /> github repository locally
 ```bash
     $ git clone git@github.com:MerginMaps/server.git
     $ cd server
