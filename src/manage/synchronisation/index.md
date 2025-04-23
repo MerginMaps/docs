@@ -58,7 +58,6 @@ To see local changes:
 2. **Changes Viewer** opens. The colour-coded changes are listed in the table and shown in the map. Inserts are green, edits orange and deletions red.
 
    If you want to zoom to specific changes, select them in the table and use **Zoom to Selection**.
-   
    ![Mergin Maps QGIS plugin changes viewer](./plugin-changes-viewer.jpg "Mergin Maps QGIS plugin changes viewer")
 
 3. Changes can be added to the QGIS project as a new layer. Click **Add to project** and choose one of the options:

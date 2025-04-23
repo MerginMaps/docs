@@ -17,7 +17,7 @@ Use GitHub Pull Requests to propose changes, we will review and merge your chang
 - Check official [vuepress documentation](https://vuepress.vuejs.org/)
 - Check the [Mergin Maps Documentation Guidelines](https://merginmaps.com/docs/misc/write-docs/)
 
-<div><img align="left" width="45" height="45" src="https://raw.githubusercontent.com/MerginMaps/docs/main/src/.vuepress/public/slack.svg"><a href="https://merginmaps.com/community/join">Join our community chat</a><br/>and ask questions!</div>
+<div><img align="left" width="45" height="45" src="https://raw.githubusercontent.com/MerginMaps/docs/main/src/public/slack.svg"><a href="https://merginmaps.com/community/join">Join our community chat</a><br/>and ask questions!</div>
 
 # Development
 
@@ -49,6 +49,8 @@ You can also spin-up a node Docker container using the provided compose file
 docker compose up mm-docs
 ```
 
+The minimum required version of Node.js is 18.
+
 ## Translations
 
 At the moment we do not support translations, see https://github.com/MerginMaps/docs/issues/133
@@ -64,20 +66,6 @@ yarn build
 ```
 
 and see the result in `dist` folder
-
-### Error for nodejs 17
-
-If you get `opensslErrorStack: [ 'error:03000086:digital envelope routines::initialization error' ]`, run
- ```bash
- export NODE_OPTIONS=--openssl-legacy-provider
- ```
- 
- or on Windows
- ```bash
- set NODE_OPTIONS=--openssl-legacy-provider
- ```
-  
- or downgrade `nodejs` to 16 or less. More here: https://github.com/webpack/webpack/issues/14532
 
 # License
 

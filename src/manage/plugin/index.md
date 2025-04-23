@@ -3,7 +3,7 @@
 
 The <QGISPluginName /> allows you to work with your <MainPlatformNameLink /> projects in QGIS, whether it's downloading the project to your computer, making changes in the project, seeing the project's status or synchronising changes to the cloud. 
 
-To get started, you will need to [install and configure the plugin](../../setup/install-mergin-maps-plugin-for-qgis/index.md). 
+To get started, you will need to [install and configure the plugin](../../setup/install-mergin-maps-plugin-for-qgis/). 
 
 Once installed, plugin's entries will be added to the QGIS toolbar panel, Browser panel, Project properties and to the Processing toolbox.
 
@@ -13,9 +13,11 @@ To ensure you can use the latest improvements, don't forget to [upgrade the plug
 
 ## Mergin Maps toolbar in QGIS
 The <MainPlatformName /> toolbar is added to the QGIS toolbars panel after installation.
+
 ![Mergin Maps Plugin Toolbar in QGIS](../../setup/install-mergin-maps-plugin-for-qgis/mergin-toolbar.jpg "Mergin Maps Plugin Toolbar in QGIS")
 
 If you don't see <MainPlatformName /> toolbar, make sure it is enabled in QGIS toolbars panel
+
 ![Enabling Mergin Maps plugin in QGIS toolbars panel](./enable-plugin.gif "Enabling Mergin Maps plugin in QGIS toolbars panel")
 
 The toolbar contains following buttons:
@@ -34,12 +36,16 @@ The toolbar contains following buttons:
   ![Synchronise changes button](./plugin-toolbar-sync.jpg "Synchronise changes button")
   ![Mergin Maps project status with pending changes](./plugin-project-status.jpg "Mergin Maps project status with pending changes")
 
+- **Project history** to inspect [project history and versions](../project-history/)
+  ![Project history button](./plugin-toolbar-project-history.jpg "Project history button")
+  ![Project history changes viewer](./plugin-history-viewer.jpg "Project history changes viewer")
 
 ## Mergin Maps plugin in QGIS Browser
 
 Once you have installed the <QGISPluginNameShort /> and configured it with your <MainPlatformNameLink /> credentials, you should be able to see it in your QGIS Browser panel. 
 
 The name of the current [workspace](../workspaces/) is displayed in the square brackets (here: `sarah`) and available projects are listed underneath.
+
 ![List of Mergin Maps projects in QGIS Browser](./plugin-browser-projects.jpg "List of Mergin Maps projects in QGIS Browser")
 
 Right-click on the workspace name to easily access options to [configure the plugin](../../setup/install-mergin-maps-plugin-for-qgis/#plugin-configuration), refresh, [create new project](../create-project/#create-a-project-in-qgis), find a project in your workspace, [switch workspace](../workspaces/#switch-workspaces-in-qgis) or [explore public projects](#exploring-public-projects).
@@ -92,6 +98,7 @@ Some settings of your [<MainPlatformName /> project](../project/) can be done th
 Processing is a core plugin of QGIS. By installing <QGISPluginName />, <MainPlatformName /> tools are added to the  <QGISHelp ver="latest" link="user_manual//processing/intro.html" text="Processing Toolbox" />.
 
 Use the **Toolbox** icon in the toolbar panel to display **Processing Toolbox** in QGIS.
+
 ![Mergin Maps tools in QGIS processing toolbox](./plugin-processing.jpg "Mergin Maps tools in QGIS processing toolbox")
 
 ### Create diff (Processing toolbox)
@@ -113,7 +120,7 @@ Use the **Toolbox** icon in the toolbar panel to display **Processing Toolbox** 
 
 2. Double click the **Create report** tool. 
    
-   Fill in the parameters in the dialog window. If you want to get the report for a specified range of [versions](../project-details/), define also the start and end version. 
+   Fill in the parameters in the dialog window. If you want to get the report for a specified range of [versions](../project-history/), define also the start and end version. 
 
    Click **Run**.
    ![Create report tool dialog](./plugin-create-report.jpg "Create report tool dialog")
@@ -141,4 +148,5 @@ Local changes of a specific layer can also be extracted using the **Extract loca
 - **<MainPlatformName />** is a shortcut to <AppDomainNameLink />
 - **Configure <MainPlatformName /> plugin** can be used to [configure plugin](../../setup/install-mergin-maps-plugin-for-qgis/#plugin-configuration) to connect to <MainPlatformName /> or [a custom server](../../server/plugin-mobile-app/)
 - **Configure DB sync** can help you generate a initial configuration file for [DB sync](../../dev/dbsync/)
+
 ![Mergin Maps in QGIS Plugins menu bar](./plugins-menu-bar.jpg "Mergin Maps in QGIS Plugins menu bar")

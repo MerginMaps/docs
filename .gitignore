@@ -19,3 +19,6 @@ git-output.txt
 .vscode
 *-snippet.txt
 redirect_test.txt
+
+src/.vitepress/cache
+src/.vitepress/dist

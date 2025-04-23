@@ -11,6 +11,7 @@ Use **Dashboard** in the left panel to go back to the homepage
 
 ## Projects
 The **Projects** tab in the left panel displays the overview of the projects that are available to you in this workspace.
+
 ![Mergin Maps dashboard projects tab](./mergin-maps-dashboard-projects.jpg "Mergin Maps dashboard projects tab")
 
 Here, you can:
@@ -22,12 +23,14 @@ Here, you can:
 When you click on a project, you will see the overview of its content. Files can simply be **uploaded** to the project using drag and drop. 
 
 In the right upper corner, you will find buttons to **download** and [**clone**](../create-project/#clone-an-existing-project-through-mergin-maps-dashboard) the project.
+
 ![Mergin Maps dashboard project details](./mergin-maps-project-details.jpg "Mergin Maps dashboard project details")
 
 ### Project files
 In **Files**, you can see the list of all files associated with the project. 
 
 Click on a file to see when it was modified, its size, to download or delete it.
+
 ![Detail of a file in Mergin Maps project](./mergin-maps-dashboard-file-detail.jpg "Detail of a file in Mergin Maps project")
 
 ### Webmaps
@@ -39,12 +42,14 @@ More details about this functionality can be found in the [Webmaps](../dashboard
 
 ### History
 The **History** tab contains an overview of available project versions that can be also downloaded to your computer.
+
 ![Project history in Mergin Maps dashboard](./mergin-maps-dashboard-project-history.jpg "Project history in Mergin Maps dashboard")
 
 You can click on a specific version to see more details.
+
 ![Project version details in Mergin Maps dashboard](./mergin-maps-dashboard-project-history-version.jpg "Project version details in Mergin Maps dashboard")
 
-You can learn more about project history and how to revert to an older version in [Project History and Versions](../project-details/).
+You can learn more about project history and how to revert to an older version in [Project History and Versions](../project-history/).
 
 ### Collaborators
 The **Collaborators** tab provides the list of users who have access to the project as well as pending invitations. You can use the **Share** button to invite more people to contribute to your project. 
@@ -95,6 +100,7 @@ In the **Settings** tab, you will find information about the current workspace.
 
 ## User profile
 **Your profile** can be accessed by clicking on the user name in the upper right corner.
+
 ![Mergin Maps dashboard user profile](./mergin-maps-dashboard-profile.jpg "Mergin Maps dashboard user profile") 
 
 Here you can edit your account details (such as name or e-mail address), change password, manage notifications about workspace activity and close your account.
@@ -103,9 +109,10 @@ Here you can edit your account details (such as name or e-mail address), change 
 
 ## Manage workspaces
 Click on the user name in the upper right corner and click on **Manage workspaces** to see the overview of workspaces to which you have access as a guest, member or owner. 
+
 ![Mergin Maps dashboard manage workspaces](./mergin-maps-dashboard-manage-workspaces.jpg "Mergin Maps dashboard manage workspaces")
 
 Here you can [**create a new workspace**](../workspaces/#how-to-create-a-new-workspace), leave a workspace and accept/decline invitations to other users' workspaces.
-![Mergin Maps web workspaces overview](./mergin-maps-dashboard-workspaces.jpg "Mergin Maps web workspaces overview")
 
+![Mergin Maps web workspaces overview](./mergin-maps-dashboard-workspaces.jpg "Mergin Maps web workspaces overview")
 

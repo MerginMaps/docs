@@ -24,12 +24,12 @@ The ecosystem consist of various components:
  
 ## Get started 
 
-- [Capturing Your First Field Data](./tutorials/capturing-first-data/index.md)
-- [Opening Surveyed Data on Your Computer](./tutorials/opening-surveyed-data-on-your-computer/index.md)
-- [Creating a Project in QGIS](./tutorials/creating-a-project-in-qgis/index.md)
-- [Using <MobileAppName />](./tutorials/mobile/index.md)
-- [Further Project Customisation](./tutorials/further-project-customisation/index.md)
-- [Working Collaboratively](./tutorials/working-collaboratively/index.md)
+- [Capturing Your First Field Data](./tutorials/capturing-first-data/)
+- [Opening Surveyed Data on Your Computer](./tutorials/opening-surveyed-data-on-your-computer/)
+- [Creating a Project in QGIS](./tutorials/creating-a-project-in-qgis/)
+- [Using <MobileAppName />](./tutorials/mobile/)
+- [Further Project Customisation](./tutorials/further-project-customisation/)
+- [Working Collaboratively](./tutorials/working-collaboratively/)
 
 ## Install & Sign Up
 - [How to Install <MobileAppName />](./setup/install-mobile-app/)
@@ -52,12 +52,12 @@ The ecosystem consist of various components:
 - [<QGISPluginName /> Overview](./manage/plugin/)
 - [Mergin Maps Dashboard](./manage/dashboard/)
 - [Webmaps](./manage/dashboard-maps/)
-- [Project History and Versions](./manage/project-details/)
+- [Project History and Versions](./manage/project-history/)
 - [Selective Synchronisation](./manage/selective_sync/)
 
 ## Setup GIS Project
 - [QGIS Project Preparation](./gis/features/)
-- [Searching for Values in Attribute Fields](./gis/search_data/)
+- [Sorting and Search Setup](./gis/search_data/)
 - [Background Maps](./gis/settingup_background_map/)
 - [Map Themes](./gis/setup_themes/)
 - [How to Set Photo Names Format](./gis/photo-names/)
@@ -105,18 +105,21 @@ The ecosystem consist of various components:
 ## Custom Server
 - [Overview](./server/)
 - [Install](./server/install/)
+- [Security](./server/security/)
 - [Upgrade](./server/upgrade/)
 - [Administer](./server/administer/)
 - [Troubleshoot Custom Servers](./server/troubleshoot/)
+- [Administration Panel](./server/dashboard/)
 - [Using Mergin Maps Mobile App and QGIS Plugin with a Custom Server](./server/plugin-mobile-app/)
 
 ## Migrate
 - [From QField](./migrate/qfield/)
 - [From ArcGIS](./migrate/arcgis/)
+- [From Fulcrum](./migrate/fulcrumapp/)
 
 ## Support & Legal
 - [Licensing](./misc/licensing/)
 - [Troubleshoot](./misc/troubleshoot/)
 - [Contribute](./misc/contribute/)
-- [Write Documentation](./misc/write-docs/index.md)
+- [Write Documentation](./misc/write-docs/)
 

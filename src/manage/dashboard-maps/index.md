@@ -29,7 +29,7 @@ The extent of webmaps is defined in QGIS in the **Project Properties**.
 
 When displaying maps on the <DashboardShortLink />, <MainPlatformName /> uses primarily the [project full extent](../../gis/features/#project-extent) defined in the **View Settings** tab.
 
-![QGIS set project extent](../../gis/qgis-project-extent.jpg "QGIS set project extent")
+![QGIS set project extent](../../gis/features/qgis-project-extent.jpg "QGIS set project extent")
 
 If this parameter is not defined, the map extent will be set as the *Advertised extent* from the **QGIS Server** tab. 
 

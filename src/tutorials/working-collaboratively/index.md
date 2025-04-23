@@ -1,6 +1,6 @@
 # Working Collaboratively
 
-<MainPlatformNameLink /> makes working collaboratively safe and easy. 
+The <MainPlatformNameLink /> platform makes working collaboratively safe and easy.
 
 In this tutorial you'll learn a few different ways of sharing your project with your colleagues:
 [[toc]]
@@ -73,7 +73,7 @@ If you wish to share a project with more than a handful of users, this method ma
 This tutorial introduced basic ways of sharing your project. Whether you use <MainPlatformNameLink /> to share project with a few friends or collaborate on it with a larger group of coworkers, we recommend to get familiar with the basics about permissions, synchronisation and project management:
 - in [Permissions](../../manage/permissions/) you can learn more about the level of access you can provide to other users
 - [Behind Data Synchronisation](../../manage/synchronisation/) explains the synchronisation process and what happens when multiple users do the field survey in the same time. There is also an option to exclude some files from syncing by using [Selective Synchronisation](../../manage/selective_sync/).
-- [Project History and Versions](../../manage/project-details/) can help you see what was changed, by whom and when
+- [Project History and Versions](../../manage/project-history/) can help you see what was changed, by whom and when
 - useful guides:
    - [How to Share, Transfer or Delete Projects](../../manage/project-advanced/#how-to-share-transfer-or-delete-projects) 
    - [How to Deploy Revised Projects](../../manage/deploy-new-project/)
