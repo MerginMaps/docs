@@ -131,6 +131,6 @@ Mergin Maps is using Celery and Redis to perform asynchronous tasks or doing reg
 
 | Variable name            | Type     | Default                       | Description                    |
 |--------------------------|----------|-------------------------------|--------------------------------|
-| `MAPS_ENABLED`           | boolean  | `false`                       | Flag to enable webmaps         |
-| `VECTOR_TILES_URL`       | string   | ``                            | URL to custom tile service     |
-| `VECTOR_TILES_STYLE_URL` | string   | ``                            | URL to custom tile style JSON  |
+| `MAPS_ENABLED`           | boolean  | `true`                       | Flag to enable webmaps         |
+| `VECTOR_TILES_URL`       | string   | `https://tiles-ee.merginmaps.com/data/default/{z}/{x}/{y}.pbf`                            | URL to vector tiles which are used as basemap layer in webmaps |
+| `VECTOR_TILES_STYLE_URL` | string   | `https://tiles-ee.merginmaps.com/styles/default.json`                            | URL to vector tiles style |

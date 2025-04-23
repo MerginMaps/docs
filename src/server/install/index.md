@@ -31,11 +31,10 @@ Make sure you follow deployment guidelines to <b>ensure any firewalls in your in
 
 Follow these steps to run a local <MainPlatformName /> instance.
 
-Clone the <MainPlatformName /> github repository locally
+Clone the <MainPlatformName /> github repository locally or download <GitHubRepo id="MerginMaps/server/blob/master/deployment/" desc="deployment folder" />.
 ```bash
-    $ git clone git@github.com:MerginMaps/server.git
-    $ cd server
-   ```
+$ git clone git@github.com:MerginMaps/server.git
+```
 
 Locate yourself on the proper <MainPlatformName /> edition.
 ```shell
@@ -58,18 +57,16 @@ cp .env.template .prod.env
 Once configured, you can run:
 ```shell
 # For community edition
-$ mkdir -p projects # or wherever you set it to be
 $ mkdir -p mergin_db # or wherever you set it to be
 $ sh ../common/set_permissions.sh projects
-$ docker-compose -f docker-compose.yml up
+$ docker-compose -f docker-compose.yml up -d
 
 # For enterprise edition
-$ mkdir -p data # or wherever you set it to be
-$ mkdir -p overviews # or wherever you set it to be
 $ mkdir -p mergin-db-enterprise # or wherever you set it to be
-$ sh ../common/set_permissions.sh projects
-$ sh ../common/set_permissions.sh overviews
-$ docker-compose -f docker-compose.yml up
+$ sh ../common/set_permissions.sh data
+$ sh ../common/set_permissions.sh map_data
+$ docker-compose -f docker-compose.yml up -d
+$ docker-compose -f docker-compose.maps.yml up -d # Run maps stack separately
 ```
 ​​
 ### Initialise database
@@ -90,18 +87,6 @@ $ docker exec merginmaps-server flask user create <username> <password> --is-adm
 ### Setup environment
 ​
 Now tweak deployment settings by modifying environment variables. You have to fix all variables marked as required in this list of [environment variables](../environment/). Some of the most common issues with custom deployments are listed in the [troubleshoot](../troubleshoot/) section.
-
-### Start WebMaps Stack
-<ServerType type="EE" />
-
-WebMaps consists of three more services (`mergin-qgis`, `mergin-qgis-extractor` and `mergin-qgis-nginx`) that you can run alongside <MainPlatformName /> main stack or independently in a new machine. 
-Just make sure `MAPS_ENABLED` [environment variable](../environment/) is set to `True` (`False` by default) and `VECTOR_TILES_URL` as well `VECTOR_TILES_STYLE_URL` are set correctly to your target tile service.
-For convenience this stack is provided on a separate docker compose file, `docker-compose.maps.yml`.
-
-To run the webmaps stack, simply run this command line:
-```shell
-$ docker-compose -f docker-compose.maps.yml -d up
-```
 
 ### Test deployment
 
