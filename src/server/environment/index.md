@@ -1,8 +1,19 @@
+---
+prev:
+  text: 'Administer'
+  link: '../administer/'
+
+next:
+  text: 'Administration Panel'
+  link: '../dashboard/'
+---
+
 # Configure environment
+
 
 There are several application settings which can be changed via <GitHubRepo desc="enterprise edition config variables" id="MerginMaps/server/blob/master/deployment/enterprise/.env.template" /> or <GitHubRepo desc="community edition config variables" id="MerginMaps/server/blob/master/deployment/enterprise/.env.template" />. Some of them have defaults and some of them need to be modified, particularly those with required placeholders (marked with ⭐️ below).
 ​
-#### Server basics
+## Server basics
 Variables marked with star ⭐️ need to be modified for production use.
 
 | Variable name            | Type      | Default   | Description                                                                                                                                 |
@@ -12,7 +23,7 @@ Variables marked with star ⭐️ need to be modified for production use.
 | `CONTACT_EMAIL`         | string    |     ``      | Email contact for application administrator.                                                                                                |
 | `SERVICE_ID`             | string    |           | Deployment UUID. Auto-generated on the first run.                                                                                           |
 ​
-#### Security settings (important for production use)🛡️
+## Security settings (important for production use)🛡️
 Security settings are important for production use.
 
 | Variable name            | Type      | Default   | Description |
@@ -25,7 +36,7 @@ Security settings are important for production use.
 | `WTF_CSRF_ENABLED`       | Boolean   |  `true`   | Enable CSRF protection. It is strongly recommended to have this on. |
 | `WTF_CSRF_TIME_LIMIT`    | integer   |  `86400`  | Lifetime of CSRF token in seconds. When expired, users need to refresh it. |
 ​
-#### Database settings
+## Database settings
 Mergin Maps uses PostgreSQL database to store its data.
 
 | Variable name             | Type      | Default   | Description |
@@ -41,7 +52,7 @@ Mergin Maps uses PostgreSQL database to store its data.
 | `DB_USER` ⭐️              | string    |`postgres` | PostgreSQL user to connect to <MainPlatformName /> database.  |
 ​
 
-#### User management
+## User management
 Settings for managing users.
 <ServerType type="EE" />
 
@@ -50,7 +61,7 @@ Settings for managing users.
 | `USER_SELF_REGISTRATION`            | Boolean | `true`     | Users can register themselves. If disabled, they must be invited or registered by superuser.  |
 | `ENABLE_SUPERADMIN_ASSIGNMENT` | Boolean | `true`     | If set to false, you will not be able to assign super admin role to user from admin panel. |
 
-#### Permission management 
+## Permission management 
 <ServerType type="CE" />
 To ease the process of permission (user) management, you can set the following global variables that apply to all registered users.
 
@@ -61,7 +72,7 @@ To ease the process of permission (user) management, you can set the following g
 | `GLOBAL_WRITE`            | Boolean | `false`     | All registered users have write access (can sync) to all projects.  |
 
 
-#### Sending Emails
+## Sending Emails
 ​Mergin Maps can connect to a SMTP server to send notifications and password recovery emails.
 
 | Variable name           | Type    | Default   | Description |
@@ -79,7 +90,7 @@ To ease the process of permission (user) management, you can set the following g
 
 If you have issues with sending emails, follow [troubleshooting](../troubleshoot/) page.
 
-#### Workspace management
+## Workspace management
 Workspace settings.
 <ServerType type="CE" />
 
@@ -98,7 +109,7 @@ Workspace settings.
 | `WORKSPACE_EXPIRATION`            | integer | `7`          | Expiration time in days for deleted workspaces before removed completely. |
 | `USER_WORKSPACES_ALLOWED`         | Boolean | `true`       | Allow users to create their own workspaces else it is available for superuser only |
 
-#### Data synchronisation and management
+## Data synchronisation and management
 Other settings related to data management.
 
 | Variable name                | Type     | Default                               | Description                                                                                                                                                                                               |
@@ -118,7 +129,7 @@ Other settings related to data management.
 | `TEMP_EXPIRATION`            | integer  | `7`                                   | Time in days after files in a temporary folder are permanently deleted.                                                                                                                                   |
 
 
-#### Celery asynchronous tasks
+## Celery asynchronous tasks
 Mergin Maps is using Celery and Redis to perform asynchronous tasks or doing regular jobs.
 
 | Variable name         | Type | Default                         | Description |
@@ -126,7 +137,7 @@ Mergin Maps is using Celery and Redis to perform asynchronous tasks or doing reg
 |`BROKER_URL`           |string|`redis://merginmaps-redis:6379/0`| Connection details to celery message broker. If non-default, it should match definition in `docker-compose` file.  |
 |`CELERY_RESULT_BACKEND`|string|`redis://merginmaps-redis:6379/0`| Connection details to celery result back-end broker. If non-default, it should match definition in `docker-compose` file.  |
 
-#### WebMaps 
+## WebMaps 
 <ServerType type="EE" />
 
 | Variable name            | Type     | Default                       | Description                    |
@@ -140,3 +151,5 @@ Your webmaps won’t display the default background map unless we enable them on
 
 Alternatively, you can set up your own background map.
 :::
+
+
