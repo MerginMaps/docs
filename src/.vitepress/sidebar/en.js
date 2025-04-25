@@ -122,7 +122,7 @@ export default {
       ]
     },
     {
-      text: 'Migrate',   // required
+      text: 'Migrate to Mergin Maps',   // required
       collapsed: true,
       items: [
         { text: 'Migrate from QField', link: '/migrate/qfield/' },
