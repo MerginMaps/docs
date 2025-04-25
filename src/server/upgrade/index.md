@@ -63,10 +63,10 @@ Perform the migration:
 
 <br>
 
-:::warning 🗺️ Enable background maps ⚠️
+:::warning 🗺️ Enable background map ⚠️
 Your webmaps won’t display the default background map unless we enable them on our side. To do that, please [contact our support team](mailto:support@merginmaps.com?subject=Enable%20default%20background%20maps%20on%20Enterprise%20server&body=Dear%20support%2C%0A%0AI%27d%20like%20to%20request%20enabling%20background%20maps%20for%20our%20Enterprise%20edition%20server.%20%0AThe%20server%20is%20hosted%20at%3A%20%3Curl%3E) and share your server’s URL.
 
-Alternatively, you can set up your own background maps using [environment variables](../environment/index.md#webmaps).
+Alternatively, you can set up your own background map using [environment variables](../environment/index.md#webmaps).
 :::
 
 ## Migration guide from 2024.2.x to 2025.2.x (CE)
