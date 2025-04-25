@@ -11,7 +11,7 @@ Make sure to always back up your database data before doing a migration.
 [[toc]]
 
 
-## Migration guide from 2025.2.x to 2025.3.x
+## From 2025.2.x to 2025.3.x {#migration-guide-from-2025-2-x-to-2025-3-x}
 
 <MigrationType type="EE" />
 
@@ -69,7 +69,7 @@ Your webmaps won’t display the default background map unless we enable them on
 Alternatively, you can set up your own background map using [environment variables](../environment/index.md#webmaps).
 :::
 
-## Migration guide from 2024.2.x to 2025.2.x (CE)
+## From 2024.2.x to 2025.2.x (CE) {#migration-guide-from-2024-2-x-to-2025-2-x-ce}
 
 ::: tip Before you upgrade!
 Release 2025.2.x brings significant changes on <MainPlatformName /> docker compose orchestration infrastructure.
@@ -127,9 +127,7 @@ Perform the migration:
     $ docker exec merginmaps-server flask db upgrade heads    
     ```
 
-
-
-## Migration guide from 2024.4.x to 2025.2.x
+## From 2024.4.x to 2025.2.x {#migration-guide-from-2024-4-x-to-2025-2-x}
 
 ::: tip Before you upgrade!
 Release 2025.2.x brings significant changes on <MainPlatformName /> docker compose orchestration infrastructure.
@@ -189,7 +187,7 @@ Perform the migration:
     ```
 
 
-## Migration guide from 2024.3.x to 2024.4.x
+## From 2024.3.x to 2024.4.x {#migration-guide-from-2024-3-x-to-2024-4-x}
 
 Get the latest <GitHubRepo id="MerginMaps/server/blob/master/deployment/enterprise/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2024.4.0`.
 Perform the migration:
@@ -221,7 +219,7 @@ Perform the migration:
     $ docker exec merginmaps-server flask db upgrade enterprise@df5b4efdae7b
     ```
 
-## Migration guide from 2024.2.x to 2024.3.x
+## From 2024.2.x to 2024.3.x {#migration-guide-from-2024-2-x-to-2024-3-x}
 
 Get the latest <GitHubRepo id="MerginMaps/server/blob/master/deployment/enterprise/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2024.3.0`.
 Perform the migration:
@@ -252,7 +250,7 @@ Perform the migration:
     $ docker exec merginmaps-server flask db upgrade community@0e3fc92aeaaa
     ```
 
-## Migration guide from 2023.6.1 to 2024.2.x (CE)
+## From 2023.6.1 to 2024.2.x (CE) {#migration-guide-from-2023-6-1-to-2024-2-x-ce}
 
 Get the latest <GitHubRepo id="MerginMaps/server/blob/master/deployment/community/docker-compose.yml" desc="docker-compose file" />  or update docker images manually.
 
@@ -313,7 +311,7 @@ Update image to `2024.2.1` and perform the migration:
     $ docker exec merginmaps-server flask db upgrade enterprise@head
     ```
 
-## Migration guide from 2023.2.0+ to 2023.6.1
+## From 2023.2.0+ to 2023.6.1 {#migration-guide-from-2023-2-0-to-2023-6-1}
 
 ⚠️ If you are on a server version lower than `2023.2.0`, it is important to first [upgrade to `2023.2.0`](#migration-guide-from-any-previous-version-to-2023-2-0) before continuing with this migration.
 
@@ -373,7 +371,7 @@ Perform the migration:
     $ docker exec merginmaps-server flask db upgrade community@3a77058a2fd7
     ```
 
-## Migration guide from any previous version to 2023.2.0
+## Any previous version to 2023.2.0 {#migration-guide-from-any-previous-version-to-2023-2-0}
 
 Besides various fixes, enhancements and performance improvements the most notable change recently introduced is the concept of workspaces. For Community Edition it means there is a **common shared workspace (global workspace)** for all users where all projects are stored, instead of having a personal or organisational namespace for projects.
 
@@ -460,9 +458,10 @@ root@merginmaps-db$ pg_restore -U postgres -Fc -d postgres < /tmp/pg_backup.dump
 If your PostgreSQL settings were custom, you might need to follow official instructions for upgrading the PostgreSQL cluster.
 :::
 
-**Database migration**
+### Database migration
 
 <MigrationType type="CE" />
+
 In this step we will select a global workspace (e.g. my-company) where all your projects will be merged. Your projects are migrated as follows: former namespace is prepended to project name and whole project is moved to new global workspace, for example:
 
 	john.doe/survey -> my-company/john.doe_survey
