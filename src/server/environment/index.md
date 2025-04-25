@@ -132,5 +132,11 @@ Mergin Maps is using Celery and Redis to perform asynchronous tasks or doing reg
 | Variable name            | Type     | Default                       | Description                    |
 |--------------------------|----------|-------------------------------|--------------------------------|
 | `MAPS_ENABLED`           | boolean  | `true`                       | Flag to enable webmaps         |
-| `VECTOR_TILES_URL`       | string   | `https://tiles-ee.merginmaps.com/data/default/{z}/{x}/{y}.pbf`                            | URL to vector tiles which are used as basemap layer in webmaps |
-| `VECTOR_TILES_STYLE_URL` | string   | `https://tiles-ee.merginmaps.com/styles/default.json`                            | URL to vector tiles style |
+| `VECTOR_TILES_URL`       | string   | `https://tiles-ee.merginmaps.com/data/default/{z}/{x}/{y}.pbf`                            | Vector tiles URL used as background map layer in webmaps |
+| `VECTOR_TILES_STYLE_URL` | string   | `https://tiles-ee.merginmaps.com/styles/default.json`                            | Vector tiles style URL used to style the background map layer in webmaps |
+
+:::warning 🗺️ Enable background map ⚠️
+Your webmaps won’t display the default background map unless we enable them on our side. To do that, please [contact our support team](mailto:support@merginmaps.com?subject=Enable%20default%20background%20maps%20on%20Enterprise%20server&body=Dear%20support%2C%0A%0AI%27d%20like%20to%20request%20enabling%20background%20maps%20for%20our%20Enterprise%20edition%20server.%20%0AThe%20server%20is%20hosted%20at%3A%20%3Curl%3E) and share your server’s URL.
+
+Alternatively, you can set up your own background map.
+:::

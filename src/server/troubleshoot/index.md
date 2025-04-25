@@ -68,3 +68,12 @@ If you perform a `docker compose exec redis redis-cli monitor` you should see th
   1741085465.148149 [0 172.18.0.8:38054] "BRPOP" "celery" "celery\x06\x163" "celery\x06\x166" "celery\x06\x169" "1"
   1741085466.158419 [0 172.18.0.8:38054] "BRPOP" "celery" "celery\x06\x163" "celery\x06\x166" "celery\x06\x169" "1"
 ```
+
+## Can't see background map on webmaps
+
+If the background map is not showing on your self-hosted Enterprise server webmaps, check the following:
+
+ - Your [environment variables](../environment/index.md#webmaps) are correctly configured
+ - If you're using the default background map URL, make sure you’ve [contacted our support team](mailto:support@merginmaps.com?subject=Enable%20default%20background%20maps%20on%20Enterprise%20server&body=Dear%20support%2C%0A%0AI%27d%20like%20to%20request%20enabling%20background%20maps%20for%20our%20Enterprise%20edition%20server.%20%0AThe%20server%20is%20hosted%20at%3A%20%3Curl%3E) to enable it
+   - If your server URL has changed recently, you’ll need to re-request access from support.
+
