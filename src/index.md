@@ -96,7 +96,8 @@ The ecosystem consist of various components:
 
 ## For Developers
 - [Custom Mobile App](./dev/customapp/)
-- [Integrate Mergin Maps](./dev/integration/)
+- [Python Client Module Integration](./dev/integration/)
+- [C++ Standalone Client Integration](./dev/integration-cpp/)
 - [PostgreSQL DB Sync](./dev/dbsync/)
 - [Media Sync](./dev/media-sync/)
 - [Work Packages](./dev/work-packages/)
@@ -108,11 +109,11 @@ The ecosystem consist of various components:
 - [Security](./server/security/)
 - [Upgrade](./server/upgrade/)
 - [Administer](./server/administer/)
-- [Troubleshoot Custom Servers](./server/troubleshoot/)
 - [Administration Panel](./server/dashboard/)
+- [Troubleshoot Custom Servers](./server/troubleshoot/)
 - [Using Mergin Maps Mobile App and QGIS Plugin with a Custom Server](./server/plugin-mobile-app/)
 
-## Migrate
+## Migrate to Mergin Maps
 - [From QField](./migrate/qfield/)
 - [From ArcGIS](./migrate/arcgis/)
 - [From Fulcrum](./migrate/fulcrumapp/)
