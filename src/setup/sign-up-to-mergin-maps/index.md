@@ -74,6 +74,8 @@ You can also sign up from <MobileAppName />.
    ![Mergin Maps mobile app register](./mobile-app-sign-up-form.jpg "Mergin Maps mobile app register")
    
 5. Every account needs to have a [workspace](../../manage/workspaces/) for storing projects. Choose an appropriate name for your workspace and tap on the **Create workspace** button.
+
+   Note that the name of a workspace cannot be changed later.
    ![Create workspace in Mergin Maps mobile app](./mobile-app-create-workspace.jpg "Create workspace in Mergin Maps mobile app")
 
 **Welcome to <MainPlatformNameLink />!**
