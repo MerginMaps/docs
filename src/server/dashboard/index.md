@@ -71,6 +71,15 @@ Click on a workspace to display its details. Here, you can also:
 
 ![Server administration panel Workspace details](./admin-panel-workspace-details.jpg "Server administration panel Workspace details")
 
+### How to create a new workspace
+
+1. Navigate to the **Workspaces** tab and click on the **Create workspace** button
+   ![Server administration panel - create new workspace](./admin-panel-workspaces-create-workspace.jpg "Server administration panel - create new workspace")
+
+2. Fill in the name of the workspace and **Save changes**.
+![Server administration panel - create new workspace](./admin-panel-workspaces-create-workspace-form.jpg "Server administration panel - create new workspace")
+
+The new workspace is created.
 
 ## Settings
 In the **Settings** tab, you can:
