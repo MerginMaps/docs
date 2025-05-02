@@ -39,7 +39,10 @@ Here is an overview of widgets commonly used both in QGIS and the <MobileAppName
 
 ## Text
 
+<YouTube id="0Y5GKyjmfqo" />
+
 Adding or editing text is the most common method for inserting information within the forms. In QGIS, the default widget for most types of fields is the **Text Edit**. It can be used for single line or [multiline](#multiline-text) text inputs. 
+
 
 ![QGIS Text Edit Widget Type](./qgis-form-text.jpg "QGIS Text Edit Widget Type")
 
@@ -73,6 +76,8 @@ In the <MobileAppNameShort />, the **multiline text edit widget** will look like
 A QR code field is used in this public project: <MerginMapsProject id="documentation/form-widgets" />. Download or clone it to see this setup.
 :::
 
+<YouTube id="HptECoMY8ow" />
+
 To be able to scan QR codes using your camera, the field name or the field alias has to contain the word `qrcode` (the text is not case sensitive, it can be in combination of lower or upper case letters). 
 
 In the <MobileAppNameShort />, there will be a QR code icon next to the field. Tap on it to scan the QR code using your camera and the content (a number, text, link, etc.) will be filled in automatically to your field.
@@ -87,6 +92,8 @@ This public project: <MerginMapsProject id="documentation/form-widgets" /> uses 
 :::
 
 Number fields can be handled by the **Range** widget. Two options are supported by the <MobileAppNameShort />: [editable range](#range) and [slider](#slider). 
+
+<YouTube id="woZX3L33xh0" />
 
 ### Range
 To set up the **editable range widget**:
@@ -124,6 +131,8 @@ In the <MobileAppNameShort />, the **Slider** looks like this. The number can be
 :::tip Example project available
 Various options of setting up Date and Date&Time fields are included in this public project: <MerginMapsProject id="documentation/form-widgets" />. Download or clone it to explore it in more detail.
 :::
+
+<YouTube id="EoIqYIl4-Xk" />
 
 **Date** or **Date and Time** fields can be used to record date and time. The most common use is to record when a feature was created or updated. This can be done manually or automatically by using [default values](../form-configuration/#default-values).
 
@@ -163,6 +172,8 @@ Here are some examples:
 :::tip Example project available
 Checkbox widget is used in this public project <MerginMapsProject id="documentation/form-widgets" />. Download or clone it to see the setup.
 :::
+
+<YouTube id="rtBdJzizdug" />
 
 Checkbox field becomes handy when you want to set up a Yes/No, True/False or On/Off in your field. 
 
