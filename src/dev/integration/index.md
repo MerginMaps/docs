@@ -65,7 +65,7 @@ Arguments:
 
 `workspace_id` (int)⭐️ : The workspace ID where the user will be added.
 
-`workspace_role` (string)⭐️ : The user’s role in the workspace. [See the roles options](../../manage/permissions.md#workspace-member-roles-overview).
+`workspace_role` (string)⭐️ : The user’s role in the workspace. [See the roles options](../../manage/permissions/index.md#workspace-member-roles-overview).
 
 `username` (string, optional): If not provided, it will be automatically generated from the email address.
 
@@ -82,7 +82,7 @@ client.create_user("jill@example.com", "T0p_secret", 1, "editor", notify_user=Tr
 
 ### Workspace members methods
 
-These methods are available for Cloud and Enterperise edition servers.
+These methods are available for Cloud and Enterprise edition servers.
 
 ::: warning API availability
 The following methods are available for Python API Client versions `0.10.0` or higher, using server versions `2025.2.0` or higher.
@@ -121,9 +121,9 @@ Arguments:
 
 `user_id` (int): ID of the user.
 
-`workspace_role` (string): New role. [See the roles options](../../manage/permissions.md#workspace-member-roles-overview).
+`workspace_role` (string): New role. [See the roles options](../../manage/permissions/index.md#workspace-member-roles-overview).
 
-`reset_projects_roles` (Boolean, optional): If true, overriden project roles (explicitly shared projects access) will be reset. Default is `False`.
+`reset_projects_roles` (Boolean, optional): If true, overridden project roles (explicitly shared projects access) will be reset. Default is `False`.
 
 #### Remove member
 
@@ -136,7 +136,7 @@ Arguments:
 
 `user_id` (int): ID of the user.
 
-> Note: the user account is not removed. This method only removes their access to the workspace.
+> The user account is not removed. This method only removes their access to the workspace.
 
 ---
 
@@ -150,7 +150,7 @@ The following methods are available for Python API Client versions `0.10.0` or h
 
 The caller of the following methods must be a workspace admin, owner, project owner or server administrator.
 
-The following methods accept project ids (of type `uuid`). You can find project id via [projects_list](https://github.com/MerginMaps/python-api-client/blob/634237890afd9f28f03953e5a01376b56f5abf5c/mergin/client.py#L572) and [project_info](https://github.com/MerginMaps/python-api-client/blob/634237890afd9f28f03953e5a01376b56f5abf5c/mergin/client.py#L642) methods.
+The following methods accept project ids (of type `uuid`). You can find project id via <GitHubRepo id="MerginMaps/python-api-client/blob/634237890afd9f28f03953e5a01376b56f5abf5c/mergin/client.py#L572" desc="projects_list" /> and <GitHubRepo id="MerginMaps/python-api-client/blob/634237890afd9f28f03953e5a01376b56f5abf5c/mergin/client.py#L641" desc="project_info" /> methods.
 
 #### List project collaborators
 
@@ -175,7 +175,7 @@ Arguments:
 
 `user` (string): Email or username of the user to be added to the project. 
 
-`project_role`: (string): Role of the user in the project. [See the roles options](../../manage/permissions.md##project-permissions-overview)
+`project_role`: (string): Role of the user in the project. [See the roles options](../../manage/permissions/index.md#project-permissions-overview)
 
 #### Update project collaborator role
 
@@ -188,9 +188,9 @@ Arguments:
 
 `user_id` (int): ID of the user.
 
-`project_role`: (string): New role. [See the roles options](../../manage/permissions.md##project-permissions-overview)
+`project_role`: (string): New role. [See the roles options](../../manage/permissions/index.md#project-permissions-overview)
 
-> Note: the user must be first added to the project (via [Add project collaborator](./index.md#add-project-collaborator)) before calling this method, even if he/she is already a workspace member or guest.
+> The user must be first added to the project (via [Add project collaborator](./index.md#add-project-collaborator)) before calling this method, even if he/she is already a workspace member or guest.
 
 #### Remove project collaborator
 
@@ -203,7 +203,7 @@ Arguments:
 
 `user_id` (int): ID of the user.
 
-> Note: the user account is not removed, only the project access. 
+> The user account is not removed, only the project access. 
 
 ## Further details
 
