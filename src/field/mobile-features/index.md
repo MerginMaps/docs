@@ -114,6 +114,21 @@ When finished, tap **Done**.
 In this case, two individual features are created. Both have the same attributes, except for `Feature ID` (one feature keeps the original id, the other gets a new one).
 ![Geometry split successfully into two features](./mobile-split-features-complete.jpg "Geometry split successfully into two features")
 
+## Multi-features editing
+
+Attributes of multiple features from the same layer can be edited at once.
+![Multi-feature editing in Mergin Maps mobile app](./mobile-multi-feature-editing.gif "Multi-feature editing in Mergin Maps mobile app")
+
+1. Tap on a feature on the map and select the **Select more** option.
+   ![Select more features button in Mergin Maps mobile app](./mobile-select-more.jpg "Select more features button in Mergin Maps mobile app" )
+
+2. Select all features that should be edited. 
+
+3. In the attributes form, enter the new values of attributes and **Save**.
+
+   All selected features have been modified at once.
+
+
 ## Snapping features
 
 Snapping can be enabled in your <MainPlatformName /> project in QGIS to make the field survey easier. You can find the snapping options in [How to Set Up Snapping](../../gis/snapping/).
