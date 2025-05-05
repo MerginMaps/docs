@@ -27,9 +27,10 @@ Here is a comparison of the main components of both ecosystems:
 | ArcGIS QuickCapture | <MobileAppName /> | field survey application |
 | ArcGIS Survey123 | <MobileAppName /> | form-based field survey application |
 | ArcGIS Field Maps** | <MobileAppName /> | field survey application |
-| ArcGIS Maps SDK | [Python client](../../dev/integration/#python-client-module) and QGIS API| developer SDK |
+| ArcGIS Maps SDK | [Python client](../../dev/integration/) and QGIS API| developer SDK |
 
 *ArcGIS Pro replaced [ArcMap](https://en.wikipedia.org/wiki/ArcMap)
+
 **ArcGIS Field Maps replaced ArcGIS Collector since the end of [2021](https://www.Esri.com/arcgis-blog/products/collector/field-mobility/arcgis-collector-on-windows-platform-is-retired/)
 
 ## Migrate from ArcGIS to QGIS

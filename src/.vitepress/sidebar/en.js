@@ -100,7 +100,8 @@ export default {
       collapsed: true,
       items: [
         { text: 'Custom Mobile App', link: '/dev/customapp/' },
-        { text: 'Integrate Mergin Maps', link: '/dev/integration/' },
+        { text: 'Python API Client', link: '/dev/integration/' },
+        { text: 'C++ API Client', link: '/dev/integration-cpp/' },
         { text: 'PostgreSQL DB Sync', link: '/dev/dbsync/' },
         { text: 'Media Sync', link: '/dev/media-sync/' },
         { text: 'Work Packages', link: '/dev/work-packages/' },
