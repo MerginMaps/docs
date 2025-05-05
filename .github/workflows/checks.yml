@@ -63,8 +63,6 @@ jobs:
         # Do not check GH on every commit, their rate limits are too small
         EXCLUDE_LIST="$EXCLUDE_LIST --exclude=https://github.com/*"
         echo "EXCLUDE_LIST=$EXCLUDE_LIST" >> $GITHUB_ENV
-
-        echo $EXCLUDE_LIST
      
     - name: Check broken links
       uses: ruzickap/action-my-broken-link-checker@v2
