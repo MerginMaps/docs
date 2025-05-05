@@ -63,9 +63,9 @@ Arguments:
 
 `password` (string): Must meet security requirements.
 
-`workspace_id` (int)⭐️ : The workspace ID where the user will be added.
+`workspace_id` (int) <span title="Ignored on Community edition servers">:information_source:</span> : The workspace ID where the user will be added.
 
-`workspace_role` (string)⭐️ : The user’s role in the workspace. [See the roles options](../../manage/permissions/index.md#workspace-member-roles-overview).
+`workspace_role` (string) <span title="Ignored on Community edition servers">:information_source:</span> : The user’s role in the workspace. [See the roles options](../../manage/permissions/index.md#workspace-member-roles-overview).
 
 `username` (string, optional): If not provided, it will be automatically generated from the email address.
 
@@ -76,7 +76,7 @@ Example:
 client.create_user("jill@example.com", "T0p_secret", 1, "editor", notify_user=True)
 ```
 
-> ⭐️ `workspace_id` and `workspace_role` arguments are ignored on Community edition servers.
+> :information_source: `workspace_id` and `workspace_role` arguments are ignored on Community edition servers.
 
 ---
 
