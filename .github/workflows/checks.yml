@@ -1,6 +1,9 @@
 name: Checks
 # Triggered when code is pushed to any branch in a repository
-on: push
+on: 
+  push:
+    branches:
+      - '**'
 
 jobs:
   spellcheck:
