@@ -1,8 +1,7 @@
-[![Checks](https://github.com/MerginMaps/docs/actions/workflows/checks.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/checks.yml)
-[![Deploy DEV](https://github.com/MerginMaps/docs/actions/workflows/dist-dev.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/dist-dev.yml)
-[![Status DEV](https://github.com/MerginMaps/docs/actions/workflows/status-dev.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/status-dev.yml)
 [![Deploy PROD](https://github.com/MerginMaps/docs/actions/workflows/dist-prod.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/dist-prod.yml)
 [![Status PROD](https://github.com/MerginMaps/docs/actions/workflows/status-prod.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/status-prod.yml)
+[![Deploy DEV](https://github.com/MerginMaps/docs/actions/workflows/dist-dev.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/dist-dev.yml)
+[![Checks](https://github.com/MerginMaps/docs/actions/workflows/checks.yml/badge.svg)](https://github.com/MerginMaps/docs/actions/workflows/checks.yml)
 
 # Mergin Maps Documentation
 
