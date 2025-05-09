@@ -9,7 +9,6 @@ The <QGISPluginName /> adds several variables that can be used in QGIS expressio
 | `@mm_user_email`        | `martin@example.com` | global  | Email of the user currently logged in to <MainPlatformName />|
 | `@mm_url`               | `https://app.merginmaps.com`  | global  | URL of the <MainPlatformName /> service |
 | `@mm_project_name`      | `Tree survey`                 | project | Name of the active <MainPlatformName /> project  |
-| `@mm_project_owner`     | `martin`                      | project | Name of the owner of the active project |
 | `@mm_project_full_name` | `martin/Tree survey`          | project | Owner and project name joined with a forward slash |
 | `@mm_project_version`   | `42`                          | project | Current version of the active project |
 
