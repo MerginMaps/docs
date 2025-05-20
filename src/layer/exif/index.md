@@ -1,4 +1,4 @@
-# Exif Metadata
+# Geotagging // Exif Metadata
 [[toc]]
 
 EXIF is a file format for storing metadata in image files, such as the camera settings, image metrics, date and time or location information (see, e.g., [Wikipedia](https://en.wikipedia.org/wiki/Exif)). 

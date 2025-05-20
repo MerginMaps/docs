@@ -104,31 +104,6 @@ Here are some examples:
 | `uuid()`          | `{9d0150eb-a36f-40f1-a768-540db8a36f7c}`                      | **no**  | Generates <QGISHelp ver="latest" link="user_manual/expressions/functions_list.html#uuid" text="UUID" /> (Universally Unique Identifier).|
 
 
-### Open local files using default values
-Default values can also be used to open local files (e.g. a PDF file) from within the form. This file needs to be packaged with the project, so it should be stored somewhere in the [project folder](../../manage/project/#mergin-maps-project-folder).
-
-There is a public project <MerginMapsProject id="documentation/forms-display-images-and-files" /> you can download or clone to see how the setup works.
-- A PDF file named `my-pdf.pdf` is stored in the main project folder.
-- The survey layer has a field named `local-file-default-value` with **Text (string)** data type.
-   - This field is set to *not editable* (the form will refer to the same file for all features and does not need to be changed).
-   - This field uses the **Text Edit** widget with the *Multiline* and *HTML* options enabled.
-   - The **default value** is set to:
-   ```
-   '<a href="project://my-pdf.pdf">Open File</a>'
-   ```
-
-![QGIS attributes form open local file](./qgis-form-open-file-default-value.jpg "QGIS attributes form open local file")
-
-In the <MobileAppNameShort />, you can tap the *Open File* link to open the PDF file using the default application of your device.
-
-![Open a local PDF file in Mergin Maps mobile app](./mobile-forms-open-file-default-value.jpg "Open a local PDF file in Mergin Maps mobile app")
-
-::: tip Open local files using the HTML widget
-Local files can be displayed in the form also using [the HTML widget](../form-layout/#using-html-widget-to-open-local-files). 
-
-In the <MerginMapsProject id="documentation/forms-display-images-and-files" /> project, you can explore and compare both alternatives.
-:::
-
 ## Constraints
 Constraints help to avoid mistakes when filling in the values or to highlight mandatory fields. Fields with constraints have a warning displayed next to them in the form. 
 
@@ -163,51 +138,4 @@ In the <MobileAppNameShort />, you will be unable to save a feature unless the f
 
 ![Mergin Maps mobile app constraints in attributes form](./mobile-form-constaints.jpg "Mergin Maps mobile app constraints in attributes form")
 
-## Drill-down forms
-Drill-down or cascade forms enable to list values in a field depending on a value selected in another field.
 
-:::tip Example project available
-Clone <MerginMapsProject id="documentation/form_setup" /> to explore drill-down forms.
-:::
-
-Here, we have a layer named `landuse` that has fields such as *Land use*, *Type*, *Plant type*. Values that can be filled in these fields depend on the previous choices: if we select `Farmland` as the *Land use*, the *Type* field drop-down menu offers options such as `Cereals`, `Oil plants` or `Vegetables`. Subsequently, the *Plant type* field has only options that are relevant for the selected type of land use.
-
-![QGIS drill-down form](./qgis-drill-down-form.gif "QGIS drill-down form")
-
-At first, let us explore the structure of value tables that are used to set up drill-down forms. In the example project, *Land use* field uses `plant-habitat` value table that has following fields:
-
-![QGIS category value table](./qgis-table-habitat.jpg "QGIS category value table")
-
-The *Type* field refers to the `plant-type` value table. In this table, there is a field `habitat-code` that refers to a specific `code` value from the `plant-habitat` table. 
-For instance, the `FAR` habitat code (standing for *Farmland*) is used as the `habitat-code` for *Cereals, Vegetables, Oil plants* as these are applicable farmland types.
-
-![QGIS type value table](./qgis-table-type.jpg "QGIS type value table")
-
-Similarly, the *Plant type* field uses the `plant-sub-type` value table that contains a `Code` field that refers to specific types from the `plant-type` table.
-For instance, the `CER` type code is applied for *Wheat, Rye, Barley, Maize*, meaning these types of plants belong to the *Cereals* category.
-
-![QGIS subtype value table](./qgis-table-subtype.jpg "QGIS subtype value table")
-
-To set up drill-down forms:
-1. Right-click on a survey layer, select **Properties** and go to the **Attributes form** tab
-2. The `habitat` field aliased as *Land use* is set up using the **Value relation** widget. Values are defined in the `plant-habitat` table:
-   - **Key column** is the field that contains the values (here: `code`)
-   - **Value column** is the field that contains the alias (description) of the value (here: `desc`)
-
-   ![QGIS form value relation](./qgis-form-value-relation.jpg "QGIS form value relation")
-
-3. The `type` field (aliased as *Type*) uses the **Value relation** widget with values from the `plant-type` table:
-   - **Key column** is the field that contains the values (here: `Code`)
-   - **Value column** is the field that contains the alias (description) of the value (here: `Description`)
-   - **Filter expression**: `"habitat-code"= current_value('habitat')` is used to limit the options in the drop-down menu to values where the `habitat-code` of the value is the same as the current value of the `habitat` field.
-    ![QGIS form value relation filter expression](./qgis-form-value-relation-expression.jpg "QGIS form value relation filter expression")
-
-4. Likewise, the `subtype` field (aliased as *Plant type*) uses the **Value relation** widget with values defined in the `plant-sub-type` table:
-   - **Key column** is the field that contains the values (here: `id`)
-   - **Value column** is the field that contains the alias (description) of the value (here: `Species`)
-   - **Filter expression**: `"Code" = current_value('type')`
-    ![QGIS form value relation filter expression](./qgis-form-value-relation-expression-subtype.jpg "QGIS form value relation filter expression")
-
-And this is how the drill-down form looks in the <MobileAppNameShort />. After selecting *Land use: Farmland*, the *Type* field only offers values `Cereals`, `Oil plants` or `Vegetables`. After selecting `Cereals`, the *Plant type* offers only relevant options such as `Wheat`, `Rye` or `Barley`.
-
-![Mergin Maps mobile app drill-down form](./mobile-drill-down-form.gif "Mergin Maps mobile app drill-down form")
