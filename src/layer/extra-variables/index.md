@@ -1,5 +1,11 @@
 # Extra Variables
 
+There are some useful variables that can be used as [default values](../default-values/). 
+
+Here you can find the lists of:
+- [extra QGIS variables](#extra-qgis-variables) introduced by <QGISPluginName /> that can be used to record information related to <MainPlatformNameLink /> workspace, project or users
+- [extra position variables](#extra-position-variables) that can be used to record GPS information
+
 ## Extra QGIS variables
 
 The <QGISPluginName /> adds several variables that can be used in QGIS expressions:
@@ -14,13 +20,13 @@ The <QGISPluginName /> adds several variables that can be used in QGIS expressio
 | `@mergin_project_full_name` | `martin/Tree survey`          | project | Owner and project name joined with a forward slash |
 | `@mergin_project_version`   | `42`                          | project | Current version of the active project |
 
-A common use case is to use `@mergin_username` as the [default value](../form-configuration/#default-values) for one of the fields in a survey layer to automatically track who has added (and/or modified) a particular record.
+A common use case is to use `@mergin_username` as the [default value](../default-values/) for one of the fields in a survey layer to automatically track who has added (and/or modified) a particular record.
 
 ## Extra Position Variables
 
 With <MobileAppName />, it is possible to access GPS information using extra position variables. Note that location permission has to be allowed and location service enabled.
 
-Extra position variables can be used as [default values in feature forms](../form-configuration/#default-values).
+Extra position variables can be used as [default values in feature forms](../default-values/).
 
 Following variables are supported:
  - `@position_coordinate` - A point with the coordinates in WGS84.

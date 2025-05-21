@@ -93,3 +93,5 @@ Here are some examples:
 | `$length`          | `123.45`                      | **yes**  | The length of a line feature.|
 | `$area`          | `1234.56`                      | **yes**  | The area of a polygon feature.|
 | `uuid()`          | `{9d0150eb-a36f-40f1-a768-540db8a36f7c}`                      | **no**  | Generates <QGISHelp ver="latest" link="user_manual/expressions/functions_list.html#uuid" text="UUID" /> (Universally Unique Identifier).|
+
+
