@@ -95,6 +95,8 @@ Every workspace has its own [subscription](../subscriptions/). With your first w
 ## How to delete a workspace
 Closing a workspace means that all projects in this workspace will be removed as well. Therefore we recommend going through the projects in the workspace and, if needed, downloading them to your computer or [transferring them to another workspace](../project-advanced/#transfer-a-project) so that you don't lose your work.
 
+You have to be the workspace [owner](../permissions/#workspace-member-roles-overview) to be able to delete the workspace.
+
 1. [Switch](#how-to-switch-between-workspaces) to the workspace you want to remove
 
 2. Navigate to **Settings** and select **Close workspace**

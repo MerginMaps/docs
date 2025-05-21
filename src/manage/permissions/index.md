@@ -47,6 +47,7 @@ This is the overview of workspace member roles that are related to the whole wor
 |delete and transfer projects| :no_entry_sign: | :no_entry_sign:  | :no_entry_sign:  | :white_check_mark: | :white_check_mark: |
 |manage access to projects| :no_entry_sign: | :no_entry_sign: | :no_entry_sign:  | :white_check_mark: | :white_check_mark: |
 |manage workspace members| :no_entry_sign: | :no_entry_sign: | :no_entry_sign: | :white_check_mark: | :white_check_mark: |
+|delete the workspace and change its description| :no_entry_sign: | :no_entry_sign: | :no_entry_sign: | :no_entry_sign: | :white_check_mark: |
 |access to invoicing and subscription settings| :no_entry_sign: | :no_entry_sign: | :no_entry_sign: | :no_entry_sign: | :white_check_mark: |
 
 
