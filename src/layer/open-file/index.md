@@ -1,8 +1,14 @@
-# Using HTML widget to open local files
+# How to Open a File
+
+A local file, e.g. a PDF stored in the project folder, can be opened from within the form. This can be achieved by using [the HTML widget](#using-html-widget-to-open-local-files) or setting up [default values](#open-local-files-using-default-values).
+
+In the <MerginMapsProject id="documentation/forms-display-images-and-files" /> public project, both alternatives are used. You can download or clone this project, to compare them and see what works the best for you.
+
+## Using HTML widget to open local files
 The HTML widget can also be used to open local files: for instance, a locally stored PDF file can be opened from within the form during the survey.
 
-::: tip
-Clone <MerginMapsProject id="documentation/forms-display-images-and-files" /> to how this works.
+::: tip Example project available
+There is a public project <MerginMapsProject id="documentation/forms-display-images-and-files" /> you can download or clone to see how the setup works.
 :::
 
 - A PDF file named `my-pdf.pdf` is stored in the main [project folder](../../manage/project/#mergin-maps-project-folder) as it needs to be packaged with the project.
@@ -17,9 +23,25 @@ In the <MobileAppNameShort />, you can tap the *Open File* link to open the PDF 
 
 ![Open a local PDF file in Mergin Maps mobile app](./mobile-forms-open-file-html-widget.jpg "Open a local PDF file in Mergin Maps mobile app")
 
-::: tip Open local files using default values
-Local files can be displayed in the form also using [default values](../form-configuration/#open-local-files-using-default-values). 
+## Open local files using default values
+Default values can also be used to open local files (e.g. a PDF file) from within the form. This file needs to be packaged with the project, so it should be stored somewhere in the [project folder](../../manage/project/#mergin-maps-project-folder).
 
-In the <MerginMapsProject id="documentation/forms-display-images-and-files" /> project, you can explore and compare both alternatives.
+::: tip Example project available
+There is a public project <MerginMapsProject id="documentation/forms-display-images-and-files" /> you can download or clone to see how the setup works.
 :::
+
+- A PDF file named `my-pdf.pdf` is stored in the main project folder.
+- The survey layer has a field named `local-file-default-value` with **Text (string)** data type.
+   - This field is set to *not editable* (the form will refer to the same file for all features and does not need to be changed).
+   - This field uses the **Text Edit** widget with the *Multiline* and *HTML* options enabled.
+   - The **default value** is set to:
+   ```
+   '<a href="project://my-pdf.pdf">Open File</a>'
+   ```
+
+![QGIS attributes form open local file](./qgis-form-open-file-default-value.jpg "QGIS attributes form open local file")
+
+In the <MobileAppNameShort />, you can tap the *Open File* link to open the PDF file using the default application of your device.
+
+![Open a local PDF file in Mergin Maps mobile app](./mobile-forms-open-file-default-value.jpg "Open a local PDF file in Mergin Maps mobile app")
 

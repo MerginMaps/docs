@@ -63,9 +63,8 @@ export default {
       text: 'Configure Forms',   // required
       collapsed: true,
       items: [
-        { text: 'Overview', link: '/layer/best-practice/' },
+        { text: 'Overview', link: '/layer/overview/' },
         { text: 'Widgets', link: '/layer/form-widgets/',
-        collapsed: false,
         items: [
         { text: 'Text', link: '/layer/text/' },
         { text: 'Date and Time', link: '/layer/date-time/' },
@@ -77,11 +76,11 @@ export default {
         { text: 'Photos', link: '/layer/photos/' },
         { text: 'Informational Widgets', link: '/layer/info-widgets/' },
         ] },
-        { text: 'Default Values', link: '/layer/form-configuration/',
+        { text: 'Default Values', link: '/layer/default-values/',
         collapsed: true,
         items: [
         { text: 'Geotagging', link: '/layer/exif/' },
-        { text: 'Extra Variables', link: '/layer/plugin-variables/' }
+        { text: 'Extra Variables', link: '/layer/extra-variables/' }
         ] },
         { text: 'Constraints', link: '/layer/constraints/' },        
         { text: 'Attributes Form Layout', link: '/layer/form-layout/', 
