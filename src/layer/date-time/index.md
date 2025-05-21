@@ -1,12 +1,15 @@
 # Date and time
 
+**Date** or **Date and Time** fields can be used to record date and time. The most common use is to record when a feature was created or updated. This can be done manually or automatically by using [default values](../default-values/).
+
 :::tip Example project available
 Various options of setting up Date and Date&Time fields are included in this public project: <MerginMapsProject id="documentation/form-widgets" />. Download or clone it to explore it in more detail.
 :::
 
+Prefer a video? Here is a short tutorial about of date widgets:
 <YouTube id="EoIqYIl4-Xk" />
 
-**Date** or **Date and Time** fields can be used to record date and time. The most common use is to record when a feature was created or updated. This can be done manually or automatically by using [default values](../form-configuration/#default-values).
+## Setting up the Date/Time widget
 
 To set up the **Date/Time** widget:
 
@@ -16,12 +19,12 @@ To set up the **Date/Time** widget:
    - use the default or custom  **Display Format**
    - check the **Calendar popup** option :heavy_check_mark:
    - use the preview to confirm that this is the format you want to use to store your timestamps
-4. If you want to automatically insert the date (or date and time) when the feature is created, use `now()` as a [default value](../form-configuration/#default-values) in the **Defaults** tab.
+4. If you want to automatically insert the date (or date and time) when the feature is created, use `now()` as a [default value](../default-values/) in the **Defaults** tab.
 5. **Apply** the changes. Don't forget to save and sync your project!
 
 ![QGIS date time field form](./qgis-form-datetime.jpg "QGIS date time field form")
 
-In the <MobileAppNameShort />, the date can be edited using a calendar pop up. If you tap the icon next to field, the current date and time will be filled in.
+In the <MobileAppNameShort />, the date can be edited using a calendar pop up. If you tap the icon next to the field, the current date and time will be filled in.
 
 ![Mergin Maps mobile app calendar form date time fields](./mobile-form-datetime.jpg "Mergin Maps mobile app calendar form date time fields")
 

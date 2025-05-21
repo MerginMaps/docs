@@ -1,11 +1,22 @@
-# Widgets
+# Form Widgets
 
-Attributes forms can be configured using <QGISHelp ver="latest" link="user_manual/working_with_vector/vector_properties.html#edit-widgets" text="QGIS widget types" /> in the **Attributes Form** tab in the **Layer Properties**.
+Form widgets define the way you can enter values in the form, both in QGIS and in the <MobileAppNameShort />. The configuration of form widgets in your <MainPlatformNameLink /> project is done in QGIS.
+
+Each data type has a default widget: for instance, text fields use *Text edit* widget by default and are filled in by manually typing the value, while date fields use *Date/Time* widget and the value is selected using a calendar pop-up.
+
+Form widgets can be changed in the properties of a layer. Note that the widget has to be compatible with the field data type.
+
+## Configuring form widgets
+Attributes forms can be configured using <QGISHelp ver="latest" link="user_manual/working_with_vector/vector_properties.html#edit-widgets" text="QGIS widgets" /> in the **Attributes Form** tab in the **Layer Properties**.
 
 ![QGIS Layer Properties Attributes Form tab](./qgis-attributes-form.gif "QGIS Layer Properties Attributes Form tab")
 
-Here is an overview of widgets commonly used both in QGIS and the <MobileAppNameShort />. Note that the widget has to be compatible with the data type of a field. 
+Do you prefer a video? Check out this tutorial on how to configure QGIS widgets for survey forms.
+<YouTube id="jc4p1PpXj3k" />
 
+## Widget gallery
+
+Here is an overview of widgets that are commonly used both in QGIS and the <MobileAppNameShort />.
 ::: tip Public project available
 :bulb: These widgets can be explored in this project: <MerginMapsProject id="documentation/form-widgets" />.
 :::
@@ -24,8 +35,4 @@ Here is an overview of widgets commonly used both in QGIS and the <MobileAppName
 |Attachment   |[Photos from device's camera or gallery](../photos) | ![Mergin Maps mobile app attachment field form](./mobile-form-photo-preview.jpg "Mergin Maps mobile app attachment field form")  ![Mergin Maps mobile app attachment field form](./mobile-form-photo-preview2.jpg "Mergin Maps mobile app attachment field form")  |
 |Relations - Gallery |[Multiple photos from device's camera or gallery](../relations/) | ![Mergin Maps mobile app multiple photos attributes form](./mobile-form-multiple-photo-preview.jpg "Mergin Maps mobile app multiple photos attributes form") |
 |Relations |[Multiple records linked to one feature](../relations/) | ![Mergin Maps mobile app 1-N relations attributes form](./mobile-form-relations-preview.jpg "Mergin Maps mobile app 1-N relations attributes form")  |
-
-
-Prefer video? Check out this tutorial on how to configure QGIS widgets for survey forms.
-<YouTube id="jc4p1PpXj3k" />
 

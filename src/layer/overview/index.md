@@ -1,9 +1,7 @@
 # Overview
 [[toc]]
 
-Capturing field data often requires filling some attributes in the form to record the properties of surveyed points, lines, polygons or non-spatial tables.
-
-Attribute forms can simplify the data entry and even ensure to some extent that the correct information is filled in.
+Capturing field data usually requires filling some attributes in the form to record the properties of surveyed points, lines, polygons or non-spatial features. Attribute forms can simplify the data entry and even ensure to some extent that the correct information is filled in.
 
 This section will guide you through various settings of attributes form for both spatial and non-spatial layers. 
 
@@ -14,4 +12,4 @@ Extra configuration of attribute forms can be done to make data collection easie
 - set [constraints](../constraints/) to define valid inputs for the attributes
 - design the [attributes forms layout](../form-layout/) so that the forms are easy to work with
 
-In [Use Cases](../use-cases), you can find step-by-step guides to deal with specific scenarios, e.g. [opening files](../open-file/) from within the form, [using hyperlinks](../external-link/), [displaying instructions](../display-instructions/) in the form and much more.
+In [Use Cases](../use-cases), you can find step-by-step guides to deal with specific scenarios, such as [opening files](../open-file/) from within the form, [using hyperlinks](../external-link/), [displaying instructions](../display-instructions/) in the form and much more.
