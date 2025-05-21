@@ -1,11 +1,12 @@
 # Numbers
 
+Number fields can be handled by the **Range** widget. Two options are supported by the <MobileAppNameShort />: [editable range](#range) and [slider](#slider). 
+
 :::tip Example project available
 This public project: <MerginMapsProject id="documentation/form-widgets" /> uses various options for entering numerical data. Download or clone it to see this setup.
 :::
 
-Number fields can be handled by the **Range** widget. Two options are supported by the <MobileAppNameShort />: [editable range](#range) and [slider](#slider). 
-
+Prefer a video? Here is a short tutorial about of number widgets:
 <YouTube id="woZX3L33xh0" />
 
 ## Range

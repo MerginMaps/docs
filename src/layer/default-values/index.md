@@ -17,7 +17,36 @@ This option is therefore useful for fields that can be recorded automatically wi
 Various usage of default values can be explored in more detail by downloading or cloning this public project <MerginMapsProject id="documentation/form_setup" />.
 :::
 
-### Recording usernames, dates and times automatically
+## Useful default values examples {#examples-of-useful-default-values}
+There are some commonly used default values that can be useful in your field survey.
+
+- `uuid()` function generates a unique identifier that is needed to correctly setup [1-N relations](../relations/) or [value relations](../value-select/#value-relation)
+
+- It is convenient to know when a feature was created and when it was last updated. Use fields with **Date** or **Date&Time** data types with the `now()` function to record this information. You can change the formatting using the [Date/Time](../form-widgets/#date-and-time) widget.
+
+- The name of the <MainPlatformName /> user who created or modified the feature can be recorded using the `@mergin_username` variable. These fields should use **Text (string)** data type. 
+  There are also other [extra QGIS variables](../position_variables/) related to your <MainPlatformName /> account or service that can be used as default values.
+
+- The coordinates of a point feature can be recorded as well using the `$x` and `$y` function in QGIS. To record the coordinate accurately, these fields should have the **Decimal number (real)** data type.  If the coordinates are in metres, values can be rounded to, say, 2-3 decimal places. When working with geographic coordinates that use degrees, you may want to round the coordinates to 8 decimal places. Use the *apply default value on update* option so that you have correct values when the position of the point feature changes.
+
+- Parameters such as **length** of a line feature or **area** of a polygon feature can be calculated from the geometry. These fields should have the **Decimal number (real)** or **Integer** data type. Use the *apply default value on update* option to update the field in case there is a change in the feature.
+
+- [Extra Position Variables](../position_variables/) can be used to record GPS information from your mobile devices
+
+Here are some examples:
+
+| Variable name               | Sample value                  | Apply default value on update   | Description |
+|-----------------------------|-------------------------------|---------|-------------|
+| `uuid()`          | `{9d0150eb-a36f-40f1-a768-540db8a36f7c}`                      | **no**  | Generates <QGISHelp ver="latest" link="user_manual/expressions/functions_list.html#uuid" text="UUID" /> (Universally Unique Identifier).|
+| `@now`          | `2024-06-30 10:00:00`                      | **no**  | The timestamp of when the feature was created. |
+| `@now`          | `2024-06-30 10:30:00`                     | **yes**  | The timestamp of when the feature was last **updated**. |
+| `@mergin_username`          | `sarah`                      | **no**  | Name of the user who created this feature.|
+| `@mergin_username`          | `jack`                      | **yes**  | Name of the user who **updated** this feature last.|
+| `round($x,2)`          | `1898789.92`                      | **yes**  | The X coordinate of a point feature, rounded to 2 decimal places.|
+| `$length`          | `123.45`                      | **yes**  | The length of a line feature.|
+| `$area`          | `1234.56`                      | **yes**  | The area of a polygon feature.|
+
+## Recording usernames, dates and times automatically
 
 Let's set up an attributes to record the <MainPlatformName /> username of the surveyor who *created* a feature:
 1. Right-click on a layer, select **Properties** and go to the **Attributes form** tab.
@@ -40,7 +69,7 @@ When the form is opened in the <MobileAppNameShort />, the default values are au
 
 ![Mergin Maps mobile app attributes form default values](./mobile-form-default-values-timestamp-username.jpg "Mergin Maps mobile app attributes form default values")
 
-### Automatically transform and record coordinates of a point
+## Automatically transform and record coordinates of a point
 Here we are going to set the default values for `x` and `y` field to be longitude and latitude.
 
 1. Right-click on the survey layer and select **Properties**
@@ -66,32 +95,4 @@ Don't forget to save and synchronise your project!
 When adding or editing features in the <MobileAppNameShort />, the coordinates are automatically filled in:
 
 ![Mergin Maps mobile app attributes form default values](./mobile-form-default-values-coordinates.jpg "Mergin Maps mobile app attributes form default values")
-
-### Examples of useful default values
-There are some commonly used default values that can be useful in your field survey.
-
-- It is convenient to know when a feature was created and when it was last updated. Use fields with **Date** or **Date&Time** data types with the `now()` function to record this information. You can change the formatting using the [Date/Time](../form-widgets/#date-and-time) widget.
-
-- The name of the <MainPlatformName /> user who created or modified the feature can be recorded using the `@mergin_username` variable. These fields should use **Text (string)** data type. 
-  There are also other [extra QGIS variables](../position_variables/) related to your <MainPlatformName /> account or service that can be used as default values.
-
-- The coordinates of a point feature can be recorded as well using the `$x` and `$y` function in QGIS. To record the coordinate accurately, these fields should have the **Decimal number (real)** data type.  If the coordinates are in metres, values can be rounded to, say, 2-3 decimal places. When working with geographic coordinates that use degrees, you may want to round the coordinates to 8 decimal places. Use the *apply default value on update* option so that you have correct values when the position of the point feature changes.
-
-- Parameters such as **length** of a line feature or **area** of a polygon feature can be calculated from the geometry. These fields should have the **Decimal number (real)** or **Integer** data type. Use the *apply default value on update* option to update the field in case there is a change in the feature.
-
-- [Extra Position Variables](../position_variables/) can be used to record GPS information from your mobile devices
-
-Here are some examples:
-
-| Variable name               | Sample value                  | Apply default value on update   | Description |
-|-----------------------------|-------------------------------|---------|-------------|
-| `@now`          | `2024-06-30 10:00:00`                      | **no**  | The timestamp of when the feature was created. |
-| `@now`          | `2024-06-30 10:30:00`                     | **yes**  | The timestamp of when the feature was last **updated**. |
-| `@mergin_username`          | `sarah`                      | **no**  | Name of the user who created this feature.|
-| `@mergin_username`          | `jack`                      | **yes**  | Name of the user who **updated** this feature last.|
-| `round($x,2)`          | `1898789.92`                      | **yes**  | The X coordinate of a point feature, rounded to 2 decimal places.|
-| `$length`          | `123.45`                      | **yes**  | The length of a line feature.|
-| `$area`          | `1234.56`                      | **yes**  | The area of a polygon feature.|
-| `uuid()`          | `{9d0150eb-a36f-40f1-a768-540db8a36f7c}`                      | **no**  | Generates <QGISHelp ver="latest" link="user_manual/expressions/functions_list.html#uuid" text="UUID" /> (Universally Unique Identifier).|
-
 

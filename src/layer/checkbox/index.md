@@ -1,12 +1,20 @@
 # Checkbox
 
+The checkbox widget is handy when you want to set up a field that can have two values, such as true/false, Yes/No, or On/Off. 
+
 :::tip Example project available
 Checkbox widget is used in this public project <MerginMapsProject id="documentation/form-widgets" />. Download or clone it to see the setup.
 :::
 
+In the <MobileAppNameShort />, the checkbox can be easily toggled on/off.
+
+![Mergin Maps mobile app checkbox field form](./mobile-form-checkbox.jpg "Mergin Maps mobile app checkbox field form")
+
+Prefer a video? Here is a short tutorial about of using the checkbox widget:
+
 <YouTube id="rtBdJzizdug" />
 
-Checkbox field becomes handy when you want to set up a Yes/No, True/False or On/Off in your field. 
+## Checkbox for Boolean fields
 
 If you have a field set as **Boolean** in your GeoPackage layer, QGIS assigns the checkbox widget type by default.
 
@@ -17,6 +25,7 @@ If you have a field set as **Boolean** in your GeoPackage layer, QGIS assigns th
 
 ![QGIS checkbox field form](./qgis-form-checkbox.jpg "QGIS checkbox field form")
 
+## Checkbox for text fields
 Checkbox widget can be also used for **Text** (string) fields:
 1. Right-click on a layer, select **Properties** and go to the **Attributes form** tab.
 2. In the list of **Available Widgets** select the field you want to work with (here: `checkbox-string`).
@@ -25,6 +34,3 @@ Checkbox widget can be also used for **Text** (string) fields:
 
 ![QGIS checkbox field form](./qgis-form-checkbox-string.jpg "QGIS checkbox field form")
 
-In the <MobileAppNameShort />, the status of the checkbox field can be easily toggled on/off.
-
-![Mergin Maps mobile app checkbox field form](./mobile-form-checkbox.jpg "Mergin Maps mobile app checkbox field form")
