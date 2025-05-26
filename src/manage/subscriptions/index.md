@@ -16,7 +16,7 @@ The overview of your current subscription plan, such as storage usage, number of
 ![Mergin Maps Dashboard Subscription tab](../dashboard/mergin-maps-dashboard-subscriptions.jpg "Mergin Maps Dashboard Subscription tab")
 
 ::: tip Trial period
-After signing up to <MainPlatformNameLink />, you can use your workspace for free during the **28 day trial**. After the trial, you can [choose a premium plan](#how-to-upgrade-a-subscription-from-the-trial-plan).
+After signing up to <MainPlatformNameLink />, you can use your workspace for free during the **14 day trial**. After the trial, you can [choose a premium plan](#how-to-upgrade-a-subscription-from-the-trial-plan).
 :::
 
 ::: details Legacy subscription plans: Individual, Professional and Team plan
