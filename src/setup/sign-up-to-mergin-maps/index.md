@@ -32,7 +32,7 @@ Do you want to delete your account or change your details? Go to [**User Account
 You can get up-to-speed quickly by following our [Quick Start tutorials](../../tutorials/capturing-first-data/).
 
    ::: tip Workspaces and subscriptions
-   Projects, collaborations and subscriptions in <MainPlatformNameLink /> are tied to [workspaces](../../manage/workspaces/). You can use your first  workspace for free during the 28 day trial. After the trial, you can [upgrade to a premium plan](../../manage/subscriptions/#how-to-upgrade-a-subscription-from-the-trial-plan).
+   Projects, collaborations and subscriptions in <MainPlatformNameLink /> are tied to [workspaces](../../manage/workspaces/). You can use your first  workspace for free during the 14 day trial. After the trial, you can [upgrade to a premium plan](../../manage/subscriptions/#how-to-upgrade-a-subscription-from-the-trial-plan).
    
    [Subscriptions](../../manage/subscriptions) are based on the number of contributors on the workspace. Per each contributor seat, you get 1 GB of storage. Storage is shared across the whole workspace.
    
@@ -83,7 +83,7 @@ You can also sign up from <MobileAppName />.
 You can get up-to-speed quickly by following our [Quick Start tutorials](../../tutorials/capturing-first-data/).
 
    ::: tip Workspaces and subscriptions
-   Projects, collaborations and subscriptions in <MainPlatformNameLink /> are tied to [workspaces](../../manage/workspaces/). You can use your first  workspace for free during the 28 day trial. After the trial, you can [upgrade to a premium plan](../../manage/subscriptions/#how-to-upgrade-a-subscription-from-the-trial-plan).
+   Projects, collaborations and subscriptions in <MainPlatformNameLink /> are tied to [workspaces](../../manage/workspaces/). You can use your first  workspace for free during the 14 day trial. After the trial, you can [upgrade to a premium plan](../../manage/subscriptions/#how-to-upgrade-a-subscription-from-the-trial-plan).
    
    [Subscriptions](../../manage/subscriptions) are based on the number of contributors on the workspace. Per each contributor seat, you get 1 GB of storage. Storage is shared across the whole workspace.
    
