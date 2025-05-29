@@ -54,18 +54,24 @@ If you have not created this file yet, please do so from the provided `.env.temp
 ```shell
 cp .env.template .prod.env
 ```
+Once the necessary variables are configured, you can run the following commands to start the <MainPlatformName /> stack.
 
-Once configured, you can run:
+Community edition stack:
+
 ```shell
-# For community edition
-$ mkdir -p mergin_db # or wherever you set it to be
-$ sh ../common/set_permissions.sh projects
+$ mkdir -p mergin_db # database data directory
+$ sh ../common/set_permissions.sh projects # application internal data directory
+$ sh ../common/set_permissions.sh diagnostic_logs # directory to persist diagnostic logs (optional)
 $ docker-compose -f docker-compose.yml up -d
+```
 
-# For enterprise edition
-$ mkdir -p mergin-db-enterprise # or wherever you set it to be
-$ sh ../common/set_permissions.sh data
-$ sh ../common/set_permissions.sh map_data
+Enterprise edition stack:
+
+```shell
+$ mkdir -p mergin-db-enterprise # database data directory
+$ sh ../common/set_permissions.sh data # application internal data directory
+$ sh ../common/set_permissions.sh map_data # maps data directory (neccessary for maps)
+$ sh ../common/set_permissions.sh diagnostic_logs # directory to persist diagnostic logs (optional)
 $ docker-compose -f docker-compose.yml up -d
 $ docker-compose -f docker-compose.maps.yml up -d # Run maps stack separately
 ```
