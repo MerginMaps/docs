@@ -1,4 +1,4 @@
-# Relations 
+# Relationships
 
 :::tip Example project available
 You can clone these projects to take a closer look at 1-N relations:

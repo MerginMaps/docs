@@ -1,77 +1,5 @@
-# Attributes Form Layout
+# Informational Widgets
 [[toc]]
-
-Collecting and editing data in the field can be more efficient with forms that are easy to navigate. QGIS offers a lot of options for improving the layout of your forms, such as using groups and tabs to keep related fields together, displaying or hiding a group of fields based on conditional visibility, or displaying tips and instructions in the forms.
-
-
-## QGIS Drag and Drop Designer
-By default, the form is automatically generated and contains all the fields in the layer. However, you might want to change the order of the fields. Also, there may be some fields that do not need to be displayed during the survey, such as fields with [default values](../form-configuration/#default-values) that are calculated from the geometry.
-
-QGIS Drag and Drop designer is an easy tool for defining the form layouts:
-1. Open your <MainPlatformNameLink /> project in QGIS
-2. Right-click on a layer and select **Properties**
-3. Navigate to the **Attributes form** tab. Here, switch to **Drag and Drop Designer**
-4. Fields can be added and removed from the **Form Layout**. The order of the fields can be changed by simply dragging them higher or lower in the list.
-
-   Only fields that are in the **Form layout** will appear in the form.
-
-5. Click **OK** to confirm your changes.
-
-![QGIS drag and drop form designer](./qgis-drag-n-drop.gif "QGIS drag and drop form designer")
-   
-## Tabs and groups
-Using QGIS Drag and Drop designer, fields can be arranged into groups and tabs.
-
-:::tip Example project available
-To see an example of tabs and groups, you can clone <MerginMapsProject id="documentation/form_setup" />. 
-:::
-
-1. Click on the **+** button to add new group or a tab to the form layout
-   ![QGIS Drag and drop designer add new group or tab](./qgis-form-layout-add-groups-tabs.jpg "Add new group or tab button")
-2. Choose the container type, add a label, and if needed, the number of columns.
-
-   A group can be placed within a tab or another group.
-   ![QGIS form Add tab](./qgis-add-group-tab.jpg "QGIS form Add tab")
-   ![QGIS form Add group](./qgis-form-add-group.jpg "QGIS form Add group")
-   
-3. Drag and drop fields to tabs or groups as needed.
-
-Here we have two tabs, *Data* and *Changelog*. The *Data* tab contains two groups: *roads* and *paths*.
-![QGIS form with tabs and groups](./qgis_forms_layout.jpg "QGIS form with tabs and groups")
-
-The form with tabs and groups will appear in QGIS like this:
-![QGIS form layout with tabs and groups](./qgis-form-tabs-groups.jpg "QGIS form layout with tabs and groups")
-
-And this is how the same form looks like in the <MobileAppNameShort />:
-![Mergin Maps mobile form with tabs and groups](./mobile-forms-layout.jpg "Mergin Maps mobile form with tabs and groups")
-
-
-## Show and hide fields depending on a field value (conditional visibility)
-Conditional visibility can be applied to groups and tabs, meaning they will be displayed or hidden depending on the value of a field.
-
-:::tip Example project available
-You can explore this functionality in <MerginMapsProject id="documentation/form_setup" />. 
-:::
-
-Here we will use a line layer named `roads and paths`. It is designed for surveying both roads and paths and most of the fields are relevant for every type of feature in this layer. However, there are some attributes that are specific for roads (e.g. the number of lanes) or for paths (e.g. the visibility of the path). 
-
-The form uses the value of the `type` field to display the relevant set of attributes. The `type` field is set up as [value map](../form-widgets/#value-map) with defined values `road` and `path`.
-
-![QGIS form value map](./qgis-form-value-map-roads.jpg "QGIS form value map")
-
-To set the visibility of groups in the attributes form:
-1. Click on the **roads** group in the **Form Layout**
-2. Check the **Control Visibility by Expression** option :heavy_check_mark:
-3. Define the expression. Here we use: `"type" = "road"`
-
-![QGIS form control visibility by expression](./qgis-form-conditional-visibility.jpg "QGIS form control visibility by expression")
-
-4. Same steps are used for the **path** group using the expression `"type" = "path"`
-
-In the <MobileAppNameShort />, the form displays these groups only when the condition is met. So, there are different sets of attributes depending on the value that is entered in the `type` field.
-
-![Show fields depending on a field value in the mobile app](./mobile-forms-conditional-visibility.jpg "Show fields depending on a field value in the mobile app")
-
 
 ## Display instructions in the form using Text and HTML widget
 Sometimes, you may want to include instructions or tips for surveyors in your forms. <QGIS link="" text="QGIS" /> offers Text and HTML widgets that can be used for this purpose. Your text instructions can include [expressions and field values](#using-expressions-in-text-and-html-widgets) as well. The HTML widget supports various [HTML tags](https://doc.qt.io/qt-6/richtext-html-subset.html#supported-tags), so it can be also used, for instance, to display [online images](#using-html-widget-to-display-online-images-and-other-online-resources).
@@ -88,7 +16,7 @@ If you prefer your text to be formatted, you may do so in the **HTML** widget. H
 ...and this is how the Text and HTML widgets look like in the form in QGIS (left) and in the mobile app (right).
 ![Text and HTML widgets in QGIS and in Mergin Maps mobile app](./qgis-form-text-html.jpg "Text and HTML widgets in QGIS and in Mergin Maps mobile app")
 
-### Using expressions in Text and HTML widgets
+## Using expressions in Text and HTML widgets
 Expressions and variables can be used both in the Text and the HTML widget.
 
 ![QGIS Configure Text Widget Expression Builder](./qgis-text-widget-expression.gif "QGIS Configure Text Widget Expression Builder")
@@ -114,7 +42,7 @@ Clone <MerginMapsProject id="documentation/form_cascade" /> to follow this examp
 ... and this is how it works during the field survey. `[% "VRP" %]` expression displays the current value of the `Vehicle Registration Plate` field.
 ![Mergin Maps mobile app text widget with variable](./mobile-text-widget-expression.jpg "Mergin Maps mobile app text widget with variable")
 
-### Using HTML widget to display online images and other online resources
+## Using HTML widget to display online images and other online resources
 The **HTML widget** can be also used to display online images in the mobile app or open online resources, such as PDF files, videos or websites, in the browser of your device.
 
 ::: tip
@@ -145,7 +73,7 @@ QGIS may not display the preview of the online image if you use QGIS 3.36 or hig
 :::
 
 
-### Using HTML widget to open local files
+## Using HTML widget to open local files
 The HTML widget can also be used to open local files: for instance, a locally stored PDF file can be opened from within the form during the survey.
 
 ::: tip
