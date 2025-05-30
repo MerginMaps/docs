@@ -60,21 +60,44 @@ export default {
       ]
     },
     {
-      text: 'Configure Survey Layer',   // required
+      text: 'Configure Forms',   // required
       collapsed: true,
       items: [
-        { text: 'Best Practice Tips for Layers and Forms', link: '/layer/best-practice/' },
-        { text: 'Setting Up Widgets in Attributes Form', link: '/layer/form-widgets/' },
-        { text: 'Attributes Form Configuration', link: '/layer/form-configuration/' },
-        { text: 'Attributes Form Layout', link: '/layer/form-layout/' },
-        { text: 'Capturing Photos', link: '/layer/photos/' },
-        { text: 'How to Attach Multiple Photos to Features', link: '/layer/attach-multiple-photos-to-features/' },
+        { text: 'Overview', link: '/layer/overview/' },
+        { text: 'Widgets', link: '/layer/form-widgets/',
+        items: [
+        { text: 'Text', link: '/layer/text/' },
+        { text: 'Date and Time', link: '/layer/date-time/' },
+        { text: 'Relations', link: '/layer/relations/' },
+        { text: 'Numbers', link: '/layer/numbers/' },
+        { text: 'Checkbox', link: '/layer/checkbox/' },
+        { text: 'QR Code', link: '/layer/qr-code/' },
+        { text: 'Selecting Single or Multiple Values', link: '/layer/value-select/' },
+        { text: 'Photos', link: '/layer/photos/' },
+        { text: 'Informational Widgets', link: '/layer/info-widgets/' },
+        ] },
+        { text: 'Default Values', link: '/layer/default-values/',
+        collapsed: true,
+        items: [
+        { text: 'Geotagging', link: '/layer/exif/' },
+        { text: 'Extra Variables', link: '/layer/extra-variables/' }
+        ] },
+        { text: 'Constraints', link: '/layer/constraints/' },        
+        { text: 'Attributes Form Layout', link: '/layer/form-layout/', 
+        collapsed: true,
+        items: [
+        { text: 'Tabs and Groups', link: '/layer/tabs-and-groups/' },
+        { text: 'Conditional Visibility', link: '/layer/conditional-visibility/' },
+        ] },
+        { text: 'Use Cases', link: '/layer/use-cases/', 
+        collapsed: true,
+        items: [
+	{ text: 'How to Open a File', link: '/layer/open-file/' },
+	{ text: 'How to Use Hyperlinks', link: '/layer/external-link/' },
         { text: 'How to Link Multiple Records to One Feature (1-N Relations)', link: '/layer/one-to-n-relations/' },
-        { text: 'Exif Metadata', link: '/layer/exif/' },
-        { text: 'How to Use Hyperlinks', link: '/layer/external-link/' },
-        { text: 'Working with Non-Spatial Tables', link: '/layer/non-spatial-data/' },
-        { text: 'Extra Position Variables', link: '/layer/position_variables/' },
-        { text: 'Extra QGIS Variables', link: '/layer/plugin-variables/' }
+        { text: 'How to Embed an Image', link: '/layer/embed-image/' },
+        { text: 'How to Display Instructions in the Form', link: '/layer/display-instructions/' },
+        ] },     
       ]
     },
     {

@@ -66,8 +66,8 @@ The ecosystem consist of various components:
 - [Custom Projections](./gis/proj/)
 - [Supported Formats](./gis/supported_formats/)
 
-## Configure Survey Layer
-- [Best Practice Tips for Layers and Forms](./layer/best-practice/)
+## Configure Forms
+- [Overview](./layer/form-widgets/)
 - [Setting Up Widgets in Attributes Form](./layer/form-widgets/)
 - [Attributes Form Configuration](./layer/form-configuration/)
 - [Attributes Form Layout](./layer/form-layout/)

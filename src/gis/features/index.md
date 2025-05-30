@@ -1,9 +1,13 @@
+---
+outline: [2, 3]
+---
+
 # QGIS Project Preparation
 [[toc]]
 
 Project preparation is done in QGIS. For more information about loading layers, styling the data and creating map themes, visit <QGISHelp ver="3.22" link="user_manual/index.html" text="QGIS documentation page" />. 
 
-In addition, <MobileAppName /> uses some of the features within the project to help visualise, capture and browse the data. Here is an overview of the project preparations steps.
+In addition, <MobileAppName /> uses some of the features within the project to help visualise, capture and browse the data. Here is an overview of the project preparations steps. 
 
 :::tip
 Our tutorials can guide you through QGIS project preparation step by step.
@@ -12,6 +16,66 @@ In [Creating a Project in QGIS](../../tutorials/creating-a-project-in-qgis/) you
 
 [Further Project Customisation](../../tutorials/further-project-customisation/) will show you how to style layers, add labels, customise the preview panel, define map themes and set up the project extent.
 :::
+
+## Survey layers
+Vector layers can be used as survey layers in the <MobileAppNameShort />. You can apply styles and set up the forms to make your field survey easier.
+
+Making changes in the data schema of layers can lead to issues in the synchronisation process. Be careful to [**deploy the revised project properly**](../../manage/deploy-new-project/). Design the data schema carefully when creating a layer to avoid the need to change it later.
+
+Here are some practical tips for creating and maintaining layers in your project:
+- **Always use GeoPackage for survey layers**. If you use other formats, such as ESRI shapefile, it is not possible to detect changes from other users and they may be overwritten. Overwritten files are stored in a conflict file.
+- **Add some extra back-up field attributes** when creating a survey layer with different types (e.g. a couple of texts, int, real, date/time) and hide them in the form design. These can serve as a backup: if you need extra fields later in the survey, just alias these extra fields and add them to form. 
+- If you do not need a field, **remove it from the form**. You don't need to delete it from the table.
+- **Instead of renaming a field, change its alias**.
+- **Add new layers to your project as separate GeoPackages**. Do not add a new table to your existing GeoPackage that contains a survey layer. Just to be safe, it is better to have one GeoPackage for each of your survey layers.
+- use **GeoTIFF** format for your raster files or store them in a separate GeoPackage database
+
+### Layer symbology
+The same symbology as defined in the QGIS project will be used in <MobileAppName />. However, <MobileAppName /> does not include all the SVG markers that are available within QGIS. Therefore, if you are using SVG markers for your layer styling, ensure those are copied to the project folder.
+
+### Forms
+During the field survey, it is often necessary to fill out some attributes in the form to record the properties of surveyed features. Forms can make the survey easier, consistent and more effective. 
+
+Detailed description of form widgets and form configuration can be found in the [Configure Form](../../layer/overview/) section.
+
+### Settings for Mergin Maps mobile app preview panel
+What appears in the <MobileAppName /> preview panel can be defined in the **Display** tab in **Layer Properties**:
+- **Display Name**: a field name or an expression.
+- **HTML Map Tip**: the content of the preview panel. While QGIS always interprets the content of map tip as being HTML, <MobileAppName /> extends the syntax to allow two more modes: field values and images. If the map tip is not specified, <MobileAppName /> will try to use the first three fields and show their attribute values.
+
+![QGIS layer properties display settings](./qgis_properties_display.jpg "QGIS layer properties display settings")
+
+#### HTML
+Sample map tip content that will show render as HTML page:
+
+```
+<p><strong>Notes:</strong>[% "notes" %]</p>
+```
+
+If the map tip does not contain any special marker, it is assumed that the map tip is HTML content. Only a limited subset of HTML is supported - see [Qt documentation](https://doc.qt.io/qt-5/richtext-html-subset.html)
+
+#### Field values
+Sample map tip content that will show "description" and "time" field values:
+
+```
+# fields
+description
+time
+```
+
+If the map tip content has `# fields` marker on the first line, the following lines will be understood as field names that should be listed in the preview. At most three fields will be shown. Expressions are not allowed.
+
+#### Image
+Sample map tip content that will cause an image to be show specified by file path in field "image_1" (containing path relative to the project folder):
+
+```
+# image
+file:///[%@project_folder%]/[% "image_1" %]
+```
+
+If the map tip has `# image` marker on the first line, the following line is understood as the URL for the image. It can be a regular file on the file system, but it could be even a remote image from the network. Expressions embedded in the image URL will be evaluated (enclosed in `[% 1+1 %]`).
+
+![Preview panel in the mobile app based on Display settings in QGIS](./mobile-app-preview-panel.jpg "Preview panel in the mobile app based on Display settings in QGIS")
 
 ## Background layers
 Various online and offline maps can be used as background layers for navigation during the field survey. You can find more information in [Background Maps](../settingup_background_map/).
@@ -98,51 +162,4 @@ You can read more about this functionality in [How to Use Tracking in Mergin Map
 ### Map themes
 [Map Themes](../setup_themes/) make possible to switch between different background maps in <MobileAppName /> (e.g. cartography maps and aerial imagery)
 
-## Survey layers
-Vector layers can be used as survey layers in <MobileAppName />. You can apply styles and set up the forms to make your field survey easier.
-
-### Layer symbology
-The same symbology as defined in the QGIS project will be used in <MobileAppName />. However, <MobileAppName /> does not include all the SVG markers that are available within QGIS. Therefore, if you are using SVG markers for your layer styling, ensure those are copied to the project folder.
-
-### Forms
-During the field survey, it is often necessary to fill out some attributes in the form to record the properties of surveyed features. Forms can make the survey easier, consistent and more effective. Detailed description of form widgets and form configuration can be found in [Setting Up Form Widgets](../../layer/form-widgets/) and [Advanced Form Configuration](../../layer/form-configuration/).
-
-### Settings for Mergin Maps mobile app preview panel
-What appears in the <MobileAppName /> preview panel can be defined in the **Display** tab in **Layer Properties**:
-- **Display Name**: a field name or an expression.
-- **HTML Map Tip**: the content of the preview panel. While QGIS always interprets the content of map tip as being HTML, <MobileAppName /> extends the syntax to allow two more modes: field values and images. If the map tip is not specified, <MobileAppName /> will try to use the first three fields and show their attribute values.
-
-![QGIS layer properties display settings](./qgis_properties_display.jpg "QGIS layer properties display settings")
-
-#### HTML
-Sample map tip content that will show render as HTML page:
-
-```
-<p><strong>Notes:</strong>[% "notes" %]</p>
-```
-
-If the map tip does not contain any special marker, it is assumed that the map tip is HTML content. Only a limited subset of HTML is supported - see [Qt documentation](https://doc.qt.io/qt-5/richtext-html-subset.html)
-
-#### Field values
-Sample map tip content that will show "description" and "time" field values:
-
-```
-# fields
-description
-time
-```
-
-If the map tip content has `# fields` marker on the first line, the following lines will be understood as field names that should be listed in the preview. At most three fields will be shown. Expressions are not allowed.
-
-#### Image
-Sample map tip content that will cause an image to be show specified by file path in field "image_1" (containing path relative to the project folder):
-
-```
-# image
-file:///[%@project_folder%]/[% "image_1" %]
-```
-
-If the map tip has `# image` marker on the first line, the following line is understood as the URL for the image. It can be a regular file on the file system, but it could be even a remote image from the network. Expressions embedded in the image URL will be evaluated (enclosed in `[% 1+1 %]`).
-
-![Preview panel in the mobile app based on Display settings in QGIS](./mobile-app-preview-panel.jpg "Preview panel in the mobile app based on Display settings in QGIS")
 
