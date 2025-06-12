@@ -92,7 +92,7 @@ $ docker exec merginmaps-server flask user create <username> <password> --is-adm
 ## Deployment of Single Sign On (SSO)
 <ServerType type="EE" />
 
-TTo enable SSO in <MainPlatformName />, ensure that you have the following environment variables set in your `.prod.env` file:
+To enable SSO in <MainPlatformName />, ensure that you have the following environment variables set in your `.prod.env` file:
 
 ```shell
 SSO_ENABLED=True
@@ -141,7 +141,7 @@ Then restart or reload the configuration in the `merginmaps-proxy` container and
 docker compose -f docker-compose.sso.yml up -d
 ```
 
-If you follow previous steps, the admin panel and authorization server for Ory Polis will be available at `http://localhost:8081`.
+If you follow previous steps, the admin panel for Ory Polis will be available at `http://localhost:8081`.
 
 :::tip Domain for SSO Service 
 We recommend running the Ory Polis server on a separate domain or subdomain to make it accessible to your users. The `deployment/enterprise/sso/sso-nginx.conf` file provides a reverse proxy configuration for running in a local environment. For your production deployment, use HTTPS to serve the SSO service. See the ssl-sso-nginx.conf file in the <GitHubRepo id="MerginMaps/server/blob/master/deployment/" desc="deployment folder" />. 

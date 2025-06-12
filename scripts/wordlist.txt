@@ -291,3 +291,12 @@ workspaces
 www
 zlib
 zoomstack
+SSO
+Ory
+Polis
+SAML
+sso
+yaml
+Entra
+pre
+env
