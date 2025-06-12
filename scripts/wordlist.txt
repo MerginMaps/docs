@@ -300,3 +300,4 @@ yaml
 Entra
 pre
 env
+OIDC
