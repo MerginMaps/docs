@@ -157,6 +157,6 @@ Alternatively, you can set up your own background map.
 
 | Variable name            | Type     | Default                       | Description                    |
 |--------------------------|----------|-------------------------------|--------------------------------|
-| `SSO_ENABLED`            | boolean  | `false`                       | Flag to enable SSO in Mergin Maps              |
+| `SSO_ENABLED`            | boolean  | `false`                       | Flag to enable SSO in <MainPlatformName />             |
 | `SSO_SERVER_URL`           | string   | `http://localhost:5225`     | Public URL of the SSO server. This URL should be accessible from the internet. |
-| `SSO_SERVER_API_KEY`      | string   | ``                      | API key used to authenticate requests to the SSO serice. |
+| `SSO_SERVER_API_KEY`      | string   | ``                      | API key used to authenticate requests to the SSO service. |
