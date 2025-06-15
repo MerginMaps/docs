@@ -1,5 +1,5 @@
 # Map Sketching in Mergin Maps Mobile App
-<!-- this link is used in the plugin, do not change it -->
+<!-- this link is used in the plugin -->
 
 [[toc]]
 
