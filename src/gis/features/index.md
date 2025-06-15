@@ -99,14 +99,14 @@ Tracking your position when doing the field survey with <MobileAppName /> can be
 
 You can read more about this functionality in [How to Use Tracking in Mergin Maps mobile app](../../field/tracking/).
 
-### Map annotations
+### Map sketching
 <SinceBadge type="Plugin" version="2025.X" />
 
-Map annotations for the <MobileAppNameShort /> can be enabled in the **<MainPlatformName />** tab in **Project properties**. Here, you can also set the colours that will be available for annotations.
+Map sketching for the <MobileAppNameShort /> can be enabled in the **<MainPlatformName />** tab in **Project properties**. Here, you can also set the colours that will be available for sketches.
 
-![Enable map annotations in QGIS Mergin Maps project](./project-map-annotations.jpg "Enable map annotations in QGIS Mergin Maps project")
+![Enable map sketching in QGIS Mergin Maps project](./project-map-sketching.jpg "Enable map sketching in QGIS Mergin Maps project")
 
-You can read more about this functionality in [Map Annotations](../../field/map-annotations/).
+You can read more about this functionality in [Map Sketching](../../field/map-sketching/).
 
 ### Map themes
 [Map Themes](../setup_themes/) make possible to switch between different background maps in <MobileAppName /> (e.g. cartography maps and aerial imagery)

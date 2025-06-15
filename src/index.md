@@ -89,7 +89,7 @@ The ecosystem consist of various components:
 - [Synchronisation in <MobileAppName />](./field/autosync/)
 - [Measurement Tools](./field/measure/)
 - [Layers in <MobileAppName />](./field/layers/)
-- [Map Annotations in <MobileAppName />](./field/map-annotations/)
+- [Map Sketching in <MobileAppName />](./field/map-sketching/)
 - [How to Add, Edit, Delete Features](./field/mobile-features/)
 - [How to Reuse Last Entered Values](./field/reuse-last-values/)
 - [How to Stake Out Points](./field/stake-out/)
