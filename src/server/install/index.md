@@ -99,7 +99,7 @@ SSO_ENABLED=True
 SSO_SERVER_URL=<PUBLIC URL OF SSO SERVER, by default http://localhost:8081>
 ```
 
-The <MainPlatformName /> server is integrated with the most commonly used SAML and OIDC identity providers via the [Ory Polis](https://www.ory.sh/docs/polis) service. To run the Ory Polis stack, you need to provide environment variables in the `.sso.env` file. In the <GitHubRepo id="MerginMaps/server/blob/master/deployment/enterprise" desc="deployment folder for the enterprise edition" />, you can find the .sso.env.template file with all the required variables and their default values. Use the provided script to automatically pre-generate the `.sso.env` file with all the necessary variables.
+The <MainPlatformName /> server is integrated with the most commonly used SAML and OIDC identity providers via the [Ory Polis](https://www.ory.sh/docs/polis) service. To run the Ory Polis stack, you need to provide environment variables in the `.sso.env` file. In the <GitHubRepo id="MerginMaps/server/blob/master/deployment/enterprise" desc="deployment folder for the enterprise edition" />, you can find the `.sso.env.template` file with all the required variables and their default values. Use the provided script to automatically pre-generate the `.sso.env` file with all the necessary variables.
 
 ```shell
 cd deployment/enterprise/sso
