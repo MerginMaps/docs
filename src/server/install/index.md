@@ -106,7 +106,7 @@ cd deployment/enterprise/sso
 ./sso-init.sh
 ```
 
-The script will also pre-generate the `SSO_SERVER_API_KEY` variable the <MainPlatformName /> server. This variable is used to authenticate the <MainPlatformName /> server with Ory Polis. If you created the .sso.env file manually, you need to set this variable to match one of the `JACKSON_API_KEYS`.
+The script will also pre-generate the `SSO_SERVER_API_KEY` variable the <MainPlatformName /> server. This variable is used to authenticate the <MainPlatformName /> server with Ory Polis. If you created the `.sso.env` file manually, you need to set this variable to match one of the `JACKSON_API_KEYS`.
 
 Pay close attention to these environment variables and change their default values: `NEXTAUTH_ADMIN_CREDENTIALS`, `RETRACED_ADMIN_ROOT_TOKEN`, `NEXTAUTH_ACL`. To set up your connection with a SAML application (e.g Google SAML or Entra), fill in the `SAML_AUDIENCE` variable with a domain name. More details [here](https://www.ory.sh/docs/polis/deploy/env-variables#saml_audience).
 
