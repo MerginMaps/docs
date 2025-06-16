@@ -159,4 +159,4 @@ Alternatively, you can set up your own background map.
 |--------------------------|----------|-------------------------------|--------------------------------|
 | `SSO_ENABLED`            | boolean  | `false`                       | Flag to enable SSO in <MainPlatformName />             |
 | `SSO_SERVER_URL`           | string   | `http://localhost:5225`     | Public URL of the SSO server. This URL should be accessible from the internet. |
-| `SSO_SERVER_API_KEY`      | string   | ``                      | API key used to authenticate requests to the SSO service. |
+| `SSO_SERVER_API_KEY`      | string   | ``                      | This API key is used to authenticate requests to the SSO service. It must be one of the keys defined in the `JACKSON_API_KEYS` variable within the Ory Polis. |
