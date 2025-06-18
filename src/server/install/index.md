@@ -108,7 +108,7 @@ cd deployment/enterprise/sso
 
 The script will also pre-generate the `SSO_SERVER_API_KEY` variable the <MainPlatformName /> server. This variable is used to authenticate the <MainPlatformName /> server with Ory Polis. If you created the `.sso.env` file manually, you need to set this variable to match one of the `JACKSON_API_KEYS`.
 
-Pay close attention to these environment variables and change their default values: `NEXTAUTH_ADMIN_CREDENTIALS`, `RETRACED_ADMIN_ROOT_TOKEN`, `NEXTAUTH_ACL`. To set up your connection with a SAML application (e.g Google SAML or Entra), fill in the `SAML_AUDIENCE` variable with a domain name. More details [here](https://www.ory.sh/docs/polis/deploy/env-variables#saml_audience).
+Pay close attention to these environment variables and change their default values: `NEXTAUTH_ADMIN_CREDENTIALS`, `RETRACED_ADMIN_ROOT_TOKEN`, `NEXTAUTH_ACL`. To set up your connection with a SAML application (e.g Google SAML or Entra), fill in the `SAML_AUDIENCE` variable with a domain name. More details [here](https://www.ory.sh/docs/polis/deploy/env-variables).
 
 :::tip Production deployment
 We recommend editing the `.sso.env` file manually and generating your own secrets and certificates for Ory Polis.
@@ -141,10 +141,10 @@ Then restart or reload the configuration in the `merginmaps-proxy` container and
 docker compose -f docker-compose.sso.yml up -d
 ```
 
-If you follow previous steps, the admin panel for Ory Polis will be available at domain `http://localhost:8081` (the value in `SSO_SERVER_URL`).
+If you follow previous steps, the admin panel for Ory Polis will be available at domain `http://localhost:8081` (the value in `SSO_SERVER_URL`). You can sign in to admin portal with the credentials you set in the variable `NEXTAUTH_ADMIN_CREDENTIALS`.
 
 :::tip Domain for SSO Service 
-We recommend running the Ory Polis server on a separate domain or subdomain to make it accessible to your users. The `./sso/sso-nginx.conf` in the <GitHubRepo id="MerginMaps/server/blob/master/deployment/enterprise" desc="deployment folder" /> file provides a reverse proxy configuration for running in a local environment. For your production deployment, use HTTPS to serve the SSO service. See the `ssl-sso-nginx.conf` file in the <GitHubRepo id="MerginMaps/server/blob/master/deployment/" desc="deployment folder" />. 
+We recommend running the Ory Polis server on a separate domain or subdomain to make it accessible to your users. The `./sso/sso-nginx.conf` in the <GitHubRepo id="MerginMaps/server/blob/master/deployment/enterprise" desc="deployment folder" /> file provides a reverse proxy configuration for running in a local environment. For your production deployment, use HTTPS to serve the SSO service. See the `./enterprise/ssl-sso-nginx.conf` file in the <GitHubRepo id="MerginMaps/server/blob/master/deployment/" desc="deployment folder" />. 
 :::
 
 
@@ -161,14 +161,14 @@ $ docker exec merginmaps-server flask server check
 Output will be similar to the next snippet. The utility will try to provide some background information if some needed environment variable is missing or wrongly set (ex: `MERGIN_BASE_URL`)
 
 ```shell
-  # Server health check
+# Server health check
 
-  Mergin Maps edition: Enterprise Edition
-  Mergin Maps version: 2025.2.0  
-  Error: No base URL set. Please set MERGIN_BASE_URL environment variable
-  Error: No contact email set. Please set CONTACT_EMAIL environment variable
-  Database initialized properly
-  Celery running properly  
+Mergin Maps edition: Enterprise Edition
+Mergin Maps version: 2025.2.0  
+Error: No base URL set. Please set MERGIN_BASE_URL environment variable
+Error: No contact email set. Please set CONTACT_EMAIL environment variable
+Database initialized properly
+Celery running properly  
 ```
 
 To test email configuration:
