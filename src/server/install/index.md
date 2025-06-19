@@ -89,65 +89,6 @@ $ docker exec merginmaps-server flask user create <username> <password> --is-adm
 ```
 :::
 
-## Deployment of Single Sign On (SSO)
-<ServerType type="EE" />
-
-To enable SSO in <MainPlatformName />, ensure that you have the following environment variables set in your `.prod.env` file:
-
-```shell
-SSO_ENABLED=True
-SSO_SERVER_URL=<PUBLIC URL OF SSO SERVER, by default http://localhost:8081>
-```
-
-The <MainPlatformName /> server is integrated with the most commonly used SAML and OIDC identity providers via the [Ory Polis](https://www.ory.sh/docs/polis) service. To run the Ory Polis stack, you need to provide environment variables in the `.sso.env` file. In the <GitHubRepo id="MerginMaps/server/blob/master/deployment/enterprise" desc="deployment folder for the enterprise edition" />, you can find the `.sso.env.template` file with all the required variables and their default values. Use the provided script to automatically pre-generate the `.sso.env` file with all the necessary variables.
-
-```shell
-cd deployment/enterprise/sso
-./sso-init.sh
-```
-
-The script will also pre-generate the `SSO_SERVER_API_KEY` variable the <MainPlatformName /> server. This variable is used to authenticate the <MainPlatformName /> server with Ory Polis. If you created the `.sso.env` file manually, you need to set this variable to match one of the `JACKSON_API_KEYS`.
-
-Pay close attention to these environment variables and change their default values: `NEXTAUTH_ADMIN_CREDENTIALS`, `NEXTAUTH_ACL` and `DB_URL`. To set up your connection with a SAML application (e.g Google SAML or Entra), fill in the `SAML_AUDIENCE` variable with a domain name. More details about all available Ory Polis variables [here](https://www.ory.sh/docs/polis/deploy/env-variables).
-
-:::tip Production deployment
-We recommend editing the `.sso.env` file manually and generating your own secrets and certificates for Ory Polis.
-:::
-
-If you want to configure the Ory Polis service to run on its own domain in production (e.g., `sso.example.com`), you need to add this domain to the following variables:
-
-* `EXTERNAL_URL=https://sso.example.com`
-* `NEXTAUTH_URL=https://sso.example.com`
-* `SSO_SERVER_URL=https://sso.example.com`
-
-:::tip <MainPlatformName /> and Ory Polis communication
-If your <MainPlatformName /> server is running without a connection to the publicly available Ory Polis `SSO_SERVER_URL`, you can set internal IP or domain names (e.g. `http://sso:5225`) in the following variables to ensure communication: `SSO_SERVER_INTERNAL_URL=http://sso:5225` and `SSO_SERVER_API_URL=http://sso:5225`.
-:::
-
-### Start the SSO stack
-
-To run the SSO stack, you need to have a running <MainPlatformName /> server - see previous section about [deployment](#deployment). 
-
-Mount the `deployment/enterprise/sso/sso-nginx.conf` file to the `merginmaps-proxy` container in the `docker-compose.yml` file:
-
-```yaml
-volumes:
-  - ./sso/sso-nginx.conf:/etc/nginx/templates/sso.conf.template
-```
-
-Then restart or reload the configuration in the `merginmaps-proxy` container and start the SSO stack:
-
-```shell
-docker compose -f docker-compose.sso.yml up -d
-```
-
-If you follow previous steps, the admin panel for Ory Polis will be available at domain `http://localhost:8081` (the value in `SSO_SERVER_URL`). You can sign in to admin portal with the credentials you set in the variable `NEXTAUTH_ADMIN_CREDENTIALS`.
-
-:::tip Domain for SSO Service 
-We recommend running the Ory Polis server on a separate domain or subdomain to make it accessible to your users. The `./sso/sso-nginx.conf` in the <GitHubRepo id="MerginMaps/server/blob/master/deployment/enterprise" desc="deployment folder" /> file provides a reverse proxy configuration for running in a local environment. For your production deployment, use HTTPS to serve the SSO service. See the `./enterprise/ssl-sso-nginx.conf` file in the <GitHubRepo id="MerginMaps/server/blob/master/deployment/" desc="deployment folder" />. 
-:::
-
-
 ## Test deployment
 
 In order to test your deployment there are some utility commands to perform basic checks.
