@@ -23,10 +23,10 @@ The script will also pre-generate the `SSO_SERVER_API_KEY` variable for the <Mai
 
 Pay close attention to these environment variables and change their default values:
 
-* `NEXTAUTH_ADMIN_CREDENTIALS` - administrator credentials to Ory Polis.
-* `DB_URL` - PostgreSQL database connection URL.
-* `SAML_AUDIENCE` - the value in URL form is used to configure the connection in a SAML identity provider (it does not have to be a real URL, e.g. `https://saml.example.com`).
-* `IDP_ENABLED` - set to `true` to enable IDP authorization flow.
+* `NEXTAUTH_ADMIN_CREDENTIALS` - administrator credentials for Ory Polis.
+* `DB_URL` - the PostgreSQL database connection URL.
+* `SAML_AUDIENCE` - a value in URL form is used to configure the connection in a SAML identity provider (it does not have to be a real URL, e.g. `https://saml.example.com`).
+* `IDP_ENABLED` - set to `true` to enable the IDP authorization flow.
 
 More details about all available Ory Polis variables [here](https://www.ory.sh/docs/polis/deploy/env-variables).
 
@@ -51,10 +51,10 @@ Then restart or reload the configuration in the `merginmaps-proxy` container and
 docker compose -f docker-compose.sso.yml up -d
 ```
 
-The admin panel for Ory Polis will be available at `http://localhost:8081` (the value in `SSO_SERVER_URL`). You can sign in to admin portal with the credentials you set in the variable `NEXTAUTH_ADMIN_CREDENTIALS`.
+The admin panel for Ory Polis will be available at `http://localhost:8081` (the value in `SSO_SERVER_URL`). You can sign in to the admin portal with the credentials you set in the variable `NEXTAUTH_ADMIN_CREDENTIALS`.
 
 :::tip Domain for SSO Service 
-We recommend running the Ory Polis server on a separate domain or subdomain to make it accessible to your users. The `./sso/sso-nginx.conf` in the <GitHubRepo id="MerginMaps/server/blob/master/deployment/enterprise" desc="deployment folder" /> file provides a reverse proxy configuration for running in a local environment. For your production deployment, use HTTPS to serve the SSO service. See the `./enterprise/ssl-sso-nginx.conf` file in the <GitHubRepo id="MerginMaps/server/blob/master/deployment/" desc="deployment folder" />. You need also fill variable `SSO_SERVER_URL` with your domain name.
+We recommend running the Ory Polis server on a separate domain or subdomain to make it accessible to your users. The `./sso/sso-nginx.conf` in the <GitHubRepo id="MerginMaps/server/blob/master/deployment/enterprise" desc="deployment folder" /> file provides a reverse proxy configuration for running in a local environment. For your production deployment, use HTTPS to serve the SSO service. See the `./enterprise/ssl-sso-nginx.conf` file in the <GitHubRepo id="MerginMaps/server/blob/master/deployment/" desc="deployment folder" />. You also need to set the variable `SSO_SERVER_URL` to the publicly available URL of the Ory Polis service.
 :::
 
 If you want to configure the Ory Polis service to run on its own domain in production (e.g., `sso.example.com`), you need to add this domain to the following variables:
