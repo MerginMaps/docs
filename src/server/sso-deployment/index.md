@@ -21,20 +21,17 @@ cd deployment/enterprise/sso
 
 The script will also pre-generate the `SSO_SERVER_API_KEY` variable for the <MainPlatformName /> server. This variable is used to authenticate the <MainPlatformName /> server with Ory Polis. If you created the `.sso.env` file manually, you need to set this variable to match one of the `JACKSON_API_KEYS`.
 
-Pay close attention to these environment variables and change their default values: `NEXTAUTH_ADMIN_CREDENTIALS` and `DB_URL`. To set up your connection with a SAML application (e.g Google SAML or Entra), fill in the `SAML_AUDIENCE` variable with a domain name. More details about all available Ory Polis variables [here](https://www.ory.sh/docs/polis/deploy/env-variables).
+Pay close attention to these environment variables and change their default values:
 
-:::tip Production deployment
-We recommend editing the `.sso.env` file manually and generating your own secrets and certificates for Ory Polis.
-:::
+* `NEXTAUTH_ADMIN_CREDENTIALS` - administrator credentials to Ory Polis.
+* `DB_URL` - PostgreSQL database connection URL.
+* `SAML_AUDIENCE` - the value in URL form is used to configure the connection in a SAML identity provider (it does not have to be a real URL, e.g. `https://saml.example.com`).
+* `IDP_ENABLED` - set to `true` to enable IDP authorization flow.
 
-If you want to configure the Ory Polis service to run on its own domain in production (e.g., `sso.example.com`), you need to add this domain to the following variables:
+More details about all available Ory Polis variables [here](https://www.ory.sh/docs/polis/deploy/env-variables).
 
-* `EXTERNAL_URL=https://sso.example.com`
-* `NEXTAUTH_URL=https://sso.example.com`
-* `SSO_SERVER_URL=https://sso.example.com`
-
-:::tip <MainPlatformName /> and Ory Polis communication
-If your <MainPlatformName /> server is running without a connection to the publicly available Ory Polis `SSO_SERVER_URL`, you can set internal IP or domain names (e.g. `http://sso:5225`) in the following variables to ensure communication: `SSO_SERVER_INTERNAL_URL=http://sso:5225` and `SSO_SERVER_API_URL=http://sso:5225`.
+:::tip Production deployment security
+After successful initialization of environment variables in `.sso.env`, we recommend double-checking the values or generating your own secrets and certificates.
 :::
 
 ## Start the SSO stack
@@ -60,13 +57,25 @@ The admin panel for Ory Polis will be available at `http://localhost:8081` (the 
 We recommend running the Ory Polis server on a separate domain or subdomain to make it accessible to your users. The `./sso/sso-nginx.conf` in the <GitHubRepo id="MerginMaps/server/blob/master/deployment/enterprise" desc="deployment folder" /> file provides a reverse proxy configuration for running in a local environment. For your production deployment, use HTTPS to serve the SSO service. See the `./enterprise/ssl-sso-nginx.conf` file in the <GitHubRepo id="MerginMaps/server/blob/master/deployment/" desc="deployment folder" />. You need also fill variable `SSO_SERVER_URL` with your domain name.
 :::
 
+If you want to configure the Ory Polis service to run on its own domain in production (e.g., `sso.example.com`), you need to add this domain to the following variables:
+
+* `EXTERNAL_URL=https://sso.example.com`
+* `NEXTAUTH_URL=https://sso.example.com`
+* `SSO_SERVER_URL=https://sso.example.com`
+
+:::tip <MainPlatformName /> and Ory Polis communication
+If your <MainPlatformName /> server is running without a connection to the publicly available Ory Polis `SSO_SERVER_URL`, you can set internal IP or domain names (e.g. `http://sso:5225`) in the following variables to ensure communication: `SSO_SERVER_INTERNAL_URL=http://sso:5225` and `SSO_SERVER_API_URL=http://sso:5225`.
+:::
+
 ## Configure SSO connection
 
 You can now set up your first SSO (SAML or OIDC) connection in the Ory Polis admin panel.
 
 Follow the steps below to create a new connection:
 
-* Go to the Ory Polis admin panel deployed on your infrastructure using the [previous steps](#start-the-sso-stack).
+* Go to <MainPlatformName /> admin panel and log in.
+* In the left menu click **SSO Administration**.
+* Log in to the Ory Polis admin panel using credentials from the `NEXTAUTH_ADMIN_CREDENTIALS` variable.
 * Navigate to the **Enterprise SSO** tab and click **New Connection**.
 * Choose **SAML** or **OIDC** as the connection type.
 * Fill in the connection name and description (any value).

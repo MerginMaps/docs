@@ -50,11 +50,11 @@ cd deployment/enterprise
 ​
 This step configures deployment settings by modifying environment variables.
 
-Start by creating the `.prod.env` file (if it does not exist yet), by running: 
+Start by creating the `.prod.env` file (if it does not exist yet), by running:
 
-\```shell
+```shell
 cp .env.template .prod.env
-\```
+```
 
 Then, edit the `.prod.env` file and provide values for all variables marked as required in the list of [environment variables](../environment/). 
 
@@ -124,9 +124,9 @@ $ docker exec merginmaps-server flask send-check-email --email me@myorg.com
 By default, email notifications are disabled, so output will be similar to this:
 
 ```shell
-    # Sending check email to specified email address me@myorg.com.
+# Sending check email to specified email address me@myorg.com.
 
-  Error: Sending emails is disabled. Please set MAIL_SUPPRESS_SEND=False to enable sending emails.
+Error: Sending emails is disabled. Please set MAIL_SUPPRESS_SEND=False to enable sending emails.
 
 ```
 
