@@ -70,10 +70,15 @@ Follow the steps below to create a new connection:
 * Navigate to the **Enterprise SSO** tab and click **New Connection**.
 * Choose **SAML** or **OIDC** as the connection type.
 * Fill in the connection name and description.
-* Provide your domain name in the **Tenant** field.
+* Provide your domain name in the **Tenant** field - this is the domain for your users emails (e.g. you users emails will be `user@your.company.com`, then use `your.company.com` in the **Tenant** field).
 * Enter the value `mergin-maps-product` in the **Product** field.
-* Specify **Allowed redirect URLs** with the domain name of your <MainPlatformName /> server (e.g. `https://merginmaps.example.com`) and the domain names used by <MainPlatformName /> clients (`http://localhost:8082`, `https://hello.merginmaps.com/mobile/sso-redirect` and `http://127.0.0.1:10042`).
+* Specify **Allowed redirect URLs** with the domain name of your <MainPlatformName /> server (e.g. `https://merginmaps.example.com`) and the domain names used by <MainPlatformName /> clients (`http://localhost:10042`, `http://127.0.0.1:10042`, `http://[::1]:10042` and `https://hello.merginmaps.com/mobile/sso-redirect`).
 * Provide **Default redirect URL** with the domain name of your <MainPlatformName /> server.
-* Refer to the [Ory Polis documentation](https://www.ory.sh/docs/polis/sso-providers/) for your SAML or OIDC provider guide and follow the steps to configure your connection.
+
+Your connection form will look like this for your users with `your.company.com` domain and <MainPlatformName /> server running on `https://merginmaps.example.com`:
+
+![SSO connection setup](./ory-polis-new-connection.jpg "SSO connection setup")
+
+For the rest of the connection configuration parameters, refer to the [Ory Polis documentation](https://www.ory.sh/docs/polis/sso-providers/) for your SAML or OIDC provider guide and follow the steps to configure your connection.
 
 Once you have created the connection, go to your <MainPlatformName /> dashboard and click **Continue with SSO**.
