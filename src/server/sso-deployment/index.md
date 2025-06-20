@@ -19,7 +19,7 @@ cd deployment/enterprise/sso
 ./sso-init.sh
 ```
 
-The script will also pre-generate the `SSO_SERVER_API_KEY` variable the <MainPlatformName /> server. This variable is used to authenticate the <MainPlatformName /> server with Ory Polis. If you created the `.sso.env` file manually, you need to set this variable to match one of the `JACKSON_API_KEYS`.
+The script will also pre-generate the `SSO_SERVER_API_KEY` variable for the <MainPlatformName /> server. This variable is used to authenticate the <MainPlatformName /> server with Ory Polis. If you created the `.sso.env` file manually, you need to set this variable to match one of the `JACKSON_API_KEYS`.
 
 Pay close attention to these environment variables and change their default values: `NEXTAUTH_ADMIN_CREDENTIALS` and `DB_URL`. To set up your connection with a SAML application (e.g Google SAML or Entra), fill in the `SAML_AUDIENCE` variable with a domain name. More details about all available Ory Polis variables [here](https://www.ory.sh/docs/polis/deploy/env-variables).
 
@@ -54,7 +54,7 @@ Then restart or reload the configuration in the `merginmaps-proxy` container and
 docker compose -f docker-compose.sso.yml up -d
 ```
 
-If you follow previous steps, the admin panel for Ory Polis will be available at domain `http://localhost:8081` (the value in `SSO_SERVER_URL`). You can sign in to admin portal with the credentials you set in the variable `NEXTAUTH_ADMIN_CREDENTIALS`.
+The admin panel for Ory Polis will be available at `http://localhost:8081` (the value in `SSO_SERVER_URL`). You can sign in to admin portal with the credentials you set in the variable `NEXTAUTH_ADMIN_CREDENTIALS`.
 
 :::tip Domain for SSO Service 
 We recommend running the Ory Polis server on a separate domain or subdomain to make it accessible to your users. The `./sso/sso-nginx.conf` in the <GitHubRepo id="MerginMaps/server/blob/master/deployment/enterprise" desc="deployment folder" /> file provides a reverse proxy configuration for running in a local environment. For your production deployment, use HTTPS to serve the SSO service. See the `./enterprise/ssl-sso-nginx.conf` file in the <GitHubRepo id="MerginMaps/server/blob/master/deployment/" desc="deployment folder" />. You need also fill variable `SSO_SERVER_URL` with your domain name.
@@ -62,14 +62,14 @@ We recommend running the Ory Polis server on a separate domain or subdomain to m
 
 ## Configure SSO connection
 
-First step to integrate the <MainPlatformName /> server with SSO is to create a new SAML or OIDC connection in the Ory Polis admin panel.
+You can now set up your first SSO (SAML or OIDC) connection in the Ory Polis admin panel.
 
 Follow the steps below to create a new connection:
 
 * Go to the Ory Polis admin panel deployed on your infrastructure using the [previous steps](#start-the-sso-stack).
 * Navigate to the **Enterprise SSO** tab and click **New Connection**.
 * Choose **SAML** or **OIDC** as the connection type.
-* Fill in the connection name and description.
+* Fill in the connection name and description (any value).
 * Provide your domain name in the **Tenant** field - this is the domain for your users emails (e.g. you users emails will be `user@your.company.com`, then use `your.company.com` in the **Tenant** field).
 * Enter the value `mergin-maps-product` in the **Product** field.
 * Specify **Allowed redirect URLs** with the domain name of your <MainPlatformName /> server (e.g. `https://merginmaps.example.com`) and the domain names used by <MainPlatformName /> clients (`http://localhost:10042`, `http://127.0.0.1:10042`, `http://[::1]:10042` and `https://hello.merginmaps.com/mobile/sso-redirect`).
