@@ -48,18 +48,21 @@ cd deployment/enterprise
 
 ### Setup environment
 ​
-Now tweak deployment settings by modifying environment variables. You have to fix all variables marked as required in this list of [environment variables](../environment/). However, before doing that you would need to setup environment variables in `.prod.env` file.
-If you have not created this file yet, please do so from the provided `.env.template` file.
+This step configures deployment settings by modifying environment variables.
 
-```shell
+Start by creating the `.prod.env` file (if it does not exist yet), by running: 
+
+\```shell
 cp .env.template .prod.env
-```
+\```
+
+Then, edit the `.prod.env` file and provide values for all variables marked as required in the list of [environment variables](../environment/). 
 
 ### Start docker containers
 
-Provided that `docker` and `docker-compose` are installed on your host, running <MainPlatformName /> stack should be as simple as running `docker-compose`.
+Before proceeding, ensure you have both `docker` and `docker-compose` installed on your system.
 
-Once configured, you can run:
+Once your environment is configured, you can start the containers by running:
 ```shell
 # For community edition
 $ mkdir -p mergin_db # or wherever you set it to be
