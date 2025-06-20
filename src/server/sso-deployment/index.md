@@ -26,12 +26,12 @@ Pay close attention to these environment variables and change their default valu
 * `NEXTAUTH_ADMIN_CREDENTIALS` - administrator credentials for Ory Polis.
 * `DB_URL` - the PostgreSQL database connection URL.
 * `SAML_AUDIENCE` - a value in URL form is used to configure the connection in a SAML identity provider (it does not have to be a real URL, e.g. `https://saml.example.com`).
-* `IDP_ENABLED` - set to `true` to enable the IDP authorization flow.
+* `IDP_ENABLED` - set to `true` to enable the IDP authorisation flow.
 
 More details about all available Ory Polis variables [here](https://www.ory.sh/docs/polis/deploy/env-variables).
 
 :::tip Production deployment security
-After successful initialization of environment variables in `.sso.env`, we recommend double-checking the values or generating your own secrets and certificates.
+After successful initialisation of environment variables in `.sso.env`, we recommend double-checking the values or generating your own secrets and certificates.
 :::
 
 ## Start the SSO stack
