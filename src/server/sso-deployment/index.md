@@ -1,7 +1,7 @@
 # Single Sign-On Deployment
 
 This installation guide will help you set up Single Sign-On (SSO) for <MainPlatformName /> server. The <MainPlatformName /> server is integrated with the most commonly used SAML and OIDC identity providers via the [Ory Polis](https://www.ory.sh/docs/polis) service.
-
+SSO is available for Enterprise edition servers.
 [[toc]]
 
 ## Configure server
