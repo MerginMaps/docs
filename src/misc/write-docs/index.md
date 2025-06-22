@@ -224,9 +224,26 @@ If you are not familiar with Markdown, best to take some tutorial or use a [chea
 
 On top of regular Markdown. you can use HTML tags as well as some extra components described in this section.
 
-### Table of Contents
+### Table of Contents and Outline
 
 Use `[[toc]]` to generate the table of contents.
+
+Use `outline` on the page front matter to define which header should appear in the Outline:
+
+```
+---
+outline: deep
+---
+```
+
+or 
+
+```
+---
+outline: [number, number]
+---
+```
+
 
 ### Links 
 
@@ -414,21 +431,7 @@ Use `<GitHubRepo />` component, e.g. `<GitHubRepo id="MerginMaps/docs/" desc="do
 
 ### Mergin Maps components
 
-Use `<AppDomainNameLink />` component, transforms to <AppDomainNameLink />
-
-Use `<CommunityPlatformName />` component, transforms to <CommunityPlatformName />
-
-Use `<CommunityPlatformNameLink />` component, transforms to <CommunityPlatformNameLink />
-
-Use `<DashboardLink />` component, transforms to  <DashboardLink />
-
-Use `<DashboardShortLink />` component, transforms to  <DashboardShortLink />
-
-Use `<DockerHubLink />` component, transforms to  <DockerHubLink />
-
-Use `<EnterprisePlatformName />` component, transforms to <EnterprisePlatformName />
-
-Use `<EnterprisePlatformNameLink />` component, transforms to <EnterprisePlatformNameLink />
+#### General
 
 Use `<MainDomainName />` component, transforms to <MainDomainName />
 
@@ -438,23 +441,41 @@ Use `<MainPlatformName />` component, transforms to <MainPlatformName />
 
 Use `<MainPlatformNameLink />` component, transforms to <MainPlatformNameLink />
 
+Use `<LutraConsultingName />` component, transforms to <LutraConsultingName />
+
+Use `<LutraConsultingWeb />` component, transforms to <LutraConsultingWeb />
+
+Use `<DockerHubLink />` component, transforms to  <DockerHubLink />
+
+#### Mobile app
+
 Use `<MobileAppName />` component, transforms to <MobileAppName />
 
 Use `<MobileAppNameShort />` component, transforms to <MobileAppNameShort />
+
+#### QGIS plugin
 
 Use `<QGISPluginName />` component, transforms to <QGISPluginName />
 
 Use `<QGISPluginNameShort />` component, transforms to <QGISPluginNameShort />
 
-Use `<LutraConsultingName />` component, transforms to <LutraConsultingName />
+#### Server
 
-Use `<LutraConsultingWeb />` component, transforms to <LutraConsultingWeb />
+Use `<AppDomainNameLink />` component, transforms to <AppDomainNameLink />
 
-### Embed YouTube content
+Use `<DashboardLink />` component, transforms to  <DashboardLink />
 
-Use `<YouTube />` component, e.g. `<YouTube id="DQXrINUqiFI" />` transforms to
+Use `<DashboardShortLink />` component, transforms to  <DashboardShortLink />
 
-<YouTube id="DQXrINUqiFI" />
+Use `<ServerCloudName />` component, transforms to <ServerCloudName />
+
+Use `<CommunityPlatformName />` component, transforms to <CommunityPlatformName />
+
+Use `<CommunityPlatformNameLink />` component, transforms to <CommunityPlatformNameLink />
+
+Use `<EnterprisePlatformName />` component, transforms to <EnterprisePlatformName />
+
+Use `<EnterprisePlatformNameLink />` component, transforms to <EnterprisePlatformNameLink />
 
 
 ### Reference Mergin Maps project 
@@ -468,6 +489,13 @@ For a short reference (e.g. in tables), use `<MerginMapsProjectShort />` compone
 Use `<AppDownload />` component to display
     
 <AppDownload />
+
+
+### Embed YouTube content
+
+Use `<YouTube />` component, e.g. `<YouTube id="DQXrINUqiFI" />` transforms to
+
+<YouTube id="DQXrINUqiFI" />
 
 
 ## Spellcheck
