@@ -169,7 +169,7 @@ This page should be then:
 - added to the sidebar `src/.vitepress/sidebar/en.js` (note that the order of articles in the menu is always "concepts - how to - reference")
 - added to the landing page `src/index.md`
 
-If the page contains multiple headers, include the [Table of contents](#table-of-contents) at the beginning using `[[toc]]`.
+If the page contains multiple headers, include the [Table of contents](#table-of-contents-and-outline) at the beginning using `[[toc]]`.
 
 ### Images
 Images should be located in the same folder as the Markdown `index.md` file that references them.
