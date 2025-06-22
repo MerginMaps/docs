@@ -55,6 +55,7 @@ export default {
         { text: 'How to Set Photo Names Format', link: '/gis/photo-names/' },
         { text: 'How to Enable Digitising', link: '/gis/enable_digitising/' },
         { text: 'How to Set Up Snapping for Mergin Maps Mobile App', link: '/gis/snapping/' },
+        { text: 'How to Avoid Polygons Overlap', link: '/gis/avoid-overlap/' },
         { text: 'Custom Projections', link: '/gis/proj/' },
         { text: 'Supported Formats', link: '/gis/supported_formats/' }
       ]

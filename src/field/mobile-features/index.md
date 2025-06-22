@@ -147,6 +147,13 @@ If snapping is enabled, the crosshairs will turn purple and snap to vertices (le
    
 3. Fill in the attributes and **Save** :heavy_check_mark: the changes
 
+## Avoid polygons overlap
+In QGIS, you can set the option to avoid overlapping for polygons. This setting is stored in the <MainPlatformName /> project and used when editing features both in QGIS and the <MobileAppNameShort />.
+
+See [How to Avoid Polygons Overlap](../../gis/avoid-overlap/) for more details.
+
+![Mergin Maps mobile app avoid polygon overlap](../../gis/avoid-overlap/mobile-avoid-polygon-overlap.jpg "Mergin Maps mobile app avoid polygon overlap")
+
 ## Deleting features
 
 1. Tap on a feature on the map or find it through [**Layers**](../../field/layers/)
