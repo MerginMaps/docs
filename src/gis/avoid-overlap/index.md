@@ -1,6 +1,6 @@
 # How to Avoid Polygons Overlap
 
-For polygon layers, <QGISHelp ver="latest" link="user_manual/working_with_vector/editing_geometry_attributes.html#overlapping-control" text="QGIS" /> offers options to control the overlapping. In the **Snapping toolbar**, you can set if you want to allow or avoid overlaps when digitizing new features. <MobileAppName /> follows this setting: if you create a polygon that overlaps existing geometries in the layer, the polygon will be cropped and snapped to the existing features.
+For polygon layers, <QGISHelp ver="latest" link="user_manual/working_with_vector/editing_geometry_attributes.html#overlapping-control" text="QGIS" /> offers options to control the overlapping. In the **Snapping toolbar**, you can set if you want to allow or avoid overlaps when digitising new features. <MobileAppName /> follows this setting: if you create a polygon that overlaps existing geometries in the layer, the polygon will be cropped and snapped to the existing features.
 
 
 To use the *Avoid overlap* option in your <MainPlatformName /> project:
@@ -17,7 +17,7 @@ To use the *Avoid overlap* option in your <MainPlatformName /> project:
 
 4. Save and synchronise your project.
 
-Now this option will be used when digitizing new polygons both in QGIS and the <MobileAppNameShort />:
+Now this option will be used when digitising new polygons both in QGIS and the <MobileAppNameShort />:
 
 ![Mergin Maps mobile app avoid polygon overlap](./mobile-avoid-polygon-overlap.jpg "Mergin Maps mobile app avoid polygon overlap")
 
