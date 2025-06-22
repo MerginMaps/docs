@@ -7,7 +7,7 @@ outline: deep
 
 Do you want to integrate <MainPlatformNameLink />? <MainPlatformName /> is an open platform that aims to be developer friendly and it has been designed to allow easy integration with other software.
 
-::: tip Jupyter Notebooks examples gallery available
+::: tip <NoSpellcheck id="Jupyter" /> Notebooks examples gallery available
 <GitHubRepo id="MerginMaps/python-api-client/tree/master/examples" desc="Mergin Maps Python Client" /> repository offers short code examples on how to use the python client module for basic scenarios, such as users management, synchronisation or projects management.
 :::
 
