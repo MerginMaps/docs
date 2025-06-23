@@ -108,6 +108,7 @@ The ecosystem consist of various components:
 - [Install](./server/install/)
 - [Security](./server/security/)
 - [Upgrade](./server/upgrade/)
+- [CE to EE migration guide](./server/migration/)
 - [Administer](./server/administer/)
 - [Administration Panel](./server/dashboard/)
 - [Troubleshoot Custom Servers](./server/troubleshoot/)
