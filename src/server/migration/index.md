@@ -9,8 +9,9 @@ Follow this [guide](https://merginmaps.com/docs/server/install/ee/) on how to pu
 :::
 
 ## Step 1: Stop and backup running CE infrastructure
+<ServerType type="CE" />
 
-* Make you upgraded previously to latest CE [release](https://github.com/MerginMaps/server/releases)
+* Make you upgraded previously to latest `CE` <GitHubRepo id="MerginMaps/server/releases" desc="release" />
 * Locate yourself under `deployment\community`
 * Stop the current running `CE` instance with `docker compose down`.
 ```shell  
@@ -34,8 +35,9 @@ Follow this [guide](https://merginmaps.com/docs/server/install/ee/) on how to pu
 * Locate yourself on `deployment\enterprise` folder for the next step scripts
 
 ## Step 2: Pull EE images and execute some DDL
+<ServerType type="EE" />
 
-* Once logged in on Mergin Maps AWS ECR, pull EE images.
+* Once logged in on Mergin Maps AWS ECR, pull `EE` images.
 ```shell
   docker compose pull
 ```
