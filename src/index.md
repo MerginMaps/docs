@@ -63,6 +63,7 @@ The ecosystem consist of various components:
 - [How to Set Photo Names Format](./gis/photo-names/)
 - [How to Enable Digitising](./gis/enable_digitising/)
 - [How to Set Up Snapping for <MobileAppName />](./gis/snapping/)
+- [How to Avoid Polygons Overlap](./gis/snapping/)
 - [Custom Projections](./gis/proj/)
 - [Supported Formats](./gis/supported_formats/)
 
