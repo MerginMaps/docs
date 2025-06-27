@@ -212,3 +212,6 @@ Arguments:
 ## Further details
 
 The <GitHubRepo id="MerginMaps/python-api-client" /> repository contains the source code and more information on how to use it.
+
+The repository also includes a <NoSpellcheck id="Jupyter" /> Notebooks examples gallery with short code examples on how to use the python client module for common use cases, such as users management, synchronisation or projects management.
+
