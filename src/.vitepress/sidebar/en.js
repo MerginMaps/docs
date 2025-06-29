@@ -115,6 +115,7 @@ export default {
       items: [
         { text: 'Overview', link: '/server/' },
         { text: 'Install', link: '/server/install/' },
+        { text: 'Single Sign-On Deployment', link: '/server/sso-deployment/' },
         { text: 'Secure Mergin Maps Installation', link: '/server/security/' },
         { text: 'Upgrade', link: '/server/upgrade/' },
         { text: 'Administer', link: '/server/administer/' },
