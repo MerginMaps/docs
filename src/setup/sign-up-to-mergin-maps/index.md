@@ -116,7 +116,7 @@ SSO is available on the <DashboardNameShort />, the <MobileAppNameShort /> and t
 ### Connection setup
 If you are the admin or owner of a workspace and you want to set up SSO, please contact our <MainDomainNameLink id="contact-sales" desc="sales team"/>.
 
-You will receive a link with step-by-step guide for your identity provider. Currently, we support **SAML** and **OIDC** protocols.
+You will receive a link with step-by-step guide for your identity provider. Currently, we support **SAML** and **OIDC** SSO protocols. Directory sync is not supported.
 
 ::: tip SSO for self-hosted servers <ServerType type="EE" />
 If you want to use SSO on your <EnterprisePlatformNameLink /> server, you can do so from the admin panel. See [Single Sign-On Deployment](../../server/sso-deployment/) for more details.
@@ -154,6 +154,11 @@ To sign in or sign up to <MainPlatformName /> using SSO on the <DashboardShortLi
 
 
 ### From QGIS plugin
+
+::: warning QGIS version 3.40.0 or higher is required
+<QGISPluginName /> installed on QGIS version lower than 3.40.0 will not have the option to sign in via SSO.
+:::
+
 To use SSO in the <QGISPluginNameShort />:
 1. Open QGIS
 2. On the toolbar, click on the **Configure <MainPlatformName /> plugin** button
