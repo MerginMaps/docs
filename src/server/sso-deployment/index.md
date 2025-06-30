@@ -25,7 +25,7 @@ Pay close attention to these environment variables and change their default valu
 
 * `NEXTAUTH_ADMIN_CREDENTIALS` - administrator credentials for Ory Polis admin portal. It is a comma separated string of pattern `email:password`, for example: `matthew@example.com:Pass123,james@example.com:Pass123`
 * `DB_URL` - the PostgreSQL database connection URL (change this if you use a different database location for Ory Polis).
-* `IDP_ENABLED` - set to `true` to enable the IDP-initiated authorization flow.
+* `IDP_ENABLED` - set to `true` to enable the IDP-initiated authorisation flow.
 
 More details about all available Ory Polis variables [here](https://www.ory.sh/docs/polis/deploy/env-variables).
 
