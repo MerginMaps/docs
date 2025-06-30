@@ -53,7 +53,7 @@ docker compose -f docker-compose.sso.yml up -d
 The admin panel for Ory Polis will be available at `http://localhost:8081` (the value in `SSO_SERVER_URL`). You can sign in to the admin portal with the credentials you set in the variable `NEXTAUTH_ADMIN_CREDENTIALS`.
 
 :::tip Domain for SSO Service 
-We recommend running the Ory Polis server on a separate domain or subdomain to make it accessible to your users. The <GitHubRepo id="/MerginMaps/server/blob/master/deployment/enterprise/ssl-sso-proxy.conf" /> in the <GitHubRepo id="MerginMaps/server/blob/master/deployment/enterprise" desc="deployment folder" /> file provides a reverse proxy configuration for running in a local environment. For your production deployment, use HTTPS to serve the SSO service. See the <GitHubRepo id="/MerginMaps/server/blob/master/deployment/enterprise/ssl-sso-proxy.conf" /> file in the <GitHubRepo id="MerginMaps/server/blob/master/deployment/" desc="deployment folder" />. You also need to set the variable `SSO_SERVER_URL` to the publicly available URL of the Ory Polis service.
+We recommend running the Ory Polis server on a separate domain or subdomain to make it accessible to your users. For your production deployment, use HTTPS to serve the SSO service. See the <GitHubRepo id="/MerginMaps/server/blob/master/deployment/enterprise/ssl-sso-proxy.conf" /> file in the <GitHubRepo id="MerginMaps/server/blob/master/deployment/" desc="deployment folder" />. You also need to set the variable `SSO_SERVER_URL` to the publicly available URL of the Ory Polis service.
 :::
 
 If you want to configure the Ory Polis service to run on its own domain in production (e.g., `sso.example.com`), you need to add this domain to the following variables:
