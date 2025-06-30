@@ -65,12 +65,12 @@ Before proceeding, ensure you have both `docker` and `docker-compose` installed 
 Once your environment is configured, you can start the containers by running:
 ```shell
 # For community edition
-$ mkdir -p mergin_db # or wherever you set it to be
+$ mkdir -p mergin_db projects # or wherever you set it to be
 $ sh ../common/set_permissions.sh projects
 $ docker-compose -f docker-compose.yml up -d
 
 # For enterprise edition
-$ mkdir -p mergin-db-enterprise # or wherever you set it to be
+$ mkdir -p mergin-db-enterprise data map_data # or wherever you set it to be
 $ sh ../common/set_permissions.sh data
 $ sh ../common/set_permissions.sh map_data
 $ docker-compose -f docker-compose.yml up -d
