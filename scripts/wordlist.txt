@@ -135,6 +135,7 @@ SLA
 SMTP
 SQLAlchemy
 SSH
+SSO
 SVG
 SVGs
 SaaS
