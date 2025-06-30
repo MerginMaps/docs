@@ -135,6 +135,7 @@ SLA
 SMTP
 SQLAlchemy
 SSH
+SSO
 SVG
 SVGs
 SaaS
@@ -291,3 +292,15 @@ workspaces
 www
 zlib
 zoomstack
+Entra
+Auth
+SAML
+OIDC
+SSO
+Ory
+Polis
+SAML
+yaml
+pre
+env
+IDP

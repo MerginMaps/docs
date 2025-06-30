@@ -1,15 +1,12 @@
 name: Status PROD
 
-# runs at minute 0 of the 2rd,5th,8th and 11th hour
+# runs 6:00 AM every day
 on:
-  push:
-    branches:
-      - main
   schedule:
-    - cron:  '0 2,5,8,11 * * *'
+    - cron:  '0 6 * * *'
 
 jobs:
-  dev_status_check:
+  status_check:
     runs-on: ubuntu-latest
     env:
       URL: "https://merginmaps.com/docs"
@@ -29,4 +26,4 @@ jobs:
         uses: ruzickap/action-my-broken-link-checker@v2
         with:
           url: ${{ env.URL }}
-          cmd_params: --buffer-size=8192 --max-connections=10 --color=always --skip-tls-verification --ignore-fragments --timeout=60 ${{ env.EXCLUDE_LIST }}
+          cmd_params: --buffer-size=8192 --max-connections=10 --rate-limit=1 --color=always --skip-tls-verification --ignore-fragments --timeout=60 ${{ env.EXCLUDE_LIST }}

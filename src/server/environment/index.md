@@ -123,7 +123,7 @@ Other settings related to data management.
 | `MAX_CHUNK_SIZE`             | integer  | `10485760`                            | Maximum size of file chunk to be uploaded (and received by server) in bytes.                                                                                                                              |
 | `MAX_DOWNLOAD_ARCHIVE_SIZE`  | integer  | `10737418240`                    | Maximum size of project or project version zip archive in bytes (10 GB by default) for download from dashboard. Too large projects may take too long to download.                                                  |
 | `USE_X_ACCEL` ⭐️             | Boolean  | `true`                                | Whether to use nginx to serve files. Should be enabled if used with nginx proxy for performance reasons. Read more [here](https://www.nginx.com/resources/wiki/start/topics/examples/x-accel/).           |
-| `CLOSED_ACCOUNT_EXPIRATION`  | integer  | `1`                                   | Time in days after a user closed their account to all projects and files are permanently deleted. Please note that until the user is removed, the username/email is occupied.                             |
+| `ACCOUNT_EXPIRATION`  | integer  | `1`                                   | Time in days after a user closed their account to all projects and files are permanently deleted. Please note that until the user is removed, the username/email is occupied.                             |
 | `DELETED_PROJECT_EXPIRATION` | integer  | `7`                                   | Lifetime in days for deleted projects. Expired projects are removed permanently without possibility to restore afterwards.                                                                                |
 | `PROJECT_ACCESS_REQUEST`     | integer  | `604800`                              | Lifetime of active project access request in seconds.                                                                                                                                                     |
 | `TEMP_EXPIRATION`            | integer  | `7`                                   | Time in days after files in a temporary folder are permanently deleted.                                                                                                                                   |
@@ -151,3 +151,12 @@ Your webmaps won’t display the default background map unless we enable them on
 
 Alternatively, you can set up your own background map.
 :::
+
+## Single Sign-On (SSO)
+<ServerType type="EE" />
+
+| Variable name            | Type     | Default                       | Description                    |
+|--------------------------|----------|-------------------------------|--------------------------------|
+| `SSO_ENABLED`            | boolean  | `false`                       | Flag to enable SSO in <MainPlatformName />             |
+| `SSO_SERVER_URL` ⭐️           | string   | `http://localhost:8081`     | Public URL of the SSO server. This URL should be accessible from the internet. |
+| `SSO_SERVER_API_KEY` ⭐️     | string   | ``                      | This API key is used to authenticate requests to the SSO service. It must be one of the keys defined in the `JACKSON_API_KEYS` variable within the Ory Polis (for more details see [Single Sign-On deployment guide](../sso-deployment#configure-server)). |
