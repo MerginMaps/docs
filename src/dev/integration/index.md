@@ -7,6 +7,10 @@ outline: deep
 
 Do you want to integrate <MainPlatformNameLink />? <MainPlatformName /> is an open platform that aims to be developer friendly and it has been designed to allow easy integration with other software.
 
+::: tip <NoSpellcheck id="Jupyter" /> Notebooks examples gallery available
+<GitHubRepo id="MerginMaps/python-api-client/tree/master/examples" desc="Mergin Maps Python Client" /> repository offers short code examples on how to use the python client module for basic scenarios, such as users management, synchronisation or projects management.
+:::
+
 ## Installation
 The Python client module is the easiest way to programmatically use <MainPlatformNameLink />. You can use Python API or a command-line tool to easily work with your projects, such as to get project status, push and pull changes. You can also create user accounts and manage their roles.
 
@@ -208,3 +212,6 @@ Arguments:
 ## Further details
 
 The <GitHubRepo id="MerginMaps/python-api-client" /> repository contains the source code and more information on how to use it.
+
+The repository also includes a <NoSpellcheck id="Jupyter" /> Notebooks examples gallery with short code examples on how to use the python client module for common use cases, such as users management, synchronisation or projects management.
+

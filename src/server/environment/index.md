@@ -152,4 +152,11 @@ Your webmaps won’t display the default background map unless we enable them on
 Alternatively, you can set up your own background map.
 :::
 
+## Single Sign-On (SSO)
+<ServerType type="EE" />
 
+| Variable name            | Type     | Default                       | Description                    |
+|--------------------------|----------|-------------------------------|--------------------------------|
+| `SSO_ENABLED`            | boolean  | `false`                       | Flag to enable SSO in <MainPlatformName />             |
+| `SSO_SERVER_URL` ⭐️           | string   | `http://localhost:8081`     | Public URL of the SSO server. This URL should be accessible from the internet. |
+| `SSO_SERVER_API_KEY` ⭐️     | string   | ``                      | This API key is used to authenticate requests to the SSO service. It must be one of the keys defined in the `JACKSON_API_KEYS` variable within the Ory Polis (for more details see [Single Sign-On deployment guide](../sso-deployment#configure-server)). |
