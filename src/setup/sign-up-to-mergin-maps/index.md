@@ -3,23 +3,24 @@ outline: deep
 ---
 
 # How to Sign Up to Mergin Maps
-[[toc]]
 
-To make full use of the <MainPlatformNameLink /> service, you need to sign up.
-
-Public projects can be accessed and downloaded even without a <MainPlatformNameLink /> account, but projects can be managed, shared and synchronised only when you are logged in.
-
-You can sign up either through <AppDomainNameLink/> or <MobileAppName /> using:
-- an email and password
+To make full use of <MainPlatformName />, you need to sign up. You can sign up using:
+- [Email and password](#email-and-password-sign-up)
 - [Single sign-on (SSO)](#sign-up-using-sso)
 
 ::: tip Manage your account
 Do you want to delete your account or change your details? Go to [**User Account**](../../manage/account/) for detailed steps.
 :::
 
-## Sign up using a password
+::: tip Account-less access
+Public projects can be accessed and downloaded even without a <MainPlatformName /> account. However, to manage, share or upload changes to projects, you need to be signed in.
+:::
 
-### From web
+## Email and password sign up
+
+Password sign up to <MainPlatformName/> is available via <DashboardNameShort/> or <MobileAppNameShort/>.
+
+### From dashboard 
 
 1. Navigate to <AppDomainNameLink/>
 
@@ -103,25 +104,31 @@ You can get up-to-speed quickly by following our [Quick Start tutorials](../../t
    See our <MainDomainNameLink id="pricing" desc="pricing page"/> for more details.
    :::
 
-## Sign up using SSO
+## Single sign-on (SSO)
 Single sign-on (SSO) is an authentication method that allows you to sign in to <MainPlatformName /> using the same credentials as you use in your organisation. 
 
-This means you don't have to create a new <MainPlatformName /> account with a specific password: you can simply use your work email. The identity provider (e.g. Microsoft or Auth0) used by your organisation will check your credential and redirect you back to <MainPlatformName />.
+This means you don't have to create a new <MainPlatformName /> account with a specific password: you can simply use your work email. The identity provider (e.g. Microsoft Entra ID or Auth0) used by your organisation will check your credential and redirect you back to <MainPlatformName />.
 
-SSO login is available on the <DashboardShortLink />, the <MobileAppNameShort /> and the <QGISPluginNameShort />.
+<MainPlatformName /> account will be created automatically after the first sign in via SSO.
 
-### SSO connection setup
-If you are the admin or owner of a **<ServerCloudName />** workspace and you want to set up SSO, please contact our <MerginMapsEmail id="sales" desc="sales team" />.
+SSO is available on the <DashboardNameShort />, the <MobileAppNameShort /> and the <QGISPluginNameShort />.
 
-You will receive a link with step-by-step guide for your identity provider. Currently, we support SAML and OIDC protocols.
+### Connection setup
+If you are the admin or owner of a workspace and you want to set up SSO, please contact our <MainDomainNameLink id="contact-sales" desc="sales team"/>.
 
-::: tip SSO for custom servers
-If you want to use SSO for your <EnterprisePlatformNameLink /> workspace, you can do so from the admin panel. See [Single Sign-On Deployment](../../server/sso-deployment/) for more details.
+You will receive a link with step-by-step guide for your identity provider. Currently, we support **SAML** and **OIDC** protocols.
+
+::: tip SSO for self-hosted servers <ServerType type="EE" />
+If you want to use SSO on your <EnterprisePlatformNameLink /> server, you can do so from the admin panel. See [Single Sign-On Deployment](../../server/sso-deployment/) for more details.
 
 SSO is not available for <CommunityPlatformName />.
 :::
 
-### Dashboard SSO
+Once SSO is configured for your workspace, you will see the relevant information in the <DashboardLink id="settings" desc="workspace settings page"/>, under the *advanced* section. If you need to make any changes to your SSO connection, please <MerginMapsEmail id="support" desc="contact our support team"/>.
+
+![Mergin Maps workspace settings with enabled SSO](./dashboard-workspace-settings-sso.jpg "Mergin Maps workspace settings with enabled SSO")
+
+### From dashboard
 To sign in or sign up to <MainPlatformName /> using SSO on the <DashboardShortLink />:
 1. Navigate to <AppDomainNameLink />
 2. Click on the **Continue with SSO** button
@@ -131,7 +138,7 @@ To sign in or sign up to <MainPlatformName /> using SSO on the <DashboardShortLi
 
 ![Mergin Maps dashboard single sign-on](./dashboard-sso-sign-up.jpg "Mergin Maps dashboard single sign-on")
 
-### Mobile app SSO
+### From mobile app
 
 1. Open the <MobileAppNameShort />. Tap the account icon in the upper right corner to go to the login page. 
    ![Mergin Maps mobile app account icon](./mobile-app-account-icon.jpg "Mergin Maps mobile app account icon")
@@ -146,7 +153,7 @@ To sign in or sign up to <MainPlatformName /> using SSO on the <DashboardShortLi
 5. After successful authentication, you will be signed in to <MainPlatformName /> in the <MobileAppNameShort />.
 
 
-### QGIS plugin SSO
+### From QGIS plugin
 To use SSO in the <QGISPluginNameShort />:
 1. Open QGIS
 2. On the toolbar, click on the **Configure <MainPlatformName /> plugin** button
