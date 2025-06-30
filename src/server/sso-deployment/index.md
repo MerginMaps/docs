@@ -21,11 +21,11 @@ cd deployment/enterprise/sso
 
 The script will also pre-generate the `SSO_SERVER_API_KEY` variable for the <MainPlatformName /> server. This variable is used to authenticate the <MainPlatformName /> server with Ory Polis. If you created the `.sso.env` file manually, you need to set this variable to match one of the `JACKSON_API_KEYS`.
 
-Pay close attention to these environment variables and change their default values:
+Pay close attention to these environment variables and change their default values before using them in production:
 
 * `NEXTAUTH_ADMIN_CREDENTIALS` - administrator credentials for Ory Polis.
-* `DB_URL` - the PostgreSQL database connection URL.
-* `IDP_ENABLED` - set to `true` to enable the IDP authorisation flow.
+* `DB_URL` - the PostgreSQL database connection URL (change this if you use a different database location for Ory Polis).
+* `IDP_ENABLED` - set to `true` to enable the IDP-initiated authorization flow.
 
 More details about all available Ory Polis variables [here](https://www.ory.sh/docs/polis/deploy/env-variables).
 
