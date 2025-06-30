@@ -292,3 +292,7 @@ workspaces
 www
 zlib
 zoomstack
+Entra
+Auth
+SAML
+OIDC
