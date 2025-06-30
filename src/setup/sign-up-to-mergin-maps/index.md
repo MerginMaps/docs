@@ -6,7 +6,7 @@ outline: deep
 
 To make full use of <MainPlatformName />, you need to sign up. You can sign up using:
 - [Email and password](#email-and-password-sign-up)
-- [Single sign-on (SSO)](#sign-up-using-sso)
+- [Single sign-on (SSO)](#single-sign-on-sso)
 
 ::: tip Manage your account
 Do you want to delete your account or change your details? Go to [**User Account**](../../manage/account/) for detailed steps.
