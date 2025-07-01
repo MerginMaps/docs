@@ -10,6 +10,53 @@ Make sure to always back up your database data before doing a migration.
 
 [[toc]]
 
+## From 2025.3.x to 2025.5.x {#migration-guide-from-2025-3-x-to-2025-5-x}
+
+<MigrationType type="EE" />
+
+Perform the migration:
+
+1. Stop your running docker containers
+   ```bash
+    $ docker compose -f docker-compose.yml down # or similarly, based on your previous deployment
+   ```
+2. Please clone or pull the <GitHubRepo id="MerginMaps/server/blob/master/" desc="server repository" /> or download <GitHubRepo id="MerginMaps/server/blob/master/deployment/" desc="deployment folder" />
+   ```bash    
+    $ cd server/deployment/enterprise
+   ```
+3. Adapt your existing `docker-compose.yml` file to the new version.
+4. Upgrade your nginx proxy configuration file with the latest version available in the <GitHubRepo id="MerginMaps/server/blob/master/deployment/common/nginx.conf" desc="nginx.conf" /> (This is a necessary step for improved downloading of zip files from the dashboard).
+5. Start up your docker containers
+   ```bash
+    $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
+   ```
+6. Check that you are on correct database migration versions (`5ad13be6f7ef`, `819e6b20ee93`).
+    ```bash
+    $ docker exec merginmaps-server flask db current
+    INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+    INFO  [alembic.runtime.migration] Will assume transactional DDL.
+    5ad13be6f7ef
+    819e6b20ee93
+    ```
+
+   - If you do not see the version numbers at all, run the following commands:
+    ```bash
+    $ docker exec merginmaps-server flask db stamp 5ad13be6f7ef
+    $ docker exec merginmaps-server flask db stamp 819e6b20ee93
+    ```
+7. Run the database migration:
+    ```bash
+    $ docker exec merginmaps-server flask db upgrade community@6cb54659c1de
+    $ docker exec merginmaps-server flask db upgrade enterprise@e95d051969ce
+    ```
+
+:::warning Downloading zip files from the dashboard
+Zip files are now stored in temporary storage and are deleted after 7 days. This can increase the storage usage of <MainPlatformName /> server. Make sure you have enough space on your server.
+:::
+
+### Enable Single Sign-On
+
+To enable Single Sign-On for your server, follow the instructions in [Deployment of Single Sign On](../sso-deployment).
 
 ## From 2025.2.x to 2025.3.x {#migration-guide-from-2025-2-x-to-2025-3-x}
 
@@ -46,8 +93,8 @@ Perform the migration:
     $ docker exec merginmaps-server flask db current
     INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
     INFO  [alembic.runtime.migration] Will assume transactional DDL.
-    ba5051218de4 (head)
-    ba5ae5972c4a (head)
+    ba5051218de4
+    ba5ae5972c4a
     ```
 
    - If you do not see the version numbers at all, run the following commands:
@@ -170,8 +217,8 @@ Perform the migration:
     $ docker exec merginmaps-server flask db current
     INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
     INFO  [alembic.runtime.migration] Will assume transactional DDL.
-    07f2185e2428 (head)
-    df5b4efdae7b (head)
+    07f2185e2428
+    df5b4efdae7b
     ```
 
    - If you do not see the version numbers at all, run the following commands:
