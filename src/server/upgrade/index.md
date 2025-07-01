@@ -66,7 +66,7 @@ To enable Single Sign-On for your server, follow the instructions in [Deployment
 Release 2025.3.x brings some changes on <MainPlatformName /> docker compose orchestration deployment procedure.
 :::
 
-Get the latest <GitHubRepo id="MerginMaps/server/blob/master/deployment/enterprise/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2025.5.0`.
+Get the latest <GitHubRepo id="MerginMaps/server/blob/master/deployment/enterprise/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2025.3.0`.
 Perform the migration:
 
 1. Stop your running docker containers
