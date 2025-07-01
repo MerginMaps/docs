@@ -46,15 +46,23 @@ cd deployment/community
 cd deployment/enterprise
 ```
 
-### Start docker containers
+### Setup environment
+​
+This step configures deployment settings by modifying environment variables.
 
-Provided that `docker` and `docker-compose` are installed on your host, running <MainPlatformName /> stack should be as simple as running `docker-compose`. However, before doing that you would need to [configure](../environment/) your server setup via environment variables in `.prod.env` file.
-If you have not created this file yet, please do so from the provided `.env.template` file provided.
+Start by creating the `.prod.env` file (if it does not exist yet), by running:
 
 ```shell
 cp .env.template .prod.env
 ```
-Once the necessary variables are configured, you can run the following commands to start the <MainPlatformName /> stack.
+
+Then, edit the `.prod.env` file and provide values for all variables marked as required in the list of [environment variables](../environment/).
+
+### Start docker containers
+
+Before proceeding, ensure you have both `docker` and `docker-compose` installed on your system.
+
+Once your environment is configured, you can start the containers by running the following commands for the Community and Enterprise editions.
 
 Community edition stack:
 
@@ -91,11 +99,7 @@ $ docker exec merginmaps-server flask user create <username> <password> --is-adm
 ```
 :::
 
-### Setup environment
-​
-Now tweak deployment settings by modifying environment variables. You have to fix all variables marked as required in this list of [environment variables](../environment/). Some of the most common issues with custom deployments are listed in the [troubleshoot](../troubleshoot/) section.
-
-### Test deployment
+## Test deployment
 
 In order to test your deployment there are some utility commands to perform basic checks.
 
@@ -108,14 +112,14 @@ $ docker exec merginmaps-server flask server check
 Output will be similar to the next snippet. The utility will try to provide some background information if some needed environment variable is missing or wrongly set (ex: `MERGIN_BASE_URL`)
 
 ```shell
-  # Server health check
+# Server health check
 
-  Mergin Maps edition: Enterprise Edition
-  Mergin Maps version: 2025.2.0  
-  Error: No base URL set. Please set MERGIN_BASE_URL environment variable
-  Error: No contact email set. Please set CONTACT_EMAIL environment variable
-  Database initialized properly
-  Celery running properly  
+Mergin Maps edition: Enterprise Edition
+Mergin Maps version: 2025.2.0  
+Error: No base URL set. Please set MERGIN_BASE_URL environment variable
+Error: No contact email set. Please set CONTACT_EMAIL environment variable
+Database initialized properly
+Celery running properly  
 ```
 
 To test email configuration:
@@ -127,10 +131,12 @@ $ docker exec merginmaps-server flask send-check-email --email me@myorg.com
 By default, email notifications are disabled, so output will be similar to this:
 
 ```shell
-    # Sending check email to specified email address me@myorg.com.
+# Sending check email to specified email address me@myorg.com.
 
-  Error: Sending emails is disabled. Please set MAIL_SUPPRESS_SEND=False to enable sending emails.
+Error: Sending emails is disabled. Please set MAIL_SUPPRESS_SEND=False to enable sending emails.
 
 ```
 
 To enable them, set variable `MAIL_SUPPRESS_SEND` in accordance to above and fill all `MAIL_*` related variables with your company SMTP server configuration.
+
+Some of the most common issues with custom deployments are listed in the [troubleshoot](../troubleshoot/) section.
