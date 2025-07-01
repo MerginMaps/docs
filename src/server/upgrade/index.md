@@ -14,7 +14,6 @@ Make sure to always back up your database data before doing a migration.
 
 <MigrationType type="EE" />
 
-Get the latest <GitHubRepo id="MerginMaps/server/blob/master/deployment/enterprise/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2025.5.0`.
 Perform the migration:
 
 1. Stop your running docker containers
@@ -36,8 +35,8 @@ Perform the migration:
     $ docker exec merginmaps-server flask db current
     INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
     INFO  [alembic.runtime.migration] Will assume transactional DDL.
-    5ad13be6f7ef (head)
-    819e6b20ee93 (head)
+    5ad13be6f7ef
+    819e6b20ee93
     ```
 
    - If you do not see the version numbers at all, run the following commands:
@@ -50,6 +49,10 @@ Perform the migration:
     $ docker exec merginmaps-server flask db upgrade community@6cb54659c1de
     $ docker exec merginmaps-server flask db upgrade enterprise@e95d051969ce
     ```
+
+:::warning Downloading zip files from the dashboard
+Zip files are now stored in temporary storage and are deleted after 7 days. This can increase the storage usage of <MainPlatformName /> server. Make sure you have enough space on your server.
+:::
 
 ### Enable Single Sign-On
 
@@ -90,8 +93,8 @@ Perform the migration:
     $ docker exec merginmaps-server flask db current
     INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
     INFO  [alembic.runtime.migration] Will assume transactional DDL.
-    ba5051218de4 (head)
-    ba5ae5972c4a (head)
+    ba5051218de4
+    ba5ae5972c4a
     ```
 
    - If you do not see the version numbers at all, run the following commands:
@@ -214,8 +217,8 @@ Perform the migration:
     $ docker exec merginmaps-server flask db current
     INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
     INFO  [alembic.runtime.migration] Will assume transactional DDL.
-    07f2185e2428 (head)
-    df5b4efdae7b (head)
+    07f2185e2428
+    df5b4efdae7b
     ```
 
    - If you do not see the version numbers at all, run the following commands:
