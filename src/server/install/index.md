@@ -56,23 +56,30 @@ Start by creating the `.prod.env` file (if it does not exist yet), by running:
 cp .env.template .prod.env
 ```
 
-Then, edit the `.prod.env` file and provide values for all variables marked as required in the list of [environment variables](../environment/). 
+Then, edit the `.prod.env` file and provide values for all variables marked as required in the list of [environment variables](../environment/).
 
 ### Start docker containers
 
 Before proceeding, ensure you have both `docker` and `docker-compose` installed on your system.
 
-Once your environment is configured, you can start the containers by running:
-```shell
-# For community edition
-$ mkdir -p mergin_db # or wherever you set it to be
-$ sh ../common/set_permissions.sh projects
-$ docker-compose -f docker-compose.yml up -d
+Once your environment is configured, you can start the containers by running the following commands for the Community and Enterprise editions.
 
-# For enterprise edition
-$ mkdir -p mergin-db-enterprise # or wherever you set it to be
-$ sh ../common/set_permissions.sh data
-$ sh ../common/set_permissions.sh map_data
+Community edition stack:
+
+```shell
+$ mkdir -p mergin_db # database data directory
+$ sh ../common/set_permissions.sh projects # application internal data directory
+$ sh ../common/set_permissions.sh diagnostic_logs # directory to persist diagnostic logs (optional)
+$ docker-compose -f docker-compose.yml up -d
+```
+
+Enterprise edition stack:
+
+```shell
+$ mkdir -p mergin-db-enterprise # database data directory
+$ sh ../common/set_permissions.sh data # application internal data directory
+$ sh ../common/set_permissions.sh map_data # maps data directory (neccessary for maps)
+$ sh ../common/set_permissions.sh diagnostic_logs # directory to persist diagnostic logs (optional)
 $ docker-compose -f docker-compose.yml up -d
 $ docker-compose -f docker-compose.maps.yml up -d # Run maps stack separately
 ```
