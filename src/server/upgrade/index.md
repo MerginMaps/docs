@@ -10,6 +10,50 @@ Make sure to always back up your database data before doing a migration.
 
 [[toc]]
 
+## From 2025.3.x to 2025.5.x {#migration-guide-from-2025-3-x-to-2025-5-x}
+
+<MigrationType type="EE" />
+
+Get the latest <GitHubRepo id="MerginMaps/server/blob/master/deployment/enterprise/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2025.5.0`.
+Perform the migration:
+
+1. Stop your running docker containers
+   ```bash
+    $ docker compose -f docker-compose.yml down # or similarly, based on your previous deployment
+   ```
+2. Please clone or pull the <GitHubRepo id="MerginMaps/server/blob/master/" desc="server repository" /> or download <GitHubRepo id="MerginMaps/server/blob/master/deployment/" desc="deployment folder" />
+   ```bash    
+    $ cd server/deployment/enterprise
+   ```
+3. Adapt your existing `docker-compose.yml` file to the new version.
+4. Upgrade your nginx proxy configuration file with the latest version available in the <GitHubRepo id="MerginMaps/server/blob/master/deployment/common/nginx.conf" desc="nginx.conf" /> (This is a necessary step for improved downloading of zip files from the dashboard).
+5. Start up your docker containers
+   ```bash
+    $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
+   ```
+6. Check that you are on correct database migration versions (`5ad13be6f7ef`, `819e6b20ee93`).
+    ```bash
+    $ docker exec merginmaps-server flask db current
+    INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+    INFO  [alembic.runtime.migration] Will assume transactional DDL.
+    5ad13be6f7ef (head)
+    819e6b20ee93 (head)
+    ```
+
+   - If you do not see the version numbers at all, run the following commands:
+    ```bash
+    $ docker exec merginmaps-server flask db stamp 5ad13be6f7ef
+    $ docker exec merginmaps-server flask db stamp 819e6b20ee93
+    ```
+7. Run the database migration:
+    ```bash
+    $ docker exec merginmaps-server flask db upgrade community@6cb54659c1de
+    $ docker exec merginmaps-server flask db upgrade enterprise@e95d051969ce
+    ```
+
+### Enable Single Sign-On
+
+To enable Single Sign-On for your server, follow the instructions in [Deployment of Single Sign On](../sso-deployment).
 
 ## From 2025.2.x to 2025.3.x {#migration-guide-from-2025-2-x-to-2025-3-x}
 
@@ -19,7 +63,7 @@ Make sure to always back up your database data before doing a migration.
 Release 2025.3.x brings some changes on <MainPlatformName /> docker compose orchestration deployment procedure.
 :::
 
-Get the latest <GitHubRepo id="MerginMaps/server/blob/master/deployment/enterprise/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2025.3.0`.
+Get the latest <GitHubRepo id="MerginMaps/server/blob/master/deployment/enterprise/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2025.5.0`.
 Perform the migration:
 
 1. Stop your running docker containers
