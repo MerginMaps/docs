@@ -98,4 +98,8 @@ In the <MobileAppNameShort />:
 3. Tap the **Send to developers** button to proceed
    ![Send diagnostic log to developers](./mobile-app-send-diagnostic-log.jpg "Diagnostic log content in Mergin Maps mobile app")
 
-4. Contact our support team (<MerginMapsEmail id="support" />) with your username/workspace and problem description so we can have a look into the issue. 
+4. Contact our support team (<MerginMapsEmail id="support" />) with your username/workspace and problem description so we can have a look into the issue.
+
+## Common issues
+The following are some common issues encountered by users:
+- [Project fails to sync and there is a *Gateway Timeout* or *502 Bad Gateway* error](./not_syncing/#gateway-timeout-or-502-bad-gateway) 
