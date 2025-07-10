@@ -15,7 +15,7 @@ The most common cause of a **Gateway Timeout** or **502 Bad Gateway** error is t
 
 3. Open the project folder for the version downloaded from the Mergin Maps plugin on your pc/laptop
 
-4. Open the folder on your pc/.laptop where you transferred the photos/project files from your mobile device
+4. Open the folder on your pc/laptop where you transferred the photos/project files from your mobile device
 
 5. Cut and paste up to 100 photo attachments from the transferred project directory to the same location in your QGIS project directory (if photos are duplicates you can either overwrite or skip)
 
