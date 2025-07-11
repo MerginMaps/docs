@@ -214,6 +214,8 @@ Value map widget is used to select a value from a drop-down menu. Values are def
 
 If you want to use multiple selections in a field or need to add new values during the survey, check out the [Value Relation](#value-relation) widget.
 
+<YouTube id="WjotOTIKaNo" />
+
 :::tip Example project available
 This public project <MerginMapsProject id="documentation/form-widgets" /> contains a Value Map field. Download or clone it to see the setup.
 :::
@@ -235,6 +237,8 @@ Now you can select the value from a drop-down menu in the <MobileAppNameShort />
 :::tip Example project available
 This public project <MerginMapsProject id="documentation/form-widgets" /> contains a Value Relation setup. Download or clone it to explore it in more detail.
 :::
+
+<YouTube id="Sm1PZRN8rLw" />
 
 The **Value Relation** widget is similar to the [Value Map](#value-map) widget, but the values for the drop-down menu come from another layer (usually a non-spatial table). 
 
