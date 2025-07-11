@@ -164,6 +164,9 @@ In the <MobileAppNameShort />, you will be unable to save a feature unless the f
 ![Mergin Maps mobile app constraints in attributes form](./mobile-form-constaints.jpg "Mergin Maps mobile app constraints in attributes form")
 
 ## Drill-down forms
+
+<YouTube id="bXRclQFQFFE" />
+
 Drill-down or cascade forms enable to list values in a field depending on a value selected in another field.
 
 :::tip Example project available

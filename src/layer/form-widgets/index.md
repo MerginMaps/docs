@@ -210,6 +210,8 @@ There are some benefits of using the Value Relation widget, such as:
 
 ### Value Map
 
+<YouTube id="WjotOTIKaNo" />
+
 Value map widget is used to select a value from a drop-down menu. Values are defined in the widget. They cannot be changed or added from the <MobileAppNameShort /> and only one value can be selected. 
 
 If you want to use multiple selections in a field or need to add new values during the survey, check out the [Value Relation](#value-relation) widget.
@@ -231,6 +233,8 @@ Now you can select the value from a drop-down menu in the <MobileAppNameShort />
 
 
 ### Value Relation
+
+<YouTube id="Sm1PZRN8rLw" />
 
 :::tip Example project available
 This public project <MerginMapsProject id="documentation/form-widgets" /> contains a Value Relation setup. Download or clone it to explore it in more detail.
