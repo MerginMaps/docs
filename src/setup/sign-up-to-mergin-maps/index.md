@@ -12,7 +12,7 @@ To make full use of <MainPlatformName />, you need to sign up. You can sign up u
 Do you want to delete your account or change your details? Go to [**User Account**](../../manage/account/) for detailed steps.
 :::
 
-::: tip Account-less access
+::: warning Account-less access
 Public projects can be accessed and downloaded even without a <MainPlatformName /> account. However, to manage, share or upload changes to projects, you need to be signed in.
 :::
 
@@ -24,8 +24,11 @@ Password sign up to <MainPlatformName/> is available via <DashboardNameShort/> o
 
 1. Navigate to <AppDomainNameLink/>
 
-2. Fill in the registration form and click on **Sign Up**.
-   ![Mergin Maps sign up form](./mergin-web-sign-up.jpg "Mergin Maps sign up form")
+2. Use the **Sign Up** link to navigate to the registration form. 
+
+   Fill in the details and **Sign Up**.
+   
+   ![Mergin Maps sign up form](./dashboard-sign-up.jpg "Mergin Maps sign up form")
 
    While signing up, you can choose to receive information about updates and new features. You can unsubscribe from the <MainPlatformName /> newsletter anytime by clicking the **Unsubscribe** link at the bottom of the email.
   
