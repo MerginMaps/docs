@@ -469,6 +469,8 @@ Use `<DashboardShortLink />` component, transforms to  <DashboardShortLink />
 
 Use `<ServerCloudName />` component, transforms to <ServerCloudName />
 
+Use `<ServerCloudNameLink />` component, transforms to <ServerCloudNameLink />
+
 Use `<CommunityPlatformName />` component, transforms to <CommunityPlatformName />
 
 Use `<CommunityPlatformNameLink />` component, transforms to <CommunityPlatformNameLink />

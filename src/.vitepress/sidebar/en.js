@@ -138,8 +138,8 @@ export default {
       collapsed: true,
       items: [
         { text: 'Licensing', link: '/misc/licensing/' },
+        { text: 'Get Involved', link: '/misc/get-involved/' },
         { text: 'Troubleshoot', link: '/misc/troubleshoot/' },
-        { text: 'Contribute', link: '/misc/contribute/' },
         { text: 'Write Documentation', link: '/misc/write-docs/' }
       ]
     }
