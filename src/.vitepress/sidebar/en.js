@@ -138,7 +138,12 @@ export default {
       collapsed: true,
       items: [
         { text: 'Licensing', link: '/misc/licensing/' },
-        { text: 'Troubleshoot', link: '/misc/troubleshoot/' },
+        { text: 'Troubleshoot', link: '/misc/troubleshoot/',
+        collapsed:true,
+        items: [
+        { text: 'Project fails to sync (Gateway Timeout or 502 Bad Gateway error)', link: '/misc/troubleshoot/not_syncing/' },
+        ]        
+        },
         { text: 'Contribute', link: '/misc/contribute/' },
         { text: 'Write Documentation', link: '/misc/write-docs/' }
       ]
