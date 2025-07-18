@@ -1,11 +1,19 @@
 # Subscriptions and Invoicing
 [[toc]]
 
-::: tip Pricing and features
-Subscription details and pricing are summarised on our <MainDomainNameLink id="pricing" desc="pricing page"/>. 
+::: tip Pricing, features, free trial
+Subscription details and pricing are summarised on our <MainDomainNameLink id="pricing" desc="pricing page"/>. After signing up to <MainPlatformNameLink />, you can use your workspace for free during the **14 day trial**. After the trial, you can [choose a premium plan](#how-to-upgrade-a-subscription-from-the-trial-plan).
 
 The current *Premium* subscription system is explained in more detail in our blog <MainDomainNameLink id="blog/unlocking-premium-features-of-mergin-maps-for-all" desc="Unlocking premium features of Mergin Maps for all"/>.
 :::
+
+::: details Legacy subscription plans: Individual, Professional and Team plan
+The subscription plans of <MainPlatformName /> may change over time as the platform evolves. You can decide to switch to a new plan anytime in the subscription management page.
+
+Even if you still use a plan that is no longer offered, features included in this plan stay unaltered. For instance, previously-used *Individual* or *Professional* subscriptions did not include features such as [webmaps](../dashboard-maps/) or developer tools ([Python and C++ integrations](../../dev/integration/), [DB Sync](../../dev/dbsync/), [Media Sync](../../dev/media-sync/), [Work Packages](../../dev/work-packages/)). To use these features, you will have to switch to a *Premium* subscription.
+:::
+
+## Contributors
 
 Subscriptions are based on the number of *contributors* on the workspace. Per each contributor seat, you get 1 GB of storage. Storage is shared across the whole workspace. 
 
@@ -14,16 +22,6 @@ Subscriptions are based on the number of *contributors* on the workspace. Per ea
 The overview of your current subscription plan, such as storage usage, number of projects and number of contributors in your workspace can be found in the **Subscription** tab on <DashboardLink />. It is available only to the [owners](../permissions/#workspace-member-roles-and-project-permissions) of the workspace.
 
 ![Mergin Maps Dashboard Subscription tab](../dashboard/mergin-maps-dashboard-subscriptions.jpg "Mergin Maps Dashboard Subscription tab")
-
-::: tip Trial period
-After signing up to <MainPlatformNameLink />, you can use your workspace for free during the **14 day trial**. After the trial, you can [choose a premium plan](#how-to-upgrade-a-subscription-from-the-trial-plan).
-:::
-
-::: details Legacy subscription plans: Individual, Professional and Team plan
-The subscription plans of <MainPlatformName /> may change over time as the platform evolves. You can decide to switch to a new plan anytime in the subscription management page.
-
-Even if you still use a plan that is no longer offered, features included in this plan stay unaltered. For instance, previously-used *Individual* or *Professional* subscriptions did not include features such as [webmaps](../dashboard-maps/) or developer tools ([Python and C++ integrations](../../dev/integration/), [DB Sync](../../dev/dbsync/), [Media Sync](../../dev/media-sync/), [Work Packages](../../dev/work-packages/)). To use these features, you will have to switch to a *Premium* subscription.
-:::
 
 ## Subscriptions management portal
 Subscriptions, payments and billing information are managed in our subscription management portal. 
