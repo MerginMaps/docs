@@ -19,7 +19,9 @@ Subscriptions are based on the number of *contributors* on the workspace. Per ea
 
 *Contributors* are workspace members or guests who have Writer, Editor, Admin or Owner [access rights](../permissions/).  The number of read-only users is unlimited: they do not count towards your workspace contributors. 
 
-The overview of your current subscription plan, such as storage usage, number of projects and number of contributors in your workspace can be found in the **Subscription** tab on <DashboardLink />. It is available only to the [owners](../permissions/#workspace-member-roles-and-project-permissions) of the workspace.
+[Owners](../permissions/#workspace-member-roles-and-project-permissions) of the workspace can find the overview of the subscription plan, such as storage usage, number of projects and number of contributors in the workspace in the [**Subscription**](../dashboard/#subscriptions) tab on <DashboardShortLink />. 
+
+The overview of workspace users and their member type (contributor/read-only) can be found in the [**Members**](../dashboard/#members) tab on the <DashboardShortLink />. It is available to [owners and admins](../permissions/#workspace-member-roles-and-project-permissions) of a workspace.
 
 ![Mergin Maps Dashboard Subscription tab](../dashboard/mergin-maps-dashboard-subscriptions.jpg "Mergin Maps Dashboard Subscription tab")
 
