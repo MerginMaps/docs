@@ -27,6 +27,7 @@ export default {
       collapsed: true,
       items: [
         { text: 'User Account', link: '/manage/account/' },
+        { text: 'Single Sign-On (SSO)', link: '/manage/sso/' },
         { text: 'Workspaces', link: '/manage/workspaces/' },
         { text: 'Subscriptions and Invoicing', link: '/manage/subscriptions/' },
         { text: 'Member Roles and Permissions', link: '/manage/permissions/' },
