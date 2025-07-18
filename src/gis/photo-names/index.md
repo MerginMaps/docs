@@ -18,7 +18,7 @@ To set up custom photo names:
 3. In the **Expression Dialog** window, enter the expression that should be used as the photo's name. Please, keep in mind [basic recommendations](#best-practice-for-photo-name-expressions) to make sure the naming works as intended.
 
    Here we use a combination of the layer's name, <MainPlatformName /> username and current timestamp (other examples ale listed [below](#examples-of-photo-names-expressions)): 
-   ` @layer_name + '-' +  @mergin_username + '-' + format_date(now(),'yyMMddhhmmss')`
+   ` @layer_name + '-' +  @mm_username + '-' + format_date(now(),'yyMMddhhmmss')`
    
    Example result is displayed in the **Preview**: `hedges-sarah-230707194052`
    
@@ -38,7 +38,7 @@ There are some tips to keep in mind when creating the expression for your photo 
 
 :white_check_mark: **Each photo needs to have a unique name** to avoid issues during synchronisation and ensure that photos and features are linked correctly.
 
-Therefore, we recommend using combinations of variables that will ensure that there would not be multiple photos with the same name, such as the current date and time `now()`, <MainPlatformName /> username `@mergin_username`, layer name `@layer_name` or a field value.
+Therefore, we recommend using combinations of variables that will ensure that there would not be multiple photos with the same name, such as the current date and time `now()`, <MainPlatformName /> username `@mm_username`, layer name `@layer_name` or a field value.
 
 :white_check_mark: The file extension (`.jpg`) is added automatically.
 
@@ -55,7 +55,7 @@ In general, it is useful to use some of these variables:
 
   It can be variously reformatted using the `format_date()` function. See <QGISHelp ver="latest" link="/user_manual/expressions/functions_list.html#format-date" text="See QGIS User manual" /> for more details.
   
-- When working in a team, consider using <MainPlatformName /> username `@mergin_username`.
+- When working in a team, consider using <MainPlatformName /> username `@mm_username`.
   
   Even if multiple team members capture a photo at the same time, the name will be different. Also, it makes it easy to sort photos based on who took them. 
 
@@ -67,7 +67,7 @@ In general, it is useful to use some of these variables:
 ### Examples of photo names expressions
 Here are some example expressions that can be used or modified to fit your needs:
 
-- Expression: ` @layer_name + '-' +  @mergin_username + '-' + format_date(now(),'yyMMddhhmmss')`
+- Expression: ` @layer_name + '-' +  @mm_username + '-' + format_date(now(),'yyMMddhhmmss')`
    - Preview: `hedges-sarah-230707154052.jpg`
    - Description: This is a combination of the name of a layer (`hedges`), <MainPlatformName /> username (`sarah`) and reformatted timestamp that starts with the year and ends with seconds.
 
