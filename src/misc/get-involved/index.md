@@ -27,7 +27,7 @@ To help with translations, join [<MainPlatformName /> Transifex team](https://ww
 
  Follow us on 
 
-- [LinkedIn](https://www.linkedin.com/company/mergin-maps/)
+- [<NoSpellcheck id="LinkedIn" />](https://www.linkedin.com/company/mergin-maps/)
 - [Facebook](https://www.facebook.com/lutraconsulting)
 - [X](https://x.com/lutraconsulting)
 
