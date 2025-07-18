@@ -6,7 +6,7 @@ outline: deep
 
 To make full use of <MainPlatformName />, you need to sign up. You can sign up using:
 - [Email and password](#email-and-password-sign-up)
-- [Single sign-on (SSO)](#single-sign-on-sso)
+- [Single sign-on (SSO)](#single-sign-on)
 
 ::: tip Manage your account
 Do you want to delete your account or change your details? Go to [**User Account**](../../manage/account/) for detailed steps.
@@ -107,29 +107,13 @@ You can get up-to-speed quickly by following our [Quick Start tutorials](../../t
    See our <MainDomainNameLink id="pricing" desc="pricing page"/> for more details.
    :::
 
-## Single sign-on (SSO)
-Single sign-on (SSO) is an authentication method that allows you to sign in to <MainPlatformName /> using the same credentials as you use in your organisation. 
+## Single sign-on
 
-This means you don't have to create a new <MainPlatformName /> account with a specific password: you can simply use your work email. The identity provider (e.g. Microsoft Entra ID or Auth0) used by your organisation will check your credential and redirect you back to <MainPlatformName />.
+If your organisation set up [SSO](../../manage/sso/) for <MainPlatformName />, you can sign in using the same credentials as you use in your organisation.
 
-<MainPlatformName /> account will be created automatically after the first sign in via SSO.
-
-SSO is available on the <DashboardNameShort />, the <MobileAppNameShort /> and the <QGISPluginNameShort />.
-
-### Connection setup
-If you are the admin or owner of a workspace and you want to set up SSO, please contact our <MainDomainNameLink id="contact-sales" desc="sales team"/>.
-
-You will receive a link with step-by-step guide for your identity provider. Currently, we support **SAML** and **OIDC** SSO protocols. Directory sync is not supported.
-
-::: tip SSO for self-hosted servers <ServerType type="EE" />
-If you want to use SSO on your <EnterprisePlatformNameLink /> server, you can do so from the admin panel. See [Single Sign-On Deployment](../../server/sso-deployment/) for more details.
-
-SSO is not available for <CommunityPlatformName />.
+::: tip
+You can find out more about this topic in [Single Sign-On (SSO)](../../manage/sso/).
 :::
-
-Once SSO is configured for your workspace, you will see the relevant information in the <DashboardLink id="settings" desc="workspace settings page"/>, under the *advanced* section. If you need to make any changes to your SSO connection, please <MerginMapsEmail id="support" desc="contact our support team"/>.
-
-![Mergin Maps workspace settings with enabled SSO](./dashboard-workspace-settings-sso.jpg "Mergin Maps workspace settings with enabled SSO")
 
 ### From dashboard
 To sign in or sign up to <MainPlatformName /> using SSO on the <DashboardShortLink />:
