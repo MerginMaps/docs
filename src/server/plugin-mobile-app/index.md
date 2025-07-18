@@ -5,6 +5,11 @@ There is a default server <AppDomainNameLink /> which is configured in <QGISPlug
 
 To do this, we need to set up the custom server in the [plugin](#custom-server-configuration-in-mergin-maps-qgis-plugin) as well as in the [mobile app](#custom-server-configuration-in-mergin-maps-mobile-app).
 
+::: warning Server version compatibility
+Please note that the <MobileAppName /> and <QGISPluginName /> require the server version 2023.2 or higher.
+
+See how to [upgrade](../upgrade/) your server if needed. 
+:::
 
 ## Custom server configuration in Mergin Maps QGIS plugin
 To configure a custom <MainPlatformName /> server in the <QGISPluginNameShort />:
