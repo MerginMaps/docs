@@ -30,7 +30,7 @@ Enabled tracking means that a new line layer for tracking will be created in you
 | `tracking_start_time`    | DateTime       | `@tracking_start_time` | Date and time when tracking started  |
 | `tracking_end_time`      | DateTime       | `@tracking_end_time`   | Date and time when tracking ended    |
 | `total_distance`         | Real           | `$length`              | Tracked distance |
-| `tracked_by`             | String         | `@mergin_username`     | Name of the current <MainPlatformNameLink /> user |
+| `tracked_by`             | String         | `@mm_username`     | Name of the current <MainPlatformNameLink /> user |
 
 You can add new fields as needed, however, they should be set up with automatically generated [default values](../../layer/form-configuration/#default-values) as <MobileAppName /> will not open the form for manual inputs. You may use some of the QGIS functions, [extra position variables](../../layer/position_variables/) or [extra QGIS variables](../../layer/plugin-variables/).
 
