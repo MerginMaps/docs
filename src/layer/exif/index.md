@@ -1,7 +1,7 @@
-# Exif Metadata
+# Geotagging
 [[toc]]
 
-EXIF is a file format for storing metadata in image files, such as the camera settings, image metrics, date and time or location information (see, e.g., [Wikipedia](https://en.wikipedia.org/wiki/Exif)). 
+Geotagging can be achieved through EXIF metadata. EXIF is a file format for storing metadata in image files, such as the camera settings, image metrics, date and time or location information (see, e.g., [Wikipedia](https://en.wikipedia.org/wiki/Exif)). 
 
 The <MobileAppNameShort /> supports some default value expression functions that can be used to read EXIF metadata and store their values in the fields of your survey layer.
 
