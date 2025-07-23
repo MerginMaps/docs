@@ -93,9 +93,10 @@ For details about different subscription plans visit our <MainDomainNameLink id=
 ## Settings
 In the **Settings** tab, you will find information about the current workspace. 
 
-[Owners](../permissions/#workspace-member-roles-and-project-permissions) of a workspace can:
+Here, [admins and owners](../permissions/#workspace-member-roles-and-project-permissions) of a workspace can set up or manage [Single sign-on (SSO)](../sso/).
+
+[Owners](../permissions/#workspace-member-roles-and-project-permissions) of a workspace can also:
 - use **Edit Workspace** to add or change the description of the workspace
-- set up or manage [Single sign-on (SSO)](../sso/)
 - use **Close Workspace** to [delete the workspace](../workspaces/#how-to-delete-a-workspace)
 
 ![Mergin dashboard web workspace settings](./mergin-maps-dashboard-settings.jpg "Mergin Maps dashboard workspace settings")
