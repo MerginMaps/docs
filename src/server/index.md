@@ -21,5 +21,7 @@ You can read more about them in our blog [<MainPlatformName /> Community and Ent
 This section of documentation is relevant for the **On-Premises <EnterprisePlatformName />** and **<CommunityPlatformName />**.
 
 :::tip Interested in using <EnterprisePlatformName />?
-Information about <EnterprisePlatformName />, its features and pricing can be found on our [website](https://merginmaps.com/pricing-for-ce-and-ee). Contact our <MerginMapsEmail id="sales" desc="sales team" /> for more details.
+<EnterprisePlatformName /> features and pricing can be found on our [website](https://merginmaps.com/pricing). 
+
+Contact our <MerginMapsEmail id="sales" desc="sales team" /> for more details.
 :::
