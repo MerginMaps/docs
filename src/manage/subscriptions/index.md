@@ -15,11 +15,11 @@ Even if you still use a plan that is no longer offered, features included in thi
 
 ## Contributors
 
-Subscriptions are based on the number of *contributors* on the workspace. Per each contributor seat, you get 1 GB of storage. Storage is shared across the whole workspace. 
+Subscriptions are based on the number of *contributors* on the workspace. Per each contributor seat, you get 1 GB of storage. Storage is shared across the whole workspace. You can get even more storage, just reach out to our <MerginMapsEmail id="sales" desc="sales team" /> and we will help you set it up.
 
-*Contributors* are workspace members or guests who have Writer, Editor, Admin or Owner [access rights](../permissions/).  The number of read-only users is unlimited: they do not count towards your workspace contributors. 
+*Contributors* are workspace members or guests who have Writer, Editor, Admin or Owner [access rights](../permissions/). The number of read-only users is unlimited: they do not count towards your workspace contributors. 
 
-[Owners](../permissions/#workspace-member-roles-and-project-permissions) of the workspace can find the overview of the subscription plan, such as storage usage, number of projects and number of contributors in the workspace in the [**Subscription**](../dashboard/#subscriptions) tab on <DashboardShortLink />. 
+[Owners](../permissions/#workspace-member-roles-and-project-permissions) of the workspace can find the overview of the subscription plan, such as storage usage, number of projects and number of contributors in the workspace in the [**Subscription**](../dashboard/#subscriptions) tab on the <DashboardShortLink />. 
 
 The overview of workspace users and their member type (contributor/read-only) can be found in the [**Members**](../dashboard/#members) tab on the <DashboardShortLink />. It is available to [owners and admins](../permissions/#workspace-member-roles-and-project-permissions) of a workspace.
 
