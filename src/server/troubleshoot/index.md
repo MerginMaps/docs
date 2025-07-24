@@ -1,6 +1,6 @@
 # Troubleshoot Custom Servers
 
-This article will help you debug and resolve issues in your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink /> deployment. If you use the main Cloud <DashboardLink desc="Mergin Maps Server"/>, it is always up-to-date and managed by <MainPlatformName /> team, so report your problems to us as [described here](../../misc/troubleshoot/). Read more about server platforms in [overview article](../). 
+This article will help you debug and resolve issues in your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink /> deployment. If you use the main <ServerCloudNameLink />, it is always up-to-date and managed by <MainPlatformName /> team, so report your problems to us as [described here](../../misc/troubleshoot/). Read more about server platforms in [overview article](../). 
 
 To install your own server, follow our [installation guide](../install/). Documentation of environment variables and other configuration options can be found in [Configure environment](../environment/).
 

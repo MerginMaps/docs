@@ -194,5 +194,5 @@ Files from the folder can be loaded into multiple <MainPlatformName /> projects.
 :::
 
 :::warning
-Files located in the another folder are not synchronised. This saves your storage on <MainPlatformNameLink /> cloud. However, if you want to update or modify these files, you have to connect the mobile device to your computer and do it manually.
+Files located in the another folder are not synchronised. This saves your storage on <ServerCloudNameLink />. However, if you want to update or modify these files, you have to connect the mobile device to your computer and do it manually.
 :::
