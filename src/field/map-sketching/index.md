@@ -29,7 +29,7 @@ If you do not see this option in the **Project properties**, check for [plugin u
 :::
 
 ## Map sketching in the mobile app
-To use map sketches in the <MobileAppNameShort />, make sure they are [enabled in the project](#set-up-map-sketching-in-qgis-project).
+To use map sketches in the <MobileAppNameShort />, make sure they are [enabled in the project](#enable-map-sketching).
 
 1. Tap the **Map sketching** button
    ![Map sketching button in Mergin Maps mobile app](./mobile-map-sketching-button.jpg "Map sketching button in Mergin Maps mobile app")
