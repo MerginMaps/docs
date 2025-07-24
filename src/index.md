@@ -39,6 +39,7 @@ The ecosystem consist of various components:
 
 ## Manage Account & Project
 - [User Account](./manage/account/)
+- [Single Sign-On (SSO)](./manage/sso/)
 - [Workspaces](./manage/workspaces/)
 - [Subscriptions and Invoicing](./manage/subscriptions/)
 - [Member Roles and Permissions](./manage/permissions/)
