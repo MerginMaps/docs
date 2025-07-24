@@ -2,7 +2,8 @@
 
 [[toc]]
 
-Let's say you synchronise surveyed data from multiple devices (individual surveyors) and when you examine them, you find out there is something missing - new features that were captured in the field or changes made by one or more of your team members. 
+Let's say you synchronise surveyed data from multiple devices (individual surveyors) and when you examine them, you find out there is something missing - new features that were captured in the field or changes made by one or more of your team members.
+
 The reasons why you didn't get all the data can vary. For instance, the data could not be synchronised correctly because of multiple surveyors editing the same feature or synchronisation of projects with different data schema. You can read more about this topic in [Behind Data Synchronisation](../synchronisation/).
 
 Here we will try to guide you through common techniques that can help you to retrieve your data.
@@ -20,7 +21,7 @@ If you cannot synchronise changes, make sure you are connected to the internet a
 Depending on your data format, you can get something like `survey_polygon (edit conflict, sarah v4).json`, which is a conflict file for data from a user called `sarah`, project version 4.
 
 ## There are conflict files in the folder
-Conflict files can appear in your project when Mergin could not synchronise changes automatically and they indicate there may be some issues that should be fixed.
+Conflict files can appear in your project when <MainPlatformName /> could not synchronise changes automatically and they indicate there may be some issues that should be fixed.
 
 You can add conflict files to your QGIS project and check whether they contain the data you are missing. Then you can resolve them manually or semi-automatically, depending on the scope of your issue.
 
@@ -56,7 +57,7 @@ You can access your data by following these steps:
 
 4. Click on the tab named `files`  
 
-5. Select `Input` app from a list to see a data folder
+5. Select **<MainPlatformName />** from a list to see a data folder `INPUT`
    ![Mergin Maps mobile app files accessed through iTunes](./itunes2.jpg "Mergin Maps mobile app files accessed through iTunes")
 
 6. Drag-and-drop the `INPUT` folder to another location to see the content
@@ -75,7 +76,7 @@ Here are the steps to transfer the data from iPhone/iPad to a Windows PC.
 
 5. From the left panel, select **File Sharing**
 
-6. Select **Input** in Apps tab
+6. Select **<MainPlatformName />** in Apps tab
 
 7. Under Input Documents, select **INPUT** folder
 
