@@ -100,7 +100,6 @@ Tracking your position when doing the field survey with <MobileAppName /> can be
 You can read more about this functionality in [How to Use Tracking in Mergin Maps mobile app](../../field/tracking/).
 
 ### Map sketching
-<SinceBadge type="Plugin" version="2025.X" />
 
 Map sketching for the <MobileAppNameShort /> can be enabled in the **<MainPlatformName />** tab in **Project properties**. Here, you can also set the colours that will be available for sketches.
 
