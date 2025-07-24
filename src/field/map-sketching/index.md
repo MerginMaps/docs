@@ -35,7 +35,7 @@ To use map sketches in the <MobileAppNameShort />, make sure they are [enabled i
    ![Map sketching button in Mergin Maps mobile app](./mobile-map-sketching-button.jpg "Map sketching button in Mergin Maps mobile app")
 
 2. The **Sketch** bar appears.
-   - Draw your sketches on the map by freehand or using a stylus. You choose from 7 annotation colours. The colour set can be changed in the [project properties](#set-up-map-sketching-in-qgis-project) in QGIS.
+   - Draw your sketches on the map by freehand or using a stylus. You choose from 7 annotation colours. The colour set can be changed in the [project properties](#enable-map-sketching) in QGIS.
    ![Map sketches in Mergin Maps mobile app](./mobile-map-sketching.jpg "Map sketches in Mergin Maps mobile app")
 
    - Made a mistake? Use the **Eraser** button to remove your sketches.
