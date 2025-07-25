@@ -1,6 +1,6 @@
 # Overview
 
-SaaS <MainPlatformName /> service is a web platform for storage and synchronisation of data between mobile devices, <MainPlatformNameLink /> service and QGIS Desktop. 
+SaaS <MainPlatformName /> service called <ServerCloudNameLink /> is a web platform for storage and synchronisation of data between mobile devices, <MainPlatformNameLink /> service and QGIS Desktop. 
 
 There are also custom server deployments: 
 [[toc]]
