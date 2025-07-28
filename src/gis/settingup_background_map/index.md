@@ -140,7 +140,6 @@ Note that instructions below require familiarity with the terminal. In addition,
 
 
 #### Downloading vector tiles using Mergin Maps QGIS Plugin
-<SinceBadge type="Plugin" version="2023.4" />
 
 Vector tiles for offline use can be downloaded easily using <QGISPluginName />.
 
