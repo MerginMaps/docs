@@ -1,5 +1,5 @@
 # How to Set Photo Names Format
-<SinceBadge type="Plugin" version="2023.2.0" /> 
+
 [[toc]]
 
 Names of the photos that are captured in the field using <MobileAppName /> can be customised. The name format can be set in QGIS with <QGISPluginName />. 

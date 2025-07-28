@@ -44,7 +44,7 @@ All your changes will be uploaded to the server and any pending changes from the
 When the synchronisation process is completed, your local files and the copy of files on the server will be identical.
 
 ### Local changes
-<SinceBadge type="Plugin" version="2022.4" />
+
 The changes that you make in the project can be synchronised to the cloud and shared with your coworkers. Now these changes can also be visualised which is helpful when reviewing local changes to see what was actually modified and also to avoid unwanted edits.
 
 :::tip
