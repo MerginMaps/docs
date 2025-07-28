@@ -11,6 +11,12 @@ Please note that the <MobileAppName /> and <QGISPluginName /> require the server
 See how to [upgrade](../upgrade/) your server if needed. 
 :::
 
+::: tip Diagnostic logs on custom servers
+[Diagnostic logs](../../misc/troubleshoot/#diagnostic-logs) are by default saved to the `diagnostic_logs` folder on your server. 
+
+They contain detailed information about application run, so they may help you resolve issues you can encounter when using the <MobileAppNameShort /> and <QGISPluginNameShort /> with your custom server.
+:::
+
 ## Custom server configuration in Mergin Maps QGIS plugin
 To configure a custom <MainPlatformName /> server in the <QGISPluginNameShort />:
 
