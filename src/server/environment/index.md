@@ -128,7 +128,6 @@ Other settings related to data management.
 | `PROJECT_ACCESS_REQUEST`     | integer  | `604800`                              | Lifetime of active project access request in seconds.                                                                                                                                                     |
 | `TEMP_EXPIRATION`            | integer  | `7`                                   | Time in days after files in a temporary folder are permanently deleted.                                                                                                                                   |
 
-
 ## Celery asynchronous tasks
 Mergin Maps is using Celery and Redis to perform asynchronous tasks or doing regular jobs.
 
@@ -136,6 +135,13 @@ Mergin Maps is using Celery and Redis to perform asynchronous tasks or doing reg
 |-----------------------|------|---------------------------------|-------------|
 |`BROKER_URL`           |string|`redis://merginmaps-redis:6379/0`| Connection details to celery message broker. If non-default, it should match definition in `docker-compose` file.  |
 |`CELERY_RESULT_BACKEND`|string|`redis://merginmaps-redis:6379/0`| Connection details to celery result back-end broker. If non-default, it should match definition in `docker-compose` file.  |
+
+## Diagnostic logs
+Users of Mergin Maps plugin and Mergin Maps mobile application are able to send diagnostic logs from their devices. In custom deployments are logs stored in `diagnostic_logs` folder. If you want to send these logs to Mergin Maps instead of storing locally, set `DIAGNOSTIC_LOGS_URL` variable to `https://api.merginmaps.com/logs`.
+
+| Variable name            | Type     | Default                       | Description                    |
+|--------------------------|----------|-------------------------------|--------------------------------|
+| `DIAGNOSTIC_LOGS_URL`           | string  | ``                       | Enable sending diagnost logs from clients to defined url instead of folder in deployment. Set to `https://api.merginmaps.com/logs` to send diagnostic logs to Mergin Maps.           |
 
 ## WebMaps 
 <ServerType type="EE" />
