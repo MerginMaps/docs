@@ -1,8 +1,8 @@
 <template>
   <aside class="banner">
     <div class="banner-container">
-      <img class="banner-image banner-image-full" :src="fullImageUrl" />
-      <img class="banner-image banner-image-small" :src="smallImageUrl" />
+      <img class="banner-image banner-image-full" :src="fullImageUrl" alt="Mergin Maps banner" />
+      <img class="banner-image banner-image-small" :src="smallImageUrl" alt="Mergin Maps banner" />
       <header class="banner-header">
         <h2 class="banner-title">{{ title }}</h2>
         <p class="banner-text">{{ text }}</p>

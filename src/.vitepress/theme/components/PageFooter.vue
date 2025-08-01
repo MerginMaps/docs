@@ -11,6 +11,7 @@
                   : '/MM_logo_HORIZ_COLOR_VECTOR_no_padding.svg'
               )
             "
+            alt="Mergin Maps logo"
           />
           <p>Copyright &copy; 2021 - {{ year }}</p>
           <p>Lutra Consulting Limited</p>
