@@ -9,6 +9,11 @@ Installation guide will help you to install your <CommunityPlatformNameLink /> o
 
 We recommend using a dedicated host machine with 8 GB of memory. The requirements for CPU and persistent storage depend largely on the frequency of project updates and the anticipated size of the data you expect to store respectively.
 
+## Install Docker from official source
+
+Please, use latest version of Docker and Docker Compose tools.
+Follow the [official](https://docs.docker.com/engine/install/) guidelines in accordance to your OS system.
+
 ## Mergin Maps CE Docker Images
 <ServerType type="CE" />
 
@@ -60,7 +65,7 @@ Then, edit the `.prod.env` file and provide values for all variables marked as r
 
 ### Start docker containers
 
-Before proceeding, ensure you have both `docker` and `docker-compose` installed on your system.
+Before proceeding, ensure you have both `docker` and `docker compose` installed on your system.
 
 Once your environment is configured, you can start the containers by running the following commands for the Community and Enterprise editions.
 
@@ -70,7 +75,7 @@ Community edition stack:
 $ mkdir -p mergin_db # database data directory
 $ sh ../common/set_permissions.sh projects # application internal data directory
 $ sh ../common/set_permissions.sh diagnostic_logs # directory to persist diagnostic logs (optional)
-$ docker-compose -f docker-compose.yml up -d
+$ docker compose -f docker-compose.yml up -d
 ```
 
 Enterprise edition stack:
@@ -80,8 +85,8 @@ $ mkdir -p mergin-db-enterprise # database data directory
 $ sh ../common/set_permissions.sh data # application internal data directory
 $ sh ../common/set_permissions.sh map_data # maps data directory (neccessary for maps)
 $ sh ../common/set_permissions.sh diagnostic_logs # directory to persist diagnostic logs (optional)
-$ docker-compose -f docker-compose.yml up -d
-$ docker-compose -f docker-compose.maps.yml up -d # Run maps stack separately
+$ docker compose -f docker-compose.yml up -d
+$ docker compose -f docker-compose.maps.yml up -d # Run maps stack separately
 ```
 ​​
 ### Initialise database
