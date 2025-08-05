@@ -7,7 +7,29 @@ Installation guide will help you to install your <CommunityPlatformNameLink /> o
 
 ## Installation System Requirements
 
-We recommend using a dedicated host machine with 8 GB of memory. The requirements for CPU and persistent storage depend largely on the frequency of project updates and the anticipated size of the data you expect to store respectively.
+We recommend using a dedicated host machine with **8 GB** of memory and **4 vCPUS**. The requirements for CPU and persistent storage depend largely on the frequency of project updates and the anticipated size of the data you expect to store respectively.
+A very conservative rule of thumb, regarding needed disk size would be `qgis project size * number of versions`.
+
+On OS level, we recommend to use a Linux distribution that has fully compatibility with Docker, since <MainPlatformName /> is deployed by default with `docker compose`.
+
+A low-latency, high-bandwidth environment is preferred due to volume of data needed to perform synchronization with <MainPlatformName />. This is specially important on large projects with hundreds of megabytes in between syncs.
+
+
+### Infrastructure overview
+
+* **PostgreSQL** - Database that holds application data. Can be externalized and therefore excluded from install orchestration with proper [configuration](https://merginmaps.com/docs/server/environment/#database-settings).
+* **Redis** - The caching and asynchronous task engine running on top of <MainPlatformName />
+* **Celery-Beat** - The Celery task orchestrator used by <MainPlatformName />
+* **Celery-Worker** - The Celery container responsible for workers that perform tasks on <MainPlatformName />
+* **Server** - The server backend intance of <MainPlatformName />
+* **Web** - The frontend instance for <MainPlatformName />
+* **Proxy** - NGINX instance serving <MainPlatformName /> in reverse proxy configuration.
+
+### Firewall ports
+
+By default, only HTTP default ports (`80`, and `443` if SSL is enabled) need to be open on firewall side.
+All other infrastructure instance will work within the same docker network group.
+
 
 ## Install Docker from official source
 
