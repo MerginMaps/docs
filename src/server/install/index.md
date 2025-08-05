@@ -17,11 +17,11 @@ A low-latency, high-bandwidth environment is preferred due to volume of data nee
 
 ### Infrastructure overview
 
-* **PostgreSQL** - Database that holds application data. Can be externalized and therefore excluded from install orchestration with proper [configuration](https://merginmaps.com/docs/server/environment/#database-settings).
+* **PostgreSQL** - Database that holds application data. Can be external and therefore excluded from install orchestration with proper [configuration](https://merginmaps.com/docs/server/environment/#database-settings).
 * **Redis** - The caching and asynchronous task engine running on top of <MainPlatformName />
 * **Celery-Beat** - The Celery task orchestrator used by <MainPlatformName />
 * **Celery-Worker** - The Celery container responsible for workers that perform tasks on <MainPlatformName />
-* **Server** - The server backend intance of <MainPlatformName />
+* **Server** - The server backend instance of <MainPlatformName />
 * **Web** - The frontend instance for <MainPlatformName />
 * **Proxy** - NGINX instance serving <MainPlatformName /> in reverse proxy configuration.
 
