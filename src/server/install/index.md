@@ -7,8 +7,10 @@ Installation guide will help you to install your <CommunityPlatformNameLink /> o
 
 ## Installation System Requirements
 
-We recommend using a dedicated host machine with **8 GB** of memory and **4 vCPUS**. The requirements for CPU and persistent storage depend largely on the frequency of project updates and the anticipated size of the data you expect to store respectively.
-A very conservative rule of thumb, regarding needed disk size would be `qgis project size * number of versions`.
+For a typical deployment, we recommend using a dedicated host machine with **8 GB** of memory and **2 vCPUS** (similar to AWS `t3a.large` instances).
+The requirements for CPU and persistent storage depend largely on the frequency of project updates and the anticipated size of the data you expect to store respectively.
+A very conservative rule of thumb, regarding needed disk size would be `mergin maps project size * number of versions`.
+If you have a team size over 25 people and synchronize often your <MainPlatformName /> projects, consider a host with **4 vCPUS**. 
 
 On OS level, we recommend to use a Linux distribution that has fully compatibility with Docker, since <MainPlatformName /> is deployed by default with `docker compose`.
 
@@ -27,8 +29,8 @@ A low-latency, high-bandwidth environment is preferred due to volume of data nee
 
 ### Firewall ports
 
-By default, only HTTP default ports (`80`, and `443` if SSL is enabled) need to be open on firewall side.
-All other infrastructure instance will work within the same docker network group.
+By default, only HTTP port `8080` need to be open on firewall side. Also is recommended to open `443` port if SSL is enabled.
+All other infrastructure instances will work within the same docker network group, so no additional ports need to be managed on firewall side. 
 
 
 ## Install Docker from official source
