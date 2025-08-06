@@ -10,7 +10,7 @@ Installation guide will help you to install your <CommunityPlatformNameLink /> o
 For a typical deployment, we recommend using a dedicated host machine with **8 GB** of memory and **2 vCPUS** (similar to AWS `t3a.large` instances).
 The requirements for CPU and persistent storage depend largely on the frequency of project updates and the anticipated size of the data you expect to store respectively.
 A very conservative rule of thumb, regarding needed disk size would be `mergin maps project size * number of versions`.
-If you have a team size over 25 people and synchronize often your <MainPlatformName /> projects, consider a host with **4 vCPUS**. 
+If you have a team size over 25 people and synchronise often your <MainPlatformName /> projects, consider a host with **4 vCPUS**. 
 
 On OS level, we recommend to use a Linux distribution that has fully compatibility with Docker, since <MainPlatformName /> is deployed by default with `docker compose`.
 
