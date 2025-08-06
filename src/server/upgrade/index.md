@@ -242,7 +242,7 @@ Perform the migration:
 <MigrationType type="EE" />
 1. Start up your docker containers
     ```bash
-    $ docker-compose -f docker-compose.yml up # or similarly, based on your deployment
+    $ docker compose -f docker-compose.yml up # or similarly, based on your deployment
     ```
 
 2. Check that you are on correct versions (`0e3fc92aeaaa`, `223e3be99e92`).
@@ -274,7 +274,7 @@ Perform the migration:
 <MigrationType type="EE" />
 1. Start up your docker containers
     ```bash
-    $ docker-compose -f docker-compose.yml up # or similarly, based on your deployment
+    $ docker compose -f docker-compose.yml up # or similarly, based on your deployment
     ```
 
 2. Check that you are on correct versions (`a5d4defded55`, `223e3be99e92`).
@@ -306,7 +306,7 @@ Update image to `2024.2.2` and perform the migration:
 
 1. Start up your docker containers
     ```bash
-    $ docker-compose -f docker-compose.yml up # or similarly, based on your deployment
+    $ docker compose -f docker-compose.yml up # or similarly, based on your deployment
     ```
 
 2. Check that you are on correct versions (`35af0c8be41e`, `3a77058a2fd7`).
@@ -334,7 +334,7 @@ Update image to `2024.2.1` and perform the migration:
 
 1. Start up your docker containers
     ```bash
-    $ docker-compose -f docker-compose.yml up # or similarly, based on your deployment
+    $ docker compose -f docker-compose.yml up # or similarly, based on your deployment
     ```
 
 2. Check that you are on correct versions (`3a77058a2fd7`, `0d867687ab64`).
@@ -371,7 +371,7 @@ Perform the migration:
 
 1. Start up your docker containers
     ```bash
-    $ docker-compose -f docker-compose.yml up # or similarly, based on your deployment
+    $ docker compose -f docker-compose.yml up # or similarly, based on your deployment
     ```
 
 2. Check that you are on a correct version (`b6cb0a98ce20`)
@@ -395,7 +395,7 @@ Perform the migration:
 <MigrationType type="EE" />
 1. Start up your docker containers
     ```bash
-    $ docker-compose -f docker-compose.yml up # or similarly, based on your deployment
+    $ docker compose -f docker-compose.yml up # or similarly, based on your deployment
     ```
 
 2. Check that you are on correct versions (`b6cb0a98ce20`, `0d867687ab64`)
@@ -440,7 +440,7 @@ $ docker exec mergin-db pg_dump -U postgres -Fc postgres > pg_backup.dump
 
  4. Stop all running <MainPlatformName /> services (from project root folder)
 ```bash
-$ docker-compose -f docker-compose.yml stop
+$ docker compose -f docker-compose.yml stop
 ```
 
  5. Pull the latest changes
@@ -488,7 +488,7 @@ There are few settings you may want to change values for:
 
 7. Make sure projects volume mounts in `docker-compose` file still match (You can set up new volumes by following the [quick start guide](../install/)). Switch to new server version and PostgreSQL to at least version 12 (14 recommended) by running new docker containers:
 ```bash
-$ docker-compose -f docker-compose.yml up
+$ docker compose -f docker-compose.yml up
 ```
 
 8. Restore backup from older PostgreSQL version, e.g.:
