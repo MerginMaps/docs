@@ -125,7 +125,7 @@ Celery running properly
 To test email configuration:
 
 ```shell
-$ docker exec merginmaps-server flask send-check-email --email me@myorg.com
+$ docker exec merginmaps-server flask server send-check-email --email me@myorg.com
 ```
 
 By default, email notifications are disabled, so output will be similar to this:
