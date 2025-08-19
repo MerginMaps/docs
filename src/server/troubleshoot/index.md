@@ -6,8 +6,14 @@ To install your own server, follow our [installation guide](../install/). Docume
 
 [[toc]]
 
-:::tip
+:::tip <MainPlatformName /> support and troubleshooting
 Haven't found a solution to your issue? Look at your other [troubleshooting options](../../misc/troubleshoot/).
+:::
+
+::: tip Diagnostic logs on custom servers
+[Diagnostic logs](../../misc/troubleshoot/#diagnostic-logs) are by default saved to the `diagnostic_logs` folder on your server. 
+
+They contain detailed information about application run, so they may help you resolve issues you can encounter when using the [<MobileAppNameShort /> and <QGISPluginNameShort /> with your custom server](../plugin-mobile-app/).
 :::
 
 ## Server is not properly configured
