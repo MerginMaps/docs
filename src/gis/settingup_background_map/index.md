@@ -90,17 +90,16 @@ To add a vector tile service:
 
    For <MainPlatformName /> vector tile service, the parameters are as follows:
    - **Name**: *OpenMapTiles (OSM)*
-   - **URL**: `https://tiles.merginmaps.com/data/default/{z}/{x}/{y}.pbf`
+   - **Style URL**: `https://tiles.merginmaps.com/styles/default.json`
+   - **Source URL**: `https://tiles.merginmaps.com/data/default/{z}/{x}/{y}.pbf`
    - **Min. Zoom Level**: 0
    - **Max. Zoom Level**: 14
-   - **Style URL**: `https://tiles.merginmaps.com/styles/default.json`
    
    ![QGIS XYZ vector tile connection](./qgis_xyz_gen_vectortile.jpg "QGIS XYZ vector tile connection")
 
-
 :::warning Usage details
 
-<MainPlatformName /> vector tile service can be used by **<MainPlatformNameLink /> users only** . 
+Note that <MainPlatformName /> vector tile service can be used by **<MainPlatformNameLink /> users only** . 
 
 Using the service is conditioned by the attribution: 
 
