@@ -52,15 +52,13 @@ You can access your data by following these steps:
 
 2. Open `Finder` file browser
 
-3. Go to Locations and select your `<device_name>`
-   ![Plugged iOS device Locations iTunes](./itunes.jpg "iTunes iOS device plugged to a computer")
+3. Go to **Locations**, select your `<device_name>` and click on the **Files** tab. 
 
-4. Click on the tab named `files`  
-
-5. Select **<MainPlatformName />** from a list to see a data folder `INPUT`
+   Select **<MainPlatformName />** from a list to see a data folder `INPUT`
+   
    ![Mergin Maps mobile app files accessed through iTunes](./itunes2.jpg "Mergin Maps mobile app files accessed through iTunes")
 
-6. Drag-and-drop the `INPUT` folder to another location to see the content
+4. Drag-and-drop the `INPUT` folder to another location to see the content
 
 ### Manual data transfer (between iOS and Windows)
 Here are the steps to transfer the data from iPhone/iPad to a Windows PC.
@@ -72,7 +70,7 @@ Here are the steps to transfer the data from iPhone/iPad to a Windows PC.
 3. [Connect your iOS device to the PC](https://support.apple.com/en-gb/guide/iphone/iph42d9b3178/15.0/ios/15.0) and unlock the screen
 
 4. In iTunes, click on the phone icon in the toolbar
-   ![iTunes phone icon](./ios_win_itunes.jpg "iTunes phone icon")
+   ![iTunes phone icon](./ios_itunes.jpg "iTunes phone icon")
 
 5. From the left panel, select **File Sharing**
 
@@ -81,7 +79,7 @@ Here are the steps to transfer the data from iPhone/iPad to a Windows PC.
 7. Under Input Documents, select **INPUT** folder
 
 8. Press **Save...**
-   ![iTunes save Mergin Maps mobile app files](./ios_win_itunes_input.jpg "iTunes save Mergin Maps mobile app files")
+   ![iTunes save Mergin Maps mobile app files](./ios_itunes_merginmaps.jpg "iTunes save Mergin Maps mobile app files")
 
 9. Select a path to save the folder on your computer.
 
