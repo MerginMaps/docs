@@ -1,6 +1,6 @@
 # Install
 
-Installation guide will help you to install your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink /> to the latest server version. The main Cloud <DashboardLink desc="Mergin Maps Server"/> is always up-to-date and managed by <MainPlatformName /> team. Read more about server platforms in [overview article](../)
+Installation guide will help you to install your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink /> to the latest server version. <ServerCloudNameLink /> is always up-to-date and managed by <MainPlatformName /> team. Read more about server platforms in [overview article](../)
 
 [[toc]]
 
@@ -83,6 +83,12 @@ $ sh ../common/set_permissions.sh diagnostic_logs # directory to persist diagnos
 $ docker-compose -f docker-compose.yml up -d
 $ docker-compose -f docker-compose.maps.yml up -d # Run maps stack separately
 ```
+
+::: tip Diagnostic logs
+Users of the Mergin Maps Mobile App and Mergin Maps QGIS plugin can send diagnostic logs from their devices. In custom deployments, logs are stored in the `diagnostic_logs` folder. If you do not want to persist these logs in a volume, remove the mount point for this folder in the <GitHubRepo id="/MerginMaps/server/blob/master/deployment/enterprise/docker-compose.yml" /> file.
+
+If you want to send diagnostic logs from devices to Mergin Maps instead of storing them in a folder, set `DIAGNOSTIC_LOGS_URL` to `https://api.merginmaps.com/logs`.
+:::
 ​​
 ### Initialise database
 If server is started for the first time, database needs to be initialised and super-user created. Use the `init` command which will perform it automatically (the command generates password for the admin account):
@@ -125,7 +131,7 @@ Celery running properly
 To test email configuration:
 
 ```shell
-$ docker exec merginmaps-server flask send-check-email --email me@myorg.com
+$ docker exec merginmaps-server flask server send-check-email --email me@myorg.com
 ```
 
 By default, email notifications are disabled, so output will be similar to this:

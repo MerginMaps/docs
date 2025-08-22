@@ -15,7 +15,7 @@ home: false
 The ecosystem consist of various components:
  - [QGIS](https://qgis.org/) > Powerful GIS Desktop application 
  - [<QGISPluginName />](https://plugins.qgis.org/plugins/Mergin/) > QGIS plugin
- - <AppDomainNameLink desc="Mergin Maps Server" /> > SaaS Cloud Service (available also as <MainPlatformName /> CE)
+ - <ServerCloudNameLink /> > SaaS Cloud Service (available also as <EnterprisePlatformNameLink /> or <CommunityPlatformNameLink />)
  - <MainDomainNameLink desc="Mergin Maps mobile app" /> > iOS and Android mobile app
 
 <AppDownload />
@@ -39,6 +39,7 @@ The ecosystem consist of various components:
 
 ## Manage Account & Project
 - [User Account](./manage/account/)
+- [Single Sign-On (SSO)](./manage/sso/)
 - [Workspaces](./manage/workspaces/)
 - [Subscriptions and Invoicing](./manage/subscriptions/)
 - [Member Roles and Permissions](./manage/permissions/)
@@ -90,6 +91,7 @@ The ecosystem consist of various components:
 - [Synchronisation in <MobileAppName />](./field/autosync/)
 - [Measurement Tools](./field/measure/)
 - [Layers in <MobileAppName />](./field/layers/)
+- [Map Sketching in <MobileAppName />](./field/map-sketching/)
 - [How to Add, Edit, Delete Features](./field/mobile-features/)
 - [How to Reuse Last Entered Values](./field/reuse-last-values/)
 - [How to Stake Out Points](./field/stake-out/)
@@ -121,7 +123,7 @@ The ecosystem consist of various components:
 
 ## Support & Legal
 - [Licensing](./misc/licensing/)
+- [Get Involved](./misc/get-involved/)
 - [Troubleshoot](./misc/troubleshoot/)
-- [Contribute](./misc/contribute/)
 - [Write Documentation](./misc/write-docs/)
 

@@ -1,6 +1,6 @@
 # How to Delete Files
 
-Deleting files such as photos that are not needed anymore can help you free up storage on the <MainPlatformNameLink /> cloud and keep your project organised.
+Deleting files such as photos that are not needed anymore can help you free up storage on the <ServerCloudNameLink /> and keep your project organised.
 
 Files can be deleted through <DashboardLink /> one by one. Deleting multiple files at once is possible on your computer using <QGISPluginName />.
 [[toc]]

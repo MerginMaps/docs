@@ -86,7 +86,7 @@ client.create_user("jill@example.com", "T0p_secret", 1, "editor", notify_user=Tr
 
 ### Workspace members methods
 
-These methods are available for Cloud and Enterprise edition servers.
+These methods are available for <ServerCloudNameLink /> and <EnterprisePlatformNameLink />.
 
 ::: warning API availability
 The following methods are available for Python API Client versions `0.10.0` or higher, using server versions `2025.2.0` or higher.

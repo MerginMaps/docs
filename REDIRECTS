@@ -121,7 +121,7 @@ https://merginmaps.com/docs/field/input_features/	https://merginmaps.com/docs/fi
 https://merginmaps.com/docs/field/input_ui/	https://merginmaps.com/docs/field/mobile-app-ui/
 https://merginmaps.com/docs/gis/enable_browsing/	https://merginmaps.com/docs/gis/search_data/
 https://merginmaps.com/docs/howto/attach-multiple-photos-to-features/	https://merginmaps.com/docs/layer/attach-multiple-photos-to-features/
-https://merginmaps.com/docs/howto/contribute/	https://merginmaps.com/docs/misc/contribute/
+https://merginmaps.com/docs/howto/contribute/	https://merginmaps.com/docs/misc/get-involved/
 https://merginmaps.com/docs/howto/create-an-organization/	https://merginmaps.com/docs/manage/workspaces/
 https://merginmaps.com/docs/howto/create-project/	https://merginmaps.com/docs/manage/create-project/
 https://merginmaps.com/docs/howto/customapp/	https://merginmaps.com/docs/dev/customapp/
@@ -178,6 +178,7 @@ https://merginmaps.com/docs/manage/project-details/	https://merginmaps.com/docs/
 https://merginmaps.com/docs/manage/plugin-multi-server-use/	https://merginmaps.com/docs/server/plugin-mobile-app/
 https://merginmaps.com/docs/manage/plugin-sync-project/	https://merginmaps.com/docs/manage/plugin/
 https://merginmaps.com/docs/misc/privacy/	N/A -- handled by https://merginmaps.com/privacy-policy/
+https://merginmaps.com/docs/misc/contribute/	https://merginmaps.com/docs/misc/get-involved/
 https://merginmaps.com/docs/reference/licensing/	https://merginmaps.com/docs/misc/licensing/
 https://merginmaps.com/docs/reference/privacy/	N/A -- handled by https://merginmaps.com/privacy-policy/
 https://merginmaps.com/docs/server/administer/environment/	https://merginmaps.com/docs/server/environment/
@@ -189,7 +190,7 @@ https://merginmaps.com/docs/setup/working-with-organisations/	https://merginmaps
 https://merginmaps.com/docs/components/mobile/	https://merginmaps.com/docs/
 https://www.merginmaps.com/docs/components/web/	https://merginmaps.com/docs/
 https://www.merginmaps.com/docs/concepts/	https://merginmaps.com/docs/
-https://www.merginmaps.com/docs/contribute/	https://merginmaps.com/docs/misc/contribute/
+https://www.merginmaps.com/docs/contribute/	https://merginmaps.com/docs/misc/get-involved/
 https://merginmaps.com/docs/faq/	https://merginmaps.com/docs/
 https://www.merginmaps.com/docs/guides/datum-shift/	https://merginmaps.com/docs/gis/proj/
 https://www.merginmaps.com/docs/guides/mergin-tour/	https://merginmaps.com/docs/
