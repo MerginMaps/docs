@@ -141,7 +141,12 @@ export default {
       items: [
         { text: 'Licensing', link: '/misc/licensing/' },
         { text: 'Get Involved', link: '/misc/get-involved/' },
-        { text: 'Troubleshoot', link: '/misc/troubleshoot/' },
+        { text: 'Troubleshoot', link: '/misc/troubleshoot/',
+        collapsed:true,
+        items: [
+        { text: 'Project fails to sync', link: '/misc/troubleshoot/not_syncing/' },
+        ]        
+        },
         { text: 'Write Documentation', link: '/misc/write-docs/' }
       ]
     }
