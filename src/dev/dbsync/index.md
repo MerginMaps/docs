@@ -11,7 +11,6 @@ Windows users may use a Windows executable for DB sync. On Linux/Mac users are a
 
 
 ## DB Sync configuration wizard
-<SinceBadge type="Plugin" version="2023.4" />
 
 DB Sync configuration file can be generated in QGIS using <QGISPluginName />:
 1. Open your <MainPlatformName /> project in QGIS
