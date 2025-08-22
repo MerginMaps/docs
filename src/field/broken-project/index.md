@@ -13,8 +13,6 @@ The [Troubleshoot](../../misc/troubleshoot/) page has general troubleshooting ti
 
 ## Saving of feature failed (vector layer)
 
-<SinceBadge type="App" version="2.5.0" />
-
 The error is caused by a change of behaviour in QGIS versions 3.34.0 and higher as well as <MobileAppName /> 2.5.0 and higher. 
 
 :::details
