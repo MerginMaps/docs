@@ -142,6 +142,24 @@ Arguments:
 
 > The user account is not removed. This method only removes their access to the workspace.
 
+#### Invite user to workspace
+
+::: warning API availability
+The following method is available for Python API Client versions `0.10.3` or higher, using server versions `2025.6.1` or higher.
+:::
+
+```python
+client.create_invitation(<workspace_id>, <email>, <workspace_role>)
+```
+
+Arguments:
+
+`workspace_id` (int): The workspace ID where the user will be invited.
+
+`email` (string): The email of an existing user.
+
+`workspace_role` (string): The user’s role in the workspace. [See the roles options](../../manage/permissions/index.md#workspace-member-roles-overview).
+
 ---
 
 ### Project collaborators methods
@@ -207,7 +225,7 @@ Arguments:
 
 `user_id` (int): ID of the user.
 
-> The user account is not removed, only the project access. 
+> The user account is not removed, only the project access.
 
 ## Further details
 
