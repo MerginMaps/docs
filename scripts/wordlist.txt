@@ -144,7 +144,6 @@ Skoda
 SLYR
 SSL
 Survey123
-synchronization
 synchronise
 TLS
 Transifex

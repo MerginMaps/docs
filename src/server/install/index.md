@@ -12,9 +12,9 @@ The requirements for CPU and persistent storage depend largely on the frequency 
 A very conservative rule of thumb, regarding needed disk size would be `mergin maps project size * number of versions`.
 If you have a team size over 25 people and synchronise often your <MainPlatformName /> projects, consider a host with **4 vCPUS**. 
 
-On OS level, we recommend to use a Linux distribution that has fully compatibility with Docker, since <MainPlatformName /> is deployed by default with `docker compose`.
+On OS level, we recommend to use a Linux distribution that has full compatibility with Docker, since <MainPlatformName /> is deployed by default with `docker compose`.
 
-A low-latency, high-bandwidth environment is preferred due to volume of data needed to perform synchronization with <MainPlatformName />. This is specially important on large projects with hundreds of megabytes in between syncs.
+A low-latency, high-bandwidth environment is preferred due to the volume of data needed to perform synchronisation with <MainPlatformName />. This is especially important on large projects with hundreds of megabytes in between syncs.
 
 
 ### Infrastructure overview
@@ -29,14 +29,13 @@ A low-latency, high-bandwidth environment is preferred due to volume of data nee
 
 ### Firewall ports
 
-By default, only HTTP port `8080` need to be open on firewall side. Also is recommended to open `443` port if SSL is enabled.
-All other infrastructure instances will work within the same docker network group, so no additional ports need to be managed on firewall side. 
+By default, only HTTP port `8080` need to be open on firewall side. It is also recommended to open `443` port if SSL is enabled.
+All other infrastructure instances will work within the same docker network group, so no additional ports need to be managed on the firewall side. 
 
-
-## Install Docker from official source
-
-Please, use latest version of Docker and Docker Compose tools.
-Follow the [official](https://docs.docker.com/engine/install/) guidelines in accordance to your OS system.
+::: details Install Docker
+Please, use the latest version of Docker and Docker Compose tools.
+Follow the [official](https://docs.docker.com/engine/install/) guidelines in accordance with your OS system.
+:::
 
 ## Mergin Maps CE Docker Images
 <ServerType type="CE" />
