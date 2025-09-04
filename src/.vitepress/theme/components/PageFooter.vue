@@ -18,7 +18,7 @@
           <p>All rights reserved.</p>
         </div>
         <div class="page-footer__col">
-          <h4>Company</h4>
+          <h2>Company</h2>
           <a href="https://merginmaps.com" target="__blank">Homepage</a>
           <a href="https://merginmaps.com/start-for-free" target="__blank"
             >Start for free</a
@@ -110,7 +110,7 @@ const darkMode = computed(() => data.isDark.value);
       color: var(--vp-c-brand-2);
     }
 
-    h4 {
+    h2 {
       margin-top: 0;
       margin-bottom: 1rem;
     }

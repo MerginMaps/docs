@@ -20,7 +20,7 @@ The ecosystem consist of various components:
 
 <AppDownload />
 
-<YouTube id="dy-B1BW9lA0" />
+<YouTube id="dy-B1BW9lA0" title="See how Mergin Maps works" />
  
 ## Get started 
 
