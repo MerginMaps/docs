@@ -8,6 +8,7 @@
       frameborder="0"
       allowfullscreen
       ref="iframe"
+      :title="title"
     ></iframe>
   </div>
 </template>
@@ -20,15 +21,17 @@ const props = defineProps({
     type: String,
     required: true,
   },
+  title: {
+    type: String,
+    default: "YouTube video",
+  },
 });
 const iframe = ref(null);
 
 onMounted(() => {
-  window.onload = () => {
-    if (iframe.value) {
-      iframe.value.src = `https://www.youtube.com/embed/${props.id}`;
-    }
-  };
+  if (iframe.value) {
+    iframe.value.src = `https://www.youtube.com/embed/${props.id}`;
+  }
 });
 </script>
 
