@@ -110,7 +110,7 @@ const darkMode = computed(() => data.isDark.value);
       color: var(--vp-c-brand-2);
     }
 
-    h4 {
+    h2 {
       margin-top: 0;
       margin-bottom: 1rem;
     }
