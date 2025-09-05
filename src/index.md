@@ -92,6 +92,7 @@ The ecosystem consist of various components:
 - [Measurement Tools](./field/measure/)
 - [Layers in <MobileAppName />](./field/layers/)
 - [Map Sketching in <MobileAppName />](./field/map-sketching/)
+- [Photo Sketching in <MobileAppName />](./field/photo-sketching/)
 - [How to Add, Edit, Delete Features](./field/mobile-features/)
 - [How to Reuse Last Entered Values](./field/reuse-last-values/)
 - [How to Stake Out Points](./field/stake-out/)

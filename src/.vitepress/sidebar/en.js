@@ -92,6 +92,7 @@ export default {
         { text: 'Measurement Tools', link: '/field/measure/' },
         { text: 'Layers in Mergin Maps Mobile App', link: '/field/layers/' },
         { text: 'Map Sketching', link: '/field/map-sketching/' },
+        { text: 'Photo Sketching', link: '/field/photo-sketching/' },
         { text: 'How to Add, Edit, Delete Features', link: '/field/mobile-features/' },
         { text: 'How to Reuse Last Entered Values', link: '/field/reuse-last-values/' },
         { text: 'How to Stake Out Points', link: '/field/stake-out/' },
