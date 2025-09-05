@@ -10,6 +10,11 @@ Until the project is synchronised to <MainPlatformNameLink />, all changes are l
 If you are new to the <MobileAppNameShort />, it might be useful to get familiar with the [<MobileAppNameShort /> interface](../mobile-app-ui/) or to explore our [tutorials](../../tutorials/capturing-first-data/) that provide step-by-step instructions for common use cases. 
 :::
 
+:::warning Recording settings
+The <MobileAppNameShort /> offers interesting options that can make your field survey easier and effective, such as [reuse last entered value](../reuse-last-values/), [automatic synchronisation](../autosync/#automatic-synchronisation), [auto-lock](../mobile-app-ui/#recording-settings) of your GPS position or [touch feedback](../mobile-app-ui/#recording-settings) to get a sound or vibration confirmation when adding features.
+
+:::
+
 ## Adding features
 1. In the <MobileAppNameShort />, open a [project](../mobile-app-ui/#projects) you want to use
 2. Tap the **Add** button on the bottom navigation panel to enter the **recording mode**
