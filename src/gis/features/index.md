@@ -110,8 +110,10 @@ Photo sketching for the <MobileAppNameShort /> can be enabled in the **<MainPlat
 
 ![Enable photo sketching in QGIS Mergin Maps project](./project-photo-sketching.jpg "Enable photo sketching in QGIS Mergin Maps project")
 
+You can find out more about this functionality in [Photo Sketching](../../field/photo-sketching/).
+
 ### Layer order
-There is an option to define the order in which layers are displayed in the <MobileAppNameShort />. By default, they are ordered alphabetically, but you can switch it to follow the QGIS layer order.
+There is an option to define the order in which layers are displayed in the <MobileAppNameShort />: *alphabetical* or *QGIS layer order*. Detailed steps can be found [here](../../field/layers/#layer-order).
 
 ![Layer order in QGIS Mergin Maps project](./project-layer-order.jpg "Layer order in QGIS Mergin Maps project")
 
