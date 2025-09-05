@@ -176,7 +176,7 @@ To open the **Settings**, tap the **More** button. In Settings, you can find [GP
 **Recording** setting provides these options:
 - [**Reuse last value option**](../reuse-last-values/): if used, last entered values of selected attributes will be automatically filled in when creating a new feature
 - **Automatically sync changes**: if used, local changes will be synchronised automatically
-- **Auto-lock position**: if used, the <MobileAppNameShort /> will center to your GPS position when you start the recording
+- **Auto-lock position**: if used, the <MobileAppNameShort /> will centre to your GPS position when you start the recording
 - **Touch Feedback** can be set to sound, vibration or sound and vibration feedback when adding a feature
 
 ![Mergin Maps mobile app recording settings](./mobile-app-settings-recording.jpg "Mergin Maps mobile app recording settings")
