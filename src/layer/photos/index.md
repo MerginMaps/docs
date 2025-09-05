@@ -11,7 +11,9 @@ In the <MobileAppNameShort />, this field will provide two options:
 
 ![Mergin Maps mobile app photo widget](../form-widgets/mobile-form-attachment-photo.jpg "Mergin Maps mobile app photo widget")
 
-:::tip
+You can use [Photo sketching](../../field/photo-sketching/) to annotate the pictures attached to features.
+
+:::tip Multiple pictures of one feature
 Do you need to attach multiple pictures to one feature? [How to attach multiple photos to features](../attach-multiple-photos-to-features/) will guide you through the setup.
 :::
 
