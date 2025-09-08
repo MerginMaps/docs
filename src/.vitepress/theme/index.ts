@@ -29,8 +29,10 @@ export default {
       }
     });
   },
-  enhanceApp({ app, router, siteData }) {
-    import('@justinribeiro/lite-youtube')
+  async enhanceApp({ app, router, siteData }) {
+    if (!import.meta.env.SSR) {
+      await import('@justinribeiro/lite-youtube')
+    }
     DefaultTheme.enhanceApp({ app, router, siteData });
     app.component("vImageViewer", vImageViewer);
     app.component('VPBadge', VPBadge);
