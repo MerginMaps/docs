@@ -11,6 +11,7 @@ import PageFooter from "./components/PageFooter.vue";
 import MMBanner from "./components/MMBanner.vue";
 import NotFound from "./NotFound.vue";
 import CookieConsentView from "../components/CookieConsentView.vue";
+import '@justinribeiro/lite-youtube'
 
 export default {
   extends: DefaultTheme,
@@ -59,5 +60,5 @@ export default {
   setup: () => {
     const route = useRoute();
     imageViewer(route);
-  },
+  }
 } satisfies Theme;
