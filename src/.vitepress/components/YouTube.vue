@@ -4,7 +4,6 @@
 
 <script setup>
 import { onMounted, ref } from "vue";
-import '@justinribeiro/lite-youtube'
 
 const props = defineProps({
   id: {
