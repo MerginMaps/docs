@@ -4,7 +4,7 @@
 In addition to setting up [edit widgets](../form-widgets/) and designing the [form layout](../form-layout/), extra configuration can be done to the fields in QGIS to make the data collection easier and more consistent.
 
 Here is a tutorial video on how to configure forms that includes the usage of default values and constraints:
-<YouTube id="jc4p1PpXj3k" />
+<YouTube id="jc4p1PpXj3k" title="Widgets for survey forms" />
 
 
 ## Default values
@@ -165,7 +165,7 @@ In the <MobileAppNameShort />, you will be unable to save a feature unless the f
 
 ## Drill-down forms
 
-<YouTube id="bXRclQFQFFE" />
+<YouTube id="bXRclQFQFFE" title="Drill-down forms" />
 
 Drill-down or cascade forms enable to list values in a field depending on a value selected in another field.
 

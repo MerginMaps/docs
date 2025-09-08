@@ -10,7 +10,7 @@ Capturing data in the field using <MobileAppName /> can be easier, if you can sn
 
 **Prefer video?** Here is a [video tutorial](https://youtu.be/aFG0iDuZZuI?si=3lBMlGV2Oqw7A3gg) on how to use snapping options in <MainPlatformName />:
 
-<YouTube id="aFG0iDuZZuI" />
+<YouTube id="aFG0iDuZZuI" title="Snapping" />
 
 ## Basic snapping
 To set up basic snapping:
