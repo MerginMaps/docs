@@ -52,7 +52,7 @@ export default defineConfig({
       "meta",
       {
         name: "og:description",
-        content: pageData.description,
+        content: pageData.description || "Mergin Maps Documentation",
       },
     ]),
       pageData.frontmatter.head.push([
