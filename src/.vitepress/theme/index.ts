@@ -11,7 +11,7 @@ import PageFooter from "./components/PageFooter.vue";
 import MMBanner from "./components/MMBanner.vue";
 import NotFound from "./NotFound.vue";
 import CookieConsentView from "../components/CookieConsentView.vue";
-import '@justinribeiro/lite-youtube'
+
 
 export default {
   extends: DefaultTheme,
@@ -30,6 +30,7 @@ export default {
     });
   },
   enhanceApp({ app, router, siteData }) {
+    import('@justinribeiro/lite-youtube')
     DefaultTheme.enhanceApp({ app, router, siteData });
     app.component("vImageViewer", vImageViewer);
     app.component('VPBadge', VPBadge);
