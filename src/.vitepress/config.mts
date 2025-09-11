@@ -60,7 +60,7 @@ export default defineConfig({
         {
           name: "og:image",
           content:
-            "https://dev.merginmaps.com/opengraph.webp",
+            "https://merginmaps.com/opengraph.webp",
         },
       ]);
   },
