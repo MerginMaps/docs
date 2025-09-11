@@ -1,5 +1,5 @@
 <template>
-  <a :href="href" target="__blank">
+  <a :href="href" target="__blank" aria-label="Social link">
     <span>
       <svg height="1em" viewBox="0 0 496 512" fill="currentColor">
         <path

@@ -495,9 +495,9 @@ Use `<AppDownload />` component to display
 
 ### Embed YouTube content
 
-Use `<YouTube />` component, e.g. `<YouTube id="DQXrINUqiFI" />` transforms to
+Use `<YouTube />` component, e.g. `<YouTube id="DQXrINUqiFI" title="Title of video" />` transforms to
 
-<YouTube id="DQXrINUqiFI" />
+<YouTube id="DQXrINUqiFI" title="Title of video" />
 
 
 ## Spellcheck

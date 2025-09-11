@@ -3,7 +3,7 @@
 
 In some situations, it might be useful to take more than one picture of a feature during the field survey. Attaching multiple photos to one feature is a 1-N relation. You can read more about 1-N relations and how they can be used in <MainPlatformNameLink /> in [How to link multiple records to one feature](../one-to-n-relations/).
 
-<YouTube id="NCa_Nb_CYno" />
+<YouTube id="NCa_Nb_CYno" title="Using multiple pictures per observation point" />
 
 :::tip Example project available
 To see this setup in practice, you can download the following project: 

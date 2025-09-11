@@ -11,14 +11,20 @@
       >
         Cookie Policy</a
       >
-      for more information. Deny cookies
-      <a class="cookie-consent-banner__text-link" @click="onDenyClick">here</a>.
+      for more information.
+      <a
+        href="#"
+        class="cookie-consent-banner__text-link"
+        @click.prevent="onDenyClick"
+        >Deny cookies here</a
+      >.
     </p>
     <div class="cookie-consent-banner__buttons">
       <a
+        href="#"
         class="cookie-consent-banner__text-link"
         :style="{ marginRight: '2rem' }"
-        @click="onPreferencesClick"
+        @click.prevent="onPreferencesClick"
       >
         Preferences</a
       ><cookie-consent-button @on-click="onAllowClick">

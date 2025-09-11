@@ -39,4 +39,29 @@ export default defineConfig({
       text: "Help us improve this page!",
     },
   },
+  transformPageData: (pageData) => {
+    pageData.frontmatter.head ??= [];
+    pageData.frontmatter.head.push([
+      "meta",
+      {
+        name: "og:title",
+        content: pageData.title,
+      },
+    ]);
+    pageData.frontmatter.head.push([
+      "meta",
+      {
+        name: "og:description",
+        content: pageData.description || "Mergin Maps Documentation",
+      },
+    ]),
+      pageData.frontmatter.head.push([
+        "meta",
+        {
+          name: "og:image",
+          content:
+            "https://merginmaps.com/opengraph.webp",
+        },
+      ]);
+  },
 });

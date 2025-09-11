@@ -1,3 +1,7 @@
+---
+description: Overview for custom Mergin Maps server
+---
+
 # Overview
 
 SaaS <MainPlatformName /> service called <ServerCloudNameLink /> is a web platform for storage and synchronisation of data between mobile devices, <MainPlatformNameLink /> service and QGIS Desktop. 
