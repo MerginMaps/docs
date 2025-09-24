@@ -25,17 +25,24 @@ Perform the migration:
     $ cd server/deployment/enterprise
    ```
 3. Adapt your existing `docker-compose.yml` file to the new version of images (2025.7.2).
-4. If you have installed maps stack, change `qgis-extractor` service image version to 2025.3.0 in `docker-compose.maps.yml`.
+4. If you have installed maps stack, change `qgis_extractor` service image version to 2025.3.0 in `docker-compose.maps.yml`.
 
 :::warning Version breaking change
-Previously used version for service `qgis-extractor` is not compatible with latest version of Mergin Maps server.
+Previously used image version for service `qgis_extractor` (2025.1.0) is not compatible with latest version of Mergin Maps server.
 :::
 
-5. Start up your docker containers
+5. If you have installed maps stack, add new environemnt variables to `qgis_extractor` service in `docker-compose.maps.yaml`.
+  ```yaml
+  environment:
+    - BROKER_URL=redis://mergin-redis:6379/0
+    - CELERY_RESULT_BACKEND=redis://mergin-redis:6379/0
+  ```
+
+6. Start up your docker containers
    ```bash
     $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
    ```
-6. Check that you are on correct database migration versions (`6cb54659c1de`, `e95d051969ce`).
+7. Check that you are on correct database migration versions (`6cb54659c1de`, `e95d051969ce`).
     ```bash
     $ docker exec merginmaps-server flask db current
     INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
@@ -49,7 +56,7 @@ Previously used version for service `qgis-extractor` is not compatible with late
     $ docker exec merginmaps-server flask db stamp 6cb54659c1de
     $ docker exec merginmaps-server flask db stamp e95d051969ce
     ```
-7. Run the database migration:
+8. Run the database migration:
     ```bash
     $ docker exec merginmaps-server flask db upgrade community@b9ec9ab6694f
     $ docker exec merginmaps-server flask db upgrade enterprise@c40e5e645b57
