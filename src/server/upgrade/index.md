@@ -24,7 +24,7 @@ Perform the migration:
    ```bash    
     $ cd server/deployment/enterprise
    ```
-3. Adapt your existing `docker-compose.yml` file to the new version of images (2025.7.2).
+3. Adapt your existing `docker-compose.yml` and `docker-compose.maps.yml` file to the new version.
 4. If you have installed maps stack, change `qgis_extractor` service image version to 2025.3.0 in `docker-compose.maps.yml`.
 
 :::warning Version breaking change
@@ -34,8 +34,11 @@ Previously used image version for service `qgis_extractor` (2025.1.0) is not com
 5. If you have installed maps stack, add new environemnt variables to `qgis_extractor` service in `docker-compose.maps.yaml`.
   ```yaml
   environment:
-    - BROKER_URL=redis://mergin-redis:6379/0
-    - CELERY_RESULT_BACKEND=redis://mergin-redis:6379/0
+      - OVERVIEWS_DATA_DIR=/data
+      - MM_WMS_TILE_BUFFER=100
+      - MM_WMS_AVOID_ARTIFACTS=1
+      - BROKER_URL=redis://mergin-redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://mergin-redis:6379/0
   ```
 
 6. Start up your docker containers
