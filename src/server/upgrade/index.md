@@ -31,7 +31,7 @@ Perform the migration:
 Previously used image version for service `qgis_extractor` (2025.1.0) is not compatible with latest version of Mergin Maps server.
 :::
 
-5. If you have installed maps stack, add new environemnt variables to `qgis_extractor` service in `docker-compose.maps.yaml`.
+5. If you have installed maps stack, add new environment variables to `qgis_extractor` service in `docker-compose.maps.yaml`.
   ```yaml
   environment:
       - OVERVIEWS_DATA_DIR=/data
