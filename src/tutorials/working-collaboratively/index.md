@@ -1,3 +1,7 @@
+---
+description: In this tutorial, you will learn how to use Mergin Maps for safe, easy and effective collaboration with others. Collect, share and publish your data!
+---
+
 # Working Collaboratively
 
 The <MainPlatformNameLink /> platform makes working collaboratively safe and easy.

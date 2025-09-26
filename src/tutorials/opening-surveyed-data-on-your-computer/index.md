@@ -1,3 +1,7 @@
+---
+description: In this tutorial, you will learn how to seamlessly transfer your project from the Mergin Maps mobile app to QGIS on your computer.
+---
+
 # Opening Surveyed Data on Your Computer
 
 [[toc]]

@@ -1,3 +1,8 @@
+---
+description: In this tutorial, you will learn how to use Mergin Maps mobile app for field survey and sync your data to the cloud.
+---
+
+
 # Using Mergin Maps Mobile App
 
 [[toc]]
