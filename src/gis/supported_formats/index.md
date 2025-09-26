@@ -18,7 +18,7 @@ For survey layers used on the field, we strongly recommend GeoPackage, to be abl
 | [PostGIS](#postgresql-postgis)        | :thumbsup:    | requires internet connection              |
 | WFS            | :warning:    | requires internet connection                                                                        |
 
-There are more formats supported, please see full list of supported [QGIS providers](#full-list-of-supported-qgis-providers) and [OGR drivers](#full-list-of-supported-ogr-drivers)
+There are more formats supported, please see full list of supported [QGIS providers](#supported-qgis-providers), [OGR and GDAL drivers](#supported-gdal-and-ogr-drivers).
 
 ::: tip
 Go to [Behind Data Synchronisation](../../manage/synchronisation/index.md) to read more about how synchronisation works in <MainPlatformNameLink />.
@@ -50,7 +50,7 @@ To use a *Connection Service File*, you have to:
 | ECW            | :no_entry_sign:   | proprietary license                                                                                       |
 | MrSID          | :no_entry_sign:   | proprietary license                                                                                       |
 
-There are plenty of other raster formats we support through GDAL/OGR, please see [the full list](#full-list-of-supported-gdal-drivers)
+There are plenty of other raster formats we support through GDAL/OGR, please see [the full list](#supported-gdal-and-ogr-drivers).
 
 ::: tip
 See [our guide](../settingup_background_map/index.md) for setting up background layers.
@@ -96,7 +96,7 @@ To convert between various GDAL formats, you can use [gdal_translate](https://gd
 
 ## Support for new formats
 
-If you find out that the <MobileAppName /> doesn't support your format, please open issue at <GitHubRepo id="MerginMaps/mobile-sdk" />.
+If you find out that the <MobileAppName /> doesn't support your format, please open issue at <GitHubRepo id="MerginMaps/mobile" />.
 
 If QGIS on desktop does not support the format of your choice, open issue at <GitHubRepo id="qgis/QGIS-Mac-Packager" /> for macOS, or <GitHubRepo id="qgis/QGIS" /> for other platforms.
 
