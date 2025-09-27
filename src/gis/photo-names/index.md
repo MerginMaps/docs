@@ -6,7 +6,8 @@ Names of the photos that are captured in the field using <MobileAppName /> can b
 
 To use this option, make sure that the [photo widget](../../layer/photos/) of the fields you use for taking pictures is set up correctly, i.e. using the attachment widget, storing relative paths and, if needed, with a [custom folder](../../layer/photos/#how-to-set-up-a-custom-folder-for-storing-photos) for storing photos. 
 
-To set up custom photo names:
+## Set up custom photo names
+
 1. Open your <MainPlatformNameLink /> project in QGIS and navigate to **Project Properties**
    ![QGIS Project Properties](../qgis-project-properties.jpg "QGIS Project Properties")
 
@@ -24,6 +25,10 @@ To set up custom photo names:
    
    ![QGIS Expression for custom photo name](./plugin-photo-name-expression-builder.jpg "QGIS Expression for custom photo name")
    
+   :::warning Do not use special characters in photo names
+   Special characters in photo names can cause synchronisation issues. Therefore, it is not allowed to use characters such as `|?*"`.
+   :::
+   
    Click **OK** to confirm the expression.
 
 4. Set up the photo name format for other fields and layers. 
@@ -33,12 +38,14 @@ To set up custom photo names:
    ![Mergin Maps QGIS Plugin photo name setup with custom folder](./plugin-photo-name-format-folder.jpg "Mergin Maps QGIS Plugin photo name setup with custom folder")  
    ![Mergin Maps QGIS Plugin Custom photo name setup without custom folder](./plugin-photo-name-format.jpg "Mergin Maps QGIS Plugin Custom photo name setup without custom folder")
 
-### Best practice for photo name expressions
+## Best practice for photo name expressions
 There are some tips to keep in mind when creating the expression for your photo name:
 
 :white_check_mark: **Each photo needs to have a unique name** to avoid issues during synchronisation and ensure that photos and features are linked correctly.
 
 Therefore, we recommend using combinations of variables that will ensure that there would not be multiple photos with the same name, such as the current date and time `now()`, <MainPlatformName /> username `@mm_username`, layer name `@layer_name` or a field value.
+
+:no_entry_sign: Avoid using special characters such as `|?*"` in the photo name.
 
 :white_check_mark: The file extension (`.jpg`) is added automatically.
 
@@ -46,9 +53,9 @@ Therefore, we recommend using combinations of variables that will ensure that th
 
 :white_check_mark: If you want to use a [numeric field](../../layer/form-widgets/#numbers) or other non-text fields in your expression, you need to convert it to a string first using the `to_string()` function
 
-:no_entry_sign: The expression is evaluated with the **current** field values. The name of the photo will stay the same even if you change the value of the field later.
+:warning: The expression is evaluated with the **current** field values. The name of the photo will stay the same even if you change the value of the field later.
 
-:no_entry_sign: The setup needs to be saved and synchronised. Only photos that are taken after synchronisation will have the name defined by the expressions. Existing photos will keep their original names.
+:warning: The setup needs to be saved and synchronised. Only photos that are taken after synchronisation will have the name defined by the expressions. Existing photos will keep their original names.
    
 In general, it is useful to use some of these variables:
 - Current timestamp `now()` is a good starting point to ensure uniqueness of the name of the photo. 
@@ -64,7 +71,7 @@ In general, it is useful to use some of these variables:
   Depending on the layers in your project and their fields, it can help create a unique photo name when taking multiple pictures in a row. It can also help to make it easier to browse pictures in your <MainPlatformNameLink /> project.
 
 
-### Examples of photo names expressions
+## Examples of photo names expressions
 Here are some example expressions that can be used or modified to fit your needs:
 
 - Expression: ` @layer_name + '-' +  @mm_username + '-' + format_date(now(),'yyMMddhhmmss')`
