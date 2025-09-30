@@ -1,3 +1,7 @@
+---
+description: Take your QGIS projects to the field, collect data and synchronise it to the cloud with Mergin Maps mobile app. Available for Android, iOS and Windows.
+---
+
 # How to Install Mergin Maps Mobile App
 [[toc]]
 
