@@ -18,7 +18,7 @@ To use this option, make sure that the [photo widget](../../layer/photos/) of th
  
 3. In the **Expression Dialog** window, enter the expression that should be used as the photo's name. Please, keep in mind [basic recommendations](#best-practice-for-photo-name-expressions) to make sure the naming works as intended.
 
-   Here we use a combination of the layer's name, <MainPlatformName /> username and current timestamp (other examples ale listed [below](#examples-of-photo-names-expressions)): 
+   Here we use a combination of the layer's name, <MainPlatformName /> username and current timestamp (other examples are listed [below](#examples-of-photo-names-expressions)): 
    ` @layer_name + '-' +  @mm_username + '-' + format_date(now(),'yyMMddhhmmss')`
    
    Example result is displayed in the **Preview**: `hedges-sarah-230707194052`
@@ -26,7 +26,7 @@ To use this option, make sure that the [photo widget](../../layer/photos/) of th
    ![QGIS Expression for custom photo name](./plugin-photo-name-expression-builder.jpg "QGIS Expression for custom photo name")
    
    :::warning Do not use special characters in photo names
-   Special characters in photo names can cause synchronisation issues. Therefore, it is not allowed to use characters such as `|?*"`.
+   Special characters in photo names can cause synchronisation issues. Therefore, it is not allowed to use characters such as `|?*"<>`.
    :::
    
    Click **OK** to confirm the expression.
@@ -45,7 +45,7 @@ There are some tips to keep in mind when creating the expression for your photo 
 
 Therefore, we recommend using combinations of variables that will ensure that there would not be multiple photos with the same name, such as the current date and time `now()`, <MainPlatformName /> username `@mm_username`, layer name `@layer_name` or a field value.
 
-:no_entry_sign: Avoid using special characters such as `|?*"` in the photo name.
+:no_entry_sign: Avoid using special characters such as `|?*"<>` in the photo name.
 
 :white_check_mark: The file extension (`.jpg`) is added automatically.
 
