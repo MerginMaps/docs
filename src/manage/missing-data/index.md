@@ -1,3 +1,7 @@
+---
+description: There are some common techniques to retrieve your data. Resolve conflict files in Mergin Maps folder or retrieve the data from mobile devices manually.
+---
+
 # How to Recover Missing Data
 
 [[toc]]

@@ -1,3 +1,7 @@
+---
+description: Data schema changes can cause synchronisation issues in Mergin Maps. To avoid them, you need to deploy the revised project properly. 
+---
+
 # How to Deploy Revised Projects
 [[toc]]
 

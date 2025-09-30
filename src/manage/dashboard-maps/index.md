@@ -1,4 +1,8 @@
-﻿# Webmaps
+﻿---
+description: Webmaps display the map overview of your project's spatial data directly in your web browser, on Mergin Maps dashboard.
+---
+
+# Webmaps
 [[toc]]
 
 The spatial data of your project can be displayed in the **Map** tab of the project on the <DashboardShortLink />. You need to be logged in to see the maps.

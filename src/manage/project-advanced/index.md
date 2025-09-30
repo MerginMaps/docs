@@ -1,3 +1,8 @@
+---
+description: Mergin Maps projects can be shared with workspace members/guests or with everyone by making them public. Projects can be transferred to another workspace.
+---
+
+
 # How to Share, Transfer or Delete Projects
 [[toc]]
 

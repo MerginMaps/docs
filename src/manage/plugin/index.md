@@ -1,3 +1,7 @@
+---
+description: Create, set up and synchronise your Mergin Maps projects with Mergin Maps QGIS plugin. The plugin brings Mergin Maps functionalities to QGIS.
+---
+
 # Mergin Maps QGIS Plugin Overview
 [[toc]]
 
