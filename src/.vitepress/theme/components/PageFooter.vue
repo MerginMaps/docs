@@ -27,9 +27,13 @@
       </div>
       <div class="page-footer__center">
         <div>
+          <SocialIconsLink icon="bluesky" class="page-footer__icon" />
+          <SocialIconsLink icon="slack" class="page-footer__icon" />
           <SocialIconsLink icon="linkedin" class="page-footer__icon" />
-          <SocialIconsLink icon="twitter" class="page-footer__icon" />
+          <SocialIconsLink icon="facebook" class="page-footer__icon" />
           <SocialIconsLink icon="github" class="page-footer__icon" />
+          <SocialIconsLink icon="youtube" class="page-footer__icon" />
+          <SocialIconsLink icon="mastodon" class="page-footer__icon" />
         </div>
         <div>
           <a href="https://merginmaps.com/cookies" target="__blank"
@@ -71,6 +75,10 @@ const darkMode = computed(() => data.isDark.value);
 
   &__icon {
     padding: 0 0.5rem;
+    display: inline-flex;        /* keep it inline with surrounding text */
+    align-items: center;         /* vertical centering */
+    justify-content: center;
+    vertical-align: middle;
   }
 
   &__container {
