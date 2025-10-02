@@ -75,10 +75,6 @@ const darkMode = computed(() => data.isDark.value);
 
   &__icon {
     padding: 0 0.5rem;
-    display: inline-flex;        /* keep it inline with surrounding text */
-    align-items: center;         /* vertical centering */
-    justify-content: center;
-    vertical-align: middle;
   }
 
   &__container {
@@ -128,6 +124,7 @@ const darkMode = computed(() => data.isDark.value);
     display: flex;
     align-items: center;
     flex-direction: column;
+    gap: 0.75rem;
   }
 }
 @media screen and (max-width: 911px) {
