@@ -1,5 +1,5 @@
 <template>
-  <a :href="href" target="_blank" rel="noopener">
+  <a :href="href" target="_blank" rel="noopener" aria-label="Social link">
     <span v-if="svgRaw" v-html="svgRaw" />
   </a>
 </template>
