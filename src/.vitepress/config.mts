@@ -32,8 +32,6 @@ export default defineConfig({
       light: "/MM_symbol_COLOR_no_padding.svg",
     },
 
-    socialLinks: [{ icon: "github", link: "https://github.com/MerginMaps" }],
-
     editLink: {
       pattern: "https://github.com/merginmaps/docs/edit/main/src/:path",
       text: "Help us improve this page!",
