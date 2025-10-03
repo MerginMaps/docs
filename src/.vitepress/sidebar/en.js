@@ -10,8 +10,7 @@ export default {
         { text: 'Using Mergin Maps Mobile App', link: '/tutorials/mobile/' },
         { text: 'Further Project Customisation', link: '/tutorials/further-project-customisation/' },
         { text: 'Working Collaboratively', link: '/tutorials/working-collaboratively/' }
-      ]
-    },
+      ] },
     {
       text: 'Install & Sign Up',   // required
       collapsed: true,
@@ -20,8 +19,7 @@ export default {
         { text: 'How to Sign Up to Mergin Maps', link: '/setup/sign-up-to-mergin-maps/' },
         { text: 'How to Install QGIS', link: '/setup/install-qgis/' },
         { text: 'How to Install Mergin Maps Plugin for QGIS', link: '/setup/install-mergin-maps-plugin-for-qgis/' }
-      ]
-    },
+      ] },
     {
       text: 'Manage Account & Project',   // required
       collapsed: true,
@@ -43,8 +41,7 @@ export default {
         { text: 'Webmaps', link: '/manage/dashboard-maps/' },
         { text: 'Project History and Versions', link: '/manage/project-history/' },
         { text: 'Selective Synchronisation', link: '/manage/selective_sync/' }
-      ]
-    },
+      ] },
     {
       text: 'Setup GIS Project',   // required
       collapsed: true,
@@ -59,8 +56,7 @@ export default {
         { text: 'How to Avoid Polygons Overlap', link: '/gis/avoid-overlap/' },
         { text: 'Custom Projections', link: '/gis/proj/' },
         { text: 'Supported Formats', link: '/gis/supported_formats/' }
-      ]
-    },
+      ] },
     {
       text: 'Configure Forms',   // required
       collapsed: true,
@@ -68,40 +64,39 @@ export default {
         { text: 'Overview', link: '/layer/overview/' },
         { text: 'Widgets', link: '/layer/form-widgets/',
         items: [
-        { text: 'Text', link: '/layer/text/' },
-        { text: 'Date and Time', link: '/layer/date-time/' },
-        { text: 'Relations', link: '/layer/relations/' },
-        { text: 'Numbers', link: '/layer/numbers/' },
-        { text: 'Checkbox', link: '/layer/checkbox/' },
-        { text: 'QR Code', link: '/layer/qr-code/' },
-        { text: 'Selecting Single or Multiple Values', link: '/layer/value-select/' },
-        { text: 'Photos', link: '/layer/photos/' },
-        { text: 'Informational Widgets', link: '/layer/info-widgets/' },
+           { text: 'Text', link: '/layer/text/' },
+           { text: 'Date and Time', link: '/layer/date-time/' },
+           { text: 'Relations', link: '/layer/relations/' },
+           { text: 'Numbers', link: '/layer/numbers/' },
+           { text: 'Checkbox', link: '/layer/checkbox/' },
+           { text: 'QR Code', link: '/layer/qr-code/' },
+           { text: 'Selecting Single or Multiple Values', link: '/layer/value-select/' },
+           { text: 'Photos', link: '/layer/photos/' },
+           { text: 'Informational Widgets', link: '/layer/info-widgets/' },
         ] },
         { text: 'Default Values', link: '/layer/default-values/',
         collapsed: true,
         items: [
-        { text: 'Geotagging', link: '/layer/exif/' },
-        { text: 'Extra Variables', link: '/layer/extra-variables/' }
+           { text: 'Geotagging', link: '/layer/exif/' },
+           { text: 'Extra Variables', link: '/layer/extra-variables/' }
         ] },
         { text: 'Constraints', link: '/layer/constraints/' },        
         { text: 'Attributes Form Layout', link: '/layer/form-layout/', 
         collapsed: true,
         items: [
-        { text: 'Tabs and Groups', link: '/layer/tabs-and-groups/' },
-        { text: 'Conditional Visibility', link: '/layer/conditional-visibility/' },
+           { text: 'Tabs and Groups', link: '/layer/tabs-and-groups/' },
+           { text: 'Conditional Visibility', link: '/layer/conditional-visibility/' },
         ] },
         { text: 'Use Cases', link: '/layer/use-cases/', 
         collapsed: true,
         items: [
-	{ text: 'How to Open a File', link: '/layer/open-file/' },
-	{ text: 'How to Use Hyperlinks', link: '/layer/external-link/' },
-        { text: 'How to Link Multiple Records to One Feature (1-N Relations)', link: '/layer/one-to-n-relations/' },
-        { text: 'How to Embed an Image', link: '/layer/embed-image/' },
-        { text: 'How to Display Instructions in the Form', link: '/layer/display-instructions/' },
-        ] },     
-      ]
-    },
+	   { text: 'How to Open a File', link: '/layer/open-file/' },
+	   { text: 'How to Use Hyperlinks', link: '/layer/external-link/' },
+           { text: 'How to Link Multiple Records to One Feature (1-N Relations)', link: '/layer/one-to-n-relations/' },
+           { text: 'How to Embed an Image', link: '/layer/embed-image/' },
+           { text: 'How to Display Instructions in the Form', link: '/layer/display-instructions/' },
+        ] },
+      ] },
     {
       text: 'Fieldwork Tips',   // required
       collapsed: true,
@@ -119,8 +114,7 @@ export default {
         { text: 'How to Reuse Last Entered Values', link: '/field/reuse-last-values/' },
         { text: 'How to Stake Out Points', link: '/field/stake-out/' },
         { text: 'How to Fix a Broken Project', link: '/field/broken-project/' }
-      ]
-    },
+      ] },
     {
       text: 'For Developers',   // required
       collapsed: true,
@@ -132,8 +126,7 @@ export default {
         { text: 'Media Sync', link: '/dev/media-sync/' },
         { text: 'Work Packages', link: '/dev/work-packages/' },
         { text: 'Geodiff Library', link: '/dev/geodiff/' }
-      ]
-    },
+      ] },
     {
       text: 'Custom Server',   // required
       collapsed: true,
@@ -147,8 +140,7 @@ export default {
         { text: 'Administration Panel', link: '/server/dashboard/' },
         { text: 'Troubleshoot Custom Servers', link: '/server/troubleshoot/' },
         { text: 'Using Mergin Maps Mobile App and QGIS Plugin with a Custom Server', link: '/server/plugin-mobile-app/' }
-      ]
-    },
+      ] },
     {
       text: 'Migrate to Mergin Maps',   // required
       collapsed: true,
@@ -156,8 +148,7 @@ export default {
         { text: 'Migrate from QField', link: '/migrate/qfield/' },
         { text: 'Migrate from ArcGIS', link: '/migrate/arcgis/' },
         { text: 'Migrate from FulcrumApp', link: '/migrate/fulcrumapp/' },
-      ]
-    },
+      ] },
     {
       text: 'Support & Legal',   // required
       collapsed: true,
@@ -167,9 +158,8 @@ export default {
         { text: 'Troubleshoot', link: '/misc/troubleshoot/',
         collapsed:true,
         items: [
-        { text: 'Project fails to sync', link: '/misc/troubleshoot/not_syncing/' },
-        ]        
-        },
+           { text: 'Project fails to sync', link: '/misc/troubleshoot/not_syncing/' },
+        ] },
         { text: 'Write Documentation', link: '/misc/write-docs/' }
       ]
     }
