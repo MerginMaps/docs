@@ -14,6 +14,11 @@ Until the project is synchronised to <MainPlatformNameLink />, all changes are l
 If you are new to the <MobileAppNameShort />, it might be useful to get familiar with the [<MobileAppNameShort /> interface](../mobile-app-ui/) or to explore our [tutorials](../../tutorials/capturing-first-data/) that provide step-by-step instructions for common use cases. 
 :::
 
+:::warning Recording settings
+The <MobileAppNameShort /> offers interesting options that can make your field survey easier and effective, such as [reuse last entered value](../reuse-last-values/), [automatic synchronisation](../autosync/#automatic-synchronisation), [auto-lock](../mobile-app-ui/#recording-settings) of your GPS position or [touch feedback](../mobile-app-ui/#recording-settings) to get a sound or vibration confirmation when adding features.
+
+:::
+
 ## Adding features
 1. In the <MobileAppNameShort />, open a [project](../mobile-app-ui/#projects) you want to use
 2. Tap the **Add** button on the bottom navigation panel to enter the **recording mode**
@@ -67,7 +72,7 @@ To stop the streaming mode, tap the **streaming** button and then **Stop streami
 Once you finish surveying the feature, tap the **Record** button. If you are capturing an area, the shape will be automatically closed by connecting the last and the first vertex.
 
 :::tip Threshold intervals for streaming mode
-It is possible to set the **Threshold interval**, i.e. how often you want to capture a vertex when streaming, in [**Settings**](../mobile-app-ui/#streaming-mode-and-recording-settings) of the <MobileAppNameShort />. The interval can be defined as *time elapsed* in seconds or as *distance travelled* in metres.
+It is possible to set the **Threshold interval**, i.e. how often you want to capture a vertex when streaming, in [**Settings**](../mobile-app-ui/#streaming-mode-settings) of the <MobileAppNameShort />. The interval can be defined as *time elapsed* in seconds or as *distance travelled* in metres.
 :::
 
 ## Editing features
