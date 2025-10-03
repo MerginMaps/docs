@@ -1,3 +1,7 @@
+---
+description: Use position tracking to record your tracks during the field survey with Mergin Maps mobile app. See which areas you've already covered during your survey!
+---
+
 # Position Tracking
 [[toc]]
 

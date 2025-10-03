@@ -1,5 +1,5 @@
 ---
-description: Synchronisation is what makes effective collaboration possible: you and your team members can contribute to the same Mergin Maps project simultaneously.
+description: Synchronisation is what makes effective collaboration possible - you and your team members can contribute to the same Mergin Maps project simultaneously.
 ---
 
 # Synchronisation

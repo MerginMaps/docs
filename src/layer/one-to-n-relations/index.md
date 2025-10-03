@@ -1,3 +1,7 @@
+---
+description: Do you need to link multiple records to one feature in Mergin Maps? Set up 1-N relations for your layers in QGIS.
+---
+
 # How to Link Multiple Records to One Feature (1-N Relations)
 [[toc]]
 

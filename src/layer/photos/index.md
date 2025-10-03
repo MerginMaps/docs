@@ -1,3 +1,7 @@
+---
+description: Capture photos with Mergin Maps mobile app using photo attachment widget in QGIS. Photos can be stored in a custom folder, resized and renamed automatically. 
+---
+
 # Capturing Photos
 [[toc]]
 

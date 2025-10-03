@@ -1,3 +1,7 @@
+---
+description: Changes in the project can be synced manually or automatically. With automatic sync, your updates are sent to the cloud without needing to press a button.
+---
+
 # Synchronisation in Mergin Maps Mobile App
 [[toc]]
 

@@ -1,3 +1,7 @@
+---
+description: In Mergin Maps mobile app, you can use online and offline background maps. See how to use raster and vector tiles and how to generate tiles for offline use.
+---
+
 # Background Maps
 [[toc]]
 

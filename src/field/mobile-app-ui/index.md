@@ -1,3 +1,7 @@
+---
+description: See how to navigate the mobile app, work with projects, survey and explore features, track position, access GPS info, synchronise changes and much more.
+---
+
 # Mergin Maps Mobile App Interface
 [[toc]]
 

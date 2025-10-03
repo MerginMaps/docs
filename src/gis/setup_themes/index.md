@@ -1,3 +1,7 @@
+---
+description: Set up map themes for your Mergin Maps project to easily switch between different combinations of layer styles and visibility.
+---
+
 # Map Themes
 [[toc]]
 

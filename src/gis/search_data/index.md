@@ -1,3 +1,7 @@
+---
+description: Sorting, searching and browsing in Mergin Maps mobile app can be set in QGIS. Change the order of features or values or exclude a field from the search.
+---
+
 # Sorting and Search Setup
 [[toc]]
 
