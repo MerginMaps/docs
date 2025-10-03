@@ -4,7 +4,7 @@
 In addition to setting up [edit widgets](../form-widgets/) and designing the [form layout](../form-layout/), extra configuration can be done to the fields in QGIS to make the data collection easier and more consistent.
 
 Here is a tutorial video on how to configure forms that includes the usage of default values and constraints:
-<YouTube id="jc4p1PpXj3k" />
+<YouTube id="jc4p1PpXj3k" title="Widgets for survey forms" />
 
 
 ## Default values
@@ -31,14 +31,14 @@ Various usage of default values can be explored in more detail by downloading or
 Let's set up an attributes to record the <MainPlatformName /> username of the surveyor who *created* a feature:
 1. Right-click on a layer, select **Properties** and go to the **Attributes form** tab.
 2. In the list of **Available Widgets** select the text field you want to use (here: `inserted_by`)
-3. In the **Defaults** tab, define the **Default value** as `@mergin_username`. 
+3. In the **Defaults** tab, define the **Default value** as `@mm_username`. 
    Do not check the **Apply default value on update** option :white_large_square:.
 
 ![QGIS attributes form Mergin Maps username default value](./qgis-form-default-inserted-by.jpg "QGIS attributes form Mergin Maps username default value")
 
 To save the <MainPlatformName /> username of the surveyor who *modified* this feature, the steps are similar:
 1. In the list of **Available Widgets** select the text field you want to use (here: `updated_by`)
-2. In the **Defaults** tab, define the **Default value** as `@mergin_username`. 
+2. In the **Defaults** tab, define the **Default value** as `@mm_username`. 
    Check the **Apply default value on update** option :heavy_check_mark:. The field will be updated anytime the feature is modified, saving the name of the surveyor who made the changes.
 
 ![QGIS attributes form Mergin Maps username default value](./qgis-form-default-updated-by.jpg "QGIS attributes form Mergin Maps username default value")
@@ -81,7 +81,7 @@ There are some commonly used default values that can be useful in your field sur
 
 - It is convenient to know when a feature was created and when it was last updated. Use fields with **Date** or **Date&Time** data types with the `now()` function to record this information. You can change the formatting using the [Date/Time](../form-widgets/#date-and-time) widget.
 
-- The name of the <MainPlatformName /> user who created or modified the feature can be recorded using the `@mergin_username` variable. These fields should use **Text (string)** data type. 
+- The name of the <MainPlatformName /> user who created or modified the feature can be recorded using the `@mm_username` variable. These fields should use **Text (string)** data type. 
   There are also other [extra QGIS variables](../position_variables/) related to your <MainPlatformName /> account or service that can be used as default values.
 
 - The coordinates of a point feature can be recorded as well using the `$x` and `$y` function in QGIS. To record the coordinate accurately, these fields should have the **Decimal number (real)** data type.  If the coordinates are in metres, values can be rounded to, say, 2-3 decimal places. When working with geographic coordinates that use degrees, you may want to round the coordinates to 8 decimal places. Use the *apply default value on update* option so that you have correct values when the position of the point feature changes.
@@ -96,8 +96,8 @@ Here are some examples:
 |-----------------------------|-------------------------------|---------|-------------|
 | `@now`          | `2024-06-30 10:00:00`                      | **no**  | The timestamp of when the feature was created. |
 | `@now`          | `2024-06-30 10:30:00`                     | **yes**  | The timestamp of when the feature was last **updated**. |
-| `@mergin_username`          | `sarah`                      | **no**  | Name of the user who created this feature.|
-| `@mergin_username`          | `jack`                      | **yes**  | Name of the user who **updated** this feature last.|
+| `@mm_username`          | `sarah`                      | **no**  | Name of the user who created this feature.|
+| `@mm_username`          | `jack`                      | **yes**  | Name of the user who **updated** this feature last.|
 | `round($x,2)`          | `1898789.92`                      | **yes**  | The X coordinate of a point feature, rounded to 2 decimal places.|
 | `$length`          | `123.45`                      | **yes**  | The length of a line feature.|
 | `$area`          | `1234.56`                      | **yes**  | The area of a polygon feature.|
@@ -138,4 +138,9 @@ In the <MobileAppNameShort />, you will be unable to save a feature unless the f
 
 ![Mergin Maps mobile app constraints in attributes form](./mobile-form-constaints.jpg "Mergin Maps mobile app constraints in attributes form")
 
+## Drill-down forms
+
+<YouTube id="bXRclQFQFFE" title="Drill-down forms" />
+
+Drill-down or cascade forms enable to list values in a field depending on a value selected in another field.
 

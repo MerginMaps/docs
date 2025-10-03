@@ -8,7 +8,7 @@ Online maps need internet connection to be displayed during the field survey and
 :::danger WARNING
 Keep in mind that background maps services and data sources come with their own terms of use. 
 
-Although we show how to add online and offline background maps to your projects, it is your responsibility to comply with any terms and condition of the services of your choice.
+Although we show how to add online and offline background maps to your projects, it is your responsibility to comply with any terms and conditions of the services of your choice.
 :::
 
 ## Raster tiles 
@@ -81,40 +81,30 @@ There are several online services you can use in your projects, some of them are
 ![Example vector tile](./example_vectortile.jpg "Example vector tile")
 
 ### Online services
+When [creating a new <MainPlatformName /> project](../../manage/create-project/#create-a-project-in-qgis) from scratch, the default background map uses <MainPlatformName /> vector tile service. Other online vector tile services can be added to the project in QGIS, but keep in mind they come with their own terms of use.
 
-Let's see how we can add *ESRI Basemap* vector tile (QGIS 3.16+):
+To add a vector tile service:
 1. In QGIS, navigate to the **Vector Tiles** in the **Browser** panel
 2. Right-click on **Vector Tiles** and select **New Generic Connection**
-3. Set the parameters of the **Vector Tiles connection**:
-   - **Name**: *ESRI Basemap*
-   - **URL**: `https://basemaps.arcgis.com/v1/arcgis/rest/services/World_Basemap/VectorTileServer/tile/{z}/{y}/{x}.pbf`
+3. Set the parameters of the **Vector Tiles connection** and press **OK**.
+
+   For <MainPlatformName /> vector tile service, the parameters are as follows:
+   - **Name**: *OpenMapTiles (OSM)*
+   - **Style URL**: `https://tiles.merginmaps.com/styles/default.json`
+   - **Source URL**: `https://tiles.merginmaps.com/data/default/{z}/{x}/{y}.pbf`
    - **Min. Zoom Level**: 0
    - **Max. Zoom Level**: 14
-   - **Style URL**: `https://basemaps.arcgis.com/b2/arcgis/rest/services/World_Basemap/VectorTileServer/resources/styles/root.json`
-   Press **OK**.
+   
    ![QGIS XYZ vector tile connection](./qgis_xyz_gen_vectortile.jpg "QGIS XYZ vector tile connection")
 
-Another source of online vector tiles are *Qwant maps*. Use following 
-   - **Name**: *Qwant map*
-   - **URL**: `https://www.qwant.com/maps/tiles/ozbasemap/{z}/{x}/{y}.pbf`
-   - **Min. Zoom Level**: 0
-   - **Max. Zoom Level**: 14
-   - **Style URL**: `https://raw.githubusercontent.com/QwantResearch/qwant-basic-gl-style/master/style.json`
+:::warning Usage details
 
-#### Mergin Maps vector tile service
-When [creating a new <MainPlatformName /> project](../../manage/create-project/#create-a-project-in-qgis) from scratch, the default background map uses <MainPlatformName /> vector tile service. 
-
-It can be also added to existing <MainPlatformName /> projects by using following parameters to set the **Vector Tiles connection**:
-   - **Name**: *OpenMapTiles (OSM)*
-   - **URL**: `https://tiles.merginmaps.com/data/default/{z}/{x}/{y}.pbf`
-   - **Min. Zoom Level**: 0
-   - **Max. Zoom Level**: 14
-   - **Style URL**: `https://tiles.merginmaps.com/styles/default.json`
-
-This service can be used by **<MainPlatformNameLink /> users only** . 
+Note that <MainPlatformName /> vector tile service can be used by **<MainPlatformNameLink /> users only** . 
 
 Using the service is conditioned by the attribution: 
+
 `© OpenMapTiles © OpenStreetMap contributors`
+:::
 
 
 ### Generating vector tiles for offline use
@@ -140,7 +130,6 @@ Note that instructions below require familiarity with the terminal. In addition,
 
 
 #### Downloading vector tiles using Mergin Maps QGIS Plugin
-<SinceBadge type="Plugin" version="2023.4" />
 
 Vector tiles for offline use can be downloaded easily using <QGISPluginName />.
 
@@ -194,5 +183,5 @@ Files from the folder can be loaded into multiple <MainPlatformName /> projects.
 :::
 
 :::warning
-Files located in the another folder are not synchronised. This saves your storage on <MainPlatformNameLink /> cloud. However, if you want to update or modify these files, you have to connect the mobile device to your computer and do it manually.
+Files located in the another folder are not synchronised. This saves your storage on <ServerCloudNameLink />. However, if you want to update or modify these files, you have to connect the mobile device to your computer and do it manually.
 :::

@@ -6,8 +6,11 @@ Each data type has a default widget: for instance, text fields use *Text edit* w
 
 Form widgets can be changed in the properties of a layer. Note that the widget has to be compatible with the field data type.
 
-## Configuring form widgets
-Attributes forms can be configured using <QGISHelp ver="latest" link="user_manual/working_with_vector/vector_properties.html#edit-widgets" text="QGIS widgets" /> in the **Attributes Form** tab in the **Layer Properties**.
+Prefer video? Check out this tutorial on how to configure QGIS widgets for survey forms.
+<YouTube id="jc4p1PpXj3k" title="Widgets for survey forms" />
+
+## Widget gallery
+Attributes forms can be configured using <QGISHelp ver="latest" link="user_manual/working_with_vector/vector_properties.html#edit-widgets" text="QGIS widget types" /> in the **Attributes Form** tab in the **Layer Properties**.
 
 ![QGIS Layer Properties Attributes Form tab](./qgis-attributes-form.gif "QGIS Layer Properties Attributes Form tab")
 

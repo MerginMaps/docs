@@ -86,7 +86,7 @@ To ease the process of permission (user) management, you can set the following g
 | `MAIL_USE_TLS`🛡️       | Boolean |   `true`        | Use TLS encryption when connecting to SMTP server.  |
 | `MAIL_USE_SSL`🛡️       | Boolean |   `false`        | Whether to use SSL encryption when connecting to SMTP server.  |
 | `MAIL_BCC`              | string  |   `None`   | Email address to send copies of all sent emails. Should be system/application administrator. Mandatory in versions until 2024.4.0.  |
-| `MERGIN_LOGO_URL`       | string  | ``    | Link to logo in emails. |
+| `MERGIN_LOGO_URL`       | string  | Mergin Maps logo    | Link to logo in emails. |
 
 If you have issues with sending emails, follow [troubleshooting](../troubleshoot/) page.
 
@@ -121,13 +121,12 @@ Other settings related to data management.
 | `FILE_EXPIRATION`            | integer  | `172800`                              | When the GeoPackage file was updated with "<NoSpellcheck id="diffable" />" change, original data are being removed (as they can be reconstructed on demand) to save disk space. File lifetime in seconds. |
 | `LOCKFILE_EXPIRATION`        | integer  | `300`                                 | Time in seconds for a project being locked while updated. If no change happens to the project in such time, the lockfile is removed.                                                                      |
 | `MAX_CHUNK_SIZE`             | integer  | `10485760`                            | Maximum size of file chunk to be uploaded (and received by server) in bytes.                                                                                                                              |
-| `MAX_DOWNLOAD_ARCHIVE_SIZE`  | integer  | `1073741824`                          | Maximum size of project zip archive in bytes for direct download. Too large projects may take too long to download or never complete in one request.                                                      |
+| `MAX_DOWNLOAD_ARCHIVE_SIZE`  | integer  | `10737418240`                    | Maximum size of project or project version zip archive in bytes (10 GB by default) for download from dashboard. Too large projects may take too long to download.                                                  |
 | `USE_X_ACCEL` ⭐️             | Boolean  | `true`                                | Whether to use nginx to serve files. Should be enabled if used with nginx proxy for performance reasons. Read more [here](https://www.nginx.com/resources/wiki/start/topics/examples/x-accel/).           |
 | `ACCOUNT_EXPIRATION`  | integer  | `1`                                   | Time in days after a user closed their account to all projects and files are permanently deleted. Please note that until the user is removed, the username/email is occupied.                             |
 | `DELETED_PROJECT_EXPIRATION` | integer  | `7`                                   | Lifetime in days for deleted projects. Expired projects are removed permanently without possibility to restore afterwards.                                                                                |
 | `PROJECT_ACCESS_REQUEST`     | integer  | `604800`                              | Lifetime of active project access request in seconds.                                                                                                                                                     |
 | `TEMP_EXPIRATION`            | integer  | `7`                                   | Time in days after files in a temporary folder are permanently deleted.                                                                                                                                   |
-
 
 ## Celery asynchronous tasks
 Mergin Maps is using Celery and Redis to perform asynchronous tasks or doing regular jobs.
@@ -136,6 +135,13 @@ Mergin Maps is using Celery and Redis to perform asynchronous tasks or doing reg
 |-----------------------|------|---------------------------------|-------------|
 |`BROKER_URL`           |string|`redis://merginmaps-redis:6379/0`| Connection details to celery message broker. If non-default, it should match definition in `docker-compose` file.  |
 |`CELERY_RESULT_BACKEND`|string|`redis://merginmaps-redis:6379/0`| Connection details to celery result back-end broker. If non-default, it should match definition in `docker-compose` file.  |
+
+## Diagnostic logs
+Users of Mergin Maps plugin and Mergin Maps mobile application are able to send diagnostic logs from their devices. In custom deployments, logs are stored in `diagnostic_logs` folder. If you want to send these logs to Mergin Maps instead of storing them locally, set the `DIAGNOSTIC_LOGS_URL` variable to `https://api.merginmaps.com/logs`.
+
+| Variable name            | Type     | Default                       | Description                    |
+|--------------------------|----------|-------------------------------|--------------------------------|
+| `DIAGNOSTIC_LOGS_URL`           | string  | ``                       | Enables sending diagnostic logs from clients to the specified URL instead of storing them in the deployment folder. Set to https://api.merginmaps.com/logs to send diagnostic logs to Mergin Maps.           |
 
 ## WebMaps 
 <ServerType type="EE" />
@@ -152,4 +158,11 @@ Your webmaps won’t display the default background map unless we enable them on
 Alternatively, you can set up your own background map.
 :::
 
+## Single Sign-On (SSO)
+<ServerType type="EE" />
 
+| Variable name            | Type     | Default                       | Description                    |
+|--------------------------|----------|-------------------------------|--------------------------------|
+| `SSO_ENABLED`            | boolean  | `false`                       | Flag to enable SSO in <MainPlatformName />             |
+| `SSO_SERVER_URL` ⭐️           | string   | `http://localhost:8081`     | Public URL of the SSO server. This URL should be accessible from the internet. |
+| `SSO_SERVER_API_KEY` ⭐️     | string   | ``                      | This API key is used to authenticate requests to the SSO service. It must be one of the keys defined in the `JACKSON_API_KEYS` variable within the Ory Polis (for more details see [Single Sign-On deployment guide](../sso-deployment#configure-server)). |

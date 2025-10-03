@@ -70,11 +70,11 @@ You will be prompted to confirm the closing of your account by typing the accoun
 After you close the account, it is kept on <MainPlatformNameLink /> servers for 5 days before it is deleted permanently. During this period, it can be restored if you contact <MerginMapsEmail id="support" />.
 
 ## Forgotten password
-If you forget your password, you can reset it through <AppDomainNameLink /> by clicking **Forgot password**. Email with password reset link will be sent to your email address.
-![Mergin Maps dashboard forgot password](./dashboard-forgot-password.jpg "Mergin Maps dashboard forgot password")
+If you forget your password, you can easily reset it. 
 
-The same can be through the login page in the <MobileAppNameShort />
-![Mergin Maps mobile app forgot password](./mobile-app-forgot-password.jpg "Mergin Maps mobile app forgot password")
+You can find the **Forgot password?** option on the <DashboardShortLink /> or the <MobileAppNameShort /> log in page. Email with password reset link will be sent to your email address.
+
+![Mergin Maps forgotten password](./forgotten-password.jpg "Mergin Maps forgotten password")
 
 ::: tip
 Check your spam folder if the email with password reset link does not appear in your inbox after a few minutes. 

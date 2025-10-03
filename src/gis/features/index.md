@@ -114,7 +114,7 @@ To set the project extent:
 
 
 ### Photo quality
-<SinceBadge type="Plugin" version="2022.3.2" /><SinceBadge type="App" version="1.5.1" />
+
 The quality of photographs and pictures that are saved in the <MainPlatformName /> project can be set up in the **<MainPlatformName />** tab in **Project properties**. When pictures are added using <MobileAppName /> (uploaded or taken with the camera), they will be resized accordingly.
 
 By default, the quality is set to *Original* - the original pictures are stored. If you want to resize the pictures, you can choose from *High*, *Medium*, or *Low* quality. The [EXIF metadata](../../layer/exif/) of the original files are kept.
@@ -124,7 +124,6 @@ Don't forget to save and sync your project!
 ![Mergin Maps set photo quality](./project_resize_pics.jpg "Mergin Maps set photo quality")
 
 ### Photo names
-<SinceBadge type="Plugin" version="2023.2.0" /> <SinceBadge type="App" version="v2.2.0" />
 
 Names of the photos that are captured in the field using <MobileAppName /> can be customised. The name format can be set in QGIS with <QGISPluginName />.  
 
@@ -135,7 +134,7 @@ Names of the photos that are captured in the field using <MobileAppName /> can b
 ![Mergin Maps QGIS Plugin photo name setup with custom folder](./plugin-photo-name-settings.jpg "Mergin Maps QGIS Plugin photo name setup with custom folder")
 
 ### Snapping
-<SinceBadge type="Plugin" version="2022.5" />
+
 If you want to use snapping in <MobileAppName /> during the field survey, you need to set it up in the **<MainPlatformName />** tab in **Project properties**.
 
 ![QGIS set snapping in Mergin Maps](./project_snapping.jpg "QGIS set snapping in Mergin Maps")
@@ -151,13 +150,20 @@ The snapping options are:
 
 
 ### Tracking
-<SinceBadge type="Plugin" version="2023.3" />
 
 Tracking your position when doing the field survey with <MobileAppName /> can be enabled in the **<MainPlatformName />** tab in **Project properties**.
 
 ![Enable tracking in QGIS Mergin Maps project](./project-tracking.jpg "Enable tracking in QGIS Mergin Maps project")
 
 You can read more about this functionality in [How to Use Tracking in Mergin Maps mobile app](../../field/tracking/).
+
+### Map sketching
+
+Map sketching for the <MobileAppNameShort /> can be enabled in the **<MainPlatformName />** tab in **Project properties**. Here, you can also set the colours that will be available for sketches.
+
+![Enable map sketching in QGIS Mergin Maps project](./project-map-sketching.jpg "Enable map sketching in QGIS Mergin Maps project")
+
+You can read more about this functionality in [Map Sketching](../../field/map-sketching/).
 
 ### Map themes
 [Map Themes](../setup_themes/) make possible to switch between different background maps in <MobileAppName /> (e.g. cartography maps and aerial imagery)

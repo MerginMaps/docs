@@ -135,6 +135,7 @@ SLA
 SMTP
 SQLAlchemy
 SSH
+SSO
 SVG
 SVGs
 SaaS
@@ -143,6 +144,7 @@ Skoda
 SLYR
 SSL
 Survey123
+synchronise
 TLS
 Transifex
 Trialing
@@ -231,6 +233,7 @@ openmaptiles
 openssl
 orthometric
 orthophoto
+orchestrator
 osm
 pbf
 peatlands
@@ -281,6 +284,7 @@ uncheck
 undoable
 url
 uuid
+vCPUS
 xcf
 xyz
 yml
@@ -291,3 +295,16 @@ workspaces
 www
 zlib
 zoomstack
+Entra
+Auth
+SAML
+OIDC
+SSO
+Ory
+Polis
+SAML
+yaml
+pre
+env
+IDP
+enum

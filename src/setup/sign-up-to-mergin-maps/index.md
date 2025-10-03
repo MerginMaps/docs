@@ -1,20 +1,34 @@
+---
+outline: deep
+---
+
 # How to Sign Up to Mergin Maps
-[[toc]]
 
-To make full use of the <MainPlatformNameLink /> service, you need to sign up. You can sign up either through <MainDomainNameLink /> or from your mobile device using the <MobileAppName />.
-
-Public projects can be accessed and downloaded even without a <MainPlatformNameLink /> account, but projects can be managed, shared and synchronised only when you are logged in.
+To make full use of <MainPlatformName />, you need to sign up. You can sign up using:
+- [Email and password](#email-and-password-sign-up)
+- [Single sign-on (SSO)](#single-sign-on)
 
 ::: tip Manage your account
 Do you want to delete your account or change your details? Go to [**User Account**](../../manage/account/) for detailed steps.
 :::
 
-## From web
+::: warning Account-less access
+Public projects can be accessed and downloaded even without a <MainPlatformName /> account. However, to manage, share or upload changes to projects, you need to be signed in.
+:::
 
-1. Navigate to <AppDomainNameLink id=register />
+## Email and password sign up
 
-2. Fill in the registration form and click on **Sign Up**.
-   ![Mergin Maps sign up form](./mergin-web-sign-up.jpg "Mergin Maps sign up form")
+Password sign up to <MainPlatformName/> is available via <DashboardNameShort/> or <MobileAppNameShort/>.
+
+### From dashboard 
+
+1. Navigate to <AppDomainNameLink/>
+
+2. Use the **Sign Up** link to navigate to the registration form. 
+
+   Fill in the details and **Sign Up**.
+   
+   ![Mergin Maps sign up form](./dashboard-sign-up.jpg "Mergin Maps sign up form")
 
    While signing up, you can choose to receive information about updates and new features. You can unsubscribe from the <MainPlatformName /> newsletter anytime by clicking the **Unsubscribe** link at the bottom of the email.
   
@@ -39,7 +53,9 @@ You can get up-to-speed quickly by following our [Quick Start tutorials](../../t
    See our <MainDomainNameLink id="pricing" desc="pricing page"/> for more details.
    :::
 
-### Invitation to a workspace
+<!--- is this section still relevant?
+
+#### Invitation to a workspace
 If someone invited you to join their workspace, you will get an email with the invitation link. You need to have a <MainPlatformName /> account in order to contribute to this workspace. 
 
 1. Use the link to get the registration form. Your email address will be filled in automatically, so you just need to enter a username and password. 
@@ -53,8 +69,9 @@ If someone invited you to join their workspace, you will get an email with the i
 
 You can get up-to-speed quickly by following our [Quick Start tutorials](../../tutorials/capturing-first-data/).
 
+-->
 
-## From Mergin Maps mobile app
+### From mobile app {#from-mergin-maps-mobile-app}
 You can also sign up from <MobileAppName />.
 
 1. Download the <MobileAppNameShort /> to your Android device, iPhone or iPad. You can find it in the app store of your platform:
@@ -89,4 +106,54 @@ You can get up-to-speed quickly by following our [Quick Start tutorials](../../t
    
    See our <MainDomainNameLink id="pricing" desc="pricing page"/> for more details.
    :::
+
+## Single sign-on
+
+If your organisation set up [SSO](../../manage/sso/) for <MainPlatformName />, you can sign in using the same credentials as you use in your organisation.
+
+::: tip
+You can find out more about this topic in [Single Sign-On (SSO)](../../manage/sso/).
+:::
+
+### From dashboard
+To sign in or sign up to <MainPlatformName /> using SSO on the <DashboardShortLink />:
+1. Navigate to <AppDomainNameLink />
+2. Click on the **Continue with SSO** button
+3. Enter your email address associated with your organisation and click **Sign in**
+4. You will be redirected to an identity provider. Enter your credentials.
+5. After being redirected back to the <DashboardShortLink /> , you will be signed in.
+
+![Mergin Maps dashboard single sign-on](./dashboard-sso-sign-up.jpg "Mergin Maps dashboard single sign-on")
+
+### From mobile app
+
+1. Open the <MobileAppNameShort />. Tap the account icon in the upper right corner to go to the login page. 
+   ![Mergin Maps mobile app account icon](./mobile-app-account-icon.jpg "Mergin Maps mobile app account icon")
+
+2. Tap the **Continue with SSO** option
+   ![Mergin Maps mobile app single sign-on](./mobile-sso-sign-in.jpg "Mergin Maps mobile app single sign-on")
+
+4. Enter your email address associated with your organisation and click **Sign in**.
+   
+   You will be redirected to an identity provider. Enter your credentials.
+   
+5. After successful authentication, you will be signed in to <MainPlatformName /> in the <MobileAppNameShort />.
+
+
+### From QGIS plugin
+
+::: warning QGIS version 3.40.0 or higher is required
+<QGISPluginName /> installed on QGIS version lower than 3.40.0 will not have the option to sign in via SSO.
+:::
+
+To use SSO in the <QGISPluginNameShort />:
+1. Open QGIS
+2. On the toolbar, click on the **Configure <MainPlatformName /> plugin** button
+   ![Configure Mergin Maps Plugin](../install-mergin-maps-plugin-for-qgis/qgis-configure-mergin-plugin.jpg "Configure Mergin Maps Plugin")
+3. Use the **Continue with SSO** option to open SSO sign in
+   ![Mergin Maps QGIS plugin single sign-on](./plugin-sso-sign-in.jpg "Mergin Maps QGIS plugin single sign-on")
+4. Enter your email address associated with your organisation and click **OK**.
+   
+   You will be redirected to an identity provider. Enter your credentials.
+5. After successful authentication, you will be signed in to <MainPlatformName /> in <QGISPluginNameShort />.
 

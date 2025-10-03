@@ -3,7 +3,7 @@
 
 **DB Sync** is a tool that takes care of two-way synchronisation between <MainPlatformNameLink /> and PostGIS databases. The synchronisation works both ways: changes made in a PostGIS database are automatically pushed to a configured <MainPlatformName /> project and changes made in a GeoPackage in the <MainPlatformName /> project are pushed to the PostGIS database.
 
-<YouTube id="4mWcaKs9jkw" />
+<YouTube id="4mWcaKs9jkw" title="Connect PostGIS and Mergin Maps" />
 
 **Interested in using DB Sync?** Go to <GitHubRepo id="MerginMaps/db-sync" /> repository for the source code and a Quick start that will guide you through the steps to get DB Sync up and running. 
 
@@ -11,7 +11,6 @@ Windows users may use a Windows executable for DB sync. On Linux/Mac users are a
 
 
 ## DB Sync configuration wizard
-<SinceBadge type="Plugin" version="2023.4" />
 
 DB Sync configuration file can be generated in QGIS using <QGISPluginName />:
 1. Open your <MainPlatformName /> project in QGIS
