@@ -1,5 +1,5 @@
 ---
-description: Permissions control access to your Mergin Maps projects. They can be defined for the whole workspace or for a specific project. 
+description: Permissions control access to your Mergin Maps projects. They can be defined for the whole workspace or for a specific project.
 ---
 
 # Member Roles and Permissions

@@ -1,5 +1,5 @@
 ---
-description: Mergin Maps subscriptions are based on the number of contributors on the workspace. Per each contributor seat, you get 1 GB of storage. 
+description: Mergin Maps subscriptions are based on the number of contributors on the workspace. Per each contributor seat, you get 1 GB of storage.
 ---
 
 # Subscriptions and Invoicing

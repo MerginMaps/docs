@@ -1,5 +1,5 @@
 ---
-description: Custom Mergin Maps server configuration
+description: This administration guide helps you configure and maintain your Mergin Maps CE and Mergin Maps EE effectively. 
 ---
 
 # Administer

@@ -1,3 +1,7 @@
+---
+description: Configure Mergin Maps mobile app and QGIS plugin for use with your custom Mergin Maps CE or EE server.
+---
+
 # Using Mergin Maps Mobile App and QGIS Plugin with a Custom Server
 [[toc]]
 

@@ -1,3 +1,7 @@
+---
+description: Here are some guidelines and a simple example on how to secure a Mergin Maps deployment by enabling HTTPS secured connection via a certificate file.
+---
+
 # Secure Mergin Maps installation
 
 ::: warning
