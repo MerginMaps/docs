@@ -41,6 +41,13 @@ Previously used image version for service `qgis_extractor` (2025.1.0) is not com
       - CELERY_RESULT_BACKEND=redis://mergin-redis:6379/0
   ```
 
+You can also clean the following variables from `.prod.env`:
+
+  ```bash
+  QGIS_EXTRACTOR_TIMEOUT
+  QGIS_EXTRACTOR_API_URL
+  ```
+
 6. Start up your docker containers
    ```bash
     $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
