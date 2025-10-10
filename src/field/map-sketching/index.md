@@ -5,6 +5,8 @@
 
 Map sketches can be used to draw something on the map, in addition to the regular field collection of [features](../mobile-features/).
 
+<YouTube id="lgxqFqhSqKo" title="Megin Maps tutorial - Map sketching" />
+
 ## Enable map sketching
 
 Map sketching needs to be enabled in QGIS when [preparing your <MainPlatformName /> project](../../gis/features/#map-sketching).
