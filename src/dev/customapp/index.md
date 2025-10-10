@@ -6,4 +6,3 @@ The good news is that <MobileAppName /> is licensed as open source software, whi
 
 If you are interested in building a custom app, you can start by going to <GitHubRepo id="MerginMaps/mobile"/> repository on GitHub and building it for your platform.
 
-The <GitHubRepo id="MerginMaps/mobile-sdk" desc="mobile app SDK repository" /> provides all the dependencies for various platforms (Android, iOS, macOS, Windows).
