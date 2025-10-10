@@ -1,3 +1,7 @@
+---
+description: Use text, numbers, date and time, QR code, checkbox or drop-down menu widgets in your attributes forms to make the data entry easier and more efficient.
+---
+
 # Setting Up Widgets in Attributes Form
 
 [[toc]]

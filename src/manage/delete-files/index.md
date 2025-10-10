@@ -1,3 +1,7 @@
+---
+description: Files can be deleted through Mergin Maps dashboard one by one. Deleting multiple files at once is possible on your computer using Mergin Maps QGIS plugin.
+---
+
 # How to Delete Files
 
 Deleting files such as photos that are not needed anymore can help you free up storage on the <ServerCloudNameLink /> and keep your project organised.

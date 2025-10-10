@@ -1,3 +1,7 @@
+---
+description: Mergin Maps dashboard is where you manage your projects, workspace members, subscriptions and profiles. Explore files, history, webmaps of your projects.
+---
+
 # Mergin Maps Dashboard
 [[toc]]
 

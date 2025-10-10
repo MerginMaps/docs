@@ -1,3 +1,7 @@
+---
+description: Here are some tips for working with layers in Mergin Maps. Use GeoPackage for layers, GeoTIFF for rasters and make data schema changes carefully.
+---
+
 # Best Practice Tips for Layers and Forms
 [[toc]]
 

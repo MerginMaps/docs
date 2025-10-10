@@ -1,3 +1,7 @@
+---
+description: In this tutorial, you will learn how to set up symbology, labels, preview panel and map themes in your Mergin Maps project in QGIS.
+---
+
 # Further Project Customisation
 
 In this tutorial you will learn how to further customise your <MainPlatformNameLink /> project from the [previous tutorial](../creating-a-project-in-qgis/), making it even more useful. The various changes we will make to the project will be made in [QGIS](../../setup/install-qgis/) and their effect observed and tested in <MobileAppName />.

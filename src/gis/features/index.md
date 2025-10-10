@@ -1,5 +1,6 @@
 ---
 outline: [1,3]
+description: Mergin Maps project is prepared in QGIS. Set up survey layers, symbology, forms, snapping, tracking, background maps, and various project settings.
 ---
 
 # QGIS Project Preparation

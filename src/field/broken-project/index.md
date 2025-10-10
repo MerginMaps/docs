@@ -1,3 +1,7 @@
+---
+description: Do you get an error message when trying to open a project or a form in Mergin Maps mobile app? Here is how to resolve some of these issues.
+---
+
 # How to Fix a Broken Project
 [[toc]]
 

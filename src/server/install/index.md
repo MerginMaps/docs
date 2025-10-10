@@ -1,6 +1,10 @@
+---
+description: This installation guide will help you install your Mergin Maps CE or Mergin Maps EE to the latest server version.
+---
+
 # Install
 
-Installation guide will help you to install your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink /> to the latest server version. <ServerCloudNameLink /> is always up-to-date and managed by <MainPlatformName /> team. Read more about server platforms in [overview article](../)
+Installation guide will help you to install your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink /> to the latest server version. <ServerCloudNameLink /> is always up-to-date and managed by <MainPlatformName /> team. Read more about server platforms in [overview article](../).
 
 [[toc]]
 

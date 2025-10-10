@@ -1,3 +1,7 @@
+---
+description: With Mergin Maps mobile app, you can capture and edit points, lines, polygons and non-spatial features in the field using comprehensive editing tools.
+---
+
 # How to Add, Edit, Delete Features
 
 [[toc]]

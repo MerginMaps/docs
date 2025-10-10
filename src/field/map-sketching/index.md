@@ -1,3 +1,7 @@
+---
+description: Use map sketches to draw directly on the map during the field survey with Mergin Maps mobile app. After syncing, you can see your sketches also in QGIS.
+---
+
 # Map Sketching
 <!-- this link is used in the plugin -->
 

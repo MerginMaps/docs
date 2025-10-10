@@ -1,3 +1,7 @@
+---
+description: Set up snapping in your Mergin Maps project to snap the vertices of new features to existing geometries while collecting data with the mobile app.
+---
+
 # How to Set Up Snapping for Mergin Maps Mobile App 
 [[toc]]
 

@@ -1,3 +1,7 @@
+---
+description: Quality of data collected in the field depends on GPS accuracy. The mobile app displays real-time accuracy and offers more information in the GPS info panel.
+---
+
 # GPS Accuracy
 
 Your GPS accuracy depends on several parameters, such as:

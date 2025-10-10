@@ -1,3 +1,7 @@
+---
+description: Special Mergin Maps variables (such as username, user email or project name) can be used in QGIS expressions and as default values in feature forms.
+---
+
 # Extra QGIS Variables
 
 The <QGISPluginName /> adds several variables that can be used in QGIS expressions:

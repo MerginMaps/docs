@@ -1,3 +1,7 @@
+---
+description: Mergin Maps mobile app can access GPS information using extra position variables. They can be used as default values in feature forms.
+---
+
 # Extra Position Variables
 
 With <MobileAppName />, it is possible to access GPS information using extra position variables. Note that location permission has to be allowed and location service enabled.

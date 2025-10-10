@@ -1,3 +1,7 @@
+---
+description: Licensing of Mergin Maps service, Mergin Maps mobile app, Mergin Maps QGIS plugin and integrations Python client, C++ client, Media Sync, DB sync, Work Packages.
+---
+
 # Licensing
 
 [[toc]]

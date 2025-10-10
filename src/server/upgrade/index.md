@@ -1,3 +1,7 @@
+---
+description: These migration guides are here to help you migrate your Mergin Maps CE or Mergin Maps EE to the latest server version.
+---
+
 # Upgrade
 
 Migration guides are here to help you migrate your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink /> to the latest server version. <ServerCloudNameLink /> is always migrated to latest version by <MainPlatformName /> team. Read more about server platforms in [overview article](../).

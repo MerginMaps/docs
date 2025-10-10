@@ -1,7 +1,7 @@
 ---
 home: false
+description: Official documentation for Mergin Maps. Discover Mergin Maps functionalities in comprehensive overviews, tutorials and how-to guides.
 ---
-
 
 # Mergin Maps Documentation
 

@@ -1,3 +1,7 @@
+---
+description: The mobile app can be used without internet connection. See how to set up your offline project and a recommended workflow for offline data collection.
+---
+
 # Offline Use of Mergin Maps Mobile App
 [[toc]]
 
