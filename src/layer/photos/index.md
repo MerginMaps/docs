@@ -9,7 +9,7 @@ In the <MobileAppNameShort />, this field will provide two options:
 - **Take a picture** to use your camera app for taking a photos 
 - **From gallery** to attach an existing photo from your device
 
-![Mergin Maps mobile app photo widget](.mobile-form-attachment-photo.jpg "Mergin Maps mobile app photo widget")
+![Mergin Maps mobile app photo widget](./mobile-form-attachment-photo.jpg "Mergin Maps mobile app photo widget")
 
 :::tip
 Do you need to attach multiple pictures to one feature? [How to attach multiple photos to features](#how-to-attach-multiple-photos-to-features) will guide you through the setup.
