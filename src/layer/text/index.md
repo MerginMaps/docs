@@ -2,6 +2,11 @@
 
 Adding or editing text is the most common method for inserting information within the forms. The **Text Edit** widget can be used for single-line or [multiline](#multiline-text) text inputs for fields with `Text (string)` or `varchar` data types.
 
+|<div style="width:150px"> Widget </div> |Preview in the <MobileAppNameShort />|
+|:---:|:---:|
+|[Text](#text-widget)   | ![Mergin Maps mobile app text field form](./mobile-form-text-preview.jpg "Mergin Maps mobile app text field form") |
+|[Multiline Text](#multiline-text)   | ![Mergin Maps mobile app text field form](./mobile-form-text-multiline-preview.jpg "Mergin Maps mobile app text field form") |
+
 :::tip Example project available
 Both single-line and multiline text options are used in this public project: <MerginMapsProject id="documentation/form-widgets" />. Download or clone it to see this setup.
 :::
