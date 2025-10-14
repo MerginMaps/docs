@@ -2,24 +2,22 @@
 
 Form widgets define the way you can enter values in the form, both in QGIS and in the <MobileAppNameShort />. The configuration of form widgets in your <MainPlatformNameLink /> project is done in QGIS.
 
-Each data type has a default widget: for instance, text fields use *Text edit* widget by default and are filled in by manually typing the value, while date fields use *Date/Time* widget and the value is selected using a calendar pop-up.
-
-Form widgets can be changed in the properties of a layer. Note that the widget has to be compatible with the field data type.
-
-Prefer video? Check out this tutorial on how to configure QGIS widgets for survey forms.
+Do you prefer a video? Check out this tutorial on how to configure QGIS widgets for survey forms.
 <YouTube id="jc4p1PpXj3k" title="Widgets for survey forms" />
 
-## Widget gallery
-Attributes forms can be configured using <QGISHelp ver="latest" link="user_manual/working_with_vector/vector_properties.html#edit-widgets" text="QGIS widget types" /> in the **Attributes Form** tab in the **Layer Properties**.
+## Setting up form widgets
+
+Attributes forms can be configured using <QGISHelp ver="latest" link="user_manual/working_with_vector/vector_properties.html#edit-widgets" text="QGIS widget types" /> in the **Attributes Form** tab in the **Layer Properties**. Note that the widget has to be compatible with the field data type. 
+
+Each data type has a default widget: for instance, text fields use *Text edit* widget by default and are filled in by manually typing the value, while date fields use *Date/Time* widget and the value is selected using a calendar pop-up.
 
 ![QGIS Layer Properties Attributes Form tab](./qgis-attributes-form.gif "QGIS Layer Properties Attributes Form tab")
 
-Do you prefer a video? Check out this tutorial on how to configure QGIS widgets for survey forms.
-<YouTube id="jc4p1PpXj3k" />
 
 ## Widget gallery
 
 Here is an overview of widgets that are commonly used both in QGIS and the <MobileAppNameShort />.
+
 ::: tip Public project available
 :bulb: These widgets can be explored in this project: <MerginMapsProject id="documentation/form-widgets" />.
 :::
@@ -28,14 +26,14 @@ Here is an overview of widgets that are commonly used both in QGIS and the <Mobi
 |:---:|:---:|:---:|
 |Text Edit  |[Text](../text)   | ![Mergin Maps mobile app text field form](./mobile-form-text-preview.jpg "Mergin Maps mobile app text field form") |
 |Text Edit  |[Multiline Text](../text#multiline-text)   | ![Mergin Maps mobile app text field form](./mobile-form-text-multiline-preview.jpg "Mergin Maps mobile app text field form") |
-|QR & barcode scanner  |[Camera to scan QR and barcode](../qr-code)   | ![Mergin Maps mobile app QR code field form](./mobile-form-qrcode-preview.jpg "Mergin Maps mobile app QR code field form") |
+|Date/Time   |[Calendar with time](../date-time)  |![Mergin Maps mobile app date time field form](./mobile-form-datetime-preview.jpg "Mergin Maps mobile app date time field form")   |
+|Relations |[Multiple records linked to one feature](../relations/) | ![Mergin Maps mobile app 1-N relations attributes form](./mobile-form-relations-preview.jpg "Mergin Maps mobile app 1-N relations attributes form")  |
 |Range - Editable   |[Enter a number](../numbers)   | ![Mergin Maps mobile app numeric field form](./mobile-form-number-editable-preview.jpg "Mergin Maps mobile app numeric field form")  |
 |Range - Slider  |[Select a number using the slider](../numbers#slider)   | ![Mergin Maps mobile app slider field form](./mobile-form-number-slider-preview.jpg "Mergin Maps mobile app slider field form")  |
-|Date/Time   |[Calendar with time](../date-time)  |![Mergin Maps mobile app date time field form](./mobile-form-datetime-preview.jpg "Mergin Maps mobile app date time field form")   | 
 |Checkbox   |[Checkbox](../checkbox)   |![Mergin Maps mobile app checkbox field form](./mobile-form-checkbox-preview.jpg "Mergin Maps mobile app checkbox field form")   |
+|QR & barcode scanner  |[Camera to scan QR and barcode](../qr-code)   | ![Mergin Maps mobile app QR code field form](./mobile-form-qrcode-preview.jpg "Mergin Maps mobile app QR code field form") |
 |Value Map   |[Drop-down menu with predefined values](../value-select/#value-map) |![Mergin Maps mobile app value map field form](./mobile-form-valuemap-preview.jpg "Mergin Maps mobile app value map field form")   |
 |Value Relation   |[Drop-down menu with values from another table](../value-select/#value-relation) |![Mergin Maps mobile app value relation field form](./mobile-form-value-relation-preview.jpg "Mergin Maps mobile app value relation field form")   |
 |Attachment   |[Photos from device's camera or gallery](../photos) | ![Mergin Maps mobile app attachment field form](./mobile-form-photo-preview.jpg "Mergin Maps mobile app attachment field form")  ![Mergin Maps mobile app attachment field form](./mobile-form-photo-preview2.jpg "Mergin Maps mobile app attachment field form")  |
-|Relations - Gallery |[Multiple photos from device's camera or gallery](../relations/) | ![Mergin Maps mobile app multiple photos attributes form](./mobile-form-multiple-photo-preview.jpg "Mergin Maps mobile app multiple photos attributes form") |
-|Relations |[Multiple records linked to one feature](../relations/) | ![Mergin Maps mobile app 1-N relations attributes form](./mobile-form-relations-preview.jpg "Mergin Maps mobile app 1-N relations attributes form")  |
-
+|Relations - Gallery |[Multiple photos from device's camera or gallery](../photos/#how-to-attach-multiple-photos-to-features) | ![Mergin Maps mobile app multiple photos attributes form](./mobile-form-multiple-photo-preview.jpg "Mergin Maps mobile app multiple photos attributes form") |
+| Text and HTML Widgets |[Informational Widgets](../info-widgets/) | ![Mergin Maps mobile app HTML and Text widgets in attributes form](./mobile-form-info-widgets.webp "Mergin Maps mobile app HTML and Text widgets in attributes form") |
