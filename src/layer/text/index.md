@@ -6,7 +6,7 @@ Adding or editing text is the most common method for inserting information withi
 Both single-line and multiline text options are used in this public project: <MerginMapsProject id="documentation/form-widgets" />. Download or clone it to see this setup.
 :::
 
-Prefer a video? Here is a short tutorial about of text widgets:
+Prefer a video? Here is a short tutorial about text widgets:
 <YouTube id="0Y5GKyjmfqo" />
 
 ## Text widget
