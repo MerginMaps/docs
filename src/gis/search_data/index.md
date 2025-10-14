@@ -10,7 +10,7 @@ Working with layers in the <MobileAppNameShort />, including browsing features a
 The <MobileAppNameShort /> follows the sorting of features in the attribute table and of values in the value relation widget as set in the QGIS project.
 
 ###  Order value list by value
-The [Value relation](../../layer/form-widgets/#value-relation) widget has the option *Order by value*. When checked, values in the drop-down list will be listed in alphabetical or numerical order. 
+The [Value relation](../../layer/value-select/#value-relation) widget has the option *Order by value*. When checked, values in the drop-down list will be listed in alphabetical or numerical order. 
 
 ![QGIS Value relation order by value](./qgis-order-by-value-value-relation.jpg "QGIS Value relation order by value")
 

@@ -7,7 +7,7 @@ You can explore this functionality in <MerginMapsProject id="documentation/form_
 
 Here we will use a line layer named `roads and paths`. It is designed for surveying both roads and paths and most of the fields are relevant for every type of feature in this layer. However, there are some attributes that are specific for roads (e.g. the number of lanes) or for paths (e.g. the visibility of the path). 
 
-The form uses the value of the `type` field to display the relevant set of attributes. The `type` field is set up as [value map](../form-widgets/#value-map) with defined values `road` and `path`.
+The form uses the value of the `type` field to display the relevant set of attributes. The `type` field is set up as [value map](../value-select/#value-map) with defined values `road` and `path`.
 
 ![QGIS form value map](./qgis-form-value-map-roads.jpg "QGIS form value map")
 
