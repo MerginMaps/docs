@@ -93,7 +93,7 @@ In the <MobileAppNameShort />, you can tap the *Open File* link to open the PDF 
 ![Open a local PDF file in Mergin Maps mobile app](./mobile-forms-open-file-html-widget.jpg "Open a local PDF file in Mergin Maps mobile app")
 
 ::: tip Open local files using default values
-Local files can be displayed in the form also using [default values](../form-configuration/#open-local-files-using-default-values). 
+Local files can be displayed in the form also using [default values](../open-file/#open-local-files-using-default-values). 
 
 In the <MerginMapsProject id="documentation/forms-display-images-and-files" /> project, you can explore and compare both alternatives.
 :::

@@ -29,7 +29,7 @@ If GPS antenna height is set to a non-zero value, it is also displayed next to t
 ![GPS antenna height setup in Mergin Maps mobile app](./mobile-app-gps-antenna-height.jpg "GPS antenna height setup in Mergin Maps mobile app")
 
 :::tip
-GPS antenna height can be recorded during the survey by using the [extra position variable](../../layer/position_variables/) `@position_gps_antenna_height` as a [default value](../../layer/form-configuration/#default-values).
+GPS antenna height can be recorded during the survey by using the [extra position variable](../../layer/extra-variables/#extra-position-variables) `@position_gps_antenna_height` as a [default value](../../layer/default-values/).
 :::
 
 ## External GPS on Android

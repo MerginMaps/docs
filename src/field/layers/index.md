@@ -5,7 +5,7 @@ The **Layers** button is located in the bottom navigation panel.
 
 It provides the overview of layers and features in your <MainPlatformNameLink /> project in <MobileAppName />, as well as the option to turn the visibility of specific layers on/off or to see a layer's legend.
 
-![Layers in Mergin Maps mobile app](../../layer/non-spatial-data/mobile-app-non-spatial-layers.jpg "Layers in Mergin Maps mobile app")
+![Layers in Mergin Maps mobile app](./mobile-app-non-spatial-layers.jpg "Layers in Mergin Maps mobile app")
 
 ## Layers visibility
 

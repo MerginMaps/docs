@@ -88,7 +88,7 @@ Various online and offline maps can be used as background layers for navigation 
 - Define the <QGISHelp ver="3.22" link="user_manual/introduction/qgis_configuration.html?highlight=properties#data-sources-properties" text="layers capabilities" /> in the **Data Sources** in Project Properties.
    - [Identifiable](../search_data/#setting-identifiable-layers-in-qgis-project) layers can be queried in <MobileAppName />. If you want to be able to search for attribute values in a layer, it needs to be identifiable and searchable.
    - **read-only** layers cannot be modified. If a vector layer is not intended to be used as a survey layer, set it as read-only.
-   - [non-spatial](../../layer/non-spatial-data/) layers need to be set as searchable to enable browsing, searching, or editing.
+   - non-spatial layers need to be set as **searchable** to enable browsing, searching, or editing.
 
 ![QGIS Layer Capabilities](./qgis_project_properties.jpg "QGIS Layer Capabilities")
 

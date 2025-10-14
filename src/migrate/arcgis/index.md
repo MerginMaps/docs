@@ -74,7 +74,7 @@ We recommend using QGIS, GDAL algorithms or [SLYR](#slyr) to facilitate the conv
 
 ### Data Formats
 
-**Always use GeoPackage for survey layers** in <MainPlatformName />. If you use other formats it is not possible to detect changes from other users and they may be overwritten. This is one of the [best practice](../../layer/best-practice). The downside is the GeoPackage will have limited support in Esri software, e.g. some GeoPackages just cannot be opened within ArcGIS Pro. Specifically we do not recommended to keep using [Shapefile](http://switchfromshapefile.org) format.
+**Always use GeoPackage for [survey layers](../../gis/features/#survey-layers)** in <MainPlatformName />. If you use other formats it is not possible to detect changes from other users and they may be overwritten . The downside is the GeoPackage will have limited support in Esri software, e.g. some GeoPackages just cannot be opened within ArcGIS Pro. Specifically we do not recommended to keep using [Shapefile](http://switchfromshapefile.org) format.
 
 For rest of the layers, both ArcGIS and QGIS can also handle Shapefile, GeoTIFF, GeoJSON, WMS, WFS, and PostGIS layers. See all [supported formats](../../gis/supported_formats/).
 

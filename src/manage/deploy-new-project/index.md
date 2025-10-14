@@ -2,7 +2,7 @@
 [[toc]]
 
 ::: tip
-It is recommended to design your data schema carefully when creating a new layer. See [the best practice tips](../../layer/best-practice/) to make your work easier in the long run!
+It is recommended to design your data schema carefully when creating a new layer. See [these tips](../../gis/features/#survey-layers) to make your work easier in the long run!
 :::
 
 Sometimes you may need to make changes in your project. Changing **forms** by adding/removing existing fields or changing their aliases should not cause any issues and you can just synchronise your project as usual. 
