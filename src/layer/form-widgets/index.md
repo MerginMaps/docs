@@ -28,6 +28,7 @@ Here is an overview of widgets that are commonly used both in QGIS and the <Mobi
 |Text Edit  |[Multiline Text](../text#multiline-text)   | ![Mergin Maps mobile app text field form](./mobile-form-text-multiline-preview.jpg "Mergin Maps mobile app text field form") |
 |Date/Time   |[Calendar with time](../date-time)  |![Mergin Maps mobile app date time field form](./mobile-form-datetime-preview.jpg "Mergin Maps mobile app date time field form")   |
 |Relations |[Multiple records linked to one feature](../relations/) | ![Mergin Maps mobile app 1-N relations attributes form](./mobile-form-relations-preview.jpg "Mergin Maps mobile app 1-N relations attributes form")  |
+|Relation reference | [Reference to feature from another layer](../relations/)   | ![Mergin Maps mobile app relation reference form](./mobile-form-relation-reference-preview.webp "Mergin Maps mobile app relation reference form")  |
 |Range - Editable   |[Enter a number](../numbers)   | ![Mergin Maps mobile app numeric field form](./mobile-form-number-editable-preview.jpg "Mergin Maps mobile app numeric field form")  |
 |Range - Slider  |[Select a number using the slider](../numbers#slider)   | ![Mergin Maps mobile app slider field form](./mobile-form-number-slider-preview.jpg "Mergin Maps mobile app slider field form")  |
 |Checkbox   |[Checkbox](../checkbox)   |![Mergin Maps mobile app checkbox field form](./mobile-form-checkbox-preview.jpg "Mergin Maps mobile app checkbox field form")   |
