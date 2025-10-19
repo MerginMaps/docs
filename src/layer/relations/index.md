@@ -33,8 +33,8 @@ Therefore, **we strongly recommend creating a new field for primary keys and usi
 ## One to many relation setup
 One to many (1-N) relation needs to be set up in your <MainPlatformName /> project in QGIS as follows:
 1. [Create unique UUID field](#generating-unique-ids-uuid) for your referenced (parent) layer and a field for storing foreign keys in the referencing (child) layer
-3. Define the relation in [Project Properties](#_1-n-relation-setup-in-qgis)
-4. [Configure Attributes forms](#attributes-forms-for-1-n-relations) of both layers as needed
+3. Define the relation in [Project Properties](#setting-up-relation-in-qgis)
+4. [Configure Attributes forms](#attributes-forms-configuration-for-1-n-relations) of both layers as needed
 
 ### Generating unique IDs (UUID)
 
@@ -85,8 +85,8 @@ The one to many relation between **parks** and **amenities** is now set in QGIS.
 
 ### Attributes forms configuration for 1-N relations
 Attributes form for both linked layers can be set up as needed, depending on the preferred data collection method for the referencing (child) layer:
-- Child features can be added through the form of the [referenced (parent) layer](#referenced-parent-layer-attributes-form), meaning you can use the attributes form of the **parks** layer to add/edit/remove **amenities**.
-- Child features can be added through the form of the [referencing (child) layer](#referencing-child-layer-attributes-form). A new feature can be added to the **amenities** layer and the link to the corresponding **park** feature is set manually in the attributes form.
+- Child features can be added through the form of the [referenced (parent) layer](#referenced-parent-layer-attributes-form-relations-widget), meaning you can use the attributes form of the **parks** layer to add/edit/remove **amenities**.
+- Child features can be added through the form of the [referencing (child) layer](#referencing-child-layer-attributes-form-relation-reference-widget). A new feature can be added to the **amenities** layer and the link to the corresponding **park** feature is set manually in the attributes form.
 
 Both options work both in QGIS and in the [<MobileAppNameShort />](#relation-widgets-in-mergin-maps-mobile-app).
 
@@ -138,7 +138,7 @@ There are two ways to add child features to a parent feature in the <MobileAppNa
 
 ### Relation widget
 
-The referenced (parent) features have the [relation widget](#referenced-parent-layer-attributes-form) in the attributes form. It displays all linked child features in a row. 
+The referenced (parent) features have the [relation widget](#referenced-parent-layer-attributes-form-relations-widget) in the attributes form. It displays all linked child features in a row. 
 
 Here, **parks** feature `Park B` already contains a link to a `bench` from the **amenities** layer. Tapping on the child feature `bench` opens its attributes form with the option to edit the feature.
 
@@ -146,17 +146,17 @@ A new child feature can be added by tapping the **+** button:
 
 ![Mergin Maps mobile app relation widget](./mobile-form-relation-widget.webp "Mergin Maps mobile app relation widget")
 
-### Relation reference widget
 - If the referencing (child) layer is a spatial layer, you will be asked to record geometry. Here **amenities** are captured as points. Note that it is not possible to change the [active layer](../../field/mobile-features/#adding-features).
 - In the form, you can fill in information about the child feature (here we add a `picnic table`). Note that the relation reference (foreign key `fk-uuid`) is filled in automatically based on the parent feature (here `Park B`).
 - Save the changes. The form of the `Park B` feature now displays one more entry in the relation widget (`picnic table`).
 
 ![Mergin Maps mobile app relation widget added child feature](./mobile-form-added-child-feature.webp "Mergin Maps mobile app relation widget added child feature")
 
+### Relation reference widget
 You can also add a new feature to the referencing (child) layer directly:
 - Tap the **Add** button and capture the geometry
-- Fill in the Attributes form. Note that the relation reference (foreign key, here `fk-uuid`) is empty and needs to be entered manually by choosing a feature from the referenced (parent) layer.
-- Save the changes. If you open the attributes form of the parent feature, you will see that the added amenity feature is now displayed in the relation reference widget.
+- Fill in the Attributes form. Note that the [relation reference](#referencing-child-layer-attributes-form-relation-reference-widget) (foreign key, here `fk-uuid`) is empty and needs to be entered manually by choosing a feature from the referenced (parent) layer.
+- Save the changes. 
 
 ![Mergin Maps mobile app relation widget added child feature](./mobile-add-child-feature.webp "Mergin Maps mobile app relation widget added child feature")
 
