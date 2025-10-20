@@ -53,6 +53,7 @@ Geomax
 GEOS
 GeoPackage
 GeoPackages
+Geotagging
 GeoTIFF
 GeoPDF
 Gimp

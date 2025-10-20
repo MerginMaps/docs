@@ -5,7 +5,7 @@ The **HTML widget** can be also used to display online images in the mobile app 
 Clone <MerginMapsProject id="documentation/forms-display-images-and-files" /> to how this works.
 :::
 
-Here are HTML samples you can use to [configure the HTML widget](#using-expressions-in-text-and-html-widgets). Your form should contain a text field for storing the full URL link (here: `link`).
+Here are HTML samples you can use to configure the HTML widget. Your form should contain a text field for storing the full URL link (here: `link`).
 
 To use these samples, replace `link` by the name of the appropriate field in your layer. 
 
@@ -21,7 +21,7 @@ To use these samples, replace `link` by the name of the appropriate field in you
 ```
 
 Make sure that the HTML widget works before taking it to the field by testing it in the <MobileAppNameShort />. It should look something like this:
-
+value-re
 ![HTML widget in QGIS and in Mergin Maps mobile app](./qgis-mobile-html-form.jpg "HTML widget in QGIS and in Mergin Maps mobile app")
 
 ::: warning Image preview in QGIS 3.36+

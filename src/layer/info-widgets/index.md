@@ -4,7 +4,7 @@
 ## Display instructions in the form using Text and HTML widget
 Sometimes, you may want to include instructions or tips for surveyors in your forms. <QGIS link="" text="QGIS" /> offers Text and HTML widgets that can be used for this purpose. Your text instructions can include [expressions and field values](#using-expressions-in-text-and-html-widgets) as well. The HTML widget supports various [HTML tags](https://doc.qt.io/qt-6/richtext-html-subset.html#supported-tags), so it can be also used, for instance, to display [online images](#using-html-widget-to-display-online-images-and-other-online-resources).
 
-These widgets can be found in **Available Widgets** in the **Other Widgets** section when using the [Drag and Drop Designer](#qgis-drag-and-drop-designer).
+These widgets can be found in **Available Widgets** in the **Other Widgets** section when using the [Drag and Drop Designer](../form-layout/#qgis-drag-and-drop-designer).
 ![QGIS HTML and Text Widget](./qgis-form-html-text-widget.jpg "QGIS HTML and Text Widget")
 
 To configure the **Text** widget, enter the text you want to display in the form. On the right, you will see the preview.
@@ -93,7 +93,7 @@ In the <MobileAppNameShort />, you can tap the *Open File* link to open the PDF 
 ![Open a local PDF file in Mergin Maps mobile app](./mobile-forms-open-file-html-widget.jpg "Open a local PDF file in Mergin Maps mobile app")
 
 ::: tip Open local files using default values
-Local files can be displayed in the form also using [default values](../form-configuration/#open-local-files-using-default-values). 
+Local files can be displayed in the form also using [default values](../open-file/#open-local-files-using-default-values). 
 
 In the <MerginMapsProject id="documentation/forms-display-images-and-files" /> project, you can explore and compare both alternatives.
 :::
@@ -102,7 +102,7 @@ In the <MerginMapsProject id="documentation/forms-display-images-and-files" /> p
 <Badge text="since QGIS 3.30" type="tip"/>
 The Spacer widget can be useful if you want to have some space between the fields in your form or add a horizontal line. 
 
-It can be found in *Available Widgets* in the *Other Widgets* section when using the [Drag and Drop Designer](#qgis-drag-and-drop-designer).
+It can be found in *Available Widgets* in the *Other Widgets* section when using the [Drag and Drop Designer](../form-layout/#qgis-drag-and-drop-designer).
 ![QGIS forms Spacer Widget](./qgis-form-spacer-widget.jpg "QGIS Spacer Widget")
 
 When adding the spacer widget to the form, there is an option to check the **Draw horizontal line** option. Otherwise, a vertical space will be added to the form.

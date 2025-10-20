@@ -15,7 +15,7 @@ Tapping the GPS button opens the [GPS info panel](../mobile-app-ui/#current-posi
 
 If you'd like to have higher accuracy, you can wait for your device to acquire a better GPS signal. For precise measurements, you may need to connect your device to an [external GPS](../external_gps/).
 
-When assessing the overall quality of the survey, it may be beneficial to record some [extra position variables](../../layer/position_variables/), such as type and name of the used GPS device, the horizontal and vertical accuracy or the horizontal, vertical or position dilution of precision (HDOP, VDOP, PDOP). 
+When assessing the overall quality of the survey, it may be beneficial to record some [extra position variables](../../layer/extra-variables/#extra-position-variables), such as type and name of the used GPS device, the horizontal and vertical accuracy or the horizontal, vertical or position dilution of precision (HDOP, VDOP, PDOP). 
 
 
 :::tip

@@ -1,17 +1,28 @@
 # Text
 
-Adding or editing text is the most common method for inserting information within the forms. Text fields use the **Text Edit** widget by default.
+Adding or editing text is the most common method for inserting information within the forms. The **Text Edit** widget can be used for single-line or [multiline](#multiline-text) text inputs for fields with `Text (string)` or `varchar` data types.
 
-It can be used for single-line or [multiline](#multiline-text) text inputs.
-
-![QGIS Text Edit Widget Type](./qgis-form-text.jpg "QGIS Text Edit Widget Type")
+|<div style="width:150px"> Widget </div> |Preview in the <MobileAppNameShort />|
+|:---:|:---:|
+|[Text](#text-widget)   | ![Mergin Maps mobile app text field form](./mobile-form-text-preview.jpg "Mergin Maps mobile app text field form") |
+|[Multiline Text](#multiline-text)   | ![Mergin Maps mobile app text field form](./mobile-form-text-multiline-preview.jpg "Mergin Maps mobile app text field form") |
 
 :::tip Example project available
 Both single-line and multiline text options are used in this public project: <MerginMapsProject id="documentation/form-widgets" />. Download or clone it to see this setup.
 :::
 
-Prefer a video? Here is a short tutorial about of text fields:
+Prefer a video? Here is a short tutorial about text widgets:
 <YouTube id="0Y5GKyjmfqo" />
+
+## Text widget
+The **Text Edit** widget is set by default for fields with text data type. For simple text input, you do not need to change it.
+
+![QGIS Text Edit Widget Type](./qgis-form-text.jpg "QGIS Text Edit Widget Type")
+
+In the <MobileAppNameShort />, the basic text field looks like this:
+
+![Mergin Maps mobile app text field form](./mobile-form-text.webp "Mergin Maps mobile app text field form")
+
 
 ## Multiline text
 
@@ -25,7 +36,7 @@ The **Text Edit** widget offers the option to store multiple lines within a sing
 
 ![QGIS multiline text field setup](./qgis-form-text-multiline.jpg "QGIS multiline text field setup")
 
-In the <MobileAppNameShort />, the **multiline text edit widget** will look like this:
+In the <MobileAppNameShort />, the **multiline text edit widget** looks like this:
 ![Mergin Maps mobile app multiline text field form](./mobile-form-text-multiline.jpg "Mergin Maps mobile app multiline text field form")
 
 ## Recording text options

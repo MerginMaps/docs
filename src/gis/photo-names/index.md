@@ -49,9 +49,9 @@ Therefore, we recommend using combinations of variables that will ensure that th
 
 :white_check_mark: The file extension (`.jpg`) is added automatically.
 
-:white_check_mark: When using a field value in the expression, make sure that it is a field that will be filled out during the survey, e.g. by using [constraints](../../layer/form-configuration/#constraints). If the field is empty, the expression won't work!
+:white_check_mark: When using a field value in the expression, make sure that it is a field that will be filled out during the survey, e.g. by using [constraints](../../layer/constraints/). If the field is empty, the expression won't work!
 
-:white_check_mark: If you want to use a [numeric field](../../layer/form-widgets/#numbers) or other non-text fields in your expression, you need to convert it to a string first using the `to_string()` function
+:white_check_mark: If you want to use a numeric or other non-text fields in your expression, you need to convert it to a string first using the `to_string()` function
 
 :warning: The expression is evaluated with the **current** field values. The name of the photo will stay the same even if you change the value of the field later.
 

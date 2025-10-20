@@ -21,7 +21,7 @@ Typically, especially if your project is rather complex, you would:
 4. [Share the project](../project-advanced/) with your team members. Now you can collaborate safely and effectively.
 
 :::tip
-[QGIS Project Preparation](../../gis/features/) will guide you the project preparation steps. We also recommend following our [Best Practice Tips for Layers and Forms](../../layer/best-practice/).
+[QGIS Project Preparation](../../gis/features/) will guide you the project preparation steps.
 
 If you need to make changes in the data schema of survey layers, please follow [How to Deploy Revised Projects](../deploy-new-project/) to avoid synchronisation issues.
 :::

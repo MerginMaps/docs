@@ -1,11 +1,26 @@
 # Select value from a drop-down menu
+[[toc]]
 
-Selecting values from a drop-down menu is faster than typing them in manually and it also ensures that there are no typos or spelling variations. To present the options as a drop-down menu in the form, you can use the [Value Map](#value-map) or [Value Relation](#value-relation) widgets in QGIS.
+Selecting values from a drop-down menu is faster than typing them in manually and it also ensures that there are no typos or spelling variations. 
 
-The *Value Relation* widget is a bit more complex and provides some benefits when compared to the simpler *Value Map* setup, such as:
+|<div style="width:150px"> Widget </div> |Preview in the <MobileAppNameShort />|
+|:---:|:---:|
+|[Drop-down menu with predefined values](#value-map) |![Mergin Maps mobile app value map field form](./mobile-form-valuemap-preview.jpg "Mergin Maps mobile app value map field form")   |
+|[Drop-down menu with values from another table, allowed multiple selection](#value-relation) |![Mergin Maps mobile app value relation field form](./mobile-form-value-relation-preview.jpg "Mergin Maps mobile app value relation field form")   |
+
+To select values from a drop-down menu in the form, you can use the [Value Map](#value-map) or [Value Relation](#value-relation) widgets in QGIS. Additionally, it is possible to create [drill-down (cascade) forms](#drill-down-forms), where a value selected in one field can affect the options available in another field.
+
+The **Value Relation** widget is a bit more complex as it uses another layer (usually a non-spatial table) as a source of values. However, it provides some benefits when compared to the simpler **Value Map** setup, such as:
 - Option to select multiple values from the list (in this case, the field needs to be of `text` data type).
 - The table used for the drop-down menu can be edited in the <MobileAppNameShort />. For example, if there is a value missing, you can [create it](../../field/mobile-features/#add-or-edit-non-spatial-features) during the field survey and use it immediately. The *Value Map* options can be managed only through QGIS.
 - Searching the values: if you have a large list of values, it will become cumbersome to find the right value. With the *Value Relation* widget, you have the option to search for values in the list in the <MobileAppNameShort />.
+
+:::tip Example projects available
+The public project <MerginMapsProject id="documentation/form-widgets" /> contains both *Value Map* and *Value relation* widgets. Download or clone it to see the setup.
+
+*Drill-down forms* are included in <MerginMapsProject id="documentation/form_setup" /> public project.
+:::
+
 
 ## Value Map
 
@@ -16,6 +31,9 @@ If you want to use multiple selections in a field or need to add new values duri
 :::tip Example project available
 This public project <MerginMapsProject id="documentation/form-widgets" /> contains a Value Map field. Download or clone it to see the setup.
 :::
+
+Prefer a video? Here is a short tutorial about using Value Map widget:
+<YouTube id="WjotOTIKaNo" title="Value Map" />
 
 1. Right-click on a layer, select **Properties** and go to the **Attributes form** tab.
 2. In the list of **Available Widgets** select the field you want to work with (here: `valuemap`)
@@ -31,11 +49,14 @@ Now you can select the value from a drop-down menu in the <MobileAppNameShort />
 
 ## Value Relation
 
+The **Value Relation** widget is similar to the [Value Map](#value-map) widget, but the values for the drop-down menu come from another layer (usually a non-spatial table). 
+
 :::tip Example project available
 This public project <MerginMapsProject id="documentation/form-widgets" /> contains a Value Relation setup. Download or clone it to explore it in more detail.
 :::
 
-The **Value Relation** widget is similar to the [Value Map](#value-map) widget, but the values for the drop-down menu come from another layer (usually a non-spatial table). 
+Prefer a video? Here is a short tutorial about using Value relations:
+<YouTube id="Sm1PZRN8rLw" title="Value Relations" />
 
 To have the option to safely add new values when working collaboratively, the value table should have a unique field with UUID values. This field should use the `uuid()` function as a [default value](../default-values/#examples-of-useful-default-values), so that every new entry has its UUID.
 
@@ -69,6 +90,10 @@ Drill-down or cascade forms enable to list values in a field depending on a valu
 Clone <MerginMapsProject id="documentation/form_setup" /> to explore drill-down forms.
 :::
 
+Prefer a video? Here is a short tutorial about drill-down forms:
+<YouTube id="bXRclQFQFFE" title="Drill-down forms" />
+
+### How to set up drill-down forms
 Here, we have a layer named `landuse` that has fields such as *Land use*, *Type*, *Plant type*. Values that can be filled in these fields depend on the previous choices: if we select `Farmland` as the *Land use*, the *Type* field drop-down menu offers options such as `Cereals`, `Oil plants` or `Vegetables`. Subsequently, the *Plant type* field has only options that are relevant for the selected type of land use.
 
 ![QGIS drill-down form](./qgis-drill-down-form.gif "QGIS drill-down form")

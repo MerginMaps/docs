@@ -85,7 +85,7 @@ There may be conflicts that can't be resolved automatically, e.g. if the same va
 Conflicts can happen when two users edit some files in a shared project at once. The technology behind <MainPlatformNameLink /> service makes an effort to merge changes from individual users automatically and therefore conflicts do not happen normally, even if multiple people edit a single data source (e.g. a GeoPackage). However, there are still some occasions when it is not possible to automatically resolve conflicts and <MainPlatformName /> will create conflict files in projects.
 
 ::: tip
-Make your work easier and avoid unnecessary conflict files by following [these tips](../../layer/best-practice/).
+Make your work easier and avoid unnecessary conflict files by following [these tips](../../gis/features/#survey-layers).
 :::
 
 There are two types of conflicts:

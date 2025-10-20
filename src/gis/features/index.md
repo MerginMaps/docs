@@ -18,12 +18,13 @@ In [Creating a Project in QGIS](../../tutorials/creating-a-project-in-qgis/) you
 :::
 
 ## Survey layers
-Vector layers can be used as survey layers in the <MobileAppNameShort />. You can apply styles and set up the forms to make your field survey easier.
+Vector layers can be used as survey layers in your <MainPlatformName /> project. You can apply styles and set up the forms to make your field survey easier. 
+The same applies for non-spatial layers that can be used on their own to add new data or linked to a spatial layer, e.g. when linking multiple [photos](../../layer/photos/#how-to-attach-multiple-photos-to-features) or [records](../../layer/one-to-n-relations/). They can be also used in [value relation](../../layer/value-select/#value-relation) widgets.
 
 Making changes in the data schema of layers can lead to issues in the synchronisation process. Be careful to [**deploy the revised project properly**](../../manage/deploy-new-project/). Design the data schema carefully when creating a layer to avoid the need to change it later.
 
 Here are some practical tips for creating and maintaining layers in your project:
-- **Always use GeoPackage for survey layers**. If you use other formats, such as ESRI shapefile, it is not possible to detect changes from other users and they may be overwritten. Overwritten files are stored in a conflict file.
+- **Always use GeoPackage for layers**. If you use other formats, such as ESRI shapefile, it is not possible to detect changes from other users and they may be overwritten. Overwritten files are stored in a conflict file. This applies to both spatial and non-spatial layers.
 - **Add some extra back-up field attributes** when creating a survey layer with different types (e.g. a couple of texts, int, real, date/time) and hide them in the form design. These can serve as a backup: if you need extra fields later in the survey, just alias these extra fields and add them to form. 
 - If you do not need a field, **remove it from the form**. You don't need to delete it from the table.
 - **Instead of renaming a field, change its alias**.
@@ -87,7 +88,7 @@ Various online and offline maps can be used as background layers for navigation 
 - Define the <QGISHelp ver="3.22" link="user_manual/introduction/qgis_configuration.html?highlight=properties#data-sources-properties" text="layers capabilities" /> in the **Data Sources** in Project Properties.
    - [Identifiable](../search_data/#setting-identifiable-layers-in-qgis-project) layers can be queried in <MobileAppName />. If you want to be able to search for attribute values in a layer, it needs to be identifiable and searchable.
    - **read-only** layers cannot be modified. If a vector layer is not intended to be used as a survey layer, set it as read-only.
-   - [non-spatial](../../layer/non-spatial-data/) layers need to be set as searchable to enable browsing, searching, or editing.
+   - non-spatial layers need to be set as **searchable** to enable browsing, searching, or editing.
 
 ![QGIS Layer Capabilities](./qgis_project_properties.jpg "QGIS Layer Capabilities")
 

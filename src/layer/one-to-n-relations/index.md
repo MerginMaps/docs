@@ -7,6 +7,29 @@ You can follow this example by cloning <MerginMapsProject id="documentation/form
 Make sure that your survey layer has a **unique UUID** field to correctly link records to the feature. You will find detailed steps how to set it up in [How to Attach Multiple Photos to Features](../attach-multiple-photos-to-features/)
 :::
 
+
+It is often the case that you have a set of spatial features and you want to record their status every now and then. For example, there is a GIS layer representing the manholes and the surveyors carry out regular inspections of the manholes using <MainPlatformNameLink />. Instead of duplicating the manhole layer and recording each inspection as a new feature, inspections can be recorded in a non-spatial table that is linked to the spatial layer. This way, multiple records can be linked to one feature.
+
+The image below shows the manhole locations and a form with listed inspections in <MobileAppName />.
+
+![Multiple inspections linked to one point in Mergin Maps mobile app](./mobile-1-n-relation.jpg "Multiple inspections linked to one point in Mergin Maps mobile app")
+
+The manhole point layer has the following attribute table: 
+
+| fid | Manhole | Manhole UUID |
+|:---:|:---:|:---:|
+| 1 | 1 | `{70c59616-492e-4757-aa9a-ee61b207ce94}` |
+| 2 | 2 | `{be01b98f-3585-49d4-be74-4cf3530a2989}` |
+| 3 | 3 | `{03178264-0070-45c8-a981-b2474627d7e0}` |
+
+This layer contains only information about the manholes. `Manhole UUID` values are generated using [`uuid()` function as a default value](../attach-multiple-photos-to-features/) when a feature is created. This ensures that these values are **unique** even when multiple surveyors capture new features at the same time. This field will be used to link inspections and manholes.
+
+:::danger Using UUID
+**Why UUID?** FID can be changed during [synchronisation](../../manage/synchronisation/). As a result, records can end up being linked to wrong features. 
+
+On the other hand, <QGISHelp ver="latest" link="user_manual/expressions/functions_list.html#uuid" text="UUID" /> (Universally Unique Identifier) is generated to be unique and will not be changed when synced. Therefore, we recommend always using UUID to link layers.
+:::
+
 To configure 1-N relations in QGIS:
 1. From the main menu, select **Projects** > **Properties ...**
 2. In the **Relations** tab, select  **Add Relation**
