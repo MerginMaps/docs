@@ -1,3 +1,7 @@
+---
+description: Use QGIS drag and drop designer, conditional visibility, and widgets to create attributes forms tailored to your Mergin Maps project needs.
+---
+
 # Attributes Form Layout
 [[toc]]
 

@@ -1,3 +1,7 @@
+---
+description: The Layers panel provides an overview of all layers in the project. Here, you can turn layers on and off, view the layers' legend and browse features.
+---
+
 # Layers in Mergin Maps Mobile App
 [[toc]]
 

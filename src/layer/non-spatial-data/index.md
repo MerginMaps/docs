@@ -1,3 +1,7 @@
+---
+description: Tables are a key part of Mergin Maps projects. Use them to record non-spatial data, link records to another layer, or in value relation widgets in the forms.
+---
+
 # Working with Non-spatial Tables
 [[toc]]
 

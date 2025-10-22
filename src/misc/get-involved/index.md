@@ -1,3 +1,7 @@
+---
+description: Do you want to contribute to the project? Use, review, promote and subscribe to Mergin Maps or help with testing, translations or development.
+---
+
 # Get Involved
 
 How to contribute to the project? 

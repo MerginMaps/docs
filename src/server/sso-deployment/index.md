@@ -1,3 +1,7 @@
+---
+description: This installation guide will help you set up Single Sign-On (SSO) for your Mergin Maps Enterprise edition server.
+---
+
 # Single Sign-On Deployment
 
 This installation guide will help you set up Single Sign-On (SSO) for <MainPlatformName /> server. The <MainPlatformName /> server is integrated with the most commonly used SAML and OIDC identity providers via the [Ory Polis](https://www.ory.sh/docs/polis) service.

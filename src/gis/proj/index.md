@@ -1,3 +1,7 @@
+---
+description: Mergin Maps mobile app supports adding grid shift files for custom projections that are not included in QGIS by default.
+---
+
 # Custom Projections 
 [[toc]]
 

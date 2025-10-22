@@ -1,5 +1,6 @@
 ---
 outline: deep
+description: With the Python client module for Mergin Maps, you can use Python API or a command-line tool to easily work with your Mergin Maps projects and manage users.
 ---
 
 # Python API Client

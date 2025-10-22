@@ -1,5 +1,6 @@
 ---
 outline: deep
+description: Use Mergin Maps platform to easily collect spatial data, share them with your team and synchronise them across devices.
 ---
 
 # How to Sign Up to Mergin Maps

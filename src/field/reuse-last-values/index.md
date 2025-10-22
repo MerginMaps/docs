@@ -1,3 +1,7 @@
+---
+description: In Mergin Maps mobile app, values from the last feature can be reused when a new feature is created, making digitising of similar features more efficient.  
+---
+
 # How to Reuse Last Entered Values
 
 Reusing last entered values of selected attributes can make digitising of similar features in the <MobileAppNameShort /> faster. When attributes are marked for reuse, the values from the last feature are already entered when a new feature is created.

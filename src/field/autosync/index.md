@@ -1,3 +1,7 @@
+---
+description: Changes in the project can be synced manually or automatically. With automatic sync, your updates are sent to the cloud without needing to press a button.
+---
+
 # Synchronisation in Mergin Maps Mobile App
 [[toc]]
 
@@ -34,7 +38,7 @@ Here, you will see the overview of your local changes.
 ![Mergin maps mobile app Local changes](../mobile-app-ui/mobile-app-local-changes.jpg "Mergin maps mobile app Local changes")
 
 ## Automatic synchronisation
-To allow automatic synchronisation in <MobileAppName />, navigate to **Settings** and toggle on **Automatically sync changes**. 
+To allow automatic synchronisation in <MobileAppName />, navigate to [**Settings**](../mobile-app-ui/#settings) and toggle on **Automatically sync changes**. 
 
 ![Automatically synchronise changes settings in Mergin Maps mobile app](./mobile-app-autosync-settings.jpg "Automatically synchronise changes settings in Mergin Maps mobile app")
 

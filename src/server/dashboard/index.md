@@ -1,3 +1,7 @@
+---
+description: Mergin Maps server administration panel can be used to get an overview of the server usage, manage user access, projects and workspace.
+---
+
 # Administration Panel
 
 [[toc]]

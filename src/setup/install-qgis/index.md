@@ -1,3 +1,7 @@
+---
+description: QGIS is a great open-source GIS tool. QGIS and Mergin Maps is a powerful combination to collect, manage and share your spatial data.
+---
+
 # How to Install QGIS
 
 1. Navigate to the <QGIS link="download/" text="QGIS Download page" />

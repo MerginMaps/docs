@@ -1,3 +1,7 @@
+---
+description: Interested in building a custom mobile app? Mergin Maps mobile app is licensed as open source software, so anything is possible with a bit of development.
+---
+
 # Custom Mobile App
 
 Our mobile app <MobileAppName /> provides seamless synchronisation of field data between mobile devices and <MainPlatformNameLink /> service. However, we know that sometimes people want a mobile app optimised for a specific use case: maybe you just want to change the branding or disable some functionality - or maybe you want a bigger overhaul of the user interface. 

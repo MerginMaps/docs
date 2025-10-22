@@ -1,3 +1,7 @@
+---
+description: In Mergin Maps mobile app, you can use most of the data formats that can be used in QGIS. Here is a list of supported formats and drivers.
+---
+
 # Supported Formats
 <!-- reference -->
 
