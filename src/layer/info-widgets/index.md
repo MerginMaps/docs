@@ -1,8 +1,17 @@
 # Informational Widgets
 [[toc]]
 
-## Display instructions in the form using Text and HTML widget
-Sometimes, you may want to include instructions or tips for surveyors in your forms. <QGIS link="" text="QGIS" /> offers Text and HTML widgets that can be used for this purpose. Your text instructions can include [expressions and field values](#using-expressions-in-text-and-html-widgets) as well. The HTML widget supports various [HTML tags](https://doc.qt.io/qt-6/richtext-html-subset.html#supported-tags), so it can be also used, for instance, to display [online images](#using-html-widget-to-display-online-images-and-other-online-resources).
+<QGISHelp ver="latest" link="/user_manual/working_with_vector/vector_properties.html#other-widgets" text="QGIS" /> also offers widgets that can be added to the form to display values or text, but are not connected to a specific field of the layer. <MainPlatformName /> supports the HTML, Text and [Spacer](#spacer-widget) widget. 
+
+HTML and Text widgets can be used, e.g., to [display instructions](#text-and-html-widget) in the form. The HTML widget supports various [HTML tags](https://doc.qt.io/qt-6/richtext-html-subset.html#supported-tags), so it can be also used, for instance, to display [online images](#using-html-widget-to-display-online-images-and-other-online-resources) or [open local files](#using-html-widget-to-open-local-files).
+
+|<div style="width:150px"> Widget </div> |Preview in the <MobileAppNameShort />|
+|:---:|:---:|
+[Text and HTML Widgets](#text-and-html-widget) | ![Mergin Maps mobile app HTML and Text widgets in attributes form](../form-widgets/mobile-form-info-widgets.webp "Mergin Maps mobile app HTML and Text widgets in attributes form")  |
+
+
+## Text and HTML widget
+The **Text** and **HTML widgets** provide an option to include instructions or tips for surveyors in your attributes forms. These text instructions can include [expressions and field values](#using-expressions-in-text-and-html-widgets) as well. 
 
 These widgets can be found in **Available Widgets** in the **Other Widgets** section when using the [Drag and Drop Designer](../form-layout/#qgis-drag-and-drop-designer).
 ![QGIS HTML and Text Widget](./qgis-form-html-text-widget.jpg "QGIS HTML and Text Widget")
@@ -16,14 +25,14 @@ If you prefer your text to be formatted, you may do so in the **HTML** widget. H
 ...and this is how the Text and HTML widgets look like in the form in QGIS (left) and in the mobile app (right).
 ![Text and HTML widgets in QGIS and in Mergin Maps mobile app](./qgis-form-text-html.jpg "Text and HTML widgets in QGIS and in Mergin Maps mobile app")
 
-## Using expressions in Text and HTML widgets
+### Using expressions in Text and HTML widgets
 Expressions and variables can be used both in the Text and the HTML widget.
 
-![QGIS Configure Text Widget Expression Builder](./qgis-text-widget-expression.gif "QGIS Configure Text Widget Expression Builder")
-
-:::tip
+:::tip Example project available
 Clone <MerginMapsProject id="documentation/form_cascade" /> to follow this example.
 :::
+
+![QGIS Configure Text Widget Expression Builder](./qgis-text-widget-expression.gif "QGIS Configure Text Widget Expression Builder")
 
 1. When configuring the Text or HTML widget, click on the **Expression Builder** button
 2. Enter the expression that will be used in your text and click **OK**.
@@ -33,6 +42,7 @@ Clone <MerginMapsProject id="documentation/form_cascade" /> to follow this examp
 3. Click on the **+** button to add the expression to the text.
 
    Here, we configured the widget with this text:
+   
    `Make sure the number plate [% "VRP" %] is visible in the photo.`
    
    In this case, `VRP` is the name of a field aliased as `Vehicle Registration Plate` in the form.
@@ -42,7 +52,7 @@ Clone <MerginMapsProject id="documentation/form_cascade" /> to follow this examp
 ... and this is how it works during the field survey. `[% "VRP" %]` expression displays the current value of the `Vehicle Registration Plate` field.
 ![Mergin Maps mobile app text widget with variable](./mobile-text-widget-expression.jpg "Mergin Maps mobile app text widget with variable")
 
-## Using HTML widget to display online images and other online resources
+## Display online images and other online resources using HTML widget {#using-html-widget-to-display-online-images-and-other-online-resources}
 The **HTML widget** can be also used to display online images in the mobile app or open online resources, such as PDF files, videos or websites, in the browser of your device.
 
 ::: tip
@@ -73,7 +83,7 @@ QGIS may not display the preview of the online image if you use QGIS 3.36 or hig
 :::
 
 
-## Using HTML widget to open local files
+## Open local files using HTML widget {#using-html-widget-to-open-local-files}
 The HTML widget can also be used to open local files: for instance, a locally stored PDF file can be opened from within the form during the survey.
 
 ::: tip
