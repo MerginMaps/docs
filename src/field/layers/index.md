@@ -19,6 +19,27 @@ The visibility of layers on the map can be easily turned on and off by toggling 
 
 ![Mergin Maps mobile app Layers visibility](./mobile-app-layers-off.jpg "Mergin Maps mobile app Layers visibility")
 
+## Layer order
+By default, layers are listed in alphabetical order. If you want to follow the layer order of the QGIS project, you can do so in the [Project properties](../../gis/features/#layer-order):
+
+1. Open your <MainPlatformName /> project in QGIS
+   ![Layer order setup in QGIS Mergin Maps project](./qgis-layer-order.jpg "Layer order setup in QGIS Mergin Maps project")
+
+2. Navigate to **Project** > **Properties** 
+   ![QGIS Project Properties](../../gis/qgis-project-properties.jpg "QGIS Project Properties")
+   
+3. In the <MainPlatformName /> tab, choose the sort method: *Alphabetical* or *QGIS layer order*.
+   ![Layer order setup in QGIS Mergin Maps project](../../gis/features/project-layer-order.jpg "Layer order setup in QGIS Mergin Maps project")
+
+4. **Apply** the changes, save and synchronise your project.
+
+5. Open the project in the <MobileAppNameShort />.
+   
+   Depending on the setup, layers will be either listed alphabetically or based on the QGIS layer order:
+   
+   ![Layer order setup in Mergin Maps mobile app](./mobile-app-layer-order.jpg "Layer order setup in Mergin Maps mobile app")
+   
+
 ## Layers legend and features
 Select a layer in the **Layers** panel to browse features and [search for attributes values](#browsing-features). Tap on the record to zoom to the feature on the map and display its form.
 
