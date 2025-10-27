@@ -13,7 +13,7 @@ There are cases when multiple records from one layer (or table) relate to one fe
 |:---:|:---:|
 | [Relation](../one-to-n-relations/)   | ![Mergin Maps mobile app relation form](../form-widgets/mobile-form-relations-preview.jpg "Mergin Maps mobile app relation form")  |
 |[Relation - Gallery ](../photos/#how-to-attach-multiple-photos-to-one-feature) | ![Mergin Maps mobile app multiple photos attributes form](../form-widgets/mobile-form-multiple-photo-preview.jpg "Mergin Maps mobile app multiple photos attributes form") |
-| [Relation reference](#referencing-child-layer-attributes-form)   | ![Mergin Maps mobile app relation reference form](./mobile-form-relation-reference-preview.webp "Mergin Maps mobile app relation reference form")  |
+| [Relation reference](#referencing-child-layer-attributes-form-relation-reference-widget)   | ![Mergin Maps mobile app relation reference form](./mobile-form-relation-reference-preview.webp "Mergin Maps mobile app relation reference form")  |
 
 :::tip Example projects and guides available
 You can take a closer look at 1-N relations:

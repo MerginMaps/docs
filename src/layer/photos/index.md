@@ -124,7 +124,7 @@ In some situations, it might be useful to take more than one picture of a featur
 
 |<div style="width:150px"> Widget </div> |Preview in the <MobileAppNameShort />|
 |:---:|:---:|
-|[Relation - Gallery ](../photos/#how-to-attach-multiple-photos-to-features) | ![Mergin Maps mobile app multiple photos attributes form](../form-widgets/mobile-form-multiple-photo-preview.jpg "Mergin Maps mobile app multiple photos attributes form") |
+|Relation - Gallery | ![Mergin Maps mobile app multiple photos attributes form](../form-widgets/mobile-form-multiple-photo-preview.jpg "Mergin Maps mobile app multiple photos attributes form") |
 
 :::tip Example project available
 To see this setup in practice, you can download this public project <MerginMapsProject id="documentation/forms_multiple_photos" />.
