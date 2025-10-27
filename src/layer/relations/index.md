@@ -12,14 +12,14 @@ There are cases when multiple records from one layer (or table) relate to one fe
 |<div style="width:150px"> Widget </div> |Preview in the <MobileAppNameShort />|
 |:---:|:---:|
 | [Relation](../one-to-n-relations/)   | ![Mergin Maps mobile app relation form](../form-widgets/mobile-form-relations-preview.jpg "Mergin Maps mobile app relation form")  |
-|[Relation - Gallery ](../photos/#how-to-attach-multiple-photos-to-features) | ![Mergin Maps mobile app multiple photos attributes form](../form-widgets/mobile-form-multiple-photo-preview.jpg "Mergin Maps mobile app multiple photos attributes form") |
+|[Relation - Gallery ](../photos/#how-to-attach-multiple-photos-to-one-feature) | ![Mergin Maps mobile app multiple photos attributes form](../form-widgets/mobile-form-multiple-photo-preview.jpg "Mergin Maps mobile app multiple photos attributes form") |
 | [Relation reference](#referencing-child-layer-attributes-form)   | ![Mergin Maps mobile app relation reference form](./mobile-form-relation-reference-preview.webp "Mergin Maps mobile app relation reference form")  |
 
 :::tip Example projects and guides available
 You can take a closer look at 1-N relations:
 - Public project <MerginMapsProject id="documentation/forms-relations" /> contains the setup described on this page as well as sample data
 - [How to Link Multiple Records to One Feature](../one-to-n-relations/) explains how to add multiple **records** to a single feature. See also our public project: <MerginMapsProject id="documentation/forms_one-to-many-relations" />
-- [How to Attach Multiple Photos to Features ](../photos/#how-to-attach-multiple-photos-to-features) shows how to add multiple **photos** to a single feature. See also our public project: <MerginMapsProject id="documentation/forms_multiple_photos" />
+- [How to Attach Multiple Photos to Features ](../photos/#how-to-attach-multiple-photos-to-one-feature) shows how to add multiple **photos** to a single feature. See also our public project: <MerginMapsProject id="documentation/forms_multiple_photos" />
 :::
 
 As an example, we will use a project with two spatial layers: **parks** and **amenities**. One park can have multiple amenities, such as benches, picnic tables, fireplaces or water fountains. Every amenity feature can be located in one park only. Thus, the relation between these layers is one to many (1-*N*): 1 park to *N* amenities. 

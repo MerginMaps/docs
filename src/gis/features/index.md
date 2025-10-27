@@ -19,7 +19,7 @@ In [Creating a Project in QGIS](../../tutorials/creating-a-project-in-qgis/) you
 
 ## Survey layers
 Vector layers can be used as survey layers in your <MainPlatformName /> project. You can apply styles and set up the forms to make your field survey easier. 
-The same applies for non-spatial layers that can be used on their own to add new data or linked to a spatial layer, e.g. when linking multiple [photos](../../layer/photos/#how-to-attach-multiple-photos-to-features) or [records](../../layer/one-to-n-relations/). They can be also used in [value relation](../../layer/value-select/#value-relation) widgets.
+The same applies for non-spatial layers that can be used on their own to add new data or linked to a spatial layer, e.g. when linking multiple [photos](../../layer/photos/#how-to-attach-multiple-photos-to-one-feature) or [records](../../layer/one-to-n-relations/). They can be also used in [value relation](../../layer/value-select/#value-relation) widgets.
 
 Making changes in the data schema of layers can lead to issues in the synchronisation process. Be careful to [**deploy the revised project properly**](../../manage/deploy-new-project/). Design the data schema carefully when creating a layer to avoid the need to change it later.
 
