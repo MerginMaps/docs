@@ -1,5 +1,5 @@
-# Show and hide fields depending on a field value (conditional visibility)
-Conditional visibility can be applied to groups and tabs, meaning they will be displayed or hidden depending on the value of a field.
+# Conditional Visibility
+Conditional visibility can be applied to groups and tabs, so that they will be displayed or hidden depending on the value of a field.
 
 :::tip Example project available
 You can explore this functionality in <MerginMapsProject id="documentation/form_setup" />. 
