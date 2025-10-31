@@ -39,7 +39,7 @@ The **Text Edit** widget offers the option to store multiple lines within a sing
 In the <MobileAppNameShort />, the **multiline text edit widget** looks like this:
 ![Mergin Maps mobile app multiline text field form](./mobile-form-text-multiline.jpg "Mergin Maps mobile app multiline text field form")
 
-## Recording text options
+## Voice input
 
 In the <MobileAppNameShort />, the text can be entered manually or using voice-to-text (if your mobile device supports this feature).
 
