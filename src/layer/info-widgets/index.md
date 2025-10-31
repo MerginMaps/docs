@@ -1,7 +1,7 @@
 # Informational Widgets
 [[toc]]
 
-<QGISHelp ver="latest" link="/user_manual/working_with_vector/vector_properties.html#other-widgets" text="QGIS" /> also offers widgets that can be added to the form to display values or text, but are not connected to a specific field of the layer. <MainPlatformName /> supports the HTML, Text and [Spacer](#spacer-widget) widget. 
+<QGISHelp ver="latest" link="/user_manual/working_with_vector/vector_properties.html#other-widgets" text="QGIS" /> also offers widgets that can be added to the form to display values or text, but are not connected to a specific field of the layer. <MainPlatformName /> supports the HTML, Text and [Spacer](../form-layout/#spacer-widget) widget. 
 
 HTML and Text widgets can be used, e.g., to [display instructions](#text-and-html-widget) in the form. The HTML widget supports various [HTML tags](https://doc.qt.io/qt-6/richtext-html-subset.html#supported-tags), so it can be also used, for instance, to display [online images](#using-html-widget-to-display-online-images-and-other-online-resources) or [open local files](#using-html-widget-to-open-local-files).
 
@@ -107,16 +107,3 @@ Local files can be displayed in the form also using [default values](../open-fil
 
 In the <MerginMapsProject id="documentation/forms-display-images-and-files" /> project, you can explore and compare both alternatives.
 :::
-
-## Spacer widget
-<Badge text="since QGIS 3.30" type="tip"/>
-The Spacer widget can be useful if you want to have some space between the fields in your form or add a horizontal line. 
-
-It can be found in *Available Widgets* in the *Other Widgets* section when using the [Drag and Drop Designer](../form-layout/#qgis-drag-and-drop-designer).
-![QGIS forms Spacer Widget](./qgis-form-spacer-widget.jpg "QGIS Spacer Widget")
-
-When adding the spacer widget to the form, there is an option to check the **Draw horizontal line** option. Otherwise, a vertical space will be added to the form.
-![QGIS Spacer Widget configuration](./qgis-configure-spacer-widget.jpg "QGIS Spacer Widget configuration")
-
-And this how the spacer widget looks like in the form in QGIS (left) and in the mobile app (right).
-![Spacer widget in QGIS and mobile app form](./spacer-widget-forms.jpg "Spacer widget in QGIS and mobile app form")
