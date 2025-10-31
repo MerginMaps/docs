@@ -1,7 +1,7 @@
 # Attributes Form Layout
 [[toc]]
 
-Collecting and editing data in the field can be more efficient with forms that are easy to navigate. QGIS offers a lot of options for improving the layout of your forms, such as using groups and tabs to keep related fields together, displaying or hiding a group of fields based on conditional visibility, or displaying tips and instructions in the forms.
+Collecting and editing data in the field can be more efficient with forms that are easy to navigate. QGIS offers a lot of options for improving the layout of your forms, such as using [tabs and groups](../tabs-and-groups/) to keep related fields together, displaying or hiding a group of fields based on [conditional visibility](../conditional-visibility/), or displaying tips and instructions in the forms using the [Text or HTML widget](../info-widgets/). The starting point for creating a form is [QGIS Drag and Drop Designer](#qgis-drag-and-drop-designer).
 
 
 ## QGIS Drag and Drop Designer
