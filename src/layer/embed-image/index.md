@@ -1,10 +1,16 @@
 # How to Embed an Image
-The [**HTML widget**](/info-widgets/) can be used to display online images in the <MobileAppNameShort />.
+[[toc]]
+
+
+## Photo
+A photo can be displayed in the form as described in [Displaying photos in QGIS](../photos/#displaying-photos-in-qgis).
+
+## Online image
+The [**HTML widget**](../info-widgets/) can be used to display online images in the <MobileAppNameShort /> as described in [Using HTML widget to display online images and other online resources ](../info-widgets/#using-html-widget-to-display-online-images-and-other-online-resources)
 
 ::: tip Example project available
 Clone <MerginMapsProject id="documentation/forms-display-images-and-files" /> to how this works.
 :::
-
 
 Your layer should contain a text field for storing the full URL link (here: `link`). 
 
