@@ -1,6 +1,8 @@
 # How to Use Hyperlinks
 [[toc]]
 
+Attributes forms can include clickable links that can be used to [open a link in a browser](#open-link-in-a-browser) or [open a navigation app](#open-link-to-a-navigation-app) directly from the form in <MobileAppName />.  
+
 ## Open link in a browser
 
 1. Right-click on a layer, select **Properties** and go to the **Attributes form** tab.
