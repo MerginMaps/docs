@@ -1,4 +1,4 @@
-# Select value from a drop-down menu
+# Selecting a Single or Multiple Values
 [[toc]]
 
 Selecting values from a drop-down menu is faster than typing them in manually and it also ensures that there are no typos or spelling variations. 
