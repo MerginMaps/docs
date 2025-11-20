@@ -78,10 +78,10 @@ export default {
         collapsed: true,
         items: [
            { text: 'Geotagging', link: '/layer/exif/' },
-           { text: 'Extra Variables', link: '/layer/extra-variables/' }
+           { text: 'Variables', link: '/layer/variables/' }
         ] },
         { text: 'Constraints', link: '/layer/constraints/' },        
-        { text: 'Attributes Form Layout', link: '/layer/form-layout/', 
+        { text: 'Layout', link: '/layer/form-layout/',
         collapsed: true,
         items: [
            { text: 'Tabs and Groups', link: '/layer/tabs-and-groups/' },

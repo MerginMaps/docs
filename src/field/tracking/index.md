@@ -32,7 +32,7 @@ Enabled tracking means that a new line layer for tracking will be created in you
 | `total_distance`         | Real           | `$length`              | Tracked distance |
 | `tracked_by`             | String         | `@mm_username`     | Name of the current <MainPlatformNameLink /> user |
 
-You can add new fields as needed, however, they should be set up with automatically generated [default values](../../layer/default-values/) as <MobileAppName /> will not open the form for manual inputs. You may use some of the QGIS functions, [extra position variables](../../layer/extra-variables/#extra-position-variables) or [extra QGIS variables](../../layer/extra-variables/#extra-qgis-variables).
+You can add new fields as needed, however, they should be set up with automatically generated [default values](../../layer/default-values/) as <MobileAppName /> will not open the form for manual inputs. You may use some of the QGIS functions, [position variables](../../layer/variables/#position-variables) or [project and user variables ](../../layer/variables/#project-and-user-variables).
 
 ## Using position tracking in Mergin Maps mobile app
 

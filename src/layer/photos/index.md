@@ -16,7 +16,7 @@ Adding photos to a surveyed feature can be really helpful. With <MainPlatformNam
 
 |<div style="width:150px"> Widget </div> |Preview in the <MobileAppNameShort />|
 |:---:|:---:|
-[Single Photo](#photo-attachment-widget-in-qgis) | ![Mergin Maps mobile app attachment field form](../form-widgets/mobile-form-photo-preview.jpg "Mergin Maps mobile app attachment field form")  ![Mergin Maps mobile app attachment field form](../form-widgets/mobile-form-photo-preview2.jpg "Mergin Maps mobile app attachment field form")  |
+[Single Photo](#photo-attachment-widget-in-qgis) | ![Mergin Maps mobile app attachment field form](../form-widgets/mobile-form-photo-preview2.jpg "Mergin Maps mobile app attachment field form")  |
 |[ Multiple Photos (Gallery) ](#how-to-attach-multiple-photos-to-one-feature) | ![Mergin Maps mobile app multiple photos attributes form](../form-widgets/mobile-form-multiple-photo-preview.jpg "Mergin Maps mobile app multiple photos attributes form") |
 
 
@@ -115,8 +115,8 @@ Now when you click on a feature that contains a photo, it will be displayed in t
 
 ![Mergin Maps mobile app photo displayed in form](./qgis-form-view-photo.jpg "Mergin Maps mobile app photo displayed in form")
 
-::: warning Image preview in QGIS 3.36+
-QGIS may not display the preview of the image if you use QGIS 3.36 or higher. Despite this behaviour, the <MobileAppNameShort /> displays it correctly. Therefore we recommend trying the setup by opening the form in the <MobileAppNameShort /> to make sure it works as intended.
+::: details Image preview in QGIS
+Some QGIS versions may not display the preview of the image correctly. This issue does not occur in <MobileAppNameShort />. Therefore we recommend trying the setup by opening the form in the <MobileAppNameShort /> to make sure it works as intended.
 :::
 
 

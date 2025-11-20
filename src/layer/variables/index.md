@@ -7,8 +7,8 @@ description: Mergin Maps variables (username, user email or project name) or GPS
 There are some useful variables that can be used as [default values](../default-values/). 
 
 Here you can find the lists of:
-- [extra QGIS variables](#extra-qgis-variables) introduced by <QGISPluginName /> that can be used to record information related to <MainPlatformNameLink /> workspace, project or users
-- [extra position variables](#extra-position-variables) that can be used to record GPS information
+- [project and user variables](#project-and-user-variables) introduced by <QGISPluginName /> that can be used to record information related to <MainPlatformNameLink /> workspace, project or users
+- [position variables](#position-variables) that can be used to record GPS information
 
 ## Project and user variables
 

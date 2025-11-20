@@ -28,7 +28,7 @@ https://help.cloudmergin.com/plugin-installation	https://merginmaps.com/docs/set
 https://help.cloudmergin.com/plugin-logs	https://merginmaps.com/docs/misc/troubleshoot/
 https://help.cloudmergin.com/plugin-new-project	https://merginmaps.com/docs/manage/create-project/
 https://help.cloudmergin.com/plugin-sync-project	https://merginmaps.com/docs/manage/plugin/
-https://help.cloudmergin.com/plugin-variables	https://merginmaps.com/docs/layer/extra-variables/
+https://help.cloudmergin.com/plugin-variables	https://merginmaps.com/docs/layer/variables/
 https://help.cloudmergin.com/project-advanced	https://merginmaps.com/docs/manage/project-advanced/
 https://help.cloudmergin.com/project-details	https://merginmaps.com/docs/manage/project-history/
 https://help.cloudmergin.com/quick-start	https://merginmaps.com/docs/tutorials/capturing-first-data/
@@ -62,7 +62,7 @@ https://help.inputapp.io/howto/exif_metadata	https://merginmaps.com/docs/layer/e
 https://help.inputapp.io/howto/external_gps	https://merginmaps.com/docs/field/external_gps/
 https://help.inputapp.io/howto/gps_accuracy	https://merginmaps.com/docs/field/gps_accuracy/
 https://help.inputapp.io/howto/package_qgis_project	https://merginmaps.com/docs/manage/create-project/
-https://help.inputapp.io/howto/position_variables	https://merginmaps.com/docs/layer/extra-variables/
+https://help.inputapp.io/howto/position_variables	https://merginmaps.com/docs/layer/variables/
 https://help.inputapp.io/howto/proj	https://merginmaps.com/docs/gis/proj/
 https://help.inputapp.io/howto/project_config	https://merginmaps.com/docs/gis/features/
 https://help.inputapp.io/howto/registration	https://merginmaps.com/docs/setup/sign-up-to-mergin-maps/
@@ -140,7 +140,7 @@ https://merginmaps.com/docs/howto/manage/plugin/install/	https://merginmaps.com/
 https://merginmaps.com/docs/howto/manage/plugin/plugin-delete-project/	https://merginmaps.com/docs/manage/project-advanced/
 https://merginmaps.com/docs/howto/manage/plugin/plugin-new-project/	https://merginmaps.com/docs/manage/create-project/
 https://merginmaps.com/docs/howto/manage/plugin/plugin-sync-project/	https://merginmaps.com/docs/manage/plugin/
-https://merginmaps.com/docs/howto/manage/plugin/plugin-variables/	https://merginmaps.com/docs/layer/extra-variables/
+https://merginmaps.com/docs/howto/manage/plugin/plugin-variables/	https://merginmaps.com/docs/layer/variables/
 https://merginmaps.com/docs/howto/manage/troubleshoot/	https://merginmaps.com/docs/misc/troubleshoot/
 https://merginmaps.com/docs/howto/manage/web/dashboard/	https://merginmaps.com/docs/manage/dashboard/
 https://merginmaps.com/docs/howto/manage/web/project-advanced/	https://merginmaps.com/docs/manage/project-advanced/
@@ -151,7 +151,7 @@ https://merginmaps.com/docs/howto/manage/web/web-create-project/	https://merginm
 https://merginmaps.com/docs/howto/manage/web/working-with-organisations/	https://merginmaps.com/docs/manage/workspaces/
 https://merginmaps.com/docs/howto/mergince/	https://merginmaps.com/docs/server/
 https://merginmaps.com/docs/howto/mergin-tour/	https://merginmaps.com/docs/tutorials/creating-a-project-in-qgis/
-https://merginmaps.com/docs/howto/position_variables/	https://merginmaps.com/docs/layer/extra-variables/
+https://merginmaps.com/docs/howto/position_variables/	https://merginmaps.com/docs/layer/variables/
 https://merginmaps.com/docs/howto/proj/	https://merginmaps.com/docs/gis/proj/
 https://merginmaps.com/docs/howto/project/enable_browsing/	https://merginmaps.com/docs/gis/search_data/
 https://merginmaps.com/docs/howto/project/enable_digitising/	https://merginmaps.com/docs/gis/enable_digitising/
@@ -172,8 +172,8 @@ https://merginmaps.com/docs/layer/best-practice/	https://merginmaps.com/docs/lay
 https://merginmaps.com/docs/layer/exif_metadata/	https://merginmaps.com/docs/layer/exif/
 https://merginmaps.com/docs/layer/form-configuration/	https://merginmaps.com/docs/layer/overview/
 https://merginmaps.com/docs/layer/non-spatial-data/	https://merginmaps.com/docs/layer/overview/
-https://merginmaps.com/docs/layer/position_variables/	https://merginmaps.com/docs/layer/extra-variables/
-https://merginmaps.com/docs/layer/plugin-variables/	https://merginmaps.com/docs/layer/extra-variables/
+https://merginmaps.com/docs/layer/position_variables/	https://merginmaps.com/docs/layer/variables/
+https://merginmaps.com/docs/layer/plugin-variables/	https://merginmaps.com/docs/layer/variables/
 https://merginmaps.com/docs/layer/settingup_forms/	https://merginmaps.com/docs/layer/form-widgets/
 https://merginmaps.com/docs/layer/settingup_forms_photo/	https://merginmaps.com/docs/layer/photos/
 https://merginmaps.com/docs/layer/settingup_forms_settings/	https://merginmaps.com/docs/layer/overview/
