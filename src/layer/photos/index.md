@@ -120,7 +120,7 @@ Some QGIS versions may not display the preview of the image correctly. This issu
 :::
 
 
-## Attaching multiple photos to one feature {how-to-attach-multiple-photos-to-one-feature}
+## Attaching multiple photos to one feature {#how-to-attach-multiple-photos-to-one-feature}
 
 In some situations, it might be useful to take more than one picture of a feature during the field survey. Attaching multiple photos to one feature is a **one to many relation**. You can read more about this topic in general in [Relations](../relations).
 

@@ -23,7 +23,7 @@ You can take a closer look at 1-N relations:
 - [How to Attach Multiple Photos to Features ](../photos/#how-to-attach-multiple-photos-to-one-feature) shows how to add multiple **photos** to a single feature. See also our public project: <MerginMapsProject id="documentation/forms_multiple_photos" />
 :::
 
-There are two ways to add features with relations in the <MobileAppNameShort />: using the [relation widget](#relation-widget) on the parent layer or using the [relation reference widget](#relation-reference-widget) on the child layer:
+There are two ways to add features with relations in the <MobileAppNameShort />: using the [relation widget](#referenced-parent-layer-attributes-form-relations-widget) on the parent layer or using the [relation reference widget](#referencing-child-layer-attributes-form-relation-reference-widget) on the child layer:
 
 ![Mergin Maps mobile app relation widgets](./mobile-relation-widgets.gif "Mergin Maps mobile app relation widgets")
 
@@ -93,7 +93,7 @@ Attributes form for both linked layers can be set up as needed, depending on the
 - Child features can be added through the form of the [referenced (parent) layer](#referenced-parent-layer-attributes-form-relations-widget), meaning you can use the attributes form of the **parks** layer to add/edit/remove **amenities**.
 - Child features can be added through the form of the [referencing (child) layer](#referencing-child-layer-attributes-form-relation-reference-widget). A new feature can be added to the **amenities** layer and the link to the corresponding **park** feature is set manually in the attributes form.
 
-Both options work both in QGIS and in the [<MobileAppNameShort />](#relation-widgets-in-mergin-maps-mobile-app).
+Both options work both in QGIS and in the <MobileAppNameShort />.
 
 ### Referenced (parent) layer attributes form - relations widget
 Explore the attributes form of the referenced (parent) layer **parks**:
@@ -158,4 +158,4 @@ Did you follow these steps and do you see something like this? If the referencin
 To display the [relations widget](#referenced-parent-layer-attributes-form-relations-widget) without the gallery, use `nogallery` in the relation name or label.
 :::
 
-Recommended setup for gallery is explained in [Attaching multiple photos to one feature ](#attaching-multiple-photos-to-one-feature).
+Recommended setup for gallery is explained in [Attaching multiple photos to one feature ](../photos/#how-to-attach-multiple-photos-to-one-feature).
