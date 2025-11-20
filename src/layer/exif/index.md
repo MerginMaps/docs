@@ -1,3 +1,7 @@
+---
+description: EXIF is a file format for storing metadata in image files. Mergin Maps mobile app can store EXIF metadata values in the fields of survey layers.
+---
+
 # Geotagging
 [[toc]]
 

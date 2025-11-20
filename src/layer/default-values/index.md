@@ -1,5 +1,9 @@
+---
+description: Default values can be used to automatically fill in the fields in the form using values, variables or expressions.
+---
+
 # Default values
-Default values can be used to automatically record, e.g, the name of the surveyor, date and time of the survey, latitude and longitude of a feature or to have frequently used values filled in advance (see <QGISHelp ver="latest" link="user_manual/working_with_vector/vector_properties.html#default-values" text="QGIS documentation" />). 
+Default values can be used to automatically record, e.g. the name of the surveyor, date and time of the survey, latitude and longitude of a feature or to have frequently used values filled in advance (see <QGISHelp ver="latest" link="user_manual/working_with_vector/vector_properties.html#default-values" text="QGIS documentation" />). 
 
 Fields with default values can be hidden from the attributes form if they are used to store data that are not expected to be modified manually.
 

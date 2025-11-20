@@ -1,3 +1,7 @@
+---
+description: Hyperlinks can be used in the attributes form in Mergin Maps mobile app to open a link in a browser or a navigation app directly from the feature's form.
+---
+
 # How to Use Hyperlinks
 [[toc]]
 

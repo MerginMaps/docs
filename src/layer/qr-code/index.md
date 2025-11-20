@@ -1,3 +1,7 @@
+---
+description: A field in the form can be set up for QR code scanning. Scan QR codes with your mobile device to fill in the values.
+---
+
 # QR code
 
 You can scan QR codes with your mobile device to fill in a field in the form.

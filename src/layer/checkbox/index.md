@@ -1,3 +1,7 @@
+---
+description: The checkbox widget is useful when you need a simple yes/no, true/false, or on/off toggle in the attributes form. 
+---
+
 # Checkbox
 
 The checkbox widget is handy when you want to set up a field that can have two values, such as true/false, Yes/No, or On/Off. 
@@ -5,7 +9,7 @@ The checkbox widget is handy when you want to set up a field that can have two v
 |<div style="width:150px"> Widget </div> |Preview in the <MobileAppNameShort />|
 |:---:|:---:|
 | [True/false checkbox](#true-false-checkbox-for-boolean-fields)   | ![Mergin Maps mobile app numeric field form](./mobile-form-checkbox-preview.webp "Mergin Maps mobile app numeric field form")  |
-| [Checkbox with custom values](#checkbox-with-custom-values-yes-no)   | ![Mergin Maps mobile app numeric field form](./mobile-form-checkbox-string-preview.webp "Mergin Maps mobile app numeric field form")  |
+
 
 :::tip Example project available
 Checkbox widget is used in this public project <MerginMapsProject id="documentation/form-widgets" />. Download or clone it to see the setup.

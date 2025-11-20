@@ -1,4 +1,7 @@
 ---
+
+description: Do you need to link multiple records to one feature in Mergin Maps? Set up 1-N relations between your layers in QGIS.
+
 outline: 2,3
 ---
 

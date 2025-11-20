@@ -1,9 +1,11 @@
+---
+description: Our Widget Gallery provides an overview of QGIS form widgets supported by the Mergin Maps mobile app. Find the best widget for your survey form!
+---
+
 # Form Widgets
 
 Form widgets define the way you can enter values in the form, both in QGIS and in the <MobileAppNameShort />. The configuration of form widgets in your <MainPlatformNameLink /> project is done in QGIS.
 
-Do you prefer a video? Check out this tutorial on how to configure QGIS widgets for survey forms.
-<YouTube id="jc4p1PpXj3k" title="Widgets for survey forms" />
 
 ## Setting up form widgets
 

@@ -1,3 +1,7 @@
+---
+description: Instructions or tips for surveyors can be displayed in the form using HTML and Text widgets. They can include field values, variables or expressions.
+---
+
 # How to Display Instructions in the Form
 The HTML and Text widgets can be used to display instructions in the form, as described in [Informational Widgets ](../info-widgets/).
 

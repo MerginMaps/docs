@@ -1,3 +1,7 @@
+---
+description: In Mergin Maps, multiple photos can be attached to one feature. Set up 1-N relations in QGIS to display a photo gallery in the features form.
+---
+
 # How to Attach Multiple Photos to Features
 
 

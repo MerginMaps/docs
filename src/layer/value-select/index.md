@@ -1,4 +1,8 @@
-# Selecting a Single or Multiple Values
+---
+description: To select values from a drop-down menu in the form in Mergin Maps mobile app, you can use the Value Map or Value Relation widgets.
+---
+
+# Selecting Single or Multiple Values
 [[toc]]
 
 Selecting values from a drop-down menu is faster than typing them in manually and it also ensures that there are no typos or spelling variations. 

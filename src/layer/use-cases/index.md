@@ -1,3 +1,7 @@
+---
+description: Our step-by-step guides provide detailed descriptions accompanied by public Mergin Maps projects you can clone and explore in more detail.
+---
+
 # Use Cases
 
 Here you can find some common use cases that can help you deal with specific scenarios. 

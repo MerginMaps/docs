@@ -1,3 +1,7 @@
+---
+description: Date or Date and Time widgets are used to record date and time, e.g. when a feature was created or updated.
+---
+
 # Date and time
 
 **Date** or **Date and Time** fields can be used to record date and time. The most common use is to record when a feature was created or updated. This can be done manually or automatically by using [default values](../default-values/).

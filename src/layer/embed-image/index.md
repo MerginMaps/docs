@@ -1,6 +1,9 @@
+---
+description: HTML widget can be used to embed an online image in the attributes form of your survey layer.
+---
+
 # How to Embed an Image
 [[toc]]
-
 
 ## Photo
 A photo can be displayed in the form as described in [Displaying photos in QGIS](../photos/#displaying-photos-in-qgis).

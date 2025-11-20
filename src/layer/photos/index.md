@@ -1,4 +1,6 @@
 ---
+description: Capture photos with Mergin Maps mobile app using photo attachment widget in QGIS. Photos can be stored in a custom folder, resized and renamed automatically.
+
 outline: deep
 ---
 
@@ -14,8 +16,8 @@ Adding photos to a surveyed feature can be really helpful. With <MainPlatformNam
 
 |<div style="width:150px"> Widget </div> |Preview in the <MobileAppNameShort />|
 |:---:|:---:|
-[Attachment - Photos from device's camera or gallery](#photo-attachment-widget-in-qgis) | ![Mergin Maps mobile app attachment field form](../form-widgets/mobile-form-photo-preview.jpg "Mergin Maps mobile app attachment field form")  ![Mergin Maps mobile app attachment field form](../form-widgets/mobile-form-photo-preview2.jpg "Mergin Maps mobile app attachment field form")  |
-|[Relation - Gallery ](#how-to-attach-multiple-photos-to-one-feature) | ![Mergin Maps mobile app multiple photos attributes form](../form-widgets/mobile-form-multiple-photo-preview.jpg "Mergin Maps mobile app multiple photos attributes form") |
+[Single Photo](#photo-attachment-widget-in-qgis) | ![Mergin Maps mobile app attachment field form](../form-widgets/mobile-form-photo-preview.jpg "Mergin Maps mobile app attachment field form")  ![Mergin Maps mobile app attachment field form](../form-widgets/mobile-form-photo-preview2.jpg "Mergin Maps mobile app attachment field form")  |
+|[ Multiple Photos (Gallery) ](#how-to-attach-multiple-photos-to-one-feature) | ![Mergin Maps mobile app multiple photos attributes form](../form-widgets/mobile-form-multiple-photo-preview.jpg "Mergin Maps mobile app multiple photos attributes form") |
 
 
 :::tip Example projects available
@@ -118,7 +120,7 @@ QGIS may not display the preview of the image if you use QGIS 3.36 or higher. De
 :::
 
 
-## How to attach multiple photos to one feature
+## Attaching multiple photos to one feature {how-to-attach-multiple-photos-to-one-feature}
 
 In some situations, it might be useful to take more than one picture of a feature during the field survey. Attaching multiple photos to one feature is a **one to many relation**. You can read more about this topic in general in [Relations](../relations).
 

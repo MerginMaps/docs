@@ -1,3 +1,7 @@
+---
+description: See how to set up Editable Range or Range Slider to record numbers in the forms in Mergin Maps mobile app.
+---
+
 # Numbers
 
 Number fields can be handled by the **Range** widget. Two options are supported by the <MobileAppNameShort />: [editable range](#range) and [slider](#slider). 

@@ -1,3 +1,7 @@
+---
+description: The Text Edit widget can be used for single-line or multiline text inputs.
+---
+
 # Text
 
 Adding or editing text is the most common method for inserting information within the forms. The **Text Edit** widget can be used for single-line or [multiline](#multiline-text) text inputs for fields with `Text (string)` or `varchar` data types.

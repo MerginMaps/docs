@@ -1,3 +1,7 @@
+---
+description: Conditional visibility can be applied to groups and tabs, so that they will be displayed or hidden in the form depending on the value of a field.
+---
+
 # Conditional Visibility
 Conditional visibility can be applied to groups and tabs, so that they will be displayed or hidden depending on the value of a field.
 

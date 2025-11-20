@@ -70,7 +70,7 @@ export default {
            { text: 'Numbers', link: '/layer/numbers/' },
            { text: 'Checkbox', link: '/layer/checkbox/' },
            { text: 'QR Code', link: '/layer/qr-code/' },
-           { text: 'Selecting a Single or Multiple Values', link: '/layer/value-select/' },
+           { text: 'Selecting Single or Multiple Values', link: '/layer/value-select/' },
            { text: 'Photos', link: '/layer/photos/' },
            { text: 'Informational Widgets', link: '/layer/info-widgets/' },
         ] },

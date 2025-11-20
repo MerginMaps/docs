@@ -1,4 +1,8 @@
-# Extra Variables
+---
+description: Mergin Maps variables (username, user email or project name) or GPS position variables can be used in QGIS expressions and as default values in forms.
+---
+
+# Variables
 
 There are some useful variables that can be used as [default values](../default-values/). 
 
@@ -6,7 +10,7 @@ Here you can find the lists of:
 - [extra QGIS variables](#extra-qgis-variables) introduced by <QGISPluginName /> that can be used to record information related to <MainPlatformNameLink /> workspace, project or users
 - [extra position variables](#extra-position-variables) that can be used to record GPS information
 
-## Extra QGIS variables
+## Project and user variables
 
 The <QGISPluginName /> adds several variables that can be used in QGIS expressions:
 
@@ -22,7 +26,7 @@ The <QGISPluginName /> adds several variables that can be used in QGIS expressio
 
 A common use case is to use `@mergin_username` as the [default value](../default-values/) for one of the fields in a survey layer to automatically track who has added (and/or modified) a particular record.
 
-## Extra Position Variables
+## Position Variables
 
 With <MobileAppName />, it is possible to access GPS information using extra position variables. Note that location permission has to be allowed and location service enabled.
 

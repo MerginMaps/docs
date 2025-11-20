@@ -1,3 +1,7 @@
+---
+description: A local file, e.g. a PDF stored in the project folder, can be opened from within the form using the HTML widget.
+---
+
 # How to Open a File
 [[toc]]
 

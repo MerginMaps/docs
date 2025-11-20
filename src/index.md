@@ -77,7 +77,7 @@ The ecosystem consist of various components:
    - [Numbers](./layer/numbers/)
    - [Checkbox](./layer/checkbox/)
    - [QR code](./layer/qr-code/)
-   - [Select value from a drop-down menu](./layer/value-select/)
+   - [Selecting Single or Multiple Values ](./layer/value-select/)
    - [Photos](./layer/photos/)
    - [Informational Widgets](./layer/info-widgets/)
 - [Default Values](./layer/constraints/)

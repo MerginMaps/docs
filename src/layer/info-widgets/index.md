@@ -1,3 +1,7 @@
+---
+description: HTML and Text widgets are not connected to a specific field of the layer and can be configured to display instructions, online images or open local files.
+---
+
 # Informational Widgets
 [[toc]]
 
