@@ -4,11 +4,11 @@ description: Date or Date and Time widgets are used to record date and time, e.g
 
 # Date and time
 
-**Date** or **Date and Time** fields can be used to record date and time. The most common use is to record when a feature was created or updated. This can be done manually or automatically by using [default values](../default-values/).
+Fields with `Date` or `Date and Time` data type can be used to record date and time. The most common use is to record when a feature was created or updated. This can be done manually or automatically by using [default values](../default-values/).
 
 |<div style="width:150px"> Widget </div> |Preview in the <MobileAppNameShort />|
 |:---:|:---:|
-|[Date/time](#date-time-widget)  |![Mergin Maps mobile app date time field form](./mobile-form-datetime-preview.jpg "Mergin Maps mobile app date time field form")   |
+|Date/time |![Mergin Maps mobile app date time field form](./mobile-form-datetime-preview.jpg "Mergin Maps mobile app date time field form")   |
 
 :::tip Example project available
 Various options of setting up Date and Date&Time fields are included in this public project: <MerginMapsProject id="documentation/form-widgets" />. Download or clone it to explore it in more detail.
