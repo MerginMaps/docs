@@ -43,6 +43,12 @@ The **Text Edit** widget offers the option to store multiple lines within a sing
 In the <MobileAppNameShort />, the **multiline text edit widget** looks like this:
 ![Mergin Maps mobile app multiline text field form](./mobile-form-text-multiline.jpg "Mergin Maps mobile app multiline text field form")
 
+::: tip
+Both QGIS and <MobileAppName /> support the use of HTML text fields. When setting up the [multiline](#multiline-text) text widget, check also the **HTML** option :heavy_check_mark:. 
+
+HTML text fields can be used to include clickable links to, e.g., [open a link in a browser](../external-link/) or [open a navigation app](../link-to-navigation/) directly from the form in the <MobileAppNameShort />.  
+:::
+
 ## Voice input
 
 In the <MobileAppNameShort />, the text can be entered manually or using voice-to-text (if your mobile device supports this feature).

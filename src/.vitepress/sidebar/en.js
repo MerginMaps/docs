@@ -90,11 +90,11 @@ export default {
         { text: 'Use Cases', link: '/layer/use-cases/', 
         collapsed: true,
         items: [
-	   { text: 'How to Open a File', link: '/layer/open-file/' },
-	   { text: 'How to Use Hyperlinks', link: '/layer/external-link/' },
+	       { text: 'How to Open a File', link: '/layer/open-file/' },
+	       { text: 'How to Use Hyperlinks', link: '/layer/external-link/' },
+           { text: 'How to Open a Link to a Navigation App ', link: '/layer/link-to-navigation/' },
            { text: 'How to Link Multiple Records to One Feature (1-N Relations)', link: '/layer/one-to-n-relations/' },
            { text: 'How to Embed an Image', link: '/layer/embed-image/' },
-           { text: 'How to Display Instructions in the Form', link: '/layer/display-instructions/' },
         ] },
       ] },
     {
