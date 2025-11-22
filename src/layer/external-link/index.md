@@ -4,7 +4,7 @@ description: Hyperlinks can be used in the attributes form in Mergin Maps mobile
 
 # How to Use Hyperlinks
 
-Attributes forms can include clickable links that can be used to [open a link in a browser](#open-link-in-a-browser) or [open a navigation app](#open-link-to-a-navigation-app) directly from the form in <MobileAppName />.  
+Attributes forms can include clickable links that can be used to open a link in a browser directly from the form in <MobileAppName />.  
 
 1. Right-click on a layer, select **Properties** and go to the **Attributes form** tab.
 2. In the list of **Available Widgets** select the field you want to work with. 
@@ -26,3 +26,7 @@ Attributes forms can include clickable links that can be used to [open a link in
 
 When you click on a feature in <MobileAppName />, the form will contain a clickable link.
 ![Hyperlink in Mergin Maps mobile app form](./mobile-form-link.jpg "Hyperlink in Mergin Maps mobile app form")
+
+:::tip
+Hyperlinks can be used in the attributes form also to open a [link to a navigation app](../link-to-navigation/).
+:::
