@@ -9,8 +9,8 @@ In this tutorial you will learn how to further customise your <MainPlatformNameL
 The topics covered here are:
 [[toc]]
 
-::: tip
-Previous tutorials already covered the minimum concepts for data collection so feel free to skip ahead to the [Working Collaboratively](../working-collaboratively/) tutorial (and come back here later on) if you're super keen on collecting data right away.
+:::tip Public project available
+The project created in this tutorial <MerginMapsProject id="documentation/t5-trees-and-hedges" /> is public. You can download it and compare it with your results.
 :::
 
 ## Opening the project in QGIS
@@ -210,7 +210,13 @@ This is not very useful so we will learn how to specify the extent that this but
    The **Zoom to project** button can be found in the <MobileAppNameShort /> by tapping the **More** button:
    ![Zoom to project in Mergin Maps mobile app](./merginmaps-mobile-zoom-to-project-button.jpg "Zoom to project in Mergin Maps mobile app")
 
+
+
 ## Learning more
 The aim of this tutorial was to introduce you to the main concepts of customising <MainPlatformName /> projects in QGIS and to cover common customisation workflows in a basic way.
+
+:::tip Public project available
+The project created in this tutorial <MerginMapsProject id="documentation/t5-trees-and-hedges" /> is public. You can download it and compare it with your results.
+:::
 
 You will find more tips on how to prepare your QGIS project in [Setup GIS Project](../../gis/features/).
