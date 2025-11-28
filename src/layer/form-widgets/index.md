@@ -1,20 +1,10 @@
-# Form Widgets
+---
+description: Our Widget Gallery provides an overview of QGIS form widgets supported by the Mergin Maps mobile app. Find the best widget for your survey form!
+---
+
+# Form Widgets Gallery
 
 Form widgets define the way you can enter values in the form, both in QGIS and in the <MobileAppNameShort />. The configuration of form widgets in your <MainPlatformNameLink /> project is done in QGIS.
-
-Do you prefer a video? Check out this tutorial on how to configure QGIS widgets for survey forms.
-<YouTube id="jc4p1PpXj3k" title="Widgets for survey forms" />
-
-## Setting up form widgets
-
-Attributes forms can be configured using <QGISHelp ver="latest" link="user_manual/working_with_vector/vector_properties.html#edit-widgets" text="QGIS widget types" /> in the **Attributes Form** tab in the **Layer Properties**. Note that the widget has to be compatible with the field data type. 
-
-Each data type has a default widget: for instance, text fields use *Text edit* widget by default and are filled in by manually typing the value, while date fields use *Date/Time* widget and the value is selected using a calendar pop-up.
-
-![QGIS Layer Properties Attributes Form tab](./qgis-attributes-form.gif "QGIS Layer Properties Attributes Form tab")
-
-
-## Widget gallery
 
 Here is an overview of widgets that are commonly used both in QGIS and the <MobileAppNameShort />.
 

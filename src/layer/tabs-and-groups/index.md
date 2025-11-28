@@ -1,3 +1,7 @@
+---
+description: Using QGIS Drag and Drop designer, fields can be arranged into groups and tabs.
+---
+
 # Tabs and groups
 Using [QGIS Drag and Drop designer](../form-layout/#qgis-drag-and-drop-designer), fields can be arranged into groups and tabs.
 

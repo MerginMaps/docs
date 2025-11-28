@@ -1,17 +1,21 @@
-# Selecting a Single or Multiple Values
+---
+description: To select values from a drop-down menu in the form in Mergin Maps mobile app, you can use the Value Map or Value Relation widgets.
+---
+
+# Selecting Single or Multiple Values
 [[toc]]
 
-Selecting values from a drop-down menu is faster than typing them in manually and it also ensures that there are no typos or spelling variations. 
+Selecting values from a drop-down menu is faster than typing them in manually and it also ensures that there are no typos or spelling variations. Additionally, it is possible to create [drill-down (cascade) forms](#drill-down-forms), where a value selected in one field can affect the options available in another field.
 
 |<div style="width:150px"> Widget </div> |Preview in the <MobileAppNameShort />|
 |:---:|:---:|
 |[Drop-down menu with predefined values](#value-map) |![Mergin Maps mobile app value map field form](./mobile-form-valuemap-preview.jpg "Mergin Maps mobile app value map field form")   |
 |[Drop-down menu with values from another table, allowed multiple selection](#value-relation) |![Mergin Maps mobile app value relation field form](./mobile-form-value-relation-preview.jpg "Mergin Maps mobile app value relation field form")   |
 
-To select values from a drop-down menu in the form, you can use the [Value Map](#value-map) or [Value Relation](#value-relation) widgets in QGIS. Additionally, it is possible to create [drill-down (cascade) forms](#drill-down-forms), where a value selected in one field can affect the options available in another field.
+To select values from a drop-down menu in the form, you can use the Value Map or Value Relation widgets in QGIS. The field data type depends on the values that should be stored in the field, usually `Text (string)` or `Integer`. To [allow multiple selection](#value-relation), the field needs to be of `Text (string)` data type).
 
 The **Value Relation** widget is a bit more complex as it uses another layer (usually a non-spatial table) as a source of values. However, it provides some benefits when compared to the simpler **Value Map** setup, such as:
-- Option to select multiple values from the list (in this case, the field needs to be of `text` data type).
+- Option to select multiple values from the list
 - The table used for the drop-down menu can be edited in the <MobileAppNameShort />. For example, if there is a value missing, you can [create it](../../field/mobile-features/#add-or-edit-non-spatial-features) during the field survey and use it immediately. The *Value Map* options can be managed only through QGIS.
 - Searching the values: if you have a large list of values, it will become cumbersome to find the right value. With the *Value Relation* widget, you have the option to search for values in the list in the <MobileAppNameShort />.
 

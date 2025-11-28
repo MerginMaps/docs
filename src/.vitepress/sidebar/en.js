@@ -70,7 +70,7 @@ export default {
            { text: 'Numbers', link: '/layer/numbers/' },
            { text: 'Checkbox', link: '/layer/checkbox/' },
            { text: 'QR Code', link: '/layer/qr-code/' },
-           { text: 'Selecting a Single or Multiple Values', link: '/layer/value-select/' },
+           { text: 'Selecting Single or Multiple Values', link: '/layer/value-select/' },
            { text: 'Photos', link: '/layer/photos/' },
            { text: 'Informational Widgets', link: '/layer/info-widgets/' },
         ] },
@@ -78,10 +78,10 @@ export default {
         collapsed: true,
         items: [
            { text: 'Geotagging', link: '/layer/exif/' },
-           { text: 'Extra Variables', link: '/layer/extra-variables/' }
+           { text: 'Variables', link: '/layer/variables/' }
         ] },
         { text: 'Constraints', link: '/layer/constraints/' },        
-        { text: 'Attributes Form Layout', link: '/layer/form-layout/', 
+        { text: 'Layout', link: '/layer/form-layout/',
         collapsed: true,
         items: [
            { text: 'Tabs and Groups', link: '/layer/tabs-and-groups/' },
@@ -90,11 +90,11 @@ export default {
         { text: 'Use Cases', link: '/layer/use-cases/', 
         collapsed: true,
         items: [
-	   { text: 'How to Open a File', link: '/layer/open-file/' },
-	   { text: 'How to Use Hyperlinks', link: '/layer/external-link/' },
+	       { text: 'How to Open a File', link: '/layer/open-file/' },
+	       { text: 'How to Use Hyperlinks', link: '/layer/external-link/' },
+           { text: 'How to Open a Link to a Navigation App', link: '/layer/link-to-navigation/' },
            { text: 'How to Link Multiple Records to One Feature (1-N Relations)', link: '/layer/one-to-n-relations/' },
            { text: 'How to Embed an Image', link: '/layer/embed-image/' },
-           { text: 'How to Display Instructions in the Form', link: '/layer/display-instructions/' },
         ] },
       ] },
     {

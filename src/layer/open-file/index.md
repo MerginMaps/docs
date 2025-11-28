@@ -1,7 +1,11 @@
+---
+description: A local file, e.g. a PDF stored in the project folder, can be opened from within the form using the HTML widget.
+---
+
 # How to Open a File
 [[toc]]
 
-A local file, e.g. a PDF stored in the project folder, can be opened from within the form. This can be achieved by using [the HTML widget](#using-html-widget-to-open-local-files) or setting up [default values](#open-local-files-using-default-values).
+A local file, e.g. a PDF stored in the project folder, can be opened from within the form using [the HTML widget](../info-widgets/#html-widget). There is an alternative setting that uses [default values](#open-local-files-using-default-values) that may be useful for specific scenarios.
 
 ::: tip Public project available
 Download or clone our public project <MerginMapsProject id="documentation/forms-display-images-and-files" />  to explore both options and see what works the best for you.
@@ -26,8 +30,9 @@ In the <MobileAppNameShort />, you can tap the *Open File* link to open the PDF 
 
 ![Open a local PDF file in Mergin Maps mobile app](./mobile-forms-open-file-html-widget.jpg "Open a local PDF file in Mergin Maps mobile app")
 
-## Open local files using default values
-Default values can also be used to open local files (e.g. a PDF file) from within the form. This file needs to be packaged with the project, so it should be stored somewhere in the [project folder](../../manage/project/#mergin-maps-project-folder).
+## Open local files using default values <Badge text="Advanced" type="warning"/>
+
+Local files (e.g. a PDF file) can also be opened from within the form using default values. This file needs to be packaged with the project, so it should be stored somewhere in the [project folder](../../manage/project/#mergin-maps-project-folder).
 
 ::: tip Example project available
 This setup is used in our public project <MerginMapsProject id="documentation/forms-display-images-and-files" />.

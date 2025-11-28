@@ -1,10 +1,14 @@
+---
+description: A field in the form can be set up for QR code scanning. Scan QR codes with your mobile device to fill in the values.
+---
+
 # QR code
 
-You can scan QR codes with your mobile device to fill in a field in the form.
+You can scan QR codes with your mobile device to fill in a field in the form. The field data type should match the desired input: if you want to scan, say, a link, you need a field with `Text (string)` data type.
 
 |<div style="width:150px"> Widget </div> |Preview in the <MobileAppNameShort />|
 |:---:|:---:|
-[QR code or barcode scanner](#qr-code-setup)   | ![Mergin Maps mobile app QR code field form](./mobile-form-qrcode-preview.jpg "Mergin Maps mobile app QR code field form") |
+QR code or barcode scanner  | ![Mergin Maps mobile app QR code field form](./mobile-form-qrcode-preview.jpg "Mergin Maps mobile app QR code field form") |
 
 :::tip Example project available
 A QR code field is used in this public project: <MerginMapsProject id="documentation/form-widgets" />. Download or clone it to see this setup.
