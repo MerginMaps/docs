@@ -50,7 +50,7 @@ Following variables are supported:
  - `@position_magnetic_variation` - The angle between the horizontal component of the magnetic field and true north, in degrees. Also known as magnetic declination. A positive value indicates a clockwise direction from true north and a negative value indicates a counter-clockwise direction.
  - `@position_horizontal_accuracy` - The accuracy of the provided latitude-longitude value, in meters.
  - `@position_vertical_accuracy` - The accuracy of the provided altitude value, in meters.
- - `@position_from_gps` - True, if recorder/edited feature's geometry correspond with current user's position (Position marker has the same location as the crosshairs marker).
+ - `@position_from_gps` - True, if recorded/edited feature's geometry corresponds with current user's position (Position marker has the same location as the crosshairs marker).
  - `@position_satellites_visible` - Number of visible satellites.
  - `@position_satellites_used` - Number of satellites used to calculate the position.
  - `@position_gps_fix` - GPS fix, e.g. "RTK float"

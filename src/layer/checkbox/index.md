@@ -39,7 +39,7 @@ You might want to use the checkbox with custom values, such as Yes/No or On/Off.
 
 ![QGIS checkbox field form](./qgis-form-checkbox-string.jpg "QGIS checkbox field form")
 
-Similarly, you could set up checkbox for fields with integer data types and use numerical values, e.g. `0` and `1`, for the *Checked* and for the *Unchecked* state. 
+Similarly, you could set up the checkbox widget for fields with integer data types and use numerical values, e.g. `0` and `1`, for the *Checked* and for the *Unchecked* state. 
 
 In the <MobileAppNameShort />, the checkbox can be easily toggled on/off.
 

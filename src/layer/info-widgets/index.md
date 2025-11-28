@@ -7,14 +7,12 @@ description: HTML and Text widgets are not connected to a specific field of the 
 
 <QGISHelp ver="latest" link="/user_manual/working_with_vector/vector_properties.html#other-widgets" text="QGIS" /> also offers widgets that can be added to the form to display values or text, but are not connected to a specific field of the layer, such as the Text or HTML widget. These widgets are also supported by <MainPlatformName />. 
 
-HTML and Text widgets can be used, e.g., to [display instructions](../display-instructions/) in the form. The HTML widget supports various [HTML tags](https://doc.qt.io/qt-6/richtext-html-subset.html#supported-tags), so it can also be used, for instance, to display [online images](../embed-image/) or [open local files](../open-file/).
+HTML and Text widgets can be used, e.g., to [display instructions](../display-instructions/) in the form. They can include [expressions and field values](#using-expressions-in-text-and-html-widgets) as well. The HTML widget supports various [HTML tags](https://doc.qt.io/qt-6/richtext-html-subset.html#supported-tags), so it can also be used, for instance, to display [online images](../embed-image/) or [open local files](../open-file/).
 
 |<div style="width:150px"> Widget </div> |Preview in the <MobileAppNameShort />|
 |:---:|:---:|
 Text | ![Mergin Maps mobile app Text widget in attributes form](./mobile-text-widget-preview.webp "Mergin Maps mobile app Text widget in attributes form")  |
 HTML Widget | ![Mergin Maps mobile app HTML widget in attributes form](../form-widgets/mobile-form-info-widgets.webp "Mergin Maps mobile app HTML widget in attributes form")  |
-
-The **Text** and **HTML widgets** provide an option to display instructions or tips for surveyors in your attributes forms. They can include [expressions and field values](#using-expressions-in-text-and-html-widgets) as well. 
 
 These widgets can be found in **Available Widgets** in the **Other Widgets** section when using the [Drag and Drop Designer](../form-layout/#qgis-drag-and-drop-designer). Simply add them to the form layout and double click to configure them as needed.
 

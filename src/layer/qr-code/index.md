@@ -4,7 +4,7 @@ description: A field in the form can be set up for QR code scanning. Scan QR cod
 
 # QR code
 
-You can scan QR codes with your mobile device to fill in a field in the form. The field data type should match the desired input, so if you want to scan say a link, you need a field with `Text (string)` data type.
+You can scan QR codes with your mobile device to fill in a field in the form. The field data type should match the desired input: if you want to scan, say, a link, you need a field with `Text (string)` data type.
 
 |<div style="width:150px"> Widget </div> |Preview in the <MobileAppNameShort />|
 |:---:|:---:|
