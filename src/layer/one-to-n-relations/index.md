@@ -37,10 +37,10 @@ On the other hand, <QGISHelp ver="latest" link="user_manual/expressions/function
 The **non-spatial inspections table** has the following attributes. **Manhole uuid** (`parent-uuid`) are references to manholes.
 | fid | Date | Blocked? | Flooded? | Inspector | Manhole uuid (`parent-uuid`) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 8 | 2025-11-20 | false |false| Joe Schmoe | `{db908450-4265-4070-a3f7-1d73705df8bf}` |
-| 9 | 2025-11-28 | false |true | Fred Bloggs | `{db908450-4265-4070-a3f7-1d73705df8bf}` |
-| 10 | 2025-12-01 | true |true| Fred Bloggs | `{aeea4c7d-e7c5-4638-8207-53fa469ccddd}` |
-| 11 | 2025-12-03 | false |false| Joe Schmoe | `{042a715a-73ac-4bff-9bb0-7f598d216ec9}` |
+| 8 | 2025-11-20 | false |false| <NoSpellcheck id="Joe Schmoe"/> | `{db908450-4265-4070-a3f7-1d73705df8bf}` |
+| 9 | 2025-11-28 | false |true | <NoSpellcheck id="Fred Bloggs"/> | `{db908450-4265-4070-a3f7-1d73705df8bf}` |
+| 10 | 2025-12-01 | true |true| <NoSpellcheck id="Fred Bloggs"/> | `{aeea4c7d-e7c5-4638-8207-53fa469ccddd}` |
+| 11 | 2025-12-03 | false |false| <NoSpellcheck id="Joe Schmoe"/> | `{042a715a-73ac-4bff-9bb0-7f598d216ec9}` |
 
 To configure 1-N relations in QGIS (detailed steps can be found in [Relations](../relations/#setting-up-relation-in-qgis)):
 1. From the main menu, select **Projects** > **Properties ...**

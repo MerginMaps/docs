@@ -7,7 +7,7 @@ description: HTML and Text widgets are not connected to a specific field of the 
 
 <QGISHelp ver="latest" link="/user_manual/working_with_vector/vector_properties.html#other-widgets" text="QGIS" /> also offers widgets that can be added to the form to display values or text, but are not connected to a specific field of the layer, such as the Text or HTML widget. These widgets are also supported by <MainPlatformName />. 
 
-HTML and Text widgets can be used, e.g., to [display instructions](../display-instructions/) in the form. They can include [expressions and field values](#using-expressions-in-text-and-html-widgets) as well. The HTML widget supports various [HTML tags](https://doc.qt.io/qt-6/richtext-html-subset.html#supported-tags), so it can also be used, for instance, to display [online images](../embed-image/) or [open local files](../open-file/).
+HTML and Text widgets can be used, e.g., to display instructions in the form. They can include [expressions and field values](#using-expressions-in-text-and-html-widgets) as well. The HTML widget supports various [HTML tags](https://doc.qt.io/qt-6/richtext-html-subset.html#supported-tags), so it can also be used, for instance, to display [online images](../embed-image/) or [open local files](../open-file/).
 
 |<div style="width:150px"> Widget </div> |Preview in the <MobileAppNameShort />|
 |:---:|:---:|
