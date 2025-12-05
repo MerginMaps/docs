@@ -88,7 +88,7 @@ OGC Web Map Service version 1.3 data provider
 
 ## Supported GDAL and OGR drivers
 
-Full list of supported GDAL and OGR drivers can be found in <GitHubRepo id="MerginMaps/mobile/tree/master/docs" desc="Mergin Maps mobile" /> repository.
+Full list of supported GDAL and OGR drivers can be found in <GitHubRepo id="MerginMaps/mobile/tree/master/docs/supported_formats.txt" desc="Mergin Maps mobile" /> repository.
 
 ## How to convert between GDAL/OGR formats
 
