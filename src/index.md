@@ -1,7 +1,7 @@
 ---
 home: false
+description: Official documentation for Mergin Maps. Discover Mergin Maps functionalities in comprehensive overviews, tutorials and how-to guides.
 ---
-
 
 # Mergin Maps Documentation
 
@@ -15,12 +15,12 @@ home: false
 The ecosystem consist of various components:
  - [QGIS](https://qgis.org/) > Powerful GIS Desktop application 
  - [<QGISPluginName />](https://plugins.qgis.org/plugins/Mergin/) > QGIS plugin
- - <AppDomainNameLink desc="Mergin Maps Server" /> > SaaS Cloud Service (available also as <MainPlatformName /> CE)
+ - <ServerCloudNameLink /> > SaaS Cloud Service (available also as <EnterprisePlatformNameLink /> or <CommunityPlatformNameLink />)
  - <MainDomainNameLink desc="Mergin Maps mobile app" /> > iOS and Android mobile app
 
 <AppDownload />
 
-<YouTube id="dy-B1BW9lA0" />
+<YouTube id="dy-B1BW9lA0" title="See how Mergin Maps works" />
  
 ## Get started 
 
@@ -91,6 +91,8 @@ The ecosystem consist of various components:
 - [Synchronisation in <MobileAppName />](./field/autosync/)
 - [Measurement Tools](./field/measure/)
 - [Layers in <MobileAppName />](./field/layers/)
+- [Map Sketching in <MobileAppName />](./field/map-sketching/)
+- [Photo Sketching in <MobileAppName />](./field/photo-sketching/)
 - [How to Add, Edit, Delete Features](./field/mobile-features/)
 - [How to Reuse Last Entered Values](./field/reuse-last-values/)
 - [How to Stake Out Points](./field/stake-out/)

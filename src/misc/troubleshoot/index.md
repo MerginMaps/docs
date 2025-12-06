@@ -1,3 +1,7 @@
+---
+description: Find troubleshooting tips, resources, and support information to help resolve issues with Mergin Maps.
+---
+
 # Troubleshoot
 [[toc]]
 
@@ -71,6 +75,10 @@ Our support team can now access your <MainPlatformNameLink /> project.
 If you experience any issues with syncing data, you can send diagnostic logs to the developers for debugging the issues. Logs contain detailed information about application run, so there may be hints for you on how to troubleshoot the problem. 
 
 Once you have uploaded the logs, please contact us on <MerginMapsEmail id="support" /> with your username/workspace and problem description so we can have a look into the issues.
+
+::: tip Diagnostic logs on custom servers
+If you use <EnterprisePlatformName /> or <CommunityPlatformName />, diagnostic logs are by default saved to the `diagnostic_logs` folder on your [custom server](../../server/).
+:::
 
 ### Diagnostic log on Mergin Maps QGIS plugin 
 

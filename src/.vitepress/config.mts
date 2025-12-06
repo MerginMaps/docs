@@ -32,11 +32,34 @@ export default defineConfig({
       light: "/MM_symbol_COLOR_no_padding.svg",
     },
 
-    socialLinks: [{ icon: "github", link: "https://github.com/MerginMaps" }],
-
     editLink: {
       pattern: "https://github.com/merginmaps/docs/edit/main/src/:path",
       text: "Help us improve this page!",
     },
+  },
+  transformPageData: (pageData) => {
+    pageData.frontmatter.head ??= [];
+    pageData.frontmatter.head.push([
+      "meta",
+      {
+        name: "og:title",
+        content: pageData.title,
+      },
+    ]);
+    pageData.frontmatter.head.push([
+      "meta",
+      {
+        name: "og:description",
+        content: pageData.description || "Mergin Maps Documentation",
+      },
+    ]),
+      pageData.frontmatter.head.push([
+        "meta",
+        {
+          name: "og:image",
+          content:
+            "https://merginmaps.com/opengraph.webp",
+        },
+      ]);
   },
 });

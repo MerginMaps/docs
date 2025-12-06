@@ -1,3 +1,7 @@
+---
+description: Use text, numbers, date and time, QR code, checkbox or drop-down menu widgets in your attributes forms to make the data entry easier and more efficient.
+---
+
 # Setting Up Widgets in Attributes Form
 
 [[toc]]
@@ -7,7 +11,7 @@ Capturing field data often requires filling some attributes in the form to recor
 Extra configuration of attribute forms can be done to make data collection easier and more consistent, such as using default values, conditional visibility or constraint enforcement. These topics are covered in [Attributes Form Configuration](../form-configuration/) and [Attributes Form Layout](../form-layout/).
 
 Prefer video? Check out this tutorial on how to configure QGIS widgets for survey forms.
-<YouTube id="jc4p1PpXj3k" />
+<YouTube id="jc4p1PpXj3k" title="Widgets for survey forms" />
 
 ## Widget gallery
 Attributes forms can be configured using <QGISHelp ver="latest" link="user_manual/working_with_vector/vector_properties.html#edit-widgets" text="QGIS widget types" /> in the **Attributes Form** tab in the **Layer Properties**.
@@ -39,7 +43,7 @@ Here is an overview of widgets commonly used both in QGIS and the <MobileAppName
 
 ## Text
 
-<YouTube id="0Y5GKyjmfqo" />
+<YouTube id="0Y5GKyjmfqo" title="Text widgets" />
 
 Adding or editing text is the most common method for inserting information within the forms. In QGIS, the default widget for most types of fields is the **Text Edit**. It can be used for single line or [multiline](#multiline-text) text inputs. 
 
@@ -76,7 +80,7 @@ In the <MobileAppNameShort />, the **multiline text edit widget** will look like
 A QR code field is used in this public project: <MerginMapsProject id="documentation/form-widgets" />. Download or clone it to see this setup.
 :::
 
-<YouTube id="HptECoMY8ow" />
+<YouTube id="HptECoMY8ow" title="QR Code scanner" />
 
 To be able to scan QR codes using your camera, the field name or the field alias has to contain the word `qrcode` (the text is not case sensitive, it can be in combination of lower or upper case letters). 
 
@@ -93,7 +97,7 @@ This public project: <MerginMapsProject id="documentation/form-widgets" /> uses 
 
 Number fields can be handled by the **Range** widget. Two options are supported by the <MobileAppNameShort />: [editable range](#range) and [slider](#slider). 
 
-<YouTube id="woZX3L33xh0" />
+<YouTube id="woZX3L33xh0" title="Numbers widget" />
 
 ### Range
 To set up the **editable range widget**:
@@ -132,7 +136,7 @@ In the <MobileAppNameShort />, the **Slider** looks like this. The number can be
 Various options of setting up Date and Date&Time fields are included in this public project: <MerginMapsProject id="documentation/form-widgets" />. Download or clone it to explore it in more detail.
 :::
 
-<YouTube id="EoIqYIl4-Xk" />
+<YouTube id="EoIqYIl4-Xk" title="Date widget" />
 
 **Date** or **Date and Time** fields can be used to record date and time. The most common use is to record when a feature was created or updated. This can be done manually or automatically by using [default values](../form-configuration/#default-values).
 
@@ -173,7 +177,7 @@ Here are some examples:
 Checkbox widget is used in this public project <MerginMapsProject id="documentation/form-widgets" />. Download or clone it to see the setup.
 :::
 
-<YouTube id="rtBdJzizdug" />
+<YouTube id="rtBdJzizdug" title="Checkbox widget" />
 
 Checkbox field becomes handy when you want to set up a Yes/No, True/False or On/Off in your field. 
 
@@ -214,7 +218,7 @@ Value map widget is used to select a value from a drop-down menu. Values are def
 
 If you want to use multiple selections in a field or need to add new values during the survey, check out the [Value Relation](#value-relation) widget.
 
-<YouTube id="WjotOTIKaNo" />
+<YouTube id="WjotOTIKaNo" title="Value Map" />
 
 :::tip Example project available
 This public project <MerginMapsProject id="documentation/form-widgets" /> contains a Value Map field. Download or clone it to see the setup.
@@ -238,7 +242,7 @@ Now you can select the value from a drop-down menu in the <MobileAppNameShort />
 This public project <MerginMapsProject id="documentation/form-widgets" /> contains a Value Relation setup. Download or clone it to explore it in more detail.
 :::
 
-<YouTube id="Sm1PZRN8rLw" />
+<YouTube id="Sm1PZRN8rLw" title="Value Relations" />
 
 The **Value Relation** widget is similar to the [Value Map](#value-map) widget, but the values for the drop-down menu come from another layer (usually a non-spatial table). 
 

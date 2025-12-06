@@ -1,3 +1,7 @@
+---
+description: Mergin Maps mobile app supports adding grid shift files for custom projections that are not included in QGIS by default.
+---
+
 # Custom Projections 
 [[toc]]
 
@@ -36,7 +40,7 @@ If you had to install grid shift files in QGIS in order to display your layers c
 When the app starts, it searches for `proj` folders in all available projects on the disk. The grid shift files found in these folders can be then used in all projects.
 
 ### Adding grid shift files to Mergin Maps mobile app
-<SinceBadge type="Plugin" version="2022.6" />
+
 It couldn't be easier! When [creating a new <MainPlatformName /> project](../../manage/create-project/#create-a-project-in-qgis) by packaging current QGIS project or using current QGIS project as is, <QGISPluginName /> will copy all required datum shift grids to the appropriate project folder.
 
 All you need to do is:

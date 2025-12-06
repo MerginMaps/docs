@@ -1,13 +1,45 @@
+---
+description: This installation guide will help you install your Mergin Maps CE or Mergin Maps EE to the latest server version.
+---
+
 # Install
 
-Installation guide will help you to install your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink /> to the latest server version. The main Cloud <DashboardLink desc="Mergin Maps Server"/> is always up-to-date and managed by <MainPlatformName /> team. Read more about server platforms in [overview article](../)
+Installation guide will help you to install your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink /> to the latest server version. <ServerCloudNameLink /> is always up-to-date and managed by <MainPlatformName /> team. Read more about server platforms in [overview article](../).
 
 [[toc]]
 
 
 ## Installation System Requirements
 
-We recommend using a dedicated host machine with 8 GB of memory. The requirements for CPU and persistent storage depend largely on the frequency of project updates and the anticipated size of the data you expect to store respectively.
+For a typical deployment, we recommend using a dedicated host machine with **8 GB** of memory and **2 vCPUS** (similar to AWS `t3a.large` instances).
+The requirements for CPU and persistent storage depend largely on the frequency of project updates and the anticipated size of the data you expect to store respectively.
+A very conservative rule of thumb, regarding needed disk size would be `mergin maps project size * number of versions`.
+If you have a team size over 25 people and synchronise often your <MainPlatformName /> projects, consider a host with **4 vCPUS**. 
+
+On OS level, we recommend to use a Linux distribution that has full compatibility with Docker, since <MainPlatformName /> is deployed by default with `docker compose`.
+
+A low-latency, high-bandwidth environment is preferred due to the volume of data needed to perform synchronisation with <MainPlatformName />. This is especially important on large projects with hundreds of megabytes in between syncs.
+
+
+### Infrastructure overview
+
+* **PostgreSQL** - Database that holds application data. Can be external and therefore excluded from install orchestration with proper [configuration](https://merginmaps.com/docs/server/environment/#database-settings).
+* **Redis** - The caching and asynchronous task engine running on top of <MainPlatformName />
+* **Celery-Beat** - The Celery task orchestrator used by <MainPlatformName />
+* **Celery-Worker** - The Celery container responsible for workers that perform tasks on <MainPlatformName />
+* **Server** - The server backend instance of <MainPlatformName />
+* **Web** - The frontend instance for <MainPlatformName />
+* **Proxy** - NGINX instance serving <MainPlatformName /> in reverse proxy configuration.
+
+### Firewall ports
+
+By default, only HTTP port `8080` need to be open on firewall side. It is also recommended to open `443` port if SSL is enabled.
+All other infrastructure instances will work within the same docker network group, so no additional ports need to be managed on the firewall side. 
+
+::: details Install Docker
+Please, use the latest version of Docker and Docker Compose tools.
+Follow the [official](https://docs.docker.com/engine/install/) guidelines in accordance with your OS system.
+:::
 
 ## Mergin Maps CE Docker Images
 <ServerType type="CE" />
@@ -60,7 +92,7 @@ Then, edit the `.prod.env` file and provide values for all variables marked as r
 
 ### Start docker containers
 
-Before proceeding, ensure you have both `docker` and `docker-compose` installed on your system.
+Before proceeding, ensure you have both `docker` and `docker compose` installed on your system.
 
 Once your environment is configured, you can start the containers by running the following commands for the Community and Enterprise editions.
 
@@ -70,7 +102,7 @@ Community edition stack:
 $ mkdir -p mergin_db # database data directory
 $ sh ../common/set_permissions.sh projects # application internal data directory
 $ sh ../common/set_permissions.sh diagnostic_logs # directory to persist diagnostic logs (optional)
-$ docker-compose -f docker-compose.yml up -d
+$ docker compose -f docker-compose.yml up -d
 ```
 
 Enterprise edition stack:
@@ -80,9 +112,15 @@ $ mkdir -p mergin-db-enterprise # database data directory
 $ sh ../common/set_permissions.sh data # application internal data directory
 $ sh ../common/set_permissions.sh map_data # maps data directory (neccessary for maps)
 $ sh ../common/set_permissions.sh diagnostic_logs # directory to persist diagnostic logs (optional)
-$ docker-compose -f docker-compose.yml up -d
-$ docker-compose -f docker-compose.maps.yml up -d # Run maps stack separately
+$ docker compose -f docker-compose.yml up -d
+$ docker compose -f docker-compose.maps.yml up -d # Run maps stack separately
 ```
+
+::: tip Diagnostic logs
+Users of the Mergin Maps Mobile App and Mergin Maps QGIS plugin can send diagnostic logs from their devices. In custom deployments, logs are stored in the `diagnostic_logs` folder. If you do not want to persist these logs in a volume, remove the mount point for this folder in the <GitHubRepo id="/MerginMaps/server/blob/master/deployment/enterprise/docker-compose.yml" /> file.
+
+If you want to send diagnostic logs from devices to Mergin Maps instead of storing them in a folder, set `DIAGNOSTIC_LOGS_URL` to `https://api.merginmaps.com/logs`.
+:::
 ​​
 ### Initialise database
 If server is started for the first time, database needs to be initialised and super-user created. Use the `init` command which will perform it automatically (the command generates password for the admin account):
@@ -125,7 +163,7 @@ Celery running properly
 To test email configuration:
 
 ```shell
-$ docker exec merginmaps-server flask send-check-email --email me@myorg.com
+$ docker exec merginmaps-server flask server send-check-email --email me@myorg.com
 ```
 
 By default, email notifications are disabled, so output will be similar to this:

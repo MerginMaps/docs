@@ -1,6 +1,10 @@
+---
+description: This administration guide helps you configure and maintain your Mergin Maps CE and Mergin Maps EE effectively. 
+---
+
 # Administer
  
-Administration guide will help you to configure and maintain your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink />. The main Cloud <DashboardLink desc="Mergin Maps Server"/> is maintained for you by <MainPlatformName /> team. Read more about server platforms in the [overview article](../).
+Administration guide will help you to configure and maintain your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink />. <ServerCloudNameLink /> is maintained for you by <MainPlatformName /> team. Read more about server platforms in the [overview article](../).
  
 [[toc]]
 

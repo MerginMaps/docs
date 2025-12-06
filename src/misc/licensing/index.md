@@ -1,3 +1,7 @@
+---
+description: Licensing of Mergin Maps service, Mergin Maps mobile app, Mergin Maps QGIS plugin and integrations Python client, C++ client, Media Sync, DB sync, Work Packages.
+---
+
 # Licensing
 
 [[toc]]
@@ -16,7 +20,7 @@ You can find official text of licenses [on this link](https://merginmaps.com/lic
 <br />
 <GitHubRepo id="MerginMaps/mobile" desc="Mergin Maps mobile app" /> is licensed under GPL-v2. 
 
-The application uses many open-source libraries, please <GitHubRepo id="MerginMaps/mobile-sdk/blob/master/vcpkg.json" desc="see this list" /> for versions and licenses of projects.
+The application uses many open-source libraries, please <GitHubRepo id="MerginMaps/mobile/blob/master/vcpkg.json" desc="see this list" /> for versions and licenses of projects.
 
 ## Mergin Maps QGIS plugin
 <br />

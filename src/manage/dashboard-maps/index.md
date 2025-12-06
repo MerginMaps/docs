@@ -1,4 +1,8 @@
-﻿# Webmaps
+﻿---
+description: Webmaps display the map overview of your project's spatial data directly in your web browser, on Mergin Maps dashboard.
+---
+
+# Webmaps
 [[toc]]
 
 The spatial data of your project can be displayed in the **Map** tab of the project on the <DashboardShortLink />. You need to be logged in to see the maps.
@@ -15,7 +19,7 @@ Webmaps are **not** available for <CommunityPlatformNameLink />.
 
 On the webmaps, you will see your survey layers or raster layers that are [packaged](../project/#packaging-qgis-project) with the project. Other layers, such as online [background maps](../../gis/settingup_background_map/#background-maps) or PostgreSQL layers are not displayed. The extent of maps is defined by the [extent set in the QGIS project](../../gis/features/#project-extent).
 
-All maps on the <DashboardShortLink /> use [<MainPlatformName /> vector tile service](../../gis/settingup_background_map/#mergin-maps-vector-tile-service) as a background map.
+All maps on the <DashboardShortLink /> use [<MainPlatformName /> vector tile service](../../gis/settingup_background_map/#online-services-1) as a background map.
 
 The content of the maps and of the **Layers** panel is refreshed after every synchronisation of the project. This means you should always see your current spatial data here.
 

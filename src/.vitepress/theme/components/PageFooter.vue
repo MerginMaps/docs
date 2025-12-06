@@ -11,13 +11,14 @@
                   : '/MM_logo_HORIZ_COLOR_VECTOR_no_padding.svg'
               )
             "
+            alt="Mergin Maps logo"
           />
           <p>Copyright &copy; 2021 - {{ year }}</p>
           <p>Lutra Consulting Limited</p>
           <p>All rights reserved.</p>
         </div>
         <div class="page-footer__col">
-          <h4>Company</h4>
+          <p class="title">Company</p>
           <a href="https://merginmaps.com" target="__blank">Homepage</a>
           <a href="https://merginmaps.com/start-for-free" target="__blank"
             >Start for free</a
@@ -26,9 +27,13 @@
       </div>
       <div class="page-footer__center">
         <div>
+          <SocialIconsLink icon="bluesky" class="page-footer__icon" />
+          <SocialIconsLink icon="slack" class="page-footer__icon" />
           <SocialIconsLink icon="linkedin" class="page-footer__icon" />
-          <SocialIconsLink icon="twitter" class="page-footer__icon" />
+          <SocialIconsLink icon="facebook" class="page-footer__icon" />
           <SocialIconsLink icon="github" class="page-footer__icon" />
+          <SocialIconsLink icon="youtube" class="page-footer__icon" />
+          <SocialIconsLink icon="mastodon" class="page-footer__icon" />
         </div>
         <div>
           <a href="https://merginmaps.com/cookies" target="__blank"
@@ -109,7 +114,7 @@ const darkMode = computed(() => data.isDark.value);
       color: var(--vp-c-brand-2);
     }
 
-    h4 {
+    .title {
       margin-top: 0;
       margin-bottom: 1rem;
     }
@@ -119,6 +124,7 @@ const darkMode = computed(() => data.isDark.value);
     display: flex;
     align-items: center;
     flex-direction: column;
+    gap: 0.75rem;
   }
 }
 @media screen and (max-width: 911px) {

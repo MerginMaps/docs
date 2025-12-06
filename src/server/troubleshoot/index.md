@@ -1,13 +1,23 @@
+---
+description: Here are some tips to help you debug and resolve issues in your Mergin Maps CE or Mergin Maps EE deployment.
+---
+
 # Troubleshoot Custom Servers
 
-This article will help you debug and resolve issues in your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink /> deployment. If you use the main Cloud <DashboardLink desc="Mergin Maps Server"/>, it is always up-to-date and managed by <MainPlatformName /> team, so report your problems to us as [described here](../../misc/troubleshoot/). Read more about server platforms in [overview article](../). 
+This article will help you debug and resolve issues in your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink /> deployment. If you use the main <ServerCloudNameLink />, it is always up-to-date and managed by <MainPlatformName /> team, so report your problems to us as [described here](../../misc/troubleshoot/). Read more about server platforms in [overview article](../). 
 
 To install your own server, follow our [installation guide](../install/). Documentation of environment variables and other configuration options can be found in [Configure environment](../environment/).
 
 [[toc]]
 
-:::tip
+:::tip <MainPlatformName /> support and troubleshooting
 Haven't found a solution to your issue? Look at your other [troubleshooting options](../../misc/troubleshoot/).
+:::
+
+::: tip Diagnostic logs on custom servers
+[Diagnostic logs](../../misc/troubleshoot/#diagnostic-logs) are by default saved to the `diagnostic_logs` folder on your server. 
+
+They contain detailed information about application run, so they may help you resolve issues you can encounter when using the [<MobileAppNameShort /> and <QGISPluginNameShort /> with your custom server](../plugin-mobile-app/).
 :::
 
 ## Server is not properly configured

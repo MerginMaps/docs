@@ -6,6 +6,8 @@ prev:
 next:
   text: 'Administration Panel'
   link: '../dashboard/'
+
+description: Configure Mergin Maps EE and CE environment variables. Some variables have placeholders that need to be modified.
 ---
 
 # Configure environment
@@ -86,7 +88,7 @@ To ease the process of permission (user) management, you can set the following g
 | `MAIL_USE_TLS`🛡️       | Boolean |   `true`        | Use TLS encryption when connecting to SMTP server.  |
 | `MAIL_USE_SSL`🛡️       | Boolean |   `false`        | Whether to use SSL encryption when connecting to SMTP server.  |
 | `MAIL_BCC`              | string  |   `None`   | Email address to send copies of all sent emails. Should be system/application administrator. Mandatory in versions until 2024.4.0.  |
-| `MERGIN_LOGO_URL`       | string  | ``    | Link to logo in emails. |
+| `MERGIN_LOGO_URL`       | string  | Mergin Maps logo    | Link to logo in emails. |
 
 If you have issues with sending emails, follow [troubleshooting](../troubleshoot/) page.
 
@@ -128,7 +130,6 @@ Other settings related to data management.
 | `PROJECT_ACCESS_REQUEST`     | integer  | `604800`                              | Lifetime of active project access request in seconds.                                                                                                                                                     |
 | `TEMP_EXPIRATION`            | integer  | `7`                                   | Time in days after files in a temporary folder are permanently deleted.                                                                                                                                   |
 
-
 ## Celery asynchronous tasks
 Mergin Maps is using Celery and Redis to perform asynchronous tasks or doing regular jobs.
 
@@ -136,6 +137,13 @@ Mergin Maps is using Celery and Redis to perform asynchronous tasks or doing reg
 |-----------------------|------|---------------------------------|-------------|
 |`BROKER_URL`           |string|`redis://merginmaps-redis:6379/0`| Connection details to celery message broker. If non-default, it should match definition in `docker-compose` file.  |
 |`CELERY_RESULT_BACKEND`|string|`redis://merginmaps-redis:6379/0`| Connection details to celery result back-end broker. If non-default, it should match definition in `docker-compose` file.  |
+
+## Diagnostic logs
+Users of Mergin Maps plugin and Mergin Maps mobile application are able to send diagnostic logs from their devices. In custom deployments, logs are stored in `diagnostic_logs` folder. If you want to send these logs to Mergin Maps instead of storing them locally, set the `DIAGNOSTIC_LOGS_URL` variable to `https://api.merginmaps.com/logs`.
+
+| Variable name            | Type     | Default                       | Description                    |
+|--------------------------|----------|-------------------------------|--------------------------------|
+| `DIAGNOSTIC_LOGS_URL`           | string  | ``                       | Enables sending diagnostic logs from clients to the specified URL instead of storing them in the deployment folder. Set to https://api.merginmaps.com/logs to send diagnostic logs to Mergin Maps.           |
 
 ## WebMaps 
 <ServerType type="EE" />

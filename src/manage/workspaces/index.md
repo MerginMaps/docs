@@ -1,4 +1,8 @@
-﻿# Workspaces
+﻿---
+description: Workspaces are used to efficiently manage projects, users and subscriptions in Mergin Maps. Every workspace is tied to a subscription.
+---
+
+# Workspaces
 [[toc]]
 
 ## Workspaces in Mergin Maps
@@ -12,7 +16,7 @@ Users can be invited to a workspace as [members or guests](../permissions/). The
 Want to read more about workspaces and why they were introduced to <MainPlatformName />? Visit our blog [Introducing Workspaces: Simplified Collaboration](https://merginmaps.com/blog/introducing-workspaces-simplified-collaboration).
 :::
 
-<YouTube id="SZf93akn0tM" />
+<YouTube id="SZf93akn0tM" title="Getting started with your team" />
 
 :::tip Integrations and workspaces
 Integrations like [PostgreSQL DB Sync](../../dev/dbsync/), [Media Sync](../../dev/media-sync/) and [Work Packages](../../dev/work-packages/) do not share the concept of *active workspace*. They simply work with one specific project from any workspace.

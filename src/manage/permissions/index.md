@@ -1,3 +1,7 @@
+---
+description: Permissions control access to your Mergin Maps projects. They can be defined for the whole workspace or for a specific project.
+---
+
 # Member Roles and Permissions
 [[toc]]
 
@@ -20,7 +24,7 @@ Subscriptions are based on the number of *contributors* on the workspace. *Contr
 Member roles and project permissions present similar options in terms of what a user can or cannot do. The difference is whether these options are defined on a workspace or on a project level. Compare the overview of [workspace member roles](#workspace-member-roles-overview) and of [project permissions](#project-permissions-overview) for more details.
 
 - **Reader**: Users with **Read** permission are able to see projects, projects data and [history](../project-history/), but can not make any changes. *Readers* do not count as [contributors](../subscriptions/#contributors) in your subscription.
-- **Editor** (available on <MainPlatformNameLink /> Cloud and <EnterprisePlatformNameLink />): In addition to the **Read** access, users can [add/remove/update features](../../field/mobile-features/), but *cannot* make changes in the project properties, add/remove fields in GeoPackage layers or remove GeoPackage files from the project. We recommend using this role for surveyors - users who collect data in the field.
+- **Editor** (available on <ServerCloudNameLink /> and <EnterprisePlatformNameLink />): In addition to the **Read** access, users can [add/remove/update features](../../field/mobile-features/), but *cannot* make changes in the project properties, add/remove fields in GeoPackage layers or remove GeoPackage files from the project. We recommend using this role for surveyors - users who collect data in the field.
 Editors can:
 	- *add* files such as photos, shapefiles, GeoPackage files - any file except for `*.qgs`, `*.qgz`, `mergin-config.json`
 	- *edit* files except for `*.qgs`, `*.qgz`, `mergin-config.json` and non-diff based `*.gpkg` changes

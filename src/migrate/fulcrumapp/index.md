@@ -1,3 +1,7 @@
+---
+description: Do you consider switching from Fulcrum to Mergin Maps? See the comparison of both platforms and practical tips for migrating to Mergin Maps.
+---
+
 # Migrate from Fulcrum
 [[toc]]
 

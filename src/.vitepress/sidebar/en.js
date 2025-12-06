@@ -91,6 +91,8 @@ export default {
         { text: 'Synchronisation in Mergin Maps Mobile App', link: '/field/autosync/' },
         { text: 'Measurement Tools', link: '/field/measure/' },
         { text: 'Layers in Mergin Maps Mobile App', link: '/field/layers/' },
+        { text: 'Map Sketching', link: '/field/map-sketching/' },
+        { text: 'Photo Sketching', link: '/field/photo-sketching/' },
         { text: 'How to Add, Edit, Delete Features', link: '/field/mobile-features/' },
         { text: 'How to Reuse Last Entered Values', link: '/field/reuse-last-values/' },
         { text: 'How to Stake Out Points', link: '/field/stake-out/' },
@@ -140,7 +142,12 @@ export default {
       items: [
         { text: 'Licensing', link: '/misc/licensing/' },
         { text: 'Get Involved', link: '/misc/get-involved/' },
-        { text: 'Troubleshoot', link: '/misc/troubleshoot/' },
+        { text: 'Troubleshoot', link: '/misc/troubleshoot/',
+        collapsed:true,
+        items: [
+        { text: 'Project fails to sync', link: '/misc/troubleshoot/not_syncing/' },
+        ]        
+        },
         { text: 'Write Documentation', link: '/misc/write-docs/' }
       ]
     }

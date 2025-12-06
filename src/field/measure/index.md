@@ -1,3 +1,7 @@
+---
+description: In the Mergin Maps mobile app, it is possible to measure length and area on a map window. Measurement units can be changed in project properties in QGIS.
+---
+
 # Measurement Tools
 [[toc]]
 

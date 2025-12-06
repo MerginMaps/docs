@@ -1,3 +1,7 @@
+---
+description: Configure Mergin Maps mobile app and QGIS plugin for use with your custom Mergin Maps CE or EE server.
+---
+
 # Using Mergin Maps Mobile App and QGIS Plugin with a Custom Server
 [[toc]]
 
@@ -9,6 +13,12 @@ To do this, we need to set up the custom server in the [plugin](#custom-server-c
 Please note that the <MobileAppName /> and <QGISPluginName /> require the server version 2023.2 or higher.
 
 See how to [upgrade](../upgrade/) your server if needed. 
+:::
+
+::: tip Diagnostic logs on custom servers
+[Diagnostic logs](../../misc/troubleshoot/#diagnostic-logs) are by default saved to the `diagnostic_logs` folder on your server. 
+
+They contain detailed information about application run, so they may help you resolve issues you can encounter when using the <MobileAppNameShort /> and <QGISPluginNameShort /> with your custom server.
 :::
 
 ## Custom server configuration in Mergin Maps QGIS plugin

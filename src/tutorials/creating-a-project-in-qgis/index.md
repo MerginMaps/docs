@@ -1,3 +1,7 @@
+---
+description: In this tutorial, you will learn how to create a Mergin Maps project in QGIS and configure attributes forms for survey layers.
+---
+
 # Creating a Project in QGIS
 [[toc]]
 
@@ -29,7 +33,7 @@ Please ensure you have already:
    Press **Finish** to create the project.
    ![Create new Mergin Maps project in QGIS](./mergin-plugin-create-new-mergin-project.jpg "Create new Mergin Maps project in QGIS")
 
-5. Your new project should now be created and uploaded to <MainPlatformNameLink /> cloud. 
+5. Your new project should now be created and uploaded to <ServerCloudName />. 
 
    **Close** the dialog window to continue working with this project in QGIS.
    ![Mergin Maps project created and uploaded successfully](./mergin-plugin-basic-project-opened.jpg "Mergin Maps project created and uploaded successfully")
@@ -131,7 +135,7 @@ There is much more that can be done with the Attributes Form in QGIS when prepar
 
 
 ## Saving changes to Mergin Maps
-In the [next tutorial](../mobile/) we will see how this project looks on <MobileAppName />. We'll now make some last changes, save them and sync the project back to the <MainPlatformNameLink /> cloud.
+In the [next tutorial](../mobile/) we will see how this project looks on <MobileAppName />. We'll now make some last changes, save them and sync the project back to the <ServerCloudNameLink />.
 
 1. Right click on the layer called `Survey` and find the **Rename Layer** option. Rename the layer to `Survey notes` (the name `Survey` is too general in this context).
 2. **Save** the QGIS project
@@ -145,7 +149,7 @@ In the [next tutorial](../mobile/) we will see how this project looks on <Mobile
    Click **Sync** to synchronise the project
    ![Mergin Maps plugin synchronisation Project status](./qgis-sync-mergin-project-status.jpg "Mergin Maps plugin synchronisation Project status")
  
-In a few moments your changes are safely stored in the <MainPlatformName />  cloud
+In a few moments your changes are safely stored in the <ServerCloudName />
 ![Successful synchronisation of Mergin Maps project in QGIS](./qgis-project-synced.jpg "Successful synchronisation of Mergin Maps project in QGIS")
 
 Synchronising changes between users and devices is a core principle of <MainPlatformNameLink />. When you sync a project, changes that have been made by other users and devices since you last synced are fetched and any changes you've made are pushed.

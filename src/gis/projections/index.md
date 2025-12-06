@@ -1,3 +1,7 @@
+---
+description: Learn more about map projections, coordinate reference systems, how they are used in QGIS and how to resolve issues related to transformations.
+---
+
 # Projections <Badge text="Expert" type="danger"/>
 
 [[toc]]

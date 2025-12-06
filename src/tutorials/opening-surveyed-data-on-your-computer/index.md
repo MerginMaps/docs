@@ -1,3 +1,7 @@
+---
+description: In this tutorial, you will learn how to seamlessly transfer your project from the Mergin Maps mobile app to QGIS on your computer.
+---
+
 # Opening Surveyed Data on Your Computer
 
 [[toc]]
@@ -16,7 +20,7 @@ To open the project and field data on the computer, we will need to do some setu
 ## Putting your project in the cloud
 1. Open <MobileAppName /> and navigate to the **Home** tab. Tap the button next to the project's name and select the **Upload** option.
    
-   If you are logged in, the project will be uploaded to <MainPlatformName /> cloud and you can continue to the next step: [opening your project in QGIS](#locating-and-opening-your-project).
+   If you are logged in, the project will be uploaded to <ServerCloudName /> and you can continue to the next step: [opening your project in QGIS](#locating-and-opening-your-project).
    ![Mergin Maps mobile app upload project to cloud](./mergin-maps-mobile-upload-project.jpg "Mergin Maps mobile app upload project to cloud") 
    
 2. If you are not logged in, you will be asked to. Enter your <MainPlatformName /> credentials and **Sign in**.
@@ -24,7 +28,7 @@ To open the project and field data on the computer, we will need to do some setu
    If you don't have an account yet, create one! Tap **Sign up** to [sign up to <MainPlatformName />](../../setup/sign-up-to-mergin-maps/#from-mergin-maps-mobile-app).   
    ![Mergin Maps mobile app Login page](./mergin-maps-mobile-log-in-to-mergin.jpg "Mergin Maps mobile app Login page")
   
-3. Once you are logged in, **Upload** your project to the <MainPlatformName /> cloud. 
+3. Once you are logged in, **Upload** your project to the <ServerCloudName />. 
 
 Notice that the name of your [workspace](../../manage/workspaces/) is displayed along with the project's name (here, the workspace is called `my-team`).
 
@@ -34,7 +38,7 @@ Now that your project is in the cloud, it can easily be shared with colleagues o
    
 
 ## Locating and opening your project
-Now that the project is stored in <MainPlatformName /> cloud, we can open it in QGIS.
+Now that the project is stored in <ServerCloudName />, we can open it in QGIS.
 
 1. Open QGIS on your computer
 

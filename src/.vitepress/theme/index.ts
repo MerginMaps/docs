@@ -12,6 +12,7 @@ import MMBanner from "./components/MMBanner.vue";
 import NotFound from "./NotFound.vue";
 import CookieConsentView from "../components/CookieConsentView.vue";
 
+
 export default {
   extends: DefaultTheme,
   Layout: () => {
@@ -28,7 +29,10 @@ export default {
       }
     });
   },
-  enhanceApp({ app, router, siteData }) {
+  async enhanceApp({ app, router, siteData }) {
+    if (!import.meta.env.SSR) {
+      await import('@justinribeiro/lite-youtube')
+    }
     DefaultTheme.enhanceApp({ app, router, siteData });
     app.component("vImageViewer", vImageViewer);
     app.component('VPBadge', VPBadge);
@@ -59,5 +63,5 @@ export default {
   setup: () => {
     const route = useRoute();
     imageViewer(route);
-  },
+  }
 } satisfies Theme;

@@ -1,11 +1,15 @@
-﻿# Mergin Maps Project
+﻿---
+description: Mergin Maps project is stored in the cloud, containing your data and QGIS project. Download the project, capture new data and sync it back to the cloud.
+---
+
+# Mergin Maps Project
 [[toc]]
 
 What is a <MainPlatformName /> project? 
 
 It is basically a folder that contains data (such as vector layers, tables, rasters or photos), a [QGIS project](../../gis/features/), and some extra <MainPlatformName /> files needed to ensure everything works.
 
-When <MainPlatformName /> project is created, it is saved to <MainPlatformNameLink /> cloud. From the cloud, it can be downloaded to various devices, used by different team members in both QGIS and the <MobileAppNameShort />. Changes they made are tracked and synchronised back to the cloud.
+When <MainPlatformName /> project is created, it is saved to <ServerCloudNameLink />. From the cloud, it can be downloaded to various devices, used by different team members in both QGIS and the <MobileAppNameShort />. Changes they made are tracked and synchronised back to the cloud.
 
 ## Creating project
 :::tip

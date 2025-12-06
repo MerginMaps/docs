@@ -1,3 +1,7 @@
+---
+description: Use the Avoid polygons overlap setup to automatically crop overlapping polygons and snap them to existing features both in QGIS and in the mobile app. 
+---
+
 # How to Avoid Polygons Overlap
 
 For polygon layers, <QGISHelp ver="latest" link="user_manual/working_with_vector/editing_geometry_attributes.html#overlapping-control" text="QGIS" /> offers options to control the overlapping. In the **Snapping toolbar**, you can set if you want to allow or avoid overlaps when digitising new features. 

@@ -1,3 +1,7 @@
+---
+description: In this tutorial, you will learn how to use Mergin Maps mobile app for field survey and sync your data to the cloud.
+---
+
 # Using Mergin Maps Mobile App
 
 [[toc]]
@@ -5,7 +9,7 @@
 In the last tutorial we created a new <MainPlatformName /> project in QGIS with layers for surveying trees and hedges. You'll now learn how to:
 - Open the QGIS project in <MobileAppName />
 - Switch between layers to capture new point and linear features
-- Sync and save your data to <MainPlatformNameLink /> cloud
+- Sync and save your data to <ServerCloudNameLink />
 
 :::tip Need help navigating the mobile app?
 [<MobileAppName /> interface](../../field/mobile-app-ui/) contains the overview of the features and functionality of the <MobileAppNameShort />.

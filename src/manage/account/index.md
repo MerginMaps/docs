@@ -1,3 +1,7 @@
+---
+description: The email and password associated with your Mergin Maps account can be changed anytime through the dashboard.
+---
+
 # User Account
 [[toc]]
 

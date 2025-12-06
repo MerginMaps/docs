@@ -1,3 +1,7 @@
+---
+description: Using the QGIS plugin or Mergin Maps dashboard, you can easily track which files and features have been added, removed or modified, when and by whom.
+---
+
 # Project History and Versions
 [[toc]]
 

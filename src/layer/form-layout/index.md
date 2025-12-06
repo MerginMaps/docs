@@ -1,3 +1,7 @@
+---
+description: Use QGIS drag and drop designer, conditional visibility, and widgets to create attributes forms tailored to your Mergin Maps project needs.
+---
+
 # Attributes Form Layout
 [[toc]]
 
@@ -118,7 +122,7 @@ Clone <MerginMapsProject id="documentation/form_cascade" /> to follow this examp
 The **HTML widget** can be also used to display online images in the mobile app or open online resources, such as PDF files, videos or websites, in the browser of your device.
 
 ::: tip
-Clone <MerginMapsProject id="documentation/forms-display-images-and-files" /> to how this works.
+Clone <MerginMapsProject id="documentation/forms-display-images-and-files" /> to follow this example.
 :::
 
 Here are HTML samples you can use to [configure the HTML widget](#using-expressions-in-text-and-html-widgets). Your form should contain a text field for storing the full URL link (here: `link`).
@@ -180,5 +184,5 @@ It can be found in *Available Widgets* in the *Other Widgets* section when using
 When adding the spacer widget to the form, there is an option to check the **Draw horizontal line** option. Otherwise, a vertical space will be added to the form.
 ![QGIS Spacer Widget configuration](./qgis-configure-spacer-widget.jpg "QGIS Spacer Widget configuration")
 
-And this how the spacer widget looks like in the form in QGIS (left) and in the mobile app (right).
+And this is how the spacer widget looks like in the form in QGIS (left) and in the mobile app (right).
 ![Spacer widget in QGIS and mobile app form](./spacer-widget-forms.jpg "Spacer widget in QGIS and mobile app form")

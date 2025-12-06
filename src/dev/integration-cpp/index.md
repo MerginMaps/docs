@@ -1,3 +1,7 @@
+---
+description: To use C++ API client for Mergin Maps, simply download the binary for your platform and run it from the command line. No additional dependencies required.
+---
+
 # C++ API Client
 [[toc]]
 
