@@ -52,7 +52,7 @@ This folder is accessible only from a computer, so you might not see it in your 
 ### Manual data transfer (iOS)
 The <MobileAppNameShort /> supports iTunes file sharing. Note that iTunes doesn't allow you to browse or edit data from the app data folder, only allows you to delete or copy the data folder to another location. 
 
-Manual data transfer from an iOS device can be done by [connecting your iOS device](https://support.apple.com/en-gb/guide/iphone/iph42d9b3178/18.0/ios/18.0) to a Mac or a Windows computer. On Windows, data can be copied using [iTunes](#using-itunes). On Macs, you can use [iTunes](#using-itunes) or [Finder](#using-finder), depending on your macOS version.
+Manual data transfer from an iOS device can be done by [connecting your iOS device](https://support.apple.com/en-gb/guide/iphone/iph42d9b3178/18.0/ios/18.0) to a Mac or a Windows computer. On Windows, data can be copied using [iTunes](#using-itunes-macos-windows). On Macs, you can use [iTunes](#using-itunes-macos-windows) or [Finder](#using-finder-macos), depending on your macOS version.
 
 #### Using iTunes (MacOS, Windows)
 Detailed steps for general data transfer using `iTunes` can be found on [Apple Support](https://support.apple.com/en-us/120403).
