@@ -55,6 +55,7 @@ You can also clean the following variables from `.prod.env`:
 6. Start up your docker containers
    ```bash
     $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
+    $ docker compose -f docker-compose.maps.yml -d up # or similarly, based on your deployment
    ```
 7. Check that you are on correct database migration versions (`6cb54659c1de`, `e95d051969ce`).
     ```bash
