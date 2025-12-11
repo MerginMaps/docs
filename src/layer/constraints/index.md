@@ -1,3 +1,7 @@
+---
+description: Constraints help to avoid mistakes when filling in the values or to highlight mandatory fields in the attributes form.
+---
+
 # Constraints
 Constraints help to avoid mistakes when filling in the values or to highlight mandatory fields. Fields with constraints have a warning displayed next to them in the form. 
 
