@@ -1,3 +1,7 @@
+---
+description: Mergin Maps Enterprise Edition enhanced features are only available on specific Docker images on our private AWS repository. Here is how to retrieve them.
+---
+
 # Download your Mergin Maps EE images
 <ServerType type="EE" />
 

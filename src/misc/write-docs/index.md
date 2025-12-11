@@ -1,3 +1,7 @@
+---
+description: Mergin Maps documentation system overview of writing new content, using Markdown and custom components, preparing images, and submitting changes via GitHub.
+---
+
 # Write Documentation
 
 Thank you for your interest in helping out with writing [<MainPlatformName /> Documentation](https://merginmaps.com/docs). The documentation framework is based on [VitePress](https://vitepress.dev/). We welcome any contributions as <GitHubRepo id="MerginMaps/docs/pulls" desc="GitHub Pull Requests" />. If you are unsure how to contribute or what tasks are best to start with, join us on our [community chat](https://merginmaps.com/community/join) and ask in the `#dev` channel. We are happy to get you up to speed!

@@ -1,3 +1,7 @@
+---
+description: Work Packages tool allows to create projects containing data subsets with two-way synchronisation between the main and dependent Mergin Maps projects.
+---
+
 # Work Packages
 [[toc]]
 

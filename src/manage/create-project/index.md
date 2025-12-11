@@ -1,3 +1,7 @@
+---
+description: New Mergin Maps project can be created in QGIS, mobile app or through the dashboard. You can also clone a public project or project from your workspace.
+---
+
 # How to Create a New Project
 [[toc]]
 

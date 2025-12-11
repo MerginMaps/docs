@@ -1,3 +1,7 @@
+---
+description: Mergin Maps QGIS plugin makes the powerful QGIS and Mergin Maps combination work! Use it to easily synchronise your data and projects across devices.
+---
+
 # How to Install Mergin Maps QGIS Plugin
 [[toc]]
 

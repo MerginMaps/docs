@@ -1,3 +1,7 @@
+---
+description: SSO is an authentication method that allows you to sign in to Mergin Maps using the same credentials as you use in your organisation.
+---
+
 # Single Sign-On (SSO)
 [[toc]]
 

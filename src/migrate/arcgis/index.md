@@ -1,3 +1,7 @@
+---
+description: Do you consider switching from ArcGIS to Mergin Maps? See the comparison of both platforms and practical tips for migrating to Mergin Maps.
+---
+
 # Migrate from ArcGIS
 [[toc]]
 

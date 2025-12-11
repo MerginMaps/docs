@@ -1,4 +1,8 @@
-﻿# Workspaces
+﻿---
+description: Workspaces are used to efficiently manage projects, users and subscriptions in Mergin Maps. Every workspace is tied to a subscription.
+---
+
+# Workspaces
 [[toc]]
 
 ## Workspaces in Mergin Maps

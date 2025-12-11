@@ -6,6 +6,8 @@ prev:
 next:
   text: 'Administration Panel'
   link: '../dashboard/'
+
+description: Configure Mergin Maps EE and CE environment variables. Some variables have placeholders that need to be modified.
 ---
 
 # Configure environment

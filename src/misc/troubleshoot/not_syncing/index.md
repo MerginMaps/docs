@@ -1,3 +1,7 @@
+---
+description: Issues with Mergin Maps project synchronisation? See how to resolve Gateway Timeout or 502 Bad Gateway error.
+---
+
 # Project fails to sync
 [[toc]]
 

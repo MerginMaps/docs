@@ -1,3 +1,7 @@
+---
+description: Media Sync enables to synchronise media files from Mergin Maps project to other storage back-ends, such as Google Drive, Amazon S3 or MinIO.
+---
+
 # Media Sync
 [[toc]]
 

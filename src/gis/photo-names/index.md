@@ -1,3 +1,7 @@
+---
+description: Names of the photos captured using Mergin Maps mobile app can be customised in the QGIS plugin. Rename your photos automatically to keep them organised.
+---
+
 # How to Set Photo Names Format
 
 [[toc]]

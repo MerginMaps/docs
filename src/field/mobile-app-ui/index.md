@@ -1,3 +1,9 @@
+---
+description: See how to navigate the mobile app, work with projects, survey and explore features, track position, access GPS info, synchronise changes and much more.
+
+outline: deep
+---
+
 # Mergin Maps Mobile App Interface
 [[toc]]
 
@@ -147,26 +153,42 @@ The **More** button opens a list of additional options
 - [**Measure**](../measure/): measure length or area on the map
 - **Local changes**: the overview of your local changes to be synchronised
    ![Mergin maps mobile app Local changes](./mobile-app-local-changes.jpg "Mergin maps mobile app Local changes")
-- **Settings**: [GPS settings](#gps-settings), [streaming mode and recording settings](#streaming-mode-and-recording-settings), and general references to information about the <MobileAppNameShort />, changelog, help, privacy policy, terms of service and [diagnostic log](../../misc/troubleshoot/#diagnostic-log-on-mergin-maps-mobile-app)
-   ![Mergin Maps mobile app Settings](./mobile-app-settings.jpg "Mergin Maps mobile app Settings")
-   
-#### GPS settings
+- [**Settings**](#settings): to set up the <MobileAppNameShort />
+
+## Settings
+To open the **Settings**, tap the **More** button. In Settings, you can find [GPS](#gps-settings), [Streaming mode](#streaming-mode-settings) and [Recording settings](#recording-settings) as well as [General](#general) information about the <MobileAppNameShort />.
+
+![Mergin maps mobile app Settings](./mobile-app-open-settings.jpg "Mergin maps mobile app Settings")
+
+### GPS settings
 - **GPS accuracy threshold**: value used to change the colour of GPS accuracy indicator to yellow
 - **Manage GPS receivers**: option to switch between internal GPS and external GPS receiver connected via Bluetooth. See [External GPS](../external_gps/) for more details.
 - **GPS antenna height**: option to enter the height of a GPS antenna (e.g. when a surveying pole is used)
 
 ![Mergin Maps mobile app GPS Settings](./mobile-app-gps-settings.jpg "Mergin Maps mobile app GPS settings")
 
-#### Streaming mode and recording settings
+### Streaming mode settings
 [**Streaming mode**](../mobile-features/#streaming-mode-to-survey-lines-or-areas) can be used when surveying lines or polygons to capture vertices based on the GPS location.
 - **Interval threshold type**: the type of interval in streaming mode, can be set to *Time elapsed* or *Distance travelled* .
 - **Threshold interval** the interval of recording vertices
 
-**Recording** setting contains options to:
-- [**Reuse last value option**](../reuse-last-values/) if used, last entered values of selected attributes will be automatically filled in when creating a new feature.
-- **Automatically sync changes** if used, local changes will be synchronised automatically.
+![Mergin Maps mobile app Streaming mode](./mobile-app-settings-streaming.jpg "Mergin Maps mobile app Streaming mode")
 
-![Mergin Maps mobile app Streaming mode and recording settings](./mobile-app-streaming-recording-settings.jpg "Mergin Maps mobile app Streaming mode and recording settings")
+### Recording settings
+**Recording** setting provides these options:
+- [**Reuse last value option**](../reuse-last-values/): if used, last entered values of selected attributes will be automatically filled in when creating a new feature
+- **Automatically sync changes**: if used, local changes will be synchronised automatically
+- **Auto-lock position**: if used, the <MobileAppNameShort /> will centre to your GPS position when you start the recording
+- **Touch Feedback** can be set to sound, vibration or sound and vibration feedback when adding a feature. Note that the *haptic feedback* (vibrations, sounds) needs to be enabled on your mobile device.
+
+![Mergin Maps mobile app recording settings](./mobile-app-settings-recording.jpg "Mergin Maps mobile app recording settings")
+
+
+### General
+In **General**, you can find references to information about the <MobileAppNameShort />, changelog, help, privacy policy, terms of service and [diagnostic log](../../misc/troubleshoot/#diagnostic-log-on-mergin-maps-mobile-app).
+
+![Mergin Maps mobile app settings general](./mobile-app-settings-general.jpg "Mergin Maps mobile app settings general")
+
 
 ## Working with a project as a reader
 Users who have read [permission](../../manage/permissions/) to a project do not see some of the editing options that were described in the [Working with a project](#working-with-a-project). Readers can open projects in the <MobileAppNameShort />, [explore](#exploring-features-on-a-map) features on the map, work with [layers](#layers) and use most of the tools in the same manner as users with editing permission.

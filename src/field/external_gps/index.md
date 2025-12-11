@@ -1,3 +1,7 @@
+---
+description: External GPS receivers can be connected to your mobile device via Bluetooth and used in Mergin Maps mobile app to achieve higher GPS accuracy.
+---
+
 # External GPS
 
 <!--- IMPORTANT: This permalink is referenced from Mergin Maps mobile app -->

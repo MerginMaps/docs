@@ -1,3 +1,7 @@
+---
+description: PostgreSQL DB Sync is a tool that takes care of two-way synchronisation between Mergin Maps and PostGIS databases.
+---
+
 # PostgreSQL DB Sync
 [[toc]]
 

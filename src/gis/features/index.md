@@ -1,5 +1,6 @@
 ---
 outline: [2, 3]
+description: Mergin Maps project is prepared in QGIS. Set up survey layers, symbology, forms, snapping, tracking, background maps, and various project settings.
 ---
 
 # QGIS Project Preparation
@@ -165,6 +166,18 @@ Map sketching for the <MobileAppNameShort /> can be enabled in the **<MainPlatfo
 ![Enable map sketching in QGIS Mergin Maps project](./project-map-sketching.jpg "Enable map sketching in QGIS Mergin Maps project")
 
 You can read more about this functionality in [Map Sketching](../../field/map-sketching/).
+
+### Photo sketching
+Photo sketching for the <MobileAppNameShort /> can be enabled in the **<MainPlatformName />** tab in **Project properties**.
+
+![Enable photo sketching in QGIS Mergin Maps project](./project-photo-sketching.jpg "Enable photo sketching in QGIS Mergin Maps project")
+
+You can find out more about this functionality in [Photo Sketching](../../field/photo-sketching/).
+
+### Layer order
+There is an option to define the order in which layers are displayed in the <MobileAppNameShort />: *alphabetical* or *QGIS layer order*. Detailed steps can be found [here](../../field/layers/#layer-order).
+
+![Layer order in QGIS Mergin Maps project](./project-layer-order.jpg "Layer order in QGIS Mergin Maps project")
 
 ### Map themes
 [Map Themes](../setup_themes/) make possible to switch between different background maps in <MobileAppName /> (e.g. cartography maps and aerial imagery)

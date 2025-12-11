@@ -1,3 +1,7 @@
+---
+description: Define which layers can be edited by enabling or disabling digitising in your Mergin Maps project.
+---
+
 # How to Enable Digitising
 
 1. Open your <MainPlatformName /> Project in QGIS

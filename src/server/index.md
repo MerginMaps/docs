@@ -1,5 +1,5 @@
 ---
-description: Overview for custom Mergin Maps server
+description: Overview of custom server deployments, Mergin Maps Community Edition and Mergin Maps Enterprise Edition.
 ---
 
 # Overview

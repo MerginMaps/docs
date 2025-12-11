@@ -1,3 +1,7 @@
+---
+description: In this tutorial, you will learn how to create a Mergin Maps project in QGIS and configure attributes forms for survey layers.
+---
+
 # Creating a Project in QGIS
 [[toc]]
 

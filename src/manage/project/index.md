@@ -1,4 +1,8 @@
-﻿# Mergin Maps Project
+﻿---
+description: Mergin Maps project is stored in the cloud, containing your data and QGIS project. Download the project, capture new data and sync it back to the cloud.
+---
+
+# Mergin Maps Project
 [[toc]]
 
 What is a <MainPlatformName /> project? 
