@@ -35,7 +35,7 @@ In the recording mode, the bottom panel contains tools to capture geometry. Once
 Below, we describe capturing [point features](#capture-points), [lines and areas](#capture-lines-or-areas) as well as [non-spatial](#add-or-edit-non-spatial-features) records (e.g. adding a new entry to a table).
 
 :::tip Attributes form make surveys easier!
-Attributes forms can be set up in QGIS to make collecting data more efficient. For more details, see [Setting Up Widgets](../../layer/form-widgets/),  [Attributes Form Configuration](../../layer/form-configuration/) or [Attributes Form Layout](../../layer/form-layout/).
+Attributes forms can be set up in QGIS to make collecting data more efficient. For more details, see the [Configure Forms](../../layer/overview/) section.
 :::
 
 ### Capture points
@@ -146,7 +146,7 @@ If snapping is enabled, the crosshairs will turn purple and snap to vertices (le
 ![Snapping Vertices and Segments in Mergin Maps mobile app](../../gis/snapping/mobile-app-basic-snapping.jpg "Snapping Vertices and Segments in Mergin Maps mobile app")
 
 ## Add or edit non-spatial features
-[Non-spatial features](../../layer/non-spatial-data/), such as tables for [value relations](../../layer/form-widgets/#value-relation), can also be added or edited in the <MobileAppNameShort />.
+Non-spatial features, such as tables for [value relations](../../layer/value-select/#value-relation), can also be added or edited in the <MobileAppNameShort />.
 
 1. Tap the **Layers** button and select the layer you want to edit
    ![Mergin Maps mobile app Layers panel](./mobile-non-spatial-layers.jpg "Mergin Maps mobile app Layers panel")

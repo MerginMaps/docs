@@ -2,10 +2,10 @@
 description: EXIF is a file format for storing metadata in image files. Mergin Maps mobile app can store EXIF metadata values in the fields of survey layers.
 ---
 
-# Exif Metadata
+# Geotagging
 [[toc]]
 
-EXIF is a file format for storing metadata in image files, such as the camera settings, image metrics, date and time or location information (see, e.g., [Wikipedia](https://en.wikipedia.org/wiki/Exif)). 
+Geotagging can be achieved through EXIF metadata. EXIF is a file format for storing metadata in image files, such as the camera settings, image metrics, date and time or location information (see, e.g., [Wikipedia](https://en.wikipedia.org/wiki/Exif)). 
 
 The <MobileAppNameShort /> supports some default value expression functions that can be used to read EXIF metadata and store their values in the fields of your survey layer.
 
@@ -28,7 +28,7 @@ Clone <MerginMapsProject id="documentation/exif-metadata" /> to see how it works
 
 To store EXIF metadata values in the fields of your survey layer:
 1. In QGIS, open the **Properties** of your survey layer and navigate to the **Attributes Form** tab.
-2. Now we need to set the [default values](../form-configuration/#default-values) of fields that should store EXIF metadata. 
+2. Now we need to set the [default values](../default-values/) of fields that should store EXIF metadata. 
    
    [Supported EXIF functions](#supported-exif-functions) are listed below. In general, EXIF functions looks like this: 
    `read_exif('<ABSOLUTE_PATH_TO_IMAGE>', '<EXIF_TAG_STRING>')` 

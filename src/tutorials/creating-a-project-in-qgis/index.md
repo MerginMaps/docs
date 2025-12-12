@@ -130,7 +130,7 @@ The `hedges` layer has an attribute called `photo`. The attribute itself is stor
 5. Click **OK** to close the **Layer properties**.
 
 :::tip
-There is much more that can be done with the Attributes Form in QGIS when preparing a <MainPlatformNameLink /> project! You can learn more about forms in [Setting Up Form Widgets](../../layer/form-widgets/), [Advanced Form Configuration](../../layer/form-configuration/) or other pages in the *Configure Survey Layer* part of this documentation.
+There is much more that can be done with the Attributes Form in QGIS when preparing a <MainPlatformNameLink /> project! You can learn more in the [Configure Forms](../../layer/overview/) section of this documentation.
 :::
 
 

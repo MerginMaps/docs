@@ -10,7 +10,7 @@ description: External GPS receivers can be connected to your mobile device via B
 
 External GPS receivers can be connected to your mobile device via Bluetooth and used in <MobileAppName /> to achieve higher [GPS accuracy](../gps_accuracy/). 
 
-There are several [extra position variables](../../layer/position_variables/) that can be useful to record when doing the survey with external GPS, such as the GPS antenna height, GPS device name as well as metrics like horizontal, vertical or position dilution of precision (HDOP, VDOP, PDOP).
+There are several [extra position variables](../../layer/variables/#position-variables) that can be useful to record when doing the survey with external GPS, such as the GPS antenna height, GPS device name as well as metrics like horizontal, vertical or position dilution of precision (HDOP, VDOP, PDOP).
 
 Note that external GPS devices usually return orthometric heights (ellipsoid with the geoid separation applied).
 
@@ -33,7 +33,7 @@ If GPS antenna height is set to a non-zero value, it is also displayed next to t
 ![GPS antenna height setup in Mergin Maps mobile app](./mobile-app-gps-antenna-height.jpg "GPS antenna height setup in Mergin Maps mobile app")
 
 :::tip
-GPS antenna height can be recorded during the survey by using the [extra position variable](../../layer/position_variables/) `@position_gps_antenna_height` as a [default value](../../layer/form-configuration/#default-values).
+GPS antenna height can be recorded during the survey by using the [extra position variable](../../layer/variables/#position-variables) `@position_gps_antenna_height` as a [default value](../../layer/default-values/).
 :::
 
 ## External GPS on Android
