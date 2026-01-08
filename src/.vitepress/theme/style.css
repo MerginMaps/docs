@@ -147,7 +147,11 @@ a img,svg {
 img {
   max-width: 90%;
   max-height: 500px;
+  width: auto;
   cursor: pointer;
+  height: auto;
+  aspect-ratio: attr(width) / attr(height);
+  display: block;
 }
 
 /** Custom mm theme styles */
@@ -156,4 +160,9 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 0.25em;
+}
+
+h1, h2, h3, h4, h5{
+  /** For proper anchor offset when using scroll to hash links */
+  scroll-margin-top: 60px;
 }

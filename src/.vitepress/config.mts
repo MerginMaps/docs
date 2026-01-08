@@ -1,5 +1,7 @@
-import { defineConfig } from "vitepress";
+import { defineConfig, } from "vitepress";
 import en from "./sidebar/en";
+import { markdownItImageSize } from "markdown-it-image-size";
+import path from "path";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -10,6 +12,11 @@ export default defineConfig({
   ignoreDeadLinks: true,
   cleanUrls: true,
   outDir: "../dist/docs",
+  markdown: {
+    config: (md) => {
+      markdownItImageSize(md, { publicDir: path.resolve(import.meta.dirname, '../public'), });
+    },
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     search: {
