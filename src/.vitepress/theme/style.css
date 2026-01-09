@@ -149,6 +149,7 @@ img {
   max-height: 500px;
   cursor: pointer;
   display: block;
+  width: auto;
 }
 
 /** Custom mm theme styles */
