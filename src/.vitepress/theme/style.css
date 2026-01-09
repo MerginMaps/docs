@@ -147,10 +147,7 @@ a img,svg {
 img {
   max-width: 90%;
   max-height: 500px;
-  width: auto;
   cursor: pointer;
-  height: auto;
-  aspect-ratio: attr(width) / attr(height);
   display: block;
 }
 
