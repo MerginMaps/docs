@@ -146,10 +146,7 @@ a img,svg {
 
 img {
   max-width: 90%;
-  max-height: 500px;
   cursor: pointer;
-  display: block;
-  width: auto;
 }
 
 /** Custom mm theme styles */

@@ -13,8 +13,41 @@ export default defineConfig({
   cleanUrls: true,
   outDir: "../dist/docs",
   markdown: {
-    config: (md) => {
-      markdownItImageSize(md, { publicDir: path.resolve(import.meta.dirname, '../public'), });
+    config(md) {
+      // Fix for image width and height handling for proper scrolling
+      const maxHeight = 500 /* px */
+
+      const img = md.renderer.rules.image!
+      md.renderer.rules.image = function (tokens, idx, options, env, self) {
+        const token = tokens[idx]
+
+        const widthAttr = token.attrGet('width')
+        const heightAttr = token.attrGet('height')
+        const existingStyle = token.attrGet('style') || ''
+
+        const style: string[] = []
+
+        let w = widthAttr ? Number.parseInt(widthAttr, 10) : null
+        let h = heightAttr ? Number.parseInt(heightAttr, 10) : null
+
+        if (w) {
+          if (h && h > maxHeight) {
+            const scale = maxHeight / h
+            w = Math.round(w * scale)
+            h = maxHeight
+          }
+          style.push(`width: ${w}px;`)
+        }
+
+        if (style.length > 0) {
+          const sep = existingStyle && !existingStyle.trim().endsWith(';') ? ';' : ''
+          token.attrSet('style', existingStyle + sep + style.join(' '))
+        }
+
+        return img(tokens, idx, options, env, self)
+      }
+
+      markdownItImageSize(md, { publicDir: path.resolve(import.meta.dirname, '../public') })
     },
   },
   themeConfig: {
