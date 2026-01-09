@@ -12,6 +12,13 @@ export default defineConfig({
   ignoreDeadLinks: true,
   cleanUrls: true,
   outDir: "../dist/docs",
+  vue: {
+    template: {
+      compilerOptions: {
+        isCustomElement: (tag) => tag === 'lite-youtube'
+      }
+    }
+  },
   markdown: {
     config(md) {
       // Fix for image width and height handling for proper scrolling
