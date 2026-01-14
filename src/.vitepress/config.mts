@@ -1,5 +1,7 @@
-import { defineConfig } from "vitepress";
+import { defineConfig, } from "vitepress";
 import en from "./sidebar/en";
+import { markdownItImageSize } from "markdown-it-image-size";
+import path from "path";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -10,6 +12,45 @@ export default defineConfig({
   ignoreDeadLinks: true,
   cleanUrls: true,
   outDir: "../dist/docs",
+  vue: {
+    template: {
+      compilerOptions: {
+        isCustomElement: (tag) => tag === 'lite-youtube'
+      }
+    }
+  },
+  markdown: {
+    config(md) {
+      const maxHeight = 500 /* px */
+
+      const img = md.renderer.rules.image!
+      md.renderer.rules.image = function (tokens, idx, options, env, self) {
+        const token = tokens[idx]
+
+        const widthAttr = token.attrGet('width')
+        const heightAttr = token.attrGet('height')
+
+        let w = widthAttr ? Number.parseInt(widthAttr, 10) : null
+        let h = heightAttr ? Number.parseInt(heightAttr, 10) : null
+
+        let style = token.attrGet('style') || ''
+        if (style && !style.trim().endsWith(';')) style += ';'
+
+        if (w) {
+          if (h && h > maxHeight) {
+            w = Math.round(w * maxHeight / h)
+            h = maxHeight
+          }
+          style += `width: ${w}px;`
+        }
+
+        token.attrSet('style', style)
+        return img(tokens, idx, options, env, self)
+      }
+
+      markdownItImageSize(md, { publicDir: path.resolve(import.meta.dirname, '../public') })
+    },
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     search: {

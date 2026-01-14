@@ -18,4 +18,10 @@ const props = defineProps({
 </script>
 
 <style scoped>
+lite-youtube {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+}
 </style>

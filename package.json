@@ -23,6 +23,7 @@
   "dependencies": {
     "@gtm-support/vue-gtm": "^3.1.0",
     "@justinribeiro/lite-youtube": "^1.8.2",
+    "markdown-it-image-size": "^15.0.1",
     "smartlook-client": "^10.0.0"
   }
 }
