@@ -1,5 +1,5 @@
 // https://vitepress.dev/guide/custom-theme
-import { h, nextTick, watch } from "vue";
+import { h } from "vue";
 import type { Theme } from "vitepress";
 import DefaultTheme, { VPBadge } from "vitepress/theme";
 import "./style.css";

@@ -21,7 +21,6 @@ export default defineConfig({
   },
   markdown: {
     config(md) {
-      // Fix for image width and height handling for proper scrolling
       const maxHeight = 500 /* px */
 
       const img = md.renderer.rules.image!
@@ -30,27 +29,22 @@ export default defineConfig({
 
         const widthAttr = token.attrGet('width')
         const heightAttr = token.attrGet('height')
-        const existingStyle = token.attrGet('style') || ''
-
-        const style: string[] = []
 
         let w = widthAttr ? Number.parseInt(widthAttr, 10) : null
         let h = heightAttr ? Number.parseInt(heightAttr, 10) : null
 
+        let style = token.attrGet('style') || ''
+        if (style && !style.trim().endsWith(';')) style += ';'
+
         if (w) {
           if (h && h > maxHeight) {
-            const scale = maxHeight / h
-            w = Math.round(w * scale)
+            w = Math.round(w * maxHeight / h)
             h = maxHeight
           }
-          style.push(`width: ${w}px;`)
+          style += `width: ${w}px;`
         }
 
-        if (style.length > 0) {
-          const sep = existingStyle && !existingStyle.trim().endsWith(';') ? ';' : ''
-          token.attrSet('style', existingStyle + sep + style.join(' '))
-        }
-
+        token.attrSet('style', style)
         return img(tokens, idx, options, env, self)
       }
 

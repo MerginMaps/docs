@@ -156,8 +156,3 @@ img {
   align-items: center;
   gap: 0.25em;
 }
-
-h1, h2, h3, h4, h5{
-  /** For proper anchor offset when using scroll to hash links */
-  scroll-margin-top: 60px;
-}
