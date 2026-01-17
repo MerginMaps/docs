@@ -30,15 +30,17 @@ Click on a feature on the map to display its properties.
 ![Mergin Maps dashboard maps](./dashboard-map-properties.webp "Mergin Maps dashboard maps")
 
 ## Sharing maps via URL <Badge text="early access" type="warning"/>
-::: warning Early access feature
+::: tip Early access feature
 Map sharing is in early access. If you would like to try it out, fill in [this form](https://wishlist.merginmaps.com/f/share-maps-via-url) to gain access to this feature.
+
+Try out this <AppDomainNameLink id="maps/28oXI8-tyUv9dWvMGjnvEyqywBw" desc="example link"/> to see how shared maps work.
 :::
 
 Webmaps can be shared via URL. [Admins or owners](../permissions/) can enable map sharing for a project, so that anyone with the link can display and explore your project in a web browser, without the need to log into  <MainPlatformNameLink />.
 
 1. Navigate to your project on the <DashboardShortLink />.
-2. In the **Map** tab, click on the **Share map** button to generate a shareable link, such as <AppDomainNameLink id="maps/28oXI8-tyUv9dWvMGjnvEyqywBw" desc="https://app.merginmaps.com/maps/28oXI8-tyUv9dWvMGjnvEyqywBw"/>
-3. Send the link to anyone to share your project
+2. In the **Map** tab, click on the **Share map** button to generate a shareable link
+3. Send the link to anyone to share your project, such as 
 
 To disable the map sharing, click on the **Revoke sharing** button.
 
