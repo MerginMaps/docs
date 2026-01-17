@@ -66,7 +66,7 @@ There are also some extra folders and files:
 
 And this is how the same project looks in <AppDomainNameLink />
 
-![Mergin Maps project folder content web](./project-server.jpg "Mergin Maps project folder content web")
+![Mergin Maps project folder content web](./dashboard-project.webp "Mergin Maps project folder content web")
 
 ## Adding a layer to the project
 If you want to add an additional layer to your existing <MainPlatformName /> project:
