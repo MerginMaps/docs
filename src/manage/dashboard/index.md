@@ -38,11 +38,11 @@ Click on a file to see when it was modified, its size, to download or delete it.
 ![Detail of a file in Mergin Maps project](./mergin-maps-dashboard-file-detail.jpg "Detail of a file in Mergin Maps project")
 
 ### Webmaps
-On the **Map** tab, your project is displayed directly on the <DashboardShortLink /> without the need to open QGIS or the <MobileAppNameShort />.
+On the **Map** tab, your project is displayed directly on the <DashboardShortLink /> without the need to open QGIS or the <MobileAppNameShort />. As an early access feature, the map can also be shared via URL.
 
 More details about this functionality can be found in the [Webmaps](../dashboard-maps/) section.
 
-![Mergin Maps dashboard webmaps](./mergin-maps-web-map.jpg "Mergin Maps dashboard webmaps")
+![Mergin Maps dashboard webmaps](./mergin-maps-web-map.webp "Mergin Maps dashboard webmaps")
 
 ### History
 The **History** tab contains an overview of available project versions that can be also downloaded to your computer.

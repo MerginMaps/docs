@@ -5,7 +5,7 @@ description: Webmaps display the map overview of your project's spatial data dir
 # Webmaps
 [[toc]]
 
-The spatial data of your project can be displayed in the **Map** tab of the project on the <DashboardShortLink />. You need to be logged in to see the maps.
+The spatial data of your project can be displayed and explored in the **Map** tab of the project on the <DashboardShortLink />. As an early access feature, they can also be [shared via URL](#sharing-maps-via-url).
 
 ![Mergin Maps dashboard map](./dashboard-webmap.gif "Mergin Maps dashboard map")
 
@@ -25,7 +25,28 @@ The content of the maps and of the **Layers** panel is refreshed after every syn
 
 The **Layers** panel lists all layers displayed on the map. The check button :white_check_mark: controls the visibility of layers.
 
-![Mergin Maps dashboard maps](../dashboard/mergin-maps-web-map.jpg "Mergin Maps dashboard maps")
+Click on a feature on the map to display its properties.
+
+![Mergin Maps dashboard maps](./dashboard-map-properties.webp "Mergin Maps dashboard maps")
+
+## Sharing maps via URL <Badge text="early access" type="warning"/>
+::: warning Early access feature
+Map sharing is in early access. If you would like to try it out, fill in [this form](https://wishlist.merginmaps.com/f/share-maps-via-url) to gain access to this feature.
+:::
+
+Webmaps can be shared via URL. [Admins or owners](../permissions/) can enable map sharing for a project, so that anyone with the link can display and explore your project in a web browser, without the need to log into  <MainPlatformNameLink />.
+
+1. Navigate to your project on the <DashboardShortLink />.
+2. In the **Map** tab, click on the **Share map** button to generate a shareable link, such as [https://app.merginmaps.com/maps/28oXI8-tyUv9dWvMGjnvEyqywBw](https://app.merginmaps.com/maps/28oXI8-tyUv9dWvMGjnvEyqywBw)
+3. Send the link to anyone to share your project
+
+To disable the map sharing, click on the **Revoke sharing** button.
+
+![Sharing maps via URL](./map-sharing-url.webp "Sharing maps via URL")
+
+::: tip Blog about shared maps
+You can read about this functionality in our blog post <MainDomainNameLink id="blog/a-final-surprise-for-the-year---shared-maps-via-url" desc="A final surprise for the year - shared maps via URL"/>.
+:::
 
 ## Webmaps extent
 
@@ -47,7 +68,7 @@ If there are no extent settings in the QGIS project, <MainPlatformName /> will c
 The **Map** tab of a project on the <DashboardShortLink /> may display this error message:
 `Map config does not exist, please try update the project`
 
-![Mergin Maps webmap Map config does not exist](./webmap-map-config-issue.jpg "Mergin Maps webmap Map config does not exist")
+![Mergin Maps webmap Map config does not exist](./webmap-map-config-issue.webp "Mergin Maps webmap Map config does not exist")
 
 This usually happens when the map was not initiated. All you need to do is to create a new version of the project: synchronisation of the project will activate the map content.
 
