@@ -129,7 +129,9 @@ Attributes of multiple features from the same layer can be edited at once.
 ![Multi-feature editing in Mergin Maps mobile app](./mobile-multi-feature-editing.gif "Multi-feature editing in Mergin Maps mobile app")
 
 1. Tap on a feature on the map and select the **Select more** option.
-   ![Select more features button in Mergin Maps mobile app](./mobile-select-more.jpg "Select more features button in Mergin Maps mobile app" )
+
+   Depending on your mobile device, you may need to use a button next to **Edit** to display this option.
+   ![Select more features button in Mergin Maps mobile app](./mobile-select-more.webp "Select more features button in Mergin Maps mobile app" )
 
 2. Select all features that should be edited. 
 
@@ -172,4 +174,17 @@ See [How to Avoid Polygons Overlap](../../gis/avoid-overlap/) for more details.
 After confirming that you want to delete the feature, it will be removed from the layer.
 
 ![Delete feature in Mergin Maps mobile app](./mobile-delete-feature.jpg "Delete feature in Mergin Maps mobile app")
+
+### Multi-features deleting
+Multiple features can be deleted at once:
+
+1. Select one of the features you want to delete and use the **Select more** button.
+
+   Depending on your mobile device, you may need to use a button next to **Edit** to display this option.
+
+2. Select all features that should be deleted on the map
+
+3. Use the **Delete** button to delete all selected features at once
+
+![Delete multiple features in Mergin Maps mobile app](./mobile-delete-bulk.webp "Delete multiple features in Mergin Maps mobile app")
 
