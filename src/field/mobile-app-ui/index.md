@@ -27,7 +27,7 @@ The account icon in the right upper corner of the screen can be used to [manage 
 ### Home
 In the **Home** tab, you can find the list of projects that are downloaded to your mobile device, including local projects that are yet to be synchronised to <MainPlatformNameLink />.
 
-![Mergin Maps mobile app Home tab](./mobile-app-home.jpg "Mergin Maps mobile app Home tab")
+![Mergin Maps mobile app Home tab](./mobile-app-home.webp "Mergin Maps mobile app Home tab")
 
 - Open a project by tapping on its name
 - Use the **Create project** button to create a new project in the <MobileAppNameShort />. For detailed steps, go to [Create a project in Mergin Maps mobile app](../../manage/create-project/#create-a-project-in-mergin-maps-mobile-app).
@@ -117,7 +117,7 @@ The **Sync** button can be used to synchronise changes during the field survey.
 
 It also indicates that synchronisation is in progress.
 
-![Mergin Maps mobile app Sync button](./mobile-app-sync.jpg "Mergin Maps mobile app Sync button")
+![Mergin Maps mobile app Sync button](./mobile-app-sync.webp "Mergin Maps mobile app Sync button")
 
 
 ### Add
@@ -181,7 +181,7 @@ To open the **Settings**, tap the **More** button. In Settings, you can find [GP
 - **Auto-lock position**: if used, the <MobileAppNameShort /> will centre to your GPS position when you start the recording
 - **Touch Feedback** can be set to sound, vibration or sound and vibration feedback when adding a feature. Note that the *haptic feedback* (vibrations, sounds) needs to be enabled on your mobile device.
 
-![Mergin Maps mobile app recording settings](./mobile-app-settings-recording.jpg "Mergin Maps mobile app recording settings")
+![Mergin Maps mobile app recording settings](./mobile-app-settings-recording.webp "Mergin Maps mobile app recording settings")
 
 
 ### General
