@@ -23,9 +23,9 @@ Let's say you want to find your surveyed features on Google Maps. It is possible
 5. Check the **Apply default value on update** option
 6. **Apply** the changes. Don't forget to save and sync your project!
 
-![Link to Google maps in QGIS Attributes form](./qgis-google-maps.jpg "Link to Google Maps in QGIS Attributes form")
+![Link to Google maps in QGIS Attributes form](./qgis-google-maps.webp "Link to Google Maps in QGIS Attributes form")
 
 When you tap a feature in the <MobileAppNameShort />, the form will display a clickable link **Open Google Map** that opens the Google Map app at the position of the feature.
 
-![Open Google map from Mergin Maps mobile app](./mobile-form-link-to-navigation-app.jpg "Open Google map from Mergin Maps mobile app")
+![Open Google map from Mergin Maps mobile app](./mobile-form-link-to-navigation-app.webp "Open Google map from Mergin Maps mobile app")
 

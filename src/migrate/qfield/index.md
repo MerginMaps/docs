@@ -62,7 +62,7 @@ Now that you have your QField project on your computer, you need to convert it t
 1. Close QGIS
 
 2. Find the project folder location on your computer (e.g. `C:\GIS\QField_MyProject`) and create a copy in a new location (e.g. `C:\GIS\MyProject`)
-   - this folder should contain a single QGIS project file (`.qgz` or `.qgs`), local data files (such as GeoPackages `.GPKG`, Shapefiles `.SHP` or rasters) and other necessary files (such as photos `.jpg` or `.png`).
+   - this folder should contain a single QGIS project file (`.qgz` or `.qgs`), local data files (such as GeoPackages `.GPKG`, Shapefiles `.SHP` or rasters) and other necessary files (such as photos `.webp` or `.png`).
    - remove all hidden files and all files that are not strictly required by a regular plain QGIS project (such as QField configuration files, backups of the layers or offline synchronisation logs).
 
    :::tip

@@ -16,23 +16,23 @@ It is not possible to change the username. If you wish to use a different userna
 1. Log in to <AppDomainNameLink />. 
 
    In the upper right corner of the screen, click on your username and go to **Your profile**.  
-   ![Mergin Maps profile](../dashboard/mergin-maps-dashboard-profile.jpg "Mergin Maps profile")
+   ![Mergin Maps profile](../dashboard/mergin-maps-dashboard-profile.webp "Mergin Maps profile")
    
 2. Click on the **Edit account** button.
-   ![Editing Mergin Maps account](./dashboard-edit-account.jpg "Editing Mergin Maps account")
+   ![Editing Mergin Maps account](./dashboard-edit-account.webp "Editing Mergin Maps account")
 
 3. Here you can change your email and add or change your first name and last name. 
-   ![Mergin Maps dashboard edit name and e-mail](./dashboard-edit-email.jpg "Mergin Maps dashboard edit name and e-mail")
+   ![Mergin Maps dashboard edit name and e-mail](./dashboard-edit-email.webp "Mergin Maps dashboard edit name and e-mail")
 
 ### Changing password
 
 1. Log in to <AppDomainNameLink />. 
 
    In the upper right corner of the screen, click on your username and go to **Your profile**.   
-   ![Mergin Maps profile](../dashboard/mergin-maps-dashboard-profile.jpg "Mergin Maps profile")
+   ![Mergin Maps profile](../dashboard/mergin-maps-dashboard-profile.webp "Mergin Maps profile")
    
 2. Click on the **Change password** button and set a new password.
-   ![Mergin Maps profile](./dashboard-change-password.jpg "Mergin Maps profile")
+   ![Mergin Maps profile](./dashboard-change-password.webp "Mergin Maps profile")
 
 
 ## Changing Mergin Maps username
@@ -64,10 +64,10 @@ Your <MainPlatformNameLink /> account can be deleted in the <DashboardShortLink 
 Before closing the account, **make sure to** [**close your workspaces**](../../manage/workspaces/#how-to-delete-a-workspace). 
 
 1. Log in to <AppDomainNameLink />. In the upper right corner of the screen, click on your username and go to **Your profile**.
-   ![Mergin Maps profile](../dashboard/mergin-maps-dashboard-profile.jpg "Mergin Maps profile")
+   ![Mergin Maps profile](../dashboard/mergin-maps-dashboard-profile.webp "Mergin Maps profile")
    
 2. Click on the **Close account** button.
-   ![Editing Mergin Maps account](./dashboard-close-account.jpg "Editing Mergin Maps account")
+   ![Editing Mergin Maps account](./dashboard-close-account.webp "Editing Mergin Maps account")
 
 You will be prompted to confirm the closing of your account by typing the account name. 
 
@@ -78,7 +78,7 @@ If you forget your password, you can easily reset it.
 
 You can find the **Forgot password?** option on the <DashboardShortLink /> or the <MobileAppNameShort /> log in page. Email with password reset link will be sent to your email address.
 
-![Mergin Maps forgotten password](./forgotten-password.jpg "Mergin Maps forgotten password")
+![Mergin Maps forgotten password](./forgotten-password.webp "Mergin Maps forgotten password")
 
 ::: tip
 Check your spam folder if the email with password reset link does not appear in your inbox after a few minutes. 

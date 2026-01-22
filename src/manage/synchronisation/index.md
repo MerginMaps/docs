@@ -25,15 +25,15 @@ You and your team can use various devices to collect and edit data. Once you are
 ### Synchronising changes in QGIS
 
 1. Click on the **Synchronise Mergin Maps project** icon from the <QGISPluginName /> toolbar or right-click on the project in the Browser panel and select **Synchronise**
-   ![Mergin Maps plugin for QGIS synchronisation icon](../plugin/plugin-toolbar-sync.jpg "Mergin Maps plugin for QGIS synchronisation icon")
-   ![QGIS browser synchronise Mergin Maps project option](./qgis-browser-synchronise-project.jpg "QGIS browser synchronise Mergin Maps project option")
+   ![Mergin Maps plugin for QGIS synchronisation icon](../plugin/plugin-toolbar-sync.webp "Mergin Maps plugin for QGIS synchronisation icon")
+   ![QGIS browser synchronise Mergin Maps project option](./qgis-browser-synchronise-project.webp "QGIS browser synchronise Mergin Maps project option")
 
 2. This will show the project status: a list of pending changes, warnings, and validation results of your project.
 
    Here, you have the option to [**View changes**](#local-changes) to inspect the pending changes in more detail.
    
    You can also use **Reset changes** to revert the local changes.
-  ![Mergin Maps project status with pending changes](../plugin/plugin-project-status.jpg "Mergin Maps project status with pending changes")
+  ![Mergin Maps project status with pending changes](../plugin/plugin-project-status.webp "Mergin Maps project status with pending changes")
 
    Warnings are related to restructuring of a GeoPackage layer (adding/removing a field, adding/removing a layer in a GeoPackage database). Validations can point out missing layers or availability of a layer when working offline.
 
@@ -57,18 +57,18 @@ Visit our blog [View and track changes in QGIS](https://www.lutraconsulting.co.u
 
 To see local changes:
 1. Right-click on a layer and select **Show Local Changes** 
-   ![QGIS layer show local changes](./plugin-local-changes.jpg "QGIS layer show local changes")
+   ![QGIS layer show local changes](./plugin-local-changes.webp "QGIS layer show local changes")
 
 2. **Changes Viewer** opens. The colour-coded changes are listed in the table and shown in the map. Inserts are green, edits orange and deletions red.
 
    If you want to zoom to specific changes, select them in the table and use **Zoom to Selection**.
-   ![Mergin Maps QGIS plugin changes viewer](./plugin-changes-viewer.jpg "Mergin Maps QGIS plugin changes viewer")
+   ![Mergin Maps QGIS plugin changes viewer](./plugin-changes-viewer.webp "Mergin Maps QGIS plugin changes viewer")
 
 3. Changes can be added to the QGIS project as a new layer. Click **Add to project** and choose one of the options:
-   ![Add local changes to QGIS project](./plugin-changes-viewer-add.jpg "Add local changes to QGIS project")
+   ![Add local changes to QGIS project](./plugin-changes-viewer-add.webp "Add local changes to QGIS project")
    
 4. A temporary layer will be added to the **Layers** panel with colour-coded symbology
-   ![Local changes added to QGIS project](./plugin-local-changes-added.jpg "Local changes added to QGIS project")
+   ![Local changes added to QGIS project](./plugin-local-changes-added.webp "Local changes added to QGIS project")
    
 :::tip
 Unless you want to use these layers in your <MainPlatformName /> project, remove them from the project before synchronisation.
@@ -77,11 +77,11 @@ Unless you want to use these layers in your <MainPlatformName /> project, remove
 ## Behind Data Synchronisation
 How does it work? When you use GeoPackage, <MainPlatformNameLink /> compares two datasets with the same data schema using [Geodiff library](#geodiff-library) to create a list of entries that were inserted, updated, or deleted between the two datasets. 
 
-![Scheme of detecting changes](./geodiff-diff.jpg "Scheme of detecting changes")
+![Scheme of detecting changes](./geodiff-diff.webp "Scheme of detecting changes")
 
 During field surveys, individual team members can change the same row of a table or add a new row with the same `ID`. If it is possible to solve these conflicts automatically, <MainPlatformName /> will do so:
 
-![Scheme of merging changes from two users](./geodiff-rebase.jpg "Scheme of merging changes from two users")
+![Scheme of merging changes from two users](./geodiff-rebase.webp "Scheme of merging changes from two users")
 
 There may be conflicts that can't be resolved automatically, e.g. if the same value is modified in different copies. These rare cases are written to a conflict file that can be [resolved later](../missing-data/#there-are-conflict-files-in-the-folder).
 

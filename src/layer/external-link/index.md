@@ -22,10 +22,10 @@ Attributes forms can include clickable links that can be used to open a link in 
 5. If the link changes based on a value from a different field, check the **Apply default value on update** option.
 6. **Apply** the changes. Don't forget to save and sync your project!
 
-![Hyperlink as default value in Attribute form](./qgis-link.jpg "Hyperlink as default value in Attribute form")
+![Hyperlink as default value in Attribute form](./qgis-link.webp "Hyperlink as default value in Attribute form")
 
 When you click on a feature in <MobileAppName />, the form will contain a clickable link.
-![Hyperlink in Mergin Maps mobile app form](./mobile-form-link.jpg "Hyperlink in Mergin Maps mobile app form")
+![Hyperlink in Mergin Maps mobile app form](./mobile-form-link.webp "Hyperlink in Mergin Maps mobile app form")
 
 :::tip
 Hyperlinks can be used in the attributes form also to open a [link to a navigation app](../link-to-navigation/).

@@ -10,7 +10,7 @@ It is common to have multiple layers with different coordinate reference systems
 
 QGIS on Windows and macOS comes with preinstalled projections and transformations that are handled by [PROJ](https://proj.org), including a whole lot of grid shift files for accurate horizontal and vertical coordinate transformations. However, some specific projections that are not included in <GitHubRepo id="OSGeo/PROJ-data" desc="PROJ data" />  may require you to install additional grid shift files manually. If this is the case, QGIS will show you a warning and will allow you to install the grid shift file from a folder.
 
-![QGIS install transformation grid shift](./proj_transformation_installation.jpg "QGIS install transformation grid shift")
+![QGIS install transformation grid shift](./proj_transformation_installation.webp "QGIS install transformation grid shift")
 
 :::tip
 Grid shift files are usually provided by national geodetic authorities. Common formats are *Geodetic TIFF grids* (.tiff) and *National Transformation version 2* (<NoSpellcheck id=".gsb" />) files. 
@@ -52,14 +52,14 @@ All you need to do is:
 
 3. Download the project with the grid shift files to <MobileAppName />. 
    When the project is downloaded to the app for the first time, you will get a **PROJ Error** that will prompt you to **restart the app** to load the grid shift files. The error message should not appear after the restart of the app.
-![Mergin Maps mobile app transformation shift grid error](./mobile-app-proj-error.jpg "Mergin Maps mobile app transformation shift grid error")
+![Mergin Maps mobile app transformation shift grid error](./mobile-app-proj-error.webp "Mergin Maps mobile app transformation shift grid error")
 
 ### Adding grid shift files manually
 If you want to add grid shift files to the <MobileAppNameShort /> manually:
 1. Create a folder called `proj` in your project folder
-   ![proj folder in project folder](./proj-folder.jpg "proj folder in project folder")
+   ![proj folder in project folder](./proj-folder.webp "proj folder in project folder")
 2. Copy the grid shift file to the `proj` folder
-   ![Grid shift file in proj folder](./proj-folder-shift-file.jpg "Grid shift file in proj folder")
+   ![Grid shift file in proj folder](./proj-folder-shift-file.webp "Grid shift file in proj folder")
    
    :::tip
    Grid shift files installed in QGIS on your computer can be found in these locations:
@@ -72,4 +72,4 @@ If you want to add grid shift files to the <MobileAppNameShort /> manually:
 4. Download the project with the grid shift files to <MobileAppName />. 
    When the project is downloaded to the app for the first time, you will get a **PROJ Error** that will prompt you to **restart the app** to load the grid shift files. The error message should not appear after the restart of the app.
 
-![Mergin Maps mobile app transformation shift grid error](./mobile-app-proj-error.jpg "Mergin Maps mobile app transformation shift grid error")
+![Mergin Maps mobile app transformation shift grid error](./mobile-app-proj-error.webp "Mergin Maps mobile app transformation shift grid error")

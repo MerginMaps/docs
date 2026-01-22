@@ -25,10 +25,10 @@ They contain detailed information about application run, so they may help you re
 To configure a custom <MainPlatformName /> server in the <QGISPluginNameShort />:
 
 1. Click on the **Configure <MainPlatformName /> plugin** icon to open the configuration dialog
-![Configure Mergin Maps Plugin](../../setup/install-mergin-maps-plugin-for-qgis/qgis-configure-mergin-plugin.jpg "Configure Mergin Maps Plugin")
+![Configure Mergin Maps Plugin](../../setup/install-mergin-maps-plugin-for-qgis/qgis-configure-mergin-plugin.webp "Configure Mergin Maps Plugin")
 
 2. Check the **Custom <MainPlatformName /> server** option and enter your custom server URL.
-![Custom server in Mergin Maps QGIS plugin setup](./config_dialog.jpg "Custom server in Mergin Maps QGIS plugin setup")
+![Custom server in Mergin Maps QGIS plugin setup](./config_dialog.webp "Custom server in Mergin Maps QGIS plugin setup")
 
 Now, the server URL is saved in current QGIS profile settings. So whenever you open QGIS with this profile, the <MainPlatformName /> server is associated with this URL. 
 
@@ -44,7 +44,7 @@ You might have started working on one server (e.g. staging server, official clou
 
 If you need to handle two different servers at the same time, you will first need to create two user profiles in QGIS and download the <QGISPluginNameShort /> for both.
 
-![QGIS new profile](./new_profile.jpg "Create new profile in QGIS")
+![QGIS new profile](./new_profile.webp "Create new profile in QGIS")
 
 Then you can configure <QGISPluginName /> for each of them using different server URL. Each session for given user profile will be connected to its own <MainPlatformName /> server as specified in the plugin configuration.
 
@@ -57,13 +57,13 @@ To configure a custom <MainPlatformName /> server in <MobileAppName />:
 
    The current server URL is displayed at the bottom of the page.
  
-   ![Mergin Maps mobile app current server URL](./mobile-app-server.jpg "Mergin Maps mobile app current server URL")
+   ![Mergin Maps mobile app current server URL](./mobile-app-server.webp "Mergin Maps mobile app current server URL")
 
 2. Tap on server URL to change the <MainPlatformName /> server. Enter the URL of your server and tap **Confirm**.
 
-   ![Changing server URL in Mergin Maps mobile app](./mobile-app-change-server-url.jpg "Changing server URL in Mergin Maps mobile app")
+   ![Changing server URL in Mergin Maps mobile app](./mobile-app-change-server-url.webp "Changing server URL in Mergin Maps mobile app")
 
 3. Use the username and password that is associated with this server and **Sign in**.
-   ![Custom server in Mergin Maps mobile app](./mobile-app-custom-server-log-in.jpg "Custom server in Mergin Maps mobile app")
+   ![Custom server in Mergin Maps mobile app](./mobile-app-custom-server-log-in.webp "Custom server in Mergin Maps mobile app")
 
 Now you are all set to use the <MobileAppNameShort /> with the custom server!

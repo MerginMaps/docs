@@ -25,7 +25,7 @@ The content of the maps and of the **Layers** panel is refreshed after every syn
 
 The **Layers** panel lists all layers displayed on the map. The check button :white_check_mark: controls the visibility of layers.
 
-![Mergin Maps dashboard maps](../dashboard/mergin-maps-web-map.jpg "Mergin Maps dashboard maps")
+![Mergin Maps dashboard maps](../dashboard/mergin-maps-web-map.webp "Mergin Maps dashboard maps")
 
 ## Webmaps extent
 
@@ -33,11 +33,11 @@ The extent of webmaps is defined in QGIS in the **Project Properties**.
 
 When displaying maps on the <DashboardShortLink />, <MainPlatformName /> uses primarily the [project full extent](../../gis/features/#project-extent) defined in the **View Settings** tab.
 
-![QGIS set project extent](../../gis/features/qgis-project-extent.jpg "QGIS set project extent")
+![QGIS set project extent](../../gis/features/qgis-project-extent.webp "QGIS set project extent")
 
 If this parameter is not defined, the map extent will be set as the *Advertised extent* from the **QGIS Server** tab. 
 
-![Maps in dashboard extent set in QGIS project](./qgis-project-properties-qgis-server-extent.jpg "Maps in dashboard extent set in QGIS project")
+![Maps in dashboard extent set in QGIS project](./qgis-project-properties-qgis-server-extent.webp "Maps in dashboard extent set in QGIS project")
 
 If there are no extent settings in the QGIS project, <MainPlatformName /> will calculate the extent from layers in the project.
 
@@ -47,7 +47,7 @@ If there are no extent settings in the QGIS project, <MainPlatformName /> will c
 The **Map** tab of a project on the <DashboardShortLink /> may display this error message:
 `Map config does not exist, please try update the project`
 
-![Mergin Maps webmap Map config does not exist](./webmap-map-config-issue.jpg "Mergin Maps webmap Map config does not exist")
+![Mergin Maps webmap Map config does not exist](./webmap-map-config-issue.webp "Mergin Maps webmap Map config does not exist")
 
 This usually happens when the map was not initiated. All you need to do is to create a new version of the project: synchronisation of the project will activate the map content.
 

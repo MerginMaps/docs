@@ -19,12 +19,12 @@ Windows users may use a Windows executable for DB sync. On Linux/Mac users are a
 DB Sync configuration file can be generated in QGIS using <QGISPluginName />:
 1. Open your <MainPlatformName /> project in QGIS
 2. Using the **Plugin** menu bar, navigate to **Mergin Maps > Configure DB sync** tool 
-   ![DB Sync configuration wizard in QGIS](./db-sync-wizard.jpg "DB Sync configuration wizard in QGIS")
+   ![DB Sync configuration wizard in QGIS](./db-sync-wizard.webp "DB Sync configuration wizard in QGIS")
 
 3. DB sync wizard opens. 
 
    Choose if you want to initialise the sync from <MainPlatformName /> project or from the database and follow the steps.
-   ![DB Sync configuration options](./db-sync-wizard-options.jpg "DB Sync configuration wizard options")
+   ![DB Sync configuration options](./db-sync-wizard-options.webp "DB Sync configuration wizard options")
 
 4. At the end, the wizard will generate a file that can be used as initial configuration file for this project to set up DB Sync
-   ![DB Sync configuration file](./db-sync-wizard-save-file.jpg "DB Sync configuration file")
+   ![DB Sync configuration file](./db-sync-wizard-save-file.webp "DB Sync configuration file")

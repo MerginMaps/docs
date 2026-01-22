@@ -109,7 +109,7 @@ You also have to update your remote fork before starting the work:
 
 If you see a typo or other issue on a page that can be easily fixed, you can scroll to the bottom of the page to see a footer similar to this
 
-![Mergin Maps documentation page footer](./footer-docs.jpg "Mergin Maps documentation page footer")
+![Mergin Maps documentation page footer](./footer-docs.webp "Mergin Maps documentation page footer")
 
 Use the **Help us improve this page** link to go to the editable Markdown source of the page. If you are not in the <MainPlatformName /> core documentation team, you will also need to work on [fork](#when-fork-is-needed) to be able to proceed.
 
@@ -266,8 +266,8 @@ To reference a header/anchor, use `#`, e.g.:
 ### Referencing images
 Images are referenced using relative paths, e.g.:
 
-- `![image alt text](./myimage.jpg "image title")` if the image is in the same folder as the Markdown file
-- `![image alt text](../../section/myimage.jpg "image title")` if the image is in a different folder then the Markdown file
+- `![image alt text](./myimage.webp "image title")` if the image is in the same folder as the Markdown file
+- `![image alt text](../../section/myimage.webp "image title")` if the image is in a different folder then the Markdown file
 
 For global pictures/assets placed in `/src/public/` use custom component `<PublicImage />`, e.g. `<PublicImage src="lutra-logo.png" title="Lutra Consulting Ltd. logo" />`:
 
@@ -542,7 +542,7 @@ With a clear picture of how the structure of content will change in a given rele
     - Add a new line to the REDIRECTS file to point requests somewhere sensible
     - Check if existing lines in the REDIRECTS file point to the deleted page
         - If so, update those targets to point somewhere sensible
-- **Renamed images** (e.g. `.png`, `.jpg`) **and deleted data files** (e.g. `.json`, `.zip`):
+- **Renamed images** (e.g. `.png`, `.webp`) **and deleted data files** (e.g. `.json`, `.zip`):
     - We ignore these for the time being
 - **General checks**
     - Ensure source and destination URLs are separated by a single tab, not spaces
@@ -560,12 +560,12 @@ We can do this by comparing the current state of the _main_ branch with the last
     * Use the latest tag on the left
     * Use _main_ on the right
     
-    ![GitHub comparing changes](./comparing-changes-1.jpg "GitHub comparing changes")
+    ![GitHub comparing changes](./comparing-changes-1.webp "GitHub comparing changes")
 
 2. Scroll down a little and click where it says _**224 changed files**_ or similar
 
     You should now see a nice summary below of files which have been added, renamed or deleted
     
-    ![GitHub summary of changes](./comparing-changes-2.jpg "GitHub summary of changes")
+    ![GitHub summary of changes](./comparing-changes-2.webp "GitHub summary of changes")
 
 You can now see which content has been changed.

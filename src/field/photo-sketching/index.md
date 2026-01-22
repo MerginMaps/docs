@@ -16,10 +16,10 @@ Photo sketching is disabled by default. To use it, it needs to be enabled in QGI
 
 1. Open your <MainPlatformName /> project in QGIS
 2. Navigate to **Project** > **Properties** 
-   ![QGIS Project Properties](../../gis/qgis-project-properties.jpg "QGIS Project Properties")
+   ![QGIS Project Properties](../../gis/qgis-project-properties.webp "QGIS Project Properties")
 
 3. In the <MainPlatformName /> tab, check the **Enable photo sketching** option and **Apply** the changes.
-   ![Enable photo sketching in QGIS Mergin Maps project](../../gis/features/project-photo-sketching.jpg "Enable photo sketching in QGIS Mergin Maps project")
+   ![Enable photo sketching in QGIS Mergin Maps project](../../gis/features/project-photo-sketching.webp "Enable photo sketching in QGIS Mergin Maps project")
 
 5. Save and synchronise your project!
 
@@ -34,7 +34,7 @@ To use photo sketching in the <MobileAppNameShort />, make sure it is [enabled i
    - Draw your sketches on the photo by freehand or using a stylus. You choose from 7 annotation colours.
    - Use the **Undo** button to revert the last changes.
     
-   ![Photo sketching button in Mergin Maps mobile app](mobile-photo-sketching.jpg "Photo sketching button in Mergin Maps mobile app")
+   ![Photo sketching button in Mergin Maps mobile app](mobile-photo-sketching.webp "Photo sketching button in Mergin Maps mobile app")
 
 2. Use the **Done** button to finish sketching. The picture with sketches will be displayed in the form.
 

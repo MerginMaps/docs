@@ -52,7 +52,7 @@ To configure 1-N relations in QGIS (detailed steps can be found in [Relations](.
    - **Referencing (child)** is the non-spatial layer `inspections`
    - **Field 1** of the **Referencing (child)** layer is the `Manhole UUID`, which acts as a foreign key to link inspections to spatial features
 
-   ![Add Relation form in QGIS with defined 1-N relation between the parent and the child layer](./qgis-add-relation.jpg "Add Relation form in QGIS with defined 1-N relation between the parent and the child layer")
+   ![Add Relation form in QGIS with defined 1-N relation between the parent and the child layer](./qgis-add-relation.webp "Add Relation form in QGIS with defined 1-N relation between the parent and the child layer")
 
 4. Navigate to the **Attributes form** tab in Layer **Properties** of the survey layer (`manhole_locations`)
 5. Add the **Inspections** relation to the **Form Layout**

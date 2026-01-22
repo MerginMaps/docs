@@ -21,12 +21,12 @@ To open the project and field data on the computer, we will need to do some setu
 1. Open <MobileAppName /> and navigate to the **Home** tab. Tap the button next to the project's name and select the **Upload** option.
    
    If you are logged in, the project will be uploaded to <ServerCloudName /> and you can continue to the next step: [opening your project in QGIS](#locating-and-opening-your-project).
-   ![Mergin Maps mobile app upload project to cloud](./mergin-maps-mobile-upload-project.jpg "Mergin Maps mobile app upload project to cloud") 
+   ![Mergin Maps mobile app upload project to cloud](./mergin-maps-mobile-upload-project.webp "Mergin Maps mobile app upload project to cloud") 
    
 2. If you are not logged in, you will be asked to. Enter your <MainPlatformName /> credentials and **Sign in**.
 
    If you don't have an account yet, create one! Tap **Sign up** to [sign up to <MainPlatformName />](../../setup/sign-up-to-mergin-maps/#from-mergin-maps-mobile-app).   
-   ![Mergin Maps mobile app Login page](./mergin-maps-mobile-log-in-to-mergin.jpg "Mergin Maps mobile app Login page")
+   ![Mergin Maps mobile app Login page](./mergin-maps-mobile-log-in-to-mergin.webp "Mergin Maps mobile app Login page")
   
 3. Once you are logged in, **Upload** your project to the <ServerCloudName />. 
 
@@ -34,7 +34,7 @@ Notice that the name of your [workspace](../../manage/workspaces/) is displayed 
 
 Now that your project is in the cloud, it can easily be shared with colleagues or downloaded to your computer.
 
-![Mergin Maps mobile app uploaded project](./mergin-maps-mobile-uploaded-project.jpg "Mergin Maps mobile app uploaded project")
+![Mergin Maps mobile app uploaded project](./mergin-maps-mobile-uploaded-project.webp "Mergin Maps mobile app uploaded project")
    
 
 ## Locating and opening your project
@@ -45,7 +45,7 @@ Now that the project is stored in <ServerCloudName />, we can open it in QGIS.
 2. Make sure you have already [installed](../../setup/install-mergin-maps-plugin-for-qgis/) and [configured](../../setup/install-mergin-maps-plugin-for-qgis/#plugin-configuration) <QGISPluginName />
    
 3. Find the <MainPlatformName /> entry in the QGIS **Browser** panel
-   ![QGIS Browser Mergin Maps projects](./qgis-browser-panel.jpg "QGIS Browser Mergin Maps projects")
+   ![QGIS Browser Mergin Maps projects](./qgis-browser-panel.webp "QGIS Browser Mergin Maps projects")
 
    Notice that the name of the current workspace (here: `my-team`) is displayed next to <MainPlatformName /> and the projects in this workspace are listed below.
       
@@ -54,23 +54,23 @@ Now that the project is stored in <ServerCloudName />, we can open it in QGIS.
    :::
    
 4. Right-click on the project and select **Download**
-   ![QGIS Browser download Mergin Maps project](./qgis-download-project.jpg "QGIS Browser download Mergin Maps project")
+   ![QGIS Browser download Mergin Maps project](./qgis-download-project.webp "QGIS Browser download Mergin Maps project")
 
 5. **Select a folder** where you want to store your project locally.
 
    For example, here we will create a folder for storing <MainPlatformName /> projects called `MerginMaps Projects`. It is also possible to select an existing folder.
    
-   ![Folder for saving Mergin Maps projects](./qgis-creating-mergin-projects-folder.jpg "Folder for saving Mergin Maps projects")
+   ![Folder for saving Mergin Maps projects](./qgis-creating-mergin-projects-folder.webp "Folder for saving Mergin Maps projects")
    
    After selecting a folder, <QGISPluginName /> will automatically create a subfolder based on the project's name and download the project there.
-   ![Downloading Mergin Maps project to the computer](./qgis-downloading-project.jpg "Downloading Mergin Maps project to the computer")
+   ![Downloading Mergin Maps project to the computer](./qgis-downloading-project.webp "Downloading Mergin Maps project to the computer")
 
 6. Open the project when prompted:
-   ![QGIS prompt Do you want to open project?](./qgis-open-project-file.jpg "QGIS prompt Do you want to open project?")
+   ![QGIS prompt Do you want to open project?](./qgis-open-project-file.webp "QGIS prompt Do you want to open project?")
    
 Your survey project is now open in QGIS and you can see the data you captured in the field.
 
-![Mergin Maps project opened in QGIS](./qgis-project-opened.jpg "Mergin Maps project opened in QGIS")
+![Mergin Maps project opened in QGIS](./qgis-project-opened.webp "Mergin Maps project opened in QGIS")
 
 :::tip
 If you're new to QGIS we really recommend getting some basic familiarity with the software. <QGISHelp ver="latest" link="user_manual/index.html" text="QGIS User Guide" /> and <QGISHelp ver="latest" link="training_manual/index.html" text="QGIS Training Manual" /> are great resources to get acquainted with QGIS and its functionality. 
@@ -84,10 +84,10 @@ Users who are not already familiar with GIS may be wondering how they can extrac
 There are many ways how you can extract the data. Here we'll just cover the basics.
 
 1. Locate the `Survey` layer in the **Layers** panel:
-   ![Survey layer in Layers panel in QGIS](./qgis-layers-panel.jpg "Survey layer in Layers panel in QGIS")
+   ![Survey layer in Layers panel in QGIS](./qgis-layers-panel.webp "Survey layer in Layers panel in QGIS")
    
 2. Right-click on the `Survey` layer and find the **Export** option. Here, select  **Save Features As...**:
-   ![QGIS Export Save features as](./qgis-save-features-as.jpg "QGIS Export Save features as")
+   ![QGIS Export Save features as](./qgis-save-features-as.webp "QGIS Export Save features as")
 
 3. **Save Vector Layers as...** dialog opens. Here you can define the export parameters:
    - Set **Format** to ***Comma Separated Value [CSV]***
@@ -95,13 +95,13 @@ There are many ways how you can extract the data. Here we'll just cover the basi
    - Uncheck **Add saved file to map**
    
    Click **OK** to export the file. The resulting CSV file can be opened in various applications such as MS Excel or even in a common text editor. 
-   ![QGIS Export Save layer as CSV](./qgis-save-as-csv-options.jpg "QGIS Export Save layer as CSV")
+   ![QGIS Export Save layer as CSV](./qgis-save-as-csv-options.webp "QGIS Export Save layer as CSV")
 
 
 ## Locating captured photos
 **Photos** that you took as a part of your field survey are located in the <MainPlatformName /> project folder. In this case, we saved our project in `Documents\MerginMaps Projects` so the photos can be found here.
 
-![Photos located in Mergin Maps project folder](./qgis-finding-photos.jpg "Photos located in Mergin Maps project folder")
+![Photos located in Mergin Maps project folder](./qgis-finding-photos.webp "Photos located in Mergin Maps project folder")
  
   
 ## Identify features tool
@@ -110,10 +110,10 @@ You can also use QGIS to explore the data you surveyed in the field.
 1. Select the Survey layer in the **Layers** panel. The layer should be highlighted.
 
 2. Select the **Identify Features** tool:
-   ![QGIS Identify features in selected layer](./qgis-identify-features-tool.jpg "QGIS Identify features in selected layer")
+   ![QGIS Identify features in selected layer](./qgis-identify-features-tool.webp "QGIS Identify features in selected layer")
 
 3. Click on a survey point. A form with feature's attribute should open:
-   ![Attributes form in QGIS](./qgis-identify-results.jpg "Attributes form in QGIS")
+   ![Attributes form in QGIS](./qgis-identify-results.webp "Attributes form in QGIS")
    
 
 ## Summary

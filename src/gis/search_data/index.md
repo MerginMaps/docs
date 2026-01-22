@@ -16,12 +16,12 @@ The <MobileAppNameShort /> follows the sorting of features in the attribute tabl
 ###  Order value list by value
 The [Value relation](../../layer/value-select/#value-relation) widget has the option *Order by value*. When checked, values in the drop-down list will be listed in alphabetical or numerical order. 
 
-![QGIS Value relation order by value](./qgis-order-by-value-value-relation.jpg "QGIS Value relation order by value")
+![QGIS Value relation order by value](./qgis-order-by-value-value-relation.webp "QGIS Value relation order by value")
 
 This setting is also followed by the <MobileAppNameShort />. 
 
 On the left, you can see the default list of options in the drop-down menu. On the right, the option *Order by value* is used and observed by the <MobileAppNameShort />.
-![QGIS Value relation order by value](./mobile-value-relation-sorted.jpg "QGIS Value relation order by value")
+![QGIS Value relation order by value](./mobile-value-relation-sorted.webp "QGIS Value relation order by value")
 
 
 ###  Sorting features by field value
@@ -33,14 +33,14 @@ Simple sorting based on ascending or descending value of the attributes can be u
 2. Right-click on a survey layer and open the **Attribute table**
 3. In the **Attribute table**, click on the name of a field to sort the features according to the field values.
    Here, we use the `update_at` field to sort features by the last update. The feature that was updated last will be the first in the list.
-   ![QGIS Attribute table order by value](./qgis-sorting-attribute-table-updated-at.jpg "QGIS Attribute table order by value")
+   ![QGIS Attribute table order by value](./qgis-sorting-attribute-table-updated-at.webp "QGIS Attribute table order by value")
 4. Save and synchronise the project.
 
 In the <MobileAppNameShort />, features in a layer can be browsed by tapping the **Layers** button and selecting the layer from the list.
-![Mobile app sort features by value](./mobile-layers.jpg "Mobile app sort features by value")
+![Mobile app sort features by value](./mobile-layers.webp "Mobile app sort features by value")
 
 Features in this layer are sorted by the same field value as was defined in the QGIS project. So, instead of the default sorting by the `Feature ID`, the features are ordered by the date and time of their last update.
-![Mobile app sort features by value](./mobile-sort-updated-at.jpg "Mobile app sort features by value")
+![Mobile app sort features by value](./mobile-sort-updated-at.webp "Mobile app sort features by value")
 
 ###  Sorting features by expression
 Similarly, an expression can be used to sort features in the Attribute table and subsequently in the <MobileAppNameShort />.
@@ -48,15 +48,15 @@ Similarly, an expression can be used to sort features in the Attribute table and
 1. Open your project in QGIS
 2. Right-click on a survey layer and open the **Attribute table**
 3. Right-click on a field name that you want to use for sorting features and use the **Sort...** option
-   ![Mobile app sort features by value](./qgis-attribute-table-sort.jpg "Mobile app sort features by value")
+   ![Mobile app sort features by value](./qgis-attribute-table-sort.webp "Mobile app sort features by value")
 4. Enter the expression you want to use to sort this field.
    Here, we use `length( "notes" )` to sort features based on the length of the text in the `notes` field.
-   ![QGIS sorting features by text length](./qgis-attribute-table-sort-expression.jpg "QGIS sorting features by text length")
-   ![QGIS features sorted by text length](./qgis-attribute-table-sorted-by-length.jpg "QGIS features sorted by text length")
+   ![QGIS sorting features by text length](./qgis-attribute-table-sort-expression.webp "QGIS sorting features by text length")
+   ![QGIS features sorted by text length](./qgis-attribute-table-sorted-by-length.webp "QGIS features sorted by text length")
 5. Save and synchronise the project.
 
 When browsing features in the <MobileAppNameShort />, they will be sorted by the text length.
-![Mobile app sort features by value](./mobile-sorting-by-text-lentgh.jpg "Mobile app sort features by value")
+![Mobile app sort features by value](./mobile-sorting-by-text-lentgh.webp "Mobile app sort features by value")
 
 
 ## Setting identifiable layers in QGIS project
@@ -68,7 +68,7 @@ If you define a layer as **not identifiable**, you won't be able to tap it in th
 2. In the Menu > Project > Properties click on **Data Sources**
 3. Check and uncheck layers in the **Identifiable** column to define which layers you want to be able to browse in your project.
 
-![QGIS identifiable data sources](./qgis_data_sources.jpg "QGIS identifiable data sources")
+![QGIS identifiable data sources](./qgis_data_sources.webp "QGIS identifiable data sources")
 
 
 ## Exclude a field from the search
@@ -78,5 +78,5 @@ If a field is marked in a field configuration as **Not searchable**, it will be 
 
 1. Navigate to the **Fields** tab
 2. Check the **Not searchable** option in the **Configuration** column
-![QGIS Not searchable field](./not_searchable.jpg "QGIS Not searchable field")
+![QGIS Not searchable field](./not_searchable.webp "QGIS Not searchable field")
 

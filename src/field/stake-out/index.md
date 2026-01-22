@@ -15,13 +15,13 @@ Accurate stake out in short navigation mode may require an [external GPS receive
 
 ## Stake out in Mergin Maps mobile app
 1. Select a point in your map window. From the form tap the **Stake out** option:
-![Stake out feature Mergin Maps mobile app](./stake-out.jpg "Stake out feature in Mergin Maps mobile app")
+![Stake out feature Mergin Maps mobile app](./stake-out.webp "Stake out feature in Mergin Maps mobile app")
 
 2. Stake out panel will display the current distance and a connecting line between your position and the point.
-![Long range stake out panel](./stake-out-long.jpg "Long range stake out panel")
+![Long range stake out panel](./stake-out-long.webp "Long range stake out panel")
 
 3. Once you are closer to the point (less than 1 m), the stake out panel will switch to the *short* navigation mode.
-![Short range stake out panel](./stake-out-short.jpg "Short range stake out panel")
+![Short range stake out panel](./stake-out-short.webp "Short range stake out panel")
 
 Precise stake out of the point (distance less than 10 cm) will be highlighted by green.
 
@@ -34,4 +34,4 @@ Distance units displayed by the <MobileAppNameShort /> are defined in your proje
 
    Units defined here are then used by default when measuring distances in QGIS, as well as during stake out in the mobile app
    
-   ![QGIS Project Properties Units for distance measurement](./qgis-properties-distance-units.jpg "QGIS Project Properties Units for distance measurement")
+   ![QGIS Project Properties Units for distance measurement](./qgis-properties-distance-units.webp "QGIS Project Properties Units for distance measurement")

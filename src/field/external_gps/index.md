@@ -30,7 +30,7 @@ The height of the GPS antenna can be set in the [**GPS settings**](../mobile-app
 
 If GPS antenna height is set to a non-zero value, it is also displayed next to the GPS accuracy.
 
-![GPS antenna height setup in Mergin Maps mobile app](./mobile-app-gps-antenna-height.jpg "GPS antenna height setup in Mergin Maps mobile app")
+![GPS antenna height setup in Mergin Maps mobile app](./mobile-app-gps-antenna-height.webp "GPS antenna height setup in Mergin Maps mobile app")
 
 :::tip
 GPS antenna height can be recorded during the survey by using the [extra position variable](../../layer/variables/#position-variables) `@position_gps_antenna_height` as a [default value](../../layer/default-values/).
@@ -47,24 +47,24 @@ It is strongly recommended to use the direct connection in the <MobileAppNameSho
 1. Connect the GPS receiver to your mobile device via Bluetooth
 
 2. Open the <MobileAppNameShort /> and navigate to **Settings**
-   ![Navigate to settings in Mergin Maps mobile app](./mobile-app-settings.jpg "Navigate to settings in Mergin Maps mobile app")
+   ![Navigate to settings in Mergin Maps mobile app](./mobile-app-settings.webp "Navigate to settings in Mergin Maps mobile app")
 
 3. Tap on the **Manage GPS receivers** option. Here, you can see the currently used receiver.
 
    Tap on the **Connect new receiver** button.
-   ![Select GPS receiver](./mobile-app-connect-gps-receiver.jpg "Select GPS receiver")
+   ![Select GPS receiver](./mobile-app-connect-gps-receiver.webp "Select GPS receiver")
 
 4. Choose your GPS receiver from the list of Bluetooth devices. 
 
    You might be asked to pair your device during this process.
 
-   ![Connect to bluetooth GPS device](./mobile-app-connecting-external-gps.jpg "Connect to bluetooth GPS device")
+   ![Connect to bluetooth GPS device](./mobile-app-connecting-external-gps.webp "Connect to bluetooth GPS device")
 
 5. The <MobileAppNameShort /> will now use the external GPS receiver to display and record your position.
    
    In **GPS info**, you will see additional data as reported by the external GPS.
    
-   ![GPS info from external GPS in Mergin Maps mobile app](./mobile-app-external-gps-info.jpg "GPS info from external GPS in Mergin Maps mobile app") 
+   ![GPS info from external GPS in Mergin Maps mobile app](./mobile-app-external-gps-info.webp "GPS info from external GPS in Mergin Maps mobile app") 
 
 ### How to connect external GPS receiver in Android via mock location
 :::warning
@@ -91,7 +91,7 @@ Direct connection via the <MobileAppNameShort /> is not possible on iOS devices.
 
 External GPS can be connected to your iOS device via Bluetooth. Depending on the GPS manufacturer, there may be a custom app, which then provides position to your iOS device. The <MobileAppNameShort /> sees this as an internal GPS receiver automatically, without additional configuration.
 
-![iOS GPS receiver](./external-gps-ios.jpg "iOS GPS receiver")
+![iOS GPS receiver](./external-gps-ios.webp "iOS GPS receiver")
 
 ## External GPS troubleshooting
 If you encounter issues with external GPS in the <MobileAppNameShort /> , make sure that:

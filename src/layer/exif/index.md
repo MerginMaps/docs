@@ -15,10 +15,10 @@ To store GPS EXIF metadata, both the <MobileAppNameShort /> and your camera app 
 **Location tags have to be allowed** in the camera settings to store GPS EXIF metadata in the photos.
 
 - **Android**: Open Camera app -> Camera settings -> Location tags. 
-   ![Allowing location tags in Android](./android_geo_tags.jpg "Allowing location tags in Android")
+   ![Allowing location tags in Android](./android_geo_tags.webp "Allowing location tags in Android")
 
 - **iOS**: Open Settings -> Privacy -> Location Services -> Camera (app).
-   ![Allowing location tags in iOS](./ios_geo_tags.jpg "Allowing location tags in iOS")
+   ![Allowing location tags in iOS](./ios_geo_tags.webp "Allowing location tags in iOS")
 
 ## How to use EXIF metadata in Mergin Maps mobile app
 
@@ -39,14 +39,14 @@ To store EXIF metadata values in the fields of your survey layer:
    
    `read_exif(@project_home + '/' + "photo", 'GPSImgDirection')`
       
-   ![Read exif function as default value in Attributes form](./qgis_form_exif.jpg "Read exif function as default value in Attributes form")
+   ![Read exif function as default value in Attributes form](./qgis_form_exif.webp "Read exif function as default value in Attributes form")
    
    The preview shows a warning *Function is not known*. **This is OK, <MobileAppName /> will know what to do with it!**
 
 3. Save and sync your project. 
 
 4. Open the project in <MobileAppName />. Once you capture a photo during the field survey, the EXIF metadata values will be automatically filled in:
-   ![Exif metadata in Mergin Maps mobile app](./mobile-exif-metadata.jpg "Exif metadata in Mergin Maps mobile app")
+   ![Exif metadata in Mergin Maps mobile app](./mobile-exif-metadata.webp "Exif metadata in Mergin Maps mobile app")
 
 ## Supported EXIF functions
 EXIF function supported by <MobileAppName />:

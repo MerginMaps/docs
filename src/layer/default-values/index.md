@@ -11,7 +11,7 @@ The default value can be a text, number or a QGIS expression. The data format of
 
 In QGIS, default values can be set up in the **Attributes Form** tab in **Layer Properties**. In the **Defaults** tab, you can enter the default value of the selected field (manually or using an expression). 
 
-![Default values in QGIS attributes form](./qgis-form-default-values.jpg "Default values in QGIS attributes form")
+![Default values in QGIS attributes form](./qgis-form-default-values.webp "Default values in QGIS attributes form")
 
 Check the option **Apply default value on update** :heavy_check_mark: to update the field value after every change of a feature. Note that this means that the value of this field cannot be changed manually in QGIS or in the <MobileAppNameShort /> as any user input will be overwritten by the default value. 
 
@@ -58,20 +58,20 @@ Let's set up an attributes to record the <MainPlatformName /> username of the su
 3. In the **Defaults** tab, define the **Default value** as `@mm_username`. 
    Do not check the **Apply default value on update** option :white_large_square:.
 
-![QGIS attributes form Mergin Maps username default value](./qgis-form-default-inserted-by.jpg "QGIS attributes form Mergin Maps username default value")
+![QGIS attributes form Mergin Maps username default value](./qgis-form-default-inserted-by.webp "QGIS attributes form Mergin Maps username default value")
 
 To save the <MainPlatformName /> username of the surveyor who *modified* this feature, the steps are similar:
 1. In the list of **Available Widgets** select the text field you want to use (here: `updated_by`)
 2. In the **Defaults** tab, define the **Default value** as `@mm_username`. 
    Check the **Apply default value on update** option :heavy_check_mark:. The field will be updated anytime the feature is modified, saving the name of the surveyor who made the changes.
 
-![QGIS attributes form Mergin Maps username default value](./qgis-form-default-updated-by.jpg "QGIS attributes form Mergin Maps username default value")
+![QGIS attributes form Mergin Maps username default value](./qgis-form-default-updated-by.webp "QGIS attributes form Mergin Maps username default value")
 
 Follow the same steps for attributes to store the timestamps of when the feature was created and updated (here: `inserted_at`, `updated_at`), using the `now()` expression as **Default value**.
 
 When the form is opened in the <MobileAppNameShort />, the default values are automatically filled in:
 
-![Mergin Maps mobile app attributes form default values](./mobile-form-default-values-timestamp-username.jpg "Mergin Maps mobile app attributes form default values")
+![Mergin Maps mobile app attributes form default values](./mobile-form-default-values-timestamp-username.webp "Mergin Maps mobile app attributes form default values")
 
 ## Automatically transform and record coordinates of a point
 Here we are going to set the default values for `x` and `y` field to be longitude and latitude.
@@ -86,7 +86,7 @@ Here we are going to set the default values for `x` and `y` field to be longitud
    Note that the expression transforms the point from EPSG:3857 (map and layer coordinate reference system) to EPSG:4326.
 5. Check the **Apply default value on update** option :heavy_check_mark:.
 
-![QGIS attributes form transform and record coordinates by default](./qgis-form-default-coordinates.jpg "QGIS attributes form transform and record coordinates by default")
+![QGIS attributes form transform and record coordinates by default](./qgis-form-default-coordinates.webp "QGIS attributes form transform and record coordinates by default")
 
 Repeat the same steps for `y` field and setting the **Alias** to *Latitude* and the default value to
 
@@ -98,5 +98,5 @@ Don't forget to save and synchronise your project!
 
 When adding or editing features in the <MobileAppNameShort />, the coordinates are automatically filled in:
 
-![Mergin Maps mobile app attributes form default values](./mobile-form-default-values-coordinates.jpg "Mergin Maps mobile app attributes form default values")
+![Mergin Maps mobile app attributes form default values](./mobile-form-default-values-coordinates.webp "Mergin Maps mobile app attributes form default values")
 

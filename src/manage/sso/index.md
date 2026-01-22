@@ -32,5 +32,5 @@ SSO is not available for <CommunityPlatformName />.
 
 Once SSO is configured for your workspace, you will see the relevant information in the <DashboardLink id="settings" desc="workspace settings page"/>, under the *advanced* section. If you need to make any changes to your SSO connection, please <MerginMapsEmail id="support" desc="contact our support team"/>.
 
-![Mergin Maps workspace settings with enabled SSO](./dashboard-workspace-settings-sso.jpg "Mergin Maps workspace settings with enabled SSO")
+![Mergin Maps workspace settings with enabled SSO](./dashboard-workspace-settings-sso.webp "Mergin Maps workspace settings with enabled SSO")
 

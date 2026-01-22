@@ -16,8 +16,8 @@ Adding photos to a surveyed feature can be really helpful. With <MainPlatformNam
 
 |<div style="width:150px"> Widget </div> |Preview in the <MobileAppNameShort />|
 |:---:|:---:|
-[Single Photo](#photo-attachment-widget-in-qgis) | ![Mergin Maps mobile app attachment field form](../form-widgets/mobile-form-photo-preview2.jpg "Mergin Maps mobile app attachment field form")  |
-|[ Multiple Photos (Gallery) ](#how-to-attach-multiple-photos-to-one-feature) | ![Mergin Maps mobile app multiple photos attributes form](../form-widgets/mobile-form-multiple-photo-preview.jpg "Mergin Maps mobile app multiple photos attributes form") |
+[Single Photo](#photo-attachment-widget-in-qgis) | ![Mergin Maps mobile app attachment field form](../form-widgets/mobile-form-photo-preview2.webp "Mergin Maps mobile app attachment field form")  |
+|[ Multiple Photos (Gallery) ](#how-to-attach-multiple-photos-to-one-feature) | ![Mergin Maps mobile app multiple photos attributes form](../form-widgets/mobile-form-multiple-photo-preview.webp "Mergin Maps mobile app multiple photos attributes form") |
 
 
 :::tip Example projects available
@@ -54,7 +54,7 @@ In the <MobileAppNameShort />, this field will provide two options:
 - **Take a picture** to use your camera app for taking a photos 
 - **From gallery** to attach an existing photo from your device
 
-![Mergin Maps mobile app photo widget](./mobile-form-attachment-photo.jpg "Mergin Maps mobile app photo widget")
+![Mergin Maps mobile app photo widget](./mobile-form-attachment-photo.webp "Mergin Maps mobile app photo widget")
 
 ## Custom folder for storing photos {#how-to-set-up-a-custom-folder-for-storing-photos}
 It can be useful to set up a custom folder for photos, e.g. if you want to use [selective synchronisation](../../manage/selective_sync/) or if you simply want to have your data organised.
@@ -68,13 +68,13 @@ To set up a custom folder:
    ![QGIS photo attachment widget form](./qgis_form_photo.webp "QGIS photo attachment widget form")
 
 5. Now we need to change the **Default path** to the folder we have created. Click on the *Data defined override* icon and choose **Edit...**
-   ![QGIS edit default path expression](./qgis_form_photo_edit_expr.jpg "QGIS edit default path expression")
+   ![QGIS edit default path expression](./qgis_form_photo_edit_expr.webp "QGIS edit default path expression")
 
 6. In **Expression String Builder** enter the expression `@project_folder + '/photos'` (replace `photos` by the name of your folder). Click **OK**.
-   ![QGIS enter default path expression](./qgis_forms_photo_expression.jpg "QGIS enter default path expression")
+   ![QGIS enter default path expression](./qgis_forms_photo_expression.webp "QGIS enter default path expression")
 
 7. The **Default path** now refers to the custom folder.
-   ![QGIS default path to custom folder](./qgis_custom_folder.jpg "QGIS default path to custom folder")
+   ![QGIS default path to custom folder](./qgis_custom_folder.webp "QGIS default path to custom folder")
 
 8. **Apply the changes**. Don't forget to save and sync your project!
 
@@ -84,12 +84,12 @@ Here is an overview of paths that can be stored in various settings of the attac
 
 |        Default path       	|  Store path as 	|                Value               	|
 |:-------------------------:	|:------------:	|:----------------------------------:	|
-|             -             	| Relative to project path |              `image.jpg`             	|
-|             -             	| Relative to default path |              `image.jpg`             	|
-|      `@project_folder`      	| Relative to project path |              `image.jpg`             	|
-|      `@project_folder`      	| Relative to default path |              `image.jpg`             	|
-| `@project_home + '/photos'` 	| Relative to project path |          `/photos/image.jpg`         	|
-| `@project_home + '/photos'` 	| Relative to default path |               `image.jpg`             	|
+|             -             	| Relative to project path |              `image.webp`             	|
+|             -             	| Relative to default path |              `image.webp`             	|
+|      `@project_folder`      	| Relative to project path |              `image.webp`             	|
+|      `@project_folder`      	| Relative to default path |              `image.webp`             	|
+| `@project_home + '/photos'` 	| Relative to project path |          `/photos/image.webp`         	|
+| `@project_home + '/photos'` 	| Relative to default path |               `image.webp`             	|
 
 
 ## Resizing pictures automatically
@@ -107,13 +107,13 @@ Photos taken using <MobileAppName /> during the survey can be displayed in the f
 2. In the **Attributes Form** tab, select the field that contains the path to the photo.
 
    Scroll to the **Integrated Document Viewer** in the panel on the right. Set the **Type** to *Image*.
-   ![QGIS Integrated Document Viewer](./qgis-doc-viewer.jpg "QGIS Integrated Document Viewer")
+   ![QGIS Integrated Document Viewer](./qgis-doc-viewer.webp "QGIS Integrated Document Viewer")
 
 3. **Apply** the changes and click **OK**.
 
 Now when you click on a feature that contains a photo, it will be displayed in the form.
 
-![Mergin Maps mobile app photo displayed in form](./qgis-form-view-photo.jpg "Mergin Maps mobile app photo displayed in form")
+![Mergin Maps mobile app photo displayed in form](./qgis-form-view-photo.webp "Mergin Maps mobile app photo displayed in form")
 
 ::: details Image preview in QGIS
 Some QGIS versions may not display the preview of the image correctly. This issue does not occur in <MobileAppNameShort />. Therefore we recommend trying the setup by opening the form in the <MobileAppNameShort /> to make sure it works as intended.
@@ -126,7 +126,7 @@ In some situations, it might be useful to take more than one picture of a featur
 
 |<div style="width:150px"> Widget </div> |Preview in the <MobileAppNameShort />|
 |:---:|:---:|
-|Relation - Gallery | ![Mergin Maps mobile app multiple photos attributes form](../form-widgets/mobile-form-multiple-photo-preview.jpg "Mergin Maps mobile app multiple photos attributes form") |
+|Relation - Gallery | ![Mergin Maps mobile app multiple photos attributes form](../form-widgets/mobile-form-multiple-photo-preview.webp "Mergin Maps mobile app multiple photos attributes form") |
 
 :::tip Example project available
 To see this setup in practice, you can download this public project <MerginMapsProject id="documentation/forms_multiple_photos" />.
@@ -165,7 +165,7 @@ Navigate to the [**Relations**](../relations/#setting-up-relation-in-qgis) tab i
 - **Referencing (child)** is the non-spatial layer `photos`
 - **Field 1** of the **Referencing (child)** layer is the `external-pk` that contains the foreign key to link photos with surveyed features.
 
-![Surveyed feature and photos relation setup](./qgis_relation_photos.jpg "Surveyed feature and photos relation setup")
+![Surveyed feature and photos relation setup](./qgis_relation_photos.webp "Surveyed feature and photos relation setup")
 
 ### Relations widget (gallery) in the form
 
@@ -176,5 +176,5 @@ If you use [Drag and Drop Designer](../form-layout/#qgis-drag-and-drop-designer)
 ![Photo relation widget in QGIS attributes form](./qgis-form-photo-relation.webp "Photo relation widget in QGIS attributes form")
 
 The <MobileAppNameShort /> detects the relation widget and allows to add multiple images to one feature, displaying them in a gallery form.
-![Many photos to a single feature in Mergin Maps mobile app](./mobile-multiple-photos.jpg "Many photos to a single feature in Mergin Maps mobile app")
+![Many photos to a single feature in Mergin Maps mobile app](./mobile-multiple-photos.webp "Many photos to a single feature in Mergin Maps mobile app")
 

@@ -14,11 +14,11 @@ To allow this functionality, follow these steps:
 
 2. Click on three dots to open a menu and navigate to **Settings**
 
-   ![Mergin Maps mobile Settings](./mobile-app-settings.jpg "Mergin Maps mobile Settings")
+   ![Mergin Maps mobile Settings](./mobile-app-settings.webp "Mergin Maps mobile Settings")
 
 3. Toggle on the `Reuse last entered value` option
 
-![Settings Reuse last entered value option](./mobile-app-settings-reuse-values.jpg "Settings Reuse last entered value option")
+![Settings Reuse last entered value option](./mobile-app-settings-reuse-values.webp "Settings Reuse last entered value option")
 
 4. Go back to the map. When capturing a new feature, there will be check boxes next to attributes in the form. 
 
@@ -26,7 +26,7 @@ To allow this functionality, follow these steps:
 
    When recording another feature in this survey layer, the checked attributes in the form will contain the value that was entered in the last created feature.
 
-![Value of selected attribute is reused in a new feature](./mobile-app-reuse-last-entered-values.jpg "Value of selected attribute is reused in a new feature")
+![Value of selected attribute is reused in a new feature](./mobile-app-reuse-last-entered-values.webp "Value of selected attribute is reused in a new feature")
 
 
 You can use the `Reuse last value option` across multiple layers. The <MobileAppNameShort /> will remember attributes for each layer separately.

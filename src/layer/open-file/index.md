@@ -24,11 +24,11 @@ This setup is used in our public project <MerginMapsProject id="documentation/fo
    <a href="project://my-pdf.pdf">Open File</a>
    ```
 
-![QGIS attributes form open local file using HTML widget](./qgis-form-open-file-html-widget.jpg "QGIS attributes form open local file using HTML widget")
+![QGIS attributes form open local file using HTML widget](./qgis-form-open-file-html-widget.webp "QGIS attributes form open local file using HTML widget")
 
 In the <MobileAppNameShort />, you can tap the *Open File* link to open the PDF file using the default application of your device.
 
-![Open a local PDF file in Mergin Maps mobile app](./mobile-forms-open-file-html-widget.jpg "Open a local PDF file in Mergin Maps mobile app")
+![Open a local PDF file in Mergin Maps mobile app](./mobile-forms-open-file-html-widget.webp "Open a local PDF file in Mergin Maps mobile app")
 
 ## Open local files using default values <Badge text="Advanced" type="warning"/>
 
@@ -47,9 +47,9 @@ This setup is used in our public project <MerginMapsProject id="documentation/fo
    '<a href="project://my-pdf.pdf">Open File</a>'
    ```
 
-![QGIS attributes form open local file](./qgis-form-open-file-default-value.jpg "QGIS attributes form open local file")
+![QGIS attributes form open local file](./qgis-form-open-file-default-value.webp "QGIS attributes form open local file")
 
 In the <MobileAppNameShort />, you can tap the *Open File* link to open the PDF file using the default application of your device.
 
-![Open a local PDF file in Mergin Maps mobile app](./mobile-forms-open-file-default-value.jpg "Open a local PDF file in Mergin Maps mobile app")
+![Open a local PDF file in Mergin Maps mobile app](./mobile-forms-open-file-default-value.webp "Open a local PDF file in Mergin Maps mobile app")
 

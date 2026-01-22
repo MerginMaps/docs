@@ -15,10 +15,10 @@ Tracking needs to be enabled in QGIS when [preparing your <MainPlatformName /> p
 
 1. Open your <MainPlatformName /> project in QGIS
 2. Navigate to **Project** > **Properties** 
-   ![QGIS Project Properties](../../gis/qgis-project-properties.jpg "QGIS Project Properties")
+   ![QGIS Project Properties](../../gis/qgis-project-properties.webp "QGIS Project Properties")
 
 3. In the <MainPlatformName /> tab, check the **Enable tracking** option.
-   ![Enable tracking in QGIS Mergin Maps project](../../gis/features/project-tracking.jpg "Enable tracking in QGIS Mergin Maps project")
+   ![Enable tracking in QGIS Mergin Maps project](../../gis/features/project-tracking.webp "Enable tracking in QGIS Mergin Maps project")
 
    You can also choose how often the position should be recorded. 
    
@@ -43,11 +43,11 @@ You can add new fields as needed, however, they should be set up with automatica
 To use tracking in the <MobileAppNameShort />, make sure that you enabled tracking in the QGIS project's settings. 
 
 1. Tap **More** and select the **Position tracking** option.
-   ![Mergin Maps mobile app Position tracking](./mobile-app-position-tracking.jpg "Mergin Maps mobile app Position tracking")
+   ![Mergin Maps mobile app Position tracking](./mobile-app-position-tracking.webp "Mergin Maps mobile app Position tracking")
 
 2. Tap **Start tracking**.
 
-   ![Start tracking in Mergin Maps mobile app](./mobile-app-start-tracking.jpg "Start tracking in Mergin Maps mobile app")
+   ![Start tracking in Mergin Maps mobile app](./mobile-app-start-tracking.webp "Start tracking in Mergin Maps mobile app")
    
 3. The <MobileAppNameShort /> will continuously record your position.
 
@@ -57,4 +57,4 @@ To use tracking in the <MobileAppNameShort />, make sure that you enabled tracki
    
    Your tracks are saved in the automatically created `tracking_layer` in your project.
    
-   ![Stop tracking in Mergin Maps mobile app](./mobile-app-stop-tracking.jpg "Stop tracking in Mergin Maps mobile app")  
+   ![Stop tracking in Mergin Maps mobile app](./mobile-app-stop-tracking.webp "Stop tracking in Mergin Maps mobile app")  

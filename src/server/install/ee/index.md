@@ -21,7 +21,7 @@ Maintenance of cloud accounts and security requires deep knowledge. <LutraConsul
 
 - Go to [aws.amazon.com](https://aws.amazon.com/) and create new root account
 
-![Create AWS account](./create_aws_account.jpg "Create AWS account")
+![Create AWS account](./create_aws_account.webp "Create AWS account")
 
 - Continue with all steps and verify your account
 
@@ -36,19 +36,19 @@ Maintenance of cloud accounts and security requires deep knowledge. <LutraConsul
 
 - Login as the root user
 
-![Login as root to AWS](./root_login.jpg "Login as root to AWS")
+![Login as root to AWS](./root_login.webp "Login as root to AWS")
 
 - Create an IAM user by searching in the console “IAM” and creating a new user. 
  
-![Create IAM user](./create_IAM_user.jpg "Create IAM user") 
+![Create IAM user](./create_IAM_user.webp "Create IAM user") 
 
 - Assign the IAM user administrator account permissions. Look for <NoSpellcheck id="AdministratorAccess" /> permission.
  
-![Assign AWS permissions](./assign_permissions.jpg "Assign AWS permissions") 
+![Assign AWS permissions](./assign_permissions.webp "Assign AWS permissions") 
 
 - Review and add it to your new IAM user account
 
-![Finish assigning AWS permissions](./assign_permission_2.jpg "Finish assigning AWS permissions") 
+![Finish assigning AWS permissions](./assign_permission_2.webp "Finish assigning AWS permissions") 
 
 - Logout from root AWS account
  
@@ -62,15 +62,15 @@ Account ID and IAM user names are needed for assigning the permissions to docker
 
 - Login to your IAM account
 
-![Login as IAM user to AWS](./login_IAM.jpg "Login as IAM user to AWS")
+![Login as IAM user to AWS](./login_IAM.webp "Login as IAM user to AWS")
 
 - Now create CLI access key
 
-![Create access keys](./create_access_key.jpg "Create access keys")
+![Create access keys](./create_access_key.webp "Create access keys")
 
 - Note down ACCESS_ID and SECRET for AWS command line client
 
-![Console login details](./find_name_and_id.jpg "Console login details")
+![Console login details](./find_name_and_id.webp "Console login details")
 
 - Send Account ID and IAM user name to <MerginMapsEmail id="sales" desc="sales team" />
 - Wait for confirmation that we have shared the ECR repository with you. This can take up to 5 working days.
@@ -100,4 +100,4 @@ aws ecr describe-images --repository-name mergin/mergin-ee-back --registry-id 43
 docker pull 433835555346.dkr.ecr.eu-west-1.amazonaws.com/mergin/mergin-ee-back:2023.6.1-ee
 ``` 
 
-![Docker pull of Mergin Maps EE image](./docker_pull.jpg "Docker pull of Mergin Maps EE image")
+![Docker pull of Mergin Maps EE image](./docker_pull.webp "Docker pull of Mergin Maps EE image")

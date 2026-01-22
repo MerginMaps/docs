@@ -22,7 +22,7 @@ They contain detailed information about application run, so they may help you re
 
 ## Server is not properly configured
 Did you get an error that the server is not properly configured?
-![Mergin Maps CE server not configured error](./ce-server-not-configured.jpg "Mergin Maps CE server not configured error")
+![Mergin Maps CE server not configured error](./ce-server-not-configured.webp "Mergin Maps CE server not configured error")
 
 1. Check if `MERGIN_BASE_URL` docker environment variable is assigned correctly.
    `MERGIN_BASE_URL` should contain the URL of your <CommunityPlatformName /> server.

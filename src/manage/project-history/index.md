@@ -19,19 +19,19 @@ Great tools to inspect the project history and compare changes between project v
 ## Project history in QGIS
 Project history and version can be inspected using the <QGISPluginName /> by clicking the **Project history** button of the toolbar.
 
-![Project history button](../plugin/plugin-toolbar-project-history.jpg "Project history button")
+![Project history button](../plugin/plugin-toolbar-project-history.webp "Project history button")
 
 The button opens the **Changes Viewer** window. Here, all available project versions are listed in the left panel. By selecting a version you can inspect the *changes* between this and the previous project version (not the state of the project at that version). Note that older versions of your project can be [downloaded through the <DashboardShortLink />](../dashboard/#history).
 
 On the right, you can see some information about the currently selection version: the project size, date of creation and <MainPlatformName /> component that was used to create it. You can switch between the *Changed layers* and *Changed files* tabs.
 
-![Project history changes viewer](../plugin/plugin-history-viewer.jpg) 
+![Project history changes viewer](../plugin/plugin-history-viewer.webp) 
 
 Select a layer from the list in the *Changed layers* tab to display its changes on the map along with a colour-coded attributes table (green for insert, yellow for update, red for delete). 
 
 Changes layers can be added to the project to inspect them further or use them to restore deleted or modified data.
 
-![Project history changes viewer](./plugin-changes-viewer-add-to-project.jpg) 
+![Project history changes viewer](./plugin-changes-viewer-add-to-project.webp) 
 
 
 ## Project history and advanced changelog on the dashboard
@@ -40,15 +40,15 @@ To see the project history:
 2. Navigate to the **History** tab. 
 
    Here you can find all available versions of the project. These versions can be downloaded to your computer which can be helpful if you need to create a backup or [restore previous version](#how-to-revert-to-an-older-version) of the project.
-   ![Mergin Maps project history web](./dashboard-projects-history.jpg "Mergin Maps project history")
+   ![Mergin Maps project history web](./dashboard-projects-history.webp "Mergin Maps project history")
 
 3. Click on a version to see more details about what was changed.
    
    You can inspect the list of **added**, **edited** and **removed** files.
-   ![Overview of changes made in a project in the dashboard](./dashboard-history-details.jpg "Overview of changes made in a project in the dashboard")
+   ![Overview of changes made in a project in the dashboard](./dashboard-history-details.webp "Overview of changes made in a project in the dashboard")
 
 4. For GeoPackage layers, there is an option to see even more. Click on **Show advanced** 
-   ![Show advanced changelog of a layer](./dashboard-history-show-advanced-changelog.jpg "Show advanced changelog of a layer")
+   ![Show advanced changelog of a layer](./dashboard-history-show-advanced-changelog.webp "Show advanced changelog of a layer")
 
 5. Now you can see the overview of feature changes in a specific layer across all attributes.
    
@@ -58,7 +58,7 @@ To see the project history:
    - `fid: 2` was moved to a new position
    - For `fid: 8`, the value of attribute `species` was changed
    
-   ![Dashboard advanced changelog](./dashboard-history-advanced-changelog.jpg "Dashboard advanced changelog")
+   ![Dashboard advanced changelog](./dashboard-history-advanced-changelog.webp "Dashboard advanced changelog")
 
 
 ### How to revert to an older version

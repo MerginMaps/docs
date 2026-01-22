@@ -8,8 +8,8 @@ Adding or editing text is the most common method for inserting information withi
 
 |<div style="width:150px"> Widget </div> |Preview in the <MobileAppNameShort />|
 |:---:|:---:|
-|[Text](#text-widget)   | ![Mergin Maps mobile app text field form](./mobile-form-text-preview.jpg "Mergin Maps mobile app text field form") |
-|[Multiline Text](#multiline-text)   | ![Mergin Maps mobile app text field form](./mobile-form-text-multiline-preview.jpg "Mergin Maps mobile app text field form") |
+|[Text](#text-widget)   | ![Mergin Maps mobile app text field form](./mobile-form-text-preview.webp "Mergin Maps mobile app text field form") |
+|[Multiline Text](#multiline-text)   | ![Mergin Maps mobile app text field form](./mobile-form-text-multiline-preview.webp "Mergin Maps mobile app text field form") |
 
 :::tip Example project available
 Both single-line and multiline text options are used in this public project: <MerginMapsProject id="documentation/form-widgets" />. Download or clone it to see this setup.
@@ -21,7 +21,7 @@ Prefer a video? Here is a short tutorial about text widgets:
 ## Text widget
 The **Text Edit** widget is set by default for fields with text data type. For simple text input, you do not need to change it.
 
-![QGIS Text Edit Widget Type](./qgis-form-text.jpg "QGIS Text Edit Widget Type")
+![QGIS Text Edit Widget Type](./qgis-form-text.webp "QGIS Text Edit Widget Type")
 
 In the <MobileAppNameShort />, the basic text field looks like this:
 
@@ -38,10 +38,10 @@ The **Text Edit** widget offers the option to store multiple lines within a sing
    - Check the **Multiline** option :heavy_check_mark:
 4. **Apply** the changes. Don't forget to save and sync your project!
 
-![QGIS multiline text field setup](./qgis-form-text-multiline.jpg "QGIS multiline text field setup")
+![QGIS multiline text field setup](./qgis-form-text-multiline.webp "QGIS multiline text field setup")
 
 In the <MobileAppNameShort />, the **multiline text edit widget** looks like this:
-![Mergin Maps mobile app multiline text field form](./mobile-form-text-multiline.jpg "Mergin Maps mobile app multiline text field form")
+![Mergin Maps mobile app multiline text field form](./mobile-form-text-multiline.webp "Mergin Maps mobile app multiline text field form")
 
 ::: tip
 Both QGIS and <MobileAppName /> support the use of HTML text fields. When setting up the [multiline](#multiline-text) text widget, check also the **HTML** option :heavy_check_mark:. 
@@ -53,4 +53,4 @@ HTML text fields can be used to include clickable links to, e.g., [open a link i
 
 In the <MobileAppNameShort />, the text can be entered manually or using voice-to-text (if your mobile device supports this feature).
 
-![Using voice to text in Mergin Maps mobile app](./mobile-form-text-voice-input.jpg "Using voice to text in Mergin Maps mobile app")
+![Using voice to text in Mergin Maps mobile app](./mobile-form-text-voice-input.webp "Using voice to text in Mergin Maps mobile app")

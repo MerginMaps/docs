@@ -13,12 +13,12 @@ To use this option, make sure that the [photo widget](../../layer/photos/) of th
 ## Set up custom photo names
 
 1. Open your <MainPlatformNameLink /> project in QGIS and navigate to **Project Properties**
-   ![QGIS Project Properties](../qgis-project-properties.jpg "QGIS Project Properties")
+   ![QGIS Project Properties](../qgis-project-properties.webp "QGIS Project Properties")
 
 2. In the **Mergin Maps** tab, you can see the list of layers and their fields with correctly configured photo attachment widgets.
 
    Select a layer from the list and click on the **Expression builder** icon.
-   ![Mergin Maps QGIS Plugin Custom photo name setup](./plugin-photo-name-available-layers.jpg "Mergin Maps QGIS Plugin Custom photo name setup")
+   ![Mergin Maps QGIS Plugin Custom photo name setup](./plugin-photo-name-available-layers.webp "Mergin Maps QGIS Plugin Custom photo name setup")
  
 3. In the **Expression Dialog** window, enter the expression that should be used as the photo's name. Please, keep in mind [basic recommendations](#best-practice-for-photo-name-expressions) to make sure the naming works as intended.
 
@@ -27,7 +27,7 @@ To use this option, make sure that the [photo widget](../../layer/photos/) of th
    
    Example result is displayed in the **Preview**: `hedges-sarah-230707194052`
    
-   ![QGIS Expression for custom photo name](./plugin-photo-name-expression-builder.jpg "QGIS Expression for custom photo name")
+   ![QGIS Expression for custom photo name](./plugin-photo-name-expression-builder.webp "QGIS Expression for custom photo name")
    
    :::warning Do not use special characters in photo names
    Special characters in photo names can cause synchronisation issues. Therefore, it is not allowed to use characters such as `|?*"<>`.
@@ -39,8 +39,8 @@ To use this option, make sure that the [photo widget](../../layer/photos/) of th
 
    The **Preview** in **Mergin Maps** tab includes the [custom folder for photos](../../layer/photos/#how-to-set-up-a-custom-folder-for-storing-photos), if you have set it up. Otherwise you will see only the sample name of a photo.
   
-   ![Mergin Maps QGIS Plugin photo name setup with custom folder](./plugin-photo-name-format-folder.jpg "Mergin Maps QGIS Plugin photo name setup with custom folder")  
-   ![Mergin Maps QGIS Plugin Custom photo name setup without custom folder](./plugin-photo-name-format.jpg "Mergin Maps QGIS Plugin Custom photo name setup without custom folder")
+   ![Mergin Maps QGIS Plugin photo name setup with custom folder](./plugin-photo-name-format-folder.webp "Mergin Maps QGIS Plugin photo name setup with custom folder")  
+   ![Mergin Maps QGIS Plugin Custom photo name setup without custom folder](./plugin-photo-name-format.webp "Mergin Maps QGIS Plugin Custom photo name setup without custom folder")
 
 ## Best practice for photo name expressions
 There are some tips to keep in mind when creating the expression for your photo name:
@@ -51,7 +51,7 @@ Therefore, we recommend using combinations of variables that will ensure that th
 
 :no_entry_sign: Avoid using special characters such as `|?*"<>` in the photo name.
 
-:white_check_mark: The file extension (`.jpg`) is added automatically.
+:white_check_mark: The file extension (`.webp`) is added automatically.
 
 :white_check_mark: When using a field value in the expression, make sure that it is a field that will be filled out during the survey, e.g. by using [constraints](../../layer/constraints/). If the field is empty, the expression won't work!
 
@@ -79,17 +79,17 @@ In general, it is useful to use some of these variables:
 Here are some example expressions that can be used or modified to fit your needs:
 
 - Expression: ` @layer_name + '-' +  @mm_username + '-' + format_date(now(),'yyMMddhhmmss')`
-   - Preview: `hedges-sarah-230707154052.jpg`
+   - Preview: `hedges-sarah-230707154052.webp`
    - Description: This is a combination of the name of a layer (`hedges`), <MainPlatformName /> username (`sarah`) and reformatted timestamp that starts with the year and ends with seconds.
 
 - Expression: ` "species" +  format_date( now(),'-yyyyMMdd-hhmmss')`
-   - Preview: `Silver birch-20230707-154052.jpg`
+   - Preview: `Silver birch-20230707-154052.webp`
    - Description: `Silver birch` is a value of the `species` field. Current timestamp is reformatted with added hyphens to separate the date and time.
 
 - Expression: `'photo-' +  format_date( now(),'ssmmhhddMMyy')`
-   - Preview: `photo-520415070723.jpg`
+   - Preview: `photo-520415070723.webp`
    - Description: A string can be added to the photo name (here: `photo-`). The order of the timestamp is reversed (compared to the previous examples), starting from seconds.
 
 - Expression: `@layer_name + ' ' + to_string("house-number") + ' at ' + format_date( now(),'ssmmhh') + ' on '+ format_date( now(),'ddMMyy')`
-   - Preview: `house 41 at 520415 on 070723.jpg`
+   - Preview: `house 41 at 520415 on 070723.webp`
    - Description: Here we use the name of a layer (`house`), followed by a string adding space. A numeric field (`house-number`) is converted to a string. The timestamp is divided to display the time and date separately, with added strings `at` and `on` to make the photo name more readable.

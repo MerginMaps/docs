@@ -23,7 +23,7 @@ Here, we will first set up a constraint to a field that represents the facility 
    - Use the following **Expression**: `"number" >= 1` 
    - Check the **Enforce expression constraint** option :heavy_check_mark:
 
-![QGIS constraints in attributes form](./qgis-form-constraints.jpg "QGIS constraints in attributes form")
+![QGIS constraints in attributes form](./qgis-form-constraints.webp "QGIS constraints in attributes form")
 
 Now we will set up a *soft* constraint to a photo field. A photo should be taken during the survey, but the feature can be saved without one.
 
@@ -34,5 +34,5 @@ Now we will set up a *soft* constraint to a photo field. A photo should be taken
 
 In the <MobileAppNameShort />, you will be unable to save a feature unless the field value meets the *enforced* constraint (here: `Capacity`). If the constraint is *not enforced* (here: `photo`), there will be a warning, but the feature can be saved regardless.
 
-![Mergin Maps mobile app constraints in attributes form](./mobile-form-constaints.jpg "Mergin Maps mobile app constraints in attributes form")
+![Mergin Maps mobile app constraints in attributes form](./mobile-form-constaints.webp "Mergin Maps mobile app constraints in attributes form")
 

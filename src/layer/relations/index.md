@@ -152,7 +152,7 @@ It works the same in the <MobileAppName/>. You can add a new feature to the refe
 ## Gallery?
 Did you follow these steps and do you see something like this? If the referencing (child) layer is set up with the [Attachment widget](../photos) for photos, the form in the <MobileAppNameShort/> will automatically display a gallery.
 
-![Many photos to a single feature in Mergin Maps mobile app](../photos/mobile-multiple-photos.jpg "Many photos to a single feature in Mergin Maps mobile app")
+![Many photos to a single feature in Mergin Maps mobile app](../photos/mobile-multiple-photos.webp "Many photos to a single feature in Mergin Maps mobile app")
 
 ::: tip 
 To display the [relations widget](#referenced-parent-layer-attributes-form-relations-widget) without the gallery, use `nogallery` in the relation name or label.

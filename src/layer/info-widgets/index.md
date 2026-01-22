@@ -16,14 +16,14 @@ HTML Widget | ![Mergin Maps mobile app HTML widget in attributes form](../form-w
 
 These widgets can be found in **Available Widgets** in the **Other Widgets** section when using the [Drag and Drop Designer](../form-layout/#qgis-drag-and-drop-designer). Simply add them to the form layout and double click to configure them as needed.
 
-![QGIS HTML and Text Widget](./qgis-form-html-text-widget.jpg "QGIS HTML and Text Widget")
+![QGIS HTML and Text Widget](./qgis-form-html-text-widget.webp "QGIS HTML and Text Widget")
 
 ![QGIS Configure Text Widget Expression Builder](./qgis-text-widget-expression.gif "QGIS Configure Text Widget Expression Builder")
 
 ## Text widget
 
 To configure the **Text** widget, enter the text you want to display in the form. On the right, you will see the preview.
-![QGIS Text widget configuration](./qgis-configure-text-widget.jpg "QGIS Text widget configuration")
+![QGIS Text widget configuration](./qgis-configure-text-widget.webp "QGIS Text widget configuration")
 
 ...and this is how the Text widget looks like in the form in QGIS (left) and in the mobile app (right):
 ![Text widget in QGIS and in Mergin Maps mobile app attributes form](./form-text-widget.webp "Text widget in QGIS and in Mergin Maps mobile app attributes form")
@@ -31,7 +31,7 @@ To configure the **Text** widget, enter the text you want to display in the form
 ## HTML Widget
 The **HTML** widget offers the option to format the text as needed. HTML widget supports these [HTML tags](https://doc.qt.io/qt-6/richtext-html-subset.html#supported-tags).
 
-![QGIS HTML widget configuration](./qgis-configure-html-widget.jpg "QGIS HTML widget configuration")
+![QGIS HTML widget configuration](./qgis-configure-html-widget.webp "QGIS HTML widget configuration")
 
 ...and this is how the HTML widget looks like in the form in QGIS (left) and in the mobile app (right):
 ![HTML widget in QGIS and in Mergin Maps mobile app attributes form](./form-html-widget.webp "HTML widget in QGIS and in Mergin Maps mobile app attributes form")
@@ -62,6 +62,6 @@ Clone <MerginMapsProject id="documentation/form_cascade" /> to follow this examp
 4. Save and synchronise your project. 
 
 ... and this is how it works during the field survey. `[% "VRP" %]` expression displays the current value of the `Vehicle Registration Plate` field.
-![Mergin Maps mobile app text widget with variable](./mobile-text-widget-expression.jpg "Mergin Maps mobile app text widget with variable")
+![Mergin Maps mobile app text widget with variable](./mobile-text-widget-expression.webp "Mergin Maps mobile app text widget with variable")
 
 

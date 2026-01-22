@@ -18,7 +18,7 @@ Although we show how to add online and offline background maps to your projects,
 ## Raster tiles 
 Raster tiles are ideal for aerial imagery or terrain visualisations. They can be large in size and can appear pixelated when zoomed in.
 
-![sample raster tile](./example_rastertile.jpg "sample raster tile")
+![sample raster tile](./example_rastertile.webp "sample raster tile")
 
 ### Online services
 QGIS comes by default with the <QGISHelp ver="3.22" link="user_manual/managing_data_source/opening_data.html?highlight=xyz#using-xyz-tile-services" text="OpenStreetMap online services for XYZ tiles" />. When adding a cartographic basemap, ensure you set the tile size correctly, so that the texts and labels are readable on mobile devices with high resolution display.
@@ -32,22 +32,22 @@ You can also add [other sources](https://gis.stackexchange.com/questions/20191/a
 To add Bing aerial imagery to your QGIS project:
 1. In QGIS, navigate to the **XYZ Tiles** in the **Browser** panel
 2. Right-click on **XYZ Tiles** and select **New Connection**
-   ![QGIS new XYZ connection](./qgis_xyz_connection1.jpg "QGIS new XYZ connection")
+   ![QGIS new XYZ connection](./qgis_xyz_connection1.webp "QGIS new XYZ connection")
 
 3. Set the parameters of the **XYZ connection**:
   - **Name**: *Bing aerial imagery*
-  - **URL**: `http://ecn.t3.tiles.virtualearth.net/tiles/a{q}.jpeg?g=1`
+  - **URL**: `http://ecn.t3.tiles.virtualearth.net/tiles/a{q}.webp?g=1`
   Press **OK**.
-    ![QGIS new XYZ connection parameters](./qgis_xyz_connection2.jpg "QGIS new XYZ connection parameters")
+    ![QGIS new XYZ connection parameters](./qgis_xyz_connection2.webp "QGIS new XYZ connection parameters")
 
 Now, the **XYZ Tiles** in the **Browser** panel should contain the *Bing aerial imagery*. Double click on it to add it to your project and zoom to your area of interest.
-![QGIS added XYZ connection](./qgis_xyz_online.jpg "QGIS added XYZ connection")
+![QGIS added XYZ connection](./qgis_xyz_online.webp "QGIS added XYZ connection")
 
 ::: tip
 When using XYZ tiles that contain labels, ensure to set the tile resolution to *Standard* in the connection settings. This will ensure the fonts are readable on the high resolution screens (the majority of the recent smartphones comes with high DPI screens).
 :::
 
-![QGIS Connection settings for XYZ](./xyz_settings.jpg "QGIS Connection settings for XYZ")
+![QGIS Connection settings for XYZ](./xyz_settings.webp "QGIS Connection settings for XYZ")
 
 
 ### Generating XYZ/MBTiles raster tiles for offline use
@@ -62,7 +62,7 @@ To generate an offline copy of the aerial imagery from your map view extent:
 1. In QGIS, select **Processing** > **Toolbox** from the main menu. The **Processing** panel will appear on the right side of QGIS window.
 2. In the search section on the top of the **Processing** panel, type *xyz* to display relevant tools.
 3. In **Raster tools**, double-click on **Generate XYZ tiles (MBTiles)**
-   ![QGIS generate XYZ tiles MBTiles](./qgis_xyz_gen_mbtiles1.jpg "QGIS generate XYZ tiles MBTiles")
+   ![QGIS generate XYZ tiles MBTiles](./qgis_xyz_gen_mbtiles1.webp "QGIS generate XYZ tiles MBTiles")
 
 4. Set the parameters of **Generate XYZ tiles (MBTiles)** tool:
    - **Extent**: click on the right-side drop-down menu and select **Use Map Canvas Extent**
@@ -71,7 +71,7 @@ To generate an offline copy of the aerial imagery from your map view extent:
    - **Output file (for MBTiles)**: click on the right side drop-down menu and select **Save to file**. Browse to the folder where you want to save the MBTiles and name the file. 
    Here: `offline_aerial_photo.mbtiles`
    - Click **Run**
-   ![QGIS generate XYZ tiles MBTiles settings](./qgis_xyz_gen_mbtiles2.jpg "QGIS generate XYZ tiles MBTiles settings")
+   ![QGIS generate XYZ tiles MBTiles settings](./qgis_xyz_gen_mbtiles2.webp "QGIS generate XYZ tiles MBTiles settings")
 
 :::warning
 Depending on the size of your study area and the zoom level, the output file can be very large. See how to [work with large files](#how-to-work-with-very-large-files-android) in <MobileAppName />.
@@ -82,7 +82,7 @@ Vector tiles are a better alternative for cartographic maps as background data. 
 
 There are several online services you can use in your projects, some of them are mentioned below.
 
-![Example vector tile](./example_vectortile.jpg "Example vector tile")
+![Example vector tile](./example_vectortile.webp "Example vector tile")
 
 ### Online services
 When [creating a new <MainPlatformName /> project](../../manage/create-project/#create-a-project-in-qgis) from scratch, the default background map uses <MainPlatformName /> vector tile service. Other online vector tile services can be added to the project in QGIS, but keep in mind they come with their own terms of use.
@@ -99,7 +99,7 @@ To add a vector tile service:
    - **Min. Zoom Level**: 0
    - **Max. Zoom Level**: 14
    
-   ![QGIS XYZ vector tile connection](./qgis_xyz_gen_vectortile.jpg "QGIS XYZ vector tile connection")
+   ![QGIS XYZ vector tile connection](./qgis_xyz_gen_vectortile.webp "QGIS XYZ vector tile connection")
 
 :::warning Usage details
 
@@ -140,7 +140,7 @@ Vector tiles for offline use can be downloaded easily using <QGISPluginName />.
 1. Open your <MainPlatformName /> project in QGIS. 
    
 2. In the **Layers** panel, right-click on the vector tile layer and choose the **Make available offline...** option
-   ![QGIS vector tiles make available offline](./qgis-vector-tiles-make-available-offline.jpg "QGIS vector tiles make available offline")
+   ![QGIS vector tiles make available offline](./qgis-vector-tiles-make-available-offline.webp "QGIS vector tiles make available offline")
 
 3. **Download Vector Tiles** dialog opens. Set the parameters as needed:
    - **Extent** should be defined by your area of interest. You may calculate it from your survey layer, use the current map canvas extent (after zooming in), or other options that are provided.
@@ -148,7 +148,7 @@ Vector tiles for offline use can be downloaded easily using <QGISPluginName />.
    - **Tile limit** is the maximum number of tiles that you want to download.
    - **Output** will be saved as a MBTiles file. Click on the right side drop-down menu, select **Save to file**, browse to the folder where you want to save the MBTiles and name the file.
    
-   ![QGIS download vector tiles dialog](./qgis-vector-tiles-set-extent.jpg "QGIS download vector tiles dialog")
+   ![QGIS download vector tiles dialog](./qgis-vector-tiles-set-extent.webp "QGIS download vector tiles dialog")
 
    MBTiles can be stored in your [<MainPlatformName /> project folder](../../manage/project/#mergin-maps-project-folder) and synchronised to <MainPlatformNameLink /> along with your project. If you find it impractical to synchronise them or if you want to use the same file in multiple projects, follow the steps on [How to work with large files](#how-to-work-with-very-large-files-android) in <MobileAppName />.
 
@@ -173,7 +173,7 @@ If you do not need to use your background maps offline, consider creating a WMS 
 QGIS uses relative paths to load the data. If your <MainPlatformName /> project refers to files located in another folder, this project can be loaded just fine on another computer or in <MobileAppName /> - if the folder with the files can be found in its expected location.
 
 1. On your computer, create a folder that will contain the large datasets (here: `_rasters`). It should be located in the same directory as your <MainPlatformName /> projects.
-   ![File folder storing large data](./bm-folder-large-files.jpg "File folder storing large data")
+   ![File folder storing large data](./bm-folder-large-files.webp "File folder storing large data")
 2. Open your <MainPlatformName /> project in QGIS. Load the files from the `_rasters` folder to the project. Save and sync.
 
 3. Connect your mobile device to the computer and copy the `_rasters` folder to the app's project folder `Internal storage/Android/data/uk.co.lutraconsulting/files/projects`. 

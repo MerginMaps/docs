@@ -9,7 +9,7 @@ description: QGIS is a great open-source GIS tool. QGIS and Mergin Maps is a pow
 2. Find the appropriate installer for your operating system. 
 
    For Windows users, we recommend downloading a standalone MSI installer for the long term release.
-  ![QGIS standalone installer download](./qgis-download.jpg "QGIS standalone installer download")
+  ![QGIS standalone installer download](./qgis-download.webp "QGIS standalone installer download")
 
    :::tip Choosing QGIS installer and version
    The <QGIS link="resources/installation-guide/" text="Installation Guide" /> contains more details about installation options for different platforms.
@@ -18,7 +18,7 @@ description: QGIS is a great open-source GIS tool. QGIS and Mergin Maps is a pow
    :::
 
 3. Run the installer when it has finished downloading:
-   ![QGIS installer Setup Wizard](./qgis-installer.jpg "QGIS installer Setup Wizard")
+   ![QGIS installer Setup Wizard](./qgis-installer.webp "QGIS installer Setup Wizard")
 
 4. Continue the installation using the default installation options.
 

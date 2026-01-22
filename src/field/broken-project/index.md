@@ -62,13 +62,13 @@ There is a high chance that these settings are the culprit behind the error!
 **To fix the project**:
 1. Open your <MainPlatformName /> project in QGIS.
 2. Remove problematic vector tile layers from the project. 
-   ![Remove problematic layer in QGIS](./qgis-remove-layer.jpg "Remove problematic layer in QGIS")
+   ![Remove problematic layer in QGIS](./qgis-remove-layer.webp "Remove problematic layer in QGIS")
    
 3. If you use online vector tiles, navigate to **Vector Tiles** in the **Browser** panel and create a new [vector tiles connection](../../gis/settingup_background_map/#vector-tiles) to the data source. 
    
    :::details
    You may also inspect the **Style URL** in the **Vector Tiles Connection**.
-   ![Vector tile connection](./qgis-vt-connection.jpg "Vector tile connection")    
+   ![Vector tile connection](./qgis-vt-connection.webp "Vector tile connection")    
    For instance, if the **Style URL** looks like this (Qwant Maps settings used here):
    `styleUrl=https://raw.githubusercontent.com/QwantResearch/qwant-basic-gl-style/master/style.json&type=xyz&url=https://www.qwant.com/maps/tiles/ozbasemap/%7Bz%7D/%7Bx%7D/%7By%7D.pbf&zmax=14&zmin=0`
    try removing the part of the link after `style.json` to get:

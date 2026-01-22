@@ -27,7 +27,7 @@ Subscriptions are based on the number of *contributors* on the workspace. Per ea
 
 The overview of workspace users and their member type (contributor/read-only) can be found in the [**Members**](../dashboard/#members) tab on the <DashboardShortLink />. It is available to [owners and admins](../permissions/#workspace-member-roles-and-project-permissions) of a workspace.
 
-![Mergin Maps Dashboard Subscription tab](../dashboard/mergin-maps-dashboard-subscriptions.jpg "Mergin Maps Dashboard Subscription tab")
+![Mergin Maps Dashboard Subscription tab](../dashboard/mergin-maps-dashboard-subscriptions.webp "Mergin Maps Dashboard Subscription tab")
 
 ## Subscriptions management portal
 Subscriptions, payments and billing information are managed in our subscription management portal. 
@@ -36,7 +36,7 @@ Subscriptions, payments and billing information are managed in our subscription 
 - from [Mergin Maps dashboard](#accessing-subscription-management-portal-from-mergin-maps-dashboard) by owners of a workspace
 - [using a link](#accessing-subscription-management-portal-directly-without-mergin-maps-account) by a person that has access to the email used in billing information
 
-![Mergin Maps subscription plan overview](./stripe-merginmaps-subcription.jpg "Mergin Maps subscription plan overview")
+![Mergin Maps subscription plan overview](./stripe-merginmaps-subcription.webp "Mergin Maps subscription plan overview")
 
 When logged into the portal, you can [update](#how-to-change-a-subscription) or [cancel](#how-to-cancel-a-subscription) your subscription, see upcoming charges, review your [billing and payment information](#billing-information-and-payment-method) and access [payment history and invoices](#invoices-and-payment-history).
 
@@ -45,7 +45,7 @@ If you are the owner of a workspace, you can access the subscription management 
 
 To access the portal, navigate to the **Subscription** tab and click on **Manage Subscription**.
 
-![Mergin Maps Dashboard manage subscription](./dashboard-manage-subscriptions.jpg "Mergin Maps Dashboard manage subscription")
+![Mergin Maps Dashboard manage subscription](./dashboard-manage-subscriptions.webp "Mergin Maps Dashboard manage subscription")
 
 You will be redirected to the subscription management portal.
 
@@ -58,7 +58,7 @@ To access the portal directly:
 1. Navigate to the [**subscription management portal**](https://payments.merginmaps.com/p/login/14keYH711d32dz2144)
 
 2. Enter the **email** that is used in your [billing information](#billing-information-and-payment-method) and click on **Send**
-   ![Logging in to stripe with an email](./stripe-sign-in.jpg "Logging in to stripe with an email")
+   ![Logging in to stripe with an email](./stripe-sign-in.webp "Logging in to stripe with an email")
 
 3. You will get an email with a login link. Click on the link in the email and you will be redirected to the portal.
 
@@ -70,7 +70,7 @@ To access the portal directly:
    Choose your *Premium* plan by using the slider. You can also specify if you want to be billed yearly or monthly.
    
    Click on the **Sign up now** button to confirm your new plan.
-   ![Mergin Maps Subscription details](./subscriptions-upgrade.jpg "Mergin Maps Subscription details")
+   ![Mergin Maps Subscription details](./subscriptions-upgrade.webp "Mergin Maps Subscription details")
 
 3. You will be redirected to a checkout page. Here, fill out the billing information.
 
@@ -80,7 +80,7 @@ To access the portal directly:
    - the VAT number has to be associated with the entered (VAT registered) address
    - the address you enter has to match the address registered with your payment method
    
-   ![Subscription checkout](./stripe-checkout.jpg "Subscription checkout")
+   ![Subscription checkout](./stripe-checkout.webp "Subscription checkout")
   
 4. Click on **Pay and subscribe**
    
@@ -91,7 +91,7 @@ We support students, educators and registered non-profit organisations.
 
 Visit <MainDomainNameLink id="pricing" desc="Mergin Maps pricing page"/>, where you can request free *Academia* plan or *Non-profit* plan.
 
-![Mergin Maps Request Academia or Non-profit plan](./academia-non-profit-plan.jpg "Mergin Maps Request Academia or Non-profit plan")
+![Mergin Maps Request Academia or Non-profit plan](./academia-non-profit-plan.webp "Mergin Maps Request Academia or Non-profit plan")
 
 Click on the **Sign Up Now** button and fill out the form. We will review your application and if you meet our conditions, your workspace will get the Academia or Non-profit plan.
 
@@ -99,10 +99,10 @@ Click on the **Sign Up Now** button and fill out the form. We will review your a
 1. Navigate to the [subscription management portal](#subscriptions-management-portal)
 
 2. In the *Current subscription* section, click on the **Update subscription** button
-   ![Update Mergin Maps subscription plan](./stripe-update-subscription.jpg "Update Mergin Maps subscription plan")
+   ![Update Mergin Maps subscription plan](./stripe-update-subscription.webp "Update Mergin Maps subscription plan")
    
 3. Choose a *Monthly* or *Yearly* billing, **Select** your new plan and **Continue**
-   ![Changing Mergin Maps subscription plan](./stripe-update-your-plan.jpg "Changing Mergin Maps subscription plan")
+   ![Changing Mergin Maps subscription plan](./stripe-update-your-plan.webp "Changing Mergin Maps subscription plan")
    
 4. Confirm your updates and proceed by clicking on the **Subscribe and pay** button
 
@@ -110,7 +110,7 @@ Click on the **Sign Up Now** button and fill out the form. We will review your a
 1. Navigate to the [subscription management portal](#subscriptions-management-portal)
 
 2. In the *Current subscription* section, click on **Cancel subscription**
-   ![Cancel Mergin Maps Subscription](./stripe-cancel-subscription.jpg "Cancel Mergin Maps Subscription")
+   ![Cancel Mergin Maps Subscription](./stripe-cancel-subscription.webp "Cancel Mergin Maps Subscription")
    
 3. Review the details and confirm that you want to cancel the plan by clicking **Cancel subscription**.
 
@@ -120,7 +120,7 @@ Click on the **Sign Up Now** button and fill out the form. We will review your a
 1. Navigate to the [subscription management portal](#subscriptions-management-portal)
 
 2. Here, you can see current billing information and payment method
-   ![Payment method and billing information](./stripe-billing-info-payment-method.jpg "Payment method and billing information")
+   ![Payment method and billing information](./stripe-billing-info-payment-method.webp "Payment method and billing information")
 
 :::warning
 All billing-related information such as invoices or failed payments notifications will be sent to the email that is entered in the billing information.
@@ -136,7 +136,7 @@ The billing details associated with your subscription can be changed through the
 2. Here, you can see your current billing details. 
    
    Click on **Update information** to change it.
-   ![Subscription management portal Update billing information](./stripe-update-billing-info.jpg "Subscription management - Update billing information")
+   ![Subscription management portal Update billing information](./stripe-update-billing-info.webp "Subscription management - Update billing information")
 
 :::warning
 All billing-related information such as invoices or failed payments notifications will be sent to the email that is entered in the billing information.
@@ -154,7 +154,7 @@ You might want to change it later, e.g. to use a different card or when [transfe
 2. Here, you can see your current [payment methods](#billing-information-and-payment-method). 
    - to add a new card, click on **Add payment method** and fill out the details
    - to remove a card from your profile, click on the button next to the card and click **Delete**
-   ![Add payment method](./stripe-add-payment-method.jpg "Add payment method")
+   ![Add payment method](./stripe-add-payment-method.webp "Add payment method")
 
 :::warning
 Any active subscription requires a payment method. 
@@ -166,8 +166,8 @@ A card can be deleted only if there is another payment method available. To repl
 1. Navigate to the [subscription management portal](#subscriptions-management-portal)
 
 2. Here you can find the overview of payment history and invoices at the bottom of the page
-   ![Invoices and Payment History](./invoices-history.jpg "Invoices and Payment History")
+   ![Invoices and Payment History](./invoices-history.webp "Invoices and Payment History")
 
 4. Click on a payment to download your invoice or receipt.
-   ![Mergin Maps Invoice](./invoice-receipt.jpg "Mergin Maps Invoice")
+   ![Mergin Maps Invoice](./invoice-receipt.webp "Mergin Maps Invoice")
 

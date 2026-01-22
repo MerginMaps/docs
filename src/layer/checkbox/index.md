@@ -28,7 +28,7 @@ If you have a field with a `Boolean` data type, QGIS assigns the checkbox widget
 3. In the **Widget Type** tab, the **Checkbox** widget should be set by default (if not, select it from the drop-down menu).
 4. **Apply** the changes. Don't forget to save and sync your project!
 
-![QGIS checkbox field form](./qgis-form-checkbox.jpg "QGIS checkbox field form")
+![QGIS checkbox field form](./qgis-form-checkbox.webp "QGIS checkbox field form")
 
 ## Checkbox with custom values (yes/no) 
 You might want to use the checkbox with custom values, such as Yes/No or On/Off. This is possible for fields with `Text (string)` data type:
@@ -37,11 +37,11 @@ You might want to use the checkbox with custom values, such as Yes/No or On/Off.
 3. In the **Widget Type** tab, select the **Checkbox** widget and define values for the *Checked* and for the *Unchecked* state. Here we use `Yes` and `No`.
 4. **Apply** the changes. Don't forget to save and sync your project!
 
-![QGIS checkbox field form](./qgis-form-checkbox-string.jpg "QGIS checkbox field form")
+![QGIS checkbox field form](./qgis-form-checkbox-string.webp "QGIS checkbox field form")
 
 Similarly, you could set up the checkbox widget for fields with integer data types and use numerical values, e.g. `0` and `1`, for the *Checked* and for the *Unchecked* state. 
 
 In the <MobileAppNameShort />, the checkbox can be easily toggled on/off.
 
-![Mergin Maps mobile app checkbox field form](./mobile-form-checkbox.jpg "Mergin Maps mobile app checkbox field form")
+![Mergin Maps mobile app checkbox field form](./mobile-form-checkbox.webp "Mergin Maps mobile app checkbox field form")
 

@@ -15,13 +15,13 @@ Before the installation of <QGISPluginName />, please ensure you have already:
 1. Open QGIS on your computer
 
 2. Select **Manage and Install Plugins...** in the **Plugins** tab:
-   ![QGIS Manage and Install Plugins](./qgis-plugins-manage-and-install.jpg "QGIS Manage and Install Plugins")
+   ![QGIS Manage and Install Plugins](./qgis-plugins-manage-and-install.webp "QGIS Manage and Install Plugins")
 
 3. Find the **<MainPlatformName />** plugin and click **Install Plugin**:
-   ![Mergin Maps Plugin Installation](./find-and-install-mergin.jpg "Mergin Maps Plugin Installation")
+   ![Mergin Maps Plugin Installation](./find-and-install-mergin.webp "Mergin Maps Plugin Installation")
 
 4. Close the Plugins dialog. The <QGISPluginName /> toolbar should appear in QGIS:
-   ![Mergin Maps Plugin Toolbar in QGIS](./mergin-toolbar.jpg "Mergin Maps Plugin Toolbar in QGIS")
+   ![Mergin Maps Plugin Toolbar in QGIS](./mergin-toolbar.webp "Mergin Maps Plugin Toolbar in QGIS")
    
    ::: tip
    If you cannot see the toolbar, ensure **<MainPlatformName /> Toolbar** is checked under **View > Toolbars**.
@@ -32,12 +32,12 @@ Before the installation of <QGISPluginName />, please ensure you have already:
 With the plugin installed, we'll now configure it with your <MainPlatformNameLink /> credentials.
 
 1. Click the **Configure <QGISPluginName />** icon on the **<MainPlatformName /> Toolbar**:
-   ![Configure Mergin Maps Plugin](./qgis-configure-mergin-plugin.jpg "Configure Mergin Maps Plugin")
+   ![Configure Mergin Maps Plugin](./qgis-configure-mergin-plugin.webp "Configure Mergin Maps Plugin")
 
 2. Enter your login credentials if these are blank
 
 3. Click **Test Connection** to verify that everything works correctly. If so, click **OK**.
-   ![Mergin Maps Plugin in QGIS credentials](./qgis-mergin-settings.jpg "Mergin Maps Plugin in QGIS credentials")
+   ![Mergin Maps Plugin in QGIS credentials](./qgis-mergin-settings.webp "Mergin Maps Plugin in QGIS credentials")
 
 <QGISPluginName /> is now able to load projects from the cloud in QGIS.
 
@@ -47,8 +47,8 @@ The plugin has been installed and configured. You can learn more about its funct
 Upgrade the plugin periodically to ensure you can use the latest improvements.
 
 1. In QGIS, navigate to **Manage and Install Plugins...** in the **Plugins** tab
-   ![QGIS Manage and Install Plugins](./qgis-plugins-manage-and-install-upgrade.jpg "QGIS Manage and Install Plugins")
+   ![QGIS Manage and Install Plugins](./qgis-plugins-manage-and-install-upgrade.webp "QGIS Manage and Install Plugins")
    
 2. Find the **<MainPlatformName />** plugin. If there is a new version available, click **Upgrade Plugin**.
-   ![Upgrade Mergin Maps QGIS plugin](./plugin-upgrade.jpg "Upgrade Mergin Maps QGIS plugin")
+   ![Upgrade Mergin Maps QGIS plugin](./plugin-upgrade.webp "Upgrade Mergin Maps QGIS plugin")
 

@@ -27,7 +27,7 @@ To add users to a workspace:
 1. Log into <AppDomainNameLink />
 
 2. Go to the **Members** tab in the left panel and click on **Invite**
-   ![Invite people to Mergin Maps workspace](./dashboard-workspace-invite.jpg "Invite people to Mergin Maps workspace")
+   ![Invite people to Mergin Maps workspace](./dashboard-workspace-invite.webp "Invite people to Mergin Maps workspace")
 
 3. In the form, enter the email addresses of people you want to invite and choose their [**workspace role**](../permissions/#workspace-member-roles-and-project-permissions) from the list.
    - If you want to grant them access to all projects in the workspace, select one of the member roles (*Reader*, *Writer*, *Admin* or *Owner*).
@@ -49,12 +49,12 @@ Users can be invited to a specific project. Users with access to only some proje
 2. In the **Projects** tab, select the project you want to manage and navigate to **Collaborators**.
 
    Click on the **Share** button.
-   ![Mergin Maps dashboard Project tab](./dashboard-projects-collaborators.jpg "Mergin Maps dashboard Project tab")
+   ![Mergin Maps dashboard Project tab](./dashboard-projects-collaborators.webp "Mergin Maps dashboard Project tab")
 
 3. Enter the email addresses of the users you want to invite and select their **Project permission**.
 
    Click **Share** to send the invitation.
-   ![Share project with teammate via email](./dashboard-project-share-form.jpg "Share project with another user")
+   ![Share project with teammate via email](./dashboard-project-share-form.webp "Share project with another user")
        
 After accepting the invitation, the invited users will become guests in your workspace and will have access to this project.
 
@@ -66,13 +66,13 @@ Another method that is suitable for sharing a project with a large number of use
 2. Go to the project you want to share
 
 3. Copy the link from your web browser and share it with your colleagues
-   ![Copy link to Mergin Maps project](../../tutorials/working-collaboratively/dashboard-copy-url.jpg "Copy link to Mergin Maps project")
+   ![Copy link to Mergin Maps project](../../tutorials/working-collaboratively/dashboard-copy-url.webp "Copy link to Mergin Maps project")
 
 If you send a link to a [private](#make-your-project-public-private) project, users can **request access** after logging into the <DashboardShortLink />.
-![Request Access to a private project](../../tutorials/working-collaboratively/dashboard-request-access-to-private-project.jpg "Request Access to a private project")
+![Request Access to a private project](../../tutorials/working-collaboratively/dashboard-request-access-to-private-project.webp "Request Access to a private project")
 
 Once the user requests access, you (or another project owner) can grant them appropriate [permissions](../permissions/) and accept (or decline) their request.
-![Project access requests in Mergin Maps](../../tutorials/working-collaboratively/dashboard-project-access-requests.jpg "Project access requests in Mergin Maps")
+![Project access requests in Mergin Maps](../../tutorials/working-collaboratively/dashboard-project-access-requests.webp "Project access requests in Mergin Maps")
 
 ### Make your project public/private
 Your projects are private by default. If you make it [public](../permissions/#public-and-private-projects), everyone can see your data and project history. However, they cannot contribute to your public project unless you grant them the write permission.
@@ -83,7 +83,7 @@ Your projects are private by default. If you make it [public](../permissions/#pu
 
 If you change your mind, you can make your project private by clicking **Make private**.
 
-![Make project public button](./dashboard-project-make-public.jpg "Make project public button")
+![Make project public button](./dashboard-project-make-public.webp "Make project public button")
 
 ## Transfer a project
 A <MainPlatformName /> project can be transferred to another workspace. This can be useful when there are personal changes in your team or if you have multiple workspaces and want to manage the storage between them.
@@ -95,13 +95,13 @@ A <MainPlatformName /> project can be transferred to another workspace. This can
 3. Log in to <AppDomainNameLink /> and choose the project you want to transfer
 
 4. Go to **Settings** and click on **Transfer project**
-   ![Mergin Maps project settings](./dashboard-project-transfer.jpg "Mergin Maps project settings")
+   ![Mergin Maps project settings](./dashboard-project-transfer.webp "Mergin Maps project settings")
    
 5. Enter the name of the workspace to which the project should be transferred and click on **Request transfer**
-   ![Transfer project form](./dashboard-project-transfer-form.jpg "Transfer project form")
+   ![Transfer project form](./dashboard-project-transfer-form.webp "Transfer project form")
    
    The owner of the new workspace will be notified and will be able to accept or deny the request through the <DashboardShortLink />.
-   ![Project transfer requests](./dashboard-project-transfer-request.jpg "Project transfer requests")
+   ![Project transfer requests](./dashboard-project-transfer-request.webp "Project transfer requests")
    
    The request is valid for 6 days. If the request is not accepted after this period, the project will remain in the original workspace.
 
@@ -125,7 +125,7 @@ To avoid synchronisation issues, everyone should delete the old project from all
 1. Log in to <AppDomainNameLink /> and navigate to the project you want to delete
 2. Go to **Settings** and click on **Delete project**
 
-![Mergin Maps dashboard delete project](./dashboard-project-delete.jpg "Mergin Maps dashboard delete project")
+![Mergin Maps dashboard delete project](./dashboard-project-delete.webp "Mergin Maps dashboard delete project")
 
 
 ### Delete a project using the Mergin Maps QGIS plugin 
@@ -134,8 +134,8 @@ Using the <QGISPluginName />, you can delete a <MainPlatformName /> project eith
 1. In QGIS, go to the **<MainPlatformName />** in the Browser panel
 
 2. Right-click on the project name and select **Remove locally**. This will remove the project from your PC. The project will be still available on the <MainPlatformName /> server. You will be able to download the project again.
-   ![QGIS Remove Mergin Maps project locally in QGIS](./plugin-project-delete.jpg "QGIS Remove Mergin Maps project locally")
+   ![QGIS Remove Mergin Maps project locally in QGIS](./plugin-project-delete.webp "QGIS Remove Mergin Maps project locally")
 
 3. Right-click on the project name again and select **Remove from server** option. This will remove the <MainPlatformName /> project completely. 
-   ![QGIS Remove Mergin Maps project from server](./plugin-project-delete-from-server.jpg "QGIS Remove Mergin Maps project from server")
+   ![QGIS Remove Mergin Maps project from server](./plugin-project-delete-from-server.webp "QGIS Remove Mergin Maps project from server")
 

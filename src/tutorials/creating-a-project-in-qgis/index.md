@@ -20,10 +20,10 @@ Please ensure you have already:
 1. Open QGIS
 
 2. Locate the <QGISPluginName /> toolbar in the upper navigation panel in QGIS. Click on the **Create <MainPlatformName /> Project** button
-   ![QGIS plugin Create Mergin Maps Project](./qgis-create-mergin-project.jpg "QGIS plugin Create Mergin Maps Project")
+   ![QGIS plugin Create Mergin Maps Project](./qgis-create-mergin-project.webp "QGIS plugin Create Mergin Maps Project")
 
 3. Choose the first option: **New basic QGIS project**
-   ![Create Mergin Maps project: New basic QGIS project](./mergin-plugin-new-basic-project.jpg "Create Mergin Maps project: New basic QGIS project")
+   ![Create Mergin Maps project: New basic QGIS project](./mergin-plugin-new-basic-project.webp "Create Mergin Maps project: New basic QGIS project")
 
 4. When creating a <MainPlatformName /> project, we need to set:
    - a [workspace](../../manage/workspaces/) (here: `sarah`). If you have multiple workspaces available, choose the one you want to use.
@@ -31,12 +31,12 @@ Please ensure you have already:
    - The folder where the project should be created. Here, we use `Documents\MerginMaps Projects`
    
    Press **Finish** to create the project.
-   ![Create new Mergin Maps project in QGIS](./mergin-plugin-create-new-mergin-project.jpg "Create new Mergin Maps project in QGIS")
+   ![Create new Mergin Maps project in QGIS](./mergin-plugin-create-new-mergin-project.webp "Create new Mergin Maps project in QGIS")
 
 5. Your new project should now be created and uploaded to <ServerCloudName />. 
 
    **Close** the dialog window to continue working with this project in QGIS.
-   ![Mergin Maps project created and uploaded successfully](./mergin-plugin-basic-project-opened.jpg "Mergin Maps project created and uploaded successfully")
+   ![Mergin Maps project created and uploaded successfully](./mergin-plugin-basic-project-opened.webp "Mergin Maps project created and uploaded successfully")
 
 
 ## Add layers
@@ -49,25 +49,25 @@ Various background maps can be used in <MobileAppName />, if they are supported 
 We will now add two more survey layers - a point layer for surveying trees and a line layer for hedges.
 
 1. Select **Layer > Create Layer > New GeoPackage Layer...**
-   ![QGIS Create new GeoPackage layer](./qgis-new-geopackage-layer.jpg "QGIS Create new GeoPackage layer")
+   ![QGIS Create new GeoPackage layer](./qgis-new-geopackage-layer.webp "QGIS Create new GeoPackage layer")
 
 2. Now we will create the `trees` layer:
    - **Database**: navigate to the project's folder and save the GeoPackage as `trees.gpkg` 
      Here: `Documents\MerginMaps Projects\trees-and-hedges\trees.gpkg`
    - **Table name** will be set as `trees` by default   
    - **Geometry type**: ***Point***
-   ![New GeoPackage point layer](./qgis-geopackage-filename.jpg "New GeoPackage point layer")
+   ![New GeoPackage point layer](./qgis-geopackage-filename.webp "New GeoPackage point layer")
 
 3. Add a **New Field** called `date` with the data type ***Date***
-   ![New date field](./qgis-geopackage-date.jpg "New date field")
+   ![New date field](./qgis-geopackage-date.webp "New date field")
 
 4. Add two more new fields called `species` and `conditions` with the data type ***Text Data***.
 
    In the **Fields List**, you can see the overview of added attributes and their respective data types. It should look like this:
-   ![Field list with created attributes](./qgis-geopackage-full-fields-list.jpg "Field list with created attributes")
+   ![Field list with created attributes](./qgis-geopackage-full-fields-list.webp "Field list with created attributes")
 
 5. Click **OK**. A new layer called `trees` has now been added to the **Layers** panel.
-   ![Point layer added to QGIS project](./qgis-new-layer-trees.jpg "Point layer added to QGIS project")
+   ![Point layer added to QGIS project](./qgis-new-layer-trees.webp "Point layer added to QGIS project")
 
 6. Repeat steps 1 to 5 above to add another new layer called `hedges` with these details:
    - **Database**: `Documents\Mergin Projects\trees-and-hedges\hedges.gpkg`
@@ -76,10 +76,10 @@ We will now add two more survey layers - a point layer for surveying trees and a
       - `both_sides_surveyed`, data type ***Boolean***
       - `num_access_gates`, data type ***Whole Number (integer)***
       - `photo`, data type ***Text Data*** 
-   ![Create GeoPackage line layer with defined attributes](./qgis-geopackage-filename2.jpg "Create GeoPackage line layer with defined attributes")
+   ![Create GeoPackage line layer with defined attributes](./qgis-geopackage-filename2.webp "Create GeoPackage line layer with defined attributes")
    
 Once you are finished, there should be two new layers on the **Layers** panel: `trees` and `hedges`.
-![Layers panel in QGIS with created layers](./qgis-new-layer-trees-and-hedges.jpg "Layers panel in QGIS with created layers")
+![Layers panel in QGIS with created layers](./qgis-new-layer-trees-and-hedges.webp "Layers panel in QGIS with created layers")
 
 
 ## Configure attributes forms
@@ -87,27 +87,27 @@ Before we try out this new project in <MobileAppName /> we will make a couple of
 
 To illustrate how the form setup can affect the field survey, notice on the example below how the tree species, *Black alder*, has been accidentally mistyped during the field survey. This can be avoided by setting up a drop-down list (right image). Attributes can also be aliased (renamed) for easier reading.
 
-![Attributes form drop-down list in Mergin Maps mobile app](./mobile-app-text-edit-value-map.jpg "Attributes form drop-down list in Mergin Maps mobile app")
+![Attributes form drop-down list in Mergin Maps mobile app](./mobile-app-text-edit-value-map.webp "Attributes form drop-down list in Mergin Maps mobile app")
 
 Now we will set up the drop-down list for the `trees` layer:
 1. Double-click the `trees` layer in the **Layers** panel to open the **Layer properties**
-   ![Trees layer in QGIS Layer panel](./qgis-layer-trees.jpg "Trees layer in QGIS Layer panel")
+   ![Trees layer in QGIS Layer panel](./qgis-layer-trees.webp "Trees layer in QGIS Layer panel")
 
 2. Select **Attributes Form** on the left and click on the `species` attribute
-   ![QGIS Attributes form](./qgis-tree-attributes-form-1.jpg "QGIS Attributes form")
+   ![QGIS Attributes form](./qgis-tree-attributes-form-1.webp "QGIS Attributes form")
 
 4. Make the following changes to the `species` attribute:
    - Enter the **Alias** that defines how the attribute's name is displayed in the form.
    - Change the **Widget Type** to ***Value Map***
    - Enter **Values** and **Descriptions** similar to these (both are set the same in this example):
-   ![QGIS Attributes form Value Map](./qgis-tree-value-map.jpg "QGIS Attributes form Value Map")
+   ![QGIS Attributes form Value Map](./qgis-tree-value-map.webp "QGIS Attributes form Value Map")
 
    ::: tip
    **Value** is how the data will be stored in the underlying dataset and **Description** is how it will be displayed in the form to the user.
    :::
 
 5. Click on the `fid` attribute. Uncheck **Editable** option so that it can not be edited during the survey. 
-   ![QGIS Attributes form unchecked editable option](./qgis-tree-attributes-form-2.jpg "QGIS Attributes form unchecked editable option")
+   ![QGIS Attributes form unchecked editable option](./qgis-tree-attributes-form-2.webp "QGIS Attributes form unchecked editable option")
 
    ::: tip
    `fid` is a special attribute used to identify features. We recommend not allowing users to edit this attribute.
@@ -124,7 +124,7 @@ The `hedges` layer has an attribute called `photo`. The attribute itself is stor
 3. Set the form for the `photo` attribute as follows:
    - **Widget Type** to ***Attachment***
    - **Path** defines where the photos will be stored. Set *Store path as* **Relative to Project Path**:
-   ![QGIS Attributes form Attachment photo widget](./qgis-hedge-attributes-form-1.jpg "QGIS Attributes form Attachment photo widget") 
+   ![QGIS Attributes form Attachment photo widget](./qgis-hedge-attributes-form-1.webp "QGIS Attributes form Attachment photo widget") 
 
 4. `fid` should not be editable. Click on the `fid` attribute and uncheck the **Editable** option.
 5. Click **OK** to close the **Layer properties**.
@@ -139,18 +139,18 @@ In the [next tutorial](../mobile/) we will see how this project looks on <Mobile
 
 1. Right click on the layer called `Survey` and find the **Rename Layer** option. Rename the layer to `Survey notes` (the name `Survey` is too general in this context).
 2. **Save** the QGIS project
-   ![save QGIS project](./qgis-project-save.jpg "save QGIS project")
+   ![save QGIS project](./qgis-project-save.webp "save QGIS project")
 
 3. Use the **Synchronise <MainPlatformName /> Project** button in the <QGISPluginName /> toolbar (it is located in the upper navigation panel)
-   ![Synchronise Mergin Maps project in QGIS](../../manage/plugin/plugin-toolbar-sync.jpg "Synchronise Mergin Maps project in QGIS")
+   ![Synchronise Mergin Maps project in QGIS](../../manage/plugin/plugin-toolbar-sync.webp "Synchronise Mergin Maps project in QGIS")
    
 4. The **Project status** window will open. It contains the overview of [local changes](../../manage/synchronisation/#local-changes) that were made since the last synchronisation: two layers were added to the project (`hedges.gpkg` and `trees.gpkg`) and some changes were made in the QGIS project file (`trees-and-hedges.qgz`).
 
    Click **Sync** to synchronise the project
-   ![Mergin Maps plugin synchronisation Project status](./qgis-sync-mergin-project-status.jpg "Mergin Maps plugin synchronisation Project status")
+   ![Mergin Maps plugin synchronisation Project status](./qgis-sync-mergin-project-status.webp "Mergin Maps plugin synchronisation Project status")
  
 In a few moments your changes are safely stored in the <ServerCloudName />
-![Successful synchronisation of Mergin Maps project in QGIS](./qgis-project-synced.jpg "Successful synchronisation of Mergin Maps project in QGIS")
+![Successful synchronisation of Mergin Maps project in QGIS](./qgis-project-synced.webp "Successful synchronisation of Mergin Maps project in QGIS")
 
 Synchronising changes between users and devices is a core principle of <MainPlatformNameLink />. When you sync a project, changes that have been made by other users and devices since you last synced are fetched and any changes you've made are pushed.
 

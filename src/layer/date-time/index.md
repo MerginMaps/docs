@@ -8,7 +8,7 @@ Fields with `Date` or `Date and Time` data type can be used to record date and t
 
 |<div style="width:150px"> Widget </div> |Preview in the <MobileAppNameShort />|
 |:---:|:---:|
-|Date/time |![Mergin Maps mobile app date time field form](./mobile-form-datetime-preview.jpg "Mergin Maps mobile app date time field form")   |
+|Date/time |![Mergin Maps mobile app date time field form](./mobile-form-datetime-preview.webp "Mergin Maps mobile app date time field form")   |
 
 :::tip Example project available
 Various options of setting up Date and Date&Time fields are included in this public project: <MerginMapsProject id="documentation/form-widgets" />. Download or clone it to explore it in more detail.
@@ -30,7 +30,7 @@ To set up the **Date/Time** widget:
    - check the **Calendar popup** option :heavy_check_mark:
    - use the preview to confirm that this is the format you want to use to store your timestamps 
   
-  ![QGIS date time field form](./qgis-form-datetime.jpg "QGIS date time field form")
+  ![QGIS date time field form](./qgis-form-datetime.webp "QGIS date time field form")
 
 4. If you want to automatically insert the date (or date and time) when the feature is created, use `now()` as a [default value](../default-values/) in the **Defaults** tab.
 
@@ -38,7 +38,7 @@ To set up the **Date/Time** widget:
 
 In the <MobileAppNameShort />, the date can be edited using a calendar pop up. If you tap the icon next to the field, the current date and time will be filled in.
 
-![Mergin Maps mobile app calendar form date time fields](./mobile-form-datetime.jpg "Mergin Maps mobile app calendar form date time fields")
+![Mergin Maps mobile app calendar form date time fields](./mobile-form-datetime.webp "Mergin Maps mobile app calendar form date time fields")
 
 ## Custom date and time formats
 Date and time fields can use custom display format.

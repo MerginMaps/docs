@@ -21,13 +21,13 @@ Deleting files through <MainDomainName /> is simple. However, you can only delet
 2. In the **Files** tab you will see the list of files that are stored in the project's folder. 
 
    Select the file you would like to delete.
-   ![Mergin Maps project dashboard files photos](./project-files.jpg "Mergin Maps dashboard project files and photos")
+   ![Mergin Maps project dashboard files photos](./project-files.webp "Mergin Maps dashboard project files and photos")
 
 3. Review the details. If this is the file you want to remove, click on the **Delete file** button.
-   ![Mergin Maps dashboard file detail](./file-detail.jpg "Mergin Maps dashboard file detail")
+   ![Mergin Maps dashboard file detail](./file-detail.webp "Mergin Maps dashboard file detail")
    
 4. Use **Update Changes** in the **Data Sync** window to synchronise the changes.
-   ![Mergin Maps dashboard sync update changes](./remove-file-update-changes.jpg "Mergin Maps dashboard sync update changes")
+   ![Mergin Maps dashboard sync update changes](./remove-file-update-changes.webp "Mergin Maps dashboard sync update changes")
 
 ## Delete multiple files at once
 If you want to delete multiple files, the best way to do this is on your computer.
@@ -37,10 +37,10 @@ If you want to delete multiple files, the best way to do this is on your compute
 2. Navigate to the [project's folder](../project/#mergin-maps-project-folder) in your file browser and review the files inside the folder. There may be a [custom folder for photos](../../layer/photos/#how-to-set-up-a-custom-folder-for-storing-photos) if it was set up before.
 
    Delete the files you do not want to keep anymore. 
-   ![Mergin Maps project files in PC folder](./folder-files.jpg "Mergin Maps project files folder")
+   ![Mergin Maps project files in PC folder](./folder-files.webp "Mergin Maps project files folder")
    
 3. [Synchronise the changes](../synchronisation/#synchronising-changes-in-qgis) in QGIS using <QGISPluginName />. 
 
    **Local changes** in **Project status** will show the list of deleted files. After synchronisation, the files will be also deleted from the cloud.
-   ![QGIS Mergin Maps project status synchronisation](./project-status.jpg "QGIS Mergin Maps project status")
+   ![QGIS Mergin Maps project status synchronisation](./project-status.webp "QGIS Mergin Maps project status")
    

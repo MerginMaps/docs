@@ -85,13 +85,13 @@ Users can be [added to a workspace](../project-advanced/#add-users-to-a-workspac
 
 Here, you can also manage the member roles:
 
-![Mergin Maps dashboard members tab](../dashboard/mergin-maps-dashboard-members.jpg "Mergin Maps dashboard members tab")
+![Mergin Maps dashboard members tab](../dashboard/mergin-maps-dashboard-members.webp "Mergin Maps dashboard members tab")
 
 Project permissions can be reviewed in the details of a project in the **Collaborators** tab where you can find the list of users who can access the project and their project permissions. 
 
 If needed, the project permissions can be changed here:
 
-![Changing project permissions in Mergin Maps dashboard](./dashboard-project-permissions-change.jpg "Changing project permissions in Mergin Maps dashboard")
+![Changing project permissions in Mergin Maps dashboard](./dashboard-project-permissions-change.webp "Changing project permissions in Mergin Maps dashboard")
 
 ## How to transfer ownership of a workspace
 Ownership of a workspace can be transferred to another **workspace member**. 
@@ -111,10 +111,10 @@ To transfer the ownership of a workspace to a user that is already a member of y
 1. Log in to <AppDomainNameLink />
 
 2. Navigate to the **Members** tab. Here, you will see the list of current workspace members and their roles. 
-   ![Mergin Maps dashboard members tab](../dashboard/mergin-maps-dashboard-members.jpg "Mergin Maps dashboard members tab")
+   ![Mergin Maps dashboard members tab](../dashboard/mergin-maps-dashboard-members.webp "Mergin Maps dashboard members tab")
 
 3. Change the **member role** of the user who should become the new owner to **Owner**
-   ![Selecting owner member role from the list](./transfer-ownership-new-owner.jpg "Selecting owner member role from the list")
+   ![Selecting owner member role from the list](./transfer-ownership-new-owner.webp "Selecting owner member role from the list")
    
 4. Now the member role of the original owner can be changed (if needed) or they can be removed from the workspace completely.
 
@@ -133,4 +133,4 @@ A **public project** is a project that everyone (including those who are not reg
 
 You can [make your project public or private](../project-advanced/#make-your-project-public-private) in the project's settings.
 
-![Project settings in Mergin Maps Dashboard](../dashboard/mergin-maps-dashboard-project-settings.jpg "Project settings in Mergin Maps Dashboard")
+![Project settings in Mergin Maps Dashboard](../dashboard/mergin-maps-dashboard-project-settings.webp "Project settings in Mergin Maps Dashboard")

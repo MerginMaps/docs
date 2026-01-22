@@ -29,34 +29,34 @@ You may have access to multiple workspaces. For instance, you can have your pers
 
 When logged in to the <DashboardShortLink />, you will see the current workspace under the account name in the right corner of the screen (here: `my-team`).
 
-![Mergin Maps web dashboard current workspace](./dashboard-current-workspace.jpg "Current workspace in Mergin Maps web dashboard")
+![Mergin Maps web dashboard current workspace](./dashboard-current-workspace.webp "Current workspace in Mergin Maps web dashboard")
 
 Click on the account to see the list of all workspaces that are available to you. The active workspace is highlighted. Switch to another workspace by simply clicking on its name in the list.
 
-![Mergin Maps web workspaces list](./dashboard-switch-workspace.jpg "Mergin Maps web workspaces list")
+![Mergin Maps web workspaces list](./dashboard-switch-workspace.webp "Mergin Maps web workspaces list")
 
 ### Switch workspaces in Mergin Maps mobile app
 1. Navigate to **My Account** in <MobileAppName />
-   ![Mergin Maps mobile app account icon on the home page](./mobile-app-my-account.jpg "Mergin Maps mobile app account icon on the home page")
+   ![Mergin Maps mobile app account icon on the home page](./mobile-app-my-account.webp "Mergin Maps mobile app account icon on the home page")
 
 2. Here you will see your current workspace and your [role](../permissions/) in this workspace. 
    
    Tap on it to switch to another workspace.
-   ![Switch workspace button in Mergin Maps mobile app](./mobile-app-current-workspace.jpg "Switch workspace button in Mergin Maps mobile app")
+   ![Switch workspace button in Mergin Maps mobile app](./mobile-app-current-workspace.webp "Switch workspace button in Mergin Maps mobile app")
 
 3. Now you will see a list of workspaces that are available to you. 
 
    Select the one you want to switch to.
-   ![Select workspace in Mergin Maps mobile app](./mobile-app-select-workspace.jpg "Select workspace in Mergin Maps mobile app")
+   ![Select workspace in Mergin Maps mobile app](./mobile-app-select-workspace.webp "Select workspace in Mergin Maps mobile app")
 
 ### Switch workspaces in QGIS
 Navigate to <MainPlatformName /> in the **Browser** panel. The name of the current workspace is displayed in square brackets.
 
 Right click on the plugin's name and select **Switch workspace**
-![Switch workspace in Mergin Maps QGIS plugin](./plugin-switch-workspace.jpg "Switch workspace in Mergin Maps QGIS plugin")
+![Switch workspace in Mergin Maps QGIS plugin](./plugin-switch-workspace.webp "Switch workspace in Mergin Maps QGIS plugin")
 
 From the list of available workspaces, select the one you want to switch to:
-![Select workspace in Mergin Maps QGIS plugin](./plugin-select-workspace.jpg "Select workspace in Mergin Maps QGIS plugin")
+![Select workspace in Mergin Maps QGIS plugin](./plugin-select-workspace.webp "Select workspace in Mergin Maps QGIS plugin")
 
 ## How to create a new workspace 
 A new workspace can be created through the <DashboardShortLink /> or through the <MobileAppNameShort />. Note that the name of a workspace cannot be changed later.
@@ -67,33 +67,33 @@ Every workspace has its own [subscription](../subscriptions/). With your first w
 1. Log in to <AppDomainNameLink />
 
 2. Click on your account and navigate to **Manage workspaces**
-   ![Manage workspaces in Mergin Maps web dashboard](./dashboard-ov-manage-workspaces.jpg "Manage workspaces in Mergin Maps web dashboard")
+   ![Manage workspaces in Mergin Maps web dashboard](./dashboard-ov-manage-workspaces.webp "Manage workspaces in Mergin Maps web dashboard")
 
 3. Here, you can see the overview of your workspaces. Click on **Create workspace**
-   ![Create workspace in Mergin Maps web dashboard](./dashboard-create-workspace.jpg "Create workspace in Mergin Maps web dashboard")
+   ![Create workspace in Mergin Maps web dashboard](./dashboard-create-workspace.webp "Create workspace in Mergin Maps web dashboard")
 
 4. Fill in the name and description of your new workspace.
 
    Note that **the name of a workspace cannot be changed later**.
-   ![Create workspace in Mergin Maps web dashboard details](./dashboard-new-workspace.jpg "Create workspace in Mergin Maps web dashboard details")
+   ![Create workspace in Mergin Maps web dashboard details](./dashboard-new-workspace.webp "Create workspace in Mergin Maps web dashboard details")
    
 5. Now you have a new workspace! You can [create projects](../create-project/) in the workspace and [invite other users](../project-advanced/#add-users-to-a-workspace) to contribute.
-   ![Mergin Maps web dashboard workspaces overview](./dashboard-new-workspace-created.jpg "Mergin Maps web dashboard workspaces overview")
+   ![Mergin Maps web dashboard workspaces overview](./dashboard-new-workspace-created.webp "Mergin Maps web dashboard workspaces overview")
 
 ### Create a workspace in Mergin Maps mobile app
 
 1. Navigate to the list of available workspaces as described [here](#switch-workspaces-in-mergin-maps-mobile-app) and click on the **+** button in the right upper corner of the screen
-   ![Create a new workspace in Mergin Maps mobile app](./mobile-app-create-workspace-button.jpg "Create a new workspace in Mergin Maps mobile app")
+   ![Create a new workspace in Mergin Maps mobile app](./mobile-app-create-workspace-button.webp "Create a new workspace in Mergin Maps mobile app")
  
 2. Fill in the name of your new workspace and tap **Create workspace**.
 
    Keep in mind that **the name of a workspace cannot be changed later**.
-   ![Naming a new workspace in Mergin Maps mobile app](./mobile-app-create-workspace.jpg "Naming a new workspace in Mergin Maps mobile app")
+   ![Naming a new workspace in Mergin Maps mobile app](./mobile-app-create-workspace.webp "Naming a new workspace in Mergin Maps mobile app")
 
 5. Now you have a new workspace! 
    
    You can [create projects](../create-project/) in the workspace and [invite other users](../project-advanced/#add-users-to-a-workspace) to contribute.
-   ![New workspace in Mergin Maps mobile app](./mobile-app-new-workspace.jpg "New workspace in Mergin Maps mobile app")
+   ![New workspace in Mergin Maps mobile app](./mobile-app-new-workspace.webp "New workspace in Mergin Maps mobile app")
 
    
 ## How to delete a workspace
@@ -104,10 +104,10 @@ You have to be the workspace [owner](../permissions/#workspace-member-roles-over
 1. [Switch](#how-to-switch-between-workspaces) to the workspace you want to remove
 
 2. Navigate to **Settings** and select **Close workspace**
-   ![Delete workspace in Mergin Maps web dashboard](./dashboard-close-workspace.jpg "Delete workspace in Mergin Maps web dashboard")
+   ![Delete workspace in Mergin Maps web dashboard](./dashboard-close-workspace.webp "Delete workspace in Mergin Maps web dashboard")
    
 3. Confirm the closing of a workspace by typing the workspace name and click on **Yes**
-   ![Delete workspace confirmation](./dashboard-close-workspace-confirmation.jpg "Delete workspace confirmation")
+   ![Delete workspace confirmation](./dashboard-close-workspace-confirmation.webp "Delete workspace confirmation")
 
 After closing a workspace, it is kept on <MainPlatformNameLink /> servers for 5 days before it is deleted permanently. During this period, it can be restored if you contact <MerginMapsEmail id="support" />.
 

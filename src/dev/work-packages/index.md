@@ -6,7 +6,7 @@ description: Work Packages tool allows to create projects containing data subset
 [[toc]]
 
 The **Work Packages** tool is designed to manage field surveys for multiple teams. This tool allows to create <MainPlatformName /> *work packages projects* that contain a subset of data of the main <MainPlatformNameLink/> project and set up two-way synchronisation between the main project and the dependent projects as illustrated here:
-![Mergin Maps Work Packages](./wp-high-level.jpg "Mergin Maps Work Packages")
+![Mergin Maps Work Packages](./wp-high-level.webp "Mergin Maps Work Packages")
 
 <YouTube id="_iM-mql9by4" title="Manage multiple field teams with Mergin Maps"/>
 

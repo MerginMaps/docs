@@ -89,7 +89,7 @@ Follow the steps below to create a new connection:
 
 Your connection form will look like this for your users with `your.company.com` domain and <MainPlatformName /> server running on `https://merginmaps.example.com`:
 
-![SSO connection setup](./ory-polis-new-connection.jpg "SSO connection setup")
+![SSO connection setup](./ory-polis-new-connection.webp "SSO connection setup")
 
 For the rest of the connection configuration parameters, refer to the [Ory Polis documentation](https://www.ory.sh/docs/polis/sso-providers/) for your SAML or OIDC provider guide and follow the steps to configure your connection.
 
