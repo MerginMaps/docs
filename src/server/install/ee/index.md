@@ -1,103 +1,41 @@
 ---
-description: Mergin Maps Enterprise Edition enhanced features are only available on specific Docker images on our private AWS repository. Here is how to retrieve them.
+description: Mergin Maps Enterprise Edition enhanced features are only available on specific Docker images on our private Docker Hub repository. Here is how to retrieve them.
 ---
 
 # Download your Mergin Maps EE images
-<ServerType type="EE" />
 
-To get access to your docker images, you need your contract and licence from our <MerginMapsEmail id="sales" desc="sales team" />. If you do not have them, please contact our team. The repository is private and our team needs to secure you the access to them so you are able to follow these steps.
+During your <EnterprisePlatformName /> onboarding you'll be provided a personal token (PAT) to access Lutra's private Docker Hub were we host Docker images.
 
-[[toc]]
+Once you receive it you can perform Docker login in two ways.
 
-## Amazon Web Services (AWS)
+## Docker login from CLI
 
-### Create (root) AWS account
-
-::: warning
-If your organisation already uses AWS cloud services and has a root user, skip this step. 
-
-Maintenance of cloud accounts and security requires deep knowledge. <LutraConsultingName /> does not take responsibility for incorrectly set up accounts. The AWS account and its maintenance is the responsibility of your user.
-:::
-
-- Go to [aws.amazon.com](https://aws.amazon.com/) and create new root account
-
-![Create AWS account](./create_aws_account.jpg "Create AWS account")
-
-- Continue with all steps and verify your account
-
-### Create IAM user 
-
-::: warning
-If your organisation already uses AWS cloud services and has a root user, skip this step. 
-
-Maintenance of cloud accounts and security requires deep knowledge. <LutraConsultingName /> does not take responsibility for incorrectly set up accounts. The AWS account and its maintenance is the responsibility of your user.
-:::
-
-
-- Login as the root user
-
-![Login as root to AWS](./root_login.jpg "Login as root to AWS")
-
-- Create an IAM user by searching in the console “IAM” and creating a new user. 
- 
-![Create IAM user](./create_IAM_user.jpg "Create IAM user") 
-
-- Assign the IAM user administrator account permissions. Look for <NoSpellcheck id="AdministratorAccess" /> permission.
- 
-![Assign AWS permissions](./assign_permissions.jpg "Assign AWS permissions") 
-
-- Review and add it to your new IAM user account
-
-![Finish assigning AWS permissions](./assign_permission_2.jpg "Finish assigning AWS permissions") 
-
-- Logout from root AWS account
- 
-### Identify Account ID and IAM user name
-
-Account ID and IAM user names are needed for assigning the permissions to docker images by <LutraConsultingName /> operations team. 
-
-::: warning 
-<LutraConsultingName /> will never ask you to share an IAM or root login password or other access details to your accounts.
-:::
-
-- Login to your IAM account
-
-![Login as IAM user to AWS](./login_IAM.jpg "Login as IAM user to AWS")
-
-- Now create CLI access key
-
-![Create access keys](./create_access_key.jpg "Create access keys")
-
-- Note down ACCESS_ID and SECRET for AWS command line client
-
-![Console login details](./find_name_and_id.jpg "Console login details")
-
-- Send Account ID and IAM user name to <MerginMapsEmail id="sales" desc="sales team" />
-- Wait for confirmation that we have shared the ECR repository with you. This can take up to 5 working days.
-
-## Download Docker Images
-
-::: warning
-To be able to download the images, you need to have permission to do so for your IAM user that is granted by <LutraConsultingName />
-:::
-
- - Open command line and write (you may need to change to your IAM account region). You will be asked for your id and secret to be used.
-
+```bash
+    docker login -u ee-support@merginmaps.com
+    
+    i Info → A Personal Access Token (PAT) can be used instead.
+         To create a PAT, visit https://app.docker.com/settings
+         
+         
+    Password:
 ```
-aws ecr get-login-password --region eu-west-1 | docker login --username AWS --password-stdin 433835555346.dkr.ecr.eu-west-1.amazonaws.com
+Once you are prompted to fill in the password, you can type the provided token during onboarding.
+
+Alternatively, you can pass the token via `--password-stdin`, although it's not safe to keep your token on a plain text file.
+
+```bash
+  cat ~/my_token.txt | docker login -u ee-support@merginmaps.com --password-stdin
 ```
 
- - Now list docker images that are shared with you (`mergin-ee-front` is frontend application, `mergin-ee-back` is backend application)
- 
-```
-aws ecr describe-images --repository-name mergin/mergin-ee-front --registry-id 433835555346 --region eu-west-1
-aws ecr describe-images --repository-name mergin/mergin-ee-back --registry-id 433835555346 --region eu-west-1
-```
+## Credential stores
 
- - Select the tag you want to use and download image, e.g. `2023.6.1-ee` or any other from the list of images
+Please follow official Docker documentation on how to use [credential stores](https://docs.docker.com/reference/cli/docker/login/#credential-stores)
 
+## Docker Pull
+
+After login, please confirm you can pull the images.
+```bash
+  docker pull lutraconsulting/merginmaps-backend-ee:2025.7.3
+  docker pull lutraconsulting/merginmaps-frontend-ee:2025.7.3  
 ```
-docker pull 433835555346.dkr.ecr.eu-west-1.amazonaws.com/mergin/mergin-ee-back:2023.6.1-ee
-``` 
-
-![Docker pull of Mergin Maps EE image](./docker_pull.jpg "Docker pull of Mergin Maps EE image")
+*Please note the correct/latest version you want to pull from the available [releases](https://github.com/MerginMaps/server/releases)* 
