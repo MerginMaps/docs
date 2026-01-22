@@ -52,7 +52,7 @@ It is strongly recommended to use the direct connection in the <MobileAppNameSho
 3. Tap on the **Manage GPS receivers** option. Here, you can see the currently used receiver.
 
    Tap on the **Connect new receiver** button.
-   ![Select GPS receiver](./mobile-app-connect-gps-receiver.jpg "Select GPS receiver")
+   ![Select GPS receiver](./mobile-app-connect-gps-receiver.webp "Select GPS receiver")
 
 4. Choose your GPS receiver from the list of Bluetooth devices. 
 
