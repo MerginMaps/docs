@@ -45,7 +45,7 @@ Following variables are supported:
  - `@position_longitude` - Longitude
  - `@position_altitude` - Orthometric or normal height
  - `@position_altitude_ellipsoidal` - Ellipsoidal height
- - `@position_geoid_separation` - Geoid or quasigeoid height (undulation)
+ - `@position_geoid_separation` - Geoid or quasi-geoid height (undulation)
  - `@position_direction` - The bearing measured in degrees clockwise from true north to the direction of travel.
  - `@position_ground_speed` - The ground speed, in meters/sec.
  - `@position_vertical_speed` - The vertical speed, in meters/sec.

@@ -109,14 +109,14 @@ Tapping the GPS accuracy button opens the GPS info panel:
 - **X, Y**: current position in the project's coordinate reference system
 - **Horizontal** and **Vertical accuracy** of the GPS position
 - **Altitude**: orthometric height
-   - for internal GPS, it is calculated from the ellipsoidal height using the EGM96 geoid model by adding the geoid height (undulation) 
+   - for internal GPS, it is calculated from the ellipsoidal height using the <NoSpellcheck id="EGM96" /> geoid model by adding the geoid height (undulation) 
    - for [external GPS](../external_gps/), it is the orthometric height as reported by the external GPS
 - **Satellites (in use/view)**: number of satellites
 - **Speed**
 - **Last fix**: time of the last received GPS position
 - **GPS antenna height** that can be set in [GPS settings](#gps-settings)
 - **Geoid separation**: geoid height (undulation)
-   - calculated from the EGM96 geoid model for internal GPS receivers
+   - calculated from the <NoSpellcheck id="EGM96" /> geoid model for internal GPS receivers
    - as reported by the [external GPS](../external_gps/)
 
 ### Sync
