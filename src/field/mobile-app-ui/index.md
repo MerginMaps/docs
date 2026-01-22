@@ -104,7 +104,7 @@ Tapping the GPS accuracy button opens the GPS info panel:
 - **Source**
    - *Internal* for the GPS of the mobile device
    - the name of the receiver for [external GPS](../external_gps/) receiver connected via Bluetooth
-   - *Mocked position provider* if the use of [mocked location](#how-to-connect-external-gps-receiver-in-android-via-mock-location) is detected
+   - *Mocked position provider* if the use of [mocked location](../external_gps/#how-to-connect-external-gps-receiver-in-android-via-mock-location) is detected
 - **Longitude, Latitude**: current position
 - **X, Y**: current position in the project's coordinate reference system
 - **Horizontal** and **Vertical accuracy** of the GPS position
