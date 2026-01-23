@@ -57,7 +57,12 @@ Once the survey of the feature is completed, tap **Record** and fill in the form
 ![Surveying lines in Mergin Maps mobile app](./mobile-capture-line.jpg "Surveying lines in Mergin Maps mobile app")
 
 #### Streaming mode to survey lines or areas
-Lines and areas can be also captured automatically based on your position. Make sure you are in the [**recording**](#adding-features) mode and that your active layer is a line or polygon.
+Lines and areas can be also captured automatically based on your position. 
+
+Here is a video tutorial:
+<YouTube id="069-fXNqyJY" title="Streaming mode" />
+
+Make sure you are in the [**recording**](#adding-features) mode and that your active layer is a line or polygon.
 
 Tap the **streaming** button and then **Start streaming mode**.
 

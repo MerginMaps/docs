@@ -8,6 +8,9 @@ Photo sketches can be used to annotate photos or pictures added to a feature, in
 Photo sketching is a feature in preview. While it works for most devices and setups, you may encounter some issues.
 :::
 
+Here is a video tutorial:
+<YouTube id="9s3HLOnB4Jo" title="Mergin Maps tutorial - Photo Sketching" />
+
 ## Enable photo sketching
 
 <SinceBadge type="Plugin" version="2025.3.4" />

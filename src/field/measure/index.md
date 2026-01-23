@@ -8,6 +8,8 @@ description: In the Mergin Maps mobile app, it is possible to measure length and
 ## Measure length and area in Mergin Maps mobile app
 In the <MobileAppNameShort />, it is possible to measure length and area on a map window. Measurement tools use the same units as are used by the QGIS project.
 
+<YouTube id="b9ybh_IgC7o" title="Measurement Tools" />
+
 To open the measurement tools, tap the **More** button in the bottom navigation panel and use the **Measure** option.
    ![Mergin Maps mobile app Measurement tools](./mobile-measure.jpg "Mergin Maps mobile app Measurement tools")
 
