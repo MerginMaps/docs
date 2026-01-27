@@ -38,4 +38,4 @@ After login, please confirm you can pull the images.
   docker pull lutraconsulting/merginmaps-backend-ee:2025.7.3
   docker pull lutraconsulting/merginmaps-frontend-ee:2025.7.3  
 ```
-*Please note the correct/latest version you want to pull from the available [releases](https://github.com/MerginMaps/server/releases)* 
+*Please note the correct/latest version you want to pull from the available <GitHubRepo id="MerginMaps/server/releases" desc="releases" />
