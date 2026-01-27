@@ -39,3 +39,24 @@ After login, please confirm you can pull the images.
   docker pull lutraconsulting/merginmaps-frontend-ee:2025.7.3  
 ```
 *Please note the correct/latest version you want to pull from the available <GitHubRepo id="MerginMaps/server/releases" desc="releases" />
+
+## AWS ECR Images
+
+::: warning 
+During this transition phase, the AWS ECR repository will still be maintained giving our costumers the ability to update and time to adapt.
+Therefore, if you still have the AWS ECR repository configuration implemented, you can still perform:
+:::
+
+```bash
+  docker pull 433835555346.dkr.ecr.eu-west-1.amazonaws.com/mergin/mergin-ee-back:2025.7.3
+  docker pull 433835555346.dkr.ecr.eu-west-1.amazonaws.com/mergin/mergin-ee-frontend:2025.7.3  
+```
+
+::: note 
+Please note that you need to tag the image after this step in order to be conformant with the main deployment workflow.
+:::
+
+```bash
+  docker image tag 433835555346.dkr.ecr.eu-west-1.amazonaws.com/mergin/mergin-ee-back:2025.7.3 lutraconsulting/merginmaps-backend-ee:2025.7.3
+  docker image tag 433835555346.dkr.ecr.eu-west-1.amazonaws.com/mergin/mergin-ee-front:2025.7.3 lutraconsulting/merginmaps-frontend-ee:2025.7.3
+```
