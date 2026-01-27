@@ -186,6 +186,7 @@ checkboxes
 cloudmergin
 conf
 config
+conformant
 crosshairs
 cybersecurity
 dataset
