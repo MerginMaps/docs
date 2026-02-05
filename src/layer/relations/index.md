@@ -128,13 +128,17 @@ A new child feature can be added by tapping the **+** button:
 The referencing (child) layer **amenities** can also have the relation added to the attributes form.
 
 1. Navigate to the **Attributes** form tab in **Layer Properties**
-2. Select the foreign key field (here: `fk-uuid`) in the list of fields.
+2. Select the foreign key field (here: `fk-uuid`) in the list of fields. If you use the [Drag and Drop Designer](../form-layout/#qgis-drag-and-drop-designer), you may need to add the field to the form.
 
    Choose **Relation Reference** as **Widget Type**:
    - **Display expression** sets the display name of referenced layer (here: `name`)
    - **Relation** offers all available relations defined in the project (here: `park-amenities-relation`)
 
    ![QGIS attributes form relation reference setup](./qgis-form-child-setup.webp "QGIS attributes form relation reference setup")
+
+::: warning Do not remove the foreign key field from the form
+To ensure the setup works correctly, do not remove the foreign key field from the form. If you do not want to display the foreign key field in the form, set the **Widget Type** to **Hidden**. 
+:::
 
 In QGIS, the attributes form of the referencing (child) **amenities** layer looks like this. The foreign key field `fk-uuid` offers a drop-down menu with the list of features from the referenced (parent) layer **parks**.
 
