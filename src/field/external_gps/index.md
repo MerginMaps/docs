@@ -12,7 +12,7 @@ External GPS receivers can be connected to your mobile device via Bluetooth and 
 
 There are several [extra position variables](../../layer/variables/#position-variables) that can be useful to record when doing the survey with external GPS, such as the GPS antenna height, GPS device name as well as metrics like horizontal, vertical or position dilution of precision (HDOP, VDOP, PDOP).
 
-Note that external GPS devices usually return orthometric heights (ellipsoid with the geoid separation applied).
+Note that external GPS devices usually return orthometric heights (ellipsoid with the geoid separation applied). The altitude and geoid separation in the [GPS info panel](../mobile-app-ui/#current-position-and-gps-info) in the <MobileAppNameShort /> is displayed as reported by the external GPS. 
 
 **Before you start**:
 - Set up your device according to the instructions of its manufacturer. You should continue only when you are sure that the device is working and sending data.
@@ -101,7 +101,7 @@ When setting up external GPS receiver on iOS, we recommend using the *Internal* 
 :::
 
 ## External GPS troubleshooting
-If you encounter issues with external GPS in the <MobileAppNameShort /> , make sure that:
+If you encounter issues with external GPS in the <MobileAppNameShort />, make sure that:
 - your Bluetooth is turned on
 - GPS is paired with your mobile device
 - your GPS receiver is turned on, has battery and is sending data in NMEA format, which is readable by the <MobileAppNameShort />

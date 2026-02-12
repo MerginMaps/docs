@@ -102,22 +102,22 @@ Tapping the GPS accuracy button opens the GPS info panel:
 ![GPS info panel](./mobile-app-gps-info.webp "GPS info panel") 
 
 - **Source**
-   - *Internal* for the GPS of the mobile device
+   - *Internal* or *Internal (fused)* for the GPS of the mobile device
    - the name of the receiver for [external GPS](../external_gps/) receiver connected via Bluetooth
    - *Mocked position provider* if the use of [mocked location](../external_gps/#how-to-connect-external-gps-receiver-in-android-via-mock-location) is detected
 - **Longitude, Latitude**: current position
 - **X, Y**: current position in the project's coordinate reference system
 - **Horizontal** and **Vertical accuracy** of the GPS position
 - **Altitude**: orthometric height
-   - for internal GPS, it is calculated from the ellipsoidal height using the <NoSpellcheck id="EGM96" /> geoid model by adding the geoid height (undulation) 
-   - for [external GPS](../external_gps/), it is the orthometric height as reported by the external GPS
+   - for *Internal* or *Internal (fused)* GPS, it is calculated from the ellipsoidal height using the <NoSpellcheck id="EGM96" /> geoid model by adding the geoid height (undulation) 
+   - for *[external GPS](../external_gps/)*, it is the orthometric height as reported by the external GPS
 - **Satellites (in use/view)**: number of satellites
 - **Speed**
 - **Last fix**: time of the last received GPS position
 - **GPS antenna height** that can be set in [GPS settings](#gps-settings)
 - **Geoid separation**: geoid height (undulation)
-   - calculated from the <NoSpellcheck id="EGM96" /> geoid model for internal GPS receivers
-   - as reported by the [external GPS](../external_gps/)
+   - calculated from the <NoSpellcheck id="EGM96" /> geoid model for *Internal* or *Internal (fused)* GPS
+   - as reported by the *[external GPS](../external_gps/)*
 
 ### Sync
 The **Sync** button can be used to synchronise changes during the field survey. 
