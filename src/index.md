@@ -66,6 +66,7 @@ The ecosystem consist of various components:
 - [How to Set Up Snapping for <MobileAppName />](./gis/snapping/)
 - [How to Avoid Polygons Overlap](./gis/snapping/)
 - [Custom Projections](./gis/proj/)
+- [Elevations](./gis/elevations/)
 - [Supported Formats](./gis/supported_formats/)
 
 ## Configure Forms
