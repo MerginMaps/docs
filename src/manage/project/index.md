@@ -42,7 +42,7 @@ There are three options for handling layers:
    
    ![Package current project options](../create-project/mergin_plugin_project_wizard_3.jpg "Package current project options") 
 
-::: tip Layers requiring authorization
+::: tip Layers requiring authorisation
 Some layers are protected with some kind of authorisation, such as an API key or a token. The <QGISPluginNameShort /> packages <NoSpellcheck id="auth" /> DB entries used in layers in the `qgis_cfg.xml` file, so that these layers can be displayed in the <MobileAppNameShort />.
 :::
 
