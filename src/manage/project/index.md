@@ -42,6 +42,11 @@ There are three options for handling layers:
    
    ![Package current project options](../create-project/mergin_plugin_project_wizard_3.jpg "Package current project options") 
 
+::: tip Layers requiring authorization
+Some layers are protected with some kind of authorization, such as an API key or a token. The <QGISPluginNameShort /> packages auth DB entries used in layers, so that these layers can be displayed in the <MobileAppNameShort />.
+:::
+
+
 After the layers for the new project are selected, you just need to enter the project's name and choose where to save it on your computer. It will also be saved on the <MainPlatformNameLink /> server in the selected workspace.
 
 ![New Mergin Maps project name and folder](../create-project/mergin_plugin_project_wizard_4.jpg "New Mergin Maps project name and folder")

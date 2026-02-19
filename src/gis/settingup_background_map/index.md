@@ -9,7 +9,9 @@ When surveying in the field, it is essential to have appropriate background maps
 
 Online maps need internet connection to be displayed during the field survey and can use up a lot of mobile data, especially if you are using online raster maps.
 
-:::danger WARNING
+Some background maps can be protected with an API key, a token or other kind of authorization. When packaging the project, the <QGISPluginName /> packages auth DB entries used in these layers and the <MobileAppNameShort /> can display them correctly.
+
+:::warning Terms and conditions of background maps
 Keep in mind that background maps services and data sources come with their own terms of use. 
 
 Although we show how to add online and offline background maps to your projects, it is your responsibility to comply with any terms and conditions of the services of your choice.
