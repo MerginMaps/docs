@@ -28,7 +28,8 @@ Write a review of the application on App Store or Android Google Play
 - [Facebook](https://www.facebook.com/lutraconsulting)
 - [<NoSpellcheck id="Bluesky" />](https://bsky.app/profile/merginmaps.bsky.social)
 - [<NoSpellcheck id="Fosstodon" />](https://fosstodon.org/@merginmaps)
-- <GitHubRepo id="MerginMaps/" desc="Github" /> 
+- [Reddit](https://www.reddit.com/r/MerginMaps/)
+- <GitHubRepo id="MerginMaps/" desc="Github" />
 
 ## Translate
 
