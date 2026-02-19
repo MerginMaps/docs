@@ -16,24 +16,24 @@ Write a review of the application on App Store or Android Google Play
 
 <AppDownload />
 
-## Translate
-
-To help with translations, join [<MainPlatformName /> Transifex team](https://www.transifex.com/lutra-consulting/mergin-maps-mobile/)
-
 ## Write or talk about us 
  
  - Publish a paper about the technology
- - Write a blog post 
- - Write a case study 
+ - Write a blog post, a case study or a post on social media
  - Create a YouTube video and share
- - Create tweets, Facebook posts 
  - Talk on conferences
 
- Follow us on 
-
+## Follow us
 - [<NoSpellcheck id="LinkedIn" />](https://www.linkedin.com/company/mergin-maps/)
 - [Facebook](https://www.facebook.com/lutraconsulting)
-- [X](https://x.com/lutraconsulting)
+- [<NoSpellcheck id="Bluesky" />](https://bsky.app/profile/merginmaps.bsky.social)
+- [<NoSpellcheck id="Fosstodon" />](https://fosstodon.org/@merginmaps)
+- [<NoSpellcheck id="Reddit" />](https://www.reddit.com/r/MerginMaps/)
+- <GitHubRepo id="MerginMaps/" desc="Github" />
+
+## Translate
+
+To help with translations, join [<MainPlatformName /> Transifex team](https://www.transifex.com/lutra-consulting/mergin-maps-mobile/).
 
 ## Test
 
