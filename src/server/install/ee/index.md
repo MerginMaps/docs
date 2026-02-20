@@ -4,7 +4,7 @@ description: Mergin Maps Enterprise Edition enhanced features are only available
 
 # Download your Mergin Maps EE images
 
-During your <EnterprisePlatformName /> onboarding you'll be provided a personal token (PAT) to access Lutra's private Docker Hub were we host Docker images.
+During your <EnterprisePlatformName /> onboarding you'll be provided a personal token (PAT) to access Lutra's private Docker Hub where we host Docker images.
 
 Once you receive it you can perform Docker login in two ways.
 
