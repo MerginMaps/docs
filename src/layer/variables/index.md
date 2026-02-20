@@ -43,7 +43,9 @@ Following variables are supported:
  - `@position_coordinate` - A point with the coordinates in WGS84.
  - `@position_latitude` - Latitude
  - `@position_longitude` - Longitude
- - `@position_altitude` - Altitude
+ - `@position_elevation` - Orthometric or normal height
+ - `@position_elevation_ellipsoid` - Ellipsoidal height
+ - `@position_geoid_separation` - Geoid or quasi-geoid height (undulation)
  - `@position_direction` - The bearing measured in degrees clockwise from true north to the direction of travel.
  - `@position_ground_speed` - The ground speed, in meters/sec.
  - `@position_vertical_speed` - The vertical speed, in meters/sec.

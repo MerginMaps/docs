@@ -99,18 +99,24 @@ Tapping the **location button** in the right bottom corner of the screen centres
 In the left bottom corner of the screen, there is a **GPS** button that displays the GPS accuracy as reported by your mobile device. The colour of the button denotes the accuracy threshold set in [GPS settings](#gps-settings) in the <MobileAppNameShort />.
 
 Tapping the GPS accuracy button opens the GPS info panel:
-![GPS info panel](./mobile-app-gps-info.jpg "GPS info panel") 
+![GPS info panel](./mobile-app-gps-info.webp "GPS info panel") 
 
-- **Source**: internal GPS of the mobile device or [external](../external_gps/) GPS receiver connected via Bluetooth
+- **Source**
+   - *Internal* or *Internal (fused)* for the GPS of the mobile device
+   - the name of the receiver for [external GPS](../external_gps/) receiver connected via Bluetooth
 - **Longitude, Latitude**: current position
-- **X, Y**: current position in project's coordinate reference system
+- **X, Y**: current position in the project's coordinate reference system
 - **Horizontal** and **Vertical accuracy** of the GPS position
-- **Altitude**: ellipsoidal height if internal GPS is used. [External GPS](../external_gps/) devices usually return orthometric heights (ellipsoid with the geoid separation applied).
+- **Altitude**: orthometric height
+   - for *Internal* or *Internal (fused)* GPS, it is calculated from the ellipsoidal height using the <NoSpellcheck id="EGM96" /> geoid model by adding the geoid height (undulation) 
+   - for *[external GPS](../external_gps/)*, it is the orthometric height as reported by the external GPS
 - **Satellites (in use/view)**: number of satellites
 - **Speed**
 - **Last fix**: time of the last received GPS position
 - **GPS antenna height** that can be set in [GPS settings](#gps-settings)
-
+- **Geoid separation**: geoid height (undulation)
+   - calculated from the <NoSpellcheck id="EGM96" /> geoid model for *Internal* or *Internal (fused)* GPS
+   - as reported by the *[external GPS](../external_gps/)*
 
 ### Sync
 The **Sync** button can be used to synchronise changes during the field survey. 
@@ -162,7 +168,7 @@ To open the **Settings**, tap the **More** button. In Settings, you can find [GP
 
 ### GPS settings
 - **GPS accuracy threshold**: value used to change the colour of GPS accuracy indicator to yellow
-- **Manage GPS receivers**: option to switch between internal GPS and external GPS receiver connected via Bluetooth. See [External GPS](../external_gps/) for more details.
+- **Manage GPS receivers**: option to switch between internal, internal (fused) and external GPS receiver connected via Bluetooth. See [External GPS](../external_gps/) for more details.
 - **GPS antenna height**: option to enter the height of a GPS antenna (e.g. when a surveying pole is used)
 
 ![Mergin Maps mobile app GPS Settings](./mobile-app-gps-settings.jpg "Mergin Maps mobile app GPS settings")
