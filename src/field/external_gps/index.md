@@ -92,13 +92,9 @@ The mock location will be used by the <MobileAppNameShort /> automatically as if
 
 Direct connection via the <MobileAppNameShort /> is not possible on iOS devices. 
 
-External GPS can be connected to your iOS device via Bluetooth. Depending on the GPS manufacturer, there may be a custom app, which then provides position to your iOS device. The <MobileAppNameShort /> sees this as an internal GPS receiver automatically, without additional configuration.
+External GPS can be connected to your iOS device via Bluetooth. Depending on the GPS manufacturer, there may be a custom app, which then provides position to your iOS device. The <MobileAppNameShort /> sees this as an internal GPS receiver automatically, without additional configuration. <MobileAppNameShort /> will report if external GPS receiver is connected.
 
 ![iOS GPS receiver](./external-gps-ios.jpg "iOS GPS receiver")
-
-::: tip Internal GPS provider
-When setting up external GPS receiver on iOS, we recommend using the *Internal* receiver option in [GPS Settings](../mobile-app-ui/#gps-settings) as this will show if mocked location is detected in the [GPS info](../mobile-app-ui/#current-position-and-gps-info) panel.
-:::
 
 ## External GPS troubleshooting
 If you encounter issues with external GPS in the <MobileAppNameShort />, make sure that:
