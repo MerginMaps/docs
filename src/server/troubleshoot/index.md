@@ -42,6 +42,9 @@ In some deployments, there may be SMTP servers that do not support authenticatio
 
 If your SMTP server does not support TLS or SSL, you can disable encryption by setting `MAIL_USE_TLS` and `MAIL_USE_SSL` to `false`. However, it is recommended to use authentication and TLS encryption.
 
+> [!NOTE]
+> If your SMTP server does not support TLS, you must set `MAIL_USE_TLS` to `false` (`true`by default)
+
 Server is sending emails with a celery worker. If you are not receiving emails, check if celery worker is running. Check logs for sending emails in the `celery-worker` container:
 ```shell
 $ docker logs celery-worker
