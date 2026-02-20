@@ -43,7 +43,7 @@ After login, please confirm you can pull the images.
 ## AWS ECR Images
 
 ::: warning 
-During this transition phase, the AWS ECR repository will still be maintained giving our costumers the ability to update and time to adapt.
+During this transition phase, the AWS ECR repository will still be maintained giving our customers the ability to update and time to adapt.
 Therefore, if you still have the AWS ECR repository configuration implemented, you can still perform:
 :::
 
