@@ -59,7 +59,7 @@ If iOS provides also the ellipsoidal heights, <MainPlatformName /> transforms th
 
 ## External provider - Bluetooth
 <Badge text="Android only" type="tip"/>
-External GPS can be connected [using Bluetooth](../../field/external_gps/#how-to-connect-external-gps-receiver-in-android-via-mergin-maps-mobile-app-recommended). If possible, we recommend to use this option.
+On Android, external GPS can be connected [using Bluetooth](../../field/external_gps/#how-to-connect-external-gps-receiver-in-android-via-mergin-maps-mobile-app-recommended). If possible, we recommend to use this option.
 
 If there is no [user-defined transformation](#using-custom-geoid), the <MobileAppNameShort /> uses data reported by the GPS provider as-is, including the ellipsoidal height and geoid separation. <MainPlatformName /> does not receive information about the geoid model used; this information should be supplied by the GPS provider.
 
@@ -68,7 +68,9 @@ If there is no [user-defined transformation](#using-custom-geoid), the <MobileAp
 **Custom geoid**: :white_check_mark: It is possible to use the <QGISPluginNameShort /> to [set up a different geoid model](#using-custom-geoid) and transform the elevations to a different vertical reference system. The defined geoid model is displayed in the <MobileAppNameShort />.
 
 ## External provider - Network
-External GPS can be connected using network connection. The functionality works the same as described above in [External provider - Bluetooth ](#external-provider-bluetooth). It is available for both iOS and Android.
+External GPS can be connected using network connection on both iOS and Android. We recommend to use this option.
+
+The functionality is the same as described above in [External provider - Bluetooth ](#external-provider-bluetooth).
 
 ## External provider - Mock location
 

@@ -59,14 +59,14 @@ Following variables are supported:
  - `@position_gps_antenna_height` - Antenna height as defined in [GPS settings](../../field/mobile-app-ui/#gps-settings)
  - `@position_provider_type` - GPS device type.
    - for internal GPS, returns "internal"
-   - for external GPS, returns "external"
+   - for [external GPS](../../field/external_gps/), returns "external"
  - `@position_provider_name` - GPS device name.
    - for internal GPS, returns "Internal"
-   - for [external GPS](../../external_gps/), returns the name of the external device
+   - for [external GPS](../../field/external_gps/), returns the name of the external device
  - `@position_provider_address` - GPS device address.
    - for internal GPS, returns "<NoSpellcheck id="devicegps" />"
-   - for external GPS, returns the MAC address
-   - for external GPS if mock location is detected, returns "External (Mock)"
+   - for [external GPS](../../field/external_gps/), returns the MAC address
+   - for [external GPS](../../field/external_gps/) if mock location is detected, returns "External (Mock)"
  - `@position_hdop` - Horizontal dilution of precision (HDOP)
  - `@position_vdop` - Vertical dilution of precision (VDOP)
  - `@position_pdop` - Position (3D) dilution of precision (PDOP)
