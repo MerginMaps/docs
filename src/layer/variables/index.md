@@ -42,10 +42,10 @@ Extra position variables can be used as [default values in feature forms](../def
 Following variables are supported:
  - `@position_coordinate` - A point with the coordinates in WGS84.
  - `@position_latitude` - Latitude
- - `@position_longitude` - Longitude
- - `@position_elevation` - Orthometric or normal height
- - `@position_elevation_ellipsoid` - Ellipsoidal height
- - `@position_geoid_separation` - Geoid or quasi-geoid height (undulation)
+ - `@position_longitude` - Longitude 
+ - `@position_elevation` - Orthometric or normal height. *May not be available for some providers, see [Elevations](../../gis/elevations/) for more detail.*
+ - `@position_elevation_ellipsoid` - Ellipsoidal height. *May not be available for some providers, see [Elevations](../../gis/elevations/) for more detail.*
+ - `@position_geoid_separation` - Geoid or quasi-geoid height (undulation). *May not be available for some providers, see [Elevations](../../gis/elevations/) for more detail.*
  - `@position_direction` - The bearing measured in degrees clockwise from true north to the direction of travel.
  - `@position_ground_speed` - The ground speed, in meters/sec.
  - `@position_vertical_speed` - The vertical speed, in meters/sec.
