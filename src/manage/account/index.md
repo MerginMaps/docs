@@ -61,7 +61,7 @@ To speed up the process, you can contact <MerginMapsEmail id="support" /> and as
 ## Deleting Mergin Maps account
 Your <MainPlatformNameLink /> account can be deleted in the <DashboardShortLink />.
 
-Before closing the account, **make sure to** [**close your workspaces**](../../manage/workspaces/#how-to-delete-a-workspace). 
+Before closing the account, **make sure to** [**cancel your subscriptions**](../subscriptions/#how-to-cancel-a-subscription) and [**close your workspaces**](../workspaces/#how-to-close-a-workspace). 
 
 1. Log in to <AppDomainNameLink />. In the upper right corner of the screen, click on your username and go to **Your profile**.
    ![Mergin Maps profile](../dashboard/mergin-maps-dashboard-profile.jpg "Mergin Maps profile")

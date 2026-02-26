@@ -110,7 +110,7 @@ Here, [admins and owners](../permissions/#workspace-member-roles-and-project-per
 
 [Owners](../permissions/#workspace-member-roles-and-project-permissions) of a workspace can also:
 - use **Edit Workspace** to add or change the description of the workspace
-- use **Close Workspace** to [delete the workspace](../workspaces/#how-to-delete-a-workspace)
+- use **Close Workspace** to [delete the workspace](../workspaces/#how-to-close-a-workspace)
 
 ![Mergin dashboard web workspace settings](./mergin-maps-dashboard-settings.jpg "Mergin Maps dashboard workspace settings")
 
