@@ -16,7 +16,7 @@ The same functionalities apply also if the used vertical reference system is def
 
 Information about the altitude and geoid separation (if available) are displayed in the [GPS info panel](../../field/mobile-app-ui/#current-position-and-gps-info).
 
-When transforming elevations, <MainPlatformNameLink /> uses the EGM96 geoid model by default. However, it is also possible to use another geoid model as described in the [Using custom geoid](#using-custom-geoid) section. This may be especially useful when using [external GPS](../../field/external_gps/) for higher positional precision or when a specific vertical reference system is required. 
+When transforming elevations, <MainPlatformNameLink /> uses the <NoSpellcheck id="EGM96" />  geoid model by default. However, it is also possible to use another geoid model as described in the [Using custom geoid](#using-custom-geoid) section. This may be especially useful when using [external GPS](../../field/external_gps/) for higher positional precision or when a specific vertical reference system is required. 
 
 There are some differences in the functionality and available details depending on the GPS provider, the OS of the mobile device and the connection setup.
 
