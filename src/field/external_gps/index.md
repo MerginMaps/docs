@@ -74,7 +74,7 @@ Mock location should be only used if you are unable to connect the external GPS 
 When setting up external GPS receiver on Android via mock location, we recommend using the *Internal (fused)* receiver option in [GPS Settings](../mobile-app-ui/#gps-settings) as this will show if mocked location is detected in the [GPS info](../mobile-app-ui/#current-position-and-gps-info) panel.
 :::
 
-External GPS can be connected and configured in Android to provide mock location using GPS apps (e.g. [Bluetooth GPS](https://play.google.com/store/apps/details?id=de.pilablu.gpsconnector) or apps from specific GPS manufacturers) as a source of GPS signal. the <MobileAppNameShort /> and other apps in your device will get the GPS position from the external GPS. 
+External GPS can be connected and configured in Android to provide mock location using GPS apps (e.g. [Bluetooth GPS](https://play.google.com/store/apps/details?id=de.pilablu.gpsconnector) or apps from specific GPS manufacturers) as a source of GPS signal. The <MobileAppNameShort /> and other apps in your device will get the GPS position from the external GPS. 
 
 :::tip
 GPS manufacturer's apps often provide a setup for a NTRIP client, through which you are able to receive GPS corrections and achieve centimetre level accuracy.
