@@ -96,8 +96,10 @@ Every workspace has its own [subscription](../subscriptions/). With your first w
    ![New workspace in Mergin Maps mobile app](./mobile-app-new-workspace.jpg "New workspace in Mergin Maps mobile app")
 
    
-## How to delete a workspace
+## How to close a workspace
 Closing a workspace means that all projects in this workspace will be removed as well. Therefore we recommend going through the projects in the workspace and, if needed, downloading them to your computer or [transferring them to another workspace](../project-advanced/#transfer-a-project) so that you don't lose your work.
+
+Before you close your workspace, you should **[cancel the subscription](../../subscriptions/#how-to-cancel-a-subscription)** related to this workspace.
 
 You have to be the workspace [owner](../permissions/#workspace-member-roles-overview) to be able to delete the workspace.
 
