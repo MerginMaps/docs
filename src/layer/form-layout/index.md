@@ -27,6 +27,10 @@ QGIS Drag and Drop designer is an easy tool for defining the form layouts:
 <Badge text="since QGIS 3.30" type="tip"/>
 The Spacer widget can be useful if you want to have some space between the fields in your form or add a horizontal line. 
 
+::: tip Example project available
+The spacer widget is used in <MerginMapsProject id="documentation/forms-display-images-and-files" />.
+:::
+
 It can be found in *Available Widgets* in the *Other Widgets* section when using the [Drag and Drop Designer](#qgis-drag-and-drop-designer).
 ![QGIS forms Spacer Widget](./qgis-form-spacer-widget.jpg "QGIS Spacer Widget")
 
@@ -34,4 +38,4 @@ When adding the spacer widget to the form, there is an option to check the **Dra
 ![QGIS Spacer Widget configuration](./qgis-configure-spacer-widget.jpg "QGIS Spacer Widget configuration")
 
 And this is how the spacer widget looks like in the form in QGIS (left) and in the mobile app (right).
-![Spacer widget in QGIS and mobile app form](./spacer-widget-forms.jpg "Spacer widget in QGIS and mobile app form")
+![Spacer widget in QGIS and mobile app form](./spacer-widget-forms.webp "Spacer widget in QGIS and mobile app form")
