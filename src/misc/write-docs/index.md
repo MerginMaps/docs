@@ -157,6 +157,10 @@ All projects referenced in the documentation use <MainPlatformName /> workspace 
 
 For users that are referenced in the documentation (e.g. screenshots or in texts), it is best to use generic <MainPlatformName /> users `jack`, `jill`, `sarah`, etc. and generic workspaces.
 
+To reference online images, we can use, e.g.:
+
+![Mergin Maps sample image](./sample-pic.jpg "Mergin Maps sample image")
+
 ### Documentation folder structure
 Every section of the docs (e.g. Get Started, Install & Sign Up, Manage Account & Project, ...) has its folder.
 
