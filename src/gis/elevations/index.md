@@ -77,20 +77,24 @@ The functionality is the same as described above in [External provider - Bluetoo
 Mock location should be only used if you are unable to connect the external GPS directly in the <MobileAppNameShort />. Because of system limitations, both Android and iOS send only a subset of available data.
 
 ### Android
-If there is no [user-defined transformation](#using-custom-geoid), the <MobileAppNameShort /> uses data reported by the GPS provider as-is.
+If there is no [user-defined transformation](#using-custom-geoid) (custom geoid), the <MobileAppNameShort /> uses data reported by the GPS provider as-is.
 
 **Position variables**: 
 - :white_check_mark: orthometric elevation is available,
 - :no_entry_sign: ellipsoidal elevation and :no_entry_sign: geoid separation values are **not** available and **can not** be stored using [position variables](../../layer/variables/#position-variables).
 
-**Custom geoid**: :warning: It is possible to use the <QGISPluginNameShort /> to [set up a different geoid model](#using-custom-geoid) and transform the elevation to a different vertical reference system. However, it is necessary to set up **the mock app to report ellipsoidal heights**, otherwise the geoid separation would be applied twice leading to incorrect elevation values.
+**Custom geoid**: 
+- :warning: It is possible to use the <QGISPluginNameShort /> to [set up a different geoid model](#using-custom-geoid) and transform the elevation to a different vertical reference system. However, it is necessary to **set up the mock app to report ellipsoidal heights**, otherwise the geoid separation would be applied twice leading to incorrect elevation values. 
+- if custom geoid is used, the orthometric elevation, ellipsoidal elevation and geoid separation variables are available
 
 ### iOS
-The <MobileAppNameShort /> uses data reported by the GPS provider as-is.
+If there is no [user-defined transformation](#using-custom-geoid) (custom geoid), the <MobileAppNameShort /> uses data reported by the GPS provider as-is.
 
 **Position variables**:  :warning: When using the mock location, iOS only sends a minimal subset of available GPS data, namely the coordinates X, Y, and elevation. It is not possible to obtain or display any other [position variables](../../layer/variables/#position-variables), including accuracy.
 
-**Custom geoid**: :no_entry_sign: It is not possible to use custom geoid model.
+**Custom geoid**: 
+- :warning: It is possible to use the <QGISPluginNameShort /> to [set up a different geoid model](#using-custom-geoid) and transform the elevation to a different vertical reference system. However, it is necessary to **set up the mock app to report ellipsoidal heights**, otherwise the geoid separation would be applied twice leading to incorrect elevation values. 
+- if custom geoid is used, the orthometric elevation, ellipsoidal elevation and geoid separation variables are available
 
 ## Using custom geoid
 
