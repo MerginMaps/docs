@@ -43,9 +43,10 @@ Following variables are supported:
  - `@position_coordinate` - A point with the coordinates in WGS84.
  - `@position_latitude` - Latitude
  - `@position_longitude` - Longitude
- - `@position_elevation` - Orthometric or normal height
- - `@position_elevation_ellipsoid` - Ellipsoidal height
- - `@position_geoid_separation` - Geoid or quasi-geoid height (undulation)
+ - `@position_elevation` - Orthometric or normal height. *May not be available for some providers, see [Elevations](../../gis/elevations/) for more detail.*
+ - `@position_altitude`- has been replaced by `@position_elevation`. It is still supported and returns the same values as `@position_elevation`.
+ - `@position_elevation_ellipsoid` - Ellipsoidal height. *May not be available for some providers, see [Elevations](../../gis/elevations/) for more detail.*
+ - `@position_geoid_separation` - Geoid or quasi-geoid height (undulation). *May not be available for some providers, see [Elevations](../../gis/elevations/) for more detail.*
  - `@position_direction` - The bearing measured in degrees clockwise from true north to the direction of travel.
  - `@position_ground_speed` - The ground speed, in meters/sec.
  - `@position_vertical_speed` - The vertical speed, in meters/sec.
@@ -58,14 +59,15 @@ Following variables are supported:
  - `@position_gps_fix` - GPS fix, e.g. "RTK float"
  - `@position_gps_antenna_height` - Antenna height as defined in [GPS settings](../../field/mobile-app-ui/#gps-settings)
  - `@position_provider_type` - GPS device type.
-   - for internal GPS, returns "internal"
-   - for external GPS, returns "external"
+   - for internal GPS, returns `internal`
+   - for [external GPS](../../field/external_gps/), returns `external`
  - `@position_provider_name` - GPS device name.
-   - for internal GPS, returns "Internal"
-   - for external GPS, returns the name of the external device
+   - for internal GPS, returns `Internal`, `Internal (fused)` or `Internal (gps)`
+   - for [external GPS](../../field/external_gps/), returns the name of the external device
+   - for [external GPS](../../field/external_gps/) if mock location is detected, returns `External (Mock)`
  - `@position_provider_address` - GPS device address.
-   - for internal GPS, returns "<NoSpellcheck id="devicegps" />"
-   - for external GPS, returns the MAC address
+   - for internal GPS, returns `devicegps`, `android_fused` or `android_gps`
+   - for [external GPS](../../field/external_gps/), returns the MAC address
  - `@position_hdop` - Horizontal dilution of precision (HDOP)
  - `@position_vdop` - Vertical dilution of precision (VDOP)
  - `@position_pdop` - Position (3D) dilution of precision (PDOP)
