@@ -91,6 +91,7 @@ The ecosystem consist of various components:
    - [How to Open a File ](./layer/open-file/)
    - [How to Use Hyperlinks](./layer/external-link/)
    - [How to Open a Link to a Navigation App](./layer/link-to-navigation/)
+   - [How to Use a Phone Call Link ](./layer/phone-call-link/)
    - [How to Link Multiple Records to One Feature](./layer/one-to-n-relations/)
    - [How to Embed an Image](./layer/embed-image/)
 

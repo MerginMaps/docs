@@ -7,7 +7,7 @@ description: Hyperlinks can be used in the attributes form in Mergin Maps mobile
 
 Attributes forms can include clickable links that can be used to open a navigation app directly from the form in <MobileAppName />.  
 
-:::tip
+:::tip Example project available
 Clone <MerginMapsProject id="documentation/forms-navigation-link" /> to follow this example!
 :::
 
