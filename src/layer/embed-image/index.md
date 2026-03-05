@@ -23,7 +23,7 @@ The survey layer needs to have a text field for storing the full URL link (here:
 3. In the **Widget Type** tab:
    - From the drop-down menu, select the **Attachment** widget
    - Store the path as **Absolute path**
-   - Set the **Integrated Document Viewer** to use the type **Web View**
+   - Set the **Integrated Document Viewer** to use the type **Web View**, so that QGIS can display the online image in the form (this is not needed by the <MobileAppNameShort />)
 
 ![QGIS Attachment widget setup for online images preview](./qgis-form-attachment-widget.webp "QGIS Attachment widget setup for online images preview")
 
