@@ -44,7 +44,7 @@ Following variables are supported:
  - `@position_latitude` - Latitude
  - `@position_longitude` - Longitude
  - `@position_elevation` - Orthometric or normal height. *May not be available for some providers, see [Elevations](../../gis/elevations/) for more detail.*
- - `position_altitude`- has been replaced by `@position_elevation`. It is still supported and returns the same values as `@position_elevation`.
+ - `@position_altitude`- has been replaced by `@position_elevation`. It is still supported and returns the same values as `@position_elevation`.
  - `@position_elevation_ellipsoid` - Ellipsoidal height. *May not be available for some providers, see [Elevations](../../gis/elevations/) for more detail.*
  - `@position_geoid_separation` - Geoid or quasi-geoid height (undulation). *May not be available for some providers, see [Elevations](../../gis/elevations/) for more detail.*
  - `@position_direction` - The bearing measured in degrees clockwise from true north to the direction of travel.
