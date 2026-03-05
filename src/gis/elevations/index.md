@@ -1,5 +1,6 @@
 ---
 description: See how Mergin Maps handles elevations, vertical transformations and data reported by GPS providers.
+outline: [2,3]
 ---
 
 # Elevations
@@ -33,7 +34,7 @@ There are some differences in the functionality and available details depending 
 ### Android
 On Android, the [internal (fused)](../../field/mobile-app-ui/#gps-settings) GPS provider is used by default. It reports ellipsoidal heights that <MainPlatformName /> transforms to **orthometric heights using the EGM96 geoid model** by default and displays them in the [GPS info panel](../../field/mobile-app-ui/#current-position-and-gps-info).
 
-**Position variables**: :white_check_mark: ellipsoidal elevation, :white_check_mark:  orthometric elevation, :white_check_mark: geoid separation values are available and can be stored using [position variables](../../layer/variables/#position-variables).
+**Position variables**: :white_check_mark: *ellipsoidal elevation*, *orthometric elevation*, *geoid separation* values are available and can be stored using [position variables](../../layer/variables/#position-variables).
 
 **Custom geoid**: :white_check_mark: It is possible to use the <QGISPluginNameShort /> to [set up a different geoid model](#using-custom-geoid) and transform the elevation to a different vertical reference system.
 
@@ -44,15 +45,15 @@ On iOS, the GPS provider can provide orthometric and ellipsoidal heights.
 If ellipsoidal height **is not** available, <MainPlatformName /> does not transform the elevation in any way. iOS reports *above the sea level* heights by default, so this information is displayed in the [GPS info panel](../../field/mobile-app-ui/#current-position-and-gps-info) in the <MobileAppNameShort />. 
 
 **Position variables**: 
-- :white_check_mark: orthometric elevation is available,
-- :no_entry_sign: ellipsoidal elevation and :no_entry_sign: geoid separation values are **not** available and **can not** be stored using [position variables](../../layer/variables/#position-variables).
+- :white_check_mark: *orthometric elevation* is available and can be stored using [position variables](../../layer/variables/#position-variables)
+- :no_entry_sign: *ellipsoidal elevation* and *geoid separation* values are **not** available
 
 **Custom geoid**: :no_entry_sign: It is not possible to use custom geoid model.
 
 #### Ellipsoidal height available
 If iOS provides also the ellipsoidal heights, <MainPlatformName /> transforms them to **orthometric elevations using the EGM96 geoid model** by default and displays them in the [GPS info panel](../../field/mobile-app-ui/#current-position-and-gps-info).
 
-**Position variables**: :white_check_mark: ellipsoidal elevation, :white_check_mark:  orthometric elevation, :white_check_mark: geoid separation values are available and can be stored using [position variables](../../layer/variables/#position-variables).
+**Position variables**: :white_check_mark: *ellipsoidal elevation*, *orthometric elevation*, *geoid separation* values are available and can be stored using [position variables](../../layer/variables/#position-variables).
 
 **Custom geoid**: :white_check_mark: It is possible to use the <QGISPluginNameShort /> to [set up a different geoid model](#using-custom-geoid) and transform the elevation to a different vertical reference system.
 
@@ -63,7 +64,7 @@ On Android, external GPS can be connected [using Bluetooth](../../field/external
 
 If there is no [user-defined transformation](#using-custom-geoid), the <MobileAppNameShort /> uses data reported by the GPS provider as-is, including the ellipsoidal height and geoid separation. <MainPlatformName /> does not receive information about the geoid model used; this information should be supplied by the GPS provider.
 
-**Position variables**: :white_check_mark: ellipsoidal elevation, :white_check_mark:  orthometric elevation, :white_check_mark: geoid separation values are available and can be stored using [position variables](../../layer/variables/#position-variables).
+**Position variables**: :white_check_mark: *ellipsoidal elevation*, *orthometric elevation*, *geoid separation* values are available and can be stored using [position variables](../../layer/variables/#position-variables).
 
 **Custom geoid**: :white_check_mark: It is possible to use the <QGISPluginNameShort /> to [set up a different geoid model](#using-custom-geoid) and transform the elevation to a different vertical reference system. The defined geoid model is displayed in the <MobileAppNameShort />.
 
@@ -80,21 +81,23 @@ Mock location should be only used if you are unable to connect the external GPS 
 If there is no [user-defined transformation](#using-custom-geoid) (custom geoid), the <MobileAppNameShort /> uses data reported by the GPS provider as-is.
 
 **Position variables**: 
-- :white_check_mark: orthometric elevation is available,
-- :no_entry_sign: ellipsoidal elevation and :no_entry_sign: geoid separation values are **not** available and **can not** be stored using [position variables](../../layer/variables/#position-variables).
+- :white_check_mark: *orthometric elevation* is available and can be stored using [position variables](../../layer/variables/#position-variables)
+- :no_entry_sign: *ellipsoidal elevation* and *geoid separation* values are **not** available
 
 **Custom geoid**: 
 - :warning: It is possible to use the <QGISPluginNameShort /> to [set up a different geoid model](#using-custom-geoid) and transform the elevation to a different vertical reference system. However, it is necessary to **set up the mock app to report ellipsoidal heights**, otherwise the geoid separation would be applied twice leading to incorrect elevation values. 
-- if custom geoid is used, the orthometric elevation, ellipsoidal elevation and geoid separation variables are available
+- :white_check_mark: If custom geoid is used, the *orthometric elevation*, *ellipsoidal elevation* and *geoid separation* variables are available and can be stored using [position variables](../../layer/variables/#position-variables).
 
 ### iOS
 If there is no [user-defined transformation](#using-custom-geoid) (custom geoid), the <MobileAppNameShort /> uses data reported by the GPS provider as-is.
 
-**Position variables**:  :warning: When using the mock location, iOS only sends a minimal subset of available GPS data, namely the coordinates X, Y, and elevation. It is not possible to obtain or display any other [position variables](../../layer/variables/#position-variables), including accuracy.
+**Position variables**:  
+- :warning: When using the mock location, iOS only sends a minimal subset of available GPS data, namely the coordinates X, Y, and elevation. Other [position variables](../../layer/variables/#position-variables) may not be available.
+- :no_entry_sign: *orthometric elevation*, *ellipsoidal elevation* and *geoid separation* values are **not** available
 
 **Custom geoid**: 
 - :warning: It is possible to use the <QGISPluginNameShort /> to [set up a different geoid model](#using-custom-geoid) and transform the elevation to a different vertical reference system. However, it is necessary to **set up the mock app to report ellipsoidal heights**, otherwise the geoid separation would be applied twice leading to incorrect elevation values. 
-- if custom geoid is used, the orthometric elevation, ellipsoidal elevation and geoid separation variables are available
+- :white_check_mark: If custom geoid is used, the *orthometric elevation*, *ellipsoidal elevation* and *geoid separation* variables are available and can be stored using [position variables](../../layer/variables/#position-variables).
 
 ## Using custom geoid
 
