@@ -1,3 +1,7 @@
+---
+description: In this tutorial, you will learn how to set up symbology, labels, preview panel and map themes in your Mergin Maps project in QGIS.
+---
+
 # Further Project Customisation
 
 In this tutorial you will learn how to further customise your <MainPlatformNameLink /> project from the [previous tutorial](../creating-a-project-in-qgis/), making it even more useful. The various changes we will make to the project will be made in [QGIS](../../setup/install-qgis/) and their effect observed and tested in <MobileAppName />.
@@ -5,8 +9,8 @@ In this tutorial you will learn how to further customise your <MainPlatformNameL
 The topics covered here are:
 [[toc]]
 
-::: tip
-Previous tutorials already covered the minimum concepts for data collection so feel free to skip ahead to the [Working Collaboratively](../working-collaboratively/index.md) tutorial (and come back here later on) if you're super keen on collecting data right away.
+:::tip Public project available
+The project created in this tutorial <MerginMapsProject id="documentation/t5-trees-and-hedges" /> is public. You can download it and compare it with your results.
 :::
 
 ## Opening the project in QGIS
@@ -65,10 +69,10 @@ Seeing how the changes look like in the <MobileAppNameShort /> is easy:
    ![Successful synchronisation message](./qgis-mergin-project-sync.jpg "Successful synchronisation message")
 
 3. Open the <MobileAppNameShort /> on your mobile device
+
 4. On the **Home** tab, you should see that the `trees-and-hedges` project has *Pending changes to synchronise*.
 
    Tap on the button next to the name of the project and **Synchronise project**.
-
    ![Updated project in Mergin Maps mobile app](./merginmaps-mobile-project-with-pending-changes.jpg "Updated project in Mergin Maps mobile app")
 
 ::: tip
@@ -90,6 +94,7 @@ Labels can be useful for showing attribute data or other information directly on
    Its layer properties dialog should appear.
 
 2. Select the **Labels tab** on the left hand side
+
 3. Set the labelling mode to **Single Labels**:
    ![QGIS Labels settings in Layer properties](./qgis-symbology-labels.jpg "QGIS Labels settings in Layer properties")
 
@@ -114,6 +119,7 @@ The panel for the `trees` layer looks like the left-hand image below. We will co
    Its layer properties dialog should appear.
 
 2. Select the **Display tab** on the left hand side
+
 3. Set the **Display Name** to `species`:
    ![Display name attribute in Layer properties](./qgis-display-name.jpg "Display name attribute")
 
@@ -122,13 +128,14 @@ If you notice subtle differences in the name / spelling of the field when you se
 :::
 
 4. Set the HTML map tip to:
-```
-# fields
-condition
-```
+   ```
+   # fields
+   condition
+   ```
    ![HTML map tip in Layer properties](./qgis-html-map-tip.jpg "HTML map tip in Layer properties")
 
 5. Click **OK**
+
 6. Test out these settings in the <MobileAppNameShort /> as described in the [Trialling changes](#trialling-changes-in-mergin-maps-mobile-app) section above.
 
 ## Controlling layer visibility
@@ -179,6 +186,7 @@ Here we'll define the following map themes:
 
 ## Zoom to project extent
 If you experimented with the **Zoom to project** button in the <MobileAppNameShort /> you'll have seen that by default, it zooms to the extent of the somewhat large background map:
+
 ![Mergin Maps mobile app default map extent](../capturing-first-data/merginmaps-mobile-location-shown-on-osm.jpg "Mergin Maps mobile app default map extent")
 
 This is not very useful so we will learn how to specify the extent that this button will zoom to.
@@ -202,7 +210,13 @@ This is not very useful so we will learn how to specify the extent that this but
    The **Zoom to project** button can be found in the <MobileAppNameShort /> by tapping the **More** button:
    ![Zoom to project in Mergin Maps mobile app](./merginmaps-mobile-zoom-to-project-button.jpg "Zoom to project in Mergin Maps mobile app")
 
+
+
 ## Learning more
 The aim of this tutorial was to introduce you to the main concepts of customising <MainPlatformName /> projects in QGIS and to cover common customisation workflows in a basic way.
+
+:::tip Public project available
+The project created in this tutorial <MerginMapsProject id="documentation/t5-trees-and-hedges" /> is public. You can download it and compare it with your results.
+:::
 
 You will find more tips on how to prepare your QGIS project in [Setup GIS Project](../../gis/features/).

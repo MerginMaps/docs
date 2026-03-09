@@ -1,6 +1,10 @@
+---
+description: These migration guides are here to help you migrate your Mergin Maps CE or Mergin Maps EE to the latest server version.
+---
+
 # Upgrade
 
-Migration guides are here to help you migrate your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink /> to the latest server version. The main Cloud <DashboardLink desc="Mergin Maps Server"/> is always migrated to latest version by <MainPlatformName /> team. Read more about server platforms in [overview article](../index.md).
+Migration guides are here to help you migrate your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink /> to the latest server version. <ServerCloudNameLink /> is always migrated to latest version by <MainPlatformName /> team. Read more about server platforms in [overview article](../).
 
 ::: warning
 Migrations must be performed one by one and cannot be skipped.
@@ -10,43 +14,328 @@ Make sure to always back up your database data before doing a migration.
 
 [[toc]]
 
-## Migration guide from 2024.4.x to 2025.2.x
-
-Get the latest <GitHubRepo id="MerginMaps/server/blob/master/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2025.2.0`.
-Perform the migration:
+## From 2025.5.x to 2025.7.x {#migration-guide-from-2025-5-x-to-2025-7-x}
 
 <MigrationType type="EE" />
+
+Perform the migration:
+
+1. Stop your running docker containers
+   ```bash
+    $ docker compose -f docker-compose.yml down # or similarly, based on your previous deployment
+   ```
+2. Clone or pull the <GitHubRepo id="MerginMaps/server/blob/master/" desc="server repository" /> or download <GitHubRepo id="MerginMaps/server/blob/master/deployment" desc="deployment folder" /> and open `/enterprise` folder.
+   ```bash    
+    $ cd server/deployment/enterprise
+   ```
+3. Adapt your existing `docker-compose.yml` and `docker-compose.maps.yml` file to the new version.
+4. If you have installed maps stack, change `qgis_extractor` service image version to 2025.3.0 in `docker-compose.maps.yml`.
+
+:::warning Version breaking change
+Previously used image version for service `qgis_extractor` (2025.1.0) is not compatible with latest version of Mergin Maps server.
+:::
+
+5. If you have installed maps stack, add new environment variables to `qgis_extractor` service in `docker-compose.maps.yaml`.
+  ```yaml
+  environment:
+      - OVERVIEWS_DATA_DIR=/data
+      - MM_WMS_TILE_BUFFER=100
+      - MM_WMS_AVOID_ARTIFACTS=1
+      - BROKER_URL=redis://mergin-redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://mergin-redis:6379/0
+  ```
+
+You can also clean the following variables from `.prod.env`:
+
+  ```bash
+  QGIS_EXTRACTOR_TIMEOUT
+  QGIS_EXTRACTOR_API_URL
+  ```
+
+6. Start up your docker containers
+   ```bash
+    $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
+    $ docker compose -f docker-compose.maps.yml -d up # or similarly, based on your deployment
+   ```
+7. Check that you are on correct database migration versions (`6cb54659c1de`, `e95d051969ce`).
+    ```bash
+    $ docker exec merginmaps-server flask db current
+    INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+    INFO  [alembic.runtime.migration] Will assume transactional DDL.
+    6cb54659c1de
+    e95d051969ce
+    ```
+
+   - If you do not see the version numbers at all, run the following commands:
+    ```bash
+    $ docker exec merginmaps-server flask db stamp 6cb54659c1de
+    $ docker exec merginmaps-server flask db stamp e95d051969ce
+    ```
+8. Run the database migration:
+    ```bash
+    $ docker exec merginmaps-server flask db upgrade community@b9ec9ab6694f
+    $ docker exec merginmaps-server flask db upgrade enterprise@c40e5e645b57
+    ```
+
+## From 2025.2.x to 2025.7.x (CE) {#migration-guide-from-2025-2-x-to-2025-7-x-ce}
+
+<MigrationType type="CE" />
+
+Perform the migration:
+
+1. Stop your running docker containers
+   ```bash
+    $ docker compose -f docker-compose.yml down # or similarly, based on your previous deployment
+   ```
+2. Clone or pull the <GitHubRepo id="MerginMaps/server/blob/master/" desc="server repository" /> or download <GitHubRepo id="MerginMaps/server/blob/master/deployment" desc="deployment folder" /> and open `/community` folder.
+   ```bash    
+    $ cd server/deployment/community
+   ```
+3. Adapt your existing `docker-compose.yml` and `.prod.env` environment variables to the new version.
+4. Upgrade your nginx proxy configuration file with the latest version available in the <GitHubRepo id="MerginMaps/server/blob/master/deployment/common/nginx.conf" desc="nginx.conf" /> (This is a necessary step for improved downloading of zip files from the dashboard).
+5. If you want to persist diagnostic logs from a mobile application and QGIS plugin, run the following command to set proper permissions for the folder `/diagnostic_logs` used for storing log files:
+   ```bash
+   $ sh ../common/set_permissions.sh diagnostic_logs
+   ```
+You can also disable this persistence in <GitHubRepo id="MerginMaps/server/blob/master/deployment/community/docker-compose.yml" desc="docker-compose.yml" /> `server` service definition.
+6. Start up your docker containers
+   ```bash
+    $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
+   ```
+7. Check that you are on correct database migration versions (`ba5051218de4`).
+    ```bash
+    $ docker exec merginmaps-server flask db current
+    INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+    INFO  [alembic.runtime.migration] Will assume transactional DDL.
+    35af0c8be41e (head)
+    ba5051218de4
+    ```
+
+   - If you do not see the version numbers at all, run the following commands:
+    ```bash
+    $ docker exec merginmaps-server flask db stamp 35af0c8be41e
+    $ docker exec merginmaps-server flask db stamp ba5051218de4
+    ```
+8. Run the database migration:
+    ```bash
+    $ docker exec merginmaps-server flask db upgrade heads    
+    # New head will be community@b9ec9ab6694f
+    ```
+
+## From 2025.3.x to 2025.5.x {#migration-guide-from-2025-3-x-to-2025-5-x}
+
+<MigrationType type="EE" />
+
+Perform the migration:
+
+1. Stop your running docker containers
+   ```bash
+    $ docker compose -f docker-compose.yml down # or similarly, based on your previous deployment
+   ```
+2. Please clone or pull the <GitHubRepo id="MerginMaps/server/blob/master/" desc="server repository" /> or download <GitHubRepo id="MerginMaps/server/blob/master/deployment" desc="deployment folder" />
+   ```bash    
+    $ cd server/deployment/enterprise
+   ```
+3. Adapt your existing `docker-compose.yml` file to the new version.
+4. Upgrade your nginx proxy configuration file with the latest version available in the <GitHubRepo id="MerginMaps/server/blob/master/deployment/common/nginx.conf" desc="nginx.conf" /> (This is a necessary step for improved downloading of zip files from the dashboard).
+5. If you want to persist diagnostic logs from a mobile application and QGIS plugin, run the following command to set proper permissions for the folder `/diagnostic_logs` used for storing log files:
+   ```bash
+   $ sh ../common/set_permissions.sh diagnostic_logs
+   ```
+You can also disable this persistence in <GitHubRepo id="MerginMaps/server/blob/master/deployment/enterprise/docker-compose.yml" desc="docker-compose.yml" /> `server` service definition.
+6. Start up your docker containers
+   ```bash
+    $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
+   ```
+7. Check that you are on correct database migration versions (`5ad13be6f7ef`, `819e6b20ee93`).
+    ```bash
+    $ docker exec merginmaps-server flask db current
+    INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+    INFO  [alembic.runtime.migration] Will assume transactional DDL.
+    5ad13be6f7ef
+    819e6b20ee93
+    ```
+
+   - If you do not see the version numbers at all, run the following commands:
+    ```bash
+    $ docker exec merginmaps-server flask db stamp 5ad13be6f7ef
+    $ docker exec merginmaps-server flask db stamp 819e6b20ee93
+    ```
+8. Run the database migration:
+    ```bash
+    $ docker exec merginmaps-server flask db upgrade community@6cb54659c1de
+    $ docker exec merginmaps-server flask db upgrade enterprise@e95d051969ce
+    ```
+
+:::warning Downloading zip files from the dashboard
+Zip files are now stored in temporary storage and are deleted after 7 days. This can increase the storage usage of <MainPlatformName /> server. Make sure you have enough space on your server.
+:::
+
+### Enable Single Sign-On
+
+To enable Single Sign-On for your server, follow the instructions in [Deployment of Single Sign On](../sso-deployment).
+
+## From 2025.2.x to 2025.3.x {#migration-guide-from-2025-2-x-to-2025-3-x}
+
+<MigrationType type="EE" />
+
+::: tip Changes on deployment behaviour
+Release 2025.3.x brings some changes on <MainPlatformName /> docker compose orchestration deployment procedure.
+:::
+
+Get the latest <GitHubRepo id="MerginMaps/server/blob/master/deployment/enterprise/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2025.3.0`.
+Perform the migration:
+
+1. Stop your running docker containers
+   ```bash
+    $ docker compose -f docker-compose.yml down # or similarly, based on your previous deployment
+    # INFO: After shutdown update the docker-compose.yml file to latest release
+   ```
+2. Please clone the <GitHubRepo id="MerginMaps/server/blob/master/" desc="server repository" /> or download <GitHubRepo id="MerginMaps/server/blob/master/deployment/" desc="deployment folder" />
+   ```bash    
+    $ cd server/deployment/enterprise
+   ```
+3. If you plan to use the new webmaps stacks, adapt your existing `.prod.env` and `docker-compose.yml` files. Move/copy them to the `enterprise` deployment folder  
+   ```bash
+    $ cp /some/path/.prod.env . # assuming you are located in `server/deployment/enterprise`
+    $ cp /some/path/docker-compose.yml . # assuming you are located in `server/deployment/enterprise`
+   ```
+4. Start up your docker containers
+   ```bash
+    $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
+    $ docker compose -f docker-compose.maps.yml -d up # If you want to deploy webmaps stack
+   ```
+5. Check that you are on correct versions (`ba5051218de4`, `ba5ae5972c4a`).
+    ```bash
+    $ docker exec merginmaps-server flask db current
+    INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+    INFO  [alembic.runtime.migration] Will assume transactional DDL.
+    ba5051218de4
+    ba5ae5972c4a
+    ```
+
+   - If you do not see the version numbers at all, run the following commands:
+    ```bash
+    $ docker exec merginmaps-server flask db stamp ba5051218de4
+    $ docker exec merginmaps-server flask db stamp ba5ae5972c4a
+    ```
+6. Run the database migration:
+    ```bash
+    $ docker exec merginmaps-server flask db upgrade community@5ad13be6f7ef
+    $ docker exec merginmaps-server flask db upgrade enterprise@819e6b20ee93
+    ```
+
+<br>
+
+:::warning 🗺️ Enable background map ⚠️
+Your webmaps won’t display the default background map unless we enable them on our side. To do that, please [contact our support team](mailto:support@merginmaps.com?subject=Enable%20default%20background%20maps%20on%20Enterprise%20server&body=Dear%20support%2C%0A%0AI%27d%20like%20to%20request%20enabling%20background%20maps%20for%20our%20Enterprise%20edition%20server.%20%0AThe%20server%20is%20hosted%20at%3A%20%3Curl%3E) and share your server’s URL.
+
+Alternatively, you can set up your own background map using [environment variables](../environment/index.md#webmaps).
+:::
+
+## From 2024.2.x to 2025.2.x (CE) {#migration-guide-from-2024-2-x-to-2025-2-x-ce}
+
 ::: tip Before you upgrade!
-Release 2025.2.0 brings significant changes on <MainPlatformName /> docker compose orchestration infrastructure.
+Release 2025.2.x brings significant changes on <MainPlatformName /> docker compose orchestration infrastructure.
 
 Previous individual `server` container is replaced by 3 service dedicated containers that split the core components of <MainPlatformName />, `server-gunicorn` the app, `celery-beat` Celery task scheduler and `celery-worker` a dedicated worker container for Celery tasks.
 :::
 
-1. Stop your running docker containers and build the new images
-   ```bash
-       $ docker compose -f docker-compose.yml down # or similarly, based on your deployment
-       # INFO: After shutdown update the docker-compose.yml file to latest release
-   ```
+<MigrationType type="CE" />
 
-2. Double check if below environment variables are available and filled in `.prod.env` environment file. If not, add them.
-   
-   ```bash
-       SECURITY_EMAIL_SALT='<YOUR STRONG HASH>'
-       SECURITY_BEARER_SALT='<YOUR STRONG HASH>'
-   ```
+Get the latest <GitHubRepo id="MerginMaps/server/blob/master/deployment/community/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2025.2.2`.
+Perform the migration:
+
+1. Stop your running docker containers
+    ```bash
+    $ docker compose -f docker-compose.yml down # or similarly, based on your deployment
+    # INFO: After shutdown update the docker-compose.yml file to latest release
+    ```
+
+2. Double check if below environment variables are available and filled in `.prod.env` environment file. If not, add them.   
+    ```bash
+    SECURITY_EMAIL_SALT='<YOUR STRONG HASH>'
+    SECURITY_BEARER_SALT='<YOUR STRONG HASH>'
+    PORT=5000
+    ```
 
 3. Start up your docker containers
-   ```bash
-       $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
-   ```
+   - If you stopped the containers during step `1` with new version compose file, you need to manually stop and remove containers.
+    ```bash
+    $ docker stop merginmaps-db merginmaps-proxy merginmaps-redis merginmaps-server merginmaps-web
+    $ docker rm merginmaps-db merginmaps-proxy merginmaps-redis merginmaps-server merginmaps-web
+    ```
+
+   - After this you can start the new containers
+    ```bash
+    $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
+    ```
+
+4. Check that you are on correct versions (`35af0c8be41e`, `a5d4defded55`).
+    ```bash
+    $ docker exec merginmaps-server flask db current
+    INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+    INFO  [alembic.runtime.migration] Will assume transactional DDL.
+    35af0c8be41e (head)
+    a5d4defded55 
+    ```
+
+   - If you do not see the version numbers at all, run the following commands:
+    ```bash
+    $ docker exec merginmaps-server flask db stamp 35af0c8be41e
+    $ docker exec merginmaps-server flask db stamp a5d4defded55
+    ```
+
+5. Run the database migration:
+    ```bash
+    $ docker exec merginmaps-server flask db upgrade heads    
+    ```
+
+## From 2024.4.x to 2025.2.x {#migration-guide-from-2024-4-x-to-2025-2-x}
+
+::: tip Before you upgrade!
+Release 2025.2.x brings significant changes on <MainPlatformName /> docker compose orchestration infrastructure.
+
+Previous individual `server` container is replaced by 3 service dedicated containers that split the core components of <MainPlatformName />, `server-gunicorn` the app, `celery-beat` Celery task scheduler and `celery-worker` a dedicated worker container for Celery tasks.
+:::
+
+<MigrationType type="EE" />
+
+Get the latest <GitHubRepo id="MerginMaps/server/blob/master/deployment/enterprise/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2025.2.0`.
+Perform the migration:
+
+1. Stop your running docker containers and build the new images
+    ```bash
+    $ docker compose -f docker-compose.yml down # or similarly, based on your deployment
+    # INFO: After shutdown update the docker-compose.yml file to latest release
+    ```
+
+2. Double check if below environment variables are available and filled in `.prod.env` environment file. If not, add them.   
+    ```bash
+    SECURITY_EMAIL_SALT='<YOUR STRONG HASH>'
+    SECURITY_BEARER_SALT='<YOUR STRONG HASH>'
+    PORT=5000
+    ```
+
+3. Start up your docker containers
+   - If you stopped the containers during step `1` with new version compose file, you need to manually stop and remove containers.
+    ```bash
+    $ docker stop merginmaps-db merginmaps-proxy merginmaps-redis merginmaps-server merginmaps-web
+    $ docker rm merginmaps-db merginmaps-proxy merginmaps-redis merginmaps-server merginmaps-web
+    ```
+
+   - After this you can start the new containers
+    ```bash
+    $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
+    ```
 
 4. Check that you are on correct versions (`07f2185e2428`, `df5b4efdae7b`).
     ```bash
     $ docker exec merginmaps-server flask db current
     INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
     INFO  [alembic.runtime.migration] Will assume transactional DDL.
-    07f2185e2428 (head)
-    df5b4efdae7b (head)
+    07f2185e2428
+    df5b4efdae7b
     ```
 
    - If you do not see the version numbers at all, run the following commands:
@@ -62,15 +351,15 @@ Previous individual `server` container is replaced by 3 service dedicated contai
     ```
 
 
-## Migration guide from 2024.3.x to 2024.4.x
+## From 2024.3.x to 2024.4.x {#migration-guide-from-2024-3-x-to-2024-4-x}
 
-Get the latest <GitHubRepo id="MerginMaps/server/blob/master/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2024.4.0`.
+Get the latest <GitHubRepo id="MerginMaps/server/blob/master/deployment/enterprise/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2024.4.0`.
 Perform the migration:
 
 <MigrationType type="EE" />
 1. Start up your docker containers
     ```bash
-    $ docker-compose -f docker-compose.yml up # or similarly, based on your deployment
+    $ docker compose -f docker-compose.yml up # or similarly, based on your deployment
     ```
 
 2. Check that you are on correct versions (`0e3fc92aeaaa`, `223e3be99e92`).
@@ -94,15 +383,15 @@ Perform the migration:
     $ docker exec merginmaps-server flask db upgrade enterprise@df5b4efdae7b
     ```
 
-## Migration guide from 2024.2.x to 2024.3.x
+## From 2024.2.x to 2024.3.x {#migration-guide-from-2024-2-x-to-2024-3-x}
 
-Get the latest <GitHubRepo id="MerginMaps/server/blob/master/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2024.3.0`.
+Get the latest <GitHubRepo id="MerginMaps/server/blob/master/deployment/enterprise/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2024.3.0`.
 Perform the migration:
 
 <MigrationType type="EE" />
 1. Start up your docker containers
     ```bash
-    $ docker-compose -f docker-compose.yml up # or similarly, based on your deployment
+    $ docker compose -f docker-compose.yml up # or similarly, based on your deployment
     ```
 
 2. Check that you are on correct versions (`a5d4defded55`, `223e3be99e92`).
@@ -125,16 +414,16 @@ Perform the migration:
     $ docker exec merginmaps-server flask db upgrade community@0e3fc92aeaaa
     ```
 
-## Migration guide from 2023.6.1 to 2024.2.x
+## From 2023.6.1 to 2024.2.x (CE) {#migration-guide-from-2023-6-1-to-2024-2-x-ce}
 
-Get the latest <GitHubRepo id="MerginMaps/server/blob/master/docker-compose.yml" desc="docker-compose file" />  or update docker images manually.
+Get the latest <GitHubRepo id="MerginMaps/server/blob/master/deployment/community/docker-compose.yml" desc="docker-compose file" />  or update docker images manually.
 
 <MigrationType type="CE" />
 Update image to `2024.2.2` and perform the migration:
 
 1. Start up your docker containers
     ```bash
-    $ docker-compose -f docker-compose.yml up # or similarly, based on your deployment
+    $ docker compose -f docker-compose.yml up # or similarly, based on your deployment
     ```
 
 2. Check that you are on correct versions (`35af0c8be41e`, `3a77058a2fd7`).
@@ -162,7 +451,7 @@ Update image to `2024.2.1` and perform the migration:
 
 1. Start up your docker containers
     ```bash
-    $ docker-compose -f docker-compose.yml up # or similarly, based on your deployment
+    $ docker compose -f docker-compose.yml up # or similarly, based on your deployment
     ```
 
 2. Check that you are on correct versions (`3a77058a2fd7`, `0d867687ab64`).
@@ -186,20 +475,20 @@ Update image to `2024.2.1` and perform the migration:
     $ docker exec merginmaps-server flask db upgrade enterprise@head
     ```
 
-## Migration guide from 2023.2.0+ to 2023.6.1
+## From 2023.2.0+ to 2023.6.1 {#migration-guide-from-2023-2-0-to-2023-6-1}
 
 ⚠️ If you are on a server version lower than `2023.2.0`, it is important to first [upgrade to `2023.2.0`](#migration-guide-from-any-previous-version-to-2023-2-0) before continuing with this migration.
 
 -----
 
-Get the latest <GitHubRepo id="MerginMaps/server/blob/master/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2023.6.1`.
+Get the latest <GitHubRepo id="MerginMaps/server/blob/master/deployment/community/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2023.6.1`.
 Perform the migration:
 
 <MigrationType type="CE" />
 
 1. Start up your docker containers
     ```bash
-    $ docker-compose -f docker-compose.yml up # or similarly, based on your deployment
+    $ docker compose -f docker-compose.yml up # or similarly, based on your deployment
     ```
 
 2. Check that you are on a correct version (`b6cb0a98ce20`)
@@ -223,7 +512,7 @@ Perform the migration:
 <MigrationType type="EE" />
 1. Start up your docker containers
     ```bash
-    $ docker-compose -f docker-compose.yml up # or similarly, based on your deployment
+    $ docker compose -f docker-compose.yml up # or similarly, based on your deployment
     ```
 
 2. Check that you are on correct versions (`b6cb0a98ce20`, `0d867687ab64`)
@@ -246,7 +535,7 @@ Perform the migration:
     $ docker exec merginmaps-server flask db upgrade community@3a77058a2fd7
     ```
 
-## Migration guide from any previous version to 2023.2.0
+## Any previous version to 2023.2.0 {#migration-guide-from-any-previous-version-to-2023-2-0}
 
 Besides various fixes, enhancements and performance improvements the most notable change recently introduced is the concept of workspaces. For Community Edition it means there is a **common shared workspace (global workspace)** for all users where all projects are stored, instead of having a personal or organisational namespace for projects.
 
@@ -268,7 +557,7 @@ $ docker exec mergin-db pg_dump -U postgres -Fc postgres > pg_backup.dump
 
  4. Stop all running <MainPlatformName /> services (from project root folder)
 ```bash
-$ docker-compose -f docker-compose.yml stop
+$ docker compose -f docker-compose.yml stop
 ```
 
  5. Pull the latest changes
@@ -276,7 +565,7 @@ $ docker-compose -f docker-compose.yml stop
 $ git pull
 ```
 
- 6. Set environment variables (<GitHubRepo desc=".prod.env" id="MerginMaps/server/blob/master/.prod.env" /> file). **Important** ⚠️
+ 6. Set environment variables `.prod.env`. **Important** ⚠️
 
 <MigrationType type="CE" />
 
@@ -286,10 +575,10 @@ Specify its name with the following environment variable:
  - `GLOBAL_WORKSPACE=ShinyWorkspace` - name of your workspace. A good fit is the name of your company or team. This value *should not be changed* later.
 
 :::tip
-You can find all available environment variables [here](../administer/environment.md) together with a tutorial on how to set them up.
+You can find all available environment variables [here](../environment/) together with a tutorial on how to set them up.
 :::
 
-Further, you need to set a default role for people in your workspace *(learn more about our [permissions and roles system here](../../manage/permissions))*. 
+Further, you need to set a default role for people in your workspace *(learn more about our [permissions and roles system here](../../manage/permissions/))*. 
 **Pick one** of these options :
  - `GLOBAL_READ=0` everyone will have guest role (without access to any project unless explicitly granted)
  - `GLOBAL_READ=1` everyone will have reader role (they can read/download all projects in the workspace)
@@ -316,7 +605,7 @@ There are few settings you may want to change values for:
 
 7. Make sure projects volume mounts in `docker-compose` file still match (You can set up new volumes by following the [quick start guide](../install/)). Switch to new server version and PostgreSQL to at least version 12 (14 recommended) by running new docker containers:
 ```bash
-$ docker-compose -f docker-compose.yml up
+$ docker compose -f docker-compose.yml up
 ```
 
 8. Restore backup from older PostgreSQL version, e.g.:
@@ -333,9 +622,10 @@ root@merginmaps-db$ pg_restore -U postgres -Fc -d postgres < /tmp/pg_backup.dump
 If your PostgreSQL settings were custom, you might need to follow official instructions for upgrading the PostgreSQL cluster.
 :::
 
-**Database migration**
+### Database migration
 
 <MigrationType type="CE" />
+
 In this step we will select a global workspace (e.g. my-company) where all your projects will be merged. Your projects are migrated as follows: former namespace is prepended to project name and whole project is moved to new global workspace, for example:
 
 	john.doe/survey -> my-company/john.doe_survey

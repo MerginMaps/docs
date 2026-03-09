@@ -1,3 +1,7 @@
+---
+description: Do you get an error message when trying to open a project or a form in Mergin Maps mobile app? Here is how to resolve some of these issues.
+---
+
 # How to Fix a Broken Project
 [[toc]]
 
@@ -12,8 +16,6 @@ The [Troubleshoot](../../misc/troubleshoot/) page has general troubleshooting ti
 :::
 
 ## Saving of feature failed (vector layer)
-
-<SinceBadge type="App" version="2.5.0" />
 
 The error is caused by a change of behaviour in QGIS versions 3.34.0 and higher as well as <MobileAppName /> 2.5.0 and higher. 
 

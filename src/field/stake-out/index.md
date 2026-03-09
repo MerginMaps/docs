@@ -1,3 +1,7 @@
+---
+description: Stake out points in your survey layers. Mergin Maps mobile app will navigate you towards the selected point showing you the direction and distance.
+---
+
 # How to Stake Out Points
 [[toc]]
 

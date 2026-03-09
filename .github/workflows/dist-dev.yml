@@ -8,6 +8,7 @@ on:
     paths-ignore:
       - 'scripts/**'
       - 'README.md'
+  workflow_dispatch:
 
 concurrency: 
   group: dist-dev-${{ github.head_ref }}
@@ -18,18 +19,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-
-    # need Node 16 or less to get rid of ERR_OSSL_EVP_UNSUPPORTED
     - uses: actions/setup-node@v3
       with:
-        node-version: 16
+        node-version: 20
+        cache: 'yarn'
 
     - name: Install
       run: |
        yarn install
 
     - name: Generate dist
+      env:
+          SMARTLOOK_KEY: ${{ secrets.SMARTLOOK_KEY }}
       run: |
+        echo "VITE_SMARTLOOK_KEY=$SMARTLOOK_KEY" > ./src/.env
         yarn build
 
     - name: "Check dist dir consistency"

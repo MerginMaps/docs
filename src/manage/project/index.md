@@ -1,11 +1,15 @@
-﻿# Mergin Maps Project
+﻿---
+description: Mergin Maps project is stored in the cloud, containing your data and QGIS project. Download the project, capture new data and sync it back to the cloud.
+---
+
+# Mergin Maps Project
 [[toc]]
 
 What is a <MainPlatformName /> project? 
 
 It is basically a folder that contains data (such as vector layers, tables, rasters or photos), a [QGIS project](../../gis/features/), and some extra <MainPlatformName /> files needed to ensure everything works.
 
-When <MainPlatformName /> project is created, it is saved to <MainPlatformNameLink /> cloud. From the cloud, it can be downloaded to various devices, used by different team members in both QGIS and the <MobileAppNameShort />. Changes they made are tracked and synchronised back to the cloud.
+When <MainPlatformName /> project is created, it is saved to <ServerCloudNameLink />. From the cloud, it can be downloaded to various devices, used by different team members in both QGIS and the <MobileAppNameShort />. Changes they made are tracked and synchronised back to the cloud.
 
 ## Creating project
 :::tip
@@ -21,13 +25,14 @@ Typically, especially if your project is rather complex, you would:
 4. [Share the project](../project-advanced/) with your team members. Now you can collaborate safely and effectively.
 
 :::tip
-[QGIS Project Preparation](../../gis/features/) will guide you the project preparation steps. We also recommend following our [Best Practice Tips for Layers and Forms](../../layer/best-practice/).
+[QGIS Project Preparation](../../gis/features/) will guide you the project preparation steps.
 
 If you need to make changes in the data schema of survey layers, please follow [How to Deploy Revised Projects](../deploy-new-project/) to avoid synchronisation issues.
 :::
 
 ## Packaging QGIS project
 When using the <QGISPluginNameShort /> to [create a <MainPlatformName /> project](../create-project/#create-a-project-in-qgis), there is an option to **Package current project**. This is what you will choose if you want to transform your QGIS project into <MainPlatformName /> project.
+
 ![Mergin Maps QGIS plugin package current project](./package-project.jpg "Mergin Maps QGIS plugin package current project")
 
 There are three options for handling layers:
@@ -37,8 +42,14 @@ There are three options for handling layers:
    
    ![Package current project options](../create-project/mergin_plugin_project_wizard_3.jpg "Package current project options") 
 
+::: tip Layers requiring authorisation
+Some layers are protected with some kind of authorisation, such as an API key or a token. The <QGISPluginNameShort /> packages <NoSpellcheck id="auth" /> DB entries used in layers in the `qgis_cfg.xml` file, so that these layers can be displayed in the <MobileAppNameShort />.
+:::
+
+
 After the layers for the new project are selected, you just need to enter the project's name and choose where to save it on your computer. It will also be saved on the <MainPlatformNameLink /> server in the selected workspace.
-   ![New Mergin Maps project name and folder](../create-project/mergin_plugin_project_wizard_4.jpg "New Mergin Maps project name and folder")
+
+![New Mergin Maps project name and folder](../create-project/mergin_plugin_project_wizard_4.jpg "New Mergin Maps project name and folder")
    
 :::danger WARNING
 Your project should be saved on a local drive. Using shared network drives and cloud storage (such as OneDrive or Google Drive) is **not supported**.
@@ -52,13 +63,15 @@ Layers that were **kept as is** are not stored in the project folder.
 ![Mergin Maps project folder content](./project-folder.jpg "Mergin Maps project folder content")
 
 There are also some extra folders and files:
-- **`.mergin`** folder contains the `Geodiff` files that are used to keep the [project history and versions](../project-details/) and [diagnostic log](../../misc/troubleshoot/#diagnostic-logs) in a file named `client-log.txt`
+- **`.mergin`** folder contains the `Geodiff` files that are used to keep the [project history and versions](../project-history/) and [diagnostic log](../../misc/troubleshoot/#diagnostic-logs) in a file named `client-log.txt`
 - **`proj`** folder contains, if needed, [custom projections](../../gis/proj/) files
 - [conflict files](../missing-data/#there-are-conflict-files-in-the-folder) may appear if changes could not be properly synchronised
+
 ![Mergin Maps project folder history log projection conflict files](./folder-tech-files.jpg "Mergin Maps project folder content")
 
 And this is how the same project looks in <AppDomainNameLink />
-![Mergin Maps project folder content web](./project-server.jpg "Mergin Maps project folder content web")
+
+![Mergin Maps project folder content web](./dashboard-project.webp "Mergin Maps project folder content web")
 
 ## Adding a layer to the project
 If you want to add an additional layer to your existing <MainPlatformName /> project:
@@ -66,6 +79,7 @@ If you want to add an additional layer to your existing <MainPlatformName /> pro
 - an existing layer: copy the layer to the project's folder and **then** add it to the project
 
 Save and sync the project. When syncing, you will see in the **Project status** that a new layer was added.
+
 ![Project status displaying added layer](./add-new-layer.jpg "Project status displaying added layer")
 
 If you used **keep as is** option when [packaging the project](#packaging-qgis-project) or add a layer that is not stored in the project's folder, the project will reference the relative path to its location. When opening the project on another computer, QGIS will try to load the file using the relative path. If this folder doesn't exist or is located elsewhere, the project will not be able to load the layer. The same applies for <MobileAppName />. 

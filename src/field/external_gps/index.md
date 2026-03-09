@@ -1,3 +1,7 @@
+---
+description: External GPS receivers can be connected to your mobile device via Bluetooth and used in Mergin Maps mobile app to achieve higher GPS accuracy.
+---
+
 # External GPS
 
 <!--- IMPORTANT: This permalink is referenced from Mergin Maps mobile app -->
@@ -6,9 +10,9 @@
 
 External GPS receivers can be connected to your mobile device via Bluetooth and used in <MobileAppName /> to achieve higher [GPS accuracy](../gps_accuracy/). 
 
-There are several [extra position variables](../../layer/position_variables/) that can be useful to record when doing the survey with external GPS, such as the GPS antenna height, GPS device name as well as metrics like horizontal, vertical or position dilution of precision (HDOP, VDOP, PDOP).
+There are several [extra position variables](../../layer/variables/#position-variables) that can be useful to record when doing the survey with external GPS, such as the GPS antenna height, GPS device name as well as metrics like horizontal, vertical or position dilution of precision (HDOP, VDOP, PDOP).
 
-Note that external GPS devices usually return orthometric heights (ellipsoid with the geoid separation applied).
+Note that external GPS devices usually return orthometric heights (ellipsoid with the geoid separation applied). The altitude and geoid separation in the [GPS info panel](../mobile-app-ui/#current-position-and-gps-info) in the <MobileAppNameShort /> is displayed as reported by the external GPS. 
 
 **Before you start**:
 - Set up your device according to the instructions of its manufacturer. You should continue only when you are sure that the device is working and sending data.
@@ -29,7 +33,7 @@ If GPS antenna height is set to a non-zero value, it is also displayed next to t
 ![GPS antenna height setup in Mergin Maps mobile app](./mobile-app-gps-antenna-height.jpg "GPS antenna height setup in Mergin Maps mobile app")
 
 :::tip
-GPS antenna height can be recorded during the survey by using the [extra position variable](../../layer/position_variables/) `@position_gps_antenna_height` as a [default value](../../layer/form-configuration/#default-values).
+GPS antenna height can be recorded during the survey by using the [extra position variable](../../layer/variables/#position-variables) `@position_gps_antenna_height` as a [default value](../../layer/default-values/).
 :::
 
 ## External GPS on Android
@@ -48,7 +52,7 @@ It is strongly recommended to use the direct connection in the <MobileAppNameSho
 3. Tap on the **Manage GPS receivers** option. Here, you can see the currently used receiver.
 
    Tap on the **Connect new receiver** button.
-   ![Select GPS receiver](./mobile-app-connect-gps-receiver.jpg "Select GPS receiver")
+   ![Select GPS receiver](./mobile-app-connect-gps-receiver.webp "Select GPS receiver")
 
 4. Choose your GPS receiver from the list of Bluetooth devices. 
 
@@ -63,8 +67,11 @@ It is strongly recommended to use the direct connection in the <MobileAppNameSho
    ![GPS info from external GPS in Mergin Maps mobile app](./mobile-app-external-gps-info.jpg "GPS info from external GPS in Mergin Maps mobile app") 
 
 ### How to connect external GPS receiver in Android via mock location
-:::warning
-Mock location should be only used if you are unable to connect the external GPS directly in the <MobileAppNameShort /> .
+
+:::warning Mock location and Internal (fused) GPS provider
+Mock location should be only used if you are unable to connect the external GPS directly in the <MobileAppNameShort />. 
+
+When setting up external GPS receiver on Android via mock location, we recommend using the *Internal (fused)* receiver option in [GPS Settings](../mobile-app-ui/#gps-settings) as this will show if mocked location is detected in the [GPS info](../mobile-app-ui/#current-position-and-gps-info) panel.
 :::
 
 External GPS can be connected and configured in Android to provide mock location using GPS apps (e.g. [Bluetooth GPS](https://play.google.com/store/apps/details?id=de.pilablu.gpsconnector) or apps from specific GPS manufacturers) as a source of GPS signal. the <MobileAppNameShort /> and other apps in your device will get the GPS position from the external GPS. 
@@ -85,12 +92,12 @@ The mock location will be used by the <MobileAppNameShort /> automatically as if
 
 Direct connection via the <MobileAppNameShort /> is not possible on iOS devices. 
 
-External GPS can be connected to your iOS device via Bluetooth. Depending on the GPS manufacturer, there may be a custom app, which then provides position to your iOS device. The <MobileAppNameShort /> sees this as an internal GPS receiver automatically, without additional configuration.
+External GPS can be connected to your iOS device via Bluetooth. Depending on the GPS manufacturer, there may be a custom app, which then provides position to your iOS device. The <MobileAppNameShort /> sees this as an internal GPS receiver automatically, without additional configuration. <MobileAppNameShort /> will report if external GPS receiver is connected.
 
 ![iOS GPS receiver](./external-gps-ios.jpg "iOS GPS receiver")
 
 ## External GPS troubleshooting
-If you encounter issues with external GPS in the <MobileAppNameShort /> , make sure that:
+If you encounter issues with external GPS in the <MobileAppNameShort />, make sure that:
 - your Bluetooth is turned on
 - GPS is paired with your mobile device
 - your GPS receiver is turned on, has battery and is sending data in NMEA format, which is readable by the <MobileAppNameShort />

@@ -1,9 +1,13 @@
+---
+description: Use position tracking to record your tracks during the field survey with Mergin Maps mobile app. See which areas you've already covered during your survey!
+---
+
 # Position Tracking
 [[toc]]
 
 Position tracking is useful when you want to record your tracks during the field survey. This can help you know the extent of areas you have already surveyed in addition to the surveyed features.
 
-<YouTube id="64HXEb25D0Q" />
+<YouTube id="64HXEb25D0Q" title="Position tracking"/>
 
 ## Set up position tracking in QGIS project
 
@@ -14,7 +18,7 @@ Tracking needs to be enabled in QGIS when [preparing your <MainPlatformName /> p
    ![QGIS Project Properties](../../gis/qgis-project-properties.jpg "QGIS Project Properties")
 
 3. In the <MainPlatformName /> tab, check the **Enable tracking** option.
-   ![Enable tracking in QGIS Mergin Maps project](../../gis/project-tracking.jpg "Enable tracking in QGIS Mergin Maps project")
+   ![Enable tracking in QGIS Mergin Maps project](../../gis/features/project-tracking.jpg "Enable tracking in QGIS Mergin Maps project")
 
    You can also choose how often the position should be recorded. 
    
@@ -22,7 +26,7 @@ Tracking needs to be enabled in QGIS when [preparing your <MainPlatformName /> p
 
 4. Don't forget to save and synchronise your project!
 
-Enabled tracking means that a new line layer for tracking will be created in your <MainPlatformName /> project called `tracking_layer.gpkg`. This layer is created with a set of fields with set up [default values](../../layer/form-configuration/#default-values):
+Enabled tracking means that a new line layer for tracking will be created in your <MainPlatformName /> project called `tracking_layer.gpkg`. This layer is created with a set of fields with set up [default values](../../layer/default-values/):
 
 
 | Field name               | Data Type      |  Default variable      | Description                          |
@@ -30,9 +34,9 @@ Enabled tracking means that a new line layer for tracking will be created in you
 | `tracking_start_time`    | DateTime       | `@tracking_start_time` | Date and time when tracking started  |
 | `tracking_end_time`      | DateTime       | `@tracking_end_time`   | Date and time when tracking ended    |
 | `total_distance`         | Real           | `$length`              | Tracked distance |
-| `tracked_by`             | String         | `@mergin_username`     | Name of the current <MainPlatformNameLink /> user |
+| `tracked_by`             | String         | `@mm_username`     | Name of the current <MainPlatformNameLink /> user |
 
-You can add new fields as needed, however, they should be set up with automatically generated [default values](../../layer/form-configuration/#default-values) as <MobileAppName /> will not open the form for manual inputs. You may use some of the QGIS functions, [extra position variables](../../layer/position_variables/) or [extra QGIS variables](../../layer/plugin-variables/).
+You can add new fields as needed, however, they should be set up with automatically generated [default values](../../layer/default-values/) as <MobileAppName /> will not open the form for manual inputs. You may use some of the QGIS functions, [position variables](../../layer/variables/#position-variables) or [project and user variables ](../../layer/variables/#project-and-user-variables).
 
 ## Using position tracking in Mergin Maps mobile app
 

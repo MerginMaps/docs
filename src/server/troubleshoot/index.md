@@ -1,13 +1,23 @@
+---
+description: Here are some tips to help you debug and resolve issues in your Mergin Maps CE or Mergin Maps EE deployment.
+---
+
 # Troubleshoot Custom Servers
 
-This article will help you debug and resolve issues in your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink /> deployment. If you use the main Cloud <DashboardLink desc="Mergin Maps Server"/>, it is always up-to-date and managed by <MainPlatformName /> team, so report your problems to us as [described here](../../misc/troubleshoot/index.md). Read more about server platforms in [overview article](../index.md). 
+This article will help you debug and resolve issues in your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink /> deployment. If you use the main <ServerCloudNameLink />, it is always up-to-date and managed by <MainPlatformName /> team, so report your problems to us as [described here](../../misc/troubleshoot/). Read more about server platforms in [overview article](../). 
 
-To install your own server, follow our [installation guide](../install/index.md). Documentation of environment variables and other configuration options can be found in [Configure environment](../administer/environment.md).
+To install your own server, follow our [installation guide](../install/). Documentation of environment variables and other configuration options can be found in [Configure environment](../environment/).
 
 [[toc]]
 
-:::tip
-Haven't found a solution to your issue? Look at your other [troubleshooting options](../../misc/troubleshoot/index.md).
+:::tip <MainPlatformName /> support and troubleshooting
+Haven't found a solution to your issue? Look at your other [troubleshooting options](../../misc/troubleshoot/).
+:::
+
+::: tip Diagnostic logs on custom servers
+[Diagnostic logs](../../misc/troubleshoot/#diagnostic-logs) are by default saved to the `diagnostic_logs` folder on your server. 
+
+They contain detailed information about application run, so they may help you resolve issues you can encounter when using the [<MobileAppNameShort /> and <QGISPluginNameShort /> with your custom server](../plugin-mobile-app/).
 :::
 
 ## Server is not properly configured
@@ -21,7 +31,7 @@ Did you get an error that the server is not properly configured?
 
 ## Emails are not sent
 
-If you are not receiving emails, check that the following [environment variables](../administer/environment/) are set correctly:
+If you are not receiving emails, check that the following [environment variables](../environment/) are set correctly:
 
 * `MAIL_DEFAULT_SENDER` needs to be a valid email address
 * `MAIL_SERVER` should be a valid URL to SMTP server
@@ -80,3 +90,38 @@ For <EnterprisePlatformNameLink /> a complementary step needs to be made for the
   sudo find $MERGIN_DIR -type d -exec sudo chmod g+s {} \;
   sudo chown -R 901:999 $MERGIN_DIR
 ```
+
+## Celery settings
+
+Celery plays an important role on <MainPlatformName /> hence the need to quickly diagnose its functionality.
+
+* Make sure `BROKER_URL` is correct!
+* Make sure `celery-beat` and `celery-worker` containers are up and running
+
+If you perform a `docker compose  logs -tf celery-worker` you should see on logs output a line like this:
+
+```shell
+  celery-worker  | 2025-03-04T10:40:16.718182375Z [2025-03-04 10:40:16,718: INFO/MainProcess] Connected to redis://merginmaps-redis:6379/0
+```
+
+This means `celery-worker` is up and communicating with `redis`
+
+* Make sure `redis` is up and receiving `celery-worker` tasks
+
+If you perform a `docker compose exec redis redis-cli monitor` you should see the output information regarding `tasks` and `heartbeat` of the `celery-worker`node.
+
+```shell
+  1741085464.139904 [0 172.18.0.8:38054] "BRPOP" "celery" "celery\x06\x163" "celery\x06\x166" "celery\x06\x169" "1"
+  1741085464.578928 [0 172.18.0.8:38124] "PUBLISH" "/0.celeryev/worker.heartbeat" "{\"body\": \"eyJob3N0bmFtZSI6ICJjZWxlcnlAMmE2NTRiMzNiMzBjIiwgInV0Y29mZnNldCI6IDAsICJwaWQiOiA3LCAiY2xvY2siOiA2NDYsICJmcmVxIjogMi4wLCAiYWN0aXZlIjogMCwgInByb2Nlc3NlZCI6IDAsICJsb2FkYXZnIjogWzAuNzYsIDAuNzEsIDAuNzddLCAic3dfaWRlbnQiOiAicHktY2VsZXJ5IiwgInN3X3ZlciI6ICI1LjQuMCIsICJzd19zeXMiOiAiTGludXgiLCAidGltZXN0YW1wIjogMTc0MTA4NTQ2NC41NzgxMTUyLCAidHlwZSI6ICJ3b3JrZXItaGVhcnRiZWF0In0=\", \"content-encoding\": \"utf-8\", \"content-type\": \"application/json\", \"headers\": {\"hostname\": \"celery@2a654b33b30c\"}, \"properties\": {\"delivery_mode\": 1, \"delivery_info\": {\"exchange\": \"celeryev\", \"routing_key\": \"worker.heartbeat\"}, \"priority\": 0, \"body_encoding\": \"base64\", \"delivery_tag\": \"78d09f4f-5d84-498b-8b91-8823106df572\"}}"
+  1741085465.148149 [0 172.18.0.8:38054] "BRPOP" "celery" "celery\x06\x163" "celery\x06\x166" "celery\x06\x169" "1"
+  1741085466.158419 [0 172.18.0.8:38054] "BRPOP" "celery" "celery\x06\x163" "celery\x06\x166" "celery\x06\x169" "1"
+```
+
+## Can't see background map on webmaps
+
+If the background map is not showing on your self-hosted Enterprise server webmaps, check the following:
+
+ - Your [environment variables](../environment/index.md#webmaps) are correctly configured
+ - If you're using the default background map URL, make sure you’ve [contacted our support team](mailto:support@merginmaps.com?subject=Enable%20default%20background%20maps%20on%20Enterprise%20server&body=Dear%20support%2C%0A%0AI%27d%20like%20to%20request%20enabling%20background%20maps%20for%20our%20Enterprise%20edition%20server.%20%0AThe%20server%20is%20hosted%20at%3A%20%3Curl%3E) to enable it
+   - If your server URL has changed recently, you’ll need to re-request access from support.
+

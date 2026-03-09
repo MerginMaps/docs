@@ -1,0 +1,185 @@
+---
+outline: [2, 3]
+description: Mergin Maps project is prepared in QGIS. Set up survey layers, symbology, forms, snapping, tracking, background maps, and various project settings.
+---
+
+# QGIS Project Preparation
+[[toc]]
+
+Project preparation is done in QGIS. For more information about loading layers, styling the data and creating map themes, visit <QGISHelp ver="3.22" link="user_manual/index.html" text="QGIS documentation page" />. 
+
+In addition, <MobileAppName /> uses some of the features within the project to help visualise, capture and browse the data. Here is an overview of the project preparations steps. 
+
+:::tip
+Our tutorials can guide you through QGIS project preparation step by step.
+
+In [Creating a Project in QGIS](../../tutorials/creating-a-project-in-qgis/) you will learn how to create a project, add new layers and configure a basic form.
+
+[Further Project Customisation](../../tutorials/further-project-customisation/) will show you how to style layers, add labels, customise the preview panel, define map themes and set up the project extent.
+:::
+
+## Survey layers
+Vector layers can be used as survey layers in your <MainPlatformName /> project. You can apply styles and set up the forms to make your field survey easier. 
+The same applies for non-spatial layers that can be used on their own to add new data or linked to a spatial layer, e.g. when linking multiple [photos](../../layer/photos/#how-to-attach-multiple-photos-to-one-feature) or [records](../../layer/one-to-n-relations/). They can be also used in [value relation](../../layer/value-select/#value-relation) widgets.
+
+Making changes in the data schema of layers can lead to issues in the synchronisation process. Be careful to [**deploy the revised project properly**](../../manage/deploy-new-project/). Design the data schema carefully when creating a layer to avoid the need to change it later.
+
+Here are some practical tips for creating and maintaining layers in your project:
+- **Always use GeoPackage for layers**. If you use other formats, such as ESRI shapefile, it is not possible to detect changes from other users and they may be overwritten. Overwritten files are stored in a conflict file. This applies to both spatial and non-spatial layers.
+- **Add some extra back-up field attributes** when creating a survey layer with different types (e.g. a couple of texts, int, real, date/time) and hide them in the form design. These can serve as a backup: if you need extra fields later in the survey, just alias these extra fields and add them to form. 
+- If you do not need a field, **remove it from the form**. You don't need to delete it from the table.
+- **Instead of renaming a field, change its alias**.
+- **Add new layers to your project as separate GeoPackages**. Do not add a new table to your existing GeoPackage that contains a survey layer. Just to be safe, it is better to have one GeoPackage for each of your survey layers.
+- use **GeoTIFF** format for your raster files or store them in a separate GeoPackage database
+
+### Layer symbology
+The same symbology as defined in the QGIS project will be used in <MobileAppName />. However, <MobileAppName /> does not include all the SVG markers that are available within QGIS. Therefore, if you are using SVG markers for your layer styling, ensure those are copied to the project folder.
+
+### Forms
+During the field survey, it is often necessary to fill out some attributes in the form to record the properties of surveyed features. Forms can make the survey easier, consistent and more effective. 
+
+Detailed description of form widgets and form configuration can be found in the [Configure Form](../../layer/overview/) section.
+
+### Settings for Mergin Maps mobile app preview panel
+What appears in the <MobileAppName /> preview panel can be defined in the **Display** tab in **Layer Properties**:
+- **Display Name**: a field name or an expression.
+- **HTML Map Tip**: the content of the preview panel. While QGIS always interprets the content of map tip as being HTML, <MobileAppName /> extends the syntax to allow two more modes: field values and images. If the map tip is not specified, <MobileAppName /> will try to use the first three fields and show their attribute values.
+
+![QGIS layer properties display settings](./qgis_properties_display.jpg "QGIS layer properties display settings")
+
+#### HTML
+Sample map tip content that will show render as HTML page:
+
+```
+<p><strong>Notes:</strong>[% "notes" %]</p>
+```
+
+If the map tip does not contain any special marker, it is assumed that the map tip is HTML content. Only a limited subset of HTML is supported - see [Qt documentation](https://doc.qt.io/qt-5/richtext-html-subset.html)
+
+#### Field values
+Sample map tip content that will show "description" and "time" field values:
+
+```
+# fields
+description
+time
+```
+
+If the map tip content has `# fields` marker on the first line, the following lines will be understood as field names that should be listed in the preview. At most three fields will be shown. Expressions are not allowed.
+
+#### Image
+Sample map tip content that will cause an image to be show specified by file path in field "image_1" (containing path relative to the project folder):
+
+```
+# image
+file:///[%@project_folder%]/[% "image_1" %]
+```
+
+If the map tip has `# image` marker on the first line, the following line is understood as the URL for the image. It can be a regular file on the file system, but it could be even a remote image from the network. Expressions embedded in the image URL will be evaluated (enclosed in `[% 1+1 %]`).
+
+![Preview panel in the mobile app based on Display settings in QGIS](./mobile-app-preview-panel.jpg "Preview panel in the mobile app based on Display settings in QGIS")
+
+## Background layers
+Various online and offline maps can be used as background layers for navigation during the field survey. You can find more information in [Background Maps](../settingup_background_map/).
+
+
+## Project settings
+- Ensure the paths are set to *Relative* in the **General** tab in Project Properties. All paths to the project data in <MobileAppName /> are relative to the project location.
+![QGIS set relative paths](./qgis_prj_relative_paths.jpg "QGIS set relative paths")
+- Define the <QGISHelp ver="3.22" link="user_manual/introduction/qgis_configuration.html?highlight=properties#data-sources-properties" text="layers capabilities" /> in the **Data Sources** in Project Properties.
+   - [Identifiable](../search_data/#setting-identifiable-layers-in-qgis-project) layers can be queried in <MobileAppName />. If you want to be able to search for attribute values in a layer, it needs to be identifiable and searchable.
+   - **read-only** layers cannot be modified. If a vector layer is not intended to be used as a survey layer, set it as read-only.
+   - non-spatial layers need to be set as **searchable** to enable browsing, searching, or editing.
+
+![QGIS Layer Capabilities](./qgis_project_properties.jpg "QGIS Layer Capabilities")
+
+### Project extent
+In <MobileAppName />, there is an option to [zoom to the project extent](../../field/mobile-app-ui/#more-options-zoom-to-project-map-themes-position-tracking-measure-local-changes-settings). 
+
+If the project extent is not set, <MobileAppName /> zooms to all visible layers. This is not particularly convenient when you have a layer with a large/global extent (e.g. Open Street Map). Instead, you may want to set the project extent to the area of your interest.
+
+![Zoom to project option in Mergin Maps mobile app](./mobile-app-zoom-to-project.jpg "Zoom to project option in Mergin Maps mobile app")
+
+To set the project extent:
+1. Navigate to **Project** > **Properties**. 
+   ![QGIS Project Properties](../qgis-project-properties.jpg "QGIS Project Properties")
+
+2. Select **View Settings** and check the **Set Project Full Extent** option. 
+
+   Here, either enter the coordinate extent of your project bounding box or use the map canvas extent. The extent can be also calculated from a layer in your project.
+
+   ![QGIS set project extent](./qgis-project-extent.jpg "QGIS set project extent")
+
+3. Click **Apply** to save the changes
+
+4. Save and synchronise the project to <MainPlatformNameLink />. Now you can use the **Zoom to project** option in the <MobileAppNameShort /> to zoom to the extent you have specified in QGIS.
+
+
+### Photo quality
+
+The quality of photographs and pictures that are saved in the <MainPlatformName /> project can be set up in the **<MainPlatformName />** tab in **Project properties**. When pictures are added using <MobileAppName /> (uploaded or taken with the camera), they will be resized accordingly.
+
+By default, the quality is set to *Original* - the original pictures are stored. If you want to resize the pictures, you can choose from *High*, *Medium*, or *Low* quality. The [EXIF metadata](../../layer/exif/) of the original files are kept.
+
+Don't forget to save and sync your project!
+
+![Mergin Maps set photo quality](./project_resize_pics.jpg "Mergin Maps set photo quality")
+
+### Photo names
+
+Names of the photos that are captured in the field using <MobileAppName /> can be customised. The name format can be set in QGIS with <QGISPluginName />.  
+
+::: tip
+[How to Set Photo Names Format](../photo-names/) will guide you through the setup and provide examples of expressions that can be used to name your photos.
+:::
+
+![Mergin Maps QGIS Plugin photo name setup with custom folder](./plugin-photo-name-settings.jpg "Mergin Maps QGIS Plugin photo name setup with custom folder")
+
+### Snapping
+
+If you want to use snapping in <MobileAppName /> during the field survey, you need to set it up in the **<MainPlatformName />** tab in **Project properties**.
+
+![QGIS set snapping in Mergin Maps](./project_snapping.jpg "QGIS set snapping in Mergin Maps")
+
+The snapping options are:
+- *No snapping* - snapping is not enabled (default)
+- *Basic snapping* - features are snapped to the vertices and segments of vector features in the project
+- *Follow QGIS snapping* - uses the snapping preferences defined in the <MainPlatformName /> project in QGIS
+
+:::tip
+[How to Set Up Snapping for <MobileAppName />](../snapping/) contains detailed steps that may help you with the snapping setup.
+:::
+
+
+### Tracking
+
+Tracking your position when doing the field survey with <MobileAppName /> can be enabled in the **<MainPlatformName />** tab in **Project properties**.
+
+![Enable tracking in QGIS Mergin Maps project](./project-tracking.jpg "Enable tracking in QGIS Mergin Maps project")
+
+You can read more about this functionality in [How to Use Tracking in Mergin Maps mobile app](../../field/tracking/).
+
+### Map sketching
+
+Map sketching for the <MobileAppNameShort /> can be enabled in the **<MainPlatformName />** tab in **Project properties**. Here, you can also set the colours that will be available for sketches.
+
+![Enable map sketching in QGIS Mergin Maps project](./project-map-sketching.jpg "Enable map sketching in QGIS Mergin Maps project")
+
+You can read more about this functionality in [Map Sketching](../../field/map-sketching/).
+
+### Photo sketching
+Photo sketching for the <MobileAppNameShort /> can be enabled in the **<MainPlatformName />** tab in **Project properties**.
+
+![Enable photo sketching in QGIS Mergin Maps project](./project-photo-sketching.jpg "Enable photo sketching in QGIS Mergin Maps project")
+
+You can find out more about this functionality in [Photo Sketching](../../field/photo-sketching/).
+
+### Layer order
+There is an option to define the order in which layers are displayed in the <MobileAppNameShort />: *alphabetical* or *QGIS layer order*. Detailed steps can be found [here](../../field/layers/#layer-order).
+
+![Layer order in QGIS Mergin Maps project](./project-layer-order.jpg "Layer order in QGIS Mergin Maps project")
+
+### Map themes
+[Map Themes](../setup_themes/) make possible to switch between different background maps in <MobileAppName /> (e.g. cartography maps and aerial imagery)
+
+

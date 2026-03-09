@@ -1,3 +1,7 @@
+---
+description: Changes in the project can be synced manually or automatically. With automatic sync, your updates are sent to the cloud without needing to press a button.
+---
+
 # Synchronisation in Mergin Maps Mobile App
 [[toc]]
 
@@ -5,7 +9,7 @@ Changes in your project can be synchronised by using **Synchronise project** opt
 - [manually](#manual-synchronisation) by clicking the **Sync** button
 - [automatically](#automatic-synchronisation) by using the **Automatically sync changes** option
 
-![Synchronisation in Mergin Maps mobile app](./mobile-app-sync-options.jpg "Synchronisation in Mergin Maps mobile app")
+![Synchronisation in Mergin Maps mobile app](./mobile-app-sync-options.webp "Synchronisation in Mergin Maps mobile app")
 
 
 To be able to synchronise a project, you need to:
@@ -23,23 +27,25 @@ Are you missing some data after synchronisation? [How to Recover Missing Data](.
 ## Manual synchronisation
 You can synchronise local changes by tapping the sync button in the map window. The sync button will stop rotating once the synchronisation process is finished and the **Successfully synchronised** message will appear at the top of the window.
 
-![Successful synchronisation message](../mobile-app-ui/mobile-app-sync.jpg "Successful synchronisation message")
+![Successful synchronisation message](../mobile-app-ui/mobile-app-sync.webp "Successful synchronisation message")
 
 If you want to inspect what has changed before synchronising, tap on the **More** button and go to **Local changes**.
 
-![Project status with pending changes](./mobile-app-more-local-changes.jpg "Project status with pending changes")
+![Project status with pending changes](./mobile-app-more-local-changes.webp "Project status with pending changes")
 
 Here, you will see the overview of your local changes.
 
 ![Mergin maps mobile app Local changes](../mobile-app-ui/mobile-app-local-changes.jpg "Mergin maps mobile app Local changes")
 
 ## Automatic synchronisation
-To allow automatic synchronisation in <MobileAppName />, navigate to **Settings** and toggle on **Automatically sync changes**. 
+You can use automatic synchronisation to keep your project up to date automatically, without the need to press a button. Changes in the project will be synchronised periodically during the survey, every time the project is opened and also when the app is reopened from the background.
 
-![Automatically synchronise changes settings in Mergin Maps mobile app](./mobile-app-autosync-settings.jpg "Automatically synchronise changes settings in Mergin Maps mobile app")
+To allow automatic sync in <MobileAppName />, navigate to [**Settings**](../mobile-app-ui/#settings) and toggle on **Automatically sync changes**. 
+
+![Automatically synchronise changes settings in Mergin Maps mobile app](./mobile-app-autosync-settings.webp "Automatically synchronise changes settings in Mergin Maps mobile app")
 
 As changes will be done during the survey, such as adding new features or changing field values, the synchronisation will start automatically. The sync button will indicate that synchronisation is in progress and once it is done, the **Successfully synchronised** message will appear.
 
 If changes can not be synchronised automatically, e.g. when internet connection is lost during the survey, the changes need to be synchronised manually after reconnecting to the internet. 
 
-![Failed to synchronise changes error message](./mobile-app-sync-fail.jpg "Failed to synchronise changes error message")
+![Failed to synchronise changes error message](./mobile-app-sync-fail.webp "Failed to synchronise changes error message")

@@ -1,3 +1,7 @@
+---
+description: In this Mergin Maps tutorial you will learn how to capture field data with their location, photos and notes.
+---
+
 # Capturing Your First Field Data
 
 [[toc]]

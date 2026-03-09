@@ -1,3 +1,7 @@
+---
+description: Selective sync feature adds the option to not download specified files on other devices in the synchronisation process, to reduce data load and sync time.
+---
+
 # Selective Synchronisation
 
 Selective sync feature adds a possibility to not download specified files on other devices in the synchronisation process. These files are only stored on the creator's device and server and can be accessed on <MainPlatformNameLink /> web or QGIS desktop. Other collaborators on different devices will not receive these files during synchronisation.
@@ -25,7 +29,7 @@ Selective sync can be set using <QGISPluginName />.
 3. Optionally, you can fill out **Only apply for folder**, if you want to use selective sync on a subfolder.
    
    :::tip
-   Do you want to set up a folder like this? Go to [How to set up a custom folder for storing photos](../../layer//photos/#how-to-set-up-a-custom-folder-for-storing-photos).
+   Do you want to set up a folder like this? Go to [How to set up a custom folder for storing photos](../../layer/photos/#how-to-set-up-a-custom-folder-for-storing-photos).
    :::
    
 ![Enable selective synchronisation in Mergin Maps QGIS plugin](./selective-sync-plugin.jpg "Enable selective synchronisation in Mergin Maps QGIS plugin")

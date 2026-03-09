@@ -1,3 +1,7 @@
+---
+description: Mergin Maps QGIS plugin makes the powerful QGIS and Mergin Maps combination work! Use it to easily synchronise your data and projects across devices.
+---
+
 # How to Install Mergin Maps QGIS Plugin
 [[toc]]
 
@@ -5,8 +9,11 @@ Before the installation of <QGISPluginName />, please ensure you have already:
 * [Signed up to <MainPlatformName />](../sign-up-to-mergin-maps/)
 * [Installed QGIS](../install-qgis/)
 
+
 ## Plugin installation
+
 1. Open QGIS on your computer
+
 2. Select **Manage and Install Plugins...** in the **Plugins** tab:
    ![QGIS Manage and Install Plugins](./qgis-plugins-manage-and-install.jpg "QGIS Manage and Install Plugins")
 
@@ -44,3 +51,4 @@ Upgrade the plugin periodically to ensure you can use the latest improvements.
    
 2. Find the **<MainPlatformName />** plugin. If there is a new version available, click **Upgrade Plugin**.
    ![Upgrade Mergin Maps QGIS plugin](./plugin-upgrade.jpg "Upgrade Mergin Maps QGIS plugin")
+

@@ -1,3 +1,7 @@
+---
+description: The mobile app can be used without internet connection. See how to set up your offline project and a recommended workflow for offline data collection.
+---
+
 # Offline Use of Mergin Maps Mobile App
 [[toc]]
 
@@ -11,7 +15,7 @@ Here is a typical workflow of offline data collection.
 
 We assume that the field surveyors have already [installed the <MobileAppNameShort />](../../setup/install-mobile-app/) and are signed in, as well as that the project used for field survey follows recommendations described in [How to set up an offline <MainPlatformName /> project](#how-to-set-up-an-offline-mergin-maps-project).
 
-1. Make sure that your <MainPlatformName /> project is [synchronised](../../manage/synchronisation/#how-to-synchronise-changes-in-mergin-maps) to the <MainPlatformNameLink /> cloud
+1. Make sure that your project is [synchronised](../../manage/synchronisation/#how-to-synchronise-changes-in-mergin-maps) to the <ServerCloudNameLink />
 2. While being online, field surveyors [download the project](../../tutorials/mobile) to their mobile device using <MobileAppName />
 3. Now they can go to do the field survey and collect data and photos while being offline
 4. After finishing field survey and being back online in the office, all surveyors upload their changes back to the cloud

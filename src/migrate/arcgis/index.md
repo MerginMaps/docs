@@ -1,3 +1,7 @@
+---
+description: Do you consider switching from ArcGIS to Mergin Maps? See the comparison of both platforms and practical tips for migrating to Mergin Maps.
+---
+
 # Migrate from ArcGIS
 [[toc]]
 
@@ -13,7 +17,7 @@ To get familiar with <MainPlatformNameLink />, we recommend starting with the [*
 QGIS is a powerful tool that comes with great community and resources. We recommend using <QGISHelp ver="latest" link="user_manual/index.html" text="QGIS User Guide" /> and <QGISHelp ver="latest" link="training_manual/index.html" text="QGIS Training Manual" /> to explore its functionality.
 :::
 
-## ArcGIS vs QGIS ecosystems
+## ArcGIS and QGIS ecosystems
 
 In general, ArcGIS is a proprietary software platform while <QGIS link="en/site/forusers/download.html" text="QGIS" /> is based on open-source philosophy. As such, it is usually not easy or straightforward to have a workflow that combines both environments. Nevertheless, there are, e.g., some common [data formats](#data-formats) that can be used in both of them. 
 
@@ -27,9 +31,10 @@ Here is a comparison of the main components of both ecosystems:
 | ArcGIS QuickCapture | <MobileAppName /> | field survey application |
 | ArcGIS Survey123 | <MobileAppName /> | form-based field survey application |
 | ArcGIS Field Maps** | <MobileAppName /> | field survey application |
-| ArcGIS Maps SDK | [Python client](../../dev/integration/#python-client-module) and QGIS API| developer SDK |
+| ArcGIS Maps SDK | [Python client](../../dev/integration/) and QGIS API| developer SDK |
 
 *ArcGIS Pro replaced [ArcMap](https://en.wikipedia.org/wiki/ArcMap)
+
 **ArcGIS Field Maps replaced ArcGIS Collector since the end of [2021](https://www.Esri.com/arcgis-blog/products/collector/field-mobility/arcgis-collector-on-windows-platform-is-retired/)
 
 ## Migrate from ArcGIS to QGIS
@@ -37,7 +42,7 @@ Here is a comparison of the main components of both ecosystems:
 To migrate the project, we recommend to: 
 1. Use the [**SLYR**](#slyr) plugin to transfer the ArcGIS project to QGIS project (including styling, etc.).
 2. Convert your survey (vector) layers (e.g from Shapefile or File Geodatabase) to GeoPackage if not done already by SLYR. 
-3. Optionally, convert the rest of the data sources to formats [supported](../../gis/supported_formats.md) by <MainPlatformName />
+3. Optionally, convert the rest of the data sources to formats [supported](../../gis/supported_formats/) by <MainPlatformName />
 4. Fine-tune the styling and settings of the layers and QGIS project
 
 If you consider one-time conversion to the open-source ecosystem, we recommend converting all data files you use in the project to formats with open standards. Read more about [**data formats**](#data-formats).
@@ -73,11 +78,11 @@ We recommend using QGIS, GDAL algorithms or [SLYR](#slyr) to facilitate the conv
 
 ### Data Formats
 
-**Always use GeoPackage for survey layers** in <MainPlatformName />. If you use other formats it is not possible to detect changes from other users and they may be overwritten. This is one of the [best practice](../../layer/best-practice). The downside is the GeoPackage will have limited support in Esri software, e.g. some GeoPackages just cannot be opened within ArcGIS Pro. Specifically we do not recommended to keep using [Shapefile](http://switchfromshapefile.org) format.
+**Always use GeoPackage for [survey layers](../../gis/features/#survey-layers)** in <MainPlatformName />. If you use other formats it is not possible to detect changes from other users and they may be overwritten . The downside is the GeoPackage will have limited support in Esri software, e.g. some GeoPackages just cannot be opened within ArcGIS Pro. Specifically we do not recommended to keep using [Shapefile](http://switchfromshapefile.org) format.
 
 For rest of the layers, both ArcGIS and QGIS can also handle Shapefile, GeoTIFF, GeoJSON, WMS, WFS, and PostGIS layers. See all [supported formats](../../gis/supported_formats/).
 
-There are multiple options for data conversion. We recommend using [SLYR](#slyr) processing algorithms to convert project data to GeoPackage (GPKG). You can also use QGIS *Convert format* or *Package layers* processing algorithms. Alternatively, export your data to [formats supported by <MainPlatformName />](../../gis/supported_formats.md) in ArcGIS Pro, if you feel more comfortable doing it there. Data conversion can be done also in the console using the `ogr2ogr` command line tool.
+There are multiple options for data conversion. We recommend using [SLYR](#slyr) processing algorithms to convert project data to GeoPackage (GPKG). You can also use QGIS *Convert format* or *Package layers* processing algorithms. Alternatively, export your data to [formats supported by <MainPlatformName />](../../gis/supported_formats/) in ArcGIS Pro, if you feel more comfortable doing it there. Data conversion can be done also in the console using the `ogr2ogr` command line tool.
 
 ## Hybrid setup: using Mergin Maps with ArcGIS
 

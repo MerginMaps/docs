@@ -1,7 +1,7 @@
 
 services:
   mm-docs:
-    image: node:16-alpine
+    image: node:20-alpine
     restart: on-failure
     volumes:
       - .:/docs

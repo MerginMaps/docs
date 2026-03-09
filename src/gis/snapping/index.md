@@ -1,5 +1,8 @@
+---
+description: Set up snapping in your Mergin Maps project to snap the vertices of new features to existing geometries while collecting data with the mobile app.
+---
+
 # How to Set Up Snapping for Mergin Maps Mobile App 
-<SinceBadge type="Plugin" version="2022.5" />
 [[toc]]
 
 Capturing data in the field using <MobileAppName /> can be easier, if you can snap the vertices of new features to existing geometries. Snapping can also help you avoid creating topological errors in your datasets. 
@@ -11,7 +14,7 @@ Capturing data in the field using <MobileAppName /> can be easier, if you can sn
 
 **Prefer video?** Here is a [video tutorial](https://youtu.be/aFG0iDuZZuI?si=3lBMlGV2Oqw7A3gg) on how to use snapping options in <MainPlatformName />:
 
-<YouTube id="aFG0iDuZZuI" />
+<YouTube id="aFG0iDuZZuI" title="Snapping" />
 
 ## Basic snapping
 To set up basic snapping:
@@ -20,7 +23,7 @@ To set up basic snapping:
 ![QGIS project properties](../qgis-project-properties.jpg "QGIS project properties")
 
 3. Navigate to the **<MainPlatformName />** tab and change the snapping settings to **Basic snapping**
-![Mergin Maps snapping options](../project_snapping.jpg "Mergin Maps snapping options")
+![Mergin Maps snapping options](../features/project_snapping.jpg "Mergin Maps snapping options")
 
 4. Apply the changes, save and sync your project. 
    

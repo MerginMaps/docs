@@ -1,8 +1,12 @@
+---
+description: Data schema changes can cause synchronisation issues in Mergin Maps. To avoid them, you need to deploy the revised project properly.
+---
+
 # How to Deploy Revised Projects
 [[toc]]
 
 ::: tip
-It is recommended to design your data schema carefully when creating a new layer. See [the best practice tips](../../layer/best-practice/index.md) to make your work easier in the long run!
+It is recommended to design your data schema carefully when creating a new layer. See [these tips](../../gis/features/#survey-layers) to make your work easier in the long run!
 :::
 
 Sometimes you may need to make changes in your project. Changing **forms** by adding/removing existing fields or changing their aliases should not cause any issues and you can just synchronise your project as usual. 
@@ -30,5 +34,5 @@ If you want to use the same project after modifications of data schema, make sur
 4. **Fresh download of the revised project to all devices**
 
 ::: warning
-If even one of your surveyors does not comply and forgets to get the project with the modified schema, they may not be able to synchronise their work correctly: features in the layer with modified schema may be missing. If this happens to you, see [how to recover missing data](../missing-data/index.md).
+If even one of your surveyors does not comply and forgets to get the project with the modified schema, they may not be able to synchronise their work correctly: features in the layer with modified schema may be missing. If this happens to you, see [how to recover missing data](../missing-data/).
 :::

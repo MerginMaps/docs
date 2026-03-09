@@ -1,3 +1,7 @@
+---
+description: With Mergin Maps mobile app, you can capture and edit points, lines, polygons and non-spatial features in the field using comprehensive editing tools.
+---
+
 # How to Add, Edit, Delete Features
 
 [[toc]]
@@ -8,6 +12,11 @@ Until the project is synchronised to <MainPlatformNameLink />, all changes are l
 
 ::: tip New to <MainPlatformName />?
 If you are new to the <MobileAppNameShort />, it might be useful to get familiar with the [<MobileAppNameShort /> interface](../mobile-app-ui/) or to explore our [tutorials](../../tutorials/capturing-first-data/) that provide step-by-step instructions for common use cases. 
+:::
+
+:::warning Recording settings
+The <MobileAppNameShort /> offers interesting options that can make your field survey easier and effective, such as [reuse last entered value](../reuse-last-values/), [automatic synchronisation](../autosync/#automatic-synchronisation), [auto-lock](../mobile-app-ui/#recording-settings) of your GPS position or [touch feedback](../mobile-app-ui/#recording-settings) to get a sound or vibration confirmation when adding features.
+
 :::
 
 ## Adding features
@@ -26,7 +35,7 @@ In the recording mode, the bottom panel contains tools to capture geometry. Once
 Below, we describe capturing [point features](#capture-points), [lines and areas](#capture-lines-or-areas) as well as [non-spatial](#add-or-edit-non-spatial-features) records (e.g. adding a new entry to a table).
 
 :::tip Attributes form make surveys easier!
-Attributes forms can be set up in QGIS to make collecting data more efficient. For more details, see [Setting Up Widgets](../../layer/form-widgets/),  [Attributes Form Configuration](../../layer/form-configuration/) or [Attributes Form Layout](../../layer/form-layout/).
+Attributes forms can be set up in QGIS to make collecting data more efficient. For more details, see the [Configure Forms](../../layer/overview/) section.
 :::
 
 ### Capture points
@@ -48,7 +57,12 @@ Once the survey of the feature is completed, tap **Record** and fill in the form
 ![Surveying lines in Mergin Maps mobile app](./mobile-capture-line.jpg "Surveying lines in Mergin Maps mobile app")
 
 #### Streaming mode to survey lines or areas
-Lines and areas can be also captured automatically based on your position. Make sure you are in the [**recording**](#adding-features) mode and that your active layer is a line or polygon.
+Lines and areas can be also captured automatically based on your position. 
+
+Here is a video tutorial:
+<YouTube id="069-fXNqyJY" title="Streaming mode" />
+
+Make sure you are in the [**recording**](#adding-features) mode and that your active layer is a line or polygon.
 
 Tap the **streaming** button and then **Start streaming mode**.
 
@@ -63,7 +77,7 @@ To stop the streaming mode, tap the **streaming** button and then **Stop streami
 Once you finish surveying the feature, tap the **Record** button. If you are capturing an area, the shape will be automatically closed by connecting the last and the first vertex.
 
 :::tip Threshold intervals for streaming mode
-It is possible to set the **Threshold interval**, i.e. how often you want to capture a vertex when streaming, in [**Settings**](../mobile-app-ui/#streaming-mode-and-recording-settings) of the <MobileAppNameShort />. The interval can be defined as *time elapsed* in seconds or as *distance travelled* in metres.
+It is possible to set the **Threshold interval**, i.e. how often you want to capture a vertex when streaming, in [**Settings**](../mobile-app-ui/#streaming-mode-settings) of the <MobileAppNameShort />. The interval can be defined as *time elapsed* in seconds or as *distance travelled* in metres.
 :::
 
 ## Editing features
@@ -114,6 +128,23 @@ When finished, tap **Done**.
 In this case, two individual features are created. Both have the same attributes, except for `Feature ID` (one feature keeps the original id, the other gets a new one).
 ![Geometry split successfully into two features](./mobile-split-features-complete.jpg "Geometry split successfully into two features")
 
+## Multi-features editing
+
+Attributes of multiple features from the same layer can be edited at once.
+![Multi-feature editing in Mergin Maps mobile app](./mobile-multi-feature-editing.gif "Multi-feature editing in Mergin Maps mobile app")
+
+1. Tap on a feature on the map and select the **Select more** option.
+
+   Depending on your mobile device, you may need to use a button next to **Edit** to display this option.
+   ![Select more features button in Mergin Maps mobile app](./mobile-select-more.webp "Select more features button in Mergin Maps mobile app" )
+
+2. Select all features that should be edited. 
+
+3. In the attributes form, enter the new values of attributes and **Save**.
+
+   All selected features have been modified at once.
+
+
 ## Snapping features
 
 Snapping can be enabled in your <MainPlatformName /> project in QGIS to make the field survey easier. You can find the snapping options in [How to Set Up Snapping](../../gis/snapping/).
@@ -122,7 +153,7 @@ If snapping is enabled, the crosshairs will turn purple and snap to vertices (le
 ![Snapping Vertices and Segments in Mergin Maps mobile app](../../gis/snapping/mobile-app-basic-snapping.jpg "Snapping Vertices and Segments in Mergin Maps mobile app")
 
 ## Add or edit non-spatial features
-[Non-spatial features](../../layer/non-spatial-data/), such as tables for [value relations](../../layer/form-widgets/#value-relation), can also be added or edited in the <MobileAppNameShort />.
+Non-spatial features, such as tables for [value relations](../../layer/value-select/#value-relation), can also be added or edited in the <MobileAppNameShort />.
 
 1. Tap the **Layers** button and select the layer you want to edit
    ![Mergin Maps mobile app Layers panel](./mobile-non-spatial-layers.jpg "Mergin Maps mobile app Layers panel")
@@ -131,6 +162,13 @@ If snapping is enabled, the crosshairs will turn purple and snap to vertices (le
    ![Editing non-spatial features in Mergin Maps mobile app](./mobile-edit-non-spatial-layers.jpg "Editing non-spatial features in Mergin Maps mobile app")
    
 3. Fill in the attributes and **Save** :heavy_check_mark: the changes
+
+## Avoid polygons overlap
+In QGIS, you can set the option to avoid overlapping for polygons. This setting is stored in the <MainPlatformName /> project and used when editing features both in QGIS and the <MobileAppNameShort />.
+
+See [How to Avoid Polygons Overlap](../../gis/avoid-overlap/) for more details.
+
+![Mergin Maps mobile app avoid polygon overlap](../../gis/avoid-overlap/mobile-avoid-polygon-overlap.jpg "Mergin Maps mobile app avoid polygon overlap")
 
 ## Deleting features
 
@@ -141,4 +179,17 @@ If snapping is enabled, the crosshairs will turn purple and snap to vertices (le
 After confirming that you want to delete the feature, it will be removed from the layer.
 
 ![Delete feature in Mergin Maps mobile app](./mobile-delete-feature.jpg "Delete feature in Mergin Maps mobile app")
+
+### Multi-features deleting
+Multiple features can be deleted at once:
+
+1. Select one of the features you want to delete and use the **Select more** button.
+
+   Depending on your mobile device, you may need to use a button next to **Edit** to display this option.
+
+2. Select all features that should be deleted on the map
+
+3. Use the **Delete** button to delete all selected features at once
+
+![Delete multiple features in Mergin Maps mobile app](./mobile-delete-bulk.webp "Delete multiple features in Mergin Maps mobile app")
 

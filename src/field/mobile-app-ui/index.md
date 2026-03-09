@@ -1,3 +1,9 @@
+---
+description: See how to navigate the mobile app, work with projects, survey and explore features, track position, access GPS info, synchronise changes and much more.
+
+outline: deep
+---
+
 # Mergin Maps Mobile App Interface
 [[toc]]
 
@@ -21,7 +27,7 @@ The account icon in the right upper corner of the screen can be used to [manage 
 ### Home
 In the **Home** tab, you can find the list of projects that are downloaded to your mobile device, including local projects that are yet to be synchronised to <MainPlatformNameLink />.
 
-![Mergin Maps mobile app Home tab](./mobile-app-home.jpg "Mergin Maps mobile app Home tab")
+![Mergin Maps mobile app Home tab](./mobile-app-home.webp "Mergin Maps mobile app Home tab")
 
 - Open a project by tapping on its name
 - Use the **Create project** button to create a new project in the <MobileAppNameShort />. For detailed steps, go to [Create a project in Mergin Maps mobile app](../../manage/create-project/#create-a-project-in-mergin-maps-mobile-app).
@@ -93,25 +99,31 @@ Tapping the **location button** in the right bottom corner of the screen centres
 In the left bottom corner of the screen, there is a **GPS** button that displays the GPS accuracy as reported by your mobile device. The colour of the button denotes the accuracy threshold set in [GPS settings](#gps-settings) in the <MobileAppNameShort />.
 
 Tapping the GPS accuracy button opens the GPS info panel:
-![GPS info panel](./mobile-app-gps-info.jpg "GPS info panel") 
+![GPS info panel](./mobile-app-gps-info.webp "GPS info panel") 
 
-- **Source**: internal GPS of the mobile device or [external](../external_gps/) GPS receiver connected via Bluetooth
+- **Source**
+   - *Internal* or *Internal (fused)* for the GPS of the mobile device
+   - the name of the receiver for [external GPS](../external_gps/) receiver connected via Bluetooth
 - **Longitude, Latitude**: current position
-- **X, Y**: current position in project's coordinate reference system
+- **X, Y**: current position in the project's coordinate reference system
 - **Horizontal** and **Vertical accuracy** of the GPS position
-- **Altitude**: ellipsoidal height if internal GPS is used. [External GPS](../external_gps/) devices usually return orthometric heights (ellipsoid with the geoid separation applied).
+- **Altitude**: orthometric height
+   - for *Internal* or *Internal (fused)* GPS, it is calculated from the ellipsoidal height using the <NoSpellcheck id="EGM96" /> geoid model by adding the geoid height (undulation) 
+   - for *[external GPS](../external_gps/)*, it is the orthometric height as reported by the external GPS
 - **Satellites (in use/view)**: number of satellites
 - **Speed**
 - **Last fix**: time of the last received GPS position
 - **GPS antenna height** that can be set in [GPS settings](#gps-settings)
-
+- **Geoid separation**: geoid height (undulation)
+   - calculated from the <NoSpellcheck id="EGM96" /> geoid model for *Internal* or *Internal (fused)* GPS
+   - as reported by the *[external GPS](../external_gps/)*
 
 ### Sync
 The **Sync** button can be used to synchronise changes during the field survey. 
 
 It also indicates that synchronisation is in progress.
 
-![Mergin Maps mobile app Sync button](./mobile-app-sync.jpg "Mergin Maps mobile app Sync button")
+![Mergin Maps mobile app Sync button](./mobile-app-sync.webp "Mergin Maps mobile app Sync button")
 
 
 ### Add
@@ -147,26 +159,42 @@ The **More** button opens a list of additional options
 - [**Measure**](../measure/): measure length or area on the map
 - **Local changes**: the overview of your local changes to be synchronised
    ![Mergin maps mobile app Local changes](./mobile-app-local-changes.jpg "Mergin maps mobile app Local changes")
-- **Settings**: [GPS settings](#gps-settings), [streaming mode and recording settings](#streaming-mode-and-recording-settings), and general references to information about the <MobileAppNameShort />, changelog, help, privacy policy, terms of service and [diagnostic log](../../misc/troubleshoot/#diagnostic-log-on-mergin-maps-mobile-app)
-   ![Mergin Maps mobile app Settings](./mobile-app-settings.jpg "Mergin Maps mobile app Settings")
-   
-#### GPS settings
+- [**Settings**](#settings): to set up the <MobileAppNameShort />
+
+## Settings
+To open the **Settings**, tap the **More** button. In Settings, you can find [GPS](#gps-settings), [Streaming mode](#streaming-mode-settings) and [Recording settings](#recording-settings) as well as [General](#general) information about the <MobileAppNameShort />.
+
+![Mergin maps mobile app Settings](./mobile-app-open-settings.jpg "Mergin maps mobile app Settings")
+
+### GPS settings
 - **GPS accuracy threshold**: value used to change the colour of GPS accuracy indicator to yellow
-- **Manage GPS receivers**: option to switch between internal GPS and external GPS receiver connected via Bluetooth. See [External GPS](../external_gps/) for more details.
+- **Manage GPS receivers**: option to switch between internal, internal (fused) and external GPS receiver connected via Bluetooth. See [External GPS](../external_gps/) for more details.
 - **GPS antenna height**: option to enter the height of a GPS antenna (e.g. when a surveying pole is used)
 
 ![Mergin Maps mobile app GPS Settings](./mobile-app-gps-settings.jpg "Mergin Maps mobile app GPS settings")
 
-#### Streaming mode and recording settings
+### Streaming mode settings
 [**Streaming mode**](../mobile-features/#streaming-mode-to-survey-lines-or-areas) can be used when surveying lines or polygons to capture vertices based on the GPS location.
 - **Interval threshold type**: the type of interval in streaming mode, can be set to *Time elapsed* or *Distance travelled* .
 - **Threshold interval** the interval of recording vertices
 
-**Recording** setting contains options to:
-- [**Reuse last value option**](../reuse-last-values/) if used, last entered values of selected attributes will be automatically filled in when creating a new feature.
-- **Automatically sync changes** if used, local changes will be synchronised automatically.
+![Mergin Maps mobile app Streaming mode](./mobile-app-settings-streaming.jpg "Mergin Maps mobile app Streaming mode")
 
-![Mergin Maps mobile app Streaming mode and recording settings](./mobile-app-streaming-recording-settings.jpg "Mergin Maps mobile app Streaming mode and recording settings")
+### Recording settings
+**Recording** setting provides these options:
+- [**Reuse last value option**](../reuse-last-values/): if used, last entered values of selected attributes will be automatically filled in when creating a new feature
+- **Automatically sync changes**: if used, local changes will be synchronised automatically
+- **Auto-lock position**: if used, the <MobileAppNameShort /> will centre to your GPS position when you start the recording
+- **Touch Feedback** can be set to sound, vibration or sound and vibration feedback when adding a feature. Note that the *haptic feedback* (vibrations, sounds) needs to be enabled on your mobile device.
+
+![Mergin Maps mobile app recording settings](./mobile-app-settings-recording.webp "Mergin Maps mobile app recording settings")
+
+
+### General
+In **General**, you can find references to information about the <MobileAppNameShort />, changelog, help, privacy policy, terms of service and [diagnostic log](../../misc/troubleshoot/#diagnostic-log-on-mergin-maps-mobile-app).
+
+![Mergin Maps mobile app settings general](./mobile-app-settings-general.jpg "Mergin Maps mobile app settings general")
+
 
 ## Working with a project as a reader
 Users who have read [permission](../../manage/permissions/) to a project do not see some of the editing options that were described in the [Working with a project](#working-with-a-project). Readers can open projects in the <MobileAppNameShort />, [explore](#exploring-features-on-a-map) features on the map, work with [layers](#layers) and use most of the tools in the same manner as users with editing permission.

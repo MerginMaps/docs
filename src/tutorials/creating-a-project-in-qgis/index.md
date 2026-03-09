@@ -1,3 +1,7 @@
+---
+description: In this tutorial, you will learn how to create a Mergin Maps project in QGIS and configure attributes forms for survey layers.
+---
+
 # Creating a Project in QGIS
 [[toc]]
 
@@ -7,13 +11,14 @@ In this tutorial you will create a new project for surveying trees and hedges us
 
 ## Before we start
 Please ensure you have already:
-* [Installed QGIS](../../setup/install-qgis/index.md)
-* [Signed up to <MainPlatformName />](../../setup/sign-up-to-mergin-maps/index.md)
-* [Installed the <QGISPluginName />](../../setup/install-mergin-maps-plugin-for-qgis/index.md)
+* [Installed QGIS](../../setup/install-qgis/)
+* [Signed up to <MainPlatformName />](../../setup/sign-up-to-mergin-maps/)
+* [Installed the <QGISPluginName />](../../setup/install-mergin-maps-plugin-for-qgis/)
 
 
 ## Create a minimal project
 1. Open QGIS
+
 2. Locate the <QGISPluginName /> toolbar in the upper navigation panel in QGIS. Click on the **Create <MainPlatformName /> Project** button
    ![QGIS plugin Create Mergin Maps Project](./qgis-create-mergin-project.jpg "QGIS plugin Create Mergin Maps Project")
 
@@ -26,13 +31,11 @@ Please ensure you have already:
    - The folder where the project should be created. Here, we use `Documents\MerginMaps Projects`
    
    Press **Finish** to create the project.
-   
    ![Create new Mergin Maps project in QGIS](./mergin-plugin-create-new-mergin-project.jpg "Create new Mergin Maps project in QGIS")
 
-5. Your new project should now be created and uploaded to <MainPlatformNameLink /> cloud. 
+5. Your new project should now be created and uploaded to <ServerCloudName />. 
 
    **Close** the dialog window to continue working with this project in QGIS.
-   
    ![Mergin Maps project created and uploaded successfully](./mergin-plugin-basic-project-opened.jpg "Mergin Maps project created and uploaded successfully")
 
 
@@ -40,7 +43,7 @@ Please ensure you have already:
 You may have noticed that the project we have just created with <QGISPluginName /> is very similar to the project created in <MobileAppName /> in the previous [tutorial](../capturing-first-data/). This basic project contains a single point layer called `Survey` and OpenStreetMap as a background map.
 
 ::: tip
-Various background maps can be used in <MobileAppName />, if they are supported by QGIS. You can learn how to add offline and online background maps [here](../../gis/settingup_background_map.md).
+Various background maps can be used in <MobileAppName />, if they are supported by QGIS. You can learn how to add offline and online background maps [here](../../gis/settingup_background_map/).
 :::
 
 We will now add two more survey layers - a point layer for surveying trees and a line layer for hedges.
@@ -53,7 +56,6 @@ We will now add two more survey layers - a point layer for surveying trees and a
      Here: `Documents\MerginMaps Projects\trees-and-hedges\trees.gpkg`
    - **Table name** will be set as `trees` by default   
    - **Geometry type**: ***Point***
-   
    ![New GeoPackage point layer](./qgis-geopackage-filename.jpg "New GeoPackage point layer")
 
 3. Add a **New Field** called `date` with the data type ***Date***
@@ -73,8 +75,7 @@ We will now add two more survey layers - a point layer for surveying trees and a
    - **Fields**:
       - `both_sides_surveyed`, data type ***Boolean***
       - `num_access_gates`, data type ***Whole Number (integer)***
-      - `photo`, data type ***Text Data***
-   
+      - `photo`, data type ***Text Data*** 
    ![Create GeoPackage line layer with defined attributes](./qgis-geopackage-filename2.jpg "Create GeoPackage line layer with defined attributes")
    
 Once you are finished, there should be two new layers on the **Layers** panel: `trees` and `hedges`.
@@ -99,7 +100,6 @@ Now we will set up the drop-down list for the `trees` layer:
    - Enter the **Alias** that defines how the attribute's name is displayed in the form.
    - Change the **Widget Type** to ***Value Map***
    - Enter **Values** and **Descriptions** similar to these (both are set the same in this example):
-   
    ![QGIS Attributes form Value Map](./qgis-tree-value-map.jpg "QGIS Attributes form Value Map")
 
    ::: tip
@@ -130,12 +130,12 @@ The `hedges` layer has an attribute called `photo`. The attribute itself is stor
 5. Click **OK** to close the **Layer properties**.
 
 :::tip
-There is much more that can be done with the Attributes Form in QGIS when preparing a <MainPlatformNameLink /> project! You can learn more about forms in [Setting Up Form Widgets](../../layer/form-widgets/), [Advanced Form Configuration](../../layer/form-configuration/) or other pages in the *Configure Survey Layer* part of this documentation.
+There is much more that can be done with the Attributes Form in QGIS when preparing a <MainPlatformNameLink /> project! You can learn more in the [Configure Forms](../../layer/overview/) section of this documentation.
 :::
 
 
 ## Saving changes to Mergin Maps
-In the [next tutorial](../mobile/) we will see how this project looks on <MobileAppName />. We'll now make some last changes, save them and sync the project back to the <MainPlatformNameLink /> cloud.
+In the [next tutorial](../mobile/) we will see how this project looks on <MobileAppName />. We'll now make some last changes, save them and sync the project back to the <ServerCloudNameLink />.
 
 1. Right click on the layer called `Survey` and find the **Rename Layer** option. Rename the layer to `Survey notes` (the name `Survey` is too general in this context).
 2. **Save** the QGIS project
@@ -149,7 +149,7 @@ In the [next tutorial](../mobile/) we will see how this project looks on <Mobile
    Click **Sync** to synchronise the project
    ![Mergin Maps plugin synchronisation Project status](./qgis-sync-mergin-project-status.jpg "Mergin Maps plugin synchronisation Project status")
  
-In a few moments your changes are safely stored in the <MainPlatformName />  cloud
+In a few moments your changes are safely stored in the <ServerCloudName />
 ![Successful synchronisation of Mergin Maps project in QGIS](./qgis-project-synced.jpg "Successful synchronisation of Mergin Maps project in QGIS")
 
 Synchronising changes between users and devices is a core principle of <MainPlatformNameLink />. When you sync a project, changes that have been made by other users and devices since you last synced are fetched and any changes you've made are pushed.

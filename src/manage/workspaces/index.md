@@ -1,4 +1,8 @@
-﻿# Workspaces
+﻿---
+description: Workspaces are used to efficiently manage projects, users and subscriptions in Mergin Maps. Every workspace is tied to a subscription.
+---
+
+# Workspaces
 [[toc]]
 
 ## Workspaces in Mergin Maps
@@ -12,7 +16,7 @@ Users can be invited to a workspace as [members or guests](../permissions/). The
 Want to read more about workspaces and why they were introduced to <MainPlatformName />? Visit our blog [Introducing Workspaces: Simplified Collaboration](https://merginmaps.com/blog/introducing-workspaces-simplified-collaboration).
 :::
 
-<YouTube id="SZf93akn0tM" />
+<YouTube id="SZf93akn0tM" title="Getting started with your team" />
 
 :::tip Integrations and workspaces
 Integrations like [PostgreSQL DB Sync](../../dev/dbsync/), [Media Sync](../../dev/media-sync/) and [Work Packages](../../dev/work-packages/) do not share the concept of *active workspace*. They simply work with one specific project from any workspace.
@@ -24,9 +28,11 @@ You may have access to multiple workspaces. For instance, you can have your pers
 ### Switch workspaces in Mergin Maps dashboard
 
 When logged in to the <DashboardShortLink />, you will see the current workspace under the account name in the right corner of the screen (here: `my-team`).
+
 ![Mergin Maps web dashboard current workspace](./dashboard-current-workspace.jpg "Current workspace in Mergin Maps web dashboard")
 
 Click on the account to see the list of all workspaces that are available to you. The active workspace is highlighted. Switch to another workspace by simply clicking on its name in the list.
+
 ![Mergin Maps web workspaces list](./dashboard-switch-workspace.jpg "Mergin Maps web workspaces list")
 
 ### Switch workspaces in Mergin Maps mobile app
@@ -36,7 +42,6 @@ Click on the account to see the list of all workspaces that are available to you
 2. Here you will see your current workspace and your [role](../permissions/) in this workspace. 
    
    Tap on it to switch to another workspace.
-   
    ![Switch workspace button in Mergin Maps mobile app](./mobile-app-current-workspace.jpg "Switch workspace button in Mergin Maps mobile app")
 
 3. Now you will see a list of workspaces that are available to you. 
@@ -70,7 +75,6 @@ Every workspace has its own [subscription](../subscriptions/). With your first w
 4. Fill in the name and description of your new workspace.
 
    Note that **the name of a workspace cannot be changed later**.
-   
    ![Create workspace in Mergin Maps web dashboard details](./dashboard-new-workspace.jpg "Create workspace in Mergin Maps web dashboard details")
    
 5. Now you have a new workspace! You can [create projects](../create-project/) in the workspace and [invite other users](../project-advanced/#add-users-to-a-workspace) to contribute.
@@ -84,7 +88,6 @@ Every workspace has its own [subscription](../subscriptions/). With your first w
 2. Fill in the name of your new workspace and tap **Create workspace**.
 
    Keep in mind that **the name of a workspace cannot be changed later**.
-   
    ![Naming a new workspace in Mergin Maps mobile app](./mobile-app-create-workspace.jpg "Naming a new workspace in Mergin Maps mobile app")
 
 5. Now you have a new workspace! 
@@ -95,6 +98,8 @@ Every workspace has its own [subscription](../subscriptions/). With your first w
    
 ## How to delete a workspace
 Closing a workspace means that all projects in this workspace will be removed as well. Therefore we recommend going through the projects in the workspace and, if needed, downloading them to your computer or [transferring them to another workspace](../project-advanced/#transfer-a-project) so that you don't lose your work.
+
+You have to be the workspace [owner](../permissions/#workspace-member-roles-overview) to be able to delete the workspace.
 
 1. [Switch](#how-to-switch-between-workspaces) to the workspace you want to remove
 

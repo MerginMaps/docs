@@ -1,13 +1,45 @@
+---
+description: This installation guide will help you install your Mergin Maps CE or Mergin Maps EE to the latest server version.
+---
+
 # Install
 
-Installation guide will help you to install your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink /> to the latest server version. The main Cloud <DashboardLink desc="Mergin Maps Server"/> is always up-to-date and managed by <MainPlatformName /> team. Read more about server platforms in [overview article](../index.md)
+Installation guide will help you to install your <CommunityPlatformNameLink /> or <EnterprisePlatformNameLink /> to the latest server version. <ServerCloudNameLink /> is always up-to-date and managed by <MainPlatformName /> team. Read more about server platforms in [overview article](../).
 
 [[toc]]
 
 
 ## Installation System Requirements
 
-We recommend using a dedicated host machine with 8 GB of memory. The requirements for CPU and persistent storage depend largely on the frequency of project updates and the anticipated size of the data you expect to store respectively.
+For a typical deployment, we recommend using a dedicated host machine with **8 GB** of memory and **2 vCPUS** (similar to AWS `t3a.large` instances).
+The requirements for CPU and persistent storage depend largely on the frequency of project updates and the anticipated size of the data you expect to store respectively.
+A very conservative rule of thumb, regarding needed disk size would be `mergin maps project size * number of versions`.
+If you have a team size over 25 people and synchronise often your <MainPlatformName /> projects, consider a host with **4 vCPUS**. 
+
+On OS level, we recommend to use a Linux distribution that has full compatibility with Docker, since <MainPlatformName /> is deployed by default with `docker compose`.
+
+A low-latency, high-bandwidth environment is preferred due to the volume of data needed to perform synchronisation with <MainPlatformName />. This is especially important on large projects with hundreds of megabytes in between syncs.
+
+
+### Infrastructure overview
+
+* **PostgreSQL** - Database that holds application data. Can be external and therefore excluded from install orchestration with proper [configuration](https://merginmaps.com/docs/server/environment/#database-settings).
+* **Redis** - The caching and asynchronous task engine running on top of <MainPlatformName />
+* **Celery-Beat** - The Celery task orchestrator used by <MainPlatformName />
+* **Celery-Worker** - The Celery container responsible for workers that perform tasks on <MainPlatformName />
+* **Server** - The server backend instance of <MainPlatformName />
+* **Web** - The frontend instance for <MainPlatformName />
+* **Proxy** - NGINX instance serving <MainPlatformName /> in reverse proxy configuration.
+
+### Firewall ports
+
+By default, only HTTP port `8080` need to be open on firewall side. It is also recommended to open `443` port if SSL is enabled.
+All other infrastructure instances will work within the same docker network group, so no additional ports need to be managed on the firewall side. 
+
+::: details Install Docker
+Please, use the latest version of Docker and Docker Compose tools.
+Follow the [official](https://docs.docker.com/engine/install/) guidelines in accordance with your OS system.
+:::
 
 ## Mergin Maps CE Docker Images
 <ServerType type="CE" />
@@ -22,26 +54,73 @@ Follow the deployment guidelines to install and configure it.
 
 The <EnterprisePlatformName /> enhanced features are only available on specific Docker images stored on Lutra Consulting's private AWS repository. To get access, you need your contract and licence from our <MerginMapsEmail id="sales" desc="sales team" />. 
 
-Afterwards, you can follow [this guide](./ee/index.md) to retrieve your <EnterprisePlatformName /> images.
+Afterwards, you can follow [this guide](./ee/) to retrieve your <EnterprisePlatformName /> images.
 
-Once you have the images on your side, follow the deployment guidelines and have <EnterprisePlatformName /> running on a target instance in your infrastructure. 
+::: warning Enable <MainPlatformName /> Telemetry
+Make sure you follow deployment guidelines to <b>ensure any firewalls in your infrastructure are configured to allow the [`call-home`](../administer/#telemetry-service) functionality to send usage data</b>.
+:::
 
 ## Deployment
 
 Follow these steps to run a local <MainPlatformName /> instance.
 
+Clone the <MainPlatformName /> github repository locally or download <GitHubRepo id="MerginMaps/server/blob/master/deployment/" desc="deployment folder" />.
+```bash
+$ git clone git@github.com:MerginMaps/server.git
+```
+
+Locate yourself on the proper <MainPlatformName /> edition.
+```shell
+# For community edition
+cd deployment/community
+
+# For enterprise edition
+cd deployment/enterprise
+```
+
+### Setup environment
+​
+This step configures deployment settings by modifying environment variables.
+
+Start by creating the `.prod.env` file (if it does not exist yet), by running:
+
+```shell
+cp .env.template .prod.env
+```
+
+Then, edit the `.prod.env` file and provide values for all variables marked as required in the list of [environment variables](../environment/).
+
 ### Start docker containers
 
-Provided that `docker` and `docker-compose` are installed on your host, running <MainPlatformName /> stack should be as simple as running `docker-compose`. However, before doing that you would need to [configure](../administer/environment.md) your server setup via environment variables in <GitHubRepo desc=".prod.env" id="MerginMaps/server/blob/master/.prod.env" /> file. 
+Before proceeding, ensure you have both `docker` and `docker compose` installed on your system.
 
-Once configured, you can run:
+Once your environment is configured, you can start the containers by running the following commands for the Community and Enterprise editions.
+
+Community edition stack:
+
 ```shell
-$ mkdir -p projects # or wherever you set it to be
-$ mkdir -p mergin_db # or wherever you set it to be
-$ sudo chown -R  901:999 ./projects/
-$ sudo chmod g+s ./projects/
-$ docker-compose -f docker-compose.yml up
+$ mkdir -p mergin_db # database data directory
+$ sh ../common/set_permissions.sh projects # application internal data directory
+$ sh ../common/set_permissions.sh diagnostic_logs # directory to persist diagnostic logs (optional)
+$ docker compose -f docker-compose.yml up -d
 ```
+
+Enterprise edition stack:
+
+```shell
+$ mkdir -p mergin-db-enterprise # database data directory
+$ sh ../common/set_permissions.sh data # application internal data directory
+$ sh ../common/set_permissions.sh map_data # maps data directory (neccessary for maps)
+$ sh ../common/set_permissions.sh diagnostic_logs # directory to persist diagnostic logs (optional)
+$ docker compose -f docker-compose.yml up -d
+$ docker compose -f docker-compose.maps.yml up -d # Run maps stack separately
+```
+
+::: tip Diagnostic logs
+Users of the Mergin Maps Mobile App and Mergin Maps QGIS plugin can send diagnostic logs from their devices. In custom deployments, logs are stored in the `diagnostic_logs` folder. If you do not want to persist these logs in a volume, remove the mount point for this folder in the <GitHubRepo id="/MerginMaps/server/blob/master/deployment/enterprise/docker-compose.yml" /> file.
+
+If you want to send diagnostic logs from devices to Mergin Maps instead of storing them in a folder, set `DIAGNOSTIC_LOGS_URL` to `https://api.merginmaps.com/logs`.
+:::
 ​​
 ### Initialise database
 If server is started for the first time, database needs to be initialised and super-user created. Use the `init` command which will perform it automatically (the command generates password for the admin account):
@@ -58,11 +137,7 @@ $ docker exec merginmaps-server flask user create <username> <password> --is-adm
 ```
 :::
 
-### Setup environment
-​
-Now tweak deployment settings by modifying environment variables. You have to fix all variables marked as required in this list of [environment variables](../administer/environment.md). Some of the most common issues with custom deployments are listed in the [troubleshoot](../troubleshoot/index.md) section.
-
-### Test deployment
+## Test deployment
 
 In order to test your deployment there are some utility commands to perform basic checks.
 
@@ -89,16 +164,18 @@ Output will be similar to the next snippet. The utility will try to provide some
 To test email configuration:
 
 ```shell
-$ docker exec merginmaps-server flask send-check-email --email me@myorg.com
+$ docker exec merginmaps-server flask server send-check-email --email me@myorg.com
 ```
 
 By default, email notifications are disabled, so output will be similar to this:
 
 ```shell
-    # Sending check email to specified email address me@myorg.com.
+# Sending check email to specified email address me@myorg.com.
 
-  Error: Sending emails is disabled. Please set MAIL_SUPPRESS_SEND=False to enable sending emails.
+Error: Sending emails is disabled. Please set MAIL_SUPPRESS_SEND=False to enable sending emails.
 
 ```
 
 To enable them, set variable `MAIL_SUPPRESS_SEND` in accordance to above and fill all `MAIL_*` related variables with your company SMTP server configuration.
+
+Some of the most common issues with custom deployments are listed in the [troubleshoot](../troubleshoot/) section.

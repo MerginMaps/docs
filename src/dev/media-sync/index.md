@@ -1,11 +1,15 @@
+---
+description: Media Sync enables to synchronise media files from Mergin Maps project to other storage back-ends, such as Google Drive, Amazon S3 or MinIO.
+---
+
 # Media Sync
 [[toc]]
 
-**Media Sync** enables to synchronise media files from <MainPlatformNameLink /> project to other storage back-ends, such as Amazon S3 or <NoSpellcheck id="MinIO" />. 
+**Media Sync** enables to synchronise media files from <MainPlatformNameLink /> project to other storage back-ends, such as Google Drive, Amazon S3 or <NoSpellcheck id="MinIO" />. 
 
 Media Sync has two sync modes: in copy mode, media files are only copied the external drive, while in the move mode, the files are copied and subsequently removed from <MainPlatformName /> project.
 
-<YouTube id="jAElsCZRBdc" />
+<YouTube id="jAElsCZRBdc" title="Move photos to MinIO/S3 with Mergin Maps"/>
 
 **Interested in using Media Sync?** Go to <GitHubRepo id="MerginMaps/media-sync" /> repository for the source code and more details. Here, you will also find the Quick start guide that will show you how to set up one way synchronisation between a new <MainPlatformName /> project and your existing bucket (<NoSpellcheck id="MinIO" /> or S3).
 

@@ -1,3 +1,7 @@
+---
+description: Geodiff is a library for handling differences of spatial data from multiple sources. It is used to synchronise changes in Mergin Maps.
+---
+
 # Geodiff Library
 [[toc]]
 
