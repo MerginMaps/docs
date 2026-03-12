@@ -119,7 +119,7 @@ In our blog <MainDomainNameLink id="blog/qfield-vs-mergin-maps" desc="QField vs.
 
 Here is a non-definitive list of other known differences:
 
-* QField mobile app can work without QFieldCloud (server) via USB transfer of the projects. This is not available in <MainPlatformName />, but you can [manually download](../../manage/missing-data/) your data or [upload large files](../../gis/settingup_background_map/#how-to-work-with-very-large-files-android) to your mobile device if needed.
+* QField mobile app can work without QFieldCloud (server) via USB transfer of the projects. This is not available in <MainPlatformName />, but you can [manually download](../../manage/missing-data/) your data or [upload large files](../../gis/settingup_background_map/#how-to-work-with-very-large-files) to your mobile device if needed.
 * *Organisation teams* in QFieldCloud do not have any equivalent concept in <MainPlatformName />. On <MainPlatformName /> can have different workspaces for different teams.
 * There is no concept of *secrets* in <MainPlatformName />. For `pg_service` configuration, you need to transfer it manually as described [here](../../gis/supported_formats/).
 * There is no concept of *managing ongoing jobs* or *triggers* in <MainPlatformName /> accessible for users. Users see the results when jobs are finished (e.g. map rendering).
