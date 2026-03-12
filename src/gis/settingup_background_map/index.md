@@ -61,7 +61,7 @@ Make sure that you:
 - zoomed to your area of interest
 
 To generate an offline copy of the aerial imagery from your map view extent:
-1. In QGIS, select **Processing** > **Toolbox** from the main menu. The **Processing** panel will appear on the right side of QGIS window.
+1. In QGIS, select **Processing** > **Toolbox** from the main menu. The **Processing** panel will appear on the right side of the QGIS window.
 2. In the search section on the top of the **Processing** panel, type *xyz* to display relevant tools.
 3. In **Raster tools**, double-click on **Generate XYZ tiles (MBTiles)**
    ![QGIS generate XYZ tiles MBTiles](./qgis_xyz_gen_mbtiles1.jpg "QGIS generate XYZ tiles MBTiles")
@@ -167,11 +167,11 @@ Before taking your offline tiles to the field, we recommend checking in <MobileA
 
 Raster and vector tiles generated for offline use can be relatively large files, especially when using high resolution data or a large area of interest. It may be impractical to synchronise these large files through <MainPlatformNameLink /> or to have duplicate copies if they are used in multiple projects.
 
-:::tip
+:::tip 
 If you do not need to use your background maps offline, consider creating a WMS or WMTS server for online use.
 :::
 
-QGIS uses relative paths to load the data. If your <MainPlatformName /> project refers to files located in another folder, this project can be loaded just fine on another computer or in <MobileAppName /> - if the folder with the files can be found in its expected location.
+QGIS uses relative paths to load the data. If your <MainPlatformName /> project refers to files located in another folder, this project can be loaded just fine on another computer or in <MobileAppName /> - if the folder with the files can be found in its expected location. Note that multiple projects can refer to the same files.
 
 1. On your computer, create a folder that will contain the large datasets (here: `_rasters`). It should be located in the same directory as your <MainPlatformName /> projects.
    ![File folder storing large data](./bm-folder-large-files.jpg "File folder storing large data")
@@ -183,10 +183,6 @@ QGIS uses relative paths to load the data. If your <MainPlatformName /> project 
    
 4. Use the project in the <MobileAppNameShort /> as usual. 
 
-:::tip
-Files from the folder can be loaded into multiple <MainPlatformName /> projects.
-:::
-
-:::warning
-Files located in the another folder are not synchronised. This saves your storage on <ServerCloudNameLink />. However, if you want to update or modify these files, you have to connect the mobile device to your computer and do it manually.
+:::warning These files are not synchronised
+Files that are not located directly in the <MainPlatformName /> project folder are not synchronised. This saves your storage on <ServerCloudNameLink />. However, if you want to update or modify these files, you have to connect the mobile device to your computer and do it manually.
 :::
