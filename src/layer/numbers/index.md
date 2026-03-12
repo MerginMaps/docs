@@ -22,7 +22,7 @@ Prefer a video? Here is a short tutorial about number widgets:
 <YouTube id="woZX3L33xh0" />
 
 ## Range
-To set up the **editable range widget**:
+To set up the **Editable Range widget**:
 
 1. Right-click on a layer, select **Properties** and go to the **Attributes form** tab.
 2. In the list of **Available Widgets**, select the integer field you want to work with (here: `numbers-range-editable`). 
@@ -50,7 +50,13 @@ To set up the **Slider**:
 2. In the list of **Available Widgets**, select the numeric field you want to work with (here: `numbers-range-slider`).
 3. In the **Widget Type** tab, select the **Range** widget with the **Slider** option.
 
-   Set the **Minimum**, **Maximum**, and **Step** values of the slider as needed.
+   Set the **Minimum**, **Maximum**, and **Step** values of the slider.
+   
+   :::warning Recommended slider setup
+   Using a slider is most effective when users can easily choose a value. If the range between the minimum and maximum values is too large (and/or the step is is too small), it may be difficult to select a specific value on the slider, leading to issues with the <MobileAppNameShort />.
+   
+   Therefore we recommend always defining appropriate minimum, maximum, and step values for the slider.
+   :::
    
    ![QGIS number range field form](./qgis-form-number-range-slider.jpg "QGIS number range field form")
 
