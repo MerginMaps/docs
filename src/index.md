@@ -94,6 +94,7 @@ The ecosystem consist of various components:
    - [How to Use a Phone Call Link ](./layer/phone-call-link/)
    - [How to Link Multiple Records to One Feature](./layer/one-to-n-relations/)
    - [How to Embed an Image](./layer/embed-image/)
+   - [How to Use Image Guides in Form](./layer/embed-image/)
 
 ## Fieldwork Tips
 - [<MobileAppName /> Interface](./field/mobile-app-ui/)
