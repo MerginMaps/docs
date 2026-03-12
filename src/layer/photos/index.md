@@ -37,7 +37,7 @@ To add photos to features using the <MobileAppNameShort />, the attributes form 
 To set up the attachment widget:
 1. Right-click on a layer, select **Properties** and go to the **Attributes form** tab.
 2. In the list of **Available Widgets** select the text field you want to work with.
-3. In the **Widget Display** tab:
+3. In the **Widget Type** tab:
    - From the drop-down menu, select **Attachment**
    - **Default path** defines where images will be saved. If it is not defined, the project home folder will be used.
    - Store the path as **Relative to project path** or **Relative to default path** depending on how you want to store the paths.
@@ -114,6 +114,10 @@ Photos taken using <MobileAppName /> during the survey can be displayed in the f
 Now when you click on a feature that contains a photo, it will be displayed in the form.
 
 ![Mergin Maps mobile app photo displayed in form](./qgis-form-view-photo.jpg "Mergin Maps mobile app photo displayed in form")
+
+:::tip Preview online images
+It is also possible to display online images in the form. See [How to Embed an Image](../embed-image/) for more details.
+:::
 
 ::: details Image preview in QGIS
 Some QGIS versions may not display the preview of the image correctly. This issue does not occur in <MobileAppNameShort />. Therefore we recommend trying the setup by opening the form in the <MobileAppNameShort /> to make sure it works as intended.
