@@ -9,6 +9,7 @@ dist
 .nyc_output
 .basement
 .idea
+.src
 config.local.js
 basement_dist
 merginmaps.pdf

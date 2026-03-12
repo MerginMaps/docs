@@ -52,7 +52,7 @@ Follow the deployment guidelines to install and configure it.
 <ServerType type="EE" />
 
 
-The <EnterprisePlatformName /> enhanced features are only available on specific Docker images stored on Lutra Consulting's private AWS repository. To get access, you need your contract and licence from our <MerginMapsEmail id="sales" desc="sales team" />. 
+The <EnterprisePlatformName /> enhanced features are only available on specific Docker images stored on Lutra Consulting's private Docker Hub repository. To get access, you need your contract and licence from our <MerginMapsEmail id="sales" desc="sales team" />. 
 
 Afterwards, you can follow [this guide](./ee/) to retrieve your <EnterprisePlatformName /> images.
 
