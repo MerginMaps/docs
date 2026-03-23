@@ -9,7 +9,7 @@ outline: deep
 In QGIS, you can define different **map themes** for your project to easily switch between different background maps, combinations of visible layers or their styles, and use them in your <MainPlatformName /> project in the <MobileAppNameShort />.
 
 :::tip Example project available
-Download or clone our public project <MerginMapsProject id="documentation/form-widgets" /> to see how this setup works.
+Download or clone our public project <MerginMapsProject id="documentation/map-themes" /> to see how this setup works.
 :::
 
 ![Mergin Maps mobile app map themes](./mobile-map-themes.gif "Mergin Maps mobile app map themes")
