@@ -27,5 +27,5 @@ QGIS should now be installed on your computer.
 :::tip
 QGIS is a powerful tool with a great community that can help you achieve a lot.
 
-We recommend using <QGISHelp ver="3.22" link="user_manual/index.html" text="QGIS User Guide" /> and <QGISHelp ver="3.22" link="training_manual/index.html" text="QGIS Training Manual" /> to get familiar with QGIS and its functionality.
+We recommend using <QGISHelp ver="latest" link="user_manual/index.html" text="QGIS User Guide" /> and <QGISHelp ver="latest" link="training_manual/index.html" text="QGIS Training Manual" /> to get familiar with QGIS and its functionality.
 :::

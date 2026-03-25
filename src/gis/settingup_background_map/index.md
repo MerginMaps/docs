@@ -23,7 +23,7 @@ Raster tiles are ideal for aerial imagery or terrain visualisations. They can be
 ![sample raster tile](./example_rastertile.jpg "sample raster tile")
 
 ### Online services
-QGIS comes by default with the <QGISHelp ver="3.22" link="user_manual/managing_data_source/opening_data.html?highlight=xyz#using-xyz-tile-services" text="OpenStreetMap online services for XYZ tiles" />. When adding a cartographic basemap, ensure you set the tile size correctly, so that the texts and labels are readable on mobile devices with high resolution display.
+QGIS comes by default with the <QGISHelp ver="latest" link="user_manual/managing_data_source/opening_data.html?highlight=xyz#using-xyz-tile-services" text="OpenStreetMap online services for XYZ tiles" />. When adding a cartographic basemap, ensure you set the tile size correctly, so that the texts and labels are readable on mobile devices with high resolution display.
 
 ::: warning
 Online raster maps can use up a lot of mobile data during the field survey.
