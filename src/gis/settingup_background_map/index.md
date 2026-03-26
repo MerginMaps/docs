@@ -61,7 +61,7 @@ Make sure that you:
 - zoomed to your area of interest
 
 To generate an offline copy of the aerial imagery from your map view extent:
-1. In QGIS, select **Processing** > **Toolbox** from the main menu. The **Processing** panel will appear on the right side of QGIS window.
+1. In QGIS, select **Processing** > **Toolbox** from the main menu. The **Processing** panel will appear on the right side of the QGIS window.
 2. In the search section on the top of the **Processing** panel, type *xyz* to display relevant tools.
 3. In **Raster tools**, double-click on **Generate XYZ tiles (MBTiles)**
    ![QGIS generate XYZ tiles MBTiles](./qgis_xyz_gen_mbtiles1.jpg "QGIS generate XYZ tiles MBTiles")
@@ -76,7 +76,7 @@ To generate an offline copy of the aerial imagery from your map view extent:
    ![QGIS generate XYZ tiles MBTiles settings](./qgis_xyz_gen_mbtiles2.jpg "QGIS generate XYZ tiles MBTiles settings")
 
 :::warning
-Depending on the size of your study area and the zoom level, the output file can be very large. See how to [work with large files](#how-to-work-with-very-large-files-android) in <MobileAppName />.
+Depending on the size of your study area and the zoom level, the output file can be very large. See how to [work with large files](#how-to-work-with-very-large-files) in <MobileAppName />.
 :::
 
 ## Vector tiles
@@ -152,7 +152,7 @@ Vector tiles for offline use can be downloaded easily using <QGISPluginName />.
    
    ![QGIS download vector tiles dialog](./qgis-vector-tiles-set-extent.jpg "QGIS download vector tiles dialog")
 
-   MBTiles can be stored in your [<MainPlatformName /> project folder](../../manage/project/#mergin-maps-project-folder) and synchronised to <MainPlatformNameLink /> along with your project. If you find it impractical to synchronise them or if you want to use the same file in multiple projects, follow the steps on [How to work with large files](#how-to-work-with-very-large-files-android) in <MobileAppName />.
+   MBTiles can be stored in your [<MainPlatformName /> project folder](../../manage/project/#mergin-maps-project-folder) and synchronised to <MainPlatformNameLink /> along with your project. If you find it impractical to synchronise them or if you want to use the same file in multiple projects, follow the steps on [How to work with large files](#how-to-work-with-very-large-files) in <MobileAppName />.
 
 4. Click **Run**. After the vector tiles are generated and downloaded successfully, the MBTiles file will be added to the **Layers** panel. You may close the algorithm dialog window.
 
@@ -163,31 +163,26 @@ Before taking your offline tiles to the field, we recommend checking in <MobileA
 :::
 
 
-## How to work with very large files (Android)
-<Badge text="Android only" type="warning"/>
+## How to work with very large files
 
 Raster and vector tiles generated for offline use can be relatively large files, especially when using high resolution data or a large area of interest. It may be impractical to synchronise these large files through <MainPlatformNameLink /> or to have duplicate copies if they are used in multiple projects.
 
-:::tip
+:::tip 
 If you do not need to use your background maps offline, consider creating a WMS or WMTS server for online use.
 :::
 
-QGIS uses relative paths to load the data. If your <MainPlatformName /> project refers to files located in another folder, this project can be loaded just fine on another computer or in <MobileAppName /> - if the folder with the files can be found in its expected location.
+QGIS uses relative paths to load the data. If your <MainPlatformName /> project refers to files located in another folder, this project can be loaded just fine on another computer or in <MobileAppName /> - if the folder with the files can be found in its expected location. Note that multiple projects can refer to the same files.
 
 1. On your computer, create a folder that will contain the large datasets (here: `_rasters`). It should be located in the same directory as your <MainPlatformName /> projects.
    ![File folder storing large data](./bm-folder-large-files.jpg "File folder storing large data")
 2. Open your <MainPlatformName /> project in QGIS. Load the files from the `_rasters` folder to the project. Save and sync.
 
-3. Connect your mobile device to the computer and copy the `_rasters` folder to the app's project folder `Internal storage/Android/data/uk.co.lutraconsulting/files/projects`. 
-
-   See [Manual data transfer (Android)](../../manage/missing-data/#manual-data-transfer-android) for detailed steps.
+3. Connect your mobile device to the computer and copy the `_rasters` folder to the app's project folder
+   - on Android, follow the steps described in [Manual data transfer (Android)](../../manage/missing-data/#manual-data-transfer-android)
+   - on iOS, follow the steps described in [Manual data transfer (iOS)](../../manage/missing-data/#manual-data-transfer-ios)
    
-4. Use the project in <MobileAppName /> as usual. 
+4. Use the project in the <MobileAppNameShort /> as usual. 
 
-:::tip
-Files from the folder can be loaded into multiple <MainPlatformName /> projects.
-:::
-
-:::warning
-Files located in the another folder are not synchronised. This saves your storage on <ServerCloudNameLink />. However, if you want to update or modify these files, you have to connect the mobile device to your computer and do it manually.
+:::warning These files are not synchronised
+Files that are not located directly in the <MainPlatformName /> project folder are not synchronised. This saves your storage on <ServerCloudNameLink />. However, if you want to update or modify these files, you have to connect the mobile device to your computer and do it manually.
 :::

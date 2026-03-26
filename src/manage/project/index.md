@@ -91,5 +91,5 @@ It is best to store all survey layers and relevant datasets in the project's fol
 :::tip
 It is possible to use files that are stored in other folders in <MobileAppName />. However, these folders have to be [manually transferred](../missing-data/#manual-data-transfer-android).
 
-This can be useful when working with [very large datasets](../../gis/settingup_background_map/#how-to-work-with-very-large-files-android) such as large rasters or background maps.
+This can be useful when working with [very large datasets](../../gis/settingup_background_map/#how-to-work-with-very-large-files) such as large rasters or background maps.
 :::

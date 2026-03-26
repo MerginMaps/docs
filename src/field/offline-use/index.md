@@ -34,7 +34,7 @@ In general, layers that do not work offline are:
 #### Offline background maps
 Online background maps have to be prepared for offline use by generating **vector or raster tiles**. Detailed steps on how to do it can be found in [Background Maps](../../gis/settingup_background_map/). 
 
-Vector and raster tiles can be packaged in the project. However, as these files can be rather large, it might be impractical to synchronise them trough <MainPlatformNameLink />. [How to work with very large files](../../gis/settingup_background_map/#how-to-work-with-very-large-files-android) will show you how to get them in your mobile device.
+Vector and raster tiles can be packaged in the project. However, as these files can be rather large, it might be impractical to synchronise them trough <MainPlatformNameLink />. [How to work with very large files](../../gis/settingup_background_map/#how-to-work-with-very-large-files) will show you how to get them in your mobile device.
 
 #### Offline PostGIS layers
 If you use online PostGIS layers in your <MainPlatformName /> project and need to do an offline survey in the field, we recommend using [DB Sync](../../dev/dbsync/). DB Sync helps synchronising your PostGIS database and GeoPackage layers that can be edited offline using <MobileAppName />.
