@@ -1,9 +1,9 @@
 ---
-description: Conditional visibility can be applied to groups and tabs, so that they will be displayed or hidden in the form depending on the value of a field.
+description: Conditional logic can be applied to groups and tabs to control their visibility in the form depending on a field value or expression.
 ---
 
 # Conditional Visibility
-Conditional visibility can be applied to groups and tabs, so that they will be displayed or hidden depending on the value of a field.
+Conditional logic can be applied to groups and tabs, so that they will be displayed or hidden depending on the value of a field.
 
 :::tip Example project available
 You can explore this functionality in <MerginMapsProject id="documentation/form_setup" />. 
@@ -18,11 +18,11 @@ The form uses the value of the `type` field to display the relevant set of attri
 To set the visibility of groups in the attributes form:
 1. Click on the **roads** group in the **Form Layout**
 2. Check the **Control Visibility by Expression** option :heavy_check_mark:
-3. Define the expression. Here we use: `"type" = "road"`
+3. Define the expression. Here we use: `"type" = 'road'`
 
 ![QGIS form control visibility by expression](./qgis-form-conditional-visibility.jpg "QGIS form control visibility by expression")
 
-4. Same steps are used for the **path** group using the expression `"type" = "path"`
+4. Same steps are used for the **path** group using the expression `"type" = 'path'`
 
 In the <MobileAppNameShort />, the form displays these groups only when the condition is met. So, there are different sets of attributes depending on the value that is entered in the `type` field.
 
