@@ -26,7 +26,7 @@ If you want to share your project with someone else, they also need to install t
 ### Further reading about projections and transformations
 This [extended article](../projections/) contains more information about map projections, coordinate reference systems and transformations. 
 
-If you want to learn more about this topic, we recommend to go through the <QGISHelp ver="3.22" link="gentle_gis_introduction/coordinate_reference_systems.html" text="QGIS online documentation" /> or [PROJ documentation](https://proj.org/operations/index.html).
+If you want to learn more about this topic, we recommend to go through the <QGISHelp ver="latest" link="gentle_gis_introduction/coordinate_reference_systems.html" text="QGIS online documentation" /> or [PROJ documentation](https://proj.org/operations/index.html).
 
 Projections issues are one of the common causes of misplacement of your field data as mentioned in our blog [Why are my survey points shifted?](https://www.lutraconsulting.co.uk/blog/2021/04/21/projections-field/).
 

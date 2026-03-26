@@ -10,7 +10,7 @@ description: Learn more about map projections, coordinate reference systems, how
 
 **Map projection** is the operation defining how to show/display spatial data (your data with associated coordinate reference system) on 2D flat surface (QGIS map canvas or printed paper map). There are various types of projections that are used in cartography (planar projection, cylindrical projections, conic projections). Each type of projection could preserve some attribute of the 2d "flat" map. Some projections preserve distance, others areas, etc. For example Mercator Projection was created to display accurate compass bearings for sea travel.
 
-You can read more about map projections in the <QGISHelp ver="3.22" link="gentle_gis_introduction/coordinate_reference_systems.html#map-projection-in-detail" text="QGIS docs" /> or [Wikipedia](https://en.wikipedia.org/wiki/Map_projection).
+You can read more about map projections in the <QGISHelp ver="latest" link="gentle_gis_introduction/coordinate_reference_systems.html#map-projection-in-detail" text="QGIS docs" /> or [Wikipedia](https://en.wikipedia.org/wiki/Map_projection).
 
 ## Coordinate reference systems
 
@@ -26,7 +26,7 @@ The coordinate reference systems are not set in stone. Most of them are part of 
 
 When we want to show the data stored in one coordinate reference system on a map in other coordinate reference system (e.g. when we have multiple layers each with different coordinate system), we need to do **transformation**. When two coordinate systems do not use the same datum, there are multiple ways how to transform from system one to another. This operation is typically only approximate and multiple operations may exist for different purposes, or depending on how the data was originally collected in the first place. Therefore as spatial data users we need to make an informed choice about which operation is fit for purpose and the correct one to use for your current project.
 
-More detailed information about the coordinate reference systems and projections could be found in the <QGISHelp ver="3.22" link="gentle_gis_introduction/coordinate_reference_systems.html" text="QGIS online documentation" /> or [PROJ documentation](https://proj.org/operations/index.html).
+More detailed information about the coordinate reference systems and projections could be found in the <QGISHelp ver="latest" link="gentle_gis_introduction/coordinate_reference_systems.html" text="QGIS online documentation" /> or [PROJ documentation](https://proj.org/operations/index.html).
 
 ## How is it used in QGIS?
 

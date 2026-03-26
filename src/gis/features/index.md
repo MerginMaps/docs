@@ -6,7 +6,7 @@ description: Mergin Maps project is prepared in QGIS. Set up survey layers, symb
 # QGIS Project Preparation
 [[toc]]
 
-Project preparation is done in QGIS. For more information about loading layers, styling the data and creating map themes, visit <QGISHelp ver="3.22" link="user_manual/index.html" text="QGIS documentation page" />. 
+Project preparation is done in QGIS. For more information about loading layers, styling the data and creating map themes, visit <QGISHelp ver="latest" link="user_manual/index.html" text="QGIS documentation page" />. 
 
 In addition, <MobileAppName /> uses some of the features within the project to help visualise, capture and browse the data. Here is an overview of the project preparations steps. 
 
@@ -86,7 +86,7 @@ Various online and offline maps can be used as background layers for navigation 
 ## Project settings
 - Ensure the paths are set to *Relative* in the **General** tab in Project Properties. All paths to the project data in <MobileAppName /> are relative to the project location.
 ![QGIS set relative paths](./qgis_prj_relative_paths.jpg "QGIS set relative paths")
-- Define the <QGISHelp ver="3.22" link="user_manual/introduction/qgis_configuration.html?highlight=properties#data-sources-properties" text="layers capabilities" /> in the **Data Sources** in Project Properties.
+- Define the <QGISHelp ver="latest" link="user_manual/introduction/qgis_configuration.html?highlight=properties#data-sources-properties" text="layers capabilities" /> in the **Data Sources** in Project Properties.
    - [Identifiable](../search_data/#setting-identifiable-layers-in-qgis-project) layers can be queried in <MobileAppName />. If you want to be able to search for attribute values in a layer, it needs to be identifiable and searchable.
    - **read-only** layers cannot be modified. If a vector layer is not intended to be used as a survey layer, set it as read-only.
    - non-spatial layers need to be set as **searchable** to enable browsing, searching, or editing.

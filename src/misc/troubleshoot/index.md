@@ -38,7 +38,7 @@ If you have an active <MainPlatformNameLink /> subscription or during the trial 
 ### Community support
 - Join our [community chat on Slack](https://merginmaps.com/community/join) and ask questions!
 - See [GIS Stack Exchange](https://gis.stackexchange.com/questions/tagged/mergin-maps) with "<NoSpellcheck id="mergin-maps" />" tag to ask questions and see other users' answers.
-- See <QGISHelp ver="3.22" link="user_manual/index.html" text="QGIS documentation" /> for QGIS Desktop related problems.
+- See <QGISHelp ver="latest" link="user_manual/index.html" text="QGIS documentation" /> for QGIS Desktop related problems.
 
 ## Minimum OS versions for Mergin Maps mobile app
 

@@ -428,11 +428,11 @@ To reference QGIS website, use `<QGIS />` component, e.g.
 
 To reference QGIS documentation, use `<QGISHelp />` component, e.g. 
 
-`<QGISHelp ver="3.22" link="user_manual/index.html" text="See QGIS Help page" />`
+`<QGISHelp ver="latest" link="user_manual/index.html" text="See QGIS Help page" />`
 
 transforms to
 
-<QGISHelp ver="3.22" link="user_manual/index.html" text="See QGIS Help page" />
+<QGISHelp ver="latest" link="user_manual/index.html" text="See QGIS Help page" />
 
 ### Reference GitHub content
 Use `<GitHubRepo />` component, e.g. `<GitHubRepo id="MerginMaps/docs/" desc="documentation" />` transforms to <GitHubRepo id="MerginMaps/docs/" desc="documentation" />.

@@ -74,5 +74,5 @@ The <QGISPluginNameShort /> gives you the option to use the snapping preferences
 Snapping in <MobileAppName /> will now follow the snapping settings as defined in the QGIS project.
 
 :::tip
-You can learn more about snapping in QGIS in <QGISHelp ver="3.22" link="user_manual/working_with_vector/editing_geometry_attributes.html?highlight=snapping#snapping-and-digitizing-options" text="QGIS User Guide" />.
+You can learn more about snapping in QGIS in <QGISHelp ver="latest" link="user_manual/working_with_vector/editing_geometry_attributes.html?highlight=snapping#snapping-and-digitizing-options" text="QGIS User Guide" />.
 :::
