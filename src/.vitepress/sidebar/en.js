@@ -31,6 +31,11 @@ export default {
         { text: 'Member Roles and Permissions', link: '/manage/permissions/' },
         { text: 'Synchronisation', link: '/manage/synchronisation/' },
         { text: 'Mergin Maps Project', link: '/manage/project/' },
+        { text: 'Webmaps', link: '/manage/dashboard-maps/',
+        items: [
+           { text: 'Sharing and Embedding', link: '/manage/webmaps-sharing/' },
+           { text: 'Troubleshooting', link: '/manage/webmaps-troubleshooting/' }
+        ] },
         { text: 'How to Create a New Project', link: '/manage/create-project/' },
         { text: 'How to Share, Transfer or Delete Projects', link: '/manage/project-advanced/' },
         { text: 'How to Delete Files', link: '/manage/delete-files/' },
@@ -38,7 +43,6 @@ export default {
         { text: 'How to Recover Missing Data', link: '/manage/missing-data/' },
         { text: 'Mergin Maps QGIS Plugin Overview', link: '/manage/plugin/' },
         { text: 'Mergin Maps Dashboard', link: '/manage/dashboard/' },
-        { text: 'Webmaps', link: '/manage/dashboard-maps/' },
         { text: 'Project History and Versions', link: '/manage/project-history/' },
         { text: 'Selective Synchronisation', link: '/manage/selective_sync/' }
       ] },
