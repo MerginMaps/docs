@@ -75,7 +75,7 @@ The functionality is the same as described above in [External provider - Bluetoo
 
 ## External provider - Mock location
 
-Mock location should be only used if you are unable to connect the external GPS directly in the <MobileAppNameShort />. Because of system limitations, both Android and iOS send only a subset of available data.
+Mock location should be only used if you are unable to connect the external GPS directly in the <MobileAppNameShort />. Because of system limitations, both Android and iOS send only a subset of available data. Some [position variables](../../layer/variables/#position-variables) may not be available.
 
 ### Android
 If there is no [user-defined transformation](#using-custom-geoid) (custom geoid), the <MobileAppNameShort /> uses data reported by the GPS provider as-is.
@@ -92,8 +92,8 @@ If there is no [user-defined transformation](#using-custom-geoid) (custom geoid)
 If there is no [user-defined transformation](#using-custom-geoid) (custom geoid), the <MobileAppNameShort /> uses data reported by the GPS provider as-is.
 
 **Position variables**:  
-- :warning: When using the mock location, iOS only sends a minimal subset of available GPS data, namely the coordinates X, Y, and elevation. Other [position variables](../../layer/variables/#position-variables) may not be available.
-- :no_entry_sign: *orthometric elevation*, *ellipsoidal elevation* and *geoid separation* values are **not** available
+- :white_check_mark: *orthometric elevation* is available and can be stored using [position variables](../../layer/variables/#position-variables)
+- :no_entry_sign: *ellipsoidal elevation* and *geoid separation* values are **not** available
 
 **Custom geoid**: 
 - :warning: It is possible to use the <QGISPluginNameShort /> to [set up a different geoid model](#using-custom-geoid) and transform the elevation to a different vertical reference system. However, it is necessary to **set up the mock app to report ellipsoidal heights**, otherwise the geoid separation would be applied twice leading to incorrect elevation values. 
