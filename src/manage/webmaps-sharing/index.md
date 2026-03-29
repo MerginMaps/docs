@@ -37,7 +37,7 @@ To disable the map sharing, click on the **Revoke sharing** button.
 You can read about this functionality in our blog post <MainDomainNameLink id="blog/a-final-surprise-for-the-year---shared-maps-via-url" desc="A final surprise for the year - shared maps via URL"/>.
 :::
 
-## Embedding webmaps using iframe
+## Embedding webmaps using HTML
 
 Webmaps that are shared can be also embedded on a website using HTML element `iframe` by using the [URL link](#sharing-maps-via-url) of the webmap.
 

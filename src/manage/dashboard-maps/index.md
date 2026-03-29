@@ -55,14 +55,14 @@ const layer = new TileLayer({
 
 MerginMaps.getMap().addLayer(layer)
 ```
-   This is a JavaScript file that defines background maps or other customisations that should be added to your webmap.
+   This is a JavaScript file that defines background maps that should be added to your webmap.
 
 2. Add the `map-script.js` to your project through <AppDomainNameLink /> 
 
 After syncing the project, the background map will be added to your webmap.
    
-### Customizations
-Other customizations can be done in the `map-script.js` JavaScript file.
+### Customisation
+Webmaps can be further customised using JavaScript in the `map-script.js` file.
 
 ## Webmaps extent
 

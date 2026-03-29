@@ -204,6 +204,7 @@ hotline
 html
 http
 https
+iframe
 interoperable
 integration
 integrations
