@@ -62,7 +62,7 @@ MerginMaps.getMap().addLayer(layer)
 After syncing the project, the background map will be added to your webmap.
    
 ### Customisations
-Other customisations can be done. The `map-script.js` file 
+Other customisations can be done in the `map-script.js` JavaScript file.
 
 ## Webmaps extent
 

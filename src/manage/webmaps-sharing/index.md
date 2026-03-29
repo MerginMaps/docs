@@ -27,6 +27,8 @@ Webmaps can be shared via URL. [Admins or owners](../permissions/) can enable ma
 2. In the **Map** tab, click on the **Share map** button to generate a shareable link
 3. Send the link to anyone to share your project
 
+To see how this works, you can try a link to our [sample project](https://app.merginmaps.com/maps/grDTleg8yCdSracIxs-hmFIGdDs).
+
 To disable the map sharing, click on the **Revoke sharing** button.
 
 ![Sharing maps via URL](./map-sharing-url.webp "Sharing maps via URL")
@@ -37,4 +39,12 @@ You can read about this functionality in our blog post <MainDomainNameLink id="b
 
 ## Embedding webmaps using iframe
 
+Webmaps that are shared can be also embedded on a website using HTML element `iframe` by using the [URL link](#sharing-maps-via-url) of the webmap.
 
+For example, this code
+
+`<iframe src="https://app.merginmaps.com/maps/grDTleg8yCdSracIxs-hmFIGdDs" height="500" width="700" title="Mergin Maps Webmas Iframe Example"></iframe>`
+
+produces this map:
+
+<iframe src="https://app.merginmaps.com/maps/grDTleg8yCdSracIxs-hmFIGdDs" height="500" width="700" title="Mergin Maps Webmas Iframe Example"></iframe>
