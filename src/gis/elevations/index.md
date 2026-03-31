@@ -11,7 +11,7 @@ When collecting data in the field, <MobileAppName /> provides information about 
 
 An *orthometric* height is a physical height referred to a *geoid*, a special surface that resembles the mean sea level. The difference between ellipsoidal and orthometric height is called the *geoid separation* (also known as geoid height or undulation) and it can be applied to transform between these heights.
 
-When transforming elevations from ellipsoidal to orthometric, <MainPlatformNameLink /> uses the EGM96  geoid model by default. However, it is also possible to use another geoid model as described in the [Using custom geoid](#using-custom-geoid) section. This may be especially useful when conducting more precise surveys or when a specific vertical reference system is required. 
+When transforming elevations from ellipsoidal to orthometric, <MainPlatformNameLink /> uses the EGM96 geoid model by default. However, it is also possible to use another geoid model as described in the [Using custom geoid](#using-custom-geoid) section. This may be especially useful when conducting more precise surveys or when a specific vertical reference system is required. 
 
 :::warning Learn more
 Height systems and elevations are complex topics. If you want to get more insight, we recommend going through some explanatory resources, such as [Height Systems](https://geodesy.science/item/height-systems/) by the International Association of Geodesy.
@@ -103,5 +103,39 @@ If there is no [user-defined transformation](#using-custom-geoid) (custom geoid)
 
 The geoid model can be specified in [<MainPlatformName /> Project Properties](../../manage/plugin/#mergin-maps-project-properties) in QGIS. The grid shift file will be packaged with the project based on the selected vertical reference system.
 
-In the <MobileAppNameShort />, the info about the custom geoid model is displayed in [GPS info panel](../../field/mobile-app-ui/#current-position-and-gps-info).
+In the <MobileAppNameShort />, the info about the custom geoid model is displayed in the [GPS info panel](../../field/mobile-app-ui/#current-position-and-gps-info).
 
+1. Open your <MainPlatformName /> project and navigate to the <MainPlatformName />  tab in **Project Properties**
+
+2. Check the *Report height in a specific vertical CRS* option :heavy_check_mark:
+   ![Mergin Maps QGIS plugin vertical CRS](./plugin-vertical-crs.webp "Mergin Maps QGIS plugin vertical CRS")
+
+3. Select a vertical CRS from the list or use the **Select CRS** button to choose from predefined CRS.
+   
+   Use the filter to narrow the search using a keyword or the EPSG code. 
+   
+   Select a CRS and click **OK**.
+   ![Select target vertical CRS in QGIS](./plugin-target-vertical-crs.webp "Select target vertical CRS in QGIS")
+
+4. **Apply** the changes in **Project Properties** and synchronise your changes.
+   ![Mergin Maps QGIS plugin defined vertical CRS](./plugin-set-vertical-crs.webp "Mergin Maps QGIS plugin defined vertical CRS")
+   
+When recording and displaying heights in the <MobileAppNameShort />, the custom geoid will be used instead of the default EGM96 model.
+
+### Multiple datum transformation available
+For some vertical CRS, there may be multiple datum transformations available. If this is the case, you will get a warning when selecting the CRS.
+
+![Mergin Maps QGIS plugin datum transformation warning](./plugin-transformation-warning.webp "Mergin Maps QGIS plugin datum transformation warning")
+
+To make sure that <MainPlatformName /> uses the correct operation, ensure that the correct datum transformation is defined in the **Transformations** tab in **Project Properties**.
+
+### Downloading grid shift files
+Some specific vertical CRS transformations may not be included in QGIS by default (see [custom projections in QGIS](../proj/#custom-projections-in-qgis)). In this the case, the <QGISPluginNameShort /> will display a warning that it needs to download the geoid grid file.
+
+Use the **click here** link to download the grid.
+
+![Mergin Maps QGIS plugin geoid grid download](./plugin-download-grid-shift.webp "Mergin Maps QGIS plugin geoid grid download")
+
+The geoid grid will be downloaded and packaged with your project.
+
+![Mergin Maps QGIS plugin geoid grid download](./plugin-grid-shift-downloaded.webp "Mergin Maps QGIS plugin geoid grid download")
