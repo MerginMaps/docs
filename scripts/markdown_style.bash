@@ -23,7 +23,7 @@ for i in \
 do
   echo "Checking for $i"
   # exclude HTML tags inside QGIS expressions in documentation
-  A1=`grep --line-number -r -e "$i"  $SCRIPT_DIR/../src/ --include \*.md | grep -v 'expression.evaluate'`
+  A1=`grep --line-number -r -e "$i"  $SCRIPT_DIR/../src/ --include \*.md | grep -v 'expression.evaluate' | grep -v 'app.merginmaps.com/maps/'`
   if [ ! -z "$A1" ]
   then
    echo $A1
