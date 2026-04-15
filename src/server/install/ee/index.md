@@ -52,9 +52,7 @@ Therefore, if you still have the AWS ECR repository configuration implemented, y
   docker pull 433835555346.dkr.ecr.eu-west-1.amazonaws.com/mergin/mergin-ee-frontend:2025.7.3  
 ```
 
-::: note 
 Please note that you need to tag the image after this step in order to be conformant with the main deployment workflow.
-:::
 
 ```bash
   docker image tag 433835555346.dkr.ecr.eu-west-1.amazonaws.com/mergin/mergin-ee-back:2025.7.3 lutraconsulting/merginmaps-backend-ee:2025.7.3
