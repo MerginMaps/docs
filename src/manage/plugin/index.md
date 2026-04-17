@@ -1,5 +1,7 @@
 ---
 description: Create, set up and synchronise your Mergin Maps projects with Mergin Maps QGIS plugin. The plugin brings Mergin Maps functionalities to QGIS.
+
+outline: deep
 ---
 
 # Mergin Maps QGIS Plugin Overview
@@ -98,6 +100,7 @@ Some settings of your [<MainPlatformName /> project](../project/) can be done th
 - Enable [**Map sketching**](../../field/map-sketching/)
 - Set [**Layer order**](../../field/layers/#layer-order) for the <MobileAppNameShort />
 - Enable [**Photo sketching**](../../field/photo-sketching/) to annotate pictures in the <MobileAppNameShort />
+- Enable [**Filtering**](../../field/filtering) features in the <MobileAppNameShort />
 
 ![Mergin Maps Project Properties in QGIS](./qgis-mergin-maps-project-properties.jpg "Mergin Maps Project Properties in QGIS")
 

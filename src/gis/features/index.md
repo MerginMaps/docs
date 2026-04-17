@@ -82,6 +82,8 @@ If the map tip has `# image` marker on the first line, the following line is und
 ## Background layers
 Various online and offline maps can be used as background layers for navigation during the field survey. You can find more information in [Background Maps](../settingup_background_map/).
 
+## Map themes
+[Map Themes](../setup_themes/) make possible to switch between different background maps, combinations of visible layers or their styles both in QGIS and in <MobileAppName />.
 
 ## Project settings
 - Ensure the paths are set to *Relative* in the **General** tab in Project Properties. All paths to the project data in <MobileAppName /> are relative to the project location.
@@ -179,7 +181,9 @@ There is an option to define the order in which layers are displayed in the <Mob
 
 ![Layer order in QGIS Mergin Maps project](./project-layer-order.jpg "Layer order in QGIS Mergin Maps project")
 
-### Map themes
-[Map Themes](../setup_themes/) make possible to switch between different background maps in <MobileAppName /> (e.g. cartography maps and aerial imagery)
+### Filtering features
+Filters for features in the <MobileAppNameShort /> can be enabled in the **<MainPlatformName />** tab in **Project properties**.
 
+![Enable filtering in QGIS Mergin Maps project](./project-filtering.webp "Enable filtering in QGIS Mergin Maps project")
 
+You can find more details about how this works in [Filtering Features](../../field/filtering/).
