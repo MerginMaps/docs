@@ -96,6 +96,7 @@ export default {
            { text: 'How to Use a Phone Call Link', link: '/layer/phone-call-link/' },
            { text: 'How to Link Multiple Records to One Feature (1-N Relations)', link: '/layer/one-to-n-relations/' },
            { text: 'How to Embed an Image', link: '/layer/embed-image/' },
+           { text: 'How to Use Image Guides in the Form', link: '/layer/image-guide/' },
         ] },
       ] },
     {
