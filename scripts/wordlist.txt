@@ -29,6 +29,7 @@ DOP
 ECW
 ECR
 EE
+EGM
 Emlid
 EPSG
 Esri
