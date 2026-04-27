@@ -2,7 +2,7 @@
 description: Add custom filters to sort and display only those features that you need during your field survey.
 ---
 
-# Feature Filtering in Mergin Maps Mobile App
+# Filtering Features in Mergin Maps Mobile App
 [[toc]]
 
 Custom filters can be added to the <MobileAppNameShort /> to easily filter features displayed on the map as well as in the [survey layers](../layers/#browsing-features).
@@ -12,7 +12,7 @@ You can read about this feature also on our blog <MainDomainNameLink id="blog/fr
 :::
 
 ## Enable and define filtering in QGIS
-Filters can be enabled and defined in QGIS in **Project Properties**.
+Filters can be enabled and defined in QGIS in **Project Properties** for GeoPackage layers.
 
 ::: tip Plugin upgrade
 If you do not see the **Filtering** option in the **Project properties**, check for [plugin upgrades](../../setup/install-mergin-maps-plugin-for-qgis/#plugin-upgrade).
@@ -22,7 +22,7 @@ Check the :heavy_check_mark: **Enable filtering** option in the <MainPlatformNam
 
 Then, define the filter:
    - **Type** - the filter type (in general, it should match the widget type of the filtered field)
-   - **Layer** - choose from the project's layers
+   - **Layer** - choose from the project's GeoPackage layers
    - **Field** - choose from the fields of the layer. Only fields with data types compatible with the selected filter type are offered.
    - **Title** - the name of the filter, which will be displayed in the <MobileAppNameShort />
    
@@ -46,11 +46,11 @@ Don't forget to save your project and synchronise changes so that you can use th
 
 **Boolean** filter provides a toggle between *all*, *true* and *false* values. Results are filtered based on SQL expression `"field" == 'input'`. Available for Boolean, text and integer field types configured with the [Checkbox widget](../../layer/checkbox/).
 
-**Single select** filter provides a drop-down menu of field values. One value can be selected at once. The results are filtered based on SQL expression `"field" == 'input'`. Available for text and number field types configured with the [Value map or Value relation widget](../../layer/value-select/).
+**Single select** filter provides a drop-down menu of field values. One value can be selected at once. The results are filtered based on SQL expression `"field" == 'input'`. Available for all field types. Note that Value relations with *multiple selections* are currently **not** supported.
 
-**Multi select** filter provides a drop-down menu of field values. Multiple values can be selected at once. The results are filtered based on SQL expression `"field" IN ('input')`. Available for text and number field types configured with the [Value map or Value relation widget](../../layer/value-select/#value-relation).
+**Multi select** filter provides a drop-down menu of field values. Multiple values can be selected at once. The results are filtered based on SQL expression `"field" IN ('input')`. Available for all field types. Note that Value relations with *multiple selections* are currently **not** supported.
 
-In the <MobileAppNameShort />, the filter types looks as follows:
+In the <MobileAppNameShort />, the filters look like this:
 
 ![Filter types in Mergin Maps mobile app](./mobile-filter-types.webp "Filter types in Mergin Maps mobile app") 
 
