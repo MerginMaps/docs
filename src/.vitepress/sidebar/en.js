@@ -111,7 +111,7 @@ export default {
         { text: 'Synchronisation in Mergin Maps Mobile App', link: '/field/autosync/' },
         { text: 'Measurement Tools', link: '/field/measure/' },
         { text: 'Layers in Mergin Maps Mobile App', link: '/field/layers/' },
-        { text: 'Filtering Features', link: '/field/filtering/' },
+        { text: 'Feature Filtering', link: '/field/filtering/' },
         { text: 'Map Sketching', link: '/field/map-sketching/' },
         { text: 'Photo Sketching', link: '/field/photo-sketching/' },
         { text: 'How to Add, Edit, Delete Features', link: '/field/mobile-features/' },
