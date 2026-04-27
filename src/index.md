@@ -105,6 +105,7 @@ The ecosystem consist of various components:
 - [Synchronisation in <MobileAppName />](./field/autosync/)
 - [Measurement Tools](./field/measure/)
 - [Layers in <MobileAppName />](./field/layers/)
+- [Feature Filtering in <MobileAppName />](./field/filtering/)
 - [Map Sketching in <MobileAppName />](./field/map-sketching/)
 - [Photo Sketching in <MobileAppName />](./field/photo-sketching/)
 - [How to Add, Edit, Delete Features](./field/mobile-features/)
