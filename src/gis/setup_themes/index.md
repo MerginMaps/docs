@@ -12,7 +12,9 @@ In QGIS, you can define different **map themes** for your project to easily swit
 Download or clone our public project <MerginMapsProject id="documentation/map-themes" /> to see how this setup works.
 :::
 
-![Mergin Maps mobile app map themes](./mobile-map-themes.gif "Mergin Maps mobile app map themes")
+Prefer a video? Here is a short tutorial about map themes:
+
+<YouTube id="oceQ_kjiBgM" />
 
 ## Setting up styles and map themes in QGIS
 Here, we will define different symbology for survey layers depending on the displayed background map using styles. Then we will set up [map themes](#map-themes-1) so that we can switch between the basic and the satellite background maps along with the corresponding layers' styles. 
@@ -81,6 +83,7 @@ To modify an existing theme, make the desired changes in the **Layers** panel an
 
 
 ## Map themes in Mergin Maps mobile app
+
 In the <MobileAppNameShort />, tap **More** and select the **Map themes** option.
 
 ![Map themes option in Mergin Maps mobile app](./mobile-app-map-themes-option.webp "Map themes option in Mergin Maps mobile app")
