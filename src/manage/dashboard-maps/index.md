@@ -19,17 +19,19 @@ Webmaps are **not** available for <CommunityPlatformNameLink />.
 ## Webmaps content
 
 ### Project layers
-On the webmaps, you will see your survey layers or raster layers that are [packaged](../project/#packaging-qgis-project) with the project. Other layers, such as online [background maps](../../gis/settingup_background_map/#background-maps) or PostgreSQL layers are not displayed. The extent of maps is defined by the [extent set in the QGIS project](../../gis/features/#project-extent).
-
-All maps on the <DashboardShortLink /> use [<MainPlatformName /> vector tile service](../../gis/settingup_background_map/#online-services-1) as a background map.
-
-The content of the maps and of the **Layers** panel is refreshed after every synchronisation of the project. This means you should always see your current spatial data here.
-
-The **Layers** panel lists all layers displayed on the map. The check button :white_check_mark: controls the visibility of layers.
+- On the webmaps, you will see your survey layers or raster layers that are [packaged](../project/#packaging-qgis-project) with the project. Other layers, such as online [background maps](../../gis/settingup_background_map/#background-maps) or PostgreSQL layers are not displayed. The extent of maps is defined by the [extent set in the QGIS project](../../gis/features/#project-extent).
+- All maps on the <DashboardShortLink /> use [<MainPlatformName /> vector tile service](../../gis/settingup_background_map/#online-services-1) as a background map.
+- The content of the maps and of the **Layers** panel is refreshed after every synchronisation of the project. This means you should always see your current spatial data here.
 
 Click on a feature on the map to display its properties.
 
 ![Mergin Maps dashboard maps](./dashboard-map-properties.webp "Mergin Maps dashboard maps")
+
+The **Layers** panel lists all layers displayed on the map. 
+
+Control the layer's visibility by clicking the button that appears when you hover over the layer.
+
+![Mergin Maps webmaps toggle layer visibility](./webmaps-toggle-layer-visibility.webp "Mergin Maps webmaps toggle layer visibility")
 
 ### Adding background maps
 By default, the online background maps from your project are not displayed on the webmaps. However, they can be added to your webmaps using a JavaScript file with the map definition to your project through  <DashboardLink />.
