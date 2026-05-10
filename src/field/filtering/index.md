@@ -1,5 +1,6 @@
 ---
 description: Add custom filters to sort and display only those features that you need during your field survey.
+outline: deep
 ---
 
 # Filtering Features in Mergin Maps Mobile App
@@ -7,7 +8,13 @@ description: Add custom filters to sort and display only those features that you
 
 Custom filters can be added to the <MobileAppNameShort /> to easily filter features displayed on the map as well as in the [survey layers](../layers/#browsing-features).
 
-::: tip Feature filtering blog
+![Filtering features in Mergin Maps mobile app](./mobile-filtering.gif "Filtering features in Mergin Maps mobile app")
+
+::: tip Example project available
+You can explore filtering by cloning our public project <MerginMapsProject id="documentation/filtering" />
+:::
+
+::: warning Feature filtering blog
 You can read about this feature also on our blog <MainDomainNameLink id="blog/from-wishlist-to-app-feature-filtering-is-live" desc="From wishlist to app: Feature filtering is live"/>.
 :::
 
@@ -21,7 +28,7 @@ If you do not see the **Filtering** option in the **Project properties**, check 
 Check the :heavy_check_mark: **Enable filtering** option in the <MainPlatformName /> tab, click on the **Add filter** button and select a filter type from the list. The list of available [filter types](#filter-types) and their properties can be found below.
 
 Then, define the filter:
-   - **Type** - the filter type (in general, it should match the widget type of the filtered field)
+   - **Type** - the filter type
    - **Layer** - choose from the project's GeoPackage layers
    - **Field** - choose from the fields of the layer. Only fields with data types compatible with the selected filter type are offered.
    - **Title** - the name of the filter, which will be displayed in the <MobileAppNameShort />
@@ -35,19 +42,54 @@ The order of filters can be changed by selecting a filter and using the **Up** a
 
 Don't forget to save your project and synchronise changes so that you can use the filters in the <MobileAppNameShort />.
 
-
 ### Filter types
+Here is an overview of available filter types.
 
-**Text** filter uses simple text input. Results are filtered based on the SQL expression `"field" ILIKE '%input%'`. Available for text and number field types.
+![Mergin Maps mobile app filters](./mobile-filters.webp "Mergin Maps mobile app filters")
 
-**Number** filter provides *from* and *to* number inputs. Results are filtered based on SQL expression `"field" >= 'input_from' AND "field" <= 'input_to'`. Available for text and number field types.
+#### Text
 
-**Date** filter provides *from* and *to* date (calendar) inputs. Results are filtered based on SQL expression `"field" >= 'input_from' AND "field" <= 'input_to'`. Available for date field types configured with the [Date and time widget](../../layer/date-time/).
+The text filter can be used to find all features where the selected field contains the entered text. 
 
-**Boolean** filter provides a toggle between *all*, *true* and *false* values. Results are filtered based on SQL expression `"field" == 'input'`. Available for Boolean, text and integer field types configured with the [Checkbox widget](../../layer/checkbox/).
+Type in a word, a part of the word or a number into the filter and **Apply filters** to see the results.
 
+Available for text and number field types.
+
+![Mergin Maps mobile app Text filter](./mobile-filter-text.webp "Mergin Maps mobile app Text filter")
+
+This filter uses the same logic as the SQL expression `"field" ILIKE '%input%'`. 
+
+#### Number
+The number filter provides *from* and *to* number inputs. 
+
+Enter a minimum, a maximum value (or both) to filter features based on the values of the selected field.
+
+Available for text and number field types.
+
+![Mergin Maps mobile app Number filter](./mobile-filter-number.webp "Mergin Maps mobile app Number filter")
+
+This filter uses the same logic as the SQL expression `"field" >= 'input_from' AND "field" <= 'input_to'`. 
+
+#### Date
+**Date** filter provides *from* and *to* date (calendar) inputs. 
+
+Available for date field types configured with the [Date and time widget](../../layer/date-time/).
+
+![Mergin Maps mobile app Date filter](./mobile-filter-date.webp "Mergin Maps mobile app Date filter")
+
+Results are filtered based on SQL expression `"field" >= 'input_from' AND "field" <= 'input_to'`. 
+
+#### Boolean
+**Boolean** filter provides a toggle between *all*, *true* and *false* values. Available for Boolean, text and integer field types configured with the [Checkbox widget](../../layer/checkbox/).
+
+
+
+Results are filtered based on SQL expression `"field" == 'input'`. 
+
+#### Single select
 **Single select** filter provides a drop-down menu of field values. One value can be selected at once. The results are filtered based on SQL expression `"field" == 'input'`. Available for all field types. Note that Value relations with *multiple selections* are currently **not** supported.
 
+#### Multi select
 **Multi select** filter provides a drop-down menu of field values. Multiple values can be selected at once. The results are filtered based on SQL expression `"field" IN ('input')`. Available for all field types. Note that Value relations with *multiple selections* are currently **not** supported.
 
 In the <MobileAppNameShort />, the filters look like this:
