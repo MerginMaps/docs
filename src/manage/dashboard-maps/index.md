@@ -33,6 +33,10 @@ Control the layer's visibility by clicking the button that appears when you hove
 
 ![Mergin Maps webmaps toggle layer visibility](./webmaps-toggle-layer-visibility.webp "Mergin Maps webmaps toggle layer visibility")
 
+You can also switch [Map themes](../../gis/setup_themes/) defined in the project:
+![Mergin Maps webmaps toggle layer visibility](./webmaps-map-themes.webp "Mergin Maps webmaps toggle layer visibility")
+
+
 ### Adding background maps
 By default, the online background maps from your project are not displayed on the webmaps. However, they can be added to your webmaps using a JavaScript file with the map definition to your project through  <DashboardLink />.
 
