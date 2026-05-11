@@ -62,8 +62,9 @@ export default {
       collapsed: true,
       items: [
         { text: 'Overview', link: '/layer/overview/' },
-        { text: 'Widgets', link: '/layer/form-widgets/',
+        { text: 'Widgets',
         items: [
+           { text: 'Form Widgets Gallery', link: '/layer/form-widgets/' },
            { text: 'Text', link: '/layer/text/' },
            { text: 'Date and Time', link: '/layer/date-time/' },
            { text: 'Relations', link: '/layer/relations/' },
@@ -74,22 +75,25 @@ export default {
            { text: 'Photos', link: '/layer/photos/' },
            { text: 'Informational Widgets', link: '/layer/info-widgets/' },
         ] },
-        { text: 'Default Values', link: '/layer/default-values/',
+        { text: 'Default Values',
         collapsed: true,
         items: [
+           { text: 'Default Values Setup', link: '/layer/default-values/' },
            { text: 'Geotagging', link: '/layer/exif/' },
            { text: 'Variables', link: '/layer/variables/' }
         ] },
         { text: 'Constraints', link: '/layer/constraints/' },        
-        { text: 'Layout', link: '/layer/form-layout/',
+        { text: 'Layout',
         collapsed: true,
         items: [
+           { text: 'Attributes Form Layout', link: '/layer/form-layout/' },
            { text: 'Tabs and Groups', link: '/layer/tabs-and-groups/' },
            { text: 'Conditional Visibility', link: '/layer/conditional-visibility/' },
         ] },
-        { text: 'Use Cases', link: '/layer/use-cases/', 
+        { text: 'Use Cases', 
         collapsed: true,
         items: [
+           { text: 'Use Cases Overview', link: '/layer/use-cases/' },
 	   { text: 'How to Open a File', link: '/layer/open-file/' },
 	   { text: 'How to Use Hyperlinks', link: '/layer/external-link/' },
            { text: 'How to Open a Link to a Navigation App', link: '/layer/link-to-navigation/' },
@@ -159,9 +163,10 @@ export default {
       items: [
         { text: 'Licensing', link: '/misc/licensing/' },
         { text: 'Get Involved', link: '/misc/get-involved/' },
-        { text: 'Troubleshoot', link: '/misc/troubleshoot/',
+        { text: 'Troubleshoot',
         collapsed:true,
         items: [
+           { text: 'Support and Troubleshooting', link: '/misc/troubleshoot/' },
            { text: 'Project fails to sync', link: '/misc/troubleshoot/not_syncing/' },
         ] },
         { text: 'Write Documentation', link: '/misc/write-docs/' }
