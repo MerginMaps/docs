@@ -64,7 +64,7 @@ export default {
         { text: 'Overview', link: '/layer/overview/' },
         { text: 'Widgets',
         items: [
-           { text: 'Form Widgets Gallery', link: '/layer/form-widgets/' },
+           { text: 'Available Widgets', link: '/layer/form-widgets/' },
            { text: 'Text', link: '/layer/text/' },
            { text: 'Date and Time', link: '/layer/date-time/' },
            { text: 'Relations', link: '/layer/relations/' },
@@ -86,7 +86,7 @@ export default {
         { text: 'Layout',
         collapsed: true,
         items: [
-           { text: 'Attributes Form Layout', link: '/layer/form-layout/' },
+           { text: 'Form Layout', link: '/layer/form-layout/' },
            { text: 'Tabs and Groups', link: '/layer/tabs-and-groups/' },
            { text: 'Conditional Visibility', link: '/layer/conditional-visibility/' },
         ] },
