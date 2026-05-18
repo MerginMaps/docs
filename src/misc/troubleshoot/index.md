@@ -2,7 +2,7 @@
 description: Find troubleshooting tips, resources, and support information to help resolve issues with Mergin Maps.
 ---
 
-# Troubleshoot
+# Support and Troubleshooting
 [[toc]]
 
 ## Troubleshooting tips
