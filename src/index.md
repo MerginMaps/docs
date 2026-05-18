@@ -70,7 +70,8 @@ The ecosystem consist of various components:
 
 ## Configure Forms
 - [Overview](./layer/overview/)
-- [Widgets](./layer/form-widgets/)
+- Widgets
+   - [Available Widgets](./layer/form-widgets/)
    - [Text](./layer/text/)
    - [Date and time](./layer/date-time/)
    - [Relations](./layer/relations/)
@@ -80,14 +81,17 @@ The ecosystem consist of various components:
    - [Selecting Single or Multiple Values ](./layer/value-select/)
    - [Photos](./layer/photos/)
    - [Informational Widgets](./layer/info-widgets/)
-- [Default Values](./layer/default-values/)
+- Default Values
+   - [Default Values Setup](./layer/default-values/)
    - [Geotagging](./layer/exif/)
    - [Variables](./layer/variables/)
 - [Constraints](./layer/constraints/)
-- [Layout](./layer/form-layout/)
+- Layout
+   - [Form Layout](./layer/form-layout/)
    - [Tabs and Groups](./layer/tabs-and-groups/)
    - [Conditional Visibility](./layer/conditional-visibility/)
-- [Use Cases](./layer/use-cases/)
+- Use Cases
+   - [Use Cases Overview](./layer/use-cases/)
    - [How to Open a File ](./layer/open-file/)
    - [How to Use Hyperlinks](./layer/external-link/)
    - [How to Open a Link to a Navigation App](./layer/link-to-navigation/)
