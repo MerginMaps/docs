@@ -93,8 +93,6 @@ Here we will define the symbology of the virtual layer. We will use an SVG marke
 
 1. Navigate to the **Symbology** tab of the **Layer Properties**
 
-
-
 2.  First we will create a symbol for photo location.
 
     In the **Symbol layer type**, switch the *Simple Marker* to ***SVG Marker*** and:
@@ -102,8 +100,6 @@ Here we will define the symbology of the virtual layer. We will use an SVG marke
       - Set appropriate size and colour of the symbol
 
      ![QGIS photo direction symbology](./qgis-symbology-direction-svg.webp "QGIS photo direction symbology")
-
-
 
 3. Now we will create a visualisation of the photo direction.
 
@@ -122,7 +118,7 @@ Here we will define the symbology of the virtual layer. We will use an SVG marke
    This defines the geometry of the symbol. You can modify its size by changing the `width` and `outer_radius` variables in the `wedge_buffer` function.
    
 4. Finally, we will style this symbol. 
-   - Switch the **Symbol layer type** from *Simple Fill* to *Shapeburst Fill*
+   - Switch the **Symbol layer type** from *Simple Fill* to *<NoSpellcheck id="Shapeburst"/> Fill*
    - For **Gradients <NoSpellcheck id="colors"/>** use the *Two <NoSpellcheck id="color"/>* option and choose the colours. We recommend using semi-transparent colours.
    - For **Shading Style**, **Set distance** as needed, here we use 5.00
    
