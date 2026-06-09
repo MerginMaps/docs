@@ -99,6 +99,7 @@ The ecosystem consist of various components:
    - [How to Link Multiple Records to One Feature](./layer/one-to-n-relations/)
    - [How to Embed an Image](./layer/embed-image/)
    - [How to Use Image Guides in Form](./layer/embed-image/)
+   - [How to Display Photo Location and Direction](./layer/photo-direction/)
 
 ## Fieldwork Tips
 - [<MobileAppName /> Interface](./field/mobile-app-ui/)
