@@ -101,11 +101,11 @@ Some settings of your [<MainPlatformName /> project](../project/) can be done th
 - Set [**Layer order**](../../field/layers/#layer-order) for the <MobileAppNameShort />
 - Enable [**Photo sketching**](../../field/photo-sketching/) to annotate pictures in the <MobileAppNameShort />
 - Enable [**Filtering**](../../field/filtering) features in the <MobileAppNameShort />
+- Define [Vertical CRS](../../gis/elevations/#using-custom-geoid) for heights reported by the <MobileAppNameShort />
 
 ![Mergin Maps Project Properties in QGIS](./qgis-mergin-maps-project-properties.jpg "Mergin Maps Project Properties in QGIS")
 
 ![Mergin Maps Project Properties in QGIS](./qgis-mergin-maps-project-properties-2.jpg "Mergin Maps Project Properties in QGIS")
-
 
 ## Mergin Maps Tools in QGIS Processing Toolbox
 Processing is a core plugin of QGIS. By installing <QGISPluginName />, <MainPlatformName /> tools are added to the  <QGISHelp ver="latest" link="user_manual//processing/intro.html" text="Processing Toolbox" />.
