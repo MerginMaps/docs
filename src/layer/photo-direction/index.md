@@ -99,7 +99,7 @@ Here we will define the symbology of the virtual layer. We will use an SVG marke
       - Find an appropriate symbol in the **SVG Browser**. Here we use a photo symbol from the *App Symbols* > *shopping* folder.
       - Set appropriate size and colour of the symbol
 
-      ![QGIS photo direction symbology](./qgis-symbology-direction-svgmarker.webp "QGIS photo direction symbology")
+      ![QGIS photo direction symbology](./qgis-symbology-direction-marker.webp "QGIS photo direction symbology")
    
 3. Now we will create a visualisation of the photo direction.
 
