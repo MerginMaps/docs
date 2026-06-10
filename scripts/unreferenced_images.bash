@@ -7,7 +7,7 @@ USED_XCF=0
 NOT_USED_XCF=0
 NOT_USED_PICS=0
 
-PICS=`find src/ | grep -e png -e jpg -e svg -e PNG -e JPG -e SVG -e jpeg -e JPEG`
+PICS=`find src/ | grep -e png -e jpg -e svg -e PNG -e JPG -e SVG -e jpeg -e JPEG -e webp -e WEBP`
 stringarray=($PICS)
 
 for i in "${stringarray[@]}"
