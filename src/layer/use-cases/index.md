@@ -13,4 +13,5 @@ Our step-by-step guides provide detailed descriptions accompanied by public <Mai
 - [How to Use a Phone Call Link ](../phone-call-link/)
 - [How to Link Multiple Records to One Feature](../one-to-n-relations/)
 - [How to Embed an Image](../embed-image/) in the form
-- [How to Use Image Guides in the Form](../image-guide/)
+- [How to Use Image Guides in the Form](../image-guide/)
+- [How to Display Photo Location and Direction](../photo-direction/)
