@@ -101,7 +101,7 @@ Some settings of your [<MainPlatformName /> project](../project/) can be done th
 - Set [**Layer order**](../../field/layers/#layer-order) for the <MobileAppNameShort />
 - Enable [**Photo sketching**](../../field/photo-sketching/) to annotate pictures in the <MobileAppNameShort />
 - Enable [**Filtering**](../../field/filtering) features in the <MobileAppNameShort />
-- Define [Vertical CRS](../../gis/elevations/#using-custom-geoid) for heights reported by the <MobileAppNameShort />
+- Define [Vertical CRS](../../gis/elevations/#custom-vertical-reference-system) for heights reported by the <MobileAppNameShort />
 
 ![Mergin Maps Project Properties in QGIS](./qgis-mergin-maps-project-properties.jpg "Mergin Maps Project Properties in QGIS")
 
