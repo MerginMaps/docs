@@ -32,7 +32,7 @@ There are some differences in the functionality and available details depending 
 ## Internal provider (no external device)
 
 ### Android
-On Android, the [internal (fused)](../../field/mobile-app-ui/#gps-settings) GPS provider is used by default. It reports ellipsoidal heights that <MainPlatformName /> transforms to **orthometric heights using the EGM96 geoid model** by default and displays them in the [GPS info panel](../../field/mobile-app-ui/#current-position-and-gps-info).
+On Android, the [internal (fused)](../../field/mobile-app-ui/#gps-settings) GPS provider is used by default. It reports **orthometric heights** transformed from ellipsoidal heights by <MainPlatformName /> using the EGM96 geoid model and displays them in the [GPS info panel](../../field/mobile-app-ui/#current-position-and-gps-info).
 
 **Position variables**: :white_check_mark: *Ellipsoidal elevation*, *orthometric elevation*, *geoid separation* values are available and can be stored using [position variables](../../layer/variables/#position-variables).
 
@@ -137,7 +137,7 @@ For some vertical CRS, there may be multiple datum transformations available. If
 
 ![Mergin Maps QGIS plugin datum transformation warning](./plugin-transformation-warning.webp "Mergin Maps QGIS plugin datum transformation warning")
 
-To make sure that <MainPlatformName /> uses the correct operation, make sure that the datum transformation you want to used is defined in the **Transformations** tab in **Project Properties**.
+Make sure to define the preferred datum transformation in the **Transformations** tab in **Project Properties**.
 
 ### Downloading grid shift files
 Some specific vertical CRS transformations may not be included in QGIS by default (see [custom projections in QGIS](../proj/#custom-projections-in-qgis)). In this the case, the <QGISPluginNameShort /> will display a warning that it needs to download the geoid grid file.
