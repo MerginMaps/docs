@@ -1,5 +1,6 @@
 ---
 description: With Mergin Maps mobile app, you can capture and edit points, lines, polygons and non-spatial features in the field using comprehensive editing tools.
+outline: deep
 ---
 
 # How to Add, Edit, Delete Features
@@ -30,7 +31,7 @@ The crosshairs you will see on your map are used as the recorded location. You c
 The *active layer* is displayed on the top of the map window. This layer is used for surveying new features. To switch to a different (editable) layer, tap on the active layer and select another one from the list.
 ![Active survey layer](./mobile-active-layer.jpg "Active survey layer")
 
-In the recording mode, the bottom panel contains tools to capture geometry. Once the geometry is recorded, you can fill in the attributes form and save the feature.
+In the recording mode, the bottom panel contains tools to capture geometry depending on the geometry type of the active layer. Once the geometry is recorded, you can fill in the attributes form and save the feature.
 
 Below, we describe capturing [point features](#capture-points), [lines and areas](#capture-lines-or-areas) as well as [non-spatial](#add-or-edit-non-spatial-features) records (e.g. adding a new entry to a table).
 
@@ -39,32 +40,33 @@ Attributes forms can be set up in QGIS to make collecting data more efficient. F
 :::
 
 ### Capture points
-To record a new point feature, tap the **Record** button (you have to be in the [recording mode](#adding-features)). 
+To record a new point, tap the **Record** button (you have to be in the [recording mode](#adding-features)). 
 
-Fill in the form as needed and tap the **Save** :heavy_check_mark: button. A point is added to the survey layer and is displayed on the map.
+Fill in values in the form and tap the **Save** :heavy_check_mark: button. A point is added to the survey layer and is displayed on the map.
 
 ![Add a point in Mergin Maps mobile app](./mobile-capture-point.jpg "Add a point in Mergin Maps mobile app")
 
+If you are using a layer with the MultiPoint geometry type, you have the option to **Add** parts as well as **Remove** and **Undo** button to modify them while recording the feature. MultiPoint feature can also be recorded by using the [*streaming mode*](#streaming-mode-to-survey-lines-or-areas).
+
+![Adding a multipoint in Mergin Maps mobile app](./mobile-capture-multipoint.webp "Adding a multipoint in Mergin Maps mobile app")
+
 ### Capture lines or areas
-There are two methods of capturing lines and areas: [adding vertices](#adding-points-to-survey-vertices-of-lines-or-areas) one by one or using the [*streaming mode*](#streaming-mode-to-survey-lines-or-areas) to capture features based on your position.
+Lines and polygons can be captured by adding vertices one by one or by using the [*streaming mode*](#streaming-mode-to-survey-lines-or-areas).
 
-#### Adding points to survey vertices of lines or areas
-Lines and areas can be captured by adding vertices one by one. When you are in the [**recording**](#adding-features) mode and your active layer is a line or polygon, you will see line and areas editing tools in the bottom panel.
-
-Tap **Add** to capture vertices of your line or area. If you want to change the position of the last vertex, tap **Remove** and move the vertex to the correct place. **Undo** can be used to revert last changes.
+In the [**recording**](#adding-features) mode tap **Add** to capture vertices of your line or area. If you want to change the position of the last vertex, tap **Remove** and move the vertex to the correct place. **Undo** can be used to revert last changes.
 
 Once the survey of the feature is completed, tap **Record** and fill in the form.
 ![Surveying lines in Mergin Maps mobile app](./mobile-capture-line.jpg "Surveying lines in Mergin Maps mobile app")
 
-#### Streaming mode to survey lines or areas
-Lines and areas can be also captured automatically based on your position. 
+If you are using layers with multipart geometry types, parts of features can be added when [editing geometry](#adding-part-of-multipart-geometry). 
+
+### Streaming mode
+Features can also be captured automatically based on your position. Streaming is not available for layers with *Point* geometry.
 
 Here is a video tutorial:
 <YouTube id="069-fXNqyJY" title="Streaming mode" />
 
-Make sure you are in the [**recording**](#adding-features) mode and that your active layer is a line or polygon.
-
-Tap the **streaming** button and then **Start streaming mode**.
+Tap the **streaming** button while in the [**recording**](#adding-features) mode and **Start streaming mode**. 
 
 ![Mergin Maps mobile app start streaming mode](./mobile-streaming-mode-start.jpg "Mergin Maps mobile app start streaming mode")
 
@@ -81,35 +83,47 @@ It is possible to set the **Threshold interval**, i.e. how often you want to cap
 :::
 
 ## Editing features
-Features can be browsed, edited and deleted through the [Layers](../layers/) panel in the <MobileAppNameShort />. Note that layers that are set as [read-only](../../gis/enable_digitising/) in the project properties cannot be edited.
+Tap a feature on the map or *tap and hold* to select one from multiple overlaying features to display the form.
 
-Tap the **Layers** button in the bottom navigation panel and select a layer to see the list of features it contains. 
+Use the **Edit** button to open the attributes form for editing. To edit the geometry of a feature, tap the **Edit geometry** button.
 
-![Layers in Mergin Maps mobile app](./mobile-layers-browse-features.jpg "Layers in Mergin Maps mobile app")
-
-To edit the attributes or geometry of a feature, select it from the list in the **Layers** panel. It is also possible to simply tap a feature on the map or *tap and hold* to select one from multiple overlaying features.
-
-Use the **Edit** button to open the attributes form. Here you can change the values of attributes as needed. To edit the geometry of a feature, tap the **Edit geometry** button.
+Once you are finished with your changes, use the **Save** :heavy_check_mark: button.
 
 ![Edit attributes and geometry in Mergin Maps mobile app](./mobile-edit-features.jpg "Edit attributes and geometry")
 
-To edit geometry of a point feature simply adjust the location in the same manner as when [adding new features](#capture-points). 
+Features can also be browsed, edited and deleted through the [Layers](../layers/) panel. Layers that are set as [read-only](../../gis/enable_digitising/) in the project properties cannot be edited.
+- Tap the **Layers** button in the bottom navigation panel and select a layer to see the list of features it contains. 
+- Select a feature from the list in the **Layers** panel to display its form and edit the values or geometry. 
 
-Once you are finished with your changes, tap the **Save** :heavy_check_mark: button.
+![Layers in Mergin Maps mobile app](./mobile-layers-browse-features.jpg "Layers in Mergin Maps mobile app")
 
-### Edit geometry of lines or areas
-There are multiple options when it comes to editing the geometry of lines and polygons: editing the vertices, [redrawing](#redraw-geometry-of-lines-or-areas) or [splitting](#split-geometry-of-lines-or-areas) features.
+### Editing geometry
+There are multiple options of editing the geometry of features depending on the geometry type of the survey layer: editing the vertices, [redrawing](#redraw-geometry-of-lines-or-areas) or [splitting](#split-geometry-of-lines-or-areas) features.
 
-Tap a line or polygon feature, press the **Edit** button and then use **Edit geometry**. The vertices of the feature will be highlighted. You can move, release or remove them as needed. Tap the **Record** button to save the modified geometry.
+To edit geometry of a point feature simply adjust the location in the same manner as when [adding new features](#capture-points).
+
+Layers with MultiPoint, lines and polygon geometries offer more options. Tap a feature, press the **Edit** button and then use **Edit geometry**. The vertices of the feature will be highlighted. You can move, **Release** or **Remove** them as needed. Tap the **Record** button to save the modified geometry.
 
 ![Editing line geometry in Mergin Maps mobile app](./mobile-edit-lines.jpg "Editing line geometry in Mergin Maps mobile app")
 
-The [streaming mode](#streaming-mode-to-survey-lines-or-areas) can be also used while editing lines or areas. Tap the **More option** button and use the **Streaming mode**. 
+### Adding part of multipart geometry
+Parts can be added to features from survey layers with multipart geometry type (MultiPoint, MultiLine, MultiPolygon) while editing geometry.
+
+Tap the **More option** button while editing geometry and use the **Add part** option.
+
+![Adding geometry part in Mergin Maps mobile app](./mobile-add-part.webp "Adding geometry part in Mergin Maps mobile app")
+
+Capture the part by using the editing tools and **Record** your changes. The part is added to the geometry of the feature.
+
+![Adding geometry part in Mergin Maps mobile app](./mobile-added-part.webp "Adding geometry part in Mergin Maps mobile app")
+
+### Using streaming mode to edit geometry
+The [streaming mode](#streaming-mode-to-survey-lines-or-areas) can be also used while editing features with compatible geometry type. Tap the **More option** button and use the **Streaming mode**. 
 
 ![Editing line geometry streaming](./mobile-edit-streaming.jpg "Editing line geometry streaming")
 
-### Redraw geometry of lines or areas
-The existing geometry of lines and areas can also be redrawn completely.
+### Redraw geometry
+The existing geometry of MulitPoints, lines and areas can also be redrawn.
 
 Tap the **More option** button and select the **Redraw geometry** option. 
 
