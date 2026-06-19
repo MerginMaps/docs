@@ -46,12 +46,12 @@ Fill in values in the form and tap the **Save** :heavy_check_mark: button. A poi
 
 ![Add a point in Mergin Maps mobile app](./mobile-capture-point.jpg "Add a point in Mergin Maps mobile app")
 
-If you are using a layer with the MultiPoint geometry type, you have the option to **Add** parts as well as **Remove** and **Undo** button to modify them while recording the feature. MultiPoint feature can also be recorded by using the [*streaming mode*](#streaming-mode-to-survey-lines-or-areas).
+If you are using a layer with the MultiPoint geometry type, you have the option to **Add** parts as well as **Remove** and **Undo** button to modify them while recording the feature. MultiPoint feature can also be recorded by using the [*streaming mode*](#streaming-mode).
 
 ![Adding a multipoint in Mergin Maps mobile app](./mobile-capture-multipoint.webp "Adding a multipoint in Mergin Maps mobile app")
 
 ### Capture lines or areas
-Lines and polygons can be captured by adding vertices one by one or by using the [*streaming mode*](#streaming-mode-to-survey-lines-or-areas).
+Lines and polygons can be captured by adding vertices one by one or by using the [*streaming mode*](#streaming-mode).
 
 In the [**recording**](#adding-features) mode tap **Add** to capture vertices of your line or area. If you want to change the position of the last vertex, tap **Remove** and move the vertex to the correct place. **Undo** can be used to revert last changes.
 
