@@ -98,7 +98,7 @@ Features can also be browsed, edited and deleted through the [Layers](../layers/
 ![Layers in Mergin Maps mobile app](./mobile-layers-browse-features.jpg "Layers in Mergin Maps mobile app")
 
 ### Editing geometry
-There are multiple options of editing the geometry of features depending on the geometry type of the survey layer: editing the vertices, [redrawing](#redraw-geometry-of-lines-or-areas) or [splitting](#split-geometry-of-lines-or-areas) features.
+There are multiple options of editing the geometry of features depending on the geometry type of the survey layer: editing the vertices, [redrawing](#redraw-geometry) or [splitting](#split-geometry-of-lines-or-areas) features.
 
 To edit geometry of a point feature simply adjust the location in the same manner as when [adding new features](#capture-points).
 
@@ -118,7 +118,7 @@ Capture the part by using the editing tools and **Record** your changes. The par
 ![Adding geometry part in Mergin Maps mobile app](./mobile-added-part.webp "Adding geometry part in Mergin Maps mobile app")
 
 ### Using streaming mode to edit geometry
-The [streaming mode](#streaming-mode-to-survey-lines-or-areas) can be also used while editing features with compatible geometry type. Tap the **More option** button and use the **Streaming mode**. 
+The [streaming mode](#streaming-mode) can be also used while editing features with compatible geometry type. Tap the **More option** button and use the **Streaming mode**. 
 
 ![Editing line geometry streaming](./mobile-edit-streaming.jpg "Editing line geometry streaming")
 

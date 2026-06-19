@@ -175,7 +175,7 @@ To open the **Settings**, tap the **More** button. In Settings, you can find [GP
 ![Mergin Maps mobile app GPS Settings](./mobile-app-gps-settings.jpg "Mergin Maps mobile app GPS settings")
 
 ### Streaming mode settings
-[**Streaming mode**](../mobile-features/#streaming-mode-to-survey-lines-or-areas) can be used when surveying lines or polygons to capture vertices based on the GPS location.
+[**Streaming mode**](../mobile-features/#streaming-mode) can be used when surveying lines or polygons to capture vertices based on the GPS location.
 - **Interval threshold type**: the type of interval in streaming mode, can be set to *Time elapsed* or *Distance travelled* .
 - **Threshold interval** the interval of recording vertices
 
