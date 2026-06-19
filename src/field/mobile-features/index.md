@@ -123,7 +123,7 @@ The [streaming mode](#streaming-mode) can be also used while editing features wi
 ![Editing line geometry streaming](./mobile-edit-streaming.jpg "Editing line geometry streaming")
 
 ### Redraw geometry
-The existing geometry of MulitPoints, lines and areas can also be redrawn.
+The existing geometry of lines, areas and MultiPoint geometry can also be redrawn.
 
 Tap the **More option** button and select the **Redraw geometry** option. 
 
