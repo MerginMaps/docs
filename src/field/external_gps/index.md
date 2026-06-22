@@ -1,5 +1,5 @@
 ---
-description: External GPS receivers can be connected to your mobile device and used in Mergin Maps mobile app to achieve higher GPS accuracy.
+description: External GPS receivers can be connected to your mobile device and used in the Mergin Maps mobile app to achieve higher GPS accuracy.
 
 outline: deep
 ---
@@ -10,14 +10,14 @@ outline: deep
 
 [[toc]]
 
-External GPS receivers can be connected to your mobile device via Bluetooth and used in <MobileAppName /> to achieve higher [GPS accuracy](../gps_accuracy/). 
+Connect external GPS receivers to your mobile device to achieve higher [GPS accuracy](../gps_accuracy/) of your survey with <MobileAppName />. 
 
-There are several [extra position variables](../../layer/variables/#position-variables) that can be useful to record when doing the survey with external GPS, such as the GPS antenna height, GPS device name as well as metrics like horizontal, vertical or position dilution of precision (HDOP, VDOP, PDOP).
+There are several [extra position variables](../../layer/variables/#position-variables) that can be useful to record during the survey with external GPS, such as the GPS antenna height, GPS device name as well as metrics like horizontal, vertical or position dilution of precision (HDOP, VDOP, PDOP).
 
 Note that external GPS devices usually return orthometric heights (ellipsoid with the geoid separation applied). The altitude and geoid separation in the [GPS info panel](../mobile-app-ui/#current-position-and-gps-info) in the <MobileAppNameShort /> is displayed as reported by the external GPS. 
 
 **Before you start**:
-- Set up your device according to the instructions of its manufacturer. You should continue only when you are sure that the device is working and sending data.
+- Follow the manufacturer's setup instructions. You should continue only when you are sure that the device is working and sending data.
 - Make sure that your mobile device offers the functionality to pair with an external GPS device and that it communicates through a standard interface.
 
 :::tip GPS and GNSS terminology
@@ -43,7 +43,7 @@ External GPS can be connected to the <MobileAppNameShort /> via [Bluetooth](#blu
 
 If it is not possible to use these options, you can also set up a [Mock location](#mock-location). However, some of the data reported by GPS may not be available.
 
-External GPS receivers reports some additional GPS data that can be found in **GPS info** panel.
+External GPS receivers report some additional GPS data that are displayed in the **GPS info** panel.
 
 ![GPS info from external GPS in Mergin Maps mobile app](./mobile-app-external-gps-info.jpg "GPS info from external GPS in Mergin Maps mobile app") 
 
@@ -67,7 +67,7 @@ The <MobileAppNameShort /> will now use the external GPS receiver to display and
 
 
 ### Network provider connection
-Connecting external GPS receivers using network provider is available on both Android and iOS.
+Connecting external GPS receivers using a network provider is available on both Android and iOS.
 
 1. Open a project and navigate to the **Manage GPS receivers** option in [**Settings**](../mobile-app-ui/#settings)
 
@@ -88,7 +88,7 @@ It is strongly recommended to use the direct connection via [Bluetooth (Android)
 #### Android mock location setup
 
 :::warning Mock location and Internal (fused) GPS provider
-When setting up external GPS receiver on Android via mock location, we recommend using the *Internal (fused)* receiver option in [GPS Settings](../mobile-app-ui/#gps-settings) as this will show if mocked location is detected in the [GPS info](../mobile-app-ui/#current-position-and-gps-info) panel.
+When using an external GPS receiver on Android via mock location, we recommend using the *Internal (fused)* receiver option in [GPS Settings](../mobile-app-ui/#gps-settings) as this will show if mocked location is detected in the [GPS info](../mobile-app-ui/#current-position-and-gps-info) panel.
 :::
 
 External GPS can be connected and configured in Android to provide mock location using GPS apps (e.g. [Bluetooth GPS](https://play.google.com/store/apps/details?id=de.pilablu.gpsconnector) or apps from specific GPS manufacturers) as a source of GPS signal. The <MobileAppNameShort /> and other apps in your device will get the GPS position from the external GPS. 
@@ -107,7 +107,7 @@ The mock location will be used by the <MobileAppNameShort /> automatically as if
 
 #### iOS mock location setup
 
-External GPS can be connected to your iOS device via Bluetooth. Depending on the GPS manufacturer, there may be a custom app, which then provides position to your iOS device. The <MobileAppNameShort /> sees this as an internal GPS receiver automatically, without additional configuration. <MobileAppNameShort /> will report if external GPS receiver is connected.
+External GPS can be connected to your iOS device via Bluetooth. Depending on the GPS manufacturer, there may be a custom app, which then provides position to your iOS device. The <MobileAppNameShort /> sees this as an internal GPS receiver automatically, without additional configuration. The <MobileAppNameShort /> will report if an external GPS receiver is connected.
 
 ## External GPS troubleshooting
 If you encounter issues with external GPS in the <MobileAppNameShort />, make sure that:
@@ -153,9 +153,9 @@ External GPS functionality depends on the manufacturer and on the specific model
 
 - <a id="link-1">1</a>: **Carlson <NoSpellcheck id="Brx7" />**,  **Carlson <NoSpellcheck id="xML2" />** - through [Carlson Layout](https://www.carlsonsw.com/product/carlson-layout) which will set a mock location in Android.
 - <a id="link-2">2</a>: **Emlid Reach RX**, **Emlid Reach RS+**, **Emlid Reach RS2/RS2+**, **Emlid Reach RS3** - directly via Bluetooth connection, has an internal NTRIP client to receive corrections. Possible to set a mock location and connect the receiver via Bluetooth using [GPS Connector](https://play.google.com/store/apps/details?id=de.pilablu.gpsconnector) or WiFi using [Lebefure NTRIP Client](https://play.google.com/store/apps/details?id=com.lefebure.ntripclient).
-- <a id="link-3">3</a>: **Geode GNS3** - through *Geode Connect* app on [Android](https://play.google.com/store/apps/details?id=com.juniper.geode2a&hl=en_NZ&gl=US) or [iOS](https://apps.apple.com/us/app/geode-connect/id1446098695), which also acts as an NTRIP client and sends corrections to the device.
-- <a id="link-4">4</a>: **Leica FLX100**, **Leica FLX100 plus**, **Leica Zeno GG04plus** - through *Leica Zeno Connect* app on [Android](https://play.google.com/store/apps/details?id=com.leica.zenoconnect&hl=en&gl=US) which also acts as a NTRIP client and sends the corrections to the device. The app will set a mock location in Android. It is also possible to connect directly via Bluetooth (even multiple phones can be connected at once), but if no phone has Zeno app running, there will be no corrections available. 
-   <a id="link-**">**</a> *Leica Zeno Connect* is also available on [iOS](https://apps.apple.com/us/app/zeno-connect/id1310344749). It is known to support **Leica FLX100 plus** and **Leica Zeno GG04plus**.  However, on iOS, the vertical accuracy information is not transferred to <MobileAppName /> through *Leica Zeno Connect*. The <MobileAppNameShort />  will not display the correct value of the vertical accuracy.
+- <a id="link-3">3</a>: **Geode GNS3** - through the *Geode Connect* app on [Android](https://play.google.com/store/apps/details?id=com.juniper.geode2a&hl=en_NZ&gl=US) or [iOS](https://apps.apple.com/us/app/geode-connect/id1446098695), which also acts as an NTRIP client and sends corrections to the device.
+- <a id="link-4">4</a>: **Leica FLX100**, **Leica FLX100 plus**, **Leica Zeno GG04plus** - through the *Leica Zeno Connect* app on [Android](https://play.google.com/store/apps/details?id=com.leica.zenoconnect&hl=en&gl=US) which also acts as a NTRIP client and sends the corrections to the device. The app will set a mock location in Android. It is also possible to connect directly via Bluetooth (even multiple phones can be connected at once), but if no phone has Zeno app running, there will be no corrections available. 
+   <a id="link-**">**</a> *Leica Zeno Connect* is also available on [iOS](https://apps.apple.com/us/app/zeno-connect/id1310344749). It is known to support **Leica FLX100 plus** and **Leica Zeno GG04plus**.  However, on iOS, the vertical accuracy information is not transferred to the <MobileAppName /> through *Leica Zeno Connect*. The <MobileAppNameShort />  will not display the correct value of the vertical accuracy.
 - <a id="link-5">5</a>: **Trimble R1**, **Trimble R2**, **Trimble Catalyst** - through [*Trimble Mobile Manager* app](https://play.google.com/store/apps/details?id=com.trimble.trimblemobilemanager) which also acts as a NTRIP client and sends the corrections to the device. The app will set a mock location in Android.
 - <a id="link-6">6</a>: **<NoSpellcheck id="proNIVO" /> <NoSpellcheck id="PNR21" />** - through *<NoSpellcheck id="Attenberger" /> Connector* app on [Android](https://play.google.com/store/apps/details?id=eu.apglos.attenbergerapp1&hl=en&gl=US).
 - <a id="link-7">7</a>: **<NoSpellcheck id="SingularXYZ" /> <NoSpellcheck id="P1" />** - the device uses a SIM Card that can be configured for NTRIP. It can be connected to the <MobileAppNameShort /> via Bluetooth (without using a mock location).
