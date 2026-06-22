@@ -39,7 +39,7 @@ GPS antenna height can be recorded during the survey by using the [extra positio
 :::
 
 ## Connecting external GPS
-External GPS can be connected to the <MobileAppNameShort /> via [Bluetooth](#bluetooth-connection) or a [Network provider](#network-provider-connection). We recommend using one of these options as they provide more data, such as HDOP and fix quality (see [position variables](../../layer/variables/#position-variables)). Also, the <MobileAppNameShort /> will report which device is used and take care of reconnecting in case of lost connection.
+External GPS can be connected to the <MobileAppNameShort /> via [Bluetooth](#bluetooth-connection-android-only) or a [Network provider](#network-provider-connection). We recommend using one of these options as they provide more data, such as HDOP and fix quality (see [position variables](../../layer/variables/#position-variables)). Also, the <MobileAppNameShort /> will report which device is used and take care of reconnecting in case of lost connection.
 
 If it is not possible to use these options, you can also set up a [Mock location](#mock-location). However, some of the data reported by GPS may not be available.
 
@@ -74,7 +74,7 @@ Connecting external GPS receivers using a network provider is available on both 
 2. Here, you can see the currently used receiver. Tap on the **Connect new receiver** button.
    ![Select GPS receiver](./mobile-app-connect-gps-receiver.webp "Select GPS receiver")
 
-3. On Android, select the **Network (TCP, UDP)** connection type. On iOS, this is the only direct connection type.
+3. On Android, select the **Network (<NoSpellcheck id="TCP, UDP" />)** connection type. On iOS, this is the only direct connection type.
 
    Fill in the network connection details (IP Address and Port). You can also use a receiver nickname.   
    

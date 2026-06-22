@@ -45,10 +45,10 @@ Following variables are supported:
 | `@position_coordinate` | Geometry | A point with the coordinates in WGS84 |
 | `@position_latitude` | Number (decimal) | Latitude |
 | `@position_longitude` | Number (decimal) | Longitude |
-| `@position_elevation` | Number (decimal) | Orthometric or normal height. *May not be available for some providers, see [Elevations](../../gis/elevations/) for more detail.* |
+| `@position_elevation` | Number (decimal) | Orthometric or normal height. *May not be available for some providers* |
 | `@position_altitude` | Number (decimal) | Has been replaced by `@position_elevation`. It is still supported and returns the same values as `@position_elevation`. |
-| `@position_elevation_ellipsoid`  | Number (decimal) | Ellipsoidal height. *May not be available for some providers, see [Elevations](../../gis/elevations/) for more detail.* |
-| `@position_geoid_separation`  | Number (decimal) | Geoid or quasi-geoid height (undulation). *May not be available for some providers, see [Elevations](../../gis/elevations/) for more detail.* |
+| `@position_elevation_ellipsoid`  | Number (decimal) | Ellipsoidal height. *May not be available for some providers*  |
+| `@position_geoid_separation`  | Number (decimal) | Geoid or quasi-geoid height (undulation). *May not be available for some providers*  |
 | `@position_direction`  | Number (integer) | The bearing measured in degrees clockwise from true north to the direction of travel |
 | `@position_ground_speed`  | Number (decimal) | The ground speed, in meters/sec |
 | `@position_vertical_speed`  | Number (decimal) | The vertical speed, in meters/sec |
