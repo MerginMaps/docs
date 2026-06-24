@@ -105,7 +105,7 @@ export default {
         ] },
       ] },
     {
-      text: 'Fieldwork Tips',   // required
+      text: 'Fieldwork',   // required
       collapsed: true,
       items: [
         { text: 'Mergin Maps Mobile App Interface', link: '/field/mobile-app-ui/' },
