@@ -82,7 +82,7 @@ Save and sync the project. When syncing, you will see in the **Project status** 
 
 ![Project status displaying added layer](./add-new-layer.jpg "Project status displaying added layer")
 
-If you used **keep as is** option when [packaging the project](#packaging-qgis-project) or add a layer that is not stored in the project's folder, the project will reference the relative path to its location. When opening the project on another computer, QGIS will try to load the file using the relative path. If this folder doesn't exist or is located elsewhere, the project will not be able to load the layer. The same applies for <MobileAppName />. 
+If you used **keep as is** option when [packaging the project](#packaging-qgis-project) or add a layer that is not stored in the project's folder, the project will reference the relative path to its location. When opening the project on another computer, QGIS will try to load the file using the relative path. If this folder doesn't exist or is located elsewhere, the project will not be able to load the layer. The same applies to <MobileAppName />. 
 
 Only the content in the project's folder is synchronised!
 
