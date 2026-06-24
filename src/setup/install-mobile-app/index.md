@@ -7,7 +7,7 @@ description: Take your QGIS projects to the field, collect data and synchronise 
 
 With the <MobileAppNameShort />, you can view your data and location on the map, capture points, lines, areas, photos and much more.
 
-Download <MobileAppName /> to your Android device, iPhone or iPad. You can find it in the app store of your platform:
+Download the <MobileAppName /> to your Android device, iPhone or iPad. You can find it in the app store of your platform:
 
 <AppDownload></AppDownload>
 
