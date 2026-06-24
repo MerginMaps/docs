@@ -74,7 +74,7 @@ Mock location should be only used if you are unable to connect the external GPS 
 When setting up external GPS receiver on Android via mock location, we recommend using the *Internal (fused)* receiver option in [GPS Settings](../mobile-app-ui/#gps-settings) as this will show if mocked location is detected in the [GPS info](../mobile-app-ui/#current-position-and-gps-info) panel.
 :::
 
-External GPS can be connected and configured in Android to provide mock location using GPS apps (e.g. [Bluetooth GPS](https://play.google.com/store/apps/details?id=de.pilablu.gpsconnector) or apps from specific GPS manufacturers) as a source of GPS signal. the <MobileAppNameShort /> and other apps in your device will get the GPS position from the external GPS. 
+External GPS can be connected and configured in Android to provide mock location using GPS apps (e.g. [Bluetooth GPS](https://play.google.com/store/apps/details?id=de.pilablu.gpsconnector) or apps from specific GPS manufacturers) as a source of GPS signal. The <MobileAppNameShort /> and other apps in your device will get the GPS position from the external GPS. 
 
 :::tip
 GPS manufacturer's apps often provide a setup for a NTRIP client, through which you are able to receive GPS corrections and achieve centimetre level accuracy.
@@ -111,24 +111,24 @@ External GPS functionality depends on the manufacturer and on the specific model
 | <NoSpellcheck id="ArduSimple" />| RTK Calibrated Surveyor Kit<sup><a href="#link-9">9</a></sup> | yes | no |
 | <NoSpellcheck id="ArduSimple" />| RTK Handheld Surveyor Kit<sup><a href="#link-9">9</a></sup>  | yes | no |
 | <NoSpellcheck id="ArduSimple" />| RTK Portable Bluetooth Kit<sup><a href="#link-9">9</a></sup>  | yes | no |
-| Bad Elf | GPS Pro | yes | yes |
-| Bad Elf | GPS Pro+ | yes | yes |
-| Bad Elf | GNSS Surveyor | yes | yes |
-| Bad Elf | Flex Mini (standard or extreme) | yes | yes |
-| Bad Elf | Flex (standard or extreme) | yes | yes |
+| Bad Elf | GPS Pro | yes | yes (mock location) |
+| Bad Elf | GPS Pro+ | yes | yes (mock location) |
+| Bad Elf | GNSS Surveyor | yes | yes (mock location) |
+| Bad Elf | Flex Mini (standard or extreme) | yes | yes (mock location) |
+| Bad Elf | Flex (standard or extreme) | yes | yes (mock location) |
 | Carlson | Carlson <NoSpellcheck id="Brx7" /><sup><a href="#link-1">1</a></sup> | yes (mock location) | unknown |
 | Carlson | Carlson <NoSpellcheck id="xML2" /> <sup><a href="#link-1">1</a></sup>| yes (mock location) | unknown |
-| Emlid | Emlid Reach RX<sup><a href="#link-2">2</a></sup> | yes | yes |
+| Emlid | Emlid Reach RX<sup><a href="#link-2">2</a></sup> | yes | yes (mock location) |
 | Emlid | Emlid Reach RS+<sup><a href="#link-2">2</a></sup> | yes | no |
 | Emlid | Emlid Reach RS2/RS2+<sup><a href="#link-2">2</a></sup> | yes | no |
 | Emlid | Emlid Reach RS3<sup><a href="#link-2">2</a></sup> | yes | no |
-| Garmin | GLO 2 | yes | yes |
+| Garmin | GLO 2 | yes | yes (mock location) |
 | Geomax | <NoSpellcheck id="Zenith06" /><sup><a href="#link-8">8</a></sup>  | yes (mock location) | unknown |
 | Geomax | <NoSpellcheck id="Zenith60" /><sup><a href="#link-8">8</a></sup>  | yes (mock location)  | unknown |
-| Juniper Systems | Geode GNS3<sup><a href="#link-3">3</a></sup> | yes | yes |
+| Juniper Systems | Geode GNS3<sup><a href="#link-3">3</a></sup> | yes | yes (mock location) |
 | Leica | Leica FLX100<sup><a href="#link-4">4</a></sup> | yes (mock location) | no |
-| Leica | Leica FLX100 plus<sup><a href="#link-4">4</a></sup> | yes (mock location) | yes<sup><a href="#link-**">**</a></sup>|
-| Leica | Leica Zeno GG04plus<sup><a href="#link-4">4</a></sup> | yes (mock location) | yes<sup><a href="#link-**">**</a></sup> |
+| Leica | Leica FLX100 plus<sup><a href="#link-4">4</a></sup> | yes (mock location) | yes (mock location)<sup><a href="#link-**">**</a></sup>|
+| Leica | Leica Zeno GG04plus<sup><a href="#link-4">4</a></sup> | yes (mock location) | yes (mock location)<sup><a href="#link-**">**</a></sup> |
 | <NoSpellcheck id="marXact" /> | UNI-GR1| yes | no |
 | <NoSpellcheck id="marXact" /> | UNI-GR2| yes | no |
 | <NoSpellcheck id="proNIVO" /> | <NoSpellcheck id="PNR21" /><sup><a href="#link-6">6</a></sup> | yes (mock location)| no |
@@ -138,15 +138,15 @@ External GPS functionality depends on the manufacturer and on the specific model
 | Trimble | Trimble R2<sup><a href="#link-5">5</a></sup> | yes (mock location) | unknown |
 
 
-- <a name="link-1">1</a>: **Carlson <NoSpellcheck id="Brx7" />**,  **Carlson <NoSpellcheck id="xML2" />** - through [Carlson Layout](https://www.carlsonsw.com/product/carlson-layout) which will set a mock location in Android.
-- <a name="link-2">2</a>: **Emlid Reach RX**, **Emlid Reach RS+**, **Emlid Reach RS2/RS2+**, **Emlid Reach RS3** - directly via Bluetooth connection, has an internal NTRIP client to receive corrections. Possible to set a mock location and connect the receiver via Bluetooth using [GPS Connector](https://play.google.com/store/apps/details?id=de.pilablu.gpsconnector) or WiFi using [Lebefure NTRIP Client](https://play.google.com/store/apps/details?id=com.lefebure.ntripclient).
-- <a name="link-3">3</a>: **Geode GNS3** - through *Geode Connect* app on [Android](https://play.google.com/store/apps/details?id=com.juniper.geode2a&hl=en_NZ&gl=US) or [iOS](https://apps.apple.com/us/app/geode-connect/id1446098695), which also acts as an NTRIP client and sends corrections to the device.
-- <a name="link-4">4</a>: **Leica FLX100**, **Leica FLX100 plus**, **Leica Zeno GG04plus** - through *Leica Zeno Connect* app on [Android](https://play.google.com/store/apps/details?id=com.leica.zenoconnect&hl=en&gl=US) which also acts as a NTRIP client and sends the corrections to the device. The app will set a mock location in Android. It is also possible to connect directly via Bluetooth (even multiple phones can be connected at once), but if no phone has Zeno app running, there will be no corrections available. 
-   <a name="link-**">**</a> *Leica Zeno Connect* is also available on [iOS](https://apps.apple.com/us/app/zeno-connect/id1310344749). It is known to support **Leica FLX100 plus** and **Leica Zeno GG04plus**.  However, on iOS, the vertical accuracy information is not transferred to <MobileAppName /> through *Leica Zeno Connect*. The <MobileAppNameShort />  will not display the correct value of the vertical accuracy.
-- <a name="link-5">5</a>: **Trimble R1**, **Trimble R2**, **Trimble Catalyst** - through [*Trimble Mobile Manager* app](https://play.google.com/store/apps/details?id=com.trimble.trimblemobilemanager) which also acts as a NTRIP client and sends the corrections to the device. The app will set a mock location in Android.
-- <a name="link-6">6</a>: **<NoSpellcheck id="proNIVO" /> <NoSpellcheck id="PNR21" />** - through *<NoSpellcheck id="Attenberger" /> Connector* app on [Android](https://play.google.com/store/apps/details?id=eu.apglos.attenbergerapp1&hl=en&gl=US).
-- <a name="link-7">7</a>: **<NoSpellcheck id="SingularXYZ" /> <NoSpellcheck id="P1" />** - the device uses a SIM Card that can be configured for NTRIP. It can be connected to the <MobileAppNameShort /> via Bluetooth (without using a mock location).
-- <a name="link-8">8</a>: **Geomax Zenith06, Zenith60** - through *Geomax X-PAD* app on Android, using a GNSS Mock licence from Geomax and the *Mock GNSS* option in the app.
-- <a name="link-9">9</a>: **<NoSpellcheck id="ArduSimple kits" />** - through [*GNSS Master* app](https://play.google.com/store/apps/details?id=com.gnssmaster&hl=en&gl=US&pli=1) which also acts as a NTRIP client and sends the corrections to the device. Detailed steps can be found in the tutorial [How to connect <NoSpellcheck id="ArduSimple" /> kit to Mergin Maps for centimetre-accurate mapping](https://www.ardusimple.com/how-to-connect-ardusimple-kit-to-mergin-maps-for-centimeter-accuracte-mapping/).
+- <a id="link-1">1</a>: **Carlson <NoSpellcheck id="Brx7" />**,  **Carlson <NoSpellcheck id="xML2" />** - through [Carlson Layout](https://www.carlsonsw.com/product/carlson-layout) which will set a mock location in Android.
+- <a id="link-2">2</a>: **Emlid Reach RX**, **Emlid Reach RS+**, **Emlid Reach RS2/RS2+**, **Emlid Reach RS3** - directly via Bluetooth connection, has an internal NTRIP client to receive corrections. Possible to set a mock location and connect the receiver via Bluetooth using [GPS Connector](https://play.google.com/store/apps/details?id=de.pilablu.gpsconnector) or WiFi using [Lebefure NTRIP Client](https://play.google.com/store/apps/details?id=com.lefebure.ntripclient).
+- <a id="link-3">3</a>: **Geode GNS3** - through *Geode Connect* app on [Android](https://play.google.com/store/apps/details?id=com.juniper.geode2a&hl=en_NZ&gl=US) or [iOS](https://apps.apple.com/us/app/geode-connect/id1446098695), which also acts as an NTRIP client and sends corrections to the device.
+- <a id="link-4">4</a>: **Leica FLX100**, **Leica FLX100 plus**, **Leica Zeno GG04plus** - through *Leica Zeno Connect* app on [Android](https://play.google.com/store/apps/details?id=com.leica.zenoconnect&hl=en&gl=US) which also acts as a NTRIP client and sends the corrections to the device. The app will set a mock location in Android. It is also possible to connect directly via Bluetooth (even multiple phones can be connected at once), but if no phone has Zeno app running, there will be no corrections available. 
+   <a id="link-**">**</a> *Leica Zeno Connect* is also available on [iOS](https://apps.apple.com/us/app/zeno-connect/id1310344749). It is known to support **Leica FLX100 plus** and **Leica Zeno GG04plus**.  However, on iOS, the vertical accuracy information is not transferred to <MobileAppName /> through *Leica Zeno Connect*. The <MobileAppNameShort />  will not display the correct value of the vertical accuracy.
+- <a id="link-5">5</a>: **Trimble R1**, **Trimble R2**, **Trimble Catalyst** - through [*Trimble Mobile Manager* app](https://play.google.com/store/apps/details?id=com.trimble.trimblemobilemanager) which also acts as a NTRIP client and sends the corrections to the device. The app will set a mock location in Android.
+- <a id="link-6">6</a>: **<NoSpellcheck id="proNIVO" /> <NoSpellcheck id="PNR21" />** - through *<NoSpellcheck id="Attenberger" /> Connector* app on [Android](https://play.google.com/store/apps/details?id=eu.apglos.attenbergerapp1&hl=en&gl=US).
+- <a id="link-7">7</a>: **<NoSpellcheck id="SingularXYZ" /> <NoSpellcheck id="P1" />** - the device uses a SIM Card that can be configured for NTRIP. It can be connected to the <MobileAppNameShort /> via Bluetooth (without using a mock location).
+- <a id="link-8">8</a>: **Geomax Zenith06, Zenith60** - through *Geomax X-PAD* app on Android, using a GNSS Mock licence from Geomax and the *Mock GNSS* option in the app.
+- <a id="link-9">9</a>: **<NoSpellcheck id="ArduSimple kits" />** - through [*GNSS Master* app](https://play.google.com/store/apps/details?id=com.gnssmaster&hl=en&gl=US&pli=1) which also acts as a NTRIP client and sends the corrections to the device. Detailed steps can be found in the tutorial [How to connect <NoSpellcheck id="ArduSimple" /> kit to Mergin Maps for centimetre-accurate mapping](https://www.ardusimple.com/how-to-connect-ardusimple-kit-to-mergin-maps-for-centimeter-accuracte-mapping/).
 
 **Did you use a GPS that is not in this list?** <GitHubRepo id="MerginMaps/docs/issues/124" desc="Share your experiences with us!" />
