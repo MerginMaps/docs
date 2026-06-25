@@ -72,17 +72,16 @@ In **Settings**, you can:
 
 
 ## Members
-The **Members** tab provides the overview of the [members and guests](../permissions/#workspace-members-and-guests) of the workspace, as well as pending invitations. You can use the [**invite**](../project-advanced/#add-users-to-a-workspace) option to add users to the workspace.
+The **Members** tab provides the overview of the [members and guests](../permissions/#workspace-members-and-guests) of the workspace, as well as pending invitations. You can use the [**invite**](../project-advanced/#add-users-to-a-workspace) button to add users to the workspace.
 
 This tab is only available to [owners and admins](../permissions/#workspace-member-roles-and-project-permissions) of a workspace.
 
 Here, you can:
 - see the email addresses, usernames and names of your workspace users
-- see and change the [roles](../permissions/#workspace-member-roles-and-project-permissions) of your workspace members
+- see and change the [**roles**](../permissions/#workspace-member-roles-and-project-permissions) of your workspace members
 - see the **Member type**, whether the user is a [contributor](../subscriptions/#contributors) or a read-only guest. Only contributors are counting towards your [subscription](../subscriptions/).
-- remove users from the workspace
-
-
+- **resend invitation** to a user with pending invitation
+- **remove** members from the workspace
 
 ![Mergin Maps dashboard workspace members](./mergin-maps-dashboard-members.jpg "Mergin Maps dashboard workspace members")
 
