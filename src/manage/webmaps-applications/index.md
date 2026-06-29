@@ -1,5 +1,5 @@
 ---
-description: Mergin Maps webmaps can be customised by integrating map-script to build custom applications, as experimental feature.
+description: Mergin Maps webmaps can be customised by integrating map-script to build custom applications, as an experimental feature.
 ---
 
 # Building Webmap Applications <Badge text="Experimental 🧪" />
@@ -8,7 +8,7 @@ description: Mergin Maps webmaps can be customised by integrating map-script to 
 Webmap applications is in experimental phase and its availability and functionality might change in the future. We are actively working on making these features easier to use.
 :::
 
-Webmaps behavior can be customized to your organisation specific needs via `map-script.js` file to build a webmap application.
+Webmap behaviour can be customised to your organisation's specific needs via a `map-script.js` file to build a webmap application.
 This is a javascript file that runs with your map and lets you add custom controls and behaviour on top of the built-in OpenLayers map. The script runs in both the project map view and in shared/embedded public maps. 
 
 It has reference to the map itself, API and other components to allow further customization, including WMS and WFS OGC API (read-only).
@@ -110,4 +110,4 @@ Note: `<map_link>` is generated only once the map is made public ("Share map" in
 
 ```
 
-We are keen to see what you built! Please do not hesitate to share your results with us on our [community](https://merginmaps.com/community/join)!
+We are keen to see what you've built! Please do not hesitate to share your results with us on our [community](https://merginmaps.com/community/join)!

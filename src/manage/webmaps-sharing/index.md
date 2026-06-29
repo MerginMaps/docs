@@ -10,7 +10,7 @@ Map sharing is in early access. If you would like to try it out, ask your worksp
 
 ## Sharing maps via URL 
 
-Webmaps can be shared via URL. [Admins or owners](../permissions/) can enable map sharing for a project, so that anyone with the link can display and explore your project in a web browser, without the need to log into  <MainPlatformNameLink /> or making the project [public](../project-advanced/#make-your-project-public-private).
+Webmaps can be shared via URL. [Admins or owners](../permissions/) can enable map sharing for a project, so that anyone with the link can display and explore your project in a web browser, without the need to log in to <MainPlatformNameLink /> or make the project [public](../project-advanced/#make-your-project-public-private).
 
 1. Navigate to your project on the <DashboardShortLink />.
 2. In the **Map** tab, click on the **Share map** button to generate a shareable link
@@ -25,14 +25,14 @@ To disable the map sharing, click on the **Revoke sharing** button.
 
 ## Embedding webmaps using HTML
 
-Webmaps that are shared can be also embedded on a website using HTML element `iframe` by using the [URL link](#sharing-maps-via-url) of the webmap.
+Webmaps that are shared can also be embedded on a website using the HTML `iframe` element with the [URL link](#sharing-maps-via-url) of the webmap.
 
 For example, this code
 
 ```
-<iframe src="https://app.merginmaps.com/maps/grDTleg8yCdSracIxs-hmFIGdDs" height="500" width="700" title="Mergin Maps Webmas Iframe Example"></iframe>
+<iframe src="https://app.merginmaps.com/maps/grDTleg8yCdSracIxs-hmFIGdDs" height="500" width="700" title="Mergin Maps Webmaps Iframe Example"></iframe>
 ```
 
 produces this map:
 
-<iframe src="https://app.merginmaps.com/maps/grDTleg8yCdSracIxs-hmFIGdDs" height="500" width="700" title="Mergin Maps Webmas Iframe Example"></iframe>
+<iframe src="https://app.merginmaps.com/maps/grDTleg8yCdSracIxs-hmFIGdDs" height="500" width="700" title="Mergin Maps Webmaps Iframe Example"></iframe>
