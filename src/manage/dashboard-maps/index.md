@@ -34,9 +34,9 @@ Click on a feature on the map to display its attributes.
 ![Mergin Maps dashboard maps](./dashboard-map-properties.webp "Mergin Maps dashboard maps")
 
 ## Available layers
-Webmaps by default show layers that are packaged with the project. These are layers that are loaded from project files. These are usually GeoPackage layers, shapefile layers and background maps that are made available for offline use (e.g. mbtiles, geotiffs, ...).
+Webmaps by default show layers that are packaged with the project. These are layers that are loaded from project files. These are usually GeoPackage layers, shapefile layers and background maps that are made available for offline use (e.g. mbtiles, GeoTIFF, ...).
 
-Layers requiring network connection (e.g. Postgres layers or online background maps) are by default not included on the webmap due to potential performance and connectivity problems. However, certain network layers (such as satellite background map) can be added manually, read more in the [following section](#add-custom-background-maps).
+Layers requiring network connection (e.g. PostgreSQL layers or online background maps) are by default not included on the webmap due to potential performance and connectivity problems. However, certain network layers (such as satellite background map) can be added manually, read more in the [following section](#add-custom-background-maps).
 
 ### Add custom background maps
 If you prefer a different background map than the official one provided by default, there are currently two ways to add a custom background map:

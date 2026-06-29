@@ -104,6 +104,7 @@ OSM
 OSTN
 OGR
 Ok
+OpenLayers
 OpenMapTiles
 OpenStreetMap
 onboarding
@@ -316,3 +317,8 @@ pre
 env
 IDP
 enum
+OGC
+DOM
+CDN
+submodules
+JavaScript

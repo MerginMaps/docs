@@ -9,9 +9,9 @@ Webmap applications is in experimental phase and its availability and functional
 :::
 
 Webmap behaviour can be customised to your organisation's specific needs via a `map-script.js` file to build a webmap application.
-This is a javascript file that runs with your map and lets you add custom controls and behaviour on top of the built-in OpenLayers map. The script runs in both the project map view and in shared/embedded public maps. 
+This is a JavaScript file that runs with your map and lets you add custom controls and behaviour on top of the built-in OpenLayers map. The script runs in both the project map view and in shared/embedded public maps. 
 
-It has reference to the map itself, API and other components to allow further customization, including WMS and WFS OGC API (read-only).
+It has reference to the map itself, API and other components to allow further customisation, including WMS and WFS OGC API (read-only).
 
 The code can reference `MerginMaps` global object as:
  - `MerginMaps.getMap()` - the OpenLayers `Map` instance
@@ -53,7 +53,7 @@ OpenLayers API availability opens a wide range of possibilities. Here we list a 
 | Example project | Map view | Map-script file |
 |-------|------|-------| 
 | Light basemap example | [View map](https://app.merginmaps.com/maps/2kkKbiNZNPqd2_rogueUJMvRItE?cx=-1.795099776978127&cy=51.78119919095403&cz=13) | [map-script.js](https://app.merginmaps.com/projects/MerginMaps-Showcase/AS%20w%20light/tree?file_path=map-script.js) |
-| Example with measurement tools, address search and geolocation | [View map](https://app.merginmaps.com/maps/abPOz6uw9A7DeOeq2OTqIbJMtpg) | [map-script.js](https://app.merginmaps.com/projects/MerginMaps-Showcase/AS%20w%20measure/tree?file_path=map-script.js) |
+| Example with measurement tools, address search and location | [View map](https://app.merginmaps.com/maps/abPOz6uw9A7DeOeq2OTqIbJMtpg) | [map-script.js](https://app.merginmaps.com/projects/MerginMaps-Showcase/AS%20w%20measure/tree?file_path=map-script.js) |
 
 
 
