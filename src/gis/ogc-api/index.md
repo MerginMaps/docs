@@ -1,8 +1,10 @@
 ---
-description: 
+description: Your Mergin Maps project data can be published via OGC API as WMS / WMTS or WFS.
+
+outline: deep
 ---
 
-# Publishing Projects as OGC API (WMS/WMTS, WFS)
+# Publishing Projects via OGC API (WMS/WMTS, WFS)
 [[toc]]
 
 Your project data can be published using OGC API as WMS / WMTS or WFS. This way, your data can be displayed (read-only) in other software or web applications.
