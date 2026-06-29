@@ -54,6 +54,7 @@ export default {
         { text: 'How to Enable Digitising', link: '/gis/enable_digitising/' },
         { text: 'How to Set Up Snapping for Mergin Maps Mobile App', link: '/gis/snapping/' },
         { text: 'How to Avoid Polygons Overlap', link: '/gis/avoid-overlap/' },
+        { text: 'Publishing Projects as OGC API (WMS/WMTS, WFS)', link: '/gis/ogc-api/' },
         { text: 'Custom Projections', link: '/gis/proj/' },
         { text: 'Supported Formats', link: '/gis/supported_formats/' }
       ] },
