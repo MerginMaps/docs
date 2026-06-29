@@ -82,7 +82,7 @@ measure distance and area".]
 Project's layers are served over OGC here:
 - WFS: `${parent.location.origin}/app/ogc/<map_link>?SERVICE=WFS...`
 - WMS: `${parent.location.origin}/app/ogc/<map_link>?SERVICE=WMS...`
-Note: `<map_link>` is generated only once the map is made public ("Share map" in the UI). If there is no map link, ask me to publish the map first. Read the map-link from the `GET app/projects/<project-id>/map-links` API endpoint.
+Tip: `<map_link>` is generated only once the map is made public ("Share map" in the UI). If there is no map link, ask me to publish the map first. Read the map-link from the `GET app/projects/<project-id>/map-links` API endpoint.
 
 ## Guidelines for this environment
 - Build UI with `document.createElement` and set styles via
