@@ -31,9 +31,11 @@ export default {
         { text: 'Member Roles and Permissions', link: '/manage/permissions/' },
         { text: 'Synchronisation', link: '/manage/synchronisation/' },
         { text: 'Mergin Maps Project', link: '/manage/project/' },
-        { text: 'Webmaps', link: '/manage/dashboard-maps/',
+        { text: 'Webmaps',
         items: [
+           { text: 'Overview', link: '/manage/dashboard-maps/' },
            { text: 'Sharing and Embedding', link: '/manage/webmaps-sharing/' },
+           { text: 'Custom Applications (with AI) 🧪', link: '/manage/webmaps-applications/' },
            { text: 'Troubleshooting', link: '/manage/webmaps-troubleshooting/' }
         ] },
         { text: 'How to Create a New Project', link: '/manage/create-project/' },
@@ -91,11 +93,9 @@ export default {
            { text: 'Tabs and Groups', link: '/layer/tabs-and-groups/' },
            { text: 'Conditional Visibility', link: '/layer/conditional-visibility/' },
         ] },
-        { text: 'Use Cases', link: '/layer/use-cases/', 
-        collapsed: true,
-        items: [
-	   { text: 'How to Open a File', link: '/layer/open-file/' },
-	   { text: 'How to Use Hyperlinks', link: '/layer/external-link/' },
+        { text: 'Use Cases', collapsed: true, items: [
+	         { text: 'How to Open a File', link: '/layer/open-file/' },
+	         { text: 'How to Use Hyperlinks', link: '/layer/external-link/' },
            { text: 'How to Open a Link to a Navigation App', link: '/layer/link-to-navigation/' },
            { text: 'How to Use a Phone Call Link', link: '/layer/phone-call-link/' },
            { text: 'How to Link Multiple Records to One Feature (1-N Relations)', link: '/layer/one-to-n-relations/' },

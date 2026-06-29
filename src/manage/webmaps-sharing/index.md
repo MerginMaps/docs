@@ -2,22 +2,11 @@
 description: Mergin Maps webmaps can be shared using a URL link. You can also embed them directly on your website with a simple HTML code for seamless integration.
 ---
 
-# Sharing and Embedding Webmaps <Badge text="early access" type="warning"/>
-[[toc]]
+# Sharing and Embedding Webmaps <Badge text="Early access" type="warning"/>
 
 ::: warning Early access feature
-Map sharing is in early access. If you would like to try it out, fill in [this form](https://wishlist.merginmaps.com/f/share-maps-via-url) to gain access to this feature.
+Map sharing is in early access. If you would like to try it out, ask your workspace admin or owner to enable map sharing early access program in your [workspace settings](https://app.merginmaps.com/settings). The availability of the feature might change in the future.
 :::
-
-The spatial data of your project can be displayed and explored in the **Map** tab of the project on the <DashboardShortLink />. As an early access feature, they can also be [shared via URL](#sharing-maps-via-url).
-
-
-:::tip Usage details
-Webmaps are available for <MainPlatformNameLink /> cloud and <EnterprisePlatformNameLink /> users.
-
-Webmaps are **not** available for <CommunityPlatformNameLink />.
-:::
-
 
 ## Sharing maps via URL 
 
@@ -33,9 +22,6 @@ To disable the map sharing, click on the **Revoke sharing** button.
 
 ![Sharing maps via URL](./map-sharing-url.webp "Sharing maps via URL")
 
-::: tip Blog about shared maps
-You can read about this functionality in our blog post <MainDomainNameLink id="blog/a-final-surprise-for-the-year---shared-maps-via-url" desc="A final surprise for the year - shared maps via URL"/>.
-:::
 
 ## Embedding webmaps using HTML
 
