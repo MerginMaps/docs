@@ -24,6 +24,11 @@ The webmap is refreshed automatically, you will see the latest version of your p
 
 The **Layers** panel lists all available layers displayed on the map, together with their legend as defined in QGIS. The eye button next to layer name controls the visibility of layers. If you have defined map themes in your project, these are visible on top of the layers panel.
 
+![Mergin Maps webmaps toggle layer visibility](./webmaps-toggle-layer-visibility.webp "Mergin Maps webmaps toggle layer visibility")
+
+You can also switch [Map themes](../../gis/setup_themes/) defined in the project:
+![Mergin Maps webmaps toggle layer visibility](./webmaps-map-themes.webp "Mergin Maps webmaps toggle layer visibility")
+
 Click on a feature on the map to display its attributes.
 
 ![Mergin Maps dashboard maps](./dashboard-map-properties.webp "Mergin Maps dashboard maps")
