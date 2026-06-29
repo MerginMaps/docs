@@ -104,6 +104,7 @@ OSM
 OSTN
 OGR
 Ok
+OpenLayers
 OpenMapTiles
 OpenStreetMap
 onboarding
@@ -208,6 +209,7 @@ hotline
 html
 http
 https
+iframe
 interoperable
 integration
 integrations
@@ -293,6 +295,8 @@ vCPUS
 xcf
 xyz
 yml
+webmap
+WebMap
 webmaps
 WebMaps
 webp
@@ -313,3 +317,8 @@ pre
 env
 IDP
 enum
+OGC
+DOM
+CDN
+submodules
+JavaScript
