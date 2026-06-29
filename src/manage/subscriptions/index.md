@@ -43,11 +43,10 @@ When logged into the portal, you can [update](#how-to-change-a-subscription) or 
 ### Accessing subscription management portal from Mergin Maps dashboard
 If you are the owner of a workspace, you can access the subscription management portal from the <DashboardShortLink />.
 
-To access the portal, navigate to the **Subscription** tab and click on **Manage Subscription**.
+To access the portal, navigate to the **Subscription** tab and click on **Manage Subscription**. You will be redirected to the subscription management portal.
 
 ![Mergin Maps Dashboard manage subscription](./dashboard-manage-subscriptions.jpg "Mergin Maps Dashboard manage subscription")
 
-You will be redirected to the subscription management portal.
 
 ### Accessing subscription management portal directly (without Mergin Maps account)
 The subscription management portal can also accessed directly, without going through the <DashboardShortLink /> or having a <MainPlatformName /> account. This option may be useful if the person taking care of the payments does not need access to the projects and data, such as someone from the accounting department of your organisation. 
@@ -67,10 +66,10 @@ To access the portal directly:
 
 2. Navigate to the **Subscription** tab. 
 
-   Choose your *Premium* plan by using the slider. You can also specify if you want to be billed yearly or monthly.
+   Choose the number of contributors for your *Premium* plan. You can also specify if you want to be billed yearly or monthly.
    
    Click on the **Sign up now** button to confirm your new plan.
-   ![Mergin Maps Subscription details](./subscriptions-upgrade.jpg "Mergin Maps Subscription details")
+   ![Mergin Maps Subscription details](./subscriptions-upgrade.webp "Mergin Maps Subscription details")
 
 3. You will be redirected to a checkout page. Here, fill out the billing information.
 
@@ -80,7 +79,7 @@ To access the portal directly:
    - the VAT number has to be associated with the entered (VAT registered) address
    - the address you enter has to match the address registered with your payment method
    
-   ![Subscription checkout](./stripe-checkout.jpg "Subscription checkout")
+   ![Subscription checkout](./stripe-checkout.webp "Subscription checkout")
   
 4. Click on **Pay and subscribe**
    
@@ -101,8 +100,8 @@ Click on the **Sign Up Now** button and fill out the form. We will review your a
 2. In the *Current subscription* section, click on the **Update subscription** button
    ![Update Mergin Maps subscription plan](./stripe-update-subscription.jpg "Update Mergin Maps subscription plan")
    
-3. Choose a *Monthly* or *Yearly* billing, **Select** your new plan and **Continue**
-   ![Changing Mergin Maps subscription plan](./stripe-update-your-plan.jpg "Changing Mergin Maps subscription plan")
+3. Choose a *Monthly* or *Yearly* billing, select the number of contributors for your new plan and **Continue**
+   ![Changing Mergin Maps subscription plan](./stripe-update-your-plan.webp "Changing Mergin Maps subscription plan")
    
 4. Confirm your updates and proceed by clicking on the **Subscribe and pay** button
 

@@ -72,7 +72,8 @@ The ecosystem consist of various components:
 
 ## Configure Forms
 - [Overview](./layer/overview/)
-- [Widgets](./layer/form-widgets/)
+- Widgets
+   - [Available Widgets](./layer/form-widgets/)
    - [Text](./layer/text/)
    - [Date and time](./layer/date-time/)
    - [Relations](./layer/relations/)
@@ -82,20 +83,25 @@ The ecosystem consist of various components:
    - [Selecting Single or Multiple Values ](./layer/value-select/)
    - [Photos](./layer/photos/)
    - [Informational Widgets](./layer/info-widgets/)
-- [Default Values](./layer/default-values/)
+- Default Values
+   - [Default Values Setup](./layer/default-values/)
    - [Geotagging](./layer/exif/)
    - [Variables](./layer/variables/)
 - [Constraints](./layer/constraints/)
-- [Layout](./layer/form-layout/)
+- Layout
+   - [Form Layout](./layer/form-layout/)
    - [Tabs and Groups](./layer/tabs-and-groups/)
    - [Conditional Visibility](./layer/conditional-visibility/)
-- [Use Cases](./layer/use-cases/)
+- Use Cases
+   - [Use Cases Overview](./layer/use-cases/)
    - [How to Open a File ](./layer/open-file/)
    - [How to Use Hyperlinks](./layer/external-link/)
    - [How to Open a Link to a Navigation App](./layer/link-to-navigation/)
    - [How to Use a Phone Call Link ](./layer/phone-call-link/)
    - [How to Link Multiple Records to One Feature](./layer/one-to-n-relations/)
    - [How to Embed an Image](./layer/embed-image/)
+   - [How to Use Image Guides in Form](./layer/embed-image/)
+   - [How to Display Photo Location and Direction](./layer/photo-direction/)
 
 ## Fieldwork Tips
 - [<MobileAppName /> Interface](./field/mobile-app-ui/)
@@ -106,6 +112,7 @@ The ecosystem consist of various components:
 - [Synchronisation in <MobileAppName />](./field/autosync/)
 - [Measurement Tools](./field/measure/)
 - [Layers in <MobileAppName />](./field/layers/)
+- [Filtering Features in <MobileAppName />](./field/filtering/)
 - [Map Sketching in <MobileAppName />](./field/map-sketching/)
 - [Photo Sketching in <MobileAppName />](./field/photo-sketching/)
 - [How to Add, Edit, Delete Features](./field/mobile-features/)

@@ -68,8 +68,9 @@ export default {
       collapsed: true,
       items: [
         { text: 'Overview', link: '/layer/overview/' },
-        { text: 'Widgets', link: '/layer/form-widgets/',
+        { text: 'Widgets',
         items: [
+           { text: 'Available Widgets', link: '/layer/form-widgets/' },
            { text: 'Text', link: '/layer/text/' },
            { text: 'Date and Time', link: '/layer/date-time/' },
            { text: 'Relations', link: '/layer/relations/' },
@@ -80,30 +81,37 @@ export default {
            { text: 'Photos', link: '/layer/photos/' },
            { text: 'Informational Widgets', link: '/layer/info-widgets/' },
         ] },
-        { text: 'Default Values', link: '/layer/default-values/',
+        { text: 'Default Values',
         collapsed: true,
         items: [
+           { text: 'Default Values Setup', link: '/layer/default-values/' },
            { text: 'Geotagging', link: '/layer/exif/' },
            { text: 'Variables', link: '/layer/variables/' }
         ] },
         { text: 'Constraints', link: '/layer/constraints/' },        
-        { text: 'Layout', link: '/layer/form-layout/',
+        { text: 'Layout',
         collapsed: true,
         items: [
+           { text: 'Form Layout', link: '/layer/form-layout/' },
            { text: 'Tabs and Groups', link: '/layer/tabs-and-groups/' },
            { text: 'Conditional Visibility', link: '/layer/conditional-visibility/' },
         ] },
-        { text: 'Use Cases', collapsed: true, items: [
-	         { text: 'How to Open a File', link: '/layer/open-file/' },
-	         { text: 'How to Use Hyperlinks', link: '/layer/external-link/' },
+        { text: 'Use Cases', 
+        collapsed: true,
+        items: [
+           { text: 'Use Cases Overview', link: '/layer/use-cases/' },
+           { text: 'How to Open a File', link: '/layer/open-file/' },
+           { text: 'How to Use Hyperlinks', link: '/layer/external-link/' },
            { text: 'How to Open a Link to a Navigation App', link: '/layer/link-to-navigation/' },
            { text: 'How to Use a Phone Call Link', link: '/layer/phone-call-link/' },
            { text: 'How to Link Multiple Records to One Feature (1-N Relations)', link: '/layer/one-to-n-relations/' },
            { text: 'How to Embed an Image', link: '/layer/embed-image/' },
+           { text: 'How to Use Image Guides in the Form', link: '/layer/image-guide/' },
+           { text: 'How to Display Photo Location and Direction', link: '/layer/photo-direction/' },
         ] },
       ] },
     {
-      text: 'Fieldwork Tips',   // required
+      text: 'Fieldwork',   // required
       collapsed: true,
       items: [
         { text: 'Mergin Maps Mobile App Interface', link: '/field/mobile-app-ui/' },
@@ -114,6 +122,7 @@ export default {
         { text: 'Synchronisation in Mergin Maps Mobile App', link: '/field/autosync/' },
         { text: 'Measurement Tools', link: '/field/measure/' },
         { text: 'Layers in Mergin Maps Mobile App', link: '/field/layers/' },
+        { text: 'Filtering', link: '/field/filtering/' },
         { text: 'Map Sketching', link: '/field/map-sketching/' },
         { text: 'Photo Sketching', link: '/field/photo-sketching/' },
         { text: 'How to Add, Edit, Delete Features', link: '/field/mobile-features/' },
@@ -161,9 +170,10 @@ export default {
       items: [
         { text: 'Licensing', link: '/misc/licensing/' },
         { text: 'Get Involved', link: '/misc/get-involved/' },
-        { text: 'Troubleshoot', link: '/misc/troubleshoot/',
+        { text: 'Troubleshoot',
         collapsed:true,
         items: [
+           { text: 'Support and Troubleshooting', link: '/misc/troubleshoot/' },
            { text: 'Project fails to sync', link: '/misc/troubleshoot/not_syncing/' },
         ] },
         { text: 'Write Documentation', link: '/misc/write-docs/' }

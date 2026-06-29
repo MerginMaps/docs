@@ -80,6 +80,7 @@ LGPL
 LGPLv
 LTR
 Lutra
+Lutra's
 MAN
 Mapbox
 MBTiles
@@ -93,6 +94,7 @@ MVT
 Mercedes
 Mergin
 Multiline
+MultiPolygon
 NDK
 NMEA
 NTRIP
@@ -104,6 +106,7 @@ OGR
 Ok
 OpenMapTiles
 OpenStreetMap
+onboarding
 PDOP
 PNG
 PR
@@ -184,6 +187,7 @@ checkboxes
 cloudmergin
 conf
 config
+conformant
 crosshairs
 cybersecurity
 dataset

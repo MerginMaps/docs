@@ -41,7 +41,7 @@ The **Projects** tab contains the list of all projects in your current [workspac
 - Tap the **Download** button next to the project name to download it to your mobile device
 - For projects that are already downloaded to your device, you can use the button next to the project name to synchronise the project, see local changes or remove the project from your device
 
-:::tip
+:::tip Switching workspace
 If you need to download a project from another workspace, you need to [switch to this workspace in the mobile app](../../manage/workspaces/#switch-workspaces-in-mergin-maps-mobile-app) first.
 :::
 
@@ -66,7 +66,7 @@ Here, you can [sign up to <MainPlatformName />](../../setup/sign-up-to-mergin-ma
 - **Sign out** to sign out or to switch to a different account
 - **Close account** can be used to delete your account within the <MobileAppNameShort />
 
-:::danger WARNING
+:::danger Closing account
 Be careful! If you delete your account, you will lose access to your <MainPlatformName /> projects both on the mobile device and on the <DashboardShortLink />.
 :::
 
@@ -133,7 +133,7 @@ Tap the **Add** button to enter the *recording mode* so you are able to [survey 
 The **active layer** currently used for the survey is displayed on the top of the screen. Tap on it to choose another active layer from editable layers in the project.
 ![Active survey layer](./mobile-app-active-layer.jpg "Active survey layer")
 
-:::tip
+:::tip Surveying features
 [How to Add, Edit, Delete Features](../mobile-features) will show you how to capture points, lines and polygons in <MobileAppName /> as well as how to edit their geometry and attributes.
 :::
 
@@ -150,11 +150,12 @@ More details can be found in [Layers in Mergin Maps Mobile App](../layers/).
 ### More options: Zoom to project, Map themes, Position tracking, Measure, Local changes, Settings
 The **More** button opens a list of additional options
 
-![Mergin Maps mobile app More button](./mobile-app-more-options.jpg "Mergin Maps mobile app More button")
+![Mergin Maps mobile app More options](./mobile-app-more-options.jpg "Mergin Maps mobile app More options")
 
 - **Projects**: a shortcut to the main page of the <MobileAppNameShort />
 - [**Zoom to project**](../../gis/features/#project-extent): zoom to the extent of all visible layers within the project. The project extent can be set in [QGIS in Project Properties](../../gis/features/#project-extent).
 - [**Map themes**](../../gis/setup_themes/): a list of map themes set up in a <MainPlatformName /> project in QGIS
+- [**Filters**](../filtering/): to filter features on the map
 - [**Position tracking**](../tracking/): to start tracking of your tracks during the field survey
 - [**Measure**](../measure/): measure length or area on the map
 - **Local changes**: the overview of your local changes to be synchronised

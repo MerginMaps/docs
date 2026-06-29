@@ -52,7 +52,7 @@ Follow the deployment guidelines to install and configure it.
 <ServerType type="EE" />
 
 
-The <EnterprisePlatformName /> enhanced features are only available on specific Docker images stored on Lutra Consulting's private AWS repository. To get access, you need your contract and licence from our <MerginMapsEmail id="sales" desc="sales team" />. 
+The <EnterprisePlatformName /> enhanced features are only available on specific Docker images stored on Lutra Consulting's private Docker Hub repository. To get access, you need your contract and licence from our <MerginMapsEmail id="sales" desc="sales team" />. 
 
 Afterwards, you can follow [this guide](./ee/) to retrieve your <EnterprisePlatformName /> images.
 
@@ -150,14 +150,15 @@ $ docker exec merginmaps-server flask server check
 Output will be similar to the next snippet. The utility will try to provide some background information if some needed environment variable is missing or wrongly set (ex: `MERGIN_BASE_URL`)
 
 ```shell
-# Server health check
+  # Server health check
 
-Mergin Maps edition: Enterprise Edition
-Mergin Maps version: 2025.2.0  
-Error: No base URL set. Please set MERGIN_BASE_URL environment variable
-Error: No contact email set. Please set CONTACT_EMAIL environment variable
-Database initialized properly
-Celery running properly  
+  Mergin Maps edition: Enterprise Edition
+  Mergin Maps version: 2025.2.0  
+  Error: No base URL set. Please set MERGIN_BASE_URL environment variable
+  Error: No contact email set. Please set CONTACT_EMAIL environment variable
+  Database initialized properly
+  Permissions granted for /data folder
+  Celery running properly  
 ```
 
 To test email configuration:

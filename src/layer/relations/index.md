@@ -23,6 +23,9 @@ You can take a closer look at 1-N relations:
 - [How to Attach Multiple Photos to Features ](../photos/#how-to-attach-multiple-photos-to-one-feature) shows how to add multiple **photos** to a single feature. See also our public project: <MerginMapsProject id="documentation/forms_multiple_photos" />
 :::
 
+Prefer a video? Here is a short tutorial about relations:
+<YouTube id="c0z6tQsTPm8" />
+
 There are two ways to add features with relations in the <MobileAppNameShort />: using the [relation widget](#referenced-parent-layer-attributes-form-relations-widget) on the parent layer or using the [relation reference widget](#referencing-child-layer-attributes-form-relation-reference-widget) on the child layer:
 
 ![Mergin Maps mobile app relation widgets](./mobile-relation-widgets.gif "Mergin Maps mobile app relation widgets")
@@ -158,4 +161,5 @@ Did you follow these steps and do you see something like this? If the referencin
 To display the [relations widget](#referenced-parent-layer-attributes-form-relations-widget) without the gallery, use `nogallery` in the relation name or label.
 :::
 
-Recommended setup for gallery is explained in [Attaching multiple photos to one feature ](../photos/#how-to-attach-multiple-photos-to-one-feature).
+Recommended setup for gallery is explained in [Attaching multiple photos to one feature ](../photos/#how-to-attach-multiple-photos-to-one-feature) or you can follow this short video tutorial:
+<YouTube id="c0z6tQsTPm8" />
