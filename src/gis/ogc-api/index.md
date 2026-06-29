@@ -23,7 +23,7 @@ As early access feature, OGC API has to be enabled for your workspace:
 Now you can enable OGC API access for your <MainPlatformName /> project:
 ![Enabling OGC API access for Mergin Maps project](./dashboard-project-ogc-api-enabled.webp "Enabling OGC API access for Mergin Maps project")
 
-**WFS URL** and **WMS / WMTS URL** can be copied and used, e.g., to [connect to these services in QGIS](#wms-wmts-and-wfs-connection-in-qgis).
+**WFS URL** and **WMS / WMTS URL** can be copied and used, e.g., to [connect to these services in QGIS](#example-wms-wmts-and-wfs-connection-in-qgis).
 
 ## Setup WMS, WMTS and WFS properties in QGIS
 In QGIS, you can define which layers and fields from your project should be published via WMS/WMTS and WFS.
