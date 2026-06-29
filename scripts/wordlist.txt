@@ -98,6 +98,9 @@ MultiPolygon
 NDK
 NMEA
 NTRIP
+OGC
+OGR
+Ok
 OneDrive
 OSGB
 OSM
