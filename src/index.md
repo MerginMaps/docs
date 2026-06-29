@@ -45,6 +45,9 @@ The ecosystem consist of various components:
 - [Member Roles and Permissions](./manage/permissions/)
 - [Synchronisation](./manage/synchronisation/)
 - [Mergin Maps Project](./manage/project/)
+- [Webmaps](./manage/dashboard-maps/)
+   - [Sharing and Embedding](./manage/webmaps-sharing/)
+   - [Troubleshooting](./manage/webmaps-troubleshooting/)
 - [How to Create a New Project](./manage/create-project/)
 - [How to Share, Transfer or Delete Projects](./manage/project-advanced/)
 - [How to Delete Files](./manage/delete-files)
@@ -52,7 +55,6 @@ The ecosystem consist of various components:
 - [How to Recover Missing Data](./manage/missing-data/)
 - [<QGISPluginName /> Overview](./manage/plugin/)
 - [Mergin Maps Dashboard](./manage/dashboard/)
-- [Webmaps](./manage/dashboard-maps/)
 - [Project History and Versions](./manage/project-history/)
 - [Selective Synchronisation](./manage/selective_sync/)
 
