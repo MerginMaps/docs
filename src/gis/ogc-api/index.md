@@ -39,8 +39,8 @@ There may be some fields that you do not want to publish. These can be defined i
 
 Save and synchronise the project.
 
-## WMS/WMTS and WFS connection in QGIS
-[WFS URL and WMS/WMTS URL](#enabling-ogc-api-access) from the dashboard can be used to load the web services to QGIS (or other software) to display the project data.
+## Example WMS/WMTS and WFS connection in QGIS
+[WFS URL and WMS/WMTS URL](#enabling-ogc-api-access) from the dashboard can be used to load the web services to any software that supports WFS and/or WMS (for example QGIS) to display the project data.
 
 ### WMS/WMTS connection
 WMS/WMTS can be connected to QGIS in the **Browser** panel:

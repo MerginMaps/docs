@@ -98,12 +98,13 @@ MultiPolygon
 NDK
 NMEA
 NTRIP
+OGC
+OGR
+Ok
 OneDrive
 OSGB
 OSM
 OSTN
-OGR
-Ok
 OpenMapTiles
 OpenStreetMap
 onboarding
