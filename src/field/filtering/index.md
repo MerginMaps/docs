@@ -124,8 +124,6 @@ Available for all field types. For text, number, date and Boolean field types ge
 
 This filter uses the same logic as the SQL expression `"field" == 'input'`.
 
-Note that Value relations with *multiple selections* are currently **not** supported.
-
 ### Multi select
 The multi select filter provides a drop-down menu of field values. Multiple values can be selected at once. 
 
@@ -135,4 +133,3 @@ Available for all field types. For text, number, date and Boolean field types ge
 
 This filter uses the same logic as the SQL expression `"field" IN ('input')`.
 
-Note that Value relations with *multiple selections* are currently **not** supported.
