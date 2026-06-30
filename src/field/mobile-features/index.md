@@ -58,7 +58,9 @@ In the [**recording**](#adding-features) mode tap **Add** to capture vertices of
 Once the survey of the feature is completed, tap **Record** and fill in the form.
 ![Surveying lines in Mergin Maps mobile app](./mobile-capture-line.jpg "Surveying lines in Mergin Maps mobile app")
 
-If you are using layers with multipart geometry types, parts of features can be added when [editing geometry](#adding-part-of-multipart-geometry). 
+When using layers with multipart geometry types, parts of features can be added by tapping the **More options** button and selecting the **Add part** option.
+
+![Add feature part in Mergin Maps mobile app](./mobile-capture-polyline.webp "Add feature part in Mergin Maps mobile app")
 
 ### Streaming mode
 Features can also be captured automatically based on your position. Streaming is not available for layers with *Point* geometry.
@@ -69,6 +71,9 @@ Here is a video tutorial:
 Tap the **streaming** button while in the [**recording**](#adding-features) mode and **Start streaming mode**. 
 
 ![Mergin Maps mobile app start streaming mode](./mobile-streaming-mode-start.jpg "Mergin Maps mobile app start streaming mode")
+
+For layers with multipart geometry, the **streaming** option can be found in **More options**:
+![Mergin Maps mobile app start streaming mode](./mobile-streaming-mode-start-polyline.webp "Mergin Maps mobile app start streaming mode")
 
 The vertices will be added automatically as you walk along the feature. 
 
