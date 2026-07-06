@@ -72,7 +72,11 @@ To set up **Value Relation** in QGIS:
    - Select the **Layer** that contains the values (here: `value-relation-table`)
    - **Key column** is the field that contains the values (here: `uuid`)
    - **Value column** is the field that contains the alias (description) of the value (here: `value`)
-   - Check the **Allow multiple selections** option :heavy_check_mark: if you want to have the option to select multiple values
+   
+   You can also set other options, such as:
+   - **Order by** *Value*, so that values appear in alphabetical order
+   - :heavy_check_mark: **Allow NULL value**
+   - :heavy_check_mark: **Allow multiple selections** - if you want to have the option to select multiple values
 4. **Apply** the changes. Don't forget to save and sync your project!
 
 ![QGIS value relation field form](./qgis-form-value-relation-multiselect.jpg "QGIS value relation field form")
