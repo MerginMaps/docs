@@ -30,10 +30,11 @@ More detailed information about the coordinate reference systems and projections
 
 ## How is it used in QGIS?
 
-QGIS is FOSS (free and open source) software standing on the shoulders of other FOSS libraries. Notably projection support is handled by [PROJ](https://proj.org). The version proj4 was used for decades, but in recent years it was recreated from scratch to reflect the recent modern ways for handling transformations and the increasing demand for high precision location. Different version of PROJ uses different set of resource files required to handle projections accurately. See [PROJ help](https://proj.org/resource_files.html) for details. Most importantly, the recent release of QGIS 3.16 LTR and QGIS 3.18 for all platforms is on PROJ6+ version.
+QGIS is FOSS (free and open source) software standing on the shoulders of other FOSS libraries. Notably projection support is handled by [PROJ](https://proj.org). The version proj4 was used for decades, but in recent years it was recreated from scratch to reflect the recent modern ways for handling transformations and the increasing demand for high precision location. Different version of PROJ uses different set of resource files required to handle projections accurately. See [PROJ help](https://proj.org/resource_files.html) for details. Most importantly, QGIS uses PROJ version 7+ since QGIS 3.16 LTR and QGIS 3.18 for all platforms.
 
-Your QGIS installation contains the basic set of PROJ resources required for most day-to-day work. But if you need some special coordinate reference systems, the required files for 
-<GitHubRepo id="OSGeo/PROJ-data" desc="PROJ7" /> and for <GitHubRepo id="OSGeo/proj-datumgrid" desc="PROJ6" /> are available online. Also note that QGIS can automatically download the required files for your when requested. Just follow the instructions when you see the QGIS warning in the transformation dialog:
+Your QGIS installation contains the basic set of PROJ resources required for most day-to-day work. If you need some special coordinate reference systems, the required files for <GitHubRepo id="OSGeo/PROJ-data" desc="PROJ7 and later" /> and for <GitHubRepo id="OSGeo/proj-datumgrid" desc="PROJ6" /> are available online. 
+
+QGIS can automatically download the required files for your when requested. Just follow the instructions when you see the QGIS warning in the transformation dialog:
 
 ![QGIS Transformations British National Grid to World Geodetic System](./QGIS_Transformations2.jpg "QGIS Transformations British National Grid to World Geodetic System")
 
@@ -49,7 +50,7 @@ British National Grid (EPSG:27700) is based on datum OSGB 1936 which is differen
 
 ![QGIS select transformation](./transformations_qgis.jpg "QGIS select transformation")
 
-In this case, the recommended transform is the[OSTN15 transformation](https://www.ordnancesurvey.co.uk/business-government/tools-support/os-net/for-developers)which uses a grid file to transform coordinates. Other transforms are using [Helmert transformation](https://en.wikipedia.org/wiki/Helmert_transformation) method and offer lower accuracy. Grid files for transforms are usually not shipped with QGIS. But QGIS *offers to auto install* these to the correct location for you! These files are then automatically used for all your projects if required. Once this is selected and ready, QGIS calls PROJ library to do datum transformation.
+In this case, the recommended transform is the [OSTN15 transformation](https://www.ordnancesurvey.co.uk/business-government/tools-support/os-net/for-developers) which uses a grid file to transform coordinates. Other transforms are using [Helmert transformation](https://en.wikipedia.org/wiki/Helmert_transformation) method and offer lower accuracy. Grid files for transforms are usually not shipped with QGIS. But QGIS *offers to auto install* these to the correct location for you! These files are then automatically used for all your projects if required. Once this is selected and ready, QGIS calls PROJ library to do datum transformation.
 
 ### 2. Map projection
 
@@ -74,7 +75,7 @@ The likely reason is that there is correctly downloaded and used extra datum shi
 
 ## QGIS transformation tab
 
-QGIS exposes a nice interface for coordinate reference systems through the Transformation tab in Settings. It is powered by [PROJ](https://proj.org/index.html), which tries to find the [best available](https://proj.org/operations/operations_computation.html)transformation route from the source to the destination coordinate reference system.
+QGIS exposes a nice interface for coordinate reference systems through the Transformation tab in Settings. It is powered by [PROJ](https://proj.org/index.html), which tries to find the [best available](https://proj.org/operations/operations_computation.html) transformation route from the source to the destination coordinate reference system.
 
 Let's say we want to setup default transformation between British National Grid (EPSG:27700) and World Geodetic System used in GPS (EPSG:4326) for all our future QGIS projects.
 
