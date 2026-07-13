@@ -123,7 +123,7 @@ The panel for the `trees` layer looks like the left-hand image below. We will co
 3. Set the **Display Name** to `species`:
    ![Display name attribute in Layer properties](./qgis-display-name.jpg "Display name attribute")
 
-::: tip
+::: tip Field alias
 If you notice subtle differences in the name / spelling of the field when you select it in the drop-down list, this is due to the field having been aliased.
 :::
 
@@ -134,6 +134,10 @@ If you notice subtle differences in the name / spelling of the field when you se
    ```
    ![HTML map tip in Layer properties](./qgis-html-map-tip.jpg "HTML map tip in Layer properties")
 
+   ::: tip Customising the preview panel
+   For more configuration options, see [Settings for Mergin Maps mobile app preview panel](../../gis/features/#settings-for-mergin-maps-mobile-app-preview-panel).
+   :::
+   
 5. Click **OK**
 
 6. Test out these settings in the <MobileAppNameShort /> as described in the [Trialling changes](#trialling-changes-in-mergin-maps-mobile-app) section above.
