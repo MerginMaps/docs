@@ -78,6 +78,7 @@ Lebefure
 Leica
 LGPL
 LGPLv
+LineString
 LTR
 Lutra
 Lutra's
@@ -94,6 +95,8 @@ MVT
 Mercedes
 Mergin
 Multiline
+MultiLine
+MultiPoint
 MultiPolygon
 NDK
 NMEA
