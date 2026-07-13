@@ -90,12 +90,11 @@ On the other hand, <QGISHelp ver="latest" link="user_manual/expressions/function
 
 When you open the field with **Value Relation** in the <MobileAppNameShort />, you will be able to select a value or multiple values from the list.
 
-![Mergin Maps mobile app value relation multiple selection](./mobile-form-value-relation.jpg "Mergin Maps mobile app value relation completer")
+![Mergin Maps mobile app value relation multiple selection](./mobile-form-value-relation.jpg "Mergin Maps mobile app value relation multiple selection")
 
 If you use the **Use completer** option for the value relation field, the search bar and keyboard appear automatically, making it easier to search for a value from the list.
 
-![Mergin Maps mobile app value relation multiple selection](./mobile-form-value-relation-completer.webp "Mergin Maps mobile app value relation completer")
-
+![Mergin Maps mobile app value relation completer](./mobile-form-value-relation-completer.webp "Mergin Maps mobile app value relation completer")
 
 
 ## Drill-down forms
