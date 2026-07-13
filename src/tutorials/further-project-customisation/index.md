@@ -134,7 +134,7 @@ If you notice subtle differences in the name / spelling of the field when you se
    ```
    ![HTML map tip in Layer properties](./qgis-html-map-tip.jpg "HTML map tip in Layer properties")
 
-   ::: tip Customising the preview panel
+   ::: tip Additional preview panel options
    For more configuration options, see [Settings for Mergin Maps mobile app preview panel](../../gis/features/#settings-for-mergin-maps-mobile-app-preview-panel).
    :::
    
