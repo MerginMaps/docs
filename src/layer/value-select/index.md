@@ -75,8 +75,9 @@ To set up **Value Relation** in QGIS:
    
    You can also set other options, such as:
    - **Order by** *Value*, so that values appear in alphabetical order
-   - :heavy_check_mark: **Allow NULL value**
-   - :heavy_check_mark: **Allow multiple selections** - if you want to have the option to select multiple values
+   - **Allow NULL value**
+   - **Use completer** - to automatically use the search bar to find values from the list in the <MobileAppNameShort /> (recommended for fields with many values)
+   - **Allow multiple selections** - if you want to have the option to select multiple values
 4. **Apply** the changes. Don't forget to save and sync your project!
 
 ![QGIS value relation field form](./qgis-form-value-relation-multiselect.jpg "QGIS value relation field form")
@@ -90,6 +91,11 @@ On the other hand, <QGISHelp ver="latest" link="user_manual/expressions/function
 When you open the field with **Value Relation** in the <MobileAppNameShort />, you will be able to select a value or multiple values from the list.
 
 ![Mergin Maps mobile app value relation multiple selection](./mobile-form-value-relation.jpg "Mergin Maps mobile app value relation multiple selection")
+
+If you use the **Use completer** option for the value relation field, the search bar and keyboard appear automatically, making it easier to search for a value from the list.
+
+![Mergin Maps mobile app value relation completer](./mobile-form-value-relation-completer.webp "Mergin Maps mobile app value relation completer")
+
 
 ## Drill-down forms
 Drill-down or cascade forms enable to list values in a field depending on a value selected in another field. 
