@@ -20,20 +20,23 @@ Make sure to always back up your database data before doing a migration.
 
 Perform the migration:
 
-0. Fix table - migration from old to new MM version 
+0. Fix table - migration from old to new MM version
+1. 
   ```bash
       $ docker ps -a | grep postgres
+  ```
               2b261cd55de2   postgres:14   "docker-entrypoint.s…"   4 weeks ago   Up About a minute  5432/tcp  merginmaps-db
 
   ```bash
       $ docker exec -it  2b261cd55de2 bash
-
+  ```
   ```bash
      # psql -U postgres
+  ```
 
   ```bash
      #  select * from project;
-
+  ```
   ```bash
      # BEGIN;
 
@@ -64,23 +67,18 @@ Perform the migration:
            ON public.map_overview (version ASC NULLS LAST);
 
        COMMIT;
-
+   ```
 
    ```bash
         # select * from map_overview;
-
+   ```
          id | project_id | version | config | data_location | qgis_file
         ----+------------+---------+--------+---------------+-----------
         (0 rows)
 
 
-
-
-
-
-
-
 1. Stop your running docker containers
+
    ```bash
     $ docker compose -f docker-compose.yml down # or similarly, based on your previous deployment
    ```
