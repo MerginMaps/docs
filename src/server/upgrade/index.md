@@ -20,7 +20,7 @@ Make sure to always back up your database data before doing a migration.
 
 Perform the migration:
 
-0. Fix table - migration from old to new MM versieon 
+0. Fix table - migration from old to new MM version 
   ```bash
       $ docker ps -a | grep postgres
               2b261cd55de2   postgres:14   "docker-entrypoint.s…"   4 weeks ago   Up About a minute  5432/tcp  merginmaps-db
