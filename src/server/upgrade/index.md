@@ -21,7 +21,7 @@ Make sure to always back up your database data before doing a migration.
 Perform the migration:
 
 0. Fix table - migration from old to new MM version
-1. 
+ 
   ```bash
       $ docker ps -a | grep postgres
   ```
@@ -31,14 +31,14 @@ Perform the migration:
       $ docker exec -it  2b261cd55de2 bash
   ```
   ```bash
-     # psql -U postgres
+       psql -U postgres
   ```
 
   ```bash
-     #  select * from project;
+        select * from project;
   ```
   ```bash
-     # BEGIN;
+       BEGIN;
 
        CREATE SEQUENCE IF NOT EXISTS public.map_overview_id_seq;
 
@@ -70,7 +70,7 @@ Perform the migration:
    ```
 
    ```bash
-        # select * from map_overview;
+          select * from map_overview;
    ```
          id | project_id | version | config | data_location | qgis_file
         ----+------------+---------+--------+---------------+-----------
