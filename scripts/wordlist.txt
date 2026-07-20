@@ -94,6 +94,8 @@ MVT
 Mercedes
 Mergin
 Multiline
+MultiLine
+MultiPoint
 MultiPolygon
 NDK
 NMEA
