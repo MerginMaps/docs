@@ -19,6 +19,7 @@ Make sure to always back up your database data before doing a migration.
 <MigrationType type="EE" />
 
 Perform the migration:
+
 0. Fix table - migration from old to new MM versieon 
   ```bash
       $ docker ps -a | grep postgres
