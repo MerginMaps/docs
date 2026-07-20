@@ -107,7 +107,7 @@ There are multiple options of editing the geometry of features depending on the 
 
 To edit geometry of a point feature simply adjust the location in the same manner as when [adding new features](#capture-points).
 
-Layers with MultiPoint, lines and polygon geometries offer more options. Tap a feature, press the **Edit** button and then use **Edit geometry**. The vertices of the feature will be highlighted. You can move, **Release** or **Remove** them as needed. Tap the **Record** button to save the modified geometry.
+Layers with MultiPoint, Line, MultiLine, Polygon and MultiPolygon geometries offer more options. Tap a feature, press the **Edit** button and then use **Edit geometry**. The vertices of the feature will be highlighted. You can move, **Release** or **Remove** them as needed. Tap the **Record** button to save the modified geometry.
 
 ![Editing line geometry in Mergin Maps mobile app](./mobile-edit-lines.jpg "Editing line geometry in Mergin Maps mobile app")
 
