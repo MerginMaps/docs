@@ -132,9 +132,10 @@ External GPS functionality depends on the manufacturer and on the specific model
 | Carlson | Carlson <NoSpellcheck id="Brx7" /><sup><a href="#link-1">1</a></sup> | yes (mock location) | unknown |
 | Carlson | Carlson <NoSpellcheck id="xML2" /> <sup><a href="#link-1">1</a></sup>| yes (mock location) | unknown |
 | Emlid | Emlid Reach RX<sup><a href="#link-2">2</a></sup> | yes | yes (mock location) |
-| Emlid | Emlid Reach RS+<sup><a href="#link-2">2</a></sup> | yes | no |
-| Emlid | Emlid Reach RS2/RS2+<sup><a href="#link-2">2</a></sup> | yes | no |
-| Emlid | Emlid Reach RS3<sup><a href="#link-2">2</a></sup> | yes | no |
+| Emlid | Emlid Reach RS+<sup><a href="#link-2">2</a></sup> | yes | yes |
+| Emlid | Emlid Reach RS2/RS2+<sup><a href="#link-2">2</a></sup> | yes | yes |
+| Emlid | Emlid Reach RS3<sup><a href="#link-2">2</a></sup> | yes | yes |
+| Emlid | Emlid Reach RS4<sup><a href="#link-2">2</a></sup> | yes | yes |
 | Garmin | GLO 2 | yes | yes (mock location) |
 | Geomax | <NoSpellcheck id="Zenith06" /><sup><a href="#link-8">8</a></sup>  | yes (mock location) | unknown |
 | Geomax | <NoSpellcheck id="Zenith60" /><sup><a href="#link-8">8</a></sup>  | yes (mock location)  | unknown |
