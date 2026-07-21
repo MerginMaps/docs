@@ -31,6 +31,7 @@ ECR
 EE
 EGM
 Emlid
+EOS
 EPSG
 Esri
 EUIPO
@@ -155,7 +156,7 @@ Skoda
 SLYR
 SSL
 Survey123
-synchronise
+TCP
 TLS
 Transifex
 Trialing

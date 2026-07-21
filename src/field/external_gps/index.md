@@ -74,7 +74,7 @@ Connecting external GPS receivers using a network provider is available on both 
 2. Here, you can see the currently used receiver. Tap on the **Connect new receiver** button.
    ![Select GPS receiver](./mobile-app-connect-gps-receiver.webp "Select GPS receiver")
 
-3. On Android, select the **Network (<NoSpellcheck id="TCP, UDP" />)** connection type. On iOS, this is the only direct connection type.
+3. On Android, select the **Network TCP, (<NoSpellcheck id="UDP" />)** connection type. On iOS, this is the only direct connection type.
 
    Fill in the network connection details (IP Address and Port). You can also use a receiver nickname.   
    
@@ -133,7 +133,7 @@ External GPS functionality depends on the manufacturer and on the specific model
 | Carlson | <NoSpellcheck id="xML2" /> <sup><a href="#link-1">1</a></sup>| yes (mock location) | unknown |
 | Emlid | Reach RX models<sup><a href="#link-2">2</a></sup> | yes | yes (mock location) |
 | Emlid | Reach RS models<sup><a href="#link-3">3</a></sup> | yes | yes |
-| EOS | Skadi models<sup><a href="#link-11">11</a></sup> | yes | yes |
+| EOS | <NoSpellcheck id="Skadi" /> models<sup><a href="#link-11">11</a></sup> | yes | yes |
 | EOS | Arrow models<sup><a href="#link-11">11</a></sup> | yes | yes |
 | Garmin | GLO 2 | yes | yes (mock location) |
 | Geomax | <NoSpellcheck id="Zenith06" /><sup><a href="#link-8">8</a></sup>  | yes (mock location) | unknown |
@@ -162,6 +162,6 @@ External GPS functionality depends on the manufacturer and on the specific model
 - <a id="link-8">8</a>: **Geomax Zenith06, Zenith60** - through *Geomax X-PAD* app on Android, using a GNSS Mock licence from Geomax and the *Mock GNSS* option in the app.
 - <a id="link-9">9</a>: **<NoSpellcheck id="ArduSimple kits" />** - through [*GNSS Master* app](https://play.google.com/store/apps/details?id=com.gnssmaster&hl=en&gl=US&pli=1) which also acts as a NTRIP client and sends the corrections to the device. Detailed steps can be found in the tutorial [How to connect <NoSpellcheck id="ArduSimple" /> kit to Mergin Maps for centimetre-accurate mapping](https://www.ardusimple.com/how-to-connect-ardusimple-kit-to-mergin-maps-for-centimeter-accuracte-mapping/).
 - <a id="link-10">10</a>: **Geode GNS3** - through the *Geode Connect* app on [Android](https://play.google.com/store/apps/details?id=com.juniper.geode2a&hl=en_NZ&gl=US) or [iOS](https://apps.apple.com/us/app/geode-connect/id1446098695), which also acts as an NTRIP client and sends corrections to the device.
-- <a id="link-11">11</a>: **EOS receivers** - direct connection via network to [EOS Tools Pro](https://eos-gnss.com/products/software/eos-tools-pro) app that configures the receivers and sets up NTRIP corrections. Refer to EOS documentation to see how to set up TCP (network) connection.
+- <a id="link-11">11</a>: **<NoSpellcheck id="EOS" /> receivers** - direct connection via network to [<NoSpellcheck id="EOS" /> Tools Pro](https://eos-gnss.com/products/software/eos-tools-pro) app that configures the receivers and sets up NTRIP corrections. Refer to <NoSpellcheck id="EOS" /> documentation to see how to set up TCP (network) connection.
 
 **Did you use a GPS that is not in this list?** <GitHubRepo id="MerginMaps/docs/issues/124" desc="Share your experiences with us!" />
