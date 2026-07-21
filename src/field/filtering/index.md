@@ -54,6 +54,7 @@ Here is an example of how filtering works:
 1. Tap the **More** button to open **Filters** defined in the project
 
    Filtering has to be enabled in the [QGIS project](#enable-and-define-filtering-in-qgis), otherwise this option is not displayed.
+   
    ![Filtering button in Mergin Maps mobile app](./mobile-open-filters.webp "Filtering button in Mergin Maps mobile app")
 
 2. Enter or select values in the filters. You can use more filters at once.
