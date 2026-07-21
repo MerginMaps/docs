@@ -29,7 +29,7 @@ Perform the migration:
 
  
   ```bash
-      $ docker exec -it  2b261cd55de2 bash
+      $ docker exec -it  merginmaps-db bash
   ```
   Run commands in postgres container:
  
