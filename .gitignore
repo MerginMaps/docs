@@ -20,6 +20,6 @@ git-output.txt
 .vscode
 *-snippet.txt
 redirect_test.txt
-
+CLAUDE.md
 src/.vitepress/cache
 src/.vitepress/dist

@@ -23,7 +23,7 @@ Adding photos to a surveyed feature can be really helpful. With <MainPlatformNam
 :::tip Example projects available
 To see the basic [attachment widget](#photo-attachment-widget-in-qgis) setup for photos, clone <MerginMapsProject id="documentation/form_setup" />.
 
-If you want to [attach multiple photos to one feature](#how-to-attach-multiple-photos-to-one-feature) explore the public project <MerginMapsProject id="documentation/forms_multiple_photos" />.
+If you want to [attach multiple photos to one feature](#how-to-attach-multiple-photos-to-one-feature) explore the public project <MerginMapsProject id="documentation/forms_multiple_photos" />. It also includes the setup for [displaying photo location and direction](../photo-direction/).
 :::
 
 Prefer a video? Here is a short tutorial about the photo widget:
