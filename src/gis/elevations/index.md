@@ -60,7 +60,7 @@ If iOS provides also the ellipsoidal heights, <MainPlatformName /> transforms th
 
 ## External provider - Bluetooth
 <Badge text="Android only" type="tip"/>
-On Android, external GPS can be connected [using Bluetooth](../../field/external_gps/#how-to-connect-external-gps-receiver-in-android-via-mergin-maps-mobile-app-recommended). If possible, we recommend using this option.
+On Android, external GPS can be connected [using Bluetooth](../../field/external_gps/#bluetooth-connection-android-only). If possible, we recommend using this option.
 
 If there is no [user-defined transformation](#custom-vertical-reference-system), the <MobileAppNameShort /> uses data reported by the GPS provider as-is, including the ellipsoidal height and geoid separation. <MainPlatformName /> does not receive information about the geoid model used; this information should be supplied by the GPS provider.
 
