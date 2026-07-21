@@ -40,6 +40,11 @@ You can add new layers to your <MainPlatformName /> project in QGIS.
 
 Create a **new GeoPackage layer**:
 - Save the **Database** to your <MainPlatformName /> project [folder](../../manage/project/#mergin-maps-project-folder) on your computer (to ensure it is synchronised with the project)
+   :::warning One layer per GeoPackage
+   Always create a new GeoPackage file for each new layer.
+   
+   Avoid adding a new layer to an existing GeoPackage, as this can cause conflicting copies during synchronisation.
+   :::
 - Choose the **Geometry type**. 
    - For spatial layers, select *MultiPoint*, *MultiLine*, *MultiPolygon* (for features with multipart geometry) or *Point*, *LineString*, *Polygon*. 
    - Select *No Geometry* for a non-spatial layer (table)
