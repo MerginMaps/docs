@@ -18,7 +18,7 @@ Webmaps are **not** available for <CommunityPlatformNameLink /> at this point.
 ## Project layers
 On the webmaps, you will see your survey layers or raster layers that are [packaged](../project/#packaging-qgis-project) with the project. The default extent of maps is defined by the [extent set in the QGIS project](../../gis/features/#project-extent).
 
-All maps on the <DashboardShortLink /> by default use [<MainPlatformName /> vector tile service](../../gis/settingup_background_map/#online-services-1) as a background map.
+All maps on the <DashboardShortLink /> by default offer [<MainPlatformName /> vector tile service](../../gis/settingup_background_map/#online-services-1) as a background map, with three styles: default, light and dark.
 
 The webmap is refreshed automatically, you will see the latest version of your project all the time, even without refreshing the web page.
 
@@ -34,22 +34,32 @@ Click on a feature on the map to display its attributes.
 ![Mergin Maps dashboard maps](./dashboard-map-properties.webp "Mergin Maps dashboard maps")
 
 ## Available layers
-Webmaps by default show layers that are packaged with the project. These are layers that are loaded from project files. These are usually GeoPackage layers, shapefile layers and background maps that are made available for offline use (e.g. mbtiles, GeoTIFF, ...).
+Webmaps by default show layers that are packaged with the project (loaded from project files). These are usually GeoPackage layers, shapefile layers and background maps that are made available for offline use (e.g. mbtiles, GeoTIFF, ...).
 
 Layers requiring network connection (e.g. PostgreSQL layers or online background maps) are by default not included on the webmap due to potential performance and connectivity problems. However, certain network layers (such as satellite background map) can be added manually, read more in the [following section](#add-custom-background-maps).
 
 ### Add custom background maps
-If you prefer a different background map than the official one provided by default, there are currently two ways to add a custom background map:
+If you prefer a different background map than the official ones provided by default, you can add a custom one in the basemap selection.
 
-1. **Map-script** - Map-script allows you to programmatically update and customise the webmap to your specific needs. Read more about `map-script` [here](../webmaps-applications/). 
-2. **Package your background map** - Make your background map available offline in QGIS. This step packages the layer into a file and it will be visible on the webmap afterwards
+1. In the layers section, click on the top-left basemap selection item
+
+   ![Mergin Maps webmaps background map selection](./basemap-selection.webp "Mergin Maps webmaps background map selection")
+
+2. Click the `+ Add new` button
+
+   ![Mergin Maps webmaps adding background map](./basemap-addition.webp "Mergin Maps webmaps adding background map")
+
+3. Fill in the connection details of your background map. Please note that `vector tiles` and `raster tiles` are supported
+4. Hit `Add basemap` and your background map, if available, will be enabled automatically
+
+   ![Mergin Maps webmaps satellite background map](./basemap-satellite.webp "Mergin Maps webmaps satellite background map")
 
 :::warning Background maps licensing
 Keep in mind that background maps services and data sources come with their own terms of use, especially if they are to be publicly shared. You should comply with any terms and conditions of the services of your choice.
 :::
    
 ## Custom webmap applications <Badge text="Experimental 🧪" />
-As described in the previous section, webmaps can be further programmatically customised via `map-script` to build a custom webmap application. Read more about it [here](../webmaps-applications/).
+Webmaps can be further programmatically customised via `map-script` to build a custom webmap application. This feature can be used to add layers, alter visual and functional elements, and more. Read more [here](../webmaps-applications/).
 
 ## Extent
 
