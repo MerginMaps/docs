@@ -30,6 +30,7 @@ ECW
 ECR
 EE
 Emlid
+EOS
 EPSG
 Esri
 EUIPO
@@ -141,6 +142,7 @@ QwantResearch
 Recentre
 RTK
 SDK
+Skadi
 SLA
 SMTP
 SQLAlchemy
@@ -154,7 +156,7 @@ Skoda
 SLYR
 SSL
 Survey123
-synchronise
+TCP
 TLS
 Transifex
 Trialing
@@ -316,7 +318,6 @@ OIDC
 SSO
 Ory
 Polis
-SAML
 yaml
 pre
 env
