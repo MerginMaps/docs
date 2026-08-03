@@ -108,7 +108,7 @@ For details about different subscription plans visit our <MainDomainNameLink id=
 ## Settings
 In the **Settings** tab, you will find information about the current workspace. 
 
-Here, [admins and owners](../permissions/#workspace-member-roles-and-project-permissions) of a workspace can set up or manage [Single sign-on (SSO)](../sso/) and enable early access program features ([Map sharing via URL](../manage/webmaps-sharing/), [OGC API read-only access](../../gis/ogc-api/)).
+Here, [admins and owners](../permissions/#workspace-member-roles-and-project-permissions) of a workspace can set up or manage [Single sign-on (SSO)](../sso/) and enable early access program features ([Map sharing via URL](../webmaps-sharing/), [OGC API read-only access](../../gis/ogc-api/)).
 
 [Owners](../permissions/#workspace-member-roles-and-project-permissions) of a workspace can also:
 - use **Edit Workspace** to add or change the description of the workspace
