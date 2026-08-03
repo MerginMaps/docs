@@ -1,5 +1,7 @@
 ---
 description: Mergin Maps dashboard is where you manage your projects, workspace members, subscriptions and profiles. Explore files, history, webmaps of your projects.
+
+outline: deep
 ---
 
 # Mergin Maps Dashboard
@@ -62,8 +64,9 @@ Here, the [**project permissions**](../permissions/#workspace-member-roles-and-p
 
 ![Mergin Maps project collaborators](./mergin-maps-dashboard-project-collaborators.jpg "Mergin Maps project collaborators")
 
-### Settings
-In **Settings**, you can:
+### Settings and API {#settings}
+In **Settings & API**, you can:
+- **Enable** [OGC API access](../../gis/ogc-api/) and copy WFS and WMS / WMTS URL
 - make the project [public or private](../project-advanced/#make-your-project-public-private)
 - [Transfer project](../project-advanced/#transfer-a-project) to another workspace
 - [Delete project](../project-advanced/#delete-a-project) 
