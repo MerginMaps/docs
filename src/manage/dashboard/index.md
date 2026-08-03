@@ -26,7 +26,7 @@ Here, you can:
 
 When you click on a project, you will see the overview of its content. Files can simply be **uploaded** to the project using drag and drop. 
 
-In the right upper corner, you will find buttons to **download** and [**clone**](../create-project/#clone-an-existing-project-through-mergin-maps-dashboard) the project.
+In the right upper corner, there are buttons to [**open map**](../dashboard-maps/), **download** and [**clone**](../create-project/#clone-an-existing-project-through-mergin-maps-dashboard) the project.
 
 ![Mergin Maps dashboard project details](./mergin-maps-project-details.jpg "Mergin Maps dashboard project details")
 
@@ -42,7 +42,7 @@ On the **Map** tab, your project is displayed directly on the <DashboardShortLin
 
 More details about this functionality can be found in the [Webmaps](../dashboard-maps/) section.
 
-![Mergin Maps dashboard webmaps](./mergin-maps-web-map.webp "Mergin Maps dashboard webmaps")
+![Mergin Maps dashboard webmaps](../dashboard-maps/dashboard-webmap.webp "Mergin Maps dashboard webmaps")
 
 ### History
 The **History** tab contains an overview of available project versions that can be also downloaded to your computer.
@@ -105,7 +105,7 @@ For details about different subscription plans visit our <MainDomainNameLink id=
 ## Settings
 In the **Settings** tab, you will find information about the current workspace. 
 
-Here, [admins and owners](../permissions/#workspace-member-roles-and-project-permissions) of a workspace can set up or manage [Single sign-on (SSO)](../sso/).
+Here, [admins and owners](../permissions/#workspace-member-roles-and-project-permissions) of a workspace can set up or manage [Single sign-on (SSO)](../sso/) and enable early access program features ([Map sharing via URL](../manage/webmaps-sharing/), [OGC API read-only access](../../gis/ogc-api/)).
 
 [Owners](../permissions/#workspace-member-roles-and-project-permissions) of a workspace can also:
 - use **Edit Workspace** to add or change the description of the workspace
