@@ -4,7 +4,7 @@ description: Mergin Maps documentation system overview of writing new content, u
 
 # Write Documentation
 
-Thank you for your interest in helping out with writing [<MainPlatformName /> Documentation](https://merginmaps.com/docs). The documentation framework is based on [VitePress](https://vitepress.dev/). We welcome any contributions as <GitHubRepo id="MerginMaps/docs/pulls" desc="GitHub Pull Requests" />. If you are unsure how to contribute or what tasks are best to start with, join us on our [community chat](https://merginmaps.com/community/join) and ask in the `#dev` channel. We are happy to get you up to speed!
+Thank you for your interest in helping out with writing [<MainPlatformName /> Documentation](https://merginmaps.com/docs). The documentation framework is based on [VitePress](https://vitepress.dev/). We welcome any contributions as <GitHubRepo id="MerginMaps/docs/pulls" desc="GitHub Pull Requests" />. If you are unsure how to contribute or what tasks are best to start with, join us on our [community](https://community.merginmaps.com) and ask. We are happy to get you up to speed!
 
 The version of the documentation you see on [<MainPlatformName /> Documentation](https://merginmaps.com/docs) is the <GitHubRepo id="MerginMaps/docs/tags" desc="latest tagged release" /> on the main branch. The latest commit on the main branch can be seen on [<MainPlatformName /> Staging Documentation](https://dev.merginmaps.com/docs).
 
@@ -18,7 +18,7 @@ If you are a (web) *developer*, you can skip all and just look at <GitHubRepo id
 
 Otherwise, it is best to run the local development on your machine. The similar steps as described can be done on (almost) any operation system with slight modifications (e.g. using `brew` or `apt` on macOS or Linux for installation).
 
-If you are not a part of the <MainPlatformName /> core documentation team, you will need to work with a [fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo). Follow the instructions in the section [When fork is needed](#when-fork-is-needed). We are happy to include more people into the team, so if you consider writing more documentation, let us know on our [community chat](https://merginmaps.com/community/join).
+If you are not a part of the <MainPlatformName /> core documentation team, you will need to work with a [fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo). Follow the instructions in the section [When fork is needed](#when-fork-is-needed). We are happy to include more people into the team, so if you consider writing more documentation, let us know on our [community](https://community.merginmaps.com).
 
 ### Prepare local repository
 
@@ -78,7 +78,7 @@ Now go to <GitHubRepo id="MerginMaps/docs" desc="GitHub" /> and create a pull re
 
 Check the automatic tests in the pull requests for [spellcheck](#spellcheck), [Markdown](#using-markdown), broken links or [redirects](#redirects) and, if needed, fix the issues in your code.
 
-To ensure your pull request will be reviewed and merged, it is nice to ping the <MainPlatformName /> docs team on the [community chat](https://merginmaps.com/community/join) in the `#dev` channel.
+To ensure your pull request will be reviewed and merged, it is nice to ping the <MainPlatformName /> docs team on the [community](https://community.merginmaps.com).
 
 ### When fork is needed
 ::: warning

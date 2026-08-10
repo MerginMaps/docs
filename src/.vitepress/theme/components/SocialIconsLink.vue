@@ -9,7 +9,6 @@ import { defineComponent } from "vue";
 
 import githubSvg from "/socials/github.svg?raw";
 import linkedinSvg from "/socials/linkedin.svg?raw";
-import slackSvg from "/socials/slack.svg?raw";
 import blueskySvg from "/socials/bluesky.svg?raw";
 import facebookSvg from "/socials/facebook.svg?raw";
 import youtubeSvg from "/socials/youtube.svg?raw";
@@ -23,7 +22,6 @@ export default defineComponent({
         github: "https://github.com/MerginMaps",
         linkedin: "https://www.linkedin.com/company/mergin-maps/",
         bluesky: "https://bsky.app/profile/merginmaps.bsky.social",
-        slack: "https://merginmaps.com/community/join",
         facebook: "https://www.facebook.com/profile.php?id=61564969364057",
         youtube: "https://www.youtube.com/@merginmaps",
         mastodon: "https://fosstodon.org/@merginmaps",
@@ -35,7 +33,6 @@ export default defineComponent({
       const icons = {
         github: githubSvg,
         linkedin: linkedinSvg,
-        slack: slackSvg,
         facebook: facebookSvg,
         bluesky: blueskySvg,
         youtube: youtubeSvg,

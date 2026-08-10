@@ -16,7 +16,7 @@ Use GitHub Pull Requests to propose changes, we will review and merge your chang
 - Check official [vuepress documentation](https://vuepress.vuejs.org/)
 - Check the [Mergin Maps Documentation Guidelines](https://merginmaps.com/docs/misc/write-docs/)
 
-<div><img align="left" width="45" height="45" src="https://raw.githubusercontent.com/MerginMaps/docs/main/src/public/slack.svg"><a href="https://merginmaps.com/community/join">Join our community chat</a><br/>and ask questions!</div>
+- [Join our community](https://community.merginmaps.com) and ask questions!
 
 # Development
 
@@ -31,7 +31,7 @@ Use GitHub Pull Requests to propose changes, we will review and merge your chang
  - Double check that [staging deployment](https://dev.merginmaps.com/docs) is what you want
  - Create [Docs Release](https://github.com/MerginMaps/docs/releases)
  - Ask sys-admin to manually deploy REDIRECTS to njinx
- - Check that [live](https://merginmaps.com/docs) is what you want and announce the news on Slack
+ - Check that [live](https://merginmaps.com/docs) is what you want and announce the news on the community
  
 
 ## Dynamic server (for local development)

@@ -28,7 +28,6 @@
       <div class="page-footer__center">
         <div>
           <SocialIconsLink icon="bluesky" class="page-footer__icon" />
-          <SocialIconsLink icon="slack" class="page-footer__icon" />
           <SocialIconsLink icon="linkedin" class="page-footer__icon" />
           <SocialIconsLink icon="facebook" class="page-footer__icon" />
           <SocialIconsLink icon="github" class="page-footer__icon" />
@@ -48,6 +47,10 @@
             href="https://merginmaps.com/licenses/terms-of-service"
             target="__blank"
             >Terms of service</a
+          >
+          &#x2022;
+          <a href="https://community.merginmaps.com" target="__blank"
+            >Community</a
           >
         </div>
       </div>
