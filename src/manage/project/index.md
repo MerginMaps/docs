@@ -51,8 +51,10 @@ After the layers for the new project are selected, you just need to enter the pr
 
 ![New Mergin Maps project name and folder](../create-project/mergin_plugin_project_wizard_4.jpg "New Mergin Maps project name and folder")
    
-:::danger WARNING
-Your project should be saved on a local drive. Using shared network drives and cloud storage (such as OneDrive or Google Drive) is **not supported**.
+:::danger Network drives are not supported
+Save your <MainPlatformName /> project on a local drive or cloud storage (e.g. OneDrive or Google Drive). 
+
+Using shared network drives is **not supported**.
 :::
 
 ### Mergin Maps project folder

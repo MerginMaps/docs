@@ -69,9 +69,11 @@ Detailed steps on how to download and open your <MainPlatformNameLink /> project
 
 2. Browse to the folder, where you want to save the project and click **Select folder**. The project will be downloaded here.
 
-   :::danger WARNING
-   Do not use shared network drives or cloud storage (such as OneDrive or Google Drive) to store your <MainPlatformName /> projects. It is not supported and can cause errors.
-   :::
+   :::danger Network drives are not supported
+    Save your <MainPlatformName /> project on a local drive or cloud storage (e.g. OneDrive or Google Drive). 
+
+    Using shared network drives is **not supported**.
+    :::
 
 3. Once the download is completed, you will have the option to open the project in QGIS.
 
