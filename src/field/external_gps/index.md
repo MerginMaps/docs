@@ -43,6 +43,10 @@ External GPS can be connected to the <MobileAppNameShort /> via [Bluetooth](#blu
 
 If it is not possible to use these options, you can also set up a [Mock location](#mock-location). However, some of the data reported by GPS may not be available.
 
+:::tip NTRIP client and GPS corrections
+GPS manufacturer's apps often provide a setup for a NTRIP client, through which you are able to receive GPS corrections and achieve centimetre level accuracy.
+:::
+
 External GPS receivers report some additional GPS data that are displayed in the **GPS info** panel.
 
 ![GPS info from external GPS in Mergin Maps mobile app](./mobile-app-external-gps-info.jpg "GPS info from external GPS in Mergin Maps mobile app") 
@@ -92,10 +96,6 @@ When using an external GPS receiver on Android via mock location, we recommend u
 :::
 
 External GPS can be connected and configured in Android to provide mock location using GPS apps (e.g. [Bluetooth GPS](https://play.google.com/store/apps/details?id=de.pilablu.gpsconnector) or apps from specific GPS manufacturers) as a source of GPS signal. The <MobileAppNameShort /> and other apps in your device will get the GPS position from the external GPS. 
-
-:::tip NTRIP client and GPS corrections
-GPS manufacturer's apps often provide a setup for a NTRIP client, through which you are able to receive GPS corrections and achieve centimetre level accuracy.
-:::
 
 To enable **Allow mock locations** in Android:
 - enable **Developer options**, which are hidden by default:
