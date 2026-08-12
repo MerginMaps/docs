@@ -110,4 +110,4 @@ Tip: `<map_link>` is generated only once the map is made public ("Share map" in 
 
 ```
 
-We are keen to see what you've built! Please do not hesitate to share your results with us on our [community](https://merginmaps.com/community/join)!
+We are keen to see what you've built! Please do not hesitate to share your results with us on our [community](https://community.merginmaps.com)!
