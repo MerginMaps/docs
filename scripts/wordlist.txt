@@ -79,6 +79,7 @@ Lebefure
 Leica
 LGPL
 LGPLv
+LineString
 LTR
 Lutra
 Lutra's
