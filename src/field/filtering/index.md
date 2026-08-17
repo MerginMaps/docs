@@ -14,10 +14,6 @@ Custom filters can be added to the <MobileAppNameShort /> to easily filter featu
 You can explore filtering by cloning our public project <MerginMapsProject id="documentation/filtering" />
 :::
 
-::: warning Feature filtering blog
-You can read about this feature also on our blog <MainDomainNameLink id="blog/from-wishlist-to-app-feature-filtering-is-live" desc="From wishlist to app: Feature filtering is live"/>.
-:::
-
 ## Enable and define filtering in QGIS
 Filters can be enabled and defined in QGIS in **Project Properties** for GeoPackage layers.
 
