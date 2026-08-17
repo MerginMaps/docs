@@ -43,9 +43,11 @@ To work with <MainPlatformName /> projects in QGIS, you will need to [install th
    Keep in mind that the project name cannot be changed later.
    ![New Mergin Maps project name and folder](./mergin_plugin_project_wizard_4.jpg "New Mergin Maps project name and folder")
    
-   :::danger WARNING
-   Your project should be saved on a local drive. Using shared network drives and cloud storage (such as OneDrive or Google Drive) is **not supported**.
-   :::
+   :::warning Network drives are not supported
+   When choosing where to save your <MainPlatformName /> project on your computer, a **local drive** is the best option. 
+
+   Using shared network drives is **not supported**.
+   ::: 
 
 The new <MainPlatformName /> project will be created locally on your computer and also on the <MainPlatformNameLink /> server. 
 
