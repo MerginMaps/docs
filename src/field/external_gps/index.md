@@ -133,7 +133,7 @@ External GPS functionality depends on the manufacturer and on the specific model
 | Carlson | <NoSpellcheck id="xML2" /> <sup><a href="#link-1">1</a></sup>| yes (mock location) | unknown |
 | Emlid | Reach RX models<sup><a href="#link-2">2</a></sup> | yes | yes (mock location) |
 | Emlid | Reach RS models<sup><a href="#link-3">3</a></sup> | yes | yes |
-| EOS | <NoSpellcheck id="Skadi" /> models<sup><a href="#link-11">11</a></sup> | yes | yes |
+| EOS | Skadi /> models<sup><a href="#link-11">11</a></sup> | yes | yes |
 | EOS | Arrow models<sup><a href="#link-11">11</a></sup> | yes | yes |
 | Garmin | GLO 2 | yes | yes (mock location) |
 | Geomax | <NoSpellcheck id="Zenith06" /><sup><a href="#link-8">8</a></sup>  | yes (mock location) | unknown |

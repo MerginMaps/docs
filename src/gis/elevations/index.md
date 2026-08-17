@@ -27,7 +27,7 @@ Information about the altitude and geoid separation (if available) are displayed
 
 ![GPS info panel](../../field/mobile-app-ui/mobile-app-gps-info.webp "GPS info panel")
 
-There are some differences in the functionality and available details depending on the GPS provider, the OS of the mobile device and the connection setup, namely the type of elevation provided, available [position variables](../../layer/variables/#position-variables) and whether it is possible to use [custom vertical reference system](#custom-vertical-reference-system).
+There are some differences in the functionality and available details depending on the GPS receiver, the OS of the mobile device and the connection setup, namely the type of elevation provided, available [position variables](../../layer/variables/#position-variables) and whether it is possible to use [custom vertical reference system](#custom-vertical-reference-system).
 
 ## Internal provider (no external device)
 
