@@ -1,5 +1,5 @@
 <template>
-  <a :href="`https://wishlist.merginmaps.com/${id}`" target="_blank" class="nospellcheck">
+  <a :href="`https://community.merginmaps.com/b/wishlist/${id}`" target="_blank" class="nospellcheck">
     <span v-if="desc" v-html="desc"></span>
     <span v-else class="nospellcheck">wishlist</span>
   </a>

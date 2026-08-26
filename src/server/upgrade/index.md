@@ -78,7 +78,6 @@ Perform the migration:
 
 
 1. Stop your running docker containers
-
    ```bash
     $ docker compose -f docker-compose.yml down # or similarly, based on your previous deployment
    ```

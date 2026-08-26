@@ -36,7 +36,7 @@ Please see the <MainDomainNameLink id="support" desc="support packages"/> availa
 If you have an active <MainPlatformNameLink /> subscription or during the trial period, we also offer free fair-use support on <MerginMapsEmail id="support" />.
 
 ### Community support
-- Join our [community chat on Slack](https://merginmaps.com/community/join) and ask questions!
+- Join our [community](https://community.merginmaps.com) and ask questions!
 - See [GIS Stack Exchange](https://gis.stackexchange.com/questions/tagged/mergin-maps) with "<NoSpellcheck id="mergin-maps" />" tag to ask questions and see other users' answers.
 - See <QGISHelp ver="latest" link="user_manual/index.html" text="QGIS documentation" /> for QGIS Desktop related problems.
 

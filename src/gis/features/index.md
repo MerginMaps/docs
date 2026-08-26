@@ -32,6 +32,35 @@ Here are some practical tips for creating and maintaining layers in your project
 - **Add new layers to your project as separate GeoPackages**. Do not add a new table to your existing GeoPackage that contains a survey layer. Just to be safe, it is better to have one GeoPackage for each of your survey layers.
 - Use **GeoTIFF** format for your raster files or store them in a separate GeoPackage database
 
+### Adding layers
+
+You can add new layers to your <MainPlatformName /> project in QGIS.
+
+![QGIS Data source manager toolbar - Create GeoPackage](./qgis-dsm-toolbar.webp "QGIS Data source manager toolbar - Create GeoPackage")
+
+Create a **new GeoPackage layer**:
+- Save the **Database** to your <MainPlatformName /> project [folder](../../manage/project/#mergin-maps-project-folder) on your computer (to ensure it is synchronised with the project)
+   :::warning One layer per GeoPackage
+   Always create a new GeoPackage file for each new layer.
+   
+   Avoid adding a new layer to an existing GeoPackage, as this can cause conflicting copies during synchronisation.
+   :::
+- Choose the **Geometry type**. 
+   - For spatial layers, select *MultiPoint*, *MultiLine*, *MultiPolygon* (for features with multipart geometry) or *Point*, *LineString*, *Polygon*. 
+   - Select *No Geometry* for a non-spatial layer (table)
+- Set the **Coordinate reference system**
+- Add **fields** with appropriate data types
+
+![QGIS New GeoPackage Layer](./qgis-new-geopackage-layer.webp "QGIS New GeoPackage Layer")
+
+The new layer is added to the project. Now you can set up its symbology, attributes form or other settings. 
+
+:::tip More about adding GeoPackage layers
+Our tutorial [Creating a Project in QGIS](../../tutorials/creating-a-project-in-qgis/#add-layers) includes detailed steps on how to add a new layer to the project.
+
+A comprehensive description of creating a GeoPackage layer can be found in <QGISHelp ver="latest" link="user_manual/managing_data_source/create_layers.html#creating-a-new-geopackage-layer" text="QGIS documentation" />.
+:::
+
 ### Layer symbology
 The same symbology as defined in the QGIS project will be used in <MobileAppName />. However, <MobileAppName /> does not include all the SVG markers that are available within QGIS. Therefore, if you are using SVG markers for your layer styling, ensure those are copied to the project folder.
 

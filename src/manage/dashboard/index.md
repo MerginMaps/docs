@@ -1,5 +1,7 @@
 ---
 description: Mergin Maps dashboard is where you manage your projects, workspace members, subscriptions and profiles. Explore files, history, webmaps of your projects.
+
+outline: deep
 ---
 
 # Mergin Maps Dashboard
@@ -26,7 +28,7 @@ Here, you can:
 
 When you click on a project, you will see the overview of its content. Files can simply be **uploaded** to the project using drag and drop. 
 
-In the right upper corner, you will find buttons to **download** and [**clone**](../create-project/#clone-an-existing-project-through-mergin-maps-dashboard) the project.
+In the right upper corner, there are buttons to [**open map**](../dashboard-maps/), **download** and [**clone**](../create-project/#clone-an-existing-project-through-mergin-maps-dashboard) the project.
 
 ![Mergin Maps dashboard project details](./mergin-maps-project-details.jpg "Mergin Maps dashboard project details")
 
@@ -42,7 +44,7 @@ On the **Map** tab, your project is displayed directly on the <DashboardShortLin
 
 More details about this functionality can be found in the [Webmaps](../dashboard-maps/) section.
 
-![Mergin Maps dashboard webmaps](./mergin-maps-web-map.webp "Mergin Maps dashboard webmaps")
+![Mergin Maps dashboard webmaps](../dashboard-maps/dashboard-webmap.webp "Mergin Maps dashboard webmaps")
 
 ### History
 The **History** tab contains an overview of available project versions that can be also downloaded to your computer.
@@ -62,8 +64,9 @@ Here, the [**project permissions**](../permissions/#workspace-member-roles-and-p
 
 ![Mergin Maps project collaborators](./mergin-maps-dashboard-project-collaborators.jpg "Mergin Maps project collaborators")
 
-### Settings
-In **Settings**, you can:
+### Settings and API {#settings}
+In **Settings & API**, you can:
+- **Enable** [OGC API access](../../gis/ogc-api/) and copy WFS and WMS / WMTS URL
 - make the project [public or private](../project-advanced/#make-your-project-public-private)
 - [Transfer project](../project-advanced/#transfer-a-project) to another workspace
 - [Delete project](../project-advanced/#delete-a-project) 
@@ -105,7 +108,7 @@ For details about different subscription plans visit our <MainDomainNameLink id=
 ## Settings
 In the **Settings** tab, you will find information about the current workspace. 
 
-Here, [admins and owners](../permissions/#workspace-member-roles-and-project-permissions) of a workspace can set up or manage [Single sign-on (SSO)](../sso/).
+Here, [admins and owners](../permissions/#workspace-member-roles-and-project-permissions) of a workspace can set up or manage [Single sign-on (SSO)](../sso/) and enable early access program features ([Map sharing via URL](../webmaps-sharing/), [OGC API read-only access](../../gis/ogc-api/)).
 
 [Owners](../permissions/#workspace-member-roles-and-project-permissions) of a workspace can also:
 - use **Edit Workspace** to add or change the description of the workspace

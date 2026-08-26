@@ -5,23 +5,23 @@ description: Mergin Maps webmaps can be shared using a URL link. You can also em
 # Sharing and Embedding Webmaps <Badge text="Early access" type="warning"/>
 
 ::: warning Early access feature
-Map sharing is in early access. If you would like to try it out, ask your workspace admin or owner to enable map sharing early access program in your [workspace settings](https://app.merginmaps.com/settings). The availability of the feature might change in the future.
+Map sharing is currently available as an early access feature. If you would like to try it out, ask your workspace admin or owner to enable map sharing early access program in your [workspace settings](https://app.merginmaps.com/settings). The availability of the feature might change in the future.
 :::
 
 ## Sharing maps via URL 
 
-Webmaps can be shared via URL. [Admins or owners](../permissions/) can enable map sharing for a project, so that anyone with the link can display and explore your project in a web browser, without the need to log in to <MainPlatformNameLink /> or make the project [public](../project-advanced/#make-your-project-public-private).
+You can share webmaps via a direct URL. [Admins or owners](../permissions/) can enable map sharing for a project, allowing anyone with the link can display and explore it in a web browser, without the need to log in to <MainPlatformNameLink /> or make the project [public](../project-advanced/#make-your-project-public-private).
 
-1. Navigate to your project on the <DashboardShortLink />.
-2. In the **Map** tab, click on the **Share map** button to generate a shareable link
-3. Send the link to anyone to share your project
-
-To see how this works, you can try a link to our [sample webmap](https://app.merginmaps.com/maps/grDTleg8yCdSracIxs-hmFIGdDs).
-
-To disable the map sharing, click on the **Revoke sharing** button.
+1. Navigate to your project on the <DashboardShortLink />
+2. Click the **Open map** button to open the [webmap](../dashboard-maps/)
+3. Click the **Share map** button to display the public map link
+4. Copy and share the link to provide access to your webmap
 
 ![Sharing maps via URL](./map-sharing-url.webp "Sharing maps via URL")
 
+To see this feature in action, you can try a link to our [sample webmap](https://app.merginmaps.com/maps/grDTleg8yCdSracIxs-hmFIGdDs).
+
+To disable the map sharing, click the **Stop sharing** button.
 
 ## Embedding webmaps using HTML
 
