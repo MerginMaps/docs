@@ -20,63 +20,6 @@ Make sure to always back up your database data before doing a migration.
 
 Perform the migration:
 
-0. Fix the issue of missing overviews table in case it was not created during older db migration.
- 
-  ```bash
-      $ docker ps -a | grep postgres
-  ```
-              2b261cd55de2   postgres:14   "docker-entrypoint.s…"   4 weeks ago   Up About a minute  5432/tcp  merginmaps-db
-
- 
-  ```bash
-      $ docker exec -it  merginmaps-db bash
-  ```
-  Run commands in postgres container:
- 
-  ```bash
-       psql -U postgres
-  ```
-
-  ```bash
-       BEGIN;
-
-       CREATE SEQUENCE IF NOT EXISTS public.map_overview_id_seq;
-
-       CREATE TABLE IF NOT EXISTS public.map_overview
-       (
-           id              INTEGER           NOT NULL DEFAULT nextval('map_overview_id_seq'::regclass),
-           project_id      UUID              NOT NULL,
-           version         CHARACTER VARYING,
-           config          JSON,
-           data_location   CHARACTER VARYING,
-           qgis_file       CHARACTER VARYING,
-
-           CONSTRAINT pk_map_overview
-               PRIMARY KEY (id, project_id),
-
-           CONSTRAINT fk_map_overview_project_id_project
-               FOREIGN KEY (project_id)
-               REFERENCES public.project (id)
-               ON DELETE CASCADE
-       );
-
-       CREATE INDEX IF NOT EXISTS ix_map_overview_project_id
-           ON public.map_overview (project_id ASC NULLS LAST);
-
-       CREATE INDEX IF NOT EXISTS ix_map_overview_version
-           ON public.map_overview (version ASC NULLS LAST);
-
-       COMMIT;
-   ```
-
-   ```bash
-          select * from map_overview;
-   ```
-         id | project_id | version | config | data_location | qgis_file
-        ----+------------+---------+--------+---------------+-----------
-        (0 rows)
-
-
 1. Stop your running docker containers
    ```bash
     $ docker compose -f docker-compose.yml down # or similarly, based on your previous deployment
@@ -128,7 +71,51 @@ You can also clean the following variables from `.prod.env`:
     $ docker exec merginmaps-server flask db stamp 6cb54659c1de
     $ docker exec merginmaps-server flask db stamp e95d051969ce
     ```
-8. Run the database migration:
+
+8. If you do not have `map_overview` table in your database, run the following commands to create it by running commands in postgres container or in any postgres client (PgAdmin, etc.) connected to your database:
+    ```bash
+    $ docker exec -it merginmaps-db bash
+    $ psql -U postgres
+    ```
+
+    Run following SQL for creating the `map_overview` table and its indexes:
+
+    ```sql
+    BEGIN;
+
+    CREATE SEQUENCE IF NOT EXISTS public.map_overview_id_seq;
+
+    CREATE TABLE IF NOT EXISTS public.map_overview
+    (
+        id              INTEGER           NOT NULL DEFAULT nextval('map_overview_id_seq'::regclass),
+        project_id      UUID              NOT NULL,
+        version         CHARACTER VARYING,
+        config          JSON,
+        data_location   CHARACTER VARYING,
+        qgis_file       CHARACTER VARYING,
+
+        CONSTRAINT pk_map_overview
+            PRIMARY KEY (id, project_id),
+
+        CONSTRAINT fk_map_overview_project_id_project
+            FOREIGN KEY (project_id)
+            REFERENCES public.project (id)
+            ON DELETE CASCADE
+    );
+
+    CREATE INDEX IF NOT EXISTS ix_map_overview_project_id
+        ON public.map_overview (project_id ASC NULLS LAST);
+
+    CREATE INDEX IF NOT EXISTS ix_map_overview_version
+        ON public.map_overview (version ASC NULLS LAST);
+
+    COMMIT;
+   ```
+
+If this table is missing, the migrations in the next step will fail.
+
+9. Run the database migration:
+
     ```bash
     $ docker exec merginmaps-server flask db upgrade community@b9ec9ab6694f
     $ docker exec merginmaps-server flask db upgrade enterprise@c40e5e645b57
