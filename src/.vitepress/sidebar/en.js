@@ -62,6 +62,7 @@ export default {
         { text: 'How to Avoid Polygons Overlap', link: '/gis/avoid-overlap/' },
         { text: 'Publishing Projects via OGC API (WMS/WMTS, WFS)', link: '/gis/ogc-api/' },
         { text: 'Custom Projections', link: '/gis/proj/' },
+        { text: 'Elevations', link: '/gis/elevations/' },
         { text: 'Supported Formats', link: '/gis/supported_formats/' }
       ] },
     {
