@@ -57,9 +57,9 @@ To migrate your data:
    KML is a safe choice, as it covers placemarks, lines, areas and tracks, and can carry attached photos. Navigate to your Map layers and select the Export option. Note that the free version supports only export of layers, not of the entire map (and only as .kml, .gpx and .csv).
 2. Create a QGIS project and save it in a local folder.
 3. Load the exported file(s) in QGIS using, e.g., [KML Tools plugin](https://plugins.qgis.org/plugins/kmltools/). 
-   The plugin will retain all the attributes, but will convert certain types (such as Dates and Booleans) into Text type. It will also use a default symbology which has to be changed later.   
-4. Use  <QGISHelp ver="latest" link="user_manual/processing_algs/qgis/vectortable.html#refactor-fields" text="Refactor Fields" /> (from the Geoprocessing Toolbox) on the imported layers to re-create your attribute schema as desired (delete extra fields, convert Text types back to Dates/Booleans etc.). Save the outputs as GeoPackages. 
-5. Proceed with applying the appropriate symbologies on your layers and implementing various widgets on their attributes (such as [List of Values](../../layer/value-select/) or [Date and time](../../layer/date-time/)). 
+   The plugin will retain all the attributes, but will convert certain types (such as Boolean or Dates) into Text type. It will also use a default symbology which has to be changed later.   
+4. Use  <QGISHelp ver="latest" link="user_manual/processing_algs/qgis/vectortable.html#refactor-fields" text="Refactor Fields" /> (from the Processing Toolbox) on the imported layers to re-create your attribute schema as desired (delete extra fields, convert Text types back to Dates/Boolean etc.). Save the outputs as GeoPackages. 
+5. Proceed with applying the appropriate symbology on your layers and implementing various widgets on their attributes (such as [List of Values](../../layer/value-select/) or [Date and time](../../layer/date-time/)). 
 6. For Photo attachments, you can use the [Attachment widget](../../layer/photos/). 
    For this, your captured Photos must also be exported from your device and be placed in your local folder.
 7. Now you can upload your QGIS project onto your <MainPlatformName /> workspace using the [<QGISPluginName />](../../manage/plugin/). 

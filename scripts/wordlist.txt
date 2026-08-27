@@ -7,6 +7,7 @@ ArcMap
 Android
 ArcGIS
 ArcSDE
+Avenza
 AWS
 Basemap
 Basemaps
@@ -54,6 +55,7 @@ Geomax
 GEOS
 GeoPackage
 GeoPackages
+Georeferenced
 Geotagging
 GeoTIFF
 GeoPDF
@@ -75,6 +77,7 @@ Integration
 Integrations
 JPG
 KML
+KMZ
 Lebefure
 Leica
 LGPL
@@ -120,6 +123,7 @@ PNG
 PR
 PROJ
 Peatlands
+PgAdmin
 Pixelated
 PostGIS
 PostgreSQL
@@ -198,6 +202,7 @@ conf
 config
 conformant
 crosshairs
+csv
 cybersecurity
 dataset
 datasets
@@ -211,8 +216,11 @@ frontend
 gdal
 geo
 geoid
+georeferenced
+geospatial
 github
 gpkg
+gpx
 hotline
 html
 http
@@ -228,6 +236,7 @@ jpeg
 jpg
 js
 json
+kml
 libexpat
 libspatialindex
 libtasn
@@ -252,8 +261,11 @@ orchestrator
 osm
 pbf
 peatlands
+picklist
 pixelated
+placemarks
 png
+postgres
 predefine
 predefined
 prefetch
@@ -284,6 +296,7 @@ shapefile
 shapefiles
 spatialindex
 spatialite
+sql
 sqlite
 ssl
 SSL
