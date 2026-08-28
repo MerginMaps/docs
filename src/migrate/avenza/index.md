@@ -9,7 +9,7 @@ outline: deep
 
 This guide is intended for current Avenza Maps users who consider switching to <QGIS link="en/site/forusers/download.html" text="QGIS" /> and <MainPlatformNameLink />. It might be helpful also to Mergin Maps users looking to transfer their maps and field data from the Avenza Maps ecosystem. 
 
-::: tip
+::: tip Getting familiar with Mergin Maps and QGIS
 Switching to a new platform can be challenging. This documentation is here to help with the basics as well as some more advanced or specific settings.
 
 To get familiar with <MainPlatformNameLink />, we recommend starting with the [**tutorials**](../../tutorials/capturing-first-data/). If there are specific topics that are crucial for your workflows, feel free to explore the documentation or contact our <MerginMapsEmail id="sales" desc="sales team" /> or our <MerginMapsEmail id="support" desc="support team" /> to get more details.
