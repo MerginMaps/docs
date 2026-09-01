@@ -24,7 +24,7 @@ Perform the migration:
    ```bash
     $ docker compose -f docker-compose.yml down # or similarly, based on your previous deployment
    ```
-2. Clone or pull the <GitHubRepo id="MerginMaps/server/blob/master/" desc="server repository" /> or download <GitHubRepo id="MerginMaps/server/blob/master/deployment" desc="deployment folder" /> and open `/enterprise` folder.
+2. Clone or pull the <GitHubRepo id="MerginMaps/server/blob/2025.7.3-ee/" desc="server repository" /> or download <GitHubRepo id="MerginMaps/server/blob/2025.7.3-ee/deployment" desc="deployment folder" /> and open `/enterprise` folder.
    ```bash    
     $ cd server/deployment/enterprise
    ```
@@ -131,7 +131,7 @@ Perform the migration:
    ```bash
     $ docker compose -f docker-compose.yml down # or similarly, based on your previous deployment
    ```
-2. Clone or pull the <GitHubRepo id="MerginMaps/server/blob/master/" desc="server repository" /> or download <GitHubRepo id="MerginMaps/server/blob/master/deployment" desc="deployment folder" /> and open `/community` folder.
+2. Clone or pull the <GitHubRepo id="MerginMaps/server/blob/2025.7.3/" desc="server repository" /> or download <GitHubRepo id="MerginMaps/server/blob/2025.7.3/deployment" desc="deployment folder" /> and open `/community` folder.
    ```bash    
     $ cd server/deployment/community
    ```
@@ -176,7 +176,7 @@ Perform the migration:
    ```bash
     $ docker compose -f docker-compose.yml down # or similarly, based on your previous deployment
    ```
-2. Please clone or pull the <GitHubRepo id="MerginMaps/server/blob/master/" desc="server repository" /> or download <GitHubRepo id="MerginMaps/server/blob/master/deployment" desc="deployment folder" />
+2. Please clone or pull the <GitHubRepo id="MerginMaps/server/blob/2025.5.1/" desc="server repository" /> or download <GitHubRepo id="MerginMaps/server/blob/2025.5.1/deployment" desc="deployment folder" />
    ```bash    
     $ cd server/deployment/enterprise
    ```
@@ -227,7 +227,7 @@ To enable Single Sign-On for your server, follow the instructions in [Deployment
 Release 2025.3.x brings some changes on <MainPlatformName /> docker compose orchestration deployment procedure.
 :::
 
-Get the latest <GitHubRepo id="MerginMaps/server/blob/master/deployment/enterprise/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2025.3.0`.
+Get the latest <GitHubRepo id="MerginMaps/server/blob/2025.3.2/deployment/enterprise/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2025.3.0`.
 Perform the migration:
 
 1. Stop your running docker containers
@@ -235,7 +235,7 @@ Perform the migration:
     $ docker compose -f docker-compose.yml down # or similarly, based on your previous deployment
     # INFO: After shutdown update the docker-compose.yml file to latest release
    ```
-2. Please clone the <GitHubRepo id="MerginMaps/server/blob/master/" desc="server repository" /> or download <GitHubRepo id="MerginMaps/server/blob/master/deployment/" desc="deployment folder" />
+2. Please clone the <GitHubRepo id="MerginMaps/server/blob/2025.3.2/" desc="server repository" /> or download <GitHubRepo id="MerginMaps/server/blob/2025.3.2/deployment/" desc="deployment folder" />
    ```bash    
     $ cd server/deployment/enterprise
    ```
@@ -269,19 +269,19 @@ Perform the migration:
     $ docker exec merginmaps-server flask db upgrade enterprise@819e6b20ee93
     ```
 
-<br>
-
 ## From 2024.2.x to 2025.2.x (CE) {#migration-guide-from-2024-2-x-to-2025-2-x-ce}
 
 ::: tip Before you upgrade!
 Release 2025.2.x brings significant changes on <MainPlatformName /> docker compose orchestration infrastructure.
 
 Previous individual `server` container is replaced by 3 service dedicated containers that split the core components of <MainPlatformName />, `server-gunicorn` the app, `celery-beat` Celery task scheduler and `celery-worker` a dedicated worker container for Celery tasks.
+
+The proxy container now uses a new nginx image, and its default port has changed to 8080.
 :::
 
 <MigrationType type="CE" />
 
-Get the latest <GitHubRepo id="MerginMaps/server/blob/master/deployment/community/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2025.2.2`.
+Get the latest <GitHubRepo id="MerginMaps/server/blob/2025.2.3/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2025.2.2`.
 Perform the migration:
 
 1. Stop your running docker containers
@@ -290,7 +290,7 @@ Perform the migration:
     # INFO: After shutdown update the docker-compose.yml file to latest release
     ```
 
-2. Double check if below environment variables are available and filled in `.prod.env` environment file. If not, add them.   
+2. Double check if below environment variables are available and filled in `.prod.env` environment file. If not, add them.
     ```bash
     SECURITY_EMAIL_SALT='<YOUR STRONG HASH>'
     SECURITY_BEARER_SALT='<YOUR STRONG HASH>'
@@ -339,7 +339,7 @@ Previous individual `server` container is replaced by 3 service dedicated contai
 
 <MigrationType type="EE" />
 
-Get the latest <GitHubRepo id="MerginMaps/server/blob/master/deployment/enterprise/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2025.2.0`.
+Get the <GitHubRepo id="MerginMaps/server/blob/2025.2.3/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2025.2.0`.
 Perform the migration:
 
 1. Stop your running docker containers and build the new images
@@ -391,7 +391,7 @@ Perform the migration:
 
 ## From 2024.3.x to 2024.4.x {#migration-guide-from-2024-3-x-to-2024-4-x}
 
-Get the latest <GitHubRepo id="MerginMaps/server/blob/master/deployment/enterprise/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2024.4.0`.
+Update docker images in `docker-compose.yml` to version `2024.4.0`.
 Perform the migration:
 
 <MigrationType type="EE" />
@@ -423,7 +423,7 @@ Perform the migration:
 
 ## From 2024.2.x to 2024.3.x {#migration-guide-from-2024-2-x-to-2024-3-x}
 
-Get the latest <GitHubRepo id="MerginMaps/server/blob/master/deployment/enterprise/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2024.3.0`.
+Update docker images in `docker-compose.yml` to version `2024.3.0`.
 Perform the migration:
 
 <MigrationType type="EE" />
@@ -454,7 +454,7 @@ Perform the migration:
 
 ## From 2023.6.1 to 2024.2.x (CE) {#migration-guide-from-2023-6-1-to-2024-2-x-ce}
 
-Get the latest <GitHubRepo id="MerginMaps/server/blob/master/deployment/community/docker-compose.yml" desc="docker-compose file" />  or update docker images manually.
+Get the <GitHubRepo id="MerginMaps/server/blob/2024.2.2/docker-compose.yml" desc="docker-compose file" />  or update docker images manually.
 
 <MigrationType type="CE" />
 Update image to `2024.2.2` and perform the migration:
@@ -519,7 +519,7 @@ Update image to `2024.2.1` and perform the migration:
 
 -----
 
-Get the latest <GitHubRepo id="MerginMaps/server/blob/master/deployment/community/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2023.6.1`.
+Get the latest <GitHubRepo id="MerginMaps/server/blob/2023.6.1/docker-compose.yml" desc="docker-compose file" />  or update docker images manually to version `2023.6.1`.
 Perform the migration:
 
 <MigrationType type="CE" />
