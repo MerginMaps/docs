@@ -26,7 +26,7 @@ To publish a project via OGC API:
 1. Set up the QGIS Server parameters for your project [in QGIS](#setup-wms-wmts-and-wfs-properties-in-qgis)
 2. Enable OGC API access at the project level [on the dashboard](#ogc-api-for-a-project)
 
-### Set up WMS, WMTS and WFS properties in QGIS
+### Set up WMS, WMTS and WFS properties in QGIS {#setup-wms-wmts-and-wfs-properties-in-qgis}
 In QGIS, you can specify which layers from your project will be published via *WMS/WMTS*, *WFS* and *OGC API - Features*.
 
 Open your project and navigate to the **QGIS Server** tab in **Project Properties**:
