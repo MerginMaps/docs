@@ -172,9 +172,9 @@ External GPS functionality depends on the manufacturer and on the specific model
 | <NoSpellcheck id="marXact" /> | UNI-GR2| yes | no |
 | <NoSpellcheck id="proNIVO" /> | <NoSpellcheck id="PNR21" /><sup><a href="#link-6">6</a></sup> | yes (mock location)| no |
 | <NoSpellcheck id="SingularXYZ" /> | <NoSpellcheck id="P1" /><sup><a href="#link-7">7</a></sup> | yes | unknown |
-| Trimble | Trimble Catalyst<sup><a href="#link-5">5</a></sup> | yes | unknown |
-| Trimble | Trimble R1<sup><a href="#link-5">5</a></sup> | yes | unknown |
-| Trimble | Trimble R2<sup><a href="#link-5">5</a></sup> | yes | unknown |
+| Trimble | Trimble Catalyst<sup><a href="#link-5">5</a></sup> | yes | yes |
+| Trimble | Trimble R1<sup><a href="#link-5">5</a></sup> | yes | yes |
+| Trimble | Trimble R2<sup><a href="#link-5">5</a></sup> | yes | yes |
 
 
 - <a id="link-1">1</a>: **Carlson <NoSpellcheck id="Brx7" />**,  **Carlson <NoSpellcheck id="xML2" />** - through [Carlson Layout](https://www.carlsonsw.com/product/carlson-layout) which will set a mock location in Android.
