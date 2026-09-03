@@ -10,9 +10,9 @@ outline: deep
 
 [[toc]]
 
-Connect external GPS receivers to your mobile device to achieve higher [GPS accuracy](../gps_accuracy/) of your survey with <MobileAppName />. 
+Connect external GPS receivers to your mobile device to achieve higher [GPS accuracy](../gps_accuracy/) for your surveys with the <MobileAppName />. 
 
-There are several [extra position variables](../../layer/variables/#position-variables) that can be useful to record during the survey with external GPS, such as the GPS antenna height, GPS device name and metrics such as horizontal, vertical or position dilution of precision (HDOP, VDOP, PDOP).
+There are several [extra position variables](../../layer/variables/#position-variables) that can be useful to record during surveys when using an external GPS, such as GPS antenna height, GPS device name and metrics like horizontal, vertical or position dilution of precision (HDOP, VDOP, PDOP).
 
 Note that external GPS devices usually return orthometric heights (ellipsoid with the geoid separation applied). The altitude and geoid separation in the [GPS info panel](../mobile-app-ui/#current-position-and-gps-info) in the <MobileAppNameShort /> is displayed as reported by the external GPS. 
 
@@ -39,7 +39,7 @@ GPS antenna height can be recorded during the survey by using the [extra positio
 :::
 
 ## Connecting external GPS
-External GPS can be connected to the <MobileAppNameShort /> via [Bluetooth](#bluetooth-connection-android-only), [Network provider](#network-provider-connection) or [Trimble position provider](#trimble-position-provider).  We recommend using one of these options as they provide more data, such as HDOP and fix quality (see [position variables](../../layer/variables/#position-variables)). Also, the <MobileAppNameShort /> will report which device is used and take care of reconnecting in case of lost connection.
+External GPS can be connected to the <MobileAppNameShort /> via [Bluetooth](#bluetooth-connection-android-only), [Network](#network-provider-connection) or [Trimble connection](#trimble-position-provider). We recommend using one of these options as they provide more data, such as HDOP and fix quality (see [position variables](../../layer/variables/#position-variables)). Also, the <MobileAppNameShort /> will report which device is used and take care of reconnecting in case of lost connection.
 
 If it is not possible to use these options, you can also set up a [Mock location](#mock-location). However, some of the data reported by GPS may not be available.
 
@@ -104,17 +104,16 @@ Trimble users have the option to connect their receivers via [Trimble Mobile Man
 
    ![Mergin Maps mobile app Connect Trimble receivers](./mobile-app-connect-trimble.webp "Mergin Maps mobile app Connect Trimble receivers")
    
-
 The <MobileAppNameShort /> will now use the external GPS receiver to display and record your position. In **GPS info**, you will see additional data as reported by the external GPS.
 
 ![Mergin Maps mobile app GPS panel Trimble receiver](./mobile-app-gps-panel-trimble.webp "Mergin Maps mobile app GPS panel Trimble receiver")
 
-::: warning Status: Disconnected?
-If the GPS info panel displays the status as *Disconnected*, make sure your receiver is connected and set up in the Trimble Mobile Manager app. 
+::: warning Status: No Data or Disconnected?
+If the GPS info panel displays the status as *Disconnected* or *No Data*, make sure your receiver is connected and set up in the Trimble Mobile Manager app. Check the GNSS status in the Trimble Mobile Manager app.
 :::
 
 ### Mock location
-It is strongly recommended to use the direct connection via [Bluetooth (Android)](#bluetooth-connection-android-only), [network provider (Android, iOS)](#network-provider-connection) or [Trimble position provider](#trimble-position-provider) in the <MobileAppNameShort />. Mock location should only be used if these options are not available.
+It is strongly recommended to use the direct connection via [Bluetooth (Android)](#bluetooth-connection-android-only), [network provider (Android, iOS)](#network-provider-connection) or [Trimble position provider (Android, iOS)](#trimble-position-provider) in the <MobileAppNameShort />. Mock location should only be used if these options are not available.
 
 #### Android mock location setup
 
@@ -173,9 +172,9 @@ External GPS functionality depends on the manufacturer and on the specific model
 | <NoSpellcheck id="marXact" /> | UNI-GR2| yes | no |
 | <NoSpellcheck id="proNIVO" /> | <NoSpellcheck id="PNR21" /><sup><a href="#link-6">6</a></sup> | yes (mock location)| no |
 | <NoSpellcheck id="SingularXYZ" /> | <NoSpellcheck id="P1" /><sup><a href="#link-7">7</a></sup> | yes | unknown |
-| Trimble | Trimble Catalyst<sup><a href="#link-5">5</a></sup> | yes (mock location) | unknown |
-| Trimble | Trimble R1<sup><a href="#link-5">5</a></sup> | yes (mock location) | unknown |
-| Trimble | Trimble R2<sup><a href="#link-5">5</a></sup> | yes (mock location) | unknown |
+| Trimble | Trimble Catalyst<sup><a href="#link-5">5</a></sup> | yes | unknown |
+| Trimble | Trimble R1<sup><a href="#link-5">5</a></sup> | yes | unknown |
+| Trimble | Trimble R2<sup><a href="#link-5">5</a></sup> | yes | unknown |
 
 
 - <a id="link-1">1</a>: **Carlson <NoSpellcheck id="Brx7" />**,  **Carlson <NoSpellcheck id="xML2" />** - through [Carlson Layout](https://www.carlsonsw.com/product/carlson-layout) which will set a mock location in Android.
