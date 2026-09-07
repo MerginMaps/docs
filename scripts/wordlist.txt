@@ -26,6 +26,7 @@ CSV
 CharlieColleague
 DAF
 DateTime
+DOI
 DOP
 ECW
 ECR
@@ -184,6 +185,7 @@ WMS
 WMTS
 Workspaces
 XYZ
+Zenodo
 api
 aws
 backend
