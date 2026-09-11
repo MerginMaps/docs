@@ -10,9 +10,9 @@ outline: deep
 
 [[toc]]
 
-Connect external GPS receivers to your mobile device to achieve higher [GPS accuracy](../gps_accuracy/) of your survey with <MobileAppName />. 
+Connect external GPS receivers to your mobile device to achieve higher [GPS accuracy](../gps_accuracy/) for your surveys with the <MobileAppName />. 
 
-There are several [extra position variables](../../layer/variables/#position-variables) that can be useful to record during the survey with external GPS, such as the GPS antenna height, GPS device name as well as metrics like horizontal, vertical or position dilution of precision (HDOP, VDOP, PDOP).
+There are several [extra position variables](../../layer/variables/#position-variables) that can be useful to record during surveys when using an external GPS, such as GPS antenna height, GPS device name and metrics like horizontal, vertical or position dilution of precision (HDOP, VDOP, PDOP).
 
 Note that external GPS devices usually return orthometric heights (ellipsoid with the geoid separation applied). The altitude and geoid separation in the [GPS info panel](../mobile-app-ui/#current-position-and-gps-info) in the <MobileAppNameShort /> is displayed as reported by the external GPS. 
 
@@ -26,7 +26,7 @@ If you have a device that can receive signals from other GNSS (such as BeiDou, G
 :::
 
 ## GPS antenna height
-External GPS antenna is often used on a surveying pole. To obtain the correct ground elevation, it is necessary to subtract the height of the GPS sensor above the ground from the measured elevation.
+External GPS antennas are often used on a surveying pole. To obtain the correct ground elevation, it is necessary to subtract the height of the GPS sensor above the ground from the measured elevation.
 
 The height of the GPS antenna can be set in the [**GPS settings**](../mobile-app-ui/#gps-settings) in the <MobileAppNameShort />. 
 
@@ -39,7 +39,7 @@ GPS antenna height can be recorded during the survey by using the [extra positio
 :::
 
 ## Connecting external GPS
-External GPS can be connected to the <MobileAppNameShort /> via [Bluetooth](#bluetooth-connection-android-only) or a [Network provider](#network-provider-connection). We recommend using one of these options as they provide more data, such as HDOP and fix quality (see [position variables](../../layer/variables/#position-variables)). Also, the <MobileAppNameShort /> will report which device is used and take care of reconnecting in case of lost connection.
+External GPS can be connected to the <MobileAppNameShort /> via [Bluetooth](#bluetooth-connection-android-only), [Network](#network-provider-connection) or [Trimble connection](#trimble-position-provider). We recommend using one of these options as they provide more data, such as HDOP and fix quality (see [position variables](../../layer/variables/#position-variables)). Also, the <MobileAppNameShort /> will report which device is used and take care of reconnecting in case of lost connection.
 
 If it is not possible to use these options, you can also set up a [Mock location](#mock-location). However, some of the data reported by GPS may not be available.
 
@@ -78,7 +78,7 @@ Connecting external GPS receivers using a network provider is available on both 
 2. Here, you can see the currently used receiver. Tap on the **Connect new receiver** button.
    ![Select GPS receiver](./mobile-app-connect-gps-receiver.webp "Select GPS receiver")
 
-3. On Android, select the **Network (<NoSpellcheck id="TCP, UDP" />)** connection type. On iOS, this is the only direct connection type.
+3. Select the **Network (<NoSpellcheck id="TCP, UDP" />)** connection type.
 
    Fill in the network connection details (IP Address and Port). You can also use a receiver nickname.   
    
@@ -86,8 +86,34 @@ Connecting external GPS receivers using a network provider is available on both 
 
 The <MobileAppNameShort /> will now use the external GPS receiver to display and record your position. In **GPS info**, you will see additional data as reported by the external GPS.
 
+### Trimble position provider
+Trimble users have the option to connect their receivers via [Trimble Mobile Manager](https://help.fieldsystems.trimble.com/trimble-catalyst/trimble-mobile-manager.htm) mobile app. This option is available on both Android and iOS.
+
+1. Connect your GPS receiver via Trimble Mobile Manager app
+   
+   Through the app, you can also configure the connection and check the status.
+   
+   ![Trimble Mobile Manager Connecting GPS device](./trimble-mobile-manager.webp "Trimble Mobile Manager Connecting GPS device")
+
+2. In <MobileAppName />, open your survey project and navigate to the **Manage GPS receivers** option in [**Settings**](../mobile-app-ui/#settings).
+
+   Tap the **Connect new receiver** button.
+   ![Select GPS receiver](./mobile-app-connect-gps-receiver.webp "Select GPS receiver")
+   
+4. Select the **Trimble** option and **Continue**. The <MobileAppNameShort /> will connect to the Trimble receiver via Trimble Mobile Manager.
+
+   ![Mergin Maps mobile app Connect Trimble receivers](./mobile-app-connect-trimble.webp "Mergin Maps mobile app Connect Trimble receivers")
+   
+The <MobileAppNameShort /> will now use the external GPS receiver to display and record your position. In **GPS info**, you will see additional data as reported by the external GPS.
+
+![Mergin Maps mobile app GPS panel Trimble receiver](./mobile-app-gps-panel-trimble.webp "Mergin Maps mobile app GPS panel Trimble receiver")
+
+::: warning Status: No Data or Disconnected?
+If the GPS info panel displays the status as *Disconnected* or *No Data*, make sure your receiver is connected and set up in the Trimble Mobile Manager app. Check the GNSS status in the Trimble Mobile Manager app.
+:::
+
 ### Mock location
-It is strongly recommended to use the direct connection via [Bluetooth (Android)](#bluetooth-connection-android-only) or [network provider (Android, iOS)](#network-provider-connection) in the <MobileAppNameShort />. Mock location should only be used if these options are not available.
+It is strongly recommended to use the direct connection via [Bluetooth (Android)](#bluetooth-connection-android-only), [network provider (Android, iOS)](#network-provider-connection) or [Trimble position provider (Android, iOS)](#trimble-position-provider) in the <MobileAppNameShort />. Mock location should only be used if these options are not available.
 
 #### Android mock location setup
 
@@ -146,9 +172,9 @@ External GPS functionality depends on the manufacturer and on the specific model
 | <NoSpellcheck id="marXact" /> | UNI-GR2| yes | no |
 | <NoSpellcheck id="proNIVO" /> | <NoSpellcheck id="PNR21" /><sup><a href="#link-6">6</a></sup> | yes (mock location)| no |
 | <NoSpellcheck id="SingularXYZ" /> | <NoSpellcheck id="P1" /><sup><a href="#link-7">7</a></sup> | yes | unknown |
-| Trimble | Trimble Catalyst<sup><a href="#link-5">5</a></sup> | yes (mock location) | unknown |
-| Trimble | Trimble R1<sup><a href="#link-5">5</a></sup> | yes (mock location) | unknown |
-| Trimble | Trimble R2<sup><a href="#link-5">5</a></sup> | yes (mock location) | unknown |
+| Trimble | Trimble Catalyst<sup><a href="#link-5">5</a></sup> | yes | yes |
+| Trimble | Trimble R1<sup><a href="#link-5">5</a></sup> | yes | yes |
+| Trimble | Trimble R2<sup><a href="#link-5">5</a></sup> | yes | yes |
 
 
 - <a id="link-1">1</a>: **Carlson <NoSpellcheck id="Brx7" />**,  **Carlson <NoSpellcheck id="xML2" />** - through [Carlson Layout](https://www.carlsonsw.com/product/carlson-layout) which will set a mock location in Android.
@@ -156,7 +182,7 @@ External GPS functionality depends on the manufacturer and on the specific model
 - <a id="link-3">3</a>: **Emlid Reach RS - series** - directly via Bluetooth or network connection, has an internal NTRIP client to receive corrections set up via [Emlid Flow](https://emlid.com/emlid-flow/).
 - <a id="link-4">4</a>: **Leica FLX100**, **Leica FLX100 plus**, **Leica Zeno GG04plus** - through the *Leica Zeno Connect* app on [Android](https://play.google.com/store/apps/details?id=com.leica.zenoconnect&hl=en&gl=US) which also acts as a NTRIP client and sends the corrections to the device. The app will set a mock location in Android. It is also possible to connect directly via Bluetooth (even multiple phones can be connected at once), but if no phone has Zeno app running, there will be no corrections available. 
    <a id="link-**">**</a> *Leica Zeno Connect* is also available on [iOS](https://apps.apple.com/us/app/zeno-connect/id1310344749). It is known to support **Leica FLX100 plus** and **Leica Zeno GG04plus**.  However, on iOS, the vertical accuracy information is not transferred to the <MobileAppName /> through *Leica Zeno Connect*. The <MobileAppNameShort />  will not display the correct value of the vertical accuracy.
-- <a id="link-5">5</a>: **Trimble R1**, **Trimble R2**, **Trimble Catalyst** - through [*Trimble Mobile Manager* app](https://play.google.com/store/apps/details?id=com.trimble.trimblemobilemanager) which also acts as a NTRIP client and sends the corrections to the device. The app will set a mock location in Android.
+- <a id="link-5">5</a>: **Trimble R1**, **Trimble R2**, **Trimble Catalyst** - through [*Trimble Mobile Manager* app](https://play.google.com/store/apps/details?id=com.trimble.trimblemobilemanager) which also acts as a NTRIP client and sends the corrections to the device. See [Trimble position provider](#trimble-position-provider).
 - <a id="link-6">6</a>: **<NoSpellcheck id="proNIVO" /> <NoSpellcheck id="PNR21" />** - through *<NoSpellcheck id="Attenberger" /> Connector* app on [Android](https://play.google.com/store/apps/details?id=eu.apglos.attenbergerapp1&hl=en&gl=US).
 - <a id="link-7">7</a>: **<NoSpellcheck id="SingularXYZ" /> <NoSpellcheck id="P1" />** - the device uses a SIM Card that can be configured for NTRIP. It can be connected to the <MobileAppNameShort /> via Bluetooth (without using a mock location).
 - <a id="link-8">8</a>: **Geomax Zenith06, Zenith60** - through *Geomax X-PAD* app on Android, using a GNSS Mock licence from Geomax and the *Mock GNSS* option in the app.

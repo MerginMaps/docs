@@ -169,7 +169,7 @@ To open the **Settings**, tap the **More** button. In Settings, you can find [GP
 
 ### GPS settings
 - **GPS accuracy threshold**: value used to change the colour of GPS accuracy indicator to yellow
-- **Manage GPS receivers**: option to switch between internal, internal (fused) and external GPS receiver connected via Bluetooth. See [External GPS](../external_gps/) for more details.
+- **Manage GPS receivers**: option to switch between internal, internal (fused) and external GPS receiver. See [External GPS](../external_gps/) for more details.
 - **GPS antenna height**: option to enter the height of a GPS antenna (e.g. when a surveying pole is used)
 
 ![Mergin Maps mobile app GPS Settings](./mobile-app-gps-settings.jpg "Mergin Maps mobile app GPS settings")
