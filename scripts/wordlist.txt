@@ -346,3 +346,4 @@ JavaScript
 EOS
 Skadi
 TCP
+geolocation
