@@ -105,6 +105,7 @@ MultiPolygon
 NDK
 NMEA
 NTRIP
+OAPIF
 OGC
 OGR
 Ok
