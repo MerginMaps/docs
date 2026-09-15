@@ -120,7 +120,7 @@ Connect to *WFS* in QGIS via the **Browser** panel:
 
    ![QGIS New WFS/OGC API Features connection](./qgis-browser-wfs-connection.webp "QGIS New WFS/OGC API Features connection")
 
-3. Published layers from will now appear in the Browser panel and can be added to your project.
+3. Published layers will now appear in the Browser panel and can be added to your project.
    ![QGIS connected WFS layers](./qgis-browser-wfs.webp "QGIS connected WFS layers")
 
 
