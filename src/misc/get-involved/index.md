@@ -33,7 +33,7 @@ Write a review of the application on App Store or Android Google Play
 
 ## Translate
 
-To help with translations, join [<MainPlatformName /> Transifex team](https://www.transifex.com/lutra-consulting/mergin-maps-mobile/).
+To help with translations, join [<MainPlatformName /> Transifex team](https://app.transifex.com/lutra-consulting/mergin-maps-mobile/).
 
 ## Test
 
