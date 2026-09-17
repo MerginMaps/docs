@@ -24,6 +24,7 @@ The <QGISPluginName /> adds several variables that can be used in QGIS expressio
 | `@mm_project_name`      | Text (string) | `My project` | Name of the active <MainPlatformName /> project  |
 | `@mm_project_full_name` | Text (string) | `my-team/My project` | Workspace and project name joined with a forward slash |
 | `@mm_project_version`   | Number (integer) | `9` | Current version of the active project |
+| `@mm_project_role`      | Text (string) | `editor` | Role of the currently logged in user on the active project - one of `reader`, `editor`, `writer` or `owner`. |
 
 A common use case is to use `@mm_username` or `@mm_user_email` as the [default value](../default-values/) for one of the fields in a survey layer to automatically track who has added (and/or modified) a particular record.
 
