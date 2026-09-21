@@ -9,7 +9,15 @@ What is a <MainPlatformName /> project?
 
 It is basically a folder that contains data (such as vector layers, tables, rasters or photos), a [QGIS project](../../gis/features/), and some extra <MainPlatformName /> files needed to ensure everything works.
 
-When <MainPlatformName /> project is created, it is saved to <ServerCloudNameLink />. From the cloud, it can be downloaded to various devices, used by different team members in both QGIS and the <MobileAppNameShort />. Changes they made are tracked and synchronised back to the cloud.
+After the <MainPlatformName /> project is created, it is synchronised to <ServerCloudNameLink />. From the cloud, it can be downloaded to various devices, used by different team members in both QGIS and the <MobileAppNameShort />. Changes they made are tracked and synchronised back to the cloud.
+
+When working with the project on a computer, we recommend storing it on a local drive. **Network drives are not recommended** as they can cause synchronisation issues.
+
+::: details Limitations of network storage
+If using a local drive is not an option and you have to use a network drive, make sure that it is used only by **one** person (not shared).
+
+Network drives can cause [synchronisation](../synchronisation) issues due to [technical limitations](https://sqlite.org/useovernet.html) of GeoPackage (SQLite).
+:::
 
 ## Creating project
 :::tip
@@ -46,14 +54,15 @@ There are three options for handling layers:
 Some layers are protected with some kind of authorisation, such as an API key or a token. The <QGISPluginNameShort /> packages <NoSpellcheck id="auth" /> DB entries used in layers in the `qgis_cfg.xml` file, so that these layers can be displayed in the <MobileAppNameShort />.
 :::
 
-
 After the layers for the new project are selected, you just need to enter the project's name and choose where to save it on your computer. It will also be saved on the <MainPlatformNameLink /> server in the selected workspace.
 
 ![New Mergin Maps project name and folder](../create-project/mergin_plugin_project_wizard_4.jpg "New Mergin Maps project name and folder")
-   
-:::danger WARNING
-Your project should be saved on a local drive. Using shared network drives and cloud storage (such as OneDrive or Google Drive) is **not supported**.
-:::
+
+   :::warning Network drives are not supported
+   When choosing where to save your <MainPlatformName /> project on your computer, a **local drive** is the best option. 
+
+   Using shared network drives is **not supported**.
+   ::: 
 
 ### Mergin Maps project folder
 The project folder on your computer will contain the **QGIS project** and all layers that were selected to be **packaged**. These are the files that are referenced in the project - and only they will be updated when the project is synchronised! The original data can be archived as they will not be used or needed by <MainPlatformName /> project anymore.
