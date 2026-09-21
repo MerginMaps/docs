@@ -66,9 +66,11 @@ Here, the [**project permissions**](../permissions/#workspace-member-roles-and-p
 
 ### Settings and API {#settings}
 In **Settings & API**, you can:
-- **Enable** [OGC API access](../../gis/ogc-api/) and copy WFS and WMS / WMTS URL
+- **Enable** [OGC API access](../../gis/ogc-api/) and copy WFS, WMS / WMTS and OGC API - Features URL
+- [Regenerate URLS](../../gis/ogc-api/#regenerating-ogc-api-urls) for OGC API access
 - make the project [public or private](../project-advanced/#make-your-project-public-private)
 - [Transfer project](../project-advanced/#transfer-a-project) to another workspace
+- [Regenerate map URL](../webmaps-sharing/#regenerate-webmap-url) to create a new URL for your [shared webmap](../webmaps-sharing/)
 - [Delete project](../project-advanced/#delete-a-project) 
 
 ![Project settings in Mergin Maps Dashboard](./mergin-maps-dashboard-project-settings.jpg "Project settings in Mergin Maps Dashboard")

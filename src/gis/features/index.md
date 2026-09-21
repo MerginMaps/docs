@@ -10,7 +10,17 @@ Project preparation is done in QGIS. For more information about loading layers, 
 
 In addition, <MobileAppName /> uses some of the features within the project to help visualise, capture and browse the data. Here is an overview of the project preparations steps. 
 
-:::tip
+:::warning QGIS 4 and QGIS 3 compatibility: what to check before upgrading
+QGIS 4 stores some settings, such as the map canvas CRS, in a format QGIS 3 cannot read. In QGIS 3 these appear as unset. The same applies to settings from our <QGISPluginNameShort />: options you enable in QGIS 4, like map sketching, custom photo naming or position tracking, will show as disabled when the project is opened in QGIS 3. The compatibility goes one way only. QGIS 4 reads entries written by QGIS 3, but not the other way round.
+
+This affects QGIS desktop only. The <MobileAppName /> reads these entries correctly, whether they were set in QGIS 3 or QGIS 4.
+
+**What we recommend**
+- Make sure everyone on your team who works in QGIS uses the same major version, either QGIS 4 or QGIS 3.
+- If you're migrating to QGIS 4, migrate the whole team at the same time. That avoids the problem entirely.
+:::
+
+:::tip Mergin Maps tutorials
 Our tutorials can guide you through QGIS project preparation step by step.
 
 In [Creating a Project in QGIS](../../tutorials/creating-a-project-in-qgis/) you will learn how to create a project, add new layers and configure a basic form.

@@ -67,6 +67,7 @@ The ecosystem consist of various components:
 - [How to Enable Digitising](./gis/enable_digitising/)
 - [How to Set Up Snapping for <MobileAppName />](./gis/snapping/)
 - [How to Avoid Polygons Overlap](./gis/snapping/)
+- [Publishing Projects via OGC API (WMS/WMTS, WFS, OGC API - Features) ](./gis/ogc-api/)
 - [Custom Projections](./gis/proj/)
 - [Supported Formats](./gis/supported_formats/)
 
@@ -140,9 +141,10 @@ The ecosystem consist of various components:
 - [Using Mergin Maps Mobile App and QGIS Plugin with a Custom Server](./server/plugin-mobile-app/)
 
 ## Migrate to Mergin Maps
-- [From QField](./migrate/qfield/)
-- [From ArcGIS](./migrate/arcgis/)
-- [From Fulcrum](./migrate/fulcrumapp/)
+- [Migrate from QField](./migrate/qfield/)
+- [Migrate from ArcGIS](./migrate/arcgis/)
+- [Migrate from Fulcrum](./migrate/fulcrumapp/)
+- [Migrate from Avenza Maps](./migrate/fulcrumapp/)
 
 ## Support & Legal
 - [Licensing](./misc/licensing/)

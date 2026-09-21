@@ -86,3 +86,9 @@ Check your spam folder if the email with password reset link does not appear in 
 If that's not the case, please contact <MerginMapsEmail id="support" /> to resolve this issue.
 :::
    
+## Locked account after failed login
+To protect against brute-force password guessing, <MainPlatformName /> temporarily locks your account after 5 unsuccessful sign-in attempts.
+
+If this happens, you will receive an email with a link to restore your account. 
+
+The account is locked for 5 minutes initially. However, if incorrect credentials are entered repeatedly after the account is restored, it will be locked for 1 hour.

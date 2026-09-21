@@ -169,7 +169,7 @@ To open the **Settings**, tap the **More** button. In Settings, you can find [GP
 
 ### GPS settings
 - **GPS accuracy threshold**: value used to change the colour of GPS accuracy indicator to yellow
-- **Manage GPS receivers**: option to switch between internal, internal (fused) and external GPS receiver connected via Bluetooth. See [External GPS](../external_gps/) for more details.
+- **Manage GPS receivers**: option to switch between internal, internal (fused) and external GPS receiver. See [External GPS](../external_gps/) for more details.
 - **GPS antenna height**: option to enter the height of a GPS antenna (e.g. when a surveying pole is used)
 
 ![Mergin Maps mobile app GPS Settings](./mobile-app-gps-settings.jpg "Mergin Maps mobile app GPS settings")
@@ -192,7 +192,13 @@ To open the **Settings**, tap the **More** button. In Settings, you can find [GP
 
 
 ### General
-In **General**, you can find references to information about the <MobileAppNameShort />, changelog, help, privacy policy, terms of service and [diagnostic log](../../misc/troubleshoot/#diagnostic-log-on-mergin-maps-mobile-app).
+- **Startup behaviour** - choose whether to open the *Recent project* or the *[Project home](#home)* when you launch the <MobileAppNameShort />
+- **About** - information about the <MobileAppNameShort />
+- **Changelog** - information about new features and changes
+- **Help** - a shortcut to this documentation
+- [<MainPlatformName /> Privacy policy](https://merginmaps.com/privacy-policy)
+- [<MainPlatformName /> Terms of service](https://merginmaps.com/licenses/terms-of-service)
+- [Diagnostic log](../../misc/troubleshoot/#diagnostic-log-on-mergin-maps-mobile-app)
 
 ![Mergin Maps mobile app settings general](./mobile-app-settings-general.jpg "Mergin Maps mobile app settings general")
 
