@@ -46,7 +46,7 @@ To work with <MainPlatformName /> projects in QGIS, you will need to [install th
    :::warning Network drives are not supported
    When choosing where to save your <MainPlatformName /> project on your computer, a **local drive** is the best option. 
 
-   Using shared network drives is **not supported**.
+   Using shared network drives is **not recommended**.
    ::: 
 
 The new <MainPlatformName /> project will be created locally on your computer and also on the <MainPlatformNameLink /> server. 
