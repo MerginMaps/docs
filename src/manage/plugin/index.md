@@ -72,7 +72,7 @@ Detailed steps on how to download and open your <MainPlatformNameLink /> project
    :::warning Network drives are not supported
    When choosing where to save your <MainPlatformName /> project on your computer, a **local drive** is the best option. 
 
-   Using shared network drives is **not supported**.
+   Using shared network drives is **not recommended**.
    ::: 
 
 3. Once the download is completed, you will have the option to open the project in QGIS.
