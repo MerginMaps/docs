@@ -24,8 +24,10 @@ If specific components are central to your research, you may prefer to cite them
 - **<ServerCloudName />**
    - *URL*: refer to <AppDomainNameLink />
 
-Some components are also published on [Zenodo](https://zenodo.org/communities/merginmaps/).
+For **GitHub integrations**, cite the specific repository from <GitHubRepo id="MerginMaps/" desc="Mergin Maps repositories" />. 
 
-For GitHub integrations, cite the specific repository from <GitHubRepo id="MerginMaps/" desc="Mergin Maps repositories" />.
+:::tip Citing GitHub repository
+Each of our GitHub repositories includes a `CITATION.cff` file. Click the **Cite this repository** button on the repository page (in the right sidebar under **About**) to get a ready-to-use citation with the correct version (available in both APA and BibTeX formats).
+:::
 
 For citing QGIS, see the <QGIS link="resources/support/faq/#how-to-cite-qgis" text="QGIS Citation information" />.
