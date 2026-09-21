@@ -85,6 +85,9 @@ Click on a workspace to display its details. Here, you can also:
 
 The new workspace is created.
 
+## Audit logs
+<MainPlatformName /> logs events related to users, projects and workspaces that can be explored through the Admin panel.
+
 ## Settings
 In the **Settings** tab, you can:
 - enable/disable the **Check for updates** option
