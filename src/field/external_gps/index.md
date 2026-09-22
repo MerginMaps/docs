@@ -28,7 +28,7 @@ If you have a device that can receive signals from other GNSS (such as BeiDou, G
 ## GPS antenna height
 External GPS antennas are often used on a surveying pole. To obtain the correct ground elevation, it is necessary to subtract the height of the GPS sensor above the ground from the measured elevation.
 
-The height of the GPS antenna can be set in the [**GPS settings**](../mobile-app-ui/#gps-settings) in the <MobileAppNameShort />. 
+The height of the GPS antenna can be set in the [**GPS settings**](../mobile-app-ui/#gps-settings) in the <MobileAppNameShort />. If you use the [Trimble position provider](#trimble-position-provider), the <MobileAppNameShort /> reports the GPS antenna height set in the Trimble Mobile Manager app.
 
 If GPS antenna height is set to a non-zero value, it is also displayed next to the GPS accuracy.
 
@@ -91,7 +91,7 @@ Trimble users have the option to connect their receivers via [Trimble Mobile Man
 
 1. Connect your GPS receiver via Trimble Mobile Manager app
    
-   Through the app, you can also configure the connection and check the status.
+   Through the app, you can also configure the connection, check the status and set the GPS antenna height.
    
    ![Trimble Mobile Manager Connecting GPS device](./trimble-mobile-manager.webp "Trimble Mobile Manager Connecting GPS device")
 
