@@ -65,7 +65,7 @@ Using <QGISPluginName />, you can make a copy of projects you have access to.
 The project will be saved in the selected workspace.
 
 ## Create a project in Mergin Maps mobile app
-::: tip
+::: tip Tutorial available
 [Capturing Your First Field Data](../../tutorials/capturing-first-data/) tutorial will show you how to create a new project and capture field data in <MobileAppName />.
 :::
 
@@ -74,19 +74,24 @@ The project will be saved in the selected workspace.
 2. Navigate to the **Home** tab and tap **Create project**
    ![Create project in Mergin Maps mobile app](./mobile-app-create-project.jpg "Create project in Mergin Maps mobile app")
 
-3. Give the project a name. Keep in mind that the name cannot be changed later.
-
-   Press **Create project**.
+3. Enter the project name and tap **Create project**
    ![Mergin Maps mobile app new project name](./mobile-app-create-project-name-fields.jpg "Mergin Maps mobile app new project name")
 
 4. Your new project will be created locally on your mobile device
    ![Mergin Maps mobile app home projects](./mobile-app-new-project-created.jpg "Mergin Maps mobile app home projects")
    
 5. To save it to the <MainPlatformNameLink /> server, tap the **Upload** option
-   ![Uploading Mergin Maps project to the cloud](./mobile-app-upload-project-to-the-cloud.jpg "Uploading Mergin Maps project to the cloud")
 
+   ![Uploading Mergin Maps project to the cloud](./mobile-app-upload-project-to-the-cloud.jpg "Uploading Mergin Maps project to the cloud")
+   
+   If a project with the same name already exists in your workspace, rename the local project before uploading it to the cloud.
+
+   ![Renaming Mergin Maps local project](./mobile-app-rename-local-project.webp "Renaming Mergin Maps local project")
+    
 6. The project is now uploaded to your current workspace and can be shared across devices or with other users
    ![Mobile app project uploaded to the cloud](./mobile-app-project-workspace.jpg "Mobile app project uploaded to the cloud")
+
+
 
 ## Create a project through Mergin Maps dashboard
 :::warning
