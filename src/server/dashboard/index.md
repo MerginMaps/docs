@@ -86,7 +86,17 @@ Click on a workspace to display its details. Here, you can also:
 The new workspace is created.
 
 ## Audit logs
-<MainPlatformName /> logs events related to users, projects and workspaces that can be explored through the Admin panel.
+<ServerType type="EE" />
+
+The **Audit Logs** contains records of activity across users, projects and workspaces, such as project updates, user management, permission changes, or login attempts. Read-only actions, such as browsing or downloading, are not logged.
+
+Logs cannot be edited or deleted.
+
+You can filter the logs by event type, actor email, user, workspace, project and date range of the event. Click on a log to display more details about the event.
+
+::: tip Audit logs events
+For a complete list of tracked events, see [Audit Log Events](../audit-log-events).
+:::
 
 ## Settings
 In the **Settings** tab, you can:
