@@ -112,24 +112,36 @@ export default {
         ] },
       ] },
     {
-      text: 'Fieldwork',   // required
+      text: 'Fieldwork with Mergin Maps Mobile App',   // required
       collapsed: true,
       items: [
         { text: 'Mergin Maps Mobile App Interface', link: '/field/mobile-app-ui/' },
-        { text: 'Offline Use of Mergin Maps Mobile App', link: '/field/offline-use/' },
-        { text: 'External GPS', link: '/field/external_gps/' },
-        { text: 'GPS Accuracy', link: '/field/gps_accuracy/' },
+        { text: 'Add, Edit, Delete Features',
+        collapsed: true,
+        items: [
+        { text: 'Adding and Editing Features', link: '/field/mobile-features/' },
+        { text: 'Editing Options', link: '/field/mobile-features/' },
+        { text: 'How to Reuse Last Entered Values', link: '/field/reuse-last-values/' },
+        ]
+        },
+        { text: 'Layers and Features', link: '/field/layers/' },
         { text: 'Position Tracking', link: '/field/tracking/' },
-        { text: 'Synchronisation in Mergin Maps Mobile App', link: '/field/autosync/' },
-        { text: 'Measurement Tools', link: '/field/measure/' },
-        { text: 'Layers in Mergin Maps Mobile App', link: '/field/layers/' },
         { text: 'Filtering', link: '/field/filtering/' },
         { text: 'Map Sketching', link: '/field/map-sketching/' },
         { text: 'Photo Sketching', link: '/field/photo-sketching/' },
-        { text: 'How to Add, Edit, Delete Features', link: '/field/mobile-features/' },
-        { text: 'How to Reuse Last Entered Values', link: '/field/reuse-last-values/' },
+        { text: 'Measurement Tools', link: '/field/measure/' },
+        { text: 'Positioning and GPS Configuration',
+        collapsed: true,
+        items: [
+        { text: 'Field Survey Setup and Settings', link: '/field/TODO' },
+        { text: 'GPS Accuracy', link: '/field/gps_accuracy/' },
+        { text: 'External GPS Connection', link: '/field/external_gps/' },
+        { text: 'List of Known Supported GPS Devices', link: '/field/external_gps/' },
         { text: 'How to Stake Out Points', link: '/field/stake-out/' },
-        { text: 'How to Fix a Broken Project', link: '/field/broken-project/' }
+        ]
+        },  
+        { text: 'Offline Use', link: '/field/offline-use/' },
+        { text: 'Synchronisation in the Mobile App', link: '/field/autosync/' },
       ] },
     {
       text: 'For Developers',   // required
@@ -178,6 +190,7 @@ export default {
         items: [
            { text: 'Support and Troubleshooting', link: '/misc/troubleshoot/' },
            { text: 'Project fails to sync', link: '/misc/troubleshoot/not_syncing/' },
+           { text: 'How to Fix a Broken Project', link: '/field/broken-project/' }
         ] },
         { text: 'Write Documentation', link: '/misc/write-docs/' }
       ]
