@@ -58,6 +58,12 @@ Click on a project to display its details. You can also **Download** the project
 
 ![Server administration panel Project details](./admin-panel-project-detail.jpg "Server administration panel Project details")
 
+In the respective tabs, you can find:
+- **Files** - the list of all files associated with the project
+- **History** - an overview of available project versions that can be also downloaded to your computer
+- **Settings** - project settings and the option to *permanently* delete the project
+   
+   ![Server administration panel delete project](./admin-panel-project-delete.webp "Server administration panel delete project")
 
 ## Workspaces
 <ServerType type="EE" />
