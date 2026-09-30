@@ -23,6 +23,9 @@ If your project is shared via URL, you can use the URL to access WFS and WMS end
 
 Map script must be placed in your project root folder and named `map-script.js`. Members with writer and higher permission can update the script.
 
+Prefer a video? Here is a short tutorial about building custom webmap applications in <MainPlatformName /> using JavaScript and AI coding agents:
+<YouTube id="vS3mwHs7kDk" />
+
 ## Helpful code snippets
 
 OpenLayers submodules imports from CDN
