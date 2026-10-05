@@ -120,8 +120,8 @@ export default {
         collapsed: true,
         items: [
         { text: 'Adding Features', link: '/field/mobile-features/' },
-        { text: 'Editing Features', link: '/field/mobile-features/' },
-        { text: 'Deleting Features', link: '/field/mobile-features/' },
+        { text: 'Editing Features', link: '/field/editing/' },
+        { text: 'Deleting Features', link: '/field/deleting/' },
         { text: 'Editing Options', link: '/field/reuse-last-values/' },
         ]
         },
@@ -134,7 +134,7 @@ export default {
         { text: 'Positioning and GPS Configuration',
         collapsed: true,
         items: [
-        { text: 'Field Survey Setup and Settings', link: '/field/TODO' },
+        { text: 'Field Survey Setup', link: '/field/survey-setup/' },
         { text: 'GPS Accuracy', link: '/field/gps_accuracy/' },
         { text: 'External GPS Connection', link: '/field/external_gps/' },
         { text: 'How to Stake Out Points', link: '/field/stake-out/' },
@@ -189,8 +189,7 @@ export default {
         collapsed:true,
         items: [
            { text: 'Support and Troubleshooting', link: '/misc/troubleshoot/' },
-           { text: 'Project fails to sync', link: '/misc/troubleshoot/not_syncing/' },
-           { text: 'How to Fix a Broken Project', link: '/field/broken-project/' }
+           { text: 'Project fails to sync', link: '/misc/troubleshoot/not_syncing/' }
         ] },
         { text: 'Write Documentation', link: '/misc/write-docs/' }
       ]
