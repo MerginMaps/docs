@@ -58,6 +58,12 @@ Click on a project to display its details. You can also **Download** the project
 
 ![Server administration panel Project details](./admin-panel-project-detail.jpg "Server administration panel Project details")
 
+In the respective tabs, you can find:
+- **Files** - the list of all files associated with the project
+- **History** - an overview of available project versions that can be also downloaded to your computer
+- **Settings** - project settings and the option to *permanently* delete the project
+   
+   ![Server administration panel delete project](./admin-panel-project-delete.webp "Server administration panel delete project")
 
 ## Workspaces
 <ServerType type="EE" />
@@ -84,6 +90,19 @@ Click on a workspace to display its details. Here, you can also:
 ![Server administration panel - create new workspace](./admin-panel-workspaces-create-workspace-form.jpg "Server administration panel - create new workspace")
 
 The new workspace is created.
+
+## Audit logs
+<ServerType type="EE" />
+
+The **Audit Logs** contains records of activity across users, projects and workspaces, such as project updates, user management, permission changes, or login attempts. Read-only actions, such as browsing or downloading, are not logged.
+
+Logs cannot be edited or deleted.
+
+You can filter the logs by event type, actor email, user, workspace, project and date range of the event. Click on a log to display more details about the event.
+
+::: tip Audit logs events
+For a complete list of tracked events, see [Audit Log Events](../audit-log-events).
+:::
 
 ## Settings
 In the **Settings** tab, you can:
