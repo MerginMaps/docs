@@ -119,9 +119,10 @@ export default {
         { text: 'Add, Edit, Delete Features',
         collapsed: true,
         items: [
-        { text: 'Adding and Editing Features', link: '/field/mobile-features/' },
-        { text: 'Editing Options', link: '/field/mobile-features/' },
-        { text: 'How to Reuse Last Entered Values', link: '/field/reuse-last-values/' },
+        { text: 'Adding Features', link: '/field/mobile-features/' },
+        { text: 'Editing Features', link: '/field/mobile-features/' },
+        { text: 'Deleting Features', link: '/field/mobile-features/' },
+        { text: 'Editing Options', link: '/field/reuse-last-values/' },
         ]
         },
         { text: 'Layers and Features', link: '/field/layers/' },
@@ -136,7 +137,6 @@ export default {
         { text: 'Field Survey Setup and Settings', link: '/field/TODO' },
         { text: 'GPS Accuracy', link: '/field/gps_accuracy/' },
         { text: 'External GPS Connection', link: '/field/external_gps/' },
-        { text: 'List of Known Supported GPS Devices', link: '/field/external_gps/' },
         { text: 'How to Stake Out Points', link: '/field/stake-out/' },
         ]
         },  
