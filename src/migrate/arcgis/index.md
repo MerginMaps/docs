@@ -5,11 +5,11 @@ description: Do you consider switching from ArcGIS to Mergin Maps? See the compa
 # Migrate from ArcGIS
 [[toc]]
 
-This guide is intended for current ArcGIS and ArcGIS field data collection tools users who consider switching to <QGIS link="en/site/forusers/download.html" text="QGIS" /> and <MainPlatformNameLink />. It might be helpful also to <MainPlatformName /> users looking to transfer their data from the Esri ecosystem.
+This guide is intended for current ArcGIS and ArcGIS field data collection tools users who are considering switching  to <QGIS link="en/site/forusers/download.html" text="QGIS" /> and <MainPlatformNameLink />. It may also be helpful to <MainPlatformName /> users looking to transfer their data from the Esri ecosystem.
 
 From our experience, users highlight cost savings, interoperability and flexibility when using QGIS and <MainPlatformName /> in comparison with <NoSpellcheck id="Esri's" /> ArcGIS tools for field surveys such as Collector, Survey123, QuickCapture or Field Maps.
 
-:::tip Getting familiar with <MainPlatformName /> and QGIS
+::: tip Getting familiar with <MainPlatformName /> and QGIS
 Switching to a new platform can be challenging. This documentation is here to help with the basics as well as some more advanced or specific settings.
 
 To get familiar with <MainPlatformNameLink />, we recommend starting with the [**tutorials**](../../tutorials/capturing-first-data/). If there are specific topics that are crucial for your workflows, feel free to explore the documentation or contact our <MerginMapsEmail id="sales" desc="sales team" /> or our <MerginMapsEmail id="support" desc="support team" /> to get more details.
@@ -95,7 +95,7 @@ Note that this requires using the PostGIS geometry standard (`ST_Geometry`) and 
 ## Troubleshoot
 Struggling to migrate your projects? We are happy to help you!
 
-Book a short video call with our <MerginMapsEmail id="sales" desc="sales team" /> or ask our <MerginMapsEmail id="support" desc="support team" />  your technical questions. We also have an active open-source community:
+Book a short video call with our <MerginMapsEmail id="sales" desc="sales team" /> or write to our <MerginMapsEmail id="support" desc="support team" /> with your technical questions. You can also chat with our open-source community.
 
 <CommunityJoin />
 

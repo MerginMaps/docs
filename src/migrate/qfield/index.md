@@ -5,7 +5,7 @@ description: Do you consider switching from QField to Mergin Maps? See the compa
 # Migrate from QField
 [[toc]]
 
-This guide is intended for current QField and QFieldCloud users considering switching to <MainPlatformName /> as well as for <MainPlatformName /> users looking to transfer their data from the QField ecosystem.
+This guide is intended for current QField and QFieldCloud users who are considering switching to <MainPlatformName /> as well as for <MainPlatformName /> users looking to transfer their data from the QField ecosystem.
 
 Mergin Maps is the closest alternative to QField Ecosystem. Both QField and <MainPlatformName /> are open-source projects powered by QGIS. Their respective mobile apps are both officially recommended for QGIS projects by <QGIS link="en/site/forusers/download.html" text="QGIS.org" />. Both platforms support almost the same set of [supported formats](../../gis/supported_formats/) via QGIS data providers and GDAL. Moreover, the mobile apps are based on the same open-source GIS stack and technology. As such their projects are almost fully interoperable.
 
@@ -132,7 +132,7 @@ If there is a feature missing in the <MobileAppName />, check our <WishListLink 
 ## Troubleshoot
 Struggling to migrate your projects? We are happy to help you!
 
-Book a short video call with our <MerginMapsEmail id="sales" desc="sales team" /> or write your technical questions to our <MerginMapsEmail id="support" desc="support team" />. You can also chat with our open-source community.
+Book a short video call with our <MerginMapsEmail id="sales" desc="sales team" /> or write to our <MerginMapsEmail id="support" desc="support team" /> with your technical questions. You can also chat with our open-source community.
 
 <CommunityJoin />
 
