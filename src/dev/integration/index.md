@@ -77,7 +77,7 @@ Arguments:
 `workspace_role` (string or `WorkspaceRole` enum) <span title="Ignored on Community edition servers">:information_source:</span> : The user’s role in the workspace.
 
 - String: Pass the role name directly (e.g., "guest", "reader", "editor").
-- Enum: Pass a member of the `WorkspaceRole` enum (requires importing from mergin.common)
+- Enum: Pass a member of the `WorkspaceRole` enum (requires importing from `mergin.common`)
 - [See the roles options](../../manage/permissions/index.md#workspace-member-roles-overview).
 
 `username` (string, optional): If not provided, it will be automatically generated from the email address.
@@ -213,7 +213,7 @@ Arguments:
 `project_role`: (string or `ProjectRole` enum): Role of the user in the project. 
 
 - String: Pass the role name directly (e.g., 'reader', 'editor', 'owner').
-- Enum: Pass a member of the `ProjectRole` enum (requires importing from mergin.common)
+- Enum: Pass a member of the `ProjectRole` enum (requires importing from `mergin.common`)
 - [See the roles options](../../manage/permissions/index.md#project-permissions-overview)
 
 #### Update project collaborator role
