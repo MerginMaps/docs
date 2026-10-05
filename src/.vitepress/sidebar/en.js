@@ -161,10 +161,11 @@ export default {
       text: 'Migrate to Mergin Maps',   // required
       collapsed: true,
       items: [
-        { text: 'Migrate from QField', link: '/migrate/qfield/' },
         { text: 'Migrate from ArcGIS', link: '/migrate/arcgis/' },
-        { text: 'Migrate from FulcrumApp', link: '/migrate/fulcrumapp/' },
         { text: 'Migrate from Avenza Maps', link: '/migrate/avenza/' },
+        { text: 'Migrate from Felt', link: '/migrate/felt/' },
+        { text: 'Migrate from FulcrumApp', link: '/migrate/fulcrumapp/' },
+        { text: 'Migrate from QField', link: '/migrate/qfield/' },
       ] },
     {
       text: 'Support & Legal',   // required

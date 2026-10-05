@@ -141,10 +141,11 @@ The ecosystem consist of various components:
 - [Using Mergin Maps Mobile App and QGIS Plugin with a Custom Server](./server/plugin-mobile-app/)
 
 ## Migrate to Mergin Maps
-- [Migrate from QField](./migrate/qfield/)
 - [Migrate from ArcGIS](./migrate/arcgis/)
-- [Migrate from Fulcrum](./migrate/fulcrumapp/)
 - [Migrate from Avenza Maps](./migrate/fulcrumapp/)
+- [Migrate from Felt](./migrate/felt/)
+- [Migrate from Fulcrum](./migrate/fulcrumapp/)
+- [Migrate from QField](./migrate/qfield/)
 
 ## Support & Legal
 - [Licensing](./misc/licensing/)
