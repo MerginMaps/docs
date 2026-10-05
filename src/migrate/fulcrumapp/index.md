@@ -5,7 +5,7 @@ description: Do you consider switching from Fulcrum to Mergin Maps? See the comp
 # Migrate from Fulcrum
 [[toc]]
 
-This guide is intended for current Fulcrum field data collection tool users who consider switching to <QGIS link="" text="QGIS" /> and <MainPlatformNameLink />. It might be helpful also to <MainPlatformName /> users looking to transfer their data from the FulcrumApp ecosystem.
+This guide is intended for current Fulcrum field data collection tool users who are considering switching to <QGIS link="" text="QGIS" /> and <MainPlatformNameLink />. It may also be helpful to <MainPlatformName /> users looking to transfer their data from the FulcrumApp ecosystem.
 
 :::tip Getting familiar with <MainPlatformName /> and QGIS
 Switching to a new platform can be challenging. This documentation is here to help with the basics as well as some more advanced or specific settings.
@@ -55,7 +55,7 @@ To use this QGIS project within the <MainPlatformNameLink /> platform:
 ## Troubleshoot
 Struggling to migrate your projects? We are happy to help you!
 
-Book a short video call with our <MerginMapsEmail id="sales" desc="sales team" /> or ask our <MerginMapsEmail id="support" desc="support team" />  your technical questions. We also have an active open-source community:
+Book a short video call with our <MerginMapsEmail id="sales" desc="sales team" /> or write to our <MerginMapsEmail id="support" desc="support team" /> with your technical questions. You can also chat with our open-source community.
 
 <CommunityJoin />
 
