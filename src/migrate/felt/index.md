@@ -7,7 +7,7 @@ outline: deep
 # Migrate from Felt
 [[toc]]
 
-This guide is intended for current Felt users who are considering switching to <QGIS link="en/site/forusers/download.html" text="QGIS" /> and <MainPlatformNameLink />. It may also be helpful to Mergin Maps users looking to transfer their maps and field data from the Felt ecosystem. 
+This guide is intended for current Felt users who are considering switching to <QGIS link="en/site/forusers/download.html" text="QGIS" /> and <MainPlatformNameLink />. It may also be helpful to <MainPlatformName /> users looking to transfer their maps and field data from the Felt ecosystem. 
 
 ::: tip Getting familiar with <MainPlatformName /> and QGIS
 Switching to a new platform can be challenging. This documentation is here to help with the basics as well as some more advanced or specific settings.
@@ -77,13 +77,13 @@ To migrate your data:
 2. Export all your annotations or only the selection, from the **Felt > File menu**. 
 3. Create a QGIS project and save it in a local folder, next to the exported files.
 4. Load the exported file(s) in QGIS. If needed, use <QGISHelp ver="latest" link="user_manual/processing_algs/qgis/vectortable.html#refactor-fields" text="Refactor Fields" />  from the Processing Toolbox to restore attribute types that the exchange format may have flattened into text, and save the outputs as GeoPackage layers.
-5. Apply symbology to your layers and configure their forms with [appropriate widgets](../../layer/form-widgets/), for example [List of Values](../../layer/value-select/) for the picklists in your surveys, [Date and time](../../layer/date-time/) for date fields and [Checkbox](../../layer/checkbox/) for true/false fields.
+5. Apply symbology to your layers and configure their forms with [appropriate widgets](../../layer/form-widgets/), for example [List of Values](../../layer/value-select/) for a drop-down menu in your surveys, [Date and time](../../layer/date-time/) for date fields and [Checkbox](../../layer/checkbox/) for true/false fields.
 6. For photos collected in the field, use the [Attachment widget](../../layer/photos/). 
    The image files have to be placed in your local project folder, so that they are synchronised together with the data. If images were attached to features as an attribute in Felt, the exported GeoPackage keeps the links to Felt's servers, and you can use them to retrieve the files.
 7. Upload the QGIS project to your <MainPlatformName /> workspace using the [<QGISPluginName />](../../manage/plugin/). The project then synchronises to every device, where it is opened with the [<MobileAppName />](../../tutorials/mobile/).
 
 ::: tip Data already in a database
-If your Felt layers come from a PostgreSQL/PostGIS database, there is no need to export anything. In QGIS, connect to it from **Layer > Data Source Manager > PostgreSQL**. You can also use [DB Sync](../../dev/dbsync/) to keep the database and the Mergin Maps project in step, so field edits land back in the database automatically.
+If your Felt layers come from a PostgreSQL/PostGIS database, there is no need to export anything. In QGIS, connect to it from **Layer > Data Source Manager > PostgreSQL**. You can also use [DB Sync](../../dev/dbsync/) to keep the database and the <MainPlatformName /> project in step, so field edits land back in the database automatically.
 :::
 
 ### Migrating your background maps

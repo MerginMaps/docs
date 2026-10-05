@@ -352,3 +352,4 @@ TCP
 APA
 BibTeX
 geolocation
+GeoParquet
