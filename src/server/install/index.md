@@ -140,6 +140,38 @@ $ docker exec merginmaps-server flask user create <username> <password> --is-adm
 ```
 :::
 
+### Custom email templates
+<ServerType type="EE" />
+
+To use your own email templates, set the `EMAIL_TEMPLATES_DIR` [environment variable](../environment/#sending-emails) to a folder with your templates and mount that folder to the `server`, `celery-worker` and `celery-beat` services in `docker-compose.yml`:
+
+```yaml
+volumes:
+  - ./custom_templates:/custom_templates
+```
+
+```shell
+EMAIL_TEMPLATES_DIR=/custom_templates
+```
+
+Templates in this folder override the built-in ones, so their paths (relative to the folder) must match the paths below:
+
+| Template path                             | Email                                                     |
+|-------------------------------------------|-----------------------------------------------------------|
+| `email/components/base.html`              | Common layout of all emails (logo, header, footer)        |
+| `email/user_created.html`                 | New user account created by an administrator              |
+| `email/email_confirmation.html`           | Email address confirmation (resent from user profile)     |
+| `email/password_reset.html`               | Password reset                                            |
+| `email/account_locked.html`               | Account locked after too many failed login attempts       |
+| `email/project_access_request.html`       | Request for access to a project, sent to project owners   |
+| `workspace/invitation.html`               | Invitation to a workspace                                 |
+| `workspace/project_transfer_request.html` | Request to transfer a project to another workspace        |
+| `workspace/user_registration.html`        | Email address confirmation after user self-registration   |
+
+::: warning
+If `EMAIL_TEMPLATES_DIR` is set to a directory that does not exist in the container, the server fails to start. Make sure the folder is mounted to all services that use the `.prod.env` file.
+:::
+
 ## Test deployment
 
 In order to test your deployment there are some utility commands to perform basic checks.

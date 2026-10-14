@@ -14,6 +14,105 @@ Make sure to always back up your database data before doing a migration.
 
 [[toc]]
 
+## From 2025.7.x to 2026.10.x {#migration-guide-from-2025-7-x-to-2026-10-x}
+
+<MigrationType type="EE" />
+
+Perform the migration:
+
+1. Stop your running docker containers
+   ```bash
+    $ docker compose -f docker-compose.yml down # or similarly, based on your previous deployment
+   ```
+2. Clone or pull the <GitHubRepo id="MerginMaps/server/blob/2026.10.0/" desc="server repository" /> or download <GitHubRepo id="MerginMaps/server/blob/2026.10.0/deployment" desc="deployment folder" /> and open the `/enterprise` folder.
+   ```bash    
+    $ cd server/deployment/enterprise
+   ```
+3. Adapt your existing `docker-compose.yml` and `docker-compose.maps.yml` (if your server has maps enabled) files to the new version.
+
+    - Upgrade image tag in server related container to the latest version in `docker-compose.yml`.
+    - Upgrade `mergin-db` container to tag 17. Server is supporting also older versions, but we are recommending upgrade to `postgres:17`
+    ```bash
+    db:
+        image: postgres:17
+    ```
+    - Upgrade image tags of `qgis` and `qgis-extractor` to the latest 2026.4.0 image tag in `docker-compose.maps.yml`.
+    - Add new environment variables to the `mergin-qgis` container in `docker-compose.maps.yml`:
+    ```bash
+    - QGIS_SERVER_SERVICE_URL=http://localhost:5555
+    - QGIS_SERVER_API_WFS3_ROOT_PATH=/wfs3
+    ```
+4. Double-check that the following environment variable is available and filled in the `.prod.env` environment file. If not, add it.
+    ```bash
+    # Generate a hash string using the following command (or similar):
+    # LC_ALL=C tr -dc 'A-Za-z0-9' < /dev/urandom | head -c 32; echo
+    # Add the content to the .prod.env file
+    SECURITY_UNLOCK_SALT='<YOUR STRONG HASH>'
+    ```
+5. This version of the server provides audit logs. To enable or disable the collection of audit logs, use the following variable in the `.prod.env` environment file.
+    ```bash
+    AUDIT_LOGS_ENABLED=True # False to disable
+    ```
+6. This version of the server supports [caching](../environment/#caching) in a separate Redis database. Double-check that the following environment variable is available and filled in the `.prod.env` environment file. If not, add it.
+    ```bash
+    REDIS_URL=redis://merginmaps-redis:6379/1
+    ```
+7. Double-check that the following maps-related environment variables are available and filled in the `.prod.env` environment file. If not, add them with the proper values.
+    ```bash
+    # Enable/disable generating OGC API links for projects
+    OGC_API_ENABLED=True # False to disable
+    # Enable/disable map sharing for projects
+    MAPS_SHARING_ENABLED=True # False to disable
+    # Support for multiple background map alternatives
+    VECTOR_TILES_LIGHT_STYLE_URL=https://tiles-ee.merginmaps.com/styles/light.json
+    VECTOR_TILES_DARK_STYLE_URL=https://tiles-ee.merginmaps.com/styles/dark.json
+    ```
+8. Change your proxy settings to allow embedding of maps by changing the `Content-Security-Policy` header for the `/maps/embed` path. Add the following lines to <GitHubRepo id="MerginMaps/server/blob/master/deployment/common/ssl-proxy.conf" desc="ssl-proxy.conf" />:
+    ```bash
+    location ^~ /maps/embed/ {
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header Host $http_host;
+        proxy_redirect off;
+        proxy_pass http://app_server;
+
+        proxy_hide_header X-Frame-Options;
+        proxy_hide_header Content-Security-Policy;
+        add_header Content-Security-Policy "frame-ancestors *;" always;
+    }
+    ```
+
+    - If you have enabled OGC API with the `OGC_API_ENABLED` variable and want to integrate it with other web clients, allow CORS for the `/v2/ogc` endpoint in your proxy. An example is in the related section of <GitHubRepo id="MerginMaps/server/blob/master/deployment/common/ssl-proxy.conf" desc="ssl-proxy.conf" />.
+
+9. Start up your docker containers
+   ```bash
+    $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
+    $ docker compose -f docker-compose.maps.yml -d up # when maps are enabled
+   ```
+10. This release of the Mergin Maps server removes a redundant database migration. If your database still references it, remove the reference directly from the `alembic_version` table, either with `psql` or in your favourite PostgreSQL client:
+    ```bash
+    $ docker exec merginmaps-db psql -U postgres -c "DELETE FROM alembic_version WHERE version_num='35af0c8be41e';"
+    ```
+11. Check that you are on the correct database migration versions (`c40e5e645b57`, `b9ec9ab6694f`).
+    ```bash
+    $ docker exec merginmaps-server flask db current
+    INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+    INFO  [alembic.runtime.migration] Will assume transactional DDL.
+    c40e5e645b57
+    b9ec9ab6694f
+    ```
+    - If you do not see the version numbers at all, run the following commands:
+    ```bash
+    $ docker exec merginmaps-server flask db stamp c40e5e645b57
+    $ docker exec merginmaps-server flask db stamp b9ec9ab6694f
+    ```
+12. Run the database migration:
+
+    ```bash
+    $ docker exec merginmaps-server flask db upgrade community@d8a2f6c1e5b4
+    $ docker exec merginmaps-server flask db upgrade enterprise@93f85f6c45fa
+    ```
+
 ## From 2025.5.x to 2025.7.x {#migration-guide-from-2025-5-x-to-2025-7-x}
 
 <MigrationType type="EE" />
