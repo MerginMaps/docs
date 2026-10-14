@@ -30,8 +30,13 @@ Perform the migration:
    ```
 3. Adapt your existing `docker-compose.yml` and `docker-compose.maps.yml` (if your server has maps enabled) files to the new version.
 
-    - Bump images to the latest version in `docker-compose.yml`.
-    - Bump images of `qgis` and `qgis-extractor` to the latest 2026.4.0 image tag in `docker-compose.maps.yml`.
+    - Upgrade image tag in server related container to the latest version in `docker-compose.yml`.
+    - Upgrade `mergin-db` container to tag 17. Server is supporting also older versions, but we are recommending upgrade to `postgres:17`
+    ```bash
+    db:
+        image: postgres:17
+    ```
+    - Upgrade image tags of `qgis` and `qgis-extractor` to the latest 2026.4.0 image tag in `docker-compose.maps.yml`.
     - Add new environment variables to the `mergin-qgis` container in `docker-compose.maps.yml`:
     ```bash
     - QGIS_SERVER_SERVICE_URL=http://localhost:5555
