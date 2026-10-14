@@ -89,7 +89,11 @@ Perform the migration:
     $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
     $ docker compose -f docker-compose.maps.yml -d up # when maps are enabled
    ```
-10. Check that you are on the correct database migration versions (`c40e5e645b57`, `b9ec9ab6694f`).
+10. This release of the Mergin Maps server removes a redundant database migration. If your database still references it, remove the reference directly from the `alembic_version` table, either with `psql` or in your favourite PostgreSQL client:
+    ```bash
+    $ docker exec merginmaps-db psql -U postgres -c "DELETE FROM alembic_version WHERE version_num='35af0c8be41e';"
+    ```
+11. Check that you are on the correct database migration versions (`c40e5e645b57`, `b9ec9ab6694f`).
     ```bash
     $ docker exec merginmaps-server flask db current
     INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
@@ -102,7 +106,7 @@ Perform the migration:
     $ docker exec merginmaps-server flask db stamp c40e5e645b57
     $ docker exec merginmaps-server flask db stamp b9ec9ab6694f
     ```
-11. Run the database migration:
+12. Run the database migration:
 
     ```bash
     $ docker exec merginmaps-server flask db upgrade community@d8a2f6c1e5b4
