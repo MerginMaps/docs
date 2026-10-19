@@ -167,10 +167,10 @@ Users of Mergin Maps plugin and Mergin Maps mobile application are able to send 
 | Variable name            | Type     | Default                       | Description                    |
 |--------------------------|----------|-------------------------------|--------------------------------|
 | `MAPS_ENABLED`           | boolean  | `true`                       | Flag to enable webmaps         |
-| `VECTOR_TILES_URL`       | string   | `https://tiles-ee.merginmaps.com/data/default/{z}/{x}/{y}.pbf`                            | Vector tiles URL used as background map layer in webmaps |
-| `VECTOR_TILES_STYLE_URL` | string   | `https://tiles-ee.merginmaps.com/styles/default.json`                            | Vector tiles style URL used to style the background map layer in webmaps |
-| `VECTOR_TILES_LIGHT_STYLE_URL` | string   | `https://tiles-ee.merginmaps.com/styles/light.json`                            | Vector tiles style URL for the light alternative of the background map in webmaps |
-| `VECTOR_TILES_DARK_STYLE_URL` | string   | `https://tiles-ee.merginmaps.com/styles/dark.json`                            | Vector tiles style URL for the dark alternative of the background map in webmaps |
+| `VECTOR_TILES_URL`       | string   | `https://tiles.merginmaps.com/data/default/{z}/{x}/{y}.pbf`                            | Vector tiles URL used as background map layer in webmaps |
+| `VECTOR_TILES_STYLE_URL` | string   | `https://tiles.merginmaps.com/styles/default.json`                            | Vector tiles style URL used to style the background map layer in webmaps |
+| `VECTOR_TILES_LIGHT_STYLE_URL` | string   | `https://tiles.merginmaps.com/styles/light.json`                            | Vector tiles style URL for the light alternative of the background map in webmaps |
+| `VECTOR_TILES_DARK_STYLE_URL` | string   | `https://tiles.merginmaps.com/styles/dark.json`                            | Vector tiles style URL for the dark alternative of the background map in webmaps |
 | `OGC_API_ENABLED`        | boolean  | `true`                       | Flag to enable generating OGC API links for projects. |
 | `MAPS_SHARING_ENABLED`   | boolean  | `true`                       | Flag to enable sharing of webmaps with a public link. |
 
