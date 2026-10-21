@@ -13,7 +13,7 @@ It is accessible from the dashboard of your custom server. This option is availa
 ![Open Admin panel from the dashboard](./dashboard-admin-panel.webp "Open Admin panel from the dashboard")
 
 ## Overview
-The **Overview** provides a quick summary of the server: the number of editors, used storage, registered accounts, projects and workspaces.
+The **Overview** provides a quick summary of the server: the number of users, used storage, registered accounts, projects and workspaces.
 ![Server administration panel overview](./admin-panel-overview.webp "Server administration panel overview")
 
 
@@ -29,12 +29,7 @@ To manage accounts and see their details:
 1. Navigate to the **Accounts** tab of the admin panel. 
 2. Click on an account to display its details. 
 
-The **Account details** provides following information:
-- username, User ID, email, the date of the last sign-in and of the registration
-- the list of workspaces that the user has access to
-- if the user has enabled notitifications
-
-Here, you can also:
+Here, you can:
 - **Grant admin access** or **Revoke** it. Users with admin access have full access to all data on the server. They see all users and projects and can update or remove them.
 - **Deactivate** or **Activate** account. Deactivated accounts can not use the server. If needed, they can be activated later.
 - **Delete account** to permanently remove the user and all their data.
