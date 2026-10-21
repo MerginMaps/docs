@@ -76,7 +76,7 @@ You can now set up your first SSO (SAML or OIDC) connection in the Ory Polis adm
 
 Follow the steps below to create a new connection:
 
-* Go to <MainPlatformName /> admin panel and log in.
+* Go to [<MainPlatformName /> admin panel](../dashboard/) and log in.
 * In the left menu click **SSO Administration**.
 * Log in to the Ory Polis admin panel using credentials from the `NEXTAUTH_ADMIN_CREDENTIALS` variable.
 * Navigate to the **Enterprise SSO** tab and click **New Connection**.
