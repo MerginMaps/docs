@@ -89,7 +89,7 @@ To ease the process of permission (user) management, you can set the following g
 | `MAIL_USE_TLS`🛡️       | Boolean |   `true`        | Use TLS encryption when connecting to SMTP server.  |
 | `MAIL_USE_SSL`🛡️       | Boolean |   `false`        | Whether to use SSL encryption when connecting to SMTP server.  |
 | `MAIL_BCC`              | string  |   `None`   | Email address to send copies of all sent emails. Should be system/application administrator. Mandatory in versions until 2024.4.0.  |
-| `MERGIN_LOGO_URL`       | string  | Mergin Maps logo    | Link to the logo in emails and the web dashboard. |
+| `MERGIN_LOGO_URL`       | string  | <MainPlatformName /> logo    | Link to the logo in emails and the web dashboard. |
 
 <ServerType type="EE" />
 
