@@ -160,7 +160,7 @@ Templates in this folder override the built-in ones, so their paths (relative to
 |-------------------------------------------|-----------------------------------------------------------|
 | `email/components/base.html`              | Common layout of all emails (logo, header, footer)        |
 | `email/user_created.html`                 | New user account created by an administrator              |
-| `email/email_confirmation.html`           | Email address confirmation (resent from user profile)     |
+| `email/email_confirmation.html`           | Email address confirmation (resent from the user profile) |
 | `email/password_reset.html`               | Password reset                                            |
 | `email/account_locked.html`               | Account locked after too many failed login attempts       |
 | `email/project_access_request.html`       | Request for access to a project, sent to project owners   |

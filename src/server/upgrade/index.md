@@ -24,7 +24,7 @@ Perform the migration:
    ```bash
     $ docker compose -f docker-compose.yml down # or similarly, based on your previous deployment
    ```
-2. Clone or pull the <GitHubRepo id="MerginMaps/server/blob/2026.10.0/" desc="server repository" /> or download <GitHubRepo id="MerginMaps/server/blob/2026.10.0/deployment" desc="deployment folder" /> and open the `/enterprise` folder.
+2. Clone or pull the <GitHubRepo id="MerginMaps/server/blob/2026.10.0/" desc="server repository" /> or download the <GitHubRepo id="MerginMaps/server/blob/2026.10.0/deployment" desc="deployment folder" /> and open the `/enterprise` folder.
    ```bash    
     $ cd server/deployment/enterprise
    ```
@@ -67,10 +67,10 @@ Perform the migration:
     # Enable/disable map sharing for projects
     MAPS_SHARING_ENABLED=True # False to disable
     # Support for multiple background map alternatives
-    VECTOR_TILES_LIGHT_STYLE_URL=https://tiles-ee.merginmaps.com/styles/light.json
-    VECTOR_TILES_DARK_STYLE_URL=https://tiles-ee.merginmaps.com/styles/dark.json
+    VECTOR_TILES_LIGHT_STYLE_URL=https://tiles.merginmaps.com/styles/light.json
+    VECTOR_TILES_DARK_STYLE_URL=https://tiles.merginmaps.com/styles/dark.json
     ```
-9. Update your proxy settings to allow embedding of maps by changing the `Content-Security-Policy` header for the `/maps/embed` path. Add the following lines to <GitHubRepo id="MerginMaps/server/blob/master/deployment/common/ssl-proxy.conf" desc="ssl-proxy.conf" />:
+9. If you are using any top proxy settings and maps are enabled in your server, pay attention to update your proxy settings to allow embedding of maps by changing the `Content-Security-Policy` header for the `/maps/embed` path. Add the following lines to <GitHubRepo id="MerginMaps/server/blob/master/deployment/common/ssl-proxy.conf" desc="ssl-proxy.conf" />:
     ```bash
     location ^~ /maps/embed/ {
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
@@ -85,7 +85,7 @@ Perform the migration:
     }
     ```
 
-    - If you have enabled OGC API with the `OGC_API_ENABLED` variable and want to integrate it with other web clients, allow CORS for the `/v2/ogc` endpoint in your proxy. An example is in the related section of <GitHubRepo id="MerginMaps/server/blob/master/deployment/common/ssl-proxy.conf" desc="ssl-proxy.conf" />.
+    - If you have enabled OGC API with the `OGC_API_ENABLED` variable and want to integrate it with other web clients, allow CORS for the `/v2/ogc` endpoint in your proxy. An example can be found in the related section of <GitHubRepo id="MerginMaps/server/blob/master/deployment/common/ssl-proxy.conf" desc="ssl-proxy.conf" />.
 
 10. Start up your docker containers
     ```bash

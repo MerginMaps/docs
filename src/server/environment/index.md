@@ -148,11 +148,11 @@ Mergin Maps is using Celery and Redis to perform asynchronous tasks or doing reg
 ## Caching
 <ServerType type="EE" />
 
-The cache is stored in its own Redis database, separate from the one used by Celery, so cached data never mix with asynchronous task queues.
+The cache is stored in its own Redis database, separate from the one used by Celery, so cached data is never mixed with asynchronous task queues.
 
 | Variable name         | Type   | Default  | Description |
 |-----------------------|--------|----------|-------------|
-| `REDIS_URL`           | string | `redis://merginmaps-redis:6379/1` | Connection details to the Redis database used for caching. Use a different database number than in `BROKER_URL` and `CELERY_RESULT_BACKEND`. If non-default, it should match the definition in the `docker-compose` file. |
+| `REDIS_URL`           | string | `redis://merginmaps-redis:6379/1` | Connection details to the Redis database used for caching. Use a different database number from the one in `BROKER_URL` and `CELERY_RESULT_BACKEND`. If non-default, it should match the definition in the `docker-compose` file. |
 
 ## Diagnostic logs
 Users of Mergin Maps plugin and Mergin Maps mobile application are able to send diagnostic logs from their devices. In custom deployments, logs are stored in `diagnostic_logs` folder. If you want to send these logs to Mergin Maps instead of storing them locally, set the `DIAGNOSTIC_LOGS_URL` variable to `https://api.merginmaps.com/logs`.
