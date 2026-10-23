@@ -92,7 +92,7 @@ Perform the migration:
     $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
     $ docker compose -f docker-compose.maps.yml -d up # when maps are enabled
     ```
-11. This release of the Mergin Maps server removes a redundant database migration. If your database still references it, remove the reference directly from the `alembic_version` table, either with `psql` or in your favourite PostgreSQL client:
+11. This release of the <MainPlatformName /> server removes a redundant database migration. If your database still references it, remove the reference directly from the `alembic_version` table, either with `psql` or in your favourite PostgreSQL client:
     ```bash
     $ docker exec merginmaps-db psql -U postgres -c "DELETE FROM alembic_version WHERE version_num='35af0c8be41e';"
     ```
