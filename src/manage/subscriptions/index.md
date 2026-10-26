@@ -14,7 +14,7 @@ After signing up to <MainPlatformNameLink />, you can use your workspace for fre
 ::: details Legacy subscription plans: Individual, Professional and Team plan
 The subscription plans of <MainPlatformName /> may change over time as the platform evolves. You can decide to switch to a new plan anytime in the subscription management page.
 
-Even if you still use a plan that is no longer offered, features included in this plan stay unaltered. For instance, previously-used *Individual* or *Professional* subscriptions did not include features such as [webmaps](../dashboard-maps/) or developer tools ([Python and C++ integrations](../../dev/integration/), [DB Sync](../../dev/dbsync/), [Media Sync](../../dev/media-sync/), [Work Packages](../../dev/work-packages/)). To use these features, you will have to switch to a *Premium* subscription.
+Even if you still use a plan that is no longer offered, features included in this plan stay unaltered. For instance, previously-used *Individual* or *Professional* subscriptions did not include features such as [webmaps](../dashboard-maps/) or developer tools ([Python and C++ integrations](../../dev/integration/), [DB Sync](../../dev/dbsync/), [Media Sync](../../dev/media-sync/), [Work Packages](../../dev/work-packages/)). To use these features, you will have to switch one of the new plans.
 :::
 
 [Owners](../permissions/#workspace-member-roles-and-project-permissions) of the workspace can find the overview of the subscription plan, such as storage usage, number of projects and number of users in the workspace in the [**Subscription**](../dashboard/#subscriptions) tab on the <DashboardShortLink />. 
