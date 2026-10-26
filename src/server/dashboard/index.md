@@ -68,7 +68,7 @@ Workspaces can be sorted by their name or description. Use the search bar to fin
 ![Server administration panel Workspaces](./admin-panel-workspaces.jpg "Server administration panel Workspaces")
 
 Click on a workspace to display its details. Here, you can also:
-- **Update limits** of the workspace by setting a custom storage and contributors limit for the workspace
+- **Update limits** of the workspace by setting a custom storage and users limit for the workspace
 - **Deactivate** or **Activate** the workspace
 - **Delete workspace** to schedule the removal of a workspace from the server
 - see the list of workspace members

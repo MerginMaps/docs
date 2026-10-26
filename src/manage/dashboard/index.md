@@ -84,7 +84,7 @@ This tab is only available to [owners and admins](../permissions/#workspace-memb
 Here, you can:
 - see the email addresses, usernames and names of your workspace users
 - see and change the [**roles**](../permissions/#workspace-member-roles-and-project-permissions) of your workspace members
-- see the **Member type**, whether the user is a [contributor](../subscriptions/#contributors) or a read-only guest. Only contributors are counting towards your [subscription](../subscriptions/).
+- see the **Member type**
 - **resend invitation** to a user with pending invitation
 - **remove** members from the workspace
 

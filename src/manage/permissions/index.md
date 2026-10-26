@@ -14,16 +14,11 @@ People invited to a workspace can be invited as **members** or as **guests**. Se
 
 **Guests** have access only to projects they are invited to. If you want to only share specific projects with someone, you should invite them to your workspace as a guest.  The level of access to a project is defined by project permissions. There are 4 [permission](#workspace-member-roles-and-project-permissions) levels: *reader*, *editor*, *writer*, and *owner*.
 
-:::tip Members, guests and contributors
-Subscriptions are based on the number of *contributors* on the workspace. *Contributors* are members or guests with writer, editor, admin or owner access.
-
-*Readers* do not count as contributors. The number of read-only users in your workspace does not affect your subscription.
-:::
 
 ## Workspace member roles and project permissions
 Member roles and project permissions present similar options in terms of what a user can or cannot do. The difference is whether these options are defined on a workspace or on a project level. Compare the overview of [workspace member roles](#workspace-member-roles-overview) and of [project permissions](#project-permissions-overview) for more details.
 
-- **Reader**: Users with **Read** permission are able to see projects, projects data and [history](../project-history/), but can not make any changes. *Readers* do not count as [contributors](../subscriptions/#contributors) in your subscription.
+- **Reader**: Users with **Read** permission are able to see projects, projects data and [history](../project-history/), but can not make any changes.
 - **Editor** (available on <ServerCloudNameLink /> and <EnterprisePlatformNameLink />): In addition to the **Read** access, users can [add/remove/update features](../../field/mobile-features/), but *cannot* make changes in the project properties, add/remove fields in GeoPackage layers or remove GeoPackage files from the project. We recommend using this role for surveyors - users who collect data in the field.
 Editors can:
 	- *add* files such as photos, shapefiles, GeoPackage files - any file except for `*.qgs`, `*.qgz`, `mergin-config.json`
