@@ -1,15 +1,15 @@
 ---
-description: Mergin Maps subscriptions are based on the number of contributors on the workspace. Per each contributor seat, you get 1 GB of storage.
+description: Mergin Maps offers multiple subscription plans. Choose the one that fit your needs.
 ---
 
 # Subscriptions and Invoicing
 [[toc]]
 
-::: tip Pricing, features, free trial
-Subscription details and pricing are summarised on our <MainDomainNameLink id="pricing" desc="pricing page"/>. After signing up to <MainPlatformNameLink />, you can use your workspace for free during the **14 day trial**. After the trial, you can [choose a premium plan](#how-to-upgrade-a-subscription-from-the-trial-plan).
 
-The current *Premium* subscription system is explained in more detail in our blog <MainDomainNameLink id="blog/unlocking-premium-features-of-mergin-maps-for-all" desc="Unlocking premium features of Mergin Maps for all"/>.
-:::
+## Subscription
+Subscription details and pricing are summarised on our <MainDomainNameLink id="pricing" desc="pricing page"/>.
+
+After signing up to <MainPlatformNameLink />, you can use your workspace for free during the **14 day trial**. After the trial, you can [choose your plan](#how-to-upgrade-a-subscription-from-the-trial-plan).
 
 ::: details Legacy subscription plans: Individual, Professional and Team plan
 The subscription plans of <MainPlatformName /> may change over time as the platform evolves. You can decide to switch to a new plan anytime in the subscription management page.
@@ -17,15 +17,7 @@ The subscription plans of <MainPlatformName /> may change over time as the platf
 Even if you still use a plan that is no longer offered, features included in this plan stay unaltered. For instance, previously-used *Individual* or *Professional* subscriptions did not include features such as [webmaps](../dashboard-maps/) or developer tools ([Python and C++ integrations](../../dev/integration/), [DB Sync](../../dev/dbsync/), [Media Sync](../../dev/media-sync/), [Work Packages](../../dev/work-packages/)). To use these features, you will have to switch to a *Premium* subscription.
 :::
 
-## Contributors
-
-Subscriptions are based on the number of *contributors* on the workspace. Per each contributor seat, you get 1 GB of storage. Storage is shared across the whole workspace. You can get even more storage, just reach out to our <MerginMapsEmail id="sales" desc="sales team" /> and we will help you set it up.
-
-*Contributors* are workspace members or guests who have Writer, Editor, Admin or Owner [access rights](../permissions/). The number of read-only users is unlimited: they do not count towards your workspace contributors. 
-
-[Owners](../permissions/#workspace-member-roles-and-project-permissions) of the workspace can find the overview of the subscription plan, such as storage usage, number of projects and number of contributors in the workspace in the [**Subscription**](../dashboard/#subscriptions) tab on the <DashboardShortLink />. 
-
-The overview of workspace users and their member type (contributor/read-only) can be found in the [**Members**](../dashboard/#members) tab on the <DashboardShortLink />. It is available to [owners and admins](../permissions/#workspace-member-roles-and-project-permissions) of a workspace.
+[Owners](../permissions/#workspace-member-roles-and-project-permissions) of the workspace can find the overview of the subscription plan, such as storage usage, number of projects and number of users in the workspace in the [**Subscription**](../dashboard/#subscriptions) tab on the <DashboardShortLink />. 
 
 ![Mergin Maps Dashboard Subscription tab](../dashboard/mergin-maps-dashboard-subscriptions.jpg "Mergin Maps Dashboard Subscription tab")
 
@@ -62,28 +54,17 @@ To access the portal directly:
 3. You will get an email with a login link. Click on the link in the email and you will be redirected to the portal.
 
 ## How to upgrade a subscription from the trial plan
-1. Log into <AppDomainNameLink />
+Once your trial expires, you can choose your new plan on <DashboardLink />.
 
-2. Navigate to the **Subscription** tab. 
+Navigate to the **Subscription** tab and **Sign up**. You will be redirected to a checkout page. 
 
-   Choose the number of contributors for your *Premium* plan. You can also specify if you want to be billed yearly or monthly.
-   
-   Click on the **Sign up now** button to confirm your new plan.
-   ![Mergin Maps Subscription details](./subscriptions-upgrade.webp "Mergin Maps Subscription details")
+Note that the email you enter here will receive all billing-related information such as invoices or failed payments notifications.
 
-3. You will be redirected to a checkout page. Here, fill out the billing information.
+If you are a business, check the **I'm purchasing as a business** :heavy_check_mark: option and fill out your business name and VAT number.
+- the VAT number has to be associated with the entered (VAT registered) address
+- the address you enter has to match the address registered with your payment method
 
-   The email you enter here will receive all billing-related information such as invoices or failed payments notifications.
-
-   If you are a business, check the **I'm purchasing as a business** :heavy_check_mark: option and fill out your business name and VAT number.
-   - the VAT number has to be associated with the entered (VAT registered) address
-   - the address you enter has to match the address registered with your payment method
-   
-   ![Subscription checkout](./stripe-checkout.webp "Subscription checkout")
-  
-4. Click on **Pay and subscribe**
-   
-After the payment goes through, you will be redirected back to <DashboardLink /> where you can review the details of your new subscription
+![Subscription checkout](./stripe-checkout.webp "Subscription checkout")
 
 ### How to request Academia or Non-profit plan
 We support students, educators and registered non-profit organisations.
@@ -100,8 +81,7 @@ Click on the **Sign Up Now** button and fill out the form. We will review your a
 2. In the *Current subscription* section, click on the **Update subscription** button
    ![Update Mergin Maps subscription plan](./stripe-update-subscription.jpg "Update Mergin Maps subscription plan")
    
-3. Choose a *Monthly* or *Yearly* billing, select the number of contributors for your new plan and **Continue**
-   ![Changing Mergin Maps subscription plan](./stripe-update-your-plan.webp "Changing Mergin Maps subscription plan")
+3. Choose a *Monthly* or *Yearly* billing, select your new plan and **Continue**
    
 4. Confirm your updates and proceed by clicking on the **Subscribe and pay** button
 

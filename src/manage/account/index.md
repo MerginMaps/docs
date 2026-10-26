@@ -39,7 +39,7 @@ It is not possible to change the username. If you wish to use a different userna
 
 The username cannot be changed. If you need to use a different username, you will have to create a new account.
 
-**If you are a contributor to a workspace, but do not own a workspace:**
+**If you do not own a workspace:**
 1. Create a new <MainPlatformName /> account with the username of your choice
 2. Make a list of workspaces/projects you have access to with your original account
 3. Notify the *admins* or *owners* of the relevant workspaces about this change.
