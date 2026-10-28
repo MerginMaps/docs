@@ -25,10 +25,7 @@ jobs:
        yarn install
 
     - name: Generate dist
-      env:
-          SMARTLOOK_KEY: ${{ secrets.SMARTLOOK_KEY }}
       run: |
-        echo "VITE_SMARTLOOK_KEY=$SMARTLOOK_KEY" > ./src/.env
         yarn build
 
     - name: "Check dist dir consistency"
