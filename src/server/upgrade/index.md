@@ -89,8 +89,8 @@ Perform the migration:
 
 10. Start up your docker containers
     ```bash
-    $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
-    $ docker compose -f docker-compose.maps.yml -d up # when maps are enabled
+    $ docker compose -f docker-compose.yml up -d # or similarly, based on your deployment
+    $ docker compose -f docker-compose.maps.yml up -d # when maps are enabled
     ```
 11. This release of the <MainPlatformName /> server removes a redundant database migration. If your database still references it, remove the reference directly from the `alembic_version` table, either with `psql` or in your favourite PostgreSQL client:
     ```bash
@@ -160,8 +160,8 @@ You can also clean the following variables from `.prod.env`:
 
 6. Start up your docker containers
    ```bash
-    $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
-    $ docker compose -f docker-compose.maps.yml -d up # or similarly, based on your deployment
+    $ docker compose -f docker-compose.yml up -d # or similarly, based on your deployment
+    $ docker compose -f docker-compose.maps.yml up -d # or similarly, based on your deployment
    ```
 7. Check that you are on correct database migration versions (`6cb54659c1de`, `e95d051969ce`).
     ```bash
@@ -250,7 +250,7 @@ Perform the migration:
 You can also disable this persistence in <GitHubRepo id="MerginMaps/server/blob/master/deployment/community/docker-compose.yml" desc="docker-compose.yml" /> `server` service definition.
 6. Start up your docker containers
    ```bash
-    $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
+    $ docker compose -f docker-compose.yml up -d # or similarly, based on your deployment
    ```
 7. Check that you are on correct database migration versions (`ba5051218de4`).
     ```bash
@@ -295,7 +295,7 @@ Perform the migration:
 You can also disable this persistence in <GitHubRepo id="MerginMaps/server/blob/master/deployment/enterprise/docker-compose.yml" desc="docker-compose.yml" /> `server` service definition.
 6. Start up your docker containers
    ```bash
-    $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
+    $ docker compose -f docker-compose.yml up -d # or similarly, based on your deployment
    ```
 7. Check that you are on correct database migration versions (`5ad13be6f7ef`, `819e6b20ee93`).
     ```bash
@@ -352,8 +352,8 @@ Perform the migration:
    ```
 4. Start up your docker containers
    ```bash
-    $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
-    $ docker compose -f docker-compose.maps.yml -d up # If you want to deploy webmaps stack
+    $ docker compose -f docker-compose.yml up -d # or similarly, based on your deployment
+    $ docker compose -f docker-compose.maps.yml up -d # If you want to deploy webmaps stack
    ```
 5. Check that you are on correct versions (`ba5051218de4`, `ba5ae5972c4a`).
     ```bash
@@ -412,7 +412,7 @@ Perform the migration:
 
    - After this you can start the new containers
     ```bash
-    $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
+    $ docker compose -f docker-compose.yml up -d # or similarly, based on your deployment
     ```
 
 4. Check that you are on correct versions (`35af0c8be41e`, `a5d4defded55`).
@@ -470,7 +470,7 @@ Perform the migration:
 
    - After this you can start the new containers
     ```bash
-    $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
+    $ docker compose -f docker-compose.yml up -d # or similarly, based on your deployment
     ```
 
 4. Check that you are on correct versions (`07f2185e2428`, `df5b4efdae7b`).
