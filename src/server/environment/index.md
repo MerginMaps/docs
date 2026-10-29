@@ -35,6 +35,7 @@ Security settings are important for production use.
 | `SECURITY_EMAIL_SALT`⭐️| string    |           | Token salt for sending verification email, should be a generated strong string. |
 | `SECURITY_BEARER_SALT`⭐️| string    |           | Bearer token salt for decode web token, should be a generated strong string.|
 | `SECURITY_PASSWORD_SALT`⭐️| string    |           | Password salt for hashing, should be a generated strong string. |
+| `SECURITY_UNLOCK_SALT`⭐️| string    |           | Token salt for unlocking user accounts locked after too many failed login attempts, should be a generated strong string. |
 | `WTF_CSRF_ENABLED`       | Boolean   |  `true`   | Enable CSRF protection. It is strongly recommended to have this on. |
 | `WTF_CSRF_TIME_LIMIT`    | integer   |  `86400`  | Lifetime of CSRF token in seconds. When expired, users need to refresh it. |
 ​
@@ -88,7 +89,13 @@ To ease the process of permission (user) management, you can set the following g
 | `MAIL_USE_TLS`🛡️       | Boolean |   `true`        | Use TLS encryption when connecting to SMTP server.  |
 | `MAIL_USE_SSL`🛡️       | Boolean |   `false`        | Whether to use SSL encryption when connecting to SMTP server.  |
 | `MAIL_BCC`              | string  |   `None`   | Email address to send copies of all sent emails. Should be system/application administrator. Mandatory in versions until 2024.4.0.  |
-| `MERGIN_LOGO_URL`       | string  | Mergin Maps logo    | Link to logo in emails. |
+| `MERGIN_LOGO_URL`       | string  | <MainPlatformName /> logo    | Link to the logo in emails and the web dashboard. |
+
+<ServerType type="EE" />
+
+| Variable name           | Type    | Default   | Description |
+|-------------------------|---------|-----------|-------------|
+| `EMAIL_TEMPLATES_DIR`   | string  | `None`    | Directory with custom email templates (e.g. `/custom_templates`). Templates found there override the built-in ones, so their paths must match the built-in template paths exactly. If the directory does not exist, the server fails to start. See [custom email templates](../install/#custom-email-templates). |
 
 If you have issues with sending emails, follow [troubleshooting](../troubleshoot/) page.
 
@@ -138,6 +145,15 @@ Mergin Maps is using Celery and Redis to perform asynchronous tasks or doing reg
 |`BROKER_URL`           |string|`redis://merginmaps-redis:6379/0`| Connection details to celery message broker. If non-default, it should match definition in `docker-compose` file.  |
 |`CELERY_RESULT_BACKEND`|string|`redis://merginmaps-redis:6379/0`| Connection details to celery result back-end broker. If non-default, it should match definition in `docker-compose` file.  |
 
+## Caching
+<ServerType type="EE" />
+
+The cache is stored in its own Redis database, separate from the one used by Celery, so cached data is never mixed with asynchronous task queues.
+
+| Variable name         | Type   | Default  | Description |
+|-----------------------|--------|----------|-------------|
+| `REDIS_URL`           | string | `redis://merginmaps-redis:6379/1` | Connection details to the Redis database used for caching. Use a different database number from the one in `BROKER_URL` and `CELERY_RESULT_BACKEND`. If non-default, it should match the definition in the `docker-compose` file. |
+
 ## Diagnostic logs
 Users of Mergin Maps plugin and Mergin Maps mobile application are able to send diagnostic logs from their devices. In custom deployments, logs are stored in `diagnostic_logs` folder. If you want to send these logs to Mergin Maps instead of storing them locally, set the `DIAGNOSTIC_LOGS_URL` variable to `https://api.merginmaps.com/logs`.
 
@@ -151,8 +167,12 @@ Users of Mergin Maps plugin and Mergin Maps mobile application are able to send 
 | Variable name            | Type     | Default                       | Description                    |
 |--------------------------|----------|-------------------------------|--------------------------------|
 | `MAPS_ENABLED`           | boolean  | `true`                       | Flag to enable webmaps         |
-| `VECTOR_TILES_URL`       | string   | `https://tiles-ee.merginmaps.com/data/default/{z}/{x}/{y}.pbf`                            | Vector tiles URL used as background map layer in webmaps |
-| `VECTOR_TILES_STYLE_URL` | string   | `https://tiles-ee.merginmaps.com/styles/default.json`                            | Vector tiles style URL used to style the background map layer in webmaps |
+| `VECTOR_TILES_URL`       | string   | `https://tiles.merginmaps.com/data/default/{z}/{x}/{y}.pbf`                            | Vector tiles URL used as background map layer in webmaps |
+| `VECTOR_TILES_STYLE_URL` | string   | `https://tiles.merginmaps.com/styles/default.json`                            | Vector tiles style URL used to style the background map layer in webmaps |
+| `VECTOR_TILES_LIGHT_STYLE_URL` | string   | `https://tiles.merginmaps.com/styles/light.json`                            | Vector tiles style URL for the light alternative of the background map in webmaps |
+| `VECTOR_TILES_DARK_STYLE_URL` | string   | `https://tiles.merginmaps.com/styles/dark.json`                            | Vector tiles style URL for the dark alternative of the background map in webmaps |
+| `OGC_API_ENABLED`        | boolean  | `true`                       | Flag to enable generating OGC API links for projects. |
+| `MAPS_SHARING_ENABLED`   | boolean  | `true`                       | Flag to enable sharing of webmaps with a public link. |
 
 ## Single Sign-On (SSO)
 <ServerType type="EE" />
@@ -162,3 +182,10 @@ Users of Mergin Maps plugin and Mergin Maps mobile application are able to send 
 | `SSO_ENABLED`            | boolean  | `false`                       | Flag to enable SSO in <MainPlatformName />             |
 | `SSO_SERVER_URL` ⭐️           | string   | `http://localhost:8081`     | Public URL of the SSO server. This URL should be accessible from the internet. |
 | `SSO_SERVER_API_KEY` ⭐️     | string   | ``                      | This API key is used to authenticate requests to the SSO service. It must be one of the keys defined in the `JACKSON_API_KEYS` variable within the Ory Polis (for more details see [Single Sign-On deployment guide](../sso-deployment#configure-server)). |
+
+## Audit logs
+<ServerType type="EE" />
+
+| Variable name            | Type     | Default                       | Description                    |
+|--------------------------|----------|-------------------------------|--------------------------------|
+| `AUDIT_LOGS_ENABLED`     | boolean  | `true`                        | Flag to enable the collection of audit logs. If set to `false`, audit events are not stored. |

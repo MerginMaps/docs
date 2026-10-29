@@ -14,6 +14,133 @@ Make sure to always back up your database data before doing a migration.
 
 [[toc]]
 
+## From 2025.7.x to 2026.10.x {#migration-guide-from-2025-7-x-to-2026-10-x}
+
+<MigrationType type="EE" />
+
+Mergin Maps EE Docker images are now available in a private Docker Hub repository. Previous versions were also available in the Amazon ECR registry, but images starting with version `2026.10.1` are no longer published there. If you do not have access to the Docker Hub repository, contact [support](https://support.merginmaps.com/new-ticket).
+
+Perform the migration:
+
+1. Upgrade PostgreSQL to version 17.
+   - If you are going to upgrade PostgreSQL, make sure you back up your database before proceeding.
+    
+    ```bash
+    # Stop services so they do not handle any traffic
+    docker compose stop server celery-beat celery-worker web proxy
+    # Dump the existing database
+    docker exec merginmaps-db pg_dump -U postgres -Fc postgres > mergin-pg14.dump
+
+    # Stop all services
+    docker compose -f docker-compose.yml down
+
+    # Move the data directory to a PostgreSQL 14 backup folder
+    mv mergin-db-enterprise mergin-db-enterprise-pg14
+
+    # Change version of db container to Postgres 17 in docker compose file
+    #db:
+    #    image: postgres:17
+
+    # Start the database container
+    docker compose -f docker-compose.yml up -d db
+    # Restore your data to the new PostgreSQL 17 database
+    docker exec -i merginmaps-db pg_restore -U postgres -d postgres < mergin-pg14.dump
+    ```
+
+2. Stop your running docker containers
+   ```bash
+    $ docker compose -f docker-compose.yml down # or similarly, based on your previous deployment
+   ```
+3. Clone or pull the <GitHubRepo id="MerginMaps/server/blob/2026.10.1/" desc="server repository" /> or download the <GitHubRepo id="MerginMaps/server/blob/2026.10.1/deployment" desc="deployment folder" /> and open the `/enterprise` folder.
+   ```bash    
+    $ cd server/deployment/enterprise
+   ```
+    
+
+4. Adapt your existing `docker-compose.yml` and `docker-compose.maps.yml` (if your server has maps enabled) files to the new version.
+
+    - Upgrade the image tags of the server-related containers to the latest version tag `2026.10.1` in `docker-compose.yml`.
+    - Upgrade the image tags of `qgis` to the `2026.4.0` image tag and `qgis-extractor` to the `2026.4.1` image tag in `docker-compose.maps.yml`.
+    - Add new environment variables to the `mergin-qgis` container in `docker-compose.maps.yml`:
+    ```bash
+    - QGIS_SERVER_SERVICE_URL=http://localhost:5555
+    - QGIS_SERVER_API_WFS3_ROOT_PATH=/wfs3
+    ```
+5. Double-check that the following environment variable is available and filled in the `.prod.env` environment file. If not, add it.
+    ```bash
+    # Generate a hash string using the following command (or similar):
+    # LC_ALL=C tr -dc 'A-Za-z0-9' < /dev/urandom | head -c 32; echo
+    # Add the content to the .prod.env file
+    SECURITY_UNLOCK_SALT='<YOUR STRONG HASH>'
+    ```
+6. This version of the server provides audit logs. To enable or disable the collection of audit logs, use the following variable in the `.prod.env` environment file.
+    ```bash
+    AUDIT_LOGS_ENABLED=True # False to disable
+    ```
+7. This version of the server supports [caching](../environment/#caching) in a separate Redis database. Double-check that the following environment variable is available and filled in the `.prod.env` environment file. If not, add it.
+    ```bash
+    REDIS_URL=redis://merginmaps-redis:6379/1
+    ```
+8.  Double-check that the following maps-related environment variables are available and filled in the `.prod.env` environment file. If not, add them with the proper values.
+    ```bash
+    # Enable/disable generating OGC API links for projects
+    OGC_API_ENABLED=True # False to disable
+    # Enable/disable map sharing for projects
+    MAPS_SHARING_ENABLED=True # False to disable
+    # Support for multiple background map alternatives
+    VECTOR_TILES_LIGHT_STYLE_URL=https://tiles.merginmaps.com/styles/light.json
+    VECTOR_TILES_DARK_STYLE_URL=https://tiles.merginmaps.com/styles/dark.json
+    ```
+9.  If you are using any top proxy settings and maps are enabled in your server, pay attention to update your proxy settings to allow embedding of maps by changing the `Content-Security-Policy` header for the `/maps/embed` path. Add the following lines to <GitHubRepo id="MerginMaps/server/blob/master/deployment/common/ssl-proxy.conf" desc="ssl-proxy.conf" />:
+    ```bash
+    location ^~ /maps/embed/ {
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header Host $http_host;
+        proxy_redirect off;
+        proxy_pass http://app_server;
+
+        proxy_hide_header X-Frame-Options;
+        proxy_hide_header Content-Security-Policy;
+        add_header Content-Security-Policy "frame-ancestors *;" always;
+    }
+    ```
+
+    - If you have enabled OGC API with the `OGC_API_ENABLED` variable and want to integrate it with other web clients, allow CORS for the `/v2/ogc` endpoint in your proxy. An example can be found in the related section of <GitHubRepo id="MerginMaps/server/blob/master/deployment/common/ssl-proxy.conf" desc="ssl-proxy.conf" />.
+
+10. Start up your docker containers
+    ```bash
+    $ docker compose -f docker-compose.yml up -d # or similarly, based on your deployment
+    $ docker compose -f docker-compose.maps.yml up -d # when maps are enabled
+    ```
+11. This release of the <MainPlatformName /> server removes a redundant database migration. If your database still references it, remove the reference directly from the `alembic_version` table, either with `psql` or in your favourite PostgreSQL client:
+    ```bash
+    $ docker exec merginmaps-db psql -U postgres -c "DELETE FROM alembic_version WHERE version_num='35af0c8be41e';"
+    ```
+12. Check that you are on the correct database migration versions (`c40e5e645b57`, `b9ec9ab6694f`).
+    ```bash
+    $ docker exec merginmaps-server flask db current
+    INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+    INFO  [alembic.runtime.migration] Will assume transactional DDL.
+    c40e5e645b57
+    b9ec9ab6694f
+    ```
+    - If you do not see the version numbers at all, run the following commands:
+    ```bash
+    $ docker exec merginmaps-server flask db stamp c40e5e645b57
+    $ docker exec merginmaps-server flask db stamp b9ec9ab6694f
+    ```
+13. Run the database migration:
+
+    ```bash
+    $ docker exec merginmaps-server flask db upgrade community@head
+    $ docker exec merginmaps-server flask db upgrade enterprise@head
+    ```
+
+    ::: tip New database schema
+    This will create a new database schema `audit`. If the application connects to the database as a different PostgreSQL user (not the owner of the tables), you will need to grant this user `USAGE` on the new schema and `SELECT` on its tables. Do not forget to also grant `EXECUTE` on the functions `ensure_log_partitions(integer)` and `before_insert_log()`.
+    :::
+
 ## From 2025.5.x to 2025.7.x {#migration-guide-from-2025-5-x-to-2025-7-x}
 
 <MigrationType type="EE" />
@@ -54,8 +181,8 @@ You can also clean the following variables from `.prod.env`:
 
 6. Start up your docker containers
    ```bash
-    $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
-    $ docker compose -f docker-compose.maps.yml -d up # or similarly, based on your deployment
+    $ docker compose -f docker-compose.yml up -d # or similarly, based on your deployment
+    $ docker compose -f docker-compose.maps.yml up -d # or similarly, based on your deployment
    ```
 7. Check that you are on correct database migration versions (`6cb54659c1de`, `e95d051969ce`).
     ```bash
@@ -144,7 +271,7 @@ Perform the migration:
 You can also disable this persistence in <GitHubRepo id="MerginMaps/server/blob/master/deployment/community/docker-compose.yml" desc="docker-compose.yml" /> `server` service definition.
 6. Start up your docker containers
    ```bash
-    $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
+    $ docker compose -f docker-compose.yml up -d # or similarly, based on your deployment
    ```
 7. Check that you are on correct database migration versions (`ba5051218de4`).
     ```bash
@@ -189,7 +316,7 @@ Perform the migration:
 You can also disable this persistence in <GitHubRepo id="MerginMaps/server/blob/master/deployment/enterprise/docker-compose.yml" desc="docker-compose.yml" /> `server` service definition.
 6. Start up your docker containers
    ```bash
-    $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
+    $ docker compose -f docker-compose.yml up -d # or similarly, based on your deployment
    ```
 7. Check that you are on correct database migration versions (`5ad13be6f7ef`, `819e6b20ee93`).
     ```bash
@@ -246,8 +373,8 @@ Perform the migration:
    ```
 4. Start up your docker containers
    ```bash
-    $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
-    $ docker compose -f docker-compose.maps.yml -d up # If you want to deploy webmaps stack
+    $ docker compose -f docker-compose.yml up -d # or similarly, based on your deployment
+    $ docker compose -f docker-compose.maps.yml up -d # If you want to deploy webmaps stack
    ```
 5. Check that you are on correct versions (`ba5051218de4`, `ba5ae5972c4a`).
     ```bash
@@ -306,7 +433,7 @@ Perform the migration:
 
    - After this you can start the new containers
     ```bash
-    $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
+    $ docker compose -f docker-compose.yml up -d # or similarly, based on your deployment
     ```
 
 4. Check that you are on correct versions (`35af0c8be41e`, `a5d4defded55`).
@@ -364,7 +491,7 @@ Perform the migration:
 
    - After this you can start the new containers
     ```bash
-    $ docker compose -f docker-compose.yml -d up # or similarly, based on your deployment
+    $ docker compose -f docker-compose.yml up -d # or similarly, based on your deployment
     ```
 
 4. Check that you are on correct versions (`07f2185e2428`, `df5b4efdae7b`).
@@ -590,7 +717,7 @@ In case you do not need your previous data, we advise to start with [clean deplo
  3. Backup your database ⚠️
 
 ```bash
-$ docker exec mergin-db pg_dump -U postgres -Fc postgres > pg_backup.dump
+$ docker exec merginmaps-db pg_dump -U postgres -Fc postgres > pg_backup.dump
 ```
 
  4. Stop all running <MainPlatformName /> services (from project root folder)
