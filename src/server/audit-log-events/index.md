@@ -30,8 +30,8 @@ Here is a complete list of events tracked in [Audit logs](../dashboard/#audit-lo
 - `project.updated` - Project settings changed
 - `project.transfer_request.initiated` - Project transfer request sent
 - `project.transfer_request.received` - Project transfer request received
-- `project.transfer_request.completed` - Project transfer completed
-- `project.transfer_request.accepted` - Project transfer accepted
+- `project.transfer_request.completed` - Project transfer completed (by the original workspace)
+- `project.transfer_request.accepted` - Project transfer accepted (by the new workspace)
 - `project.transfer_request.canceled` - Project transfer cancelled (by the original workspace)
 - `project.transfer_request.rejected` - Project transfer rejected (by the new workspace)
 - `project.marked_for_deletion` - Project scheduled for deletion
