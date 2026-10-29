@@ -112,8 +112,8 @@ Perform the migration:
 13. Run the database migration:
 
     ```bash
-    $ docker exec merginmaps-server flask db upgrade community@heads
-    $ docker exec merginmaps-server flask db upgrade enterprise@heads
+    $ docker exec merginmaps-server flask db upgrade community@head
+    $ docker exec merginmaps-server flask db upgrade enterprise@head
     ```
 
     ::: tip New database schema
