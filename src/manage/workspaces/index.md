@@ -6,7 +6,7 @@ description: Workspaces are used to efficiently manage projects, users and subsc
 [[toc]]
 
 ## Workspaces in Mergin Maps
-Workspaces are used to efficiently manage projects, users and subscriptions. Every workspace is tied to a [subscription](../subscriptions/). The subscription plan defines the number of contributors and the amount of data storage for the workspace.
+Workspaces are used to efficiently manage projects, users and subscriptions. Every workspace is tied to a [subscription](../subscriptions/). The subscription plan defines the number of users, included storage and other features for the workspace.
 
 One workspace can contain multiple projects. The only limit is the storage quota (as defined by the subscription). If needed, projects can be transferred to another workspace.
 
