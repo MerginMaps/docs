@@ -17,7 +17,6 @@
 
 <script setup lang="ts">
 import { ref, reactive, onMounted, watch } from 'vue';
-import Smartlook from 'smartlook-client';
 import { useGtm } from '@gtm-support/vue-gtm';
 
 import CookieConsentBanner from './cookie-consent/components/CookieConsentBanner.vue';
@@ -77,12 +76,6 @@ watch(
   (value) => {
     if (value !== undefined) {
       gtm?.enable(value);
-      const smartlookKey = import.meta.env.VITE_SMARTLOOK_KEY;
-      if (value && smartlookKey && !Smartlook.initialized()) {
-        Smartlook.init(smartlookKey, {
-          region: 'eu',
-        });
-      }
     }
   },
   { immediate: true }
