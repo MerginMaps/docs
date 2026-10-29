@@ -30,7 +30,7 @@ Perform the migration:
    ```
 3. Upgrade PostgreSQL to version 17.
     - If you are going to upgrade PostgreSQL, make sure you back up your database before proceeding.
-    - Upgrade the `mergin-db` container to PostgreSQL version 17. The server also supports older versions, but we recommend upgrading to `postgres:17`.
+    - Upgrade the `merginmaps-db` container to PostgreSQL version 17. The server also supports older versions, but we recommend upgrading to `postgres:17`.
     ```bash
     db:
         image: postgres:17
@@ -696,7 +696,7 @@ In case you do not need your previous data, we advise to start with [clean deplo
  3. Backup your database ⚠️
 
 ```bash
-$ docker exec mergin-db pg_dump -U postgres -Fc postgres > pg_backup.dump
+$ docker exec merginmaps-db pg_dump -U postgres -Fc postgres > pg_backup.dump
 ```
 
  4. Stop all running <MainPlatformName /> services (from project root folder)
