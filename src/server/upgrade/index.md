@@ -18,28 +18,49 @@ Make sure to always back up your database data before doing a migration.
 
 <MigrationType type="EE" />
 
+Mergin Maps EE Docker images are now available in a private Docker Hub repository. Previous versions were also available in the Amazon ECR registry, but images starting with version `2026.10.1` are no longer published there. If you do not have access to the Docker Hub repository, contact [support](https://support.merginmaps.com/new-ticket).
+
 Perform the migration:
 
-1. Stop your running docker containers
+1. Upgrade PostgreSQL to version 17.
+   - If you are going to upgrade PostgreSQL, make sure you back up your database before proceeding.
+    
+    ```bash
+    # Stop services so they do not handle any traffic
+    docker compose stop server celery-beat celery-worker web proxy
+    # Dump the existing database
+    docker exec merginmaps-db pg_dump -U postgres -Fc postgres > mergin-pg14.dump
+
+    # Stop all services
+    docker compose -f docker-compose.yml down
+
+    # Move the data directory to a PostgreSQL 14 backup folder
+    mv mergin-db-enterprise mergin-db-enterprise-pg14
+
+    # Change version of db container to Postgres 17 in docker compose file
+    #db:
+    #    image: postgres:17
+
+    # Start the database container
+    docker compose -f docker-compose.yml up -d db
+    # Restore your data to the new PostgreSQL 17 database
+    docker exec -i merginmaps-db pg_restore -U postgres -d postgres < mergin-pg14.dump
+    ```
+
+2. Stop your running docker containers
    ```bash
     $ docker compose -f docker-compose.yml down # or similarly, based on your previous deployment
    ```
-2. Clone or pull the <GitHubRepo id="MerginMaps/server/blob/2026.10.0/" desc="server repository" /> or download the <GitHubRepo id="MerginMaps/server/blob/2026.10.0/deployment" desc="deployment folder" /> and open the `/enterprise` folder.
+3. Clone or pull the <GitHubRepo id="MerginMaps/server/blob/2026.10.1/" desc="server repository" /> or download the <GitHubRepo id="MerginMaps/server/blob/2026.10.1/deployment" desc="deployment folder" /> and open the `/enterprise` folder.
    ```bash    
     $ cd server/deployment/enterprise
    ```
-3. Upgrade PostgreSQL to version 17.
-    - If you are going to upgrade PostgreSQL, make sure you back up your database before proceeding.
-    - Upgrade the `merginmaps-db` container to PostgreSQL version 17. The server also supports older versions, but we recommend upgrading to `postgres:17`.
-    ```bash
-    db:
-        image: postgres:17
-    ```
+    
 
 4. Adapt your existing `docker-compose.yml` and `docker-compose.maps.yml` (if your server has maps enabled) files to the new version.
 
-    - Upgrade the image tags of the server-related containers to the latest version in `docker-compose.yml`.
-    - Upgrade the image tags of `qgis` and `qgis-extractor` to the latest 2026.4.0 image tag in `docker-compose.maps.yml`.
+    - Upgrade the image tags of the server-related containers to the latest version tag `2026.10.1` in `docker-compose.yml`.
+    - Upgrade the image tags of `qgis` to the `2026.4.0` image tag and `qgis-extractor` to the `2026.4.1` image tag in `docker-compose.maps.yml`.
     - Add new environment variables to the `mergin-qgis` container in `docker-compose.maps.yml`:
     ```bash
     - QGIS_SERVER_SERVICE_URL=http://localhost:5555
@@ -60,7 +81,7 @@ Perform the migration:
     ```bash
     REDIS_URL=redis://merginmaps-redis:6379/1
     ```
-8. Double-check that the following maps-related environment variables are available and filled in the `.prod.env` environment file. If not, add them with the proper values.
+8.  Double-check that the following maps-related environment variables are available and filled in the `.prod.env` environment file. If not, add them with the proper values.
     ```bash
     # Enable/disable generating OGC API links for projects
     OGC_API_ENABLED=True # False to disable
@@ -70,7 +91,7 @@ Perform the migration:
     VECTOR_TILES_LIGHT_STYLE_URL=https://tiles.merginmaps.com/styles/light.json
     VECTOR_TILES_DARK_STYLE_URL=https://tiles.merginmaps.com/styles/dark.json
     ```
-9. If you are using any top proxy settings and maps are enabled in your server, pay attention to update your proxy settings to allow embedding of maps by changing the `Content-Security-Policy` header for the `/maps/embed` path. Add the following lines to <GitHubRepo id="MerginMaps/server/blob/master/deployment/common/ssl-proxy.conf" desc="ssl-proxy.conf" />:
+9.  If you are using any top proxy settings and maps are enabled in your server, pay attention to update your proxy settings to allow embedding of maps by changing the `Content-Security-Policy` header for the `/maps/embed` path. Add the following lines to <GitHubRepo id="MerginMaps/server/blob/master/deployment/common/ssl-proxy.conf" desc="ssl-proxy.conf" />:
     ```bash
     location ^~ /maps/embed/ {
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
