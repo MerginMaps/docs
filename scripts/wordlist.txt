@@ -22,6 +22,7 @@ CPUs
 Consulting's
 CRS
 CSRF
+CORS
 CSV
 CharlieColleague
 DAF
