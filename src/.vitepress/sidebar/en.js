@@ -172,6 +172,7 @@ export default {
       collapsed: true,
       items: [
         { text: 'Licensing', link: '/misc/licensing/' },
+        { text: 'Telemetry', link: '/misc/telemetry/' },
         { text: 'How to Cite', link: '/misc/cite/' },
         { text: 'Get Involved', link: '/misc/get-involved/' },
         { text: 'Troubleshoot',
