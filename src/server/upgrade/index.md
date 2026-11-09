@@ -117,7 +117,57 @@ Perform the migration:
     ```bash
     $ docker exec merginmaps-db psql -U postgres -c "DELETE FROM alembic_version WHERE version_num='35af0c8be41e';"
     ```
-12. Check that you are on the correct database migration versions (`c40e5e645b57`, `b9ec9ab6694f`).
+12. If you do not have `map_overview` table in your database, run the following commands to create it by running commands in postgres container or in any postgres client (PgAdmin, etc.) connected to your database:
+    ```bash
+    $ docker exec -it merginmaps-db bash
+    $ psql -U postgres
+    ```
+
+    Run following SQL for creating the `map_overview` table and its indexes:
+
+    ```sql
+    BEGIN;
+
+    CREATE SEQUENCE IF NOT EXISTS public.map_overview_id_seq;
+    
+    CREATE TABLE IF NOT EXISTS public.map_overview
+    (
+        id              INTEGER           NOT NULL DEFAULT nextval('map_overview_id_seq'::regclass),
+        project_id      UUID              NOT NULL,
+        version         INTEGER,
+        config          JSON,
+        error           CHARACTER VARYING,
+        data_location   CHARACTER VARYING,
+        qgis_file       CHARACTER VARYING,
+        created_at      TIMESTAMP WITHOUT TIME ZONE DEFAULT now(),
+
+        CONSTRAINT pk_map_overview
+            PRIMARY KEY (id, project_id),
+
+        CONSTRAINT fk_map_overview_project_id_project
+            FOREIGN KEY (project_id)
+            REFERENCES public.project (id)
+            ON DELETE CASCADE,
+
+        CONSTRAINT uq_map_overview_data_location
+            UNIQUE (data_location)
+    );
+
+    CREATE INDEX IF NOT EXISTS ix_map_overview_project_id
+        ON public.map_overview (project_id ASC NULLS LAST);
+
+    CREATE INDEX IF NOT EXISTS ix_map_overview_version
+        ON public.map_overview (version ASC NULLS LAST);
+
+    CREATE INDEX IF NOT EXISTS ix_map_overview_created_at
+        ON public.map_overview (created_at ASC NULLS LAST);
+
+    COMMIT;
+    ```
+
+    If this table is missing, the migrations in the next step will fail.
+
+13. Check that you are on the correct database migration versions (`c40e5e645b57`, `b9ec9ab6694f`).
     ```bash
     $ docker exec merginmaps-server flask db current
     INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
@@ -130,7 +180,7 @@ Perform the migration:
     $ docker exec merginmaps-server flask db stamp c40e5e645b57
     $ docker exec merginmaps-server flask db stamp b9ec9ab6694f
     ```
-13. Run the database migration:
+14. Run the database migration:
 
     ```bash
     $ docker exec merginmaps-server flask db upgrade community@head
