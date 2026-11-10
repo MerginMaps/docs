@@ -30,6 +30,8 @@ There are some commonly used default values that can be useful in your field sur
 
 - The name of the <MainPlatformName /> user who created or modified the feature can be recorded using the `@mm_username` variable. These fields should use **Text (string)** data type. 
   There are also other [project and user variables](../variables/#project-and-user-variables) related to your <MainPlatformName /> account or service that can be used as default values.
+  
+- The `@mm_project_role` variable can be used to set up expression-based behaviour that depends on the user's role, such as displaying different forms for *readers* and *editors*.
 
 - The coordinates of a point feature can be recorded as well using the `$x` and `$y` function in QGIS. To record the coordinate accurately, these fields should have the **Decimal number (real)** data type.  If the coordinates are in metres, values can be rounded to, say, 2-3 decimal places. When working with geographic coordinates that use degrees, you may want to round the coordinates to 8 decimal places. Use the *apply default value on update* option so that you have correct values when the position of the point feature changes.
 
