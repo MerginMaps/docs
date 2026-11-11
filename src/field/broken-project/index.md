@@ -1,13 +1,26 @@
 ---
+prev:
+  text: 'Support and Troubleshooting'
+  link: '../../misc/troubleshoot/'
+
+next:
+  text: 'Project fails to sync'
+  link: '../misc/troubleshoot/not_syncing/'
+  
 description: Do you get an error message when trying to open a project or a form in Mergin Maps mobile app? Here is how to resolve some of these issues.
 ---
 
-# How to Fix a Broken Project
+# The Mobile App Fails to Save Changes or Fails to Read Project
 [[toc]]
 
-Do you get an error message when trying to open a project or a form in <MobileAppName />? There can be multiple reasons for what went wrong. Here we will try to guide you through some cases you may encounter. 
+:::danger Outdated content
+These issues are related to older versions of the <MobileAppNameShort /> and <QGIS link="" text="QGIS" /> so the content on this page may display outdated versions of <MainPlatformName /> products.
 
-Note that these issues may be related to an older version of the <MobileAppNameShort /> or <QGIS link="" text="QGIS" /> so the content on this page may display outdated versions of <MainPlatformName /> products.
+If you are using <MobileAppName /> version 2.5.0 and higher and QGIS version 3.34.0 and higher, you should not encounter these issues.
+:::
+
+
+Do you get an error message when trying to open a project or a form in <MobileAppName />? There can be multiple reasons for what went wrong. Here we will try to guide you through some cases you may encounter. 
 
 :::tip Need more help with your issue?
 The [Troubleshoot](../../misc/troubleshoot/) page has general troubleshooting tips and describes [support options](../../misc/troubleshoot/#support) that include commercial support, support for subscribed clients or community support.
