@@ -58,6 +58,7 @@ Perform the migration:
 4. Adapt your existing `docker-compose.yml` file to the new version.
 
     - Upgrade the image tags of the server-related containers to the latest version tag `2026.11.1` in `docker-compose.yml`.
+    - Bump redis image version to `redis:8`.
 
 5. Double-check that the following environment variable is available and filled in the `.prod.env` environment file. If not, add it.
     ```bash
