@@ -14,6 +14,87 @@ Make sure to always back up your database data before doing a migration.
 
 [[toc]]
 
+## From 2025.7.x to 2026.11.x (CE) {#migration-guide-from-2025-7-x-to-2026-11-x-ce}
+
+<MigrationType type="CE" />
+
+Perform the migration:
+
+1. Upgrade PostgreSQL to version 17.
+   - If you are going to upgrade PostgreSQL, make sure you back up your database before proceeding.
+    
+    ```bash
+    # Stop services so they do not handle any traffic
+    docker compose stop server celery-beat celery-worker web proxy
+    # Dump the existing database
+    docker exec merginmaps-db pg_dump -U postgres -Fc postgres > mergin-pg14.dump
+
+    # Stop all services
+    docker compose -f docker-compose.yml down
+
+    # Move the data directory to a PostgreSQL 14 backup folder
+    mv mergin_db mergin_db-pg14
+
+    # Change version of db container to Postgres 17 in docker compose file
+    #db:
+    #    image: postgres:17
+
+    # Start the database container
+    docker compose -f docker-compose.yml up -d db
+    # Restore your data to the new PostgreSQL 17 database
+    docker exec -i merginmaps-db pg_restore -U postgres -d postgres < mergin-pg14.dump
+    ```
+
+2. Stop your running docker containers
+   ```bash
+    $ docker compose -f docker-compose.yml down # or similarly, based on your previous deployment
+   ```
+
+3. Clone or pull the <GitHubRepo id="MerginMaps/server/blob/2026.11.1/" desc="server repository" /> or download the <GitHubRepo id="MerginMaps/server/blob/2026.11.1/deployment" desc="deployment folder" /> and open the `/community` folder.
+   ```bash    
+    $ cd server/deployment/community
+   ```
+
+4. Adapt your existing `docker-compose.yml` file to the new version.
+
+    - Upgrade the image tags of the server-related containers to the latest version tag `2026.11.1` in `docker-compose.yml`.
+    - Bump redis image version to `redis:8`.
+
+5. Double-check that the following environment variable is available and filled in the `.prod.env` environment file. If not, add it.
+    ```bash
+    # Generate a hash string using the following command (or similar):
+    # LC_ALL=C tr -dc 'A-Za-z0-9' < /dev/urandom | head -c 32; echo
+    # Add the content to the .prod.env file
+    SECURITY_UNLOCK_SALT='<YOUR STRONG HASH>'
+
+6. Start up your docker containers
+    ```bash
+    $ docker compose -f docker-compose.yml up -d # or similarly, based on your deployment
+    ```
+
+7. This release of the <MainPlatformName /> server removes a redundant database migration. If your database still references it, remove the reference directly from the `alembic_version` table, either with `psql` or in your favourite PostgreSQL client:
+    ```bash
+    $ docker exec merginmaps-db psql -U postgres -c "DELETE FROM alembic_version WHERE version_num='35af0c8be41e';"
+    ```
+
+8. Check that you are on the correct database migration version `b9ec9ab6694f`.
+    ```bash
+    $ docker exec merginmaps-server flask db current
+    INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+    INFO  [alembic.runtime.migration] Will assume transactional DDL.
+    b9ec9ab6694f
+    ```
+    - If you do not see the version numbers at all, run the following commands:
+    ```bash
+    $ docker exec merginmaps-server flask db stamp b9ec9ab6694f
+    ```
+
+9. Run the database migration:
+
+    ```bash
+    $ docker exec merginmaps-server flask db upgrade head
+    ```
+
 ## From 2025.7.x to 2026.10.x {#migration-guide-from-2025-7-x-to-2026-10-x}
 
 <MigrationType type="EE" />
