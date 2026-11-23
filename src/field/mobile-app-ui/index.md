@@ -7,7 +7,7 @@ outline: deep
 # Mergin Maps Mobile App Interface
 [[toc]]
 
-Below is a description of various items within the user interface of <MobileAppName />. 
+Below is a description of various items within the user interface of <MobileAppName />. Note that some features of the <MobileAppNameShort /> require access to your location, so we recommend enabling location services on your device.
 
 ![Mergin Maps mobile app user interface](./mobile-app-ui.jpg "Mergin Maps mobile app user interface")
 
@@ -78,9 +78,21 @@ A project is opened by tapping its name in the [Home](#home) or in the [Projects
 This section describes the interface for users who can add or edit features based on their [permissions](../../manage/permissions/). The reader's interface is described [below](#working-with-a-project-as-a-reader) as they do not see buttons related to editing.
 :::
 
-When a project is opened, you will see the map window. The map can be moved by dragging around and zoomed in/out by pinching open/close.
+### Map window
+When a project is opened, you will see the map window. 
+
+The map can be moved by dragging around and zoomed in/out by pinching open/close.
 
 ![A project opened in Mergin Maps mobile app](./mobile-app-project-opened.jpg "A project opened in Mergin Maps mobile app")
+
+Your location is displayed on the map. 
+
+Tapping the **location button** in the bottom-right corner of the screen centres the map on your current position and keeps it centred as you move. If you move the map manually, the auto-centre mode turns off automatically. 
+
+![Mergin Maps mobile app centre to current position](./mobile-app-center-to-current-position.jpg "Mergin Maps mobile app centre to current position") 
+
+You can also rotate the map using two fingers. When the map is rotated, a compass appears, showing the current orientation. Tap the **compass button** to realign the map with north. The map can also follow your current direction: tap the **location button** once to centre it to your position, then tap it again.
+
 
 ### Exploring features on a map
 Tapping on a feature on the map displays the attributes form.
@@ -89,12 +101,8 @@ For overlaying features, tap and hold to get a list of features. Select one from
 
 ![Mergin Maps mobile app multi-feature selection](./mobile-app-multiselect.jpg "Mergin Maps mobile app multi-feature selection")
 
-### Current position and GPS info
-To see your current position and GPS info, you have to enable location services in your mobile device.
-
-Tapping the **location button** in the right bottom corner of the screen centres the map to your current position and keeps it centred while you are moving. If you move the map manually, the auto-centre mode turns off automatically.
-
-![Mergin Maps mobile app centre to current position](./mobile-app-center-to-current-position.jpg "Mergin Maps mobile app centre to current position") 
+### GPS info{#current-position-and-gps-info}
+To see the GPS info, you have to enable location services in your mobile device. 
 
 In the left bottom corner of the screen, there is a **GPS** button that displays the GPS accuracy as reported by your mobile device. The colour of the button denotes the accuracy threshold set in [GPS settings](#gps-settings) in the <MobileAppNameShort />.
 
