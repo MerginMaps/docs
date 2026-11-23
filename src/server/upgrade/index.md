@@ -21,7 +21,7 @@ Make sure to always back up your database data before doing a migration.
 Perform the migration:
 
 1. Upgrade PostgreSQL to version 17.
-   - If you are going to upgrade PostgreSQL, make sure you back up your database before proceeding.
+   - When you are going to upgrade PostgreSQL, make sure you back up your database before proceeding.
     
     ```bash
     # Stop services so they do not handle any traffic
