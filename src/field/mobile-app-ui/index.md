@@ -83,15 +83,18 @@ When a project is opened, you will see the map window.
 
 The map can be moved by dragging around and zoomed in/out by pinching open/close.
 
-![A project opened in Mergin Maps mobile app](./mobile-app-project-opened.jpg "A project opened in Mergin Maps mobile app")
+![A project opened in Mergin Maps mobile app](./mobile-app-project-opened.webp "A project opened in Mergin Maps mobile app")
 
-Your location is displayed on the map. 
+Your location is displayed on the map. Tapping the **location button** in the bottom-right corner of the screen centres the map on your current position and keeps it centred as you move. If you move the map manually, the auto-centre mode turns off automatically. 
 
-Tapping the **location button** in the bottom-right corner of the screen centres the map on your current position and keeps it centred as you move. If you move the map manually, the auto-centre mode turns off automatically. 
-
-![Mergin Maps mobile app centre to current position](./mobile-app-center-to-current-position.jpg "Mergin Maps mobile app centre to current position") 
+![Mergin Maps mobile app centre to current position](./mobile-app-center-to-current-position.webp "Mergin Maps mobile app centre to current position") 
 
 You can also rotate the map using two fingers. When the map is rotated, a compass appears, showing the current orientation. Tap the **compass button** to realign the map with north. The map can also follow your current direction: tap the **location button** once to centre it to your position, then tap it again.
+
+This option can be enabled/disabled in [settings](#recording-settings).
+
+![Mergin Maps mobile app rotate map](./mobile-app-rotate-map.webp "Mergin Maps mobile app rotate map")
+
 
 
 ### Exploring features on a map
@@ -195,6 +198,7 @@ To open the **Settings**, tap the **More** button. In Settings, you can find [GP
 - **Automatically sync changes**: if used, local changes will be synchronised automatically
 - **Auto-lock position**: if used, the <MobileAppNameShort /> will centre to your GPS position when you start the recording
 - **Touch Feedback** can be set to sound, vibration or sound and vibration feedback when adding a feature. Note that the *haptic feedback* (vibrations, sounds) needs to be enabled on your mobile device.
+- **Map rotation (experimental)**: when enabled, the map can be rotated
 
 ![Mergin Maps mobile app recording settings](./mobile-app-settings-recording.webp "Mergin Maps mobile app recording settings")
 
