@@ -83,6 +83,7 @@ The ecosystem consist of various components:
    - [QR code](./layer/qr-code/)
    - [Selecting Single or Multiple Values ](./layer/value-select/)
    - [Photos](./layer/photos/)
+   - [Signature](./layer/signature/)
    - [Informational Widgets](./layer/info-widgets/)
 - Default Values
    - [Default Values Setup](./layer/default-values/)
