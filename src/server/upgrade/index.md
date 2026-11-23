@@ -14,15 +14,15 @@ Make sure to always back up your database data before doing a migration.
 
 [[toc]]
 
-## From 2025.7.x to 2026.11.x {#migration-guide-from-2025-7-x-to-2026-11-x}
+## From 2026.10.x to 2026.11.x {#migration-guide-from-2025-7-x-to-2026-11-x}
 
 <MigrationType type="EE" />
 
-<EnterprisePlatformName /> 2026.11.x does not require any changes to the database schema. This release only contains security upgrades of the stack and images.
+The <EnterprisePlatformName /> 2026.11.x does not require any changes to the database schema. This release only contains security upgrades of the stack and images.
 
 Perform the migration:
 
-1. Clone or pull the <GitHubRepo id="MerginMaps/server/blob/2026.11.1/" desc="server repository" /> or download the <GitHubRepo id="MerginMaps/server/blob/2026.11.1/deployment" desc="deployment folder" /> and open the `/community` folder.
+1. Clone or pull the <GitHubRepo id="MerginMaps/server/blob/2026.11.1/" desc="server repository" /> or download the <GitHubRepo id="MerginMaps/server/blob/2026.11.1/deployment" desc="deployment folder" /> and open the `/enterprise` folder.
    ```bash    
     $ cd server/deployment/enterprise
    ```
