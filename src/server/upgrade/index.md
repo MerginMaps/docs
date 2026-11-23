@@ -14,6 +14,28 @@ Make sure to always back up your database data before doing a migration.
 
 [[toc]]
 
+## From 2025.7.x to 2026.11.x {#migration-guide-from-2025-7-x-to-2026-11-x}
+
+<MigrationType type="EE" />
+
+<EnterprisePlatformName /> 2026.11.x does not require any changes to the database schema. This release only contains security upgrades of the stack and images.
+
+Perform the migration:
+
+1. Clone or pull the <GitHubRepo id="MerginMaps/server/blob/2026.11.1/" desc="server repository" /> or download the <GitHubRepo id="MerginMaps/server/blob/2026.11.1/deployment" desc="deployment folder" /> and open the `/community` folder.
+   ```bash    
+    $ cd server/deployment/enterprise
+   ```
+
+2. Adapt your existing `docker-compose.yml` file to the new version.
+
+    - Upgrade the image tags of the server-related containers to the latest version tag `2026.11.1` in `docker-compose.yml`.
+    - Pin `redis` image version to `redis:8.10.3` in `docker-compose.yml`.
+    - Upgrade `proxy` image version to `nginx/nginx-unprivileged:1.30.7` in `docker-compose.yml`.
+    - Upgrade `nginx` image version to `nginx/nginx-unprivileged:1.30.7` in `docker-compose.maps.yml`.
+
+    These are the most important changes, but the new version may contain other changes too.
+
 ## From 2025.7.x to 2026.11.x (CE) {#migration-guide-from-2025-7-x-to-2026-11-x-ce}
 
 <MigrationType type="CE" />
@@ -58,7 +80,10 @@ Perform the migration:
 4. Adapt your existing `docker-compose.yml` file to the new version.
 
     - Upgrade the image tags of the server-related containers to the latest version tag `2026.11.1` in `docker-compose.yml`.
-    - Bump redis image version to `redis:8`.
+    - Upgrade `redis` image version to `redis:8.10.3` in `docker-compose.yml`.
+    - Upgrade `proxy` image version to `nginx/nginx-unprivileged:1.30.7` in `docker-compose.yml`.
+
+    These are the most important changes, but the new version may contain other changes too.
 
 5. Double-check that the following environment variable is available and filled in the `.prod.env` environment file. If not, add it.
     ```bash
@@ -66,6 +91,7 @@ Perform the migration:
     # LC_ALL=C tr -dc 'A-Za-z0-9' < /dev/urandom | head -c 32; echo
     # Add the content to the .prod.env file
     SECURITY_UNLOCK_SALT='<YOUR STRONG HASH>'
+    ```
 
 6. Start up your docker containers
     ```bash
