@@ -16,11 +16,6 @@ on:
   push:
     branches:
       - main
-      # TEMPORARY: first end-to-end test. A pull_request run cannot be used --
-      # its sub claim is "repo:MerginMaps/docs:pull_request", which the role's
-      # trust policy does not list. Remove this branch, and
-      # local.docs_ci_test_branch in lara-infra, once this has run green.
-      - mhs-lara-ci-test
     paths-ignore:
       - 'scripts/**'
       - 'README.md'
