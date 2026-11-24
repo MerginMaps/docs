@@ -1,0 +1,103 @@
+name: Deploy DEV lara
+
+# Second dev target, alongside dist-dev.yml: the CloudFront distribution that
+# replaces the nginx "top-level proxy". Both run on the same push while the
+# migration is in flight -- dist-dev.yml keeps the legacy website-endpoint
+# bucket fed, this one fills the new private bucket behind CloudFront.
+#
+# No stored AWS key: the role is assumed by OIDC federation. GitHub signs a
+# token describing this job, STS trades it for credentials that expire in an
+# hour. The role's trust policy pins the subject claim to
+# "repo:MerginMaps/docs:ref:refs/heads/main", so do NOT add an `environment:`
+# key to this job -- that rewrites the sub claim to the environment form and
+# AssumeRoleWithWebIdentity starts being refused.
+on:
+  # Trigger the workflow on any push on main branch,
+  push:
+    branches:
+      - main
+      # TEMPORARY: first end-to-end test. A pull_request run cannot be used --
+      # its sub claim is "repo:MerginMaps/docs:pull_request", which the role's
+      # trust policy does not list. Remove this branch, and
+      # local.docs_ci_test_branch in lara-infra, once this has run green.
+      - mhs-lara-ci-test
+    paths-ignore:
+      - 'scripts/**'
+      - 'README.md'
+  workflow_dispatch:
+
+concurrency:
+  group: dist-dev-lara-${{ github.ref }}
+  cancel-in-progress: true
+
+# id-token is what lets the job request the OIDC token. Naming any permission
+# resets the rest to none, so contents: read has to be spelled out.
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  deploy_dev_lara:
+    runs-on: ubuntu-latest
+    env:
+      AWS_ROLE: arn:aws:iam::304157583863:role/ltr-dev-ew1-service-website-docs-ci
+      BUCKET: ltr-dev-ew1-service-website-docs
+      DISTRIBUTION_ID: E5YD48H37T483
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 20
+        cache: 'yarn'
+
+    - name: Install
+      run: |
+       yarn install
+
+    - name: Generate dist
+      run: |
+        yarn build
+
+    - name: "Check dist dir consistency"
+      uses: andstor/file-existence-action@v3
+      with:
+        files: "dist/docs/index.html"
+        fail: true # Makes the Action fail on missing files
+
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v4
+      with:
+        role-to-assume: ${{ env.AWS_ROLE }}
+        role-session-name: docs-dev-lara-${{ github.run_id }}
+        aws-region: eu-west-1
+
+    # Source is ./dist/docs, not ./dist: vitepress has outDir ../dist/docs, so
+    # the built site already sits one level down and the keys land at docs/**
+    # either way. The role can only write that prefix -- the four root assets
+    # (robots.txt in particular, where dev's "Disallow: /" is the only thing
+    # keeping the staging domains out of search results) belong to the
+    # website chart, not this repository.
+    - name: Copy files to the dev CloudFront content bucket
+      run: |
+        aws s3 sync ./dist/docs "s3://$BUCKET/docs/" --follow-symlinks --delete
+
+    # The /docs/* behaviour caches for an hour, so the sync alone is invisible.
+    # One path of the 1,000/month free allowance.
+    #
+    # The run blocks until the invalidation is Completed, so green means the new
+    # build is being served rather than merely uploaded. The waiter polls
+    # GetInvalidation every 20s up to 30 times -- 10 minutes, against a typical
+    # completion of well under one. A timeout fails the job but does not cancel
+    # the invalidation; it still completes on its own.
+    - name: Invalidate the docs path
+      run: |
+        id=$(aws cloudfront create-invalidation \
+          --distribution-id "$DISTRIBUTION_ID" \
+          --paths '/docs/*' \
+          --query 'Invalidation.Id' --output text)
+        echo "Invalidation $id created, waiting for it to complete"
+
+        aws cloudfront wait invalidation-completed \
+          --distribution-id "$DISTRIBUTION_ID" \
+          --id "$id"
+        echo "Invalidation $id completed"
