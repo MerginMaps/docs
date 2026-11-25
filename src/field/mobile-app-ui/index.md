@@ -198,6 +198,7 @@ To open the **Settings**, tap the **More** button. In Settings, you can find [GP
 - **Help** - a shortcut to this documentation
 - [<MainPlatformName /> Privacy policy](https://merginmaps.com/privacy-policy)
 - [<MainPlatformName /> Terms of service](https://merginmaps.com/licenses/terms-of-service)
+- [Send anonymous usage data](../../misc/telemetry/)
 - [Diagnostic log](../../misc/troubleshoot/#diagnostic-log-on-mergin-maps-mobile-app)
 
 ![Mergin Maps mobile app settings general](./mobile-app-settings-general.jpg "Mergin Maps mobile app settings general")

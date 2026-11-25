@@ -149,6 +149,7 @@ The ecosystem consist of various components:
 
 ## Support & Legal
 - [Licensing](./misc/licensing/)
+- [Telemetry](./misc/telemetry/)
 - [Get Involved](./misc/get-involved/)
 - [Troubleshoot](./misc/troubleshoot/)
 - [Write Documentation](./misc/write-docs/)
