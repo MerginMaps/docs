@@ -163,6 +163,14 @@ Attributes of multiple features from the same layer can be edited at once.
 
    All selected features have been modified at once.
 
+## Resume editing of unsaved changes
+If the <MobileAppNameShort /> closes unexpectedly during editing, your unsaved changes are not lost. Once you open the <MobileAppNameShort /> again, it will display the option to **Resume editing** or **Discard unsaved changes**.
+
+![Resume editing of unsaved changes](./unsaved-changes.webp "Resume editing of unsaved changes")
+
+The notification about unsaved changes is also displayed on the map window and the [Layers](../layers/) panel so that you can resolve the issue as soon as possible.
+
+![Resume editing of unsaved changes](./unsaved-changes-info.webp "Resume editing of unsaved changes")
 
 ## Snapping features
 

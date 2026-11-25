@@ -10,7 +10,8 @@ Did you encounter an issue when using <MainPlatformNameLink />? Here are some tr
 - Do you have enough storage? Check your [subscription and data usage](../../manage/dashboard/#subscriptions).
 - Are you missing some data after synchronisation? [How to Recover Missing Data](../../manage/missing-data/) will show you how to deal with [**conflict files**](../../manage/missing-data/#there-are-conflict-files-in-the-folder) and how to [**manually download**](../../manage/missing-data/#there-are-no-conflict-files-in-the-folder) data from your mobile device.
 - Modifying data schema of survey layers is a common source of synchronisation issues. [How to Deploy Revised Projects](../../manage/missing-data/) will instruct you how to do it correctly.
-- Unable to install or update <MobileAppName />? Check the [OS version](#minimum-os-versions-for-mergin-maps-mobile-app) of your mobile device. 
+- Unable to install or update <MobileAppName />? Check the [OS version](#minimum-os-versions-for-mergin-maps-mobile-app) of your mobile device.
+- Did <MobileAppName /> closed unexpectedly? Your changes may not be lost! See [Resume editing of unsaved changes](../../field/mobile-features/#resume-editing-of-unsaved-changes).
 - If <MobileAppName /> cannot open your project or form, see [How to Fix a Broken Project](../../field/broken-project/).
 - If <MobileAppName /> displays **PROJ error**, see [Custom Projections](../../gis/proj/).
 - For troubleshooting custom server deployments, look at [this dedicated page](../../server/troubleshoot/).
