@@ -80,6 +80,7 @@ export default {
            { text: 'QR Code', link: '/layer/qr-code/' },
            { text: 'Selecting Single or Multiple Values', link: '/layer/value-select/' },
            { text: 'Photos', link: '/layer/photos/' },
+           { text: 'Signature', link: '/layer/signature/' },
            { text: 'Informational Widgets', link: '/layer/info-widgets/' },
         ] },
         { text: 'Default Values',
