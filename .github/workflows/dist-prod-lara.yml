@@ -1,0 +1,110 @@
+name: Deploy PROD lara
+
+# Second prod target, alongside dist-prod.yml: the CloudFront distribution that
+# replaces the nginx "top-level proxy". Both run on the same release while the
+# migration is in flight -- dist-prod.yml keeps the legacy website-endpoint
+# bucket (main-merginmaps.docs, in the account being wound down) fed, this one
+# fills the new private bucket behind CloudFront.
+#
+# No stored AWS key: the role is assumed by OIDC federation. GitHub signs a
+# token describing this job, STS trades it for credentials that expire in an
+# hour. The trust policy matches the subject claim with StringLike against
+# "repo:MerginMaps/docs:ref:refs/tags/*", because a release-triggered run
+# carries ref = refs/tags/<tag> and the tag differs every time.
+#
+# Two ways to break that, both silent:
+#   - adding an `environment:` key rewrites the sub claim to the environment
+#     form ("repo:...:environment:<name>") and AssumeRoleWithWebIdentity starts
+#     being refused;
+#   - `event_name` is not an available claim, so "only on a release" cannot be
+#     expressed in the trust policy -- the tag ref is what stands in for it.
+on:
+  # Creation of a release, not a pre-release. Same trigger as dist-prod.yml.
+  release:
+    types:
+      - released
+  # Re-running a release deploy. This only works when dispatched from the tag:
+  # dispatching from a branch produces ref = refs/heads/<branch>, which the
+  # trust policy's refs/tags/* pattern does not match.
+  workflow_dispatch:
+
+concurrency:
+  # github.head_ref is empty outside pull_request, so key on github.ref -- for a
+  # release that is the tag, which is what we want to serialise on.
+  group: dist-prod-lara-${{ github.ref }}
+  cancel-in-progress: true
+
+# id-token is what lets the job request the OIDC token. Naming any permission
+# resets the rest to none, so contents: read has to be spelled out.
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  deploy_prod_lara:
+    runs-on: ubuntu-latest
+    env:
+      AWS_ROLE: arn:aws:iam::407067881759:role/ltr-prod-ew1-service-website-docs-ci
+      BUCKET: ltr-prod-ew1-service-website-docs
+      DISTRIBUTION_ID: E23ZNSNFWD9DUI
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 20
+        cache: 'yarn'
+
+    - name: Install
+      run: |
+       yarn install
+
+    - name: Generate dist
+      run: |
+        yarn build
+
+    - name: "Check dist dir consistency"
+      uses: andstor/file-existence-action@v3
+      with:
+        files: "dist/docs/index.html"
+        fail: true # Makes the Action fail on missing files
+
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v4
+      with:
+        role-to-assume: ${{ env.AWS_ROLE }}
+        role-session-name: docs-prod-lara-${{ github.run_id }}
+        aws-region: eu-west-1
+
+    # Source is ./dist/docs, not ./dist: vitepress has outDir ../dist/docs, so
+    # the built site already sits one level down and the keys land at docs/**
+    # either way. Note this differs from dist-prod.yml, which syncs ./dist to
+    # the bucket root because that bucket is served as a website endpoint.
+    #
+    # The role can only write the docs/ prefix. The four root assets belong to
+    # the website chart, not this repository -- robots.txt in particular, where
+    # prod's "Sitemap: https://merginmaps.com/sitemap.xml" is what points
+    # crawlers at the sitemap.
+    - name: Copy files to the prod CloudFront content bucket
+      run: |
+        aws s3 sync ./dist/docs "s3://$BUCKET/docs/" --follow-symlinks --delete
+
+    # The /docs/* behaviour caches for an hour, so the sync alone is invisible.
+    # One path of the 1,000/month free allowance.
+    #
+    # The run blocks until the invalidation is Completed, so green means the new
+    # build is being served rather than merely uploaded. The waiter polls
+    # GetInvalidation every 20s up to 30 times -- 10 minutes, against a typical
+    # completion of well under one. A timeout fails the job but does not cancel
+    # the invalidation; it still completes on its own.
+    - name: Invalidate the docs path
+      run: |
+        id=$(aws cloudfront create-invalidation \
+          --distribution-id "$DISTRIBUTION_ID" \
+          --paths '/docs/*' \
+          --query 'Invalidation.Id' --output text)
+        echo "Invalidation $id created, waiting for it to complete"
+
+        aws cloudfront wait invalidation-completed \
+          --distribution-id "$DISTRIBUTION_ID" \
+          --id "$id"
+        echo "Invalidation $id completed"
